@@ -1,0 +1,10 @@
+name: SeanKilleen.com
+markdown: redcarpet
+highlighter: null
+github: https://www.github.com/SeanKilleen
+about: Thoughts on life and bytes from a digital twenty-something.
+urls:
+    - text: github
+      url: https://github.com/SeanKilleen
+    - text: Email
+      url: mailto:SeanKilleen@gmail.com

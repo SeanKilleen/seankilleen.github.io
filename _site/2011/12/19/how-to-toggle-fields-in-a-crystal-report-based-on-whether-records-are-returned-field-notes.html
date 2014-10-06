@@ -1,39 +1,90 @@
-<h3 id="problem">Problem</h3>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title> How To: Toggle Fields in a Crystal Report Based on Whether Records are Returned [Field Notes] </title>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+        
+        <!-- Bootstrap core CSS -->
+    	<link href="/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+		<div class="container">
+
+			<div class="col-sm-3">
+				<h1>SeanKilleen.com</h1>
+				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
+
+				<strong>navigation</strong><br />
+				<a href="/">home</a> <br />
+				
+					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
+				
+					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
+				
+				
+				
+				<div id="about">
+					<strong>about</strong><br />
+					Thoughts on life and bytes from a digital twenty-something.
+				</div>
+				
+			</div>
+
+			<div class="col-sm-8 col-offset-1">
+				
+				<h1>How To: Toggle Fields in a Crystal Report Based on Whether Records are Returned [Field Notes]</h1>
+<span class="time">19 Dec 2011</span>
+
+<div class="content">
+	<div class="post"><h3>Problem</h3>
+
 <p>In a Crystal Report, you would like to show or hide sections based upon whether the report contains results or not.</p>
 
-<h3 id="solution">Solution</h3>
-<p>####Step 1: Create a Shared Variable and Increment it
-Create a formula with a shared variable in your report – for the sake of this example, we’ll call it <code>v_RecordCount</code>.</p>
+<h3>Solution</h3>
+
+<h4>Step 1: Create a Shared Variable and Increment it</h4>
+
+<p>Create a formula with a shared variable in your report -- for the sake of this example, we&#39;ll call it <code>v_RecordCount</code>.</p>
 
 <p>The contents of the formula should look like this:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">// Excute this formula as records are read into the report
+WhileReadingRecords;
 
-<p>```
-// Excute this formula as records are read into the report
-WhileReadingRecords;</p>
+// define a variable that is available throughout the &#39;main&#39; report
+Global Numbervar RecordCount;
 
-<p>// define a variable that is available throughout the ‘main’ report
-Global Numbervar RecordCount;</p>
-
-<p>// increment the variable
+// increment the variable
 RecordCount := RecordCount+1;
-```</p>
+</code></pre></div>
+<h4>Step 2: Place the Variable in the Report header and Suppress it</h4>
 
-<h4 id="step-2-place-the-variable-in-the-report-header-and-suppress-it">Step 2: Place the Variable in the Report header and Suppress it</h4>
 <ul>
-  <li>Drag the formula into the <code>Report Header A</code> section.</li>
-  <li>Right-click on the formula you added in the report and select <code>Format Field...</code></li>
-  <li>Click the <code>Common</code> tab.</li>
-  <li>Check the <code>Suppress</code> button.</li>
-  <li>Click <code>OK</code></li>
+<li>Drag the formula into the <code>Report Header A</code> section.</li>
+<li>Right-click on the formula you added in the report and select <code>Format Field...</code></li>
+<li>Click the <code>Common</code> tab.</li>
+<li>Check the <code>Suppress</code> button.</li>
+<li>Click <code>OK</code></li>
 </ul>
 
-<h4 id="step-3-craft-the-proper-suppression-formula-for-the-sections">Step 3: Craft the Proper Suppression Formula for the Sections</h4>
+<h4>Step 3: Craft the Proper Suppression Formula for the Sections</h4>
+
 <p>Note that the formula we have created will return <code>null</code> when there are no records. This is key to crafting the formula.</p>
 
 <ul>
-  <li>Right-click on the section you would like to show or hide based on having results.</li>
-  <li>Click <code>Section Expert...</code></li>
-  <li>Next to the <code>Supress (No Drill-Down)</code> option, click the <code>Formula</code> button.</li>
+<li>Right-click on the section you would like to show or hide based on having results.</li>
+<li>Click <code>Section Expert...</code></li>
+<li>Next to the <code>Supress (No Drill-Down)</code> option, click the <code>Formula</code> button.</li>
 </ul>
 
 <p>If you want to <strong>hide a section if there are no results</strong>, enter the following:
@@ -45,16 +96,34 @@ else false
 <p>This tells Crystal to hide the section if the <code>RecordCount</code> is null (i.e. there are no results), and to show it otherwise.</p>
 
 <p>If you want to <strong>show a section if there are no results</strong>, enter the following: </p>
-
-<p><code>
-If IsNull({@RecordCount}) then false
+<div class="highlight"><pre><code class="language-text" data-lang="text">If IsNull({@RecordCount}) then false
 else true
-</code></p>
-
+</code></pre></div>
 <p>Or:
 <code>
 If (Not(IsNull({@RecordCount}))) then true
 else false
 </code></p>
 
-<p>These both say “if the record count is not null” (i.e. there are records), suppress this field. Otherwise, show it (if there aren’t any results).</p>
+<p>These both say &quot;if the record count is not null&quot; (i.e. there are records), suppress this field. Otherwise, show it (if there aren&#39;t any results).</p>
+</div>
+</div>
+
+				
+				<footer>
+					&copy; SeanKilleen.com
+					 
+						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
+					
+				</footer>
+			</div>
+		
+		</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

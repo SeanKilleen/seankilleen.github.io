@@ -1,19 +1,88 @@
-<h3 id="the-problem">The Problem</h3>
-<p>I needed to pull back a list of dates in a certain range for each employee, but didn’t have a common join criteria, as I wanted all the dates but they did not come from a table.</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title> SQL Tricks: The Not-Equals Join [Field Notes] </title>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<h3 id="the-solution">The Solution</h3>
-<p>I knew that the dates would never equal the employee name, so in this case, I could actually use a “not-equal” join to connect the two. I always forget about this one, but it’s handy.</p>
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+        
+        <!-- Bootstrap core CSS -->
+    	<link href="/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+		<div class="container">
+
+			<div class="col-sm-3">
+				<h1>SeanKilleen.com</h1>
+				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
+
+				<strong>navigation</strong><br />
+				<a href="/">home</a> <br />
+				
+					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
+				
+					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
+				
+				
+				
+				<div id="about">
+					<strong>about</strong><br />
+					Thoughts on life and bytes from a digital twenty-something.
+				</div>
+				
+			</div>
+
+			<div class="col-sm-8 col-offset-1">
+				
+				<h1>SQL Tricks: The Not-Equals Join [Field Notes]</h1>
+<span class="time">07 Feb 2012</span>
+
+<div class="content">
+	<div class="post"><h3>The Problem</h3>
+
+<p>I needed to pull back a list of dates in a certain range for each employee, but didn&#39;t have a common join criteria, as I wanted all the dates but they did not come from a table.</p>
+
+<h3>The Solution</h3>
+
+<p>I knew that the dates would never equal the employee name, so in this case, I could actually use a &quot;not-equal&quot; join to connect the two. I always forget about this one, but it&#39;s handy.</p>
 
 <p>I did something along the following (edited for brevity):</p>
-
-<p><code>
-select * from (...) ActiveLabor 
+<div class="highlight"><pre><code class="language-text" data-lang="text">select * from (...) ActiveLabor 
     left outer join (...)DateRange 
     on (activelabor.laborcode != to_char(DateRange.DateItem))
-</code></p>
-
+</code></pre></div>
 <p>This allows the left outer join only if the items are not equal (which we happen to know will always be the case).</p>
 
-<p>The end result? As I expected – the full list of dates showed up for each employee, just as I’d hoped.</p>
+<p>The end result? As I expected -- the full list of dates showed up for each employee, just as I&#39;d hoped.</p>
 
-<p><strong>A Note:</strong> Because I was comparing a date to a string, I had to cast the date as a varchar2 in the join statement. The date value itself still comes back as a date, but during the comparison we need to make sure we’re giving Oracle an apples-to-apples comparison.</p>
+<p><strong>A Note:</strong> Because I was comparing a date to a string, I had to cast the date as a varchar2 in the join statement. The date value itself still comes back as a date, but during the comparison we need to make sure we&#39;re giving Oracle an apples-to-apples comparison.</p>
+</div>
+</div>
+
+				
+				<footer>
+					&copy; SeanKilleen.com
+					 
+						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
+					
+				</footer>
+			</div>
+		
+		</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

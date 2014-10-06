@@ -1,91 +1,146 @@
-<p>For starters, in CR 2008, you can’t create two separate groups of data in one report (for example, all labor for a work order and then all materials for a work order).</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title> Notes on Sub-Reports in Crystal Reports 2008 [Field Notes] </title>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+        
+        <!-- Bootstrap core CSS -->
+    	<link href="/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+		<div class="container">
+
+			<div class="col-sm-3">
+				<h1>SeanKilleen.com</h1>
+				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
+
+				<strong>navigation</strong><br />
+				<a href="/">home</a> <br />
+				
+					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
+				
+					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
+				
+				
+				
+				<div id="about">
+					<strong>about</strong><br />
+					Thoughts on life and bytes from a digital twenty-something.
+				</div>
+				
+			</div>
+
+			<div class="col-sm-8 col-offset-1">
+				
+				<h1>Notes on Sub-Reports in Crystal Reports 2008 [Field Notes]</h1>
+<span class="time">28 Nov 2011</span>
+
+<div class="content">
+	<div class="post"><p>For starters, in CR 2008, you can&#39;t create two separate groups of data in one report (for example, all labor for a work order and then all materials for a work order).</p>
 
 <p>To do this, you need to create a sub-report, format it, and pass any values back up to the main report using shared variables.</p>
 
-<p><a href="http://www.codeguru.com/forum/showpost.php?p=1701455&amp;postcount=2">This forum post</a> that I found has a great quick run-down on how to accomplish shared variables from sub-reports to main reports. It was very helpful in understanding the wonky Crystal syntax behind what should be a simple thing.</p>
+<p><a href="http://www.codeguru.com/forum/showpost.php?p=1701455&amp;amp;postcount=2">This forum post</a> that I found has a great quick run-down on how to accomplish shared variables from sub-reports to main reports. It was very helpful in understanding the wonky Crystal syntax behind what should be a simple thing.</p>
 
 <p>The post is excerpted (though poorly formatted) below in case the originating site ever goes away. <strong>NOTE:</strong> None of the content below is mine; it is a reproduction because the information was too valuable to lose.</p>
 
-<hr />
-<blockquote>
-  <p>Shared variables, introduced since Crystal Reports version 7, make it easier to pass values from a subreport to the main report.</p>
-</blockquote>
+<hr>
 
 <blockquote>
-  <p>Using shared variables requires two formulas:<br />one to store the value in a shared variable, the other to retrieve the<br />value from the shared variable.</p>
-</blockquote>
+<p>Shared variables, introduced since Crystal Reports version 7, make it easier to pass values from a subreport to the main report.</p>
 
-<blockquote>
-  <p>The most important thing to remember when using shared variables is that Crystal Reports must first evaluate the formula where the value is stored before evaluating the formula that retrieves the shared variable. For example if you want to pass a grand total from the subreport to do a calculation in the main report, follow these steps:</p>
+<p>Using shared variables requires two formulas:<br />one to store the value in a shared variable, the other to retrieve the<br />value from the shared variable.</p>
+
+<p>The most important thing to remember when using shared variables is that Crystal Reports must first evaluate the formula where the value is stored before evaluating the formula that retrieves the shared variable. For example if you want to pass a grand total from the subreport to do a calculation in the main report, follow these steps:</p>
 </blockquote>
 
 <ul>
-  <li>In the subreport, create a formula similar to the one below:</li>
+<li>In the subreport, create a formula similar to the one below:</li>
 </ul>
-
-<p>```
-// SubFormula
+<div class="highlight"><pre><code class="language-text" data-lang="text">// SubFormula
 //Stores the grand total of the {Orders.Order Amount} field
-//in a currency variable called ‘myTotal’</p>
+//in a currency variable called &#39;myTotal&#39;
 
-<p>WhilePrintingRecords;
+WhilePrintingRecords;
 Shared CurrencyVar myTotal := Sum ({Orders.Order Amount})
-```</p>
-
+</code></pre></div>
 <blockquote>
-  <ul>
-    <li>
-      <p>Place this formula in your subreport.</p>
-    </li>
-    <li>
-      <p>In the main report, create a formula that declares the same variable name:</p>
-    </li>
-  </ul>
-</blockquote>
-
-<p>```
-//@MainFormula
-//Returns the value that was stored in the shared currency variable called
-//myTotal in the subreport</p>
-
-<p>WhilePrintingRecords;
-Shared CurrencyVar myTotal;</p>
-
-<p>myTotal
-```
-&gt; * Place <code>@MainFormula</code> in a main report section that is beneath the section<br />containing the subreport. For the shared variable to return the correct value in the main report, you must place <code>@MainFormula</code> in a main report section that is beneath the section containing the subreport. This ensures Crystal Reports evaluates the <code>@SubFormula</code> before <code>@MainFormula</code>.</p>
-
-<blockquote>
-  <p>One way to do this is to insert a section below the section containing the subreport, and place <code>@MainFormula</code> in this new sub-section:</p>
-</blockquote>
-
-<blockquote>
-  <ul>
-    <li>On the <code>Format</code> menu, click <code>Section</code>.</li>
-    <li>On the <code>Sections</code> list, click the section containing the subreport.</li>
-    <li>Click <code>Insert</code> (at top of dialog box). This inserts an additional subsection.</li>
-    <li>Click <code>OK</code> to return to the report, and insert <code>@MainFormula</code> into this new subsection.</li>
-  </ul>
-</blockquote>
-
-<blockquote>
-  <p>The next time you preview the report, <code>@MainFormula</code> displays the value from the subreport. In this particular example, that value was the grand total of the <code>{Orders.Order Amount}</code> field.</p>
-</blockquote>
-
-<blockquote>
-  <ul>
-    <li>Once you have verified that <code>@MainFormula</code> is returning the correct value from the subreport, you can include this formula in other main report formulas, such as:</li>
-  </ul>
-</blockquote>
-
-<p><code>
-//@NewFormula
-//includes data from subreport
-{@MainFormula}+ Sum ({Customer.Last Year's Sales})
-</code>
-&gt; Place this formula in the same section as <code>@MainFormula</code>, or in a section further down on the report.</p>
-
-<h3 id="references">References</h3>
 <ul>
-  <li><a href="http://www.codeguru.com/forum/showthread.php?t=449494">How to Get Formula Field Value From Subreport to Main Report</a> [<a href="http://www.codeguru.com/">CodeGuru</a>]</li>
+<li><p>Place this formula in your subreport.</p></li>
+<li><p>In the main report, create a formula that declares the same variable name:</p></li>
 </ul>
+</blockquote>
+<div class="highlight"><pre><code class="language-text" data-lang="text">//@MainFormula
+//Returns the value that was stored in the shared currency variable called
+//myTotal in the subreport
+
+WhilePrintingRecords;
+Shared CurrencyVar myTotal;
+
+myTotal
+</code></pre></div>
+<blockquote>
+<ul>
+<li>Place <code>@MainFormula</code> in a main report section that is beneath the section<br />containing the subreport.&nbsp;For the shared variable to return the correct value in the main report, you must place <code>@MainFormula</code> in a main report section that is beneath the section containing the subreport. This ensures Crystal Reports evaluates the <code>@SubFormula</code> before <code>@MainFormula</code>.</li>
+</ul>
+
+<p>One way to do this is to insert a section below the section containing the subreport, and place <code>@MainFormula</code> in this new sub-section:</p>
+
+<ul>
+<li>On the <code>Format</code> menu, click <code>Section</code>.</li>
+<li>On the <code>Sections</code> list, click the section containing the subreport.</li>
+<li>Click <code>Insert</code> (at top of dialog box). This inserts an additional subsection.</li>
+<li>Click <code>OK</code> to return to the report, and insert <code>@MainFormula</code> into this new subsection.</li>
+</ul>
+
+<p>The next time you preview the report, <code>@MainFormula</code> displays the value from the subreport. In this particular example, that value was the grand total of the <code>{Orders.Order Amount}</code> field.</p>
+
+<ul>
+<li>Once you have verified that <code>@MainFormula</code> is returning the correct value from the subreport, you can include this formula in other main report formulas, such as:</li>
+</ul>
+</blockquote>
+<div class="highlight"><pre><code class="language-text" data-lang="text">//@NewFormula
+//includes data from subreport
+{@MainFormula}+ Sum ({Customer.Last Year&#39;s Sales})
+</code></pre></div>
+<blockquote>
+<p>Place this formula in the same section as <code>@MainFormula</code>, or in a section further down on the report.</p>
+</blockquote>
+
+<h3>References</h3>
+
+<ul>
+<li><a href="http://www.codeguru.com/forum/showthread.php?t=449494">How to Get Formula Field Value From Subreport to Main Report</a> [<a href="http://www.codeguru.com/">CodeGuru</a>]</li>
+</ul>
+</div>
+</div>
+
+				
+				<footer>
+					&copy; SeanKilleen.com
+					 
+						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
+					
+				</footer>
+			</div>
+		
+		</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

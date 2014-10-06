@@ -1,29 +1,106 @@
-<h3 id="technology-involved">Technology Involved</h3>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title> Fix: CentOS 5.x hangs during VirtualBox install [Field Notes] </title>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+        
+        <!-- Bootstrap core CSS -->
+    	<link href="/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+		<div class="container">
+
+			<div class="col-sm-3">
+				<h1>SeanKilleen.com</h1>
+				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
+
+				<strong>navigation</strong><br />
+				<a href="/">home</a> <br />
+				
+					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
+				
+					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
+				
+				
+				
+				<div id="about">
+					<strong>about</strong><br />
+					Thoughts on life and bytes from a digital twenty-something.
+				</div>
+				
+			</div>
+
+			<div class="col-sm-8 col-offset-1">
+				
+				<h1>Fix: CentOS 5.x hangs during VirtualBox install [Field Notes]</h1>
+<span class="time">29 Nov 2011</span>
+
+<div class="content">
+	<div class="post"><h3>Technology Involved</h3>
+
 <ul>
-  <li>Win7 Pro x64</li>
-  <li>VirtualBox 4.1.x</li>
-  <li>CentOS 5.x&lt;/li&gt;&lt;/ul&gt;</li>
+<li>Win7 Pro x64</li>
+<li>VirtualBox 4.1.x</li>
+<li>CentOS 5.x</li></ul></li>
 </ul>
 
-<h3 id="problem">Problem</h3>
+<h3>Problem</h3>
+
 <p>When attempting to install a CentOS Guest VM from a VirtualBox Win7 x64 host, the installation appears to hang shortly after beginning.</p>
 
-<p>The last line of text on the screen is:
-&gt; NET: Registered protocol family 2</p>
+<p>The last line of text on the screen is:</p>
 
-<h3 id="solution">Solution</h3>
-<p>Per <a href="https://forums.virtualbox.org/viewtopic.php?f=9&amp;t=23900">this thread</a> (referencing an older version of VirtualBox but still relevant), the fix is as follows:</p>
+<blockquote>
+<p>NET: Registered protocol family 2</p>
+</blockquote>
+
+<h3>Solution</h3>
+
+<p>Per <a href="https://forums.virtualbox.org/viewtopic.php?f=9&amp;amp;t=23900">this thread</a> (referencing an older version of VirtualBox but still relevant), the fix is as follows:</p>
 
 <ul>
-  <li>Go into the settings of the VM</li>
-  <li>Click the <code>System</code> section.</li>
-  <li>Check <code>Enable IO APIC</code>.</li>
-  <li>Save the settings.</li>
+<li>Go into the settings of the VM</li>
+<li>Click the <code>System</code> section.</li>
+<li>Check <code>Enable IO APIC</code>.</li>
+<li>Save the settings.</li>
 </ul>
 
 <p>When you start the install again, it will proceed normally.</p>
 
-<h3 id="references">References</h3>
+<h3>References</h3>
+
 <ul>
-  <li><a href="https://forums.virtualbox.org/viewtopic.php?f=9&amp;t=23900">Failure Installing CentOS 5.4 on VB 3.0.8</a> [<a href="https://forums.virtualbox.org/index.php">VirtualBox Forums</a>]</li>
+<li><a href="https://forums.virtualbox.org/viewtopic.php?f=9&amp;amp;t=23900">Failure Installing CentOS 5.4 on VB 3.0.8</a> [<a href="https://forums.virtualbox.org/index.php">VirtualBox Forums</a>]</li>
 </ul>
+</div>
+</div>
+
+				
+				<footer>
+					&copy; SeanKilleen.com
+					 
+						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
+					
+				</footer>
+			</div>
+		
+		</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

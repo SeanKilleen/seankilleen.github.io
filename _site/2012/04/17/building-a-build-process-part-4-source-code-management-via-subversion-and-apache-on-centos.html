@@ -1,138 +1,174 @@
-<p><em>This is part of <a href="http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process">a larger series</a> in building a proper build process. For more information and additional series links, check out the <a href="http://skwordpresstoghost.azurewebsites.net/?p=951">introductory post</a>.</em>  </p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title> Building a Build Process, Part 4: Source Code Management via Subversion and Apache on CentOS </title>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+        
+        <!-- Bootstrap core CSS -->
+    	<link href="/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+		<div class="container">
+
+			<div class="col-sm-3">
+				<h1>SeanKilleen.com</h1>
+				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
+
+				<strong>navigation</strong><br />
+				<a href="/">home</a> <br />
+				
+					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
+				
+					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
+				
+				
+				
+				<div id="about">
+					<strong>about</strong><br />
+					Thoughts on life and bytes from a digital twenty-something.
+				</div>
+				
+			</div>
+
+			<div class="col-sm-8 col-offset-1">
+				
+				<h1>Building a Build Process, Part 4: Source Code Management via Subversion and Apache on CentOS</h1>
+<span class="time">17 Apr 2012</span>
+
+<div class="content">
+	<div class="post"><p><em>This is part of <a href="http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process">a larger series</a> in building a proper build process. For more information and additional series links, check out the <a href="http://skwordpresstoghost.azurewebsites.net/?p=951">introductory post</a>.</em>  </p>
 
 <p>Now we’re getting ready for some of the fun stuff. This time around, we’re going to install Apache (aka “httpd”) and Subversion (aka “svn”) and prepare to create a basic repository over https authentication.</p>
 
-<h3 id="installing-the-binaries">Installing the Binaries</h3>
+<h3>Installing the Binaries</h3>
+
 <ul>
-  <li>Login to your CentOS VM as the root user.</li>
-  <li>Open the Terminal (it can be found in <code>Applications &gt; Accessories &gt; Terminal</code>)</li>
-  <li>
-    <p>Type the following in the terminal: </p>
-
-    <pre><code>  yum install mod_dav_svn subversion
-</code></pre>
-
-    <p>This tells CentOS to use its package manager to pull down the subversion module for Apache and the subversion binaries itself. <strong>NOTE: </strong>A nice feature here is that CentOS knows that <code>mod_dav_svn</code> requires Apache, and so it’s going to install Apache for us as well. Very kind!</p>
-  </li>
+<li>Login to your CentOS VM as the root user.</li>
+<li>Open the Terminal (it can be found in <code>Applications &gt; Accessories &gt; Terminal</code>)</li>
+<li><p>Type the following in the terminal: </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">yum install mod_dav_svn subversion
+</code></pre></div>
+<p>This tells CentOS to use its package manager to pull down the subversion module for Apache and the subversion binaries itself. <strong>NOTE: </strong>A nice feature here is that CentOS knows that <code>mod_dav_svn</code> requires Apache, and so it’s going to install Apache for us as well. Very kind!</p></li>
 </ul>
 
-<h3 id="creating-directories-for-subversion">Creating Directories for Subversion</h3>
+<h3>Creating Directories for Subversion</h3>
+
 <p>We need to give the subversion repositories a place to live, and we want to provide a common directory for subversion authentication.</p>
 
 <p>In the terminal, type the following:</p>
-
-<p><code>
-mkdir /var/www/svn
+<div class="highlight"><pre><code class="language-text" data-lang="text">mkdir /var/www/svn
 mkdir /var/www/svn/repositories
 mkdir /var/www/svn/auth
-</code></p>
-
+</code></pre></div>
 <p>This will create the Subversion folder that lives within Apache’s www directory.</p>
 
-<h3 id="create-local-user-accounts">Create Local User Accounts</h3>
+<h3>Create Local User Accounts</h3>
+
 <p>These accounts are separate from operating system accounts – they’ll apply only to Apache via the configuration files we’ll be setting up soon. <strong>NOTE:</strong> These user accounts will apply across multiple repositories if we’d like them to; think of them as “subversion-wide” user accounts.</p>
 
 <p>We’ll create two test users by running the following via the terminal:</p>
-
-<p><code>
-htpasswd -csb /var/www/svn/auth/svn.htpasswd svnuser1 passw0rd1
+<div class="highlight"><pre><code class="language-text" data-lang="text">htpasswd -csb /var/www/svn/auth/svn.htpasswd svnuser1 passw0rd1
 htpasswd -sb /var/www/svn/auth/svn.htpasswd svnuser2 passw0rd2
-</code></p>
-
+</code></pre></div>
 <p><strong>NOTE:</strong> Leave off the <code>-c</code> parameter from the second line, or you’ll create a completely new file, erasing your svnuser1 account!</p>
 
 <p>This creates the credentials for both users in the svn.htpasswd file. <code>–c</code> is the command to create a new file, <code>–s</code> forces SHA encryption of the password, and <code>–b</code> lets us pass the password via the command line (otherwise, it would have prompted us one at a time).</p>
 
-<h3 id="creating-our-first-repository">Creating our First Repository</h3>
+<h3>Creating our First Repository</h3>
+
 <p>We’ll create a repository called TestProjectRepo under our repositories directory that we’ve created by running the following on the terminal:</p>
-
-<pre><code>svnadmin create /var/www/svn/repositories/TestProjectRepo
-</code></pre>
-
+<div class="highlight"><pre><code class="language-text" data-lang="text">svnadmin create /var/www/svn/repositories/TestProjectRepo
+</code></pre></div>
 <p>That’s it! We’ve created the repository. Pretty simple, huh?</p>
 
-<h3 id="granting-apache-ownership-of-the-repository-folder">Granting Apache Ownership of the Repository Folder</h3>
+<h3>Granting Apache Ownership of the Repository Folder</h3>
+
 <p>Apache installs its own user account when setting itself up. The user, of course, is “apache”, and a group called “apache” now exists as well.</p>
 
 <p>Run the following command in the terminal to grant apache the access it needs:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">chown -R apache:apache /var/www/svn/repositories/TestProjectRepo
+</code></pre></div>
+<h3>Editing the Apache Configuration to View our Repository</h3>
 
-<pre><code>chown -R apache:apache /var/www/svn/repositories/TestProjectRepo
-</code></pre>
-
-<h3 id="editing-the-apache-configuration-to-view-our-repository">Editing the Apache Configuration to View our Repository</h3>
 <p>First, we’ll need to create configuration file. To do this by creating and opening a blank file, type the following into your terminal:</p>
-
-<pre><code>gedit /etc/httpd/conf.d/svn.conf
-</code></pre>
-
+<div class="highlight"><pre><code class="language-text" data-lang="text">gedit /etc/httpd/conf.d/svn.conf
+</code></pre></div>
 <p>This brings up gedit, a nice graphical text editor (<strong>Nerd note</strong>: I can feel the Linux pros glaring at me for not suggesting that we use “vi”.) </p>
 
 <p>Enter the following into the text file:</p>
-
-<p>```
-&lt;Location /svn&gt;
+<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;Location /svn&gt;
     DAV svn
     SVNListParentPath on
-    SVNParentPath /var/www/svn/repositories/</p>
+    SVNParentPath /var/www/svn/repositories/
 
-<pre><code>AuthType Basic
-AuthName “TestProject Repository Site”
-AuthUserFile /var/www/svn/auth/svn.htpasswd
-Require valid-user
-</code></pre>
-<p>&lt;/Location&gt;
-```</p>
-
+    AuthType Basic
+    AuthName “TestProject Repository Site”
+    AuthUserFile /var/www/svn/auth/svn.htpasswd
+    Require valid-user
+&lt;/Location&gt;
+</code></pre></div>
 <p>Save the file. This text does the following:</p>
 
 <ul>
-  <li><code>&lt;Location /svn&gt;</code>: Tells apache that off of the main URL, the virtual directory will be “/svn”. (so if apache is hosting a web site at www.myreposite.com, our app will be located at www.myreposite.com/svn)</li>
-  <li><code>DAV svn</code>: Tells apache we’ll be using the <code>mod_dav_svn</code> module</li>
-  <li><code>SVNListParentPath on</code>: the location of our repositories on the actual server</li>
-  <li><code>AuthType Basic</code>: Configures basic authentication (which is the type of auth that our basic file setup is using)</li>
-  <li><code>AuthName “TestProject Repository Site”</code>: Defines the Text that will show up when the user is prompted for a username and password</li>
-  <li><code>AuthUserFile /var/www/svn/auth/svn.htpasswd</code>: This is the reference to the file we created that holds the basic passwords</li>
-  <li><code>Require valid-user</code>: This states that for this directory, Apache will deny anyone who doesn’t login as a user that is listed in our auth file.</li>
+<li><code>&lt;Location /svn&gt;</code>: Tells apache that off of the main URL, the virtual directory will be “/svn”. (so if apache is hosting a web site at www.myreposite.com, our app will be located at www.myreposite.com/svn)</li>
+<li><code>DAV svn</code>: Tells apache we’ll be using the <code>mod_dav_svn</code> module</li>
+<li><code>SVNListParentPath on</code>: the location of our repositories on the actual server</li>
+<li><code>AuthType Basic</code>: Configures basic authentication (which is the type of auth that our basic file setup is using)</li>
+<li><code>AuthName “TestProject Repository Site”</code>: Defines the Text that will show up when the user is prompted for a username and password</li>
+<li><code>AuthUserFile /var/www/svn/auth/svn.htpasswd</code>: This is the reference to the file we created that holds the basic passwords</li>
+<li><code>Require valid-user</code>: This states that for this directory, Apache will deny anyone who doesn’t login as a user that is listed in our auth file.</li>
 </ul>
 
 <p>We need to restart the server for these changes to take effect. To do this, enter the following into the terminal:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">/etc/init.d/httpd restart
+</code></pre></div>
+<h3>Seeing it in Action</h3>
 
-<pre><code>/etc/init.d/httpd restart
-</code></pre>
-
-<h3 id="seeing-it-in-action">Seeing it in Action</h3>
 <p>Since the default configuration for apache is to host web site’s on port 80, you should be able to point a web browser on another machine to your subversion server’s web site via its IP address and get the result.</p>
 
 <p>I didn’t know what the IP address was for my subversion server, so I typed <code>ifconfig</code> into the terminal to get it. I saw that my <code>inet addr</code> for my connection <code>eth0</code> is <code>10.0.0.15</code>, and I know that the site is hosted on port <code>80</code> by default (which I don’t have to enter into my web browser because it knows this), and I know that the virtual directory is /svn, so I type the following into my web browser:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">http://10.0.0.15/svn/
+</code></pre></div>
+<p>…and lo &amp; behold, I’m greeted with a password prompt! I enter one of our pre-defined usernames and passwords, I’m greeted with the following in my web browser:</p>
 
-<pre><code>http://10.0.0.15/svn/ …and lo &amp;amp; behold, I’m greeted with a password prompt! I enter one of our pre-defined usernames and passwords, I’m greeted with the following in my web browser:
-</code></pre>
-
-<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/09-252520-252520SVN-252520on-252520Apache_thumb-25255B1-25255D.png" alt="SVN Repository working with a list of repositories" /></p>
+<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/09-252520-252520SVN-252520on-252520Apache_thumb-25255B1-25255D.png" alt="SVN Repository working with a list of repositories"></p>
 
 <p>Great – I can see my repository! </p>
 
 <p>Now, bear in mind, this is an empty repository, so clicking on it won’t give you the satisfaction of seeing any project files. But don’t worry, we’ll be taking care of that next.</p>
 
-<h3 id="starting-apache-upon-system-startup">Starting Apache Upon System Startup</h3>
+<h3>Starting Apache Upon System Startup</h3>
+
 <p>For use multiple times, it will likely make sense to have Apache start up with the system.</p>
 
 <p>On the Centos VM command line, run the collowing:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">chkconfig httpd on
+</code></pre></div>
+<p>That&#39;s it; the server will start at boot.</p>
 
-<pre><code>chkconfig httpd on
-</code></pre>
+<h3>Feedback Welcome!</h3>
 
-<p>That’s it; the server will start at boot.</p>
+<p>I&#39;d love to hear any comments on this series. Find it useful? Think there&#39;s a better way to implement the technique or something I should have mentioned? Please drop a line in the comments to help me improve the series!</p>
 
-<h3 id="feedback-welcome">Feedback Welcome!</h3>
-<p>I’d love to hear any comments on this series. Find it useful? Think there’s a better way to implement the technique or something I should have mentioned? Please drop a line in the comments to help me improve the series!
-###References
-Some of the great resources that I pulled this information from:</p>
+<h3>References</h3>
+
+<p>Some of the great resources that I pulled this information from:</p>
 
 <ul>
-  <li><a href="http://wiki.centos.org/HowTos/Subversion">HowTos/Subversion</a> [<a href="wiki.centos.or">CentOS Wiki</a>]</li>
-  <li><a href="http://www.sohailriaz.com/how-to-install-subversion-with-trac-on-centos-5-x/">How To Install Subversion with TRAC on CentOS 5.x</a> [<a href="http://www.sohailriaz.com/">Sohail Riaz, Linux and Open Source Blog</a>]</li>
-  <li><a href="http://www.howtowebdev.com/centos-5-and-auto-starting-apache-httpd-and-samba/">CentOS 5 and Auto Starting Apache httpd and Samba</a> [<a href="http://www.howtowebdev.com/">How To Web Dev</a>]</li>
+<li><a href="http://wiki.centos.org/HowTos/Subversion">HowTos/Subversion</a> [<a href="wiki.centos.or">CentOS Wiki</a>]</li>
+<li><a href="http://www.sohailriaz.com/how-to-install-subversion-with-trac-on-centos-5-x/">How To Install Subversion with TRAC on CentOS 5.x</a> [<a href="http://www.sohailriaz.com/">Sohail Riaz, Linux and Open Source Blog</a>]</li>
+<li><a href="http://www.howtowebdev.com/centos-5-and-auto-starting-apache-httpd-and-samba/">CentOS 5 and Auto Starting Apache httpd and Samba</a> [<a href="http://www.howtowebdev.com/">How To Web Dev</a>]</li>
 </ul>
 
 <table>
@@ -141,3 +177,24 @@ Some of the great resources that I pulled this information from:</p>
 <td><a href="http://skwordpresstoghost.azurewebsites.net/?p=601">Part 4b: Securing Subversion's Connection via TLS &rarr;</a></td>
 </tr>
 </table>
+</div>
+</div>
+
+				
+				<footer>
+					&copy; SeanKilleen.com
+					 
+						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
+					
+				</footer>
+			</div>
+		
+		</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

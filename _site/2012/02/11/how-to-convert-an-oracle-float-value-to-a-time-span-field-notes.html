@@ -1,34 +1,100 @@
-<h3 id="the-problem">The Problem</h3>
-<p>We have a bunch of “durations” stored in Oracle as <code>FLOAT</code> datatypes (as day intervals, meaning they are an interval that includes days).</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title> How To: Convert an Oracle FLOAT Value to A Time Span [Field Notes] </title>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<p>This makes sense. from a database storage perspective. However, I didn’t know how to get those values into the more human-comprehensible hh:mm:ss format.</p>
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+        
+        <!-- Bootstrap core CSS -->
+    	<link href="/css/bootstrap.min.css" rel="stylesheet">
 
-<h3 id="the-solution">The Solution</h3>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+		<div class="container">
+
+			<div class="col-sm-3">
+				<h1>SeanKilleen.com</h1>
+				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
+
+				<strong>navigation</strong><br />
+				<a href="/">home</a> <br />
+				
+					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
+				
+					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
+				
+				
+				
+				<div id="about">
+					<strong>about</strong><br />
+					Thoughts on life and bytes from a digital twenty-something.
+				</div>
+				
+			</div>
+
+			<div class="col-sm-8 col-offset-1">
+				
+				<h1>How To: Convert an Oracle FLOAT Value to A Time Span [Field Notes]</h1>
+<span class="time">11 Feb 2012</span>
+
+<div class="content">
+	<div class="post"><h3>The Problem</h3>
+
+<p>We have a bunch of &quot;durations&quot; stored in Oracle as <code>FLOAT</code> datatypes (as day intervals, meaning they are an interval that includes days).</p>
+
+<p>This makes sense. from a database storage perspective. However, I didn&#39;t know how to get those values into the more human-comprehensible hh:mm:ss format.</p>
+
+<h3>The Solution</h3>
+
 <p>An Oracle function called <code>NUMTODSINTERVAL</code> is exactly what we need here. As the name suggests, it converts a number to a DateStamp interval (which is to say, interprets a number as a time span). We can tell it the type of time span (days in this case), and then extract the appropriate time values.</p>
 
-<p><strong>Syntax:</strong> <code>NUMTODSINTERVAL ([yourvalue], '[typeofinterval]')</code></p>
+<p><strong>Syntax:</strong> <code>NUMTODSINTERVAL ([yourvalue], &#39;[typeofinterval]&#39;)</code></p>
 
-<p><strong>Basic Example:</strong> <code>NUMTODSINTERVAL (tablename.durationfield, 'DAY')</code></p>
+<p><strong>Basic Example:</strong> <code>NUMTODSINTERVAL (tablename.durationfield, &#39;DAY&#39;)</code></p>
 
-<p>The above example takes my field named ‘durationfield’ and tells oracle it’s a DAY interval. From here, we use the <code>EXTRACT</code> function to get what we want.</p>
+<p>The above example takes my field named &#39;durationfield&#39; and tells oracle it&#39;s a DAY interval. From here, we use the <code>EXTRACT</code> function to get what we want.</p>
 
-<h3 id="solution-examples">Solution Examples</h3>
-<p>####Gets the number of hours (and converts all day values to 24 hours each):</p>
+<h3>Solution Examples</h3>
 
-<p><code>SQL
-EXTRACT(DAY FROM NUMTODSINTERVAL(TABLENAME.DURATIONFIELD, 'DAY')) * 24
-+ EXTRACT(HOUR FROM NUMTODSINTERVAL( TABLENAME.DURATIONFIELD , 'DAY')) 
+<h4>Gets the number of hours (and converts all day values to 24 hours each):</h4>
+<div class="highlight"><pre><code class="language-SQL" data-lang="SQL">EXTRACT(DAY FROM NUMTODSINTERVAL(TABLENAME.DURATIONFIELD, &#39;DAY&#39;)) * 24
++ EXTRACT(HOUR FROM NUMTODSINTERVAL( TABLENAME.DURATIONFIELD , &#39;DAY&#39;)) 
 AS DURATIONHOURS
-</code></p>
-
-<h4 id="gets-the-minutes-in-the-same-fashion">Gets the minutes in the same fashion:</h4>
-<p><code>SQL
-EXTRACT(MINUTE FROM NUMTODSINTERVAL( TABLENAME.DURATIONFIELD , 'DAY'))                                                                   
+</code></pre></div>
+<h4>Gets the minutes in the same fashion:</h4>
+<div class="highlight"><pre><code class="language-SQL" data-lang="SQL">EXTRACT(MINUTE FROM NUMTODSINTERVAL( TABLENAME.DURATIONFIELD , &#39;DAY&#39;))                                                                   
 AS DURATIONMINUTES
-</code></p>
-
-<h4 id="gets-the-seconds-in-the-same-fashion">Gets the seconds in the same fashion:</h4>
-<p><code>SQL
-EXTRACT(SECOND FROM NUMTODSINTERVAL( TABLENAME.DURATIONFIELD, 'DAY'))                                                                  
+</code></pre></div>
+<h4>Gets the seconds in the same fashion:</h4>
+<div class="highlight"><pre><code class="language-SQL" data-lang="SQL">EXTRACT(SECOND FROM NUMTODSINTERVAL( TABLENAME.DURATIONFIELD, &#39;DAY&#39;))                                                                  
 AS DURATIONSECONDS
-</code></p>
+</code></pre></div></div>
+</div>
+
+				
+				<footer>
+					&copy; SeanKilleen.com
+					 
+						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
+					
+				</footer>
+			</div>
+		
+		</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

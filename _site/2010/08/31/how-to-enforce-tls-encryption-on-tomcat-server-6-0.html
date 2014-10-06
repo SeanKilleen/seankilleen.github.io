@@ -1,4 +1,53 @@
-<p><em>[<strong>Note</strong>: I should begin this post by saying that I’m no expert on SSL or TLS encryption or the “handshakes” and negotiations that browsers and servers go through when giving the user a connection to secure material. Feel free to jump in on the comments if I get the terminology or methodology wrong.]</em></p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title> How To: Enforce TLS Encryption on Tomcat Server 6.0 </title>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+        
+        <!-- Bootstrap core CSS -->
+    	<link href="/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+		<div class="container">
+
+			<div class="col-sm-3">
+				<h1>SeanKilleen.com</h1>
+				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
+
+				<strong>navigation</strong><br />
+				<a href="/">home</a> <br />
+				
+					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
+				
+					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
+				
+				
+				
+				<div id="about">
+					<strong>about</strong><br />
+					Thoughts on life and bytes from a digital twenty-something.
+				</div>
+				
+			</div>
+
+			<div class="col-sm-8 col-offset-1">
+				
+				<h1>How To: Enforce TLS Encryption on Tomcat Server 6.0</h1>
+<span class="time">31 Aug 2010</span>
+
+<div class="content">
+	<div class="post"><p><em>[<strong>Note</strong>: I should begin this post by saying that I’m no expert on SSL or TLS encryption or the “handshakes” and negotiations that browsers and servers go through when giving the user a connection to secure material. Feel free to jump in on the comments if I get the terminology or methodology wrong.]</em></p>
 
 <p>As far as I understand it, SSL is pretty secure, but <a href="http://en.wikipedia.org/wiki/TLSv1">TLS v1</a> (its successor) is the max you can get on a standard web browser for encrypted traffic between the browser and the server today.</p>
 
@@ -6,30 +55,50 @@
 
 <p>However, this wasn’t going to fly for my client — an institution with strict security rules for its web applications — which, really, is a good thing. If TLSv1 wasn’t enabled properly, the site shouldn’t display, even if SSL is enabled.</p>
 
-<p>I looked around for how to do this, and to my surprise, it was incredibly difficult to find. After a great deal of Google searches and frustration, I finally found a post  on the old, archived Tomcat developers listserv/group. <sup>1</sup> It turns out that there’s another attribute you can add to your server connector in server.xml — the “protocols” attribute (standing for “secure” I believe; not a pluralization)</p>
+<p>I looked around for how to do this, and to my surprise, it was incredibly difficult to find. After a great deal of Google searches and frustration, I finally found a post &nbsp;on the old, archived Tomcat developers listserv/group. <sup>1</sup> It turns out that there’s another attribute you can add to your server connector in server.xml — the “protocols” attribute (standing for &quot;secure&quot; I believe; not a pluralization)</p>
 
 <p>So, in short, a Tomcat 6.0 connector in server.xml that enforces TLS looks something like the connector below (I’ve changed the password to a dummy, of course):</p>
-
-<pre><code>&lt;Connector
-	port="8443"
-	protocol="HTTP/1.1"
-	protocols="TLSv1"
-	SSLEnabled="true"
-	enableLookups="false"
-	acceptCount="100"
-	maxThreads="200"
-	scheme="https"
-	keystoreFile="d:keystore.keystore"
-	keystorePass="changeme"
-	secure="true"
-	clientAuth="false"
-	sslProtocol="TLSv1"
-	cipher="AES"
-	allowUnsafeLegacyRenegotiation="false"
-    &gt;
-</code></pre>
-
+<div class="highlight"><pre><code class="language-xml" data-lang="xml">    &lt;Connector
+        port=&quot;8443&quot;
+        protocol=&quot;HTTP/1.1&quot;
+        protocols=&quot;TLSv1&quot;
+        SSLEnabled=&quot;true&quot;
+        enableLookups=&quot;false&quot;
+        acceptCount=&quot;100&quot;
+        maxThreads=&quot;200&quot;
+        scheme=&quot;https&quot;
+        keystoreFile=&quot;d:keystore.keystore&quot;
+        keystorePass=&quot;changeme&quot;
+        secure=&quot;true&quot;
+        clientAuth=&quot;false&quot;
+        sslProtocol=&quot;TLSv1&quot;
+        cipher=&quot;AES&quot;
+        allowUnsafeLegacyRenegotiation=&quot;false&quot;
+        &gt;
+</code></pre></div>
 <p>I wanted to provide this bit of knowledge as a public service. Would love to hear about your own experiences enforcing TLS or security in Tomcat and other web servers in the comments! Please let me know if you’ve found this useful.</p>
 
-<h4 id="notes">Notes</h4>
-<p><sup>1</sup> Unfortunately, I’m unable to find the link to this post. If I ever come across it, I’ll update the blog accordingly. Feel free to point me to it in the comments.</p>
+<h4>Notes</h4>
+
+<p><sup>1</sup> Unfortunately, I&#39;m unable to find the link to this post. If I ever come across it, I&#39;ll update the blog accordingly. Feel free to point me to it in the comments.</p>
+</div>
+</div>
+
+				
+				<footer>
+					&copy; SeanKilleen.com
+					 
+						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
+					
+				</footer>
+			</div>
+		
+		</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,25 +1,96 @@
-<h3 id="problem">Problem</h3>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title> How to: Fix error 0x80041010 on Windows 8.1 + Hyper-V </title>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+        
+        <!-- Bootstrap core CSS -->
+    	<link href="/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+		<div class="container">
+
+			<div class="col-sm-3">
+				<h1>SeanKilleen.com</h1>
+				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
+
+				<strong>navigation</strong><br />
+				<a href="/">home</a> <br />
+				
+					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
+				
+					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
+				
+				
+				
+				<div id="about">
+					<strong>about</strong><br />
+					Thoughts on life and bytes from a digital twenty-something.
+				</div>
+				
+			</div>
+
+			<div class="col-sm-8 col-offset-1">
+				
+				<h1>How to: Fix error 0x80041010 on Windows 8.1 + Hyper-V</h1>
+<span class="time">24 Nov 2013</span>
+
+<div class="content">
+	<div class="post"><h3>Problem</h3>
 
 <p>After upgrading to Windows 8.1 Pro recently, I opened my Event Log to show a <strong><em>TON</em></strong> of errors from WMI. Event showed as an error and had the following text:</p>
 
 <blockquote>
-  <p>Event filter with query “SELECT * FROM __InstanceOperationEvent WITHIN 10 WHERE (TargetInstance ISA ‘Msvm_ExternalEthernetPort’) OR (TargetInstance ISA ‘Msvm_VmLANEndpoint’) OR (TargetInstance ISA ‘Msvm_SyntheticEthernetPort’) OR (TargetInstance ISA ‘Msvm_ComputerSystem’) OR (TargetInstance ISA ‘Msvm_VLANEndpointSettingData’)” could not be reactivated in namespace “//./root/virtualization” because of error 0x80041010. Events cannot be delivered through this filter until the problem is corrected.</p>
+<p>Event filter with query &quot;SELECT * FROM _<em>InstanceOperationEvent WITHIN 10 WHERE (TargetInstance ISA &#39;Msvm</em>ExternalEthernetPort&#39;) OR (TargetInstance ISA &#39;Msvm<em>VmLANEndpoint&#39;) OR (TargetInstance ISA &#39;Msvm</em>SyntheticEthernetPort&#39;) OR (TargetInstance ISA &#39;Msvm<em>ComputerSystem&#39;) OR (TargetInstance ISA &#39;Msvm</em>VLANEndpointSettingData&#39;)&quot; could not be reactivated in namespace &quot;//./root/virtualization&quot; because of error 0x80041010. Events cannot be delivered through this filter until the problem is corrected.</p>
 </blockquote>
 
-<h3 id="solution">Solution</h3>
-<p>I did a little searching around and <a href="http://social.technet.microsoft.com/Forums/windows/en-US/4eca1f42-8630-48b4-85fa-e9569445d832/problem-with-cpu-load-and-wmi-errors-when-hyperv-is-installed">found this link</a> which suggested removing the network adapter and installing 8.1’s default network adapter.</p>
+<h3>Solution</h3>
+
+<p>I did a little searching around and <a href="http://social.technet.microsoft.com/Forums/windows/en-US/4eca1f42-8630-48b4-85fa-e9569445d832/problem-with-cpu-load-and-wmi-errors-when-hyperv-is-installed">found this link</a> which suggested removing the network adapter and installing 8.1&#39;s default network adapter.</p>
 
 <p>However, I decided to see if an update to the latest drivers would do the trick.</p>
 
-<p>I have the P8Z68 V/Pro motherboard (which I love), which comes with an Intel 82579V card. I hopped over to the <a href="https://downloadcenter.intel.com/Default.aspx?lang=eng">Intel Download Center</a> and found the Windows 8.1 Network Adapter Driver v18.7 (<a href="https://downloadcenter.intel.com/confirm.aspx?httpDown=http://downloadmirror.intel.com/23071/eng/PROWinx64.exe&amp;lang=eng&amp;Dwnldid=23071&amp;DownloadType=Drivers&amp;OSFullname=Windows+8*">direct link here</a>).</p>
+<p>I have the P8Z68 V/Pro motherboard (which I love), which comes with an Intel 82579V card. I hopped over to the <a href="https://downloadcenter.intel.com/Default.aspx?lang=eng">Intel Download Center</a> and found the Windows 8.1 Network Adapter Driver v18.7 (<a href="https://downloadcenter.intel.com/confirm.aspx?httpDown=http://downloadmirror.intel.com/23071/eng/PROWinx64.exe&amp;amp;lang=eng&amp;amp;Dwnldid=23071&amp;amp;DownloadType=Drivers&amp;amp;OSFullname=Windows+8*">direct link here</a>).</p>
 
-<p>Sure enough, installing the updated version of the adapter was enough – no need to replace it with the generic Windows 8.1 adapter. The errors have stopped and I’m seeing a performance gain as well. </p>
+<p>Sure enough, installing the updated version of the adapter was enough -- no need to replace it with the generic Windows 8.1 adapter. The errors have stopped and I&#39;m seeing a performance gain as well. </p>
 
 <p>If you were experiencing the same issue, I hope this helps! Feel free to let me know how you fared in the comments.</p>
 
-<h3 id="references">References</h3>
+<h3>References</h3>
 
 <ul>
-  <li><a href="http://social.technet.microsoft.com/Forums/windows/en-US/4eca1f42-8630-48b4-85fa-e9569445d832/problem-with-cpu-load-and-wmi-errors-when-hyperv-is-installed" target="_blank">Problem with CPU load and WMI errors when Hyper-V is Installed?</a> [TechNet]</li>
-  <li><a href="https://downloadcenter.intel.com/confirm.aspx?httpDown=http://downloadmirror.intel.com/23071/eng/PROWinx64.exe&amp;lang=eng&amp;Dwnldid=23071&amp;DownloadType=Drivers&amp;OSFullname=Windows+8*" target="_blank">Direct Link for Intel Network Adapter for Windows 8.1 v18.7</a> [<a href="https://downloadcenter.intel.com/Default.aspx?lang=eng" target="_blank">Intel Download Center</a>]</li>
+<li><a href="http://social.technet.microsoft.com/Forums/windows/en-US/4eca1f42-8630-48b4-85fa-e9569445d832/problem-with-cpu-load-and-wmi-errors-when-hyperv-is-installed" target="_blank">Problem with CPU load and WMI errors when Hyper-V is Installed?</a> [TechNet]</li>
+<li><a href="https://downloadcenter.intel.com/confirm.aspx?httpDown=http://downloadmirror.intel.com/23071/eng/PROWinx64.exe&amp;lang=eng&amp;Dwnldid=23071&amp;DownloadType=Drivers&amp;OSFullname=Windows+8*" target="_blank">Direct Link for Intel Network Adapter for Windows 8.1 v18.7</a> [<a href="https://downloadcenter.intel.com/Default.aspx?lang=eng" target="_blank">Intel Download Center</a>]</li>
 </ul>
+</div>
+</div>
+
+				
+				<footer>
+					&copy; SeanKilleen.com
+					 
+						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
+					
+				</footer>
+			</div>
+		
+		</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,20 +1,87 @@
-<h3 id="problem">Problem</h3>
-<p>VMs that leave ISOs mounted cause problems. I’d like to find all the VMs that have CD-ROM drives loaded with ISOs, look over that list, and then remove them if necessary.</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title> How To: Use PowerCLI to find (and disconnect) all CD Drives on VMs [Field Notes] </title>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<h3 id="solution-note-update">Solution (NOTE: Update)</h3>
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+        
+        <!-- Bootstrap core CSS -->
+    	<link href="/css/bootstrap.min.css" rel="stylesheet">
 
-<p><strong>The first solution I provided here wasn’t that great, so I’m updating this post.</strong> The original contents have been changed because they previously would disconnect the entire CD-ROM drive, vs. just unmounting the ISO. As you can imagine, pulling the equivalent of ripping a CD-ROM drive out while a machine is running can cause some interesting behavior. The solution below outlines a much better way to do this.</p>
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+		<div class="container">
+
+			<div class="col-sm-3">
+				<h1>SeanKilleen.com</h1>
+				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
+
+				<strong>navigation</strong><br />
+				<a href="/">home</a> <br />
+				
+					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
+				
+					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
+				
+				
+				
+				<div id="about">
+					<strong>about</strong><br />
+					Thoughts on life and bytes from a digital twenty-something.
+				</div>
+				
+			</div>
+
+			<div class="col-sm-8 col-offset-1">
+				
+				<h1>How To: Use PowerCLI to find (and disconnect) all CD Drives on VMs [Field Notes]</h1>
+<span class="time">28 Jan 2013</span>
+
+<div class="content">
+	<div class="post"><h3>Problem</h3>
+
+<p>VMs that leave ISOs mounted cause problems. I&#39;d like to find all the VMs that have CD-ROM drives loaded with ISOs, look over that list, and then remove them if necessary.</p>
+
+<h3>Solution (NOTE: Update)</h3>
+
+<p><strong>The first solution I provided here wasn&#39;t that great, so I&#39;m updating this post.</strong> The original contents have been changed because they previously would disconnect the entire CD-ROM drive, vs. just unmounting the ISO. As you can imagine, pulling the equivalent of ripping a CD-ROM drive out while a machine is running can cause some interesting behavior. The solution below outlines a much better way to do this.</p>
 
 <p>Two one-line PowerCLI scripts will help us with this.</p>
 
 <p>Firstly, to search for all Connected CD-ROMs for all VMs:</p>
-
-<pre><code>Get-VM | Where-Object {$_.PowerState –eq “PoweredOn”} | Get-CDDrive | FT Parent, IsoPath
-</code></pre>
-
-<p>And as long as there aren’t any you need to keep up, you can just select them all and then set the state to “No Media” for each CD-Drive:</p>
-
-<pre><code>Get-VM | Where-Object {$_.PowerState –eq “PoweredOn”} | Get-CDDrive | Set-CDDrive -NoMedia -Confirm:$False
-</code></pre>
-
+<div class="highlight"><pre><code class="language-text" data-lang="text">Get-VM | Where-Object {$_.PowerState –eq “PoweredOn”} | Get-CDDrive | FT Parent, IsoPath
+</code></pre></div>
+<p>And as long as there aren&#39;t any you need to keep up, you can just select them all and then set the state to &quot;No Media&quot; for each CD-Drive:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">Get-VM | Where-Object {$_.PowerState –eq “PoweredOn”} | Get-CDDrive | Set-CDDrive -NoMedia -Confirm:$False
+</code></pre></div>
 <p>Note the <code>-Confirm:$False</code> to allow it to just proceed with what it needs to do.</p>
+</div>
+</div>
+
+				
+				<footer>
+					&copy; SeanKilleen.com
+					 
+						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
+					
+				</footer>
+			</div>
+		
+		</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

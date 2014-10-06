@@ -1,107 +1,180 @@
-<h3 id="problem">Problem</h3>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title> Crystal Reports: Avoiding Array Size Limits Using Concatenation [Field Notes] </title>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+        
+        <!-- Bootstrap core CSS -->
+    	<link href="/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+		<div class="container">
+
+			<div class="col-sm-3">
+				<h1>SeanKilleen.com</h1>
+				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
+
+				<strong>navigation</strong><br />
+				<a href="/">home</a> <br />
+				
+					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
+				
+					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
+				
+				
+				
+				<div id="about">
+					<strong>about</strong><br />
+					Thoughts on life and bytes from a digital twenty-something.
+				</div>
+				
+			</div>
+
+			<div class="col-sm-8 col-offset-1">
+				
+				<h1>Crystal Reports: Avoiding Array Size Limits Using Concatenation [Field Notes]</h1>
+<span class="time">18 Jul 2012</span>
+
+<div class="content">
+	<div class="post"><h3>Problem</h3>
+
 <p>I have a Crystal Report that needs to pass a list of items to a sub-report, so that the sub-report can find additional items without duplicating items from the master report.</p>
 
-<p>Unfortunately, often times I’m dealing with a large amount of data. Crystal Reports has the following (incredibly frustrating) limitations:</p>
+<p>Unfortunately, often times I&#39;m dealing with a large amount of data. Crystal Reports has the following (incredibly frustrating) limitations:</p>
 
 <ul>
-  <li>Arrays can only hold 1,000 items</li>
-  <li>Strings can only hold 255 characters</li>
+<li>Arrays can only hold 1,000 items</li>
+<li>Strings can only hold 255 characters</li>
 </ul>
 
-<h3 id="solution">Solution</h3>
-<p>We’re going to use an array of concatenated strings to do this.</p>
+<h3>Solution</h3>
 
-<h4 id="step-1-formula-to-createreset-the-array">Step 1: Formula to Create/Reset the array</h4>
+<p>We&#39;re going to use an array of concatenated strings to do this.</p>
+
+<h4>Step 1: Formula to Create/Reset the array</h4>
+
 <p>Create a formula in crystal. I recommend using the format <code>array_[ArrayName]_[ArrayAction]</code>. In our case, this would be <code>array_ArrayName_CreateOrReset</code>.</p>
-
-<p>```
-//Reference the shared array and the temporary string
+<div class="highlight"><pre><code class="language-text" data-lang="text">//Reference the shared array and the temporary string
 Shared StringVar Array array_ArrayName;
-Shared StringVar itemsList;</p>
+Shared StringVar itemsList;
 
-<p>//”Re-Dim” the array (clear it) and reset the string
+//&quot;Re-Dim&quot; the array (clear it) and reset the string
 ReDim array_ArrayName[1];
-itemsList := “”;</p>
+itemsList := &quot;&quot;;
 
-<p>//returns true since formulas cannot return arrays
+//returns true since formulas cannot return arrays
 true;
-```</p>
+</code></pre></div>
+<h4>Step 2: Formula to Increment / add to the array</h4>
 
-<h4 id="step-2-formula-to-increment--add-to-the-array">Step 2: Formula to Increment / add to the array</h4>
-<p>Create a formula called <code>array_ArrayName_Increment</code>. This array concatenates a string until it’s too big and adds it to the array once it’s big enough.</p>
+<p>Create a formula called <code>array_ArrayName_Increment</code>. This array concatenates a string until it&#39;s too big and adds it to the array once it&#39;s big enough.</p>
 
-<p>In this formula, <code>{YourValue}</code> is the item that you’re looping through adding to the list. <strong>NOTE</strong>: For some reason, I couldn’t get Crystal to just end the if statement and execute the last line regardless, so I had to repeat it in an “else” statement. That’s gross; let me know if you know how to get around it.</p>
-
-<p>```
-//access shared array
+<p>In this formula, <code>{YourValue}</code> is the item that you&#39;re looping through adding to the list. <strong>NOTE</strong>: For some reason, I couldn&#39;t get Crystal to just end the if statement and execute the last line regardless, so I had to repeat it in an &quot;else&quot; statement. That&#39;s gross; let me know if you know how to get around it.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">//access shared array
 Shared StringVar Array array_ArrayName;
-Shared StringVar itemsList;</p>
+Shared StringVar itemsList;
 
-<p>//If the string is too big, add it to the array, reset the temporary string, and concatenate to the string
+//If the string is too big, add it to the array, reset the temporary string, and concatenate to the string
 if (length(itemsList) &gt; 235) then
-(</p>
+(
 
-<pre><code>//re-dim array to increase size without losing values
-Redim preserve array_ArrayName[Ubound(array_ArrayName) + 1];
+    //re-dim array to increase size without losing values
+    Redim preserve array_ArrayName[Ubound(array_ArrayName) + 1];
 
-//add the current text of the itemsList string to the array as one big chunk
-array_ArrayName[Ubound(array_ArrayName)] := itemsList;
+    //add the current text of the itemsList string to the array as one big chunk
+    array_ArrayName[Ubound(array_ArrayName)] := itemsList;
 
-//clear the temporary string
-itemsList :="";
+    //clear the temporary string
+    itemsList :=&quot;&quot;;
 
-//add your value to the string
-itemsList := itemsList + ", " + {YourValue}; ) else (
+    //add your value to the string
+    itemsList := itemsList + &quot;, &quot; + {YourValue};
+)
+else
+(
 
-//no addition to the array necessary; just add your value to the string
-itemsList := itemsList + ", " + {YourValue}; ) ``` ####Step 3: Formula to Display the Array Here, we output all the array values (our "list of big comma-separated lists"). This formula results in some extra commas and spaces, but I don't care about that because later we'll just be looking for values within this.
-</code></pre>
+    //no addition to the array necessary; just add your value to the string
+    itemsList := itemsList + &quot;, &quot; + {YourValue};
+)
+</code></pre></div>
+<h4>Step 3: Formula to Display the Array</h4>
 
-<p>The trick here is to remember that the last few items in the temporary string won’t be added to the array, so we need to include them specifically.</p>
+<p>Here, we output all the array values (our &quot;list of big comma-separated lists&quot;). This formula results in some extra commas and spaces, but I don&#39;t care about that because later we&#39;ll just be looking for values within this.</p>
 
-<p>```
-//reference shared array and temp item
+<p>The trick here is to remember that the last few items in the temporary string won&#39;t be added to the array, so we need to include them specifically.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">//reference shared array and temp item
 Shared StringVar Array array_ArrayName;
-Shared StringVar itemsList;</p>
+Shared StringVar itemsList;
 
-<p>//join all elements in the array together, comma-separated, plus the temporary items
-Join(array_ArrayName, “ “) + itemsList;
-```</p>
+//join all elements in the array together, comma-separated, plus the temporary items
+Join(array_ArrayName, &quot; &quot;) + itemsList;
+</code></pre></div>
+<h4>Step 4: Positioning the Formulas</h4>
 
-<h4 id="step-4-positioning-the-formulas">Step 4: Positioning the Formulas</h4>
 <ul>
-  <li>Insert the <code>CreateOrReset</code> formula in the group heading (or an additional, suppressed group heading)</li>
-  <li>Insert the increment formula in the details section (suppress if necessary)</li>
-  <li>To test, insert the display formula in the group footer. In reality, we won’t be “displaying” it in the classic sense, but rather passing it to the sub-report for futher analysis.</li>
+<li>Insert the <code>CreateOrReset</code> formula in the group heading (or an additional, suppressed group heading)</li>
+<li>Insert the increment formula in the details section (suppress if necessary)</li>
+<li>To test, insert the display formula in the group footer. In reality, we won&#39;t be &quot;displaying&quot; it in the classic sense, but rather passing it to the sub-report for futher analysis.</li>
 </ul>
 
-<h4 id="step-5-linking-the-array-to-the-sub-report">Step 5: Linking the Array to the sub-report</h4>
+<h4>Step 5: Linking the Array to the sub-report</h4>
+
 <ul>
-  <li>Create the sub-report to display your data (outside the scope of this topic)</li>
-  <li>Right-click on the sub-report and choose <code>Change Subreport Links</code></li>
-  <li>Move the array display formula into the <code>Field(s) to link to</code> box by clicking →.</li>
-  <li>Click OK.</li>
+<li>Create the sub-report to display your data (outside the scope of this topic)</li>
+<li>Right-click on the sub-report and choose <code>Change Subreport Links</code></li>
+<li>Move the array display formula into the <code>Field(s) to link to</code> box by clicking &rarr;.</li>
+<li>Click OK.</li>
 </ul>
 
-<h4 id="step-6-searching-the-array-items-in-the-sub-report">Step 6: Searching the Array items in the Sub-Report</h4>
-<ul>
-  <li>Open the sub-report.</li>
-  <li>Create a formula called <code>AlreadyInParentReport</code></li>
-  <li>The formula should look similar to the following:</li>
-</ul>
+<h4>Step 6: Searching the Array items in the Sub-Report</h4>
 
-<p><code>
-//if you find it then it's already in the parent; otherwise it's not
+<ul>
+<li>Open the sub-report.</li>
+<li>Create a formula called <code>AlreadyInParentReport</code></li>
+<li>The formula should look similar to the following:</li>
+</ul>
+<div class="highlight"><pre><code class="language-text" data-lang="text">//if you find it then it&#39;s already in the parent; otherwise it&#39;s not
 if (InStr({YourDisplayArrayParameterName}, {YourValue}) &gt; 0) 
 then true
 else false
-</code></p>
+</code></pre></div>
+<h4>Step 7: Excluding Duplicate items from the Sub-Report</h4>
 
-<h4 id="step-7-excluding-duplicate-items-from-the-sub-report">Step 7: Excluding Duplicate items from the Sub-Report</h4>
 <p>In your sub-report, In the Record selection, use the following line in addition to other constraints:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">{@AlreadyInParentReport} = false
+</code></pre></div>
+<h4>And We&#39;re Done!</h4>
 
-<pre><code>{@AlreadyInParentReport} = false
-</code></pre>
+<p>That&#39;s it. Now you should be able to do anything with those sub-report values (display them, count them, sum them, etc. etc.) and return that data to the parent report.</p>
+</div>
+</div>
 
-<h4 id="and-were-done">And We’re Done!</h4>
-<p>That’s it. Now you should be able to do anything with those sub-report values (display them, count them, sum them, etc. etc.) and return that data to the parent report.</p>
+				
+				<footer>
+					&copy; SeanKilleen.com
+					 
+						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
+					
+				</footer>
+			</div>
+		
+		</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

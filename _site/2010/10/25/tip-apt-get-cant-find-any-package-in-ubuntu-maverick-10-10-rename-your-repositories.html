@@ -1,42 +1,116 @@
-<p>It appears that the shipped version of Ubuntu Maverick 10.10 (at least the server version) comes with repository  server URLs that are incorrect – or at least non-functioning. I discovered this the hard way after much trial, error, and self-doubt. I hope the masses benefit from my suffering. :)</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title> Tip: apt-get can't find any package in Ubuntu Maverick 10.10? Rename Your Repositories. </title>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<h3 id="the-symptoms">The symptoms:</h3>
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+        
+        <!-- Bootstrap core CSS -->
+    	<link href="/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+		<div class="container">
+
+			<div class="col-sm-3">
+				<h1>SeanKilleen.com</h1>
+				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
+
+				<strong>navigation</strong><br />
+				<a href="/">home</a> <br />
+				
+					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
+				
+					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
+				
+				
+				
+				<div id="about">
+					<strong>about</strong><br />
+					Thoughts on life and bytes from a digital twenty-something.
+				</div>
+				
+			</div>
+
+			<div class="col-sm-8 col-offset-1">
+				
+				<h1>Tip: apt-get can't find any package in Ubuntu Maverick 10.10? Rename Your Repositories.</h1>
+<span class="time">25 Oct 2010</span>
+
+<div class="content">
+	<div class="post"><p>It appears that the shipped version of Ubuntu Maverick 10.10 (at least the server version) comes with repository &nbsp;server URLs that are incorrect -- or at least non-functioning. I discovered this the hard way after much trial, error, and self-doubt. I hope the masses benefit from my suffering. :)</p>
+
+<h3>The symptoms:</h3>
+
 <ul>
-  <li>Can connect to the network</li>
-  <li>Can run “sudo apt-get update”</li>
-  <li>Can run “sudo apt-get upgrade”</li>
-  <li>Cannot run “sudo apt-get install [package name]” for ANY package.</li>
+<li>Can connect to the network</li>
+<li>Can run &quot;sudo apt-get update&quot;</li>
+<li>Can run &quot;sudo apt-get upgrade&quot;</li>
+<li>Cannot run &quot;sudo apt-get install [package name]&quot; for ANY package.</li>
 </ul>
 
-<h3 id="the-solution">The Solution:</h3>
+<h3>The Solution:</h3>
+
 <ul>
-  <li>
-    <p>Open nano to edit the file:
-&gt;sudo nano /etc/apt/sources.list</p>
-  </li>
-  <li>Edit all “http://us.archive.ubuntu.com” to “http://archive.ubuntu.com”</li>
-  <li>Uncomment all the lines that start with “deb” or “deb-src” (if you know what you’re doing). <strong>NOTE:</strong> Make sure that the text starts the line (i.e. don’t leave a space – bad practice).</li>
-  <li>
-    <p>CTRL + X, Y to allow overwrite, enter to save to the current file name.</p>
-  </li>
-  <li>
-    <p>Update packages:
-&gt; sudo apt-get update</p>
-  </li>
-  <li>
-    <p>Upgrade:
-&gt; sudo apt-get upgrade</p>
-  </li>
-  <li>Badda-bing, it works!</li>
+<li><p>Open nano to edit the file:</p>
+
+<blockquote>
+<p>sudo nano /etc/apt/sources.list</p>
+</blockquote></li>
+<li><p>Edit all &quot;http://us.archive.ubuntu.com&quot; to &quot;http://archive.ubuntu.com&quot;</p></li>
+<li><p>Uncomment all the lines that start with &quot;deb&quot; or &quot;deb-src&quot; (if you know what you&#39;re doing). <strong>NOTE:</strong> Make sure that the text starts the line (i.e. don&#39;t leave a space -- bad practice).</p></li>
+<li><p>CTRL + X, Y to allow overwrite, enter to save to the current file name.</p></li>
+<li><p>Update packages:</p>
+
+<blockquote>
+<p>sudo apt-get update</p>
+</blockquote></li>
+<li><p>Upgrade:</p>
+
+<blockquote>
+<p>sudo apt-get upgrade</p>
+</blockquote></li>
+<li><p>Badda-bing, it works!</p></li>
 </ul>
 
 <p>Not sure if this is an ongoing or temporary issue, but hopefully this will be fixed by the team in time one way or another.</p>
 
-<p><strong>NOTE:</strong> This is a bit of short-hand post, meant mostly as a reference for those who know their way around a little. If you have any questions, please ask in the comments, and I’ll be happy to help! For the full discussion, please see <a href="http://serverfault.com/questions/194173/ubuntu-10-10-maverick-server-apt-get-install-commands-fail">the thread on ServerFault.com</a>. </p>
+<p><strong>NOTE:</strong> This is a bit of short-hand post, meant mostly as a reference for those who know their way around a little. If you have any questions, please ask in the comments, and I&#39;ll be happy to help! For the full discussion, please see <a href="http://serverfault.com/questions/194173/ubuntu-10-10-maverick-server-apt-get-install-commands-fail">the thread on ServerFault.com</a>. </p>
 
-<p>Thanks for reading. Any clarifications or other tips regarding this? Sound off in the comments – all are welcome! :)</p>
+<p>Thanks for reading. Any clarifications or other tips regarding this? Sound off in the comments -- all are welcome! :)</p>
 
-<h3 id="references">References</h3>
+<h3>References</h3>
+
 <ul>
-  <li><a href="http://serverfault.com/questions/194173/ubuntu-10-10-maverick-server-apt-get-install-commands-fail">Ubuntu 10.10 Maverick Server — apt-get install commands fail</a> [<a href="http://ServerFault.com">ServerFault.com</a>]</li>
+<li><a href="http://serverfault.com/questions/194173/ubuntu-10-10-maverick-server-apt-get-install-commands-fail">Ubuntu 10.10 Maverick Server — apt-get install commands fail</a> [<a href="http://ServerFault.com">ServerFault.com</a>]</li>
 </ul>
+</div>
+</div>
+
+				
+				<footer>
+					&copy; SeanKilleen.com
+					 
+						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
+					
+				</footer>
+			</div>
+		
+		</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

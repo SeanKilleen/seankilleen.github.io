@@ -1,32 +1,101 @@
-<p>I know this comes as a shock to nobody, but MD’s don’t-call-it-the-DMV “Motor Vehicle Association” isn’t the easiest to get around.</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title> Bad UX Experience: MD MVA (2 for 1 deal!) </title>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+        
+        <!-- Bootstrap core CSS -->
+    	<link href="/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+		<div class="container">
+
+			<div class="col-sm-3">
+				<h1>SeanKilleen.com</h1>
+				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
+
+				<strong>navigation</strong><br />
+				<a href="/">home</a> <br />
+				
+					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
+				
+					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
+				
+				
+				
+				<div id="about">
+					<strong>about</strong><br />
+					Thoughts on life and bytes from a digital twenty-something.
+				</div>
+				
+			</div>
+
+			<div class="col-sm-8 col-offset-1">
+				
+				<h1>Bad UX Experience: MD MVA (2 for 1 deal!)</h1>
+<span class="time">14 Dec 2012</span>
+
+<div class="content">
+	<div class="post"><p>I know this comes as a shock to nobody, but MD&#39;s don&#39;t-call-it-the-DMV &quot;Motor Vehicle Association&quot; isn&#39;t the easiest to get around.</p>
 
 <p>However, this one was a little puzzling.</p>
 
-<h3 id="bad-ux-example">Bad UX Example</h3>
+<h3>Bad UX Example</h3>
 
-<p>While attempting to fill out a change of address form on the web site, the new address is given only one line (no “street 2”) address. And to make matters worse, the <strong>address is limited to only 30 characters.</strong> So, if you have a long street name and/or live in an apartment, this field will be a joy for you to fill out.</p>
+<p>While attempting to fill out a change of address form on the web site, the new address is given only one line (no &quot;street 2&quot;) address. And to make matters worse, the <strong>address is limited to only 30 characters.</strong> So, if you have a long street name and/or live in an apartment, this field will be a joy for you to fill out.</p>
 
-<p>Even better: Since I had to get creative with the symbols in the name, I shortened the “BLVD” in my new street address to “BVD” (only way I could still fit the apartment in). It then tried to get me to accept the USPS standardized version, which either cut the apartment number’s 3rd digit off, or cut out the “BLVD” portion entirely.</p>
+<p>Even better: Since I had to get creative with the symbols in the name, I shortened the &quot;BLVD&quot; in my new street address to &quot;BVD&quot; (only way I could still fit the apartment in). It then tried to get me to accept the USPS standardized version, which either cut the apartment number&#39;s 3rd digit off, or cut out the &quot;BLVD&quot; portion entirely.</p>
 
-<p>Eventually, I had to force it to use the original, so now it will read “BVD”, and I’m sure it’s only a matter of time before I’ll have to get that corrected.</p>
+<p>Eventually, I had to force it to use the original, so now it will read &quot;BVD&quot;, and I&#39;m sure it&#39;s only a matter of time before I&#39;ll have to get that corrected.</p>
 
-<h3 id="additional-bad-ux-example">Additional Bad UX Example</h3>
-<p>While writing this blog post, I attempted to link to the change of address form, so I right-clicked on the link titled “change of address form” and chose to copy the URL. When I pasted it just now, I got:</p>
+<h3>Additional Bad UX Example</h3>
 
-<pre><code>javascript:__doPostBack('ctl00$btnChangeOfAddress','')
-</code></pre>
+<p>While writing this blog post, I attempted to link to the change of address form, so I right-clicked on the link titled &quot;change of address form&quot; and chose to copy the URL. When I pasted it just now, I got:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">javascript:__doPostBack(&#39;ctl00$btnChangeOfAddress&#39;,&#39;&#39;)
+</code></pre></div>
+<p>Really? We&#39;re still doing postbacks on buttons this way? I guess the best way to avoid link rot is to make sure your link is never a link in the first place.</p>
 
-<p>Really? We’re still doing postbacks on buttons this way? I guess the best way to avoid link rot is to make sure your link is never a link in the first place.</p>
+<h3>What can we as Developers Learn From This?</h3>
 
-<h3 id="what-can-we-as-developers-learn-from-this">What can we as Developers Learn From This?</h3>
+<p>There are already great posts on falsehoods programmers believe about <a href="">names</a>, <a href="">time</a>, <a href="">networks</a>, <a href="">geography</a>, <a href="">build systems</a> -- It seems like one on addresses is long overdue. In the spirit of those posts, I&#39;ll begin one below based on my experience.</p>
 
-<p>There are already great posts on falsehoods programmers believe about <a href="">names</a>, <a href="">time</a>, <a href="">networks</a>, <a href="">geography</a>, <a href="">build systems</a> – It seems like one on addresses is long overdue. In the spirit of those posts, I’ll begin one below based on my experience.</p>
+<h4>In the context of addresses, all of the following are wrong:</h4>
 
-<h4 id="in-the-context-of-addresses-all-of-the-following-are-wrong">In the context of addresses, all of the following are wrong:</h4>
 <ul>
-  <li>The street address will be less than 30 characters</li>
-  <li>The location will have a house number</li>
-  <li>The city will be less than 30 characters</li>
-  <li>The USPS address standardization will always be correct</li>
+<li>The street address will be less than 30 characters</li>
+<li>The location will have a house number</li>
+<li>The city will be less than 30 characters</li>
+<li>The USPS address standardization will always be correct</li>
 </ul>
+</div>
+</div>
 
+				
+				<footer>
+					&copy; SeanKilleen.com
+					 
+						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
+					
+				</footer>
+			</div>
+		
+		</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
