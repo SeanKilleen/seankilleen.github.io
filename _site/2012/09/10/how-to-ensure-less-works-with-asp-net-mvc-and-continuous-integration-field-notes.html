@@ -1,0 +1,17 @@
+<h3 id="problem">Problem</h3>
+<ul>
+  <li>I use LESS instead of CSS in my ASP.NET MVC app.</li>
+  <li>I would like it to actually work.
+###Solution
+There are two steps (that I know of) to fixing this problem. The first is to make sure that your build package will actually output the LESS files in the first place; the second is to ensure that IIS can serve them.
+####Step 1: Ensuring that the Build Package outputs LESS files</li>
+  <li>In your solution, highlight all your LESS files</li>
+  <li>Right-click and select properties or look in the properties window.</li>
+  <li>Set the <code>Build Action</code> property to <code>Content</code>. This will ensure that the raw content is outputted from those files during build instead of another build action.</li>
+  <li>Set the <code>Copy to Output Directory</code> property to <code>Copy Always</code>. This ensures that your LESS files will actually make it into the package folder that MSBuild outputs.</li>
+</ul>
+
+<h4 id="step-2-ensuring-that-iis-can-serve-less-files">Step 2: Ensuring that IIS can serve LESS files</h4>
+<ul>
+  <li>See the instructions in my post titled <a href="http://skwordpresstoghost.azurewebsites.net/?p=401">When using Twitter Bootstrap LESS with IIS, don’t forget to create the MIME Type [Field Notes]</a></li>
+</ul>

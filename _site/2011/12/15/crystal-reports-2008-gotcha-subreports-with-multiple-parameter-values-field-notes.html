@@ -1,0 +1,28 @@
+<h3 id="the-setup">The Setup</h3>
+<ul>
+  <li>I have a report in Crystal Reports 2008.</li>
+  <li>The report uses a few different sub-reports.</li>
+  <li>The report links the subreports to the main report by passing the main report parameter to the subreport parameter.</li>
+</ul>
+
+<h3 id="the-problem">The Problem</h3>
+<ul>
+  <li>When calculating totals, it works correctly if I pass in a single parameter value to the main report.</li>
+  <li>However, if I pass in multiple values for a parameter to the main report (think multiple work order numbers for a WONUM parameter), the subreport calculates totals for all the fields</li>
+</ul>
+
+<h3 id="the-solution">The Solution</h3>
+<p>At first, it seemed like the issue was due to me not resetting the subreport total calculations on each page. But, I knew that I was doing this, and doing it correctly according to multiple reference points.</p>
+
+<p>However, the issue (and thus, the solution) was simpler.</p>
+
+<p>Because I was passing the main report parameter to the sub-report, Crystal was passing all parameters that I passed into the main report into the subreport, so the subreport was being told to calculate across all those values each time.</p>
+
+<p>Instead, I changed the link to the subreport parameter. Instead of passing it the main report’s parameter, I passed it the main report field that contained the work order number, thus assuring that it would only receive that one work order as a parameter.</p>
+
+<p>See <a href="http://stackoverflow.com/questions/8514709/crystal-reports-2008-trouble-resetting-a-shared-variable">the StackOverflow discussion</a> for more references and comments.</p>
+
+<h3 id="references">References</h3>
+<ul>
+  <li><a href="http://stackoverflow.com/questions/8514709/crystal-reports-2008-trouble-resetting-a-shared-variable">Crystal Reports 2008 - Trouble resetting a shared variable</a> [<a href="http://stackoverflow.com">StackOverflow</a>]</li>
+</ul>

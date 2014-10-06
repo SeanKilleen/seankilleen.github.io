@@ -1,0 +1,16 @@
+<h3 id="problem">Problem</h3>
+<p>When attempting to run a report from Crystal Reports Server 2008, the “processing data” wheel seems to be stuck in an infinite spin. On a server with constrained resources, this might seem to be a processing speed issue. This only happens with a specific report.</p>
+
+<h3 id="solution">Solution</h3>
+
+<ul>
+  <li>Open and log into Crystal Reports Server InfoView</li>
+  <li>In InfoView, click on <code>Preferences</code>. </li>
+  <li>Click the arrow next to the Crystal Report section to drop it down.</li>
+  <li>For the <code>default view format</code> option, choose <code>Web Java (Java Required)</code>.</li>
+  <li>Run the report again.</li>
+</ul>
+
+<p>Doing this revealed a hidden error message for me. The other two modes appear to infinitely process the report, but “web java” mode revealed an error in the report very quickly.</p>
+
+<p>This led me on a goose chase for hours the other day, so I hope someone else might benefit.</p>

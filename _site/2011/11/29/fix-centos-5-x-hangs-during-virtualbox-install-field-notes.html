@@ -1,0 +1,29 @@
+<h3 id="technology-involved">Technology Involved</h3>
+<ul>
+  <li>Win7 Pro x64</li>
+  <li>VirtualBox 4.1.x</li>
+  <li>CentOS 5.x&lt;/li&gt;&lt;/ul&gt;</li>
+</ul>
+
+<h3 id="problem">Problem</h3>
+<p>When attempting to install a CentOS Guest VM from a VirtualBox Win7 x64 host, the installation appears to hang shortly after beginning.</p>
+
+<p>The last line of text on the screen is:
+&gt; NET: Registered protocol family 2</p>
+
+<h3 id="solution">Solution</h3>
+<p>Per <a href="https://forums.virtualbox.org/viewtopic.php?f=9&amp;t=23900">this thread</a> (referencing an older version of VirtualBox but still relevant), the fix is as follows:</p>
+
+<ul>
+  <li>Go into the settings of the VM</li>
+  <li>Click the <code>System</code> section.</li>
+  <li>Check <code>Enable IO APIC</code>.</li>
+  <li>Save the settings.</li>
+</ul>
+
+<p>When you start the install again, it will proceed normally.</p>
+
+<h3 id="references">References</h3>
+<ul>
+  <li><a href="https://forums.virtualbox.org/viewtopic.php?f=9&amp;t=23900">Failure Installing CentOS 5.4 on VB 3.0.8</a> [<a href="https://forums.virtualbox.org/index.php">VirtualBox Forums</a>]</li>
+</ul>

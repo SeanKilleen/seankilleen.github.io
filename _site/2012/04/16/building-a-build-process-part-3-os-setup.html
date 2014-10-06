@@ -1,0 +1,91 @@
+<p><em>This is part of <a href="http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process">a larger series</a> in building a proper build process. For more information and additional series links, check out the <a href="http://skwordpresstoghost.azurewebsites.net/?p=951">introductory post</a>.</em>  </p>
+
+<p>Alright, this is a little bit of a cheat post but I wanted to emphasize the simplicity of these setups. </p>
+
+<h4 id="installing-the-oses-on-our-vms">Installing the OSes on our VMs</h4>
+<p>####Windows
+* Select whichever edition of Windows Server you’d like to install if prompted.<br />
+* Follow the default setup options or customize as you like. Allow it to use the full space of the Virtual HDD we created.
+####CentOS
+* <strong>Start up the VM</strong> and proceed through normal, default setup options.
+* <strong>Allow the OS to use the standard partition format</strong> and use the entire virtual disk when it asks.
+* <strong>You will have to set up a root password and an additional user.</strong> For memory’s sake in the demo, I made the root and user password the same, and made the user my first name. This is, again, <strong><em>not recommended</em></strong> for a production environment. Use a very secure password for the root user, and don’t be a dunce about your user account’s password, either.
+* <strong>Disable the Firewall and SELinux</strong>. These are both important components, and I may turn them on again after everything is configured, but due to my own limitations on their intricacies and the demo purposes, we’ll leave them. <strong>IMPORTANT: DO NOT</strong> <strong>run a production system without these turned on</strong>. I’ll likely do a follow-up post later indicating ways to do this more securely.
+* I chose the Gnome desktop environment because it was the default. Choose the flavor that suits you. 
+* When presented with the option for additional components, I checked off <code>Server - GUI</code>. To be honest, I’m not even sure what exact capabilities this gives us; it just seemed like a good gut choice. I’ll try to look up more on that later (maybe)</p>
+
+<h3 id="after-installation">After Installation</h3>
+<p>####Windows</p>
+
+<h5 id="ie-9----but-not-through-windows-update">IE 9 – But not through Windows Update</h5>
+<p>You should have IE 9 on a Windows Server. To be honest, I’m not sure why, but it feels right to have the OS-supported “standard” available, even if it’s not your first go-to browser. IE 9 on Windows Server provides a great layer of protection over potentially harmful actions, so I use it when I’m in “caution mode”. </p>
+
+<p>However, you’ll likely want to obtain IE via <a href="http://skwordpresstoghost.azurewebsites.net/?p=651">my method described here</a>, because as of this writing the MS Installer on Windows Update is screwed up.  </p>
+
+<h5 id="an-alternative-browser-to-ie">An alternative browser to IE</h5>
+<p>You should also have a browser on your machine for those I-know-what-I’m-doing-and-just-get-out-of-my-way-damnit times when you don’t feel like dealing with IE’s extra protection. I use <a href="http://google.com/chrome">Google Chrome</a>, but pick whichever browser suits you.  </p>
+
+<h5 id="virtualbox-guest-additions">VirtualBox Guest Additions</h5>
+<p>This is as easy as clicking <code>Devices</code> from the VirtualBox host window (the window that surrounds your VM), and then clicking <code>Install Guest Additions</code>. </p>
+
+<p>VirtualBox pops up an installer on the screen. Follow the default steps to install, or select custom options.</p>
+
+<h5 id="iis-webpi">IIS WebPI</h5>
+<p>I highly recommend downloading the <a href="http://www.iis.net/webpi">Web PI (Web Platform Installer) from Microsoft</a>. It’s got a great interface for quick configuration of applications and installs.&lt;/</p>
+
+<h5 id="webpi-downloads--install-the-following-packages">WebPI Downloads – Install the following packages:</h5>
+<ul>
+  <li>.NET Framework 4.0  </li>
+  <li>IIS 7 recommended settings  </li>
+  <li>ASP.NET MVC 3</li>
+</ul>
+
+<h4 id="centos">CentOS</h4>
+<p>#####VirtualBox Guest Additions
+* Click <code>Devices</code> from the VirtualBox Host screen (the screen surrounding your VM) and click <code>Install Guest Additions…</code>
+* This will bring up a link to a CD on your CentOS desktop, indicating the CD is mounted.
+* From there, <a href="https://forums.virtualbox.org/viewtopic.php?t=4960">follow these directions</a>. Leave a message in the comments if you’d like me to expound on the subject.</p>
+
+<h3 id="on-both-oses">On Both OSes</h3>
+<p>####Updates and Patches!
+This is very important. I did the following.<br />
+#####On Windows&lt;/span&gt;&lt;/h5&gt;
+* Run Windows Update. Restart. Run Windows Update.<br />
+* Repeat this process until there are no more updates available.
+#####On CentOS
+* Go to the Software Updater, which you can access via <code>Applications  &gt; System Tools &gt; Software Updater</code>, as seen below:</p>
+
+<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/05-CentOS-Updates.png" alt="Software updater screen" /></p>
+
+<ul>
+  <li>Click “Apply Updates” for all available updates.  </li>
+  <li>Restart (if necessary).  </li>
+  <li>
+    <p>Repeat process until there are no more updates available.
+###Initial VM Snapshot
+This is optional, but I find that it’s always helpful to be able to go back to the beginning when necessary, so I always take a snapshot of VMs after they’re created.  </p>
+  </li>
+  <li>First, shut down all your VMs so you get a clean snapshot state.</li>
+  <li>Click on an image and then click the <code>Snapshots</code> button at the upper-right corner, shown below:</li>
+</ul>
+
+<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/07-252520-252520Details-252520and-252520Snapshots_thumb.png" alt="Snapshots button" /></p>
+
+<ul>
+  <li>Right-click on <code>Current State</code> and select <code>Take Snapshot</code>, as shown below. You’ll be asked to save the snapshot; I choose the name “Initial Setup” the first time I go through the process.</li>
+</ul>
+
+<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/08-252520-252520Take-252520Snapshot_thumb-25255B1-25255D.png" alt="Take snapshot button" /></p>
+
+<p>That’s it! Next, we’ll look at setting up our source code management system.</p>
+
+<h3 id="feedback-welcome">Feedback Welcome!</h3>
+
+<p>I’d love to hear any comments on this series. Find it useful? Think there’s a better way to implement the technique or something I should have mentioned? Please drop a line in the comments to help me improve the series!</p>
+
+<table>
+<tr>
+<td><div align="left"><a href="http://skwordpresstoghost.azurewebsites.net/?p=661">&larr; Part 2: Groundwork -- The VMs</a></div></td>
+<td><div align="right"><a href="http://skwordpresstoghost.azurewebsites.net/?p=631">Part 4: Source Code Management via Subversion and Apache on CentOS &rarr;</a></div></td>
+</tr>
+</table>

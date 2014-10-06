@@ -1,0 +1,69 @@
+<p>Since my new gig has me diving into Javascript quite a bit, I’ve really been loving <a href="http://jshint.com/">JSHint</a> integration (brought to us lovingly by <a href="http://madskristensen.net/">Mads Kristensen</a> and the team building the <a href="http://vswebessentials.com/">Web Essentials</a> 2012 add-on).</p>
+
+<h3 id="firstly-the-cool-feature-that-caused-my-issue----global-variables">Firstly: The Cool Feature that Caused my Issue – Global Variables</h3>
+<p>One of my favorite features of JSHint is that it will tell you when you’re using a variable that hasn’t been defined yet. This does wonders for reducing scoping issues, etc.</p>
+
+<p>But, when referencing browser functionality or variables from other files (think console.log, ko, moment, toastr, etc.) it would see them as undefined:</p>
+
+<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2013/11/2013-11-25_JSHint_UndefinedErrors.png" alt="Undefined errors for popular libraries" />
+Yiiiikes.</p>
+
+<p>Luckily, this can be fixed for most issues by utilizing the <code>global</code> command in a comment. JSLint will interpret the following as “assume all of these variables are defined”:</p>
+
+<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2013/11/2013-11-25_JSHint_GlobalCommand.png" alt="A list of libraries defined using the global command in a comment" /></p>
+
+<p>This saves so many validation headaches.</p>
+
+<h3 id="the-problem-identifying-underscorejs-as-a-global-variable">The Problem: Identifying UnderscoreJS as a Global Variable</h3>
+<p>However, when I add the Underscore.js global identifier (<code>_</code>, unsurprisingly) to the global list, I get a different error – <code>Unexpected dangling '_' in '_'</code>:</p>
+
+<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2013/11/2013-11-25_JSHint_UnexpectedDanglign.png" alt="Image of the new error message I see." /></p>
+
+<h3 id="the-solution-the-nomen-option">The Solution: the “nomen” Option</h3>
+
+<p>One line of code removed this error:</p>
+
+<pre><code>/*jslint nomen: true */
+</code></pre>
+
+<p>According to the <a href="http://www.jslint.com/lint.html#options">JSLint options documentation</a>, this allows underscores to begin a name. In the case of underscore, the <code>_</code> definition is both the beginning and end of the name (similar to jQuery’s <code>$</code>).</p>
+
+<h3 id="cautions-amp-some-tiny-pitfalls">Cautions &amp; Some Tiny Pitfalls</h3>
+<p>Had a few minor “oops” moments while figuring this out.</p>
+
+<h4 id="ensure-that-the-nomen-option-is-set-before-your-globals-are-defined">Ensure that the nomen option is set before your Globals are Defined</h4>
+
+<p>This won’t work:</p>
+
+<p><code>
+/*global $, jQuery, ko, moment, console, toastr, accounting, _ */
+/*jslint nomen: true */
+</code></p>
+
+<p>But this will:</p>
+
+<p><code>
+/*jslint nomen: true */
+/*global $, jQuery, ko, moment, console, toastr, accounting, _ */
+</code></p>
+
+<h4 id="jshint-says-nomen-will-be-deprecated">JSHint says “nomen” will be deprecated.</h4>
+
+<p>I kind of hope that’s not the case, since it helps here.</p>
+
+<p>There has been some back and forth on the <a href="https://github.com/jshint/jshint/search?q=nomen&amp;source=cc&amp;type=Issues">JSHint Github about this</a>, but the <a href="http://www.jshint.com/docs/options/#nomen">JSHint options page for “nomen”</a> makes it pretty clear:</p>
+
+<blockquote>
+  <p>This option disallows the use of dangling _ in variables. We don’t know why would you need it.</p>
+</blockquote>
+
+<p>If you were a little new to this, as I was, I hope this helps! Feel free to send some feedback in the comments.</p>
+
+<h3 id="references">References</h3>
+<ul>
+  <li><a href="http://vswebessentials.com/">Web Essentials VS Extension</a></li>
+  <li><a href="http://madskristensen.net/">Mads Kristensen</a></li>
+  <li><a href="http://jshint.com/">JSHint</a> &amp; <a href="http://www.jshint.com/docs/options/#nomen">JSHint Options Page</a></li>
+  <li><a href="http://www.jslint.com/lint.html#options">JSLint Options</a></li>
+  <li><a href="https://github.com/jshint/jshint/search?q=nomen&amp;source=cc&amp;type=Issues">JSHint: Issues containing “nomen”</a> [<a href="http://www.github.com/">Github</a>]&lt;/li&gt;</li>
+</ul>

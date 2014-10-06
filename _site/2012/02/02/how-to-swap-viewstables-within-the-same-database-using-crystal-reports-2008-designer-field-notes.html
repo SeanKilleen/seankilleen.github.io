@@ -1,0 +1,33 @@
+<h3 id="background">Background</h3>
+<p>I have a database with a few different views. They all return the same fields in copies of the same exact report, but those fields are calculated differently (hence the views).</p>
+
+<h3 id="the-problem">The Problem</h3>
+<p>I wanted to be able to swap these views out without losing my fields, but couldn’t seem to find a way to do it</p>
+
+<p>Crystal has a method for changing data sources, and for setting tables up to be overridden in this way, but there didn’t seem to be any way to swap out a view that was already in the same database.</p>
+
+<h3 id="the-solution">The Solution</h3>
+<p><strong>NOTE:</strong> The solution below depends on the fact that your new tables or views should be returning the exact same fields (the new one can have additional fields, but not vice versa, which makes sense).</p>
+
+<p>After some playing around, I figured it out. The best solution I’ve been able to come up with is:&lt;</p>
+
+<ul>
+  <li>While in your report, right-click on the <code>Database Explorer</code> and select <code>Set Datasource Location.</code></li>
+  <li>In the bottom pane, select the datasource from your list as if it is a new datasource.</li>
+  <li>In the bottom pane, navigate to the table or view you’d like to replace.</li>
+  <li>In the top pane, click the table or view you’d like to replace.</li>
+  <li>In the bottom pane, click the table or view you’d like to replace the original table/view.</li>
+  <li>Click <code>Update</code>.</li>
+</ul>
+
+<p>This will work, but it will appear to fail. That’s because <strong>Crystal Reports keeps the same alias in its list of datasources.</strong> To double-check this, you can go select <code>Show Query...</code> from the <code>Database</code> menu and you’ll be able to see that the SQL is just covering up your new data source with the old alias name.</p>
+
+<p>This might be fine for some folks, but it drives me up a wall. To fix that issue and get the names back in sync:</p>
+
+<ul>
+  <li>Right-click on the database and select <code>Database Explorer</code>.</li>
+  <li>In the panel on the right, right-click the improperly named datasource and select <code>Rename</code>.</li>
+  <li>Enter the name of the table or view it is currently pointing to.</li>
+</ul>
+
+<p>At this point, you’ll have successfully completed the swap, with all your report fields making it out alive.</p>

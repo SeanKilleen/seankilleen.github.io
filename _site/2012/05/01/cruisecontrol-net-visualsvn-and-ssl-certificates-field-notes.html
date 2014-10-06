@@ -1,0 +1,17 @@
+<p>This is a quick post for my reference. Let me know if details would be helpful and I’ll be happy to turn it into more of a tutorial style.</p>
+
+<h3 id="problem">Problem</h3>
+<p>I am integrating CruiseControl.NET with VisualSVN. I’m using a self-signed https on VisualSVN that doesn’t match. Because I can’t get CruiseControl to accept the certificate permanently, I can’t get it to check out files.</p>
+
+<h3 id="solution">Solution</h3>
+<ul>
+  <li>You should have a local user account for your build process (with only access to what it needs, of course). This is essentially a local service account.</li>
+  <li>Log on to that service account on the local machine.</li>
+  <li>Using the command line, check out the VisualSVN repository into a folder you created and accept the certificate. Something along the lines of <code>svn.exe checkout https://[servername]:8443/svn/[ProjectName] --username [user] --password [password]</code> should do it.</li>
+  <li>The certificate message will then pop up. Type <code>p</code> to accept it permanently.</li>
+  <li>Now you have an account that has the access you need.</li>
+  <li>Go into <code>services.msc</code></li>
+  <li>Set the CruiseControl.NET service to run as the local build user service account, with the password.</li>
+  <li>Restart the CruiseControl.NET</li>
+  <li>It now should have access and acceptance of the certificate.</li>
+</ul>

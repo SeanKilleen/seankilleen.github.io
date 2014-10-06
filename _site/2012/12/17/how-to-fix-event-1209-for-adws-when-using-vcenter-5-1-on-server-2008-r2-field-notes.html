@@ -1,0 +1,29 @@
+<h3 id="problem">Problem</h3>
+<p>I’m Running vCenter 5.1 and Windows Server 2008 R2. I notice a number of events in the event log with a source of “ADWS”, event ID of 1209. The event text reads:</p>
+
+<blockquote>
+  <p>Active Directory Web Services encountered an error while reading the settings for the specified Active Directory Lightweight Directory Services instance.  Active Directory Web Services will retry this operation periodically. In the mean time, this instance will be ignored. Instance name: ADAM_VMwareVCMSDS</p>
+</blockquote>
+
+<h3 id="cause">Cause</h3>
+<p>Apparently, VMWare doesn’t create a proper registry value for one entry, which causes ADWS to throw an error</p>
+
+<h3 id="solution">Solution</h3>
+<p>To fix this:</p>
+
+<ul>
+  <li>Back up your registry.</li>
+  <li>Open <code>regedit.exe</code></li>
+  <li>Navigate to <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\ADAM_VMwareVCMSDS\Parameters</code></li>
+  <li>Note that the <code>Port SSL</code> field is a <code>REG_SZ</code> Rather than a <code>REG_DWORD</code> and is empty</li>
+  <li>Delete the <code>Port SSL</code> field.</li>
+  <li>Create a new field called <code>Port SSL</code> of type <code>REG_DWORD</code></li>
+  <li>Double-click on that field and change the value to <code>636</code>.</li>
+</ul>
+
+<p>At this point, the errors should stop and your EventLog is now free from 1440 events a day.</p>
+
+<h3 id="references">References</h3>
+<ul>
+  <li><a href="http://thesaffageek.co.uk/2010/07/05/active-directory-web-services-encountered-an-error-while-reading-the-settings-for-the-specified-active-directory-lightweight-directory-services-instance-active-directory-web-services-will-retry-this/">Active Directory Web Services encountered an error while reading the settings for the specified Active Directory Lightweight Directory Services instance. Active Directory Web Services will retry this operation periodically. In the mean time, this instance will be ignored</a>. [<a href="http://thesaffageek.co.uk/">TheSaffaGeek</a>]</li>
+</ul>

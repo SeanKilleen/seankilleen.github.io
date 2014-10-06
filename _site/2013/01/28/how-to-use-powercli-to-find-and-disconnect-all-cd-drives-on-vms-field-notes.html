@@ -1,0 +1,20 @@
+<h3 id="problem">Problem</h3>
+<p>VMs that leave ISOs mounted cause problems. I’d like to find all the VMs that have CD-ROM drives loaded with ISOs, look over that list, and then remove them if necessary.</p>
+
+<h3 id="solution-note-update">Solution (NOTE: Update)</h3>
+
+<p><strong>The first solution I provided here wasn’t that great, so I’m updating this post.</strong> The original contents have been changed because they previously would disconnect the entire CD-ROM drive, vs. just unmounting the ISO. As you can imagine, pulling the equivalent of ripping a CD-ROM drive out while a machine is running can cause some interesting behavior. The solution below outlines a much better way to do this.</p>
+
+<p>Two one-line PowerCLI scripts will help us with this.</p>
+
+<p>Firstly, to search for all Connected CD-ROMs for all VMs:</p>
+
+<pre><code>Get-VM | Where-Object {$_.PowerState –eq “PoweredOn”} | Get-CDDrive | FT Parent, IsoPath
+</code></pre>
+
+<p>And as long as there aren’t any you need to keep up, you can just select them all and then set the state to “No Media” for each CD-Drive:</p>
+
+<pre><code>Get-VM | Where-Object {$_.PowerState –eq “PoweredOn”} | Get-CDDrive | Set-CDDrive -NoMedia -Confirm:$False
+</code></pre>
+
+<p>Note the <code>-Confirm:$False</code> to allow it to just proceed with what it needs to do.</p>

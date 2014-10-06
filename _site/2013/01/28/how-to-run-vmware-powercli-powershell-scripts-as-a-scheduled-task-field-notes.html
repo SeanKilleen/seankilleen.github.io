@@ -1,0 +1,91 @@
+<h3 id="problem">Problem</h3>
+<p>I need to create a scheduled task that runs a powershell script that takes actions against my VMWare environment.</p>
+
+<p>For this article, we’ll use the example of shutting down all VMs in a Non-Production folder when we’re not scheduled to be at our desk (a real problem I’d faced).</p>
+
+<h3 id="solution">Solution</h3>
+<p>####Before you Begin
+This solution assumes that you’ve already got PowerCLI configured and know your way around a little bit of PowerCLI/PowerShell.</p>
+
+<h4 id="step-1-create-a-vmware-credential-store-in-a-file">Step 1: Create a VMWare Credential Store in a File</h4>
+<p>Firstly, your script will need login permissions to connect to a VI server. We can set this up ahead of time by  creating an encrypted credential store for your server.</p>
+
+<ul>
+  <li>Open PowerCLI as an Administrator.</li>
+  <li>Run the following command:</li>
+</ul>
+
+<p><code>
+New-VICredentialStoreItem -host 'yourhost.yourdomain.com' -user 'yourusername' -password 'yourpassword' -file C:\Path\To\Store\TheFile\In.creds
+</code></p>
+
+<p><strong>NOTES</strong>: When creating the credential store, you’ll want to create it as the same user that will eventually need to access it. If you create the credential file as user X but run the Scheduled Task as user Y, your task will be unable to read the file. Also, you don’t need to have a file extension, but I use “creds” just to make it clearer to me. Obviously, replace the host, username, password, and path with something that makes sense to you.</p>
+
+<h4 id="step-2-create-a-script-that-uses-the-credential-store">Step 2: Create a Script that Uses the Credential Store</h4>
+
+<p>Create a PowerShell Script Similar to the following:</p>
+
+<p>```
+#Stop an error from occurring when a transcript is already stopped
+$ErrorActionPreference=”SilentlyContinue”
+Stop-Transcript | out-null</p>
+
+<h1 id="reset-the-error-level-before-starting-the-transcript">Reset the error level before starting the transcript</h1>
+<p>$ErrorActionPreference=”Continue”
+Start-Transcript -path C:\temp\Shutdown_NonProductionVMs.log -append</p>
+
+<h1 id="add-the-vmware-snap-in">Add the VMWare Snap-in</h1>
+<p>Add-PSSnapin -Name VMWare.VimAutomation.Core</p>
+
+<h1 id="get-the-credentials">Get the Credentials</h1>
+<p>$creds = Get-VICredentialStoreItem -file  C:\temp\pscreds.creds</p>
+
+<h1 id="connect-to-the-server-using-the-credentials-file">Connect to the server using the credentials file</h1>
+<p>Connect-VIServer -Server $creds.host -User $creds.User -Password $creds.Password</p>
+
+<h1 id="get-all-vms-within-the-non-production-vms-folder-and-then-shut-them-down">Get all VMs within the non-production VMs folder and then shut them down</h1>
+<p>#NOTE the -WhatIf tag, which will stop it from shutting down the VMs until we’re sure the script is good.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Get-Folder -Name “03. Non-Production VMs”</td>
+      <td>Get-VM</td>
+      <td>Shutdown-VMGuest -WhatIf</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="clean-up">Clean Up</h1>
+<p>Disconnect-VIServer -Force -Confirm:$false
+Remove-PSSnapin -Name VMWare.VimAutomation.Core
+Stop-Transcript
+```</p>
+
+<h4 id="step-3-set-up-the-scheduled-task">Step 3: Set up the Scheduled Task</h4>
+
+<ul>
+  <li>Create a scheduled task in the task scheduler.</li>
+  <li>Run the task with the highest privileges.</li>
+  <li>In the action for the task, run the program/script <code>powershell.exe</code>. </li>
+  <li>For the arguments, use <code>"c:\Path\To\YourScript.ps1"</code> (with quotes in case of spaces – good habit).</li>
+</ul>
+
+<p>Test your task manually several times. Make sure the log output looks right.</p>
+
+<h4 id="taking-it-live-removing-the--whatif">Taking it Live: Removing the -WhatIf</h4>
+<p>When the task is scheduled and you’re satisfied it will run as you intended it, edit the script to remove the <code>-WhatIf</code> line. This means the Guest OSes will actually be shut down.</p>
+
+<h4 id="afterwards-gotchas">Afterwards: Gotchas</h4>
+<p>I gained some insights from this process, mostly by trial and error. I thought I should share the fruits of my errors with you:</p>
+
+<ul>
+  <li>Do not run a powershell script directly as a scheduled task. It does not work. Use the <code>powershell.exe "C:\Path\To\script.ps1"</code> format to execute.</li>
+</ul>
+
+<h3 id="references">References</h3>
+<ul>
+  <li><a href="http://powershellcommunity.org/Forums/tabid/54/aft/4295/Default.aspx" target="_blank">Scheduled Powershell scripts not passing authentication to Connect-VIServer</a> [<a href="http://powershellcommunity.org/" target="_blank">PowerShellCommunity.org</a>]</li>
+  <li><a href="http://professionalvmware.com/2009/04/posh-article-of-the-week-secure-credential-storage/" target="_blank">PoSH Article of the Week! – Secure Credential Storage</a> [<a href="http://professionalvmware.com/" target="_blank">Professional VMWare</a>]</li>
+  <li><a href="http://stackoverflow.com/questions/14564732/powershell-vmware-script-not-running-from-scheduled-task" target="_blank">Powershell VMWare Script not running from Scheduled Task</a> [<a href="http://www.stackoverflow.com/" target="_blank">StackOverflow</a>]&lt;/li&gt;&lt;/ul&gt;</li>
+</ul>

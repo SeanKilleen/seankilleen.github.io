@@ -1,0 +1,104 @@
+<p><em>This is part of <a href="http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process">a larger series</a> in building a proper build process. For more information and additional series links, check out the <a href="http://skwordpresstoghost.azurewebsites.net/?p=951">introductory post</a>.</em></p>
+
+<p><strong>A note before we begin:</strong> This post is going to run us through how get up and running with VirtualBox. For those of you already living in virtual (machine) reality, just create VMs for Windows Server 2008 and CentOS 5.x (5.7 at the time of this writing).</p>
+
+<h3 id="ingredients">Ingredients</h3>
+<p>For now, you’ll need:</p>
+
+<ul>
+  <li>A host machine for your Virtual Machines</li>
+  <li>A VM app (this will use <a href="https://www.virtualbox.org/">VirtualBox</a>)</li>
+  <li><a href="http://mirror.cs.vt.edu/pub/CentOS/5.7/isos/">CentOS 5.7</a> (or the latest current stable release of 5)</li>
+  <li>Windows Server 2008 R2 (or your preferred variant) – you’re on your own for this one. You can get windows in lot of places, though: retail, MSDN, educational discounts, or the BizSpark program can all be good options.</li>
+  <li>Visual Studio 2010 (or your .NET editor of choice)</li>
+</ul>
+
+<p>I used my <a href="http://skwordpresstoghost.azurewebsites.net/?p=1061">lovely new desktop rig</a> as the host for the VMs (it can handle the strain). You may want to use multiple machines or a server. In my case, we’ll be running VirtualBox on top of my Windows 7 Professional setup. I only mention the host as being important now as we may add some more VMs later in the process.</p>
+
+<h3 id="installing-virtualbox">Installing VirtualBox</h3>
+<p>This one’s pretty easy – <a href="https://www.virtualbox.org/wiki/Downloads">download VirtualBox</a> and install it on your host system of choice.</p>
+
+<h3 id="creating-our-vms">Creating our VMs</h3>
+
+<p>We’ll be creating two VMs initially for our current purposes:</p>
+
+<ul>
+  <li>A CentOS VM to handle Subversion for source code management and Trac for issue management / wiki documentation</li>
+  <li>A Windows Server 2008 R2 VM for our build server, which will handle all the necessary steps to integrate our application and publish it in the way(s) that we want.</li>
+</ul>
+
+<p>Open VirtualBox; you’ll be greeted with a blank slate like the one below</p>
+
+<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/VirtualBox_NewInstall.png" alt="VirtualBox Starting Window" />
+A new installation of VirtualBox, just waiting for us to muck with it.</p>
+
+<h4 id="the-windows-vm">The Windows VM</h4>
+<p>We’ll create the Windows VM first, because why not? Click <code>New</code>to create a new VM. After the introductory screen, you’ll be greeted with a screen like the following. Set your options similarly:</p>
+
+<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/02_VirtualBox_WindowsMachineName.png" alt="VirtualBox VM Name and OS Type Screen for Windows VM" /></p>
+
+<p>You can even steal the “Bob The Builder” name from me if you want. Because it’s just that cool.</p>
+
+<p>Clicking <code>Next</code> brings you to the base memory size. You can put whatever constraints you want, but I usually give a Server 2008 R2 VM 4 GB of RAM (it can do fine on 2 but my machine’s a beast so why not?):</p>
+
+<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/01-WinServer-4-GB-RAM.png" alt="VMWare Memory Selection Screen" /></p>
+
+<p>Next up is the hard disk. Conceptually, think of it like this – you’re going to create a file, sitting on your hard drive, that the computer living on VirtualBox thinks is a real physical hard drive. It’s pretty nifty. You’ll want to mark this disk as the startup disk as well, so your VM will know to boot from it eventually:</p>
+
+<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/04_CreateNewVirtualHDD.png" alt="VMWare Hard Disk Creation Screen" /></p>
+
+<p>We then choose the disk format. There are plenty of theories and reasons to choose one over another, but the default (VDI) will work just fine for the purposes of this tutorial.</p>
+
+<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/05_VHDD_Format.png" alt="VirtualBox Hard Disk Selection Screen" /></p>
+
+<p>Next up, we choose whether we’d like it to be dynamic or fixed allocation. To me, this is a no-brainer. A dynamically-sized drive means you create 32 GB drive, but VirtualBox just expands the size of the drive as it gets bigger, so 32 GB is is max but the size of the file will be whatever it actually uses. Unless I have to (i.e. needing to squeeze every bit of speed possible), I don’t change this, and we don’t have to now.</p>
+
+<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/06_VHDD_Allocation.png" alt="VirtualBox Disk Allocation Choice Screen" /></p>
+
+<p>We then have to tell VirtualBox where to plop this file, what to call it, and how big we should let it get. Give it a descriptive name and a decent chunk of space (though we won’t use nearly all of it):</p>
+
+<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/07_VHDD_NameAndLocation.png" alt="VirtualBox Hard Drive Naming and Size Limitations Screen" /></p>
+
+<p>And presto! Your VM is created. Now to tweak the settings. Right-click on your VM in the list of VMs and click settings:</p>
+
+<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/07_VMSettings.png" alt="VirtualBox Settings" />
+Tweak it till your heart’s content.</p>
+
+<h4 id="the-centos-vm">The CentOS VM</h4>
+<p>I repeat the process for CentOS, selecting an OS type of Linux/RedHat (what CentOS is based on), calling it “SCM” and giving it a similarly-sized 32 GB HDD but half the memory.</p>
+
+<h3 id="installing-the-oses">Installing the OSes</h3>
+<p>Next up, we have to prepare the OSes.</p>
+
+<h4 id="vm-settings">VM Settings</h4>
+<p>You’ll want to make sure your VMs are set up to function correctly as independent machines. To do this, we’ll change some settings around.</p>
+
+<p>Open VirtualBox, right-click the VM, and choose <code>Settings...</code>:</p>
+
+<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/02-VM-Settings.png" alt="VirtualBox Settings Screen" /></p>
+
+<p>You’ll want to ensure that your VMs are functioning using their own simulated network adapters instead of a NAT connection. To do this, open the <code>Network</code> section, enable the network adapter, and change it to a “Bridged Adapter”</p>
+
+<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/03-Network-Settings.png" alt="Bridged Network Adapter Setup" /></p>
+
+<h4 id="adding-the-boot--installation-media">Adding the Boot / Installation Media</h4>
+<p>We need to add the installation media for each OS so that it boots up with that media. I’m going to use the Windows server as an example, but you’ll want to do this on both VMs, adding the appropriate disc.</p>
+
+<p>From the <code>Settings</code> window, click the <code>Storage</code> section.  You’ll be greeted by the storage window below. Note the “Empty” IDE controller, as this is where we’ll attach our ISO files for the installations.</p>
+
+<p>Click the Empty entry, then click the CD-ROM icon to the right, select <code>Choose a Virtual CD/DVD Disk File</code>, and choose the ISO for your instsallation:</p>
+
+<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/04-Adding-the-ISO.png" alt="ISO Installation Choice" /></p>
+
+<p>Do this for both OSes. You’re now ready to start them up and install the operating systems</p>
+
+<h3 id="feedback-welcome">Feedback Welcome!</h3>
+
+<p>I’d love to hear any comments on this series. Find it useful? Think there’s a better way to implement the technique or something I should have mentioned? Please drop a line in the comments to help me improve the series!</p>
+
+<table>
+<tr>
+<td><div align="left"><a href="http://skwordpresstoghost.azurewebsites.net/?p=951">&larr; Part 1: Introduction</a></div></td>
+<td><div align="right"><a href="http://skwordpresstoghost.azurewebsites.net/?p=641"> Part 3: OS Setup &rarr;</a></div></td>
+</tr>
+</table>

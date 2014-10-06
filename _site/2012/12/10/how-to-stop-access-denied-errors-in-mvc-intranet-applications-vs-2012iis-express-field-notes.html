@@ -1,0 +1,28 @@
+<h3 id="problem">Problem</h3>
+<ul>
+  <li>Using Visual 2012 and IIS Express</li>
+  <li>Building an MVC4 Intranet project</li>
+  <li>Authentication Doesn’t appear to work; I always get an “Access Denied” screen on every page.</li>
+</ul>
+
+<h3 id="cause">Cause</h3>
+<p>This happens because IIS Express isn’t configured by default for Windows Authentication.</p>
+
+<h3 id="solution">Solution</h3>
+<ul>
+  <li>Run your project.</li>
+  <li>While it is running / showing you the error, find the IIS Express Icon in your system tray</li>
+  <li>Right-click the icon and select <code>Show all Web Applications</code>.</li>
+  <li>Click on your web application.</li>
+  <li>Look at the <code>Config</code> property to find where your applicationhost.config file is stored.</li>
+  <li>Stop your web site and open that applicationhost.config file for editing.</li>
+  <li>Find the section where <code>WindowsAuthentication enabled</code> is set to <code>false</code> and change it to <code>true</code>. </li>
+  <li>Save the file.</li>
+</ul>
+
+<h3 id="references">References</h3>
+
+<ul>
+  <li><a href="http://chanmingman.wordpress.com/2012/06/19/access-is-denied-in-mvc-4-intranet-application-in-vs-11/">Access is denied in MVC 4 Intranet Application in VS 11</a> [<a href="http://chanmingman.wordpress.com/">Chanmingman’s Blog</a>]</li>
+  <li><a href="http://maran.ro/2012/09/06/activare-windowsauthentication-pe-iis-express-8-vs2012/">Activare “WindowsAuthentication” pe IIS Express 8 (VS2012)</a> [<a href="http://maran.ro/">Lucian Maran</a>]&lt;/ul&gt;</li>
+</ul>

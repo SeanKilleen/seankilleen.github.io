@@ -1,0 +1,16 @@
+<h3 id="problem">Problem</h3>
+<p>If you ever receive a <code>#DIV/0</code> error in Excel that you expect to be there (i.e. calculating percentages from other data which may not have accumulated yet), you can suppress  it by using an <code>IF</code> statement in the formula.</p>
+
+<p>Let’s say you have three columns – <code>A</code>, <code>B</code>, and <code>C</code>. <code>C</code> calculates the percentage of <code>B</code> and <code>A</code> (i.e <code>B/A</code>), but if <code>A</code> is 0 or empty, you’ll get the <code>DIV/0</code> error which throws off formulas, coloring, highlighting, etc.</p>
+
+<h3 id="solution">Solution</h3>
+<p>Instead of <code>= B1/A1</code>, do something along the lines of the following:</p>
+
+<pre><code>=IF(A1=0, 0, B1/A1) or:
+
+=IF(A1=0, "", B1/A1) 
+</code></pre>
+
+<p>This does a simple check first: If <code>A</code> is zero, it will substitute a default value. Otherwise, your calculation will go on as planned.</p>
+
+<p>I’ve used this tip many a time to help with the presentation of an Excel sheet.</p>

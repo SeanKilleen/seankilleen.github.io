@@ -1,0 +1,60 @@
+<h3 id="problem">Problem</h3>
+<p>In a Crystal Report, you would like to show or hide sections based upon whether the report contains results or not.</p>
+
+<h3 id="solution">Solution</h3>
+<p>####Step 1: Create a Shared Variable and Increment it
+Create a formula with a shared variable in your report – for the sake of this example, we’ll call it <code>v_RecordCount</code>.</p>
+
+<p>The contents of the formula should look like this:</p>
+
+<p>```
+// Excute this formula as records are read into the report
+WhileReadingRecords;</p>
+
+<p>// define a variable that is available throughout the ‘main’ report
+Global Numbervar RecordCount;</p>
+
+<p>// increment the variable
+RecordCount := RecordCount+1;
+```</p>
+
+<h4 id="step-2-place-the-variable-in-the-report-header-and-suppress-it">Step 2: Place the Variable in the Report header and Suppress it</h4>
+<ul>
+  <li>Drag the formula into the <code>Report Header A</code> section.</li>
+  <li>Right-click on the formula you added in the report and select <code>Format Field...</code></li>
+  <li>Click the <code>Common</code> tab.</li>
+  <li>Check the <code>Suppress</code> button.</li>
+  <li>Click <code>OK</code></li>
+</ul>
+
+<h4 id="step-3-craft-the-proper-suppression-formula-for-the-sections">Step 3: Craft the Proper Suppression Formula for the Sections</h4>
+<p>Note that the formula we have created will return <code>null</code> when there are no records. This is key to crafting the formula.</p>
+
+<ul>
+  <li>Right-click on the section you would like to show or hide based on having results.</li>
+  <li>Click <code>Section Expert...</code></li>
+  <li>Next to the <code>Supress (No Drill-Down)</code> option, click the <code>Formula</code> button.</li>
+</ul>
+
+<p>If you want to <strong>hide a section if there are no results</strong>, enter the following:
+<code>
+If IsNull({@RecordCount}) then true
+else false
+</code></p>
+
+<p>This tells Crystal to hide the section if the <code>RecordCount</code> is null (i.e. there are no results), and to show it otherwise.</p>
+
+<p>If you want to <strong>show a section if there are no results</strong>, enter the following: </p>
+
+<p><code>
+If IsNull({@RecordCount}) then false
+else true
+</code></p>
+
+<p>Or:
+<code>
+If (Not(IsNull({@RecordCount}))) then true
+else false
+</code></p>
+
+<p>These both say “if the record count is not null” (i.e. there are records), suppress this field. Otherwise, show it (if there aren’t any results).</p>

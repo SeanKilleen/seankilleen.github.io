@@ -1,0 +1,26 @@
+<h3 id="problem">Problem</h3>
+
+<p>I run Visual Studio as an Administrator, which is helpful, but also means that I can’t drag &amp; drop files / folders from Windows Explorer (since it’s not elevated). That’s a pain in the butt.</p>
+
+<h3 id="solution">Solution</h3>
+
+<p>Thanks to <a href="http://www.howtogeek.com/forum/topic/how-to-run-explorerexe-shell-as-an-administrator-win7">a handy discussion on the HowToGeek site</a>, I found the following tip.</p>
+
+<p>[Caveat: this <a href="http://blog.codinghorror.com/the-works-on-my-machine-certification-program/">works on my machine</a>, a work desktop using Windows 7.]</p>
+
+<h4 id="to-enable-an-elevated-windows-explorer">To enable an elevated windows explorer:</h4>
+<ul>
+  <li>Right-click on the task bar and select <code>Start Task Manager</code></li>
+  <li>In Task Manager, select <code>File &gt; New Task (Run...)</code></li>
+  <li>
+    <p>You should see a note that this will be run using administrative privileges. </p>
+  </li>
+  <li>Enter <code>explorer.exe</code> and hit enter.
+You can now drag and drop files into other elevated windows with ease! </li>
+</ul>
+
+<h3 id="references">References</h3>
+<ul>
+  <li><a href="http://blog.codinghorror.com/the-works-on-my-machine-certification-program/">The “Works On My Machine” Certification Program</a> [<a href="http://codinghorror.com/">CodingHorror</a>]</li>
+  <li><a href="http://www.howtogeek.com/forum/topic/how-to-run-explorerexe-shell-as-an-administrator-win7">(Solved) - How To: Run explorer.exe [shell] as an Administrator - Win7</a> [<a href="http://howtogeek.com/">HowToGeek</a>]</li>
+</ul>

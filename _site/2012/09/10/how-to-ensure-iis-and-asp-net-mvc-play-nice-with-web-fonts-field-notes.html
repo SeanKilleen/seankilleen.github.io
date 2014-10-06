@@ -1,0 +1,31 @@
+<h3 id="problem">Problem</h3>
+<p>I’m using ASP.NET MVC via IIS and would like to make use of Web Fonts.</p>
+
+<h3 id="solution">Solution</h3>
+<p>There are two steps:</p>
+
+<ul>
+  <li>Make sure your Web Font files are going to be outputted by your build process.</li>
+  <li>Make sure IIS can serve those web files.
+####Step 1: Make Sure Your Web Font Files are Going to be Outputted by Your Build Process</li>
+  <li>In Visual Studio, select all your web font files (EOT, SVG, TTF, and WOFF files)</li>
+  <li>Right-click on them and select properties or look at the properties window.</li>
+  <li>Set the <code>Build Action</code> Property to <code>Content</code></li>
+  <li>Set the <code>Copy to Output Directory</code> property to <code>Copy Always</code>.</li>
+</ul>
+
+<h4 id="step-2-make-sure-iis-can-serve-your-web-font-files">Step 2: Make Sure IIS Can Serve Your Web Font Files</h4>
+<p>In IIS, make sure you have the following file extensions and the corresponding MIME types:</p>
+
+<ul>
+  <li>.eot → application/octet-stream</li>
+  <li>.woff → application/x-woff</li>
+  <li>.svg → image/svg+xml</li>
+</ul>
+
+<p>and bingo! Build/deploy your package and it should be right as rain.</p>
+
+<h3 id="references">References</h3>
+<ul>
+  <li><a href="http://sebduggan.com/blog/serving-web-fonts-from-iis/">Serving Web Fonts from IIS</a> [<a href="http://sebduggan.com/blog/">Seb Duggan</a>]</li>
+</ul>

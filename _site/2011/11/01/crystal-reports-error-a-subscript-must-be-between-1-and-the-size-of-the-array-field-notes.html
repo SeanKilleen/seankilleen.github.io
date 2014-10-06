@@ -1,0 +1,26 @@
+<h3 id="problem">Problem</h3>
+<p>A long-standing Crystal Report (being run out of SAP Business Objects XI v12) suddenly started generating an error along the lines of:</p>
+
+<blockquote>
+  <p>Error in File [File Name]: Error in formula [Formula Name]: ‘left(split({[Field Name]},”/”)[2],3)’</p>
+</blockquote>
+
+<blockquote>
+  <p>A subscript must be between 1 and the size of the array.</p>
+</blockquote>
+
+<blockquote>
+  <p>Details: errorKind</p>
+</blockquote>
+
+<p>(The bracketed values were specific to the report itself)
+###Solution</p>
+
+<p>In this case, the formula is looking for a <code>/</code> to split the string. On a hunch, I decided to query the database, and sure enough, some of the fields in the database had been modified and no long included a <code>/</code>, causing the formula to bomb out.</p>
+
+<h4 id="two-solutions-here">Two solutions here:</h4>
+
+<ul>
+  <li>If the <code>/</code> is a business requirement and is supposed to be there, modify the data.</li>
+  <li>Otherwise, modify the formula to include branching logic that takes other steps if a <code>/</code> is not detected.</li>
+</ul>

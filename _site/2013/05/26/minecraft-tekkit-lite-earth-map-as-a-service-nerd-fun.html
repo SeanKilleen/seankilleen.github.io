@@ -1,0 +1,76 @@
+<p>I have a little time to kill this holiday weekend and wanted to try something fun (at least before it gets warm enough to go outside for the rest of the day). Some friends and I have been playing <a href="http://www.technicpack.net/tekkit-lite/">Tekkit Lite</a> off and on, and being the resident IT geek, I’m hosting the server.</p>
+
+<p>I’m going to set up my own Tekkit Lite server, using the 1:1500 Earth Map, and running as a service on my machine.</p>
+
+<h3 id="before-you-begin">Before You Begin</h3>
+<ul>
+  <li><strong>Lock down your machine</strong>. This is important. If you’re hosting on your own server, it’s going to have to involve some port forwarding and letting the internet into your machine. Lock it down with appropriate firewall knowledge. If you don’t do this, then you’re going to have a terrible time at some point.</li>
+  <li><strong>Get a <a href="http://freedns.afraid.org/">FreeDNS account at afraid.org</a></strong>. Your machine has an IP that might change, and if you’re not paying for a domain name, getting one of their free subdomains is an easy way to allow access to your machine without having to give our your IP every time it changes.</li>
+  <li><strong>Do all of the proper port forwarding</strong>. I’m not going to explain that here, as it’s different for every ISP/router. If you don’t know how to port forward and port trigger, look it up elsewhere first (unless you want to just play by yourself. Which is a little sad.)</li>
+</ul>
+
+<h3 id="obtaining-the-softwareh2">Obtaining the Software&lt;/h2&gt;</h3>
+<ul>
+  <li><a href="http://www.technicpack.net/tekkit-lite/"><strong>The Tekkit Lite Server Files</strong></a>. Head to the link and click “Download latest Tekkit Lite Server”.</li>
+  <li><a href="http://letslente.weebly.com/the-earth.html"><strong>The 1:500 Earth Map files</strong></a>. This is a huge download, so you may want to kick it off early.</li>
+  <li><a href="http://sourceforge.net/projects/yajsw/"><strong>YAJSW (Yet Another Java Service Wrapper)</strong></a>. Download the code from SourceForge. It’s a handy little utility to configure your Java Install as a Windows Service.</li>
+</ul>
+
+<h3 id="initial-setup">Initial Setup</h3>
+<ul>
+  <li>Extract the LetLente! Earth maps. This will take a while.</li>
+  <li>Extract the Tekkit Lite Server Files. Use 7-Zip or Windows to Extract the Zip files.</li>
+  <li>Extract the yajsw files.</li>
+  <li>Rename the Tekkit Lite folder to the name of your server (I called mine <code>MinecraftServer_EarthMap</code>)</li>
+  <li>In the root of the Tekkit Lite folder, there is a <code>server.properties</code> file. Configure it according to however you’d like the world to be. See <a href="http://www.minecraftwiki.net/wiki/Server.properties">this wiki page</a> as a starting guide. </li>
+  <li>I suggest at least setting your player handle as an op in the <code>ops.txt</code> file as well.</li>
+  <li>If you have multiple servers running, be sure to set the <code>server-port</code> option in <code>server.properties</code>.</li>
+  <li>In your server folder, create a folder called <code>world</code>.</li>
+  <li>Copy the Earth map files into that <code>world</code> folder.</li>
+  <li>Create a folder called <code>service</code>.</li>
+  <li>Copy the yajsw files into the <code>service</code> folder. (I recommend copying the files so that you can go <code>service &gt; yajsw &gt; [files]</code>. Remove the second layer of ‘yajsw’ folder that gets extracted.)</li>
+  <li>Run <code>launch.bat</code> to start up the server. Make sure there aren’t any fatal errors.</li>
+  <li>Open your Technic Launcher and try to connect to <code>localhost:25565</code> (the default port). You should be able to see the world and connect to it.</li>
+  <li>Once you can connect to the world, exit it but <strong>don’t shut down the launch.bat window</strong>.</li>
+</ul>
+
+<h3 id="the-server-becomes-the-service">The Server Becomes the Service</h3>
+<p>Now that we have a working installation, we want to make this a legitimate service that runs all the time in the background.</p>
+
+<ul>
+  <li><strong>Copy your server files to “Program Files”</strong>. I do this because it’s a really good way to ensure that you don’t delete them when you clear out your downloads folder.</li>
+  <li><strong>Find the PID of your server</strong>. I recommend using a tool like <a href="http://technet.microsoft.com/en-us/sysinternals/bb896653.aspx">procexp</a> to view all your processes. You need to find the <code>java.exe</code> process that is running the Tekkit Lite server. It will likely be something like <code>java  -Xmx3G -Xms2G -jar TekkitLite.jar nogui</code>. The PID for this will be a number (procexp is helpful and lists it for you). </li>
+  <li><strong>Generate your wrapper.conf file</strong>. Open a command prompt and navigate to the <code>yajsw\bat</code> directory. (e.g. <code>your minecraft server\service\yajsw\bat</code>). Run <code>genConfig [pid]</code>, where you replace <code>[pid]</code> with the process ID.</li>
+  <li>e.g. if the PID you found was 1234, you’d run “genConfig 1234”.</li>
+  <li>
+    <p>This will create the wrapper.conf file that you need.
+####Edit your generated wrapper.conf file
+In the yajsw folder, find the <code>conf</code> directory and edit the <code>wrapper.conf</code> file. You need to make the following changes:</p>
+  </li>
+  <li><strong>Memory Levels:</strong> At the end of the file, you’ll see <code>wrapper.java.additional.1</code> = <code>-Xmx3G</code> or some variant. <code>-Xmx</code> is the maximum memory. <code>-Xms</code> is the minimum memory. the 3G, 2G etc. represent x GB of memory (hence the G). Adjust these to your desired values.</li>
+  <li><strong>No GUI</strong>: Ensure that the <code>wrapper.app.parameter.1 = nogui</code> is present. This is what will stop a window from needing to show up when the service is running.</li>
+  <li><strong>Working Directory</strong>: Make sure that <code>wrapper.working.dir</code> is set to the directory of your server (it normally is by default since the generator does it for you.)</li>
+  <li>For example, with my server called <code>MinecraftServer_EarthMap</code>, the line reads <code>wrapper.working.dir=C:\Program Files\MinecraftServer_EarthMap\</code></li>
+  <li><strong>Service Name</strong>: This is what will appear on your “Services” screen. </li>
+  <li>Change <code>wrapper.ntservice.name=yajsw</code> to the name of your server. e.g. <code>wrapper.ntservice.name=MinecraftServer_EarthMap</code></li>
+  <li>Change <code>wrapper.ntservice.displayname</code> as well.</li>
+  <li>Change <code>wrapper.ntservice.description</code> as well.</li>
+  <li><strong>Auto Start</strong>: If you want to set the service to auto start (and I did), un-comment the <code>wrapper.netservice.starttype</code> line, which will set it to auto-start.</li>
+  <li>To un-comment, just remove the pound (<code>#</code>) sign and space in front of the line.</li>
+</ul>
+
+<h4 id="finishing-the-service-installation">Finishing the Service Installation</h4>
+<ul>
+  <li>Open a new command prompt.</li>
+  <li>Navigate to your <code>service\yajsw\bat</code> folder and run <code>installService.bat</code>. It should complete without errors.</li>
+</ul>
+
+<h3 id="starting-it-up">Starting it up!</h3>
+<ul>
+  <li>Open the services window. You can do this via control panel or typing <code>services.msc</code> into your start window.</li>
+  <li>Find your service name.</li>
+  <li>Right-click the service and select <code>Start</code>.</li>
+  <li>Open your client and connect.</li>
+</ul>
+
+<p>If you try this, let me know how it works out for you in the comments. Happy gaming!</p>
