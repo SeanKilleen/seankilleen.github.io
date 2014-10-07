@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-<title type="text">Site Title</title>
+<title type="text">SeanKilleen.com</title>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
 <link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2014-10-06T22:36:24-04:00</updated>
+<updated>2014-10-06T23:00:05-04:00</updated>
 <id>http://localhost:4000/</id>
 <author>
-  <name>Your Name</name>
+  <name>Sean Killeen</name>
   <uri>http://localhost:4000/</uri>
-  
+  <email>SeanKilleen@gmail.com</email>
 </author>
 
 
@@ -22,9 +22,9 @@
   <published>2014-03-05T19:00:00-05:00</published>
   <updated>2014-03-05T19:00:00-05:00</updated>
   <author>
-    <name>Your Name</name>
+    <name>Sean Killeen</name>
     <uri>http://localhost:4000</uri>
-    
+    <email>SeanKilleen@gmail.com</email>
   </author>
   <content type="html">&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
 
@@ -53,7 +53,7 @@ You can now drag and drop files into other elevated windows with ease! &lt;/li&g
   &lt;li&gt;&lt;a href=&quot;http://www.howtogeek.com/forum/topic/how-to-run-explorerexe-shell-as-an-administrator-win7&quot;&gt;(Solved) - How To: Run explorer.exe [shell] as an Administrator - Win7&lt;/a&gt; [&lt;a href=&quot;http://howtogeek.com/&quot;&gt;HowToGeek&lt;/a&gt;]&lt;/li&gt;
 &lt;/ul&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/how-to-drag-and-drop-files-to-an-elevated-program-field-notes/&quot;&gt;How to: Drag and Drop Files to an Elevated Program [Field Notes]&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Site Title&lt;/a&gt; on March 05, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/how-to-drag-and-drop-files-to-an-elevated-program-field-notes/&quot;&gt;How to: Drag and Drop Files to an Elevated Program [Field Notes]&lt;/a&gt; was originally published by Sean Killeen at &lt;a href=&quot;http://localhost:4000&quot;&gt;SeanKilleen.com&lt;/a&gt; on March 05, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -66,9 +66,9 @@ You can now drag and drop files into other elevated windows with ease! &lt;/li&g
   <published>2014-02-12T18:00:00-05:00</published>
   <updated>2014-02-12T18:00:00-05:00</updated>
   <author>
-    <name>Your Name</name>
+    <name>Sean Killeen</name>
     <uri>http://localhost:4000</uri>
-    
+    <email>SeanKilleen@gmail.com</email>
   </author>
   <content type="html">&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
 &lt;p&gt;I need to calculate the MD5 and SHA hashes for a file from Windows and I’d rather not download 3rd-party GUI software that clutters my setup.&lt;/p&gt;
@@ -87,7 +87,7 @@ Get-Hash C:PathToFile.zip -Algorithm MD5
 Get-Hash C:PathToFile.zip -Algorithm SHA1
 &lt;/code&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/quick-tip-file-hashes-with-powershell-community-extensions/&quot;&gt;Quick Tip: File Hashes with PowerShell Community Extensions&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Site Title&lt;/a&gt; on February 12, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/quick-tip-file-hashes-with-powershell-community-extensions/&quot;&gt;Quick Tip: File Hashes with PowerShell Community Extensions&lt;/a&gt; was originally published by Sean Killeen at &lt;a href=&quot;http://localhost:4000&quot;&gt;SeanKilleen.com&lt;/a&gt; on February 12, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -100,9 +100,9 @@ Get-Hash C:PathToFile.zip -Algorithm SHA1
   <published>2014-01-21T06:39:00-05:00</published>
   <updated>2014-01-21T06:39:00-05:00</updated>
   <author>
-    <name>Your Name</name>
+    <name>Sean Killeen</name>
     <uri>http://localhost:4000</uri>
-    
+    <email>SeanKilleen@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;The Intel RST Community Forum is a tough club to get into!&lt;/p&gt;
 
@@ -134,7 +134,7 @@ Get-Hash C:PathToFile.zip -Algorithm SHA1
 
 &lt;p&gt;…I give up. Intel is just trolling me at this point.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/web-site-fail-of-the-day-intel-rst-community-forum/&quot;&gt;Web site fail of the day: Intel RST Community Forum&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Site Title&lt;/a&gt; on January 21, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/web-site-fail-of-the-day-intel-rst-community-forum/&quot;&gt;Web site fail of the day: Intel RST Community Forum&lt;/a&gt; was originally published by Sean Killeen at &lt;a href=&quot;http://localhost:4000&quot;&gt;SeanKilleen.com&lt;/a&gt; on January 21, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -147,9 +147,9 @@ Get-Hash C:PathToFile.zip -Algorithm SHA1
   <published>2014-01-20T20:39:00-05:00</published>
   <updated>2014-01-20T20:39:00-05:00</updated>
   <author>
-    <name>Your Name</name>
+    <name>Sean Killeen</name>
     <uri>http://localhost:4000</uri>
-    
+    <email>SeanKilleen@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;With all my bellyaching about Backblaze lately, it only stands to reason that I should pick a better system.&lt;/p&gt;
 
@@ -166,7 +166,7 @@ Get-Hash C:PathToFile.zip -Algorithm SHA1
 
 &lt;p&gt;Looking forward to getting this set up ASAP.&amp;lt;/div&amp;gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/my-newest-backup-system-process-lessons-learned/&quot;&gt;My Newest Backup System / Process [Lessons Learned]&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Site Title&lt;/a&gt; on January 20, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/my-newest-backup-system-process-lessons-learned/&quot;&gt;My Newest Backup System / Process [Lessons Learned]&lt;/a&gt; was originally published by Sean Killeen at &lt;a href=&quot;http://localhost:4000&quot;&gt;SeanKilleen.com&lt;/a&gt; on January 20, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -179,9 +179,9 @@ Get-Hash C:PathToFile.zip -Algorithm SHA1
   <published>2014-01-20T20:17:00-05:00</published>
   <updated>2014-01-20T20:17:00-05:00</updated>
   <author>
-    <name>Your Name</name>
+    <name>Sean Killeen</name>
     <uri>http://localhost:4000</uri>
-    
+    <email>SeanKilleen@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;&lt;em&gt;[FYI, since it’s only fair: if Backblaze makes this right or wants to respond, I will absolutely allow them space in this post to do so. I still have a lot of respect for them as a company. &lt;a href=&quot;https://news.ycombinator.com/item?id=7093016&quot;&gt;You can follow the discussion on HackerNews&lt;/a&gt;.]&lt;/em&gt;&lt;/p&gt;
 
@@ -221,7 +221,7 @@ Get-Hash C:PathToFile.zip -Algorithm SHA1
 
 &lt;p&gt;&lt;sup&gt;[3]:&lt;/sup&gt; Seriously, I commend his willingness to engage with a slightly-frustrated customer who found him on Twitter during the weekend. It was a long shot but his response inspires confidence. &lt;a href=&quot;http://storify.com/seankilleen/very-supportive-conversation-with-backblaze-ceo&quot;&gt;Here’s the Storify of our conversation so far&lt;/a&gt;; I’ll edit it as progress is made.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/its-the-backblaze-restores-that-fail/&quot;&gt;"It's the (Backblaze) restores that fail."&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Site Title&lt;/a&gt; on January 20, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/its-the-backblaze-restores-that-fail/&quot;&gt;"It's the (Backblaze) restores that fail."&lt;/a&gt; was originally published by Sean Killeen at &lt;a href=&quot;http://localhost:4000&quot;&gt;SeanKilleen.com&lt;/a&gt; on January 20, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -234,9 +234,9 @@ Get-Hash C:PathToFile.zip -Algorithm SHA1
   <published>2014-01-19T01:55:00-05:00</published>
   <updated>2014-01-19T01:55:00-05:00</updated>
   <author>
-    <name>Your Name</name>
+    <name>Sean Killeen</name>
     <uri>http://localhost:4000</uri>
-    
+    <email>SeanKilleen@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;So it’s been a long day and night rebuilding a system from scratch (Motherboard issue + Hubris + Bad decisions). But on this go ‘round, I decided to install as much of my software as Chocolatey packages as possible.&lt;/p&gt;
 
@@ -262,7 +262,7 @@ clist -lo | Out-File $finalFileName
 
 &lt;p&gt;Now I get a date-versioned list of all my installed packages synced to any of my devices every morning at 4am.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/quick-tip-chocolatey-powershell-dropbox-for-package-management-and-backup/&quot;&gt;Quick tip: Chocolatey + Powershell + Dropbox for package management and backup&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Site Title&lt;/a&gt; on January 19, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/quick-tip-chocolatey-powershell-dropbox-for-package-management-and-backup/&quot;&gt;Quick tip: Chocolatey + Powershell + Dropbox for package management and backup&lt;/a&gt; was originally published by Sean Killeen at &lt;a href=&quot;http://localhost:4000&quot;&gt;SeanKilleen.com&lt;/a&gt; on January 19, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -275,9 +275,9 @@ clist -lo | Out-File $finalFileName
   <published>2014-01-18T22:34:00-05:00</published>
   <updated>2014-01-18T22:34:00-05:00</updated>
   <author>
-    <name>Your Name</name>
+    <name>Sean Killeen</name>
     <uri>http://localhost:4000</uri>
-    
+    <email>SeanKilleen@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Every once in a while I’ll Google for something relatively straightforward to see if there’s a better way to do it.&lt;/p&gt;
 
@@ -305,7 +305,7 @@ clist -lo | Out-File $finalFileName
   &lt;li&gt;&lt;a href=&quot;http://www.petenetlive.com/KB/Article/0000709.htm&quot; target=&quot;_blank&quot;&gt;KB 0000709 - “Where’s the Startup Folder?”&lt;/a&gt; &lt;a href=&quot;http://www.petenetlive.com/&quot; target=&quot;_blank&quot;&gt;[PeteNetLive]&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/quick-tip-the-shell-prefix-in-windows-8-1-dialogs-finding-the-startup-folder-in-windows-8-1-quickly-and-more/&quot;&gt;Quick Tip: The "shell:" prefix in Windows 8.1 dialogs (Finding the Startup Folder in Windows 8.1 quickly and more!)&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Site Title&lt;/a&gt; on January 18, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/quick-tip-the-shell-prefix-in-windows-8-1-dialogs-finding-the-startup-folder-in-windows-8-1-quickly-and-more/&quot;&gt;Quick Tip: The "shell:" prefix in Windows 8.1 dialogs (Finding the Startup Folder in Windows 8.1 quickly and more!)&lt;/a&gt; was originally published by Sean Killeen at &lt;a href=&quot;http://localhost:4000&quot;&gt;SeanKilleen.com&lt;/a&gt; on January 18, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -318,9 +318,9 @@ clist -lo | Out-File $finalFileName
   <published>2013-12-12T18:30:00-05:00</published>
   <updated>2013-12-12T18:30:00-05:00</updated>
   <author>
-    <name>Your Name</name>
+    <name>Sean Killeen</name>
     <uri>http://localhost:4000</uri>
-    
+    <email>SeanKilleen@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;This one’s mostly for my quick personal reference. It wasn’t hard by any means but figured someone else might find it useful.&lt;/p&gt;
 
@@ -342,7 +342,7 @@ clist -lo | Out-File $finalFileName
 &lt;p&gt;Happy coding!&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/a-quick-regular-expression-regex-to-pull-colors-from-a-css-stylesheet/&quot;&gt;A Quick Regular Expression (Regex) to Pull Colors From a CSS Stylesheet&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Site Title&lt;/a&gt; on December 12, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/a-quick-regular-expression-regex-to-pull-colors-from-a-css-stylesheet/&quot;&gt;A Quick Regular Expression (Regex) to Pull Colors From a CSS Stylesheet&lt;/a&gt; was originally published by Sean Killeen at &lt;a href=&quot;http://localhost:4000&quot;&gt;SeanKilleen.com&lt;/a&gt; on December 12, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -355,9 +355,9 @@ clist -lo | Out-File $finalFileName
   <published>2013-12-04T23:44:00-05:00</published>
   <updated>2013-12-04T23:44:00-05:00</updated>
   <author>
-    <name>Your Name</name>
+    <name>Sean Killeen</name>
     <uri>http://localhost:4000</uri>
-    
+    <email>SeanKilleen@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;&lt;strong&gt;Summary:&lt;/strong&gt; I thought this device would be inconsequential, but it makes a world of difference. &lt;a href=&quot;http://www.amazon.com/Logitech-Rechargeable-Touchpad-Multi-Touch-Navigation/dp/B0093H4WT6&quot;&gt;The T650&lt;/a&gt; is a top-notch device so far, and between the great experience with this and my &lt;a href=&quot;http://www.amazon.com/Logitech-Wireless-Solar-Keyboard-K750/dp/B004MF11MU/ref=sr_1_1?s=electronics&amp;amp;ie=UTF8&amp;amp;qid=1386218388&amp;amp;sr=1-1&amp;amp;keywords=k750&quot;&gt;Logitech K750&lt;/a&gt; Keyboard, Logitech has cemented itself as my brand of choice for peripherals going forward. Brand loyalty to a company that makes keyboards and mice – I would not have foreseen that. As of this writing, &lt;a href=&quot;http://www.amazon.com/Logitech-Rechargeable-Touchpad-Multi-Touch-Navigation/dp/B0093H4WT6&quot;&gt;it’s $47 on Amazon&lt;/a&gt; – down from around $70. I can’t recommend it highly enough.&lt;/p&gt;
 
@@ -413,7 +413,7 @@ clist -lo | Out-File $finalFileName
   &lt;li&gt;&lt;a href=&quot;http://www.amazon.com/Logitech-Wireless-Solar-Keyboard-K750/dp/B004MF11MU/ref=sr_1_1?s=electronics&amp;amp;ie=UTF8&amp;amp;qid=1386218388&amp;amp;sr=1-1&amp;amp;keywords=k750&quot; target=&quot;_blank&quot;&gt;Logitech K750&lt;/a&gt; [&lt;a href=&quot;http://amazon.com/&quot;&gt;Amazon.com&lt;/a&gt;]&lt;/li&gt;
 &lt;/ul&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/touched-by-a-peripheral-logitech-t650-review-a-must-have/&quot;&gt;Touched by a Peripheral: Logitech T650 Review [A must-have]&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Site Title&lt;/a&gt; on December 04, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/touched-by-a-peripheral-logitech-t650-review-a-must-have/&quot;&gt;Touched by a Peripheral: Logitech T650 Review [A must-have]&lt;/a&gt; was originally published by Sean Killeen at &lt;a href=&quot;http://localhost:4000&quot;&gt;SeanKilleen.com&lt;/a&gt; on December 04, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -426,9 +426,9 @@ clist -lo | Out-File $finalFileName
   <published>2013-12-02T18:30:00-05:00</published>
   <updated>2013-12-02T18:30:00-05:00</updated>
   <author>
-    <name>Your Name</name>
+    <name>Sean Killeen</name>
     <uri>http://localhost:4000</uri>
-    
+    <email>SeanKilleen@gmail.com</email>
   </author>
   <content type="html">&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
 &lt;p&gt;Sometimes, for whatever reason, Intellisense will go away in Visual Studio while using ReSharper.&lt;/p&gt;
@@ -451,7 +451,7 @@ clist -lo | Out-File $finalFileName
 
 &lt;p&gt;At this point, ReSharper appears to refresh its settings and this kicks Intellisense back into action.&amp;lt;/div&amp;gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/solved-visual-studio-sometimes-loses-intellisense-with-resharper-8-x-field-notes/&quot;&gt;Solved: Visual Studio sometimes loses Intellisense with ReSharper 8.x [Field Notes]&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Site Title&lt;/a&gt; on December 02, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/solved-visual-studio-sometimes-loses-intellisense-with-resharper-8-x-field-notes/&quot;&gt;Solved: Visual Studio sometimes loses Intellisense with ReSharper 8.x [Field Notes]&lt;/a&gt; was originally published by Sean Killeen at &lt;a href=&quot;http://localhost:4000&quot;&gt;SeanKilleen.com&lt;/a&gt; on December 02, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -464,15 +464,15 @@ clist -lo | Out-File $finalFileName
   <published>2013-11-25T20:00:00-05:00</published>
   <updated>2013-11-25T20:00:00-05:00</updated>
   <author>
-    <name>Your Name</name>
+    <name>Sean Killeen</name>
     <uri>http://localhost:4000</uri>
-    
+    <email>SeanKilleen@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;When you don’t have code coverage for a number of tests in a class:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2013/11/2013-11-25_TharBeDragons.png&quot; alt=&quot;Funny Image in ContinousTests when there&#39;s no code coverage&quot; /&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/uiux-joy-of-the-day-continuoustests-com-visual-studio-add-in/&quot;&gt;UI/UX Joy of the Day: ContinuousTests.com Visual Studio Add-In&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Site Title&lt;/a&gt; on November 25, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/uiux-joy-of-the-day-continuoustests-com-visual-studio-add-in/&quot;&gt;UI/UX Joy of the Day: ContinuousTests.com Visual Studio Add-In&lt;/a&gt; was originally published by Sean Killeen at &lt;a href=&quot;http://localhost:4000&quot;&gt;SeanKilleen.com&lt;/a&gt; on November 25, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -485,9 +485,9 @@ clist -lo | Out-File $finalFileName
   <published>2013-11-25T18:30:00-05:00</published>
   <updated>2013-11-25T18:30:00-05:00</updated>
   <author>
-    <name>Your Name</name>
+    <name>Sean Killeen</name>
     <uri>http://localhost:4000</uri>
-    
+    <email>SeanKilleen@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Since my new gig has me diving into Javascript quite a bit, I’ve really been loving &lt;a href=&quot;http://jshint.com/&quot;&gt;JSHint&lt;/a&gt; integration (brought to us lovingly by &lt;a href=&quot;http://madskristensen.net/&quot;&gt;Mads Kristensen&lt;/a&gt; and the team building the &lt;a href=&quot;http://vswebessentials.com/&quot;&gt;Web Essentials&lt;/a&gt; 2012 add-on).&lt;/p&gt;
 
@@ -559,7 +559,7 @@ Yiiiikes.&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/jshint/jshint/search?q=nomen&amp;amp;source=cc&amp;amp;type=Issues&quot;&gt;JSHint: Issues containing “nomen”&lt;/a&gt; [&lt;a href=&quot;http://www.github.com/&quot;&gt;Github&lt;/a&gt;]&amp;lt;/li&amp;gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/using-jshint-with-underscore-js-in-visual-studio-2012-field-notes/&quot;&gt;Using JSHint with Underscore.js in Visual Studio 2012 [Field Notes]&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Site Title&lt;/a&gt; on November 25, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/using-jshint-with-underscore-js-in-visual-studio-2012-field-notes/&quot;&gt;Using JSHint with Underscore.js in Visual Studio 2012 [Field Notes]&lt;/a&gt; was originally published by Sean Killeen at &lt;a href=&quot;http://localhost:4000&quot;&gt;SeanKilleen.com&lt;/a&gt; on November 25, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -572,9 +572,9 @@ Yiiiikes.&lt;/p&gt;
   <published>2013-11-24T17:47:00-05:00</published>
   <updated>2013-11-24T17:47:00-05:00</updated>
   <author>
-    <name>Your Name</name>
+    <name>Sean Killeen</name>
     <uri>http://localhost:4000</uri>
-    
+    <email>SeanKilleen@gmail.com</email>
   </author>
   <content type="html">&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
 
@@ -602,7 +602,7 @@ Yiiiikes.&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;https://downloadcenter.intel.com/confirm.aspx?httpDown=http://downloadmirror.intel.com/23071/eng/PROWinx64.exe&amp;amp;lang=eng&amp;amp;Dwnldid=23071&amp;amp;DownloadType=Drivers&amp;amp;OSFullname=Windows+8*&quot; target=&quot;_blank&quot;&gt;Direct Link for Intel Network Adapter for Windows 8.1 v18.7&lt;/a&gt; [&lt;a href=&quot;https://downloadcenter.intel.com/Default.aspx?lang=eng&quot; target=&quot;_blank&quot;&gt;Intel Download Center&lt;/a&gt;]&lt;/li&gt;
 &lt;/ul&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/how-to-fix-error-0x80041010-on-windows-8-1-hyper-v/&quot;&gt;How to: Fix error 0x80041010 on Windows 8.1 + Hyper-V&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Site Title&lt;/a&gt; on November 24, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/how-to-fix-error-0x80041010-on-windows-8-1-hyper-v/&quot;&gt;How to: Fix error 0x80041010 on Windows 8.1 + Hyper-V&lt;/a&gt; was originally published by Sean Killeen at &lt;a href=&quot;http://localhost:4000&quot;&gt;SeanKilleen.com&lt;/a&gt; on November 24, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -615,9 +615,9 @@ Yiiiikes.&lt;/p&gt;
   <published>2013-09-10T20:32:00-04:00</published>
   <updated>2013-09-10T20:32:00-04:00</updated>
   <author>
-    <name>Your Name</name>
+    <name>Sean Killeen</name>
     <uri>http://localhost:4000</uri>
-    
+    <email>SeanKilleen@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Just signed up for the Jitbit Helpdesk support site so that I could report an issue with their product.&lt;/p&gt;
 
@@ -627,7 +627,7 @@ Yiiiikes.&lt;/p&gt;
 
 &lt;p&gt;Uncool, Jitbit, uncool. I’ll be looking to move my company away from your products at some point.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/plaintext-password-offender-jitbit-helpdesk/&quot;&gt;Plaintext Password Offender: Jitbit Helpdesk&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Site Title&lt;/a&gt; on September 10, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/plaintext-password-offender-jitbit-helpdesk/&quot;&gt;Plaintext Password Offender: Jitbit Helpdesk&lt;/a&gt; was originally published by Sean Killeen at &lt;a href=&quot;http://localhost:4000&quot;&gt;SeanKilleen.com&lt;/a&gt; on September 10, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -640,9 +640,9 @@ Yiiiikes.&lt;/p&gt;
   <published>2013-07-09T23:23:00-04:00</published>
   <updated>2013-07-09T23:23:00-04:00</updated>
   <author>
-    <name>Your Name</name>
+    <name>Sean Killeen</name>
     <uri>http://localhost:4000</uri>
-    
+    <email>SeanKilleen@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;Ran into this today; thought I’d document it for others.&lt;/p&gt;
 
@@ -662,7 +662,7 @@ Yiiiikes.&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;http://answers.microsoft.com/en-us/office/forum/office_2010-onenote/kb2760600-not-installing/811842f5-6a58-40e1-a107-7303ddc4dcdf&quot; target=&quot;_blank&quot;&gt;KB2760600 - not installing&lt;/a&gt; [&lt;a href=&quot;http://answers.microsoft.com/en-us&quot; target=&quot;_blank&quot;&gt;Microsoft Community&lt;/a&gt;]&lt;/li&gt;
 &lt;/ul&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/problem-solved-windows-8-windows-update-freezes-on-kb2760600-security-update-for-microsoft-onenote-2010/&quot;&gt;Problem Solved: Windows 8 Windows Update Freezes on KB2760600, "Security Update for Microsoft OneNote 2010"&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Site Title&lt;/a&gt; on July 09, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/problem-solved-windows-8-windows-update-freezes-on-kb2760600-security-update-for-microsoft-onenote-2010/&quot;&gt;Problem Solved: Windows 8 Windows Update Freezes on KB2760600, "Security Update for Microsoft OneNote 2010"&lt;/a&gt; was originally published by Sean Killeen at &lt;a href=&quot;http://localhost:4000&quot;&gt;SeanKilleen.com&lt;/a&gt; on July 09, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -675,9 +675,9 @@ Yiiiikes.&lt;/p&gt;
   <published>2013-05-26T13:35:00-04:00</published>
   <updated>2013-05-26T13:35:00-04:00</updated>
   <author>
-    <name>Your Name</name>
+    <name>Sean Killeen</name>
     <uri>http://localhost:4000</uri>
-    
+    <email>SeanKilleen@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;I have a little time to kill this holiday weekend and wanted to try something fun (at least before it gets warm enough to go outside for the rest of the day). Some friends and I have been playing &lt;a href=&quot;http://www.technicpack.net/tekkit-lite/&quot;&gt;Tekkit Lite&lt;/a&gt; off and on, and being the resident IT geek, I’m hosting the server.&lt;/p&gt;
 
@@ -756,7 +756,7 @@ In the yajsw folder, find the &lt;code&gt;conf&lt;/code&gt; directory and edit t
 
 &lt;p&gt;If you try this, let me know how it works out for you in the comments. Happy gaming!&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/minecraft-tekkit-lite-earth-map-as-a-service-nerd-fun/&quot;&gt;Minecraft Tekkit Lite Earth Map as a Service [Nerd Fun]&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Site Title&lt;/a&gt; on May 26, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/minecraft-tekkit-lite-earth-map-as-a-service-nerd-fun/&quot;&gt;Minecraft Tekkit Lite Earth Map as a Service [Nerd Fun]&lt;/a&gt; was originally published by Sean Killeen at &lt;a href=&quot;http://localhost:4000&quot;&gt;SeanKilleen.com&lt;/a&gt; on May 26, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -769,9 +769,9 @@ In the yajsw folder, find the &lt;code&gt;conf&lt;/code&gt; directory and edit t
   <published>2013-03-16T13:08:00-04:00</published>
   <updated>2013-03-16T13:08:00-04:00</updated>
   <author>
-    <name>Your Name</name>
+    <name>Sean Killeen</name>
     <uri>http://localhost:4000</uri>
-    
+    <email>SeanKilleen@gmail.com</email>
   </author>
   <content type="html">&lt;p&gt;&lt;em&gt;&lt;strong&gt;Update:&lt;/strong&gt; As promised, I’m updating this to include &lt;a href=&quot;https://twitter.com/TomJunod/status/312989731157835777&quot;&gt;Tom Junod’s response&lt;/a&gt;. He notes that &lt;strong&gt;the profile is  available in the &lt;a href=&quot;https://www.byliner.com/originals/great-men&quot;&gt;Esquire collection of profiles entitled “Great Men” at Byliner&lt;/a&gt;. At $3.99 it appears to be a fantastic deal.&lt;/strong&gt; I’ll be purchasing, and I hope you will, too. If he asks me to remove the text below, I’ll be doing so, but I hope he’ll let us continue to read it here as well.&lt;/em&gt;
 ___
@@ -910,7 +910,7 @@ And then he was on the move again, happily, quickly, for he would not leave unti
 &lt;p&gt;“Thank you, God,” Mister Rogers said.&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/mr-rogers-can-you-say-hero/&quot;&gt;Mr. Rogers: Can you say hero?&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Site Title&lt;/a&gt; on March 16, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/mr-rogers-can-you-say-hero/&quot;&gt;Mr. Rogers: Can you say hero?&lt;/a&gt; was originally published by Sean Killeen at &lt;a href=&quot;http://localhost:4000&quot;&gt;SeanKilleen.com&lt;/a&gt; on March 16, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -923,9 +923,9 @@ And then he was on the move again, happily, quickly, for he would not leave unti
   <published>2013-02-26T19:00:00-05:00</published>
   <updated>2013-02-26T19:00:00-05:00</updated>
   <author>
-    <name>Your Name</name>
+    <name>Sean Killeen</name>
     <uri>http://localhost:4000</uri>
-    
+    <email>SeanKilleen@gmail.com</email>
   </author>
   <content type="html">&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
 &lt;p&gt;When attempting to run a report from Crystal Reports Server 2008, the “processing data” wheel seems to be stuck in an infinite spin. On a server with constrained resources, this might seem to be a processing speed issue. This only happens with a specific report.&lt;/p&gt;
@@ -944,7 +944,7 @@ And then he was on the move again, happily, quickly, for he would not leave unti
 
 &lt;p&gt;This led me on a goose chase for hours the other day, so I hope someone else might benefit.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/crystal-reports-gotchas-spinning-wheel-forever-check-for-hidden-error-messages-field-notes/&quot;&gt;Crystal Reports Gotchas: Spinning Wheel Forever? Check for Hidden Error Messages. [Field Notes]&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Site Title&lt;/a&gt; on February 26, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/crystal-reports-gotchas-spinning-wheel-forever-check-for-hidden-error-messages-field-notes/&quot;&gt;Crystal Reports Gotchas: Spinning Wheel Forever? Check for Hidden Error Messages. [Field Notes]&lt;/a&gt; was originally published by Sean Killeen at &lt;a href=&quot;http://localhost:4000&quot;&gt;SeanKilleen.com&lt;/a&gt; on February 26, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -957,9 +957,9 @@ And then he was on the move again, happily, quickly, for he would not leave unti
   <published>2013-02-18T19:00:00-05:00</published>
   <updated>2013-02-18T19:00:00-05:00</updated>
   <author>
-    <name>Your Name</name>
+    <name>Sean Killeen</name>
     <uri>http://localhost:4000</uri>
-    
+    <email>SeanKilleen@gmail.com</email>
   </author>
   <content type="html">&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
 &lt;p&gt;I was writing a Microsoft Word document and making use of cross-references, when I realized that upon changing the text/title of my cross reference, the links to that reference would not update their text. This led to me having to right-click each reference and choose “Update”.&lt;/p&gt;
@@ -971,7 +971,7 @@ And then he was on the move again, happily, quickly, for he would not leave unti
 
 &lt;p&gt;&lt;code&gt;F9&lt;/code&gt; is the magic key in Word to update cross-references, so selecting the entire document (via &lt;code&gt;CTRL + A&lt;/code&gt;) and then pressing &lt;code&gt;F9&lt;/code&gt; gets the job done.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/how-to-keep-cross-references-updated-in-microsoft-word-field-notes/&quot;&gt;How To: Keep Cross-references Updated in Microsoft Word [Field Notes]&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Site Title&lt;/a&gt; on February 18, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/how-to-keep-cross-references-updated-in-microsoft-word-field-notes/&quot;&gt;How To: Keep Cross-references Updated in Microsoft Word [Field Notes]&lt;/a&gt; was originally published by Sean Killeen at &lt;a href=&quot;http://localhost:4000&quot;&gt;SeanKilleen.com&lt;/a&gt; on February 18, 2013.&lt;/p&gt;</content>
 </entry>
 
 
@@ -984,9 +984,9 @@ And then he was on the move again, happily, quickly, for he would not leave unti
   <published>2013-01-28T20:00:00-05:00</published>
   <updated>2013-01-28T20:00:00-05:00</updated>
   <author>
-    <name>Your Name</name>
+    <name>Sean Killeen</name>
     <uri>http://localhost:4000</uri>
-    
+    <email>SeanKilleen@gmail.com</email>
   </author>
   <content type="html">&lt;h3 id=&quot;problem&quot;&gt;Problem&lt;/h3&gt;
 &lt;p&gt;VMs that leave ISOs mounted cause problems. I’d like to find all the VMs that have CD-ROM drives loaded with ISOs, look over that list, and then remove them if necessary.&lt;/p&gt;
@@ -1009,7 +1009,7 @@ And then he was on the move again, happily, quickly, for he would not leave unti
 
 &lt;p&gt;Note the &lt;code&gt;-Confirm:$False&lt;/code&gt; to allow it to just proceed with what it needs to do.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/how-to-use-powercli-to-find-and-disconnect-all-cd-drives-on-vms-field-notes/&quot;&gt;How To: Use PowerCLI to find (and disconnect) all CD Drives on VMs [Field Notes]&lt;/a&gt; was originally published by Your Name at &lt;a href=&quot;http://localhost:4000&quot;&gt;Site Title&lt;/a&gt; on January 28, 2013.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/how-to-use-powercli-to-find-and-disconnect-all-cd-drives-on-vms-field-notes/&quot;&gt;How To: Use PowerCLI to find (and disconnect) all CD Drives on VMs [Field Notes]&lt;/a&gt; was originally published by Sean Killeen at &lt;a href=&quot;http://localhost:4000&quot;&gt;SeanKilleen.com&lt;/a&gt; on January 28, 2013.&lt;/p&gt;</content>
 </entry>
 
 </feed>
