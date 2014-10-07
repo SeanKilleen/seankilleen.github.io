@@ -3,11 +3,10 @@
 - title: About
   url: /about/
 
-- title: Sample Posts
+- title: All Posts
   url: /posts/
 
-- title: Theme Setup
-  url: /theme-setup/
-
-- title: Made Mistakes
-  url: http://mademistakes.com
+- tite: Contact Me
+  url: /contact/
+  
+ 
