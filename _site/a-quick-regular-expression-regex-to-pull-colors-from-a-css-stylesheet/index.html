@@ -5,34 +5,40 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Site Title</title>
-<meta name="description" content="A minimal Jekyll theme for your blog by designer Michael Rose.">
-<meta name="keywords" content="Jekyll, theme, responsive, blog, template">
+<title>A Quick Regular Expression (Regex) to Pull Colors From a CSS Stylesheet &#8211; Site Title</title>
+<meta name="description" content="This one’s mostly for my quick personal reference. It wasn’t hard by any means but figured someone else might find it useful.
+
+">
+<meta name="keywords" content="">
 
 
 
 <!-- Twitter Cards -->
-<meta name="twitter:title" content="Site Title">
-<meta name="twitter:description" content="A minimal Jekyll theme for your blog by designer Michael Rose.">
+<meta name="twitter:title" content="A Quick Regular Expression (Regex) to Pull Colors From a CSS Stylesheet">
+<meta name="twitter:description" content="This one’s mostly for my quick personal reference. It wasn’t hard by any means but figured someone else might find it useful.
+
+">
 
 
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:4000/images/sample-image-1.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/default-thumb.png">
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Site Title">
-<meta property="og:description" content="A minimal Jekyll theme for your blog by designer Michael Rose.">
-<meta property="og:url" content="http://localhost:4000/">
+<meta property="og:title" content="A Quick Regular Expression (Regex) to Pull Colors From a CSS Stylesheet">
+<meta property="og:description" content="This one’s mostly for my quick personal reference. It wasn’t hard by any means but figured someone else might find it useful.
+
+">
+<meta property="og:url" content="http://localhost:4000/a-quick-regular-expression-regex-to-pull-colors-from-a-css-stylesheet/">
 <meta property="og:site_name" content="Site Title">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/">
+<link rel="canonical" href="http://localhost:4000/a-quick-regular-expression-regex-to-pull-colors-from-a-css-stylesheet/">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Site Title Feed">
 
 
@@ -73,7 +79,7 @@
 
 </head>
 
-<body class="home">
+<body class="post">
 
 <!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
 
@@ -111,19 +117,8 @@
 </div><!-- /.navigation-wrapper -->
 
 
-  <div class="image-wrap">
-  <img src=
-    
-      "http://localhost:4000/images/sample-image-1.jpg"
-    
-  alt=" feature image">
-  
-    <span class="image-credit">Photo Credit: <a href="http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/">WeGraphics</a></span>
-  
-  </div><!-- /.image-wrap -->
 
-
-<div id="main" role="main"> 
+<div id="main" role="main">
   <div class="article-author-side">
     
 
@@ -149,57 +144,81 @@
 
 
   </div>
-  <div id="index">
-    <h3><a href="http://localhost:4000/posts/">Recent Posts</a></h3>
-        
-    <article>
+  <article class="post">
+    <div class="headline-wrap">
       
-        <h2><a href="http://localhost:4000/how-to-drag-and-drop-files-to-an-elevated-program-field-notes/" title="How to: Drag and Drop Files to an Elevated Program [Field Notes]">How to: Drag and Drop Files to an Elevated Program [Field Notes]</a></h2>
-        <p>Problem
+        <h1><a href="http://localhost:4000/a-quick-regular-expression-regex-to-pull-colors-from-a-css-stylesheet/" rel="bookmark" title="A Quick Regular Expression (Regex) to Pull Colors From a CSS Stylesheet">A Quick Regular Expression (Regex) to Pull Colors From a CSS Stylesheet</a></h1>
+      
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      <p>This one’s mostly for my quick personal reference. It wasn’t hard by any means but figured someone else might find it useful.</p>
 
-</p>
-      
-    </article>
-        
-    <article>
-      
-        <h2><a href="http://localhost:4000/quick-tip-file-hashes-with-powershell-community-extensions/" title="Quick Tip: File Hashes with PowerShell Community Extensions">Quick Tip: File Hashes with PowerShell Community Extensions</a></h2>
-        <p>Problem
-I need to calculate the MD5 and SHA hashes for a file from Windows and I’d rather not download 3rd-party GUI software that clutters my setup.
+<h3 id="problem">Problem</h3>
+<p>I need to find all hex color codes in a style sheet so I can extract them.</p>
 
-</p>
-      
-    </article>
-        
-    <article>
-      
-        <h2><a href="http://localhost:4000/web-site-fail-of-the-day-intel-rst-community-forum/" title="Web site fail of the day: Intel RST Community Forum">Web site fail of the day: Intel RST Community Forum</a></h2>
-        <p>The Intel RST Community Forum is a tough club to get into!
+<h3 id="solution">Solution</h3>
+<p>I came up with a quick Regex (regular expression) to do this:</p>
 
-</p>
-      
-    </article>
-        
-    <article>
-      
-        <h2><a href="http://localhost:4000/my-newest-backup-system-process-lessons-learned/" title="My Newest Backup System / Process [Lessons Learned]">My Newest Backup System / Process [Lessons Learned]</a></h2>
-        <p>With all my bellyaching about Backblaze lately, it only stands to reason that I should pick a better system.
+<pre><code>#([A-Fa-f0-9]*);
+</code></pre>
 
-</p>
-      
-    </article>
-        
-    <article>
-      
-        <h2><a href="http://localhost:4000/its-the-backblaze-restores-that-fail/" title=""It's the (Backblaze) restores that fail."">"It's the (Backblaze) restores that fail."</a></h2>
-        <p>[FYI, since it’s only fair: if Backblaze makes this right or wants to respond, I will absolutely allow them space in this post to do so. I still have a lot o...</p>
-      
-    </article>
-    
-  </div><!-- /#index -->
+<p>Essentially, it just looks for a pound symbol (<code>#</code>), followed by any amount of numbers 0-9 or letters a-f, followed by a semi-colon.</p>
+
+<p>If you’re interested to try it, you can view <a href="">my example over at Regex Tester</a>.</p>
+
+<p>It’s not the slickest but it got the job done quickly.</p>
+
+<p>Happy coding!</p>
+
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          
+
+
+
+	<img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Your Name bio photo">
+
+<h3>Your Name</h3>
+<p>Describe your self.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <p class="byline"><strong>A Quick Regular Expression (Regex) to Pull Colors From a CSS Stylesheet</strong> was published on <time datetime="2013-12-12T18:30:00-05:00">December 12, 2013</time>.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  
+  </article>
 </div><!-- /#main -->
 
 <div class="footer-wrap">
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="http://localhost:4000/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="http://localhost:4000/how-to-drag-and-drop-files-to-an-elevated-program-field-notes/" title="How to: Drag and Drop Files to an Elevated Program [Field Notes]">How to: Drag and Drop Files to an Elevated Program [Field Notes]</a></li>
+    
+      <li><a href="http://localhost:4000/quick-tip-file-hashes-with-powershell-community-extensions/" title="Quick Tip: File Hashes with PowerShell Community Extensions">Quick Tip: File Hashes with PowerShell Community Extensions</a></li>
+    
+      <li><a href="http://localhost:4000/web-site-fail-of-the-day-intel-rst-community-forum/" title="Web site fail of the day: Intel RST Community Forum">Web site fail of the day: Intel RST Community Forum</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
   <footer>
     
 
@@ -212,7 +231,7 @@ I need to calculate the MD5 and SHA hashes for a file from Windows and I’d rat
 <script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="http://localhost:4000/assets/js/scripts.min.js"></script>
 
+	        
 
-  
 </body>
 </html>

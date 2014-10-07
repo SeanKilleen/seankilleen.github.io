@@ -1,0 +1,376 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Building a Build Process, Part 6b: MSBuild Integration With Cassini and Visual Studio &#8211; Site Title</title>
+<meta name="description" content="This is part of a larger series in building a proper build process. For more information and additional series links, check out the introductory post.
+
+">
+<meta name="keywords" content="">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Building a Build Process, Part 6b: MSBuild Integration With Cassini and Visual Studio">
+<meta name="twitter:description" content="This is part of a larger series in building a proper build process. For more information and additional series links, check out the introductory post.
+
+">
+
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/default-thumb.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Building a Build Process, Part 6b: MSBuild Integration With Cassini and Visual Studio">
+<meta property="og:description" content="This is part of a larger series in building a proper build process. For more information and additional series links, check out the introductory post.
+
+">
+<meta property="og:url" content="http://localhost:4000/building-a-build-process-part-6b-msbuild-integration-with-cassini-and-visual-studio/">
+<meta property="og:site_name" content="Site Title">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/building-a-build-process-part-6b-msbuild-integration-with-cassini-and-visual-studio/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Site Title Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="post">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="http://localhost:4000">Site Title</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+					    
+					        
+					    
+					    <li><a href="http://localhost:4000/about/" >About</a></li>
+					  
+					    
+					        
+					    
+					    <li><a href="http://localhost:4000/posts/" >Sample Posts</a></li>
+					  
+					    
+					        
+					    
+					    <li><a href="http://localhost:4000/theme-setup/" >Theme Setup</a></li>
+					  
+					    
+					        
+					        
+					    <li><a href="http://mademistakes.com" target="_blank">Made Mistakes</a></li>
+					  
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+
+
+
+	<img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Your Name bio photo">
+
+<h3>Your Name</h3>
+<p>Describe your self.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  <article class="post">
+    <div class="headline-wrap">
+      
+        <h1><a href="http://localhost:4000/building-a-build-process-part-6b-msbuild-integration-with-cassini-and-visual-studio/" rel="bookmark" title="Building a Build Process, Part 6b: MSBuild Integration With Cassini and Visual Studio">Building a Build Process, Part 6b: MSBuild Integration With Cassini and Visual Studio</a></h1>
+      
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      <p><em>This is part of <a href="">a larger series</a> in building a proper build process. For more information and additional series links, check out the <a href="">introductory post</a>.</em></p>
+
+<h3 id="this-time">This Time…</h3>
+<p>In this round, we’re going to discuss:</p>
+
+<ul>
+  <li>How to Start the Cassini Web Server Asynchronously </li>
+  <li>How to Stop the Cassini Web Server  </li>
+  <li>How to (not quite) get Visual Studio to seemlessly Follow the Same directions that your MSBuild file follows.</li>
+</ul>
+
+<h3 id="starting-the-web-server-asynchronously">Starting the Web Server (Asynchronously!)</h3>
+<p>Visual Studio has a built-in web server – no doubt you’re familiar with it. It’s what runs whenever you hit F5 on a web server and see a web site come up. This server is called Cassini, and you can start it up through an MS Build Task.</p>
+
+<p><em>[<strong>A little background</strong>: Rather than show here, I’m going to tell. You can use the Exec task normally to run an executable, but the catch is that MSBuild will usually wait for the task to finish. We’re going to use the AsyncExec task in order to ensure that MSBuild will start the web server and continue performing next commands without waiting for Cassini to exit, since waiting on Cassini would be undesirable behavior here.]</em></p>
+
+<p>We’re going to take advantage of an excellent set of extensions called the MSBuild Community Tasks to accomplish our mission here.</p>
+
+<h3 id="get-the-msbuild-extension-pack">Get the MSBuild Extension Pack</h3>
+<p>You should visit the <a href="">MSBuild Extension Pack web site</a> for an excellent overview of the capabilities of these tools. You can just click the download button on the right-hand side to get the latest version in ZIP format..</p>
+
+<ul>
+  <li>Unzip the download (anywhere is fine).</li>
+  <li>Go one level deeper and extract the <code>.NET 4.0</code> zip file.</li>
+  <li>Create a folder in the <code>thirdpartytools</code> folder of your solution called <code>MSBuildExtensionPack</code>.</li>
+  <li>Copy the contents of the <code>Build</code> folder from the zip file (the .dlls, etc.) into this directory.
+###Updating Your Build File to be AsyncExec Ready
+We’ll have to update the build file to bring in the new task library (a great feature of MSBuild, by the way). To do this, we’ll add an import directive to the Extension Pack’s Task Files (this should go just inside of the <code>&lt;project&gt;</code> tag):</li>
+</ul>
+
+<p><code>
+&lt;Import Project=".thirdpartytoolsMSBuildExtensionPackMSBuild.ExtensionPack.tasks"&gt;`
+</code></p>
+
+<p>Next up, we have to make a slight modification. The Extension Pack attempts to do some nice work for us to include all the tasks, but we need to override it. Find the following section at the top of the <code>MSBuild.ExtensionPack.Tasks</code> file and comment it out (in the lines below, I’ve done that already for you):</p>
+
+<p>```xml
+&lt;!–    </p>
+<propertygroup>
+        <buildpath condition="'$(BuildPath)' == ''">$(MSBuildProjectDirectory)</buildpath>
+        <extensiontaskspath condition="Exists('$(BuildPath)....BuildBinariesMSBuild.ExtensionPack.dll')">$(BuildPath)....BuildBinaries</extensiontaskspath>
+        <extensiontaskspath condition="'$(ExtensionTasksPath)' == ''">$(MSBuildExtensionsPath)ExtensionPack4.0</extensiontaskspath>
+    </propertygroup>
+<p>–&gt;
+```</p>
+
+<p>Since the Extension Pack is no longer figuring out what its path is, we need to set an item in our <code>&lt;ItemGroup</code> to point it to the right place: </p>
+
+<p><code>xml
+&lt;ExtensionTasksPath Include=".thirdpartytoolsMSBuildExtensionPack"/&gt;
+</code>
+Now we’re ready to add the command to start the web server.</p>
+
+<h3 id="adding-a-target-to-start-the-web-site">Adding a Target to Start the Web Site</h3>
+
+<p>First thing’s first – we have to add an item to the <code>&lt;ItemGroup&gt;</code> section to tell MSBuild where Cassini resides, and an item to tell it where our published web site will reside once it’s been spat out by our build process. I took the guesswork out of it for you in the lines below: </p>
+
+<p><code>xml
+&lt;Cassini Include="$(CommonProgramFiles)microsoft sharedDevServer10.0WebDev.WebServer40.exe"/&gt;
+&lt;Website Include=".buildartifacts_PublishedWebsitesTestProject.Web"/&gt;
+</code></p>
+
+<p>Next, we use the AsyncExec task from the Extension Pack to run the web server without hanging up our build process:</p>
+
+<p><code>xml
+&lt;Target Name="StartWebsite" DependsOnTargets="Compile"&gt;         
+    &lt;AsyncExec Command='"@(Cassini)" /port:9999 /path:"%(WebSite.FullPath)" /vpath:'/&gt;     
+&lt;/Target&gt;
+</code>
+Try running your build file with a target of <code>StartWebsite</code>. You should be able to navigate to http://localhost:9999/ and see the web site in action (though it may just show a directory’s contents if the site is empty).</p>
+
+<p>However, you may have noticed something. What stops the website so we can start it again? Nothing, and so we’re going to build that target too.</p>
+
+<h3 id="adding-a-target-to-stop-the-web-site-and-updating-dependencies">Adding a Target to Stop the Web Site and Updating Dependencies</h3>
+<p>You can use the handy built-into-windows <code>TaskKill</code> program to force a kill of program that has the same name as the WebServer. We just call it with an Exec Command, as shown below:</p>
+
+<p><code>xml
+&lt;Target Name="StopWebsite"&gt;         
+    &lt;Exec Command="taskkill /f /im WebDev.WebServer40.exe" IgnoreExitCode="true" IgnoreStandardErrorWarningFormat="true"/&gt;     &lt;/Target&gt;
+</code>
+After that, we add the <code>StopWebsite</code> Target as a dependency to <code>StartWebsite</code>, before compile, so we know the site will be down before MS Build erases the files and spits out new ones: </p>
+
+<p><code>xml
+&lt;Target Name="StartWebsite" DependsOnTargets="StopWebsite;Compile"&gt;
+...
+&lt;/Target&gt;
+</code>
+Go ahead and try running your build with the <code>StopWebsite</code> and <code>StartWebsite</code> targets. </p>
+
+<p><strong>NOTE:</strong> You may receive an error upon starting Cassini about there only being one instance allowed on a port. If you do, try changing the port number from <code>9999</code> to something else in the StartWebsite task (try to pick a port that’s not being used!).</p>
+
+<p>For reference, at this point, our build file looks like:</p>
+
+<p>```xml
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" toolsversion="4.0" defaulttargets="Compile">
+    <import project=".\thirdparty\tools\MSBuildExtensionPack\MSBuild.ExtensionPack.tasks"></import></project></p>
+
+<pre><code>&lt;ItemGroup&gt;
+    &lt;ExtensionTasksPath Include=".\thirdparty\tools\MSBuildExtensionPack\"/&gt;
+    &lt;BuildArtifacts Include=".\buildartifacts\"/&gt;
+    &lt;SolutionFile Include=".\TestProject.sln"/&gt;
+    &lt;Cassini Include="$(CommonProgramFiles)\microsoft shared\DevServer\10.0\WebDev.WebServer40.exe"/&gt;
+    &lt;Website Include=".\buildartifacts\_PublishedWebsites\TestProject.Web"/&gt;
+ 
+&lt;/ItemGroup&gt;
+   
+   
+&lt;Target Name ="Clean"&gt;
+    &lt;RemoveDir Directories="@(BuildArtifacts)"/&gt;
+&lt;/Target&gt;
+ 
+&lt;Target Name="Init" DependsOnTargets="Clean"&gt;
+    &lt;MakeDir Directories ="@(BuildArtifacts)"/&gt;
+&lt;/Target&gt;
+ 
+&lt;Target Name="Compile" DependsOnTargets="Init"&gt;
+    &lt;MSBuild Projects="@(SolutionFile)" Targets="Rebuild" Properties="OutDir=%(BuildArtifacts.FullPath)"/&gt;
+&lt;/Target&gt;
+ 
+&lt;Target Name="StopWebsite"&gt;
+    &lt;Exec Command="taskkill /f /im WebDev.WebServer40.exe" IgnoreExitCode="true" IgnoreStandardErrorWarningFormat="true"/&gt;
+&lt;/Target&gt;
+   
+&lt;Target Name="StartWebsite" DependsOnTargets="StopWebsite;Compile"&gt;
+    &lt;AsyncExec Command='"@(Cassini)" /port:9999 /path:"%(WebSite.FullPath)" /vpath:'/&gt;
+&lt;/Target&gt;
+</code></pre>
+
+<p>&lt;/Project&gt;
+```</p>
+
+<h3 id="getting-visual-studio-to-play-along-help-needed">Getting Visual Studio to Play Along: Help Needed!</h3>
+<p>Unfortunately, this is one area that this blog series will fall short. I’ve scoured the internet in an attempt to find out how I can output the bin and obj to another folder based on the $(SolutionDir) variable, but apparently unlike C++, Visual Studio for C# does not allow this and instead creates a strange Folder with “$(SolutionDir)” literally in the name. I thought it would be pretty straightforward, but boy was I wrong. If anyone has any suggestions, I’m all ears. I was told I could go the route of editing the .csproj file, but I really tend to be wary of that kind of text editing; I like Visual Studio to be able to own that file for its sake.</p>
+
+<p>For now, I just recommend using TortoiseSVN to ignore those folders in your source control so that it doesn’t conflict with anyone else if you hit F5 and commit later. </p>
+
+<p>And by all means, if you know how to solve the mystery, sound off in the comments!</p>
+
+<h3 id="feedback-welcome">Feedback Welcome!</h3>
+<p>I’d love to hear any comments on this series. Find it useful? Think there’s a better way to implement the technique or something I should have mentioned? Please drop a line in the comments to help me improve the series!</p>
+
+<h3 id="references">References</h3>
+
+<ul>
+  <li><a href="http://www.pluralsight-training.net/microsoft/courses/TableOfContents?courseName=continuous-integration&amp;highlight=james-kovacs_ci-part1*3!james-kovacs_ci-part3*2!james-kovacs_ci-part2*2!james-kovacs_ci-part6*4,12#ci-part1">Pluralsight Continuous Integration Course</a> </li>
+  <li><a href="http://www.pluralsight-training.net/microsoft/Products/Individual">Pluralsight Sign-up Page</a> </li>
+  <li><a href="http://msbuildextensionpack.codeplex.com/">MsBuild Extension Pack</a></li>
+  <li><a href="http://www.msbuildextensionpack.com/help/3.5.8.0/html/68cdc023-8926-4ac9-9e7c-0297592fec29.htm">MsBuild Extension Pack AsyncExec Reference</a></li>
+</ul>
+
+<table>
+<tr>
+<td><div align="left"><a href="http://skwordpresstoghost.azurewebsites.net/?p=561">&larr; Part 6: Creating a Custom MS Build File</a></div></td>
+<td><div align="right"><a href="http://skwordpresstoghost.azurewebsites.net/?p=501" target="_blank">Part 7: Installing CruiseControl.NET &rarr;</a></div></td>
+</tr>
+</table>
+
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          
+
+
+
+	<img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Your Name bio photo">
+
+<h3>Your Name</h3>
+<p>Describe your self.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <p class="byline"><strong>Building a Build Process, Part 6b: MSBuild Integration With Cassini and Visual Studio</strong> was published on <time datetime="2012-05-02T22:39:00-04:00">May 02, 2012</time>.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="http://localhost:4000/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="http://localhost:4000/how-to-drag-and-drop-files-to-an-elevated-program-field-notes/" title="How to: Drag and Drop Files to an Elevated Program [Field Notes]">How to: Drag and Drop Files to an Elevated Program [Field Notes]</a></li>
+    
+      <li><a href="http://localhost:4000/quick-tip-file-hashes-with-powershell-community-extensions/" title="Quick Tip: File Hashes with PowerShell Community Extensions">Quick Tip: File Hashes with PowerShell Community Extensions</a></li>
+    
+      <li><a href="http://localhost:4000/web-site-fail-of-the-day-intel-rst-community-forum/" title="Web site fail of the day: Intel RST Community Forum">Web site fail of the day: Intel RST Community Forum</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  <footer>
+    
+
+<span>&copy; 2014 Your Name. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+	        
+
+</body>
+</html>

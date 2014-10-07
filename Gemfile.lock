@@ -88,6 +88,23 @@ GEM
     minitest (5.4.2)
     nokogiri (1.6.3.1-x64-mingw32)
       mini_portile (= 0.6.0)
+    octopress (3.0.0.rc.15)
+      jekyll (~> 2.0)
+      mercenary (~> 0.3.2)
+      octopress-deploy
+      octopress-docs
+      titlecase
+    octopress-deploy (1.0.0)
+      colorator
+      octopress-docs
+    octopress-docs (0.0.8)
+      jekyll (~> 2.0)
+      octopress-escape-code (~> 1.0)
+      octopress-hooks (~> 2.0)
+    octopress-escape-code (1.0.2)
+      octopress-hooks (~> 2.0)
+    octopress-hooks (2.2.1)
+      jekyll (~> 2.0)
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.9)
@@ -104,6 +121,7 @@ GEM
     thread_safe (0.3.4)
     timers (4.0.1)
       hitimes
+    titlecase (0.1.1)
     toml (0.1.1)
       parslet (~> 1.5.0)
     tzinfo (1.2.2)
@@ -115,3 +133,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll
+  jekyll-sitemap
+  octopress (~> 3.0.0.rc.12)
