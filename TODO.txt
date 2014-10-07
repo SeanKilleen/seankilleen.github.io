@@ -1,0 +1,9 @@
+To remember when you don't have access to Trello :)
+
+* Setup multiple folder structures
+* Add social mesia share buttons
+* Fill out the about page 
+* 404 Page text.
+* Add comments: true to every post? (is there a post formatter for when things are generated? Can they be true by default and then removed?
+* Add an FAQ page
+* Specify permanlinks on a post level?
