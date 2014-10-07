@@ -1,0 +1,248 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>How To: Enforce TLS Encryption on Tomcat Server 6.0 &#8211; SeanKilleen.com</title>
+<meta name="description" content="[Note: I should begin this post by saying that I’m no expert on SSL or TLS encryption or the “handshakes” and negotiations that browsers and servers go through when giving the user a connection to secure material. Feel free to jump in on the comments if I get the terminology or methodology wrong.]
+
+">
+<meta name="keywords" content="">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="How To: Enforce TLS Encryption on Tomcat Server 6.0">
+<meta name="twitter:description" content="[Note: I should begin this post by saying that I’m no expert on SSL or TLS encryption or the “handshakes” and negotiations that browsers and servers go through when giving the user a connection to secure material. Feel free to jump in on the comments if I get the terminology or methodology wrong.]
+
+">
+<meta name="twitter:site" content="@sjkilleen">
+<meta name="twitter:creator" content="@sjkilleen">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/default-thumb.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How To: Enforce TLS Encryption on Tomcat Server 6.0">
+<meta property="og:description" content="[Note: I should begin this post by saying that I’m no expert on SSL or TLS encryption or the “handshakes” and negotiations that browsers and servers go through when giving the user a connection to secure material. Feel free to jump in on the comments if I get the terminology or methodology wrong.]
+
+">
+<meta property="og:url" content="http://localhost:4000/how-to-enforce-tls-encryption-on-tomcat-server-6-0/">
+<meta property="og:site_name" content="SeanKilleen.com">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/how-to-enforce-tls-encryption-on-tomcat-server-6-0/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="SeanKilleen.com Feed">
+<link rel="author" href="http://plus.google.com/+SeanKilleen?rel=author">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="post">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="http://localhost:4000">SeanKilleen.com</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+					    
+					        
+					    
+					    <li><a href="http://localhost:4000/about/" >About</a></li>
+					  
+					    
+					        
+					    
+					    <li><a href="http://localhost:4000/posts/" >All Posts</a></li>
+					  
+					    
+					        
+					    
+					    <li><a href="http://localhost:4000/contact/" >Contact Me</a></li>
+					  
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+
+
+
+	<img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Sean Killeen bio photo">
+
+<h3>Sean Killeen</h3>
+<p>Just a guy trying to get better at writing bios.</p>
+<a href="mailto:SeanKilleen@gmail.com" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
+<a href="http://twitter.com/sjkilleen" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+<a href="http://facebook.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
+<a href="http://plus.google.com/+SeanKilleen" class="author-social" target="_blank"><i class="fa fa-google-plus-square"></i> Google+</a>
+<a href="http://linkedin.com/in/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+<a href="http://instagram.com/skilleen" class="author-social" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+
+<a href="http://github.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+<a href="http://stackoverflow.com/users/316847/seankilleen" class="author-social" target="_blank"><i class="fa fa-stack-overflow"></i> Stackoverflow</a>
+
+
+
+<a href="http://foursquare.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-foursquare"></i> Foursquare</a>
+
+
+  </div>
+  <article class="post">
+    <div class="headline-wrap">
+      
+        <h1><a href="http://localhost:4000/how-to-enforce-tls-encryption-on-tomcat-server-6-0/" rel="bookmark" title="How To: Enforce TLS Encryption on Tomcat Server 6.0">How To: Enforce TLS Encryption on Tomcat Server 6.0</a></h1>
+      
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      <p><em>[<strong>Note</strong>: I should begin this post by saying that I’m no expert on SSL or TLS encryption or the “handshakes” and negotiations that browsers and servers go through when giving the user a connection to secure material. Feel free to jump in on the comments if I get the terminology or methodology wrong.]</em></p>
+
+<p>As far as I understand it, SSL is pretty secure, but <a href="http://en.wikipedia.org/wiki/TLSv1">TLS v1</a> (its successor) is the max you can get on a standard web browser for encrypted traffic between the browser and the server today.</p>
+
+<p>Recently, I was tasked with setting up a <a href="http://tomcat.apache.org/">Tomcat Server</a> to enforce TLS for a government client. We had already defined a server.xml file that specified “TLSv1″ as the protocol and AES encryption. However, apparently Tomcat 6.0 doesn’t strictly enforce TLS if SSL is also enabled. That is to say, if TLSv1 is not enabled on the browser, but SSL is, the server will “fall back” to SSL in the hopes of displaying the content — I suppose it takes the “well, SSL is better than nothing” approach.</p>
+
+<p>However, this wasn’t going to fly for my client — an institution with strict security rules for its web applications — which, really, is a good thing. If TLSv1 wasn’t enabled properly, the site shouldn’t display, even if SSL is enabled.</p>
+
+<p>I looked around for how to do this, and to my surprise, it was incredibly difficult to find. After a great deal of Google searches and frustration, I finally found a post  on the old, archived Tomcat developers listserv/group. <sup>1</sup> It turns out that there’s another attribute you can add to your server connector in server.xml — the “protocols” attribute (standing for “secure” I believe; not a pluralization)</p>
+
+<p>So, in short, a Tomcat 6.0 connector in server.xml that enforces TLS looks something like the connector below (I’ve changed the password to a dummy, of course):</p>
+
+<pre><code>&lt;Connector
+	port="8443"
+	protocol="HTTP/1.1"
+	protocols="TLSv1"
+	SSLEnabled="true"
+	enableLookups="false"
+	acceptCount="100"
+	maxThreads="200"
+	scheme="https"
+	keystoreFile="d:keystore.keystore"
+	keystorePass="changeme"
+	secure="true"
+	clientAuth="false"
+	sslProtocol="TLSv1"
+	cipher="AES"
+	allowUnsafeLegacyRenegotiation="false"
+    &gt;
+</code></pre>
+
+<p>I wanted to provide this bit of knowledge as a public service. Would love to hear about your own experiences enforcing TLS or security in Tomcat and other web servers in the comments! Please let me know if you’ve found this useful.</p>
+
+<h4 id="notes">Notes</h4>
+<p><sup>1</sup> Unfortunately, I’m unable to find the link to this post. If I ever come across it, I’ll update the blog accordingly. Feel free to point me to it in the comments.</p>
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          
+
+
+
+	<img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Sean Killeen bio photo">
+
+<h3>Sean Killeen</h3>
+<p>Just a guy trying to get better at writing bios.</p>
+<a href="mailto:SeanKilleen@gmail.com" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
+<a href="http://twitter.com/sjkilleen" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+<a href="http://facebook.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
+<a href="http://plus.google.com/+SeanKilleen" class="author-social" target="_blank"><i class="fa fa-google-plus-square"></i> Google+</a>
+<a href="http://linkedin.com/in/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+<a href="http://instagram.com/skilleen" class="author-social" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+
+<a href="http://github.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+<a href="http://stackoverflow.com/users/316847/seankilleen" class="author-social" target="_blank"><i class="fa fa-stack-overflow"></i> Stackoverflow</a>
+
+
+
+<a href="http://foursquare.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-foursquare"></i> Foursquare</a>
+
+
+        </div>
+        <p class="byline"><strong>How To: Enforce TLS Encryption on Tomcat Server 6.0</strong> was published on <time datetime="2010-08-31T13:35:00-04:00">August 31, 2010</time>.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="http://localhost:4000/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="http://localhost:4000/how-to-drag-and-drop-files-to-an-elevated-program-field-notes/" title="How to: Drag and Drop Files to an Elevated Program [Field Notes]">How to: Drag and Drop Files to an Elevated Program [Field Notes]</a></li>
+    
+      <li><a href="http://localhost:4000/quick-tip-file-hashes-with-powershell-community-extensions/" title="Quick Tip: File Hashes with PowerShell Community Extensions">Quick Tip: File Hashes with PowerShell Community Extensions</a></li>
+    
+      <li><a href="http://localhost:4000/web-site-fail-of-the-day-intel-rst-community-forum/" title="Web site fail of the day: Intel RST Community Forum">Web site fail of the day: Intel RST Community Forum</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  <footer>
+    
+
+<span>&copy; 2014 Sean Killeen. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+	        
+
+</body>
+</html>

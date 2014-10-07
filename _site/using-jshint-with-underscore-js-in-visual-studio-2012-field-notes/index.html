@@ -1,0 +1,282 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Using JSHint with Underscore.js in Visual Studio 2012 [Field Notes] &#8211; SeanKilleen.com</title>
+<meta name="description" content="Since my new gig has me diving into Javascript quite a bit, I’ve really been loving JSHint integration (brought to us lovingly by Mads Kristensen and the team building the Web Essentials 2012 add-on).
+
+">
+<meta name="keywords" content="">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Using JSHint with Underscore.js in Visual Studio 2012 [Field Notes]">
+<meta name="twitter:description" content="Since my new gig has me diving into Javascript quite a bit, I’ve really been loving JSHint integration (brought to us lovingly by Mads Kristensen and the team building the Web Essentials 2012 add-on).
+
+">
+<meta name="twitter:site" content="@sjkilleen">
+<meta name="twitter:creator" content="@sjkilleen">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/default-thumb.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Using JSHint with Underscore.js in Visual Studio 2012 [Field Notes]">
+<meta property="og:description" content="Since my new gig has me diving into Javascript quite a bit, I’ve really been loving JSHint integration (brought to us lovingly by Mads Kristensen and the team building the Web Essentials 2012 add-on).
+
+">
+<meta property="og:url" content="http://localhost:4000/using-jshint-with-underscore-js-in-visual-studio-2012-field-notes/">
+<meta property="og:site_name" content="SeanKilleen.com">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/using-jshint-with-underscore-js-in-visual-studio-2012-field-notes/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="SeanKilleen.com Feed">
+<link rel="author" href="http://plus.google.com/+SeanKilleen?rel=author">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="post">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="http://localhost:4000">SeanKilleen.com</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+					    
+					        
+					    
+					    <li><a href="http://localhost:4000/about/" >About</a></li>
+					  
+					    
+					        
+					    
+					    <li><a href="http://localhost:4000/posts/" >All Posts</a></li>
+					  
+					    
+					        
+					    
+					    <li><a href="http://localhost:4000/contact/" >Contact Me</a></li>
+					  
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+
+
+
+	<img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Sean Killeen bio photo">
+
+<h3>Sean Killeen</h3>
+<p>Just a guy trying to get better at writing bios.</p>
+<a href="mailto:SeanKilleen@gmail.com" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
+<a href="http://twitter.com/sjkilleen" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+<a href="http://facebook.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
+<a href="http://plus.google.com/+SeanKilleen" class="author-social" target="_blank"><i class="fa fa-google-plus-square"></i> Google+</a>
+<a href="http://linkedin.com/in/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+<a href="http://instagram.com/skilleen" class="author-social" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+
+<a href="http://github.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+<a href="http://stackoverflow.com/users/316847/seankilleen" class="author-social" target="_blank"><i class="fa fa-stack-overflow"></i> Stackoverflow</a>
+
+
+
+<a href="http://foursquare.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-foursquare"></i> Foursquare</a>
+
+
+  </div>
+  <article class="post">
+    <div class="headline-wrap">
+      
+        <h1><a href="http://localhost:4000/using-jshint-with-underscore-js-in-visual-studio-2012-field-notes/" rel="bookmark" title="Using JSHint with Underscore.js in Visual Studio 2012 [Field Notes]">Using JSHint with Underscore.js in Visual Studio 2012 [Field Notes]</a></h1>
+      
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      <p>Since my new gig has me diving into Javascript quite a bit, I’ve really been loving <a href="http://jshint.com/">JSHint</a> integration (brought to us lovingly by <a href="http://madskristensen.net/">Mads Kristensen</a> and the team building the <a href="http://vswebessentials.com/">Web Essentials</a> 2012 add-on).</p>
+
+<h3 id="firstly-the-cool-feature-that-caused-my-issue----global-variables">Firstly: The Cool Feature that Caused my Issue – Global Variables</h3>
+<p>One of my favorite features of JSHint is that it will tell you when you’re using a variable that hasn’t been defined yet. This does wonders for reducing scoping issues, etc.</p>
+
+<p>But, when referencing browser functionality or variables from other files (think console.log, ko, moment, toastr, etc.) it would see them as undefined:</p>
+
+<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2013/11/2013-11-25_JSHint_UndefinedErrors.png" alt="Undefined errors for popular libraries" />
+Yiiiikes.</p>
+
+<p>Luckily, this can be fixed for most issues by utilizing the <code>global</code> command in a comment. JSLint will interpret the following as “assume all of these variables are defined”:</p>
+
+<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2013/11/2013-11-25_JSHint_GlobalCommand.png" alt="A list of libraries defined using the global command in a comment" /></p>
+
+<p>This saves so many validation headaches.</p>
+
+<h3 id="the-problem-identifying-underscorejs-as-a-global-variable">The Problem: Identifying UnderscoreJS as a Global Variable</h3>
+<p>However, when I add the Underscore.js global identifier (<code>_</code>, unsurprisingly) to the global list, I get a different error – <code>Unexpected dangling '_' in '_'</code>:</p>
+
+<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2013/11/2013-11-25_JSHint_UnexpectedDanglign.png" alt="Image of the new error message I see." /></p>
+
+<h3 id="the-solution-the-nomen-option">The Solution: the “nomen” Option</h3>
+
+<p>One line of code removed this error:</p>
+
+<pre><code>/*jslint nomen: true */
+</code></pre>
+
+<p>According to the <a href="http://www.jslint.com/lint.html#options">JSLint options documentation</a>, this allows underscores to begin a name. In the case of underscore, the <code>_</code> definition is both the beginning and end of the name (similar to jQuery’s <code>$</code>).</p>
+
+<h3 id="cautions-amp-some-tiny-pitfalls">Cautions &amp; Some Tiny Pitfalls</h3>
+<p>Had a few minor “oops” moments while figuring this out.</p>
+
+<h4 id="ensure-that-the-nomen-option-is-set-before-your-globals-are-defined">Ensure that the nomen option is set before your Globals are Defined</h4>
+
+<p>This won’t work:</p>
+
+<p><code>
+/*global $, jQuery, ko, moment, console, toastr, accounting, _ */
+/*jslint nomen: true */
+</code></p>
+
+<p>But this will:</p>
+
+<p><code>
+/*jslint nomen: true */
+/*global $, jQuery, ko, moment, console, toastr, accounting, _ */
+</code></p>
+
+<h4 id="jshint-says-nomen-will-be-deprecated">JSHint says “nomen” will be deprecated.</h4>
+
+<p>I kind of hope that’s not the case, since it helps here.</p>
+
+<p>There has been some back and forth on the <a href="https://github.com/jshint/jshint/search?q=nomen&amp;source=cc&amp;type=Issues">JSHint Github about this</a>, but the <a href="http://www.jshint.com/docs/options/#nomen">JSHint options page for “nomen”</a> makes it pretty clear:</p>
+
+<blockquote>
+  <p>This option disallows the use of dangling _ in variables. We don’t know why would you need it.</p>
+</blockquote>
+
+<p>If you were a little new to this, as I was, I hope this helps! Feel free to send some feedback in the comments.</p>
+
+<h3 id="references">References</h3>
+<ul>
+  <li><a href="http://vswebessentials.com/">Web Essentials VS Extension</a></li>
+  <li><a href="http://madskristensen.net/">Mads Kristensen</a></li>
+  <li><a href="http://jshint.com/">JSHint</a> &amp; <a href="http://www.jshint.com/docs/options/#nomen">JSHint Options Page</a></li>
+  <li><a href="http://www.jslint.com/lint.html#options">JSLint Options</a></li>
+  <li><a href="https://github.com/jshint/jshint/search?q=nomen&amp;source=cc&amp;type=Issues">JSHint: Issues containing “nomen”</a> [<a href="http://www.github.com/">Github</a>]&lt;/li&gt;</li>
+</ul>
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          
+
+
+
+	<img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Sean Killeen bio photo">
+
+<h3>Sean Killeen</h3>
+<p>Just a guy trying to get better at writing bios.</p>
+<a href="mailto:SeanKilleen@gmail.com" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
+<a href="http://twitter.com/sjkilleen" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+<a href="http://facebook.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
+<a href="http://plus.google.com/+SeanKilleen" class="author-social" target="_blank"><i class="fa fa-google-plus-square"></i> Google+</a>
+<a href="http://linkedin.com/in/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+<a href="http://instagram.com/skilleen" class="author-social" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+
+<a href="http://github.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+<a href="http://stackoverflow.com/users/316847/seankilleen" class="author-social" target="_blank"><i class="fa fa-stack-overflow"></i> Stackoverflow</a>
+
+
+
+<a href="http://foursquare.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-foursquare"></i> Foursquare</a>
+
+
+        </div>
+        <p class="byline"><strong>Using JSHint with Underscore.js in Visual Studio 2012 [Field Notes]</strong> was published on <time datetime="2013-11-25T18:30:00-05:00">November 25, 2013</time>.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="http://localhost:4000/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="http://localhost:4000/how-to-drag-and-drop-files-to-an-elevated-program-field-notes/" title="How to: Drag and Drop Files to an Elevated Program [Field Notes]">How to: Drag and Drop Files to an Elevated Program [Field Notes]</a></li>
+    
+      <li><a href="http://localhost:4000/quick-tip-file-hashes-with-powershell-community-extensions/" title="Quick Tip: File Hashes with PowerShell Community Extensions">Quick Tip: File Hashes with PowerShell Community Extensions</a></li>
+    
+      <li><a href="http://localhost:4000/web-site-fail-of-the-day-intel-rst-community-forum/" title="Web site fail of the day: Intel RST Community Forum">Web site fail of the day: Intel RST Community Forum</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  <footer>
+    
+
+<span>&copy; 2014 Sean Killeen. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+	        
+
+</body>
+</html>

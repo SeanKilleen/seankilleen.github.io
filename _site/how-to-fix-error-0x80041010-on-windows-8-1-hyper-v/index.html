@@ -1,0 +1,238 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>How to: Fix error 0x80041010 on Windows 8.1 + Hyper-V &#8211; SeanKilleen.com</title>
+<meta name="description" content="Problem
+
+">
+<meta name="keywords" content="">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="How to: Fix error 0x80041010 on Windows 8.1 + Hyper-V">
+<meta name="twitter:description" content="Problem
+
+">
+<meta name="twitter:site" content="@sjkilleen">
+<meta name="twitter:creator" content="@sjkilleen">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/default-thumb.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to: Fix error 0x80041010 on Windows 8.1 + Hyper-V">
+<meta property="og:description" content="Problem
+
+">
+<meta property="og:url" content="http://localhost:4000/how-to-fix-error-0x80041010-on-windows-8-1-hyper-v/">
+<meta property="og:site_name" content="SeanKilleen.com">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/how-to-fix-error-0x80041010-on-windows-8-1-hyper-v/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="SeanKilleen.com Feed">
+<link rel="author" href="http://plus.google.com/+SeanKilleen?rel=author">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="post">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="http://localhost:4000">SeanKilleen.com</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+					    
+					        
+					    
+					    <li><a href="http://localhost:4000/about/" >About</a></li>
+					  
+					    
+					        
+					    
+					    <li><a href="http://localhost:4000/posts/" >All Posts</a></li>
+					  
+					    
+					        
+					    
+					    <li><a href="http://localhost:4000/contact/" >Contact Me</a></li>
+					  
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+
+
+
+	<img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Sean Killeen bio photo">
+
+<h3>Sean Killeen</h3>
+<p>Just a guy trying to get better at writing bios.</p>
+<a href="mailto:SeanKilleen@gmail.com" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
+<a href="http://twitter.com/sjkilleen" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+<a href="http://facebook.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
+<a href="http://plus.google.com/+SeanKilleen" class="author-social" target="_blank"><i class="fa fa-google-plus-square"></i> Google+</a>
+<a href="http://linkedin.com/in/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+<a href="http://instagram.com/skilleen" class="author-social" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+
+<a href="http://github.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+<a href="http://stackoverflow.com/users/316847/seankilleen" class="author-social" target="_blank"><i class="fa fa-stack-overflow"></i> Stackoverflow</a>
+
+
+
+<a href="http://foursquare.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-foursquare"></i> Foursquare</a>
+
+
+  </div>
+  <article class="post">
+    <div class="headline-wrap">
+      
+        <h1><a href="http://localhost:4000/how-to-fix-error-0x80041010-on-windows-8-1-hyper-v/" rel="bookmark" title="How to: Fix error 0x80041010 on Windows 8.1 + Hyper-V">How to: Fix error 0x80041010 on Windows 8.1 + Hyper-V</a></h1>
+      
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      <h3 id="problem">Problem</h3>
+
+<p>After upgrading to Windows 8.1 Pro recently, I opened my Event Log to show a <strong><em>TON</em></strong> of errors from WMI. Event showed as an error and had the following text:</p>
+
+<blockquote>
+  <p>Event filter with query “SELECT * FROM __InstanceOperationEvent WITHIN 10 WHERE (TargetInstance ISA ‘Msvm_ExternalEthernetPort’) OR (TargetInstance ISA ‘Msvm_VmLANEndpoint’) OR (TargetInstance ISA ‘Msvm_SyntheticEthernetPort’) OR (TargetInstance ISA ‘Msvm_ComputerSystem’) OR (TargetInstance ISA ‘Msvm_VLANEndpointSettingData’)” could not be reactivated in namespace “//./root/virtualization” because of error 0x80041010. Events cannot be delivered through this filter until the problem is corrected.</p>
+</blockquote>
+
+<h3 id="solution">Solution</h3>
+<p>I did a little searching around and <a href="http://social.technet.microsoft.com/Forums/windows/en-US/4eca1f42-8630-48b4-85fa-e9569445d832/problem-with-cpu-load-and-wmi-errors-when-hyperv-is-installed">found this link</a> which suggested removing the network adapter and installing 8.1’s default network adapter.</p>
+
+<p>However, I decided to see if an update to the latest drivers would do the trick.</p>
+
+<p>I have the P8Z68 V/Pro motherboard (which I love), which comes with an Intel 82579V card. I hopped over to the <a href="https://downloadcenter.intel.com/Default.aspx?lang=eng">Intel Download Center</a> and found the Windows 8.1 Network Adapter Driver v18.7 (<a href="https://downloadcenter.intel.com/confirm.aspx?httpDown=http://downloadmirror.intel.com/23071/eng/PROWinx64.exe&amp;lang=eng&amp;Dwnldid=23071&amp;DownloadType=Drivers&amp;OSFullname=Windows+8*">direct link here</a>).</p>
+
+<p>Sure enough, installing the updated version of the adapter was enough – no need to replace it with the generic Windows 8.1 adapter. The errors have stopped and I’m seeing a performance gain as well. </p>
+
+<p>If you were experiencing the same issue, I hope this helps! Feel free to let me know how you fared in the comments.</p>
+
+<h3 id="references">References</h3>
+
+<ul>
+  <li><a href="http://social.technet.microsoft.com/Forums/windows/en-US/4eca1f42-8630-48b4-85fa-e9569445d832/problem-with-cpu-load-and-wmi-errors-when-hyperv-is-installed" target="_blank">Problem with CPU load and WMI errors when Hyper-V is Installed?</a> [TechNet]</li>
+  <li><a href="https://downloadcenter.intel.com/confirm.aspx?httpDown=http://downloadmirror.intel.com/23071/eng/PROWinx64.exe&amp;lang=eng&amp;Dwnldid=23071&amp;DownloadType=Drivers&amp;OSFullname=Windows+8*" target="_blank">Direct Link for Intel Network Adapter for Windows 8.1 v18.7</a> [<a href="https://downloadcenter.intel.com/Default.aspx?lang=eng" target="_blank">Intel Download Center</a>]</li>
+</ul>
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          
+
+
+
+	<img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Sean Killeen bio photo">
+
+<h3>Sean Killeen</h3>
+<p>Just a guy trying to get better at writing bios.</p>
+<a href="mailto:SeanKilleen@gmail.com" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
+<a href="http://twitter.com/sjkilleen" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+<a href="http://facebook.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
+<a href="http://plus.google.com/+SeanKilleen" class="author-social" target="_blank"><i class="fa fa-google-plus-square"></i> Google+</a>
+<a href="http://linkedin.com/in/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+<a href="http://instagram.com/skilleen" class="author-social" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+
+<a href="http://github.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+<a href="http://stackoverflow.com/users/316847/seankilleen" class="author-social" target="_blank"><i class="fa fa-stack-overflow"></i> Stackoverflow</a>
+
+
+
+<a href="http://foursquare.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-foursquare"></i> Foursquare</a>
+
+
+        </div>
+        <p class="byline"><strong>How to: Fix error 0x80041010 on Windows 8.1 + Hyper-V</strong> was published on <time datetime="2013-11-24T17:47:00-05:00">November 24, 2013</time>.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="http://localhost:4000/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="http://localhost:4000/how-to-drag-and-drop-files-to-an-elevated-program-field-notes/" title="How to: Drag and Drop Files to an Elevated Program [Field Notes]">How to: Drag and Drop Files to an Elevated Program [Field Notes]</a></li>
+    
+      <li><a href="http://localhost:4000/quick-tip-file-hashes-with-powershell-community-extensions/" title="Quick Tip: File Hashes with PowerShell Community Extensions">Quick Tip: File Hashes with PowerShell Community Extensions</a></li>
+    
+      <li><a href="http://localhost:4000/web-site-fail-of-the-day-intel-rst-community-forum/" title="Web site fail of the day: Intel RST Community Forum">Web site fail of the day: Intel RST Community Forum</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  <footer>
+    
+
+<span>&copy; 2014 Sean Killeen. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+	        
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>"It's the (Backblaze) restores that fail." &#8211; SeanKilleen.com</title>
+<meta name="description" content="[FYI, since it’s only fair: if Backblaze makes this right or wants to respond, I will absolutely allow them space in this post to do so. I still have a lot of respect for them as a company. You can follow the discussion on HackerNews.]
+
+">
+<meta name="keywords" content="">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content=""It's the (Backblaze) restores that fail."">
+<meta name="twitter:description" content="[FYI, since it’s only fair: if Backblaze makes this right or wants to respond, I will absolutely allow them space in this post to do so. I still have a lot of respect for them as a company. You can follow the discussion on HackerNews.]
+
+">
+<meta name="twitter:site" content="@sjkilleen">
+<meta name="twitter:creator" content="@sjkilleen">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/default-thumb.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content=""It's the (Backblaze) restores that fail."">
+<meta property="og:description" content="[FYI, since it’s only fair: if Backblaze makes this right or wants to respond, I will absolutely allow them space in this post to do so. I still have a lot of respect for them as a company. You can follow the discussion on HackerNews.]
+
+">
+<meta property="og:url" content="http://localhost:4000/its-the-backblaze-restores-that-fail/">
+<meta property="og:site_name" content="SeanKilleen.com">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/its-the-backblaze-restores-that-fail/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="SeanKilleen.com Feed">
+<link rel="author" href="http://plus.google.com/+SeanKilleen?rel=author">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="post">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="http://localhost:4000">SeanKilleen.com</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+					    
+					        
+					    
+					    <li><a href="http://localhost:4000/about/" >About</a></li>
+					  
+					    
+					        
+					    
+					    <li><a href="http://localhost:4000/posts/" >All Posts</a></li>
+					  
+					    
+					        
+					    
+					    <li><a href="http://localhost:4000/contact/" >Contact Me</a></li>
+					  
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+
+
+
+	<img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Sean Killeen bio photo">
+
+<h3>Sean Killeen</h3>
+<p>Just a guy trying to get better at writing bios.</p>
+<a href="mailto:SeanKilleen@gmail.com" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
+<a href="http://twitter.com/sjkilleen" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+<a href="http://facebook.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
+<a href="http://plus.google.com/+SeanKilleen" class="author-social" target="_blank"><i class="fa fa-google-plus-square"></i> Google+</a>
+<a href="http://linkedin.com/in/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+<a href="http://instagram.com/skilleen" class="author-social" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+
+<a href="http://github.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+<a href="http://stackoverflow.com/users/316847/seankilleen" class="author-social" target="_blank"><i class="fa fa-stack-overflow"></i> Stackoverflow</a>
+
+
+
+<a href="http://foursquare.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-foursquare"></i> Foursquare</a>
+
+
+  </div>
+  <article class="post">
+    <div class="headline-wrap">
+      
+        <h1><a href="http://localhost:4000/its-the-backblaze-restores-that-fail/" rel="bookmark" title=""It's the (Backblaze) restores that fail."">"It's the (Backblaze) restores that fail."</a></h1>
+      
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      <p><em>[FYI, since it’s only fair: if Backblaze makes this right or wants to respond, I will absolutely allow them space in this post to do so. I still have a lot of respect for them as a company. <a href="https://news.ycombinator.com/item?id=7093016">You can follow the discussion on HackerNews</a>.]</em></p>
+
+<p>Folks involved in systems administration may likely be familiar with the adage that “Backups always work; it’s the restores that fail.” <sup>[1]</sup></p>
+
+<p>For years, I’ve put a lot of trust into http://www.backblaze.com as an online backup application. I have evangelized them to many people; my family members and girlfriend in particular will attest to the fact that I’ve often foisted the solution upon them, and I’ve even gone so far as to buy a subscription for a friend of mine who is a writer but didn’t have a backup solution.</p>
+
+<p><strong>However, currently I’m stuck in a frustrating restoration process that is making me rethink the decision to use Backblaze.</strong></p>
+
+<p>Background: a little over a week ago, I made some stupid decisions when the RAID controller died on my out-of-support motherboard and my disks got a little scrambled. I knew I’d need to rebuild my system, but essentially I got rid of the data because I knew I had it in another location and was comfortable because I trusted Backblaze.</p>
+
+<p>My first trouble came when I requested a small restore on my laptop. It was 32 MB of data that I needed to get my system up and running again <sup>[2]</sup>, downloaded to a laptop. I tried unsuccessfully for <em>hours</em> to get those files to download. The speed dropped to 0kb/sec after 3 seconds until the downloads timed out. I used both http downloads and Backblaze’s downloader application, to no avail.</p>
+
+<p>After a very helpful conversation with BackBlaze’s CEO <sup>[3]</sup>, who got the engineers to confirm that their servers appeared to all be doing fine, I was able to get the downloads to work, but only seemingly after force-quitting every chrome.exe application (whether this is the fault of Backblaze’s software or chrome, I can’t say. I should have rebooted my whole system earlier in the process, but it seemed like an issue with their servers given that I could stream HD video and was getting at least 14-15mbps down at the time).</p>
+
+<p>So the next step: Now that the downloads were confirmed to work, I got my system back in order and then prepared my first restore – a 6 GB chunk of data out of my ~400 GB stash. This download took a long time, but is worth waiting for as I do not want to pay $189 to have my data shipped to me (one of their options). However, upon finishing the download after 12+ hours, when unzipping the file I was told that it wasn’t a valid archive. Both the backblaze unzipper and 7-Zip could not make any sense of the file.</p>
+
+<p>The support ticket I had open through all of this is equally frustrating. Firstly, the support staff was off for the weekend. This is totally understandable, but when dealing with something mission-critical like data, I think it makes sense to employ a weekend staff. Someone finally replied to my first ticket at 10:30 this morning. When I told them the 6GB download unzip had failed using the backblaze downloader, they asked me to try again using 7-zip. I confirmed that I had tried both and asked if there was anything I could do to fix the 6GB download or if this was a known issue. That was a little before 1PM EST; it is currently 8pm EST and I have not heard back from BackBlaze.</p>
+
+<p>Given the slow speed of transfer and technical difficulties with a 6GB file, how am I supposed to trust them either with a 400 GB restore, or (as they recommend) ~20 sets of 20GB files? It’s put me in a very difficult position by not delivering on its promise – a promise that means a lot to me as an IT guy.</p>
+
+<p><a href="http://www.code42.com/crashplan/">CrashPlan </a>is looking like a great option right now, and I’ll be exploring other solutions as well. If I have to spend $189 to get Backblaze to do what it promises to do for me, after paying for years, I have no choice but to look elsewhere.</p>
+
+<p>In the end, I am grateful for what Backblaze offers, and hope that it can follow through on it to remedy the situation.</p>
+
+<h3 id="conclusions--concerns">Conclusions / Concerns</h3>
+<ul>
+  <li><strong>Don’t be like Sean – do what Scott Hanselman says and always have a local backup, too</strong>. I now have an additional 1TB SATA drive and plan to use it specifically for this purpose. I thought I was sacrificing convenience for dollars, but it was worse than that. This was hubris on my part.</li>
+  <li>Backblaze really needs to up its restore game. A LOT. Restoring your precious files is generally an anxious process; as a technical person I hit a ton of roadblocks. I don’t pay them to back my things up; I pay them to restore my things when I need them.</li>
+  <li>Is Backblaze neglecting its restoration services knowing that customers will likely opt for the $99-189 purchase of a shipped HDD because their data is precious? I certainly hope not, but it seems to be a possible conflict of interest.</li>
+</ul>
+
+<h3 id="footnotes">Footnotes</h3>
+<p><sup>[1]:</sup> I’ve heard this in the industry for years, but since I don’t know the originator, I’ll give <a href="http://www.hanselman.com/blog/TheComputerBackupRuleOfThree.aspx">Scott Hanselman</a> the credit.</p>
+
+<p><sup>[2]:</sup> Side note: If you are going to scan your documents – like say, <strong>serial keys to your OS</strong> – don’t keep them as remote files only. In general, I’ll be switching to an additional form of backup for local as well.</p>
+
+<p><sup>[3]:</sup> Seriously, I commend his willingness to engage with a slightly-frustrated customer who found him on Twitter during the weekend. It was a long shot but his response inspires confidence. <a href="http://storify.com/seankilleen/very-supportive-conversation-with-backblaze-ceo">Here’s the Storify of our conversation so far</a>; I’ll edit it as progress is made.</p>
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          
+
+
+
+	<img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Sean Killeen bio photo">
+
+<h3>Sean Killeen</h3>
+<p>Just a guy trying to get better at writing bios.</p>
+<a href="mailto:SeanKilleen@gmail.com" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
+<a href="http://twitter.com/sjkilleen" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+<a href="http://facebook.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
+<a href="http://plus.google.com/+SeanKilleen" class="author-social" target="_blank"><i class="fa fa-google-plus-square"></i> Google+</a>
+<a href="http://linkedin.com/in/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+<a href="http://instagram.com/skilleen" class="author-social" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+
+<a href="http://github.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+<a href="http://stackoverflow.com/users/316847/seankilleen" class="author-social" target="_blank"><i class="fa fa-stack-overflow"></i> Stackoverflow</a>
+
+
+
+<a href="http://foursquare.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-foursquare"></i> Foursquare</a>
+
+
+        </div>
+        <p class="byline"><strong>"It's the (Backblaze) restores that fail."</strong> was published on <time datetime="2014-01-20T20:17:00-05:00">January 20, 2014</time>.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="http://localhost:4000/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="http://localhost:4000/how-to-drag-and-drop-files-to-an-elevated-program-field-notes/" title="How to: Drag and Drop Files to an Elevated Program [Field Notes]">How to: Drag and Drop Files to an Elevated Program [Field Notes]</a></li>
+    
+      <li><a href="http://localhost:4000/quick-tip-file-hashes-with-powershell-community-extensions/" title="Quick Tip: File Hashes with PowerShell Community Extensions">Quick Tip: File Hashes with PowerShell Community Extensions</a></li>
+    
+      <li><a href="http://localhost:4000/web-site-fail-of-the-day-intel-rst-community-forum/" title="Web site fail of the day: Intel RST Community Forum">Web site fail of the day: Intel RST Community Forum</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  <footer>
+    
+
+<span>&copy; 2014 Sean Killeen. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+	        
+
+</body>
+</html>

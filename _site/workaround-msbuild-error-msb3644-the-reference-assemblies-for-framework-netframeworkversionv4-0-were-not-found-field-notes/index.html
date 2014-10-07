@@ -1,0 +1,251 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Workaround: MSBuild Error MSB3644: "The reference assemblies for framework ".NETFramework,Version=v4.0" were not found" [Field Notes] &#8211; SeanKilleen.com</title>
+<meta name="description" content="Problem
+When attempting to build a Continuous Integration solution with MSBuild on Windows Server 2008 R2 (With .NET Framework 4.0 installed) I receive the following error:
+
+">
+<meta name="keywords" content="">
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Workaround: MSBuild Error MSB3644: "The reference assemblies for framework ".NETFramework,Version=v4.0" were not found" [Field Notes]">
+<meta name="twitter:description" content="Problem
+When attempting to build a Continuous Integration solution with MSBuild on Windows Server 2008 R2 (With .NET Framework 4.0 installed) I receive the following error:
+
+">
+<meta name="twitter:site" content="@sjkilleen">
+<meta name="twitter:creator" content="@sjkilleen">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://localhost:4000/images/default-thumb.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Workaround: MSBuild Error MSB3644: "The reference assemblies for framework ".NETFramework,Version=v4.0" were not found" [Field Notes]">
+<meta property="og:description" content="Problem
+When attempting to build a Continuous Integration solution with MSBuild on Windows Server 2008 R2 (With .NET Framework 4.0 installed) I receive the following error:
+
+">
+<meta property="og:url" content="http://localhost:4000/workaround-msbuild-error-msb3644-the-reference-assemblies-for-framework-netframeworkversionv4-0-were-not-found-field-notes/">
+<meta property="og:site_name" content="SeanKilleen.com">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/workaround-msbuild-error-msb3644-the-reference-assemblies-for-framework-netframeworkversionv4-0-were-not-found-field-notes/">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="SeanKilleen.com Feed">
+<link rel="author" href="http://plus.google.com/+SeanKilleen?rel=author">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://localhost:4000/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="post">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="http://localhost:4000">SeanKilleen.com</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+					    
+					        
+					    
+					    <li><a href="http://localhost:4000/about/" >About</a></li>
+					  
+					    
+					        
+					    
+					    <li><a href="http://localhost:4000/posts/" >All Posts</a></li>
+					  
+					    
+					        
+					    
+					    <li><a href="http://localhost:4000/contact/" >Contact Me</a></li>
+					  
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+
+
+
+	<img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Sean Killeen bio photo">
+
+<h3>Sean Killeen</h3>
+<p>Just a guy trying to get better at writing bios.</p>
+<a href="mailto:SeanKilleen@gmail.com" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
+<a href="http://twitter.com/sjkilleen" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+<a href="http://facebook.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
+<a href="http://plus.google.com/+SeanKilleen" class="author-social" target="_blank"><i class="fa fa-google-plus-square"></i> Google+</a>
+<a href="http://linkedin.com/in/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+<a href="http://instagram.com/skilleen" class="author-social" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+
+<a href="http://github.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+<a href="http://stackoverflow.com/users/316847/seankilleen" class="author-social" target="_blank"><i class="fa fa-stack-overflow"></i> Stackoverflow</a>
+
+
+
+<a href="http://foursquare.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-foursquare"></i> Foursquare</a>
+
+
+  </div>
+  <article class="post">
+    <div class="headline-wrap">
+      
+        <h1><a href="http://localhost:4000/workaround-msbuild-error-msb3644-the-reference-assemblies-for-framework-netframeworkversionv4-0-were-not-found-field-notes/" rel="bookmark" title="Workaround: MSBuild Error MSB3644: "The reference assemblies for framework ".NETFramework,Version=v4.0" were not found" [Field Notes]">Workaround: MSBuild Error MSB3644: "The reference assemblies for framework ".NETFramework,Version=v4.0" were not found" [Field Notes]</a></h1>
+      
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      <h3 id="problem">Problem</h3>
+<p>When attempting to build a Continuous Integration solution with MSBuild on Windows Server 2008 R2 (With .NET Framework 4.0 installed) I receive the following error:</p>
+
+<blockquote>
+  <p>c:\Windows\Microsoft.NETFramework\v4.0.30319\Microsoft.Common.targets(847,9): warning MSB3644: The reference assemblies for framework “.NETFramework,Version=v4.0” were not found. To resolve this, install the SDK or Targeting Pack for this framework version or retarget your application to a version of the framework for which you have the SDK or Targeting Pack installed. Note that assemblies will be resolved from the Global Assembly Cache (GAC) and will be used in place of reference assemblies. Therefore your assembly may not be correctly targeted for the framework you intend.</p>
+</blockquote>
+
+<h3 id="solution">Solution</h3>
+<p>I’ll be the first to admit there are probably more elegant ways, but I recommend the following:</p>
+
+<h4 id="install-net-framework-40--windows-7-sdk">Install .NET Framework 4.0 / Windows 7 SDK</h4>
+<p>You can download it from Microsoft. If you don’t have access to do this, or if that doesn’t work, you can do the following.</p>
+
+<h4 id="copy-the-reference-assemblies-folder-to-your-build-server">Copy the Reference Assemblies Folder to Your Build Server</h4>
+<p>Copy <code>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\*.*</code> to a folder on your build server (for me, it was <code>E:\ContinuousIntegration_ReferenceAssemblies</code>)</p>
+
+<h4 id="override-the-reference-assemblies-in-your-build-configuration">Override the Reference Assemblies in Your Build Configuration</h4>
+<p>When you call MSBuild, pass it a parameter -<code>p:FrameworkOverride</code>, with the location of the build.</p>
+
+<p>For example, my CruiseControl.NET config MSBuild section for this project now looks like:</p>
+
+<p>```xml</p>
+<msbuild>
+        <executable>C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe</executable>
+        <buildargs>PEApps.build -p:FrameworkPathOverride="E:\ContinuousIntegration\_ReferenceAssemblies\v4.0"</buildargs>
+        <targets>Compile</targets>
+        <timeout>1800</timeout>
+        <!--  30 minutes -->
+        <logger>C:\Program Files (x86)\CruiseControl.NET\server\ThoughtWorks.CruiseControl.MSBuild.dll</logger>
+</msbuild>
+<p>```</p>
+
+<p>It’s hack, for sure, but it got the solution to build, and it’s reusable in future scenarios.</p>
+
+<p>Probably easier to download the SDK and install it, though.</p>
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          
+
+
+
+	<img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Sean Killeen bio photo">
+
+<h3>Sean Killeen</h3>
+<p>Just a guy trying to get better at writing bios.</p>
+<a href="mailto:SeanKilleen@gmail.com" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> Email</a>
+<a href="http://twitter.com/sjkilleen" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+<a href="http://facebook.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
+<a href="http://plus.google.com/+SeanKilleen" class="author-social" target="_blank"><i class="fa fa-google-plus-square"></i> Google+</a>
+<a href="http://linkedin.com/in/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+<a href="http://instagram.com/skilleen" class="author-social" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+
+<a href="http://github.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+<a href="http://stackoverflow.com/users/316847/seankilleen" class="author-social" target="_blank"><i class="fa fa-stack-overflow"></i> Stackoverflow</a>
+
+
+
+<a href="http://foursquare.com/SeanKilleen" class="author-social" target="_blank"><i class="fa fa-foursquare"></i> Foursquare</a>
+
+
+        </div>
+        <p class="byline"><strong>Workaround: MSBuild Error MSB3644: "The reference assemblies for framework ".NETFramework,Version=v4.0" were not found" [Field Notes]</strong> was published on <time datetime="2012-05-01T19:29:00-04:00">May 01, 2012</time>.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="http://localhost:4000/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="http://localhost:4000/how-to-drag-and-drop-files-to-an-elevated-program-field-notes/" title="How to: Drag and Drop Files to an Elevated Program [Field Notes]">How to: Drag and Drop Files to an Elevated Program [Field Notes]</a></li>
+    
+      <li><a href="http://localhost:4000/quick-tip-file-hashes-with-powershell-community-extensions/" title="Quick Tip: File Hashes with PowerShell Community Extensions">Quick Tip: File Hashes with PowerShell Community Extensions</a></li>
+    
+      <li><a href="http://localhost:4000/web-site-fail-of-the-day-intel-rst-community-forum/" title="Web site fail of the day: Intel RST Community Forum">Web site fail of the day: Intel RST Community Forum</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  <footer>
+    
+
+<span>&copy; 2014 Sean Killeen. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
+
+	        
+
+</body>
+</html>
