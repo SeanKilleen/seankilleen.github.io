@@ -1,94 +1,24 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title> Crystal Reports: Display Month Name and Year of Last Month [Field Notes] </title>
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
+<h3 id="problem">Problem</h3>
+<p>A report I’m running gets the data for the last Month. I’d like to nicely display the name of the month and year.</p>
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-        
-        <!-- Bootstrap core CSS -->
-    	<link href="/css/bootstrap.min.css" rel="stylesheet">
+<h3 id="solution">Solution</h3>
+<p>####Step 1: Formula to Return the Date 1 Month Ago
+Use the DateAdd function in the formula to get the date minus one month:</p>
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+<pre><code>DateAdd("m", -1, CurrentDate)
+</code></pre>
 
-    </head>
-    <body>
+<p>This says to use “month” intervals, subtract one, and use the current date as the starting point.</p>
 
-		<div class="container">
+<h4 id="step-2-display-the-month-name-and-year-of-the-date-formula">Step 2: Display the Month Name and Year of the Date Formula</h4>
 
-			<div class="col-sm-3">
-				<h1>SeanKilleen.com</h1>
-				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
+<pre><code>MonthName(Month({@DateMinusOneMonth})) + " " + ToText((Year({@DateMinusOneMonth})), 0, "")
+</code></pre>
 
-				<strong>navigation</strong><br />
-				<a href="/">home</a> <br />
-				
-					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
-				
-					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
-				
-				
-				
-				<div id="about">
-					<strong>about</strong><br />
-					Thoughts on life and bytes from a digital twenty-something.
-				</div>
-				
-			</div>
-
-			<div class="col-sm-8 col-offset-1">
-				
-				<h1>Crystal Reports: Display Month Name and Year of Last Month [Field Notes]</h1>
-<span class="time">18 Jun 2012</span>
-
-<div class="content">
-	<div class="post"><h3>Problem</h3>
-
-<p>A report I&#39;m running gets the data for the last Month. I&#39;d like to nicely display the name of the month and year.</p>
-
-<h3>Solution</h3>
-
-<h4>Step 1: Formula to Return the Date 1 Month Ago</h4>
-
-<p>Use the DateAdd function in the formula to get the date minus one month:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">DateAdd(&quot;m&quot;, -1, CurrentDate)
-</code></pre></div>
-<p>This says to use &quot;month&quot; intervals, subtract one, and use the current date as the starting point.</p>
-
-<h4>Step 2: Display the Month Name and Year of the Date Formula</h4>
-<div class="highlight"><pre><code class="language-text" data-lang="text">MonthName(Month({@DateMinusOneMonth})) + &quot; &quot; + ToText((Year({@DateMinusOneMonth})), 0, &quot;&quot;)
-</code></pre></div>
 <p>This concatenates a string of the month name for the formula and the year for the formula. The part that calculates the year also notes that there should be no comma for thousands and no decimals (year here is being interpreted as just a number when outputted to <code>ToText</code>).</p>
 
-<h3>References</h3>
-
+<h3 id="references">References</h3>
 <ul>
-<li><a href="http://publib.boulder.ibm.com/infocenter/radhelp/v7r5/index.jsp?topic=%2Fcom.businessobjects.integration.eclipse.designer.doc%2Fhtml%2Ftopic681.html">DateAdd</a> [<a href="http://publib.boulder.ibm.com/infocenter/radhelp/v7r5/index.jsp?">IBM RAD Reference</a>]</li>
-<li><a href="http://crystaltricks.com/wordpress/?p=149">ToText Function</a> [<a href="http://crystaltricks.com/wordpress/">Crystal Reports Tips &amp; Tricks</a>]</li>
+  <li><a href="http://publib.boulder.ibm.com/infocenter/radhelp/v7r5/index.jsp?topic=%2Fcom.businessobjects.integration.eclipse.designer.doc%2Fhtml%2Ftopic681.html">DateAdd</a> [<a href="http://publib.boulder.ibm.com/infocenter/radhelp/v7r5/index.jsp?">IBM RAD Reference</a>]</li>
+  <li><a href="http://crystaltricks.com/wordpress/?p=149">ToText Function</a> [<a href="http://crystaltricks.com/wordpress/">Crystal Reports Tips &amp; Tricks</a>]</li>
 </ul>
-</div>
-</div>
-
-				
-				<footer>
-					&copy; SeanKilleen.com
-					 
-						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
-					
-				</footer>
-			</div>
-		
-		</div>
-
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    </body>
-</html>

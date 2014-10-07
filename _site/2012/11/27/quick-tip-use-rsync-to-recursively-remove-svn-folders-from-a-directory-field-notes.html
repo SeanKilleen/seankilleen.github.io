@@ -1,91 +1,23 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title> Quick Tip: Use rsync to recursively remove .svn folders from a directory [Field Notes] </title>
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
+<h3 id="problem">Problem</h3>
+<p>I have a directory structure that contains Subversion metadata folders (folders named “.svn”).</p>
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-        
-        <!-- Bootstrap core CSS -->
-    	<link href="/css/bootstrap.min.css" rel="stylesheet">
+<p>I would like to remove those folders but “svn export” won’t work.</p>
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+<h3 id="solution">Solution</h3>
 
-    </head>
-    <body>
-
-		<div class="container">
-
-			<div class="col-sm-3">
-				<h1>SeanKilleen.com</h1>
-				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
-
-				<strong>navigation</strong><br />
-				<a href="/">home</a> <br />
-				
-					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
-				
-					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
-				
-				
-				
-				<div id="about">
-					<strong>about</strong><br />
-					Thoughts on life and bytes from a digital twenty-something.
-				</div>
-				
-			</div>
-
-			<div class="col-sm-8 col-offset-1">
-				
-				<h1>Quick Tip: Use rsync to recursively remove .svn folders from a directory [Field Notes]</h1>
-<span class="time">27 Nov 2012</span>
-
-<div class="content">
-	<div class="post"><h3>Problem</h3>
-
-<p>I have a directory structure that contains Subversion metadata folders (folders named &quot;.svn&quot;).</p>
-
-<p>I would like to remove those folders but &quot;svn export&quot; won&#39;t work.</p>
-
-<h3>Solution</h3>
-
-<p>Rsync to the rescue. Let&#39;s say the folder containing .svn folder structures is named &quot;problemfolder&quot;. Do the following:</p>
+<p>Rsync to the rescue. Let’s say the folder containing .svn folder structures is named “problemfolder”. Do the following:</p>
 
 <ul>
-<li>In the same directory as the problem folder, create a &quot;clean&quot; folder to output the contents of problemfolder to eventually.</li>
+  <li>In the same directory as the problem folder, create a “clean” folder to output the contents of problemfolder to eventually.</li>
 </ul>
-<div class="highlight"><pre><code class="language-text" data-lang="text">&quot;mkdir problemfolder_clean&quot;
-</code></pre></div>
-<ul>
-<li>Run rsync, excluding .svn folders and their contents, to copy the problem directory to the clean directory.</li>
-</ul>
-<div class="highlight"><pre><code class="language-text" data-lang="text">rsync -avr --exclude=&#39;.svn*&#39; /path/to/problemfolder/ path/to/problemfolder_clean
-</code></pre></div>
-<p>At this point, the contents of &quot;problemfolder&quot; (minus the .svn folders) will be in the clean folder you created.</p>
-</div>
-</div>
 
-				
-				<footer>
-					&copy; SeanKilleen.com
-					 
-						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
-					
-				</footer>
-			</div>
-		
-		</div>
+<p><code>
+"mkdir problemfolder_clean"
+</code>
+* Run rsync, excluding .svn folders and their contents, to copy the problem directory to the clean directory.</p>
 
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    </body>
-</html>
+<p><code>
+rsync -avr --exclude='.svn*' /path/to/problemfolder/ path/to/problemfolder_clean
+</code></p>
+
+<p>At this point, the contents of “problemfolder” (minus the .svn folders) will be in the clean folder you created.</p>

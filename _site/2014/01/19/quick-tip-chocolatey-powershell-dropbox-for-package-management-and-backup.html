@@ -1,88 +1,23 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title> Quick tip: Chocolatey + Powershell + Dropbox for package management and backup </title>
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
+<p>So it’s been a long day and night rebuilding a system from scratch (Motherboard issue + Hubris + Bad decisions). But on this go ‘round, I decided to install as much of my software as Chocolatey packages as possible.</p>
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-        
-        <!-- Bootstrap core CSS -->
-    	<link href="/css/bootstrap.min.css" rel="stylesheet">
+<p><strong>Have you Installed Chocolatey? If not, and you care about being a windows sysadmin or developer, stop reading this and head to <a href="http://chocolatey.org/">http://chocolatey.org/</a> immediately to read up and install it. I’ll wait.</strong></p>
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-		<div class="container">
-
-			<div class="col-sm-3">
-				<h1>SeanKilleen.com</h1>
-				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
-
-				<strong>navigation</strong><br />
-				<a href="/">home</a> <br />
-				
-					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
-				
-					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
-				
-				
-				
-				<div id="about">
-					<strong>about</strong><br />
-					Thoughts on life and bytes from a digital twenty-something.
-				</div>
-				
-			</div>
-
-			<div class="col-sm-8 col-offset-1">
-				
-				<h1>Quick tip: Chocolatey + Powershell + Dropbox for package management and backup</h1>
-<span class="time">19 Jan 2014</span>
-
-<div class="content">
-	<div class="post"><p>So it&#39;s been a long day and night rebuilding a system from scratch (Motherboard issue + Hubris + Bad decisions). But on this go &#39;round, I decided to install as much of my software as Chocolatey packages as possible.</p>
-
-<p><strong>Have you Installed Chocolatey? If not, and you care about being a windows sysadmin or developer, stop reading this and head to <a href="http://chocolatey.org/">http://chocolatey.org/</a> immediately to read up and install it. I&#39;ll wait.</strong></p>
-
-<p>Done? Okay, great. So I was looking through the Chocolatey Gallery and finding packages to install (side note, installing multiple packages is as easy as &quot;cinst packagename1 packagename2 packagenameN&quot;) when it occurred to me: as I change things, wouldn&#39;t it be nice if I had a list somewhere of these packages that stays updated?</p>
+<p>Done? Okay, great. So I was looking through the Chocolatey Gallery and finding packages to install (side note, installing multiple packages is as easy as “cinst packagename1 packagename2 packagenameN”) when it occurred to me: as I change things, wouldn’t it be nice if I had a list somewhere of these packages that stays updated?</p>
 
 <p>Cue an all-too-easy powershell script on a scheduled task and 2 minutes later I was up and running. The script:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">$theDate = $(get-date -f yyyy-MM-dd_hh-mm-ss)
-$baseLocation = &quot;C:UsersSeanDropboxMyPCNameChocolateyPackageListExport&quot;
-$finalFileName = $baseLocation + &quot;&quot; + $theDate + &quot;_PackageList.txt&quot;
+
+<p><code>
+$theDate = $(get-date -f yyyy-MM-dd_hh-mm-ss)
+$baseLocation = "C:UsersSeanDropboxMyPCNameChocolateyPackageListExport"
+$finalFileName = $baseLocation + "" + $theDate + "_PackageList.txt"
 clist -lo | Out-File $finalFileName
-</code></pre></div>
-<p>Pretty simple -- it uses Chocolatey&#39;s list command with the -lo flag to show local packages only, and then outputs that list to a filename with a DateStamp.</p>
+</code></p>
+
+<p>Pretty simple – it uses Chocolatey’s list command with the -lo flag to show local packages only, and then outputs that list to a filename with a DateStamp.</p>
 
 <p>I saved it in DropBox. The next step was to set a scheduled task. Again, easy! I created a simple task to run at 4am everyday. The action item is simply:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">powershell -NoLogo C:\Users\Sean\Dropbox\MyPCName\Scripts\ExportChocolateyPackageList.ps1
-</code></pre></div>
+
+<pre><code>powershell -NoLogo C:\Users\Sean\Dropbox\MyPCName\Scripts\ExportChocolateyPackageList.ps1
+</code></pre>
+
 <p>Now I get a date-versioned list of all my installed packages synced to any of my devices every morning at 4am.</p>
-</div>
-</div>
-
-				
-				<footer>
-					&copy; SeanKilleen.com
-					 
-						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
-					
-				</footer>
-			</div>
-		
-		</div>
-
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    </body>
-</html>

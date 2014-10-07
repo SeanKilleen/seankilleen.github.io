@@ -1,84 +1,14 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title> How To: Change a Drive Letter With PowerShell [Field Notes] </title>
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-        
-        <!-- Bootstrap core CSS -->
-    	<link href="/css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-		<div class="container">
-
-			<div class="col-sm-3">
-				<h1>SeanKilleen.com</h1>
-				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
-
-				<strong>navigation</strong><br />
-				<a href="/">home</a> <br />
-				
-					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
-				
-					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
-				
-				
-				
-				<div id="about">
-					<strong>about</strong><br />
-					Thoughts on life and bytes from a digital twenty-something.
-				</div>
-				
-			</div>
-
-			<div class="col-sm-8 col-offset-1">
-				
-				<h1>How To: Change a Drive Letter With PowerShell [Field Notes]</h1>
-<span class="time">18 Oct 2012</span>
-
-<div class="content">
-	<div class="post"><h3>Problem</h3>
-
+<h3 id="problem">Problem</h3>
 <p>I need to change the letter of a mounted drive via PowerShell.</p>
 
-<h3>Solution</h3>
+<h3 id="solution">Solution</h3>
+<p>Start Powershell as an admin and run the following two lines, where ‘x’ is the current drive letter and y is the drive letter you’d like it to be:</p>
 
-<p>Start Powershell as an admin and run the following two lines, where &#39;x&#39; is the current drive letter and y is the drive letter you&#39;d like it to be:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">$drive = Get-WmiObject -Class win32_volume -Filter &quot;DriveLetter = &#39;x:&#39;&quot;&lt;br /&gt;Set-WmiInstance -input $drive -Arguments @{DriveLetter=&quot;Y:&quot;;}
-</code></pre></div>
-<h3>References</h3>
+<p><code>
+$drive = Get-WmiObject -Class win32_volume -Filter "DriveLetter = 'x:'"&lt;br /&gt;Set-WmiInstance -input $drive -Arguments @{DriveLetter="Y:";}
+</code></p>
 
+<h3 id="references">References</h3>
 <ul>
-<li><a href="http://blogs.technet.com/b/heyscriptingguy/archive/2011/03/14/change-drive-letters-and-labels-via-a-simple-powershell-command.aspx">Change Drive Letters and Labels via a Simple PowerShell Comamnd</a> [<a href="http://blogs.technet.com/">TechNet Blogs</a>]</li>
+  <li><a href="http://blogs.technet.com/b/heyscriptingguy/archive/2011/03/14/change-drive-letters-and-labels-via-a-simple-powershell-command.aspx">Change Drive Letters and Labels via a Simple PowerShell Comamnd</a> [<a href="http://blogs.technet.com/">TechNet Blogs</a>]</li>
 </ul>
-</div>
-</div>
-
-				
-				<footer>
-					&copy; SeanKilleen.com
-					 
-						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
-					
-				</footer>
-			</div>
-		
-		</div>
-
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    </body>
-</html>

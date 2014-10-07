@@ -1,123 +1,89 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title> Building a Build Process, Part 4b: Securing Subversion's Connection via TLS </title>
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-        
-        <!-- Bootstrap core CSS -->
-    	<link href="/css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-		<div class="container">
-
-			<div class="col-sm-3">
-				<h1>SeanKilleen.com</h1>
-				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
-
-				<strong>navigation</strong><br />
-				<a href="/">home</a> <br />
-				
-					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
-				
-					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
-				
-				
-				
-				<div id="about">
-					<strong>about</strong><br />
-					Thoughts on life and bytes from a digital twenty-something.
-				</div>
-				
-			</div>
-
-			<div class="col-sm-8 col-offset-1">
-				
-				<h1>Building a Build Process, Part 4b: Securing Subversion's Connection via TLS</h1>
-<span class="time">22 Apr 2012</span>
-
-<div class="content">
-	<div class="post"><p><em>This is part of <a href="http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process">a larger series</a> in building a proper build process. For more information and additional series links, check out the <a href="http://skwordpresstoghost.azurewebsites.net/?p=951">introductory post</a>.</em></p>
+<p><em>This is part of <a href="http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process">a larger series</a> in building a proper build process. For more information and additional series links, check out the <a href="http://skwordpresstoghost.azurewebsites.net/?p=951">introductory post</a>.</em></p>
 
 <p>Alright, I just couldn’t take the guilt. I can’t abide Subversion and Apache being set up without defaulting to https and a TLS encrypted connection. We’ll remedy this below.</p>
 
-<h3>Install The Required Packages</h3>
-
+<h3 id="install-the-required-packages">Install The Required Packages</h3>
 <p>On the CentOS server, login as root and type the following in the terminal to install packages:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">yum install mod_ssl openssl
-</code></pre></div>
+
+<pre><code>yum install mod_ssl openssl
+</code></pre>
+
 <p>These packages may already be installed; don’t worry if yum tells you that it has nothing to do.</p>
 
-<h3>Use OpenSSL to Generate a Self-Signed Certificate</h3>
-
+<h3 id="use-openssl-to-generate-a-self-signed-certificate">Use OpenSSL to Generate a Self-Signed Certificate</h3>
 <p>Navigate to the certificate store by heading to:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">cd /etc/pki/ca
-</code></pre></div>
-<p>Next, we’ll need to create a strong private key (2048-bit encryption):</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">openssl genrsa -out ca.key 2048
-</code></pre></div>
+
+<pre><code>cd /etc/pki/ca Next, we’ll need to create a strong private key (2048-bit encryption):
+
+openssl genrsa -out ca.key 2048
+</code></pre>
+
 <p>Then, we generate a CSR (Certificate Signing Request):</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">openssl req -new -key ca.key -out ca.csr
-</code></pre></div>
+
+<pre><code>openssl req -new -key ca.key -out ca.csr
+</code></pre>
+
 <p>You’ll then have to enter the following fields:</p>
 
 <ul>
-<li>2-digit country code (e.g. <code>US</code>)<br></li>
-<li>State or Province full name (e.g. <code>Maryland</code>)<br></li>
-<li>Locality / City (e.g. <code>Baltimore</code>)<br></li>
-<li>Organization Name (e.g. <code>Microsoft</code> or <code>Sean Killeen</code>)<br></li>
-<li>Org Unit Name / Section (e.g. <code>Subversion Test</code>)<br></li>
-<li>Common Name (your new hostname, eg <code>scm.seankilleen</code>)<br></li>
-<li>Email Address (e.g. <code>SeanKilleen@gmail.com</code>)<br></li>
-<li>A challenge password<br></li>
-<li>An optional company name</li>
+  <li>2-digit country code (e.g. <code>US</code>)  </li>
+  <li>State or Province full name (e.g. <code>Maryland</code>)  </li>
+  <li>Locality / City (e.g. <code>Baltimore</code>)  </li>
+  <li>Organization Name (e.g. <code>Microsoft</code> or <code>Sean Killeen</code>)  </li>
+  <li>Org Unit Name / Section (e.g. <code>Subversion Test</code>)  </li>
+  <li>Common Name (your new hostname, eg <code>scm.seankilleen</code>)  </li>
+  <li>Email Address (e.g. <code>SeanKilleen@gmail.com</code>)  </li>
+  <li>A challenge password  </li>
+  <li>An optional company name</li>
 </ul>
 
 <p>The next step is to use the CSR to generate the actual certificate:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">openssl x509 –req –days 365 –in ca.csr –signkey ca.key –out ca.crt
-</code></pre></div>
+
+<pre><code>openssl x509 –req –days 365 –in ca.csr –signkey ca.key –out ca.crt
+</code></pre>
+
 <p>Then, copy the certificate files into the TLS certs location that we’ll use later:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">cp ca.crt /etc/pki/tls/certs
+
+<p><code>
+cp ca.crt /etc/pki/tls/certs
 cp ca.key /etc/pki/tls/private/ca.key
 cp ca.cr /etc/pli/tls/private/ca.csr
-</code></pre></div>
-<h3>Modify Apache’s Configuration to offer SSL</h3>
+</code></p>
 
+<h3 id="modify-apaches-configuration-to-offer-ssl">Modify Apache’s Configuration to offer SSL</h3>
 <p>Open the file for editing:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">gedit +/SSLCertificateFile /etc/httpd/conf.d/ssl.conf
-</code></pre></div>
+
+<pre><code>gedit +/SSLCertificateFile /etc/httpd/conf.d/ssl.conf
+</code></pre>
+
 <p>Find the line referencing “SSLCertificateFile” and change it to the location of your keyfile. It should look like this when you’re done:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">SSLCertificateFile /etc/pki/tls/certs/ca.crt
-</code></pre></div>
-<p>A few lines after that, you’ll edit the SSLCertificateKeyFile:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">SSLCertificateKeyFile /etc/pki/tls/private/ca.key
-</code></pre></div>
+
+<pre><code>SSLCertificateFile /etc/pki/tls/certs/ca.crt A few lines after that, you’ll edit the SSLCertificateKeyFile:
+
+SSLCertificateKeyFile /etc/pki/tls/private/ca.key
+</code></pre>
+
 <p>Save the file and close it.</p>
 
 <p>Next, restart apache – from the console:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">/etc/init.d/httpd restart
-</code></pre></div>
-<h4>Redirect Non-SSL connections to the SSL Connection</h4>
 
+<pre><code>/etc/init.d/httpd restart
+</code></pre>
+
+<h4 id="redirect-non-ssl-connections-to-the-ssl-connection">Redirect Non-SSL connections to the SSL Connection</h4>
 <p>To do this, we need to edit the apache configuration file. </p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">gedit /etc/httpd/conf/httpd.conf
-</code></pre></div>
+
+<pre><code>gedit /etc/httpd/conf/httpd.conf
+</code></pre>
+
 <p>Towards the bottom of the file, the <code>&lt;VirtualHosts&gt;</code> configuration can be found.
 Paste the following lines at the bottom of the file:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">NameVirtualHost *:80
-NameVirtualHost *:443
 
-&lt;VirtualHost *:80&gt;
+<p>```
+NameVirtualHost *:80
+NameVirtualHost *:443</p>
+
+<p>&lt;VirtualHost *:80&gt;
         &lt;Directory /var/www&gt;
             AllowOverride All
         &lt;/Directory&gt;
@@ -134,15 +100,17 @@ NameVirtualHost *:443
         DocumentRoot /var/www
         ServerName localhost
 &lt;/VirtualHost&gt;
-</code></pre></div>
+```</p>
+
 <p>Now point your browser to <strong>https</strong>://[your ip or host name] and you’ll see that the site loads under an http connection. <strong>NOTE: </strong>you may get an error about the certificate, but this is because it does not come from a CA and thus is not “trusted” by your computer. The encryption is still TLS 1.0 256-bit encryption.</p>
 
-<h3>Enforce SSL/TLS Only (Redirect http to https)</h3>
-
+<h3 id="enforce-ssltls-only-redirect-http-to-https">Enforce SSL/TLS Only (Redirect http to https)</h3>
 <p>I put this in a separate section because I wanted the additions to be compartmentalized.</p>
 
 <p>To use mod_rewrite to redirect any http requests to https, change the VirtualHost *:80 to the following:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;VirtualHost *:80&gt;
+
+<p><code>
+&lt;VirtualHost *:80&gt;
     RewriteEngine On
     RewriteCond %{HTTPS} off
     RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
@@ -152,53 +120,34 @@ NameVirtualHost *:443
         DocumentRoot /var/www
         ServerName localhost
 &lt;/VirtualHost&gt;
-</code></pre></div>
-<h3>Configure the Firewall to Allow Port 443 Connections</h3>
+</code></p>
 
+<h3 id="configure-the-firewall-to-allow-port-443-connections">Configure the Firewall to Allow Port 443 Connections</h3>
 <p>On the console:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">iptables –A INPUT –p tcp –dport 443 –j ACCEPT
+
+<p><code>
+iptables –A INPUT –p tcp –dport 443 –j ACCEPT
 /sbin/service iptables save
 iptables –L –v
-</code></pre></div>
-<p>Now, try heading to <code>http:[your ip or hostname]/svn</code>, and watch it redirect to https. </p>
+</code>
+Now, try heading to <code>http:[your ip or hostname]/svn</code>, and watch it redirect to https. </p>
 
 <p>Success! </p>
 
-<h3>Feedback Welcome!</h3>
+<h3 id="feedback-welcome">Feedback Welcome!</h3>
+<p>I’d love to hear any comments on this series. Find it useful? Think there’s a better way to implement the technique or something I should have mentioned? Please drop a line in the comments to help me improve the series!</p>
 
-<p>I&#39;d love to hear any comments on this series. Find it useful? Think there&#39;s a better way to implement the technique or something I should have mentioned? Please drop a line in the comments to help me improve the series!</p>
-
-<h3>References</h3>
+<h3 id="references">References</h3>
 
 <ul>
-<li>http://wiki.centos.org/HowTos/Https</li>
-<li>http://dev.antoinesolutions.com/subversion/how-to-configure-subversion-on-centos-redhat-linux</li>
-<li>http://www.electrictoolbox.com/changing-hostname-centos/</li>
+  <li>http://wiki.centos.org/HowTos/Https</li>
+  <li>http://dev.antoinesolutions.com/subversion/how-to-configure-subversion-on-centos-redhat-linux</li>
+  <li>http://www.electrictoolbox.com/changing-hostname-centos/</li>
 </ul>
 
-<p><table>
+<table>
 <tr>
 <td><div align="left"><a href="http://skwordpresstoghost.azurewebsites.net/?p=631" target="_blank">&larr; Part 4: Source Code Management via Subverison and Apache on CentOS</a></div></td>
 <td><div align="right"><a href="http://skwordpresstoghost.azurewebsites.net/?p=591" target="_blank">Part 5: TortoiseSVN Client Connection and Repository Layout! &rarr;</a></div></td>
-</tr></p>
-</div>
-</div>
-
-				
-				<footer>
-					&copy; SeanKilleen.com
-					 
-						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
-					
-				</footer>
-			</div>
-		
-		</div>
-
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    </body>
-</html>
+</tr>
+</table>

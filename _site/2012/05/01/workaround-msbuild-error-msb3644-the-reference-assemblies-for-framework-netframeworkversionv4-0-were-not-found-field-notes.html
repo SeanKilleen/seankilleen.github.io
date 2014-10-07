@@ -1,107 +1,35 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title> Workaround: MSBuild Error MSB3644: "The reference assemblies for framework ".NETFramework,Version=v4.0" were not found" [Field Notes] </title>
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-        
-        <!-- Bootstrap core CSS -->
-    	<link href="/css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-		<div class="container">
-
-			<div class="col-sm-3">
-				<h1>SeanKilleen.com</h1>
-				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
-
-				<strong>navigation</strong><br />
-				<a href="/">home</a> <br />
-				
-					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
-				
-					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
-				
-				
-				
-				<div id="about">
-					<strong>about</strong><br />
-					Thoughts on life and bytes from a digital twenty-something.
-				</div>
-				
-			</div>
-
-			<div class="col-sm-8 col-offset-1">
-				
-				<h1>Workaround: MSBuild Error MSB3644: "The reference assemblies for framework ".NETFramework,Version=v4.0" were not found" [Field Notes]</h1>
-<span class="time">01 May 2012</span>
-
-<div class="content">
-	<div class="post"><h3>Problem</h3>
-
+<h3 id="problem">Problem</h3>
 <p>When attempting to build a Continuous Integration solution with MSBuild on Windows Server 2008 R2 (With .NET Framework 4.0 installed) I receive the following error:</p>
 
 <blockquote>
-<p>c:\Windows\Microsoft.NETFramework\v4.0.30319\Microsoft.Common.targets(847,9): warning MSB3644: The reference assemblies for framework &quot;.NETFramework,Version=v4.0&quot; were not found. To resolve this, install the SDK or Targeting Pack for this framework version or retarget your application to a version of the framework for which you have the SDK or Targeting Pack installed. Note that assemblies will be resolved from the Global Assembly Cache (GAC) and will be used in place of reference assemblies. Therefore your assembly may not be correctly targeted for the framework you intend.</p>
+  <p>c:\Windows\Microsoft.NETFramework\v4.0.30319\Microsoft.Common.targets(847,9): warning MSB3644: The reference assemblies for framework “.NETFramework,Version=v4.0” were not found. To resolve this, install the SDK or Targeting Pack for this framework version or retarget your application to a version of the framework for which you have the SDK or Targeting Pack installed. Note that assemblies will be resolved from the Global Assembly Cache (GAC) and will be used in place of reference assemblies. Therefore your assembly may not be correctly targeted for the framework you intend.</p>
 </blockquote>
 
-<h3>Solution</h3>
+<h3 id="solution">Solution</h3>
+<p>I’ll be the first to admit there are probably more elegant ways, but I recommend the following:</p>
 
-<p>I&#39;ll be the first to admit there are probably more elegant ways, but I recommend the following:</p>
+<h4 id="install-net-framework-40--windows-7-sdk">Install .NET Framework 4.0 / Windows 7 SDK</h4>
+<p>You can download it from Microsoft. If you don’t have access to do this, or if that doesn’t work, you can do the following.</p>
 
-<h4>Install .NET Framework 4.0 / Windows 7 SDK</h4>
-
-<p>You can download it from Microsoft. If you don&#39;t have access to do this, or if that doesn&#39;t work, you can do the following.</p>
-
-<h4>Copy the Reference Assemblies Folder to Your Build Server</h4>
-
+<h4 id="copy-the-reference-assemblies-folder-to-your-build-server">Copy the Reference Assemblies Folder to Your Build Server</h4>
 <p>Copy <code>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\*.*</code> to a folder on your build server (for me, it was <code>E:\ContinuousIntegration_ReferenceAssemblies</code>)</p>
 
-<h4>Override the Reference Assemblies in Your Build Configuration</h4>
-
+<h4 id="override-the-reference-assemblies-in-your-build-configuration">Override the Reference Assemblies in Your Build Configuration</h4>
 <p>When you call MSBuild, pass it a parameter -<code>p:FrameworkOverride</code>, with the location of the build.</p>
 
 <p>For example, my CruiseControl.NET config MSBuild section for this project now looks like:</p>
-<div class="highlight"><pre><code class="language-xml" data-lang="xml">&lt;msbuild&gt;
-        &lt;executable&gt;C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe&lt;/executable&gt;
-        &lt;buildArgs&gt;PEApps.build -p:FrameworkPathOverride=&quot;E:\ContinuousIntegration\_ReferenceAssemblies\v4.0&quot;&lt;/buildArgs&gt;
-        &lt;targets&gt;Compile&lt;/targets&gt;
-        &lt;timeout&gt;1800&lt;/timeout&gt;
-        &lt;!--  30 minutes --&gt;
-        &lt;logger&gt;C:\Program Files (x86)\CruiseControl.NET\server\ThoughtWorks.CruiseControl.MSBuild.dll&lt;/logger&gt;
-&lt;/msbuild&gt;
-</code></pre></div>
-<p>It&#39;s hack, for sure, but it got the solution to build, and it&#39;s reusable in future scenarios.</p>
+
+<p>```xml</p>
+<msbuild>
+        <executable>C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe</executable>
+        <buildargs>PEApps.build -p:FrameworkPathOverride="E:\ContinuousIntegration\_ReferenceAssemblies\v4.0"</buildargs>
+        <targets>Compile</targets>
+        <timeout>1800</timeout>
+        <!--  30 minutes -->
+        <logger>C:\Program Files (x86)\CruiseControl.NET\server\ThoughtWorks.CruiseControl.MSBuild.dll</logger>
+</msbuild>
+<p>```</p>
+
+<p>It’s hack, for sure, but it got the solution to build, and it’s reusable in future scenarios.</p>
 
 <p>Probably easier to download the SDK and install it, though.</p>
-</div>
-</div>
-
-				
-				<footer>
-					&copy; SeanKilleen.com
-					 
-						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
-					
-				</footer>
-			</div>
-		
-		</div>
-
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    </body>
-</html>

@@ -1,106 +1,33 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title> How To: Swap Views/Tables Within the Same Database Using Crystal Reports 2008 Designer [Field Notes] </title>
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-        
-        <!-- Bootstrap core CSS -->
-    	<link href="/css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-		<div class="container">
-
-			<div class="col-sm-3">
-				<h1>SeanKilleen.com</h1>
-				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
-
-				<strong>navigation</strong><br />
-				<a href="/">home</a> <br />
-				
-					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
-				
-					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
-				
-				
-				
-				<div id="about">
-					<strong>about</strong><br />
-					Thoughts on life and bytes from a digital twenty-something.
-				</div>
-				
-			</div>
-
-			<div class="col-sm-8 col-offset-1">
-				
-				<h1>How To: Swap Views/Tables Within the Same Database Using Crystal Reports 2008 Designer [Field Notes]</h1>
-<span class="time">02 Feb 2012</span>
-
-<div class="content">
-	<div class="post"><h3>Background</h3>
-
+<h3 id="background">Background</h3>
 <p>I have a database with a few different views. They all return the same fields in copies of the same exact report, but those fields are calculated differently (hence the views).</p>
 
-<h3>The Problem</h3>
+<h3 id="the-problem">The Problem</h3>
+<p>I wanted to be able to swap these views out without losing my fields, but couldn’t seem to find a way to do it</p>
 
-<p>I wanted to be able to swap these views out without losing my fields, but couldn&#39;t seem to find a way to do it</p>
+<p>Crystal has a method for changing data sources, and for setting tables up to be overridden in this way, but there didn’t seem to be any way to swap out a view that was already in the same database.</p>
 
-<p>Crystal has a method for changing data sources, and for setting tables up to be overridden in this way, but there didn&#39;t seem to be any way to swap out a view that was already in the same database.</p>
-
-<h3>The Solution</h3>
-
+<h3 id="the-solution">The Solution</h3>
 <p><strong>NOTE:</strong> The solution below depends on the fact that your new tables or views should be returning the exact same fields (the new one can have additional fields, but not vice versa, which makes sense).</p>
 
-<p>After some playing around, I figured it out. The best solution I&#39;ve been able to come up with is:&lt;</p>
+<p>After some playing around, I figured it out. The best solution I’ve been able to come up with is:&lt;</p>
 
 <ul>
-<li>While in your report, right-click on the <code>Database Explorer</code> and select <code>Set Datasource Location.</code></li>
-<li>In the bottom pane, select the datasource from your list as if it is a new datasource.</li>
-<li>In the bottom pane, navigate to the table or view you&#39;d like to replace.</li>
-<li>In the top pane, click the table or view you&#39;d like to replace.</li>
-<li>In the bottom pane, click the table or view you&#39;d like to replace the original table/view.</li>
-<li>Click <code>Update</code>.</li>
+  <li>While in your report, right-click on the <code>Database Explorer</code> and select <code>Set Datasource Location.</code></li>
+  <li>In the bottom pane, select the datasource from your list as if it is a new datasource.</li>
+  <li>In the bottom pane, navigate to the table or view you’d like to replace.</li>
+  <li>In the top pane, click the table or view you’d like to replace.</li>
+  <li>In the bottom pane, click the table or view you’d like to replace the original table/view.</li>
+  <li>Click <code>Update</code>.</li>
 </ul>
 
-<p>This will work, but it will appear to fail. That&#39;s because <strong>Crystal Reports keeps the same alias in its list of datasources.</strong> To double-check this, you can go select <code>Show Query...</code> from the <code>Database</code> menu and you&#39;ll be able to see that the SQL is just covering up your new data source with the old alias name.</p>
+<p>This will work, but it will appear to fail. That’s because <strong>Crystal Reports keeps the same alias in its list of datasources.</strong> To double-check this, you can go select <code>Show Query...</code> from the <code>Database</code> menu and you’ll be able to see that the SQL is just covering up your new data source with the old alias name.</p>
 
 <p>This might be fine for some folks, but it drives me up a wall. To fix that issue and get the names back in sync:</p>
 
 <ul>
-<li>Right-click on the database and select <code>Database Explorer</code>.</li>
-<li>In the panel on the right, right-click the improperly named datasource and select <code>Rename</code>.</li>
-<li>Enter the name of the table or view it is currently pointing to.</li>
+  <li>Right-click on the database and select <code>Database Explorer</code>.</li>
+  <li>In the panel on the right, right-click the improperly named datasource and select <code>Rename</code>.</li>
+  <li>Enter the name of the table or view it is currently pointing to.</li>
 </ul>
 
-<p>At this point, you&#39;ll have successfully completed the swap, with all your report fields making it out alive.</p>
-</div>
-</div>
-
-				
-				<footer>
-					&copy; SeanKilleen.com
-					 
-						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
-					
-				</footer>
-			</div>
-		
-		</div>
-
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    </body>
-</html>
+<p>At this point, you’ll have successfully completed the swap, with all your report fields making it out alive.</p>

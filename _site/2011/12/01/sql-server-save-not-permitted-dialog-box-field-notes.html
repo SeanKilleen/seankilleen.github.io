@@ -1,98 +1,24 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title> SQL Server: Save Not Permitted Dialog Box [Field Notes] </title>
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-        
-        <!-- Bootstrap core CSS -->
-    	<link href="/css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-		<div class="container">
-
-			<div class="col-sm-3">
-				<h1>SeanKilleen.com</h1>
-				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
-
-				<strong>navigation</strong><br />
-				<a href="/">home</a> <br />
-				
-					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
-				
-					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
-				
-				
-				
-				<div id="about">
-					<strong>about</strong><br />
-					Thoughts on life and bytes from a digital twenty-something.
-				</div>
-				
-			</div>
-
-			<div class="col-sm-8 col-offset-1">
-				
-				<h1>SQL Server: Save Not Permitted Dialog Box [Field Notes]</h1>
-<span class="time">01 Dec 2011</span>
-
-<div class="content">
-	<div class="post"><h3>Problem</h3>
-
+<h3 id="problem">Problem</h3>
 <p>In a new install of SQL Server 2008, when attempting to save changes to a table in a new database, I occasionally get the following error:</p>
 
 <blockquote>
-<p>Saving changes is not permitted. The changes you have made require the following tables to be dropped and re-created. You have either made changes to a table that can&#39;t be re-created or enabled the option Prevent saving changes that require the table to be recreated.</p>
+  <p>Saving changes is not permitted. The changes you have made require the following tables to be dropped and re-created. You have either made changes to a table that can’t be re-created or enabled the option Prevent saving changes that require the table to be recreated.</p>
 </blockquote>
 
-<h3>Solution</h3>
-
+<h3 id="solution">Solution</h3>
 <p>Per <a href="http://msdn.microsoft.com/en-us/library/bb895146.aspx">this excellent article on MSDN help</a>, take the following steps to rid yourself of this error:</p>
 
 <ul>
-<li><code>Tools &gt; Options</code></li>
-<li>Expand the <code>Designers</code> Section</li>
-<li>Click the <code>Table and Database Designers</code> section</li>
-<li>Uncheck the box labeled <code>Prevent saving changes that require table re-creation.</code></li>
+  <li><code>Tools &gt; Options</code></li>
+  <li>Expand the <code>Designers</code> Section</li>
+  <li>Click the <code>Table and Database Designers</code> section</li>
+  <li>Uncheck the box labeled <code>Prevent saving changes that require table re-creation.</code></li>
 </ul>
 
-<h3>Caveat</h3>
+<h3 id="caveat">Caveat</h3>
+<p><strong>Don’t do this on a production database</strong>. Just don’t do it. I only needed this for a quick temporary database, or when working in design mode. Otherwise, this option should always be enabled.</p>
 
-<p><strong>Don&#39;t do this on a production database</strong>. Just don&#39;t do it. I only needed this for a quick temporary database, or when working in design mode. Otherwise, this option should always be enabled.</p>
-
-<h3>References</h3>
-
+<h3 id="references">References</h3>
 <ul>
-<li><a href="http://msdn.microsoft.com/en-us/library/bb895146.aspx">Save (Not Permitted) dialog box</a> [<a href="http://msdn.microsoft.com/en-us/default.aspx">MSDN</a>]</li>
+  <li><a href="http://msdn.microsoft.com/en-us/library/bb895146.aspx">Save (Not Permitted) dialog box</a> [<a href="http://msdn.microsoft.com/en-us/default.aspx">MSDN</a>]</li>
 </ul>
-</div>
-</div>
-
-				
-				<footer>
-					&copy; SeanKilleen.com
-					 
-						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
-					
-				</footer>
-			</div>
-		
-		</div>
-
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    </body>
-</html>

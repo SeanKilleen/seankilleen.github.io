@@ -1,101 +1,28 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title> How To: Stop "Access Denied" errors in MVC Intranet Applications VS 2012/IIS Express [Field Notes] </title>
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-        
-        <!-- Bootstrap core CSS -->
-    	<link href="/css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-		<div class="container">
-
-			<div class="col-sm-3">
-				<h1>SeanKilleen.com</h1>
-				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
-
-				<strong>navigation</strong><br />
-				<a href="/">home</a> <br />
-				
-					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
-				
-					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
-				
-				
-				
-				<div id="about">
-					<strong>about</strong><br />
-					Thoughts on life and bytes from a digital twenty-something.
-				</div>
-				
-			</div>
-
-			<div class="col-sm-8 col-offset-1">
-				
-				<h1>How To: Stop "Access Denied" errors in MVC Intranet Applications VS 2012/IIS Express [Field Notes]</h1>
-<span class="time">10 Dec 2012</span>
-
-<div class="content">
-	<div class="post"><h3>Problem</h3>
-
+<h3 id="problem">Problem</h3>
 <ul>
-<li>Using Visual 2012 and IIS Express</li>
-<li>Building an MVC4 Intranet project</li>
-<li>Authentication Doesn&#39;t appear to work; I always get an &quot;Access Denied&quot; screen on every page.</li>
+  <li>Using Visual 2012 and IIS Express</li>
+  <li>Building an MVC4 Intranet project</li>
+  <li>Authentication Doesn’t appear to work; I always get an “Access Denied” screen on every page.</li>
 </ul>
 
-<h3>Cause</h3>
+<h3 id="cause">Cause</h3>
+<p>This happens because IIS Express isn’t configured by default for Windows Authentication.</p>
 
-<p>This happens because IIS Express isn&#39;t configured by default for Windows Authentication.</p>
-
-<h3>Solution</h3>
-
+<h3 id="solution">Solution</h3>
 <ul>
-<li>Run your project.</li>
-<li>While it is running / showing you the error, find the IIS Express Icon in your system tray</li>
-<li>Right-click the icon and select <code>Show all Web Applications</code>.</li>
-<li>Click on your web application.</li>
-<li>Look at the <code>Config</code> property to find where your applicationhost.config file is stored.</li>
-<li>Stop your web site and open that applicationhost.config file for editing.</li>
-<li>Find the section where <code>WindowsAuthentication enabled</code> is set to <code>false</code> and change it to <code>true</code>. </li>
-<li>Save the file.</li>
+  <li>Run your project.</li>
+  <li>While it is running / showing you the error, find the IIS Express Icon in your system tray</li>
+  <li>Right-click the icon and select <code>Show all Web Applications</code>.</li>
+  <li>Click on your web application.</li>
+  <li>Look at the <code>Config</code> property to find where your applicationhost.config file is stored.</li>
+  <li>Stop your web site and open that applicationhost.config file for editing.</li>
+  <li>Find the section where <code>WindowsAuthentication enabled</code> is set to <code>false</code> and change it to <code>true</code>. </li>
+  <li>Save the file.</li>
 </ul>
 
-<h3>References</h3>
+<h3 id="references">References</h3>
 
 <ul>
-<li><a href="http://chanmingman.wordpress.com/2012/06/19/access-is-denied-in-mvc-4-intranet-application-in-vs-11/">Access is denied in MVC 4 Intranet Application in VS 11</a> [<a href="http://chanmingman.wordpress.com/">Chanmingman&#39;s Blog</a>]</li>
-<li><a href="http://maran.ro/2012/09/06/activare-windowsauthentication-pe-iis-express-8-vs2012/">Activare “WindowsAuthentication” pe IIS Express 8 (VS2012)</a> [<a href="http://maran.ro/">Lucian Maran</a>]</ul></li>
+  <li><a href="http://chanmingman.wordpress.com/2012/06/19/access-is-denied-in-mvc-4-intranet-application-in-vs-11/">Access is denied in MVC 4 Intranet Application in VS 11</a> [<a href="http://chanmingman.wordpress.com/">Chanmingman’s Blog</a>]</li>
+  <li><a href="http://maran.ro/2012/09/06/activare-windowsauthentication-pe-iis-express-8-vs2012/">Activare “WindowsAuthentication” pe IIS Express 8 (VS2012)</a> [<a href="http://maran.ro/">Lucian Maran</a>]&lt;/ul&gt;</li>
 </ul>
-</div>
-</div>
-
-				
-				<footer>
-					&copy; SeanKilleen.com
-					 
-						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
-					
-				</footer>
-			</div>
-		
-		</div>
-
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    </body>
-</html>

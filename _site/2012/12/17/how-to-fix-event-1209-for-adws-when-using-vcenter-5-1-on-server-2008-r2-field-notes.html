@@ -1,103 +1,29 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title> How to: Fix Event 1209 for ADWS when using vCenter 5.1 on Server 2008 R2 [Field Notes] </title>
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-        
-        <!-- Bootstrap core CSS -->
-    	<link href="/css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-		<div class="container">
-
-			<div class="col-sm-3">
-				<h1>SeanKilleen.com</h1>
-				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
-
-				<strong>navigation</strong><br />
-				<a href="/">home</a> <br />
-				
-					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
-				
-					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
-				
-				
-				
-				<div id="about">
-					<strong>about</strong><br />
-					Thoughts on life and bytes from a digital twenty-something.
-				</div>
-				
-			</div>
-
-			<div class="col-sm-8 col-offset-1">
-				
-				<h1>How to: Fix Event 1209 for ADWS when using vCenter 5.1 on Server 2008 R2 [Field Notes]</h1>
-<span class="time">17 Dec 2012</span>
-
-<div class="content">
-	<div class="post"><h3>Problem</h3>
-
-<p>I&#39;m Running vCenter 5.1 and Windows Server 2008 R2. I notice a number of events in the event log with a source of &quot;ADWS&quot;, event ID of 1209. The event text reads:</p>
+<h3 id="problem">Problem</h3>
+<p>I’m Running vCenter 5.1 and Windows Server 2008 R2. I notice a number of events in the event log with a source of “ADWS”, event ID of 1209. The event text reads:</p>
 
 <blockquote>
-<p>Active Directory Web Services encountered an error while reading the settings for the specified Active Directory Lightweight Directory Services instance.  Active Directory Web Services will retry this operation periodically. In the mean time, this instance will be ignored. Instance name: ADAM_VMwareVCMSDS</p>
+  <p>Active Directory Web Services encountered an error while reading the settings for the specified Active Directory Lightweight Directory Services instance.  Active Directory Web Services will retry this operation periodically. In the mean time, this instance will be ignored. Instance name: ADAM_VMwareVCMSDS</p>
 </blockquote>
 
-<h3>Cause</h3>
+<h3 id="cause">Cause</h3>
+<p>Apparently, VMWare doesn’t create a proper registry value for one entry, which causes ADWS to throw an error</p>
 
-<p>Apparently, VMWare doesn&#39;t create a proper registry value for one entry, which causes ADWS to throw an error</p>
-
-<h3>Solution</h3>
-
+<h3 id="solution">Solution</h3>
 <p>To fix this:</p>
 
 <ul>
-<li>Back up your registry.</li>
-<li>Open <code>regedit.exe</code></li>
-<li>Navigate to <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\ADAM_VMwareVCMSDS\Parameters</code></li>
-<li>Note that the <code>Port SSL</code> field is a <code>REG_SZ</code> Rather than a <code>REG_DWORD</code> and is empty</li>
-<li>Delete the <code>Port SSL</code> field.</li>
-<li>Create a new field called <code>Port SSL</code> of type <code>REG_DWORD</code></li>
-<li>Double-click on that field and change the value to <code>636</code>.</li>
+  <li>Back up your registry.</li>
+  <li>Open <code>regedit.exe</code></li>
+  <li>Navigate to <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\ADAM_VMwareVCMSDS\Parameters</code></li>
+  <li>Note that the <code>Port SSL</code> field is a <code>REG_SZ</code> Rather than a <code>REG_DWORD</code> and is empty</li>
+  <li>Delete the <code>Port SSL</code> field.</li>
+  <li>Create a new field called <code>Port SSL</code> of type <code>REG_DWORD</code></li>
+  <li>Double-click on that field and change the value to <code>636</code>.</li>
 </ul>
 
 <p>At this point, the errors should stop and your EventLog is now free from 1440 events a day.</p>
 
-<h3>References</h3>
-
+<h3 id="references">References</h3>
 <ul>
-<li><a href="http://thesaffageek.co.uk/2010/07/05/active-directory-web-services-encountered-an-error-while-reading-the-settings-for-the-specified-active-directory-lightweight-directory-services-instance-active-directory-web-services-will-retry-this/">Active Directory Web Services encountered an error while reading the settings for the specified Active Directory Lightweight Directory Services instance. Active Directory Web Services will retry this operation periodically. In the mean time, this instance will be ignored</a>. [<a href="http://thesaffageek.co.uk/">TheSaffaGeek</a>]</li>
+  <li><a href="http://thesaffageek.co.uk/2010/07/05/active-directory-web-services-encountered-an-error-while-reading-the-settings-for-the-specified-active-directory-lightweight-directory-services-instance-active-directory-web-services-will-retry-this/">Active Directory Web Services encountered an error while reading the settings for the specified Active Directory Lightweight Directory Services instance. Active Directory Web Services will retry this operation periodically. In the mean time, this instance will be ignored</a>. [<a href="http://thesaffageek.co.uk/">TheSaffaGeek</a>]</li>
 </ul>
-</div>
-</div>
-
-				
-				<footer>
-					&copy; SeanKilleen.com
-					 
-						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
-					
-				</footer>
-			</div>
-		
-		</div>
-
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    </body>
-</html>

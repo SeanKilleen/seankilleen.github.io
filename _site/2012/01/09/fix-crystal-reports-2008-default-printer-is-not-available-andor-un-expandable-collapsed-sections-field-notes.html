@@ -1,117 +1,40 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title> Fix: Crystal Reports 2008: "Default printer is not available" and/or Un-expandable Collapsed Sections [Field Notes] </title>
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-        
-        <!-- Bootstrap core CSS -->
-    	<link href="/css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-		<div class="container">
-
-			<div class="col-sm-3">
-				<h1>SeanKilleen.com</h1>
-				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
-
-				<strong>navigation</strong><br />
-				<a href="/">home</a> <br />
-				
-					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
-				
-					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
-				
-				
-				
-				<div id="about">
-					<strong>about</strong><br />
-					Thoughts on life and bytes from a digital twenty-something.
-				</div>
-				
-			</div>
-
-			<div class="col-sm-8 col-offset-1">
-				
-				<h1>Fix: Crystal Reports 2008: "Default printer is not available" and/or Un-expandable Collapsed Sections [Field Notes]</h1>
-<span class="time">09 Jan 2012</span>
-
-<div class="content">
-	<div class="post"><h3>Problem</h3>
-
-<p>In Crystal Reports 2008, when opening up a report that came from elsewhere (usually another user&#39;s machine), I see: </p>
-
-<blockquote>
-<p>default printer is not available.</p>
-</blockquote>
+<h3 id="problem">Problem</h3>
+<p>In Crystal Reports 2008, when opening up a report that came from elsewhere (usually another user’s machine), I see: 
+&gt; default printer is not available.</p>
 
 <p>Oftentimes, this will be accompanied by a strange behavior that will cause reports (or subreports) to look completely collapsed, like the following image:</p>
 
-<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/01/CrystalReports_CollapsedSectionProblem.png" alt="Collapsed Crystal Reports"></p>
+<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/01/CrystalReports_CollapsedSectionProblem.png" alt="Collapsed Crystal Reports" /></p>
 
-<p>&quot;Oh&quot;, you say to yourself, &quot;I&#39;ll just expand those sections manually and carry on.&quot; Well <em>think again, renegade</em> -- Crystal Reports will have <em>none</em> of it. The sections appear frozen in place forever.</p>
+<p>“Oh”, you say to yourself, “I’ll just expand those sections manually and carry on.” Well <em>think again, renegade</em> – Crystal Reports will have <em>none</em> of it. The sections appear frozen in place forever.</p>
 
-<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/01/han-solo-frozen-in-carbonite_2.jpg" alt="Han Solo Ice Image"></p>
+<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/01/han-solo-frozen-in-carbonite_2.jpg" alt="Han Solo Ice Image" /></p>
 
 <p>Your report sections. It <em>is</em> as painful as it looks.</p>
 
-<h3>Solution</h3>
-
+<h3 id="solution">Solution</h3>
 <p>Luckily, per usual, <a href="http://stackoverflow.com/questions/8714797/crystal-reports-2008-sections-are-collapsed-and-i-cant-expand">StackOverflow was a big help here</a>.</p>
 
-<p>This solution has two different parts -- you may only need one or the other, but I&#39;ve found them both to be a pretty effective one-two punch in this situation.</p>
+<p>This solution has two different parts – you may only need one or the other, but I’ve found them both to be a pretty effective one-two punch in this situation.</p>
 
-<h4>Part 1: Change Your Printer Settings</h4>
-
+<h4 id="part-1-change-your-printer-settings">Part 1: Change Your Printer Settings</h4>
 <ul>
-<li>While in the report, click <code>File &gt; Page Setup...</code></li>
-<li>Check the box labeled <code>No Printer (optimize for screen display)</code>.</li>
-<li>Check the box labeled <code>Dissociate formatting page size and Printer Paper Size</code>.</li>
-<li>The box should look like below:</li>
+  <li>While in the report, click <code>File &gt; Page Setup...</code></li>
+  <li>Check the box labeled <code>No Printer (optimize for screen display)</code>.</li>
+  <li>Check the box labeled <code>Dissociate formatting page size and Printer Paper Size</code>.</li>
+  <li>The box should look like below:</li>
 </ul>
 
-<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/01/CR-Page-Settings.png" alt="Crystal Reports Printer Options">
+<p><img src="http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/01/CR-Page-Settings.png" alt="Crystal Reports Printer Options" />
 That should do it.</p>
 
-<h4>Part 2: Change Display Options</h4>
-
-<p>In case you have some sub-reports, etc. that didn&#39;t quite get the message to <em>thaw out, bro</em>, it&#39;s likely because they were hidden before or hidden as a result of the printer situation being screwy.</p>
+<h4 id="part-2-change-display-options">Part 2: Change Display Options</h4>
+<p>In case you have some sub-reports, etc. that didn’t quite get the message to <em>thaw out, bro</em>, it’s likely because they were hidden before or hidden as a result of the printer situation being screwy.</p>
 
 <p>Try the following:</p>
 
 <ul>
-<li>While in the report, click <code>File&gt;  Options...</code></li>
-<li>Click the <code>Layout</code> tab (usually visible by default in my experience)</li>
-<li>In the <code>Design View</code> section, check the &quot;Show hidden sections&quot; option. This will cause any unwieldy sections to fall in line and become visible.</li>
+  <li>While in the report, click <code>File&gt;  Options...</code></li>
+  <li>Click the <code>Layout</code> tab (usually visible by default in my experience)</li>
+  <li>In the <code>Design View</code> section, check the “Show hidden sections” option. This will cause any unwieldy sections to fall in line and become visible.</li>
 </ul>
-</div>
-</div>
-
-				
-				<footer>
-					&copy; SeanKilleen.com
-					 
-						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
-					
-				</footer>
-			</div>
-		
-		</div>
-
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    </body>
-</html>

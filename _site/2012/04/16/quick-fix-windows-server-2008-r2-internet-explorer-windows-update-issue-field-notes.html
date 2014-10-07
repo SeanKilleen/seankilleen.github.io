@@ -1,104 +1,25 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title> Quick Fix: Windows Server 2008 R2 Internet Explorer Windows Update Issue [Field Notes] </title>
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-        
-        <!-- Bootstrap core CSS -->
-    	<link href="/css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-		<div class="container">
-
-			<div class="col-sm-3">
-				<h1>SeanKilleen.com</h1>
-				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
-
-				<strong>navigation</strong><br />
-				<a href="/">home</a> <br />
-				
-					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
-				
-					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
-				
-				
-				
-				<div id="about">
-					<strong>about</strong><br />
-					Thoughts on life and bytes from a digital twenty-something.
-				</div>
-				
-			</div>
-
-			<div class="col-sm-8 col-offset-1">
-				
-				<h1>Quick Fix: Windows Server 2008 R2 Internet Explorer Windows Update Issue [Field Notes]</h1>
-<span class="time">16 Apr 2012</span>
-
-<div class="content">
-	<div class="post"><h3>Problem</h3>
-
+<h3 id="problem">Problem</h3>
 <p>On a fresh install of server 2008, after adding IE 9 via Windows Update, the installation appears again in later updates.</p>
 
-<p>When trying to perform this install, you receive the error code <code>&quot;9c48&quot;</code>.</p>
+<p>When trying to perform this install, you receive the error code <code>"9c48"</code>.</p>
 
-<h3>Cause</h3>
+<h3 id="cause">Cause</h3>
+<p>In layman’s terms: Essentially, it looks like the installer binaries after April 2012 are screwed up somehow. This causes it to install incorrectly the first time, and see itself as ready to be downloaded for the first time (instead of ready to download updates).</p>
 
-<p>In layman&#39;s terms: Essentially, it looks like the installer binaries after April 2012 are screwed up somehow. This causes it to install incorrectly the first time, and see itself as ready to be downloaded for the first time (instead of ready to download updates).</p>
+<h3 id="solution">Solution</h3>
+<p>####Step 1: Uninstall your current Internet Explorer
+* Go into Windows Updates
+* Click <code>View Update History</code>
+* In the search box up top, type “Internet” and the search should filter to include “Internet Explorer 9”.
+* Right-click on Internet Explorer 9 and Choose <code>Uninstall</code>.</p>
 
-<h3>Solution</h3>
-
-<h4>Step 1: Uninstall your current Internet Explorer</h4>
-
-<ul>
-<li>Go into Windows Updates</li>
-<li>Click <code>View Update History</code></li>
-<li>In the search box up top, type &quot;Internet&quot; and the search should filter to include &quot;Internet Explorer 9&quot;.</li>
-<li>Right-click on Internet Explorer 9 and Choose <code>Uninstall</code>.</li>
-</ul>
-
-<h4>Step 2: Download a good installer</h4>
-
+<h4 id="step-2-download-a-good-installer">Step 2: Download a good installer</h4>
 <p><a href="http://social.technet.microsoft.com/Forums/en-US/winservergen/thread/2c252dbe-c833-424d-9b75-4948bb8fb816">Via this great thread</a>, I found a solution on the download location.</p>
 
 <p>You can download a non-broken IE 9 Installer from Microsoft at <a href="http://www.microsoft.com/download/en/details.aspx?id=23332">http://www.microsoft.com/download/en/details.aspx?id=23332</a>.</p>
 
-<h4>Step 3: Install the Downloaded (non-Windows-Update) IE 9</h4>
+<h4 id="step-3-install-the-downloaded-non-windows-update-ie-9">Step 3: Install the Downloaded (non-Windows-Update) IE 9</h4>
+<p>This one’s pretty straightforward. You’ll have to restart once you’re done.</p>
 
-<p>This one&#39;s pretty straightforward. You&#39;ll have to restart once you&#39;re done.</p>
-
-<h4>Step 4: Check for Updates</h4>
-
+<h4 id="step-4-check-for-updates">Step 4: Check for Updates</h4>
 <p>When checking for Windows Updates, you should no longer see Internet Explorer 9 offered as an update, and should instead see updates for the program (if available).</p>
-</div>
-</div>
-
-				
-				<footer>
-					&copy; SeanKilleen.com
-					 
-						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
-					
-				</footer>
-			</div>
-		
-		</div>
-
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    </body>
-</html>

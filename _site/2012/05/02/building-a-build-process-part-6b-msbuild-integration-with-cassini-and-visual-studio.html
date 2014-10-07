@@ -1,187 +1,152 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title> Building a Build Process, Part 6b: MSBuild Integration With Cassini and Visual Studio </title>
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
+<p><em>This is part of <a href="">a larger series</a> in building a proper build process. For more information and additional series links, check out the <a href="">introductory post</a>.</em></p>
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-        
-        <!-- Bootstrap core CSS -->
-    	<link href="/css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-		<div class="container">
-
-			<div class="col-sm-3">
-				<h1>SeanKilleen.com</h1>
-				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
-
-				<strong>navigation</strong><br />
-				<a href="/">home</a> <br />
-				
-					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
-				
-					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
-				
-				
-				
-				<div id="about">
-					<strong>about</strong><br />
-					Thoughts on life and bytes from a digital twenty-something.
-				</div>
-				
-			</div>
-
-			<div class="col-sm-8 col-offset-1">
-				
-				<h1>Building a Build Process, Part 6b: MSBuild Integration With Cassini and Visual Studio</h1>
-<span class="time">02 May 2012</span>
-
-<div class="content">
-	<div class="post"><p><em>This is part of <a href="">a larger series</a> in building a proper build process. For more information and additional series links, check out the <a href="">introductory post</a>.</em></p>
-
-<h3>This Time…</h3>
-
+<h3 id="this-time">This Time…</h3>
 <p>In this round, we’re going to discuss:</p>
 
 <ul>
-<li>How to Start the Cassini Web Server Asynchronously </li>
-<li>How to Stop the Cassini Web Server<br></li>
-<li>How to (not quite) get Visual Studio to seemlessly Follow the Same directions that your MSBuild file follows.</li>
+  <li>How to Start the Cassini Web Server Asynchronously </li>
+  <li>How to Stop the Cassini Web Server  </li>
+  <li>How to (not quite) get Visual Studio to seemlessly Follow the Same directions that your MSBuild file follows.</li>
 </ul>
 
-<h3>Starting the Web Server (Asynchronously!)</h3>
-
+<h3 id="starting-the-web-server-asynchronously">Starting the Web Server (Asynchronously!)</h3>
 <p>Visual Studio has a built-in web server – no doubt you’re familiar with it. It’s what runs whenever you hit F5 on a web server and see a web site come up. This server is called Cassini, and you can start it up through an MS Build Task.</p>
 
-<p><em>[</em><em>A little background</em><em>: Rather than show here, I’m going to tell. You can use the Exec task normally to run an executable, but the catch is that MSBuild will usually wait for the task to finish. We’re going to use the AsyncExec task in order to ensure that MSBuild will start the web server and continue performing next commands without waiting for Cassini to exit, since waiting on Cassini would be undesirable behavior here.]</em></p>
+<p><em>[<strong>A little background</strong>: Rather than show here, I’m going to tell. You can use the Exec task normally to run an executable, but the catch is that MSBuild will usually wait for the task to finish. We’re going to use the AsyncExec task in order to ensure that MSBuild will start the web server and continue performing next commands without waiting for Cassini to exit, since waiting on Cassini would be undesirable behavior here.]</em></p>
 
 <p>We’re going to take advantage of an excellent set of extensions called the MSBuild Community Tasks to accomplish our mission here.</p>
 
-<h3>Get the MSBuild Extension Pack</h3>
-
+<h3 id="get-the-msbuild-extension-pack">Get the MSBuild Extension Pack</h3>
 <p>You should visit the <a href="">MSBuild Extension Pack web site</a> for an excellent overview of the capabilities of these tools. You can just click the download button on the right-hand side to get the latest version in ZIP format..</p>
 
 <ul>
-<li>Unzip the download (anywhere is fine).</li>
-<li>Go one level deeper and extract the <code>.NET 4.0</code> zip file.</li>
-<li>Create a folder in the <code>thirdpartytools</code> folder of your solution called <code>MSBuildExtensionPack</code>.</li>
-<li>Copy the contents of the <code>Build</code> folder from the zip file (the .dlls, etc.) into this directory.
+  <li>Unzip the download (anywhere is fine).</li>
+  <li>Go one level deeper and extract the <code>.NET 4.0</code> zip file.</li>
+  <li>Create a folder in the <code>thirdpartytools</code> folder of your solution called <code>MSBuildExtensionPack</code>.</li>
+  <li>Copy the contents of the <code>Build</code> folder from the zip file (the .dlls, etc.) into this directory.
 ###Updating Your Build File to be AsyncExec Ready
 We’ll have to update the build file to bring in the new task library (a great feature of MSBuild, by the way). To do this, we’ll add an import directive to the Extension Pack’s Task Files (this should go just inside of the <code>&lt;project&gt;</code> tag):</li>
 </ul>
-<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;Import Project=&quot;.thirdpartytoolsMSBuildExtensionPackMSBuild.ExtensionPack.tasks&quot;&gt;`
-</code></pre></div>
-<p>Next up, we have to make a slight modification. The Extension Pack attempts to do some nice work for us to include all the tasks, but we need to override it. Find the following section at the top of the <code>MSBuild.ExtensionPack.Tasks</code> file and comment it out (in the lines below, I’ve done that already for you):</p>
-<div class="highlight"><pre><code class="language-xml" data-lang="xml">&lt;!--    
-&lt;PropertyGroup&gt;
-        &lt;BuildPath Condition=&quot;&#39;$(BuildPath)&#39; == &#39;&#39;&quot;&gt;$(MSBuildProjectDirectory)&lt;/BuildPath&gt;
-        &lt;ExtensionTasksPath Condition=&quot;Exists(&#39;$(BuildPath)....BuildBinariesMSBuild.ExtensionPack.dll&#39;)&quot;&gt;$(BuildPath)....BuildBinaries&lt;/ExtensionTasksPath&gt;
-        &lt;ExtensionTasksPath Condition=&quot;&#39;$(ExtensionTasksPath)&#39; == &#39;&#39;&quot;&gt;$(MSBuildExtensionsPath)ExtensionPack4.0&lt;/ExtensionTasksPath&gt;
-    &lt;/PropertyGroup&gt;
---&gt;
-</code></pre></div>
-<p>Since the Extension Pack is no longer figuring out what its path is, we need to set an item in our <code>&lt;ItemGroup</code> to point it to the right place: </p>
-<div class="highlight"><pre><code class="language-xml" data-lang="xml">&lt;ExtensionTasksPath Include=&quot;.thirdpartytoolsMSBuildExtensionPack&quot;/&gt;
-</code></pre></div>
-<p>Now we’re ready to add the command to start the web server.</p>
 
-<h3>Adding a Target to Start the Web Site</h3>
+<p><code>
+&lt;Import Project=".thirdpartytoolsMSBuildExtensionPackMSBuild.ExtensionPack.tasks"&gt;`
+</code></p>
+
+<p>Next up, we have to make a slight modification. The Extension Pack attempts to do some nice work for us to include all the tasks, but we need to override it. Find the following section at the top of the <code>MSBuild.ExtensionPack.Tasks</code> file and comment it out (in the lines below, I’ve done that already for you):</p>
+
+<p>```xml
+&lt;!–    </p>
+<propertygroup>
+        <buildpath condition="'$(BuildPath)' == ''">$(MSBuildProjectDirectory)</buildpath>
+        <extensiontaskspath condition="Exists('$(BuildPath)....BuildBinariesMSBuild.ExtensionPack.dll')">$(BuildPath)....BuildBinaries</extensiontaskspath>
+        <extensiontaskspath condition="'$(ExtensionTasksPath)' == ''">$(MSBuildExtensionsPath)ExtensionPack4.0</extensiontaskspath>
+    </propertygroup>
+<p>–&gt;
+```</p>
+
+<p>Since the Extension Pack is no longer figuring out what its path is, we need to set an item in our <code>&lt;ItemGroup</code> to point it to the right place: </p>
+
+<p><code>xml
+&lt;ExtensionTasksPath Include=".thirdpartytoolsMSBuildExtensionPack"/&gt;
+</code>
+Now we’re ready to add the command to start the web server.</p>
+
+<h3 id="adding-a-target-to-start-the-web-site">Adding a Target to Start the Web Site</h3>
 
 <p>First thing’s first – we have to add an item to the <code>&lt;ItemGroup&gt;</code> section to tell MSBuild where Cassini resides, and an item to tell it where our published web site will reside once it’s been spat out by our build process. I took the guesswork out of it for you in the lines below: </p>
-<div class="highlight"><pre><code class="language-xml" data-lang="xml">&lt;Cassini Include=&quot;$(CommonProgramFiles)microsoft sharedDevServer10.0WebDev.WebServer40.exe&quot;/&gt;
-&lt;Website Include=&quot;.buildartifacts_PublishedWebsitesTestProject.Web&quot;/&gt;
-</code></pre></div>
+
+<p><code>xml
+&lt;Cassini Include="$(CommonProgramFiles)microsoft sharedDevServer10.0WebDev.WebServer40.exe"/&gt;
+&lt;Website Include=".buildartifacts_PublishedWebsitesTestProject.Web"/&gt;
+</code></p>
+
 <p>Next, we use the AsyncExec task from the Extension Pack to run the web server without hanging up our build process:</p>
-<div class="highlight"><pre><code class="language-xml" data-lang="xml">&lt;Target Name=&quot;StartWebsite&quot; DependsOnTargets=&quot;Compile&quot;&gt;         
-    &lt;AsyncExec Command=&#39;&quot;@(Cassini)&quot; /port:9999 /path:&quot;%(WebSite.FullPath)&quot; /vpath:&#39;/&gt;     
+
+<p><code>xml
+&lt;Target Name="StartWebsite" DependsOnTargets="Compile"&gt;         
+    &lt;AsyncExec Command='"@(Cassini)" /port:9999 /path:"%(WebSite.FullPath)" /vpath:'/&gt;     
 &lt;/Target&gt;
-</code></pre></div>
-<p>Try running your build file with a target of <code>StartWebsite</code>. You should be able to navigate to http://localhost:9999/ and see the web site in action (though it may just show a directory’s contents if the site is empty).</p>
+</code>
+Try running your build file with a target of <code>StartWebsite</code>. You should be able to navigate to http://localhost:9999/ and see the web site in action (though it may just show a directory’s contents if the site is empty).</p>
 
 <p>However, you may have noticed something. What stops the website so we can start it again? Nothing, and so we’re going to build that target too.</p>
 
-<h3>Adding a Target to Stop the Web Site and Updating Dependencies</h3>
-
+<h3 id="adding-a-target-to-stop-the-web-site-and-updating-dependencies">Adding a Target to Stop the Web Site and Updating Dependencies</h3>
 <p>You can use the handy built-into-windows <code>TaskKill</code> program to force a kill of program that has the same name as the WebServer. We just call it with an Exec Command, as shown below:</p>
-<div class="highlight"><pre><code class="language-xml" data-lang="xml">&lt;Target Name=&quot;StopWebsite&quot;&gt;         
-    &lt;Exec Command=&quot;taskkill /f /im WebDev.WebServer40.exe&quot; IgnoreExitCode=&quot;true&quot; IgnoreStandardErrorWarningFormat=&quot;true&quot;/&gt;     &lt;/Target&gt;
-</code></pre></div>
-<p>After that, we add the <code>StopWebsite</code> Target as a dependency to <code>StartWebsite</code>, before compile, so we know the site will be down before MS Build erases the files and spits out new ones: </p>
-<div class="highlight"><pre><code class="language-xml" data-lang="xml">&lt;Target Name=&quot;StartWebsite&quot; DependsOnTargets=&quot;StopWebsite;Compile&quot;&gt;
+
+<p><code>xml
+&lt;Target Name="StopWebsite"&gt;         
+    &lt;Exec Command="taskkill /f /im WebDev.WebServer40.exe" IgnoreExitCode="true" IgnoreStandardErrorWarningFormat="true"/&gt;     &lt;/Target&gt;
+</code>
+After that, we add the <code>StopWebsite</code> Target as a dependency to <code>StartWebsite</code>, before compile, so we know the site will be down before MS Build erases the files and spits out new ones: </p>
+
+<p><code>xml
+&lt;Target Name="StartWebsite" DependsOnTargets="StopWebsite;Compile"&gt;
 ...
 &lt;/Target&gt;
-</code></pre></div>
-<p>Go ahead and try running your build with the <code>StopWebsite</code> and <code>StartWebsite</code> targets. </p>
+</code>
+Go ahead and try running your build with the <code>StopWebsite</code> and <code>StartWebsite</code> targets. </p>
 
 <p><strong>NOTE:</strong> You may receive an error upon starting Cassini about there only being one instance allowed on a port. If you do, try changing the port number from <code>9999</code> to something else in the StartWebsite task (try to pick a port that’s not being used!).</p>
 
 <p>For reference, at this point, our build file looks like:</p>
-<div class="highlight"><pre><code class="language-xml" data-lang="xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-&lt;Project xmlns=&quot;http://schemas.microsoft.com/developer/msbuild/2003&quot; ToolsVersion=&quot;4.0&quot; DefaultTargets=&quot;Compile&quot;&gt;
-    &lt;Import Project=&quot;.\thirdparty\tools\MSBuildExtensionPack\MSBuild.ExtensionPack.tasks&quot;/&gt;
 
+<p>```xml
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" toolsversion="4.0" defaulttargets="Compile">
+    <import project=".\thirdparty\tools\MSBuildExtensionPack\MSBuild.ExtensionPack.tasks"></import></project></p>
 
-    &lt;ItemGroup&gt;
-        &lt;ExtensionTasksPath Include=&quot;.\thirdparty\tools\MSBuildExtensionPack\&quot;/&gt;
-        &lt;BuildArtifacts Include=&quot;.\buildartifacts\&quot;/&gt;
-        &lt;SolutionFile Include=&quot;.\TestProject.sln&quot;/&gt;
-        &lt;Cassini Include=&quot;$(CommonProgramFiles)\microsoft shared\DevServer\10.0\WebDev.WebServer40.exe&quot;/&gt;
-        &lt;Website Include=&quot;.\buildartifacts\_PublishedWebsites\TestProject.Web&quot;/&gt;
+<pre><code>&lt;ItemGroup&gt;
+    &lt;ExtensionTasksPath Include=".\thirdparty\tools\MSBuildExtensionPack\"/&gt;
+    &lt;BuildArtifacts Include=".\buildartifacts\"/&gt;
+    &lt;SolutionFile Include=".\TestProject.sln"/&gt;
+    &lt;Cassini Include="$(CommonProgramFiles)\microsoft shared\DevServer\10.0\WebDev.WebServer40.exe"/&gt;
+    &lt;Website Include=".\buildartifacts\_PublishedWebsites\TestProject.Web"/&gt;
+ 
+&lt;/ItemGroup&gt;
+   
+   
+&lt;Target Name ="Clean"&gt;
+    &lt;RemoveDir Directories="@(BuildArtifacts)"/&gt;
+&lt;/Target&gt;
+ 
+&lt;Target Name="Init" DependsOnTargets="Clean"&gt;
+    &lt;MakeDir Directories ="@(BuildArtifacts)"/&gt;
+&lt;/Target&gt;
+ 
+&lt;Target Name="Compile" DependsOnTargets="Init"&gt;
+    &lt;MSBuild Projects="@(SolutionFile)" Targets="Rebuild" Properties="OutDir=%(BuildArtifacts.FullPath)"/&gt;
+&lt;/Target&gt;
+ 
+&lt;Target Name="StopWebsite"&gt;
+    &lt;Exec Command="taskkill /f /im WebDev.WebServer40.exe" IgnoreExitCode="true" IgnoreStandardErrorWarningFormat="true"/&gt;
+&lt;/Target&gt;
+   
+&lt;Target Name="StartWebsite" DependsOnTargets="StopWebsite;Compile"&gt;
+    &lt;AsyncExec Command='"@(Cassini)" /port:9999 /path:"%(WebSite.FullPath)" /vpath:'/&gt;
+&lt;/Target&gt;
+</code></pre>
 
-    &lt;/ItemGroup&gt;
+<p>&lt;/Project&gt;
+```</p>
 
-
-    &lt;Target Name =&quot;Clean&quot;&gt;
-        &lt;RemoveDir Directories=&quot;@(BuildArtifacts)&quot;/&gt;
-    &lt;/Target&gt;
-
-    &lt;Target Name=&quot;Init&quot; DependsOnTargets=&quot;Clean&quot;&gt;
-        &lt;MakeDir Directories =&quot;@(BuildArtifacts)&quot;/&gt;
-    &lt;/Target&gt;
-
-    &lt;Target Name=&quot;Compile&quot; DependsOnTargets=&quot;Init&quot;&gt;
-        &lt;MSBuild Projects=&quot;@(SolutionFile)&quot; Targets=&quot;Rebuild&quot; Properties=&quot;OutDir=%(BuildArtifacts.FullPath)&quot;/&gt;
-    &lt;/Target&gt;
-
-    &lt;Target Name=&quot;StopWebsite&quot;&gt;
-        &lt;Exec Command=&quot;taskkill /f /im WebDev.WebServer40.exe&quot; IgnoreExitCode=&quot;true&quot; IgnoreStandardErrorWarningFormat=&quot;true&quot;/&gt;
-    &lt;/Target&gt;
-
-    &lt;Target Name=&quot;StartWebsite&quot; DependsOnTargets=&quot;StopWebsite;Compile&quot;&gt;
-        &lt;AsyncExec Command=&#39;&quot;@(Cassini)&quot; /port:9999 /path:&quot;%(WebSite.FullPath)&quot; /vpath:&#39;/&gt;
-    &lt;/Target&gt;
-
-&lt;/Project&gt;
-</code></pre></div>
-<h3>Getting Visual Studio to Play Along: Help Needed!</h3>
-
+<h3 id="getting-visual-studio-to-play-along-help-needed">Getting Visual Studio to Play Along: Help Needed!</h3>
 <p>Unfortunately, this is one area that this blog series will fall short. I’ve scoured the internet in an attempt to find out how I can output the bin and obj to another folder based on the $(SolutionDir) variable, but apparently unlike C++, Visual Studio for C# does not allow this and instead creates a strange Folder with “$(SolutionDir)” literally in the name. I thought it would be pretty straightforward, but boy was I wrong. If anyone has any suggestions, I’m all ears. I was told I could go the route of editing the .csproj file, but I really tend to be wary of that kind of text editing; I like Visual Studio to be able to own that file for its sake.</p>
 
 <p>For now, I just recommend using TortoiseSVN to ignore those folders in your source control so that it doesn’t conflict with anyone else if you hit F5 and commit later. </p>
 
 <p>And by all means, if you know how to solve the mystery, sound off in the comments!</p>
 
-<h3>Feedback Welcome!</h3>
+<h3 id="feedback-welcome">Feedback Welcome!</h3>
+<p>I’d love to hear any comments on this series. Find it useful? Think there’s a better way to implement the technique or something I should have mentioned? Please drop a line in the comments to help me improve the series!</p>
 
-<p>I&#39;d love to hear any comments on this series. Find it useful? Think there&#39;s a better way to implement the technique or something I should have mentioned? Please drop a line in the comments to help me improve the series!</p>
-
-<h3>References</h3>
+<h3 id="references">References</h3>
 
 <ul>
-<li><a href="http://www.pluralsight-training.net/microsoft/courses/TableOfContents?courseName=continuous-integration&amp;highlight=james-kovacs_ci-part1*3!james-kovacs_ci-part3*2!james-kovacs_ci-part2*2!james-kovacs_ci-part6*4,12#ci-part1">Pluralsight Continuous Integration Course</a> </li>
-<li><a href="http://www.pluralsight-training.net/microsoft/Products/Individual">Pluralsight Sign-up Page</a> </li>
-<li><a href="http://msbuildextensionpack.codeplex.com/">MsBuild Extension Pack</a></li>
-<li><a href="http://www.msbuildextensionpack.com/help/3.5.8.0/html/68cdc023-8926-4ac9-9e7c-0297592fec29.htm">MsBuild Extension Pack AsyncExec Reference</a></li>
+  <li><a href="http://www.pluralsight-training.net/microsoft/courses/TableOfContents?courseName=continuous-integration&amp;highlight=james-kovacs_ci-part1*3!james-kovacs_ci-part3*2!james-kovacs_ci-part2*2!james-kovacs_ci-part6*4,12#ci-part1">Pluralsight Continuous Integration Course</a> </li>
+  <li><a href="http://www.pluralsight-training.net/microsoft/Products/Individual">Pluralsight Sign-up Page</a> </li>
+  <li><a href="http://msbuildextensionpack.codeplex.com/">MsBuild Extension Pack</a></li>
+  <li><a href="http://www.msbuildextensionpack.com/help/3.5.8.0/html/68cdc023-8926-4ac9-9e7c-0297592fec29.htm">MsBuild Extension Pack AsyncExec Reference</a></li>
 </ul>
 
 <table>
@@ -190,24 +155,4 @@ We’ll have to update the build file to bring in the new task library (a great 
 <td><div align="right"><a href="http://skwordpresstoghost.azurewebsites.net/?p=501" target="_blank">Part 7: Installing CruiseControl.NET &rarr;</a></div></td>
 </tr>
 </table>
-</div>
-</div>
 
-				
-				<footer>
-					&copy; SeanKilleen.com
-					 
-						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
-					
-				</footer>
-			</div>
-		
-		</div>
-
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    </body>
-</html>

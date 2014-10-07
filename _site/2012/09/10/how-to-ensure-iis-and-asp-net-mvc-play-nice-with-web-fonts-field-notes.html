@@ -1,105 +1,31 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title> How to: Ensure IIS and ASP.NET MVC Play Nice with Web Fonts [Field Notes] </title>
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
+<h3 id="problem">Problem</h3>
+<p>I’m using ASP.NET MVC via IIS and would like to make use of Web Fonts.</p>
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-        
-        <!-- Bootstrap core CSS -->
-    	<link href="/css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-		<div class="container">
-
-			<div class="col-sm-3">
-				<h1>SeanKilleen.com</h1>
-				<img id="about" src="/img/logo.jpg" height="75px" width="75px" /><br />	
-
-				<strong>navigation</strong><br />
-				<a href="/">home</a> <br />
-				
-					<a class="about" href="https://github.com/SeanKilleen">github</a><br />
-				
-					<a class="about" href="mailto:SeanKilleen@gmail.com">Email</a><br />
-				
-				
-				
-				<div id="about">
-					<strong>about</strong><br />
-					Thoughts on life and bytes from a digital twenty-something.
-				</div>
-				
-			</div>
-
-			<div class="col-sm-8 col-offset-1">
-				
-				<h1>How to: Ensure IIS and ASP.NET MVC Play Nice with Web Fonts [Field Notes]</h1>
-<span class="time">10 Sep 2012</span>
-
-<div class="content">
-	<div class="post"><h3>Problem</h3>
-
-<p>I&#39;m using ASP.NET MVC via IIS and would like to make use of Web Fonts.</p>
-
-<h3>Solution</h3>
-
+<h3 id="solution">Solution</h3>
 <p>There are two steps:</p>
 
 <ul>
-<li>Make sure your Web Font files are going to be outputted by your build process.</li>
-<li>Make sure IIS can serve those web files.
+  <li>Make sure your Web Font files are going to be outputted by your build process.</li>
+  <li>Make sure IIS can serve those web files.
 ####Step 1: Make Sure Your Web Font Files are Going to be Outputted by Your Build Process</li>
-<li>In Visual Studio, select all your web font files (EOT, SVG, TTF, and WOFF files)</li>
-<li>Right-click on them and select properties or look at the properties window.</li>
-<li>Set the <code>Build Action</code> Property to <code>Content</code></li>
-<li>Set the <code>Copy to Output Directory</code> property to <code>Copy Always</code>.</li>
+  <li>In Visual Studio, select all your web font files (EOT, SVG, TTF, and WOFF files)</li>
+  <li>Right-click on them and select properties or look at the properties window.</li>
+  <li>Set the <code>Build Action</code> Property to <code>Content</code></li>
+  <li>Set the <code>Copy to Output Directory</code> property to <code>Copy Always</code>.</li>
 </ul>
 
-<h4>Step 2: Make Sure IIS Can Serve Your Web Font Files</h4>
-
+<h4 id="step-2-make-sure-iis-can-serve-your-web-font-files">Step 2: Make Sure IIS Can Serve Your Web Font Files</h4>
 <p>In IIS, make sure you have the following file extensions and the corresponding MIME types:</p>
 
 <ul>
-<li>.eot &rarr; application/octet-stream</li>
-<li>.woff &rarr; application/x-woff</li>
-<li>.svg &rarr; image/svg+xml</li>
+  <li>.eot → application/octet-stream</li>
+  <li>.woff → application/x-woff</li>
+  <li>.svg → image/svg+xml</li>
 </ul>
 
 <p>and bingo! Build/deploy your package and it should be right as rain.</p>
 
-<h3>References</h3>
-
+<h3 id="references">References</h3>
 <ul>
-<li><a href="http://sebduggan.com/blog/serving-web-fonts-from-iis/">Serving Web Fonts from IIS</a> [<a href="http://sebduggan.com/blog/">Seb Duggan</a>]</li>
+  <li><a href="http://sebduggan.com/blog/serving-web-fonts-from-iis/">Serving Web Fonts from IIS</a> [<a href="http://sebduggan.com/blog/">Seb Duggan</a>]</li>
 </ul>
-</div>
-</div>
-
-				
-				<footer>
-					&copy; SeanKilleen.com
-					 
-						- <a href="https://www.github.com/SeanKilleen">https://www.github.com/SeanKilleen</a>
-					
-				</footer>
-			</div>
-		
-		</div>
-
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    </body>
-</html>
