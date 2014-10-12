@@ -134,5 +134,6 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll
+  jekyll-redirect-from
   jekyll-sitemap
   octopress (~> 3.0.0.rc.12)
