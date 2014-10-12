@@ -9,7 +9,7 @@ Google+ applies this intuitive concept, but with a twist to its own benefit.
 
 On the right-hand side of the Google+ home page, I noticed the option to add folks, and (wrongly) made the quick assumption that these folks are already on the network, despite the fact that some buttons are instead labeled "Add and Invite". Picture below:
 
-![Add and Invite Buttons](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/02/2012-01-31_ss_GPlus_AddAndInvite.png)
+![Add and Invite Buttons]({{site.post-images}}/2012-01-31_ss_GPlus_AddAndInvite.png)
 
 Notice the difference? You might not at first glance.
 

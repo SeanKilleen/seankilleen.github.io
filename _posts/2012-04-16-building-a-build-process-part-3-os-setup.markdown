@@ -59,7 +59,7 @@ This is very important. I did the following.
 #####On CentOS
 * Go to the Software Updater, which you can access via `Applications  > System Tools > Software Updater`, as seen below:
 
-![Software updater screen](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/05-CentOS-Updates.png)
+![Software updater screen]({{site.post-images}}/05-CentOS-Updates.png)
 
 * Click "Apply Updates" for all available updates.  
 * Restart (if necessary).  
@@ -70,12 +70,12 @@ This is optional, but I find that it's always helpful to be able to go back to t
 * First, shut down all your VMs so you get a clean snapshot state.
 * Click on an image and then click the `Snapshots` button at the upper-right corner, shown below:
 
-![Snapshots button](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/07-252520-252520Details-252520and-252520Snapshots_thumb.png)
+![Snapshots button]({{site.post-images}}/07-252520-252520Details-252520and-252520Snapshots_thumb.png)
 
 
 * Right-click on `Current State` and select `Take Snapshot`, as shown below. You’ll be asked to save the snapshot; I choose the name “Initial Setup” the first time I go through the process.
 
-![Take snapshot button](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/08-252520-252520Take-252520Snapshot_thumb-25255B1-25255D.png)
+![Take snapshot button]({{site.post-images}}/08-252520-252520Take-252520Snapshot_thumb-25255B1-25255D.png)
 
 That’s it! Next, we’ll look at setting up our source code management system.
 

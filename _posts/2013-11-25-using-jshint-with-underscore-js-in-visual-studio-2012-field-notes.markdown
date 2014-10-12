@@ -10,19 +10,19 @@ One of my favorite features of JSHint is that it will tell you when you're using
 
 But, when referencing browser functionality or variables from other files (think console.log, ko, moment, toastr, etc.) it would see them as undefined:
 
-![Undefined errors for popular libraries](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2013/11/2013-11-25_JSHint_UndefinedErrors.png)
+![Undefined errors for popular libraries]({{site.post-images}}/2013-11-25_JSHint_UndefinedErrors.png)
 Yiiiikes.
 
 Luckily, this can be fixed for most issues by utilizing the `global` command in a comment. JSLint will interpret the following as "assume all of these variables are defined":
 
-![A list of libraries defined using the global command in a comment](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2013/11/2013-11-25_JSHint_GlobalCommand.png)
+![A list of libraries defined using the global command in a comment]({{site.post-images}}/2013-11-25_JSHint_GlobalCommand.png)
 
 This saves so many validation headaches.
 
 ###The Problem: Identifying UnderscoreJS as a Global Variable
 However, when I add the Underscore.js global identifier (`_`, unsurprisingly) to the global list, I get a different error -- `Unexpected dangling '_' in '_'`:
 
-![Image of the new error message I see.](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2013/11/2013-11-25_JSHint_UnexpectedDanglign.png)
+![Image of the new error message I see.]({{site.post-images}}/2013-11-25_JSHint_UnexpectedDanglign.png)
 
 ###The Solution: the "nomen" Option
 

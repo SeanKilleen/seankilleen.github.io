@@ -102,7 +102,7 @@ I didn’t know what the IP address was for my subversion server, so I typed `if
     http://10.0.0.15/svn/
 …and lo &amp; behold, I’m greeted with a password prompt! I enter one of our pre-defined usernames and passwords, I’m greeted with the following in my web browser:
 
-![SVN Repository working with a list of repositories](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/09-252520-252520SVN-252520on-252520Apache_thumb-25255B1-25255D.png)
+![SVN Repository working with a list of repositories]({{site.post-images}}/09-252520-252520SVN-252520on-252520Apache_thumb-25255B1-25255D.png)
 
 Great – I can see my repository! 
 

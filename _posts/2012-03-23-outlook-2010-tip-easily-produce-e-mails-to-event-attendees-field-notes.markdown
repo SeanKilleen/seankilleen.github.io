@@ -7,7 +7,7 @@ Just a quick tip – one of the things I used to be frustrated with in Outlook w
 
 Outlook 2010 has made this much easier with the addition of a “Contact Attendees” button to the event. Look for it on the ribbon for the event. Screenshot below:
 
-![Screenshot of Contact Attendees Button](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/03/2012-03-23_Office2010_ContactAttendees.png)
+![Screenshot of Contact Attendees Button]({{site.post-images}}/2012-03-23_Office2010_ContactAttendees.png)
 
 
 Hope you find it useful!

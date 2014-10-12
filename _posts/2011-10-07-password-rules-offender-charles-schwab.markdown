@@ -3,7 +3,7 @@ layout: post
 title: 'Password Rules Offender: Charles Schwab'
 date: 2011-10-07 12:24:00.000000000 -04:00
 ---
-![Schwab bad Password Screen](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2011/10/schwab_badpw.png)
+![Schwab bad Password Screen]({{site.post-images}}/schwab_badpw.png)
 <div style="text-align:center">Seriously?</div>
 
 Dear Charles Schwab,

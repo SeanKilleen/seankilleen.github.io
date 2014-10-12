@@ -12,6 +12,6 @@ This is embarrassingly simple, and yet I found it to be surprisingly counter-int
 
 In the `Field Explorer` section, expand the `Group Name Fields` section and drag the name onto the report.
 
-![Field Explorer Window](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2011/12/FieldExplorer_GroupName.png)
+![Field Explorer Window]({{site.post-images}}/FieldExplorer_GroupName.png)
 
 It's not under insert, not as a menu shortcut, etc. -- as far as I can tell, the only place to drag a Group Name field from is there.

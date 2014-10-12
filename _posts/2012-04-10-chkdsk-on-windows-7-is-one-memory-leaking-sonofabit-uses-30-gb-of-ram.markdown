@@ -9,7 +9,7 @@ I was wrong. All it took was running Chkdsk.exe on an external HDD.
 
 See below for yourself:
 
-![Picture of Chkdsk.exe eating all my RAM.](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/2012-04-10_Chkdsk_CrazyMemoryUsage.png)
+![Picture of Chkdsk.exe eating all my RAM.]({{site.post-images}}/2012-04-10_Chkdsk_CrazyMemoryUsage.png)
 
 In case you can't see it clearly, that's Chkdsk.exe taking up 30,060,916 KB of RAM. Otherwise known as ***30.06 GB of RAM***.
 

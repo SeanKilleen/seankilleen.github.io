@@ -10,11 +10,11 @@ In Crystal Reports 2008, when opening up a report that came from elsewhere (usua
 
 Oftentimes, this will be accompanied by a strange behavior that will cause reports (or subreports) to look completely collapsed, like the following image:
 
-![Collapsed Crystal Reports](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/01/CrystalReports_CollapsedSectionProblem.png)
+![Collapsed Crystal Reports]({{site.post-images}}//CrystalReports_CollapsedSectionProblem.png)
 
 "Oh", you say to yourself, "I'll just expand those sections manually and carry on." Well *think again, renegade* -- Crystal Reports will have *none* of it. The sections appear frozen in place forever.
 
-![Han Solo Ice Image](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/01/han-solo-frozen-in-carbonite_2.jpg)
+![Han Solo Ice Image]({{site.post-images}}//han-solo-frozen-in-carbonite_2.jpg)
 
 Your report sections. It *is* as painful as it looks.
 
@@ -29,7 +29,7 @@ This solution has two different parts -- you may only need one or the other, but
 * Check the box labeled `Dissociate formatting page size and Printer Paper Size`.
 * The box should look like below:
 
-![Crystal Reports Printer Options](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/01/CR-Page-Settings.png)
+![Crystal Reports Printer Options]({{site.post-images}}//CR-Page-Settings.png)
 That should do it.
 
 ####Part 2: Change Display Options

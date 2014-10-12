@@ -7,10 +7,10 @@ date: 2012-01-09 17:55:00.000000000 -05:00
 
 Is it:
 
-![Parking at Metrorail Stations](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/01/2012-01-08_wmata1.png)
+![Parking at Metrorail Stations]({{site.post-images}}//2012-01-08_wmata1.png)
 
 Or:
 
-![Union Station](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/01/2012-01-08_wmata2.png)
+![Union Station]({{site.post-images}}//2012-01-08_wmata2.png)
 
 Get your story straight and then get back to me, WMATA.

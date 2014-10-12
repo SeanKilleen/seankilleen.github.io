@@ -31,40 +31,40 @@ We'll be creating two VMs initially for our current purposes:
 
 Open VirtualBox; you'll be greeted with a blank slate like the one below
 
-![VirtualBox Starting Window](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/VirtualBox_NewInstall.png)
+![VirtualBox Starting Window]({{site.post-images}}/VirtualBox_NewInstall.png)
 A new installation of VirtualBox, just waiting for us to muck with it.
 
 ####The Windows VM
 We'll create the Windows VM first, because why not? Click `New`to create a new VM. After the introductory screen, you'll be greeted with a screen like the following. Set your options similarly:
 
-![VirtualBox VM Name and OS Type Screen for Windows VM](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/02_VirtualBox_WindowsMachineName.png)
+![VirtualBox VM Name and OS Type Screen for Windows VM]({{site.post-images}}/02_VirtualBox_WindowsMachineName.png)
 
 You can even steal the "Bob The Builder" name from me if you want. Because it's just that cool.
 
 Clicking `Next` brings you to the base memory size. You can put whatever constraints you want, but I usually give a Server 2008 R2 VM 4 GB of RAM (it can do fine on 2 but my machine's a beast so why not?):
 
-![VMWare Memory Selection Screen](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/01-WinServer-4-GB-RAM.png)
+![VMWare Memory Selection Screen]({{site.post-images}}/01-WinServer-4-GB-RAM.png)
 
 Next up is the hard disk. Conceptually, think of it like this -- you're going to create a file, sitting on your hard drive, that the computer living on VirtualBox thinks is a real physical hard drive. It's pretty nifty. You'll want to mark this disk as the startup disk as well, so your VM will know to boot from it eventually:
 
-![VMWare Hard Disk Creation Screen](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/04_CreateNewVirtualHDD.png)
+![VMWare Hard Disk Creation Screen]({{site.post-images}}/04_CreateNewVirtualHDD.png)
 
 We then choose the disk format. There are plenty of theories and reasons to choose one over another, but the default (VDI) will work just fine for the purposes of this tutorial.
 
-![VirtualBox Hard Disk Selection Screen](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/05_VHDD_Format.png)
+![VirtualBox Hard Disk Selection Screen]({{site.post-images}}/05_VHDD_Format.png)
 
 Next up, we choose whether we'd like it to be dynamic or fixed allocation. To me, this is a no-brainer. A dynamically-sized drive means you create 32 GB drive, but VirtualBox just expands the size of the drive as it gets bigger, so 32 GB is is max but the size of the file will be whatever it actually uses. Unless I have to (i.e. needing to squeeze every bit of speed possible), I don't change this, and we don't have to now.
 
-![VirtualBox Disk Allocation Choice Screen](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/06_VHDD_Allocation.png)
+![VirtualBox Disk Allocation Choice Screen]({{site.post-images}}/06_VHDD_Allocation.png)
 
 
 We then have to tell VirtualBox where to plop this file, what to call it, and how big we should let it get. Give it a descriptive name and a decent chunk of space (though we won't use nearly all of it):
 
-![VirtualBox Hard Drive Naming and Size Limitations Screen](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/07_VHDD_NameAndLocation.png)
+![VirtualBox Hard Drive Naming and Size Limitations Screen]({{site.post-images}}/07_VHDD_NameAndLocation.png)
 
 And presto! Your VM is created. Now to tweak the settings. Right-click on your VM in the list of VMs and click settings:
 
-![VirtualBox Settings](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/07_VMSettings.png)
+![VirtualBox Settings]({{site.post-images}}/07_VMSettings.png)
 Tweak it till your heart's content.
 
 ####The CentOS VM
@@ -78,11 +78,11 @@ You'll want to make sure your VMs are set up to function correctly as independen
 
 Open VirtualBox, right-click the VM, and choose `Settings...`:
 
-![VirtualBox Settings Screen](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/02-VM-Settings.png)
+![VirtualBox Settings Screen]({{site.post-images}}/02-VM-Settings.png)
 
 You'll want to ensure that your VMs are functioning using their own simulated network adapters instead of a NAT connection. To do this, open the `Network` section, enable the network adapter, and change it to a "Bridged Adapter"
 
-![Bridged Network Adapter Setup](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/03-Network-Settings.png)
+![Bridged Network Adapter Setup]({{site.post-images}}/03-Network-Settings.png)
 
 ####Adding the Boot / Installation Media
 We need to add the installation media for each OS so that it boots up with that media. I'm going to use the Windows server as an example, but you'll want to do this on both VMs, adding the appropriate disc.
@@ -91,7 +91,7 @@ From the `Settings` window, click the `Storage` section.  You'll be greeted by t
 
 Click the Empty entry, then click the CD-ROM icon to the right, select `Choose a Virtual CD/DVD Disk File`, and choose the ISO for your instsallation:
 
-![ISO Installation Choice](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2012/04/04-Adding-the-ISO.png)
+![ISO Installation Choice]({{site.post-images}}/04-Adding-the-ISO.png)
 
 Do this for both OSes. You're now ready to start them up and install the operating systems
 
