@@ -2,6 +2,8 @@
 layout: post
 title: CruiseControl .NET, VisualSVN, and SSL Certificates [Field Notes]
 date: 2012-05-01 17:58:00.000000000 -04:00
+redirect_from: 
+ - /2012/05/cruisecontrol-net-visualsvn-and-ssl.html
 ---
 This is a quick post for my reference. Let me know if details would be helpful and I'll be happy to turn it into more of a tutorial style.
 

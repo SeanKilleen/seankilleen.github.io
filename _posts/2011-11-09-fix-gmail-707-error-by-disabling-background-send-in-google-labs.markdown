@@ -2,6 +2,8 @@
 layout: post
 title: Fix GMail 707 error by disabling Background Send in Google Labs
 date: 2011-11-09 07:34:00.000000000 -05:00
+redirect_from: 
+ - /2011/11/fix-gmail-707-error-by-disabling.html
 ---
 For anyone who has had an issue with a GMail 707 error in the browser recently, a [potentially useful tip](http://www.feld.com/wp/archives/2011/11/gmail-707-error.html) via Brad Feld over at [FeldThoughts](http://www.feld.com/wp/):
 

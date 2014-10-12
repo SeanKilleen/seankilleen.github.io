@@ -2,6 +2,8 @@
 layout: post
 title: '"It''s the (Backblaze) restores that fail."'
 date: 2014-01-20 20:17:00.000000000 -05:00
+redirect_from:
+ - /2014/01/its-backblaze-restores-that-fail.html
 ---
 *[FYI, since it's only fair: if Backblaze makes this right or wants to respond, I will absolutely allow them space in this post to do so. I still have a lot of respect for them as a company. <a href="https://news.ycombinator.com/item?id=7093016" >You can follow the discussion on HackerNews</a>.]*
 
