@@ -2,6 +2,8 @@
 layout: post
 title: What's Next?
 date: 2011-09-27 16:35:00.000000000 -04:00
+comments: true
+
 ---
 ![An update office e-mail inbox.]({{site.post-images}}/DakotaMail_Empty.png)
 

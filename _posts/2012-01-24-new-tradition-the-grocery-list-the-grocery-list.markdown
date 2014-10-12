@@ -2,6 +2,8 @@
 layout: post
 title: 'New Tradition: The Grocery List. [The Grocery List]'
 date: 2012-01-24 19:49:00.000000000 -05:00
+comments: true
+
 ---
 *Ed. Note: This is a post category I'm trying to start, as a form of public disclosure, listing items I bought at the grocery store, available publicly for your reference or critique.*
 

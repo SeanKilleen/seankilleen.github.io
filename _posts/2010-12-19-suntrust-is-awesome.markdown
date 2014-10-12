@@ -2,6 +2,8 @@
 layout: post
 title: SunTrust is Awesome.
 date: 2010-12-19 13:57:00.000000000 -05:00
+comments: true
+
 ---
 I wanted to let the world know about some great experiences I've had with [SunTrust Bank](http://www.suntrust.com/) lately. I only have an auto loan through them, but after these interactions, I'm considering moving all my business there. From what I can tell, you should, too.
 

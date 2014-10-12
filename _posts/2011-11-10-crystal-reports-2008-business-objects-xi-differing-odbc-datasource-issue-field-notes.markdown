@@ -3,6 +3,8 @@ layout: post
 title: 'Crystal Reports 2008 / Business Objects XI: Differing ODBC DataSource Issue
   [Field Notes]'
 date: 2011-11-10 10:38:00.000000000 -05:00
+comments: true
+
 ---
 ###Problem
 In Crystal Reports 2008, I create a report using an Oracle connection or an ODBC connection with name x. When I upload the report BO XI, it doesn't work with the ODBC connection added to it.

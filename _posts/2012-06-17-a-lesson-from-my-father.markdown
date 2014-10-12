@@ -2,6 +2,8 @@
 layout: post
 title: A Lesson From My Father
 date: 2012-06-17 16:25:00.000000000 -04:00
+comments: true
+
 ---
 When Father's Day rolls around, for me it's often accompanied by the fact that I'm not sure how to properly honor my Dad. I'm lucky enough to still have him around, but he's never been one for gifts of gratitude for his fatherly-ness, and despite having been the bedrock foundation for most things I'm proud of in myself, he remains pretty low-key about the whole thing. But I think that some public recognition is in order.
 

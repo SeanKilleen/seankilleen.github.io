@@ -3,6 +3,8 @@ layout: post
 title: 'How To: Swap Views/Tables Within the Same Database Using Crystal Reports 2008
   Designer [Field Notes]'
 date: 2012-02-02 20:14:00.000000000 -05:00
+comments: true
+
 ---
 ###Background
 I have a database with a few different views. They all return the same fields in copies of the same exact report, but those fields are calculated differently (hence the views).

@@ -3,6 +3,8 @@ layout: post
 title: 'Solved: Visual Studio sometimes loses Intellisense with ReSharper 8.x [Field
   Notes]'
 date: 2013-12-02 18:30:00.000000000 -05:00
+comments: true
+
 ---
 ###Problem
 Sometimes, for whatever reason, Intellisense will go away in Visual Studio while using ReSharper.

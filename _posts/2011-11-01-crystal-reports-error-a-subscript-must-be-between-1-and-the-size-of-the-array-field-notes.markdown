@@ -3,6 +3,8 @@ layout: post
 title: 'Crystal Reports Error: "A subscript must be between 1 and the size of the
   array." [Field Notes]'
 date: 2011-11-01 16:48:00.000000000 -04:00
+comments: true
+
 ---
 ###Problem
 A long-standing Crystal Report (being run out of SAP Business Objects XI v12) suddenly started generating an error along the lines of:

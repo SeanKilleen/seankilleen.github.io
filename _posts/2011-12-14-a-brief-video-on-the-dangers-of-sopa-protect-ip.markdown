@@ -2,6 +2,8 @@
 layout: post
 title: A brief video on the dangers of SOPA / Protect-IP
 date: 2011-12-14 14:15:00.000000000 -05:00
+comments: true
+
 ---
 And this barely begins to cover it. There's a lot beyond this, too.
 

@@ -3,6 +3,8 @@ layout: post
 title: 'Quick Tip: Run Multiple NUnit Assemblies with one Exec Command in MSBuild
   [Field Notes]'
 date: 2012-05-15 10:52:00.000000000 -04:00
+comments: true
+
 ---
 This is mostly a reference post for me, but I figured somebody else might find it useful.
 

@@ -3,6 +3,8 @@ layout: post
 title: 'Problem Solved: Windows 8 Windows Update Freezes on KB2760600, "Security Update
   for Microsoft OneNote 2010"'
 date: 2013-07-09 23:23:00.000000000 -04:00
+comments: true
+
 ---
 Ran into this today; thought I'd document it for others.
 

@@ -2,6 +2,8 @@
 layout: post
 title: 'My birthday gift to the world -- A Charity: Water campaign'
 date: 2010-09-01 17:24:00.000000000 -04:00
+comments: true
+
 ---
 Hi everyone,
 

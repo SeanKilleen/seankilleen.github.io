@@ -2,6 +2,8 @@
 layout: post
 title: 'Tip: Suppress #DIV/0 errors in Excel with a formula'
 date: 2011-12-02 11:41:00.000000000 -05:00
+comments: true
+
 ---
 ###Problem
 If you ever receive a `#DIV/0` error in Excel that you expect to be there (i.e. calculating percentages from other data which may not have accumulated yet), you can suppress  it by using an `IF` statement in the formula.

@@ -2,6 +2,8 @@
 layout: post
 title: 'From GMail to Outlook: Making it Feel Like Home for GTD [Field Notes]'
 date: 2011-10-18 13:27:00.000000000 -04:00
+comments: true
+
 ---
 I recently started a new job at the [Johns Hopkins Applied Physics Laboratory](http://jhuapl.edu/) in Laurel, MD. It's a great gig so far, but one of the pain points I hadn't expected was moving from Google Apps to Outlook. I had a system in GMail that worked perfectly for my brain, but I needed to find a new solution. This post details how I got myself back to my organizational "happy place".
 

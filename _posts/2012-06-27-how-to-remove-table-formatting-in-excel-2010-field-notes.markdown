@@ -2,6 +2,8 @@
 layout: post
 title: 'How To: Remove Table Formatting in Excel 2010 [Field Notes]'
 date: 2012-06-27 21:43:00.000000000 -04:00
+comments: true
+
 redirect_from: 
 - /2012/06/how-to-remove-table-formatting-in-excel.html
 ---

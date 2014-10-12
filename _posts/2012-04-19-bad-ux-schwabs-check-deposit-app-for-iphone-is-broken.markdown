@@ -2,6 +2,8 @@
 layout: post
 title: 'Bad UX: Schwab''s Check Deposit App for iPhone is Broken'
 date: 2012-04-19 16:35:00.000000000 -04:00
+comments: true
+
 ---
 ***Ed. Note:** I wrote this when I was quite annoyed, and unfortunately I left out the larger context that this is actually one of the best checking accounts I've ever owned. It's free, you gain interest, and all ATM fees get refunded at the end of the month.*
 

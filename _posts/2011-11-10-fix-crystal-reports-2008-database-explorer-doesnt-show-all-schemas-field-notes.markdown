@@ -3,6 +3,8 @@ layout: post
 title: 'Fix: Crystal Reports 2008 Database Explorer Doesn''t Show All Schemas [Field
   Notes]'
 date: 2011-11-10 21:17:00.000000000 -05:00
+comments: true
+
 ---
 ###Problem
 In Crystal Reports 2008, I am attempting to add a ODBC datasource (connecting to an Oracle 11g database) so that I can change field links, etc.

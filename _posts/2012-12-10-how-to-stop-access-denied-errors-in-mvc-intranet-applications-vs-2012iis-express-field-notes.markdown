@@ -3,6 +3,8 @@ layout: post
 title: 'How To: Stop "Access Denied" errors in MVC Intranet Applications VS 2012/IIS
   Express [Field Notes]'
 date: 2012-12-10 17:00:00.000000000 -05:00
+comments: true
+
 redirect_from:
  - /2012/12/how-to-stop-access-denied-errors-in-mvc.html
 ---

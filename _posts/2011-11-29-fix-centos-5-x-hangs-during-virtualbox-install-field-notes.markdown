@@ -2,6 +2,8 @@
 layout: post
 title: 'Fix: CentOS 5.x hangs during VirtualBox install [Field Notes]'
 date: 2011-11-29 20:12:00.000000000 -05:00
+comments: true
+
 ---
 ###Technology Involved
 * Win7 Pro x64

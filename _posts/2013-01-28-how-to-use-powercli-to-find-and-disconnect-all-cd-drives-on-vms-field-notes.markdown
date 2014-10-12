@@ -3,6 +3,8 @@ layout: post
 title: 'How To: Use PowerCLI to find (and disconnect) all CD Drives on VMs [Field
   Notes]'
 date: 2013-01-28 20:00:00.000000000 -05:00
+comments: true
+
 ---
 ###Problem
 VMs that leave ISOs mounted cause problems. I'd like to find all the VMs that have CD-ROM drives loaded with ISOs, look over that list, and then remove them if necessary.

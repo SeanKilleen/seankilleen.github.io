@@ -2,6 +2,9 @@
 layout: post
 title: 'Tip: Always Write Out Your SQL Queries in Plain English First [Field Notes]'
 date: 2011-11-10 09:23:00.000000000 -05:00
+comments: true
+
+
 ---
 I recently ran into an issue where [constructing a SQL query took me ***much*** longer than I would have liked](http://stackoverflow.com/questions/8070694/query-help-totaling-parent-child-items/8081369#8081369). While my need to dust off some cobwebs and my lack of familiarity with an enterprise system certainly contributed, I think the biggest factor was that -- because I didn't write out what I wanted to accomplish in plain English -- I was attempting to think about my data in the way that the database was thinking.
 

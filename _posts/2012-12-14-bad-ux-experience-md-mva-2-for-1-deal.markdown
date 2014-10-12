@@ -2,6 +2,8 @@
 layout: post
 title: 'Bad UX Experience: MD MVA (2 for 1 deal!)'
 date: 2012-12-14 10:13:00.000000000 -05:00
+comments: true
+
 ---
 I know this comes as a shock to nobody, but MD's don't-call-it-the-DMV "Motor Vehicle Association" isn't the easiest to get around.
 

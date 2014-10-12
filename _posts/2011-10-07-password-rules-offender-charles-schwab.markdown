@@ -2,6 +2,8 @@
 layout: post
 title: 'Password Rules Offender: Charles Schwab'
 date: 2011-10-07 12:24:00.000000000 -04:00
+comments: true
+
 ---
 ![Schwab bad Password Screen]({{site.post-images}}/schwab_badpw.png)
 <div style="text-align:center">Seriously?</div>

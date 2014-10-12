@@ -2,6 +2,8 @@
 layout: post
 title: Why I Signed the Petition on the Murder of Trayvon Martin
 date: 2012-03-14 16:14:00.000000000 -04:00
+comments: true
+
 ---
 I was happy to sign [this petition to attempt to have the case of Trayvon Martin's killer brought before a Florida court](http://www.change.org/petitions/prosecute-the-killer-of-17-year-old-trayvon-martin?utm_campaign=rjisaZqTpX&amp;utm_medium=email&amp;utm_source=action_alert).
 

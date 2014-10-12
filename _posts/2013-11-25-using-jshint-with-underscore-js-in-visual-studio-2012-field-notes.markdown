@@ -2,6 +2,8 @@
 layout: post
 title: Using JSHint with Underscore.js in Visual Studio 2012 [Field Notes]
 date: 2013-11-25 18:30:00.000000000 -05:00
+comments: true
+
 ---
 Since my new gig has me diving into Javascript quite a bit, I've really been loving <a href="http://jshint.com/" >JSHint</a> integration (brought to us lovingly by <a href="http://madskristensen.net/" >Mads Kristensen</a> and the team building the <a href="http://vswebessentials.com/" >Web Essentials</a> 2012 add-on).
 

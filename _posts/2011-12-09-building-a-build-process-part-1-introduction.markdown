@@ -2,6 +2,8 @@
 layout: post
 title: 'Building a Build Process, Part 1: Introduction'
 date: 2011-12-09 23:15:00.000000000 -05:00
+comments: true
+
 ---
 
 

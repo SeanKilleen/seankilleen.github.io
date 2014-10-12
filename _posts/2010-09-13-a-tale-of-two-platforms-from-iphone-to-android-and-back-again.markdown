@@ -2,6 +2,8 @@
 layout: post
 title: 'A Tale of Two Platforms: From iPhone to Android and Back Again'
 date: 2010-09-13 11:51:00.000000000 -04:00
+comments: true
+
 ---
 _[Ed. Note: This is the first blog post I've done on an actual topic. Please be kind to me, blogosphere -- I'm just learning! Leave me some comments to help me find my way. For starters, I expect to edit this one down soon and add links to other relevant articles on the interwebs.]_
 

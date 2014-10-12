@@ -2,6 +2,8 @@
 layout: post
 title: 'Plaintext Password Offender: Jitbit Helpdesk'
 date: 2013-09-10 20:32:00.000000000 -04:00
+comments: true
+
 ---
 Just signed up for the Jitbit Helpdesk support site so that I could report an issue with their product.
 

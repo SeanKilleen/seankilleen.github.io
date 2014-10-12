@@ -2,6 +2,8 @@
 layout: post
 title: A Metaphor for SOPA / PIPA
 date: 2012-01-20 19:57:00.000000000 -05:00
+comments: true
+
 ---
 I just thought it up -- taken from an e-mail response I just wrote to Al Franken:
 

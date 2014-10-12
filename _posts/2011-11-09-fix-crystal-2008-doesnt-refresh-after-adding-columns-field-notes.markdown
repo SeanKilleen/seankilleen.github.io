@@ -2,6 +2,8 @@
 layout: post
 title: 'Fix: Crystal 2008 Doesn''t Refresh After Adding Columns [Field Notes]'
 date: 2011-11-09 11:50:00.000000000 -05:00
+comments: true
+
 ---
 ###Problem
 

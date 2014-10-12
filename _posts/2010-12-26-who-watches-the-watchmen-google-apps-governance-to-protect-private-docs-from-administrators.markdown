@@ -3,6 +3,8 @@ layout: post
 title: 'Who Watches the Watchmen?: Google Apps Governance to Protect Private Docs
   from Administrators'
 date: 2010-12-26 12:44:00.000000000 -05:00
+comments: true
+
 ---
 My Company is currently in the process of moving a good deal of our documents over to the Google Docs interface from the various places within our on-line HR system, which we'll be moving away from in the beginning of 2011.
 

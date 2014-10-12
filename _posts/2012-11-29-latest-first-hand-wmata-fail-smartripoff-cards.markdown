@@ -2,6 +2,8 @@
 layout: post
 title: 'Latest First-Hand WMATA Fail: SMARTripoff cards!'
 date: 2012-11-29 20:00:00.000000000 -05:00
+comments: true
+
 ---
 OK, technically second-hand; this story comes to us courtesy of the lovely [Caroline](http://carolinegadonas.blogspot.com/).
 

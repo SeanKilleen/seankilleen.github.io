@@ -2,6 +2,8 @@
 layout: post
 title: 'Building a Build Process, Part 4b: Securing Subversion''s Connection via TLS'
 date: 2012-04-22 01:01:00.000000000 -04:00
+comments: true
+
 ---
 *This is part of [a larger series](http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process) in building a proper build process. For more information and additional series links, check out the [introductory post](http://skwordpresstoghost.azurewebsites.net/?p=951).*
 

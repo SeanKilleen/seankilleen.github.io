@@ -2,6 +2,8 @@
 layout: post
 title: Notes on Sub-Reports in Crystal Reports 2008 [Field Notes]
 date: 2011-11-28 11:15:00.000000000 -05:00
+comments: true
+
 ---
 For starters, in CR 2008, you can't create two separate groups of data in one report (for example, all labor for a work order and then all materials for a work order).
 

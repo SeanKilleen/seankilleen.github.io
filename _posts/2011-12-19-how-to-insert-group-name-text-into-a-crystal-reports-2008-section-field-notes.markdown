@@ -3,6 +3,8 @@ layout: post
 title: 'How To: Insert Group Name Text into a Crystal Reports 2008 Section [Field
   Notes]'
 date: 2011-12-19 14:20:00.000000000 -05:00
+comments: true
+
 ---
 ###Problem
 I accidentally deleted the group name text from a section of my Crystal Report in Crystal Reports 2008, and now I would like to re-insert the text.

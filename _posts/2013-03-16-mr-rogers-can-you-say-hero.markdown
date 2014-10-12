@@ -2,6 +2,8 @@
 layout: post
 title: 'Mr. Rogers: Can you say hero?'
 date: 2013-03-16 13:08:00.000000000 -04:00
+comments: true
+
 ---
 ***Update:** As promised, I'm updating this to include <a href="https://twitter.com/TomJunod/status/312989731157835777">Tom Junod's response</a>. He notes that **the profile is  available in the <a href="https://www.byliner.com/originals/great-men">Esquire collection of profiles entitled "Great Men" at Byliner</a>. At $3.99 it appears to be a fantastic deal.** I'll be purchasing, and I hope you will, too. If he asks me to remove the text below, I'll be doing so, but I hope he'll let us continue to read it here as well.*
 ___

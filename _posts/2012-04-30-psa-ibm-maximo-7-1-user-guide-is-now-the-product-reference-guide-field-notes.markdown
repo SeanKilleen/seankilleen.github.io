@@ -2,6 +2,8 @@
 layout: post
 title: 'PSA: IBM Maximo 7.1 User Guide is Now the Product Reference Guide [Field Notes]'
 date: 2012-04-30 11:16:00.000000000 -04:00
+comments: true
+
 ---
 Subject says it all.
 

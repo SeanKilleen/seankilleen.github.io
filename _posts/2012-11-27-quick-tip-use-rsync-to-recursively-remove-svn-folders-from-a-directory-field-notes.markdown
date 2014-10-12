@@ -3,6 +3,8 @@ layout: post
 title: 'Quick Tip: Use rsync to recursively remove .svn folders from a directory [Field
   Notes]'
 date: 2012-11-27 17:00:00.000000000 -05:00
+comments: true
+
 ---
 ###Problem
 I have a directory structure that contains Subversion metadata folders (folders named ".svn").

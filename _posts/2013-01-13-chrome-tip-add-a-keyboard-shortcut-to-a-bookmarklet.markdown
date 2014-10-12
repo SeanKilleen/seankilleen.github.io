@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 'Chrome Tip: Add a Keyboard Shortcut to a Bookmarklet'
+comments: true
+
 date: 2013-01-13 12:45:00.000000000 -05:00
 ---
 I use [Google Chrome](https://www.google.com/intl/en/chrome/browser/) for a lot of browsing, and I've been getting into [Delicious](http://delicious.com/) for archiving content that I know I might want to find again but don't want hanging out in my Google Reader. It's sort of a take on [Scott Hanselman's workflow](http://www.hanselman.com/blog/InstapaperDeliveredToYourKindleChangesHowYouConsumeWebContentPlusIFTTTBlogsAndMore.aspx) for reading and archiving.

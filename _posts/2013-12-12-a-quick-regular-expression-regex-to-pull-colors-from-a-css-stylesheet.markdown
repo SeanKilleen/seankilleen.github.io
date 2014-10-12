@@ -2,6 +2,8 @@
 layout: post
 title: A Quick Regular Expression (Regex) to Pull Colors From a CSS Stylesheet
 date: 2013-12-12 18:30:00.000000000 -05:00
+comments: true
+
 ---
 This one's mostly for my quick personal reference. It wasn't hard by any means but figured someone else might find it useful.
 

@@ -3,6 +3,8 @@ layout: post
 title: 'Crystal Reports 2008 Gotcha: Subreports with multiple parameter values [Field
   Notes]'
 date: 2011-12-15 09:38:00.000000000 -05:00
+comments: true
+
 ---
 ###The Setup
 * I have a report in Crystal Reports 2008.

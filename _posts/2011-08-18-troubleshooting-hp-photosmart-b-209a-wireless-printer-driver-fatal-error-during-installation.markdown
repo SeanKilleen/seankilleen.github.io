@@ -3,6 +3,8 @@ layout: post
 title: 'Troubleshooting: HP PhotoSmart B-209a Wireless Printer Driver "Fatal Error
   During Installation"'
 date: 2011-08-18 21:35:00.000000000 -04:00
+comments: true
+
 ---
 I recently re-installed Windows 7 x64 on my laptop due to purchasing an SSD. I expected fantastic speed &amp; performance, more productivity, etc.
 

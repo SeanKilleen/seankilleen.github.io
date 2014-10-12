@@ -2,6 +2,8 @@
 layout: post
 title: New Desktop Rig! [Nerd Toys]
 date: 2011-11-22 08:00:00.000000000 -05:00
+comments: true
+
 ---
 Recently, I decided to invest in something that would meet two very important criteria -- something that would help me advance my career and knowledge, and also something that would *be awesome*.
 

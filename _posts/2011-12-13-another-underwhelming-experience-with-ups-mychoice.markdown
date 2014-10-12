@@ -2,6 +2,8 @@
 layout: post
 title: Another Underwhelming Experience With UPS MyChoice
 date: 2011-12-13 08:18:00.000000000 -05:00
+comments: true
+
 ---
 **UPDATE**: **This is entirely my fault. I leave the text below only as a reference and to shame myself**. The issue is that UPS sent me an e-mail at 12:07 saying a package would be delivered the next day. Because it was Sunday night, I thought it would be Monday, but it was technically Tuesday at that point because the e-mail had been sent 7 minutes after midnight.
 

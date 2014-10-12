@@ -2,6 +2,8 @@
 layout: post
 title: 'SQL Tricks: The Not-Equals Join [Field Notes]'
 date: 2012-02-07 11:32:00.000000000 -05:00
+comments: true
+
 ---
 ###The Problem
 I needed to pull back a list of dates in a certain range for each employee, but didn't have a common join criteria, as I wanted all the dates but they did not come from a table.

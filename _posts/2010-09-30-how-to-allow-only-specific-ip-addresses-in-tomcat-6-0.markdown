@@ -2,6 +2,8 @@
 layout: post
 title: 'How To: Allow only Specific IP Addresses in Tomcat 6.0'
 date: 2010-09-30 11:47:00.000000000 -04:00
+comments: true
+
 ---
 This one's not exactly under-documented, but I wanted to post here as a reference and in the hopes that someone else might have to not dig around.
 ###The Problem

@@ -2,6 +2,8 @@
 layout: post
 title: Update on the New Desktop Setup
 date: 2011-11-28 11:23:00.000000000 -05:00
+comments: true
+
 ---
 ###Benchmarks
 This is the desktop, assembled, without the enhanced airflow in the rear and with *no overclocking yet.*
