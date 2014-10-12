@@ -3,7 +3,7 @@ layout: post
 title: What's Next?
 date: 2011-09-27 16:35:00.000000000 -04:00
 ---
-![An update office e-mail inbox.](http://skwordpresstoghost.azurewebsites.net/wp-content/uploads/2011/09/DakotaMail_Empty.png)
+![An update office e-mail inbox.]({{site.post-images}}/DakotaMail_Empty.png)
 
 
 Bizarre. Never thought I'd see the day when my office e-mail was empty. End of an era.
