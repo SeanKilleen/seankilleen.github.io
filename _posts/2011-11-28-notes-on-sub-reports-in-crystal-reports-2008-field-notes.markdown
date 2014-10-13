@@ -22,14 +22,13 @@ The post is excerpted (though poorly formatted) below in case the originating si
 
  * In the subreport, create a formula similar to the one below:
 
-```
-// SubFormula
-//Stores the grand total of the {Orders.Order Amount} field
-//in a currency variable called 'myTotal'
-    
-WhilePrintingRecords;
-Shared CurrencyVar myTotal := Sum ({Orders.Order Amount})
-```
+	// SubFormula
+
+	//Stores the grand total of the {Orders.Order Amount} field
+	//in a currency variable called 'myTotal'
+
+	WhilePrintingRecords;
+	Shared CurrencyVar myTotal := Sum ({Orders.Order Amount})
 
 > * Place this formula in your subreport.
 > 
