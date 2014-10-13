@@ -42,7 +42,9 @@ I hate to use the pun -- I truly do -- but this was not the 'droid I was looking
 
 ###"Closed" vs. the Myth of "open"
 
-Apple's App Store is famously closed -- apps are reviewed, verified, inspected and <s>occasionally</s> often denied admittance based on (previously) unpublished and seemingly arbitrary guidelines. However, this is the way Apple has always been. I knew that going in, and nothing has changed since (though Apple did relax its restrictions on 3rd-party development apps and publish its app review guidelines). <br />One thing I will say -- while Apple was "closed" about its ecosystem, these restrictions never went so far as to actually be a hassle for me. They were restrictions I disagreed with deeply, and that made it a pain point for me, but none of my actual productivity or experience was hampered (need something that's not allowed? There's a jailbreak for that.) 
+Apple's App Store is famously closed -- apps are reviewed, verified, inspected and _occasionally_ often denied admittance based on (previously) unpublished and seemingly arbitrary guidelines. However, this is the way Apple has always been. I knew that going in, and nothing has changed since (though Apple did relax its restrictions on 3rd-party development apps and publish its app review guidelines). 
+
+One thing I will say -- while Apple was "closed" about its ecosystem, these restrictions never went so far as to actually be a hassle for me. They were restrictions I disagreed with deeply, and that made it a pain point for me, but none of my actual productivity or experience was hampered (need something that's not allowed? There's a jailbreak for that.) 
 
 However, as offended as I am by a closed ecosystem, it's nothing compared to how angry I was at an ecosystem that _pretended_ to be open. Switching to Android, I found the same roadblocks I encountered with the iPhone -- only in this case, I hadn't expected to encounter them, and wasn't supposed to.
 
