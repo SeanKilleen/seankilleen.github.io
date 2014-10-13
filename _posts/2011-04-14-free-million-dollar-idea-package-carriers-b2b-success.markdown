@@ -60,7 +60,7 @@ Let's think about a scenario like this:
 * Huge convenience gain; knock errands out in one shot.
 * Know that your package will be delivered (businesses are open + they have an agreement)
 * You're notified when a shipment is delivered, so you know you can pick it up.
-* Knowing the business will be open outside of standard 9-5 business hours; you don't have to be frustrated simply because you have a job, and you don't have to negotiate a break to sit and wait for a package.<
+* Knowing the business will be open outside of standard 9-5 business hours; you don't have to be frustrated simply because you have a job, and you don't have to negotiate a break to sit and wait for a package.
 
 ###What do you think?
 So, could this ever work? What would you change about it? Sound off in the comments; I'd love to discuss!
