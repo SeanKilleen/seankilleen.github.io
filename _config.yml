@@ -18,7 +18,6 @@ sass:
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
-  - rouge
 
 kramdown:
   auto_ids: true
