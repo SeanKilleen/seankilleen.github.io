@@ -29,6 +29,7 @@ This Site Runs On:
 * The [Minimal Mistakes theme][minimal mistakes link] (which I tweaked a bit).
 * Comments are hosted on [Disqus][disqus link].
 * Want to know what's in the pipeline? I'm going to try to put some of my process in a [public Trello board](https://trello.com/b/nrxQGFmi/seankilleen-com).
+* Source code is being formatted by [Google Code Prettify][prettify link].
 
 Thanks to all of these things, I can host this small chunk of my brain on the internet.
 
@@ -37,6 +38,7 @@ Credits
 
 * I think much credit is due to [Phil Haack](http://haacked.com/). He inspired me with the idea that the entirety of a blog could be collaborative, and his posts on it removed some of the fear for me. I'll be stealing a number of ideas directly from him, including an edit link for every page, and a link to submit new issues.
 * Thanks to [David Coyle][coyled github] for his [atom.xml template for Jekyll][atom.xml link].
+* Thanks to [Nick Williams][Nick Williams link] for a [great gist][nick gist link] on bringing google code prettify into my posts
 
 [jekyll link]: http://jekyllrb.com/
 [ruby link]: https://www.ruby-lang.org/en/
@@ -51,3 +53,6 @@ Credits
 [fork link]: https://github.com/SeanKilleen/seankilleen.github.io/fork
 [coyled github]: https://github.com/coyled
 [atom.xml link]: https://github.com/coyled/coyled.com/blob/master/atom.xml
+[Nick Williams link]: https://github.com/nilliams
+[nick gist link]: https://gist.github.com/nilliams/7138983
+[prettify link]: https://code.google.com/p/google-code-prettify/
