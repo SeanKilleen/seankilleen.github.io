@@ -41,19 +41,13 @@ My next steps will likely be to define context categories (`C/`) and Vendor Cate
 
 I then assigned hot keys to each of the status categories. This can be done from the Categories List. I assigned the following Hotkeys:
 
-<table>
-<thead>
-<tr><td><strong>Status</strong></td><td><strong>Key</strong></td></tr>
-</thead>
-<tbody>
-<tr><td>S/Next Action</td><td>CTRL + F2</td></tr>
-<tr><td>S/Action</td><td>CTRL + F3</td></tr>
-<tr><td>S/Waiting On</td><td>CTRL + F4</td></tr>
-<tr><td>S/Follow-Up</td><td>CTRL + F5</td></tr>
-<tr><td>S/Someday</td><td>CTRL + F6</td></tr>
-<tr><td>S/Finished</td><td>CTRL + F2</td></tr>
-</tbody>
-</table>
+| Status | Key |
+| S/Next Action | CTRL + F2 |
+| S/Action | CTRL + F3 | 
+| S/Waiting On | CTRL + F4 |
+| S/Follow-Up | CTRL + F5 |
+| S/Someday | CTRL + F6 |
+| S/Finished | CTRL + F2 |
 
 ###Step 2: Creating an Archive Button
 Thanks to [this excellent article at Lifehacker](http://lifehacker.com/5175347/add-a-gmail+like-archive-button-to-microsoft-outlook), I was able to create an Archive button similar to Gmail's. The steps I took (slightly different from the article) are below.
@@ -127,12 +121,13 @@ In order to be able to move the folders as we like (instead of being locked into
 
 * Right-click on each of the Status folders and choose `Add to Favorite Folders`. This will place the folder in the top list of folders.
 * Order the list as you want in favorite folders -- I usually place them in my order of importance, which for me is:
- * Next Action
- * Action
- * Waiting On
- * Follow-Up
- * Someday
-* Right-click each status folder and select `Properties`. </li><li>In the properties window, select `Show total number of items.`
+	* Next Action
+	* Action
+	* Waiting On
+	* Follow-Up
+	* Someday
+* Right-click each status folder and select `Properties`. 
+* In the properties window, select `Show total number of items.`
 
 ###The Results!
 Not "home", per se, but at least a comfortable apartment.

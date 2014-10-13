@@ -6,7 +6,6 @@ comments: true
 
 ---
 ![Schwab bad Password Screen]({{site.post-images}}/schwab_badpw.png)
-<div style="text-align:center">Seriously?</div>
 
 Dear Charles Schwab,
 
