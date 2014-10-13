@@ -22,19 +22,21 @@ The post is excerpted (though poorly formatted) below in case the originating si
 
  * In the subreport, create a formula similar to the one below:
 
-	// SubFormula
+{% highlight vbnet linenos %}
+// SubFormula
 
-	//Stores the grand total of the {Orders.Order Amount} field
-	//in a currency variable called 'myTotal'
+//Stores the grand total of the {Orders.Order Amount} field
+//in a currency variable called 'myTotal'
 
-	WhilePrintingRecords;
-	Shared CurrencyVar myTotal := Sum ({Orders.Order Amount})
+WhilePrintingRecords;
+Shared CurrencyVar myTotal := Sum ({Orders.Order Amount})
+{% endhighlight %}
 
 > * Place this formula in your subreport.
 > 
 * In the main report, create a formula that declares the same variable name:
 
-```
+{% highlight vbnet linenos %}
 //@MainFormula
 //Returns the value that was stored in the shared currency variable called
 //myTotal in the subreport
@@ -43,7 +45,8 @@ WhilePrintingRecords;
 Shared CurrencyVar myTotal;
 
 myTotal
-```
+{% endhighlight %}
+
 > * Place `@MainFormula` in a main report section that is beneath the section<br />containing the subreport.&nbsp;For the shared variable to return the correct value in the main report, you must place `@MainFormula` in a main report section that is beneath the section containing the subreport. This ensures Crystal Reports evaluates the `@SubFormula` before `@MainFormula`.
 
 > One way to do this is to insert a section below the section containing the subreport, and place `@MainFormula` in this new sub-section:
@@ -57,12 +60,16 @@ myTotal
 
 > * Once you have verified that `@MainFormula` is returning the correct value from the subreport, you can include this formula in other main report formulas, such as:
 
-```
+{% highlight vbnet linenos %}
 //@NewFormula
 //includes data from subreport
 {@MainFormula}+ Sum ({Customer.Last Year's Sales})
-```
+{% endhighlight %}
+
 > Place this formula in the same section as `@MainFormula`, or in a section further down on the report.
 
 ###References
-* [How to Get Formula Field Value From Subreport to Main Report](http://www.codeguru.com/forum/showthread.php?t=449494) [[CodeGuru](http://www.codeguru.com/)]
+* [How to Get Formula Field Value From Subreport to Main Report][codeguru article] [[CodeGuru][codeguru main]]
+
+[codeguru main]: http://www.codeguru.com/
+[codeguru article]: http://www.codeguru.com/forum/showthread.php?t=449494
