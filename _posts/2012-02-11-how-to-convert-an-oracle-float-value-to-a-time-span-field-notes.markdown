@@ -22,21 +22,21 @@ The above example takes my field named 'durationfield' and tells oracle it's a D
 ###Solution Examples
 ####Gets the number of hours (and converts all day values to 24 hours each):
 
-```SQL
+{% highlight sql linenos %}
 EXTRACT(DAY FROM NUMTODSINTERVAL(TABLENAME.DURATIONFIELD, 'DAY')) * 24
 + EXTRACT(HOUR FROM NUMTODSINTERVAL( TABLENAME.DURATIONFIELD , 'DAY')) 
 AS DURATIONHOURS
-```
+{% endhighlight %}
 
 
 ####Gets the minutes in the same fashion:
-```SQL
+{% highlight sql linenos %}
 EXTRACT(MINUTE FROM NUMTODSINTERVAL( TABLENAME.DURATIONFIELD , 'DAY'))                                                                   
 AS DURATIONMINUTES
-```
+{% endhighlight %}
 
 ####Gets the seconds in the same fashion:
-```SQL
+{% highlight sql linenos %}
 EXTRACT(SECOND FROM NUMTODSINTERVAL( TABLENAME.DURATIONFIELD, 'DAY'))                                                                  
 AS DURATIONSECONDS
-```
+{% endhighlight %}

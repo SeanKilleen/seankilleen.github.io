@@ -13,7 +13,7 @@ I needed to, within a view, dynamically generate a list of dates before or after
 ###The Solution
 In Oracle, the SQL to do this is as follows:
 
-```SQL
+{% highlight sql linenos %}
 SELECT *
 FROM   (SELECT TRUNC(SYSDATE - ROWNUM) DateItem
         FROM   DUAL
@@ -22,9 +22,9 @@ FROM   (SELECT TRUNC(SYSDATE - ROWNUM) DateItem
         SELECT TRUNC(SYSDATE + ROWNUM) DateItem
         FROM   DUAL
         CONNECT BY ROWNUM < 32)DATERANGE; 
-```
+{% endhighlight %}
 
-This SQL does the following
+This SQL does the following:
 
 * Uses the dual table (a special table in Oracle as I understand) to scroll through x amount of rows (in this case, 32, because we want to make sure it includes 31 days)
 * For each of those, it returns the `sysdate - [the number of rows]`, or `sysdate + [the number of rows]` in the case of the second query. It calls this column `DT`.
