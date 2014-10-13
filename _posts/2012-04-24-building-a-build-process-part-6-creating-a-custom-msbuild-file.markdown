@@ -36,7 +36,7 @@ The good news is, if you have the .NET Framework, you have it. If you have the .
 
 
 ###Run PowerShell and Test Access to MSBuild
-* Click the start menu, begin to type “PowerShell”, and bring up the PowerShell console <strong>by right-clicking and choosing “Run as Administrator”</strong>. You must do this in order to run MSBuild the way it is necessary to run it. (you may also want to pin the icon to your taskbar at this point).  
+* Click the start menu, begin to type “PowerShell”, and bring up the PowerShell console *by right-clicking and choosing “Run as Administrator”*. You must do this in order to run MSBuild the way it is necessary to run it. (you may also want to pin the icon to your taskbar at this point).  
 * When the console is open, type MSBuild.  
 * You should see an error about not specifying a project or solution file. If you see any red text, such as “command not found”, etc., then something went wrong and powershell can’t see your MSBuild location. (try running as admin or checking your path variable setup).
 
@@ -145,9 +145,8 @@ In the next article, we’ll explore how to start and stop the Cassini Web Serve
 I'd love to hear any comments on this series. Find it useful? Think there's a better way to implement the technique or something I should have mentioned? Please drop a line in the comments to help me improve the series!
 
 ###References
-* <a href="http://www.pluralsight-training.net/microsoft/courses/TableOfContents?courseName=continuous-integration&amp;highlight=james-kovacs_ci-part1*3!james-kovacs_ci-part3*2!james-kovacs_ci-part2*2!james-kovacs_ci-part6*4,12#ci-part1">Pluralsight Continuous Integration Course</a>  
-* <a href="http://www.pluralsight-training.net/microsoft/Products/Individual">Pluralsight Sign-up Page</a> <div>
-</div>
+* [Pluralsight Continuous Integration Course][PS CI Course] 
+* [Pluralsight Sign-up Page][PS Signup]
 
 <table>
 <tr>
@@ -159,3 +158,6 @@ I'd love to hear any comments on this series. Find it useful? Think there's a be
 [introductory post]: http://skwordpresstoghost.azurewebsites.net/?p=951
 
 [a larger series]: http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process
+
+[PS CI Course]: http://www.pluralsight-training.net/microsoft/courses/TableOfContents?courseName=continuous-integration&amp;highlight=james-kovacs_ci-part1*3!james-kovacs_ci-part3*2!james-kovacs_ci-part2*2!james-kovacs_ci-part6*4,12#ci-part1
+

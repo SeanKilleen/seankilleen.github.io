@@ -151,10 +151,10 @@ I'd love to hear any comments on this series. Find it useful? Think there's a be
 
 ###References
 
-* <a href="http://www.pluralsight-training.net/microsoft/courses/TableOfContents?courseName=continuous-integration&amp;highlight=james-kovacs_ci-part1*3!james-kovacs_ci-part3*2!james-kovacs_ci-part2*2!james-kovacs_ci-part6*4,12#ci-part1">Pluralsight Continuous Integration Course</a> 
-* <a href="http://www.pluralsight-training.net/microsoft/Products/Individual">Pluralsight Sign-up Page</a> 
-* <a href="http://msbuildextensionpack.codeplex.com/">MsBuild Extension Pack</a>
-* <a href="http://www.msbuildextensionpack.com/help/3.5.8.0/html/68cdc023-8926-4ac9-9e7c-0297592fec29.htm">MsBuild Extension Pack AsyncExec Reference</a>
+* [Pluralsight Continuous Integration Course]
+* [Pluralsight Sign-up Page][PS Signup]
+* [MSBuild Extension Pack web site]
+* [MsBuild Extension Pack AsyncExec Reference]
 
 <table>
 <tr>
@@ -168,3 +168,9 @@ I'd love to hear any comments on this series. Find it useful? Think there's a be
 [introductory post]:http://skwordpresstoghost.azurewebsites.net/?p=951 
 
 [MSBuild Extension Pack web site]:http://msbuildextensionpack.codeplex.com/
+
+[MsBuild Extension Pack AsyncExec Reference]: http://www.msbuildextensionpack.com/help/3.5.8.0/html/68cdc023-8926-4ac9-9e7c-0297592fec29.htm
+
+[Pluralsight Continuous Integration Course]: http://www.pluralsight-training.net/microsoft/courses/TableOfContents?courseName=continuous-integration&amp;highlight=james-kovacs_ci-part1*3!james-kovacs_ci-part3*2!james-kovacs_ci-part2*2!james-kovacs_ci-part6*4,12#ci-part1
+
+[PS Signup]: http://www.pluralsight-training.net/microsoft/Products/Individual

@@ -55,7 +55,7 @@ I highly recommend downloading the [Web PI (Web Platform Installer) from Microso
 ###On Both OSes
 ####Updates and Patches!
 This is very important. I did the following.  
-#####On Windows</span></h5>
+#####On Windows
 * Run Windows Update. Restart. Run Windows Update.  
 * Repeat this process until there are no more updates available.
 #####On CentOS

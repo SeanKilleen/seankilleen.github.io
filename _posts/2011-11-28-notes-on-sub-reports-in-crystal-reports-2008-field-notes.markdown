@@ -16,7 +16,7 @@ The post is excerpted (though poorly formatted) below in case the originating si
 ---
 > Shared variables, introduced since Crystal Reports version 7, make it easier to pass values from a subreport to the main report.
 
-> Using shared variables requires two formulas:<br />one to store the value in a shared variable, the other to retrieve the<br />value from the shared variable.
+> Using shared variables requires two formulas: one to store the value in a shared variable, the other to retrieve the value from the shared variable.
 
 >The most important thing to remember when using shared variables is that Crystal Reports must first evaluate the formula where the value is stored before evaluating the formula that retrieves the shared variable. For example if you want to pass a grand total from the subreport to do a calculation in the main report, follow these steps:
 
@@ -47,7 +47,7 @@ Shared CurrencyVar myTotal;
 myTotal
 {% endhighlight %}
 
-> * Place `@MainFormula` in a main report section that is beneath the section<br />containing the subreport.&nbsp;For the shared variable to return the correct value in the main report, you must place `@MainFormula` in a main report section that is beneath the section containing the subreport. This ensures Crystal Reports evaluates the `@SubFormula` before `@MainFormula`.
+> * Place `@MainFormula` in a main report section that is beneath the section containing the subreport. For the shared variable to return the correct value in the main report, you must place `@MainFormula` in a main report section that is beneath the section containing the subreport. This ensures Crystal Reports evaluates the `@SubFormula` before `@MainFormula`.
 
 > One way to do this is to insert a section below the section containing the subreport, and place `@MainFormula` in this new sub-section:
 

@@ -48,7 +48,7 @@ On the E: drive, create the following directory structure:
 `CIArtifacts` will store the output of our CI (logs, etc.); `WorkingDirectory` will be where we eventually check out the source code to automatically in order to act upon it.
 
 ###Downloading the CruiseControl.NET Binaries
-* On the build server, head to the <a href="http://sourceforge.net/projects/ccnet/files/CruiseControl.NET%20Releases/">CruiseControl.NET Releases Page on SourceForge</a>
+* On the build server, head to the [CruiseControl.NET Releases Page on SourceForge]
 * Click the newest release version (1.6 as of the time of this writing)
 * Download the CruiseControl.NET executable and the CCTray executable.
 
@@ -113,3 +113,5 @@ I'd love to hear any comments on this series. Find it useful? Think there's a be
 [a larger series]: http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process
 
 [introductory post]:http://skwordpresstoghost.azurewebsites.net/?p=951 
+
+[CruiseControl.NET Releases Page on SourceForge]: http://sourceforge.net/projects/ccnet/files/CruiseControl.NET%20Releases/

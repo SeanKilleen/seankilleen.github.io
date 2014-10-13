@@ -19,7 +19,7 @@ Now we’re getting ready for some of the fun stuff. This time around, we’re g
 yum install mod_dav_svn subversion
 {% endhighlight %}
     
-	This tells CentOS to use its package manager to pull down the subversion module for Apache and the subversion binaries itself. <strong>NOTE: </strong>A nice feature here is that CentOS knows that `mod_dav_svn` requires Apache, and so it’s going to install Apache for us as well. Very kind!
+	This tells CentOS to use its package manager to pull down the subversion module for Apache and the subversion binaries itself. *NOTE:* A nice feature here is that CentOS knows that `mod_dav_svn` requires Apache, and so it’s going to install Apache for us as well. Very kind!
     
 ###Creating Directories for Subversion
 We need to give the subversion repositories a place to live, and we want to provide a common directory for subversion authentication.

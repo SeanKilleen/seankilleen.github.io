@@ -15,14 +15,14 @@ If you agree, please consider signing as well.
 
 Some news articles with information about the case are below (I've attempted to include a balanced mix of news sources):
 
-* [http://articles.orlandosentinel.com/2012-03-14/news/os-trayvon-martin-shooting-death-rally-20120314_1_demand-justice-fatal-shooting-bryant](http://articles.orlandosentinel.com/2012-03-14/news/os-trayvon-martin-shooting-death-rally-20120314_1_demand-justice-fatal-shooting-bryant)
-* [http://abcnews.go.com/US/neighborhood-watch-shooting-trayvon-martin-probe-reveals-questionable/story?id=15907136#.T2D6WBEgfl4](http://abcnews.go.com/US/neighborhood-watch-shooting-trayvon-martin-probe-reveals-questionable/story?id=15907136#.T2D6WBEgfl4) 
-* <a href="http://www.dailymail.co.uk/news/article-2114152/Trayvon-Martin-shot-dead-Police-say-theres-evidence-dispute-claim-neighbourhood-watch-captain-George-Zimmerman-acted-self-defence.html">http://www.dailymail.co.uk/news/article-2114152/Trayvon-Martin-shot-dead-Police-say-theres-evidence-dispute-claim-neighbourhood-watch-captain-George-Zimmerman-acted-self-defence.html</a>
-* <a href="http://www.foxnews.com/us/2012/03/08/family-wants-answers-in-fla-teens-death/">http://www.foxnews.com/us/2012/03/08/family-wants-answers-in-fla-teens-death/</a> 
-* <a href="http://www.theatlantic.com/national/archive/2012/03/stand-your-ground-and-trayvon-martin/254444/">http://www.theatlantic.com/national/archive/2012/03/stand-your-ground-and-trayvon-martin/254444/</a> 
+* <http://articles.orlandosentinel.com/2012-03-14/news/os-trayvon-martin-shooting-death-rally-20120314_1_demand-justice-fatal-shooting-bryant>
+* <http://abcnews.go.com/US/neighborhood-watch-shooting-trayvon-martin-probe-reveals-questionable/story?id=15907136#.T2D6WBEgfl4> 
+* <http://www.dailymail.co.uk/news/article-2114152/Trayvon-Martin-shot-dead-Police-say-theres-evidence-dispute-claim-neighbourhood-watch-captain-George-Zimmerman-acted-self-defence.html>
+* <http://www.foxnews.com/us/2012/03/08/family-wants-answers-in-fla-teens-death> 
+* <http://www.theatlantic.com/national/archive/2012/03/stand-your-ground-and-trayvon-martin/254444> 
 
 **Update:** It appears the case has been turned over to the Florida State Attorney's office, but the petition could likely use support all the same. Updated stories below:
 
-* <a href="http://www.huffingtonpost.com/2012/03/13/trayvon-martin-sanford-state-attorney_n_1343223.html">http://www.huffingtonpost.com/2012/03/13/trayvon-martin-sanford-state-attorney_n_1343223.html</a> 
-* <a href="http://www.cnn.com/2012/03/14/justice/florida-teen-shooting/index.html">http://www.cnn.com/2012/03/14/justice/florida-teen-shooting/index.html</a> 
-* <a href="http://www.orlandosentinel.com/news/local/breakingnews/os-trayvon-martin-shooting-state-attorney-20120313,0,6200217.story">http://www.orlandosentinel.com/news/local/breakingnews/os-trayvon-martin-shooting-state-attorney-20120313,0,6200217.story</a> 
+* <http://www.huffingtonpost.com/2012/03/13/trayvon-martin-sanford-state-attorney_n_1343223.html> 
+* <http://www.cnn.com/2012/03/14/justice/florida-teen-shooting/index.html> 
+* <http://www.orlandosentinel.com/news/local/breakingnews/os-trayvon-martin-shooting-state-attorney-20120313,0,6200217.story> 

@@ -159,10 +159,10 @@ I'd love to hear any comments on this series. Find it useful? Think there's a be
 
 ###References
 
-* [Pluralsight Continuous Integration Course]()
+* [Pluralsight Continuous Integration Course]
 * [Subversion book](http://svnbook.red-bean.com/)  
-* <a href="http://tortoisesvn.net/downloads.html">Download TortoiseSVN</a>  
-* <a href="http://tortoisesvn.tigris.org/donate.html">Donate to TortoiseSVN</a>
+* [Download TortoiseSVN](http://tortoisesvn.net/downloads.html)
+* [Donate to TortoiseSVN](http://tortoisesvn.tigris.org/donate.html)
 
 <table>
 <tr>

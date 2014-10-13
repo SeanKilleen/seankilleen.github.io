@@ -8,7 +8,7 @@ comments: true
 ###Technology Involved
 * Win7 Pro x64
 * VirtualBox 4.1.x
-* CentOS 5.x</li></ul>
+* CentOS 5.x
 
 
 ###Problem
