@@ -26,3 +26,9 @@ sitemap: false
 @import "vendor/font-awesome/font-awesome";
 @import "vendor/magnific-popup/magnific-popup";
 //@import "vendor/google/fonts";
+  
+pre.prettyprint {
+    padding: 8px 12px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+  }
