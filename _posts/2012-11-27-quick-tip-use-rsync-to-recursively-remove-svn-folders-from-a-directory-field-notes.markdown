@@ -17,13 +17,10 @@ Rsync to the rescue. Let's say the folder containing .svn folder structures is n
 
 * In the same directory as the problem folder, create a "clean" folder to output the contents of problemfolder to eventually.
 
-```
-"mkdir problemfolder_clean"
-```
+	"mkdir problemfolder_clean"
+	
 * Run rsync, excluding .svn folders and their contents, to copy the problem directory to the clean directory.
 
-```
-rsync -avr --exclude='.svn*' /path/to/problemfolder/ path/to/problemfolder_clean
-```
-
+	rsync -avr --exclude='.svn*' /path/to/problemfolder/ path/to/problemfolder_clean
+	
 At this point, the contents of "problemfolder" (minus the .svn folders) will be in the clean folder you created.

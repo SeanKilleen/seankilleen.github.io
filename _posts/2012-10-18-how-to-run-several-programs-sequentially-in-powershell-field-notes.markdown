@@ -14,16 +14,17 @@ I want to avoid errors such as "another setup program is already running" which 
 
 For files without arguments, run:
 
-```
+{% highlight powershell %}
 $var1 = Start-Process -FilePath "[path]" -passthru
 $var1.WaitForExit()
-```
+{% endhighlight %}
+
 For files with arguments, run:
 
-```
+{% highlight powershell %}
 $var1 = Start-Process -FilePath "[path]" -ArgumentList "[Args]" -passthru
 $var1.WaitForExit()
-```
+{% endhighlight %}
 
 In these examples, `[path]` is the full path to the file (e.g. `C:\SomeFolder\MyProgram.exe`) you want to run. `[Args]` is whatever you'd normally put after the path to the exe in the command line.
 

@@ -90,17 +90,15 @@ The trunk will be pulled down, and you’ll see it’s at revision one. Now, eve
 After watching the Pluralsight course on Continuous Integration, I really like the layout that was chosen for the project. We’re going to create a folder structure, and then I’ll explain why we created it like we did.
 Create some new directories so the folder structure looks like the following:
 
-```
-TestProject/ (already exists)  
-    buildartifacts / 
-    src/
-        app/
-        test/
-    thirdparty/  
-        libs/  
-        tools/
-    doc/
-```
+	TestProject/ (already exists)  
+		buildartifacts / 
+		src/
+			app/
+			test/
+		thirdparty/  
+			libs/  
+			tools/
+		doc/
 
 These folders have the following purposes:
 

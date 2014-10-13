@@ -18,7 +18,7 @@ I recommend putting this at the same folder level as your solution file and call
 
 It will look something like this:
 
-```xml
+{% highlight xml %}
 <NUnitProject>
     <Settings activeconfig="Dev"/>
     <Config name="Dev">
@@ -32,7 +32,7 @@ It will look something like this:
         <assembly path=".\buildartifacts\MyProject.Web.SpecTests.dll"/>
     </Config>
 </NUnitProject>
-```
+{% endhighlight %}
 
 Note that I create one of these references for every configuration. (Debug and Release are the defaults). I'm not sure that this is necessary, but my bet is that it probably helps later when specifying the Configuration to MSBuild for an automated integration.
 

@@ -13,12 +13,12 @@ Done? Okay, great. So I was looking through the Chocolatey Gallery and finding p
 
 Cue an all-too-easy powershell script on a scheduled task and 2 minutes later I was up and running. The script:
 
-```
+{% highlight powershell %}
 $theDate = $(get-date -f yyyy-MM-dd_hh-mm-ss)
 $baseLocation = "C:UsersSeanDropboxMyPCNameChocolateyPackageListExport"
 $finalFileName = $baseLocation + "" + $theDate + "_PackageList.txt"
 clist -lo | Out-File $finalFileName
-```
+{% endhighlight %}
 
 Pretty simple -- it uses Chocolatey's list command with the -lo flag to show local packages only, and then outputs that list to a filename with a DateStamp.
 

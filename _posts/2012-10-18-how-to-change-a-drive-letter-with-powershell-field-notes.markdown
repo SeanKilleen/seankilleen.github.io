@@ -12,9 +12,10 @@ I need to change the letter of a mounted drive via PowerShell.
 Start Powershell as an admin and run the following two lines, where 'x' is the current drive letter and y is the drive letter you'd like it to be:
 
 
-```
-$drive = Get-WmiObject -Class win32_volume -Filter "DriveLetter = 'x:'"<br />Set-WmiInstance -input $drive -Arguments @{DriveLetter="Y:";}
-```
+{% highlight powershell %}
+$drive = Get-WmiObject -Class win32_volume -Filter "DriveLetter = 'x:'"
+Set-WmiInstance -input $drive -Arguments @{DriveLetter="Y:";}
+{% endhighlight %}
 
 ###References
 * <a href="http://blogs.technet.com/b/heyscriptingguy/archive/2011/03/14/change-drive-letters-and-labels-via-a-simple-powershell-command.aspx">Change Drive Letters and Labels via a Simple PowerShell Comamnd</a> [<a href="http://blogs.technet.com/">TechNet Blogs</a>]

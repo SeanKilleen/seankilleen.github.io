@@ -30,9 +30,10 @@ Thanks to the Excellent [Twitter.Bootstrap.Less.MVC4](https://nuget.org/packages
 * Ensure that your MVC4 Project is set as the current project in the package manager
 * Install Chris's package by using the following command: 
 
-```
+{% highlight powershell %}
 install-package Twitter.Bootstrap.Less.MVC4
-```
+{% endhighlight %}
+
 * The project will automatically install dotless and Twitter.Bootstrap.Less.</ul>
 
 ####Reconciling BundleConfig and Bootstrap.BundleConfig
@@ -44,21 +45,23 @@ install-package Twitter.Bootstrap.Less.MVC4
 
 * From the package manager, run: 
 
-```
+{% highlight powershell %}
 install-package FontAwesome
-```
+{% endhighlight %}
+
 * In the Bootstrap.BundleConfig.cs file, add the font-awesome.css file to the StyleBundle so that the line reads as follows:
 
-```csharp
+{% highlight c# %}
 var css = new StyleBundle("~/Content/css")
    .Include("~/Content/site.less", "~/Content/font-awesome.css");
-```
+{% endhighlight %}
+
 * Open your twitter.bootstrap file and comment out the line importing sprites.less. FontAwesome and Bootstrap's sprites naturally conflict as FontAwesome is designed to replace them.
 
 ####Update IIS Settings to allow FontAwesome's Static Content
 * Add the following to web.config in the `<system.WebServer>` section:
 
-```xml
+{% highlight xml %}
 <staticContent>
        <remove fileExtension=".svg" />
        <remove fileExtension=".eot" />
@@ -67,7 +70,7 @@ var css = new StyleBundle("~/Content/css")
        <mimeMap fileExtension=".eot" mimeType="application/vnd.ms-fontobject" />
        <mimeMap fileExtension=".woff" mimeType="application/x-woff" />
 </staticContent>
-```
+{% endhighlight %}
 
 ####Ensure That Content is Processed on the Server
 

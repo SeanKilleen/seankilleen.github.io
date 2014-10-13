@@ -36,24 +36,22 @@ Basically, my logic here is the following:
 
 Thus, the formula is:
 
-```{DateFieldInMyTable} in ( 
-if not hasvalue({?NamedDateRange}) then 
-    if not hasvalue({?CustomDateRange}) then currentdate
-    else {?CustomDateRange}
-else
-if {?NamedDateRange} = "Today" THEN currentdate
-else if {?NamedDateRange} = "Yesterday" then (currentdate - 1)
-else if not hasvalue({?CustomDateRange}) then currentdate
-    else {?CustomDateRange}
-)
-```
+	{DateFieldInMyTable} in ( 
+	if not hasvalue({?NamedDateRange}) then 
+		if not hasvalue({?CustomDateRange}) then currentdate
+		else {?CustomDateRange}
+	else
+	if {?NamedDateRange} = "Today" THEN currentdate
+	else if {?NamedDateRange} = "Yesterday" then (currentdate - 1)
+	else if not hasvalue({?CustomDateRange}) then currentdate
+		else {?CustomDateRange}
+	)
 
 ####Step 3: Create the Record Selection Text
 Due to our use of the formula earlier, the record selection text is as simple as:
 
-```
-{DateField} in ( {@DateRangeSelection_FromParameters} )
-```
+	{DateField} in ( {@DateRangeSelection_FromParameters} )
+
 Where DateField is the name of whatever DateField you're comparing.
 
 ####Step 4: Set the Default Value When Running a Report

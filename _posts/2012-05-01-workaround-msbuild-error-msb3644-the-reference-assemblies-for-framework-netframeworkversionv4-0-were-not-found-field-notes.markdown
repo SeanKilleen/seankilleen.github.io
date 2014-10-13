@@ -25,7 +25,7 @@ When you call MSBuild, pass it a parameter -`p:FrameworkOverride`, with the loca
 
 For example, my CruiseControl.NET config MSBuild section for this project now looks like:
 
-```xml
+{% highlight xml %}
 <msbuild>
         <executable>C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe</executable>
         <buildArgs>PEApps.build -p:FrameworkPathOverride="E:\ContinuousIntegration\_ReferenceAssemblies\v4.0"</buildArgs>
@@ -34,7 +34,7 @@ For example, my CruiseControl.NET config MSBuild section for this project now lo
         <!--  30 minutes -->
         <logger>C:\Program Files (x86)\CruiseControl.NET\server\ThoughtWorks.CruiseControl.MSBuild.dll</logger>
 </msbuild>
-```
+{% endhighlight %}
 
 It's hack, for sure, but it got the solution to build, and it's reusable in future scenarios.
 

@@ -41,11 +41,9 @@ Now that we have a drive, it makes sense to create our directory structure.
 
 On the E: drive, create the following directory structure:
 
-```
-TestProject\
-    CIArtifacts\
-    WorkingDirectory\
-```
+	TestProject\
+		CIArtifacts\
+		WorkingDirectory\
 
 `CIArtifacts` will store the output of our CI (logs, etc.); `WorkingDirectory` will be where we eventually check out the source code to automatically in order to act upon it.
 
