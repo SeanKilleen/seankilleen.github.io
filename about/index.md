@@ -36,6 +36,7 @@ Credits
 ===========
 
 * I think much credit is due to [Phil Haack](http://haacked.com/). He inspired me with the idea that the entirety of a blog could be collaborative, and his posts on it removed some of the fear for me. I'll be stealing a number of ideas directly from him, including an edit link for every page, and a link to submit new issues.
+* Thanks to [David Coyle][coyled github] for his [atom.xml template for Jekyll][atom.xml link].
 
 [jekyll link]: http://jekyllrb.com/
 [ruby link]: https://www.ruby-lang.org/en/
@@ -48,3 +49,5 @@ Credits
 [phil haack homepage]: http://haacked.com/
 [new issue link]: https://github.com/SeanKilleen/seankilleen.github.io/issues/new
 [fork link]: https://github.com/SeanKilleen/seankilleen.github.io/fork
+[coyled github]: https://github.com/coyled
+[atom.xml link]: https://github.com/coyled/coyled.com/blob/master/atom.xml
