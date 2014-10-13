@@ -28,6 +28,7 @@ This Site Runs On:
 * All of this is hosted (for free!) On [Github pages][github-pages link], because they're awesome.
 * The [Minimal Mistakes theme][minimal mistakes link] (which I tweaked a bit).
 * Comments are hosted on [Disqus][disqus link].
+* Want to know what's in the pipeline? I'm going to try to put some of my process in a [public Trello board](https://trello.com/b/nrxQGFmi/seankilleen-com).
 
 Thanks to all of these things, I can host this small chunk of my brain on the internet.
 
