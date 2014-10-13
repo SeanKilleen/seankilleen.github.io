@@ -11,13 +11,14 @@ timezone: America/New_York
 post-images: /images/post-images
 permalink:   /:year/:month/:title #/:categories/:title/
 markdown:    kramdown
-highlighter: pygments
+highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
 gems:
   - jekyll-sitemap
   - jekyll-redirect-from
+  - rouge
 
 kramdown:
   auto_ids: true
