@@ -35,6 +35,8 @@
   <article class="page">
     <h1>{{ page.title }}</h1>
     <div class="article-wrap">
+	  {% include _editlink.html %}
+	  
       {{ content }}
     </div><!-- /.article-wrap -->
     {% if site.owner.disqus-shortname and page.comments == true %}
