@@ -15,7 +15,7 @@ Now we’re getting ready for some of the fun stuff. This time around, we’re g
 * Open the Terminal (it can be found in `Applications > Accessories > Terminal`)
 * Type the following in the terminal: 
 
-{% highlight sh linenos %}
+{% highlight sh %}
 yum install mod_dav_svn subversion
 {% endhighlight %}
     
@@ -26,7 +26,7 @@ We need to give the subversion repositories a place to live, and we want to prov
 
 In the terminal, type the following:
 
-{% highlight sh linenos %}
+{% highlight sh %}
 mkdir /var/www/svn
 mkdir /var/www/svn/repositories
 mkdir /var/www/svn/auth
@@ -39,7 +39,7 @@ These accounts are separate from operating system accounts – they’ll apply o
 
 We’ll create two test users by running the following via the terminal:
 
-{% highlight sh linenos %}
+{% highlight sh %}
 htpasswd -csb /var/www/svn/auth/svn.htpasswd svnuser1 passw0rd1
 htpasswd -sb /var/www/svn/auth/svn.htpasswd svnuser2 passw0rd2
 {% endhighlight %}
@@ -77,7 +77,7 @@ This brings up gedit, a nice graphical text editor (**Nerd note**: I can feel th
 
 Enter the following into the text file:
 
-{% highlight xml linenos %}
+{% highlight xml %}
 <Location /svn>
     DAV svn
     SVNListParentPath on

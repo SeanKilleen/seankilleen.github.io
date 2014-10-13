@@ -13,7 +13,7 @@ I knew that the dates would never equal the employee name, so in this case, I co
 
 I did something along the following (edited for brevity):
 
-{% highlight sql linenos %}
+{% highlight sql %}
 select * from (...) ActiveLabor 
     left outer join (...)DateRange 
     on (activelabor.laborcode != to_char(DateRange.DateItem))

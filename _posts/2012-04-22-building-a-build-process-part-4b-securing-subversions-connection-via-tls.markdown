@@ -57,7 +57,7 @@ openssl x509 –req –days 365 –in ca.csr –signkey ca.key –out ca.crt
 
 Then, copy the certificate files into the TLS certs location that we’ll use later:
 
-{% highlight sh linenos %}
+{% highlight sh %}
 cp ca.crt /etc/pki/tls/certs
 cp ca.key /etc/pki/tls/private/ca.key
 cp ca.cr /etc/pli/tls/private/ca.csr
@@ -100,7 +100,7 @@ gedit /etc/httpd/conf/httpd.conf
 Towards the bottom of the file, the `<VirtualHosts>` configuration can be found.
 Paste the following lines at the bottom of the file:
 
-{% highlight apache linenos %}
+{% highlight apache %}
 NameVirtualHost *:80
 NameVirtualHost *:443
 
@@ -130,7 +130,7 @@ I put this in a separate section because I wanted the additions to be compartmen
 
 To use mod_rewrite to redirect any http requests to https, change the VirtualHost *:80 to the following:
 
-{% highlight apache linenos %}
+{% highlight apache %}
 <VirtualHost *:80>
     RewriteEngine On
     RewriteCond %{HTTPS} off
@@ -146,7 +146,7 @@ To use mod_rewrite to redirect any http requests to https, change the VirtualHos
 ###Configure the Firewall to Allow Port 443 Connections
 On the console:
 
-{% highlight sh linenos %}
+{% highlight sh %}
 iptables –A INPUT –p tcp –dport 443 –j ACCEPT
 /sbin/service iptables save
 iptables –L –v

@@ -22,7 +22,7 @@ The post is excerpted (though poorly formatted) below in case the originating si
 
  * In the subreport, create a formula similar to the one below:
 
-{% highlight vbnet linenos %}
+{% highlight vbnet %}
 // SubFormula
 
 //Stores the grand total of the {Orders.Order Amount} field
@@ -36,7 +36,7 @@ Shared CurrencyVar myTotal := Sum ({Orders.Order Amount})
 > 
 * In the main report, create a formula that declares the same variable name:
 
-{% highlight vbnet linenos %}
+{% highlight vbnet %}
 //@MainFormula
 //Returns the value that was stored in the shared currency variable called
 //myTotal in the subreport
@@ -60,7 +60,7 @@ myTotal
 
 > * Once you have verified that `@MainFormula` is returning the correct value from the subreport, you can include this formula in other main report formulas, such as:
 
-{% highlight vbnet linenos %}
+{% highlight vbnet %}
 //@NewFormula
 //includes data from subreport
 {@MainFormula}+ Sum ({Customer.Last Year's Sales})

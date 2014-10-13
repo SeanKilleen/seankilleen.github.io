@@ -15,7 +15,7 @@ Create a formula with a shared variable in your report -- for the sake of this e
 
 The contents of the formula should look like this:
 
-{% highlight vbnet linenos %}
+{% highlight vbnet %}
 // Excute this formula as records are read into the report
 WhileReadingRecords;
 
@@ -41,7 +41,7 @@ Note that the formula we have created will return `null` when there are no recor
 * Next to the `Supress (No Drill-Down)` option, click the `Formula` button.
 
 If you want to **hide a section if there are no results**, enter the following:
-{% highlight vbnet linenos %}
+{% highlight vbnet %}
 If IsNull({@RecordCount}) then true
 else false
 {% endhighlight %}
@@ -50,13 +50,13 @@ This tells Crystal to hide the section if the `RecordCount` is null (i.e. there 
 
 If you want to **show a section if there are no results**, enter the following: 
 
-{% highlight vbnet linenos %}
+{% highlight vbnet %}
 If IsNull({@RecordCount}) then false
 else true
 {% endhighlight %}
 
 Or:
-{% highlight vbnet linenos %}
+{% highlight vbnet %}
 If (Not(IsNull({@RecordCount}))) then true
 else false
 {% endhighlight %}
