@@ -21,7 +21,7 @@ Consider the difference between just talking about what you want to return and h
 * Once I have that working, I'll put it on the inside of another set of summaries, by parent so that I can sum up the summaries and have them for each parent work order.
 * Once that works, I'll make sure that all potential null values (summaries) return zero if they come back null.
 
-###Suggested Key Phrases<
+###Suggested Key Phrases
 * **"I'll call this... "** --  Helps you to decide what your Aliases / "As" statements should be
 * **"I'll get the..."** -- Indicator of types of field information you want to return in each record
 * **"I'll constrain this by making sure"** -- helps define your WHERE clause
