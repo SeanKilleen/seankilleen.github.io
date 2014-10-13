@@ -13,7 +13,7 @@ Our client needed to take a webapp down for maintenance (re-organization across 
 Use Tomcat to block all connections with the exception of administrator IP Addresses (which were static to us and known). 
 
 ###The Steps
-* Open the context.xml file, located in [Tomcat<sup>1</sup>]confcontext.xml.
+* Open the context.xml file, located in [Tomcat[^1]]confcontext.xml.
 * If you've never edited this file before, you should see a line like the following:
 
         <WatchedResource>WEB-INF/web.xml</WatchedResource>
@@ -38,4 +38,4 @@ To my knowledge, this "valve" structure can't be stacked. That is to say, you ca
 Hope this helps!
 
 ###Footnotes
-<sup>1</sup> where [Tomcat] is the base location of your Tomcat server.
+[^1]: where [Tomcat] is the base location of your Tomcat server.
