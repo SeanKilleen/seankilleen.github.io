@@ -6,7 +6,8 @@ url:              http://seankilleen.github.io
 
 
 # Jekyll configuration
-
+github_repo_url: http://github.com/seankilleen/seankilleen.github.io/
+timezone: America/New_York
 post-images: /images/post-images
 permalink:   /:year/:month/:title #/:categories/:title/
 markdown:    kramdown
