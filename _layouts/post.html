@@ -44,6 +44,15 @@
 	  {% include _editlink.html %}
 	  
       {{ content }}
+	  
+	  {{ % if page.series % }}
+
+	  <div>
+	  <a href="{{ page.previousurl }}" class="pull-left">&larr; {{ page.previoustitle }}</a>
+	  <a href= "{{ page.nexturl }}" class="pull-right">{{ page.nexttitle }} &rarr;</a>
+	</div>
+	  {{ % endif %}}
+	  <br/>
       <hr />
       <footer role="contentinfo">
         <div class="article-author-bottom">

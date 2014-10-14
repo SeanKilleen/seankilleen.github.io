@@ -3,7 +3,11 @@ layout: post
 title: 'Building A Build Process, Part 2: Groundwork -- The VMs'
 date: 2012-04-15 22:49:00.000000000 -04:00
 comments: true
-
+series: true
+previoustitle: "Part 1: Introduction" 
+previousurl: "http://microsoft.com"
+nexttitle: "Part 3: OS Setup"
+nexturl: "http://microsoft.com"
 ---
 *This is part of [a larger series](http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process) in building a proper build process. For more information and additional series links, check out the [introductory post](http://skwordpresstoghost.azurewebsites.net/?p=951).*
 
@@ -101,9 +105,4 @@ Do this for both OSes. You're now ready to start them up and install the operati
 
 I'd love to hear any comments on this series. Find it useful? Think there's a better way to implement the technique or something I should have mentioned? Please drop a line in the comments to help me improve the series!
 
-<table>
-<tr>
-<td><div align="left"><a href="http://skwordpresstoghost.azurewebsites.net/?p=951">&larr; Part 1: Introduction</a></div></td>
-<td><div align="right"><a href="http://skwordpresstoghost.azurewebsites.net/?p=641"> Part 3: OS Setup &rarr;</a></div></td>
-</tr>
-</table>
+
