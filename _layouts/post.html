@@ -48,11 +48,11 @@
 	  {% if page.series %}
 
 		<div>
-		  {% if page.series.previousurl %}
+		  {% if page.previousurl %}
 		  <a href="{{ page.previousurl }}" class="pull-left">&larr; {{ page.previoustitle }}</a>
 		  {% endif %}
 		
-		{% if page.series.nexturl %}
+		{% if page.nexturl %}
 		  <a href= "{{ page.nexturl }}" class="pull-right">{{ page.nexttitle }} &rarr;</a>
 		{% endif %}
 		</div>
