@@ -45,13 +45,18 @@
 	  
       {{ content }}
 	  
-	  {{ % if page.series % }}
+	  {% if page.series %}
 
-	  <div>
-	  <a href="{{ page.previousurl }}" class="pull-left">&larr; {{ page.previoustitle }}</a>
-	  <a href= "{{ page.nexturl }}" class="pull-right">{{ page.nexttitle }} &rarr;</a>
-	</div>
-	  {{ % endif %}}
+		<div>
+		  {% if page.series.previousurl %}
+		  <a href="{{ page.previousurl }}" class="pull-left">&larr; {{ page.previoustitle }}</a>
+		  {% endif %}
+		
+		{% if page.series.nexturl %}
+		  <a href= "{{ page.nexturl }}" class="pull-right">{{ page.nexttitle }} &rarr;</a>
+		{% endif %}
+		</div>
+	  {% endif %}
 	  <br/>
       <hr />
       <footer role="contentinfo">
