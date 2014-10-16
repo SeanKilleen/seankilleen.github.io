@@ -4,6 +4,13 @@ title: 'Building a Build Process, Part 4: Source Code Management via Subversion 
   Apache on CentOS'
 date: 2012-04-17 00:14:00.000000000 -04:00
 comments: true
+series:
+    previoustitle: >
+        "Part 3: OS Setup"
+    previousurl: "http://test.com"
+    nexttitle: >
+        "Part 4b: Securing Subversion's Connection via TLS"
+    nexturl: "http://test.com"
 
 ---
 *This is part of [a larger series](http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process) in building a proper build process. For more information and additional series links, check out the [introductory post](http://skwordpresstoghost.azurewebsites.net/?p=951).*  
@@ -139,10 +146,3 @@ Some of the great resources that I pulled this information from:
 * [HowTos/Subversion](http://wiki.centos.org/HowTos/Subversion) [[CentOS Wiki](wiki.centos.or)]
 * [How To Install Subversion with TRAC on CentOS 5.x](http://www.sohailriaz.com/how-to-install-subversion-with-trac-on-centos-5-x/) [[Sohail Riaz, Linux and Open Source Blog](http://www.sohailriaz.com/)]
 * [CentOS 5 and Auto Starting Apache httpd and Samba](http://www.howtowebdev.com/centos-5-and-auto-starting-apache-httpd-and-samba/) [[How To Web Dev](http://www.howtowebdev.com/)]
-
-<table>
-<tr>
-<td><div align="left"><a href="http://skwordpresstoghost.azurewebsites.net/?p=641">&larr; Part 3: OS Setup</a></div></td>
-<td><a href="http://skwordpresstoghost.azurewebsites.net/?p=601">Part 4b: Securing Subversion's Connection via TLS &rarr;</a></td>
-</tr>
-</table>

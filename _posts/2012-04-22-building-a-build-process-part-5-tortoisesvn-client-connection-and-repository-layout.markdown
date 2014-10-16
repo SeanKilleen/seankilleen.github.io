@@ -4,6 +4,13 @@ title: 'Building a Build Process, Part 5: TortoiseSVN Client Connection and Repo
   Layout'
 date: 2012-04-22 22:24:00.000000000 -04:00
 comments: true
+series:
+    previoustitle: >
+        "Part 4b: Securing Subversion's Connection via TLS"
+    previousurl: "http://test.com"
+    nexttitle: >
+        "Part 6: Creating a Custom MSBuild File"
+    nexturl: "http://test.com"
 
 ---
 *This is part of [a larger series](http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process) in building a proper build process. For more information and additional series links, check out the [introductory post](http://skwordpresstoghost.azurewebsites.net/?p=951).*  
@@ -163,13 +170,6 @@ I'd love to hear any comments on this series. Find it useful? Think there's a be
 * [Subversion book](http://svnbook.red-bean.com/)  
 * [Download TortoiseSVN](http://tortoisesvn.net/downloads.html)
 * [Donate to TortoiseSVN](http://tortoisesvn.tigris.org/donate.html)
-
-<table>
-<tr>
-<td><div align="left"><a href="http://skwordpresstoghost.azurewebsites.net/?p=601">&larr; Part 4b: Securing Subversion's Connection via TLS</a></div></td>
-<td><div align="right"><a href="http://skwordpresstoghost.azurewebsites.net/?p=591" target="_blank">Part 6: Creating a Custom MSBuild File &rarr;</a></div></td>
-</tr>
-</table>
 
 [32-bit version]: http://sourceforge.net/projects/tortoisesvn/files/1.7.6/Application/TortoiseSVN-1.7.6.22632-win32-svn-1.7.4.msi/download?accel_key=61%3A1335136466%3Ahttp%253A//tortoisesvn.net/downloads.html%3A8d0d4796%24cd1234e7403f638c725cf3902d68531a99393cc5&amp;click_id=e7a29518-8cd0-11e1-9aae-001d0968d1a5&amp;source=accel
 
