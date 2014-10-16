@@ -16,4 +16,4 @@ So, following [Scott Hanselman's advice](http://www.hanselman.com/blog/TheComput
 * **GMail:** My e-mail is also precious. I'll be again using [a Hanselman-authored solution](http://www.hanselman.com/blog/AutomaticallyBackupYourGmailAccountOnAScheduleWithGMVaultAndWindowsTaskScheduler.aspx) to back this up.
 * **Cloud Backup:** If Backblaze is able to take care of me, I may keep them because I have a lot invested. Otherwise, I'll be looking at other options. But the point is, this should be the last of my concerns after all the other ones are taken care of.
 
-Looking forward to getting this set up ASAP.</div>
+Looking forward to getting this set up ASAP.

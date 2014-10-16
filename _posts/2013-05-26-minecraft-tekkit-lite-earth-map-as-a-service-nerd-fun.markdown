@@ -14,7 +14,7 @@ I'm going to set up my own Tekkit Lite server, using the 1:1500 Earth Map, and r
 * **Get a <a href="http://freedns.afraid.org/" >FreeDNS account at afraid.org</a>**. Your machine has an IP that might change, and if you're not paying for a domain name, getting one of their free subdomains is an easy way to allow access to your machine without having to give our your IP every time it changes.
 * **Do all of the proper port forwarding**. I'm not going to explain that here, as it's different for every ISP/router. If you don't know how to port forward and port trigger, look it up elsewhere first (unless you want to just play by yourself. Which is a little sad.)
 
-###Obtaining the Software</h2>
+###Obtaining the Software
 * <a href="http://www.technicpack.net/tekkit-lite/" >**The Tekkit Lite Server Files**</a>. Head to the link and click "Download latest Tekkit Lite Server".
 * <a href="http://letslente.weebly.com/the-earth.html" >**The 1:500 Earth Map files**</a>. This is a huge download, so you may want to kick it off early.
 * <a href="http://sourceforge.net/projects/yajsw/" >**YAJSW (Yet Another Java Service Wrapper)**</a>. Download the code from SourceForge. It's a handy little utility to configure your Java Install as a Windows Service.
