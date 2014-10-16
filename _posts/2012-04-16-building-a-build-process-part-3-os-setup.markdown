@@ -91,10 +91,3 @@ That’s it! Next, we’ll look at setting up our source code management system.
 ###Feedback Welcome!
 
 I'd love to hear any comments on this series. Find it useful? Think there's a better way to implement the technique or something I should have mentioned? Please drop a line in the comments to help me improve the series!
-
-<table>
-<tr>
-<td><div align="left"><a href="http://skwordpresstoghost.azurewebsites.net/?p=661">&larr; Part 2: Groundwork -- The VMs</a></div></td>
-<td><div align="right"><a href="http://skwordpresstoghost.azurewebsites.net/?p=631">Part 4: Source Code Management via Subversion and Apache on CentOS &rarr;</a></div></td>
-</tr>
-</table>

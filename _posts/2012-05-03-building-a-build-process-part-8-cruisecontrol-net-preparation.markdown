@@ -3,6 +3,10 @@ layout: post
 title: 'Building a Build Process, Part 8: CruiseControl.NET Preparation'
 date: 2012-05-03 13:36:00.000000000 -04:00
 comments: true
+series:
+    previoustitle: >
+        Part 7: Installing CruiseControl.NET
+    previousurl: "http://test.com"
 
 ---
 *This is part of [a larger series]() in building a proper build process. For more information and additional series links, check out the [introductory post]().*
@@ -90,13 +94,6 @@ I'd love to hear any comments on this series. Find it useful? Think there's a be
 
 ###References
 * <a href="http://technet.microsoft.com/en-us/sysinternals/bb897553">PsExec Website</a> 
-
-<table>
-<tr>
-<td><div align="left"><a href="http://skwordpresstoghost.azurewebsites.net/?p=501">&larr; Part 7: Installing CruiseControl.NET</a></div></td>
-<td><div align="right">Part 9: coming soon! &rarr; </div></td>
-</tr>
-</table>
 
 [a larger series]: http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process
 
