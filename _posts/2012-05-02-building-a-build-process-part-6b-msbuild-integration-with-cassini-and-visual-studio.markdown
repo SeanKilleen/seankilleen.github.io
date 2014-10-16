@@ -4,7 +4,13 @@ title: 'Building a Build Process, Part 6b: MSBuild Integration With Cassini and 
   Studio'
 date: 2012-05-02 22:39:00.000000000 -04:00
 comments: true
-
+series:
+    previoustitle: >
+        "Part 6: Creating a Custom MS Build File"
+    previousurl: "http://microsoft.com"
+    nexttitle: >
+        "Part 7: Installing CruiseControl.NET"
+    nexturl: "http://microsoft.com"
 ---
 *This is part of [a larger series]() in building a proper build process. For more information and additional series links, check out the [introductory post]().*
 
@@ -156,12 +162,6 @@ I'd love to hear any comments on this series. Find it useful? Think there's a be
 * [MSBuild Extension Pack web site]
 * [MsBuild Extension Pack AsyncExec Reference]
 
-<table>
-<tr>
-<td><div align="left"><a href="http://skwordpresstoghost.azurewebsites.net/?p=561">&larr; Part 6: Creating a Custom MS Build File</a></div></td>
-<td><div align="right"><a href="http://skwordpresstoghost.azurewebsites.net/?p=501" target="_blank">Part 7: Installing CruiseControl.NET &rarr;</a></div></td>
-</tr>
-</table>
 
 [a larger series]: http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process
 

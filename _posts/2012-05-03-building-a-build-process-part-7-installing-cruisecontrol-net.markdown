@@ -3,6 +3,13 @@ layout: post
 title: 'Building a Build Process, Part 7: Installing CruiseControl.NET'
 date: 2012-05-03 00:48:00.000000000 -04:00
 comments: true
+series: 
+    previoustitle: >
+        "Part 6b: MSBuild Integration With Cassini and Visual Studio"
+    previousurl: "http://test.com" 
+    nexttitle: >
+        "Part 8: CruiseControl.NET Preparation"
+    nexturl: "http://test.com"
 
 ---
 *This is part of [a larger series]() in building a proper build process. For more information and additional series links, check out the [introductory post]().*
@@ -102,13 +109,6 @@ I'd love to hear any comments on this series. Find it useful? Think there's a be
 * <a href="http://www.cruisecontrolnet.org/">CruiseControl.NET Home Page</a>
 * <a href="http://sourceforge.net/projects/ccnet/files/CruiseControl.NET%20Releases/">CruiseControl.NET Releases</a>
 * <a href="http://www.matthewbussa.com/2011/05/installing-and-configuring-cruise.html">Installing and Configuring CruiseControl.NET</a> [via <a href="http://www.matthewbussa.com/">Mathewbussa.com</a>]
-
-<table>
-<tr>
-<td><div align="left"><a href="http://skwordpresstoghost.azurewebsites.net/?p=511">&larr; Part 6b: MSBuild Integration With Cassini and Visual Studio</a></div></td>
-<td><div align="right"><a href="http://skwordpresstoghost.azurewebsites.net/?p=491">Part 8: CruiseControl.NET Preparation &rarr;</a></div></td>
-</tr>
-</table>
 
 [a larger series]: http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process
 
