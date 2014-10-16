@@ -106,11 +106,13 @@ If a web site shows up at all, you’re good to go. Don’t worry about any erro
 I'd love to hear any comments on this series. Find it useful? Think there's a better way to implement the technique or something I should have mentioned? Please drop a line in the comments to help me improve the series!
 
 ###References
-* <a href="http://www.cruisecontrolnet.org/">CruiseControl.NET Home Page</a>
-* <a href="http://sourceforge.net/projects/ccnet/files/CruiseControl.NET%20Releases/">CruiseControl.NET Releases</a>
-* <a href="http://www.matthewbussa.com/2011/05/installing-and-configuring-cruise.html">Installing and Configuring CruiseControl.NET</a> [via <a href="http://www.matthewbussa.com/">Mathewbussa.com</a>]
+* [CruiseControl.NET Home Page](http://www.cruisecontrolnet.org/)
+* [CruiseControl.NET Releases Page on SourceForge]
+* [Installing and Configuring CruiseControl.NET], via <http://www.matthewbussa.com>
 
 [a larger series]: http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process
+
+[Installing and Configuring CruiseControl.NET]: http://www.matthewbussa.com/2011/05/installing-and-configuring-cruise.html 
 
 [introductory post]:http://skwordpresstoghost.azurewebsites.net/?p=951 
 

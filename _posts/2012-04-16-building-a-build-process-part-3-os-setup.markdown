@@ -46,7 +46,7 @@ This is as easy as clicking `Devices` from the VirtualBox host window (the windo
 VirtualBox pops up an installer on the screen. Follow the default steps to install, or select custom options.
 
 #####IIS WebPI
-I highly recommend downloading the [Web PI (Web Platform Installer) from Microsoft](http://www.iis.net/webpi). It’s got a great interface for quick configuration of applications and installs.</
+I highly recommend downloading the [Web PI (Web Platform Installer) from Microsoft](http://www.iis.net/webpi). It’s got a great interface for quick configuration of applications and installs.
 
 #####WebPI Downloads – Install the following packages:
 * .NET Framework 4.0  

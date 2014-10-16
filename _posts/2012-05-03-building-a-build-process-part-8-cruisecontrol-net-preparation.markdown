@@ -93,8 +93,9 @@ In the next part in the series, we’ll finally configure CruiseControl.NET and 
 I'd love to hear any comments on this series. Find it useful? Think there's a better way to implement the technique or something I should have mentioned? Please drop a line in the comments to help me improve the series!
 
 ###References
-* <a href="http://technet.microsoft.com/en-us/sysinternals/bb897553">PsExec Website</a> 
+* [PsExec Website] 
 
+[PsExec Website]: http://technet.microsoft.com/en-us/sysinternals/bb897553
 [a larger series]: http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process
 
 [introductory post]:http://skwordpresstoghost.azurewebsites.net/?p=951 
