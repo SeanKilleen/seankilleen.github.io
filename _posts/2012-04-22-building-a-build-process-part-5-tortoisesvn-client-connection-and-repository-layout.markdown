@@ -6,10 +6,10 @@ date: 2012-04-22 22:24:00.000000000 -04:00
 comments: true
 series:
     previoustitle: >
-        "Part 4b: Securing Subversion's Connection via TLS"
+        Part 4b: Securing Subversion's Connection via TLS
     previousurl: "http://test.com"
     nexttitle: >
-        "Part 6: Creating a Custom MSBuild File"
+        Part 6: Creating a Custom MSBuild File
     nexturl: "http://test.com"
 
 ---

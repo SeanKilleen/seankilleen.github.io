@@ -6,10 +6,10 @@ date: 2012-04-17 00:14:00.000000000 -04:00
 comments: true
 series:
     previoustitle: >
-        "Part 3: OS Setup"
+        Part 3: OS Setup
     previousurl: "http://test.com"
     nexttitle: >
-        "Part 4b: Securing Subversion's Connection via TLS"
+        Part 4b: Securing Subversion's Connection via TLS
     nexturl: "http://test.com"
 
 ---

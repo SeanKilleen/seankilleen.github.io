@@ -5,10 +5,10 @@ date: 2012-04-22 01:01:00.000000000 -04:00
 comments: true
 series:
     previoustitle: >
-        "Part 4: Source Code Management via Subverison and Apache on CentOS"
+        Part 4: Source Code Management via Subverison and Apache on CentOS
     previousurl: "http://test.com"
     nexttitle: >
-        "Part 5: TortoiseSVN Client Connection and Repository Layout"
+        Part 5: TortoiseSVN Client Connection and Repository Layout
     nexturl: "http://test.com"
 
 ---

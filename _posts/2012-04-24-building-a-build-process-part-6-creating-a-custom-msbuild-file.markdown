@@ -5,10 +5,10 @@ date: 2012-04-24 23:35:00.000000000 -04:00
 comments: true
 series:
     previoustitle: >
-        "Part 5: TortoiseSVN Client Connection and Repository Layout"
+        Part 5: TortoiseSVN Client Connection and Repository Layout
     previousurl: "http://test.com"
     nexttitle: >
-        "Part 6b: MSBuild Integration with Cassini and Visual Studio"
+        Part 6b: MSBuild Integration with Cassini and Visual Studio
     nexturl: ""
 ---
 *This is part of [a larger series]() in building a proper build process. For more information and additional series links, check out the [introductory post]().*
