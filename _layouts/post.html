@@ -48,16 +48,16 @@
 	  {% if page.series %}
 
 		<div>
-		  {% if page.previousurl %}
-		  <a href="{{ page.previousurl }}" class="pull-left">&larr; {{ page.previoustitle }}</a>
+		  {% if page.series.previousurl %}
+		  <a href="{{ page.series.previousurl }}" class="pull-left">&larr; {{ page.series.previoustitle }}</a>
 		  {% endif %}
 		
-		{% if page.nexturl %}
-		  <a href= "{{ page.nexturl }}" class="pull-right">{{ page.nexttitle }} &rarr;</a>
+		{% if page.series.nexturl %}
+		  <a href= "{{ page.series.nexturl }}" class="pull-right">{{ page.series.nexttitle }} &rarr;</a>
 		{% endif %}
 		</div>
 	  {% endif %}
-	  <br/>
+	  <br/><br/>
       <hr />
       <footer role="contentinfo">
         <div class="article-author-bottom">
