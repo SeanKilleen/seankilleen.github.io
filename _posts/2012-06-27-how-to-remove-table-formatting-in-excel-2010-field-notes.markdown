@@ -13,7 +13,7 @@ I added a table in Excel 2010 and now I need to get rid of the table aspect and 
 Just changing the formatting to "Normal" doesn't remove the programmatic features of table formatting (I can still sort my data as a table, etc. which I don't want to be able to do.
 
 ###Solution
-This is called "converting to a range." to convert a table back to a range:
+This is called "converting to a range." To convert a table back to a range:
 
 * Highlight the table in your spreadsheet
 * The `Design` tab will appear on the ribbon menu. Click it to enter the design section.
