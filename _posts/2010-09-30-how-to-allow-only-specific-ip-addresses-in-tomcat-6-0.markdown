@@ -20,7 +20,7 @@ Use Tomcat to block all connections with the exception of administrator IP Addre
 <WatchedResource>WEB-INF/web.xml</WatchedResource>
 {% endhighlight %}
     
-* Add the following line directly after the &lt;/WatchedResource&gt; tag:
+* Add the following line directly after the `</WatchedResource>` tag:
 
 {% highlight apache %}
 <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="IP1|IP2|IP3">

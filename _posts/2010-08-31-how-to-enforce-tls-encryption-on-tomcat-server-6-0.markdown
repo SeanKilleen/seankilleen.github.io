@@ -13,7 +13,7 @@ Recently, I was tasked with setting up a [Tomcat Server](http://tomcat.apache.or
 
 However, this wasn’t going to fly for my client — an institution with strict security rules for its web applications — which, really, is a good thing. If TLSv1 wasn’t enabled properly, the site shouldn’t display, even if SSL is enabled.
 
-I looked around for how to do this, and to my surprise, it was incredibly difficult to find. After a great deal of Google searches and frustration, I finally found a post &nbsp;on the old, archived Tomcat developers listserv/group.[^1] It turns out that there’s another attribute you can add to your server connector in server.xml — the “protocols” attribute (standing for "secure" I believe; not a pluralization)
+I looked around for how to do this, and to my surprise, it was incredibly difficult to find. After a great deal of Google searches and frustration, I finally found a post on the old, archived Tomcat developers listserv/group.[^1] It turns out that there’s another attribute you can add to your server connector in server.xml — the “protocols” attribute (standing for "secure" I believe; not a pluralization)
 
 So, in short, a Tomcat 6.0 connector in server.xml that enforces TLS looks something like the connector below (I’ve changed the password to a dummy, of course):
 

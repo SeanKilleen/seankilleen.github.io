@@ -78,7 +78,7 @@ var css = new StyleBundle("~/Content/css")
 
 ###References
 
-* <a href="https://nuget.org/packages/Twitter.Bootstrap.Less">Twitter.Bootstrap.Less</a>&nbsp;[<a href="https://nuget.org/">Nuget</a>]
+* <a href="https://nuget.org/packages/Twitter.Bootstrap.Less">Twitter.Bootstrap.Less</a> [<a href="https://nuget.org/">Nuget</a>]
 * <a href="https://nuget.org/packages/Twitter.Bootstrap.Less.MVC4">Twitter.Bootstrap.Less.MVC4</a> [<a href="https://nuget.org/">Nuget</a>]
-* <a href="http://blog.cdeutsch.com/">CDeutsch's Blog</a>&nbsp;[<a href="http://cdeutsch.com/">CDeutsch.com</a>]
+* <a href="http://blog.cdeutsch.com/">CDeutsch's Blog</a> [<a href="http://cdeutsch.com/">CDeutsch.com</a>]
 * <a href="http://stackoverflow.com/questions/13309138/how-to-get-fontawesome-to-work-on-an-azure-web-pages-deployment">How to Get FontAwesome to work on Azure web pages deployment?</a> [<a href="http://stackoverflow.com/">StackOverflow</a>]</ul>

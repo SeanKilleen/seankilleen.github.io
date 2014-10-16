@@ -6,7 +6,7 @@ date: 2010-10-25 11:29:00.000000000 -04:00
 comments: true
 
 ---
-It appears that the shipped version of Ubuntu Maverick 10.10 (at least the server version) comes with repository &nbsp;server URLs that are incorrect -- or at least non-functioning. I discovered this the hard way after much trial, error, and self-doubt. I hope the masses benefit from my suffering. :)
+It appears that the shipped version of Ubuntu Maverick 10.10 (at least the server version) comes with repository server URLs that are incorrect -- or at least non-functioning. I discovered this the hard way after much trial, error, and self-doubt. I hope the masses benefit from my suffering. :)
 
 ###The symptoms:
 * Can connect to the network

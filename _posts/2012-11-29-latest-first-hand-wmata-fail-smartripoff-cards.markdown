@@ -22,7 +22,7 @@ I'll bullet it out for easy digestion:
 
 ###Let Me Count the Fails:
 
-* **Technology Fail**: Who doesn't test card readers or firmware w/cards in the wild before they're released? How could this problem ever exist?&nbsp;
+* **Technology Fail**: Who doesn't test card readers or firmware w/cards in the wild before they're released? How could this problem ever exist?
 * **Asset Management Fail**: I know that WMATA uses enterprise-class asset management software (IBM Maximo) because I was at a seminar with them. Given this, how is it possible that it is unknown which buses have the card readers with issues and which ones don't?
 * **Business Fail**: WMATA bills SMARTrip as the easy solution and goes to great lengths to build confidence about how it works. And yet, despite putting $20 on her card this morning, Caroline was almost unable to board the bus she needs to get to work. WMATA also asked Caroline to call in to report the issue on each bus it happens on so they could track it. How is that a customer's responsibility?
 * **Communication Fail**: WMATA didn't get out ahead of this one. They haven't even informed their drivers, let alone their customers, that this might be an issue. How is there not a sign on every Metro bus and a direct number to call when this sort of thing happens, given that this is a known issue?
