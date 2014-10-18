@@ -30,6 +30,7 @@ This Site Runs On:
 * Comments are hosted on [Disqus][disqus link].
 * Want to know what's in the pipeline? I'm going to try to put some of my process in a [public Trello board](https://trello.com/b/nrxQGFmi/seankilleen-com).
 * Source code is being formatted by [Google Code Prettify][prettify link].
+* A [great blog post at RealJenius](http://realjenius.com/2012/11/03/jekyll-series-list/) describing how to set up a series post in Jekyll without plug-ins. Some nice liquid formatting craziness in there. Learned a lot.
 
 Thanks to all of these things, I can host this small chunk of my brain on the internet.
 
