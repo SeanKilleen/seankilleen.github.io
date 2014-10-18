@@ -4,13 +4,7 @@ title: 'Building a Build Process, Part 6b: MSBuild Integration With Cassini and 
   Studio'
 date: 2012-05-02 22:39:00.000000000 -04:00
 comments: true
-series:
-    previoustitle: >
-        Part 6: Creating a Custom MS Build File
-    previousurl: "http://microsoft.com"
-    nexttitle: >
-        Part 7: Installing CruiseControl.NET
-    nexturl: "http://microsoft.com"
+series: building-a-build-process
 ---
 *This is part of [a larger series]() in building a proper build process. For more information and additional series links, check out the [introductory post]().*
 

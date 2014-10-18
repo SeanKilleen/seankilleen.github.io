@@ -4,14 +4,7 @@ title: 'Building a Build Process, Part 4: Source Code Management via Subversion 
   Apache on CentOS'
 date: 2012-04-17 00:14:00.000000000 -04:00
 comments: true
-series:
-    previoustitle: >
-        Part 3: OS Setup
-    previousurl: "http://test.com"
-    nexttitle: >
-        Part 4b: Securing Subversion's Connection via TLS
-    nexturl: "http://test.com"
-
+series: building-a-build-process
 ---
 *This is part of [a larger series](http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process) in building a proper build process. For more information and additional series links, check out the [introductory post](http://skwordpresstoghost.azurewebsites.net/?p=951).*  
 

@@ -44,19 +44,9 @@
 	  {% include _editlink.html %}
 	  
       {{ content }}
-	  
-	  {% if page.series %}
 
-		<div>
-		  {% if page.series.previousurl %}
-		  <a href="{{ page.series.previousurl }}" class="pull-left">&larr; {{ page.series.previoustitle }}</a>
-		  {% endif %}
-		
-		{% if page.series.nexturl %}
-		  <a href= "{{ page.series.nexturl }}" class="pull-right">{{ page.series.nexttitle }} &rarr;</a>
-		{% endif %}
-		</div>
-	  {% endif %}
+	  {% include _series.html %}
+
 	  <br/><br/>
       <hr />
       <footer role="contentinfo">
