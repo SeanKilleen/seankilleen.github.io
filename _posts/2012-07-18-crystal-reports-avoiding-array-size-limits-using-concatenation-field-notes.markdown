@@ -3,7 +3,8 @@ layout: post
 title: 'Crystal Reports: Avoiding Array Size Limits Using Concatenation [Field Notes]'
 date: 2012-07-18 17:00:00.000000000 -04:00
 comments: true
-
+redirect_from:
+ - /2012/07/crystal-reports-avoiding-array-size.html
 ---
 ###Problem
 I have a Crystal Report that needs to pass a list of items to a sub-report, so that the sub-report can find additional items without duplicating items from the master report.

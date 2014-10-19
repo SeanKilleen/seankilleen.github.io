@@ -5,7 +5,8 @@ date: 2012-06-27 21:43:00.000000000 -04:00
 comments: true
 
 redirect_from: 
-- /2012/06/how-to-remove-table-formatting-in-excel.html
+ - /2012/06/how-to-remove-table-formatting-in-excel.html
+
 ---
 ###Problem
 I added a table in Excel 2010 and now I need to get rid of the table aspect and make them normal cells again.

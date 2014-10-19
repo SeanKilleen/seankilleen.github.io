@@ -4,7 +4,8 @@ title: 'Quick Fix: Windows Server 2008 R2 Internet Explorer Windows Update Issue
   Notes]'
 date: 2012-04-16 09:08:00.000000000 -04:00
 comments: true
-
+redirect_from: 
+ - /2012/04/quick-fix-windows-server-2008-r2.html
 ---
 ###Problem
 On a fresh install of server 2008, after adding IE 9 via Windows Update, the installation appears again in later updates.

@@ -3,7 +3,8 @@ layout: post
 title: 'How To: Enforce TLS Encryption on Tomcat Server 6.0'
 date: 2010-08-31 13:35:00.000000000 -04:00
 comments: true
-
+redirect_from: 
+ - /2010/08/how-to-enforce-tls-encryption-on-tomcat.html
 ---
 _[**Note**: I should begin this post by saying that I’m no expert on SSL or TLS encryption or the “handshakes” and negotiations that browsers and servers go through when giving the user a connection to secure material. Feel free to jump in on the comments if I get the terminology or methodology wrong.]_
 
