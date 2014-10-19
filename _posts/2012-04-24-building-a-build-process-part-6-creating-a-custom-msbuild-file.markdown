@@ -4,6 +4,9 @@ title: 'Building a Build Process, Part 6: Creating a Custom MSBuild File'
 date: 2012-04-24 23:35:00.000000000 -04:00
 comments: true
 series: building-a-build-process
+redirect_from: 
+ - /2012/05/building-build-process-part-6a-msbuild.html
+
 ---
 *This is part of [a larger series]() in building a proper build process. For more information and additional series links, check out the [introductory post]().*
 
