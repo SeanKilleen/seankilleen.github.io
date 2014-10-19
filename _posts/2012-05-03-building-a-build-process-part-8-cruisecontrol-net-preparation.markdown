@@ -4,7 +4,8 @@ title: 'Building a Build Process, Part 8: CruiseControl.NET Preparation'
 date: 2012-05-03 13:36:00.000000000 -04:00
 comments: true
 series: building-a-build-process
-
+redirect_from: 
+ - /2012/05/building-build-process-part-8.html
 ---
 *This is part of [a larger series]() in building a proper build process. For more information and additional series links, check out the [introductory post]().*
 

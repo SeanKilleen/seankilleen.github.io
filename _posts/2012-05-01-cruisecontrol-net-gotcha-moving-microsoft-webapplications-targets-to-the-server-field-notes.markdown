@@ -4,7 +4,8 @@ title: 'CruiseControl .NET Gotcha: Moving Microsoft.WebApplications.Targets to t
   server [Field Notes]'
 date: 2012-05-01 19:17:00.000000000 -04:00
 comments: true
-
+redirect_from: 
+ - /2012/05/cruisecontrol-net-gotcha-moving.html
 ---
 ###Problem
 When attempting an automated build, CruiseControl.NET (running on Server 2008 R2 with .NET Framework 4.0 Installed) gives the following error in its log:

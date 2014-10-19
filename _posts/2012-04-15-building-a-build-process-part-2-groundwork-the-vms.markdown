@@ -4,6 +4,8 @@ title: 'Building A Build Process, Part 2: Groundwork -- The VMs'
 date: 2012-04-15 22:49:00.000000000 -04:00
 comments: true
 series: building-a-build-process
+redirect_from: 
+ - /2011/12/building-build-process-part-2.html
 ---
 *This is part of [a larger series](http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process) in building a proper build process. For more information and additional series links, check out the [introductory post](http://skwordpresstoghost.azurewebsites.net/?p=951).*
 

@@ -3,7 +3,8 @@ layout: post
 title: 'Quick tip: Chocolatey + Powershell + Dropbox for package management and backup'
 date: 2014-01-19 01:55:00.000000000 -05:00
 comments: true
-
+redirect_from: 
+ - /2014/01/quick-tip-chocolatey-powershell-dropbox.html
 ---
 So it's been a long day and night rebuilding a system from scratch (Motherboard issue + Hubris + Bad decisions). But on this go 'round, I decided to install as much of my software as Chocolatey packages as possible.
 

@@ -3,7 +3,8 @@ layout: post
 title: 'How To: Compare Two Sets of Internet Explorer Security Settings [Field Notes]'
 date: 2012-02-22 13:43:00.000000000 -05:00
 comments: true
-
+redirect_from: 
+ - /2012/02/how-to-compare-two-sets-of-internet.html
 ---
 ###The Problem
 A web application doesn't work correctly for a user, and from the description of the issue I think it might have to do with security settings. The application works fine for me.

@@ -4,7 +4,8 @@ title: 'Crystal Reports 2008 Gotcha: Subreports with multiple parameter values [
   Notes]'
 date: 2011-12-15 09:38:00.000000000 -05:00
 comments: true
-
+redirect_from: 
+ - /2011/12/crystal-reports-2008-gotcha-subreports.html
 ---
 ###The Setup
 * I have a report in Crystal Reports 2008.

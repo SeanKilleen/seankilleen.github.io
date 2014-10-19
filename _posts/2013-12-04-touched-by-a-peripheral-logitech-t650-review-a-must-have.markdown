@@ -3,7 +3,8 @@ layout: post
 title: 'Touched by a Peripheral: Logitech T650 Review [A must-have]'
 date: 2013-12-04 23:44:00.000000000 -05:00
 comments: true
-
+redirect_from: 
+ - /2013/12/touched-by-peripheral-logitech-t650.html
 ---
 **Summary:** I thought this device would be inconsequential, but it makes a world of difference. [The T650](http://www.amazon.com/Logitech-Rechargeable-Touchpad-Multi-Touch-Navigation/dp/B0093H4WT6) is a top-notch device so far, and between the great experience with this and my [Logitech K750](http://www.amazon.com/Logitech-Wireless-Solar-Keyboard-K750/dp/B004MF11MU/ref=sr_1_1?s=electronics&amp;ie=UTF8&amp;qid=1386218388&amp;sr=1-1&amp;keywords=k750) Keyboard, Logitech has cemented itself as my brand of choice for peripherals going forward. Brand loyalty to a company that makes keyboards and mice -- I would not have foreseen that. As of this writing, [it's $47 on Amazon](http://www.amazon.com/Logitech-Rechargeable-Touchpad-Multi-Touch-Navigation/dp/B0093H4WT6) -- down from around $70. I can't recommend it highly enough.
 

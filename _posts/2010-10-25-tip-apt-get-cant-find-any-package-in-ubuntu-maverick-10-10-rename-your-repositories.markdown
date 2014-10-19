@@ -4,7 +4,8 @@ title: 'Tip: apt-get can''t find any package in Ubuntu Maverick 10.10? Rename Yo
   Repositories.'
 date: 2010-10-25 11:29:00.000000000 -04:00
 comments: true
-
+redirect_from: 
+ - /2010/10/tip-apt-get-cant-find-any-package-in.html
 ---
 It appears that the shipped version of Ubuntu Maverick 10.10 (at least the server version) comes with repository server URLs that are incorrect -- or at least non-functioning. I discovered this the hard way after much trial, error, and self-doubt. I hope the masses benefit from my suffering. :)
 

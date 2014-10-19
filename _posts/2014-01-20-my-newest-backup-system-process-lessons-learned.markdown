@@ -3,7 +3,8 @@ layout: post
 title: My Newest Backup System / Process [Lessons Learned]
 date: 2014-01-20 20:39:00.000000000 -05:00
 comments: true
-
+redirect_from: 
+ - /2014/01/my-newest-backup-system-process-lessons.html
 ---
 With all my bellyaching about Backblaze lately, it only stands to reason that I should pick a better system.
 

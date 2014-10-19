@@ -3,6 +3,8 @@ layout: post
 title: Minecraft Tekkit Lite Earth Map as a Service [Nerd Fun]
 date: 2013-05-26 13:35:00.000000000 -04:00
 comments: true
+redirect_from: 
+ - /2013/05/minecraft-tekkit-lite-earth-map-as.html
 
 ---
 I have a little time to kill this holiday weekend and wanted to try something fun (at least before it gets warm enough to go outside for the rest of the day). Some friends and I have been playing [Tekkit Lite](http://www.technicpack.net/tekkit-lite/) off and on, and being the resident IT geek, I'm hosting the server.

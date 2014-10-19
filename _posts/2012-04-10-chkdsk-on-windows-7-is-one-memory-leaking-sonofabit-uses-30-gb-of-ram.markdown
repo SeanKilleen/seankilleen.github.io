@@ -3,7 +3,8 @@ layout: post
 title: Chkdsk on Windows 7 is one memory-leaking Sonofabit, Uses 30 GB of RAM
 date: 2012-04-10 16:45:00.000000000 -04:00
 comments: true
-
+redirect_from: 
+ - /2012/04/chkdsk-on-windows-7-is-one-memory.html
 ---
 My desktop PC has 32 GB of RAM. It's ridiculous in that way, by almost any standard. I assumed that when I hit full usage of memory it would be because my entire virtual network of random servers, etc. would be running at once.
 

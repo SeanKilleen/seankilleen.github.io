@@ -4,7 +4,8 @@ title: 'Fix: Crystal Reports 2008: "Default printer is not available" and/or Un-
   Collapsed Sections [Field Notes]'
 date: 2012-01-09 17:36:00.000000000 -05:00
 comments: true
-
+redirect_from: 
+ - /2012/01/fix-crystal-reports-2008-default.html
 ---
 ###Problem
 In Crystal Reports 2008, when opening up a report that came from elsewhere (usually another user's machine), I see: 
