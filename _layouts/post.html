@@ -48,8 +48,9 @@
 	  
       {{ content }}
 
-	  {% include _series.html %}
-
+		{% if page.series && page.series != blank %}
+			{% include _series.html %}
+		{% endif %}
 	  <br/><br/>
       <hr />
       <footer role="contentinfo">
