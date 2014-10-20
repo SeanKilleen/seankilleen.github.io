@@ -11,18 +11,6 @@ series: building-a-build-process
 
 ***Under Construction:**The language in these posts may be a little terse at first, but I'll be fleshing it out over time -- be sure to check back!]*
 
-###Articles in This Series
-* Part 1: Introduction (this article)
-* [Part 2: Groundwork -- The VMs](http://skwordpresstoghost.azurewebsites.net/?p=661)
-* [Part 3: OS Setup](http://skwordpresstoghost.azurewebsites.net/?p=641)
-* [Part 4: Source Code Management via Subversion and Apache on CentOS](http://skwordpresstoghost.azurewebsites.net/?p=631)
-* [Part 4b: Securing Subversion's Connection via TLS](http://skwordpresstoghost.azurewebsites.net/?p=601)
-* [Part 5: TortoiseSVN Client Connection and Repository Layout](http://skwordpresstoghost.azurewebsites.net/?p=591)
-* [Part 6: Creating a Custom MSBuild File](http://skwordpresstoghost.azurewebsites.net/?p=561)
-* [Part 6b: MSBuild Integration With Cassini and Visual Studio](http://skwordpresstoghost.azurewebsites.net/?p=511)
-* [Part 7: Installing CruiseControl.NET](http://skwordpresstoghost.azurewebsites.net/?p=501)
-* [Part 8: CruiseControl.NET Preparation](http://skwordpresstoghost.azurewebsites.net/?p=491)
-
 ###Why Undertake This (Plus: Look at my Presentation!)
 I've seen too many instances in various jobs and projects where the build/integration process is not afforded due diligence (or *any* diligence, really).
 
