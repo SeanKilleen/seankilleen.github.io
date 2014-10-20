@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Building a Build Process, Part 6: Creating a Custom MSBuild File'
+title: 'Building a Build Process: Creating a Custom MSBuild File'
 date: 2012-04-24 23:35:00.000000000 -04:00
 comments: true
 series: building-a-build-process

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Building a Build Process, Part 3: OS Setup'
+title: 'Building a Build Process: OS Setup'
 date: 2012-04-16 22:28:00.000000000 -04:00
 comments: true
 series: building-a-build-process

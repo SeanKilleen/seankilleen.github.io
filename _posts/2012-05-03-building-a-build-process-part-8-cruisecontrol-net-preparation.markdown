@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Building a Build Process, Part 8: CruiseControl.NET Preparation'
+title: 'Building a Build Process: CruiseControl.NET Preparation'
 date: 2012-05-03 13:36:00.000000000 -04:00
 comments: true
 series: building-a-build-process
