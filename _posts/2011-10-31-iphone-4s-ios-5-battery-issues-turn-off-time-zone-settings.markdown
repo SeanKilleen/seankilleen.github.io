@@ -3,6 +3,8 @@ layout: post
 title: iPhone 4S / iOS 5 battery issues? Turn off time zone settings
 date: 2011-10-31 07:22:00.000000000 -04:00
 comments: true
+redirect_from: 
+ - /2011/10/iphone-4s-ios-5-battery-issues-turn-off.html
 ---
 The [excellent folks over at Lifehacker have a tip](http://lifehacker.com/5854653/iphone-4s-battery-problems-may-be-a-bug-with-ios-location-services) that seemingly works to resolve iPhone 4S and iOS 5 battery level issues.
 
