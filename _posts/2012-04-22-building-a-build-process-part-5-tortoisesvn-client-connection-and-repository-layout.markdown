@@ -155,9 +155,6 @@ With this done, we’re ready to commit all our changes.
 
 Congratulations! You’ve fully completed a solution setup with Visual Studio and Subversion.
 
-###Feedback Welcome!
-I'd love to hear any comments on this series. Find it useful? Think there's a better way to implement the technique or something I should have mentioned? Please drop a line in the comments to help me improve the series!  
-
 ###References
 
 * [Pluralsight Continuous Integration Course]

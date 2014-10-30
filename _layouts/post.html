@@ -50,7 +50,11 @@
 		{% endif %}
       
 	  {{ content }}
-
+		
+		{% if page.series == "building-a-build-process" %}
+			{% include _buildseriesfooter.html %}
+		{% endif %}
+		
 		{% if page.series && page.series != blank %}
 			{% include _series.html %}
 		{% endif %}

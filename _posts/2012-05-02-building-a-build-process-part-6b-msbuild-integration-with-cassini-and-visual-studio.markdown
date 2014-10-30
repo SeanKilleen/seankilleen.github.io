@@ -148,9 +148,6 @@ For now, I just recommend using TortoiseSVN to ignore those folders in your sour
 
 And by all means, if you know how to solve the mystery, sound off in the comments!
 
-###Feedback Welcome!
-I'd love to hear any comments on this series. Find it useful? Think there's a better way to implement the technique or something I should have mentioned? Please drop a line in the comments to help me improve the series!
-
 ###References
 
 * [Pluralsight Continuous Integration Course]

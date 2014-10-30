@@ -143,9 +143,6 @@ Save the file, and run `MSBuild TestProject.build` (without a target attribute).
 ###Next Time…
 In the next article, we’ll explore how to start and stop the Cassini Web Server asynchronously, and how to run Visual Studio builds through common output directories.
 
-###Feedback Welcome!
-I'd love to hear any comments on this series. Find it useful? Think there's a better way to implement the technique or something I should have mentioned? Please drop a line in the comments to help me improve the series!
-
 ###References
 * [Pluralsight Continuous Integration Course][PS CI Course] 
 * [Pluralsight Sign-up Page][PS Signup]

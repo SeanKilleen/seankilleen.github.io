@@ -79,7 +79,3 @@ This is optional, but I find that it's always helpful to be able to go back to t
 ![Take snapshot button]({{site.post-images}}/08-252520-252520Take-252520Snapshot_thumb-25255B1-25255D.png)
 
 That’s it! Next, we’ll look at setting up our source code management system.
-
-###Feedback Welcome!
-
-I'd love to hear any comments on this series. Find it useful? Think there's a better way to implement the technique or something I should have mentioned? Please drop a line in the comments to help me improve the series!

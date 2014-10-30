@@ -95,9 +95,6 @@ Keep going:
 
 If a web site shows up at all, you’re good to go. Don’t worry about any errors within the web dashboard application, as we’ll be configuring CCNet later.
 
-###Feedback Welcome!
-I'd love to hear any comments on this series. Find it useful? Think there's a better way to implement the technique or something I should have mentioned? Please drop a line in the comments to help me improve the series!
-
 ###References
 * [CruiseControl.NET Home Page](http://www.cruisecontrolnet.org/)
 * [CruiseControl.NET Releases Page on SourceForge]
