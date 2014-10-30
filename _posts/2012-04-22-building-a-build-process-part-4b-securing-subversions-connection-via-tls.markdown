@@ -5,7 +5,6 @@ date: 2012-04-22 01:01:00.000000000 -04:00
 comments: true
 series: building-a-build-process
 ---
-*This is part of [a larger series](http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process) in building a proper build process. For more information and additional series links, check out the [introductory post](http://skwordpresstoghost.azurewebsites.net/?p=951).*
 
 Alright, I just couldn’t take the guilt. I can’t abide Subversion and Apache being set up without defaulting to https and a TLS encrypted connection. We’ll remedy this below.
 

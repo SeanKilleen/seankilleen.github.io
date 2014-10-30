@@ -6,7 +6,6 @@ comments: true
 series: building-a-build-process
 
 ---
-*This is part of [a larger series]() in building a proper build process. For more information and additional series links, check out the [introductory post]().*
 
 ###Adding a HDD to your VM for CI Information
 I find this makes it easier to keep your CI files separate, and it’s definitely a good practice in a production environment in my experience. Virtualization makes this easier as well because all the virtual hard drive files only take up as much space as they use. Definitely an upside to VMs.

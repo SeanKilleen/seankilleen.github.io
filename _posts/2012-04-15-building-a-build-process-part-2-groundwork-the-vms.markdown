@@ -7,7 +7,6 @@ series: building-a-build-process
 redirect_from: 
  - /2011/12/building-build-process-part-2.html
 ---
-*This is part of [a larger series](http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process) in building a proper build process. For more information and additional series links, check out the [introductory post](http://skwordpresstoghost.azurewebsites.net/?p=951).*
 
 **A note before we begin:** This post is going to run us through how get up and running with VirtualBox. For those of you already living in virtual (machine) reality, just create VMs for Windows Server 2008 and CentOS 5.x (5.7 at the time of this writing).
 

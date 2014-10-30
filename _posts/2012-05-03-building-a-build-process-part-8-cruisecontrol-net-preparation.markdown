@@ -7,7 +7,6 @@ series: building-a-build-process
 redirect_from: 
  - /2012/05/building-build-process-part-8.html
 ---
-*This is part of [a larger series]() in building a proper build process. For more information and additional series links, check out the [introductory post]().*
 
 ###Choosing Whether to Run as Network Service or another user
 This was brought up as an excellent point by Bahrep on a recent blog post of mine, and I thought it was worth sharing for this series. 

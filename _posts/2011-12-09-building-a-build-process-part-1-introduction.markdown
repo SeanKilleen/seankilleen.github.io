@@ -7,8 +7,6 @@ series: building-a-build-process
 ---
 
 
-*[This is the first article in [a series of articles](http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process) I'll be doing about building a Build Process for an application. You can refer here at any point for all of the published articles in the series.*
-
 ***Under Construction:**The language in these posts may be a little terse at first, but I'll be fleshing it out over time -- be sure to check back!]*
 
 ###Why Undertake This (Plus: Look at my Presentation!)

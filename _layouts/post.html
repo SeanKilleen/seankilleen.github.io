@@ -44,9 +44,12 @@
 	{% include _under-construction.html %}
     <div class="article-wrap">
 	  {% include _editlink.html %}
-	  
-	  
-      {{ content }}
+	
+		{% if page.series == "building-a-build-process" %}
+			{% include _buildseriesintro.html %}
+		{% endif %}
+      
+	  {{ content }}
 
 		{% if page.series && page.series != blank %}
 			{% include _series.html %}

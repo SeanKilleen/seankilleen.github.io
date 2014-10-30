@@ -9,7 +9,6 @@ redirect_from:
  - /2012/05/building-build-process-part-6b-msbuild.html
  
 ---
-*This is part of [a larger series]() in building a proper build process. For more information and additional series links, check out the [introductory post]().*
 
 ###This Time…
 In this round, we’re going to discuss:

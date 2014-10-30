@@ -8,7 +8,6 @@ series: building-a-build-process
 redirect_from: 
  - /2012/04/building-build-process-part-5.html
 ---
-*This is part of [a larger series](http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process) in building a proper build process. For more information and additional series links, check out the [introductory post](http://skwordpresstoghost.azurewebsites.net/?p=951).*  
 
 Welcome back! Now that we have a TLS-encrypted Apache setup with SVN, we’re going to take a look at creating the repository layout.
 
