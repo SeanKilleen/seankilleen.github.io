@@ -67,20 +67,20 @@ Directions for both options are shown below. For what it’s worth, **I now pref
 
 ###Add a CI User to the Repository
 * Open your CentOS source code management VM
-* Taking advice from our <a href="http://skwordpresstoghost.azurewebsites.net/?p=631">Subversion &amp; Apache article</a>, we’ll run the following command to add a new CI user without deleting the old ones: 
+* Taking advice from our [Subversion & Apache article]({% post_url 2012-04-17-building-a-build-process-part-4-source-code-management-via-subversion-and-apache-on-centos %}), we’ll run the following command to add a new CI user without deleting the old ones: 
 
         htpasswd -sb /var/www/svn/auth/svn.htpasswd ci passw0rdci
         
 Now you’re set to allow CruiseControl to pull down files under its own again (just around the bend in this series when we configure CCNet).
 
 ###Copying the Microsoft Targets to the Build Server
-When dealing with this elsewhere, <a href="http://skwordpresstoghost.azurewebsites.net/?p=531">I discovered this problem</a>. We’ll avoid it in advance here.
+When dealing with this elsewhere, [I discovered this problem]({% post_url 2012-05-01-cruisecontrol-net-gotcha-moving-microsoft-webapplications-targets-to-the-server-field-notes %}). We’ll avoid it in advance here.
 
 * You have to copy the two files from your local development machine (with VS installed) to the Build Server.
 * Copy the directory `C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\*.*` to the same location on the build server.
 
 ###Copying the Reference Assemblies to the Build Server
-When dealing with this elsewhere, <a href="http://skwordpresstoghost.azurewebsites.net/?p=521">I discovered this problem</a>. We’ll avoid it in advance here.
+When dealing with this elsewhere, [I discovered this problem]({% post_url 2012-05-01-workaround-msbuild-error-msb3644-the-reference-assemblies-for-framework-netframeworkversionv4-0-were-not-found-field-notes %}). We’ll avoid it in advance here.
 
 * On your local development machine, copy `C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\*.*` to a folder on your build server. For me, it was `E:\ContinuousIntegration_ReferenceAssemblies` so that it could keep it common for any future builds.
 
@@ -90,6 +90,3 @@ In the next part in the series, we’ll finally configure CruiseControl.NET and 
 * [PsExec Website] 
 
 [PsExec Website]: http://technet.microsoft.com/en-us/sysinternals/bb897553
-[a larger series]: http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process
-
-[introductory post]:http://skwordpresstoghost.azurewebsites.net/?p=951 

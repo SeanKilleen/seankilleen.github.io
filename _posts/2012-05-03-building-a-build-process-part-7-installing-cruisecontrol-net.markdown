@@ -100,10 +100,6 @@ If a web site shows up at all, you’re good to go. Don’t worry about any erro
 * [CruiseControl.NET Releases Page on SourceForge]
 * [Installing and Configuring CruiseControl.NET], via <http://www.matthewbussa.com>
 
-[a larger series]: http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process
-
 [Installing and Configuring CruiseControl.NET]: http://www.matthewbussa.com/2011/05/installing-and-configuring-cruise.html 
-
-[introductory post]:http://skwordpresstoghost.azurewebsites.net/?p=951 
 
 [CruiseControl.NET Releases Page on SourceForge]: http://sourceforge.net/projects/ccnet/files/CruiseControl.NET%20Releases/

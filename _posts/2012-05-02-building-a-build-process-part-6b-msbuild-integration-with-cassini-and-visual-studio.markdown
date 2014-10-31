@@ -155,11 +155,6 @@ And by all means, if you know how to solve the mystery, sound off in the comment
 * [MSBuild Extension Pack web site]
 * [MsBuild Extension Pack AsyncExec Reference]
 
-
-[a larger series]: http://skwordpresstoghost.azurewebsites.net/search/label/building%20a%20build%20process
-
-[introductory post]:http://skwordpresstoghost.azurewebsites.net/?p=951 
-
 [MSBuild Extension Pack web site]:http://msbuildextensionpack.codeplex.com/
 
 [MsBuild Extension Pack AsyncExec Reference]: http://www.msbuildextensionpack.com/help/3.5.8.0/html/68cdc023-8926-4ac9-9e7c-0297592fec29.htm
