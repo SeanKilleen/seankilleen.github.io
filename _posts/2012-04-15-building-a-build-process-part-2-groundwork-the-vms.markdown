@@ -19,7 +19,7 @@ For now, you'll need:
 * Windows Server 2008 R2 (or your preferred variant) -- you're on your own for this one. You can get windows in lot of places, though: retail, MSDN, educational discounts, or the BizSpark program can all be good options.
 * Visual Studio 2010 (or your .NET editor of choice)
 
-I used my [lovely new desktop rig]({% post_url 2011-11-22-new-desktop-rig-nerd-toys %}) as the host for the VMs (it can handle the strain). You may want to use multiple machines or a server. In my case, we'll be running VirtualBox on top of my Windows 7 Professional setup. I only mention the host as being important now as we may add some more VMs later in the process.
+I used my [lovely new desktop rig]({% post_url /2011/11/new-desktop-rig-nerd-toys %}) as the host for the VMs (it can handle the strain). You may want to use multiple machines or a server. In my case, we'll be running VirtualBox on top of my Windows 7 Professional setup. I only mention the host as being important now as we may add some more VMs later in the process.
 
 
 ###Installing VirtualBox

@@ -15,7 +15,7 @@ Just an FYI -- if you're considering Schwab because of their touted mobile phone
 On my iPhone 4S, here is the experience I just had trying to deposit a check:
 
 * Open the app
-* Login to the app using my [poor-by-mandate password]({% post_url 2011-10-07-password-rules-offender-charles-schwab %})
+* Login to the app using my [poor-by-mandate password]({% post_url /2011/10/password-rules-offender-charles-schwab %})
 * Select Schwab Bank account, even though my Schwab investor account is inactive (an extra unnecessary click)
 * Click `Deposit Check`
 * Enter the amount of the check

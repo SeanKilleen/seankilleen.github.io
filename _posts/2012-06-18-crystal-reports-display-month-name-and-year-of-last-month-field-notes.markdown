@@ -25,5 +25,5 @@ This says to use "month" intervals, subtract one, and use the current date as th
 This concatenates a string of the month name for the formula and the year for the formula. The part that calculates the year also notes that there should be no comma for thousands and no decimals (year here is being interpreted as just a number when outputted to `ToText`).
 
 ###References
-* <a href="http://publib.boulder.ibm.com/infocenter/radhelp/v7r5/index.jsp?topic=%2Fcom.businessobjects.integration.eclipse.designer.doc%2Fhtml%2Ftopic681.html">DateAdd</a> [<a href="http://publib.boulder.ibm.com/infocenter/radhelp/v7r5/index.jsp?">IBM RAD Reference</a>]
+* [DateAdd](http://publib.boulder.ibm.com/infocenter/radhelp/v7r5/index.jsp?topic=%2Fcom.businessobjects.integration.eclipse.designer.doc%2Fhtml%2Ftopic681.html) [[IBM RAD Reference]](http://publib.boulder.ibm.com/infocenter/radhelp/v7r5/index.jsp?)
 * <a href="http://crystaltricks.com/wordpress/?p=149">ToText Function</a> [<a href="http://crystaltricks.com/wordpress/">Crystal Reports Tips &amp; Tricks</a>]

@@ -34,7 +34,7 @@ Our first step is to pull down the repository we created (which is currently bla
 * For the URL of the repository, type `https://[ip or hostname of your svn server]/svn/TestProjectRepo`. Note the **https**; we’re going to pull this repository down over a TLS-encrypted connection.  
 * Double-check that the checkout directory is the new folder that you created on your local machine called TestProject, and then Click `OK`.  
 * At this point, you will likely receive a message about the fact that certificate failed. Click `Accept the certificate permanently`, since we know the certificate is trustworthy (we created it, after all)  
-* Next, you’ll be prompted for username and password. Enter one of the two logins we created [when we initially set up Subversion]({% post_url 2012-04-17-building-a-build-process-part-4-source-code-management-via-subversion-and-apache-on-centos %}). You may want to click `save authentication`; otherwise you’ll be prompted for it whenever you communicate with the repository.
+* Next, you’ll be prompted for username and password. Enter one of the two logins we created [when we initially set up Subversion]({% post_url /2012/04/building-a-build-process-part-4-source-code-management-via-subversion-and-apache-on-centos %}). You may want to click `save authentication`; otherwise you’ll be prompted for it whenever you communicate with the repository.
 
 You will see through the TortoiseSVN dialog box that the process is completed. The folder may also have a green check-mark overlaid. This is TortoiseSVN’s handiwork; it lets you know that a repository is up to date.
 
@@ -118,7 +118,7 @@ At this point, let’s update the solution by right-clicking TestProject and sel
 
 ###Creating the Solution in our Project’s Root Directory
 After all our hard work to set up the solution right, we’re finally ready to create the solution within Visual Studio.
-First, we’ll likely want to [enable the Always Show Solution option within Visual Studio]({% post_url 2012-04-12-quick-tip-always-show-solution-in-visual-studio-2010 %}) so that it’s easier to create a blank solution – which is what we’ll be doing first. 
+First, we’ll likely want to [enable the Always Show Solution option within Visual Studio]({% post_url /2012/04/quick-tip-always-show-solution-in-visual-studio-2010 %}) so that it’s easier to create a blank solution – which is what we’ll be doing first. 
 Next, complete the following steps:
 
 

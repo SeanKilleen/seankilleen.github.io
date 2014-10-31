@@ -18,4 +18,4 @@ There are two steps (that I know of) to fixing this problem. The first is to mak
 * Set the `Copy to Output Directory` property to `Copy Always`. This ensures that your LESS files will actually make it into the package folder that MSBuild outputs.
 
 ####Step 2: Ensuring that IIS can serve LESS files
-* See the instructions in my post titled [When using Twitter Bootstrap LESS with IIS, don't forget to create the MIME Type]({% post_url 2012-09-10-when-using-twitter-bootstrap-less-with-iis-dont-forget-to-create-the-mime-type-field-notes %})</a>
+* See the instructions in my post titled [When using Twitter Bootstrap LESS with IIS, don't forget to create the MIME Type]({% post_url /2012/09/when-using-twitter-bootstrap-less-with-iis-dont-forget-to-create-the-mime-type-field-notes %})</a>

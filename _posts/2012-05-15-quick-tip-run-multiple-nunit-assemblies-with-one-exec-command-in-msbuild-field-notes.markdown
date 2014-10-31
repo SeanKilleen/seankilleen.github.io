@@ -39,4 +39,4 @@ Note that I create one of these references for every configuration. (Debug and R
 Lastly, add the appropriate variable to your .build file that references the .nunit file, and call that variable instead of the DLL. All assemblies will then be passed.
 
 ###References
-* <a href="http://www.nunit.org/index.php?p=multiAssembly&amp;r=2.2.10" target="_blank">MultiAssembly</a> [<a href="http://www.nunit.org/" target="_blank">NUnit</a>]
+* [MultiAssembly](http://www.nunit.org/index.php?p=multiAssembly&amp;r=2.2.10) [[NUnit]](http://www.nunit.org/)
