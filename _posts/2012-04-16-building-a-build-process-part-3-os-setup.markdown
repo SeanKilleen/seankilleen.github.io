@@ -26,7 +26,7 @@ Alright, this is a little bit of a cheat post but I wanted to emphasize the simp
 #####IE 9 -- But not through Windows Update
 You should have IE 9 on a Windows Server. To be honest, I'm not sure why, but it feels right to have the OS-supported "standard" available, even if it's not your first go-to browser. IE 9 on Windows Server provides a great layer of protection over potentially harmful actions, so I use it when I'm in "caution mode". 
 
-However, you'll likely want to obtain IE via [my method described here]({% post_url /2012/04/quick-fix-windows-server-2008-r2-internet-explorer-windows-update-issue-field-notes %}), because as of this writing the MS Installer on Windows Update is screwed up.  
+However, you'll likely want to obtain IE via [my method described here]({% post_url 2012-04-16-quick-fix-windows-server-2008-r2-internet-explorer-windows-update-issue-field-notes %}), because as of this writing the MS Installer on Windows Update is screwed up.  
 
 #####An alternative browser to IE
 You should also have a browser on your machine for those I-know-what-I'm-doing-and-just-get-out-of-my-way-damnit times when you don't feel like dealing with IE's extra protection. I use [Google Chrome](http://google.com/chrome), but pick whichever browser suits you.  
