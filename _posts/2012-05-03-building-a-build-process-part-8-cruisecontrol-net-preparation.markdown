@@ -80,7 +80,7 @@ When dealing with this elsewhere, [I discovered this problem](). We’ll avoid i
 * Copy the directory `C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\*.*` to the same location on the build server.
 
 ###Copying the Reference Assemblies to the Build Server
-When dealing with this elsewhere, [I discovered this problem](). We’ll avoid it in advance here.
+When dealing with this elsewhere, [I discovered this problem]({% post_url 2012-05-01-cruisecontrol-net-gotcha-moving-microsoft-webapplications-targets-to-the-server-field-notes %}). We’ll avoid it in advance here.
 
 * On your local development machine, copy `C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\*.*` to a folder on your build server. For me, it was `E:\ContinuousIntegration_ReferenceAssemblies` so that it could keep it common for any future builds.
 
