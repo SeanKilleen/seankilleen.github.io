@@ -1,5 +1,5 @@
 ---
-layout: nil
+layout: null
 ---
 <?xml version="1.0"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
@@ -23,5 +23,5 @@ layout: nil
     </item>
     {% endfor %}
 
-  </channel> 
+  </channel>
 </rss>
