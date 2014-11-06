@@ -19,4 +19,4 @@ Set-WmiInstance -input $drive -Arguments @{DriveLetter="Y:";}
 {% endhighlight %}
 
 ###References
-* <a href="http://blogs.technet.com/b/heyscriptingguy/archive/2011/03/14/change-drive-letters-and-labels-via-a-simple-powershell-command.aspx">Change Drive Letters and Labels via a Simple PowerShell Comamnd</a> [<a href="http://blogs.technet.com/">TechNet Blogs</a>]
+* [Change Drive Letters and Labels via a Simple PowerShell Comamnd](http://blogs.technet.com/b/heyscriptingguy/archive/2011/03/14/change-drive-letters-and-labels-via-a-simple-powershell-command.aspx) [[TechNet Blogs]](http://blogs.technet.com/)

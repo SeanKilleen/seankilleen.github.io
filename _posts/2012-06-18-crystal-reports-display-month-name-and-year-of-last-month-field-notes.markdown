@@ -26,4 +26,4 @@ This concatenates a string of the month name for the formula and the year for th
 
 ###References
 * [DateAdd](http://publib.boulder.ibm.com/infocenter/radhelp/v7r5/index.jsp?topic=%2Fcom.businessobjects.integration.eclipse.designer.doc%2Fhtml%2Ftopic681.html) [[IBM RAD Reference]](http://publib.boulder.ibm.com/infocenter/radhelp/v7r5/index.jsp?)
-* <a href="http://crystaltricks.com/wordpress/?p=149">ToText Function</a> [<a href="http://crystaltricks.com/wordpress/">Crystal Reports Tips &amp; Tricks</a>]
+* [ToText Function](http://crystaltricks.com/wordpress/?p=149) [[Crystal Reports Tips &amp; Tricks]](http://crystaltricks.com/wordpress/)

@@ -32,5 +32,5 @@ In these examples, `[path]` is the full path to the file (e.g. `C:\SomeFolder\My
 **NOTE**: Single quotes around the file path will ensure the command will not break if it includes a space in the path.
 
 ###References
-* <a href="http://stackoverflow.com/questions/8902585/powershell-pause-script-while-external-program-runs">PowerShell - Pause Script While External Program Runs</a> [<a href="http://stackoverflow.com/">StackOverflow</a>]
-* <a href="http://technet.microsoft.com/en-us/library/hh849848.aspx">Start-Process</a> [<a href="http://technet.microsoft.com/">TechNet</a>]
+* [PowerShell - Pause Script While External Program Runs](http://stackoverflow.com/questions/8902585/powershell-pause-script-while-external-program-runs) [[StackOverflow]](http://stackoverflow.com/)
+* [Start-Process](http://technet.microsoft.com/en-us/library/hh849848.aspx) [[TechNet]](http://technet.microsoft.com/)

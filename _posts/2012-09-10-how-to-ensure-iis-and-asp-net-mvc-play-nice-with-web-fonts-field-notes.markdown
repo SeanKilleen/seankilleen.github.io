@@ -30,4 +30,4 @@ In IIS, make sure you have the following file extensions and the corresponding M
 and bingo! Build/deploy your package and it should be right as rain.
 
 ###References
-* <a href="http://sebduggan.com/blog/serving-web-fonts-from-iis/">Serving Web Fonts from IIS</a> [<a href="http://sebduggan.com/blog/">Seb Duggan</a>]
+* [Serving Web Fonts from IIS](http://sebduggan.com/blog/serving-web-fonts-from-iis/) [[Seb Duggan]](http://sebduggan.com/blog/)
