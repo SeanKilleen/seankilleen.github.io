@@ -16,9 +16,9 @@ When installing Windows Updates on Windows 8, it seems to stall while processing
 
 ###Solution
 
-Per <a href="http://answers.microsoft.com/en-us/office/forum/office_2010-onenote/kb2760600-not-installing/811842f5-6a58-40e1-a107-7303ddc4dcdf" target="_blank">this conversion on a Microsoft forum</a>, run task manager and close "spoolsv.exe".
+Per [this conversion on a Microsoft forum](http://answers.microsoft.com/en-us/office/forum/office_2010-onenote/kb2760600-not-installing/811842f5-6a58-40e1-a107-7303ddc4dcdf), run task manager and close "spoolsv.exe".
 
 The update should finish shortly thereafter without issue.
 
 ###References
-* <a href="http://answers.microsoft.com/en-us/office/forum/office_2010-onenote/kb2760600-not-installing/811842f5-6a58-40e1-a107-7303ddc4dcdf" target="_blank">KB2760600 - not installing</a> [<a href="http://answers.microsoft.com/en-us" target="_blank">Microsoft Community</a>]
+* [KB2760600 - not installing](http://answers.microsoft.com/en-us/office/forum/office_2010-onenote/kb2760600-not-installing/811842f5-6a58-40e1-a107-7303ddc4dcdf) [[Microsoft Community]](http://answers.microsoft.com/en-us)

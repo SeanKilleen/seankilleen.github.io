@@ -26,5 +26,5 @@ If you were experiencing the same issue, I hope this helps! Feel free to let me 
 
 ###References
 
-* <a href="http://social.technet.microsoft.com/Forums/windows/en-US/4eca1f42-8630-48b4-85fa-e9569445d832/problem-with-cpu-load-and-wmi-errors-when-hyperv-is-installed" target="_blank">Problem with CPU load and WMI errors when Hyper-V is Installed?</a> [TechNet]
-* <a href="https://downloadcenter.intel.com/confirm.aspx?httpDown=http://downloadmirror.intel.com/23071/eng/PROWinx64.exe&amp;lang=eng&amp;Dwnldid=23071&amp;DownloadType=Drivers&amp;OSFullname=Windows+8*" target="_blank">Direct Link for Intel Network Adapter for Windows 8.1 v18.7</a> [<a href="https://downloadcenter.intel.com/Default.aspx?lang=eng" target="_blank">Intel Download Center</a>]
+* [Problem with CPU load and WMI errors when Hyper-V is Installed?](http://social.technet.microsoft.com/Forums/windows/en-US/4eca1f42-8630-48b4-85fa-e9569445d832/problem-with-cpu-load-and-wmi-errors-when-hyperv-is-installed) [TechNet]
+* [Direct Link for Intel Network Adapter for Windows 8.1 v18.7](https://downloadcenter.intel.com/confirm.aspx?httpDown=http://downloadmirror.intel.com/23071/eng/PROWinx64.exe&amp;lang=eng&amp;Dwnldid=23071&amp;DownloadType=Drivers&amp;OSFullname=Windows+8*) [Intel Download Center]](https://downloadcenter.intel.com/Default.aspx?lang=eng)

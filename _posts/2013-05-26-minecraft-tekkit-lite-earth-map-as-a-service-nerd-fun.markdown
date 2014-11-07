@@ -13,20 +13,20 @@ I'm going to set up my own Tekkit Lite server, using the 1:1500 Earth Map, and r
 
 ###Before You Begin
 * **Lock down your machine**. This is important. If you're hosting on your own server, it's going to have to involve some port forwarding and letting the internet into your machine. Lock it down with appropriate firewall knowledge. If you don't do this, then you're going to have a terrible time at some point.
-* **Get a <a href="http://freedns.afraid.org/" >FreeDNS account at afraid.org</a>**. Your machine has an IP that might change, and if you're not paying for a domain name, getting one of their free subdomains is an easy way to allow access to your machine without having to give our your IP every time it changes.
+* **Get a [FreeDNS account at afraid.org](http://freedns.afraid.org/)**. Your machine has an IP that might change, and if you're not paying for a domain name, getting one of their free subdomains is an easy way to allow access to your machine without having to give our your IP every time it changes.
 * **Do all of the proper port forwarding**. I'm not going to explain that here, as it's different for every ISP/router. If you don't know how to port forward and port trigger, look it up elsewhere first (unless you want to just play by yourself. Which is a little sad.)
 
 ###Obtaining the Software
-* <a href="http://www.technicpack.net/tekkit-lite/" >**The Tekkit Lite Server Files**</a>. Head to the link and click "Download latest Tekkit Lite Server".
-* <a href="http://letslente.weebly.com/the-earth.html" >**The 1:500 Earth Map files**</a>. This is a huge download, so you may want to kick it off early.
-* <a href="http://sourceforge.net/projects/yajsw/" >**YAJSW (Yet Another Java Service Wrapper)**</a>. Download the code from SourceForge. It's a handy little utility to configure your Java Install as a Windows Service.
+* [**The Tekkit Lite Server Files**](http://www.technicpack.net/tekkit-lite/). Head to the link and click "Download latest Tekkit Lite Server".
+* [**The 1:500 Earth Map files**](http://letslente.weebly.com/the-earth.html). This is a huge download, so you may want to kick it off early.
+* [**YAJSW (Yet Another Java Service Wrapper)**](http://sourceforge.net/projects/yajsw/). Download the code from SourceForge. It's a handy little utility to configure your Java Install as a Windows Service.
 
 ###Initial Setup
 * Extract the LetLente! Earth maps. This will take a while.
 * Extract the Tekkit Lite Server Files. Use 7-Zip or Windows to Extract the Zip files.
 * Extract the yajsw files.
 * Rename the Tekkit Lite folder to the name of your server (I called mine `MinecraftServer_EarthMap`)
-* In the root of the Tekkit Lite folder, there is a `server.properties` file. Configure it according to however you'd like the world to be. See <a href="http://www.minecraftwiki.net/wiki/Server.properties" >this wiki page</a> as a starting guide. 
+* In the root of the Tekkit Lite folder, there is a `server.properties` file. Configure it according to however you'd like the world to be. See [this wiki page](http://www.minecraftwiki.net/wiki/Server.properties) as a starting guide. 
 * I suggest at least setting your player handle as an op in the `ops.txt` file as well.
 * If you have multiple servers running, be sure to set the `server-port` option in `server.properties`.
 * In your server folder, create a folder called `world`.
