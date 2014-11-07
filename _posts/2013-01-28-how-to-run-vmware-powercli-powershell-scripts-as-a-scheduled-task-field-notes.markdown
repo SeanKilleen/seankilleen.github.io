@@ -79,6 +79,7 @@ I gained some insights from this process, mostly by trial and error. I thought I
 * Do not run a powershell script directly as a scheduled task. It does not work. Use the `powershell.exe "C:\Path\To\script.ps1"` format to execute.
 
 ###References
-* <a href="http://powershellcommunity.org/Forums/tabid/54/aft/4295/Default.aspx" target="_blank">Scheduled Powershell scripts not passing authentication to Connect-VIServer</a> [<a href="http://powershellcommunity.org/" target="_blank">PowerShellCommunity.org</a>]
-* <a href="http://professionalvmware.com/2009/04/posh-article-of-the-week-secure-credential-storage/" target="_blank">PoSH Article of the Week! – Secure Credential Storage</a> [<a href="http://professionalvmware.com/" target="_blank">Professional VMWare</a>]
-* <a href="http://stackoverflow.com/questions/14564732/powershell-vmware-script-not-running-from-scheduled-task" target="_blank">Powershell VMWare Script not running from Scheduled Task</a> [<a href="http://www.stackoverflow.com/" target="_blank">StackOverflow</a>]</li></ul>
+* [Scheduled Powershell scripts not passing authentication to Connect-VIServer](http://powershellcommunity.org/Forums/tabid/54/aft/4295/Default.aspx)
+* [PoSH Article of the Week! – Secure Credential Storage](http://professionalvmware.com/2009/04/posh-article-of-the-week-secure-credential-storage/)
+* [Powershell VMWare Script not running from Scheduled Task](http://stackoverflow.com/questions/14564732/powershell-vmware-script-not-running-from-scheduled-task)
+

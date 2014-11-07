@@ -5,11 +5,11 @@ date: 2013-03-16 13:08:00.000000000 -04:00
 comments: true
 
 ---
-***Update:** As promised, I'm updating this to include <a href="https://twitter.com/TomJunod/status/312989731157835777">Tom Junod's response</a>. He notes that **the profile is  available in the <a href="https://www.byliner.com/originals/great-men">Esquire collection of profiles entitled "Great Men" at Byliner</a>. At $3.99 it appears to be a fantastic deal.** I'll be purchasing, and I hope you will, too. If he asks me to remove the text below, I'll be doing so, but I hope he'll let us continue to read it here as well.*
+***Update:** As promised, I'm updating this to include [Tom Junod's response](https://twitter.com/TomJunod/status/312989731157835777). He notes that **the profile is  available in the [Esquire collection of profiles entitled "Great Men" at Byliner](https://www.byliner.com/originals/great-men). At $3.99 it appears to be a fantastic deal.** I'll be purchasing, and I hope you will, too. If he asks me to remove the text below, I'll be doing so, but I hope he'll let us continue to read it here as well.*
 ___
-*In 1998, <a href="https://twitter.com/TomJunod">Tom Junod</a> wrote an article for Esquire -- a beautiful profile of an incredible person, Mr. Rogers. I was lucky enough to stumble across it, and for a few minutes I was transported to a world and a feeling I didn't know I'd missed.*
+*In 1998, [Tom Junod](https://twitter.com/TomJunod) wrote an article for Esquire -- a beautiful profile of an incredible person, Mr. Rogers. I was lucky enough to stumble across it, and for a few minutes I was transported to a world and a feeling I didn't know I'd missed.*
 
-*I've reproduced it from the site I originally found it on here in its entirety for easy reading. I've <a href="https://twitter.com/sjkilleen/status/312972788778561538">asked him</a> for a place to link to the article. I was unable to find a copy on the Esquire site, but original links to my source articles are here: <a href="http://www.thedqtimes.com/pages/castpages/other/fredrogerscanyousayheropg1.htm">1</a> | <a href="http://www.thedqtimes.com/pages/castpages/other/fredrogerscanyousayheropg2.htm">2</a> | <a href="http://www.thedqtimes.com/pages/castpages/other/fredrogerscanyousayheropg3.htm">3</a> | <a href="http://www.thedqtimes.com/pages/castpages/other/fredrogerscanyousayheropg4.htm">4</a> | <a href="http://www.thedqtimes.com/pages/castpages/other/fredrogerscanyousayheropg5.htm">5</a> | <a href="http://www.thedqtimes.com/pages/castpages/other/fredrogerscanyousayheropg6.htm">6</a> | <a href="http://www.thedqtimes.com/pages/castpages/other/fredrogerscanyousayheropg7.htm">7</a> | <a href="http://www.thedqtimes.com/pages/castpages/other/fredrogerscanyousayheropg8.htm">8</a>.*
+*I've reproduced it from the site I originally found it on here in its entirety for easy reading. I've [asked him](https://twitter.com/sjkilleen/status/312972788778561538) for a place to link to the article. I was unable to find a copy on the Esquire site, but original links to my source articles are here: [1][Part1] | [2][Part2] | [3][Part3] | [4][Part4] | [5][Part5] | [6][Part6] | [7][Part7] | [8][Part8] *
 
 *If you enjoyed being transported like I did, let's think about how we can better create Mr. Rogers' world.*
 ___
@@ -141,3 +141,11 @@ Fred never stopped looking at her or let go of her hand. "It's not a performance
 
 
 
+[Part1]: http://www.thedqtimes.com/pages/castpages/other/fredrogerscanyousayheropg1.htm
+[Part2]: http://www.thedqtimes.com/pages/castpages/other/fredrogerscanyousayheropg2.htm
+[Part3]: http://www.thedqtimes.com/pages/castpages/other/fredrogerscanyousayheropg3.htm
+[Part4]: http://www.thedqtimes.com/pages/castpages/other/fredrogerscanyousayheropg4.htm
+[Part5]: http://www.thedqtimes.com/pages/castpages/other/fredrogerscanyousayheropg5.htm
+[Part6]: http://www.thedqtimes.com/pages/castpages/other/fredrogerscanyousayheropg6.htm
+[Part7]: http://www.thedqtimes.com/pages/castpages/other/fredrogerscanyousayheropg7.htm
+[Part8]: http://www.thedqtimes.com/pages/castpages/other/fredrogerscanyousayheropg8.htm

@@ -26,4 +26,4 @@ This effectively opens the search bar, chooses your "search engine", and navigat
 Use for any bookmarklet you need.
 
 ###Resources
-* <a href="http://downloadsquad.switched.com/2011/03/02/add-a-keyboard-shortcut-to-a-chrome-bookmark-or-bookmarklet/">Add a keyboard shortcut to a Chrome bookmark or bookmarklet</a> [<a href="http://www.huffingtonpost.com/tech/">Switch Download Squad (now Huffpost Tech)</a>]</div>
+* [Add a keyboard shortcut to a Chrome bookmark or bookmarklet](http://downloadsquad.switched.com/2011/03/02/add-a-keyboard-shortcut-to-a-chrome-bookmark-or-bookmarklet/) [[Switch Download Squad (now Huffpost Tech)]](http://www.huffingtonpost.com/tech/)

@@ -29,5 +29,5 @@ This happens because IIS Express isn't configured by default for Windows Authent
 ###References
 
 
-* <a href="http://chanmingman.wordpress.com/2012/06/19/access-is-denied-in-mvc-4-intranet-application-in-vs-11/">Access is denied in MVC 4 Intranet Application in VS 11</a> [<a href="http://chanmingman.wordpress.com/">Chanmingman's Blog</a>]
-* <a href="http://maran.ro/2012/09/06/activare-windowsauthentication-pe-iis-express-8-vs2012/">Activare “WindowsAuthentication” pe IIS Express 8 (VS2012)</a> [<a href="http://maran.ro/">Lucian Maran</a>]</ul>
+* [Access is denied in MVC 4 Intranet Application in VS 11](http://chanmingman.wordpress.com/2012/06/19/access-is-denied-in-mvc-4-intranet-application-in-vs-11/) [[Chanmingman's Blog]](http://chanmingman.wordpress.com/)
+* [Activare “WindowsAuthentication” pe IIS Express 8 (VS2012)](http://maran.ro/2012/09/06/activare-windowsauthentication-pe-iis-express-8-vs2012/) [[Lucian Maran]](http://maran.ro/)
