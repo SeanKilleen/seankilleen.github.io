@@ -28,4 +28,4 @@ I did some more digging and found [a great post on PeteNetLive](http://www.peten
 And the potential exists for more! Per the article, you just have to open `regedit.exe` and navigate to `HKLM > Software > Microsoft > Windows > CurrentVersion > Explorer > FolderDescriptions`. In there is a menu with all of the GUIDs. Look at the `Name` property for the thing you'd have to type. I see a few interesting ones on mine, though your mileage may vary.
 
 ###References
-* <a href="http://www.petenetlive.com/KB/Article/0000709.htm" target="_blank">KB 0000709 - "Where's the Startup Folder?"</a> <a href="http://www.petenetlive.com/" target="_blank">[PeteNetLive]</a>
+* [KB 0000709 - "Where's the Startup Folder?"](http://www.petenetlive.com/KB/Article/0000709.htm) [[PeteNetLive]](http://www.petenetlive.com/)

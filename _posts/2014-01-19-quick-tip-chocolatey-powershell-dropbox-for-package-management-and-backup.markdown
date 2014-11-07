@@ -8,7 +8,7 @@ redirect_from:
 ---
 So it's been a long day and night rebuilding a system from scratch (Motherboard issue + Hubris + Bad decisions). But on this go 'round, I decided to install as much of my software as Chocolatey packages as possible.
 
-**Have you Installed Chocolatey? If not, and you care about being a windows sysadmin or developer, stop reading this and head to <a href="http://chocolatey.org/">http://chocolatey.org/</a> immediately to read up and install it. I'll wait.**
+**Have you Installed Chocolatey? If not, and you care about being a windows sysadmin or developer, stop reading this and head to <http://chocolatey.org/> immediately to read up and install it. I'll wait.**
 
 Done? Okay, great. So I was looking through the Chocolatey Gallery and finding packages to install (side note, installing multiple packages is as easy as "cinst packagename1 packagename2 packagenameN") when it occurred to me: as I change things, wouldn't it be nice if I had a list somewhere of these packages that stays updated?
 
