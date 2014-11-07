@@ -6,7 +6,7 @@ comments: true
 redirect_from: 
  - /2013/11/using-jshint-with-underscorejs-in.html
 ---
-Since my new gig has me diving into Javascript quite a bit, I've really been loving <a href="http://jshint.com/" >JSHint</a> integration (brought to us lovingly by <a href="http://madskristensen.net/" >Mads Kristensen</a> and the team building the <a href="http://vswebessentials.com/" >Web Essentials</a> 2012 add-on).
+Since my new gig has me diving into Javascript quite a bit, I've really been loving [JSHint](http://jshint.com/) integration (brought to us lovingly by [Mads Kristensen](http://madskristensen.net/) and the team building the [Web Essentials 2012 add-on](http://vswebessentials.com/)).
 
 ###Firstly: The Cool Feature that Caused my Issue -- Global Variables
 One of my favorite features of JSHint is that it will tell you when you're using a variable that hasn't been defined yet. This does wonders for reducing scoping issues, etc.
@@ -58,15 +58,15 @@ But this will:
 
 I kind of hope that's not the case, since it helps here.
 
-There has been some back and forth on the <a href="https://github.com/jshint/jshint/search?q=nomen&amp;source=cc&amp;type=Issues" >JSHint Github about this</a>, but the <a href="http://www.jshint.com/docs/options/#nomen" >JSHint options page for "nomen"</a> makes it pretty clear:
+There has been [some back and forth on the JSHint Github site](https://github.com/jshint/jshint/search?q=nomen&amp;source=cc&amp;type=Issues)about this, but the [JSHint options page for "nomen"](http://www.jshint.com/docs/options/#nomen) makes it pretty clear:
 
 > This option disallows the use of dangling _ in variables. We don't know why would you need it.
 
 If you were a little new to this, as I was, I hope this helps! Feel free to send some feedback in the comments.
 
 ###References
-* <a href="http://vswebessentials.com/" >Web Essentials VS Extension</a>
-* <a href="http://madskristensen.net/" >Mads Kristensen</a>
-* <a href="http://jshint.com/" >JSHint</a> &amp; <a href="http://www.jshint.com/docs/options/#nomen" >JSHint Options Page</a>
-* <a href="http://www.jslint.com/lint.html#options" >JSLint Options</a>
-* <a href="https://github.com/jshint/jshint/search?q=nomen&amp;source=cc&amp;type=Issues" >JSHint: Issues containing "nomen"</a> [<a href="http://www.github.com/" >Github</a>]</li>
+* [Web Essentials VS Extension](http://vswebessentials.com/)
+* [Mads Kristensen](http://madskristensen.net/)
+* [JSHint](http://jshint.com/) &amp; [JSHint Options Page](http://www.jshint.com/docs/options/#nomen)
+* [JSLint Options](http://www.jslint.com/lint.html#options)
+* [JSHint: Issues containing "nomen"](https://github.com/jshint/jshint/search?q=nomen&amp;source=cc&amp;type=Issues) 
