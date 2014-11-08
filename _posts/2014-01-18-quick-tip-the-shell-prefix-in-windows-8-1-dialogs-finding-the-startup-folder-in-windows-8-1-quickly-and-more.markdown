@@ -13,13 +13,10 @@ Today, that was finding the startup folder with Windows 8.1 -- and I'm glad I lo
 I found an excellent Microsoft KB Article (unfortunately I lost the link). Apparently, you can just open a run dialog and type `shell:startup`:
 
 ![Run dialog with "shell: startup" in the box]({{site.post-images}}/2014_01_18_22_18_52_Blogger_SeanKilleen.com_Create_post.png)
-<div align="center">It can't be this easy...can it?</div>
 
 ...and voila! The startup menu is there.
 
 ![The startup menu having appeared.]({{site.post-images}}/2014_01_18_22_19_51_Startup.png)
-
-<div align="center">Holy cow, it IS that easy!</div>
 
 A lot easier than remembering `C:\Users\Sean\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`, if I do say so.
 

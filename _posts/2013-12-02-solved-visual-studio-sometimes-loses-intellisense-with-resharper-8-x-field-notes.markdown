@@ -25,4 +25,4 @@ Some folks reported having to close and reopen Visual Studio to get this to work
 * Click `Save`:
 ![Clicking the Save button]({{site.post-images}}/2013-12-02_ReSharperIssue_04.png)
 
-At this point, ReSharper appears to refresh its settings and this kicks Intellisense back into action.</div>
+At this point, ReSharper appears to refresh its settings and this kicks Intellisense back into action.

@@ -34,7 +34,7 @@ Thanks to the Excellent [Twitter.Bootstrap.Less.MVC4](https://nuget.org/packages
 install-package Twitter.Bootstrap.Less.MVC4
 {% endhighlight %}
 
-* The project will automatically install dotless and Twitter.Bootstrap.Less.</ul>
+* The project will automatically install dotless and Twitter.Bootstrap.Less.
 
 ####Reconciling BundleConfig and Bootstrap.BundleConfig
 
