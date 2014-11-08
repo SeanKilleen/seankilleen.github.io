@@ -55,7 +55,7 @@
 	  <h3>References</h3>
 	  <ul>
 	  {% for reference in page.references %}
-		<li><a href="{{ reference.url }}">{{ reference.title }}</a> {% if reference.parenturl %} [<a href="{{reference.parenttitle}}">{{reference.parenturl}}</a>] {% endif %}</li>
+		<li><a href="{{ reference.url }}">{{ reference.title }}</a> {% if reference.parenturl %} [<a href="{{reference.parenturl}}">{{reference.parenttitle}}</a>] {% endif %}</li>
 	  {% endfor %}
 	  </ul>
 	  {% endif %}

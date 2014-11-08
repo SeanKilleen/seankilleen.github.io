@@ -5,6 +5,13 @@ date: 2010-12-19 13:57:00.000000000 -05:00
 comments: true
 redirect_from:
  - /2010/12/suntrust-is-awesome.html
+references: 
+ - url: http://www.suntrust.com/
+   title: SunTrust Bank
+ - url: http://www.banksimple.com/
+   title: BankSimple
+ - url: http://www.twitter.com/SunTrust
+   title: SunTrust Twitter Account
 ---
 I wanted to let the world know about some great experiences I've had with [SunTrust Bank](http://www.suntrust.com/) lately. I only have an auto loan through them, but after these interactions, I'm considering moving all my business there. From what I can tell, you should, too.
 
@@ -36,8 +43,3 @@ Other thoughts stemming from this:
 * Another thing that would be awesome? A company that functions as a "Google Voice" concept for your accounts. Which is to say, you set up an account, and pick the providers, but can swap them out. A company that automates the transfers to other organizations. You deal with them directly, but look at your information for them. This would be a great feature set for Mint, or an organization that works with them.
 
 **Update 12/21/2010:** After receiving some thanks from the [@SunTrust Twitter account](http://www.twitter.com/SunTrust), I mentioned I hadn't received the account creation e-mail yet. They re-sent it (ETA 15 minutes). More continued success and great service! 
-
-###References
-* [SunTrust Bank](http://www.suntrust.com/)
-* [BankSimple](http://www.banksimple.com/)
-* [SunTrust on Twitter](http://www.twitter.com/SunTrust)

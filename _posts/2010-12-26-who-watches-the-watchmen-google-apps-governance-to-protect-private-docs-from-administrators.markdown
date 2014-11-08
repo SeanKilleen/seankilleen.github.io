@@ -4,7 +4,11 @@ title: 'Who Watches the Watchmen?: Google Apps Governance to Protect Private Doc
   from Administrators'
 date: 2010-12-26 12:44:00.000000000 -05:00
 comments: true
-
+references: 
+ - url: http://www.azlyrics.com/lyrics/countingcrows/perfectbluebuildings.html
+   title: "Counting Crows Lyrics - Perfect Blue Buildings"
+   parenturl: http://www.azlyrics.com/
+   parenttitle: "A-Z Lyrics Universe"
 ---
 My Company is currently in the process of moving a good deal of our documents over to the Google Docs interface from the various places within our on-line HR system, which we'll be moving away from in the beginning of 2011.
 
@@ -17,6 +21,3 @@ While I can personally vouch for myself, there is now way for my company to guar
 This is a pretty big sticking point. Has anyone had experience like this with Google Docs, and if so, do you know a way that, [as the Counting Crows put it](http://www.azlyrics.com/lyrics/countingcrows/perfectbluebuildings.html), I can "keep myself away from me"?
 
 Feel free to leave perspectives / solutions in the comments. I'll update this post if/when I find a solution, and will certainly give credit where it's due. :)
-
-###References
-* [Counting Crows Lyrics - Perfect Blue Buildings](http://www.azlyrics.com/lyrics/countingcrows/perfectbluebuildings.html) [[A-Z Lyrics Universe](http://www.azlyrics.com/)]
