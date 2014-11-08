@@ -5,6 +5,12 @@ date: 2011-10-07 12:24:00.000000000 -04:00
 comments: true
 redirect_from: 
  - /2011/10/password-rules-offender-charles-schwab.html
+references: 
+ - title: "We Guard Your Account: Charles Schwab: SchwabSafe"
+   url: http://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe/we_guard_your_account
+   parenttitle: Charles Schwab
+   parenturl: http://www.schwab.com
+ 
 ---
 ![Schwab bad Password Screen]({{site.post-images}}/schwab_badpw.png)
 
@@ -20,6 +26,3 @@ It does not inspire confidence when I am about to ask you to hold my money.
 Thanks to Richard Smiley who wrote in the comments to alert us to the fact that Schwab is now offering a two-factor authentication token upon request.
 
 For more details, head to [the SchwabSafe Page](http://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe/we_guard_your_account). As of the time of this update (2/21/2013), to request a token, call Schwab at 800-435-4000.
-
-###References
-* [We Guard Your Account: Charles Schwab: SchwabSafe](http://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe/we_guard_your_account) [[Charles Scwhab](http://www.schwab.com)]

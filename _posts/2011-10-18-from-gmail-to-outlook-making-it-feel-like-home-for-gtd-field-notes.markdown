@@ -3,7 +3,20 @@ layout: post
 title: 'From GMail to Outlook: Making it Feel Like Home for GTD [Field Notes]'
 date: 2011-10-18 13:27:00.000000000 -04:00
 comments: true
-
+references: 
+ - title: "Add A Gmail-like Archive Button to Microsoft Outlook"
+   url: http://lifehacker.com/5175347/add-a-gmail+like-archive-button-to-microsoft-outlook
+   parenttitle: Lifehacker
+   parenturl: http://lifehacker.com
+ - title: "Outlook: Create Power Search Folders with QueryBuilder"
+   url: http://www.technospot.net/blogs/outlook-create-powerful-search-folders-with-query-builder/
+   parenttitle: TechnoSpot
+   parenturl: http://www.technospot.net
+ - title: "Outlook Search Folder -- How to Filter Messages That Have one Category but Don't Have Another?"
+   url: http://superuser.com/questions/346295/outlook-search-folder-how-to-filter-messages-that-have-one-category-but-dont
+   parenttitle: SuperUser
+   parenturl: http://SuperUser.com
+   
 ---
 I recently started a new job at the [Johns Hopkins Applied Physics Laboratory](http://jhuapl.edu/) in Laurel, MD. It's a great gig so far, but one of the pain points I hadn't expected was moving from Google Apps to Outlook. I had a system in GMail that worked perfectly for my brain, but I needed to find a new solution. This post details how I got myself back to my organizational "happy place".
 
@@ -132,9 +145,3 @@ In order to be able to move the folders as we like (instead of being locked into
 ###The Results!
 Not "home", per se, but at least a comfortable apartment.
 
-###References
-Below is a recap of the list of resources that helped me solve this problem.
-
-* [Add A Gmail-like Archive Button to Microsoft Outlook](http://lifehacker.com/5175347/add-a-gmail+like-archive-button-to-microsoft-outlook) [[Lifehacker](http://lifehacker.com/)]
-* [Outlook: Create Power Search Folders with QueryBuilder](http://www.technospot.net/blogs/outlook-create-powerful-search-folders-with-query-builder/) [[TechnoSpot](http://www.technospot.net)]
-* [Outlook Search Folder -- How to Filter Messages That Have one Category but Don't Have Another?](http://superuser.com/questions/346295/outlook-search-folder-how-to-filter-messages-that-have-one-category-but-dont) [[SuperUser](http://superuser.com)]
