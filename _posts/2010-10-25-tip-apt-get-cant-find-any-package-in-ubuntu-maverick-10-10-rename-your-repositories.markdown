@@ -6,6 +6,11 @@ date: 2010-10-25 11:29:00.000000000 -04:00
 comments: true
 redirect_from: 
  - /2010/10/tip-apt-get-cant-find-any-package-in.html
+references: 
+ - title: "Ubuntu 10.10 Maverick Server — apt-get install commands fail"
+   url: http://serverfault.com/questions/194173/ubuntu-10-10-maverick-server-apt-get-install-commands-fail
+   parenttitle: "ServerFault.com"
+   parenturl: http://ServerFault.com
 ---
 It appears that the shipped version of Ubuntu Maverick 10.10 (at least the server version) comes with repository server URLs that are incorrect -- or at least non-functioning. I discovered this the hard way after much trial, error, and self-doubt. I hope the masses benefit from my suffering. :)
 
@@ -36,6 +41,3 @@ Not sure if this is an ongoing or temporary issue, but hopefully this will be fi
 **NOTE:** This is a bit of short-hand post, meant mostly as a reference for those who know their way around a little. If you have any questions, please ask in the comments, and I'll be happy to help! For the full discussion, please see [the thread on ServerFault.com](http://serverfault.com/questions/194173/ubuntu-10-10-maverick-server-apt-get-install-commands-fail). 
 
 Thanks for reading. Any clarifications or other tips regarding this? Sound off in the comments -- all are welcome! :)
-
-###References
-* [Ubuntu 10.10 Maverick Server — apt-get install commands fail](http://serverfault.com/questions/194173/ubuntu-10-10-maverick-server-apt-get-install-commands-fail) [[ServerFault.com](http://ServerFault.com)]
