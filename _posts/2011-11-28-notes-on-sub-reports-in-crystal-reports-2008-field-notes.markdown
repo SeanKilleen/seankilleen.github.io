@@ -4,6 +4,11 @@ title: Notes on Sub-Reports in Crystal Reports 2008 [Field Notes]
 date: 2011-11-28 11:15:00.000000000 -05:00
 comments: true
 
+references:
+ - title: How to Get Formula Field Value From Subreport to Main Report
+   url: http://www.codeguru.com/forum/showthread.php?t=449494
+   parenttitle: CodeGuru
+   parenturl: http://www.codeguru.com/
 ---
 For starters, in CR 2008, you can't create two separate groups of data in one report (for example, all labor for a work order and then all materials for a work order).
 
@@ -68,8 +73,6 @@ myTotal
 
 > Place this formula in the same section as `@MainFormula`, or in a section further down on the report.
 
-###References
-* [How to Get Formula Field Value From Subreport to Main Report][codeguru article] [[CodeGuru][codeguru main]]
 
 [codeguru main]: http://www.codeguru.com/
 [codeguru article]: http://www.codeguru.com/forum/showthread.php?t=449494

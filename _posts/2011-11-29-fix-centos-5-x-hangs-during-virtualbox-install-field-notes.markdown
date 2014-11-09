@@ -4,6 +4,11 @@ title: 'Fix: CentOS 5.x hangs during VirtualBox install [Field Notes]'
 date: 2011-11-29 20:12:00.000000000 -05:00
 comments: true
 
+references:
+ - title: "Failure Installing CentOS 5.4 on VB 3.0.8"
+   url: https://forums.virtualbox.org/viewtopic.php?f=9&amp;t=23900
+   parenttitle: VirtualBox Forums
+   parenturl: https://forums.virtualbox.org/index.php
 ---
 ###Technology Involved
 * Win7 Pro x64
@@ -27,5 +32,3 @@ Per [this thread](https://forums.virtualbox.org/viewtopic.php?f=9&amp;t=23900) (
 
 When you start the install again, it will proceed normally.
 
-###References
-* [Failure Installing CentOS 5.4 on VB 3.0.8](https://forums.virtualbox.org/viewtopic.php?f=9&amp;t=23900) [[VirtualBox Forums](https://forums.virtualbox.org/index.php)]

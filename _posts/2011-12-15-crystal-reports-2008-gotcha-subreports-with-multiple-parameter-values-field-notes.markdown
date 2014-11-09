@@ -6,6 +6,11 @@ date: 2011-12-15 09:38:00.000000000 -05:00
 comments: true
 redirect_from: 
  - /2011/12/crystal-reports-2008-gotcha-subreports.html
+references:
+ - title: "Crystal Reports 2008 - Trouble resetting a shared variable"
+   url: http://stackoverflow.com/questions/8514709/crystal-reports-2008-trouble-resetting-a-shared-variable
+   parenttitle: StackOverflow
+   parenturl: http://stackoverflow.com
 ---
 ###The Setup
 * I have a report in Crystal Reports 2008.
@@ -26,6 +31,3 @@ Because I was passing the main report parameter to the sub-report, Crystal was p
 Instead, I changed the link to the subreport parameter. Instead of passing it the main report's parameter, I passed it the main report field that contained the work order number, thus assuring that it would only receive that one work order as a parameter.
 
 See [the StackOverflow discussion](http://stackoverflow.com/questions/8514709/crystal-reports-2008-trouble-resetting-a-shared-variable) for more references and comments.
-
-###References
-* [Crystal Reports 2008 - Trouble resetting a shared variable](http://stackoverflow.com/questions/8514709/crystal-reports-2008-trouble-resetting-a-shared-variable) [[StackOverflow](http://stackoverflow.com)]

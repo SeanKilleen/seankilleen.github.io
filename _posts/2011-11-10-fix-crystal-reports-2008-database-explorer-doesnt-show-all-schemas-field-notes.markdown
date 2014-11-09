@@ -5,6 +5,16 @@ title: 'Fix: Crystal Reports 2008 Database Explorer Doesn''t Show All Schemas [F
 date: 2011-11-10 21:17:00.000000000 -05:00
 comments: true
 
+references:
+ - title: SQL Developer
+   url: http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html
+ - title: DBVisualizer
+   url: http://www.dbvis.com/
+ - title: "Crystal Reports 2008 doesn't show all schemas with ODBC"
+   url: https://community.oracle.com/thread/968005
+   parenttitle: Oracle Forums
+   parenturl: https://forums.oracle.com
+
 ---
 ###Problem
 In Crystal Reports 2008, I am attempting to add a ODBC datasource (connecting to an Oracle 11g database) so that I can change field links, etc.
@@ -20,8 +30,3 @@ This seems to be a strange bug. According to [this helpful (but obscure) forum p
 
 I have no idea why this fixes the issue, but it certainly did. Very happy to have this one behind me.
 
-###References
-* [SQL Developer](http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html)
-* [DBVisualizer](http://www.dbvis.com/)
-* [Crystal Reports 2008 doesn't show all schemas with ODBC](https://community.oracle.com/thread/968005) [[Oracle Forums](https://forums.oracle.com)]
- 
