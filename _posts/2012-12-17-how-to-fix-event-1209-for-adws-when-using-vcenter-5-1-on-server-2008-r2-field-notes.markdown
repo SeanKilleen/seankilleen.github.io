@@ -7,6 +7,7 @@ comments: true
 
 redirect_from: 
  - /2012/12/how-to-fix-event-1209-for-adws-when.html
+ - /2012/12/how-to-fix-event-1209-for-adws-when.htm
 ---
 ###Problem
 I'm Running vCenter 5.1 and Windows Server 2008 R2. I notice a number of events in the event log with a source of "ADWS", event ID of 1209. The event text reads:

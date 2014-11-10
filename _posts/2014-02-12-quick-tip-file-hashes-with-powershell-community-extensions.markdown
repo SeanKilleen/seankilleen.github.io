@@ -3,6 +3,8 @@ layout: post
 title: 'Quick Tip: File Hashes with PowerShell Community Extensions'
 date: 2014-02-12 18:00:00.000000000 -05:00
 comments: true
+redirect_from:
+ - /2014/02/quick-tip-file-hashes-with-powershell.html
 
 ---
 ###Problem
