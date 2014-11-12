@@ -7,7 +7,14 @@ comments: true
 series: building-a-build-process
 redirect_from: 
  - /2012/05/building-build-process-part-6b-msbuild.html
- 
+references: 
+ - title: Pluralsight Continuous Integration Course
+   url:  http://www.pluralsight-training.net/microsoft/courses/TableOfContents?courseName=continuous-integration&amp;highlight=james-kovacs_ci-part1*3!james-kovacs_ci-part3*2!james-kovacs_ci-part2*2!james-kovacs_ci-part6*4,12#ci-part1
+ - title: MSBuild Extension Pack web site
+   url: http://msbuildextensionpack.codeplex.com/
+ - title: MsBuild Extension Pack AsyncExec Reference 
+   url: http://www.msbuildextensionpack.com/help/3.5.8.0/html/68cdc023-8926-4ac9-9e7c-0297592fec29.htm
+
 ---
 
 ###This Time…
@@ -147,13 +154,6 @@ Unfortunately, this is one area that this blog series will fall short. I’ve sc
 For now, I just recommend using TortoiseSVN to ignore those folders in your source control so that it doesn’t conflict with anyone else if you hit F5 and commit later. 
 
 And by all means, if you know how to solve the mystery, sound off in the comments!
-
-###References
-
-* [Pluralsight Continuous Integration Course]
-* [Pluralsight Sign-up Page][PS Signup]
-* [MSBuild Extension Pack web site]
-* [MsBuild Extension Pack AsyncExec Reference]
 
 [MSBuild Extension Pack web site]:http://msbuildextensionpack.codeplex.com/
 

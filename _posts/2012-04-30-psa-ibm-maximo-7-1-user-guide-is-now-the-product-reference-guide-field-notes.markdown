@@ -5,6 +5,11 @@ date: 2012-04-30 11:16:00.000000000 -04:00
 comments: true
 redirect_from: 
  - /2012/04/psa-ibm-maximo-71-user-guide-is-now.html
+references:
+ - title: IBM Resources Page
+   url: http://www.ibm.com/developerworks/wikis/display/maximo/Related+Resources
+ - title: "Maximo 7.1 User Guide / Product Reference Guide"
+   url: http://publib.boulder.ibm.com/infocenter/tivihelp/v3r1/topic/com.ibm.mam.doc_7.1/pdf/mam71_prod_ref_guide.pdf
 ---
 Subject says it all.
 

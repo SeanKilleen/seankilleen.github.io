@@ -5,6 +5,15 @@ date: 2012-02-22 13:43:00.000000000 -05:00
 comments: true
 redirect_from: 
  - /2012/02/how-to-compare-two-sets-of-internet.html
+references: 
+ - title: "Aaron Margosis' Non-Admin, App-Compat and Sysinternals WebLog"
+   url: http://blogs.msdn.com/b/aaron_margosis/
+   parenttitle: MSDN Blogs
+   parenturl: http://blogs.msdn.com
+ - title: IEZoneAnalyzer v3.5 with Zone Map Viewer
+   url: http://blogs.technet.com/b/fdcc/archive/2011/09/22/iezoneanalyzer-v3-5-with-zone-map-viewer.aspx
+   parenttitle: Microsoft's USGCB Tech Blog
+   parenturl: http://blogs.technet.com/b/fdcc/default.aspx
 ---
 ###The Problem
 A web application doesn't work correctly for a user, and from the description of the issue I think it might have to do with security settings. The application works fine for me.
@@ -28,7 +37,3 @@ The steps I generally use are below:
 At this point, the program will pop up a window with all the different zone settings, and any differences will be highlighted in yellow. You can export to CSV or Excel at this point.
 
 And that's it! Thank you to Aaron for providing such an excellent utility.
-
-###References
-* [Aaron Margosis' Non-Admin, App-Compat and Sysinternals WebLog](http://blogs.msdn.com/b/aaron_margosis/) [[MSDN Blogs](http://blogs.msdn.com)]
-* [IEZoneAnalyzer v3.5 with Zone Map Viewer](http://blogs.technet.com/b/fdcc/archive/2011/09/22/iezoneanalyzer-v3-5-with-zone-map-viewer.aspx) [[Microsoft's USGCB Tech Blog](http://blogs.technet.com/b/fdcc/default.aspx)]

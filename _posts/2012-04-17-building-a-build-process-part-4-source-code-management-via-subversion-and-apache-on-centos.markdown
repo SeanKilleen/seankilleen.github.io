@@ -5,6 +5,20 @@ title: 'Building a Build Process: Source Code Management via Subversion and
 date: 2012-04-17 00:14:00.000000000 -04:00
 comments: true
 series: building-a-build-process
+references:
+ - title: "HowTos/Subversion"
+   url: http://wiki.centos.org/HowTos/Subversion
+   parenttitle: CentOS Wiki
+   parenturl: http://wiki.centos.org
+ - title: "How To Install Subversion with TRAC on CentOS 5.x"
+   url: http://www.sohailriaz.com/how-to-install-subversion-with-trac-on-centos-5-x/
+   parenttitle: "Sohail Riaz, Linux and Open Source Blog"
+   parenturl: http://www.sohailriaz.com/
+ - title: "CentOS 5 and Auto Starting Apache httpd and Samba"
+   url: http://www.howtowebdev.com/centos-5-and-auto-starting-apache-httpd-and-samba/
+   parenttitle: How To Web Dev
+   parenturl: http://www.howtowebdev.com/
+
 ---
 
 Now we’re getting ready for some of the fun stuff. This time around, we’re going to install Apache (aka “httpd”) and Subversion (aka “svn”) and prepare to create a basic repository over https authentication.
@@ -130,10 +144,3 @@ chkconfig httpd on
 
 That's it; the server will start at boot.
 
-
-###References
-Some of the great resources that I pulled this information from:
-
-* [HowTos/Subversion](http://wiki.centos.org/HowTos/Subversion) [[CentOS Wiki](wiki.centos.or)]
-* [How To Install Subversion with TRAC on CentOS 5.x](http://www.sohailriaz.com/how-to-install-subversion-with-trac-on-centos-5-x/) [[Sohail Riaz, Linux and Open Source Blog](http://www.sohailriaz.com/)]
-* [CentOS 5 and Auto Starting Apache httpd and Samba](http://www.howtowebdev.com/centos-5-and-auto-starting-apache-httpd-and-samba/) [[How To Web Dev](http://www.howtowebdev.com/)]

@@ -7,6 +7,15 @@ comments: true
 series: building-a-build-process
 redirect_from: 
  - /2012/04/building-build-process-part-5.html
+references: 
+ - title: Pluralsight Continuous Integration Course
+   url: http://www.pluralsight-training.net/microsoft/courses/TableOfContents?courseName=continuous-integration&amp;highlight=james-kovacs_ci-part1*3!james-kovacs_ci-part3*2!james-kovacs_ci-part2*2!james-kovacs_ci-part6*4,12#ci-part1
+ - title: Subversion book
+   url:  http://svnbook.red-bean.com/
+ - title: Download TortoiseSVN
+   url:  http://tortoisesvn.net/downloads.html
+ - title: Donate to TortoiseSVN
+   url: http://tortoisesvn.tigris.org/donate.html
 ---
 
 Welcome back! Now that we have a TLS-encrypted Apache setup with SVN, we’re going to take a look at creating the repository layout.
@@ -155,12 +164,6 @@ With this done, we’re ready to commit all our changes.
 
 Congratulations! You’ve fully completed a solution setup with Visual Studio and Subversion.
 
-###References
-
-* [Pluralsight Continuous Integration Course]
-* [Subversion book](http://svnbook.red-bean.com/)  
-* [Download TortoiseSVN](http://tortoisesvn.net/downloads.html)
-* [Donate to TortoiseSVN](http://tortoisesvn.tigris.org/donate.html)
 
 [32-bit version]: http://sourceforge.net/projects/tortoisesvn/files/1.7.6/Application/TortoiseSVN-1.7.6.22632-win32-svn-1.7.4.msi/download?accel_key=61%3A1335136466%3Ahttp%253A//tortoisesvn.net/downloads.html%3A8d0d4796%24cd1234e7403f638c725cf3902d68531a99393cc5&amp;click_id=e7a29518-8cd0-11e1-9aae-001d0968d1a5&amp;source=accel
 

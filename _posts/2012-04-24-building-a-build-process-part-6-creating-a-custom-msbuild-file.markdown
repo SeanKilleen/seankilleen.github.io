@@ -6,7 +6,9 @@ comments: true
 series: building-a-build-process
 redirect_from: 
  - /2012/05/building-build-process-part-6a-msbuild.html
-
+references: 
+ - title: Pluralsight CI Course
+   url: http://www.pluralsight-training.net/microsoft/courses/TableOfContents?courseName=continuous-integration&amp;highlight=james-kovacs_ci-part1*3!james-kovacs_ci-part3*2!james-kovacs_ci-part2*2!james-kovacs_ci-part6*4,12#ci-part1
 ---
 
 **Ed. Note**: I cannot give enough praise to the [Pluralsight.com Continuous Integration course](http://www.pluralsight-training.net/microsoft/courses/TableOfContents?courseName=continuous-integration&amp;highlight=james-kovacs_ci-part1*3!james-kovacs_ci-part3*2!james-kovacs_ci-part2*2!james-kovacs_ci-part6*4,12#ci-part1) it helped me put a lot of these pieces together, and this part in the series could not have happened without it. A lot of the content for this post ended up being a pretty direct port of what is talked about there, but there are only so many ways to personalize a best practice while keeping it simple, and so I hope you’ll [sign up for a Pluralsight subscription](http://www.pluralsight-training.net/microsoft/Products/Individual), and that their lawyers will take kindly to this series. :)
@@ -142,10 +144,6 @@ Save the file, and run `MSBuild TestProject.build` (without a target attribute).
 
 ###Next Time…
 In the next article, we’ll explore how to start and stop the Cassini Web Server asynchronously, and how to run Visual Studio builds through common output directories.
-
-###References
-* [Pluralsight Continuous Integration Course][PS CI Course] 
-* [Pluralsight Sign-up Page][PS Signup]
 
 [PS CI Course]: http://www.pluralsight-training.net/microsoft/courses/TableOfContents?courseName=continuous-integration&amp;highlight=james-kovacs_ci-part1*3!james-kovacs_ci-part3*2!james-kovacs_ci-part2*2!james-kovacs_ci-part6*4,12#ci-part1
 
