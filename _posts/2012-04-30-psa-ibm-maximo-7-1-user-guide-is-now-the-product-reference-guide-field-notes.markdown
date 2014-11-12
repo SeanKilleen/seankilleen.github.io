@@ -19,10 +19,6 @@ I was looking for the IBM Maximo 7.1 User's Guide (as there appeared to be one f
 
 So there you have it. If you'd like the direct link, [you can find the User Guide / Product Reference Guide here][Max User Guide].
 
-###References
-* [IBM Resources Page]
-* [Maximo 7.1 User Guide / Product Reference Guide][Max User Guide]
-
 [IBM Resources Page]: http://www.ibm.com/developerworks/wikis/display/maximo/Related+Resources
 
 [Max User Guide]: http://publib.boulder.ibm.com/infocenter/tivihelp/v3r1/topic/com.ibm.mam.doc_7.1/pdf/mam71_prod_ref_guide.pdf
