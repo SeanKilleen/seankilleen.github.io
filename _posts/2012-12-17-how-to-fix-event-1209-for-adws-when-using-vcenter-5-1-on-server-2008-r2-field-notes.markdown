@@ -8,6 +8,12 @@ comments: true
 redirect_from: 
  - /2012/12/how-to-fix-event-1209-for-adws-when.html
  - /2012/12/how-to-fix-event-1209-for-adws-when.htm
+ 
+references: 
+ - title: "Active Directory Web Services encountered an error while reading the settings for the specified Active Directory Lightweight Directory Services instance. Active Directory Web Services will retry this operation periodically. In the mean time, this instance will be ignored."
+   url: http://thesaffageek.co.uk/2010/07/05/active-directory-web-services-encountered-an-error-while-reading-the-settings-for-the-specified-active-directory-lightweight-directory-services-instance-active-directory-web-services-will-retry-this/
+   parenttitle: TheSaffaGeek
+   parenturl: http://thesaffageek.co.uk/
 ---
 ###Problem
 I'm Running vCenter 5.1 and Windows Server 2008 R2. I notice a number of events in the event log with a source of "ADWS", event ID of 1209. The event text reads:
@@ -29,6 +35,3 @@ To fix this:
 * Double-click on that field and change the value to `636`.
 
 At this point, the errors should stop and your EventLog is now free from 1440 events a day.
-
-###References
-* [Active Directory Web Services encountered an error while reading the settings for the specified Active Directory Lightweight Directory Services instance. Active Directory Web Services will retry this operation periodically. In the mean time, this instance will be ignored.](http://thesaffageek.co.uk/2010/07/05/active-directory-web-services-encountered-an-error-while-reading-the-settings-for-the-specified-active-directory-lightweight-directory-services-instance-active-directory-web-services-will-retry-this/) [[TheSaffaGeek]](http://thesaffageek.co.uk/)

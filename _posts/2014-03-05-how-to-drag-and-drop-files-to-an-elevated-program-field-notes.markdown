@@ -3,6 +3,11 @@ layout: post
 title: 'How to: Drag and Drop Files to an Elevated Program [Field Notes]'
 date: 2014-03-05 19:00:00.000000000 -05:00
 comments: true
+references: 
+ - title: "The 'Works On My Machine' Certification Program"
+   url: http://blog.codinghorror.com/the-works-on-my-machine-certification-program/
+ - title: "(Solved) - How To: Run explorer.exe [shell] as an Administrator - Win7"
+   url: http://www.howtogeek.com/forum/topic/how-to-run-explorerexe-shell-as-an-administrator-win7
 ---
 ###Problem
 
@@ -21,7 +26,3 @@ Thanks to [a handy discussion on the HowToGeek site](http://www.howtogeek.com/fo
 
 * Enter `explorer.exe` and hit enter.
 You can now drag and drop files into other elevated windows with ease! 
-
-###References
-* [The "Works On My Machine" Certification Program](http://blog.codinghorror.com/the-works-on-my-machine-certification-program/) 
-* [(Solved) - How To: Run explorer.exe [shell] as an Administrator - Win7](http://www.howtogeek.com/forum/topic/how-to-run-explorerexe-shell-as-an-administrator-win7) 

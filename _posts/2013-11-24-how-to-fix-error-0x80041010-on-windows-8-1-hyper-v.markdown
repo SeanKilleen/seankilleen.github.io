@@ -5,6 +5,13 @@ date: 2013-11-24 17:47:00.000000000 -05:00
 comments: true
 redirect_from:
  - /2013/11/how-to-fix-error-0x80041010-on-windows.html
+references: 
+ - title: "Problem with CPU load and WMI errors when Hyper-V is Installed?"
+   url: http://social.technet.microsoft.com/Forums/windows/en-US/4eca1f42-8630-48b4-85fa-e9569445d832/problem-with-cpu-load-and-wmi-errors-when-hyperv-is-installed
+ - title: "Direct Link for Intel Network Adapter for Windows 8.1 v18.7"
+   url:  https://downloadcenter.intel.com/confirm.aspx?httpDown=http://downloadmirror.intel.com/23071/eng/PROWinx64.exe&amp;lang=eng&amp;Dwnldid=23071&amp;DownloadType=Drivers&amp;OSFullname=Windows+8*
+   parenttitle: Intel Download Center
+   parenturl: https://downloadcenter.intel.com/Default.aspx?lang=eng
 
 ---
 ###Problem
@@ -23,8 +30,3 @@ I have the P8Z68 V/Pro motherboard (which I love), which comes with an Intel 825
 Sure enough, installing the updated version of the adapter was enough -- no need to replace it with the generic Windows 8.1 adapter. The errors have stopped and I'm seeing a performance gain as well. 
 
 If you were experiencing the same issue, I hope this helps! Feel free to let me know how you fared in the comments.
-
-###References
-
-* [Problem with CPU load and WMI errors when Hyper-V is Installed?](http://social.technet.microsoft.com/Forums/windows/en-US/4eca1f42-8630-48b4-85fa-e9569445d832/problem-with-cpu-load-and-wmi-errors-when-hyperv-is-installed) [TechNet]
-* [Direct Link for Intel Network Adapter for Windows 8.1 v18.7](https://downloadcenter.intel.com/confirm.aspx?httpDown=http://downloadmirror.intel.com/23071/eng/PROWinx64.exe&amp;lang=eng&amp;Dwnldid=23071&amp;DownloadType=Drivers&amp;OSFullname=Windows+8*) [Intel Download Center]](https://downloadcenter.intel.com/Default.aspx?lang=eng)

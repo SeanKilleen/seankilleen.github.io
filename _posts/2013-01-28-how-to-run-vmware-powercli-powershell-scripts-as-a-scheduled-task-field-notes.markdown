@@ -6,6 +6,14 @@ date: 2013-01-28 19:00:00.000000000 -05:00
 comments: true
 redirect_from: 
  - /2013/01/how-to-run-vmware-powercli-powershell.html
+ 
+references: 
+ - title: "Scheduled Powershell scripts not passing authentication to Connect-VIServer"
+   url: http://powershellcommunity.org/Forums/tabid/54/aft/4295/Default.aspx
+ - title: "PoSH Article of the Week! – Secure Credential Storage"
+   url: http://professionalvmware.com/2009/04/posh-article-of-the-week-secure-credential-storage/
+ - title: "Powershell VMWare Script not running from Scheduled Task"
+   url: http://stackoverflow.com/questions/14564732/powershell-vmware-script-not-running-from-scheduled-task
 ---
 ###Problem
 I need to create a scheduled task that runs a powershell script that takes actions against my VMWare environment.
@@ -77,9 +85,3 @@ When the task is scheduled and you're satisfied it will run as you intended it, 
 I gained some insights from this process, mostly by trial and error. I thought I should share the fruits of my errors with you:
 
 * Do not run a powershell script directly as a scheduled task. It does not work. Use the `powershell.exe "C:\Path\To\script.ps1"` format to execute.
-
-###References
-* [Scheduled Powershell scripts not passing authentication to Connect-VIServer](http://powershellcommunity.org/Forums/tabid/54/aft/4295/Default.aspx)
-* [PoSH Article of the Week! – Secure Credential Storage](http://professionalvmware.com/2009/04/posh-article-of-the-week-secure-credential-storage/)
-* [Powershell VMWare Script not running from Scheduled Task](http://stackoverflow.com/questions/14564732/powershell-vmware-script-not-running-from-scheduled-task)
-

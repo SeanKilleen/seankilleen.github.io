@@ -5,6 +5,21 @@ date: 2013-11-25 18:30:00.000000000 -05:00
 comments: true
 redirect_from: 
  - /2013/11/using-jshint-with-underscorejs-in.html
+
+references: 
+ - title: Web Essentials VS Extension
+   url: http://vswebessentials.com/
+ - title: Mads Kristensen
+   url: http://madskristensen.net/
+ - title: JSHint
+   url: http://jshint.com/
+ - title: JSHint Options Page
+   url: http://www.jshint.com/docs/options/#nomen
+ - title: JSLint Options
+   url: http://www.jslint.com/lint.html#options
+ - title: "JSHint: Issues containing 'nomen'"
+   url: https://github.com/jshint/jshint/search?q=nomen&amp;source=cc&amp;type=Issues
+  
 ---
 Since my new gig has me diving into Javascript quite a bit, I've really been loving [JSHint](http://jshint.com/) integration (brought to us lovingly by [Mads Kristensen](http://madskristensen.net/) and the team building the [Web Essentials 2012 add-on](http://vswebessentials.com/)).
 
@@ -63,10 +78,3 @@ There has been [some back and forth on the JSHint Github site](https://github.co
 > This option disallows the use of dangling _ in variables. We don't know why would you need it.
 
 If you were a little new to this, as I was, I hope this helps! Feel free to send some feedback in the comments.
-
-###References
-* [Web Essentials VS Extension](http://vswebessentials.com/)
-* [Mads Kristensen](http://madskristensen.net/)
-* [JSHint](http://jshint.com/) &amp; [JSHint Options Page](http://www.jshint.com/docs/options/#nomen)
-* [JSLint Options](http://www.jslint.com/lint.html#options)
-* [JSHint: Issues containing "nomen"](https://github.com/jshint/jshint/search?q=nomen&amp;source=cc&amp;type=Issues) 
