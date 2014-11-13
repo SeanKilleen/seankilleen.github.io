@@ -5,6 +5,12 @@ date: 2012-10-18 18:00:00.000000000 -04:00
 comments: true
 redirect_from: 
  - /2012/10/how-to-change-drive-letter-with.html
+references: 
+ - title: "Change Drive Letters and Labels via a Simple PowerShell Command"
+   url: http://blogs.technet.com/b/heyscriptingguy/archive/2011/03/14/change-drive-letters-and-labels-via-a-simple-powershell-command.aspx
+   parenttitle: TechNet Blogs
+   parenturl: http://blogs.technet.com/
+  
 ---
 ###Problem
 I need to change the letter of a mounted drive via PowerShell.
@@ -17,6 +23,3 @@ Start Powershell as an admin and run the following two lines, where 'x' is the c
 $drive = Get-WmiObject -Class win32_volume -Filter "DriveLetter = 'x:'"
 Set-WmiInstance -input $drive -Arguments @{DriveLetter="Y:";}
 {% endhighlight %}
-
-###References
-* [Change Drive Letters and Labels via a Simple PowerShell Comamnd](http://blogs.technet.com/b/heyscriptingguy/archive/2011/03/14/change-drive-letters-and-labels-via-a-simple-powershell-command.aspx) [[TechNet Blogs]](http://blogs.technet.com/)

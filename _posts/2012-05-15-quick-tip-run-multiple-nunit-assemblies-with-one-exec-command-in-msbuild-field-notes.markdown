@@ -4,7 +4,11 @@ title: 'Quick Tip: Run Multiple NUnit Assemblies with one Exec Command in MSBuil
   [Field Notes]'
 date: 2012-05-15 10:52:00.000000000 -04:00
 comments: true
-
+references: 
+ - title: MultiAssembly
+   url: http://www.nunit.org/index.php?p=multiAssembly&amp;r=2.2.10
+   parenttitle: NUnit 
+   parenturl: http://www.nunit.org/
 ---
 This is mostly a reference post for me, but I figured somebody else might find it useful.
 
@@ -37,6 +41,3 @@ It will look something like this:
 Note that I create one of these references for every configuration. (Debug and Release are the defaults). I'm not sure that this is necessary, but my bet is that it probably helps later when specifying the Configuration to MSBuild for an automated integration.
 
 Lastly, add the appropriate variable to your .build file that references the .nunit file, and call that variable instead of the DLL. All assemblies will then be passed.
-
-###References
-* [MultiAssembly](http://www.nunit.org/index.php?p=multiAssembly&amp;r=2.2.10) [[NUnit]](http://www.nunit.org/)

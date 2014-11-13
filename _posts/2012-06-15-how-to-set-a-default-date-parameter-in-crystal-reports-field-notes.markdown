@@ -6,6 +6,12 @@ comments: true
 
 redirect_from:
  - /2012/06/how-to-set-default-date-parameter-in.html
+ 
+references: 
+ - title: "Crystal Reports: Named-Date-Range Parameters"
+   url: http://cogniza.com/wordpress/2005/11/24/advanced-parameter-usage-in-crystal-reports/
+   parenttitle: Cogniza
+   parenturl: http://cogniza.com/wordpress/
 ---
 
 ###Problem
@@ -71,6 +77,3 @@ Now "Today" will appear as the default selection, so if the user just hits OK, t
 These steps are essentially the same as step 4. Schedule the instance as you normally would do, but in the "Parameters" section, select "Today".
 
 And with that, we have a Crystal Report that will default a date range to Today while allowing other custom date ranges as well!
-
-###References
-* [Crystal Reports: Named-Date-Range Parameters](http://cogniza.com/wordpress/2005/11/24/advanced-parameter-usage-in-crystal-reports/) [[Cogniza]](http://cogniza.com/wordpress/)

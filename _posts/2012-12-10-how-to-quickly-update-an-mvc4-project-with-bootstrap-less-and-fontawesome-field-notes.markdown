@@ -7,6 +7,22 @@ comments: true
 
 redirect_from:
  - /2012/12/how-to-quickly-update-mvc4-project-with.html
+
+references: 
+ - title: "Twitter.Bootstrap.Less"
+   url: https://nuget.org/packages/Twitter.Bootstrap.Less
+   parenttitle: Nuget
+   parenturl: https://nuget.org/
+ - title: "Twitter.Bootstrap.Less.MVC4"
+   url: https://nuget.org/packages/Twitter.Bootstrap.Less.MVC4
+   parenttitle: Nuget
+   parenturl: https://nuget.org/
+ - title: "CDeutsch's Blog"
+   url: http://blog.cdeutsch.com/
+ - title: "How to Get FontAwesome to work on Azure web pages deployment?"
+   url: http://stackoverflow.com/questions/13309138/how-to-get-fontawesome-to-work-on-an-azure-web-pages-deployment
+   parenttitle: StackOverflow
+   parenturl: http://stackoverflow.com/
 ---
 ###Problem
 I'd like to update my MVC4 project to use the following:
@@ -75,10 +91,3 @@ var css = new StyleBundle("~/Content/css")
 ####Ensure That Content is Processed on the Server
 
 * In Visual Studio, Select all files in the `/less`, `/font`, and `/content` directory and in the properties for the file, ensure that the Build Action is `Content` and the Copy to Output option is `Copy Always`. This ensures that FontAwesome, Bootstrap, etc will show up in custom builds and when you package for IIS, etc.
-
-###References
-
-* [Twitter.Bootstrap.Less](https://nuget.org/packages/Twitter.Bootstrap.Less) [[Nuget]](https://nuget.org/)
-* [Twitter.Bootstrap.Less.MVC4](https://nuget.org/packages/Twitter.Bootstrap.Less.MVC4) [[Nuget]](https://nuget.org/)
-* [CDeutsch's Blog](http://blog.cdeutsch.com/) 
-* [How to Get FontAwesome to work on Azure web pages deployment?](http://stackoverflow.com/questions/13309138/how-to-get-fontawesome-to-work-on-an-azure-web-pages-deployment) [[StackOverflow]](http://stackoverflow.com/)

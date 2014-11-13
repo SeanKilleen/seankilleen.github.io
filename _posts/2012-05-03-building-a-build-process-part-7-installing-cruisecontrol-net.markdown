@@ -6,7 +6,16 @@ comments: true
 series: building-a-build-process
 redirect_from: 
  - /2012/05/building-build-process-part-7.html
-
+ 
+references: 
+ - title: "CruiseControl.NET Home Page"
+   url: http://www.cruisecontrolnet.org/
+ - title: "CruiseControl.NET Releases Page on SourceForge"
+   url: http://sourceforge.net/projects/ccnet/files/CruiseControl.NET%20Releases/
+ - title: "Installing and Configuring CruiseControl.NET"
+   url: http://www.matthewbussa.com/2011/05/installing-and-configuring-cruise.html 
+   parenttitle: "MatthewBussa.com"
+   parenturl: http://www.matthewbussa.com
 ---
 
 ###Adding a HDD to your VM for CI Information
@@ -96,11 +105,6 @@ Keep going:
 * Open a web browser on the build server and navigate to http://localhost/ccnet
 
 If a web site shows up at all, you’re good to go. Don’t worry about any errors within the web dashboard application, as we’ll be configuring CCNet later.
-
-###References
-* [CruiseControl.NET Home Page](http://www.cruisecontrolnet.org/)
-* [CruiseControl.NET Releases Page on SourceForge]
-* [Installing and Configuring CruiseControl.NET], via <http://www.matthewbussa.com>
 
 [Installing and Configuring CruiseControl.NET]: http://www.matthewbussa.com/2011/05/installing-and-configuring-cruise.html 
 

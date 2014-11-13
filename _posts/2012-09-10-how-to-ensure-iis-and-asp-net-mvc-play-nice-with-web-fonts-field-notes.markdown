@@ -5,6 +5,11 @@ date: 2012-09-10 18:00:00.000000000 -04:00
 comments: true
 redirect_from: 
  - /2012/09/how-to-ensure-iis-and-aspnet-mvc-play.html
+references: 
+ - title: Serving Web Fonts from IIS
+   url: http://sebduggan.com/blog/serving-web-fonts-from-iis/
+   parenttitle: Seb Duggan
+   parenturl: http://sebduggan.com/blog/
 ---
 ###Problem
 I'm using ASP.NET MVC via IIS and would like to make use of Web Fonts.
@@ -28,6 +33,3 @@ In IIS, make sure you have the following file extensions and the corresponding M
 * .svg &rarr; image/svg+xml
 
 and bingo! Build/deploy your package and it should be right as rain.
-
-###References
-* [Serving Web Fonts from IIS](http://sebduggan.com/blog/serving-web-fonts-from-iis/) [[Seb Duggan]](http://sebduggan.com/blog/)

@@ -6,6 +6,16 @@ comments: true
 
 redirect_from:
  - /2012/06/crystal-reports-display-month-name-and.html
+
+references: 
+ - title: DateAdd
+   url: http://publib.boulder.ibm.com/infocenter/radhelp/v7r5/index.jsp?topic=%2Fcom.businessobjects.integration.eclipse.designer.doc%2Fhtml%2Ftopic681.html
+   parenttitle: IBM RAD Reference
+   parenturl: http://publib.boulder.ibm.com/infocenter/radhelp/v7r5/index.jsp?
+ - title: ToText Function
+   url: http://crystaltricks.com/wordpress/?p=149
+   parenttitle: "Crystal Reports Tips & Tricks"
+   parenturl: http://crystaltricks.com/wordpress/
 ---
 ###Problem
 A report I'm running gets the data for the last Month. I'd like to nicely display the name of the month and year.
@@ -23,7 +33,3 @@ This says to use "month" intervals, subtract one, and use the current date as th
     MonthName(Month({@DateMinusOneMonth})) + " " + ToText((Year({@DateMinusOneMonth})), 0, "")
 
 This concatenates a string of the month name for the formula and the year for the formula. The part that calculates the year also notes that there should be no comma for thousands and no decimals (year here is being interpreted as just a number when outputted to `ToText`).
-
-###References
-* [DateAdd](http://publib.boulder.ibm.com/infocenter/radhelp/v7r5/index.jsp?topic=%2Fcom.businessobjects.integration.eclipse.designer.doc%2Fhtml%2Ftopic681.html) [[IBM RAD Reference]](http://publib.boulder.ibm.com/infocenter/radhelp/v7r5/index.jsp?)
-* [ToText Function](http://crystaltricks.com/wordpress/?p=149) [[Crystal Reports Tips &amp; Tricks]](http://crystaltricks.com/wordpress/)
