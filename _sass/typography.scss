@@ -111,7 +111,7 @@ blockquote {
 // Paragraphs
 // --------------------------------------------------
 p {
-	margin: 0 0 $indent-var;
+	margin: 0 0 .5;
 	// sibling indentation
   @if $paragraph-indent == true {
     & + p {
