@@ -1,8 +1,6 @@
 ---
 sitemap: false
 layout: null
-redirect_from:
- - /feeds/posts/default
 ---
 
 <?xml version="1.0" encoding="utf-8"?>
