@@ -11,8 +11,7 @@ references:
    url: http://answers.microsoft.com/en-us/office/forum/office_2010-onenote/kb2760600-not-installing/811842f5-6a58-40e1-a107-7303ddc4dcdf
    parenttitle: Microsoft Community
    parenturl: http://answers.microsoft.com/en-us
-
-   ---
+---
 Ran into this today; thought I'd document it for others.
 
 ###Problem
