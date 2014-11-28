@@ -3,6 +3,7 @@ layout: post
 title: 'How to: Drag and Drop Files to an Elevated Program [Field Notes]'
 date: 2014-03-05 19:00:00.000000000 -05:00
 comments: true
+excerpt: "Running Visual Studio as an Administrator means that I can’t drag & drop files / folders from Windows Explorer (since it's not elevated)." 
 references: 
  - title: "The 'Works On My Machine' Certification Program"
    url: http://blog.codinghorror.com/the-works-on-my-machine-certification-program/
