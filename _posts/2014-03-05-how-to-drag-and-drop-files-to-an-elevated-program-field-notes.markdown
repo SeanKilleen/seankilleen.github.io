@@ -22,7 +22,6 @@ Thanks to [a handy discussion on the HowToGeek site](http://www.howtogeek.com/fo
 ####To enable an elevated windows explorer:
 * Right-click on the task bar and select `Start Task Manager`
 * In Task Manager, select `File > New Task (Run...)`
-* You should see a note that this will be run using administrative privileges. 
-
+* You should see a note that this will be run using administrative privileges.
 * Enter `explorer.exe` and hit enter.
 You can now drag and drop files into other elevated windows with ease! 
