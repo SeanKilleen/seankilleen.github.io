@@ -11,7 +11,7 @@ excerpt: "In 1998, Tom Junod wrote an article for Esquire -- a beautiful profile
 
 *In 1998, [Tom Junod](https://twitter.com/TomJunod) wrote an article for Esquire -- a beautiful profile of an incredible person, Mr. Rogers. I was lucky enough to stumble across it, and for a few minutes I was transported to a world and a feeling I didn't know I'd missed.*
 
-*I've reproduced it from the site I originally found it on here in its entirety for easy reading. I've [asked him](https://twitter.com/sjkilleen/status/312972788778561538) for a place to link to the article. I was unable to find a copy on the Esquire site, but original links to my source articles are here: [1][Part1], [2][Part2], [3][Part3], [4][Part4], [5][Part5], [6][Part6], [7][Part7], [8][Part8] *
+*I've reproduced it from the site I originally found it on here in its entirety for easy reading. I've [asked him](https://twitter.com/sjkilleen/status/312972788778561538) for a place to link to the article. I was unable to find a copy on the Esquire site, but original links to my source articles are here: [1][Part1], [2][Part2], [3][Part3], [4][Part4], [5][Part5], [6][Part6], [7][Part7], [8][Part8]*
 
 *If you enjoyed being transported like I did, let's think about how we can better create Mr. Rogers' world.*
 
