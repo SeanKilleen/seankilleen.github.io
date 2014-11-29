@@ -1,5 +1,6 @@
 ---
 layout: post
+excerpt: "SSRS (SQL Server Reporting Services) uses port 80 by default on any server it’s installed on. Ugh"
 title: 'How To: Stop SQL Server Reporting Services from using Port 80 on your Server
   [Field Notes]'
 date: 2012-11-27 17:00:00.000000000 -05:00
