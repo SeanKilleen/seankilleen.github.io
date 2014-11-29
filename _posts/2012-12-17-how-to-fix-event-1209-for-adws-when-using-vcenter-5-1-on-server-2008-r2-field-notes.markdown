@@ -4,7 +4,7 @@ title: 'How to: Fix Event 1209 for ADWS when using vCenter 5.1 on Server 2008 R2
   Notes]'
 date: 2012-12-17 17:00:00.000000000 -05:00
 comments: true
-
+excerpt: "I'm Running vCenter 5.1 and Windows Server 2008 R2. I notice a number of events in the event log with a source of 'ADWS', event ID of 1209."
 redirect_from: 
  - /2012/12/how-to-fix-event-1209-for-adws-when.html
  - /2012/12/how-to-fix-event-1209-for-adws-when.htm
