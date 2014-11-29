@@ -3,7 +3,7 @@ layout: post
 title: 'Mr. Rogers: Can you say hero?'
 date: 2013-03-16 13:08:00.000000000 -04:00
 comments: true
-
+excerpt: "In 1998, Tom Junod wrote an article for Esquire -- a beautiful profile of an incredible person, Mr. Rogers."
 ---
 ***Update:** As promised, I'm updating this to include [Tom Junod's response](https://twitter.com/TomJunod/status/312989731157835777). He notes that **the profile is  available in the [Esquire collection of profiles entitled "Great Men" at Byliner](https://www.byliner.com/originals/great-men). At $3.99 it appears to be a fantastic deal.** I'll be purchasing, and I hope you will, too. If he asks me to remove the text below, I'll be doing so, but I hope he'll let us continue to read it here as well.*
 ___
