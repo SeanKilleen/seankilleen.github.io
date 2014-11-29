@@ -1,5 +1,6 @@
 ---
 layout: post
+excerpt: "Using Visual 2012 and IIS Express, when building an MVC4 Intranet project, I get an 'Access Denied' screen on every page."
 title: 'How To: Stop "Access Denied" errors in MVC Intranet Applications VS 2012/IIS
   Express [Field Notes]'
 date: 2012-12-10 17:00:00.000000000 -05:00
