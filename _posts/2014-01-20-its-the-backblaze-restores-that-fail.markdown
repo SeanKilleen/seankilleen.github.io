@@ -3,7 +3,7 @@ layout: post
 title: '"It''s the (Backblaze) restores that fail."'
 date: 2014-01-20 20:17:00.000000000 -05:00
 comments: true
-
+excerpt: "Folks involved in systems administration may likely be familiar with the adage that 'Backups always work; it's the restores that fail.'"
 redirect_from:
  - /2014/01/its-backblaze-restores-that-fail.html
 ---
