@@ -3,6 +3,7 @@ layout: post
 title: 'Touched by a Peripheral: Logitech T650 Review [A must-have]'
 date: 2013-12-04 23:44:00.000000000 -05:00
 comments: true
+excerpt: "I thought this device would be inconsequential, but it makes a world of difference."
 redirect_from: 
  - /2013/12/touched-by-peripheral-logitech-t650.html
 references: 
