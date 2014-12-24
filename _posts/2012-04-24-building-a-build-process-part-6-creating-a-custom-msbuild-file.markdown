@@ -11,7 +11,7 @@ references:
    url: http://www.pluralsight-training.net/microsoft/courses/TableOfContents?courseName=continuous-integration&amp;highlight=james-kovacs_ci-part1*3!james-kovacs_ci-part3*2!james-kovacs_ci-part2*2!james-kovacs_ci-part6*4,12#ci-part1
 ---
 
-**Ed. Note**: I cannot give enough praise to the [Pluralsight.com Continuous Integration course](http://www.pluralsight-training.net/microsoft/courses/TableOfContents?courseName=continuous-integration&amp;highlight=james-kovacs_ci-part1*3!james-kovacs_ci-part3*2!james-kovacs_ci-part2*2!james-kovacs_ci-part6*4,12#ci-part1) it helped me put a lot of these pieces together, and this part in the series could not have happened without it. A lot of the content for this post ended up being a pretty direct port of what is talked about there, but there are only so many ways to personalize a best practice while keeping it simple, and so I hope you’ll [sign up for a Pluralsight subscription](http://www.pluralsight-training.net/microsoft/Products/Individual), and that their lawyers will take kindly to this series. :)
+**Ed. Note**: I cannot give enough praise to the [Pluralsight.com Continuous Integration course][PS CI Course] it helped me put a lot of these pieces together, and this part in the series could not have happened without it. A lot of the content for this post ended up being a pretty direct port of what is talked about there, but there are only so many ways to personalize a best practice while keeping it simple, and so I hope you’ll [sign up for a Pluralsight subscription][PS Sub], and that their lawyers will take kindly to this series. :)
 
 So, now that we have our initial project structure created and under source control, we have to find a way to build it. “Oh, I know!” you say. “We’ll hit F5!” well, while that might work for local development, your build server can’t hit F5.
 
@@ -147,3 +147,4 @@ In the next article, we’ll explore how to start and stop the Cassini Web Serve
 
 [PS CI Course]: http://www.pluralsight-training.net/microsoft/courses/TableOfContents?courseName=continuous-integration&amp;highlight=james-kovacs_ci-part1*3!james-kovacs_ci-part3*2!james-kovacs_ci-part2*2!james-kovacs_ci-part6*4,12#ci-part1
 
+[PS Sub]: http://www.pluralsight-training.net/microsoft/Products/Individual

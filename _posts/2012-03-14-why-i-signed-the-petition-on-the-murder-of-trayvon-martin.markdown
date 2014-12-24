@@ -5,7 +5,7 @@ date: 2012-03-14 16:14:00.000000000 -04:00
 comments: true
 
 ---
-I was happy to sign [this petition to attempt to have the case of Trayvon Martin's killer brought before a Florida court](http://www.change.org/petitions/prosecute-the-killer-of-17-year-old-trayvon-martin?utm_campaign=rjisaZqTpX&amp;utm_medium=email&amp;utm_source=action_alert).
+I was happy to sign [this petition to attempt to have the case of Trayvon Martin's killer brought before a Florida court][Petition Link].
 
 The comment I left with the petition, below, sums up my thoughts on why I signed it pretty succinctly:
 
@@ -26,3 +26,5 @@ Some news articles with information about the case are below (I've attempted to 
 * <http://www.huffingtonpost.com/2012/03/13/trayvon-martin-sanford-state-attorney_n_1343223.html> 
 * <http://www.cnn.com/2012/03/14/justice/florida-teen-shooting/index.html> 
 * <http://www.orlandosentinel.com/news/local/breakingnews/os-trayvon-martin-shooting-state-attorney-20120313,0,6200217.story> 
+
+[Petition Link]: http://www.change.org/petitions/prosecute-the-killer-of-17-year-old-trayvon-martin?utm_campaign=rjisaZqTpX&amp;utm_medium=email&amp;utm_source=action_alert

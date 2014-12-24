@@ -17,7 +17,7 @@ I came up with a quick Regex (regular expression) to do this:
     
 Essentially, it just looks for a pound symbol (`#`), followed by any amount of numbers 0-9 or letters a-f, followed by a semi-colon.
 
-If you're interested to try it, you can view [my example over at Regex Tester]().
+If you're interested to try it, you can view [my example over at Regex Tester].
 
 It's not the slickest but it got the job done quickly.
 

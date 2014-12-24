@@ -21,7 +21,7 @@ references:
    url: https://github.com/jshint/jshint/search?q=nomen&amp;source=cc&amp;type=Issues
   
 ---
-Since my new gig has me diving into Javascript quite a bit, I've really been loving [JSHint](http://jshint.com/) integration (brought to us lovingly by [Mads Kristensen](http://madskristensen.net/) and the team building the [Web Essentials 2012 add-on](http://vswebessentials.com/)).
+Since my new gig has me diving into Javascript quite a bit, I've really been loving [JSHint] integration (brought to us lovingly by [Mads Kristensen] and the team building the [Web Essentials 2012 add-on][WE]).
 
 ###Firstly: The Cool Feature that Caused my Issue -- Global Variables
 One of my favorite features of JSHint is that it will tell you when you're using a variable that hasn't been defined yet. This does wonders for reducing scoping issues, etc.
@@ -48,7 +48,7 @@ One line of code removed this error:
 
     /*jslint nomen: true */
 
-According to the [JSLint options documentation](http://www.jslint.com/lint.html#options), this allows underscores to begin a name. In the case of underscore, the `_` definition is both the beginning and end of the name (similar to jQuery's `$`).
+According to the [JSLint options documentation][JSLint Options], this allows underscores to begin a name. In the case of underscore, the `_` definition is both the beginning and end of the name (similar to jQuery's `$`).
 
 ###Cautions &amp; Some Tiny Pitfalls
 Had a few minor "oops" moments while figuring this out.
@@ -73,8 +73,15 @@ But this will:
 
 I kind of hope that's not the case, since it helps here.
 
-There has been [some back and forth on the JSHint Github site](https://github.com/jshint/jshint/search?q=nomen&amp;source=cc&amp;type=Issues)about this, but the [JSHint options page for "nomen"](http://www.jshint.com/docs/options/#nomen) makes it pretty clear:
+There has been [some back and forth on the JSHint Github site][GH Link] about this, but the [JSHint options page for "nomen"][Nomen Link] makes it pretty clear:
 
 > This option disallows the use of dangling _ in variables. We don't know why would you need it.
 
 If you were a little new to this, as I was, I hope this helps! Feel free to send some feedback in the comments.
+
+[JSHint]: http://jshint.com/
+[Mads Kristensen]: http://madskristensen.net/
+[WE]: http://vswebessentials.com/
+[JSLint Options]: http://www.jslint.com/lint.html#options
+[GH Link]: https://github.com/jshint/jshint/search?q=nomen&amp;source=cc&amp;type=Issues
+[Nomen Link]: http://www.jshint.com/docs/options/#nomen

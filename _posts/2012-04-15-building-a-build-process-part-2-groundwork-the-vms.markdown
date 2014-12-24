@@ -14,8 +14,8 @@ redirect_from:
 For now, you'll need:
 
 * A host machine for your Virtual Machines
-* A VM app (this will use [VirtualBox](https://www.virtualbox.org/))
-* [CentOS 5.7](http://mirror.cs.vt.edu/pub/CentOS/5.7/isos/) (or the latest current stable release of 5)
+* A VM app (this will use [VirtualBox])
+* [CentOS 5.7] (or the latest current stable release of 5)
 * Windows Server 2008 R2 (or your preferred variant) -- you're on your own for this one. You can get windows in lot of places, though: retail, MSDN, educational discounts, or the BizSpark program can all be good options.
 * Visual Studio 2010 (or your .NET editor of choice)
 
@@ -23,7 +23,7 @@ I used my [lovely new desktop rig]({% post_url 2011-11-22-new-desktop-rig-nerd-t
 
 
 ###Installing VirtualBox
-This one's pretty easy -- [download VirtualBox](https://www.virtualbox.org/wiki/Downloads) and install it on your host system of choice.
+This one's pretty easy -- [download VirtualBox] and install it on your host system of choice.
 
 ###Creating our VMs
 
@@ -98,3 +98,6 @@ Click the Empty entry, then click the CD-ROM icon to the right, select `Choose a
 
 Do this for both OSes. You're now ready to start them up and install the operating systems
 
+[VirtualBox]: https://www.virtualbox.org/
+[CentOS 5.7]: http://mirror.cs.vt.edu/pub/CentOS/5.7/isos/
+[download VirtualBox]: https://www.virtualbox.org/wiki/Downloads

@@ -23,12 +23,14 @@ In layman's terms: Essentially, it looks like the installer binaries after April
 * Right-click on Internet Explorer 9 and Choose `Uninstall`.
 
 ####Step 2: Download a good installer
-[Via this great thread](http://social.technet.microsoft.com/Forums/en-US/winservergen/thread/2c252dbe-c833-424d-9b75-4948bb8fb816), I found a solution on the download location.
+[Via this great thread][Thread], I found a solution on the download location.
 
-You can download a non-broken IE 9 Installer from Microsoft at [http://www.microsoft.com/download/en/details.aspx?id=23332](http://www.microsoft.com/download/en/details.aspx?id=23332).
+You can download a non-broken IE 9 Installer from Microsoft at <http://www.microsoft.com/download/en/details.aspx?id=23332>.
 
 ####Step 3: Install the Downloaded (non-Windows-Update) IE 9
 This one's pretty straightforward. You'll have to restart once you're done.
 
 ####Step 4: Check for Updates
 When checking for Windows Updates, you should no longer see Internet Explorer 9 offered as an update, and should instead see updates for the program (if available).
+
+[Thread]: http://social.technet.microsoft.com/Forums/en-US/winservergen/thread/2c252dbe-c833-424d-9b75-4948bb8fb816

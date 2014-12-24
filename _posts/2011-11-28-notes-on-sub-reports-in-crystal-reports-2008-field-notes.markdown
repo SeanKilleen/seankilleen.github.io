@@ -14,7 +14,7 @@ For starters, in CR 2008, you can't create two separate groups of data in one re
 
 To do this, you need to create a sub-report, format it, and pass any values back up to the main report using shared variables.
 
-[This forum post](http://www.codeguru.com/forum/showpost.php?p=1701455&amp;postcount=2) that I found has a great quick run-down on how to accomplish shared variables from sub-reports to main reports. It was very helpful in understanding the wonky Crystal syntax behind what should be a simple thing.
+[This forum post] that I found has a great quick run-down on how to accomplish shared variables from sub-reports to main reports. It was very helpful in understanding the wonky Crystal syntax behind what should be a simple thing.
 
 The post is excerpted (though poorly formatted) below in case the originating site ever goes away. **NOTE:** None of the content below is mine; it is a reproduction because the information was too valuable to lose.
 
@@ -76,3 +76,4 @@ myTotal
 
 [codeguru main]: http://www.codeguru.com/
 [codeguru article]: http://www.codeguru.com/forum/showthread.php?t=449494
+[This forum post]: http://www.codeguru.com/forum/showpost.php?p=1701455&amp;postcount=2

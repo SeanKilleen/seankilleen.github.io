@@ -10,23 +10,23 @@ Recently, I decided to invest in something that would meet two very important cr
 The end result -- I'm getting a new desktop rig, and building one from scratch for the first time.
 
 ###Components in the New Desktop
-I've followed largely in the footsteps of the [Jeff Atwood build](http://www.codinghorror.com/blog/2011/07/building-a-pc-part-vii-rebooting.html) (when someone really smart has already done a lot of research, it's a huge leg up). The components are below, with links:
+I've followed largely in the footsteps of the [Jeff Atwood build] (when someone really smart has already done a lot of research, it's a huge leg up). The components are below, with links:
 
-*  **Case:** [Corsair Graphite Series 600T CC600TM](http://www.amazon.com/gp/product/B004X63JWS/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B004X63JWS). Big, but plenty of room for configuration despite my bumbling coordination. Also, primed for airflow and apparently very easy to work with. Also has a bay for SSDs so I didn't have to buy a mounting kit. Initially ordered the one without a window, but shipping considerations led me towards this one.
-* **Motherboard:** [ASUS P8Z68-V PRO](http://www.amazon.com/gp/product/B00503EA80/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00503EA80) Z68 chipset, 32GB max memory, Sata 6GB/s, USB 3.0, RAID for drives, SSD caching.
-* **Processor:** [Intel Core i7-2600K](http://www.amazon.com/gp/product/B004EBUXSA/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B004EBUXSA). 3.4 GHz Quad-Core out of the box. Crazy overclockable (which I plan to attempt)
-* **Memory**: [16GB (2 x 8GB) G. Skill Ripjaws series DDR3 SDRAM 1888 (PC3 1066)](http://www.newegg.com/Product/Product.aspx?Item=N82E16820231486&amp;nm_mc=TEMC-RMA-Approvel&amp;cm_mmc=TEMC-RMA-Approvel-_-Content-_-text-_-). Got a great deal on this from Newegg during one of their sale sprints. Couldn't pass up the ability to still expand memory later.
-* **Heat Sink**: [Thermalright Venomous X - RT](http://www.amazon.com/gp/product/B003NWXH9S/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B003NWXH9S)
-* **Additional Fan:** [Noctua Ultra Silent 140mm Fan NF-P14 FLX](http://www.amazon.com/gp/product/B002XISTXM/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B002XISTXM) -- should fit in the back nicely and give me some extra quiet cooling.
-* **Fan Control**: [NZXT Sentry-2 5.25" Touch Screen fan controller](http://www.amazon.com/gp/product/B002L16OMO/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B002L16OMO) -- mostly for the temperature monitoring in the beginning but I'll get into tweaking it over time.
-* **Power Supply**: [Corsair CMPSU-850AX 850-Watt 80 Plus Gold Certified](http://www.amazon.com/gp/product/B003PJ6QW4/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B003PJ6QW4) -- tons of power with crazy efficiency under heavy load.
-* **HDDs:** Two [Seagate Barracuda ST31000524AS](http://www.amazon.com/gp/product/B004IZN3YI/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B004IZN3YI) 1TB drives. I plan to mirror these for redundancy on the RAID supported by the Z68 chipset.
-* **SSD:** [Crucial CT064M4SSD2 64 GB](http://www.amazon.com/gp/product/B004W2JKWG/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B004W2JKWG) -- This is a beautiful thing. I will use the 64GB to serve as a cache for the two 1 TB drives. This means most things I do often (OS, etc.) should run at near-SSD speeds. I'm excited to see this in action.
-* **Optical Drive**: [Samsung SH-B123L/BSBP](http://www.amazon.com/gp/product/B003XIM3QK/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B003XIM3QK) -- Blu-Ray reader, writes everything else, does LightScribe.
-* **USB 3.0**: [Superspeed USB3.0 Bay Hub Kit](http://www.amazon.com/gp/product/B00442W1JI/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00442W1JI). High-speed hub? Yes, thank you.
-* **Graphics Card:** [Sapphire HD 6850 PCIE Video Card](http://www.amazon.com/gp/product/B0047ZGIUK/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0047ZGIUK). There are so many of these out there, it's hard to choose. I shot towards the middle of the good stuff. Triple monitor output is appealing, for sure. Plus it's got the ability to be paired with a friend in the future. 
-* **OS**: [Windows 7 Professional 64-bit System Builder DVD](http://www.amazon.com/gp/product/B004Q0T0LU/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B004Q0T0LU). I use Win7, I love it, and I like it to be legitimately licensed.
-* **Extras**: [Thermal paste](http://www.amazon.com/gp/product/B0002VFXFE/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0002VFXFE), [SATA cables](http://www.amazon.com/gp/product/B0001Y8UI4/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0001Y8UI4), etc.
+*  **Case:** [Corsair Graphite Series 600T CC600TM][Case Link]. Big, but plenty of room for configuration despite my bumbling coordination. Also, primed for airflow and apparently very easy to work with. Also has a bay for SSDs so I didn't have to buy a mounting kit. Initially ordered the one without a window, but shipping considerations led me towards this one.
+* **Motherboard:** [ASUS P8Z68-V PRO][MB Link] Z68 chipset, 32GB max memory, Sata 6GB/s, USB 3.0, RAID for drives, SSD caching.
+* **Processor:** [Intel Core i7-2600K][i7 Link]. 3.4 GHz Quad-Core out of the box. Crazy overclockable (which I plan to attempt)
+* **Memory**: [16GB (2 x 8GB) G. Skill Ripjaws series DDR3 SDRAM 1888 (PC3 1066)][RAM Link]. Got a great deal on this from Newegg during one of their sale sprints. Couldn't pass up the ability to still expand memory later.
+* **Heat Sink**: [Thermalright Venomous X - RT][Sink Link]
+* **Additional Fan:** [Noctua Ultra Silent 140mm Fan NF-P14 FLX][Fan Link] -- should fit in the back nicely and give me some extra quiet cooling.
+* **Fan Control**: [NZXT Sentry-2 5.25" Touch Screen fan controller][Fan Controller Link] -- mostly for the temperature monitoring in the beginning but I'll get into tweaking it over time.
+* **Power Supply**: [Corsair CMPSU-850AX 850-Watt 80 Plus Gold Certified][PS Link] -- tons of power with crazy efficiency under heavy load.
+* **HDDs:** Two [Seagate Barracuda ST31000524AS][HDD Link] 1TB drives. I plan to mirror these for redundancy on the RAID supported by the Z68 chipset.
+* **SSD:** [Crucial CT064M4SSD2 64 GB][SSD Link] -- This is a beautiful thing. I will use the 64GB to serve as a cache for the two 1 TB drives. This means most things I do often (OS, etc.) should run at near-SSD speeds. I'm excited to see this in action.
+* **Optical Drive**: [Samsung SH-B123L/BSBP][Optical Link] -- Blu-Ray reader, writes everything else, does LightScribe.
+* **USB 3.0**: [Superspeed USB3.0 Bay Hub Kit][USB Link]. High-speed hub? Yes, thank you.
+* **Graphics Card:** [Sapphire HD 6850 PCIE Video Card][Video Link]. There are so many of these out there, it's hard to choose. I shot towards the middle of the good stuff. Triple monitor output is appealing, for sure. Plus it's got the ability to be paired with a friend in the future. 
+* **OS**: [Windows 7 Professional 64-bit System Builder DVD][Win Link]. I use Win7, I love it, and I like it to be legitimately licensed.
+* **Extras**: [Thermal paste][Thermal Link], [SATA cables][SATA Link], etc.
 * **For the future**: Egg crate foam / sound-proofing materials. I'll cobble these together from eBay or something.
 
 ###What I'm Getting For all of This
@@ -48,3 +48,37 @@ I've followed largely in the footsteps of the [Jeff Atwood build](http://www.cod
 
 ###What Do You Think?
 Sound off in the comments -- I'm interested to hear your thoughts!
+
+[Case Link]: http://www.amazon.com/gp/product/B004X63JWS/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B004X63JWS
+
+[Jeff Atwood build]: http://www.codinghorror.com/blog/2011/07/building-a-pc-part-vii-rebooting.html
+
+[MB Link]: http://www.amazon.com/gp/product/B00503EA80/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00503EA80
+
+[i7 Link]: http://www.amazon.com/gp/product/B004EBUXSA/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B004EBUXSA
+
+[RAM Link]: http://www.newegg.com/Product/Product.aspx?Item=N82E16820231486&amp;nm_mc=TEMC-RMA-Approvel&amp;cm_mmc=TEMC-RMA-Approvel-_-Content-_-text-_-
+
+[Sink Link]: http://www.amazon.com/gp/product/B003NWXH9S/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B003NWXH9S
+
+[Fan Link]: http://www.amazon.com/gp/product/B002XISTXM/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B002XISTXM
+
+[PS Link]: http://www.amazon.com/gp/product/B003PJ6QW4/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B003PJ6QW4
+
+[Fan Controller Link]: http://www.amazon.com/gp/product/B002L16OMO/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B002L16OMO
+
+[HDD Link]: http://www.amazon.com/gp/product/B004IZN3YI/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B004IZN3YI
+
+[SSD Link]: http://www.amazon.com/gp/product/B004W2JKWG/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B004W2JKWG
+
+[Optical Link]: http://www.amazon.com/gp/product/B003XIM3QK/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B003XIM3QK
+
+[USB Link]: http://www.amazon.com/gp/product/B00442W1JI/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00442W1JI
+
+[Video Link]: http://www.amazon.com/gp/product/B0047ZGIUK/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0047ZGIUK
+
+[Win Link]: http://www.amazon.com/gp/product/B004Q0T0LU/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B004Q0T0LU
+
+[Thermal Link]: http://www.amazon.com/gp/product/B0002VFXFE/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0002VFXFE
+
+[SATA Link]: http://www.amazon.com/gp/product/B0001Y8UI4/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0001Y8UI4

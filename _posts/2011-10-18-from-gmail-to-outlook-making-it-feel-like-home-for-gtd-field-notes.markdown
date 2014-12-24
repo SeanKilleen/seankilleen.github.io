@@ -18,7 +18,7 @@ references:
    parenturl: http://SuperUser.com
    
 ---
-I recently started a new job at the [Johns Hopkins Applied Physics Laboratory](http://jhuapl.edu/) in Laurel, MD. It's a great gig so far, but one of the pain points I hadn't expected was moving from Google Apps to Outlook. I had a system in GMail that worked perfectly for my brain, but I needed to find a new solution. This post details how I got myself back to my organizational "happy place".
+I recently started a new job at the [Johns Hopkins Applied Physics Laboratory] in Laurel, MD. It's a great gig so far, but one of the pain points I hadn't expected was moving from Google Apps to Outlook. I had a system in GMail that worked perfectly for my brain, but I needed to find a new solution. This post details how I got myself back to my organizational "happy place".
 
 ###Requirements
 I really liked my GMail system, so I wanted to keep the basics. I decided that the following were "must-have" capabilities:
@@ -63,7 +63,7 @@ I then assigned hot keys to each of the status categories. This can be done from
 | S/Finished | CTRL + F2 |
 
 ###Step 2: Creating an Archive Button
-Thanks to [this excellent article at Lifehacker](http://lifehacker.com/5175347/add-a-gmail+like-archive-button-to-microsoft-outlook), I was able to create an Archive button similar to Gmail's. The steps I took (slightly different from the article) are below.
+Thanks to [this excellent article at Lifehacker], I was able to create an Archive button similar to Gmail's. The steps I took (slightly different from the article) are below.
 
 ####Create an Archive Folder in your Outlook Mailbox
 Under the top-level folder of your mailbox, create an "Archive" folder on the same level as Inbox, Junk E-Mail, Outbox, etc.
@@ -96,7 +96,7 @@ This script marks the message as read and puts it in your archive folder.
 ###Step 3: Creating Search Folders for Monitoring Statuses
 Next, I used search folders to help me monitor different statuses. Unfortunately, the best way to create these search folders is to use the QueryBuilder, which Microsoft for some unfathomable reason has disabled by default.
 
-After a finding a [great article on TechnoSpot](http://www.technospot.net/blogs/outlook-create-powerful-search-folders-with-query-builder/), I answered [my own question on SuperUser](http://superuser.com/questions/346295/outlook-search-folder-how-to-filter-messages-that-have-one-category-but-dont).
+After a finding a [great article on TechnoSpot], I answered [my own question on SuperUser].
 
 ####Enabling QueryBuilder in Outlook 2007 via a Registry Hack
 * Run `regedit` in your run command or via `Win + R`
@@ -145,3 +145,7 @@ In order to be able to move the folders as we like (instead of being locked into
 ###The Results!
 Not "home", per se, but at least a comfortable apartment.
 
+[Johns Hopkins Applied Physics Laboratory]: http://jhuapl.edu/
+[this excellent article at Lifehacker]: http://lifehacker.com/5175347/add-a-gmail+like-archive-button-to-microsoft-outlook
+[great article on TechnoSpot]: http://www.technospot.net/blogs/outlook-create-powerful-search-folders-with-query-builder/
+[my own question on SuperUser]: http://superuser.com/questions/346295/outlook-search-folder-how-to-filter-messages-that-have-one-category-but-dont

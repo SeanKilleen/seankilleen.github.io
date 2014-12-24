@@ -6,7 +6,7 @@ comments: true
 
 
 ---
-I recently ran into an issue where [constructing a SQL query took me ***much*** longer than I would have liked](http://stackoverflow.com/questions/8070694/query-help-totaling-parent-child-items/8081369#8081369). While my need to dust off some cobwebs and my lack of familiarity with an enterprise system certainly contributed, I think the biggest factor was that -- because I didn't write out what I wanted to accomplish in plain English -- I was attempting to think about my data in the way that the database was thinking.
+I recently ran into an issue where [constructing a SQL query took me ***much*** longer than I would have liked][SO Post]. While my need to dust off some cobwebs and my lack of familiarity with an enterprise system certainly contributed, I think the biggest factor was that -- because I didn't write out what I wanted to accomplish in plain English -- I was attempting to think about my data in the way that the database was thinking.
 
 ###Example
 Consider the difference between just talking about what you want to return and how you will go about doing it. I believe you should do both, but separately, and they should inform each other.
@@ -39,3 +39,5 @@ Consider the other practical benefits that writing your queries in plain English
 * It automatically self-documents the business language, which means that someone smart on the business side can read it and tell you if you're not understanding the business rules quite right. This can be very helpful if your queries aren't returning what the end-user needs.
 
 Does anyone know where I might find more guides along these lines? Do you have suggestions or improvements? Sound off in the comments!
+
+[SO Post]: http://stackoverflow.com/questions/8070694/query-help-totaling-parent-child-items/8081369#8081369

@@ -5,7 +5,7 @@ date: 2012-11-29 20:00:00.000000000 -05:00
 comments: true
 
 ---
-OK, technically second-hand; this story comes to us courtesy of the lovely [Caroline](http://carolinegadonas.blogspot.com/).
+OK, technically second-hand; this story comes to us courtesy of the lovely [Caroline].
 
 ###How's This for an Epic WMATA fail?
 I'll bullet it out for easy digestion:
@@ -31,3 +31,5 @@ I'll bullet it out for easy digestion:
 The moral of the story? If you take a bus in DC, never trust WMATA's own service offerings, or you may find yourself without a ride.
 
 *Did you have an experience similar to this? Sound off in the comments!*
+
+[Caroline]: http://carolinegadonas.blogspot.com/

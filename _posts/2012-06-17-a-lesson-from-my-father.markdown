@@ -29,7 +29,7 @@ Fast-forward a dozen or so years, and I realize that this is a basic tenant of e
 
 But the question remained: what could I get my Dad for his day? How does one begin to honor everything that's wrapped up in the word "Dad"? After reflecting on this story, I had an idea.
 
-For Father's Day, I've made a donation in honor of my Dad to [Charity:Water](http://mycharitywater.org/a-lesson-from-my-father) ([charitywater.org](http://mycharitywater.org/a-lesson-from-my-father)). Charity:Water is one of the best, most effective and transparent charities I've ever seen, with a goal of drilling wells to bring water to towns that have none, improving the lives and health of communities around the world. This is one of the most basic human needs.
+For Father's Day, I've made a donation in honor of my Dad to [Charity:Water][CW] ([charitywater.org][CW]). Charity:Water is one of the best, most effective and transparent charities I've ever seen, with a goal of drilling wells to bring water to towns that have none, improving the lives and health of communities around the world. This is one of the most basic human needs.
 
 People are thirsty, and they need our help. So I'm doing what Dad has taught me to do.
 
@@ -39,3 +39,5 @@ Dad, thank you for this lesson and all the others so far. I'm proud to be your s
 
 Love,
 Sean
+
+[CW]: http://mycharitywater.org/a-lesson-from-my-father

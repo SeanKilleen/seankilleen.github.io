@@ -17,7 +17,7 @@ In a new install of SQL Server 2008, when attempting to save changes to a table 
 > Saving changes is not permitted. The changes you have made require the following tables to be dropped and re-created. You have either made changes to a table that can't be re-created or enabled the option Prevent saving changes that require the table to be recreated.
 
 ###Solution
-Per [this excellent article on MSDN help](http://msdn.microsoft.com/en-us/library/bb895146.aspx), take the following steps to rid yourself of this error:
+Per [this excellent article on MSDN help], take the following steps to rid yourself of this error:
 
 * `Tools > Options`
 * Expand the `Designers` Section
@@ -26,3 +26,5 @@ Per [this excellent article on MSDN help](http://msdn.microsoft.com/en-us/librar
 
 ###Caveat
 **Don't do this on a production database**. Just don't do it. I only needed this for a quick temporary database, or when working in design mode. Otherwise, this option should always be enabled.
+
+[this excellent article on MSDN help]: http://msdn.microsoft.com/en-us/library/bb895146.aspx

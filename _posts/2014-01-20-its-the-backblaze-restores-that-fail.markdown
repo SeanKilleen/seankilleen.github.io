@@ -7,7 +7,7 @@ excerpt: "Folks involved in systems administration may likely be familiar with t
 redirect_from:
  - /2014/01/its-backblaze-restores-that-fail.html
 ---
-*[FYI, since it's only fair: if Backblaze makes this right or wants to respond, I will absolutely allow them space in this post to do so. I still have a lot of respect for them as a company. [You can follow the discussion on HackerNews.](https://news.ycombinator.com/item?id=7093016)*
+*[FYI, since it's only fair: if Backblaze makes this right or wants to respond, I will absolutely allow them space in this post to do so. I still have a lot of respect for them as a company. [You can follow the discussion on HackerNews.][HN Link]*
 
 Folks involved in systems administration may likely be familiar with the adage that "Backups always work; it's the restores that fail." [^1]
 
@@ -27,7 +27,7 @@ The support ticket I had open through all of this is equally frustrating. Firstl
 
 Given the slow speed of transfer and technical difficulties with a 6GB file, how am I supposed to trust them either with a 400 GB restore, or (as they recommend) ~20 sets of 20GB files? It's put me in a very difficult position by not delivering on its promise -- a promise that means a lot to me as an IT guy.
 
-[CrashPlan](http://www.code42.com/crashplan/) is looking like a great option right now, and I'll be exploring other solutions as well. If I have to spend $189 to get Backblaze to do what it promises to do for me, after paying for years, I have no choice but to look elsewhere.
+[CrashPlan] is looking like a great option right now, and I'll be exploring other solutions as well. If I have to spend $189 to get Backblaze to do what it promises to do for me, after paying for years, I have no choice but to look elsewhere.
 
 In the end, I am grateful for what Backblaze offers, and hope that it can follow through on it to remedy the situation.
 
@@ -42,3 +42,6 @@ In the end, I am grateful for what Backblaze offers, and hope that it can follow
 [^2]: Side note: If you are going to scan your documents -- like say, **serial keys to your OS** -- don't keep them as remote files only. In general, I'll be switching to an additional form of backup for local as well.
 
 [^3]: Seriously, I commend his willingness to engage with a slightly-frustrated customer who found him on Twitter during the weekend. It was a long shot but his response inspires confidence. [Here's the Storify of our conversation so far](http://storify.com/seankilleen/very-supportive-conversation-with-backblaze-ceo); I'll edit it as progress is made.
+
+[HN Link]: https://news.ycombinator.com/item?id=7093016
+[CrashPlan]: http://www.code42.com/crashplan/

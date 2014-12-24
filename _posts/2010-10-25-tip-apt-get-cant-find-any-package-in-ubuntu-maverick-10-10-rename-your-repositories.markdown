@@ -38,6 +38,8 @@ It appears that the shipped version of Ubuntu Maverick 10.10 (at least the serve
 
 Not sure if this is an ongoing or temporary issue, but hopefully this will be fixed by the team in time one way or another.
 
-**NOTE:** This is a bit of short-hand post, meant mostly as a reference for those who know their way around a little. If you have any questions, please ask in the comments, and I'll be happy to help! For the full discussion, please see [the thread on ServerFault.com](http://serverfault.com/questions/194173/ubuntu-10-10-maverick-server-apt-get-install-commands-fail). 
+**NOTE:** This is a bit of short-hand post, meant mostly as a reference for those who know their way around a little. If you have any questions, please ask in the comments, and I'll be happy to help! For the full discussion, please see [the thread on ServerFault.com][SF Thread]. 
 
 Thanks for reading. Any clarifications or other tips regarding this? Sound off in the comments -- all are welcome! :)
+
+[SF Thread]: http://serverfault.com/questions/194173/ubuntu-10-10-maverick-server-apt-get-install-commands-fail

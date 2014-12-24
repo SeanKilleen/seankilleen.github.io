@@ -24,6 +24,8 @@ I found an excellent Microsoft KB Article (unfortunately I lost the link). Appar
 
 A lot easier than remembering `C:\Users\Sean\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`, if I do say so.
 
-I did some more digging and found [a great post on PeteNetLive](http://www.petenetlive.com/KB/Article/0000709.htm) that goes through some of the other shortcuts that exist as well.
+I did some more digging and found [a great post on PeteNetLive][Post Link] that goes through some of the other shortcuts that exist as well.
 
 And the potential exists for more! Per the article, you just have to open `regedit.exe` and navigate to `HKLM > Software > Microsoft > Windows > CurrentVersion > Explorer > FolderDescriptions`. In there is a menu with all of the GUIDs. Look at the `Name` property for the thing you'd have to type. I see a few interesting ones on mine, though your mileage may vary.
+
+[Post Link]: http://www.petenetlive.com/KB/Article/0000709.htm

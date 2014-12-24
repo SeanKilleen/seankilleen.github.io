@@ -33,7 +33,7 @@ Visual Studio has a built-in web server – no doubt you’re familiar with it. 
 We’re going to take advantage of an excellent set of extensions called the MSBuild Community Tasks to accomplish our mission here.
 
 ###Get the MSBuild Extension Pack
-You should visit the [MSBuild Extension Pack web site]() for an excellent overview of the capabilities of these tools. You can just click the download button on the right-hand side to get the latest version in ZIP format..
+You should visit the [MSBuild Extension Pack web site] for an excellent overview of the capabilities of these tools. You can just click the download button on the right-hand side to get the latest version in ZIP format..
 
 * Unzip the download (anywhere is fine).
 * Go one level deeper and extract the `.NET 4.0` zip file.

@@ -20,16 +20,16 @@ references:
 
 Welcome back! Now that we have a TLS-encrypted Apache setup with SVN, we’re going to take a look at creating the repository layout.
 
-**NOTE:** Before I begin, I should mention that while I will speak about them authoritatively, the methods for laying out repository structures are by no means set in stone, and are in fact debated quite vigorously at times in the tech community. This is the general flavor that I’ve picked up in some places, including an excellent [Pluralsight Continuous Integration Course]() by [James Kovacs](). It’s the style that I believe I’ll adopt going forward, though don’t hold me to it.
+**NOTE:** Before I begin, I should mention that while I will speak about them authoritatively, the methods for laying out repository structures are by no means set in stone, and are in fact debated quite vigorously at times in the tech community. This is the general flavor that I’ve picked up in some places, including an excellent [Pluralsight Continuous Integration Course] by [James Kovacs]. It’s the style that I believe I’ll adopt going forward, though don’t hold me to it.
 
 ###Obtaining TortoiseSVN
-TortoiseSVN is pretty much the de-facto standard for Subversion clients on Windows. The latest version as of this writing is 1.7.6. You can download the [32-bit version]() or [64-bit version]() from [their downloads page]().
+TortoiseSVN is pretty much the de-facto standard for Subversion clients on Windows. The latest version as of this writing is 1.7.6. You can download the [32-bit version] or [64-bit version] from [their downloads page].
 
 Installing Tortoise is about as standard as it gets. Run the installer, accept the license agreement, and select the options for install.
 
 During this time, I usually right-click `command line client tools` and install it by choosing `will be installed on local hard drive`. You never know when they’ll come in handy (though I don’t intend to refer to them in this series).
 
-After this, the app installs.** NOTE:** If you’ve got some cash, I highly recommend you [donate to the TortoiseSVN project](). It’s a fundamental piece of software for developers and good software deserves our support.
+After this, the app installs.** NOTE:** If you’ve got some cash, I highly recommend you [donate to the TortoiseSVN project]. It’s a fundamental piece of software for developers and good software deserves our support.
 
 ###Linking a Local Folder to the Repository
 Our first step is to pull down the repository we created (which is currently blank, but nevermind that):

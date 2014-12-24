@@ -14,7 +14,7 @@ I've seen too many instances in various jobs and projects where the build/integr
 
 I decided I needed to do something about it. Part experiment, part challenge, part reference guide. I'm going to see if I can put together an entire continuous integration / build process for .NET environments from scratch.
 
-Below, you can find [some slides from a presentation I gave at work](http://www.slideshare.net/SeanKilleen1/integreation) (and yes, the design ideas are at times ripped directly from [Zach Holman's article](http://zachholman.com/posts/slide-design-for-developers/) as I tried to emulate his style. He's awesome, and I'm shameless. Credit was given.) This talk highlighted the benefits of inte"great"ion and what I was about to undertake.
+Below, you can find [some slides from a presentation I gave at work][SS Link] (and yes, the design ideas are at times ripped directly from [Zach Holman's article][Holman Link] as I tried to emulate his style. He's awesome, and I'm shameless. Credit was given.) This talk highlighted the benefits of inte"great"ion and what I was about to undertake.
 
 <iframe src="http://www.slideshare.net/slideshow/embed_code/10484958?rel=0" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 ###My Goal
@@ -43,3 +43,5 @@ It's a lofty goal -- especially for someone who's not a pro developer -- but I'm
 
 Onward and Upward!
 
+[SS Link]: http://www.slideshare.net/SeanKilleen1/integreation
+[Holman Link]: http://zachholman.com/posts/slide-design-for-developers/

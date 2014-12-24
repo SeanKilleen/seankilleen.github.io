@@ -8,9 +8,9 @@ redirect_from:
 ---
 _[**Note**: I should begin this post by saying that I’m no expert on SSL or TLS encryption or the “handshakes” and negotiations that browsers and servers go through when giving the user a connection to secure material. Feel free to jump in on the comments if I get the terminology or methodology wrong.]_
 
-As far as I understand it, SSL is pretty secure, but [TLS v1](http://en.wikipedia.org/wiki/TLSv1) (its successor) is the max you can get on a standard web browser for encrypted traffic between the browser and the server today.
+As far as I understand it, SSL is pretty secure, but [TLS v1] (its successor) is the max you can get on a standard web browser for encrypted traffic between the browser and the server today.
 
-Recently, I was tasked with setting up a [Tomcat Server](http://tomcat.apache.org/) to enforce TLS for a government client. We had already defined a server.xml file that specified “TLSv1″ as the protocol and AES encryption. However, apparently Tomcat 6.0 doesn’t strictly enforce TLS if SSL is also enabled. That is to say, if TLSv1 is not enabled on the browser, but SSL is, the server will “fall back” to SSL in the hopes of displaying the content — I suppose it takes the “well, SSL is better than nothing” approach.
+Recently, I was tasked with setting up a [Tomcat Server] to enforce TLS for a government client. We had already defined a server.xml file that specified “TLSv1″ as the protocol and AES encryption. However, apparently Tomcat 6.0 doesn’t strictly enforce TLS if SSL is also enabled. That is to say, if TLSv1 is not enabled on the browser, but SSL is, the server will “fall back” to SSL in the hopes of displaying the content — I suppose it takes the “well, SSL is better than nothing” approach.
 
 However, this wasn’t going to fly for my client — an institution with strict security rules for its web applications — which, really, is a good thing. If TLSv1 wasn’t enabled properly, the site shouldn’t display, even if SSL is enabled.
 
@@ -43,3 +43,6 @@ I wanted to provide this bit of knowledge as a public service. Would love to hea
 ####Notes
 
 [^1]: Unfortunately, I'm unable to find the link to this post. If I ever come across it, I'll update the blog accordingly. Feel free to point me to it in the comments.
+
+[TLS v1]: http://en.wikipedia.org/wiki/TLSv1
+[Tomcat Server]: http://tomcat.apache.org/

@@ -23,7 +23,7 @@ The last line of text on the screen is:
 > NET: Registered protocol family 2
 
 ###Solution
-Per [this thread](https://forums.virtualbox.org/viewtopic.php?f=9&amp;t=23900) (referencing an older version of VirtualBox but still relevant), the fix is as follows:
+Per [this thread] (referencing an older version of VirtualBox but still relevant), the fix is as follows:
 
 * Go into the settings of the VM
 * Click the `System` section.
@@ -32,3 +32,4 @@ Per [this thread](https://forums.virtualbox.org/viewtopic.php?f=9&amp;t=23900) (
 
 When you start the install again, it will proceed normally.
 
+[this thread]: https://forums.virtualbox.org/viewtopic.php?f=9&amp;t=23900
