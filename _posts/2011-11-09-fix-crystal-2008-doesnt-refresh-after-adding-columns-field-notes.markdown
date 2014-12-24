@@ -17,10 +17,12 @@ Crystal Reports 2008 Designer does not reflect changes made to views or stored p
 
 While a horrible user experience, there is a proper method to accomplish this.
 
-Based on trips from [this helpful article](http://it.toolbox.com/blogs/programming-life/adding-new-fields-to-stored-procedure-and-updating-it-in-crystal-reports-30072):
+Based on trips from [this helpful article]:
 
 * From the `Database` menu, click `Verify Database`.
 * If dealing with a stored procedure, you will be asked to enter parameters; enter correct ones.
 * Crystal Reports will undergo a verification process, during which time it will find the extra fields and adjust the report accordingly.
 
 No idea why this is separate from (and ambiguously named compared to) a right-click and "refresh", but it does the job.
+
+[this helpful article]: http://it.toolbox.com/blogs/programming-life/adding-new-fields-to-stored-procedure-and-updating-it-in-crystal-reports-30072

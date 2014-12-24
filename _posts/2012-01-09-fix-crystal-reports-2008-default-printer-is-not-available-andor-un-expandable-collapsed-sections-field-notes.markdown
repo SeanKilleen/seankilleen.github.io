@@ -22,7 +22,7 @@ Oftentimes, this will be accompanied by a strange behavior that will cause repor
 Your report sections. It *is* as painful as it looks.
 
 ###Solution
-Luckily, per usual, [StackOverflow was a big help here](http://stackoverflow.com/questions/8714797/crystal-reports-2008-sections-are-collapsed-and-i-cant-expand).
+Luckily, per usual, [StackOverflow was a big help here][SO Link].
 
 This solution has two different parts -- you may only need one or the other, but I've found them both to be a pretty effective one-two punch in this situation.
 
@@ -43,3 +43,5 @@ Try the following:
 * While in the report, click `File>  Options...`
 * Click the `Layout` tab (usually visible by default in my experience)
 * In the `Design View` section, check the "Show hidden sections" option. This will cause any unwieldy sections to fall in line and become visible.
+
+[SO Link]: http://stackoverflow.com/questions/8714797/crystal-reports-2008-sections-are-collapsed-and-i-cant-expand

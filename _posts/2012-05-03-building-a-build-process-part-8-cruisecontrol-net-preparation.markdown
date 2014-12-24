@@ -77,7 +77,7 @@ Directions for both options are shown below. For what it’s worth, **I now pref
 Now you’re set to allow CruiseControl to pull down files under its own again (just around the bend in this series when we configure CCNet).
 
 ###Copying the Microsoft Targets to the Build Server
-When dealing with this elsewhere, [I discovered this problem](). We’ll avoid it in advance here.
+When dealing with this elsewhere, [I discovered this problem]. We’ll avoid it in advance here.
 
 * You have to copy the two files from your local development machine (with VS installed) to the Build Server.
 * Copy the directory `C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\*.*` to the same location on the build server.

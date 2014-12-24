@@ -5,7 +5,7 @@ date: 2012-02-06 16:33:00.000000000 -05:00
 comments: true
 
 ---
-Discovered an answer to [a StackOverflow question I'd posted](http://stackoverflow.com/q/9166877/316847), and wanted to share.
+Discovered an answer to [a StackOverflow question I'd posted][SO Link], and wanted to share.
 
 ###The Problem
 I needed to, within a view, dynamically generate a list of dates before or after sysdate. I wanted to do this so that I could limit some of the records coming back (we have millions but the date range will always be between 31 days before sysdate or 31 says after.
@@ -32,3 +32,5 @@ This SQL does the following:
 * I then wrap it in a `select *` statement so I can call it what I want and refer to it later.
 
 Learning Oracle as I go, and I'm enjoying discovering these little tricks.
+
+[SO Link]: http://stackoverflow.com/q/9166877/316847

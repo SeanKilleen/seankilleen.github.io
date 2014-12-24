@@ -21,11 +21,11 @@ A web application doesn't work correctly for a user, and from the description of
 How do I see what settings I have that the user doesn't?
 
 ###The Solution
-Enter [Aaron Margosis](http://blogs.msdn.com/b/aaron_margosis/)'s excellent [IEZoneAnalyzer utility](http://blogs.technet.com/b/fdcc/archive/2011/09/22/iezoneanalyzer-v3-5-with-zone-map-viewer.aspx). It allows you to do just that: view, export, and compare Internet Explorer Zone settings.
+Enter [Aaron Margosis][Aaron Link] 's excellent [IEZoneAnalyzer utility]. It allows you to do just that: view, export, and compare Internet Explorer Zone settings.
 
 The steps I generally use are below:
 
-1. **Download the utility**: visit the [IEZoneAnalyzer 3.5 page](http://blogs.technet.com/b/fdcc/archive/2011/09/22/iezoneanalyzer-v3-5-with-zone-map-viewer.aspx), or use [this direct download link](http://blogs.technet.com/cfs-file.ashx/__key/communityserver-components-postattachments/00-03-45-50-87/IEZoneAnalyzer.3.5.0.3.zip) (from the page).
+1. **Download the utility**: visit the [IEZoneAnalyzer 3.5 page][IEZ Download Link], or use [this direct download link][IEZ Direct] (from the page).
 1.  **Unzip the utility**: It is a standalone .exe file; no installation necessary.
 1.  **Run the utility**. It will analyze some things as it starts up.
 1.  From the `File` menu, select `Export Local Settings...` and save under the filename of your choosing.
@@ -37,3 +37,8 @@ The steps I generally use are below:
 At this point, the program will pop up a window with all the different zone settings, and any differences will be highlighted in yellow. You can export to CSV or Excel at this point.
 
 And that's it! Thank you to Aaron for providing such an excellent utility.
+
+[Aaron Link]: http://blogs.msdn.com/b/aaron_margosis/
+[IEZoneAnalyzer utility]: http://blogs.technet.com/b/fdcc/archive/2011/09/22/iezoneanalyzer-v3-5-with-zone-map-viewer.aspx
+[IEZ Download Link]: http://blogs.technet.com/b/fdcc/archive/2011/09/22/iezoneanalyzer-v3-5-with-zone-map-viewer.aspx
+[IEZ Direct]: http://blogs.technet.com/cfs-file.ashx/__key/communityserver-components-postattachments/00-03-45-50-87/IEZoneAnalyzer.3.5.0.3.zip

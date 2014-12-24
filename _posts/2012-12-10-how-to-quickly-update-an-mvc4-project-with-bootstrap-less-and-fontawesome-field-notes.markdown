@@ -37,7 +37,7 @@ However, this can be a pain for the following reasons:
 * Font-Awesome's MIME types are not all recognized by the internal webapps
 
 ###Solution
-Thanks to the Excellent [Twitter.Bootstrap.Less.MVC4](https://nuget.org/packages/Twitter.Bootstrap.Less.MVC4) package by Christopher Deutsch, this process is a lot easier.
+Thanks to the Excellent [Twitter.Bootstrap.Less.MVC4][Nuget Link] package by Christopher Deutsch, this process is a lot easier.
 
 ####Install Bootstrap LESS and Dotless
 
@@ -91,3 +91,5 @@ var css = new StyleBundle("~/Content/css")
 ####Ensure That Content is Processed on the Server
 
 * In Visual Studio, Select all files in the `/less`, `/font`, and `/content` directory and in the properties for the file, ensure that the Build Action is `Content` and the Copy to Output option is `Copy Always`. This ensures that FontAwesome, Bootstrap, etc will show up in custom builds and when you package for IIS, etc.
+
+[Nuget Link]: https://nuget.org/packages/Twitter.Bootstrap.Less.MVC4

@@ -4,10 +4,17 @@ title: 'Chrome Tip: Add a Keyboard Shortcut to a Bookmarklet'
 comments: true
 
 date: 2013-01-13 12:45:00.000000000 -05:00
----
-I use [Google Chrome](https://www.google.com/intl/en/chrome/browser/) for a lot of browsing, and I've been getting into [Delicious](http://delicious.com/) for archiving content that I know I might want to find again but don't want hanging out in my Google Reader. It's sort of a take on [Scott Hanselman's workflow](http://www.hanselman.com/blog/InstapaperDeliveredToYourKindleChangesHowYouConsumeWebContentPlusIFTTTBlogsAndMore.aspx) for reading and archiving.
 
-The other day I thought: it would be nice if I had a keyboard shortcut while browsing to save to delicious, instead of navigating through the bookmarks bar to click it? And a short google search later, up popped [a great process](http://downloadsquad.switched.com/2011/03/02/add-a-keyboard-shortcut-to-a-chrome-bookmark-or-bookmarklet/) from the Switched Download Squad.
+references: 
+ - title: Add a keyboard shortcut to a Chrome bookmark or bookmarklet
+   url: http://downloadsquad.switched.com/2011/03/02/add-a-keyboard-shortcut-to-a-chrome-bookmark-or-bookmarklet/
+   parenttitle: Huffpost Tech
+   parenturl: http://www.huffingtonpost.com/tech/
+
+---
+I use [Google Chrome] for a lot of browsing, and I've been getting into [Delicious] for archiving content that I know I might want to find again but don't want hanging out in my Google Reader. It's sort of a take on [Scott Hanselman's workflow] for reading and archiving.
+
+The other day I thought: it would be nice if I had a keyboard shortcut while browsing to save to delicious, instead of navigating through the bookmarks bar to click it? And a short google search later, up popped [a great process][Process Link] from the Switched Download Squad.
 
 ####The abbreviated steps are:
 
@@ -25,5 +32,7 @@ This effectively opens the search bar, chooses your "search engine", and navigat
 
 Use for any bookmarklet you need.
 
-###Resources
-* [Add a keyboard shortcut to a Chrome bookmark or bookmarklet](http://downloadsquad.switched.com/2011/03/02/add-a-keyboard-shortcut-to-a-chrome-bookmark-or-bookmarklet/) [[Switch Download Squad (now Huffpost Tech)]](http://www.huffingtonpost.com/tech/)
+[Google Chrome]: https://www.google.com/intl/en/chrome/browser/
+[Delicious]: http://delicious.com/
+[Scott Hanselman's workflow]: http://www.hanselman.com/blog/InstapaperDeliveredToYourKindleChangesHowYouConsumeWebContentPlusIFTTTBlogsAndMore.aspx
+[Process Link]: http://downloadsquad.switched.com/2011/03/02/add-a-keyboard-shortcut-to-a-chrome-bookmark-or-bookmarklet/

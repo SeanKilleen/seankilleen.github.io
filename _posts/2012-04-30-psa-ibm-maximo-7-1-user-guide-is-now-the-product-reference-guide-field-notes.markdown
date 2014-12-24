@@ -13,7 +13,7 @@ references:
 ---
 Subject says it all.
 
-I was looking for the IBM Maximo 7.1 User's Guide (as there appeared to be one for 6.2.1) and I was having a lot of difficulty finding it, until I found this little ditty on [an IBM Resources page](http://www.ibm.com/developerworks/wikis/display/maximo/Related+Resources):
+I was looking for the IBM Maximo 7.1 User's Guide (as there appeared to be one for 6.2.1) and I was having a lot of difficulty finding it, until I found this little ditty on [an IBM Resources page][IBM Resources Page]:
 
 >Looking for the Maximo Asset Management 7.1 User's Guide? It is replaced with the Product Reference Guide.
 

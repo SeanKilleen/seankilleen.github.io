@@ -25,4 +25,6 @@ It does not inspire confidence when I am about to ask you to hold my money.
 ###Update: Two-Factor Authentication Available!
 Thanks to Richard Smiley who wrote in the comments to alert us to the fact that Schwab is now offering a two-factor authentication token upon request.
 
-For more details, head to [the SchwabSafe Page](http://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe/we_guard_your_account). As of the time of this update (2/21/2013), to request a token, call Schwab at 800-435-4000.
+For more details, head to [the SchwabSafe Page]. As of the time of this update (2/21/2013), to request a token, call Schwab at 800-435-4000.
+
+[the SchwabSafe Page]: http://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe/we_guard_your_account

@@ -26,7 +26,7 @@ Really? We're still doing postbacks on buttons this way? I guess the best way to
 
 ###What can we as Developers Learn From This?
 
-There are already great posts on falsehoods programmers believe about [names](), [time](), [networks](), [geography](), [build systems]() -- It seems like one on addresses is long overdue. In the spirit of those posts, I'll begin one below based on my experience.
+There are already great posts on falsehoods programmers believe about [names], [time], [networks], [geography], [build systems] -- It seems like one on addresses is long overdue. In the spirit of those posts, I'll begin one below based on my experience.
 
 ####In the context of addresses, all of the following are wrong:
 * The street address will be less than 30 characters

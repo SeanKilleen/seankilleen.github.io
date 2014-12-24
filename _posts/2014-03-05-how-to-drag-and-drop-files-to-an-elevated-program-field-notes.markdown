@@ -15,9 +15,9 @@ I run Visual Studio as an Administrator, which is helpful, but also means that I
 
 ###Solution
 
-Thanks to [a handy discussion on the HowToGeek site](http://www.howtogeek.com/forum/topic/how-to-run-explorerexe-shell-as-an-administrator-win7), I found the following tip.
+Thanks to [a handy discussion on the HowToGeek site][HTG Link], I found the following tip.
 
-[Caveat: this [works on my machine](http://blog.codinghorror.com/the-works-on-my-machine-certification-program/), a work desktop using Windows 7.]
+[Caveat: this [works on my machine][WOMM Link], a work desktop using Windows 7.]
 
 ####To enable an elevated windows explorer:
 * Right-click on the task bar and select `Start Task Manager`
@@ -26,3 +26,6 @@ Thanks to [a handy discussion on the HowToGeek site](http://www.howtogeek.com/fo
 
 * Enter `explorer.exe` and hit enter.
 You can now drag and drop files into other elevated windows with ease! 
+
+[HTG Link]: http://www.howtogeek.com/forum/topic/how-to-run-explorerexe-shell-as-an-administrator-win7
+[WOMM Link]: http://blog.codinghorror.com/the-works-on-my-machine-certification-program/

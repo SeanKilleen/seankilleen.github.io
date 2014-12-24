@@ -13,7 +13,7 @@ references:
  - url: http://www.twitter.com/SunTrust
    title: SunTrust Twitter Account
 ---
-I wanted to let the world know about some great experiences I've had with [SunTrust Bank](http://www.suntrust.com/) lately. I only have an auto loan through them, but after these interactions, I'm considering moving all my business there. From what I can tell, you should, too.
+I wanted to let the world know about some great experiences I've had with [SunTrust Bank] lately. I only have an auto loan through them, but after these interactions, I'm considering moving all my business there. From what I can tell, you should, too.
 
 Currently, I only have an auto loan account with SunTrust (which was set up when I bought my Ford Focus earlier this year.) I was in Washington, DC at the time of the purchase but have moved to Maryland and am in the process of transferring all the auto information (a real treat, let me tell you.) Part of this process involves needing the lienholder (bank) to send the title to the MVA so they can transfer it.
 
@@ -39,7 +39,11 @@ Though it's a hassle, I'm considering moving all my accounts to SunTrust, becaus
 
 Other thoughts stemming from this:
 
-* I hope SunTrust turns out to be the main partner for [BankSimple](http://www.banksimple.com/) (another site I'm excited about). It seems like they have similar mindsets.
+* I hope SunTrust turns out to be the main partner for [BankSimple] (another site I'm excited about). It seems like they have similar mindsets.
 * Another thing that would be awesome? A company that functions as a "Google Voice" concept for your accounts. Which is to say, you set up an account, and pick the providers, but can swap them out. A company that automates the transfers to other organizations. You deal with them directly, but look at your information for them. This would be a great feature set for Mint, or an organization that works with them.
 
-**Update 12/21/2010:** After receiving some thanks from the [@SunTrust Twitter account](http://www.twitter.com/SunTrust), I mentioned I hadn't received the account creation e-mail yet. They re-sent it (ETA 15 minutes). More continued success and great service! 
+**Update 12/21/2010:** After receiving some thanks from the [SunTrust Twitter account], I mentioned I hadn't received the account creation e-mail yet. They re-sent it (ETA 15 minutes). More continued success and great service! 
+
+[SunTrust Bank]: http://www.suntrust.com/ 
+[BankSimple]: http://www.banksimple.com/
+[SunTrust Twitter account]: http://www.twitter.com/SunTrust

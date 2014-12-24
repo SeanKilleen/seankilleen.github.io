@@ -20,7 +20,7 @@ I have a report that I'd like to be able to query the date range for. However, I
 Crystal Reports doesn't have a default mechanism to do this. It appears to be pretty sought after in the Crystal community, but I haven't seen any solutions that would allow one to, say, use a variable like "currentdate" as the default for a date field.
 
 ###Solution
-I found a [helpful blog post on Cogniza](http://cogniza.com/wordpress/2005/11/24/advanced-parameter-usage-in-crystal-reports/) which I modified a little bit to fit my situation.
+I found a [helpful blog post on Cogniza][Cogniza Post] which I modified a little bit to fit my situation.
 
 ####Step 1: Create Parameters
 We're going to create two parameters. The first I'm going to call `NamedDateRange` and the second I'm going to call `CustomDateRange`.
@@ -77,3 +77,5 @@ Now "Today" will appear as the default selection, so if the user just hits OK, t
 These steps are essentially the same as step 4. Schedule the instance as you normally would do, but in the "Parameters" section, select "Today".
 
 And with that, we have a Crystal Report that will default a date range to Today while allowing other custom date ranges as well!
+
+[Cogniza Post]: http://cogniza.com/wordpress/2005/11/24/advanced-parameter-usage-in-crystal-reports/
