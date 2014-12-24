@@ -8,6 +8,8 @@ references:
    url: http://blog.codinghorror.com/the-works-on-my-machine-certification-program/
  - title: "(Solved) - How To: Run explorer.exe [shell] as an Administrator - Win7"
    url: http://www.howtogeek.com/forum/topic/how-to-run-explorerexe-shell-as-an-administrator-win7
+   
+excerpt: "A quick solution to drag and drop things in Visual Studio."
 ---
 ###Problem
 
