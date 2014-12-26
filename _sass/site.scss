@@ -48,3 +48,9 @@
 b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a {
 	@include transition(all .2s ease);
 }
+
+.article-wrap > .alert
+{
+	margin-top:5px;
+	padding-left:2px;
+}
