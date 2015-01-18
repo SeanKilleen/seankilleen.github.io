@@ -5,7 +5,6 @@ date: 2010-09-13 11:51:00.000000000 -04:00
 comments: true
 
 ---
-_[Ed. Note: This is the first blog post I've done on an actual topic. Please be kind to me, blogosphere -- I'm just learning! Leave me some comments to help me find my way. For starters, I expect to edit this one down soon and add links to other relevant articles on the interwebs.]_
 
 After trashing Apple and making a long-anticipated switch to Android, two weeks later I was back on an iPhone 4. Why was my Android honeymoon so short-lived and what sent me back into the silicon arms of an abusive tech giant?
 
