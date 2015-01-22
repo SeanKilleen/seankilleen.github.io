@@ -5,11 +5,11 @@ date: 2015-01-22 12:47:00.000000000 -05:00
 excerpt: "Get-Acl and Set-Acl have you covered."
 comments: true
 ---
-##Problem
+## Problem
 
 I needed the permissions on folder B to be exactly what they were on folder A.
 
-##Solution
+## Solution
 
 Powershell's `Get-Acl` and `Set-Acl` commands can be conveniently piped together.
 
