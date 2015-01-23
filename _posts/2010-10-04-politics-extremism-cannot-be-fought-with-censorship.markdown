@@ -25,11 +25,11 @@ I received this e-mail from a campaign that I'm somehow subscribed to:
 
 > As businesses Turn off FOX and stand up as FOX Free, and as we encourage our friends and family to do the same, we'll help make clear, to people across the country, what FOX is about. And we'll reduce their ability to do harm. 
 
-###Thoughts on this:
+### Thoughts on this:
 * Both sides need to be heard in a debate.  
 * The best way to battle Fox isn't to censor them, it's to highlight the flaws in what they say. 
 
-###The e-mail I sent back: 
+### The e-mail I sent back: 
 
 > As a moderate, this campaign concerns me. I don't like Fox, and I certainly don't agree with 99% of its content, and agree with the statements made about its divisiveness.
 
@@ -43,4 +43,4 @@ The way to win in the fight against Fox is not to attempt to silence the network
 
 Social change comes not from tactics, but from activism, the key here being that you can’t go around the mountainous obstacle that is Fox – you have to go through it.  
 
-####Thoughts? Leave ‘em in the comments.
+#### Thoughts? Leave ‘em in the comments.

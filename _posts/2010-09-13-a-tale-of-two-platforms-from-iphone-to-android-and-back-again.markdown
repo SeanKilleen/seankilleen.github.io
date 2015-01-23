@@ -8,7 +8,7 @@ comments: true
 
 After trashing Apple and making a long-anticipated switch to Android, two weeks later I was back on an iPhone 4. Why was my Android honeymoon so short-lived and what sent me back into the silicon arms of an abusive tech giant?
 
-###Why I Wanted to Switch
+### Why I Wanted to Switch
 I've long been a vocal opponent of the way apple does business -- from their draconian app store, to their willingness to leave operating technology in the dust for the sake of forced upgrades, to their "technologier-than-thou" attitude in the public spotlight. I owned an iPhone 3G, but with the birth of Android and all the bad Apple press (which I agreed with), I couldn't wait to move away from the iOS platform. 
 
 Why go to Android? The list was extensive, but a few of my top reasons were:
@@ -26,7 +26,7 @@ After the iOS upgrades turned my 3G -- which otherwise had served me reasonably 
 
 But, I didn't get what I expected.
 
-###AT&T (and carriers in general) are Killing Android
+### AT&T (and carriers in general) are Killing Android
 My first experience with an Android phone went something like this: 
 
 I was incredibly happy to walk out of the AT&T store with my Captivate. I turned on the phone, was impressed with the screen quality and speed and other things that a latest-generation smart user would be impressed with. After going through the initial setup process, I selected my first app to use -- "Where", a location-based directory app that was pre-loaded on the phone. This program had been available for the iPhone and was pretty straightforward to use/test. 
@@ -39,7 +39,7 @@ So, next up, I decided to load a great utility, PdaNet, because I'd paid for it 
 
 I hate to use the pun -- I truly do -- but this was not the 'droid I was looking for. I've heard similar things about other carriers -- crapware, custom UIs, lockdowns, and other carrier-introduced features are effectively destroying the intended Android experience. 
 
-###"Closed" vs. the Myth of "open"
+### "Closed" vs. the Myth of "open"
 
 Apple's App Store is famously closed -- apps are reviewed, verified, inspected and _occasionally_ often denied admittance based on (previously) unpublished and seemingly arbitrary guidelines. However, this is the way Apple has always been. I knew that going in, and nothing has changed since (though Apple did relax its restrictions on 3rd-party development apps and publish its app review guidelines). 
 
@@ -51,21 +51,21 @@ Android is a fantastic open-source product -- until the carriers get their dirty
 
 Android -- and the promise of Android to deliver us from the clutches of ecosystems like Apple's -- comes with a set of expectations, and the carriers have all but abandoned those principles in its implementation. In my opinion, this proves to be much more damning and hurtful to the mobile arena. 
 
-###The Android Time Sink
+### The Android Time Sink
 I'm by no means a novice phone or device user, and one of my favorite things is to tinker with a new gadget. I was actually excited to get under the hood of Android, deep into the settings, and customize it to work exactly how I wanted. But, almost 2 weeks in, my phone still didn't do nearly wanted I wanted it to. 
 
 Synchronize only a subset of my contacts? No, I had to pull down all 1600 of them. Alerts? Still scattered all over my phone and going off even with Silent mode turned on. Daily workflow? I found myself messing with all sorts of settings just to get through an average day. 
 
 Working with Android makes me realize that a proper analogy for comparison would be cars. Android is great for "mechanics" -- those who like getting under the hood and messing with something to see how it works for its own sake will love it. But most people just want a car to get them places in a pleasing way. After **two weeks** of experienced tinkering, reading, and adjustment, my phone still did not fit smoothly into my standard day-to-day life. The phone had become the center of my productivity, when it should have been my productivity that became the center of my phone. I don't want to be playing with my phone all the time; I want to be accomplishing things with my phone.
 
-###Where Apple Shines: Appreciating a Thorough Experience
+### Where Apple Shines: Appreciating a Thorough Experience
 Say whatever you want about Apple politically (and the things I say don't tend to be nice), but one place where iOS is undeniably king is making things work without you noticing how they're working, or even that they're working in the first place.
 
 Within one hour, I had my e-mail/calendar (both work & personal), contacts, apps, notes, feeds, articles, music, and videos set up, connected and synced exactly the way I wanted them to be, and haven't had to change a setting since. That's powerful stuff.
 
 The truth is, I hadn't noticed Apple's UI consistency until it wasn't there. Like all good design, it felt natural and intuitive, and going back to it after the scatterbrained and varied nature of Android is like a breath of fresh air. Even the frustrating things about iOS (push notifications, etc.) are at least consistently frustrating.
 
-###How Android can Save Itself
+### How Android can Save Itself
 
 All is not lost, and I think Google has the ability to save the Android platform before it's too late.
 

@@ -40,7 +40,7 @@ So, in short, a Tomcat 6.0 connector in server.xml that enforces TLS looks somet
 
 I wanted to provide this bit of knowledge as a public service. Would love to hear about your own experiences enforcing TLS or security in Tomcat and other web servers in the comments! Please let me know if you’ve found this useful.
 
-####Notes
+#### Notes
 
 [^1]: Unfortunately, I'm unable to find the link to this post. If I ever come across it, I'll update the blog accordingly. Feel free to point me to it in the comments.
 

@@ -23,7 +23,7 @@ It does not inspire confidence when I am about to ask you to hold my money.
 
 **Update:** It also *doesn't allow symbols*. That's right, folks; maximum of 8 characters, and only letters/numbers. I can't believe this crap.
 
-###Update: Two-Factor Authentication Available!
+### Update: Two-Factor Authentication Available!
 Thanks to Richard Smiley who wrote in the comments to alert us to the fact that Schwab is now offering a two-factor authentication token upon request.
 
 For more details, head to [the SchwabSafe Page]. As of the time of this update (2/21/2013), to request a token, call Schwab at 800-435-4000.

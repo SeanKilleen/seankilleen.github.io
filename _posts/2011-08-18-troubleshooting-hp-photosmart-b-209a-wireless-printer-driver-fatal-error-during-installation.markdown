@@ -12,16 +12,16 @@ What I didn't expect was for HP Driver setup to make me want to tear my hair out
 
 What follows is a brief and too-technical tale of how I vanquished the foe, for my own reference. If you're less-than-technical or think they could help you, just ask me for details or screenshots in the comments and I'll be happy to provide them.
 
-###The Problem
+### The Problem
 HP Driver setup for a wireless printer already configured on your network yields a generic "Fatal Error During Installation" message. Though my Antivirus/Firewall were disabled and I ran the downloaded installer as Administrator, I still received the message whenever I ran the setup program.
 
-###Applies To
+### Applies To
 I have not tested this in any other environments, so I'm assuming it applies to:
 
 * HP PhotoSmart B-209a printers that have already been configued on the wireless network
 * Win 7 Professional 64-bit
 
-###The Solution Steps
+### The Solution Steps
 * **Disable Your Antivirus Applications (Firewalls are OK).** Though not the root cause of the issue, Antivirus programs can still muck with the process. Best to temporarily disable. Firewalls on the other hand, you would like to have running so that you can ensure you allow the network connections necessary for the device.
 * **Take ownership of your local temp directory.** I did this by running the command: 
 >takeown /f C:\Users\Username\AppData\Local\Temp /r /d y

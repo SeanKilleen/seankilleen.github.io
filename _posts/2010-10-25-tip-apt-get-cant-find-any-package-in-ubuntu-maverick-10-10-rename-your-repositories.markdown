@@ -14,13 +14,13 @@ references:
 ---
 It appears that the shipped version of Ubuntu Maverick 10.10 (at least the server version) comes with repository server URLs that are incorrect -- or at least non-functioning. I discovered this the hard way after much trial, error, and self-doubt. I hope the masses benefit from my suffering. :)
 
-###The symptoms:
+### The symptoms:
 * Can connect to the network
 * Can run "sudo apt-get update"
 * Can run "sudo apt-get upgrade"
 * Cannot run "sudo apt-get install [package name]" for ANY package.
 
-###The Solution:
+### The Solution:
 * Open nano to edit the file:
 >sudo nano /etc/apt/sources.list
 
