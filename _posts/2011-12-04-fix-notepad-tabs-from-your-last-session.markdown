@@ -7,10 +7,10 @@ comments: true
 ---
 Just found myself doing this again on the new setup; figured it might be worth posting.
 
-###Problem
+### Problem
 When opening Notepad++ after previously closing it, the application loads all the old files you were working on last time.
 
-###Solution
+### Solution
 This is by design, and may be useful for some users. If it's not your thing, and you want to remove it:
 
 * Click `Settings > Preferences`
