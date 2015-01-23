@@ -20,7 +20,7 @@ I'll be setting up a contributors page soon to acknowledge any help I get!
 This Site Runs On:
 ======================
 
-* Dunkin' (in all seriousness, there is probably some considerable caffeine to blame for this).
+* Dunkin (in all seriousness, there is probably some considerable caffeine to blame for this).
 * The [Jekyll][jekyll link] markdown blogging platform (which is run on [Ruby][ruby link]
 	* The [jekyll-sitemap][jekyll-sitemap link] gem
     * The [octopress][octopress link] gem
