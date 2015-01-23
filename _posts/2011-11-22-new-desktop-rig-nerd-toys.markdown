@@ -9,7 +9,7 @@ Recently, I decided to invest in something that would meet two very important cr
 
 The end result -- I'm getting a new desktop rig, and building one from scratch for the first time.
 
-###Components in the New Desktop
+### Components in the New Desktop
 I've followed largely in the footsteps of the [Jeff Atwood build] (when someone really smart has already done a lot of research, it's a huge leg up). The components are below, with links:
 
 *  **Case:** [Corsair Graphite Series 600T CC600TM][Case Link]. Big, but plenty of room for configuration despite my bumbling coordination. Also, primed for airflow and apparently very easy to work with. Also has a bay for SSDs so I didn't have to buy a mounting kit. Initially ordered the one without a window, but shipping considerations led me towards this one.
@@ -29,14 +29,14 @@ I've followed largely in the footsteps of the [Jeff Atwood build] (when someone 
 * **Extras**: [Thermal paste][Thermal Link], [SATA cables][SATA Link], etc.
 * **For the future**: Egg crate foam / sound-proofing materials. I'll cobble these together from eBay or something.
 
-###What I'm Getting For all of This
+### What I'm Getting For all of This
 
 * **Lots of Power and Speed.** A 2600k (let alone an overclocked one) is a beast in terms of power. Add SSD caching, the decent graphics, and the 16GB of memory, and I think this thing is going to fly.
 * **Stability / Backups**. RAID mirroring the 1TB drives together gives me fault tolerance, and my external backup via Backblaze gives me peace of mind. I'm going to script the hell out of some backups to an external too, I'm sure.
 * **Efficiency**. The gold-certified PSU has some great resistance to stress, which also means less heat.
 * **Future-proofing**. The case is big and easily configurable, and once I'm familiar with all the components, I'll have no trouble upgrading them piecemeal.
 
-###What I Plan to do With It
+### What I Plan to do With It
 
 * **Get better at doing this sort of thing.** Seriously, it amazes me that I've gone this long without building my own rig. It's such a rite of passage in the tech world. I have plenty of knowledge of how these things tend to work, but there's no substitute for *doing *it.
 * **Back it up**. The first piece of software to go on this baby after Windows will be Backblaze, which is currently my backup provider of choice. Unlimited data + external HDDs for $50/year. Unbeatable.
@@ -46,7 +46,7 @@ I've followed largely in the footsteps of the [Jeff Atwood build] (when someone 
 * **Find a game to play**. I can't tell you when the last time was I played a decent game. Now that I have acceptable graphics output, I'm looking forward to nerding out a bit with some games.
 * **Go to dual (and eventually triple) monitors**. It's its own reason.
 
-###What Do You Think?
+### What Do You Think?
 Sound off in the comments -- I'm interested to hear your thoughts!
 
 [Case Link]: http://www.amazon.com/gp/product/B004X63JWS/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B004X63JWS

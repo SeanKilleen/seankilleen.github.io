@@ -10,19 +10,19 @@ references:
    parenttitle: VirtualBox Forums
    parenturl: https://forums.virtualbox.org/index.php
 ---
-###Technology Involved
+### Technology Involved
 * Win7 Pro x64
 * VirtualBox 4.1.x
 * CentOS 5.x
 
 
-###Problem
+### Problem
 When attempting to install a CentOS Guest VM from a VirtualBox Win7 x64 host, the installation appears to hang shortly after beginning.
 
 The last line of text on the screen is:
 > NET: Registered protocol family 2
 
-###Solution
+### Solution
 Per [this thread] (referencing an older version of VirtualBox but still relevant), the fix is as follows:
 
 * Go into the settings of the VM

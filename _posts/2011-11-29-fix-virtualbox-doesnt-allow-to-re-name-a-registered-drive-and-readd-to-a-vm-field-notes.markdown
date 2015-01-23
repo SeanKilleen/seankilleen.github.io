@@ -6,7 +6,7 @@ date: 2011-11-29 23:23:00.000000000 -05:00
 comments: true
 
 ---
-###Problem
+### Problem
 In VirtualBox, if you take the following steps:
 
 * Have HDD1.vdi and HDD2.vdi as storage
@@ -18,7 +18,7 @@ You will receive an error along the lines of:
 
 > Failed to open the hard disk `[Path to your VDI file]`. Cannot register the hard disk `[Path to your VDI file]` {`[UUID of your new VDI file]`} because a hard disk `[Path to your VDI file]` with UUID {`[UUID of your old VDI file`} already exists.
 
-###Solution
+### Solution
 * In VirtualBox, select `File > Virtual Media Manager`.
 * Click the hard disk in question.
 * Click `Release` and then `Remove` to remove from the media library.

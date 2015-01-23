@@ -15,7 +15,7 @@ The [excellent folks over at Lifehacker have a tip] that seemingly works to reso
 
 The culprit? It looks to be a bug in the Time Zone settings that causes location services to go nuts and poll way more often than it needs to, draining the battery.
 
-###Solution
+### Solution
 To remedy the issue, according to Lifehacker:
 
 >The solution for now seems to be manually switching off the automatic time zone updates located at Settings &rarr; Location Services -&gt; scroll to bottom to System Services &rarr; Setting Time Zone. Expect more conclusive results in the coming weeks.

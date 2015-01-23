@@ -10,11 +10,11 @@ references:
    parenttitle: Toolbox.com
    parenturl: http://toolbox.com
 ---
-###Problem
+### Problem
 
 Crystal Reports 2008 Designer does not reflect changes made to views or stored procedures, even after refreshing the database and those views/procedures within Crystal.
 
-###Solution
+### Solution
 
 While a horrible user experience, there is a proper method to accomplish this.
 

@@ -6,9 +6,10 @@ comments: true
 redirect_from: 
  - /2011/11/fixed-remote-desktop-connection-wont-go.html
 ---
-###Problem
+### Problem
 In Windows 7, I am in a Remote Desktop Connection Full screen. I accidentally pop it down to "window" size (i.e. when it can be resized), but the window refuses to go back into Full Screen mode.
-###Solution
+
+### Solution
 On the host machine (not the machine you're remoted into), press `CTRL+ALT+Break` (or `CTRL+ALT+Pause` for laptops that don't have a Break key).
 
 On laptops, there may be an extra step. For example, on my laptop, this combination was `CTRL+ALT+Fn+Insert` (`Insert` doubles as the `Pause` key on my machine, and `Fn` is the button to toggle the alternate meaning).
