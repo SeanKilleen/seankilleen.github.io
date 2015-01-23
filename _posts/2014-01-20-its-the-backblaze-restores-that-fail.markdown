@@ -31,12 +31,12 @@ Given the slow speed of transfer and technical difficulties with a 6GB file, how
 
 In the end, I am grateful for what Backblaze offers, and hope that it can follow through on it to remedy the situation.
 
-###Conclusions / Concerns
+### Conclusions / Concerns
 * **Don't be like Sean -- do what Scott Hanselman says and always have a local backup, too**. I now have an additional 1TB SATA drive and plan to use it specifically for this purpose. I thought I was sacrificing convenience for dollars, but it was worse than that. This was hubris on my part.
 * Backblaze really needs to up its restore game. A LOT. Restoring your precious files is generally an anxious process; as a technical person I hit a ton of roadblocks. I don't pay them to back my things up; I pay them to restore my things when I need them.
 * Is Backblaze neglecting its restoration services knowing that customers will likely opt for the $99-189 purchase of a shipped HDD because their data is precious? I certainly hope not, but it seems to be a possible conflict of interest.
 
-###Footnotes
+### Footnotes
 [^1]: I've heard this in the industry for years, but since I don't know the originator, I'll give [Scott Hanselman](http://www.hanselman.com/blog/TheComputerBackupRuleOfThree.aspx) the credit.
 
 [^2]: Side note: If you are going to scan your documents -- like say, **serial keys to your OS** -- don't keep them as remote files only. In general, I'll be switching to an additional form of backup for local as well.

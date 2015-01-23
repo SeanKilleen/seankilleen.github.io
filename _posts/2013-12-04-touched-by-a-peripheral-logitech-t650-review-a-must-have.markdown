@@ -21,7 +21,7 @@ But this little square device came along and changed all that.
 
 Below are some rough, bulleted notes because I just couldn't contain my gushing.
 
-###Unboxing Impressions
+### Unboxing Impressions
 * Small box -- wonder if the surface area will be smaller than I thought.
 * Nope -- box just fits very snugly. The packaging reminded me of Apple's while remaining distinct -- it was sleek, easy to open, intuitive, and showcased the product.
 * And man, does the [T650][Amazon Link] look good. It looks so simple that it's hard for me to anticipate how powerful my first experiences will be with it.
@@ -30,7 +30,7 @@ Below are some rough, bulleted notes because I just couldn't contain my gushing.
 
 Overall, the first impressions I get are those of simplicity, innovation, and power. Kind of a sweet spot for gadgets.
 
-###Initial setup
+### Initial setup
 Wow, was that easy and fast. To install the device I:
 
 * Turned it on (it ships with some charge) by sliding the power forward.
@@ -45,14 +45,14 @@ Tutorials abound -- in the quick-start manual, the Unifying software, etc. Howev
 
 here is nothing I find cumbersome with the touchpad so far. Copy/Paste, middle click, dragging and dropping, right-clicking, etc. have all come easy while orienting myself.
 
-###Usage
+### Usage
 While I've just started, I can already feel the power of this in day-to-day use.
 
 I'm moving my wrist so much less, which feels better, though I have no opinion/science on whether it's truly ergonomically better.
 
 Charging is easy as well. The device has a small light that pulses when it's charging, and shines red when the battery is low. And it's beautiful to use this device in its wired capacity. I could have dealt with a cable but the wireless setup really completes the package.
 
-###Overall
+### Overall
 Kudos, Logitech. Your commitment to product and user experience shines through well here. The unboxing was easy, the setup was almost nonexistent it was so simple, your software gets out of my way, your instructions are clear, and your device is solid, intuitive, and well executed, from the device itself to the USB cable it ships with. 
 
 I'm really glad I got this device. 

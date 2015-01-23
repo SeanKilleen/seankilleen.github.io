@@ -7,12 +7,12 @@ date: 2012-11-27 17:00:00.000000000 -05:00
 comments: true
 
 ---
-###Problem
+### Problem
 I have a directory structure that contains Subversion metadata folders (folders named ".svn").
 
 I would like to remove those folders but "svn export" won't work.
 
-###Solution
+### Solution
 
 Rsync to the rescue. Let's say the folder containing .svn folder structures is named "problemfolder". Do the following:
 

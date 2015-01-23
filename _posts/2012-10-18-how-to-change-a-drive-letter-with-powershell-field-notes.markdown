@@ -13,10 +13,10 @@ references:
    parenturl: http://blogs.technet.com/
   
 ---
-###Problem
+### Problem
 I need to change the letter of a mounted drive via PowerShell.
 
-###Solution
+### Solution
 Start Powershell as an admin and run the following two lines, where 'x' is the current drive letter and y is the drive letter you'd like it to be:
 
 

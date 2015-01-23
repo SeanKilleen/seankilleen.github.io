@@ -11,17 +11,17 @@ references:
    
 excerpt: "A quick solution to drag and drop things in Visual Studio."
 ---
-###Problem
+### Problem
 
 I run Visual Studio as an Administrator, which is helpful, but also means that I can't drag &amp; drop files / folders from Windows Explorer (since it's not elevated). That's a pain in the butt.
 
-###Solution
+### Solution
 
 Thanks to [a handy discussion on the HowToGeek site][HTG Link], I found the following tip.
 
 [Caveat: this [works on my machine][WOMM Link], a work desktop using Windows 7.]
 
-####To enable an elevated windows explorer:
+#### To enable an elevated windows explorer:
 * Right-click on the task bar and select `Start Task Manager`
 * In Task Manager, select `File > New Task (Run...)`
 * You should see a note that this will be run using administrative privileges. 

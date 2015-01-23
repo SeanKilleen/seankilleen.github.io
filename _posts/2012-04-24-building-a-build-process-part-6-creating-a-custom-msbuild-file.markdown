@@ -27,10 +27,10 @@ In today’s installment, we’re going to do the following:
 * Use PowerShell to execute those build targets. 
 
 
-###Find the Location of MSBuild on Your Machine
+### Find the Location of MSBuild on Your Machine
 The good news is, if you have the .NET Framework, you have it. If you have the .NET 4.0 Framework (and really, you should), you should be able to find it in `%WinDir%Microsoft.NETFrameworkv4.0.30319`
 
-###Add MSBuild to the System Path
+### Add MSBuild to the System Path
 * Click Start  
 * Right-click `Computer` and select `Properties`
 * Click `Advanced System Settings`
@@ -39,18 +39,18 @@ The good news is, if you have the .NET Framework, you have it. If you have the .
 * Ensure that a semi-colon is after the last entry, and then past in the path to your MSBuild.exe, leaving off a trailing slash (e.g. mine was `C:\Windows\Microsoft.NET\Framework\v4.0.30319` without quotes.)
 
 
-###Run PowerShell and Test Access to MSBuild
+### Run PowerShell and Test Access to MSBuild
 * Click the start menu, begin to type “PowerShell”, and bring up the PowerShell console *by right-clicking and choosing “Run as Administrator”*. You must do this in order to run MSBuild the way it is necessary to run it. (you may also want to pin the icon to your taskbar at this point).  
 * When the console is open, type MSBuild.  
 * You should see an error about not specifying a project or solution file. If you see any red text, such as “command not found”, etc., then something went wrong and powershell can’t see your MSBuild location. (try running as admin or checking your path variable setup).
 
 
-###Create a New, Empty .build XML File
+### Create a New, Empty .build XML File
 * Open the TestProject solution in Visual Studio  
 * Right-click on the solution and select `Add > New Item`.  
 * Select XML File as the type, and name it `TestProject.build`. Now you’ll have a .build file at the root of your solution. This is what we want.
 
-###Adding the Schema for an MSBuild XML file
+### Adding the Schema for an MSBuild XML file
 After the first line of the XML file, you’ll need to add the root node and give it the schema reference for its XML namespace (xmlns). After you do this, it should look like the following:
 
 {% highlight xml %}
@@ -61,7 +61,7 @@ After the first line of the XML file, you’ll need to add the root node and giv
 
 Note that I also added a ToolsVersion attribute, with “4.0” denoting the version of the .NET Framework we’re using.
 
-###Add Some Properties
+### Add Some Properties
 Instead of going back and refactoring after showing you a full examples, I’m going to save some precious keystrokes and tell you that at some point, it will be easier and more flexible to use variables. To do this:
 
 * Create an `<ItemGroup> </ItemGroup>` node within the Project section.  
@@ -79,7 +79,7 @@ Instead of going back and refactoring after showing you a full examples, I’m g
 </Project>
 {% endhighlight %}
 
-###The Basics: Cleaning and Initializing Our Directory
+### The Basics: Cleaning and Initializing Our Directory
 Next, we create two targets. One, “Clean”, will delete the .buildartifacts folder. The second, “Init”, will recreate it. Pretty simple. The XML to accomplish this is below:
 
 {% highlight xml %}
@@ -106,7 +106,7 @@ You’ll notice that I have the “Init” target depend on the “Clean” targ
 
 Also notice that instead of putting a path to the buildartifacts folder directly, I’m using `@(BuildArtifacts)`, which tells MSBuild to refer to the ItemGroup variable we created earlier.
 
-###Trying our “Clean” and “Init” Targets in PowerShell
+### Trying our “Clean” and “Init” Targets in PowerShell
 * Open PowerShell in Admin mode  
 * Navigate to the Solution folder (e.g. `cd Users\Sean\Projects\TestProject` for me)  
 * Also open this folder in Windows Explorer. See the buildartifacts folder there?  
@@ -118,7 +118,7 @@ Also notice that instead of putting a path to the buildartifacts folder directly
 * Note that the folder has been deleted and recreated, and thus no longer contains the item you put there.
 
 
-###Getting to the Good Stuff: Compiling our App
+### Getting to the Good Stuff: Compiling our App
 Up until this point, we haven’t compiled our code. Since that’s what gets us paid, in a manner of speaking, we should create an MSBuild task to compile the code. We can do this via the following additional target: 
 
 {% highlight xml %}
@@ -131,7 +131,7 @@ This calls the MSBuild exe from within MSBuild (I know…*whoa, dude*), passes i
 Note that we’ve made “Compile” dependent on “Init”, so that everytime we compile, the buildartifacts folder will be blown away and re-created.
 **Try it out**: In PowerShell, run `MSBuild TestProject.build /Target:Compile` and watch our solution be compiled to the buildartifacts directory. Pretty sweet, huh?
 
-###Telling MSBuild What to do by Default
+### Telling MSBuild What to do by Default
 Passing a Target every time is pretty lame, especially when we usually just want to compile the code. 
 
 Luckily, by adding the DefaultTarget attribute to the Project node, we can tell MSBuild what to compile by default. Let’s try that now. Modify the Project node XML to make the default target “Compile”, like so:
@@ -142,7 +142,7 @@ Luckily, by adding the DefaultTarget attribute to the Project node, we can tell 
 
 Save the file, and run `MSBuild TestProject.build` (without a target attribute). The project should compile.
 
-###Next Time…
+### Next Time…
 In the next article, we’ll explore how to start and stop the Cassini Web Server asynchronously, and how to run Visual Studio builds through common output directories.
 
 [PS CI Course]: http://www.pluralsight-training.net/microsoft/courses/TableOfContents?courseName=continuous-integration&amp;highlight=james-kovacs_ci-part1*3!james-kovacs_ci-part3*2!james-kovacs_ci-part2*2!james-kovacs_ci-part6*4,12#ci-part1

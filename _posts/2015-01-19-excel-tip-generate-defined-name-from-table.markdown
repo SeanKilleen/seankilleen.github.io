@@ -11,7 +11,7 @@ To do this, you'll first have to create a named range for the table, which isn't
 
 To demonstrate this, I'll use a table with some names and demonstrate the drop-down list.
 
-##Step 1: Create the table
+## Step 1: Create the table
 We start off with a list of names, unformatted in Excel:
 
 ![Unformatted names in Excel]({{site.post-images}}/01_UnformattedExcelWorksheet.png)
@@ -32,7 +32,7 @@ Also Note: Excel has automatically given this table a name of Table1:
 
 ![Selecting that the table has headers]({{site.post-images}}/03_AutomaticTableName.png)
 
-##Step 2: Create the Defined Name
+## Step 2: Create the Defined Name
 
 * Head to `Formulas` and select `Define Name`:
 
@@ -48,7 +48,7 @@ Also Note: Excel has automatically given this table a name of Table1:
 
 ![The Defined Name now selects the table column]({{site.post-images}}/06_DefinedNameShown.png)
 
-##The Nice Thing About This Technique -- Adding new people rows includes them!
+## The Nice Thing About This Technique -- Adding new people rows includes them!
 Unlike a normal defined name, which includes a set amount of cells, a defined range based on a table includes any of the cells defined by that table -- even if they were outside of the original range.
 
 To demonstrate this: 

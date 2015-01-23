@@ -28,8 +28,8 @@ But overall, there was one major theme: **instead of making time to keep myself 
 
 So I decided to knock it off. Cold turkey. I'm not phasing it in, because I've let "busy" distract me from the things I need to do for so long. I'm just doing it, and I'm going to do my best to stop making excuses not to do these things, because there is no excuse not to take better care of myself.
 
-###So, What am I Going to Do About It?
-####For Starters:
+### So, What am I Going to Do About It?
+#### For Starters:
 * **Quit Nutrisystem**. Wait, what? This sounds counter-intuitive, I know. I've lost some weight on nutrisystem. But its' is full of sodium, processed, etc. etc. Most importantly in my situation, it became a crutch. I'd cram a bunch of Nutrisystem because I didn't have time. I'd stop buying fresh food and subsist on their food which is only half of what they tell you to do anyway. So I consumed too much of their food. The effect started reversing itself. And honestly, it just didn't feel natural. The combination of my methods and the food made me feel like I was eating food for machines. I want to eat food for people, because I want to be more of a person.
 * **Not rushing to work and instead prepping for my day**. I get to work earlier than most people every day anyway. But I wake up, rush, neglect breakfast, taking time to center myself, relaxing, etc. I love the morning, but I don't appreciate it nearly enough.
 * **Replace my after-work Starbucks trip with an after-work trip to Giant**. They're in the same damn parking lot, and yet I've been neglecting healthy food for its short-term energy supplement.
@@ -39,7 +39,7 @@ So I decided to knock it off. Cold turkey. I'm not phasing it in, because I've l
 * **Drink more water**. I received a nice water vessel  for Christmas, yet I haven't used it. Ridiculous. It's 70% of my body but I've been drinking coffee like it's water. Only water is water.
 * **Take vitamins**. It's easy as hell to take a vitamin a day.
 
-####But most importantly:
+#### But most importantly:
 * **Hold myself to these things as publicly as possible**. You'll be seeing more blog posts like these, with different themes. I hope you'll indulge me and feel free to comment if you see fit. Be critical, encourage me to do better things. See a better choice I could have made? Add your thoughts. I can fool myself, but I can't fool you smart people.
 
 Well, now that that's all out in the open, let's start this adventure, shall we?

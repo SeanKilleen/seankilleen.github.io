@@ -12,16 +12,16 @@ references:
    parenttitle: StackOverflow
    parenturl: http://stackoverflow.com
 ---
-###The Setup
+### The Setup
 * I have a report in Crystal Reports 2008.
 * The report uses a few different sub-reports.
 * The report links the subreports to the main report by passing the main report parameter to the subreport parameter.
 
-###The Problem
+### The Problem
 * When calculating totals, it works correctly if I pass in a single parameter value to the main report.
 * However, if I pass in multiple values for a parameter to the main report (think multiple work order numbers for a WONUM parameter), the subreport calculates totals for all the fields
 
-###The Solution
+### The Solution
 At first, it seemed like the issue was due to me not resetting the subreport total calculations on each page. But, I knew that I was doing this, and doing it correctly according to multiple reference points.
 
 However, the issue (and thus, the solution) was simpler.

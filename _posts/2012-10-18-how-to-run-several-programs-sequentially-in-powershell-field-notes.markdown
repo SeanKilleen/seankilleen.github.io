@@ -17,12 +17,12 @@ references:
    parenttitle: TechNet
    parenturl: http://technet.microsoft.com/
 ---
-###Problem
+### Problem
 I want to run several installation programs in order, and don't want them to step on each other.
 
 I want to avoid errors such as "another setup program is already running" which result in the second install not completing.
 
-###Solution
+### Solution
 
 For files without arguments, run:
 

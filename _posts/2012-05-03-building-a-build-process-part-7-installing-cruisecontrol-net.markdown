@@ -18,7 +18,7 @@ references:
    parenturl: http://www.matthewbussa.com
 ---
 
-###Adding a HDD to your VM for CI Information
+### Adding a HDD to your VM for CI Information
 I find this makes it easier to keep your CI files separate, and it’s definitely a good practice in a production environment in my experience. Virtualization makes this easier as well because all the virtual hard drive files only take up as much space as they use. Definitely an upside to VMs.
 
 To add a new HDD to the VM, do the following:
@@ -47,7 +47,7 @@ Now we have a hard drive initialized, but we still need to format it before the 
 * On the next screen, choose to format the volume as NTFS and give it the volume label of `CI`.  
 * Click `Finish` to complete the process.After a few seconds, you should see the E: drive appear in your drives list. Open Windows Explorer and verify that it exists there, too.
 
-###Creating a Home for Our CI Files
+### Creating a Home for Our CI Files
 Now that we have a drive, it makes sense to create our directory structure.
 
 On the E: drive, create the following directory structure:
@@ -58,12 +58,12 @@ On the E: drive, create the following directory structure:
 
 `CIArtifacts` will store the output of our CI (logs, etc.); `WorkingDirectory` will be where we eventually check out the source code to automatically in order to act upon it.
 
-###Downloading the CruiseControl.NET Binaries
+### Downloading the CruiseControl.NET Binaries
 * On the build server, head to the [CruiseControl.NET Releases Page on SourceForge]
 * Click the newest release version (1.6 as of the time of this writing)
 * Download the CruiseControl.NET executable and the CCTray executable.
 
-###Installing CruiseControl .NET
+### Installing CruiseControl .NET
 * Run the CruiseControl.NET Setup executable as an administrator by right-clicking and selecting “Run as Administrator”. 
 * Agree to the license agreement.
 * All options are selected by default; leave them and continue.
@@ -72,7 +72,7 @@ On the E: drive, create the following directory structure:
 * Leave the default value for the Program Files folder group and click `Next`. CruiseControl.NET will commence installation.
 * Click `Finish` and exit the wizard.
 
-###Installing CCTray
+### Installing CCTray
 CCTray allows you to connect to one or more CruiseControl.NET projects and will keep you informed on their status.
 
 You’ll want to repeat this process on the Build Server itself and on any desktops you’d like to see the status of the build on (for example, I have CCTray installed on my laptop’s desktop so I can quickly see if a build is broken).
@@ -87,7 +87,7 @@ To install CCTray, perform the following (don’t worry, we’ll configure it la
 
 Now CCTray is started (though not configured yet.)
 
-###Install / Start the CCNet Dashboard in IIS
+### Install / Start the CCNet Dashboard in IIS
 * `Click Start > Administrative Tools > IIS Manager`
 * Expand the tree on the left-hand side to `[Server Name] > Sites > Default Web Site`.If you don’t see a directory under `Default Web Site` called `ccnet`, perform the following steps (otherwise, skip to after this bulleted list):
 

@@ -5,7 +5,7 @@ date: 2015-01-20 09:07:00.000000000 -05:00
 excerpt: "I might be late to the game, but I had no idea you could merge only for certain rows."
 comments: true
 ---
-##Problem
+## Problem
 When using Excel, sometimes I have multiple rows that I want to Merge and center, but only within that row. 
 
 ![The rows prior to the merge.]({{site.post-images}}/01_PriorToMerge.png)
@@ -16,7 +16,7 @@ However, if I select them all and select `Merge and Center`, I see the following
 
 This is because Excel things I'm trying to merge all of those cells as one blob, rather than two rows, each with their own centered/merged text.
 
-##Solution
+## Solution
 
 In Excel 2013 [^1], you can select the drop-down next to `Merge and Center` and Choose `Merge Across`, which will perform this function per row.
 

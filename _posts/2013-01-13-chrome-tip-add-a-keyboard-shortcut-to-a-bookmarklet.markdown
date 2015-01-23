@@ -16,7 +16,7 @@ I use [Google Chrome] for a lot of browsing, and I've been getting into [Delicio
 
 The other day I thought: it would be nice if I had a keyboard shortcut while browsing to save to delicious, instead of navigating through the bookmarks bar to click it? And a short google search later, up popped [a great process][Process Link] from the Switched Download Squad.
 
-####The abbreviated steps are:
+#### The abbreviated steps are:
 
 * Copy the text of your delicious bookmarklet (edit the bookmark and then copy the location -- it's a bit of javascript that you'll be copying)
 * Right-click on Chrome's address/Search bar and select `Edit Search Engines..`
@@ -24,7 +24,7 @@ The other day I thought: it would be nice if I had a keyboard shortcut while bro
 * Give the search engine a keyword -- preferably a short one. I chose `d` for delicious.
 * Paste in the javascript.
 
-####Now, to use it:
+#### Now, to use it:
 * Navigate to a page that you want to save
 * Type `CTRL + L` (this activates the search bar), then your keyword (`d` in my case), then enter.
 

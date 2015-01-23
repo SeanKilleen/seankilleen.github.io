@@ -17,19 +17,19 @@ references:
    parenttitle: "Crystal Reports Tips & Tricks"
    parenturl: http://crystaltricks.com/wordpress/
 ---
-###Problem
+### Problem
 A report I'm running gets the data for the last Month. I'd like to nicely display the name of the month and year.
 
-###Solution
+### Solution
 
-####Step 1: Formula to Return the Date 1 Month Ago
+#### Step 1: Formula to Return the Date 1 Month Ago
 Use the DateAdd function in the formula to get the date minus one month:
 
     DateAdd("m", -1, CurrentDate)
 
 This says to use "month" intervals, subtract one, and use the current date as the starting point.
 
-####Step 2: Display the Month Name and Year of the Date Formula
+#### Step 2: Display the Month Name and Year of the Date Formula
 
     MonthName(Month({@DateMinusOneMonth})) + " " + ToText((Year({@DateMinusOneMonth})), 0, "")
 

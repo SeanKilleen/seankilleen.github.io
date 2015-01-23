@@ -6,10 +6,10 @@ date: 2012-04-12 11:39:00.000000000 -04:00
 comments: true
 
 ---
-###Problem
+### Problem
 Oftentimes I'd like to perform a task on the solution, but in Visual Studio solutions with only one project, the solution doesn't show by default.
 
-###Solution
+### Solution
 Thanks to [K. Scott Allen] in a [Pluralsight] video (unfortunately, I forget which one as I've been browsing around a lot), you can take the following steps to get VS to always show the solution:
 
 * `Tools Menu > Options...`

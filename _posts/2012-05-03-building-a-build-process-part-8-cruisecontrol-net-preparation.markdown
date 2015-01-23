@@ -11,7 +11,7 @@ references:
    url: http://technet.microsoft.com/en-us/sysinternals/bb897553
 ---
 
-###Choosing Whether to Run as Network Service or another user
+### Choosing Whether to Run as Network Service or another user
 This was brought up as an excellent point by Bahrep on a recent blog post of mine, and I thought it was worth sharing for this series. 
 
 Essentially, the issue is that CruiseControl.NET runs under the network service user (which makes sense), but in order to accept an SVN certificate, you need to be logged in as that user and check out a copy of the repository once to accept the certificate before CruiseControl will be able to connect to the repository as itself.
@@ -22,7 +22,7 @@ The second option is to download and install PsExec, which lets you run programs
 
 Directions for both options are shown below. For what it’s worth, **I now prefer option 2.**
 
-###Option 1 Part 1: Creating a Local User for CI Purposes
+### Option 1 Part 1: Creating a Local User for CI Purposes
 * Click start and type `compmgmt.msc` to bring up Computer Management.  
 * In the left-hand navigation, choose `Local Users and Groups >Users`  
 * Right-click and select `New User…`  
@@ -36,7 +36,7 @@ Directions for both options are shown below. For what it’s worth, **I now pref
 * Add the user to the `Administrators` Group. **NOTE:** This is **not** ideal for the purposes of production. Normally, you’d want to ensure this user account only has access to what it needs for CC.NET (this is why I’m leaning towards option 2).  
 * Now is also a good time to install TortoiseSVN on the build server, if you haven’t yet. (be sure to install the command-line client tools as well!)
 
-####Option 1 Part 2: Accepting the SVN Certificate as the CI User
+#### Option 1 Part 2: Accepting the SVN Certificate as the CI User
 * Log off the Administrator account and sign in as your new CI account.  
 * Run the command prompt  
 * Run `svn info` to accept the certificate. This can be done by running: 
@@ -45,7 +45,7 @@ Directions for both options are shown below. For what it’s worth, **I now pref
 
 * Type `p` to accept the certificate permanently, and you’re all set!
 
-####Option 1 Part 3: Run the CruiseControl.NET Service as the CI User
+#### Option 1 Part 3: Run the CruiseControl.NET Service as the CI User
 * Log off the CI account and back into the Administrator account.  
 * Run `services.msc`  
 * Right-click the `CruiseControl.net` service and choose `Properties`  
@@ -55,7 +55,7 @@ Directions for both options are shown below. For what it’s worth, **I now pref
 * Enter the password you created for the CI account and click apply.  
 * You will see a message that it has been granted the “Log On as a Service" Right.
 
-###Option 2: Using PsExec to Accept the SVN Cert as the Network Service User
+### Option 2: Using PsExec to Accept the SVN Cert as the Network Service User
 **NOTE**: At points during this process, you may receive a warning from your antivirus program. This is because PsExec can be dangerous when misused, and viruses have used it in attacks in the past. We know our usage is legitimate here, so we can unblock/ok PsExec operations when we’re working with it.
 
 * Visit the PsExec Website and Download the application (actually will be a zip file of all the PSExec tools)  
@@ -68,7 +68,7 @@ Directions for both options are shown below. For what it’s worth, **I now pref
   
 * Type `p` to accept the certificate permanently, and you’re all set!
 
-###Add a CI User to the Repository
+### Add a CI User to the Repository
 * Open your CentOS source code management VM
 * Taking advice from our [Subversion & Apache article]({% post_url 2012-04-17-building-a-build-process-part-4-source-code-management-via-subversion-and-apache-on-centos %}), we’ll run the following command to add a new CI user without deleting the old ones: 
 
@@ -76,13 +76,13 @@ Directions for both options are shown below. For what it’s worth, **I now pref
         
 Now you’re set to allow CruiseControl to pull down files under its own again (just around the bend in this series when we configure CCNet).
 
-###Copying the Microsoft Targets to the Build Server
+### Copying the Microsoft Targets to the Build Server
 When dealing with this elsewhere, [I discovered this problem]. We’ll avoid it in advance here.
 
 * You have to copy the two files from your local development machine (with VS installed) to the Build Server.
 * Copy the directory `C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\*.*` to the same location on the build server.
 
-###Copying the Reference Assemblies to the Build Server
+### Copying the Reference Assemblies to the Build Server
 When dealing with this elsewhere, [I discovered this problem]({% post_url 2012-05-01-cruisecontrol-net-gotcha-moving-microsoft-webapplications-targets-to-the-server-field-notes %}). We’ll avoid it in advance here.
 
 * On your local development machine, copy `C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\*.*` to a folder on your build server. For me, it was `E:\ContinuousIntegration_ReferenceAssemblies` so that it could keep it common for any future builds.

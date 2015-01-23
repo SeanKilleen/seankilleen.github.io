@@ -8,14 +8,14 @@ excerpt: "I'm using the Twitter Bootstrap LESS source with LessJS / MVC3 Project
 redirect_from: 
  - /2012/09/when-using-twitter-bootstrap-less-with.html
 ---
-###Problem
+### Problem
 I am using the Twitter Bootstrap LESS source with LessJS in an ASP.NET MVC3 Project that deploys to IIS.
 
 * When I run my local source, the web site displays fine.
 * When I run my build process, it completes fine.
 * When I open the site on my development or production boxes, the CSS doesn't display.
 
-###Solution
+### Solution
 After making the problem much more complicated than it had to be, I realized that my LESS file wasn't being found by IIS -- not because it wasn't there or wasn't being deployed, but because I had never configured IIS to *serve* LESS files. Rookie move.
 
 To ensure IIS can serve LESS files, take the following steps:

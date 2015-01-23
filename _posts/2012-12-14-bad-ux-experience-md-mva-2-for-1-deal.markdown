@@ -9,7 +9,7 @@ I know this comes as a shock to nobody, but MD's don't-call-it-the-DMV "Motor Ve
 
 However, this one was a little puzzling.
 
-###Bad UX Example
+### Bad UX Example
 
 While attempting to fill out a change of address form on the web site, the new address is given only one line (no "street 2") address. And to make matters worse, the **address is limited to only 30 characters.** So, if you have a long street name and/or live in an apartment, this field will be a joy for you to fill out.
 
@@ -17,18 +17,18 @@ Even better: Since I had to get creative with the symbols in the name, I shorten
 
 Eventually, I had to force it to use the original, so now it will read "BVD", and I'm sure it's only a matter of time before I'll have to get that corrected.
 
-###Additional Bad UX Example
+### Additional Bad UX Example
 While writing this blog post, I attempted to link to the change of address form, so I right-clicked on the link titled "change of address form" and chose to copy the URL. When I pasted it just now, I got:
 
     javascript:__doPostBack('ctl00$btnChangeOfAddress','')
 
 Really? We're still doing postbacks on buttons this way? I guess the best way to avoid link rot is to make sure your link is never a link in the first place.
 
-###What can we as Developers Learn From This?
+### What can we as Developers Learn From This?
 
 There are already great posts on falsehoods programmers believe about [names], [time], [networks], [geography], [build systems] -- It seems like one on addresses is long overdue. In the spirit of those posts, I'll begin one below based on my experience.
 
-####In the context of addresses, all of the following are wrong:
+#### In the context of addresses, all of the following are wrong:
 * The street address will be less than 30 characters
 * The location will have a house number
 * The city will be less than 30 characters

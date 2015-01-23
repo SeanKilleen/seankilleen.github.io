@@ -8,10 +8,10 @@ excerpt: "VMs that leave ISOs mounted cause problems. I'd like to find all the V
 redirect_from: 
  - /2013/01/how-to-use-powercli-to-find-and.html
 ---
-###Problem
+### Problem
 VMs that leave ISOs mounted cause problems. I'd like to find all the VMs that have CD-ROM drives loaded with ISOs, look over that list, and then remove them if necessary.
 
-###Solution (NOTE: Update)
+### Solution (NOTE: Update)
 
 **The first solution I provided here wasn't that great, so I'm updating this post.** The original contents have been changed because they previously would disconnect the entire CD-ROM drive, vs. just unmounting the ISO. As you can imagine, pulling the equivalent of ripping a CD-ROM drive out while a machine is running can cause some interesting behavior. The solution below outlines a much better way to do this.
 

@@ -25,7 +25,7 @@ references:
    parenttitle: StackOverflow
    parenturl: http://stackoverflow.com/
 ---
-###Problem
+### Problem
 I'd like to update my MVC4 project to use the following:
 
 * Bootstrap LESS source (Twitter.Bootstrap.Less nuget package)
@@ -37,10 +37,10 @@ However, this can be a pain for the following reasons:
 * The "@import" directives sometimes gave dotless an error and had to be worked around.
 * Font-Awesome's MIME types are not all recognized by the internal webapps
 
-###Solution
+### Solution
 Thanks to the Excellent [Twitter.Bootstrap.Less.MVC4][Nuget Link] package by Christopher Deutsch, this process is a lot easier.
 
-####Install Bootstrap LESS and Dotless
+#### Install Bootstrap LESS and Dotless
 
 * Create a net ASP.NET MVC4 Web Project.
 * Open the package manager console.
@@ -53,12 +53,12 @@ install-package Twitter.Bootstrap.Less.MVC4
 
 * The project will automatically install dotless and Twitter.Bootstrap.Less.
 
-####Reconciling BundleConfig and Bootstrap.BundleConfig
+#### Reconciling BundleConfig and Bootstrap.BundleConfig
 
 * If you have an existing BundleConfig.cs that you've made changes to, merge those changes into Bootstrap.BundleConfig.
 * If you haven't customized it, you can just delete BundleConfig.cs as all the defaults are in Bootstrap.BundleConfig.cs.
 
-####Install FontAwesome
+#### Install FontAwesome
 
 * From the package manager, run: 
 
@@ -75,7 +75,7 @@ var css = new StyleBundle("~/Content/css")
 
 * Open your twitter.bootstrap file and comment out the line importing sprites.less. FontAwesome and Bootstrap's sprites naturally conflict as FontAwesome is designed to replace them.
 
-####Update IIS Settings to allow FontAwesome's Static Content
+#### Update IIS Settings to allow FontAwesome's Static Content
 * Add the following to web.config in the `<system.WebServer>` section:
 
 {% highlight xml %}
@@ -89,7 +89,7 @@ var css = new StyleBundle("~/Content/css")
 </staticContent>
 {% endhighlight %}
 
-####Ensure That Content is Processed on the Server
+#### Ensure That Content is Processed on the Server
 
 * In Visual Studio, Select all files in the `/less`, `/font`, and `/content` directory and in the properties for the file, ensure that the Build Action is `Content` and the Copy to Output option is `Copy Always`. This ensures that FontAwesome, Bootstrap, etc will show up in custom builds and when you package for IIS, etc.
 

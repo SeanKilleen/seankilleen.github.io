@@ -22,7 +22,7 @@ Welcome back! Now that we have a TLS-encrypted Apache setup with SVN, we’re go
 
 **NOTE:** Before I begin, I should mention that while I will speak about them authoritatively, the methods for laying out repository structures are by no means set in stone, and are in fact debated quite vigorously at times in the tech community. This is the general flavor that I’ve picked up in some places, including an excellent [Pluralsight Continuous Integration Course] by [James Kovacs]. It’s the style that I believe I’ll adopt going forward, though don’t hold me to it.
 
-###Obtaining TortoiseSVN
+### Obtaining TortoiseSVN
 TortoiseSVN is pretty much the de-facto standard for Subversion clients on Windows. The latest version as of this writing is 1.7.6. You can download the [32-bit version] or [64-bit version] from [their downloads page].
 
 Installing Tortoise is about as standard as it gets. Run the installer, accept the license agreement, and select the options for install.
@@ -31,7 +31,7 @@ During this time, I usually right-click `command line client tools` and install 
 
 After this, the app installs.** NOTE:** If you’ve got some cash, I highly recommend you [donate to the TortoiseSVN project]. It’s a fundamental piece of software for developers and good software deserves our support.
 
-###Linking a Local Folder to the Repository
+### Linking a Local Folder to the Repository
 Our first step is to pull down the repository we created (which is currently blank, but nevermind that):
 
 
@@ -47,7 +47,7 @@ Our first step is to pull down the repository we created (which is currently bla
 
 You will see through the TortoiseSVN dialog box that the process is completed. The folder may also have a green check-mark overlaid. This is TortoiseSVN’s handiwork; it lets you know that a repository is up to date.
 
-###Creating the Initial Repository Layout
+### Creating the Initial Repository Layout
 Enter the TestProject folder on your local machine. We’re going to create three empty folders under this directory that have a very specific meaning. Create the following folders:
 
 * trunk  
@@ -63,7 +63,7 @@ This is one of the standard layouts for a repository in Subversion, and the one 
 
 Normally, you won’t be looking at all three of these at once. You’ll want to create what’s called a **working copy** of the source that is connected either to the trunk, or a specific branch. Think of your working copy as your lens into the source code. We’ll be creating the working copy soon, but first we have to commit this initial structure.
 
-###A Word on the Update / Commit Cycle
+### A Word on the Update / Commit Cycle
 A big idea behind subversion is that instead of locking files so only one person can use them, it allows all people to edit all files in the repository (assuming they don’t have read-only access). This is usually vastly more efficient, but it does come with some caveats. If two people edit the same file, it will create a conflict, and that conflict will have to be resolved by a differential view and resolution (“diff”) of the two versions of a file with another developer. This isn’t usually a bad thing, but it becomes cumbersome if the files haven’t been checked in for a long time.
 To avoid this, I usually stick to the following principles:
 
@@ -74,7 +74,7 @@ To avoid this, I usually stick to the following principles:
 * Check in your code several times a day (if you’ve added something complete and useful that works.) this will ensure that your changes are smaller for other developers (more on the check-in process below.)  
 * Always add a message when you check in and describe your changes in enough detail so that others can understand them. No novels are necessary, but it’s important to know in human-readable form who changed what, when, and why.
 
-###Committing Our First Changes
+### Committing Our First Changes
 So, we added three folders to the repository. As small of a change as it is, it is a change, and so we need to check those changes in so Subversion can pass them along to anyone else. To do this:
 
 
@@ -85,7 +85,7 @@ So, we added three folders to the repository. As small of a change as it is, it 
 * Click the `All` button and subversion will select all items to commit them to the repository.  
 * Click `OK` and the folders will be committed to the repository. You see that it added each folder, and that the repository is now at revision 1.
 
-###Creating the Working Copy
+### Creating the Working Copy
 Now that we have the files committed to the repository, we can delete the local folder because we know the files are committed to the repository and we can pull them down again later. That’s exactly what we’re going to do, but this time, we’re going to create our working copy by pulling down only the trunk.
 
 
@@ -96,7 +96,7 @@ Now that we have the files committed to the repository, we can delete the local 
 
 The trunk will be pulled down, and you’ll see it’s at revision one. Now, even though “branches” and “tags” exist in the universe, the world we know will consist of the trunk folder. If we ever need to switch to a branch, we can do this through the `Switch` statement (but we have no use for that now).
 
-###Creating the Project Folder Structure
+### Creating the Project Folder Structure
 After watching the Pluralsight course on Continuous Integration, I really like the layout that was chosen for the project. We’re going to create a folder structure, and then I’ll explain why we created it like we did.
 Create some new directories so the folder structure looks like the following:
 
@@ -125,7 +125,7 @@ These folders have the following purposes:
 
 At this point, let’s update the solution by right-clicking TestProject and selecting `SVN Update`. Since no other changes to our files were detected, the update completes successfully. We then commit the changes by right-clicking on TestProject and choosing `SVN Commit`, following the same process as we did earlier. (did you remember to add a commit message?)
 
-###Creating the Solution in our Project’s Root Directory
+### Creating the Solution in our Project’s Root Directory
 After all our hard work to set up the solution right, we’re finally ready to create the solution within Visual Studio.
 First, we’ll likely want to [enable the Always Show Solution option within Visual Studio]({% post_url 2012-04-12-quick-tip-always-show-solution-in-visual-studio-2010 %}) so that it’s easier to create a blank solution – which is what we’ll be doing first. 
 Next, complete the following steps:
@@ -138,7 +138,7 @@ Next, complete the following steps:
 * Since a folder is always created for a solution, but we have a folder already, we’re going to choose the location as the folder *above* the TestProject folder. (for example, my TestProject folder is in `C:\Users\Sean\Projects\TestProject`, so I select `C:\Users\Sean\Projects`.) This keeps us from having to copy/paste the solution to the right spot manually later.  
 * The new solution is created and you see it within Visual Studio.
 
-###Adding Other Projects Under the src Directory
+### Adding Other Projects Under the src Directory
 
 * Right-click on the newly-created solution in Visual Studio and select `Add > New Project`.  
 * Add a C# class library called `TestProject.Core`, in the location of `Test\Project\src\app (the folder structure that we’d created previously). This will be the project that holds all of your application’s shared core logic (in case you need to share code common to both a web site and a WPF app, etc).  
@@ -148,7 +148,7 @@ Next, complete the following steps:
 
 At this point, we’ve got a full project setup.
 
-###Committing our Changes – and Ignoring a Directory
+### Committing our Changes – and Ignoring a Directory
 We’re ready to commit our changes – or are we?
 
 I’d mentioned earlier that the `buildartifacts` directory doesn’t really make sense to commit, as everyone will have their own, and the files are highly likely to cause conflicts as they are binary files. It would be useless to attempt to try to do much with them outside the contest of our personal development, so we’re going to have subversion ignore the buildartifacts folder, ensuring that it won’t add that information to the repository ever.

@@ -8,12 +8,12 @@ excerpt: "Sometimes, for whatever reason, Intellisense will go away in Visual St
 redirect_from: 
  - /2013/12/solved-visual-studio-sometimes-loses.html
 ---
-###Problem
+### Problem
 Sometimes, for whatever reason, Intellisense will go away in Visual Studio while using ReSharper.
 
 This is a bummer, because Intellisense is a huge help, and very easy to take for granted until it's gone.
 
-###Resolution
+### Resolution
 Some folks reported having to close and reopen Visual Studio to get this to work, but I was able to fix it in the following way:
 
 

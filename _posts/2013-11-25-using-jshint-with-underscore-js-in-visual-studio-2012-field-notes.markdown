@@ -23,7 +23,7 @@ references:
 ---
 Since my new gig has me diving into Javascript quite a bit, I've really been loving [JSHint] integration (brought to us lovingly by [Mads Kristensen] and the team building the [Web Essentials 2012 add-on][WE]).
 
-###Firstly: The Cool Feature that Caused my Issue -- Global Variables
+### Firstly: The Cool Feature that Caused my Issue -- Global Variables
 One of my favorite features of JSHint is that it will tell you when you're using a variable that hasn't been defined yet. This does wonders for reducing scoping issues, etc.
 
 But, when referencing browser functionality or variables from other files (think console.log, ko, moment, toastr, etc.) it would see them as undefined:
@@ -37,12 +37,12 @@ Luckily, this can be fixed for most issues by utilizing the `global` command in 
 
 This saves so many validation headaches.
 
-###The Problem: Identifying UnderscoreJS as a Global Variable
+### The Problem: Identifying UnderscoreJS as a Global Variable
 However, when I add the Underscore.js global identifier (`_`, unsurprisingly) to the global list, I get a different error -- `Unexpected dangling '_' in '_'`:
 
 ![Image of the new error message I see.]({{site.post-images}}/2013-11-25_JSHint_UnexpectedDanglign.png)
 
-###The Solution: the "nomen" Option
+### The Solution: the "nomen" Option
 
 One line of code removed this error:
 
@@ -50,10 +50,10 @@ One line of code removed this error:
 
 According to the [JSLint options documentation][JSLint Options], this allows underscores to begin a name. In the case of underscore, the `_` definition is both the beginning and end of the name (similar to jQuery's `$`).
 
-###Cautions &amp; Some Tiny Pitfalls
+### Cautions &amp; Some Tiny Pitfalls
 Had a few minor "oops" moments while figuring this out.
 
-####Ensure that the nomen option is set before your Globals are Defined
+#### Ensure that the nomen option is set before your Globals are Defined
 
 This won't work:
 
@@ -69,7 +69,7 @@ But this will:
 /*global $, jQuery, ko, moment, console, toastr, accounting, _ */
 {% endhighlight %}
 
-####JSHint says "nomen" will be deprecated.
+#### JSHint says "nomen" will be deprecated.
 
 I kind of hope that's not the case, since it helps here.
 

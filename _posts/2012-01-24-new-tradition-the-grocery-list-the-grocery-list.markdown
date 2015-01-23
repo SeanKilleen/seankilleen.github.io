@@ -25,7 +25,7 @@ I think this is an okay start:
 * A Cucumber
 * Garlic
 
-####My Plan
+#### My Plan
 * Apples for Snacks
 * Tonight: Orzo (package some up for lunch tomorrow with an apple, celery sticks, &amp; sliced pepper to snack on throughout the day)
 * Tomorrow morning: Eggs and leftover tomato &amp; onion with garlic

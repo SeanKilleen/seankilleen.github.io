@@ -7,10 +7,10 @@ excerpt: "When attempting to run a report from Crystal Reports Server 2008, the 
 comments: true
 
 ---
-###Problem
+### Problem
 When attempting to run a report from Crystal Reports Server 2008, the "processing data" wheel seems to be stuck in an infinite spin. On a server with constrained resources, this might seem to be a processing speed issue. This only happens with a specific report.
 
-###Solution
+### Solution
 
 * Open and log into Crystal Reports Server InfoView
 * In InfoView, click on `Preferences`. 

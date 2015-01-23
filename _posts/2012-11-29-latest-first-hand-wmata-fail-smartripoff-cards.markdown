@@ -7,7 +7,7 @@ comments: true
 ---
 OK, technically second-hand; this story comes to us courtesy of the lovely [Caroline].
 
-###How's This for an Epic WMATA fail?
+### How's This for an Epic WMATA fail?
 I'll bullet it out for easy digestion:
 
 * The buses require you to pay either cash or a Smartrip card.
@@ -20,7 +20,7 @@ I'll bullet it out for easy digestion:
 * ...WMATA has not informed its drivers formally of this situation and does not know which ones know about it and which ones don't.
 * This a known issue to WMATA, and is known to affect all 20-digit cards beginning in 0167.
 
-###Let Me Count the Fails:
+### Let Me Count the Fails:
 
 * **Technology Fail**: Who doesn't test card readers or firmware w/cards in the wild before they're released? How could this problem ever exist?
 * **Asset Management Fail**: I know that WMATA uses enterprise-class asset management software (IBM Maximo) because I was at a seminar with them. Given this, how is it possible that it is unknown which buses have the card readers with issues and which ones don't?

@@ -16,16 +16,16 @@ references:
  - title: "Powershell VMWare Script not running from Scheduled Task"
    url: http://stackoverflow.com/questions/14564732/powershell-vmware-script-not-running-from-scheduled-task
 ---
-###Problem
+### Problem
 I need to create a scheduled task that runs a powershell script that takes actions against my VMWare environment.
 
 For this article, we'll use the example of shutting down all VMs in a Non-Production folder when we're not scheduled to be at our desk (a real problem I'd faced).
 
-###Solution
-####Before you Begin
+### Solution
+#### Before you Begin
 This solution assumes that you've already got PowerCLI configured and know your way around a little bit of PowerCLI/PowerShell.
 
-####Step 1: Create a VMWare Credential Store in a File
+#### Step 1: Create a VMWare Credential Store in a File
 Firstly, your script will need login permissions to connect to a VI server. We can set this up ahead of time by  creating an encrypted credential store for your server.
 
 * Open PowerCLI as an Administrator.
@@ -37,7 +37,7 @@ New-VICredentialStoreItem -host 'yourhost.yourdomain.com' -user 'yourusername' -
 
 **NOTES**: When creating the credential store, you'll want to create it as the same user that will eventually need to access it. If you create the credential file as user X but run the Scheduled Task as user Y, your task will be unable to read the file. Also, you don't need to have a file extension, but I use "creds" just to make it clearer to me. Obviously, replace the host, username, password, and path with something that makes sense to you.
 
-####Step 2: Create a Script that Uses the Credential Store
+#### Step 2: Create a Script that Uses the Credential Store
 
 Create a PowerShell Script Similar to the following:
 
@@ -70,7 +70,7 @@ Remove-PSSnapin -Name VMWare.VimAutomation.Core
 Stop-Transcript
 {% endhighlight %}
 
-####Step 3: Set up the Scheduled Task
+#### Step 3: Set up the Scheduled Task
 
 * Create a scheduled task in the task scheduler.
 * Run the task with the highest privileges.
@@ -79,10 +79,10 @@ Stop-Transcript
 
 Test your task manually several times. Make sure the log output looks right.
 
-####Taking it Live: Removing the -WhatIf
+#### Taking it Live: Removing the -WhatIf
 When the task is scheduled and you're satisfied it will run as you intended it, edit the script to remove the `-WhatIf` line. This means the Guest OSes will actually be shut down.
 
-####Afterwards: Gotchas
+#### Afterwards: Gotchas
 I gained some insights from this process, mostly by trial and error. I thought I should share the fruits of my errors with you:
 
 * Do not run a powershell script directly as a scheduled task. It does not work. Use the `powershell.exe "C:\Path\To\script.ps1"` format to execute.

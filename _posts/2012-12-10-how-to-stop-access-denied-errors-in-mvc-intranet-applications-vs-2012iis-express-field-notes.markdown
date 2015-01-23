@@ -18,15 +18,15 @@ references:
    parenttitle: Lucian Maran
    parenturl: http://maran.ro/
 ---
-###Problem
+### Problem
 * Using Visual 2012 and IIS Express
 * Building an MVC4 Intranet project
 * Authentication Doesn't appear to work; I always get an "Access Denied" screen on every page.
 
-###Cause
+### Cause
 This happens because IIS Express isn't configured by default for Windows Authentication.
 
-###Solution
+### Solution
 * Run your project.
 * While it is running / showing you the error, find the IIS Express Icon in your system tray
 * Right-click the icon and select `Show all Web Applications`.

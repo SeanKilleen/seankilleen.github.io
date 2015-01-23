@@ -17,7 +17,7 @@ references:
 
 ---
 
-###This Time…
+### This Time…
 In this round, we’re going to discuss:
 
 * How to Start the Cassini Web Server Asynchronously 
@@ -25,21 +25,21 @@ In this round, we’re going to discuss:
 * How to (not quite) get Visual Studio to seemlessly Follow the Same directions that your MSBuild file follows.
 
 
-###Starting the Web Server (Asynchronously!)
+### Starting the Web Server (Asynchronously!)
 Visual Studio has a built-in web server – no doubt you’re familiar with it. It’s what runs whenever you hit F5 on a web server and see a web site come up. This server is called Cassini, and you can start it up through an MS Build Task.
 
 *[**A little background**: Rather than show here, I’m going to tell. You can use the Exec task normally to run an executable, but the catch is that MSBuild will usually wait for the task to finish. We’re going to use the AsyncExec task in order to ensure that MSBuild will start the web server and continue performing next commands without waiting for Cassini to exit, since waiting on Cassini would be undesirable behavior here.]*
 
 We’re going to take advantage of an excellent set of extensions called the MSBuild Community Tasks to accomplish our mission here.
 
-###Get the MSBuild Extension Pack
+### Get the MSBuild Extension Pack
 You should visit the [MSBuild Extension Pack web site] for an excellent overview of the capabilities of these tools. You can just click the download button on the right-hand side to get the latest version in ZIP format..
 
 * Unzip the download (anywhere is fine).
 * Go one level deeper and extract the `.NET 4.0` zip file.
 * Create a folder in the `thirdpartytools` folder of your solution called `MSBuildExtensionPack`.
 * Copy the contents of the `Build` folder from the zip file (the .dlls, etc.) into this directory.
-###Updating Your Build File to be AsyncExec Ready
+### Updating Your Build File to be AsyncExec Ready
 We’ll have to update the build file to bring in the new task library (a great feature of MSBuild, by the way). To do this, we’ll add an import directive to the Extension Pack’s Task Files (this should go just inside of the `<project>` tag):
 
 {% highlight xml %}
@@ -66,7 +66,7 @@ Since the Extension Pack is no longer figuring out what its path is, we need to 
 
 Now we’re ready to add the command to start the web server.
 
-###Adding a Target to Start the Web Site
+### Adding a Target to Start the Web Site
 
 First thing’s first – we have to add an item to the `<ItemGroup>` section to tell MSBuild where Cassini resides, and an item to tell it where our published web site will reside once it’s been spat out by our build process. I took the guesswork out of it for you in the lines below: 
 
@@ -87,7 +87,7 @@ Try running your build file with a target of `StartWebsite`. You should be able 
 
 However, you may have noticed something. What stops the website so we can start it again? Nothing, and so we’re going to build that target too.
 
-###Adding a Target to Stop the Web Site and Updating Dependencies
+### Adding a Target to Stop the Web Site and Updating Dependencies
 You can use the handy built-into-windows `TaskKill` program to force a kill of program that has the same name as the WebServer. We just call it with an Exec Command, as shown below:
 
 {% highlight xml %}
@@ -148,7 +148,7 @@ For reference, at this point, our build file looks like:
 </Project>
 {% endhighlight %}
 
-###Getting Visual Studio to Play Along: Help Needed!
+### Getting Visual Studio to Play Along: Help Needed!
 Unfortunately, this is one area that this blog series will fall short. I’ve scoured the internet in an attempt to find out how I can output the bin and obj to another folder based on the $(SolutionDir) variable, but apparently unlike C++, Visual Studio for C# does not allow this and instead creates a strange Folder with “$(SolutionDir)” literally in the name. I thought it would be pretty straightforward, but boy was I wrong. If anyone has any suggestions, I’m all ears. I was told I could go the route of editing the .csproj file, but I really tend to be wary of that kind of text editing; I like Visual Studio to be able to own that file for its sake.
 
 For now, I just recommend using TortoiseSVN to ignore those folders in your source control so that it doesn’t conflict with anyone else if you hit F5 and commit later. 

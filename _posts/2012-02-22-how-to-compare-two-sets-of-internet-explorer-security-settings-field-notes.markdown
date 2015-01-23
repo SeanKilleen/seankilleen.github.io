@@ -15,12 +15,12 @@ references:
    parenttitle: Microsoft's USGCB Tech Blog
    parenturl: http://blogs.technet.com/b/fdcc/default.aspx
 ---
-###The Problem
+### The Problem
 A web application doesn't work correctly for a user, and from the description of the issue I think it might have to do with security settings. The application works fine for me.
 
 How do I see what settings I have that the user doesn't?
 
-###The Solution
+### The Solution
 Enter [Aaron Margosis][Aaron Link] 's excellent [IEZoneAnalyzer utility]. It allows you to do just that: view, export, and compare Internet Explorer Zone settings.
 
 The steps I generally use are below:
