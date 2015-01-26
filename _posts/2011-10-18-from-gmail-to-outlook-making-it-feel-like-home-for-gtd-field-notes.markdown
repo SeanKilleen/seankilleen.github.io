@@ -16,7 +16,9 @@ references:
    url: http://superuser.com/questions/346295/outlook-search-folder-how-to-filter-messages-that-have-one-category-but-dont
    parenttitle: SuperUser
    parenturl: http://SuperUser.com
-   
+
+redirect_from:
+ - /2011/10/from-gmail-to-outlook-making-it-feel.html   
 ---
 I recently started a new job at the [Johns Hopkins Applied Physics Laboratory] in Laurel, MD. It's a great gig so far, but one of the pain points I hadn't expected was moving from Google Apps to Outlook. I had a system in GMail that worked perfectly for my brain, but I needed to find a new solution. This post details how I got myself back to my organizational "happy place".
 
