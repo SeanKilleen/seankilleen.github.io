@@ -2,7 +2,7 @@
 
 title:            SeanKilleen.com
 locale:           en_US
-url:              http://seankilleen.github.io
+url:              http://localhost:4000
 
 
 # Jekyll configuration
