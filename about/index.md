@@ -26,7 +26,7 @@ I'll be setting up a contributors page soon to acknowledge any help I get!
 * All of this is hosted (for free!) On [Github pages][github-pages link], because they're awesome.
 * The [Minimal Mistakes theme][minimal mistakes link] (which I tweaked a bit).
 * Comments are hosted on [Disqus][disqus link].
-* Want to know what's in the pipeline? I'm going to try to put some of my process in a [public Trello board](https://trello.com/b/nrxQGFmi/seankilleen-com).
+* Want to know what's in the pipeline? I'm using [GitHub Issues](https://github.com/SeanKilleen/seankilleen.github.io/issues) to track things. Or you can just drop me a line and ask.
 * Source code is being formatted by [Google Code Prettify][prettify link].
 * A [great blog post at RealJenius](http://realjenius.com/2012/11/03/jekyll-series-list/) describing how to set up a series post in Jekyll without plug-ins. Some nice liquid formatting craziness in there. Learned a lot.
 
