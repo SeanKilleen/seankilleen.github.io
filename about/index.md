@@ -10,15 +10,13 @@ image:
 ---
 More information coming here soon.
 
-I want YOU!
-===========
+# I want YOU!
 
 See a typo? Come across an issue? You can [create an issue report][new issue link] or even better, [fork this repository][fork link], fix the issue yourself, and submit it as a pull request. 
 
 I'll be setting up a contributors page soon to acknowledge any help I get!
 
-This Site Runs On:
-======================
+# This Site Runs On:
 
 * Dunkin (in all seriousness, there is probably some considerable caffeine to blame for this).
 * The [Jekyll][jekyll link] markdown blogging platform (which is run on [Ruby][ruby link]
@@ -34,8 +32,7 @@ This Site Runs On:
 
 Thanks to all of these things, I can host this small chunk of my brain on the internet.
 
-Credits
-===========
+# Credits
 
 * I think much credit is due to [Phil Haack](http://haacked.com/). He inspired me with the idea that the entirety of a blog could be collaborative, and his posts on it removed some of the fear for me. I'll be stealing a number of ideas directly from him, including an edit link for every page, and a link to submit new issues.
 * Thanks to [David Coyle][coyled github] for his [atom.xml template for Jekyll][atom.xml link].
