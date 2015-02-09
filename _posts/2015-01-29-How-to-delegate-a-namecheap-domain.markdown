@@ -20,18 +20,32 @@ Domain name delegation allows your customer to give you access to their domain n
 I'm a big fan of <http://NameCheap.com> for domain hosting. They make domain delegation pretty straightforward.
 
 Your client can do the following:
+
 * Sign up for NameCheap and buy their domain.
 * Go into their domain's settings.
-* On the left-hand side, click "Grant modification rights"
-* Enter their password and your username
-* Select `all` for all rights or (only the rights they're comfortable with).
-* Save the settings
+* On the left-hand side, click "Grant modification rights":
 
-Boom! You'll see that domain in your account the next time you login.
+![]({{site.post-images}}/Namecheap_GrantModificationRights.png)
+
+* Enter their password and your username:
+
+![]({{site.post-images}}/NameCheap_GrantAccessUsername.png)
+
+* Select `all` for all rights or (only the rights they're comfortable with):
+
+![]({{site.post-images}}/NameCheap_SelectAllRights.png)
+
+* Save the settings:
+
+![]({{site.post-images}}/NameCheap_GrantAccessButton.png)
+
+The next time you sign in, you'll see the domain name in your domain name list, likely with a lock next to it to indicate that you've only been granted certain rights:
+
+![]({{site.post-images}}/NameCheap_DelegatedDomain.png)
 
 ## To Recap: Why do this again?
 
-* **Doesn't Expose other customer domains: ** if a customer has 20 domains under their account, they can grant you rights to just the one they're interested in. 
+* **Doesn't Expose other customer domains:** if a customer has 20 domains under their account, they can grant you rights to just the one they're interested in. 
 * **No shared logins:** Both parties are more secure since there's no need to share passwords. 
 * **Power resides with the customer:** They can remove your rights entirely at any time they desire or share with multiple people. This puts the power/control in their hands which is usually a good thing.
 * **You can both use two-factor authentication:** Because passwords aren't shared, two-factor authentication (one of the more secure approaches to logins that uses "something you know", e.g. a password, and something you have, e.g. your cell phone to receive a text) is now possible. This greatly reduces potential for a security breach.
