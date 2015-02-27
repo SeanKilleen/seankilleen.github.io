@@ -23,4 +23,4 @@ Below are my guidelines for sending FYI events to your coworkers in a painless w
 * **Set an alarm for yourself if you'd like**: This will inform you prior to the event without annoying anyone else. Just open the event, change the alarm, and click "Save" without sending an update.
 * **Set yourself to out of office**: Open the meeting, change the status to "Out of Office", and click Save without sending an update. Now your coworkers will still be shown as in the office, but you won't.
 
-Hope this is helpfful!
+Hope this is helpful!
