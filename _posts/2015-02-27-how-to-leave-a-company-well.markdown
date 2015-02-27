@@ -68,4 +68,5 @@ How do you want your colleagues to remember your departure? I like to show my gr
 ## What Do You Think?
 I'm happy to have maintained largely positive relationships with my former employers.
 
-I'd love to hear any additional advice you have. Sound off in the comments!
+I'd love to hear any additional advice you have. Sound off in the comments, or [check it out on HackerNews](https://news.ycombinator.com/item?id=9119771).
+
