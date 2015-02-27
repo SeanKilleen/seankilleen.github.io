@@ -2,7 +2,7 @@
 title: "Learning to Love RegEx: a Find and Replace example"
 layout: post
 date: 2015-02-27 10:45:00.000000000 -05:00
-excerpt: "A text editor and a little regex know-how can save a lot of time."
+excerpt: "A text editor and a little RegEx know-how can save a lot of time."
 comments: true
 ---
 # Problem
