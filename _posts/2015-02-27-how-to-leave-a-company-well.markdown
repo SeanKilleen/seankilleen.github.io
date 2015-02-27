@@ -5,7 +5,7 @@ date: 2015-02-27 11:00:00.000000000 -05:00
 excerpt: "It's more than not burning bridges."
 comments: true
 ---
-I recently had lunch with the owner of a company I'd moved on from. Besides serving as a general catch up, it served as a sort of check-in/reflection point on constructive criticisms from our time together. 
+I recently had lunch with the owner of a company I'd moved on from. Besides being a general catch up, it served as a sort of check-in/reflection point on constructive criticisms from our time together. 
 
 I had (I think) a great relationship with the owner prior to my departure (which was due to other circumstances), but one thing in particular he said durig this lunch made me extremely happy:
 
@@ -19,11 +19,13 @@ This was 100% my goal -- and I think it should be everyone's goal when leaving a
 * **Give more than two weeks' notice**: Whenever possible, as a sign of respect, I like to offer longer than two weeks notice when leaving a company. Your new employer's needs come first of course, but providing more time for the transition helps you leave on solid footing as a professional. 
 
 ## The Transition
+The heart of the matter.
+
 ### The Initial Conversation is IMPORTANT.
 This can determine the entire tone of your leaving. 
 
 * **Keep it positive**. Folks are often eager to let someone know why they're leaving a company, but this comes cross entirely wrong. You'll be prone to offering less constructive criticism, it creates a possibility for the conversation to devolve in an argument, and it can make you seem petty and/or vindictive. 
- * If pressed for a reason for your departure, keep things general and positive. If someone appears to be genuinely interested, and there's nothing that could change your mind on leaving, offer to set up a meeting after you're gone to talk about it. This allows them to follow through if they're serious about improvement and saves everyone time and frustration if they're not.
+* **If pressed for a reason for your departure, keep things general and positive.** If someone appears to be genuinely interested, and there's nothing that could change your mind on leaving, offer to set up a meeting after you're gone to talk about it. This allows them to follow through if they're serious about improvement and saves everyone time and frustration if they're not.
 * **Figure out when it's okay to tell others, and who should be told.** I suggest offering suggestions but letting the manager know you'll respect whatever order/timing they choose.
 * **Ensure they know you're dedicated to a smooth transition**. Go out of your way to make it clear that even if it requires extra effort, you won't leave them hanging.
 
@@ -41,9 +43,9 @@ My transition document generally contains:
 * **Roadmap / "Someday" items**: a list of things you wanted to achieve there or hoped the company would achieve while you were there. Sometimes these can spawn real change. Depending on how open your company is, this may be a great place to subtly and positively nudge them to resolve some of your issues.
 * **Internal/External Liaison Connections**: Are you the leader of any groups or point person on any committees? Were you the primary contact of any vendors? List these so the company can transition them smoothly.
 * **Accounts held with the company e-mail**: This is important, particularly if the company is paying money for you to hold an account somewhere (MSDN subscriptions come to mind).
-* **Software Licenses**: Similarly, these can be freed up when you leave
+* **Software Licenses**: Similarly, these can be freed up when you leave.
 * **Passwords / Security access you have**: Note any privileged access or accounts that you know a password to, as these should all be changed or addressed in some way.
-* **Software I made use of**: This can be helpfu, particularly if this software was responsible for any "magic" results you achieved. 
+* **Software I made use of**: This can be helpful, particularly if this software was responsible for any "magic" results you achieved. 
 * **Web Sites I made use of**: Similarly, a list of helpful web-based tools can do a lot to ease a transition.
 * **Recommended Books**: If there are books that I find would be good for development groups or companies to read, I'll likely include them here, particularly if I felt that they would have helped us better align to avoid me leaving.
 * **Next Actions based on assessment.** This is probably the most important part. Based on everything you wrote above, what are all the things you and others need to do to ensure a successful transition? I would go so far as to add these tasks to a [Trello board](http://Trello.com) and invite the appropriate stakeholders so that they can keep tabs on things as they progress.
