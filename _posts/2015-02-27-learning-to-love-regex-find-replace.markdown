@@ -16,7 +16,7 @@ This kind of thing always sets off a light bulb in my brain for regular expressi
 ## Creating the RegEx
 The requirements are to find two pound signs `##` Followed by any letter (uppercase or lowercase).
 
-The RegEx for this is `##[A-Za-z]`
+The RegEx for this is `##[A-Za-z]`.
 
 ## Adding the Capture Group
 
@@ -27,7 +27,7 @@ To do this, we wrap the first character portion in parentheses, giving us `##([A
 ## Replacing the text
 
 * In Notepad++, we open the Find & Replace window. 
-* We Search for `##[A-Za-z]`
+* We Search for `##([A-Za-z])`
 * We replace it with `## \1` (the original heading, plus a space, plus the first character)
 * We make sure that the search mode is RegEx
 * We perform the find and replace across all files.
