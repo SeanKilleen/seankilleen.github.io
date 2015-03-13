@@ -9,7 +9,7 @@ I recently had lunch with the owner of a company I'd moved on from. Besides bein
 
 I had (I think) a great relationship with the owner prior to my departure (which was due to other circumstances), but one thing in particular he said durig this lunch made me extremely happy:
 
-"You left like a gentleman".
+"You left like a gentleman."
 
 This was 100% my goal -- and I think it should be everyone's goal when leaving a company (assuming the relationship is not in tatters somehow). This caused me to reflect on what I'd done when leaving the company, in the hopes that it will serve as a boilerplate for myself and others going forward.
 
@@ -53,7 +53,7 @@ My transition document generally contains:
 ### Meeting with Stakeholders
 Meet with as many stakeholders as you can, as soon as possible. You need to soak up all the next actions and get a sense of what everyone's wish list is for you before you leave so that you can figure out where things fall in the queue based on overal priority.
 
-After meeting with these people, take the transition plan back to your manager so they can confirm that the priorities are correct. This well help ensure you're on the same page in case there are some things you can't get to.
+After meeting with these people, take the transition plan back to your manager so they can confirm that the priorities are correct. This will help ensure you're on the same page in case there are some things you can't get to.
 
 ### Connect with -- and Praise -- Colleagues
 Once word is out, add colleagues on professional/social networks if you haven't already and if you would like to stay in touch with them going forward.
