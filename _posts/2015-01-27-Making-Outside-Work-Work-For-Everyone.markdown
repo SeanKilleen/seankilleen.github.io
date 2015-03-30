@@ -74,6 +74,7 @@ It’s important to note that I am not a lawyer. Below is a “plain English” 
 
 ### Employee Will:
 (Initial next to each bullet)
+
 * Notify the Company of any commercial or non-commercial outside work, unless the Company deems this unnecessary.
 * Take reasonable measures to insulate the Company from any liability, such as by entering into written agreements as an individual only, or by forming a LLC.
 * Offer the company first use (as a free customer) of non-competitive products if they might benefit the Company.
@@ -84,6 +85,7 @@ It’s important to note that I am not a lawyer. Below is a “plain English” 
 
 ### Employee Will Not: 
 (Initial next to each bullet)
+
 * Use the company name in the course of outside work in any way that would give the impression that the company is performing the work or endorses the work.
 * Use any company resources (computers, office, etc.) in the course of outside work
 * Perform outside work on company time or on company premises.
