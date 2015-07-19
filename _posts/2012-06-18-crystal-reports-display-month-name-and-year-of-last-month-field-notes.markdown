@@ -6,6 +6,7 @@ comments: true
 excerpt: "A report I'm running gets the data for the last Month. I'd like to nicely display the name of the month and year."
 redirect_from:
  - /2012/06/crystal-reports-display-month-name-and.html
+ - /2012/06/crystal-reports-display-month-name-and-year-of-last-month-field-notes/undefined
 
 references: 
  - title: DateAdd
