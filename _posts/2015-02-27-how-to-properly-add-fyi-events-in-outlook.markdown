@@ -26,6 +26,6 @@ Below are my guidelines for sending FYI events to your coworkers in a painless w
 ## An Animated Walkthrough
 Because why not? 
 
-![For your viewing pleasure.]({{site.post-images}}/OutlookFYI_AnimatedGif.gif)
+![]({{site.post-images}}/OutlookFYI_AnimatedGif.gif)
 
 Hope this is helpful!
