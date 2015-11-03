@@ -21,7 +21,7 @@ Below, I demonstrate two different techniques -- with animations to help guide t
 * However, an icon appears in the lower-right-hannd corner. Click this icon
 * Select "formatting only" to replace the formatting only, which will include the conditional formatting.
 
-Example below:
+Example below (click to expand): 
 
 ![]({{site.post-images}}/Excel_ApplyConditionalFormattingAcrossRows_Method1_DragFormatting.gif)
 
@@ -34,7 +34,7 @@ Example below:
 
 Excel will automatically recalculate the references and you'll be on your way!
 
-Example below: 
+Example below (click to expand): 
 
 ![]({{site.post-images}}/Excel_ApplyConditionalFormattingAcrossRows_Method2_ManuallyEdit.gif)
 
