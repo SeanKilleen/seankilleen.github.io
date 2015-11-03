@@ -9,6 +9,9 @@ references:
    url: http://www.nunit.org/index.php?p=multiAssembly&amp;r=2.2.10
    parenttitle: NUnit 
    parenturl: http://www.nunit.org/
+redirect_from: 
+ - /2012/05/quick-tip-run-multiple-nunit-assemblies.html
+ 
 ---
 This is mostly a reference post for me, but I figured somebody else might find it useful.
 
