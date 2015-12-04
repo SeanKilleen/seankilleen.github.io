@@ -4,6 +4,8 @@ title: 'Quick Tip: Run Multiple NUnit Assemblies with one Exec Command in MSBuil
   [Field Notes]'
 date: 2012-05-15 10:52:00.000000000 -04:00
 comments: true
+redirect_from:
+ - /2012/05/quick-tip-run-multiple-nunit-assemblies.html
 references: 
  - title: MultiAssembly
    url: http://www.nunit.org/index.php?p=multiAssembly&amp;r=2.2.10
