@@ -14,13 +14,16 @@ references:
    parenturl: http://code972.com
  - title: "WeWorkRemotely"
    url: https://weworkremotely.com/
+ - title: ".NET Fringe"
+   url: http://dotnetfringe.org/
+   
 comments: true
 ---
 I was lying in bed, getting ready to call it an early Friday evening, when I came across a blog post. 
 
 [Itamar Syn-Hershko](http://twitter.com/synhershko) is someone I have a lot of respect for in the .NET Community. I've seen him as someone involved with Lucene.NET and RavenDB. More recently, I've known him as someone who helped run the [dotNetFringe conference] in April that I was lucky enough to attend. He also helped me squash a pull request for the first time (I butchered it if I recall correctly).
 
-So his blog post, [Open-source and .NET - it's not picking up](http://code972.com/blog/2016/01/93-open-source-and-net-its-not-picking-up), took me by surprise. Since April, when I attended .NET Fringe, I've been slowly pulled into the .NET open-source ecosystem, dipping my toes in the water and trying to help here and there. To hear someone like Itamar lament the state of the ecosystem made me really take notice.
+So his blog post, [Open-source and .NET - it's not picking up](http://code972.com/blog/2016/01/93-open-source-and-net-its-not-picking-up), took me by surprise. Since April, when I attended [.NET Fringe](http://dotnetfringe.org/) and met some fantastic people, I've been slowly pulled into the .NET open-source ecosystem, dipping my toes in the water and trying to help here and there. To hear someone like Itamar lament the state of the ecosystem made me really take notice.
 
 Go ahead and read his post -- I'll wait. 
 
