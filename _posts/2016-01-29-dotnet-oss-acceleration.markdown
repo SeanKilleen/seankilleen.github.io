@@ -1,7 +1,7 @@
 ---
 title: "How can we Accelerate the .NET OSS Ecosystem?"
 layout: post
-date: 2016-01-29 11:32:00.000000000 -05:00
+date: 2016-01-30 00:33:00.000000000 -05:00
 excerpt: "Itamar Syn-Hershko got me thinking."
 references:
  - title: Itamar Syn-Hershko
