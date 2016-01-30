@@ -83,9 +83,11 @@ I wonder if a push on this could help groups in various cities self-organize aro
 
 While I'm certain that the lack of progress Itamar sees is real and needs to be addressed, I also think he's so far ahead of the game that it might take some time to see that acceleration is happening -- it might appear slower from his vantage point. 
 
-I see a growing number of developers all around me excited about OSS in the .NET ecosystem, and they understand the importance of giving back. Like me, I think they're hovering around the edges and dipping their toes in the water, waiting for the right time to jump in or 
+There's a great deal of inertia that we have to overcome, and changing the mindset of an entire industry is never going to be easy. 
 
-## Hey, Itamar -- and other OSS Pioneers: Thank you! Please don't lose hope.
+But, I see a growing number of developers all around me excited about OSS in the .NET ecosystem, and they understand the importance of giving back. Like me, I think they're hovering around the edges and dipping their toes in the water, waiting for the right time to jump in or becoming incrementally more involved. I think a new generation of .NET developers is coming of age -- or being reincarnated ;). Now that OSS is backed by a huge group of passionate people -- and to a much greater extent these days, Microsoft itself -- I hope we'll go beyond seeing the fruits of the labor of people like Itamar, to actually helping them plant some seeds. 
+
+## Hey, Itamar -- and other .NET OSS Pioneers: Thank you! Please don't lose hope.
 
 We owe a lot to the ".NET OSS pioneers" who've come before us. We've been standing on the shoulders of giants. But they need more than our thanks -- they need us to pitch in.
 
