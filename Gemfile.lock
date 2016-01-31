@@ -156,3 +156,6 @@ DEPENDENCIES
   jekyll-compose
   kramdown (>= 1.5.0)
   rake
+
+BUNDLED WITH
+   1.11.2
