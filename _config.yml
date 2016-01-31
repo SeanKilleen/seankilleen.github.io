@@ -2,7 +2,7 @@
 
 title:            SeanKilleen.com
 locale:           en_US
-url:              http://SeanKilleen.com #http://localhost:4000
+url:              http://localhost:4000
 
 
 # Jekyll configuration
@@ -11,7 +11,7 @@ timezone: America/New_York
 post-images: /images/post-images
 permalink:   /:year/:month/:title #/:categories/:title/
 markdown:    kramdown
-highlighter: pygments
+highlighter: true
 sass:
   sass_dir: _sass
   style: compressed

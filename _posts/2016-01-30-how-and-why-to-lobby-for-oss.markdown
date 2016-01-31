@@ -38,6 +38,8 @@ references:
    parenturl: https://www.atlassian.com/
  - title: "Code School - Try Git"
    url: https://try.github.io/levels/1/challenges/1
+ - title: "Git - the simple guide - no deep shit!"
+   url: http://rogerdudler.github.io/git-guide/
  
 comments: true
 ---
