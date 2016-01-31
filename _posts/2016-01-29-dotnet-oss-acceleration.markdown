@@ -19,6 +19,10 @@ references:
    
 comments: true
 ---
+**A brief update:** To keep this conversation going, I authored an additional post: [How (and Why) to Lobby Companies to Support .NET OSS](http://seankilleen.com/2016/01/how-and-why-to-lobby-for-oss/)
+
+___
+
 I was lying in bed, getting ready to call it an early Friday evening, when I came across a blog post. 
 
 [Itamar Syn-Hershko](http://twitter.com/synhershko) is someone I have a lot of respect for in the .NET Community. I've seen him as someone involved with Lucene.NET and RavenDB. More recently, I've known him as someone who helped run the [.NET Fringe conference](http://dotnetfringe.org/) in April that I was lucky enough to attend. He also helped me squash a pull request for the first time (I butchered it if I recall correctly).
