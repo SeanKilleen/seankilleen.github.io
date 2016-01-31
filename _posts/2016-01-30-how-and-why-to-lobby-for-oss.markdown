@@ -32,6 +32,12 @@ references:
    url: https://github.com/dotnet
    parenttitle: "GitHub"
    parenturl: https://github.com
+ - title: "Git Tutorials and Training"
+   url: https://www.atlassian.com/git/tutorials/
+   parenttitle: Atlassian
+   parenturl: https://www.atlassian.com/
+ - title: "Code School - Try Git"
+   url: https://try.github.io/levels/1/challenges/1
  
 comments: true
 ---
