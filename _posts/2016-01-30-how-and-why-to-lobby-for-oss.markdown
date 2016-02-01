@@ -47,7 +47,7 @@ comments: true
 
 ____
 
-This is a follow-up to [my last post](http://SeanKilleen.com/2016/01/dotnet-oss-acceleration/). I wanted to provide a more concrete way for developers to help their companies get involved, and these thoughtrs are what came out. 
+This is a follow-up to [my last post](http://SeanKilleen.com/2016/01/dotnet-oss-acceleration/). I wanted to provide a more concrete way for developers to help their companies get involved, and these thoughts are what came out. 
 
 **Note:** While this article is geared primarily towards .NET developers and GitHub-based OSS projects, I think it applies more broadly as well. 
 
