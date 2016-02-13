@@ -4,10 +4,8 @@ title: 'Mr. Rogers: Can you say hero?'
 date: 2013-03-16 13:08:00.000000000 -04:00
 comments: true
 excerpt: "A great story from Tom Junod."
-
-redirect_from:
+redirect_from: 
  - /2013/03/mr-rogers-can-you-say-hero.html
-
 ---
 ***Update:** As promised, I'm updating this to include [Tom Junod's response][Junod Response]. He notes that **the profile is  available in the [Esquire collection of profiles entitled "Great Men" at Byliner][Great Men]. At $3.99 it appears to be a fantastic deal.** I'll be purchasing, and I hope you will, too. If he asks me to remove the text below, I'll be doing so, but I hope he'll let us continue to read it here as well.*
 ___
