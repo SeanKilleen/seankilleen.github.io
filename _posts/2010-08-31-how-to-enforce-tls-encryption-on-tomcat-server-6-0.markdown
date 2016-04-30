@@ -18,7 +18,7 @@ I looked around for how to do this, and to my surprise, it was incredibly diffic
 
 So, in short, a Tomcat 6.0 connector in server.xml that enforces TLS looks something like the connector below (I’ve changed the password to a dummy, of course):
 
-{% highlight apache %}
+```apache
 <Connector
 	port="8443"
 	protocol="HTTP/1.1"
@@ -36,7 +36,7 @@ So, in short, a Tomcat 6.0 connector in server.xml that enforces TLS looks somet
 	cipher="AES"
 	allowUnsafeLegacyRenegotiation="false"
 >
-{% endhighlight %}
+```
 
 I wanted to provide this bit of knowledge as a public service. Would love to hear about your own experiences enforcing TLS or security in Tomcat and other web servers in the comments! Please let me know if you’ve found this useful.
 

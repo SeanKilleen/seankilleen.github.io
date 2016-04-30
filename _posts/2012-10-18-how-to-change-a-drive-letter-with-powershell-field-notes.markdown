@@ -20,7 +20,7 @@ I need to change the letter of a mounted drive via PowerShell.
 Start Powershell as an admin and run the following two lines, where 'x' is the current drive letter and y is the drive letter you'd like it to be:
 
 
-{% highlight powershell %}
+```powershell
 $drive = Get-WmiObject -Class win32_volume -Filter "DriveLetter = 'x:'"
 Set-WmiInstance -input $drive -Arguments @{DriveLetter="Y:";}
-{% endhighlight %}
+```

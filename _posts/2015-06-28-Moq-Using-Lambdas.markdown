@@ -15,23 +15,23 @@ A big challenge for tests is to keep them specific enough that they accurately c
 
 I see a lot of folks do things along the lines of the following:
 
-{% highlight CSharp %}
+```csharp
 var mockLogger = new Mock<ILogger>();
 var myClass = New MyClass(mockLogger.Object);
 
 mockLogger.Verify(x=> x.Warning("Setting 'mySetting' has no value; using default of 1");
-{% endhighlight %}
+```
 
 Now, this is all well and good. However, what if the default value changes? Or the name of the setting? The test is too brittle; it will fail easily.
 
 However, when using Moq, it allows you to use a lambda to specify things *about* a string, rather than the whole string itself:
 
-{% highlight CSharp %}
+```csharp
 mockLogger.Verify(x=> x.Warning(It.Is<string>(str => 
      str.Contains("Setting") && 
      str.Contains("has no value") && 
      str.Contains("using default"))));
-{% endhighlight %}
+```
 
 This maintains the essence of the test, while at the same time fortifying it against things that might reasonably change. It's slightly more verbose, but I don't think that takes away from it much.
 

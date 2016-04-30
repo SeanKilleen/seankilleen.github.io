@@ -193,7 +193,7 @@ Better yet, let's add an overload -- if the user doesn't specify the CDN URL, we
 
 This small bit of code should work just fine:
 
-{% highlight C# %}
+```csharp
 public static class CDNHelper
 {
 	public static string CDN(this HtmlHelper helper, string containerName, string blobName)
@@ -221,7 +221,7 @@ public static class CDNHelper
 		return stringToRemoveTrailingSlashFrom;
 	}
 }
-{% endhighlight %}
+```
 
 ## What the heck does this code do?
 This is an extension method onto `HtmlHelper`. When you call into it, it looks for the CDN at the `CDNBaseUrl` application setting. 
@@ -252,7 +252,7 @@ That's all you need to do.
 ## Updating our HtmlHelper to Support CDN Versioning 
 We add a boolean value for `versioning` and pass it through, defaulting to true:
 
-{% highlight C# %}
+```csharp
 public static string CDN(this HtmlHelper helper, string containerName, string blobName, bool versioning = true)
 {
 	//If they don't provide a baseUrl, look for it in the AppSettings
@@ -260,11 +260,11 @@ public static string CDN(this HtmlHelper helper, string containerName, string bl
 	return CDN(helper, baseUrl, containerName, blobName, versioning);
 }
 
-{% endhighlight %}
+```
 
 And we add a branching statement when we concatenate the URL:
 
-{% highlight C# %}
+```csharp
 public static string CDN(this HtmlHelper helper, string baseUrl, string containerName, string blobName, bool versioning = true)
 {
 	var baseUrlToUse = RemoveTrailingSlashFrom(baseUrl);
@@ -279,14 +279,14 @@ public static string CDN(this HtmlHelper helper, string baseUrl, string containe
 	return string.Format("{0}/{1}/{2}", baseUrlToUse, containerToUse, blobName);
 }
 
-{% endhighlight %}
+```
 
 ## Adding a Config setting in your project
 We probably should specify a version number just so we have one. We add the following to our `appSettings` section in `web.config`:
 
-{% highlight xml %}
+```xml
 <add key="CDNVersionNumber" value="1"/>
-{% endhighlight %}
+```
 
 Now we can change that setting from web.config or override it within the Azure control panel and the static content will refresh every time. We could even hook this into a build system that increments it each time to ensure CDN content is updated when we push code.
 

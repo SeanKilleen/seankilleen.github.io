@@ -18,10 +18,10 @@ I like the [PowerShell Community Extensions][PSCX] for this.
 1. From the Powershell command prompt, type `cinst pscx`. This will install the PowerShellCommunity Extensions.
 1. Use the PSCX syntax to get the hashes. Some examples below:
 
-{% highlight powershell %}
+```powershell
 Get-Hash C:\Path\To\File.zip -Algorithm MD5
 Get-Hash C:\Path\To\File.zip -Algorithm SHA1
-{% endhighlight %}
+```
 
 [PSCX]: http://pscx.codeplex.com/
 [Chocolatey Nuget]: http://chocolatey.org/

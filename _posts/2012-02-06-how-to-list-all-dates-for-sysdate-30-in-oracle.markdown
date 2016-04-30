@@ -13,7 +13,7 @@ I needed to, within a view, dynamically generate a list of dates before or after
 ### The Solution
 In Oracle, the SQL to do this is as follows:
 
-{% highlight sql %}
+```sql
 SELECT *
 FROM   (SELECT TRUNC(SYSDATE - ROWNUM) DateItem
         FROM   DUAL
@@ -22,7 +22,7 @@ FROM   (SELECT TRUNC(SYSDATE - ROWNUM) DateItem
         SELECT TRUNC(SYSDATE + ROWNUM) DateItem
         FROM   DUAL
         CONNECT BY ROWNUM < 32)DATERANGE; 
-{% endhighlight %}
+```
 
 This SQL does the following:
 

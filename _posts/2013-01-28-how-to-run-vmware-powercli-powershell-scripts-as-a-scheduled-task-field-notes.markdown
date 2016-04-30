@@ -31,9 +31,9 @@ Firstly, your script will need login permissions to connect to a VI server. We c
 * Open PowerCLI as an Administrator.
 * Run the following command:
 
-{% highlight ps1 %}
+```powershell
 New-VICredentialStoreItem -host 'yourhost.yourdomain.com' -user 'yourusername' -password 'yourpassword' -file C:\Path\To\Store\TheFile\In.creds
-{% endhighlight %}
+```
 
 **NOTES**: When creating the credential store, you'll want to create it as the same user that will eventually need to access it. If you create the credential file as user X but run the Scheduled Task as user Y, your task will be unable to read the file. Also, you don't need to have a file extension, but I use "creds" just to make it clearer to me. Obviously, replace the host, username, password, and path with something that makes sense to you.
 
@@ -41,7 +41,7 @@ New-VICredentialStoreItem -host 'yourhost.yourdomain.com' -user 'yourusername' -
 
 Create a PowerShell Script Similar to the following:
 
-{% highlight ps1 %}
+```powershell
 #Stop an error from occurring when a transcript is already stopped
 $ErrorActionPreference="SilentlyContinue"
 Stop-Transcript | out-null
@@ -68,7 +68,7 @@ Get-Folder -Name "03. Non-Production VMs" | Get-VM | Shutdown-VMGuest -WhatIf
 Disconnect-VIServer -Force -Confirm:$false
 Remove-PSSnapin -Name VMWare.VimAutomation.Core
 Stop-Transcript
-{% endhighlight %}
+```
 
 #### Step 3: Set up the Scheduled Task
 

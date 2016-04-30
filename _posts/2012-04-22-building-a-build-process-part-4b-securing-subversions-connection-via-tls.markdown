@@ -19,30 +19,30 @@ Alright, I just couldn’t take the guilt. I can’t abide Subversion and Apache
 ### Install The Required Packages
 On the CentOS server, login as root and type the following in the terminal to install packages:
 
-{% highlight sh %}
+```sh
     yum install mod_ssl openssl
-{% endhighlight %}
+```
     
 These packages may already be installed; don’t worry if yum tells you that it has nothing to do.
 
 ### Use OpenSSL to Generate a Self-Signed Certificate
 Navigate to the certificate store by heading to:
 
-{% highlight sh %}
+```sh
 cd /etc/pki/ca
-{% endhighlight %}
+```
 
 Next, we’ll need to create a strong private key (2048-bit encryption):
 
-{% highlight sh %}
+```sh
 openssl genrsa -out ca.key 2048
-{% endhighlight %}
+```
     
 Then, we generate a CSR (Certificate Signing Request):
 
-{% highlight sh %}
+```sh
 openssl req -new -key ca.key -out ca.csr
-{% endhighlight %}
+```
  
 You’ll then have to enter the following fields:
 
@@ -58,56 +58,56 @@ You’ll then have to enter the following fields:
 
 The next step is to use the CSR to generate the actual certificate:
 
-{% highlight sh %}
+```sh
 openssl x509 –req –days 365 –in ca.csr –signkey ca.key –out ca.crt
-{% endhighlight %}
+```
 
 Then, copy the certificate files into the TLS certs location that we’ll use later:
 
-{% highlight sh %}
+```sh
 cp ca.crt /etc/pki/tls/certs
 cp ca.key /etc/pki/tls/private/ca.key
 cp ca.cr /etc/pli/tls/private/ca.csr
-{% endhighlight %}
+```
 
 ### Modify Apache’s Configuration to offer SSL
 Open the file for editing:
 
-{% highlight sh %}
+```sh
 gedit +/SSLCertificateFile /etc/httpd/conf.d/ssl.conf
-{% endhighlight %}
+```
 
 Find the line referencing “SSLCertificateFile” and change it to the location of your keyfile. It should look like this when you’re done:
 
-{% highlight apache %}
+```apache
 SSLCertificateFile /etc/pki/tls/certs/ca.crt
-{% endhighlight %}
+```
 
 A few lines after that, you’ll edit the SSLCertificateKeyFile:
 
-{% highlight apache %}
+```apache
 SSLCertificateKeyFile /etc/pki/tls/private/ca.key
-{% endhighlight %}
+```
 
 Save the file and close it.
 
 Next, restart apache – from the console:
 
-{% highlight sh %}
+```sh
 /etc/init.d/httpd restart
-{% endhighlight %}
+```
 
 #### Redirect Non-SSL connections to the SSL Connection
 To do this, we need to edit the apache configuration file. 
 
-{% highlight sh %}
+```sh
 gedit /etc/httpd/conf/httpd.conf
-{% endhighlight %}
+```
 
 Towards the bottom of the file, the `<VirtualHosts>` configuration can be found.
 Paste the following lines at the bottom of the file:
 
-{% highlight apache %}
+```apache
 NameVirtualHost *:80
 NameVirtualHost *:443
 
@@ -128,7 +128,7 @@ NameVirtualHost *:443
         DocumentRoot /var/www
         ServerName localhost
 </VirtualHost>
-{% endhighlight %}
+```
 
 Now point your browser to *https*://[your ip or host name] and you’ll see that the site loads under an http connection. *NOTE:* you may get an error about the certificate, but this is because it does not come from a CA and thus is not “trusted” by your computer. The encryption is still TLS 1.0 256-bit encryption.
 
@@ -137,7 +137,7 @@ I put this in a separate section because I wanted the additions to be compartmen
 
 To use mod_rewrite to redirect any http requests to https, change the VirtualHost *:80 to the following:
 
-{% highlight apache %}
+```apache
 <VirtualHost *:80>
     RewriteEngine On
     RewriteCond %{HTTPS} off
@@ -148,16 +148,16 @@ To use mod_rewrite to redirect any http requests to https, change the VirtualHos
         DocumentRoot /var/www
         ServerName localhost
 </VirtualHost>
-{% endhighlight %}
+```
 
 ### Configure the Firewall to Allow Port 443 Connections
 On the console:
 
-{% highlight sh %}
+```sh
 iptables –A INPUT –p tcp –dport 443 –j ACCEPT
 /sbin/service iptables save
 iptables –L –v
-{% endhighlight %}
+```
 
 Now, try heading to `http:[your ip or hostname]/svn`, and watch it redirect to https. 
 

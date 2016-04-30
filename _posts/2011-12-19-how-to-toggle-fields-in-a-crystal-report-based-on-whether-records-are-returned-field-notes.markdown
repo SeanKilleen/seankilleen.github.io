@@ -15,7 +15,7 @@ Create a formula with a shared variable in your report -- for the sake of this e
 
 The contents of the formula should look like this:
 
-{% highlight vbnet %}
+```vbnet
 // Excute this formula as records are read into the report
 WhileReadingRecords;
 
@@ -24,7 +24,7 @@ Global Numbervar RecordCount;
 
 // increment the variable
 RecordCount := RecordCount+1;
-{% endhighlight %}
+```
 
 #### Step 2: Place the Variable in the Report header and Suppress it
 * Drag the formula into the `Report Header A` section.
@@ -41,24 +41,26 @@ Note that the formula we have created will return `null` when there are no recor
 * Next to the `Supress (No Drill-Down)` option, click the `Formula` button.
 
 If you want to **hide a section if there are no results**, enter the following:
-{% highlight vbnet %}
+
+```vbnet
 If IsNull({@RecordCount}) then true
 else false
-{% endhighlight %}
+```
 
 This tells Crystal to hide the section if the `RecordCount` is null (i.e. there are no results), and to show it otherwise.
 
 If you want to **show a section if there are no results**, enter the following: 
 
-{% highlight vbnet %}
+```vbnet
 If IsNull({@RecordCount}) then false
 else true
-{% endhighlight %}
+```
 
 Or:
-{% highlight vbnet %}
+
+```vbnet
 If (Not(IsNull({@RecordCount}))) then true
 else false
-{% endhighlight %}
+```
 
 These both say "if the record count is not null" (i.e. there are records), suppress this field. Otherwise, show it (if there aren't any results).

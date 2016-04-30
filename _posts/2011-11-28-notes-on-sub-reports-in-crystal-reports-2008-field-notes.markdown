@@ -27,7 +27,7 @@ The post is excerpted (though poorly formatted) below in case the originating si
 
  * In the subreport, create a formula similar to the one below:
 
-{% highlight vbnet %}
+```vbnet
 // SubFormula
 
 //Stores the grand total of the {Orders.Order Amount} field
@@ -35,13 +35,13 @@ The post is excerpted (though poorly formatted) below in case the originating si
 
 WhilePrintingRecords;
 Shared CurrencyVar myTotal := Sum ({Orders.Order Amount})
-{% endhighlight %}
+```
 
 > * Place this formula in your subreport.
 > 
 * In the main report, create a formula that declares the same variable name:
 
-{% highlight vbnet %}
+```vbnet
 //@MainFormula
 //Returns the value that was stored in the shared currency variable called
 //myTotal in the subreport
@@ -50,7 +50,7 @@ WhilePrintingRecords;
 Shared CurrencyVar myTotal;
 
 myTotal
-{% endhighlight %}
+```
 
 > * Place `@MainFormula` in a main report section that is beneath the section containing the subreport. For the shared variable to return the correct value in the main report, you must place `@MainFormula` in a main report section that is beneath the section containing the subreport. This ensures Crystal Reports evaluates the `@SubFormula` before `@MainFormula`.
 
@@ -65,11 +65,11 @@ myTotal
 
 > * Once you have verified that `@MainFormula` is returning the correct value from the subreport, you can include this formula in other main report formulas, such as:
 
-{% highlight vbnet %}
+```vbnet
 //@NewFormula
 //includes data from subreport
 {@MainFormula}+ Sum ({Customer.Last Year's Sales})
-{% endhighlight %}
+```
 
 > Place this formula in the same section as `@MainFormula`, or in a section further down on the report.
 

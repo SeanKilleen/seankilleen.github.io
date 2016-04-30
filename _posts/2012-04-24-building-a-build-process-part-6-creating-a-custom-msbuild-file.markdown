@@ -53,11 +53,11 @@ The good news is, if you have the .NET Framework, you have it. If you have the .
 ### Adding the Schema for an MSBuild XML file
 After the first line of the XML file, you’ll need to add the root node and give it the schema reference for its XML namespace (xmlns). After you do this, it should look like the following:
 
-{% highlight xml %}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">      
 </Project>
-{% endhighlight %}
+```
 
 Note that I also added a ToolsVersion attribute, with “4.0” denoting the version of the .NET Framework we’re using.
 
@@ -68,7 +68,7 @@ Instead of going back and refactoring after showing you a full examples, I’m g
 * The format under this will essentially be: `<PropertyName Include=”PropertyTextToInclude”/>`  
 * Add references to your BuildArtifacts folder, and also to your solution file, like so: 
 
-{% highlight xml %}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
  
@@ -77,12 +77,12 @@ Instead of going back and refactoring after showing you a full examples, I’m g
         <SolutionFile Include=".\TestProject.sln"/>
     </ItemGroup>
 </Project>
-{% endhighlight %}
+```
 
 ### The Basics: Cleaning and Initializing Our Directory
 Next, we create two targets. One, “Clean”, will delete the .buildartifacts folder. The second, “Init”, will recreate it. Pretty simple. The XML to accomplish this is below:
 
-{% highlight xml %}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
  
@@ -100,7 +100,7 @@ Next, we create two targets. One, “Clean”, will delete the .buildartifacts f
     </Target>
    
 </Project>
-{% endhighlight %}
+```
 
 You’ll notice that I have the “Init” target depend on the “Clean” target via DependsOnTargets. This means that any time we create the folder, we’ll first delete it to make sure we’re starting fresh. 
 
@@ -121,11 +121,11 @@ Also notice that instead of putting a path to the buildartifacts folder directly
 ### Getting to the Good Stuff: Compiling our App
 Up until this point, we haven’t compiled our code. Since that’s what gets us paid, in a manner of speaking, we should create an MSBuild task to compile the code. We can do this via the following additional target: 
 
-{% highlight xml %}
+```xml
     <Target Name="Compile" DependsOnTargets="Init">
         <MSBuild Projects="@(SolutionFile)" Targets="Rebuild" Properties="OutDir=%(BuildArtifacts.FullPath)"/>
     </Target>
-{% endhighlight %}
+```
 
 This calls the MSBuild exe from within MSBuild (I know…*whoa, dude*), passes it the solution, and compiles the program by passing it in our solution file variable. It also specifies that the Output Directory should be buildartifacts. **Tip:** See the `.FullPath`? Our variables are also objects, and so MSBuild will know that `%(BuildArtifacts)` is an object and thus will pick up on the FullPath property of it.
 Note that we’ve made “Compile” dependent on “Init”, so that everytime we compile, the buildartifacts folder will be blown away and re-created.
@@ -136,9 +136,9 @@ Passing a Target every time is pretty lame, especially when we usually just want
 
 Luckily, by adding the DefaultTarget attribute to the Project node, we can tell MSBuild what to compile by default. Let’s try that now. Modify the Project node XML to make the default target “Compile”, like so:
 
-{% highlight xml %}
+```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0" DefaultTargets="Compile">
-{% endhighlight %}
+```
 
 Save the file, and run `MSBuild TestProject.build` (without a target attribute). The project should compile.
 

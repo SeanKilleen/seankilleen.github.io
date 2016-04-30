@@ -19,11 +19,11 @@ Also, while I'm about to contrast two testing frameworks, I can't stress enough 
 * **Forgetting `[Setup]` and `[Teardown]`**. My tests flow naturally, just like normal classes and methods should. This prevents me from overcomplicating things[^3].
 * **None of that gross `[ExpectedException]`**. In xUnit, I can use `Assert.Throws<T>`, or with a library like [FluentAssertions](http://www.fluentassertions.com/) I can catch exceptions right in my test using an `Action`:
 
-{% highlight CSharp %}
+```csharp
 Action act = () => myClass.DoThingThatBlowsUp();
 
 act.ShouldThrow<Exception>().And.Message.Should().Be("BOOM!");
-{% endhighlight %}
+```
 
 * **The `[Trait]` attribute to classify tests.** Using `[Trait]`, I can specify any arbitrary metadata about a test I want. Long-running test? Check. Hits a database? I can note that. Deals with a certain component? Yep. BDD-Style English sentence? Yuuup.
 * **The ability to run xUnit tests in Visual Studio without an extension.** I think the fact that you can run `Install-Package xunit.runner.visualstudio` and then run your tests right in Visual Studio is awesome. It brings xUnit tests to everyone out of the box.

@@ -42,13 +42,13 @@ You should visit the [MSBuild Extension Pack web site] for an excellent overview
 ### Updating Your Build File to be AsyncExec Ready
 We’ll have to update the build file to bring in the new task library (a great feature of MSBuild, by the way). To do this, we’ll add an import directive to the Extension Pack’s Task Files (this should go just inside of the `<project>` tag):
 
-{% highlight xml %}
+```xml
 <Import Project=".thirdpartytoolsMSBuildExtensionPackMSBuild.ExtensionPack.tasks">`
-{% endhighlight %}
+```
 
 Next up, we have to make a slight modification. The Extension Pack attempts to do some nice work for us to include all the tasks, but we need to override it. Find the following section at the top of the `MSBuild.ExtensionPack.Tasks` file and comment it out (in the lines below, I’ve done that already for you):
 
-{% highlight xml %}
+```xml
 <!--    
 <PropertyGroup>
         <BuildPath Condition="'$(BuildPath)' == ''">$(MSBuildProjectDirectory)</BuildPath>
@@ -56,13 +56,13 @@ Next up, we have to make a slight modification. The Extension Pack attempts to d
         <ExtensionTasksPath Condition="'$(ExtensionTasksPath)' == ''">$(MSBuildExtensionsPath)ExtensionPack4.0</ExtensionTasksPath>
     </PropertyGroup>
 -->
-{% endhighlight %}
+```
 
 Since the Extension Pack is no longer figuring out what its path is, we need to set an item in our `<ItemGroup` to point it to the right place: 
 
-{% highlight xml %}
+```xml
 <ExtensionTasksPath Include=".thirdpartytoolsMSBuildExtensionPack"/>
-{% endhighlight %}
+```
 
 Now we’re ready to add the command to start the web server.
 
@@ -70,18 +70,18 @@ Now we’re ready to add the command to start the web server.
 
 First thing’s first – we have to add an item to the `<ItemGroup>` section to tell MSBuild where Cassini resides, and an item to tell it where our published web site will reside once it’s been spat out by our build process. I took the guesswork out of it for you in the lines below: 
 
-{% highlight xml %}
+```xml
 <Cassini Include="$(CommonProgramFiles)microsoft sharedDevServer10.0WebDev.WebServer40.exe"/>
 <Website Include=".buildartifacts_PublishedWebsitesTestProject.Web"/>
-{% endhighlight %}
+```
 
 Next, we use the AsyncExec task from the Extension Pack to run the web server without hanging up our build process:
 
-{% highlight xml %}
+```xml
 <Target Name="StartWebsite" DependsOnTargets="Compile">         
     <AsyncExec Command='"@(Cassini)" /port:9999 /path:"%(WebSite.FullPath)" /vpath:'/>     
 </Target>
-{% endhighlight %}
+```
 
 Try running your build file with a target of `StartWebsite`. You should be able to navigate to http://localhost:9999/ and see the web site in action (though it may just show a directory’s contents if the site is empty).
 
@@ -90,18 +90,18 @@ However, you may have noticed something. What stops the website so we can start 
 ### Adding a Target to Stop the Web Site and Updating Dependencies
 You can use the handy built-into-windows `TaskKill` program to force a kill of program that has the same name as the WebServer. We just call it with an Exec Command, as shown below:
 
-{% highlight xml %}
+```xml
 <Target Name="StopWebsite">         
     <Exec Command="taskkill /f /im WebDev.WebServer40.exe" IgnoreExitCode="true" IgnoreStandardErrorWarningFormat="true"/>     </Target>
-{% endhighlight %}
+```
 
 After that, we add the `StopWebsite` Target as a dependency to `StartWebsite`, before compile, so we know the site will be down before MS Build erases the files and spits out new ones: 
 
-{% highlight xml %}
+```xml
 <Target Name="StartWebsite" DependsOnTargets="StopWebsite;Compile">
 ...
 </Target>
-{% endhighlight %}
+```
 
 Go ahead and try running your build with the `StopWebsite` and `StartWebsite` targets. 
 
@@ -109,7 +109,7 @@ Go ahead and try running your build with the `StopWebsite` and `StartWebsite` ta
 
 For reference, at this point, our build file looks like:
 
-{% highlight xml %}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0" DefaultTargets="Compile">
     <Import Project=".\thirdparty\tools\MSBuildExtensionPack\MSBuild.ExtensionPack.tasks"/>
@@ -146,7 +146,7 @@ For reference, at this point, our build file looks like:
     </Target>
  
 </Project>
-{% endhighlight %}
+```
 
 ### Getting Visual Studio to Play Along: Help Needed!
 Unfortunately, this is one area that this blog series will fall short. I’ve scoured the internet in an attempt to find out how I can output the bin and obj to another folder based on the $(SolutionDir) variable, but apparently unlike C++, Visual Studio for C# does not allow this and instead creates a strange Folder with “$(SolutionDir)” literally in the name. I thought it would be pretty straightforward, but boy was I wrong. If anyone has any suggestions, I’m all ears. I was told I could go the route of editing the .csproj file, but I really tend to be wary of that kind of text editing; I like Visual Studio to be able to own that file for its sake.

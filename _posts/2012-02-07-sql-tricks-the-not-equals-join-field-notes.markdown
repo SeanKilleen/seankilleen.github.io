@@ -13,11 +13,11 @@ I knew that the dates would never equal the employee name, so in this case, I co
 
 I did something along the following (edited for brevity):
 
-{% highlight sql %}
+```sql
 select * from (...) ActiveLabor 
     left outer join (...)DateRange 
     on (activelabor.laborcode != to_char(DateRange.DateItem))
-{% endhighlight %}
+```
 
 This allows the left outer join only if the items are not equal (which we happen to know will always be the case).
 

@@ -57,17 +57,16 @@ Had a few minor "oops" moments while figuring this out.
 
 This won't work:
 
-{% highlight js %}
+```js
 /*global $, jQuery, ko, moment, console, toastr, accounting, _ */
 /*jslint nomen: true */
-{% endhighlight %}
-
+```
 But this will:
 
-{% highlight js %}
+```js
 /*jslint nomen: true */
 /*global $, jQuery, ko, moment, console, toastr, accounting, _ */
-{% endhighlight %}
+```
 
 #### JSHint says "nomen" will be deprecated.
 
