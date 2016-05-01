@@ -124,6 +124,7 @@ GEM
       ethon (>= 0.8.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    wdm (0.1.1)
 
 PLATFORMS
   x64-mingw32
@@ -132,6 +133,7 @@ DEPENDENCIES
   github-pages
   rake
   rouge
+  wdm
 
 BUNDLED WITH
-   1.11.2
+   1.12.1
