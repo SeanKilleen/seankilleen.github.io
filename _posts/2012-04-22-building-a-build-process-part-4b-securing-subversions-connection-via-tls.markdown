@@ -79,13 +79,13 @@ gedit +/SSLCertificateFile /etc/httpd/conf.d/ssl.conf
 
 Find the line referencing “SSLCertificateFile” and change it to the location of your keyfile. It should look like this when you’re done:
 
-```apache
+```conf
 SSLCertificateFile /etc/pki/tls/certs/ca.crt
 ```
 
 A few lines after that, you’ll edit the SSLCertificateKeyFile:
 
-```apache
+```conf
 SSLCertificateKeyFile /etc/pki/tls/private/ca.key
 ```
 
@@ -107,7 +107,7 @@ gedit /etc/httpd/conf/httpd.conf
 Towards the bottom of the file, the `<VirtualHosts>` configuration can be found.
 Paste the following lines at the bottom of the file:
 
-```apache
+```conf
 NameVirtualHost *:80
 NameVirtualHost *:443
 
@@ -137,7 +137,7 @@ I put this in a separate section because I wanted the additions to be compartmen
 
 To use mod_rewrite to redirect any http requests to https, change the VirtualHost *:80 to the following:
 
-```apache
+```conf
 <VirtualHost *:80>
     RewriteEngine On
     RewriteCond %{HTTPS} off

@@ -17,13 +17,13 @@ Use Tomcat to block all connections with the exception of administrator IP Addre
 * Open the context.xml file, located in [Tomcat[^1]]confcontext.xml.
 * If you've never edited this file before, you should see a line like the following:
 
-```apache
+```conf
 <WatchedResource>WEB-INF/web.xml</WatchedResource>
-```apache
+```conf
     
 * Add the following line directly after the `</WatchedResource>` tag:
 
-```apache
+```conf
 <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="IP1|IP2|IP3">
 ```
 

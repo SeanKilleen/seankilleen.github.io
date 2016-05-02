@@ -18,7 +18,7 @@ I looked around for how to do this, and to my surprise, it was incredibly diffic
 
 So, in short, a Tomcat 6.0 connector in server.xml that enforces TLS looks something like the connector below (I’ve changed the password to a dummy, of course):
 
-```apache
+```conf
 <Connector
 	port="8443"
 	protocol="HTTP/1.1"
