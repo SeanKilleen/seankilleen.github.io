@@ -17,9 +17,6 @@ references:
    parenttitle: "Elastic Leadership: Notes to a Software Team Leader"
    parenturl: http://5whys.com/   
    
-redirect_from:
- - /2015/12/a-running-checklist-for-team-leads/
-   
    
 comments: true
 ---

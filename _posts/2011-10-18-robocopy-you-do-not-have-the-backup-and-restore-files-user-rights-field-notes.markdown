@@ -7,7 +7,6 @@ excerpt: "In Windows 7, using Robocopy with the /B or /ZB switches I see the err
 comments: true
 redirect_from: 
  - /2011/10/robocopy-you-do-not-have-backup-and.html
- - /2011/10/robocopy-you-do-not-have-the-backup-and-restore-files-user-rights-field-notes/
  
 ---
 *[**Ed. Note:** "Field Notes" is a place where I plan to succinctly describe solutions to problems that I run across in my daily work. They are meant as a reference; ask if you have any questions!]*

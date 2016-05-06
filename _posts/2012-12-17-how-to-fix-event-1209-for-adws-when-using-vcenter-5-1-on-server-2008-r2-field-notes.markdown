@@ -8,7 +8,6 @@ excerpt: "I'm Running vCenter 5.1 and Windows Server 2008 R2. I notice a number 
 redirect_from: 
  - /2012/12/how-to-fix-event-1209-for-adws-when.html
  - /2012/12/how-to-fix-event-1209-for-adws-when.htm
- - /2012/12/how-to-fix-event-1209-for-adws-when-using-vcenter-5-1-on-server-2008-r2-field-notes/
  
 references: 
  - title: "Active Directory Web Services encountered an error while reading the settings for the specified Active Directory Lightweight Directory Services instance. Active Directory Web Services will retry this operation periodically. In the mean time, this instance will be ignored."

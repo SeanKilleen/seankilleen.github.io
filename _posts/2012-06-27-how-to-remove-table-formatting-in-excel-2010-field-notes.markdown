@@ -7,7 +7,6 @@ comments: true
 
 redirect_from: 
  - /2012/06/how-to-remove-table-formatting-in-excel.html
- - /2012/06/how-to-remove-table-formatting-in-excel-2010-field-notes/
 
 ---
 ### Problem

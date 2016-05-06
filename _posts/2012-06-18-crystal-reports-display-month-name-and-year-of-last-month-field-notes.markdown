@@ -7,7 +7,6 @@ excerpt: "A report I'm running gets the data for the last Month. I'd like to nic
 redirect_from:
  - /2012/06/crystal-reports-display-month-name-and.html
  - /2012/06/crystal-reports-display-month-name-and-year-of-last-month-field-notes/undefined
- - /2012/06/crystal-reports-display-month-name-and-year-of-last-month-field-notes/
 
 references: 
  - title: DateAdd
@@ -18,7 +17,6 @@ references:
    url: http://crystaltricks.com/wordpress/?p=149
    parenttitle: "Crystal Reports Tips & Tricks"
    parenturl: http://crystaltricks.com/wordpress/
-
 ---
 ### Problem
 A report I'm running gets the data for the last Month. I'd like to nicely display the name of the month and year.
