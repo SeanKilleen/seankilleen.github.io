@@ -16,9 +16,6 @@ references:
    url: https://weworkremotely.com/
  - title: ".NET Fringe"
    url: http://dotnetfringe.org/
-
-redirect_from:
- - /2016/01/dotnet-oss-acceleration/
    
 comments: true
 ---
