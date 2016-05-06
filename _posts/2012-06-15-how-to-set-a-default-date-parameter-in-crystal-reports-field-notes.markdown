@@ -6,6 +6,7 @@ comments: true
 
 redirect_from:
  - /2012/06/how-to-set-default-date-parameter-in.html
+ - /2012/06/how-to-set-a-default-date-parameter-in-crystal-reports-field-notes/
  
 references: 
  - title: "Crystal Reports: Named-Date-Range Parameters"

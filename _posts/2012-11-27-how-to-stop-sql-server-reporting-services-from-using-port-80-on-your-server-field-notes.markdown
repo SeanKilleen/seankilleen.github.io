@@ -8,6 +8,7 @@ comments: true
 
 redirect_from:
  - /2012/11/how-to-stop-sql-server-reporting.html
+ - /2012/11/how-to-stop-sql-server-reporting-services-from-using-port-80-on-your-server-field-notes/
 ---
 ### Problem
 SSRS (SQL Server Reporting Services) uses port 80 by default on any server it's installed on.

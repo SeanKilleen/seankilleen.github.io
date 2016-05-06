@@ -7,6 +7,7 @@ comments: true
 excerpt: "I'm using the Twitter Bootstrap LESS source with LessJS / MVC3 Project / IIS. When I open the site on my development or production boxes, the CSS doesn't display."
 redirect_from: 
  - /2012/09/when-using-twitter-bootstrap-less-with.html
+ - /2012/09/when-using-twitter-bootstrap-less-with-iis-dont-forget-to-create-the-mime-type-field-notes/
 ---
 ### Problem
 I am using the Twitter Bootstrap LESS source with LessJS in an ASP.NET MVC3 Project that deploys to IIS.

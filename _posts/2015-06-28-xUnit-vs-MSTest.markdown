@@ -4,6 +4,10 @@ layout: post
 date: 2015-06-28 22:34:00.000000000 -05:00
 excerpt: "So, so many reasons."
 comments: true
+
+redirect_from:
+ - /2015/06/xUnit-vs-MSTest/
+
 ---
 I was recently asked to explain[^1] my preference for xUnit over something like MSTest. To my surprise, while I felt very strongly -- and have for some time -- I struggled to clearly articulate my reasons. This is an attempt to get that part right. I sourced some help from folks on Twitter, who I'll be quoting here as well.
 
