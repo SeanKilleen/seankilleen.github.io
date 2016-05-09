@@ -9,7 +9,7 @@ url:              http://SeanKilleen.com
 github_repo_url: http://github.com/seankilleen/seankilleen.github.io/
 timezone: America/New_York
 post-images: /images/post-images
-permalink:   /:year/:month/:title #/:categories/:title/
+permalink:   /:year/:month/:title/
 markdown:    kramdown
 
 highlighter: rouge
