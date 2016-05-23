@@ -37,6 +37,7 @@ Thanks to all of these things, I can host this small chunk of my brain on the in
 * I think much credit is due to [Phil Haack](http://haacked.com/). He inspired me with the idea that the entirety of a blog could be collaborative, and his posts on it removed some of the fear for me. I'll be stealing a number of ideas directly from him, including an edit link for every page, and a link to submit new issues.
 * Thanks to [David Coyle][coyled github] for his [atom.xml template for Jekyll][atom.xml link].
 * Thanks to [Nick Williams][Nick Williams link] for a [great gist][nick gist link] on bringing google code prettify into my posts
+* Thanks to [Pat Hawks][Pat Github] for helping [fix][pat 1] [several][pat 2] [issues][pat 3] early on. Thanks, Pat! 
 
 [jekyll link]: http://jekyllrb.com/
 [ruby link]: https://www.ruby-lang.org/en/
@@ -54,3 +55,7 @@ Thanks to all of these things, I can host this small chunk of my brain on the in
 [Nick Williams link]: https://github.com/nilliams
 [nick gist link]: https://gist.github.com/nilliams/7138983
 [prettify link]: https://code.google.com/p/google-code-prettify/
+[pat 1]: https://github.com/SeanKilleen/seankilleen.github.io/pull/32
+[pat 2]: https://github.com/SeanKilleen/seankilleen.github.io/pull/33
+[pat 3]: https://github.com/SeanKilleen/seankilleen.github.io/pull/34
+[Pat Github]: https://github.com/pathawks
