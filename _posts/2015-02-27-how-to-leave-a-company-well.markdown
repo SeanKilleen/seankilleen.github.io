@@ -7,7 +7,7 @@ comments: true
 ---
 I recently had lunch with the owner of a company I'd moved on from. Besides being a general catch up, it served as a sort of check-in/reflection point on constructive criticisms from our time together. 
 
-I had (I think) a great relationship with the owner prior to my departure (which was due to other circumstances), but one thing in particular he said durig this lunch made me extremely happy:
+I had (I think) a great relationship with the owner prior to my departure (which was due to other circumstances), but one thing in particular he said during this lunch made me extremely happy:
 
 "You left like a gentleman."
 
