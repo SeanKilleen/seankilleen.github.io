@@ -1,5 +1,5 @@
 ---
-title: "Avoiding Primative Obsession in Configuration: My Approach"
+title: "Avoiding Primitive Obsession in Configuration: My Approach"
 layout: post
 date: 2016-12-21 7:33:00.000000000 -05:00
 excerpt: "A good blog post got my wheels turning."
@@ -22,7 +22,7 @@ comments: true
 ---
 I woke up this morning and saw [a great blog post by Arialdo Martini] that inspired me to blog a little bit (thanks, Arialdo!) 
 
-In the post, he describes the problems of using primative variables in your classes, and the pitfalls of using a service locator pattern to resolve those issues. It's a good read; I recommend checking it out. The conclusion he came to (and I'm greatly oversimplifying here) is that configuration settings work better as value objects, and shows some tricks for how to achieve this in a more painless way.
+In the post, he describes the problems of using primitive variables in your classes, and the pitfalls of using a service locator pattern to resolve those issues. It's a good read; I recommend checking it out. The conclusion he came to (and I'm greatly oversimplifying here) is that configuration settings work better as value objects, and shows some tricks for how to achieve this in a more painless way.
 
 I definitely agree that a value object is better than a primitive when it makes sense. However, there are times when a collection of primitives does make the most sense. 
 
@@ -68,7 +68,7 @@ This becomes cumbersome when:
 * **You attempt to account for real world scenarios.** What happens when a config is missing or you need to supply a default or an override of some kind? How can you be sure the app works?
 
 ## My Preferred Solution to this Problem
-When faced with a number of primative configurations, my preferred steps to refactor our way out of it are:
+When faced with a number of primitive configurations, my preferred steps to refactor our way out of it are:
 
 ### Extract the Configuration to an Interface / Immutable POCO
 **NOTE:** This would be one interface per type of configuration that you need. Don't be afraid to inject multiple small interfaces into your class rather than one giant configuration. Interfaces may eventually be re-used, and it's nice to keep contracts small.
@@ -247,7 +247,7 @@ int configItem = GetValueOrDefault<int>(_appSettings.GetValue("aNumberSetting"),
 This will start to yield a greater degree of flexibility in how you ingest and deal with configuration values. 
 
 ### ...and Beyond!
-* With this set up, you can still introduce value objects in the place of primatives where they make sense.
+* With this set up, you can still introduce value objects in the place of primitives where they make sense.
 * You could also set up an easy configuration check by using your IoC container to instantiate a number of settings objects upon startup and intelligently surfacing any errors with configuration.
 * Optional values: You could use these interfaces to communicate optional values (there's a great library called [Optional] that can help with this)
  * Including values that may be optional for one type of configuration but required or defaulted for another.
