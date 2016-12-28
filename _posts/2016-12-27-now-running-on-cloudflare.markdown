@@ -29,7 +29,7 @@ So, why introduce this extra component?
 * **Converting mixed content to https**. After serving a site over `https`, often other content (links, CSS, JavaScript, images) is still served over `http`, which causes trouble. CloudFlare re-writes this content on the fly, which is hugely helpful during a conversion process. 
 * **The ability to insert "apps"**. I use Google Analytics, and also am thinking about NewRelic. Using CloudFlare, I can add them with one-click setup and CloudFlare will ensure those components are always present on my web site. 
 * **Caching**. Github Pages is already pretty well-cached, but Cloudflare is known for their caching capability and built-in CDN. 
-* **It's free for me**. Which is very helpful from "why not?" perspective.
+* **It's free for me**. Which is very helpful from a "why not?" perspective.
 
 ## The Steps to Make it Happen
 These are surprisingly few & easy. 
