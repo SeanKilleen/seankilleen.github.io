@@ -155,3 +155,16 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 [StackExchange's Blackbox]: https://github.com/StackExchange/blackbox
 [Nagios]: https://www.nagios.org/
 [OTRS]: https://www.otrs.com/
+[Github Desktop for Windows]: https://desktop.github.com/
+[ScriptCS]: http://scriptcs.net/
+[Fiddler]: http://www.telerik.com/fiddler
+[Slack]: https://slack.com/
+[Camtasia]: https://www.techsmith.com/camtasia.html
+[ScreenToGif]: http://www.screentogif.com/
+[F.lux]: https://justgetflux.com/
+[Chocolatey]: https://chocolatey.org/
+[Greenshot]: http://getgreenshot.org/
+[ImgBurn]: http://www.imgburn.com/
+[Virtual CloneDrive]: https://www.elby.ch/en/products/vcd.html
+[LogParser 2.x Studio]: https://gallery.technet.microsoft.com/office/Log-Parser-Studio-cd458765
+[RDCMan]: https://www.microsoft.com/en-us/download/details.aspx?id=44989
