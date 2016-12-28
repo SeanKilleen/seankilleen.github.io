@@ -17,7 +17,7 @@ references:
   
 comments: true
 ---
-As of a few hours ago, this site runs on `https` by default and likely pretty darn fast. That's all thanks to [CloudFlare](https://www.cloudflare.com/), and to [my] [brother] [ryan], who showed me how easy it was to get up and running with CloudFlare on an upcoming project of ours.
+As of a few hours ago, this site runs on `https` by default and likely pretty darn fast. That's all thanks to [CloudFlare](https://www.cloudflare.com/), and to [my]() [brother]() [Ryan](), who showed me how easy it was to get up and running with CloudFlare on an upcoming project of ours.
 
 ## What I'm Getting Out of This
 This site is already run on [Github Pages](https://pages.github.com/) using Jekyll. So, I get a pretty fast site generated automatically and served via Github Pages, from my markdown content, which runs on Github's own infrastructure. That's already bullet-proof. 
@@ -58,4 +58,4 @@ Does any piece of this site give you a hiccup when loading via https? Do you hav
 
 [my]: http://RyanKilleen.com
 [brother]: http://Github.com/RyKilleen
-[ryan]: http://twitter.com/deathbypapercut
+[Ryan]: http://twitter.com/deathbypapercut
