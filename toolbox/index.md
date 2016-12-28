@@ -64,6 +64,8 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 * **Enhanced Tooltip** - Better visual tooltips when mousing over code.
 * **Cyclomatic Complexity** - Shows when a method is growing too complex and should be refactored.
 * **Heap Allocations viewer** - Helpful to surface when you're accidentally creating an object 1,000 times in a loop. :) 
+* **JetBox** -  Pulls the reSharper settings from dropbox. Really nice when my dev environments can sync up like this.
+* **Exceptional**: Analyzes exceptions that might be thrown and is a nice reminder to be handling them.
 
 ## Design
 * **[Pingendo] [Pingendo]** - An awesome free app if you plan on building a site with Bootstrap. Pingendo is an app for windows or Mac that allows you to visually layout mockups / sites using re-usable bootstrap components, and will then generate the HTML required to produce those components on a web page. A nice tool that makes getting started really quick & easy for a bootstrap-enabled web site.
