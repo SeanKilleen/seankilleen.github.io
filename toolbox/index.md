@@ -19,6 +19,7 @@ There are so many great tools in this industry that I rely on on a regular basis
 * **Instapaper**: Save articles and events for later reading.
 * **LastPass**: My choice of password manager.
 * **XMarks**: Bookmark synchronization across multiple browsers and devices. 
+* **ArtooJS** (Scraping) - A bookmarklet that injects a javascript library into any page on command that will enable many scraping/parsing scenarios more easily.
 
 ## Editors
 * **Visual Studio 2015** - The quintessential editor for .NET-based applications.
@@ -83,22 +84,16 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 * **OTRS** - An IT Service Management tool. If you need a ticketing system, helpdesk system, or CMDB that adheres to ITIL principles and is free/reasonably easy to setup, look no further.
 
 ## Helpful Windows apps for Coders
-* Github Desktop for Windows - Work with Github projects on Windows? This makes it dead simple.
-* ScriptCS - A way of writing scripts in C# if you hate powershell.
-* Fiddler - Send and profile http requests; very useful when working with API projects.
-* Slack - The chat client that everyone knows and loves
-* Camtasia - Doing a screencast or demo video? This is commercial software but probably your best bet.
-* ScreenToGif - Drag over a portion of your screen, hit record, and it will capture the output as an animated gif.
-* F.lux - Stops your screen from killing your eyes.
-* Chocolatey - A package management script for windows, so you can install and update software in a similar way to apt-get. I've run one command after a fresh install and ha
-* Greenshot - An excellent free tool for capturing screenshots and saving to various destinations.
-* ImgBurn - A tool for creating disc images
-* Virtual CloneDrive – a good free tool to mount disc images.
-* LogParser 2.x Studio - A tool for easily loading and quering log files in classic formats (such as IIS logs)
-* RDCMan - A tool for managing many remote desktop connections. Useful in large client environments where you may need to remote into many machines.
-
-## Helpful Browser Extensions
-* ArtooJS (Scraping) - A bookmarklet that injects a javascript library into any page on command that will enable many scraping/parsing scenarios more easily.
-* Instapaper – It's a free app and the browser extension is great for saving 
-* Lastpass – a commercial password manager. You should be securely storing your passwords, and probably generating more random ones.
-* XMarks – A tool for synchronizing bookmarks across systems and browsers. 
+* **Github Desktop for Windows** - Work with Github projects on Windows? This makes it dead simple.
+* **ScriptCS** - A way of writing scripts in C# if you hate powershell.
+* **Fiddler** - Send and profile http requests; very useful when working with API projects.
+* **Slack** - The chat client that everyone knows and loves
+* **Camtasia** - Doing a screencast or demo video? This is commercial software but probably your best bet.
+* **ScreenToGif** - Drag over a portion of your screen, hit record, and it will capture the output as an animated gif.
+* **F.lux** - Stops your screen from killing your eyes.
+* **Chocolatey** - A package management script for windows, so you can install and update software in a similar way to apt-get. I've run one command after a fresh install and ha
+* **Greenshot** - An excellent free tool for capturing screenshots and saving to various destinations.
+* **ImgBurn** - A tool for creating disc images
+* **Virtual CloneDrive** – a good free tool to mount disc images.
+* **LogParser 2.x Studio** - A tool for easily loading and quering log files in classic formats (such as IIS logs)
+* **RDCMan** - A tool for managing many remote desktop connections. Useful in large client environments where you may need to remote into many machines.
