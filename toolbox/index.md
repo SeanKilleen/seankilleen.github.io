@@ -57,10 +57,10 @@ The items below are links -- feel free to click and explore!
 ## Favorite ReSharper Extensions
 ReSharper is such a popular plugin that I have my own favorite extensions for it, sourceable from the ReSharper plugins menu:
 
-* **[ReSpeller] [ReSpeller]** - Checks for typos in your code. Has saved me from a bad method name many a time.
-* **[Enhanced Tooltip] [Enhanced Tooltip]** - Better visual tooltips when mousing over code.
-* **[Cyclomatic Complexity] [Cyclomatic Complexity]** - Shows when a method is growing too complex and should be refactored.
-* **[Heap Allocations viewer] [Heap Allocations viewer]** - Helpful to surface when you're accidentally creating an object 1,000 times in a loop. :) 
+* **ReSpeller** - Checks for typos in your code. Has saved me from a bad method name many a time.
+* **Enhanced Tooltip** - Better visual tooltips when mousing over code.
+* **Cyclomatic Complexity** - Shows when a method is growing too complex and should be refactored.
+* **Heap Allocations viewer** - Helpful to surface when you're accidentally creating an object 1,000 times in a loop. :) 
 
 ## Design
 * **[Pingendo] [Pingendo]** - An awesome free app if you plan on building a site with Bootstrap. Pingendo is an app for windows or Mac that allows you to visually layout mockups / sites using re-usable bootstrap components, and will then generate the HTML required to produce those components on a web page. A nice tool that makes getting started really quick & easy for a bootstrap-enabled web site.
@@ -68,11 +68,11 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 * **[The Pencil Project] [The Pencil Project]** – A free/OSS wire-framing tool for all platforms. 
 
 ## Build & Deployment Tolls
-* **[NCover / dotCover] [NCover / dotCover]** - A code coverage tool to help determine how many of your code paths are actually covered by unit tests.
+* **[NCover] [NCover] / [dotCover] [dotCover]** - A code coverage tool to help determine how many of your code paths are actually covered by unit tests.
 * **[TeamCity] [TeamCity]** - A build pipeline tool popular in many .NET shops, TeamCity is a great choice for continuous integration pipelines and ensuring a rigorous quality standard.
 * **[Jenkins] [Jenkins]** – A worse version of TeamCity. :) No but seriously, while the UI is lacking, it's highly customizable. For example, the BlueOcean plugin for Jenkins is an incredibly promising way to visualize and parallelize build pipelines.
 * **[OctopusDeploy] [OctopusDeploy]** - Takes over where TeamCity leaves off. When TeamCity produces a package of code, OctopusDeploy is the best tool for creating deployments, transforming configurations, and visualizing the process to promote your build through your various environments, all the way through to production.
-* **[Roundhouse] [Roundhouse]** - A database migration utility for .NET using SQL Files and versioning based on source control. A popular alternative to EntityFramework code-first migrations.
+* **[RoundhousE] [RoundhousE]** - A database migration utility for .NET using SQL Files and versioning based on source control. A popular alternative to EntityFramework code-first migrations.
 * **[PayPal's AATT] [PayPal's AATT]** - A NodeJS baased toolkit for automating the accessibility testing of web pages.
 * **[PhantomJS] [PhantomJS]** - A headless webkit-based browser that can be used to run acceptance tests quickly and output screenshots of the results.
 
@@ -133,3 +133,18 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 [Autofac]: https://autofac.org/
 [Ninject]: http://www.ninject.org/
 [StructureMap]: http://structuremap.github.io/
+[LiteGuard]: https://github.com/adamralph/liteguard
+[FluentValidation]: https://github.com/JeremySkinner/FluentValidation
+[Humanizer]: https://github.com/Humanizr/Humanizer
+[Selenium]: http://www.seleniumhq.org/
+[Pingendo]: http://pingendo.com/
+[Balsamiq]: https://balsamiq.com/
+[The Pencil Project]: http://pencil.evolus.vn/
+[NCover]: https://www.ncover.com/
+[dotCover]: https://www.jetbrains.com/dotcover/
+[TeamCity]: https://www.jetbrains.com/teamcity/
+[Jenkins]: https://jenkins.io/
+[OctopusDeploy]: https://octopus.com/
+[RoundhousE]: https://github.com/chucknorris/roundhouse
+[PayPal's AATT]: https://github.com/paypal/AATT
+[PhantomJS]: http://phantomjs.org/
