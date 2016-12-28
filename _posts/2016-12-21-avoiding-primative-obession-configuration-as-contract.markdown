@@ -1,7 +1,7 @@
 ---
 title: "Avoiding Primitive Obsession in Configuration: My Approach"
 layout: post
-date: 2016-12-21 7:33:00.000000000 -05:00
+date: 2016-12-27 22:43:00.000000000 -05:00
 excerpt: "A good blog post got my wheels turning."
 references:
  - title: "Autofac And Primitive Obsession: How I Learned To Love The Injection Of Configuration Parameters" 
