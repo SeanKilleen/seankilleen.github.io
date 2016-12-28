@@ -148,3 +148,10 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 [RoundhousE]: https://github.com/chucknorris/roundhouse
 [PayPal's AATT]: https://github.com/paypal/AATT
 [PhantomJS]: http://phantomjs.org/
+[Seq]: https://getseq.net/
+[Terraform]: https://www.terraform.io/
+[MiniProfiler]: http://miniprofiler.com/
+[Opserver]: https://github.com/opserver/Opserver
+[StackExchange's Blackbox]: https://github.com/StackExchange/blackbox
+[Nagios]: https://www.nagios.org/
+[OTRS]: https://www.otrs.com/
