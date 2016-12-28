@@ -45,10 +45,10 @@ The items below are links -- feel free to click and explore!
 * **[CsvHelper] [CsvHelper]** - A great tool for pulling in and processing data to/from CSV files.
 * **[Squirrel] [Squirrel]** - "It's like ClickOnce but Works". A free/OSS way to package app installers in a Click-once way and handle things such as auto-updating software when new versions are released.
 * **[MassTransit] [MassTransit]** - A free / OSS message bus platform for .NET that integrates with Azure ServiceBus, RabbitMQ, etc. For more reliable message handling and easier pub/sub.
-* **[Toggler (feature toggling)] [Toggler (feature toggling)]** - Feature toggling is important, especially when beta-testing features or in large software environments where enabling a feature may cause unwanted impact (or when a feature isn't yet fully complete). Feature toggling enables shorter branches because code paths can be committed that will not be executed unless the toggle is enabled. Toggler is  great .NET library for doing that.
+* **[Toggler] [Toggler] (feature toggling)** - Feature toggling is important, especially when beta-testing features or in large software environments where enabling a feature may cause unwanted impact (or when a feature isn't yet fully complete). Feature toggling enables shorter branches because code paths can be committed that will not be executed unless the toggle is enabled. Toggler is  great .NET library for doing that.
 * **[Github's Scientist.NET] [Github's Scientist.NET]** - A library for carefully refactoring critical paths. It basically creates A/B testing for paths through your code so that you can see if  certain paths begin failing after refactoring, or when you try a different approach. A way to know that live code will have an issue before fully flipping the switch on it.
-* **[Moq / FakeItEasy] [Moq / FakeItEasy]** - Unit testing projects need mocking libraries. Moq and FakeItEasy are two good ones.
-* **[Autofac / Ninject / StructureMap] [Autofac / Ninject / StructureMap]** - Dependency injection can be a pain. These tools will enable you to do so much easier. They all have their various quirks but get the job done. 
+* **[Moq] [Moq] / [FakeItEasy] [FakeItEasy]** - Unit testing projects need mocking libraries. Moq and FakeItEasy are two good ones.
+* **[Autofac] [Autofac] / [Ninject] [Ninject] / [StructureMap] [StructureMap]** - Dependency injection can be a pain. These tools will enable you to do so much easier. They all have their various quirks but get the job done. 
 * **[LiteGuard] [LiteGuard]** - Defensive programming is important. This includes guard clauses – pieces of code that run in the beginning of a method to make sure that the inputs are correct. LiteGuard is a nice, small, fast library that encapsulates a number of these common guard clauses and saves some repetition.
 * **[FluentValidation] [FluentValidation]** - Validating complex data is hard. Like, really hard. And custom validation logic often fails at handling things like different contexts or testability without becoming incredibly bloated. FluentValidation is a great library that assists in validating business objects in different contexts in a friendly to use way.
 * **[Humanizer] [Humanizer]** - A great tool for manipulating and displaying strings, enums, dates, times, numbers, and quantities. If you're wondering how to display pluralization, different cases, truncate text, etc. This library is hugely helpful.
@@ -117,3 +117,19 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 [SpecFlow]: http://specflow.org/
 [NCrunch]: http://www.ncrunch.net/
 [Storyteller]: http://storyteller.github.io/
+[xUnit]: https://xunit.github.io/
+[FluentAssertions]: http://www.fluentassertions.com/
+[Serilog]: https://serilog.net/
+[NBench]: https://github.com/petabridge/NBench
+[ElasticSearch & ElasticSearch.NET]: https://github.com/elastic/elasticsearch-net
+[Akka.NET]: http://getakka.net/
+[CsvHelper]: https://joshclose.github.io/CsvHelper/
+[Squirrel]: https://github.com/Squirrel/Squirrel.Windows
+[MassTransit]: http://masstransit-project.com/
+[Toggler]: https://github.com/manojlds/Toggler
+[Github's Scientist.NET]: https://github.com/github/Scientist.net
+[Moq]: https://github.com/moq/moq4
+[FakeItEasy]: https://fakeiteasy.github.io/
+[Autofac]: https://autofac.org/
+[Ninject]: http://www.ninject.org/
+[StructureMap]: http://structuremap.github.io/
