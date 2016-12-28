@@ -22,6 +22,9 @@ The items below are links -- feel free to click and explore!
 * **[LastPass] [LastPass]**: My choice of password manager.
 * **[XMarks] [XMarks]**: Bookmark synchronization across multiple browsers and devices. 
 * **[ArtooJS] [ArtooJS]** (Scraping) - A bookmarklet that injects a javascript library into any page on command that will enable many scraping/parsing scenarios more easily.
+* **[Amazon Assistant] [Amazon Assistant]** - Great access to amazon, including wish list management & additions.
+* **[RescueTime] [RescueTime]** - A tool to track where you're spending your time online. Great if my productivity ever starts to slip. :)
+* **[Tweetdeck] [Tweetdeck]** - My favorite twitter client for everyday use.
 
 ## Editors
 * **[Visual Studio 2015] [Visual Studio 2015]** - The quintessential editor for .NET-based applications.
@@ -168,3 +171,6 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 [Virtual CloneDrive]: https://www.elby.ch/en/products/vcd.html
 [LogParser 2.x Studio]: https://gallery.technet.microsoft.com/office/Log-Parser-Studio-cd458765
 [RDCMan]: https://www.microsoft.com/en-us/download/details.aspx?id=44989
+[Amazon Assistant]: https://chrome.google.com/webstore/detail/amazon-assistant-for-chro/pbjikboenpfhbbejgkoklgkhjpfogcam?hl=en-US
+[RescueTime]: https://www.rescuetime.com/
+[Tweetdeck]: https://tweetdeck.twitter.com/
