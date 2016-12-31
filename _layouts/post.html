@@ -33,6 +33,7 @@
     {% include _author-bio.html %}
   </div>
   <article class="post">
+    <p class="byline"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} (last modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>){% endif %}</p>
     <div class="headline-wrap">
       {% if page.link %}
         <h1><a href="{{ page.link }}">{{ page.title }}</a></h1>
@@ -40,8 +41,7 @@
         <h1><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
       {% endif %}
     </div><!--/ .headline-wrap -->
-	
-    <div class="article-wrap">
+	  <div class="article-wrap">
 	  {% include _editlink.html %}
 	
 		{% if page.series == "building-a-build-process" %}
