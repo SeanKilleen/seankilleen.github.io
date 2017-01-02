@@ -300,7 +300,7 @@ I hope you found this useful. If you did, please consider making a donation at <
 
 Also, I'd love to hear your thoughts -- sound off in the comments!
 
-[^1]: We're using the management site instead of the [shiny new Portal](portal.azure.com) because as of this writing CDNs aren't supported yet. I decided to keep things consistent.
+[^1]: We're using the management site instead of the [shiny new Portal](http://portal.azure.com) because as of this writing CDNs aren't supported yet. I decided to keep things consistent.
 
 [^2]: Now that I think of it, it may be possible to have private storage blobs but still expose them publicly via CDN. I don't know if that's possible, but definitely let me know if I'm wrong.
 
