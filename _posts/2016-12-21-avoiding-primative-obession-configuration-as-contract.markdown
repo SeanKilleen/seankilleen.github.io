@@ -18,8 +18,13 @@ references:
    parenturl: https://github.com/nlkl
  - title: "Autofac" 
    url: https://autofac.org/
+ - title: "SerialSeb"
+   url: https://serialseb.com
 comments: true
 ---
+**Updated**: See the Addendum section at the bottom of this post for some evolved thinking. 
+
+
 I woke up this morning and saw [a great blog post by Arialdo Martini] that inspired me to blog a little bit (thanks, Arialdo!) 
 
 In the post, he describes the problems of using primitive variables in your classes, and the pitfalls of using a service locator pattern to resolve those issues. It's a good read; I recommend checking it out. The conclusion he came to (and I'm greatly oversimplifying here) is that configuration settings work better as value objects, and shows some tricks for how to achieve this in a more painless way.
@@ -273,6 +278,61 @@ What's better to demonstrate an example than some running code, right?
 
 I lay out some of these concepts in [a sample repository on GitHub]. Feel free to check it out and run it on your own!
 
+## Addendum: Do We Really Need Interfaces Here?
+Excellent dev and all-around nice guy [Sebastien Lambla](https://serialseb.com/) gave me some good feedback after the initial draft of this post, questioning whether I needed to use interfaces at all, and could instead inject POCOs/DTOs.
+
+This is a really good point. I'll go through some arguments for using interfaces and (what I now believe to be) the better arguments against it.
+
+(Side note: I really like getting to learn things on the fly this way. Have anything to add? Tell me in the comments!)
+
+#### What Do I mean by Using DTOs/POCOs instead?
+DTOs [^1] and POCOs [^2] certainly represent an alternative to interfaces. What Sebastien suggested is that instead of wiring up the interface, we could just use the object as-is:
+
+```csharp
+containerBuilder.Register(c => new EmailSettingsObtainer().GetSettings())
+      .As<EmailSettings>(); // Note, using an object, the interface
+```
+
+And inject it like so:
+
+
+```csharp
+public class MyEmailSender
+{
+  private readonly EMailSettings _emailSettings; // Using the class, no interface
+  
+  public MyEmailSender(EMailSettings emailSettings)
+  {
+    _emailSettings = emailSettings;
+  }
+
+  // ...etc.
+}
+```
+
+#### Arguments for using interfaces to inject configuration
+When I initially used the muscle memory of interfaces here, I was thinking it would help with:
+
+* **Consistency / muscle memory:** I already use interfaces for my other dependencies in general. Why not use it for configuration as well?
+* **Mocking**: It's pretty easy to do a `new Mock<IWhateverInterfaceIWant>()` and wire that up for tests.
+* **Interface segregation**: What if I want to use a tiny piece of a larger configuration object?
+
+#### Why those arguments aren't good enough
+After some further pondering of Seb's feedback, the following is clear to me:
+
+* **Configuration isn't behavior**: Interfaces are meant to abstract behaviors, but configuration of primative values isn't behavior. So, it's not necessarily a good fit.
+* **Do I really need a small piece of configuration?**: I mentioned interface segregation above, but this seems to fall squarely into the YAGNI [^3] bucket. Is there really a situation in which I might need a smaller subset of configuration and want a different interface? In that situation, couldn't I just as easily create a separate DTO from the larger DTO and cache that? Probably best to wait until the need arises.
+* **DTOs are still a contract**: Especially if these DTO classes are immutable, they're not all of a sudden going to change on me, and I'll still easily be able to adapt them as they evolve.
+* **I can still fake them for tests**: With minimal extra code, I can still easily fake these POCO classes for the purposes of tests -- I don't really need a mock in order to fake any behavior here. 
+* **Lose the extra file / overhead**: Without losing any clarity, flexibility, or testability, I can get rid of a whole file. Less code is generally a good thing.
+
+## Addendum: Too Much Configuration is a Code Smell
+Another great thought that Seb touched on was that too many configurable dependencies being passed in could be a sign on its own that something is wrong. I've always agreed on this, so I thought it'd be a good idea to state here as well.
+
+If you have several pieces of configuration being passed in, that's a good indicator that your class may be doing too much, and you should seek out smaller classes that each have a smaller, well-defined responsibility. Those separate classes would likely each take in their own small piece of configuration.
+
+Similarly, if you're passing configuration around everywhere, perhaps there are other objects that could be wired up and passed in, rather than taking in configuration all over the app. The more you can isolate those dependencies, the better.
+
 ## Thoughts?
 I'd love to hear feedback on what you think. Is this approach a reasonable way of injecting configuration? Sound off in the comments!
 
@@ -280,3 +340,7 @@ I'd love to hear feedback on what you think. Is this approach a reasonable way o
 [a sample repository on GitHub]: https://github.com/SeanKilleen/SimpleConfigInjectionExample
 [Autofac]: https://autofac.org/
 [Optional]: https://github.com/nlkl/Optional
+
+[^1]: Data Transfer Objects.
+[^2]: Plain Old CLR Objects.
+[^3]: "You Ain't Gonna Need It".
