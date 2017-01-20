@@ -15,7 +15,7 @@ I definitely agree that a value object is better than a primitive when it makes 
 
 So, I thought I'd share some current thoughts on how I prefer to inject configuration into my classes.
 
-[Read the rest of this post on Excella.com](http://linktotheblogpost.com)
+[Read the rest of this post on Excella.com](https://www.excella.com/insights/avoiding-primitive-obsession-in-configuration-my-approach)
 
 
 [a great blog post by Arialdo Martini]: http://arialdomartini.github.io/primitive-obsession.html
