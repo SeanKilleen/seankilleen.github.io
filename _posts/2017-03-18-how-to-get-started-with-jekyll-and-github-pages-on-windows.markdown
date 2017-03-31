@@ -74,7 +74,7 @@ In simplified terms, Bundler is like nuget for Ruby. You'll use it to manage the
 
 To install bundler, run `gem install bundler` from the command prompt. This should install it globally.
 
-### How to Build and Run this Site Locally
+### How to Build and Run the Site Locally
 Assuming you've followed the installation steps above, you should be able to do the following:
 
 * Open a command prompt
