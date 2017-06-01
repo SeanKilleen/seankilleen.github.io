@@ -16,7 +16,7 @@ Cue an all-too-easy powershell script on a scheduled task and 2 minutes later I 
 
 ```powershell
 $theDate = $(get-date -f yyyy-MM-dd_hh-mm-ss)
-$baseLocation = "C:UsersSeanDropboxMyPCNameChocolateyPackageListExport"
+$baseLocation = "C:\Users\Sean\Dropbox\MyPCName\ChocolateyPackageListExport\"
 $finalFileName = $baseLocation + "" + $theDate + "_PackageList.txt"
 clist -lo | Out-File $finalFileName
 ```
