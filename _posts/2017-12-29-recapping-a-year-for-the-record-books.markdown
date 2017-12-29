@@ -17,11 +17,11 @@ What a year, what a year! So much was packed into 2017 that for the first time I
 
 ## Work Stuff
 
+* TechLadies happy hour meet up
 * Started (and finished) the Dear Agile blog series experiment
 * Successful launch of a gigantic legacy modernization:
 * Creating & launching xluh.co
 * Co-authoring an ICAgile-certified testing & automation course
-
 
 ## Personal Stuff
 I try not to be too personal on this blog as it's mostly tech, but there are some things I just had to mention. I'll keep it brief. :)
