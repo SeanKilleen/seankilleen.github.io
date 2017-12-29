@@ -7,7 +7,7 @@ excerpt: "A Year for the Record Books!"
 comments: true
 ---
 
-What a year, what a year! So much was packed into 2017 that for the first time I felt like a recap post actually makes sense.
+What a year, what a year! So much was packed into 2017 that for the first time I felt like a recap post actually makes sense, if only so I can keep it all straight.
 
 ## Speaking & Writing
 
