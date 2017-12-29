@@ -14,13 +14,20 @@ What a year, what a year! So much was packed into 2017 that for the first time I
 * My first national conference talk
 * 5 other talks: Akka.NET, ElasticSearch, Intro to OSS: https://seankilleen.com/Presentations/
 * Blog posts on Jekyll, .NET Fringe, The S3 Outage, ICAgile, and avoiding primitive obsession in configuration.
+* Did a fun presentation, "the dev-inci code", to help our BAs &amp; devs better understand each other.
 
 ## Work Stuff
 
+* I became a .NET Xpert!
+* Co-taught several Agile Engineering courses (CSD)
+* Created a screencast for CSD
+* Twilio forwarding
+* Introduced &amp; Used structured logging with great success
 * TechLadies happy hour meet up
 * Started (and finished) the Dear Agile blog series experiment
 * Successful launch of a gigantic legacy modernization:
 * Creating & launching xluh.co
+* Introduced razor templating for e-mails
 * Co-authoring an ICAgile-certified testing & automation course
 
 ## Personal Stuff
