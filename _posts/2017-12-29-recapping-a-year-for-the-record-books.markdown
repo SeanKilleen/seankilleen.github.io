@@ -11,10 +11,9 @@ What a year, what a year! So much was packed into 2017 that for the first time I
 
 ## Speaking & Writing
 
-* My first national conference talk
-* 5 other talks: Akka.NET, ElasticSearch, Intro to OSS: https://seankilleen.com/Presentations/
-* Blog posts on Jekyll, .NET Fringe, The S3 Outage, ICAgile, and avoiding primitive obsession in configuration.
-* Did a fun presentation, "the dev-inci code", to help our BAs &amp; devs better understand each other.
+* **My first national conference talk**: This year I was [selected to speak](https://www.youtube.com/watch?v=jFDXNGFvcYg) at [.NET Fringe](http://dotnetfringe.org), one of my favorite conferences of all time. It was a privilege and a thrill.
+* **More talks**: I gave [5 other talks](https://seankilleen.com/Presentations/) to various groups on subjects including Akka.NET, ElasticSearch, and an introduction to OSS. Also, did a fun presentation with my talented colleague Dan Davis called "The Dev-inci Code", to help our Excella BAs &amp; devs better understand each other.
+* **Blog posts** on Jekyll, .NET Fringe, The S3 Outage, ICAgile, and avoiding primitive obsession in configuration. I'd like to write more, but with the rest of this year, I'll forgive myself.
 
 ## Work Stuff
 
