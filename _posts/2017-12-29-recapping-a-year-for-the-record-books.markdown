@@ -1,7 +1,7 @@
 ---
 title: "2017: Year in Review"
 layout: post
-date: 2017-12-29 04:11:00.000000000 -05:00
+date: 2017-12-31 10:00:00.000000000 -05:00
 excerpt: "What a year, what a year!"
 
 comments: true
@@ -58,3 +58,5 @@ This is one of my favorite questions of all time. Normally I'd list a ton of thi
 I'm looking forward to the year to come -- challenges and joys alike.
 
 Anything here catch your eye? Looking forward to something yourself? Drop it in the comments!
+
+Wishing you all the best in the coming year.
