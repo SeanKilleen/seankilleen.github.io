@@ -39,9 +39,9 @@ I try not to be too personal on this blog as it's mostly tech, but there are som
 * **I got married!** Because we're crazy people, we decided "why wait to plan this wedding? Let's just do it!" And so, on November 3rd, Amanda and I got hitched. It was hands down the best day of my life, and everything that I wanted it to be.
 * **Politics**: Politics was a dumpster fire in 2017. So much has happened to the U.S. in the last 12 months that genuinely worries me about the future and tests my optimism on a daily basis. In 2018 I want to work to help more people through these times, particularly those who aren't afforded my many varied privileges.
 
-## Random Blog Stats
+## Blog Stats
 
-* This year, I had 86,410 page views on the blog as of the time of this writing. That's a great feeling!
+* I had `86,410` page views on the blog this year as of the time of this writing. That's a great feeling!
 * 8 of the top 10 blog posts are specific "how to" articles, which tells me they probably had good SEO, and that if I need a quick how-to, probably lots of other people do as well.
 * All of my top 10 blog posts were written over 1.5 years ago. Working on some fresh content is probably a good idea.
 
