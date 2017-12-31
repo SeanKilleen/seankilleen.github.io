@@ -17,13 +17,16 @@ What a year, what a year! So much was packed into 2017 that for the first time I
 
 ## Work Stuff
 
-* I became a .NET Xpert!
-* Successful launch of a gigantic legacy modernization:
-* Co-taught several Agile Engineering courses (CSD)
-* Created a screencast for CSD
+* **Successful launch of a gigantic legacy modernization**: Over the past year, I've been lucky enough to be the technical lead on the best team for a really challenging project. This project was a big bang modernization effort (not our choice) that replaced a mainframe system responsible for managing more than $7 billion in pension funds. In August, all 2.5 million lines of code went live, with no major issues! We've since done 6 or 7 feature releases with no issues as well. By far one of the biggest accomplishments of my career.
+* **I became a .NET Xpert!** Excella has a great program to reward employees that continuously commit to making an impact beyond our client sites. The gist is that every 6 months I do a certain amount (or more) of activities against a "points system", such as writing, speaking, OSS work, etc. Because of that, I am now afforded 20% time -- 1 day per week that is now my own to contribute more widely to Excella and beyond. It's a great honor to be a part of their services leadership.
+* **TechLadies happy hour**: I'm a big fan of [Allison Esposito](https://twitter.com/allisonveronica) and the work she's doing with [Tech Ladies](https://www.hiretechladies.com). It's crucially important to get more women into thi field -- we desperately need their talent & diversity of thought. 
+
+I also: 
+
+* Co-taught several Agile Engineering courses (where students can earn their CSD certification after passing an assessment)
+* Created a screencast walk-through for one of our Agile Engineering course assessments for those who have trouble with it.
 * Twilio forwarding
 * Introduced &amp; Used structured logging with great success
-* TechLadies happy hour meet up
 * Started (and finished) the Dear Agile blog series experiment
 * Creating & launching xluh.co
 * Introduced razor templating for e-mails
@@ -31,6 +34,7 @@ What a year, what a year! So much was packed into 2017 that for the first time I
 * Neo4j training
 
 ## Personal Stuff
+
 I try not to be too personal on this blog as it's mostly tech, but there are some things I just had to mention. I'll keep it brief. :)
 
 * **I got engaged!** In March, I took a trip to Key West with the love of my life and asked her to marry me. She said yes. It was awesome.
@@ -44,6 +48,7 @@ I try not to be too personal on this blog as it's mostly tech, but there are som
 * All of my top 10 blog posts were written over 1.5 years ago. Working on some fresh content is probably a good idea.
 
 ## What's Next?
+
 This is one of my favorite questions of all time.
 
 * A Focus on Focus.
