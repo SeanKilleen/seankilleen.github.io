@@ -15,6 +15,10 @@ references:
    url: https://www.youtube.com/watch?v=hZ9ucDwbh04&list=WL&index=79&t=1120s
    parenttitle: Excella YouTube
    parenturl: https://www.youtube.com/channel/UC1Io0sMQxoEwQNYtphsY5vg
+ - title: "What is Imposter Syndrome?"
+   url: https://www.scientificamerican.com/article/what-is-impostor-syndrome/
+   parenttitle: "Scientific American"
+   parenturl: https://www.scientificamerican.com
 ---
 
 I've been seeing and having a lot of conversations lately around diversity in conference line-ups. A hugely interesting facet of this for me was hearing a lot of the rationale from conference organizers about why they didn't have a diverse line-up. I heard a lot of comments along the lines of:
@@ -23,13 +27,19 @@ I've been seeing and having a lot of conversations lately around diversity in co
 * "It's really hard when someone gets angry at you because you asked them to be a woman speaker"
 * "I really care about this problem but I just don't know what else to do."
 * "I'm only one person, how could I possibly try to accomplish this?"
-* "I feel like I'm trying everything and nothing is having an impact".
+* "I feel like I've tried everything and nothing is making a difference".
 
 Oooof. We'll unpack a lot of these statements later. But suffice it to say, we can all do better.
 
 As an industry, many folks would like to improve this, but aren't sure how to get there.
 
-**This is a great opportunity for an impact map**. In this post, we'll explore this problem using one of my favorite tools. 
+**This is a great opportunity for an impact map**. In this post, we'll explore this problem using one of my favorite tools.
+
+## A Note Before I begin
+
+I'm a cisgender, heterosexual white guy -- and as such the recipient of an embarrassing amount of societal privilege. I'm writing this because I haven't seen it anywhere else and it seems like it could help. I don't by any means see this as the only solution to a hard problem. If my privilege shows anywhere in this article, let me know -- I welcome the conversation. Do you have something to add that I missed? Let me know; I'm always up to expand the list below.
+
+Also, let me say this -- conference planning is *hard*. I know a lot of people who've organized conferences, and I believe most are passionate about this topic and would love to see more diversity amongst speakers. I don't mean to be armchair quarterbacking here, and this isn't some indictment of all conference organizers, or a quick &amp; easy solution.
 
 ## What is Impact Mapping?
 
@@ -54,3 +64,27 @@ There are a number of reasons to love impact mapping:
 
 ## Applying Impact Maps to the Problem of Conference Speaker Diversity
 
+If a goal is to improve diversity in conference speakers (and IMO it should be a goal!), then there are a few groups / personas we could consider as part of the impact map.
+
+There are the groups involved in planning:
+
+* Organizers
+* Sponsors
+* Selection committee members
+
+And there are also various types of underrepresented speakers we'd like to influence to submit their talks:
+
+* Women
+* POC
+* LGBTQIA+ speakers
+* People who don't feel safe in conference spaces
+* People who are disabled
+* Moms
+* People with financial barriers
+* People with time barriers
+* Those who have [imposter syndrome](https://www.scientificamerican.com/article/what-is-impostor-syndrome/)
+
+## What does this tell Us?
+
+* **Attracting diverse speakers is more than a CFP**.
+* **This is going to take work**.
