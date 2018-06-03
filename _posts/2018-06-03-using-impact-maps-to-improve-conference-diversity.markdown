@@ -21,6 +21,8 @@ references:
    parenturl: https://www.scientificamerican.com
 ---
 
+TODO: Add graphic with attribution from http://interactioninstitute.org/illustrating-equality-vs-equity/.
+
 I've been seeing and having a lot of conversations lately around diversity in conference line-ups. A hugely interesting facet of this for me was hearing a lot of the rationale from conference organizers about why they didn't have a diverse line-up. I heard a lot of comments along the lines of:
 
 * "It's not our fault that women don't submit to our CFP"
@@ -66,13 +68,15 @@ There are a number of reasons to love impact mapping:
 
 If a goal is to improve diversity in conference speakers (and IMO it should be a goal!), then there are a few groups / personas we could consider as part of the impact map.
 
-There are the groups involved in planning:
+There are the groups involved in planning &amp; running conferences, who we might want to modify their behavior in various ways:
 
 * Organizers
 * Sponsors
 * Selection committee members
+* Event Promoters
+* Advertisers
 
-And there are also various types of underrepresented speakers we'd like to influence to submit their talks:
+And there are also various types of underrepresented speakers we'd like to influence specifically to submit their talks:
 
 * Women
 * POC
@@ -86,5 +90,6 @@ And there are also various types of underrepresented speakers we'd like to influ
 
 ## What does this tell Us?
 
+* **Impact maps can flip our understanding.** Rather than conferences being a place with a uniform CFP that then everyone should 
 * **Attracting diverse speakers is more than a CFP**.
 * **This is going to take work**.
