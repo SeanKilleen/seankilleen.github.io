@@ -5,6 +5,16 @@ date: 2018-06-02 16:32:00.000000000 -05:00
 excerpt: "Introducing a technique and an example I'm passionate about."
 
 comments: true
+
+references:
+ - title: "What is Impact Mapping?"
+   url: https://www.impactmapping.org/about.html
+   parenttitle: "ImpactMapping.org"
+   parenturl: https://www.impactmapping.org
+ - title: "Impact Mapping: How to Make Value-Driven Prioritization a Reality, by Mathias Eifert"
+   url: https://www.youtube.com/watch?v=hZ9ucDwbh04&list=WL&index=79&t=1120s
+   parenttitle: Excella YouTube
+   parenturl: https://www.youtube.com/channel/UC1Io0sMQxoEwQNYtphsY5vg
 ---
 
 I've been seeing and having a lot of conversations lately around diversity in conference line-ups (read: ensuring a diverse group of attendees and speakers). But more interesting was hearing a lot of the rationale from conference organizers about why they didn't have a diverse line-up. I heard a lot of comments along the lines of:
@@ -23,9 +33,11 @@ As an industry, many folks would like to improve this, but aren't sure how to ge
 
 ## What is Impact Mapping?
 
-Before we dive into the meat of the article, I want to give a quick elevator pitch for impact mapping. I'm new to this myself, but I recommend [ImpactMapping.org](https://www.impactmapping.org/about.html) or [my colleague Mathias's presentation](https://www.youtube.com/watch?v=hZ9ucDwbh04&list=WL&index=79&t=1120s) for a much deeper dive than I can provide here.
+Before we dive into the meat of the article, I want to give a quick elevator pitch for impact mapping. I'm new to this myself, but I recommend [ImpactMapping.org](https://www.impactmapping.org/about.html) or [my colleague Mathias's presentation](https://www.youtube.com/watch?v=hZ9ucDwbh04&list=WL&index=79&t=1120s) for a much deeper dive than I can provide here. Both resources are worth checking out.
 
+Impact maps aim to solve the problem of "feature factories", where companies are taking actions or producing products without regard for what real tangible value those products are providing for those who are affected by it.
 
+In order to ensure that we're tackling something that's important to the business, an impact map generally has four parts:
 
 * **Goal**: What we want to achieve. Usually specific, measurable, and time-boxed, e.g. "Increase users 20% in the next 6 months".
 * **Who**: Who can help us achieve the aforementioned goal? What groups could change their behavior in some way to help us achieve this goal?
@@ -36,7 +48,6 @@ Before we dive into the meat of the article, I want to give a quick elevator pit
 
 There are a number of reasons to love impact mapping:
 
-* **It forces us to think about personas**.
-* **It helps with divergent thinking**. 
-* **It frames things as experiments**.
-* 
+* **It forces us to think about personas**. All too often, the "who" step is glossed over, or replaced with some generic notion of "users". This limits our ability to empathize and step into others' shoes. Impact maps force us to take more specific personas into account when problem solving.
+* **It helps with divergent thinking**. So many times, features or actions come from someone saying "I know -- let's do x/y/z" with little follow-up as to whether we got closer to the goal. An impact map opens this up, democratizing the discussion and allowing other avenues for exploration.
+* **It frames actions as experiments**. Impact maps have two levels of experiments. At the more specific level, we are able to assess whether the actions we've taken -- the "what" -- have influenced the persona to actually change their behavior in the way we wanted. And at a broader level, we can assess whether influencing those personas to change their behavior has actually moved us closer to the goal.
