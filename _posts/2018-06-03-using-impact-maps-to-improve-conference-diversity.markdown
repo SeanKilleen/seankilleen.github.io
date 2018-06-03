@@ -17,7 +17,7 @@ references:
    parenturl: https://www.youtube.com/channel/UC1Io0sMQxoEwQNYtphsY5vg
 ---
 
-I've been seeing and having a lot of conversations lately around diversity in conference line-ups (read: ensuring a diverse group of attendees and speakers). But more interesting was hearing a lot of the rationale from conference organizers about why they didn't have a diverse line-up. I heard a lot of comments along the lines of:
+I've been seeing and having a lot of conversations lately around diversity in conference line-ups. A hugely interesting facet of this for me was hearing a lot of the rationale from conference organizers about why they didn't have a diverse line-up. I heard a lot of comments along the lines of:
 
 * "It's not our fault that women don't submit to our CFP"
 * "It's really hard when someone gets angry at you because you asked them to be a woman speaker"
@@ -49,5 +49,8 @@ In order to ensure that we're tackling something that's important to the busines
 There are a number of reasons to love impact mapping:
 
 * **It forces us to think about personas**. All too often, the "who" step is glossed over, or replaced with some generic notion of "users". This limits our ability to empathize and step into others' shoes. Impact maps force us to take more specific personas into account when problem solving.
-* **It helps with divergent thinking**. So many times, features or actions come from someone saying "I know -- let's do x/y/z" with little follow-up as to whether we got closer to the goal. An impact map opens this up, democratizing the discussion and allowing other avenues for exploration.
+* **It helps surface a wider array of options**. Impact maps support "divergent thinking" -- searching for many paths to a solution instead of trying to find the perfect one. So many times, features or actions come from someone saying "I know -- let's do x/y/z" with little follow-up as to whether we got closer to the goal. An impact map opens this up, democratizing the discussion and allowing other avenues for exploration. We end up with a lot more things we can try to get to the right place.
 * **It frames actions as experiments**. Impact maps have two levels of experiments. At the more specific level, we are able to assess whether the actions we've taken -- the "what" -- have influenced the persona to actually change their behavior in the way we wanted. And at a broader level, we can assess whether influencing those personas to change their behavior has actually moved us closer to the goal.
+
+## Applying Impact Maps to the Problem of Conference Speaker Diversity
+
