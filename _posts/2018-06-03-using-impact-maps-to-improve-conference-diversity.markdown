@@ -23,7 +23,7 @@ references:
 
 TODO: Add graphic with attribution from http://interactioninstitute.org/illustrating-equality-vs-equity/.
 
-I've been seeing and having a lot of conversations lately around diversity in conference line-ups. A hugely interesting facet of this for me was hearing a lot of the rationale from conference organizers about why they didn't have a diverse line-up. I heard a lot of comments along the lines of:
+I've been seeing and having a lot of conversations lately around diversity in conference line-ups. An interesting facet of this for me was hearing a lot of the rationale from conference organizers about why they didn't have a diverse line-up. I heard a lot of comments along the lines of:
 
 * "It's not our fault that women don't submit to our CFP"
 * "It's really hard when someone gets angry at you because you asked them to be a woman speaker"
@@ -31,7 +31,7 @@ I've been seeing and having a lot of conversations lately around diversity in co
 * "I'm only one person, how could I possibly try to accomplish this?"
 * "I feel like I've tried everything and nothing is making a difference".
 
-Oooof. We'll unpack a lot of these statements later. But suffice it to say, we can all do better.
+Oooof. We'll unpack a lot of these statements later. But suffice it to say, we can all do better -- and I believe many conference organizers genuinely want to do better.
 
 As an industry, many folks would like to improve this, but aren't sure how to get there.
 
