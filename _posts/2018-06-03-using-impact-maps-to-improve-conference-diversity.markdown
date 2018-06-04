@@ -41,6 +41,8 @@ As an industry, many folks would like to improve this, but aren't sure how to ge
 
 I'm a cisgender, heterosexual white guy -- and as such the recipient of an embarrassing amount of societal privilege. I'm writing this because I haven't seen it anywhere else and it seems like it could help. I don't by any means see this as the only solution to a hard problem. If my privilege shows anywhere in this article, let me know -- I welcome the conversation. Do you have something to add that I missed? Let me know; I'm always up to expand the list below.
 
+One place I know I'm falling short on right at the outset, which I'll be working to correct, is my understanding of the needs of underrepresented racial / ethnic groups. Prior to writing this article, I would have told you that I thought I empathized with that group well enough. But if I couldn't come up with a unique way to specifically support POC in a conference setting, I've got some major work to do. Which I'm getting to work on right after I write this up; expect updates.
+
 Also, let me say this -- conference planning is *hard*. I know a lot of people who've organized conferences, and I believe most are passionate about this topic and would love to see more diversity amongst speakers. I don't mean to be armchair quarterbacking here, and this isn't some indictment of all conference organizers, or a quick &amp; easy solution.
 
 Also, if you're expecting an argument on whether more diversity is truly needed in conference line-ups, this won't be the article for you. That part isn't up for debate here. We need more diversity of thought in many places in tech, and conferences are one of the most visible arenas where we can improve that.
