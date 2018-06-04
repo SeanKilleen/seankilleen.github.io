@@ -94,6 +94,23 @@ And there are also various types of underrepresented speakers we'd like to influ
 * People with time barriers
 * Those who have [imposter syndrome](https://www.scientificamerican.com/article/what-is-impostor-syndrome/)
 
+These groups may overlap -- that's OK, lots of personas do. There's no reason we can't repeat items or tailor things specifically to a certain underrepresented group.
+
+## Impact map: The speaker personas
+
+| Persona | How we'd like them to change behavior | What we can do to influence them |
+| ------- | ------------------------------------- | -------------------------------- |
+| Women | Submit to our conf | List of stuff |
+| POC | Submit to our conf | List of stuff |
+| LGBTQIA+ speakers | Submit to our conf | List of stuff |
+| Those who feel unsafe | Submit to our conf | List of stuff |
+| People who are disabled | Submit to our conf | List of stuff |
+| Moms | Submit to our conf | List of stuff |
+| People with financial barriers | Submit to our conf | List of stuff |
+| People with time barriers | Submit to our conf | List of stuff |
+| Those with imposter syndrome | Submit to our conf | List of stuff |
+
+
 ## What does this tell Us?
 
 * **Impact maps can flip our understanding.** Rather than conferences being a place with a uniform CFP that then everyone should submit to, we see groups of underrepresented speakers as stakeholders that we can hope to influence to speak. That's a very different power dynamic, and one that would likely benefit a conference's speaker demographics.
