@@ -43,6 +43,8 @@ I'm a cisgender, heterosexual white guy -- and as such the recipient of an embar
 
 Also, let me say this -- conference planning is *hard*. I know a lot of people who've organized conferences, and I believe most are passionate about this topic and would love to see more diversity amongst speakers. I don't mean to be armchair quarterbacking here, and this isn't some indictment of all conference organizers, or a quick &amp; easy solution.
 
+Also, if you're expecting an argument on whether more diversity is truly needed in conference line-ups, this won't be the article for you. That part isn't up for debate here. We need more diversity of thought in many places in tech, and conferences are one of the most visible arenas where we can improve that.
+
 ## What is Impact Mapping?
 
 Before we dive into the meat of the article, I want to give a quick elevator pitch for impact mapping. I'm new to this myself, but I recommend [ImpactMapping.org](https://www.impactmapping.org/about.html) or [my colleague Mathias's presentation](https://www.youtube.com/watch?v=hZ9ucDwbh04&list=WL&index=79&t=1120s) for a much deeper dive than I can provide here. Both resources are worth checking out.
@@ -63,6 +65,8 @@ There are a number of reasons to love impact mapping:
 * **It forces us to think about personas**. All too often, the "who" step is glossed over, or replaced with some generic notion of "users". This limits our ability to empathize and step into others' shoes. Impact maps force us to take more specific personas into account when problem solving.
 * **It helps surface a wider array of options**. Impact maps support "divergent thinking" -- searching for many paths to a solution instead of trying to find the perfect one. So many times, features or actions come from someone saying "I know -- let's do x/y/z" with little follow-up as to whether we got closer to the goal. An impact map opens this up, democratizing the discussion and allowing other avenues for exploration. We end up with a lot more things we can try to get to the right place.
 * **It frames actions as experiments**. Impact maps have two levels of experiments. At the more specific level, we are able to assess whether the actions we've taken -- the "what" -- have influenced the persona to actually change their behavior in the way we wanted. And at a broader level, we can assess whether influencing those personas to change their behavior has actually moved us closer to the goal.
+
+These pieces of impact mapping seem like they could assist in the problem of conference speaker diversity. In order to produce real change and encourage broader participation, we need to think about each of these groups and their potentially unique needs or motivators. 
 
 ## Applying Impact Maps to the Problem of Conference Speaker Diversity
 
@@ -90,6 +94,18 @@ And there are also various types of underrepresented speakers we'd like to influ
 
 ## What does this tell Us?
 
-* **Impact maps can flip our understanding.** Rather than conferences being a place with a uniform CFP that then everyone should 
-* **Attracting diverse speakers is more than a CFP**.
-* **This is going to take work**.
+* **Impact maps can flip our understanding.** Rather than conferences being a place with a uniform CFP that then everyone should submit to, we see groups of underrepresented speakers as stakeholders that we can hope to influence to speak. That's a very different power dynamic, and one that would likely benefit a conference's speaker demographics.
+* **Attracting diverse speakers is more than a CFP**. It's about creating an environment where underrepresented speakers -- and those like them -- feel that they can thrive, contribute, and have their values respected & recognized .
+* **This is going to take work**. Conference organizing is hard work, and I'm grateful to those who continually put themselves out there for the community's benefit. But if we want to show we can truly be inclusive.
+
+## What's next?
+
+Now that I've articulated some of these thoughts, I'm hoping to receive feedback from the community -- especially additions and corrections.
+
+Once we have a list of ways we can help underrepresented speakers & attendees feel welcomed and encouraged, I think this list could spawn a nice reference site or toolbox for conference organizers to remove some of the cognitive load and make it easier to do the things that make a conference stand out as being welcoming for underrepresented groups.
+
+## I'd love to hear from you!
+
+What did I get wrong here? What am I missing? What could I improve? Where should this go next?
+
+I welcome your comments and hope to tweak this a bunch in the coming days with your feedback.
