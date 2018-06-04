@@ -66,7 +66,7 @@ There are a number of reasons to love impact mapping:
 * **It helps surface a wider array of options**. Impact maps support "divergent thinking" -- searching for many paths to a solution instead of trying to find the perfect one. So many times, features or actions come from someone saying "I know -- let's do x/y/z" with little follow-up as to whether we got closer to the goal. An impact map opens this up, democratizing the discussion and allowing other avenues for exploration. We end up with a lot more things we can try to get to the right place.
 * **It frames actions as experiments**. Impact maps have two levels of experiments. At the more specific level, we are able to assess whether the actions we've taken -- the "what" -- have influenced the persona to actually change their behavior in the way we wanted. And at a broader level, we can assess whether influencing those personas to change their behavior has actually moved us closer to the goal.
 
-These pieces of impact mapping seem like they could assist in the problem of conference speaker diversity. In order to produce real change and encourage broader participation, we need to think about each of these groups and their potentially unique needs or motivators. 
+These pieces of impact mapping seem like they could assist in the problem of conference speaker diversity. In order to produce real change and encourage broader participation, we need to think about each of these groups and their potentially unique needs or motivators. And we need to think in terms of many options, not trying one or two things and then calling it a day if our limited set of ideas didn't work.
 
 ## Applying Impact Maps to the Problem of Conference Speaker Diversity
 
