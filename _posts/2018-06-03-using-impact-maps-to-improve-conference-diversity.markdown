@@ -98,18 +98,9 @@ These groups may overlap -- that's OK, lots of personas do. There's no reason we
 
 ## Impact map: The speaker personas
 
-| Persona | How we'd like them to change behavior | What we can do to influence them |
-| ------- | ------------------------------------- | -------------------------------- |
-| Women | Submit to our conf | List of stuff |
-| POC | Submit to our conf | List of stuff |
-| LGBTQIA+ speakers | Submit to our conf | List of stuff |
-| Those who feel unsafe | Submit to our conf | List of stuff |
-| People who are disabled | Submit to our conf | List of stuff |
-| Moms | Submit to our conf | List of stuff |
-| People with financial barriers | Submit to our conf | List of stuff |
-| People with time barriers | Submit to our conf | List of stuff |
-| Those with imposter syndrome | Submit to our conf | List of stuff |
+TODO: Attempt to format the impact map in some way for the screen. A table? A lot of headings? Long-indented bulleted list?
 
+TODO: [Link to the Mind Map](/assets/post-assets/2018-06-MoreDiverseConferenceSpeakers/2018-06-MoreDiverseConferenceSpeakers.pdf)
 
 ## What does this tell Us?
 
