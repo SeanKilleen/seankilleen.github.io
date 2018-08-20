@@ -1,0 +1,65 @@
+---
+title: "Preparing .NET Projects for Business Trips"
+layout: post
+date: 2018-08-20 14:00:00.000000000 -05:00
+excerpt: "How I make sure my code travels well"
+
+comments: true
+---
+
+I have the the good fortune to take some interesting business trips occasionally. However, there are few business trip feelings worse than being mid-flight and realizing that you've forgotten to pull the latest changes for that project you meant to work on.
+
+Below are some steps I've developed -- with some convenient powershell scripts -- to prepare my code when I travel.
+
+## Update all the Repositories
+
+I store all of my repositories in `C:\users\SeanK\Repositories`, and I use git for 99% of my source code management. So first up, I pull all of the folders that are in my `Repositories` location, and I git pull to get the latest for each of them.
+
+```powershell
+Get-ChildItem C:\Users\SeanK\Repositories\ -Directory | Foreach-Object { cd $_.FullName; git pull }
+```
+
+## Pull and Update Nuget Packages
+
+This ensures I don't run into any restore issues.
+
+I find the location of every `.sln` file within my repositories folder, and I run `nuget install` from that directory.
+
+```powershell
+Get-ChildItem -Path C:\Users\SeanK\Repositories -Recurse -Include *.sln | Foreach-Object { cd $_.Directory.FullName; nuget install }
+```
+
+## Pull and Update npm packages
+
+Similarly, it probably makes sense to have all of my npm packages updated -- as much as I hate all of the GBs that's likely going to consume:
+
+```powershell
+# TODO
+Get-ChildItem -Path C:\Users\SeanK\Repositories -Recurse -Exclude *node_modules* -Include package.json | Foreach-Object { $_.Directory.FullName }
+```
+
+## Move all Nuget packages to the Offline Nuget folder
+
+OK, so I've got the Nuget packages installed for my existing projects, which is great. But what if I want to start a new project? How will I be able to do that without pulling down a ton of things from the internet?
+
+I copy the Nuget packages into my offline packages folder, which happens to be a OneDrive folder as well (so it syncs across my machines).
+
+ ```powershell
+  Get-ChildItem C:\Users\SeanK\Repositories -Recurse -Exclude *node_modules* -Include package.json | Where-Object { $_.Directory.FullName -NotLike "*node_modules*" } | Foreach-Object { cd $_.Directory.FullName; npm install }
+ ```
+
+ ## Enable NPM offline package store
+
+ TODO
+
+ ## Enable Nuget offline package store
+
+ TODO
+
+ ## Putting it all Together
+
+ The full script can be found below:
+
+ ```powershell
+ $RepoBaseFolder = "C\Users\SeanK\Repositories"
+ ```
