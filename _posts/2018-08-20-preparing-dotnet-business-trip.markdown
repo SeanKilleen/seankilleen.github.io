@@ -26,7 +26,7 @@ This ensures I don't run into any restore issues.
 I find the location of every `.sln` file within my repositories folder, and I run `nuget install` from that directory.
 
 ```powershell
-Get-ChildItem -Path C:\Users\SeanK\Repositories -Recurse -Include *.sln | Foreach-Object { cd $_.Directory.FullName; nuget install }
+Get-ChildItem -Path C:\Users\SeanK\Repositories -Recurse -Include *.sln | Where-Object { $_.Directory.FullName -NotLike "*node_modules*" } | | Foreach-Object { cd $_.Directory.FullName; nuget install }
 ```
 
 ## Pull and Update npm packages
@@ -65,10 +65,11 @@ The full script can be found below:
 
 ```powershell
 $RepoBaseFolder = "C\Users\SeanK\Repositories\"
+$OfflineNugetLocation = "C:\Users\SeanK\OneDrive\Nuget_Offline"
 
 Get-ChildItem $RepoBaseFolder -Directory | Foreach-Object { cd $_.FullName; git pull }
 
-Get-ChildItem -Path $RepoBaseFolder -Recurse -Include *.sln | Foreach-Object { cd $_.Directory.FullName; nuget install }
+Get-ChildItem -Path $RepoBaseFolder -Recurse -Include *.sln | Where-Object { $_.Directory.FullName -NotLike "*node_modules*" } | | Foreach-Object { cd $_.Directory.FullName; nuget install }
 
 Get-ChildItem $RepoBaseFolder -Recurse -Include package.json | Where-Object { $_.Directory.FullName -NotLike "*node_modules*" } | Foreach-Object { cd $_.Directory.FullName; npm install }
 ```
