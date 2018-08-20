@@ -64,7 +64,7 @@ So I don't need to actually take any action on this.
 The full script can be found below:
 
 ```powershell
-$RepoBaseFolder = "C\Users\SeanK\Repositories\"
+$RepoBaseFolder = "C:\Users\SeanK\Repositories\"
 $OfflineNugetLocation = "C:\Users\SeanK\OneDrive\Nuget_Offline"
 
 Get-ChildItem $RepoBaseFolder -Directory | Foreach-Object { cd $_.FullName; git pull }
