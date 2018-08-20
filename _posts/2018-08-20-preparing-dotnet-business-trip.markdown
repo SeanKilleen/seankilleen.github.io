@@ -34,8 +34,7 @@ Get-ChildItem -Path C:\Users\SeanK\Repositories -Recurse -Include *.sln | Foreac
 Similarly, it probably makes sense to have all of my npm packages updated -- as much as I hate all of the GBs that's likely going to consume:
 
 ```powershell
-# TODO
-Get-ChildItem -Path C:\Users\SeanK\Repositories -Recurse -Exclude *node_modules* -Include package.json | Foreach-Object { $_.Directory.FullName }
+  Get-ChildItem C:\Users\SeanK\Repositories -Recurse -Include package.json | Where-Object { $_.Directory.FullName -NotLike "*node_modules*" } | Foreach-Object { cd $_.Directory.FullName; npm install }
 ```
 
 ## Move all Nuget packages to the Offline Nuget folder
@@ -45,21 +44,25 @@ OK, so I've got the Nuget packages installed for my existing projects, which is 
 I copy the Nuget packages into my offline packages folder, which happens to be a OneDrive folder as well (so it syncs across my machines).
 
  ```powershell
-  Get-ChildItem C:\Users\SeanK\Repositories -Recurse -Exclude *node_modules* -Include package.json | Where-Object { $_.Directory.FullName -NotLike "*node_modules*" } | Foreach-Object { cd $_.Directory.FullName; npm install }
+ # TODO
  ```
 
- ## Enable NPM offline package store
+Note the additional call to `-NotLike "*node_modules*"`. This is because we want to exclude all the sub-modules and installing those dependencies. Otherwise it might take a liiiiittle bit longer than we intended.
+
+## Enable NPM offline package store
+
+Some people use packages tools such as [npm_lazy](https://github.com/mixu/npm_lazy) or [local-npm](https://github.com/nolanlawson/local-npm), but [according to the docs](https://docs.npmjs.com/cli/cache), npm caches on my local directory of `%AppData%/npm-cache` which means I should be able to restore easily enough if I need to.
+
+So I don't need to actually take any action on this.
+
+## Enable Nuget offline package store
 
  TODO
 
- ## Enable Nuget offline package store
+## Putting it all Together: the Script
 
- TODO
+The full script can be found below:
 
- ## Putting it all Together
-
- The full script can be found below:
-
- ```powershell
- $RepoBaseFolder = "C\Users\SeanK\Repositories"
- ```
+```powershell
+$RepoBaseFolder = "C\Users\SeanK\Repositories"
+```
