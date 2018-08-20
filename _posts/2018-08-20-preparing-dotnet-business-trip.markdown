@@ -64,5 +64,11 @@ So I don't need to actually take any action on this.
 The full script can be found below:
 
 ```powershell
-$RepoBaseFolder = "C\Users\SeanK\Repositories"
+$RepoBaseFolder = "C\Users\SeanK\Repositories\"
+
+Get-ChildItem $RepoBaseFolder -Directory | Foreach-Object { cd $_.FullName; git pull }
+
+Get-ChildItem -Path $RepoBaseFolder -Recurse -Include *.sln | Foreach-Object { cd $_.Directory.FullName; nuget install }
+
+Get-ChildItem $RepoBaseFolder -Recurse -Include package.json | Where-Object { $_.Directory.FullName -NotLike "*node_modules*" } | Foreach-Object { cd $_.Directory.FullName; npm install }
 ```
