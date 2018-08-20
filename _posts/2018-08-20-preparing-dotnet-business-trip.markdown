@@ -69,7 +69,9 @@ $OfflineNugetLocation = "C:\Users\SeanK\OneDrive\Nuget_Offline"
 
 Get-ChildItem $RepoBaseFolder -Directory | Foreach-Object { cd $_.FullName; git pull }
 
-Get-ChildItem -Path $RepoBaseFolder -Recurse -Include *.sln | Where-Object { $_.Directory.FullName -NotLike "*node_modules*" } | | Foreach-Object { cd $_.Directory.FullName; nuget install }
+Get-ChildItem -Path $RepoBaseFolder -Recurse -Include *.sln | Where-Object { $_.Directory.FullName -NotLike "*node_modules*" } | Foreach-Object { cd $_.Directory.FullName; nuget install }
 
 Get-ChildItem $RepoBaseFolder -Recurse -Include package.json | Where-Object { $_.Directory.FullName -NotLike "*node_modules*" } | Foreach-Object { cd $_.Directory.FullName; npm install }
+
+Get-ChildItem -Path $RepoBaseFolder -Recurse -Include *.sln | Where-Object { $_.Directory.FullName -NotLike "*node_modules*" } | Foreach-Object { $theDir = $_.Directory.FullName +"\packages\*.*"; Copy-Item $theDir $OfflineNugetLocation }
 ```
