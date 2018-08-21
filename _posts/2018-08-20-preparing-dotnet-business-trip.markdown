@@ -11,6 +11,13 @@ I have the the good fortune to take some interesting business trips occasionally
 
 Below are some steps I've developed -- with some convenient Powershell scripts -- to prepare my code when I travel.
 
+## Defining Some Variables
+
+I begin with two variable definitions:
+
+* `$RepoBaseFolder = "C:\Users\SeanK\Repositories"`
+* `$OfflineNugetLocation = "C:\Users\SeanK\OneDrive\Nuget_Offline"`
+
 ## Update all the Repositories
 
 I store all of my repositories in `C:\users\SeanK\Repositories`, and I use git for 99% of my source code management. So first up, I pull all of the folders that are in my `Repositories` location, and I git pull to get the latest for each of them.
@@ -26,7 +33,7 @@ This ensures I don't run into any restore issues.
 I find the location of every `.sln` file within my repositories folder, and I run `nuget install` from that directory.
 
 ```Powershell
-Get-ChildItem -Path C:\Users\SeanK\Repositories -Recurse -Include *.sln | Where-Object { $_.Directory.FullName -NotLike "*node_modules*" } | | Foreach-Object { cd $_.Directory.FullName; nuget install }
+Get-ChildItem -Path $RepoBaseFolder -Recurse -Include *.sln | Where-Object { $_.Directory.FullName -NotLike "*node_modules*" } | | Foreach-Object { cd $_.Directory.FullName; nuget install }
 ```
 
 ## Pull and Update npm packages
@@ -34,7 +41,7 @@ Get-ChildItem -Path C:\Users\SeanK\Repositories -Recurse -Include *.sln | Where-
 Similarly, it probably makes sense to have all of my npm packages updated -- as much as I hate all of the GBs that's likely going to consume:
 
 ```Powershell
-  Get-ChildItem C:\Users\SeanK\Repositories -Recurse -Include package.json | Where-Object { $_.Directory.FullName -NotLike "*node_modules*" } | Foreach-Object { cd $_.Directory.FullName; npm install }
+  Get-ChildItem $RepoBaseFolder -Recurse -Include package.json | Where-Object { $_.Directory.FullName -NotLike "*node_modules*" } | Foreach-Object { cd $_.Directory.FullName; npm install }
 ```
 
 Note the additional call to `-NotLike "*node_modules*"`. If we pulled an npm install for every component within `node_modules`, things miiiiiiight take a little longer than expected.
