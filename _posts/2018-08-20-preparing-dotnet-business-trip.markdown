@@ -57,7 +57,7 @@ A few things to note here:
 
 Some people use packages tools such as [npm_lazy](https://github.com/mixu/npm_lazy) or [local-npm](https://github.com/nolanlawson/local-npm), but [according to the docs](https://docs.npmjs.com/cli/cache), npm caches on my local directory of `%AppData%/npm-cache` which means I should be able to restore easily enough if I need to.
 
-So I don't need to actually take any action on this.
+So I don't need to actually take any action on this as long as I restore everything ahead of time 
 
 ## Enable Nuget offline package store
 
