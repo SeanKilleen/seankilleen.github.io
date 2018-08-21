@@ -30,7 +30,7 @@ So on a whim one day, I said "I wonder if VS Code can do that". I search the ext
 
 ## Setting up the Extension
 
-* In VS Code, ppen the Command Bar (for me, `CTRL + Shift + P` does this)
+* In VS Code, open the Command Bar (for me, `CTRL + Shift + P` does this)
 * Type `Workspace Settings` or similar and then select `Preferences: Open Workspace Settings`
 * In the settings, add a section for `logViewer.watch` that defines some titles and patterns for files that you'd like to watch. Below is an example of watching two separate files on different servers. I add the below and save my preferences:
 
