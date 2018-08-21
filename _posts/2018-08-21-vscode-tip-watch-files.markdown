@@ -1,7 +1,7 @@
 ---
 title: "VSCode Tip: Watching Files"
 layout: post
-date: 2018-08-21 14:00:00.000000000 -05:00
+date: 2018-08-21 13:00:00.000000000 -05:00
 excerpt: "Yet another VSCode is helpful as my editor of choice."
 
 references:
@@ -26,9 +26,33 @@ So on a whim one day, I said "I wonder if VS Code can do that". I search the ext
 * Open VS Code
 * Click on the `Extensions` button
 * Type `Log Viewer` in the search box
+* Find the [Log Viewer Extension](https://marketplace.visualstudio.com/items?itemName=berublan.vscode-log-viewer) and install it.
 
-## What are Your Steps?
+## Setting up the Extension
 
-Am I missing any steps that you use to prepare? What other steps do you take to prep your code for travel? Sound off in the comments!
+* In VS Code, ppen the Command Bar (for me, `CTRL + Shift + P` does this)
+* Type `Workspace Settings` or similar and then select `Preferences: Open Workspace Settings`
+* In the settings, add a section for `logViewer.watch` that defines some titles and patterns for files that you'd like to watch. Below is an example of watching two separate files on different servers. I add the below and save my preferences
 
-I hope you found this tutorial useful. Happy travels!
+```json
+{
+    "logViewer.watch": [
+        {
+            "title": "Server 1 IIS",
+            "pattern": "\\\\servername\\C$\\inetpub\\logs\\LogFiles\\W3SVC2\\u_ex180718.log"
+        },
+        {
+            "title": "Server 2 IIS",
+            "pattern": "\\\\servername2\\C$\\inetpub\\logs\\LogFiles\\W3SVC2\\u_ex180718.log"
+        },
+    ]
+}
+```
+
+## What are the Results?
+The log viewer opens a screen, and we can see all the applicable watches and view their updates as they change.
+
+![Results]({{site.post-images}}//2018-08-21_vscode-logviewer-watches.png)
+
+## What do you Think?
+Hope you enjoyed this tip! Drop your other favorite tips in the comments, and check out [VS Code Can do That?!](https://vscodecandothat.com/) for a lot of other great tips!
