@@ -32,7 +32,7 @@ So on a whim one day, I said "I wonder if VS Code can do that". I search the ext
 
 * In VS Code, ppen the Command Bar (for me, `CTRL + Shift + P` does this)
 * Type `Workspace Settings` or similar and then select `Preferences: Open Workspace Settings`
-* In the settings, add a section for `logViewer.watch` that defines some titles and patterns for files that you'd like to watch. Below is an example of watching two separate files on different servers. I add the below and save my preferences
+* In the settings, add a section for `logViewer.watch` that defines some titles and patterns for files that you'd like to watch. Below is an example of watching two separate files on different servers. I add the below and save my preferences:
 
 ```json
 {
@@ -53,6 +53,8 @@ So on a whim one day, I said "I wonder if VS Code can do that". I search the ext
 The log viewer opens a screen, and we can see all the applicable watches and view their updates as they change.
 
 ![Results]({{site.post-images}}//2018-08-21_vscode-logviewer-watches.png)
+
+I love that I can define patterns and not just file paths, so that I can watch multiple files at once.
 
 ## What do you Think?
 Hope you enjoyed this tip! Drop your other favorite tips in the comments, and check out [VS Code Can do That?!](https://vscodecandothat.com/) for a lot of other great tips!
