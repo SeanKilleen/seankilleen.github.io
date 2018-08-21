@@ -44,10 +44,14 @@ OK, so I've got the Nuget packages installed for my existing projects, which is 
 I copy the Nuget packages into my offline packages folder, which happens to be a OneDrive folder as well (so it syncs across my machines).
 
  ```powershell
- # TODO
+Get-ChildItem -Path $RepoBaseFolder -Recurse -Directory | Where-Object { $_.FullName -NotLike "*node_modules*" -and$_.FullName -like "*packages" } | Foreach-Object { Copy-Item $($_.FullName+"\*.*") $OfflineNugetLocation  -ErrorVariable capturedErrors -ErrorAction SilentlyContinue; $capturedErrors | foreach-object { if ($_ -notmatch "already exists") { write-error $_ }}}
  ```
 
-Note the additional call to `-NotLike "*node_modules*"`. This is because we want to exclude all the sub-modules and installing those dependencies. Otherwise it might take a liiiiittle bit longer than we intended.
+A few things to note here:
+
+* The additional call to `-NotLike "*node_modules*"`.
+* We also make sure that we're only looking at paths that end in `packages`
+* We pipe the errors into an `ErrorVariable` so that we can suppress the "already exists" errors when copying
 
 ## Enable NPM offline package store
 
@@ -61,7 +65,7 @@ So I don't need to actually take any action on this.
 
 ## Putting it all Together: the Script
 
-The full script can be found below:
+The full script can be found below -- feel free to modify the variables up top and save as your own `.ps1` file.
 
 ```powershell
 $RepoBaseFolder = "C:\Users\SeanK\Repositories\"
@@ -73,5 +77,5 @@ Get-ChildItem -Path $RepoBaseFolder -Recurse -Include *.sln | Where-Object { $_.
 
 Get-ChildItem $RepoBaseFolder -Recurse -Include package.json | Where-Object { $_.Directory.FullName -NotLike "*node_modules*" } | Foreach-Object { cd $_.Directory.FullName; npm install }
 
-Get-ChildItem -Path $RepoBaseFolder -Recurse -Include *.sln | Where-Object { $_.Directory.FullName -NotLike "*node_modules*" } | Foreach-Object { $theDir = $_.Directory.FullName +"\packages\*.*"; Copy-Item $theDir $OfflineNugetLocation }
+Get-ChildItem -Path $RepoBaseFolder -Recurse -Directory | Where-Object { $_.FullName -NotLike "*node_modules*" -and$_.FullName -like "*packages" } | Foreach-Object { Copy-Item $($_.FullName+"\*.*") $OfflineNugetLocation  -ErrorVariable capturedErrors -ErrorAction SilentlyContinue; $capturedErrors | foreach-object { if ($_ -notmatch "already exists") { write-error $_ }}}
 ```
