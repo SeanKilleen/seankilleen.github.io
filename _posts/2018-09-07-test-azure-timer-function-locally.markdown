@@ -4,6 +4,12 @@ layout: post
 date: 2018-09-07 15:00:00.000000000 -05:00
 excerpt: "&#9835; I don't wanna wait, for the schedule to be overrrr..."
 
+references:
+ - title: "Work with Azure Functions Core Tools"
+   url: https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#non-http-triggered-functions
+   parenttitle: "Microsoft Docs"
+   parenturl: https://docs.microsoft.com
+
 comments: true
 ---
 
