@@ -21,6 +21,10 @@ references:
    url: https://docs.microsoft.com/en-us/windows/wsl/about
    parenttitle: "Microsoft Docs"
    parenturl: https://docs.microsoft.com
+ - title: "Your GitHub Personal Access Tokens"
+   url: https://github.com/settings/tokens
+   parenttitle: "GitHub"
+   parenturl: https://github.com
 
 comments: true
 ---
@@ -76,40 +80,76 @@ After RVM installs, it prints out some additional instructions, so I also:
 
 I then used RVM to install Ruby: `rvm install ruby`
 
+Cool! I've got Ruby.
+
 ## Git Install and Clone
-sudo apt-get install git 
-git config --global user.name "SeanKilleen"
-git config --global user.email "SeanKilleen@gmail.com"
-git clone https://github.com/SeanKilleen/seankilleen.github.io
+I've got to get to my blog's repository in order to build it and run html-proofer. That means setting up git with the GitHub repo. I:
 
-## Getting Bundler up to date
-gem install bundler
+* Install git: `sudo apt-get install git`
+* Set my username: `git config --global user.name "SeanKilleen"`
+* Set my e-mail: `git config --global user.email "SeanKilleen@gmail.com"`
+* Check out the blog repo: `git clone https://github.com/SeanKilleen/seankilleen.github.io`
 
-## Up and running!
-`bundle install` 
-`bundle exec jekyll build`
+## Building the Blog
+I need to:
 
-## Editing the gemfile to add html-proofer
+* Go into the blog's directory: `cd seankilleen.github.io`
+* Install Bundler: `gem install bundler`
+* Install the gems for the blog: `bundle install`
+
+Now, I can build the blog via `bundle exec jekyll build`
+
+And it works! Not shabby.
+
+## Adding html-proofer (from Windows!)
+OK, so I need to add the `html-proofer` gem by modifying the `gemfile` that's sitting on my Ubuntu distro. But ugh, I don't know the landscape as well as I know the windows landscape, and I'd rather just quickly use notepad.
+
+...Thankfully, you can totally edit the Linux distro files from within Windows!
+
+I: 
 
 * Opened Windows Explorer
-* C:\Users\%USERNAME%\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home
-* From there, navigated to the repository's directory
-* I found the gemfile and could edit and save it from within Windows
+* Navigated to `C:\Users\%USERNAME%\AppData\Local\Packages`
+* Clicked into the Ubuntu distro folder: `CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc`
+* Navigated to `\LocalState\rootfs\home\sean`
 
-## Setting up my GitHub account for push wihtin WSL
-Pushing to GitHub requires a personal access token when you have 2FA turned on (as you should!) 
+Whoa, there's my repo folder! I just need to click into the `seankilleen.github.io` folder, and then I can open `gemfile` within notepad.
 
-* https://github.com/settings/tokens
+* I add a line: `gem 'html-proofer'` and save.
+* I then switch back into my Ubuntu Window. I type `cat gemfile` and lo and behold, I see my changes reflected there. Nice!
+
+It would be pretty great to commit those changes to GitHub right from my Ubuntu distro. Is that doable?
+
+...Heck yeah, it's doable.
+
+## Setting up my GitHub account for push within WSL
+Pushing to GitHub requires a personal access token when you have two-factor authentication turned on (as you should!). So, I:
+
+* Open a web browser on Windows and head to https://github.com/settings/tokens
 * Create a personal access token and save it somewhere that you would save a password (because it essentially is one)
-* In WSL, navigate to repo
-* `git add .`
-* `git commit -m "Adding html-proofer gem"`
-* `git push`, enter username and personal access token in place of the password
+* Switch back to my Ubuntu WSL window
+* Navigate to the repo folder if I'm not already in it
+* Add my uncommitted files: `git add .`
+* Check with `git status`
+* Commit the change: `git commit -m "Adding html-proofer gem"`
+* Attempt to push the change: `git push`
+* Enter username and personal access token in place of the password
 
-## Running html-proofer
+Now I've committed the change to my repo, from Ubuntu.
 
-In WSL, run `bundle exec html-proofer`
+## The payoff: Running html-proofer without issue!
+
+In my WSL window, I:
+
+* Navigate to the repo folder
+* Run `bundle install` to make sure I've got everything installed
+* Run `bundle exec jekyll build` to create the output, which lives in a `_site` folder.
+* Run `bundle exec html-proofer ./_site` to execute html-proofer.
 
 Voila! I see the output.
 
-I hope this helps serve as an introduction to Windows Subsystem for Linux. But if you'll excuse me for now, I have some links to go fix.
+## Wow. That was cool.
+
+The team behind WSL has put in a ton of work to make this experience seamless. A small bit of googling let me follow instructions to get up and running on Ubuntu without sacrificing the ease and muscle memory of the Windows environment as my main setup.
+
+I hope this helps serve as an introduction to Windows Subsystem for Linux. But if you'll excuse me for now, I have some links to go fix!
