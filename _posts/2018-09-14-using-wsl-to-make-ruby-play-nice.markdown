@@ -156,4 +156,6 @@ Voila! I see the output.
 
 The team behind WSL has put in a ton of work to make this experience seamless. A small bit of googling let me follow instructions to get up and running on Ubuntu without sacrificing the ease and muscle memory of the Windows environment as my main setup.
 
+NOTE: I did eventually figure out how to fix the build on Windows once I got the correct tooling installed. But this was way more fun in the interim!
+
 I hope this helps serve as an introduction to Windows Subsystem for Linux. But if you'll excuse me for now, I have some links to go fix!
