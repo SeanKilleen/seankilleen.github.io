@@ -55,24 +55,26 @@ I waited a few minutes for some setup to complete, followed the prompts to creat
 
 ...was it really that straight-forward? Indeed it was.
 
-[https://rvm.io/rvm/install]
+## Installing Ruby
 
-## Ruby install
+[RVM](https://rvm.io) seemed like the right way to go to install and manage versions of Ruby, so I decided to use that.
 
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+I followed [the install instructions](https://rvm.io/rvm/install). All of the below steps were performed within the Ubuntu window.
 
-sudo apt-get install software-properties-common
-sudo apt-add-repository -y ppa:rael-gc/rvm
-sudo apt-get update
-sudo apt-get install rvm
+* Accept the public keys: `gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB`
+* Install some prerequisites for rvm: `sudo apt-get install software-properties-common`
+* Add the RVM source repo: `sudo apt-add-repository -y ppa:rael-gc/rvm`
+* Update apt-get: `sudo apt-get update`
+* Install RVM: `sudo apt-get install rvm`
 
-## RVM post setup instructions
-sudo usermod -a -G rvm sean
-source /etc/profile.d/rvm.sh
+After RVM installs, it prints out some additional instructions, so I also:
 
-[restart system]
+* Add my user to the "rvm" group: `sudo usermod -a -G rvm sean`
+* Run the additional post-install script: `source /etc/profile.d/rvm.sh`
+* Logout of the vm: `logout`
+* Re-launch the app from within Windows and bring the shell back up.
 
-rvm install ruby
+I then used RVM to install Ruby: `rvm install ruby`
 
 ## Git Install and Clone
 sudo apt-get install git 
