@@ -83,6 +83,7 @@ I then used RVM to install Ruby: `rvm install ruby`
 Cool! I've got Ruby.
 
 ## Git Install and Clone
+
 I've got to get to my blog's repository in order to build it and run html-proofer. That means setting up git with the GitHub repo. I:
 
 * Install git: `sudo apt-get install git`
@@ -91,6 +92,7 @@ I've got to get to my blog's repository in order to build it and run html-proofe
 * Check out the blog repo: `git clone https://github.com/SeanKilleen/seankilleen.github.io`
 
 ## Building the Blog
+
 I need to:
 
 * Go into the blog's directory: `cd seankilleen.github.io`
@@ -102,11 +104,12 @@ Now, I can build the blog via `bundle exec jekyll build`
 And it works! Not shabby.
 
 ## Adding html-proofer (from Windows!)
+
 OK, so I need to add the `html-proofer` gem by modifying the `gemfile` that's sitting on my Ubuntu distro. But ugh, I don't know the landscape as well as I know the windows landscape, and I'd rather just quickly use notepad.
 
 ...Thankfully, you can totally edit the Linux distro files from within Windows!
 
-I: 
+I:
 
 * Opened Windows Explorer
 * Navigated to `C:\Users\%USERNAME%\AppData\Local\Packages`
@@ -123,9 +126,10 @@ It would be pretty great to commit those changes to GitHub right from my Ubuntu 
 ...Heck yeah, it's doable.
 
 ## Setting up my GitHub account for push within WSL
+
 Pushing to GitHub requires a personal access token when you have two-factor authentication turned on (as you should!). So, I:
 
-* Open a web browser on Windows and head to https://github.com/settings/tokens
+* Open a web browser on Windows and head to <https://github.com/settings/tokens>
 * Create a personal access token and save it somewhere that you would save a password (because it essentially is one)
 * Switch back to my Ubuntu WSL window
 * Navigate to the repo folder if I'm not already in it
