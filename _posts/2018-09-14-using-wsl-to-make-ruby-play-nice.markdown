@@ -4,18 +4,56 @@ layout: post
 date: 2018-09-14 10:00:00.000000000 -05:00
 excerpt: "Ruby and Windows don't always play nice. Here's how I used WSL to solve that problem."
 
-# references:
-#  - title: "Work with Azure Functions Core Tools"
-#    url: https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#non-http-triggered-functions
-#    parenttitle: "Microsoft Docs"
-#    parenturl: https://docs.microsoft.com
+references:
+ - title: "Installing RVM"
+   url: https://rvm.io/rvm/install
+   parenttitle: "RVM: Ruby Version Manager"
+   parenturl: https://rvm.io
+ - title: "rvm/ubuntu_rvm Repository"
+   url: https://github.com/rvm/ubuntu_rvm
+   parenttitle: "GitHub"
+   parenturl: https://github.com
+ - title: "gjtorikian/html-proofer Repository"
+   url: https://github.com/gjtorikian/html-proofer
+   parenttitle: "GitHub"
+   parenturl: https://github.com
+ - title: "Windows Subsystem for Linux Documentation"
+   url: https://docs.microsoft.com/en-us/windows/wsl/about
+   parenttitle: "Microsoft Docs"
+   parenturl: https://docs.microsoft.com
 
 comments: true
 ---
 
+## The Goal / Problem
 
+This blog has been around for a little bit now. I'm bound to have some dead links or images. I figured I'd check those out and clean up the place.
 
-## Obtaining Windows Subsystem for Linux (WSL)
+Luckily, this blog also runs on Jekyll and Ruby, and the ruby ecosystem has a great gem called [html-proofer](https://github.com/gjtorikian/html-proofer) that will help us do this.
+
+So I added the gem to my project, installed it, and ran html-proofer, only to see:
+
+> (LoadError)y23/lib/ruby/gems/2.3.0/gems/ffi-1.9.18-x64-mingw32/lib/ffi/library.rb:147:in `block in ffi_lib': Could not open library 'libcurl': The specified module could not be found.
+
+> Could not open library 'libcurl.so.4.dll': The specified module could not be found.
+
+That's...not great. I googled a bunch and it appears that some of the tools in that chain don't play well with Windows, and I wasn't able to find a solution quickly. So I was about to give up on the task for a bit rather than fighting the Ruby/Windows ecosystem.
+
+...until I remembered that I could bring Linux right into my environment and get the job done.
+
+## The Solution: Enter Windows Subsystem for Linux (WSL)
+
+If you haven't heard of [Windows System for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/about), it's a fantastic project from Microsoft that allows you to run certain Linux distributions right from within Windows, allowing you to get the best of both worlds.
+
+I figured it was worth giving it a shot. Boy, was I right.
+
+## Obtaining WSL
+
+I opened the Microsoft Store App and searched for "Ubuntu". I found the Ubuntu distribution from Canonical and clicked `Install`. When that was done, I clicked `Launch`.
+
+I waited a few minutes for some setup to complete, followed the prompts to create a username and password, and then I had a shell ready to go.
+
+...was it really that straight-forward? Indeed it was.
 
 [https://rvm.io/rvm/install]
 
