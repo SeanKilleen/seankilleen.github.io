@@ -99,5 +99,5 @@ Click the Empty entry, then click the CD-ROM icon to the right, select `Choose a
 Do this for both OSes. You're now ready to start them up and install the operating systems
 
 [VirtualBox]: https://www.virtualbox.org/
-[CentOS 5.7]: http://mirror.cs.vt.edu/pub/CentOS/5.7/isos/
+[CentOS 5.7]: http://vault.centos.org/5.7/isos/x86_64/
 [download VirtualBox]: https://www.virtualbox.org/wiki/Downloads
