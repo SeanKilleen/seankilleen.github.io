@@ -147,4 +147,4 @@ In the next article, we’ll explore how to start and stop the Cassini Web Serve
 
 [PS CI Course]: http://www.pluralsight-training.net/microsoft/courses/TableOfContents?courseName=continuous-integration&amp;highlight=james-kovacs_ci-part1*3!james-kovacs_ci-part3*2!james-kovacs_ci-part2*2!james-kovacs_ci-part6*4,12#ci-part1
 
-[PS Sub]: http://www.pluralsight-training.net/microsoft/Products/Individual
+[PS Sub]: https://help.pluralsight.com/help/sign-in-sign-up
