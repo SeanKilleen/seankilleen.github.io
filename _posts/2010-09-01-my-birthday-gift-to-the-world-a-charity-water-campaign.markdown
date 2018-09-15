@@ -19,4 +19,4 @@ I'm lucky as hell to be where I am, and hope those who know me will help support
 
 Thanks!
 
-[Charity: Water -- Sean's 24th Birthday]: http://www.mycharitywater.org/Seans24thBirthday
+[Charity: Water -- Sean's 24th Birthday]: https://my.charitywater.org/seankilleen/seans24thbirthday
