@@ -8,7 +8,7 @@ redirect_from:
  - /2011/10/password-rules-offender-charles-schwab.html
 references: 
  - title: "We Guard Your Account: Charles Schwab: SchwabSafe"
-   url: http://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe/we_guard_your_account
+   url: https://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe
    parenttitle: Charles Schwab
    parenturl: http://www.schwab.com
  
