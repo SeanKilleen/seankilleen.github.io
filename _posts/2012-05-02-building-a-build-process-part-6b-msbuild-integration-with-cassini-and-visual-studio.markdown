@@ -13,7 +13,7 @@ references:
  - title: MSBuild Extension Pack web site
    url: http://msbuildextensionpack.codeplex.com/
  - title: MsBuild Extension Pack AsyncExec Reference 
-   url: http://www.msbuildextensionpack.com/help/3.5.8.0/html/68cdc023-8926-4ac9-9e7c-0297592fec29.htm
+   url: http://www.msbuildextensionpack.com/help/4.0.6.0/html/68cdc023-8926-4ac9-9e7c-0297592fec29.htm
 
 ---
 
@@ -157,7 +157,7 @@ And by all means, if you know how to solve the mystery, sound off in the comment
 
 [MSBuild Extension Pack web site]:http://msbuildextensionpack.codeplex.com/
 
-[MsBuild Extension Pack AsyncExec Reference]: http://www.msbuildextensionpack.com/help/3.5.8.0/html/68cdc023-8926-4ac9-9e7c-0297592fec29.htm
+[MsBuild Extension Pack AsyncExec Reference]: http://www.msbuildextensionpack.com/help/4.0.6.0/html/68cdc023-8926-4ac9-9e7c-0297592fec29.htm
 
 [Pluralsight Continuous Integration Course]: https://www.pluralsight.com/courses/continuous-integration
 
