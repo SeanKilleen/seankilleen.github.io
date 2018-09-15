@@ -8,8 +8,6 @@ redirect_from:
  - /2012/05/building-build-process-part-7.html
  
 references: 
- - title: "CruiseControl.NET Home Page"
-   url: http://www.cruisecontrolnet.org/
  - title: "CruiseControl.NET Releases Page on SourceForge"
    url: http://sourceforge.net/projects/ccnet/files/CruiseControl.NET%20Releases/
  - title: "Installing and Configuring CruiseControl.NET"

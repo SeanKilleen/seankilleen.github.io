@@ -42,4 +42,4 @@ Dad, thank you for this lesson and all the others so far. I'm proud to be your s
 Love,
 Sean
 
-[CW]: http://mycharitywater.org/a-lesson-from-my-father
+[CW]: https://my.charitywater.org/seankilleen/a-lesson-from-my-father

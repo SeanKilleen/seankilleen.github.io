@@ -9,7 +9,7 @@ redirect_from:
  - /2012/04/building-build-process-part-5.html
 references: 
  - title: Pluralsight Continuous Integration Course
-   url: http://www.pluralsight-training.net/microsoft/courses/TableOfContents?courseName=continuous-integration&amp;highlight=james-kovacs_ci-part1*3!james-kovacs_ci-part3*2!james-kovacs_ci-part2*2!james-kovacs_ci-part6*4,12#ci-part1
+   url: https://www.pluralsight.com/courses/continuous-integration
  - title: Subversion book
    url:  http://svnbook.red-bean.com/
  - title: Download TortoiseSVN
@@ -167,9 +167,9 @@ Congratulations! You’ve fully completed a solution setup with Visual Studio an
 
 [32-bit version]: http://sourceforge.net/projects/tortoisesvn/files/1.7.6/Application/TortoiseSVN-1.7.6.22632-win32-svn-1.7.4.msi/download?accel_key=61%3A1335136466%3Ahttp%253A//tortoisesvn.net/downloads.html%3A8d0d4796%24cd1234e7403f638c725cf3902d68531a99393cc5&amp;click_id=e7a29518-8cd0-11e1-9aae-001d0968d1a5&amp;source=accel
 
-[Pluralsight Continuous Integration Course]: http://www.pluralsight-training.net/microsoft/courses/TableOfContents?courseName=continuous-integration&amp;highlight=james-kovacs_ci-part1*3!james-kovacs_ci-part3*2!james-kovacs_ci-part2*2!james-kovacs_ci-part6*4,12#ci-part1
+[Pluralsight Continuous Integration Course]: https://www.pluralsight.com/courses/continuous-integration
 
-[James Kovacs]: http://www.pluralsight-training.net/microsoft/Authors/Details?handle=james-kovacs
+[James Kovacs]: https://www.pluralsight.com/authors/james-kovacs
 
 [64-bit version]: http://sourceforge.net/projects/tortoisesvn/files/1.7.6/Application/TortoiseSVN-1.7.6.22632-x64-svn-1.7.4.msi/download?accel_key=61%3A1335136466%3Ahttp%253A//tortoisesvn.net/downloads.html%3A8d0d4796%24cd1234e7403f638c725cf3902d68531a99393cc5&amp;click_id=e7a29518-8cd0-11e1-9aae-001d0968d1a5-1&amp;source=accel
 

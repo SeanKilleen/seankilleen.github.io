@@ -25,7 +25,7 @@ In layman's terms: Essentially, it looks like the installer binaries after April
 #### Step 2: Download a good installer
 [Via this great thread][Thread], I found a solution on the download location.
 
-You can download a non-broken IE 9 Installer from Microsoft at <http://www.microsoft.com/download/en/details.aspx?id=23332>.
+You can download a non-broken IE 9 Installer from Microsoft at (Ed. Note: this link has been lost to time and link rot).
 
 #### Step 3: Install the Downloaded (non-Windows-Update) IE 9
 This one's pretty straightforward. You'll have to restart once you're done.
