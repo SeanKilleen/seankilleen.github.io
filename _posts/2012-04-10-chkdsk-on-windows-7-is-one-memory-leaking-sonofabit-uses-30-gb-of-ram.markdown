@@ -16,7 +16,7 @@ See below for yourself:
 
 In case you can't see it clearly, that's Chkdsk.exe taking up 30,060,916 KB of RAM. Otherwise known as ***30.06 GB of RAM***.
 
-[Apparently][Link1] [this][Link2] [has][Link3] [been][Link4] a [known][Link5] [issue][Link6] [for][Link7] a [long][Link8] [time][Link9].
+[Apparently][Link1] [this][Link2] [has][Link3] [been][Link4] a [known][Link5] [issue][Link6] for a [long][Link8] [time][Link9].
 
 If I find a resolution, I'll post one here in problem/solution format. If you have any tips, drop a line in the comments!
 
@@ -30,11 +30,9 @@ If I find a resolution, I'll post one here in problem/solution format. If you ha
 
 [Link4]: http://social.technet.microsoft.com/Forums/en-US/w7itproperf/thread/02a8fb95-a028-46ef-88fe-69f1e5b2d71d
 
-[Link5]:http://www.neowin.net/news/main/09/08/05/windows-7-rtm-contains-a-rather-nasty-chkdsk-bug
+[Link5]:https://www.neowin.net/news/windows-7-rtm-contains-a-rather-nasty-chkdsk-bug
 
 [Link6]: http://social.technet.microsoft.com/Forums/en-US/w7itproperf/thread/3dc1af71-56d8-447b-ad9b-2a94b36dffc1
-
-[Link7]: http://social.technet.microsoft.com/Forums/en-US/w7itproperf/thread/2b854229-ce35-4a49-a544-77c15786c529
 
 [Link8]: http://www.infoworld.com/d/windows/critical-windows-7-bug-risks-derailing-product-launch-330
 
