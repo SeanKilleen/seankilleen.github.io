@@ -25,23 +25,23 @@ Your client can do the following:
 * Go into their domain's settings.
 * On the left-hand side, click "Grant modification rights":
 
-![]({{site.post-images}}/Namecheap_GrantModificationRights.png)
+![A screenshot of the location of the 'grant modification rights' screen]({{site.post-images}}/Namecheap_GrantModificationRights.png)
 
 * Enter their password and your username:
 
-![]({{site.post-images}}/NameCheap_GrantAccessUsername.png)
+![A screenshot of granting access to our username]({{site.post-images}}/NameCheap_GrantAccessUsername.png)
 
 * Select `all` for all rights or (only the rights they're comfortable with):
 
-![]({{site.post-images}}/NameCheap_SelectAllRights.png)
+![A screenshot of the rights selection section]({{site.post-images}}/NameCheap_SelectAllRights.png)
 
 * Save the settings:
 
-![]({{site.post-images}}/NameCheap_GrantAccessButton.png)
+![A screenshot of the 'grant access' button]({{site.post-images}}/NameCheap_GrantAccessButton.png)
 
 The next time you sign in, you'll see the domain name in your domain name list, likely with a lock next to it to indicate that you've only been granted certain rights:
 
-![]({{site.post-images}}/NameCheap_DelegatedDomain.png)
+![A screenshot of the delegated domain]({{site.post-images}}/NameCheap_DelegatedDomain.png)
 
 ## To Recap: Why do this again?
 
