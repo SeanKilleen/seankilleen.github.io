@@ -11,7 +11,7 @@ references:
    parenttitle: MSDN Blogs
    parenturl: http://blogs.msdn.com
  - title: IEZoneAnalyzer v3.5 with Zone Map Viewer
-   url: http://blogs.technet.com/b/fdcc/archive/2011/09/22/iezoneanalyzer-v3-5-with-zone-map-viewer.aspx
+   url: https://blogs.technet.microsoft.com/fdcc/2011/09/22/iezoneanalyzer-v3-5-with-zone-map-viewer/
    parenttitle: Microsoft's USGCB Tech Blog
    parenturl: http://blogs.technet.com/b/fdcc/default.aspx
 ---
