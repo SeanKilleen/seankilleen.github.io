@@ -13,7 +13,7 @@ It doesn't have to be that way.
 
 And so, I'm giving up birthday gifts again this year to try to make a difference. With your help, I was able to raise $281 last year, and I'd like to see if we can top it this year.
 
-Please consider donating at <http://mycharitywater.org/seans25th>  for my 25th birthday. I'll appreciate it, but the people who will have clean water to drink will appreciate it even more.
+Please consider donating at <https://my.charitywater.org/seankilleen/seans25th>  for my 25th birthday. I'll appreciate it, but the people who will have clean water to drink will appreciate it even more.
 
 [Charity:Water] is one of the most accountable, transparent organizations I've ever seen, and I hope you'll add your charity as we work to help the world.
 
