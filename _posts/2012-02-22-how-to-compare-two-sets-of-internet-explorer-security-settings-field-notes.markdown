@@ -13,7 +13,7 @@ references:
  - title: IEZoneAnalyzer v3.5 with Zone Map Viewer
    url: https://blogs.technet.microsoft.com/fdcc/2011/09/22/iezoneanalyzer-v3-5-with-zone-map-viewer/
    parenttitle: Microsoft's USGCB Tech Blog
-   parenturl: http://blogs.technet.com/b/fdcc/default.aspx
+   parenturl: https://blogs.technet.microsoft.com/fdcc/
 ---
 ### The Problem
 A web application doesn't work correctly for a user, and from the description of the issue I think it might have to do with security settings. The application works fine for me.
@@ -39,6 +39,6 @@ At this point, the program will pop up a window with all the different zone sett
 And that's it! Thank you to Aaron for providing such an excellent utility.
 
 [Aaron Link]: http://blogs.msdn.com/b/aaron_margosis/
-[IEZoneAnalyzer utility]: http://blogs.technet.com/b/fdcc/archive/2011/09/22/iezoneanalyzer-v3-5-with-zone-map-viewer.aspx
-[IEZ Download Link]: http://blogs.technet.com/b/fdcc/archive/2011/09/22/iezoneanalyzer-v3-5-with-zone-map-viewer.aspx
-[IEZ Direct]: http://blogs.technet.com/cfs-file.ashx/__key/communityserver-components-postattachments/00-03-45-50-87/IEZoneAnalyzer.3.5.0.3.zip
+[IEZoneAnalyzer utility]: https://blogs.technet.microsoft.com/fdcc/2011/09/22/iezoneanalyzer-v3-5-with-zone-map-viewer/
+[IEZ Download Link]: https://blogs.technet.microsoft.com/fdcc/2011/09/22/iezoneanalyzer-v3-5-with-zone-map-viewer/
+[IEZ Direct]: https://msdnshared.blob.core.windows.net/media/TNBlogsFS/prod.evol.blogs.technet.com/telligent.evolution.components.attachments/01/5808/00/00/03/45/50/87/IEZoneAnalyzer.3.5.0.5.zip
