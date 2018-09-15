@@ -5,8 +5,6 @@ date: 2015-06-01 22:34:00.000000000 -05:00
 excerpt: "Save your pages time and money by using a CDN. It's not hard at all."
 comments: true
 references: 
- - title: "Allies For a Cure"
-   url: http://AlliesForACure.com
  - title: Azure CDN
    url: http://azure.microsoft.com/en-us/services/cdn/
  - title: Azure Managament Site
@@ -20,7 +18,7 @@ references:
  - title: Namecheap.com
    url: http://namecheap.com
 ---
-Happy June, readers! I recently helped design a [AlliesForACure.com, a web site for a charity contest](http://AlliesForACure.com). We had some static content (images, etc.) and wanted to keep pages loading quickly while keeping our costs low.
+Happy June, readers! I recently helped design a [AlliesForACure.com, a web site for a charity contest]() (Ed. note: unfortunately the link has been lost to time). We had some static content (images, etc.) and wanted to keep pages loading quickly while keeping our costs low.
 
 This sounded like a job for [Azure CDN](http://azure.microsoft.com/en-us/services/cdn/). But I had never used it before, so I figured this would be a good opportunity to make a blog post out of it.
 
@@ -296,7 +294,7 @@ Now we can change that setting from web.config or override it within the Azure c
 * Don't forget to check css files, etc. for urls to things like in-line images. I missed this at first and couldn't figure out why certain things weren't showing up. Just a brief moment of "d'oh!".
 
 # That's a Wrap!
-I hope you found this useful. If you did, please consider making a donation at <http://AlliesForACure.com>.
+I hope you found this useful. If you did, please consider making a donation at AlliesForACure.com.
 
 Also, I'd love to hear your thoughts -- sound off in the comments!
 
