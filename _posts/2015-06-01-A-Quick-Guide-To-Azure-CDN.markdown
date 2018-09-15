@@ -97,31 +97,31 @@ There are tons of ways to get files into Microsoft Azure. For this exercise, we'
 * Run the Azure Storage Explorer program.
 * Click `Add Account` at the top of the screen:
 
-![]({{site.post-images}}/AzureCDN_07a_AddAccount.png)
+![A screenshot of the add account link location]({{site.post-images}}/AzureCDN_07a_AddAccount.png)
 
 * Enter your storage account name (the name you gave the storage in Azure), and the storage account key that you copied earlier:
 
-![]({{site.post-images}}/AzureCDN_07b_StorageExplorerSetup.png)
+![A screenshot of the storage explorer setup]({{site.post-images}}/AzureCDN_07b_StorageExplorerSetup.png)
 
 ### Create a Container
 
 * On the left-hand side, click on the `New` button to create a new Container:
 
-![]({{site.post-images}}/AzureCDN_08a_NewContainer.png)
+![A screenshot of the button to create a new container]({{site.post-images}}/AzureCDN_08a_NewContainer.png)
 
 * Enter the container's name and whether or not you want it to be private or public -- for CDN purposes you'll usually need it to be public.[^2]
 
-![]({{site.post-images}}/AzureCDN_08b_CreateContainer.png)
+![A screenshot of the information to create a container]({{site.post-images}}/AzureCDN_08b_CreateContainer.png)
 
 ### Add Files
 
 * Click into the container you just created, and select `Upload`:
 
-![]({{site.post-images}}/AzureCDN_09_UploadButton.png)
+![A screenshot of the location of the upload button]({{site.post-images}}/AzureCDN_09_UploadButton.png)
 
 * Select multiple files for upload -- in this case, headshots of our awesome team: 
 
-![]({{site.post-images}}/AzureCDN_10_SelectMultipleFilesForUpload.png)
+![A screenshot of selecting files for upload]({{site.post-images}}/AzureCDN_10_SelectMultipleFilesForUpload.png)
 
 Once those files are uploaded, you're all set!
 
@@ -130,7 +130,7 @@ Once those files are uploaded, you're all set!
 * Back in the Azure Storage Portal, select `New --> App Services --> CDN --> Quick Create`.
 * Select your subscription, `Storage Accounts` for the origin type, and choose the URL for the origin as the storage account you created earlier. 
 
-![]({{site.post-images}}/AzureCDN_04_CDNSetup.png)
+![A screenshot entering information for CDN setup]({{site.post-images}}/AzureCDN_04_CDNSetup.png)
 
 * Azure will create your CDN with a random name, something like ours which is `az766003`. 
 
@@ -158,7 +158,7 @@ On this project, we use [NameCheap](http://namecheap.com) as our registrar -- I'
 * Click on "All Host Records".[^4]
 * Add a sub-domain of `cdn`, with a CNAME pointing to `[your cdn name].vo.msecnd.net`, e.g. `az766003.vo.msecnd.net`.
 
-![]({{site.post-images}}/AzureCDN_05_SubDomain.png)
+![A screenshot of entering information for the subdomain]({{site.post-images}}/AzureCDN_05_SubDomain.png)
 
 * Save the settings.
 
@@ -167,11 +167,11 @@ On this project, we use [NameCheap](http://namecheap.com) as our registrar -- I'
 * In the management portal, enter the screen for your CDN.
 * Click on `Manage Domains`:
 
-![]({{site.post-images}}/AzureCDN_05b_ManageDomains.png)
+![A screenshot of the location of the manage domains link]({{site.post-images}}/AzureCDN_05b_ManageDomains.png)
 
 * Enter the domain name, e.g. `cdn.alliesforacure.com` in the box, wait for the green indicator and then click the checkmark to complete the process. [^5]
 
-![]({{site.post-images}}/AzureCDN_06_EnterDomainInAzure.png)
+![A screenshot entering the domain name]({{site.post-images}}/AzureCDN_06_EnterDomainInAzure.png)
 
 ## Potential Problems with the Current Setup
 Even with that nice new sub-domain, there could be some issues ahead:
@@ -243,7 +243,7 @@ Versioning a CDN works by appending a QueryString to the end of the url. The CDN
 * In the Azure Managment Portal, go to your CDN's section. 
 * Enable QueryStrings via the button at the bottom:
 
-![]({{site.post-images}}/AzureCDN_11_EnableQueryString.png)
+![A screenshot of the location to enable QueryStrings]({{site.post-images}}/AzureCDN_11_EnableQueryString.png)
 
 That's all you need to do.
 
