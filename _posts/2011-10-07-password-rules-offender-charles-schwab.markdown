@@ -28,4 +28,4 @@ Thanks to Richard Smiley who wrote in the comments to alert us to the fact that 
 
 For more details, head to [the SchwabSafe Page]. As of the time of this update (2/21/2013), to request a token, call Schwab at 800-435-4000.
 
-[the SchwabSafe Page]: http://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe/we_guard_your_account
+[the SchwabSafe Page]: https://www.schwab.com/public/schwab/nn/legal_compliance/schwabsafe
