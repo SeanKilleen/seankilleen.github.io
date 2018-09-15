@@ -9,9 +9,9 @@ redirect_from:
  
 references:
  - title: GMail 707 Error
-   url: http://www.feld.com/wp/archives/2011/11/gmail-707-error.html
+   url: https://www.feld.com/archives/2011/11/gmail-707-error.html
    parenttitle: FeldThoughts
-   parenturl: http://www.feld.com/wp/
+   parenturl: http://www.feld.com
 
 ---
 For anyone who has had an issue with a GMail 707 error in the browser recently, a [potentially useful tip] via Brad Feld over at [FeldThoughts]:
@@ -22,5 +22,5 @@ For anyone who has had an issue with a GMail 707 error in the browser recently, 
 
 Thought it might be useful to some.
 
-[potentially useful tip]: http://www.feld.com/wp/archives/2011/11/gmail-707-error.html
-[FeldThoughts]: http://www.feld.com/wp/
+[potentially useful tip]: https://www.feld.com/archives/2011/11/gmail-707-error.html
+[FeldThoughts]: http://www.feld.com
