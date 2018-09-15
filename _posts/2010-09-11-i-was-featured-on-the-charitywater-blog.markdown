@@ -14,5 +14,5 @@ Then, please consider [donating to a good cause][CW Page]
 You can also follow Charity : Water [on Twitter][CW Twitter].
 
 [CW Blog]: http://www.charitywater.org/blog/septbday08/
-[CW Page]: http://mycharitywater.org/p/campaign?campaign_id=6779
+[CW Page]: https://my.charitywater.org/seankilleen/seans24thbirthday
 [CW Twitter]: http://twitter.com/charitywater
