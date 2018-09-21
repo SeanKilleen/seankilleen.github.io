@@ -21,10 +21,6 @@ references:
    url: http://lifehacker.com/5790930/disclaimers-in-email-signatures-are-not-just-annoying-but-legally-meaningless
    parenttitle: Lifehacker
    parenturl: http://lifehacker.com
- - title: "Email Disclaimers: Legal Lifesavers, or Waste of Bandwidth?"
-   url: http://arborlaw.biz/blog/2007/07/19/legal-issues-in-email-disclaimers/
-   parenttitle: Arborlaw
-   parenturl: http://arborlaw.biz/
  - title: "Please consider the environment"
    url: http://thinkbeforeprinting.org/get-the-message.php
    parenttitle: ThinkBeforePrinting.org
@@ -62,7 +58,7 @@ With e-mails, you have a sort of captive audience. Don't abuse that. Advertiseme
 Try to keep this to a minimum. One exception might be huge company events that are coming up where attendance could truly benefit a customer. These are time-specific and temporary so I could let them slide. :)
 
 ## Giant Legal Disclaimers Can't Save You
-Hoo-boy, where to even start with this one. [E-mail][Example1] [disclaimers][Example2] [do][Example3] [not][Example4] [work][Example5].
+Hoo-boy, where to even start with this one. [E-mail][Example1] [disclaimers][Example2] [do][Example3] [not][Example4] work.
 
 Please don't do this. Just please, don't. And if your lawyer told you to do this, please get a second opinion.
 
@@ -82,5 +78,4 @@ Am I off base here? Do these tips make sense? Drop a line in the comments.
 [Example2]: http://fortune.com/2013/10/15/the-short-history-of-email-disclaimers/
 [Example3]: http://www.theguardian.com/media/2009/jan/11/useless-disclaimers-computing
 [Example4]: http://lifehacker.com/5790930/disclaimers-in-email-signatures-are-not-just-annoying-but-legally-meaningless
-[Example5]: http://arborlaw.biz/blog/2007/07/19/legal-issues-in-email-disclaimers/
 [PleaseConsider]: http://thinkbeforeprinting.org/get-the-message.php
