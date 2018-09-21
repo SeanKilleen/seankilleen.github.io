@@ -5,12 +5,6 @@ comments: true
 
 date: 2013-01-13 12:45:00.000000000 -05:00
 
-references: 
- - title: Add a keyboard shortcut to a Chrome bookmark or bookmarklet
-   url: http://downloadsquad.switched.com/2011/03/02/add-a-keyboard-shortcut-to-a-chrome-bookmark-or-bookmarklet/
-   parenttitle: Huffpost Tech
-   parenturl: http://www.huffingtonpost.com/tech/
-
 ---
 I use [Google Chrome] for a lot of browsing, and I've been getting into [Delicious] for archiving content that I know I might want to find again but don't want hanging out in my Google Reader. It's sort of a take on [Scott Hanselman's workflow] for reading and archiving.
 
