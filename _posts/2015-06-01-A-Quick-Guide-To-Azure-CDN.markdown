@@ -63,11 +63,11 @@ I assume you have an Azure account and have used the portal before. If not, it's
 
 * From the [Azure Management Site](http://manage.windowsazure.com) [^1], follow the path to quick create a storage account:
 
-![]({{site.post-images}}/AzureCDN_01_NewStorageAccount.png)
+![Creating a new storage account]({{site.post-images}}/AzureCDN_01_NewStorageAccount.png)
 
 * Enter your details, providing a name, region, and replication style. **NOTE**: We chose `Locally Redundant` because it will ensure that the data is kept in 3 places in our region. We don't need data reliability across continents since our audience is in the Eastern US.
 
-![]({{site.post-images}}/AzureCDN_02_StorageAccountSetup.png)
+![Entering storage account details]({{site.post-images}}/AzureCDN_02_StorageAccountSetup.png)
 
 ## Obtain Your Access Key
 While we're here, we'll snag your access key. You'll need this when connecting to your account later.
@@ -75,11 +75,11 @@ While we're here, we'll snag your access key. You'll need this when connecting t
 * Click on the Storage account once it is created
 * At the bottom of the screen, click on `Manage Access Keys`: 
 
-![]({{site.post-images}}/AzureCDN_03a_ManageAccessKeys.png)
+![The location of access key management]({{site.post-images}}/AzureCDN_03a_ManageAccessKeys.png)
 
 * Click the Copy icon next to the Primary access key: 
 
-![]({{site.post-images}}/AzureCDN_03b_AccessKeyInfo.png)
+![Location of the copy icon]({{site.post-images}}/AzureCDN_03b_AccessKeyInfo.png)
 
 * Paste it somewhere temporarily. You'll use it in a little bit.
 
