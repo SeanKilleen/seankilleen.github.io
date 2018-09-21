@@ -24,8 +24,8 @@ Below are my guidelines for sending FYI events to your coworkers in a painless w
 * **Set yourself to out of office**: Open the meeting, change the status to "Out of Office", and click Save without sending an update. Now your coworkers will still be shown as in the office, but you won't.
 
 ## An Animated Walkthrough
-Because why not? 
+Because why not?
 
-![]({{site.post-images}}/OutlookFYI_AnimatedGif.gif)
+![An animation of the walk-through]({{site.post-images}}/OutlookFYI_AnimatedGif.gif)
 
 Hope this is helpful!
