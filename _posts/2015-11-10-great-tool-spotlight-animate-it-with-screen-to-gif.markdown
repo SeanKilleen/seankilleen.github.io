@@ -13,7 +13,7 @@ It's also available [via Chocolatey](https://chocolatey.org/packages/screentogif
 
 How to demo this? I went a little meta on things. :) See below for a gif of a ScreenToGif capture of itself capturing a window for a little tutorial.
 
-![]({{site.post-images}}/ScreenToGif_Tutorial.gif)
+![An animation using ScreenToGif to capture the usage of ScreenToGif]({{site.post-images}}/ScreenToGif_Tutorial.gif)
 
 The app is well built and fulfills its main purspoe with relatively little cruft.  Best of all, it's free and open source! I definitely recommend adding it to your toolbox. 
 

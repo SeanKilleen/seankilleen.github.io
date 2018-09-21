@@ -23,7 +23,7 @@ Below, I demonstrate two different techniques -- with animations to help guide t
 
 Example below (click to expand): 
 
-![]({{site.post-images}}/Excel_ApplyConditionalFormattingAcrossRows_Method1_DragFormatting.gif)
+![An animation of dragging the formatting]({{site.post-images}}/Excel_ApplyConditionalFormattingAcrossRows_Method1_DragFormatting.gif)
 
 ## Method 2: Edit the Rule Manually
 
@@ -36,6 +36,6 @@ Excel will automatically recalculate the references and you'll be on your way!
 
 Example below (click to expand): 
 
-![]({{site.post-images}}/Excel_ApplyConditionalFormattingAcrossRows_Method2_ManuallyEdit.gif)
+![An animated example of a manual edit]({{site.post-images}}/Excel_ApplyConditionalFormattingAcrossRows_Method2_ManuallyEdit.gif)
 
 Hope this helps! Let me know if you have any questions (or a better method!) in the comments.
