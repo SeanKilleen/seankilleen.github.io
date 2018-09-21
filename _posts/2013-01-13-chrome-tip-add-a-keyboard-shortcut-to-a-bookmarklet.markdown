@@ -8,7 +8,7 @@ date: 2013-01-13 12:45:00.000000000 -05:00
 ---
 I use [Google Chrome] for a lot of browsing, and I've been getting into [Delicious] for archiving content that I know I might want to find again but don't want hanging out in my Google Reader. It's sort of a take on [Scott Hanselman's workflow] for reading and archiving.
 
-The other day I thought: it would be nice if I had a keyboard shortcut while browsing to save to delicious, instead of navigating through the bookmarks bar to click it? And a short google search later, up popped [a great process][Process Link] from the Switched Download Squad.
+The other day I thought: it would be nice if I had a keyboard shortcut while browsing to save to delicious, instead of navigating through the bookmarks bar to click it? And a short google search later, up popped [a great process]() (Ed. note: unfortunately this link has been lost to time.) from the Switched Download Squad.
 
 #### The abbreviated steps are:
 
@@ -29,4 +29,3 @@ Use for any bookmarklet you need.
 [Google Chrome]: https://www.google.com/intl/en/chrome/browser/
 [Delicious]: http://delicious.com/
 [Scott Hanselman's workflow]: http://www.hanselman.com/blog/InstapaperDeliveredToYourKindleChangesHowYouConsumeWebContentPlusIFTTTBlogsAndMore.aspx
-[Process Link]: http://downloadsquad.switched.com/2011/03/02/add-a-keyboard-shortcut-to-a-chrome-bookmark-or-bookmarklet/
