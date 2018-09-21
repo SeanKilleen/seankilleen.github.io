@@ -71,7 +71,7 @@ In the yajsw folder, find the `conf` directory and edit the `wrapper.conf` file.
 
 If you try this, let me know how it works out for you in the comments. Happy gaming!
 
-[Tekkit Lite]: http://www.technicpack.net/tekkit-lite/
+[Tekkit Lite]: https://www.technicpack.net/modpack/tekkitlite
 [Afraid]: http://freedns.afraid.org/
 [Earth Map Link]: http://letslente.weebly.com/the-earth.html
 [YAJSW]: http://sourceforge.net/projects/yajsw/
