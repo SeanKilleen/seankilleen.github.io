@@ -14,7 +14,7 @@ The items below are links -- feel free to click and explore!
 
 ## Chrome Extensions
 * **[ActiveInbox] [ActiveInbox]**: This is a great productivity web app that I use to enhance my GMail experience. They're the reason why I often have zero messages in my inbox and can find things quickly.
-* **[CardCounter for Trello] [CardCounter for Trello]**: This extension is simple -- it adds a count of cards to every Trello List.
+* **[CardCounter for Trello with Totalizer] [CardCounter for Trello]**: This extension is simple -- it adds a count of cards to every Trello List.
 * **[CheckerPlus for Gmail] [CheckerPlus for Gmail]**: A fantastic extension to help me quickly see incoming e-mail from multiple Gmail accounts.
 * **[Feedly] [Feedly]**: The best RSS Reader app, in my opinion.
 * **[Github Selfies] [Github Selfies]**: Allows you to take selfie animations while commenting on issues or pull requests in Github.
@@ -105,7 +105,7 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 * **[RDCMan] [RDCMan]** - A tool for managing many remote desktop connections. Useful in large client environments where you may need to remote into many machines.
 
 [ActiveInbox]: http://activeinboxhq.com
-[CardCounter for Trello]: https://chrome.google.com/webstore/detail/cardcounter-for-trello/miejdnaildjcmahbhmfngfdoficmkdhi?hl=en
+[CardCounter for Trello]: https://chrome.google.com/webstore/detail/cardcounter-for-trello-wi/jbdmgabkegidhagemkfdogmplgelaoab
 [CheckerPlus for Gmail]: https://chrome.google.com/webstore/detail/checker-plus-for-gmail/oeopbcgkkoapgobdbedcemjljbihmemj?hl=en
 [Feedly]: http://Feedly.com
 [Github Selfies]: https://chrome.google.com/webstore/detail/github-selfies/ldnpkdnkgkogfnahcnldaedcoadjbkbl
