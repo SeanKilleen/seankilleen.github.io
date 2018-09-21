@@ -83,7 +83,7 @@ I wonder if a push on this could help groups in various cities self-organize aro
 
 ## Are things really slow, or is it a matter of perspective? 
 
-![]({{site.post-images}}/dotnet-oss-closer-than-they-appear.png)
+![An image of a car side mirror stating "dot net OSS devs may be closer than they appear"]({{site.post-images}}/dotnet-oss-closer-than-they-appear.png)
 
 While I'm certain that the lack of progress Itamar sees is real and needs to be addressed, I also think he's so far ahead of the game that it might take some time to see that acceleration is happening -- it might appear slower from his vantage point. 
 

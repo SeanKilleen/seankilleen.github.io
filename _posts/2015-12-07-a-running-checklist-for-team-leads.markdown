@@ -5,7 +5,7 @@ date: 2015-12-07 11:32:00.000000000 -05:00
 excerpt: "A reference for continuous improvement and growth."
 references: 
  - title: "Team Bus Factors: How to Reduce Them and How to Prevent Them"
-   url: http://5whys.com/blog/team-bus-factors-how-to-reduce-them-and-how-to-prevent-them.html
+   url: https://www.5whys.com/articles/team-bus-factors-how-to-reduce-them-and-how-to-prevent-them.html
    parenttitle: "Elastic Leadership: Notes to a Software Team Leader"
    parenturl: http://5whys.com/   
  - title: "Ask HN: How to be a good technical lead?"
@@ -29,7 +29,7 @@ Between my terrible memory and love for good process, I tend to rely on checklis
 Below is my compiled list with a rough categorization. Feel free to discuss and suggest your own!
 
 ## On People / Team
-* **Who / what are my "bus factors"?** Roy Osherove did a [great post on this topic](http://5whys.com/blog/team-bus-factors-how-to-reduce-them-and-how-to-prevent-them.html). It's important to have a good inventory of who (person or role) could sink a project if it suddenly went away, and to take steps to open up that knowledge, while ensuring that nobody feels threatened or replaceable as a result. 
+* **Who / what are my "bus factors"?** Roy Osherove did a [great post on this topic](https://www.5whys.com/articles/team-bus-factors-how-to-reduce-them-and-how-to-prevent-them.html). It's important to have a good inventory of who (person or role) could sink a project if it suddenly went away, and to take steps to open up that knowledge, while ensuring that nobody feels threatened or replaceable as a result. 
 * **Does my team know that I appreciate them? How have I shown that?** As a team lead, your team needs to know that you're confident in them and believe in their ability to deliver. Have you hovered/micromanaged too much lately? Have you been sparse with compliments? Take steps to remedy that. If your team knows that you trust them and believe in them, they'll deliver even more.
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/sjkilleen">@sjkilleen</a> Your inherited team is the best *@#$ team on the planet &amp; make sure they know it. Adjust to reality from there.</p>&mdash; Matthew Martin (@mistersql) <a href="https://twitter.com/mistersql/status/673880988796256256">December 7, 2015</a></blockquote>

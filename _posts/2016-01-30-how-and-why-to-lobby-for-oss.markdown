@@ -11,17 +11,13 @@ references:
    parenttitle: "OpenHub"
    parenturl: https://www.openhub.net/
  - title: "NancyFx Contributing Guide"
-   url: https://github.com/NancyFx/Nancy/blob/master/CONTRIBUTING.md
+   url: https://github.com/NancyFx/Nancy/blob/45238076ad0b7f6ecabd6bae8469e30458d02efe/CONTRIBUTING.md
    parenttitle: "NancyFx on Github"
    parenturl: https://github.com/NancyFx/Nancy
  - title: "Akka.NET Contributing Guide"
    url: https://github.com/akkadotnet/akka.net/blob/dev/CONTRIBUTING.md
    parenttitle: "Akka.NET on Github"
    parenturl: https://github.com/akkadotnet/akka.net
- - title: "Our Team"
-   url: http://getakka.net/pages/team
-   parenttitle: "Akka.NET"
-   parenturl: http://getakka.net
  - title: "Up for Grabs"
    url: http://up-for-grabs.net/#/tags/.NET
  - title: "Contributing to Open Source on GitHub"
@@ -100,10 +96,10 @@ I totally hear you. Not long ago I was very hesitant about OSS in .NET -- I didn
 
 But the thing is, when you finally say hello at this party, you realize that most people are there just waiting for the chance to be awesome to you. It turns out that a lot of OSS folks are mentors and teachers, because that's a big part of cultivating a successful community. And they're the ones looking for your involvement! So chances are, you'll get a reasonably warm reception.
 
-* **What if I don't know what a project expects from my contributions?** Most larger OSS projects have a contributing guide (see [NancyFX's](https://github.com/NancyFx/Nancy/blob/master/CONTRIBUTING.md) or [Akka.NET's](https://github.com/akkadotnet/akka.net/blob/dev/CONTRIBUTING.md) for examples) 
+* **What if I don't know what a project expects from my contributions?** Most larger OSS projects have a contributing guide (see [NancyFX's](https://github.com/NancyFx/Nancy/blob/45238076ad0b7f6ecabd6bae8469e30458d02efe/CONTRIBUTING.md) or [Akka.NET's](https://github.com/akkadotnet/akka.net/blob/dev/CONTRIBUTING.md) for examples) 
 * **I'm not that familiar with Git**: Folks will totally help you through the process, even if you don't get it at first. There are [plenty](https://www.atlassian.com/git/tutorials/) [of](https://try.github.io/levels/1/challenges/1) [guides](http://rogerdudler.github.io/git-guide/) [available](https://www.google.com/webhp?q=git+tutorial). The [Petabridge](http://petabridge.com) folks recently did [a YouTube video on it](https://www.youtube.com/watch?v=8UguQzmswC4) as well. 
 * **I'm not that familiar with a quality development process**: Sometimes devs hold off on contributing because they don't know how to write unit tests or get familiar with certain concepts. But remember -- the community more likely than not will help you, and that gets you up to speed at the same time that it makes connections and helps you give back. Everyone wins, and you upping your dev skills is a big part of that win.
-* **I need to spend time building my brand / resume**: Uhhh, OSS is a fantastic way to do that. I can offer a personal example: I jumped in in a very small way to help out [Akka.NET](http://getakka.net) with some of their documentation and a script to add some licensing comments to code. I thought it was pretty minor, but it turned out to help them clear a hurdle in getting to v1. They thanked me in front of a room of people I looked up to at dotNetFringe, and [I'm currently listed on their contributors page!](http://getakka.net/pages/team) How's that for brand-building? I've met a ton of people that I really respect in the community, and I feel more like a member now than I ever have.
+* **I need to spend time building my brand / resume**: Uhhh, OSS is a fantastic way to do that. I can offer a personal example: I jumped in in a very small way to help out [Akka.NET](http://getakka.net) with some of their documentation and a script to add some licensing comments to code. I thought it was pretty minor, but it turned out to help them clear a hurdle in getting to v1. They thanked me in front of a room of people I looked up to at dotNetFringe, and [I'm currently listed on their contributors page!]() (Ed. Note: this link has been lost to time.) How's that for brand-building? I've met a ton of people that I really respect in the community, and I feel more like a member now than I ever have.
 * **I'm not sure where to jump in**: Yeah, this is a hard question. The good news is, there's an easy answer: start anywhere. There's a great site, [Up-for-grabs.net](http://up-for-grabs.net/#/tags/.NET) that features projects that are specifically asking for help. Find one that looks cool enough to you and jump in!
 * **I've seen people react badly to newcomers before.** Well, there are some cultural rules to follow ([GitHub has a nice guide](https://guides.github.com/activities/contributing-to-open-source/) on how to do it well). Or those people may have been having a bad day. Or maybe they're jerks and you should look for a new OSS project to contribute to. 
 * **Can't I just keep relying on Microsoft to do it for me?** Well, yes and no. In case you haven't noticed, [Microsoft is embarcing OSS](https://github.com/dotnet) more than ever before. Which is awesome. You could choose to rely on others to provide your tools, but that limits you as a developer and allows other people to create the future of your industry for you. Why not at least give it a shot and see what it's all about? Ownership and having a stake in things can feel awesome. 

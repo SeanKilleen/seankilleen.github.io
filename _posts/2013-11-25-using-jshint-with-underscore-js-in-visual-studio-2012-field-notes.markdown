@@ -15,8 +15,8 @@ references:
    url: http://jshint.com/
  - title: JSHint Options Page
    url: http://www.jshint.com/docs/options/#nomen
- - title: JSLint Options
-   url: http://www.jslint.com/lint.html#options
+ - title: JSLint Help Page
+   url: http://www.jslint.com/help.html
  - title: "JSHint: Issues containing 'nomen'"
    url: https://github.com/jshint/jshint/search?q=nomen&amp;source=cc&amp;type=Issues
   
@@ -81,6 +81,6 @@ If you were a little new to this, as I was, I hope this helps! Feel free to send
 [JSHint]: http://jshint.com/
 [Mads Kristensen]: http://madskristensen.net/
 [WE]: http://vswebessentials.com/
-[JSLint Options]: http://www.jslint.com/lint.html#options
+[JSLint Options]: http://www.jslint.com/help.html
 [GH Link]: https://github.com/jshint/jshint/search?q=nomen&amp;source=cc&amp;type=Issues
 [Nomen Link]: http://www.jshint.com/docs/options/#nomen
