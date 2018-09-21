@@ -7,7 +7,7 @@ excerpt: "A great story from Tom Junod."
 redirect_from: 
  - /2013/03/mr-rogers-can-you-say-hero.html
 ---
-***Update:** As promised, I'm updating this to include [Tom Junod's response][Junod Response]. He notes that **the profile is  available in the [Esquire collection of profiles entitled "Great Men" at Byliner][Great Men]. At $3.99 it appears to be a fantastic deal.** I'll be purchasing, and I hope you will, too. If he asks me to remove the text below, I'll be doing so, but I hope he'll let us continue to read it here as well.*
+***Update:** As promised, I'm updating this to include [Tom Junod's response][Junod Response]. He notes that **the profile is  available in the [Esquire collection of profiles entitled "Great Men" at Byliner]() (Ed. Note: unfortunately this link has been lost to time.). At $3.99 it appears to be a fantastic deal.** I'll be purchasing, and I hope you will, too. If he asks me to remove the text below, I'll be doing so, but I hope he'll let us continue to read it here as well.*
 ___
 *In 1998, [Tom Junod][Junod Twitter] wrote an article for Esquire -- a beautiful profile of an incredible person, Mr. Rogers. I was lucky enough to stumble across it, and for a few minutes I was transported to a world and a feeling I didn't know I'd missed.*
 
@@ -152,6 +152,5 @@ Fred never stopped looking at her or let go of her hand. "It's not a performance
 [Part7]: http://www.thedqtimes.com/pages/castpages/other/fredrogerscanyousayheropg7.htm
 [Part8]: http://www.thedqtimes.com/pages/castpages/other/fredrogerscanyousayheropg8.htm
 [Junod Reponse]: https://twitter.com/TomJunod/status/312989731157835777
-[Great Men]: https://www.byliner.com/originals/great-men
 [Junod Twitter]: https://twitter.com/TomJunod
 [Junod Ask]: https://twitter.com/sjkilleen/status/312972788778561538
