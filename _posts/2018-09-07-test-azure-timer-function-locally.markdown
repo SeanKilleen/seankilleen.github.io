@@ -32,7 +32,7 @@ How can I force this function to run so I can test it locally, without waiting f
 
 ## Solution
 
-You can then make a POST reuqest to `/admin/functions/[functionName]` endpoint to execute the function.
+You can make a POST request to `/admin/functions/[functionName]` endpoint to execute the function.
 
 For example, if azure functions is running on `localhost:7071` and I have a function called `MyFunction`, I could send an http POST request to:
 
