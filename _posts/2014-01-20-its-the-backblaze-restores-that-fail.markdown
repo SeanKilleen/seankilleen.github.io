@@ -41,7 +41,7 @@ In the end, I am grateful for what Backblaze offers, and hope that it can follow
 
 [^2]: Side note: If you are going to scan your documents -- like say, **serial keys to your OS** -- don't keep them as remote files only. In general, I'll be switching to an additional form of backup for local as well.
 
-[^3]: Seriously, I commend his willingness to engage with a slightly-frustrated customer who found him on Twitter during the weekend. It was a long shot but his response inspires confidence. [Here's the Storify of our conversation so far](http://storify.com/seankilleen/very-supportive-conversation-with-backblaze-ceo); I'll edit it as progress is made.
+[^3]: Seriously, I commend his willingness to engage with a slightly-frustrated customer who found him on Twitter during the weekend. It was a long shot but his response inspires confidence. [Here's the Storify of our conversation so far]() (Ed. Note: unfortunately this link has been lost to time); I'll edit it as progress is made.
 
 [HN Link]: https://news.ycombinator.com/item?id=7093016
 [CrashPlan]: http://www.code42.com/crashplan/
