@@ -20,7 +20,6 @@ The items below are links -- feel free to click and explore!
 * **[Github Selfies] [Github Selfies]**: Allows you to take selfie animations while commenting on issues or pull requests in Github.
 * **[Instapaper] [Instapaper]**: Save articles and events for later reading.
 * **[LastPass] [LastPass]**: My choice of password manager.
-* **[XMarks] [XMarks]**: Bookmark synchronization across multiple browsers and devices. 
 * **[ArtooJS] [ArtooJS]** (Scraping) - A bookmarklet that injects a javascript library into any page on command that will enable many scraping/parsing scenarios more easily.
 * **[Amazon Assistant] [Amazon Assistant]** - Great access to amazon, including wish list management & additions.
 * **[RescueTime] [RescueTime]** - A tool to track where you're spending your time online. Great if my productivity ever starts to slip. :)
@@ -112,7 +111,6 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 [Github Selfies]: https://chrome.google.com/webstore/detail/github-selfies/ldnpkdnkgkogfnahcnldaedcoadjbkbl
 [Instapaper]: http://Instapaper.com
 [LastPass]: http://lastpass.com
-[XMarks]: http://xmarks.com
 [ArtooJS]: https://medialab.github.io/artoo/
 [Visual Studio 2015]: https://www.visualstudio.com/vs/
 [VSCode]: http://code.visualstudio.com/
