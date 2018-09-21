@@ -14,7 +14,7 @@ references:
  - title: "PoSH Article of the Week! – Secure Credential Storage"
    url: http://professionalvmware.com/2009/04/posh-article-of-the-week-secure-credential-storage/
  - title: "Powershell VMWare Script not running from Scheduled Task"
-   url: http://stackoverflow.com/questions/14564732/powershell-vmware-script-not-running-from-scheduled-task
+   url: https://serverfault.com/questions/473072/powershell-vmware-script-not-running-from-scheduled-task/473086
 ---
 ### Problem
 I need to create a scheduled task that runs a powershell script that takes actions against my VMWare environment.
