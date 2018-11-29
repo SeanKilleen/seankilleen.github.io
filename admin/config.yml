@@ -1,6 +1,6 @@
 backend:
-  name: git-gateway
-  branch: master # Branch to update (master by default)
+  name: github
+  repo: seankilleen/seankilleen.github.io # Branch to update (master by default)
 
 media_folder: "images/uploads" # Folder where user uploaded files should go
 
