@@ -2,6 +2,7 @@ backend:
   name: github
   repo: seankilleen/seankilleen.github.io 
   branch: master # Branch to update (master by default)
+  site_domain: xenodochial-feynman-1c9012.netlify.com # a throwaway site so we can get the github login
 
 media_folder: "images/uploads" # Folder where user uploaded files should go
 
