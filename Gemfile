@@ -6,4 +6,3 @@ gem 'rouge'
 gem 'wdm'
 gem 'tzinfo-data'
 gem 'html-proofer'
-gem 'jekyll-admin', group: :jekyll_plugins
