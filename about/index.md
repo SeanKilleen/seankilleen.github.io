@@ -17,7 +17,7 @@ I'll be setting up a contributors page soon to acknowledge any help I get!
 # This Site Runs On:
 
 * Dunkin (in all seriousness, there is probably some considerable caffeine to blame for this).
-* The [Jekyll][jekyll link] markdown blogging platform (which is run on [Ruby][ruby link]
+* The [Jekyll][jekyll link] markdown blogging platform (which is run on [Ruby][ruby link])
 	* The [jekyll-sitemap][jekyll-sitemap link] gem
     * The [octopress][octopress link] gem
 	* The [jekyll-redirect-from][jekyll-redirect-from link] gem (saved my butt when trying to redirect my old Blogger pages).
