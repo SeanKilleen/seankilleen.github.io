@@ -33,7 +33,7 @@ I liked doing this recap last year, so I figured I'd make it a tradition. :) 201
 I try not to be too personal on this blog as it's mostly tech, but there are some things I just had to mention. I'll keep it brief. :)
 
 * **I got a house!** I never really imagined myself as much of a homeowner, but this year my wife and I saw a place in Arlington that we thought was worth putting down some roots in. I love it. While maintaining and improving a home is not something have the skills for currently, she has been very patient and I've been learning a ton. I have an office with a view, which I hope to start writing more of these posts from soon.
-* **Brother's retreat**: This year, my brother and I went on a 4-day trip to a cabin. We caught up on life, hung out, enjoyed the scenery, and got to code together a little bit too. I see that time as one of the highlights of my whole year, and I can't wait to make it a tradition.
+* **Brothers' retreat**: This year, my brother and I went on a 4-day trip to a cabin. We caught up on life, hung out, enjoyed the scenery, and got to code together a little bit too. I see that time as one of the highlights of my whole year, and I can't wait to make it a tradition.
 * **Politics**: I don't think I can avoid saying this here because it factored into so much of my energy this year: The U.S. is in crisis and the depths of the current administration's ethical and leadership failings are hard to fathom. I've been trying to pitch in where I can to combat this, and intend to continue to do so in the coming year. Hope the crazy train stops soon; we've got a lot of damage to repair.
 
 ## Blog Stats
