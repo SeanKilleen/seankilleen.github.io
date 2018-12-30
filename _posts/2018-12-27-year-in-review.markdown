@@ -26,6 +26,7 @@ I liked doing this recap last year, so I figured I'd make it a tradition. :) 201
 ## Work Stuff
 
 * **Became Excella's .NET Specialty Lead**: It's no secret by now that I'm a big fan of Excella, my employer. This year, I got to take on the role of .NET Specialty Lead, helping to bring my team to the next level of our .NET practice. It's a big responsibility but one I'm really excited to tackle. I think it's going to lead to a lot of growth for me as well.
+* **Promoted to Managing Consultant**: I was promoted two levels, from Senior Consultant to Managing Consultant. This is a big deal for me. Work goals of mine at any company are generally to have the broadest possible impact, and to create positive influence and trajectories for others. This promotion allows me to work to be the best I can be in those categories, and it shows faith in what I've done so far. Really excited to continue that.
 * **Co-taught** 5 instances of two of Excella's [training courses](http://xluh.co/training) -- our Certified Scrum Developer course, and our Agile Testing &amp; Automation course. Learned a ton doing that, and looking forward to more of it!
 
 ## Personal Stuff
