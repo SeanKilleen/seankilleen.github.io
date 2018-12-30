@@ -14,7 +14,7 @@ Building something isn't enough; you have to be willing to see it through to pro
 ## Before Something Goes Wrong
 
 * We will attempt to spot leading indicators of a problem with monitoring and analytics.
-* We will ensure a clear "chain of custody" for any potential production issues. Who will be on duty? Who will receive it? We'll make sure we know that stuff and that you know it too.
+* We will ensure a clear "chain of custody" for any potential production issues. Who will be on duty? Who will receive it? We'll make sure we know that stuff and that you know it, too.
 
 ## When Something Goes Wrong
 
@@ -28,7 +28,7 @@ Building something isn't enough; you have to be willing to see it through to pro
 
 ## After Something Goes Wrong
 
-* We will work to resolve it in a *repercussion-less* way. Sometimes people say "blameless", but I think it's healthy for someone to be able to say "nope, this was totally my fault." Leadership more than anyone.
+* We will work to resolve it in a *repercussion-less* way. Sometimes people say "blameless", but I think it's healthy for someone to be able to say "nope, this was totally my fault." -- leadership more than anyone.
 * We will work rapidly and diligently to understand root causes
 * We will create follow-up tickets to address any competing causes. These can be prioritized by the business according to the impact of the production issue.
 
@@ -38,11 +38,11 @@ This is the format I've found to work well so far; I'm open to improving it.
 
 #### The Original Request
 
-Whatever the incoming request is, in its original format. This is helpful sometimes to see how far away from the original report the issue ends up being. (that can be something to improve).
+Whatever the incoming request is, in its original format. This is helpful sometimes to see how far away from the original report the issue ends up being (which can be something to improve).
 
 #### The Symptoms
 
-Current symptoms end uses are experiencing.
+Current symptoms end users are experiencing.
 
 #### Scope (optional)
 
@@ -73,7 +73,7 @@ Questions that pop up as you go.
 * Why were we prevented from accessing system x?
 * Why didn't communication go out about this more quickly?
 
-Be liberal with these. They represent a gold mine for future prevention / mitigation
+Be liberal with these. They represent a gold mine for future prevention / mitigation.
 
 #### Prevention / Mitigation suggestions
 
@@ -82,7 +82,7 @@ Starts out TBD. This happens after the ticket is completed. You look at the root
 # Something Happens: The Timeline
 
 * A report of a production issue is received by anyone.
-* That person creates a production support ticket (on my client, this is a ticket with a `fixVersion` of "Production Support). If you have a group at the ready, someone says "I'm creating the ticket".
+* That person creates a production support ticket (on my client, this is a ticket with a `fixVersion` of "Production Support"). If you have a group at the ready, someone says "I'm creating the ticket".
 * The ticket includes the original request, our understanding of symptoms & root causes, and a list of next actions which likely at this point just includes "look into the problem". Most sections of the ticket might read as TBD.
 * That person adds a list of watchers to the ticket -- predetermined or best guess. 
 * That person communicates via e-mail or to some larger group that the ticket has been created, with a link so that people can subscribe.
@@ -90,7 +90,7 @@ Starts out TBD. This happens after the ticket is completed. You look at the root
 * One or more people forms a tiger team to look into the issue. This is a mob, not 10 people working & updating separately. Too much noise.
 * The team works to understand the symptoms -- adds comments, updates the ticket body as we know more.
 * As root cause is determined, the ticket is updated.
-* Throughout the process, people are asking questions on the "why" section and announcing their actions or intentions via ticket comments.
+* Throughout the process, people are asking questions in the "why" section and announcing their actions or intentions via ticket comments.
 
 Phew! The issue is resolved. Next up:
 
