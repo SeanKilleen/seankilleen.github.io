@@ -4,4 +4,4 @@
   {% assign path = page.path %}
 {% endif %}
 
-<a href="{{ site.github_repo_url }}edit/master/{{ path }}"><i class="fa fa-pencil-square"></i> Edit this page</a> | <a href="{{ site.github_repo_url }}issues/new?labels=FromTheSite"><i class="fa fa-question-circle"></i> Issue? Question?</a>
+<a href="{% github_edit_link %}"><i class="fa fa-pencil-square"></i> Edit this page</a> | <a href="{{ site.github_repo_url }}issues/new?labels=FromTheSite"><i class="fa fa-question-circle"></i> Issue? Question?</a>
