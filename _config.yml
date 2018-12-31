@@ -114,7 +114,7 @@ author:
   email            : "SeanKilleen@gmail.com"
   links:
     - label: "Website"
-      icon: "fas fa-fw fa-link"
+      icon: "fas fa-fw fa-globe"
       url: "https://SeanKilleen.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
@@ -126,13 +126,13 @@ author:
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/skilleen"
     - label: "StackOverflow"
-      icon: "fas fa-fw fa-link"
+      icon: "fab fa-fw fa-stack-overflow"
       url: "https://stackoverflow.com/users/story/316847"
     - label: "LinkedIn"
-      icon: "fas fa-fw fa-link"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/SeanKilleen"
     - label: "dev.to"
-      icon: "fas fa-fw fa-link"
+      icon: "fab fa-fw fa-dev"
       url: "https://dev.to/SeanKilleen"
 
 # Site Footer
@@ -145,7 +145,7 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/SeanKilleen"
     - label: "LinkedIn"
-      icon: "fas fa-fw fa-link"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/SeanKilleen"
 
 
