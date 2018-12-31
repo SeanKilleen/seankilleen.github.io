@@ -1,0 +1,29 @@
+// Courtesy of Phil Haack's Haackbar theme at https://github.com/Haacked/haackbar
+
+.contributor-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
+    list-style-type: none;
+    margin-top: 20px;
+  
+    li {
+  
+      font-family: $global-font-family;
+      height: 110px;
+      margin-bottom: 10px;
+      text-align: center;
+  
+      img {
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        margin-bottom: 8px;
+        width: 64px;
+      }
+  
+      a {
+        display: block;
+        line-height: 1;
+      }
+    }
+  }
