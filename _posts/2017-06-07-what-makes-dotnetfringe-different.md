@@ -23,7 +23,7 @@ comments: true
 ---
 I recently attended the [.NET Fringe 2017](http://dotnetfringe.org) conference in Portland, OR -- in fact, I'm on the plane back now as I write this. 
 
-This year I was honored to be asked to kick off the conference with a talk, [which you can read more about here](https://seankilleen.com/2017/06/casting-a-wider-net-at-dotnet-fringe/).
+This year I was honored to be asked to kick off the conference with a talk, [which you can read more about here]({% post_url 2017-06-07-casting-a-wider-net-at-dotnet-fringe %}).
 
 Since this way my third year attending the conference and it fast became my favorite, I want to write up some thoughts on what I think sets .NET Fringe uniquely apart from others -- particularly other conferences based around Microsoft projects.
 

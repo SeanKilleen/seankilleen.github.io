@@ -19,7 +19,7 @@ references:
    
 comments: true
 ---
-**A brief update:** To keep this conversation going, I authored an additional post: [How (and Why) to Lobby Companies to Support .NET OSS](http://seankilleen.com/2016/01/how-and-why-to-lobby-for-oss/)
+**A brief update:** To keep this conversation going, I authored an additional post: [How (and Why) to Lobby Companies to Support .NET OSS]({% post_url 2016-01-30-how-and-why-to-lobby-for-oss %})
 
 ___
 
