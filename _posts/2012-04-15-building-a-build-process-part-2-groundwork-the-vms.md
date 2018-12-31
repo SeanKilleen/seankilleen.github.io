@@ -7,6 +7,7 @@ series: building-a-build-process
 redirect_from: 
  - /2011/12/building-build-process-part-2.html
 ---
+{% include _buildseries-intro.md %}
 
 **A note before we begin:** This post is going to run us through how get up and running with VirtualBox. For those of you already living in virtual (machine) reality, just create VMs for Windows Server 2008 and CentOS 5.x (5.7 at the time of this writing).
 
@@ -97,6 +98,8 @@ Click the Empty entry, then click the CD-ROM icon to the right, select `Choose a
 ![ISO Installation Choice]({{site.post-images}}/04-Adding-the-ISO.png)
 
 Do this for both OSes. You're now ready to start them up and install the operating systems
+
+{% include _buildseries-footer.md %}
 
 [VirtualBox]: https://www.virtualbox.org/
 [CentOS 5.7]: http://vault.centos.org/5.7/isos/x86_64/

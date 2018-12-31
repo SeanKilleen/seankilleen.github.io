@@ -10,6 +10,7 @@ references:
  - title: Pluralsight CI Course
    url: https://www.pluralsight.com/courses/continuous-integration
 ---
+{% include _buildseries-intro.md %}
 
 **Ed. Note**: I cannot give enough praise to the [Pluralsight.com Continuous Integration course][PS CI Course] it helped me put a lot of these pieces together, and this part in the series could not have happened without it. A lot of the content for this post ended up being a pretty direct port of what is talked about there, but there are only so many ways to personalize a best practice while keeping it simple, and so I hope you’ll [sign up for a Pluralsight subscription][PS Sub], and that their lawyers will take kindly to this series. :)
 
@@ -144,6 +145,8 @@ Save the file, and run `MSBuild TestProject.build` (without a target attribute).
 
 ### Next Time…
 In the next article, we’ll explore how to start and stop the Cassini Web Server asynchronously, and how to run Visual Studio builds through common output directories.
+
+{% include _buildseries-footer.md %}
 
 [PS CI Course]: https://www.pluralsight.com/courses/continuous-integration
 

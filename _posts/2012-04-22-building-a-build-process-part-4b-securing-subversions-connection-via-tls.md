@@ -13,6 +13,7 @@ references:
    url: http://www.electrictoolbox.com/changing-hostname-centos/
    
 ---
+{% include _buildseries-intro.md %}
 
 Alright, I just couldn’t take the guilt. I can’t abide Subversion and Apache being set up without defaulting to https and a TLS encrypted connection. We’ll remedy this below.
 
@@ -162,3 +163,5 @@ iptables –L –v
 Now, try heading to `http:[your ip or hostname]/svn`, and watch it redirect to https. 
 
 Success! 
+
+{% include _buildseries-footer.md %}

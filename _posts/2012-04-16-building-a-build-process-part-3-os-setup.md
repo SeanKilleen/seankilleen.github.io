@@ -5,6 +5,7 @@ date: 2012-04-16 22:28:00.000000000 -04:00
 comments: true
 series: building-a-build-process
 ---
+{% include _buildseries-intro.md %}
 
 Alright, this is a little bit of a cheat post but I wanted to emphasize the simplicity of these setups. 
 
@@ -79,6 +80,8 @@ This is optional, but I find that it's always helpful to be able to go back to t
 ![Take snapshot button]({{site.post-images}}/08-252520-252520Take-252520Snapshot_thumb-25255B1-25255D.png)
 
 That’s it! Next, we’ll look at setting up our source code management system.
+
+{% include _buildseries-footer.md %}
 
 [Google Chrome]: http://google.com/chrome
 [WebPI]: http://www.iis.net/webpi
