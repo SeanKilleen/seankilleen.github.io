@@ -1,6 +1,6 @@
 ---
 title: "Updates coming (RSS feeds may break)"
-layout: post
+
 date: 2018-12-31 14:00:00:00.000000000 -05:00
 excerpt: "'New Year, new you!' says my blog."
 
