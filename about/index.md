@@ -1,7 +1,7 @@
 ---
 layout: single
 author_profile: true 
-title: About SeanKilleen.com
+title: "About SeanKilleen.com"
 tags: [about, info, meta]
 modified: 2018-12-31T10:53:07.573882-04:00
 image:

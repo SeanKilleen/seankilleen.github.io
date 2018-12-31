@@ -8,7 +8,6 @@ tags: [credits, info, meta]
 modified: 2018-12-31T10:53:07.573882-04:00
 sitemap: true
 ---  
-# Thanks!
 
 These lovely people have contributed a fix to my blog. If you want to see yourself in this list, send me a pull request!
 
