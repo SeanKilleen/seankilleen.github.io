@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "Sean Killeen"
   avatar           : "/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Just a guy trying to get better ar writing bios."
+  bio              : "Just a guy trying to get better at writing bios."
   location         : "Arlington, VA, USA"
   email            : "SeanKilleen@gmail.com"
   links:
