@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 'New Tradition: The Grocery List. [The Grocery List]'
 date: 2012-01-24 19:49:00.000000000 -05:00
 comments: true

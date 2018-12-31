@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 'Crystal Reports Gotchas: Spinning Wheel Forever? Check for Hidden Error Messages.
   [Field Notes]'
 date: 2013-02-26 19:00:00.000000000 -05:00

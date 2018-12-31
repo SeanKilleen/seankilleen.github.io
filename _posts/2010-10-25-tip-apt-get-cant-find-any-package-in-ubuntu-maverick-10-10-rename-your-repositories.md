@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 'Tip: apt-get can''t find any package in Ubuntu Maverick 10.10? Rename Your
   Repositories.'
 date: 2010-10-25 11:29:00.000000000 -04:00

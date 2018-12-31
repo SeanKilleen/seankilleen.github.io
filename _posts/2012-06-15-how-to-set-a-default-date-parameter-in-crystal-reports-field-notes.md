@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 'How To: Set a Default Date Parameter In Crystal Reports [Field Notes]'
 date: 2012-06-15 16:30:00.000000000 -04:00
 comments: true

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 'How To: Run VMWare PowerCLI (PowerShell) Scripts as a Scheduled Task [Field
   Notes]'
 date: 2013-01-28 19:00:00.000000000 -05:00

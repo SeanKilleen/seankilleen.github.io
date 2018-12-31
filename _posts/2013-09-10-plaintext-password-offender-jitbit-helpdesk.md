@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 'Plaintext Password Offender: Jitbit Helpdesk'
 date: 2013-09-10 20:32:00.000000000 -04:00
 comments: true

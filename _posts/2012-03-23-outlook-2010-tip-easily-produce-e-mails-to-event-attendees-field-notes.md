@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 'Outlook 2010 Tip: Easily produce e-mails to event attendees [Field Notes]'
 date: 2012-03-23 12:24:00.000000000 -04:00
 comments: true

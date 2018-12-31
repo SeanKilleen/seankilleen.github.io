@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: A Quick Regular Expression (Regex) to Pull Colors From a CSS Stylesheet
 date: 2013-12-12 18:30:00.000000000 -05:00
 comments: true

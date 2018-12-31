@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Easily Using Azure CDN with ASP.NET MVC Projects"
-layout: default
+layout: post
 date: 2015-06-01 22:34:00.000000000 -05:00
 excerpt: "Save your pages time and money by using a CDN. It's not hard at all."
 comments: true

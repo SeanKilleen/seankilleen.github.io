@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Why I Signed the Petition on the Murder of Trayvon Martin
 date: 2012-03-14 16:14:00.000000000 -04:00
 comments: true

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 'How To: Allow only Specific IP Addresses in Tomcat 6.0'
 date: 2010-09-30 11:47:00.000000000 -04:00
 comments: true

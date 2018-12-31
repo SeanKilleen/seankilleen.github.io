@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: New Desktop Rig! [Nerd Toys]
 date: 2011-11-22 08:00:00.000000000 -05:00
 comments: true

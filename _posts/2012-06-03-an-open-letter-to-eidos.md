@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: An Open Letter to Eidos
 date: 2012-06-03 21:29:00.000000000 -04:00
 comments: true

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 'Touched by a Peripheral: Logitech T650 Review [A must-have]'
 date: 2013-12-04 23:44:00.000000000 -05:00
 comments: true

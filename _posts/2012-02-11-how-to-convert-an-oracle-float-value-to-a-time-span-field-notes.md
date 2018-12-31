@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 'How To: Convert an Oracle FLOAT Value to A Time Span [Field Notes]'
 date: 2012-02-11 16:38:00.000000000 -05:00
 comments: true

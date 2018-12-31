@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Truth in Advertising
 date: 2010-10-12 08:19:00.000000000 -04:00
 comments: true

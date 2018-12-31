@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 'A Birthday Gift to the World: Let''s Give Others Clean Water!'
 date: 2011-08-30 12:08:00.000000000 -04:00
 comments: true

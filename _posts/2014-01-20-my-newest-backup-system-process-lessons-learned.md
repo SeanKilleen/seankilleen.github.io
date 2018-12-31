@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: My Newest Backup System / Process [Lessons Learned]
 date: 2014-01-20 20:39:00.000000000 -05:00
 comments: true

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 'Excel Tip: Merge Cells, but for One Row at a Time'
 date: 2015-01-20 09:07:00.000000000 -05:00
 excerpt: "I might be late to the game, but I had no idea you could merge only for certain rows."

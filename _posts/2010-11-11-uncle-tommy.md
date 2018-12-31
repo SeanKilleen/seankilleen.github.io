@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Uncle Tommy
 date: 2010-11-11 10:08:00.000000000 -05:00
 comments: true

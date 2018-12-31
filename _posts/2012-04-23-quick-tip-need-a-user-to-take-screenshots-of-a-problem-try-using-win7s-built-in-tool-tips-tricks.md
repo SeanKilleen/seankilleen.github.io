@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Quick Tip: Need a User to Take Screenshots of a Problem? Try Using Win7's Built-in Tool [Tips and Tricks]"
 date: 2012-04-23 14:11:00.000000000 -04:00
 comments: true

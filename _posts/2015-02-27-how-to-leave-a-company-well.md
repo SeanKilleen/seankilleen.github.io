@@ -1,6 +1,6 @@
 ---
 title: "How to Leave a Company Well"
-layout: default
+layout: post
 date: 2015-02-27 11:00:00.000000000 -05:00
 excerpt: "It's more than not burning bridges."
 comments: true

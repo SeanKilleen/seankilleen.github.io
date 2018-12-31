@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 'How to: Fix Event 1209 for ADWS when using vCenter 5.1 on Server 2008 R2 [Field
   Notes]'
 date: 2012-12-17 17:00:00.000000000 -05:00

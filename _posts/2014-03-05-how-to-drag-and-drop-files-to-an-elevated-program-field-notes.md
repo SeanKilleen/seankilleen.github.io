@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 'How to: Drag and Drop Files to an Elevated Program [Field Notes]'
 date: 2014-03-05 19:00:00.000000000 -05:00
 comments: true

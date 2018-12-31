@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: 'Fix: Crystal Reports 2008: Database Links Happen Automatically and Cause Unnecessary
   Slow-down [Field Notes]'
 date: 2011-11-18 12:15:00.000000000 -05:00

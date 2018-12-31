@@ -1,6 +1,6 @@
 ---
 title: "How to: Apply Per-Row Conditional Formatting across rows in Excel 2013"
-layout: default
+layout: post
 date: 2015-11-03 23:15:00.000000000 -05:00
 excerpt: "With animated goodness!"
 comments: true
