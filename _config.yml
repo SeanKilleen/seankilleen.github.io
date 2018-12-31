@@ -7,6 +7,7 @@ url:              https://SeanKilleen.com
 
 # Jekyll configuration
 github_repo_url: http://github.com/seankilleen/seankilleen.github.io/
+repository: SeanKilleen/seankilleen.github.io
 timezone: America/New_York
 post-images: /images/post-images
 permalink:   /:year/:month/:title/
@@ -19,6 +20,7 @@ sass:
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
+  - jekyll-github-metadata
 
 kramdown:
   auto_ids: true
