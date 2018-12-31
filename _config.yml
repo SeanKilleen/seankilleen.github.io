@@ -113,9 +113,6 @@ author:
   location         : "Arlington, VA, USA"
   email            : "SeanKilleen@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: mailto:SeanKilleen@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://SeanKilleen.com"
