@@ -1,6 +1,6 @@
 ---
 title: "Quick Tip: When Testing with Moq, Try Lambdas for More Flexible Tests"
-layout: post
+ 
 date: 2015-06-28 22:34:00.000000000 -05:00
 excerpt: "Who likes less test failures? I do!"
 comments: true

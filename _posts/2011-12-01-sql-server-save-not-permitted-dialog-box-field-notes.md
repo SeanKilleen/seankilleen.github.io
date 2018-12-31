@@ -1,5 +1,5 @@
 ---
-layout: post
+ 
 title: 'SQL Server: Save Not Permitted Dialog Box [Field Notes]'
 date: 2011-12-01 23:08:00.000000000 -05:00
 comments: true

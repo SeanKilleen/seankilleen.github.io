@@ -1,5 +1,5 @@
 ---
-layout: post
+ 
 title: Re-show the Outlook Envelope Icon [Field Notes]
 date: 2011-10-25 13:12:00.000000000 -04:00
 comments: true

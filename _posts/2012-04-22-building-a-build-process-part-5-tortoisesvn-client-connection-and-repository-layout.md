@@ -1,5 +1,5 @@
 ---
-layout: post
+ 
 title: 'Building a Build Process: TortoiseSVN Client Connection and Repository
   Layout'
 date: 2012-04-22 22:24:00.000000000 -04:00

@@ -1,5 +1,5 @@
 ---
-layout: post
+ 
 title: I was featured on the Charity:Water blog!
 date: 2010-09-11 06:23:00.000000000 -04:00
 comments: true

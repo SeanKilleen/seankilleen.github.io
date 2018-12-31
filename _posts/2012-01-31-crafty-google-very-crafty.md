@@ -1,5 +1,5 @@
 ---
-layout: post
+ 
 title: Crafty, Google+. Very Crafty.
 date: 2012-01-31 22:27:00.000000000 -05:00
 comments: true

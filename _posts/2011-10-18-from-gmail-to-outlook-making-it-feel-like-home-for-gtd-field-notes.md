@@ -1,5 +1,5 @@
 ---
-layout: post
+ 
 title: 'From GMail to Outlook: Making it Feel Like Home for GTD [Field Notes]'
 date: 2011-10-18 13:27:00.000000000 -04:00
 comments: true

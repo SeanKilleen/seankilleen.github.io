@@ -1,6 +1,6 @@
 ---
 title: "Preparing .NET Projects for Business Trips"
-layout: post
+ 
 date: 2018-08-21 10:00:00.000000000 -05:00
 excerpt: "How I make sure my code travels well."
 

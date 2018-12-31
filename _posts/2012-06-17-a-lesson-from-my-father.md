@@ -1,5 +1,5 @@
 ---
-layout: post
+ 
 title: A Lesson From My Father
 date: 2012-06-17 16:25:00.000000000 -04:00
 comments: true
