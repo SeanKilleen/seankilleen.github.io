@@ -1,3 +1,6 @@
+# Custom Sean stuff
+post-images: "/images/post-images"
+
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your entire site, values
