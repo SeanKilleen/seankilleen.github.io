@@ -9,11 +9,7 @@ image:
   creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
-# I want YOU!
-
-See a typo? Come across an issue? You can [create an issue report][new issue link] or even better, [fork this repository][fork link], fix the issue yourself, and submit it as a pull request.
-
-I'll be setting up a contributors page soon to acknowledge any help I get!
+{% include _i-want-you.md %}
 
 ## Check out the Credits Page!
 

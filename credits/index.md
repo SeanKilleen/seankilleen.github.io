@@ -17,7 +17,7 @@ request the old fashioned way.
 
 ## General Credits
 
-* I think much credit is due to [Phil Haack](http://haacked.com/). He inspired me with the idea that the entirety of a blog could be collaborative, and his posts on it removed some of the fear for me. His blog is the reason that I have an edit link, an issue submission link, and, well, this credits page. His blog is a constant source of inspiration.
+* I think much credit is due to [Phil Haack](http://haacked.com/). He inspired me with the idea that the entirety of a blog could be collaborative, and his posts on it removed some of the fear for me. His blog is the reason that I have an edit link, an issue submission link, and, well, this credits page. He's a constant source of inspiration.
 * Thanks to [David Coyle][coyled github] for his [atom.xml template for Jekyll][atom.xml link].
 * Thanks to [Nick Williams][Nick Williams link] for a [great gist][nick gist link] on bringing google code prettify into my posts
 * Thanks to [Pat Hawks][Pat Github] for helping [fix][pat 1] [several][pat 2] [issues][pat 3] early on. Thanks, Pat! 
@@ -39,6 +39,8 @@ request the old fashioned way.
   </li>
 {% endif %}
 </ul>
+
+{% include _i-want-you.md %}
 
 [jekyll link]: http://jekyllrb.com/
 [ruby link]: https://www.ruby-lang.org/en/
