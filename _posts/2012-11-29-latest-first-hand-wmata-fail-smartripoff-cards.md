@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 'Latest First-Hand WMATA Fail: SMARTripoff cards!'
 date: 2012-11-29 20:00:00.000000000 -05:00
 comments: true

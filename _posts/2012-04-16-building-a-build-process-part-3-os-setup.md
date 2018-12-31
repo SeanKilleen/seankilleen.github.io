@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 'Building a Build Process: OS Setup'
 date: 2012-04-16 22:28:00.000000000 -04:00
 comments: true

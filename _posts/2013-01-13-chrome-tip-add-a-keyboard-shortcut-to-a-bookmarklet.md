@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 'Chrome Tip: Add a Keyboard Shortcut to a Bookmarklet'
 comments: true
 

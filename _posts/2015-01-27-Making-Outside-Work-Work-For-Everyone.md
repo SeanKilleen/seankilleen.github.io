@@ -1,6 +1,6 @@
 ---
 title: 'Making Outside Work Work For Everyone: Guidelines for Success'
-layout: post
+layout: default
 date: 2015-01-27 22:34:00.000000000 -05:00
 excerpt: "Some thoughts on helping employees and companies embrace outside work."
 comments: true

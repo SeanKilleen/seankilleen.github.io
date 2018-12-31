@@ -1,6 +1,6 @@
 ---
 title: 'Validation Fail of the Day: WebEx'
-layout: post
+layout: default
 date: 2015-01-20 10:37:00.000000000 -05:00
 excerpt: "UX teams, talk to your dev teams!"
 comments: true

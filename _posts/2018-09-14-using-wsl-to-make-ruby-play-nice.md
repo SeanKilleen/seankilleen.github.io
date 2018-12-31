@@ -1,6 +1,6 @@
 ---
 title: "Using Windows Subsystem for Linux and Ruby with Jekyll"
-layout: post
+layout: default
 date: 2018-09-14 10:00:00.000000000 -05:00
 excerpt: "Ruby and Windows don't always play nice. Here's how I used WSL to solve that problem."
 

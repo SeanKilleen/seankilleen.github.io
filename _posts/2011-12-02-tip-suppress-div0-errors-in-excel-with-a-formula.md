@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 'Tip: Suppress #DIV/0 errors in Excel with a formula'
 date: 2011-12-02 11:41:00.000000000 -05:00
 comments: true

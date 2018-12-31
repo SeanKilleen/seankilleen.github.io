@@ -1,6 +1,6 @@
 ---
 title: "A Running Checklist for Software Team Leads"
-layout: post
+layout: default
 date: 2015-12-07 11:32:00.000000000 -05:00
 excerpt: "A reference for continuous improvement and growth."
 references: 

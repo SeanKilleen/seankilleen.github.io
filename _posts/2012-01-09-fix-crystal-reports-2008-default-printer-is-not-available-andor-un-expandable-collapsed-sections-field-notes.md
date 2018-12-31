@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 'Fix: Crystal Reports 2008: "Default printer is not available" and/or Un-expandable
   Collapsed Sections [Field Notes]'
 date: 2012-01-09 17:36:00.000000000 -05:00

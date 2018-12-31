@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 'Crystal Reports 2008 Gotcha: Subreports with multiple parameter values [Field
   Notes]'
 date: 2011-12-15 09:38:00.000000000 -05:00

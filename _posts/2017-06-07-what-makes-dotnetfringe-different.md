@@ -1,6 +1,6 @@
 ---
 title: "What Makes .NET Fringe Different"
-layout: post
+layout: default
 date: 2017-06-07 04:11:00.000000000 -05:00
 excerpt: "After 3 years of attending, I know why it's my favorite."
 

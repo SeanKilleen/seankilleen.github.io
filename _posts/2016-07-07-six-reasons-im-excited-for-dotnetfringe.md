@@ -1,6 +1,6 @@
 ---
 title: "On Excella: 5 (6!) Reasons I’m Excited for the Upcoming dotNetFringe Conference"
-layout: post
+layout: default
 date: 2016-07-07 12:39:00.000000000 -05:00
 excerpt: "Back at it again for a second year!"
 references:

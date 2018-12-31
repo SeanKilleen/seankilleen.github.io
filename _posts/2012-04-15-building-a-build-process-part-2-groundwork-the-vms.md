@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 'Building A Build Process: Groundwork -- The VMs'
 date: 2012-04-15 22:49:00.000000000 -04:00
 comments: true

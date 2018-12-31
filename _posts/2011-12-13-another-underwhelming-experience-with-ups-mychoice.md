@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Another Underwhelming Experience With UPS MyChoice
 date: 2011-12-13 08:18:00.000000000 -05:00
 comments: true

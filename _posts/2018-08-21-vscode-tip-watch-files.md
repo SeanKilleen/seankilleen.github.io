@@ -1,6 +1,6 @@
 ---
 title: "VSCode Tip: Watching Files"
-layout: post
+layout: default
 date: 2018-08-21 13:00:00.000000000 -05:00
 excerpt: "Yet another way VSCode is helpful as my editor of choice."
 

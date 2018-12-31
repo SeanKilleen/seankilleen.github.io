@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Notes on Sub-Reports in Crystal Reports 2008 [Field Notes]
 date: 2011-11-28 11:15:00.000000000 -05:00
 comments: true

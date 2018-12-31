@@ -1,6 +1,6 @@
 ---
 title: "Why I keep an 'Accomplishments / Good Stuff' List"
-layout: post
+layout: default
 date: 2018-12-29 20:54:00:00.000000000 -05:00
 excerpt: "I highly recommend it."
 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Fix GMail 707 error by disabling Background Send in Google Labs
 date: 2011-11-09 07:34:00.000000000 -05:00
 comments: true

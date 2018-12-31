@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 'Quick Tip: The "shell:" prefix in Windows 8.1 dialogs (Finding the Startup
   Folder in Windows 8.1 quickly and more!)'
 date: 2014-01-18 22:34:00.000000000 -05:00

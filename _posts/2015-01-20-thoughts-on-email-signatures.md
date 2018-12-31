@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 'Some Thoughts on Corporate E-Mail Signatures'
 date: 2015-01-20 09:59:00.000000000 -05:00
 excerpt: "In which I have opinions on things."

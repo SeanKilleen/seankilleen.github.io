@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: "Credits"
 excerpt: "These kind folks helped me out!"
 tags: [credits, info, meta]

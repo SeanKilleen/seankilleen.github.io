@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 'How To: Insert Group Name Text into a Crystal Reports 2008 Section [Field
   Notes]'
 date: 2011-12-19 14:20:00.000000000 -05:00

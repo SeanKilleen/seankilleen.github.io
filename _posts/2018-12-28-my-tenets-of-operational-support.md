@@ -1,6 +1,6 @@
 ---
 title: "My Tenets of Operational Support"
-layout: post
+layout: default
 date: 2018-12-28 22:00:00.000000000 -05:00
 excerpt: "Building it is nothing if you can't support it."
 

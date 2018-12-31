@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 'Politics: Extremism Cannot be Fought With Censorship'
 date: 2010-10-04 18:46:00.000000000 -04:00
 comments: true

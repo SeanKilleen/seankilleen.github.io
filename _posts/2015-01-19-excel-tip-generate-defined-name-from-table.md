@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 'Excel Tip: Generate a Defined Name from a Table'
 date: 2015-01-19 22:00:00.000000000 -05:00
 excerpt: "Defined names are useful in Excel for things like drop-downs. But adding tables makes them even better."

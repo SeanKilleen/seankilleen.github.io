@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Some Things I've Been Bad at, and What I'm Going to do to Change it.
 date: 2012-01-24 19:41:00.000000000 -05:00
 comments: true

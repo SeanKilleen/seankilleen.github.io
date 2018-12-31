@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 'Tip: Does your workplace block Google Chat? Use Google+ to talk to people
   in your circles'
 date: 2011-12-08 09:21:00.000000000 -05:00

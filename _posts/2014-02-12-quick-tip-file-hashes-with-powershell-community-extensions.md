@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 'Quick Tip: File Hashes with PowerShell Community Extensions'
 date: 2014-02-12 18:00:00.000000000 -05:00
 excerpt: "I need to calculate the MD5 and SHA hashes for a file from Windows and I’d rather not download 3rd-party GUI software that clutters my setup."

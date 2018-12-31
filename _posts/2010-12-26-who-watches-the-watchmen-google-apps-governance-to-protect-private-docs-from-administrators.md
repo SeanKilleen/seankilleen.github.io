@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 'Who Watches the Watchmen?: Google Apps Governance to Protect Private Docs
   from Administrators'
 date: 2010-12-26 12:44:00.000000000 -05:00

@@ -1,6 +1,6 @@
 ---
 title: "How To: Check Firewall Port Openings with Powershell"
-layout: post
+layout: default
 date: 2015-11-11 23:15:00.000000000 -05:00
 excerpt: "A little scripting can save a lot of wondering."
 comments: true

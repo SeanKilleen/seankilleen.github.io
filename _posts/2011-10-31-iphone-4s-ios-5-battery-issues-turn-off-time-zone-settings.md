@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: iPhone 4S / iOS 5 battery issues? Turn off time zone settings
 date: 2011-10-31 07:22:00.000000000 -04:00
 comments: true

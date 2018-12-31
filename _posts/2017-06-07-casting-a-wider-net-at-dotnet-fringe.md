@@ -1,6 +1,6 @@
 ---
 title: "Casting a Wider .NET -- my #dotNetFringe Debut!"
-layout: post
+layout: default
 date: 2017-06-07 02:51:00.000000000 -05:00
 excerpt: "Grateful to be a part of a great conference."
 

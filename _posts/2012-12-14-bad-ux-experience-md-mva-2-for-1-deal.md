@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 'Bad UX Experience: MD MVA (2 for 1 deal!)'
 date: 2012-12-14 10:13:00.000000000 -05:00
 comments: true

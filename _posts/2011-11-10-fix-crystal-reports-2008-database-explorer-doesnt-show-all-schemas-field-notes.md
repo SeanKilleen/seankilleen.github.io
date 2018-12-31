@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 'Fix: Crystal Reports 2008 Database Explorer Doesn''t Show All Schemas [Field
   Notes]'
 date: 2011-11-10 21:17:00.000000000 -05:00

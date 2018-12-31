@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 'Building a Build Process: Creating a Custom MSBuild File'
 date: 2012-04-24 23:35:00.000000000 -04:00
 comments: true

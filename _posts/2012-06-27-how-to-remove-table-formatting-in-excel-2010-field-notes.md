@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 'How To: Remove Table Formatting in Excel 2010 [Field Notes]'
 excerpt: "I added a table in Excel 2010 and now I need to get rid of the table aspect and make them normal cells again."
 date: 2012-06-27 21:43:00.000000000 -04:00

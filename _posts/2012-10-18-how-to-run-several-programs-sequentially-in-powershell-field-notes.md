@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 'How To: Run Several Programs Sequentially in PowerShell [Field Notes]'
 date: 2012-10-18 19:00:00.000000000 -04:00
 comments: true

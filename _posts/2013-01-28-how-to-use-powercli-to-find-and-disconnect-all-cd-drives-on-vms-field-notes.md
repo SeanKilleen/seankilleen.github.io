@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 'How To: Use PowerCLI to find (and disconnect) all CD Drives on VMs [Field
   Notes]'
 date: 2013-01-28 20:00:00.000000000 -05:00

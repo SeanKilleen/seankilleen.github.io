@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 'CruiseControl .NET Gotcha: Moving Microsoft.WebApplications.Targets to the
   server [Field Notes]'
 date: 2012-05-01 12:17:00.000000000 -04:00
