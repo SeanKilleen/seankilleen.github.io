@@ -1,5 +1,5 @@
 ---
-layout: post
+ 
 title: 'Building a Build Process: CruiseControl.NET Preparation'
 date: 2012-05-03 13:36:00.000000000 -04:00
 comments: true
@@ -10,6 +10,7 @@ references:
  - title: PsExec Website
    url: http://technet.microsoft.com/en-us/sysinternals/bb897553
 ---
+{% include _buildseries-intro.md %}
 
 ### Choosing Whether to Run as Network Service or another user
 This was brought up as an excellent point by Bahrep on a recent blog post of mine, and I thought it was worth sharing for this series. 
@@ -88,3 +89,5 @@ When dealing with this elsewhere, [I discovered this problem]({% post_url 2012-0
 * On your local development machine, copy `C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\*.*` to a folder on your build server. For me, it was `E:\ContinuousIntegration_ReferenceAssemblies` so that it could keep it common for any future builds.
 
 In the next part in the series, we’ll finally configure CruiseControl.NET and get it to build. Thanks for hanging out with me on this epic journey towards build awesomeness!
+
+{% include _buildseries-footer.md %}

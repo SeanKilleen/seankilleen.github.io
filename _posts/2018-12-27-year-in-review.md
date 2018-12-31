@@ -1,6 +1,6 @@
 ---
 title: "2018: Year in Review"
-layout: post
+ 
 date: 2018-12-27 10:00:00.000000000 -05:00
 excerpt: "Another great one."
 

@@ -1,5 +1,5 @@
 ---
-layout: post
+ 
 title: 'Tip: Always Write Out Your SQL Queries in Plain English First [Field Notes]'
 date: 2011-11-10 09:23:00.000000000 -05:00
 comments: true

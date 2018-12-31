@@ -1,6 +1,6 @@
 ---
 title: 'How to: Delegate a NameCheap Domain Name'
-layout: post
+ 
 date: 2015-01-29 22:20:00.000000000 -05:00
 excerpt: "Delegating names allows customers to own their domain and you to work on it."
 comments: true

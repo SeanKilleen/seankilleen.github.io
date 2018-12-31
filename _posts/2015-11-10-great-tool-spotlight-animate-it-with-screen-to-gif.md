@@ -1,6 +1,6 @@
 ---
 title: "Great Tool Spotlight: Animate it with ScreenToGif"
-layout: post
+ 
 date: 2015-11-10 23:15:00.000000000 -05:00
 excerpt: "A gif is worth 1,000 PNGs."
 comments: true

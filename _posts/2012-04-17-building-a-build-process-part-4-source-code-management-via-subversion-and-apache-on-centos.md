@@ -1,5 +1,5 @@
 ---
-layout: post
+ 
 title: 'Building a Build Process: Source Code Management via Subversion and
   Apache on CentOS'
 date: 2012-04-17 00:14:00.000000000 -04:00
@@ -20,6 +20,7 @@ references:
    parenturl: http://www.howtowebdev.com/
 
 ---
+{% include _buildseries-intro.md %}
 
 Now we’re getting ready for some of the fun stuff. This time around, we’re going to install Apache (aka “httpd”) and Subversion (aka “svn”) and prepare to create a basic repository over https authentication.
 
@@ -144,3 +145,4 @@ chkconfig httpd on
 
 That's it; the server will start at boot.
 
+{% include _buildseries-footer.md %}

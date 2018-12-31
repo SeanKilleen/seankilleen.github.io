@@ -1,5 +1,5 @@
 ---
-layout: post
+ 
 title: 'Reclaiming my Brain: My Upcoming Social Media Hiatus'
 date: 2012-12-26 15:00:00.000000000 -05:00
 comments: true

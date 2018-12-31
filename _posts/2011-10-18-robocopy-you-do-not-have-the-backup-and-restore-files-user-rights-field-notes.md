@@ -1,5 +1,5 @@
 ---
-layout: post
+ 
 title: 'Robocopy: "You do not have the Backup and Restore Files user rights" [Field
   Notes]'
 date: 2011-10-18 12:29:00.000000000 -04:00

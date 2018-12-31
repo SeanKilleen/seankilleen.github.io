@@ -1,13 +1,12 @@
 ---
-layout: post
+ 
 title: 'Building a Build Process: Introduction'
 date: 2011-12-09 23:15:00.000000000 -05:00
 comments: true
 series: building-a-build-process
 ---
 
-
-***Under Construction:**The language in these posts may be a little terse at first, but I'll be fleshing it out over time -- be sure to check back!]*
+{% include _buildseries-intro.md %}
 
 ### Why Undertake This (Plus: Look at my Presentation!)
 I've seen too many instances in various jobs and projects where the build/integration process is not afforded due diligence (or *any* diligence, really).
@@ -42,6 +41,8 @@ The build process so far will include the following:
 It's a lofty goal -- especially for someone who's not a pro developer -- but I'm excited for everything I'm about to learn during this process.
 
 Onward and Upward!
+
+{% include _buildseries-footer.md %}
 
 [SS Link]: http://www.slideshare.net/SeanKilleen1/integreation
 [Holman Link]: http://zachholman.com/posts/slide-design-for-developers/

@@ -1,5 +1,5 @@
 ---
-layout: post
+ 
 title: 'Crystal Reports: Avoiding Array Size Limits Using Concatenation [Field Notes]'
 date: 2012-07-18 17:00:00.000000000 -04:00
 comments: true

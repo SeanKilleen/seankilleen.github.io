@@ -1,5 +1,5 @@
 ---
-layout: post
+ 
 title: Minecraft Tekkit Lite Earth Map as a Service [Nerd Fun]
 date: 2013-05-26 13:35:00.000000000 -04:00
 comments: true

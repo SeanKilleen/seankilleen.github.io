@@ -1,5 +1,5 @@
 ---
-layout: post
+
 title: Site Rebirth
 date: 2010-08-31 12:59:00.000000000 -04:00
 comments: true

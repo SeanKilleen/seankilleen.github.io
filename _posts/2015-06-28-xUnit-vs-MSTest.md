@@ -1,6 +1,6 @@
 ---
 title: "Why I Prefer xUnit over MSTest"
-layout: post
+ 
 date: 2015-06-28 22:34:00.000000000 -05:00
 excerpt: "So, so many reasons."
 comments: true

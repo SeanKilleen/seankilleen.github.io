@@ -1,5 +1,5 @@
 ---
-layout: post
+ 
 title: 'Building a Build Process: Installing CruiseControl.NET'
 date: 2012-05-03 00:48:00.000000000 -04:00
 comments: true
@@ -15,6 +15,7 @@ references:
    parenttitle: "MatthewBussa.com"
    parenturl: http://www.matthewbussa.com
 ---
+{% include _buildseries-intro.md %}
 
 ### Adding a HDD to your VM for CI Information
 I find this makes it easier to keep your CI files separate, and it’s definitely a good practice in a production environment in my experience. Virtualization makes this easier as well because all the virtual hard drive files only take up as much space as they use. Definitely an upside to VMs.
@@ -103,6 +104,8 @@ Keep going:
 * Open a web browser on the build server and navigate to http://localhost/ccnet
 
 If a web site shows up at all, you’re good to go. Don’t worry about any errors within the web dashboard application, as we’ll be configuring CCNet later.
+
+{% include _buildseries-footer.md %}
 
 [Installing and Configuring CruiseControl.NET]: http://www.matthewbussa.com/2011/05/installing-and-configuring-cruise.html 
 

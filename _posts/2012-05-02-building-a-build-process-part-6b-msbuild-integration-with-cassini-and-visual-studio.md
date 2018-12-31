@@ -1,5 +1,5 @@
 ---
-layout: post
+ 
 title: 'Building a Build Process, Part 6b: MSBuild Integration With Cassini and Visual
   Studio'
 date: 2012-05-02 22:39:00.000000000 -04:00
@@ -16,6 +16,7 @@ references:
    url: http://www.msbuildextensionpack.com/help/4.0.6.0/html/68cdc023-8926-4ac9-9e7c-0297592fec29.htm
 
 ---
+{% include _buildseries-intro.md %}
 
 ### This Time…
 In this round, we’re going to discuss:
@@ -154,6 +155,9 @@ Unfortunately, this is one area that this blog series will fall short. I’ve sc
 For now, I just recommend using TortoiseSVN to ignore those folders in your source control so that it doesn’t conflict with anyone else if you hit F5 and commit later. 
 
 And by all means, if you know how to solve the mystery, sound off in the comments!
+
+{% include _buildseries-footer.md %}
+
 
 [MSBuild Extension Pack web site]:http://msbuildextensionpack.codeplex.com/
 

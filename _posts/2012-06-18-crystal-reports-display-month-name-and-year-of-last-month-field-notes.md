@@ -1,5 +1,5 @@
 ---
-layout: post
+ 
 title: 'Crystal Reports: Display Month Name and Year of Last Month [Field Notes]'
 date: 2012-06-18 17:00:00.000000000 -04:00
 comments: true

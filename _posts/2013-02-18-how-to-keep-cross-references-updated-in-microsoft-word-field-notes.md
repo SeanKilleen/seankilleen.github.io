@@ -1,5 +1,5 @@
 ---
-layout: post
+ 
 title: 'How To: Keep Cross-references Updated in Microsoft Word [Field Notes]'
 date: 2013-02-18 19:00:00.000000000 -05:00
 comments: true

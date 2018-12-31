@@ -1,5 +1,5 @@
 ---
-layout: post
+ 
 title: 'Building a Build Process: TortoiseSVN Client Connection and Repository
   Layout'
 date: 2012-04-22 22:24:00.000000000 -04:00
@@ -17,6 +17,7 @@ references:
  - title: Donate to TortoiseSVN
    url: http://tortoisesvn.tigris.org/donate.html
 ---
+{% include _buildseries-intro.md %}
 
 Welcome back! Now that we have a TLS-encrypted Apache setup with SVN, we’re going to take a look at creating the repository layout.
 
@@ -164,6 +165,7 @@ With this done, we’re ready to commit all our changes.
 
 Congratulations! You’ve fully completed a solution setup with Visual Studio and Subversion.
 
+{% include _buildseries-footer.md %}
 
 [32-bit version]: http://sourceforge.net/projects/tortoisesvn/files/1.7.6/Application/TortoiseSVN-1.7.6.22632-win32-svn-1.7.4.msi/download?accel_key=61%3A1335136466%3Ahttp%253A//tortoisesvn.net/downloads.html%3A8d0d4796%24cd1234e7403f638c725cf3902d68531a99393cc5&amp;click_id=e7a29518-8cd0-11e1-9aae-001d0968d1a5&amp;source=accel
 

@@ -1,5 +1,5 @@
 ---
-layout: post
+ 
 excerpt: "I have a directory structure that contains Subversion metadata folders (folders named '.svn'). I would like to remove those folders but 'svn export' won't work."
 title: 'Quick Tip: Use rsync to recursively remove .svn folders from a directory [Field
   Notes]'

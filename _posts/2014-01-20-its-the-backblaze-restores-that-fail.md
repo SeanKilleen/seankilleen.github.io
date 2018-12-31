@@ -1,5 +1,5 @@
 ---
-layout: post
+ 
 title: '"It''s the (Backblaze) restores that fail."'
 date: 2014-01-20 20:17:00.000000000 -05:00
 comments: true
