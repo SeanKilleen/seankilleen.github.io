@@ -254,10 +254,11 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   html-proofer
+  jekyll-github-metadata
   rake
   rouge
   tzinfo-data
   wdm
 
 BUNDLED WITH
-   1.16.4
+   1.17.3
