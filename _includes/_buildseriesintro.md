@@ -1,0 +1,1 @@
+*This is part of a larger series in building a proper build process. For more information and additional series links, check out the [introductory post](https://seankilleen.com/2011/12/building-a-build-process-part-1-introduction/)*
