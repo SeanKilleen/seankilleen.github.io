@@ -2,6 +2,8 @@
 layout: page
 title: "Credits"
 excerpt: "These kind folks helped me out!"
+tags: [credits, info, meta]
+modified: 2018-12-31T10:53:07.573882-04:00
 sitemap: true
 ---  
 # Thanks!
