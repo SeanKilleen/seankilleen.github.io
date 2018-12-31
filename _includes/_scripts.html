@@ -2,18 +2,7 @@
 <script src="{{ site.url }}/assets/js/imagecaptions.js"></script>
 <script>window.jQuery || document.write('<script src="{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="{{ site.url }}/assets/js/scripts.min.js"></script>
-<script src="{{ site.url }}/assets/google-code-prettify/prettify.js"></script>
-
-
-<script>
-  //  Add google prettify code to every "pre" tag.
-  [].forEach.call(document.getElementsByTagName("pre"), function(el) {
-    //el.classList.add("prettyprint");
-  });
-  
-  // 2. Run
-  prettyPrint();
-</script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 
 {% if site.owner.google.analytics %}
 <!-- Asynchronous Google Analytics snippet -->
