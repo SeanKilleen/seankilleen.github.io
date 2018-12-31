@@ -1,5 +1,6 @@
 ---
- 
+layout: single
+author_profile: true 
 title: My Toolbox
 tags: [info, meta, tools]
 modified: 2016-12-27T23:25:00.000000-05:00
