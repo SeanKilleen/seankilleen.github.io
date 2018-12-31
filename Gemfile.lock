@@ -256,7 +256,6 @@ DEPENDENCIES
   html-proofer
   jekyll-github-metadata
   rake
-  rouge
   tzinfo-data
   wdm
 
