@@ -7,7 +7,7 @@ comments: true
 ## Problem:
 Someone in my blog publishing pipeline -- Github, Jekyll, etc. -- Changed how headings are formatted. Instead of `#Heading`, I had to specify `# Heading`. This makes sense, I just had converted this blog from elsewhere and it wasn't high on my priorities at first. But all of a sudden things broke, so I had to change a lot of headings quickly.
 
-# Solution
+## Solution
 I needed to find any instances of `##[Any Character]` and add a space in-between, across all of my blog files.
 
 This kind of thing always sets off a light bulb in my brain for regular expressions. I'll be honest, I'm not a RegEx wiz in any sense of the word, but with some Googling I was able to figure it out.

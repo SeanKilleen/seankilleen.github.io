@@ -10,7 +10,7 @@ When building a web site for a customer, you need access to domain name properti
 
 However, if a customer provides you with access to their domain by sharing their login, they could put themselves at risk, too. Most customers don't want to trust an IT professional with the keys to their branding, particularly if the relationship is new or if they have several domains with one account.
 
-# Solution: Domain Name Delegation
+## Solution: Domain Name Delegation
 
 Domain name delegation allows your customer to give you access to their domain name for certain actions, without needing to grant you access to their account or full control over the domain.
 
