@@ -14,7 +14,7 @@ references:
    parenturl: https://downloadcenter.intel.com/Default.aspx?lang=eng
 
 ---
-### Problem
+### Problem:
 
 After upgrading to Windows 8.1 Pro recently, I opened my Event Log to show a ***TON*** of errors from WMI. Event showed as an error and had the following text:
 

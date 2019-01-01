@@ -17,7 +17,7 @@ references:
    parenttitle: "Crystal Reports Tips & Tricks"
    parenturl: http://crystaltricks.com/wordpress/
 ---
-### Problem
+### Problem:
 A report I'm running gets the data for the last Month. I'd like to nicely display the name of the month and year.
 
 ### Solution

@@ -24,7 +24,7 @@ references:
    parenttitle: StackOverflow
    parenturl: http://stackoverflow.com/
 ---
-### Problem
+### Problem:
 I'd like to update my MVC4 project to use the following:
 
 * Bootstrap LESS source (Twitter.Bootstrap.Less nuget package)

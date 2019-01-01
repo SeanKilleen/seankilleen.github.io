@@ -6,7 +6,7 @@ date: 2011-11-29 23:23:00.000000000 -05:00
 comments: true
 
 ---
-### Problem
+### Problem:
 In VirtualBox, if you take the following steps:
 
 * Have HDD1.vdi and HDD2.vdi as storage

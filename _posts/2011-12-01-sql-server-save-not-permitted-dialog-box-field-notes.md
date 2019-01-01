@@ -11,7 +11,7 @@ references:
    parenturl: http://msdn.microsoft.com/en-us/default.aspx
 
 ---
-### Problem
+### Problem:
 In a new install of SQL Server 2008, when attempting to save changes to a table in a new database, I occasionally get the following error:
 
 > Saving changes is not permitted. The changes you have made require the following tables to be dropped and re-created. You have either made changes to a table that can't be re-created or enabled the option Prevent saving changes that require the table to be recreated.

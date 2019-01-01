@@ -7,7 +7,7 @@ comments: true
 redirect_from: 
  - /2012/05/cruisecontrol-net-gotcha-moving.html
 ---
-### Problem
+### Problem:
 When attempting an automated build, CruiseControl.NET (running on Server 2008 R2 with .NET Framework 4.0 Installed) gives the following error in its log:
 
 

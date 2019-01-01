@@ -6,7 +6,7 @@ comments: true
 redirect_from: 
  - /2012/09/maximo-tip-pm-work-order-cancellation.html
 ---
-### Problem
+### Problem:
 In Maximo, I want to cancel a PM work order because the work wasn't done for that particular scheduled PM.
 
 However, when I attempt to cancel the PM, the following may happen:

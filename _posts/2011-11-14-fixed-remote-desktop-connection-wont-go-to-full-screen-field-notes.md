@@ -6,7 +6,7 @@ comments: true
 redirect_from: 
  - /2011/11/fixed-remote-desktop-connection-wont-go.html
 ---
-### Problem
+### Problem:
 In Windows 7, I am in a Remote Desktop Connection Full screen. I accidentally pop it down to "window" size (i.e. when it can be resized), but the window refuses to go back into Full Screen mode.
 
 ### Solution

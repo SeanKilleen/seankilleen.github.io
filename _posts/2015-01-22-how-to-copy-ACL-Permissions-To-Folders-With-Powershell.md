@@ -4,7 +4,7 @@ title: 'How to Copy ACL Permissions For Folders, Using Powershell'
 date: 2015-01-22 12:47:00.000000000 -05:00
 comments: true
 ---
-## Problem
+## Problem:
 
 I needed the permissions on folder B to be exactly what they were on folder A.
 

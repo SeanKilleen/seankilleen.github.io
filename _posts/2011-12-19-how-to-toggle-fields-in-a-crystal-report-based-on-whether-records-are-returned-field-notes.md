@@ -6,7 +6,7 @@ date: 2011-12-19 13:30:00.000000000 -05:00
 comments: true
 
 ---
-### Problem
+### Problem:
 In a Crystal Report, you would like to show or hide sections based upon whether the report contains results or not.
 
 ### Solution

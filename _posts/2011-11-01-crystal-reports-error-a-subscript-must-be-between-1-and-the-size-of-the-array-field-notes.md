@@ -7,7 +7,7 @@ comments: true
 redirect_from: 
  - /2011/11/crystal-reports-error-subscript-must-be.html
 ---
-### Problem
+### Problem:
 A long-standing Crystal Report (being run out of SAP Business Objects XI v12) suddenly started generating an error along the lines of:
 
  > Error in File [File Name]: Error in formula [Formula Name]: 'left(split({[Field Name]},"/")[2],3)'

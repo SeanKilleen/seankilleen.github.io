@@ -7,7 +7,7 @@ redirect_from:
  - /2014/02/quick-tip-file-hashes-with-powershell.html
 
 ---
-### Problem
+### Problem:
 I need to calculate the MD5 and SHA hashes for a file from Windows and I'd rather not download 3rd-party GUI software that clutters my setup.
 
 ### Solution

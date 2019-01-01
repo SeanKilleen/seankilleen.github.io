@@ -7,7 +7,7 @@ comments: true
 redirect_from: 
  - /2012/01/fix-crystal-reports-2008-default.html
 ---
-### Problem
+### Problem:
 In Crystal Reports 2008, when opening up a report that came from elsewhere (usually another user's machine), I see: 
 > default printer is not available.
 

@@ -14,7 +14,7 @@ references:
    parenttitle: TheSaffaGeek
    parenturl: http://thesaffageek.co.uk/
 ---
-### Problem
+### Problem:
 I'm Running vCenter 5.1 and Windows Server 2008 R2. I notice a number of events in the event log with a source of "ADWS", event ID of 1209. The event text reads:
 
 > Active Directory Web Services encountered an error while reading the settings for the specified Active Directory Lightweight Directory Services instance.  Active Directory Web Services will retry this operation periodically. In the mean time, this instance will be ignored. Instance name: ADAM_VMwareVCMSDS

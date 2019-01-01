@@ -7,7 +7,7 @@ comments: true
 redirect_from:
  - /2012/05/workaround-msbuild-error-msb3644.html
 ---
-### Problem
+### Problem:
 When attempting to build a Continuous Integration solution with MSBuild on Windows Server 2008 R2 (With .NET Framework 4.0 installed) I receive the following error:
 
 >c:\Windows\Microsoft\.NETFramework\v4.0.30319\Microsoft.Common.targets(847,9): warning MSB3644: The reference assemblies for framework ".NETFramework,Version=v4.0" were not found. To resolve this, install the SDK or Targeting Pack for this framework version or retarget your application to a version of the framework for which you have the SDK or Targeting Pack installed. Note that assemblies will be resolved from the Global Assembly Cache (GAC) and will be used in place of reference assemblies. Therefore your assembly may not be correctly targeted for the framework you intend.

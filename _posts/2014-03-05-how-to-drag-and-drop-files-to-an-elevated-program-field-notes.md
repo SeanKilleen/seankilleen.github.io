@@ -10,7 +10,7 @@ references:
    url: http://www.howtogeek.com/forum/topic/how-to-run-explorerexe-shell-as-an-administrator-win7
    
 ---
-### Problem
+### Problem:
 
 I run Visual Studio as an Administrator, which is helpful, but also means that I can't drag &amp; drop files / folders from Windows Explorer (since it's not elevated). That's a pain in the butt.
 

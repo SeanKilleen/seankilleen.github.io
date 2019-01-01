@@ -12,7 +12,7 @@ references:
    parenturl: http://blogs.technet.com/
   
 ---
-### Problem
+### Problem:
 I need to change the letter of a mounted drive via PowerShell.
 
 ### Solution

@@ -7,7 +7,7 @@ comments: true
 ---
 Just found myself doing this again on the new setup; figured it might be worth posting.
 
-### Problem
+### Problem:
 When opening Notepad++ after previously closing it, the application loads all the old files you were working on last time.
 
 ### Solution

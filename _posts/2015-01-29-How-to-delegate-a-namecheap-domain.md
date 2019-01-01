@@ -4,7 +4,7 @@ title: 'How to: Delegate a NameCheap Domain Name'
 date: 2015-01-29 22:20:00.000000000 -05:00
 comments: true
 ---
-# Problem
+# Problem:
 
 When building a web site for a customer, you need access to domain name properties to change things such as DNS settings. 
 

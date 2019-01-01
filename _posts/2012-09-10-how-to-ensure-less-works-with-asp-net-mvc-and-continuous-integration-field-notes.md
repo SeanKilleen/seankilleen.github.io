@@ -6,7 +6,7 @@ date: 2012-09-10 18:00:00.000000000 -04:00
 comments: true
 
 ---
-### Problem
+### Problem:
 * I use LESS instead of CSS in my ASP.NET MVC app.
 * I would like it to actually work.
 ### Solution

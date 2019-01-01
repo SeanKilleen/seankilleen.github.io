@@ -7,7 +7,7 @@ redirect_from:
  - /2015/01/excel-tip-Merge-cells-but-only-for-specific-rows%20-%20Copy/
  - /2015/01/excel-tip-Merge-cells-but-only-for-specific-rows - Copy/
 ---
-## Problem
+## Problem:
 When using Excel, sometimes I have multiple rows that I want to Merge and center, but only within that row. 
 
 ![The rows prior to the merge.]({{site.post-images}}/01_PriorToMerge.png)

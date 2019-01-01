@@ -11,7 +11,7 @@ references:
    parenttitle: Seb Duggan
    parenturl: http://sebduggan.com/blog/
 ---
-### Problem
+### Problem:
 I'm using ASP.NET MVC via IIS and would like to make use of Web Fonts.
 
 ### Solution

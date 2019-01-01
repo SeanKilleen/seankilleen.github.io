@@ -9,7 +9,7 @@ redirect_from:
 ---
 This is a quick post for my reference. Let me know if details would be helpful and I'll be happy to turn it into more of a tutorial style.
 
-### Problem
+### Problem:
 I am integrating CruiseControl.NET with VisualSVN. I'm using a self-signed https on VisualSVN that doesn't match. Because I can't get CruiseControl to accept the certificate permanently, I can't get it to check out files.
 
 ### Solution
