@@ -3,7 +3,6 @@
 title: 'Crystal Reports: Display Month Name and Year of Last Month [Field Notes]'
 date: 2012-06-18 17:00:00.000000000 -04:00
 comments: true
-excerpt: "A report I'm running gets the data for the last Month. I'd like to nicely display the name of the month and year."
 redirect_from:
  - /2012/06/crystal-reports-display-month-name-and.html
  - /2012/06/crystal-reports-display-month-name-and-year-of-last-month-field-notes/undefined
