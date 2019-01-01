@@ -8,15 +8,19 @@ redirect_from:
  - /2011/11/crystal-reports-error-subscript-must-be.html
 ---
 ### Problem:
+
 A long-standing Crystal Report (being run out of SAP Business Objects XI v12) suddenly started generating an error along the lines of:
 
- > Error in File [File Name]: Error in formula [Formula Name]: 'left(split({[Field Name]},"/")[2],3)'
- 
- > A subscript must be between 1 and the size of the array.
- 
- > Details: errorKind
+```output
+Error in File [File Name]: Error in formula [Formula Name]: 'left(split({[Field Name]},"/")[2],3)'
+
+A subscript must be between 1 and the size of the array.
+
+Details: errorKind
+```
 
 (The bracketed values were specific to the report itself)
+
 ### Solution
 
 In this case, the formula is looking for a `/` to split the string. On a hunch, I decided to query the database, and sure enough, some of the fields in the database had been modified and no long included a `/`, causing the formula to bomb out.
