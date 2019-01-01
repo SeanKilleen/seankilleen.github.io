@@ -4,10 +4,6 @@ author_profile: true
 title: "About SeanKilleen.com"
 tags: [about, info, meta]
 modified: 2018-12-31T10:53:07.573882-04:00
-image:
-  feature: sample-image-2-short.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
 {% include _i-want-you.md %}
