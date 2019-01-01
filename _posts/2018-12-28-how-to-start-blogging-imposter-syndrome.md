@@ -2,7 +2,6 @@
 title: "How to Start Blogging When Faced with Imposter Syndrome"
  
 date: 2018-12-28 22:3c0:00.000000000 -05:00
-excerpt: "Meet yourself where you are."
 
 comments: true
 ---

@@ -2,7 +2,6 @@
 title: "Quick Writing Tip: Content and Perception"
  
 date: 2018-12-29 18:00:00.000000000 -05:00
-excerpt: "A strategy that I sometimes employ."
 
 comments: true
 ---
