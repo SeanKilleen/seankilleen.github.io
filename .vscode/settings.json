@@ -1,0 +1,8 @@
+{
+  // markdownlint config object
+  "markdownlint.config": {
+    "MD002": false, // Starting with an H1
+    "MD041": false, // First line must be H1
+    "MD026": false // No trailing punctuation on headings
+  }
+}
