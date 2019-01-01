@@ -2,7 +2,6 @@
 title: "How can we Accelerate the .NET OSS Ecosystem?"
  
 date: 2016-01-30 00:33:00.000000000 -05:00
-excerpt: "Itamar Syn-Hershko got me thinking."
 references:
  - title: Itamar Syn-Hershko
    url:  http://twitter.com/synhershko

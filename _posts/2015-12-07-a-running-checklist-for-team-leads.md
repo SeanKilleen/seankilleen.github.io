@@ -2,7 +2,6 @@
 title: "A Running Checklist for Software Team Leads"
  
 date: 2015-12-07 11:32:00.000000000 -05:00
-excerpt: "A reference for continuous improvement and growth."
 references: 
  - title: "Team Bus Factors: How to Reduce Them and How to Prevent Them"
    url: https://www.5whys.com/articles/team-bus-factors-how-to-reduce-them-and-how-to-prevent-them.html

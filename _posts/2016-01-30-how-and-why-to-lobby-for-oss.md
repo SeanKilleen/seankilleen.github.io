@@ -2,7 +2,6 @@
 title: "How (and Why) to Lobby Companies to Support .NET OSS"
  
 date: 2016-01-30 15:39:00.000000000 -05:00
-excerpt: "The .NET Community needs to step up. You can help."
 references:
  - title: "OpenHub, the open source network"
    url: https://www.openhub.net/
