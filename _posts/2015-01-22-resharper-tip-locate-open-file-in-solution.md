@@ -2,7 +2,6 @@
 title: 'ReSharper tip: Locate Open File in Solution'
  
 date: 2015-01-22 12:34:00.000000000 -05:00
-excerpt: "ReSharper is just so darn useful."
 comments: true
 ---
 ## Problem

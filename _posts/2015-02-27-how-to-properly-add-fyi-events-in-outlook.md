@@ -2,7 +2,6 @@
 title: "How to Properly Add 'FYI events' in Outlook"
  
 date: 2015-02-27 10:15:00.000000000 -05:00
-excerpt: "A quick, easy way to add events that inform (but don't annoy) your coworkers."
 comments: true
 ---
 # Problem

@@ -2,7 +2,6 @@
  
 title: 'Excel Tip: Generate a Defined Name from a Table'
 date: 2015-01-19 22:00:00.000000000 -05:00
-excerpt: "Defined names are useful in Excel for things like drop-downs. But adding tables makes them even better."
 comments: true
 ---
 Sometimes you may have a need to treat a column of data in an Excel table as a list -- for example, to use the contents of that list as a drop-down somewhere else.
