@@ -1,6 +1,5 @@
 ---
  
-excerpt: "I'd like to update my MVC4 project to use Bootstrap's LESS Source and FontAwesome."
 title: 'How to: Quickly update an MVC4 project with Bootstrap LESS and FontAwesome
   [Field Notes]'
 date: 2012-12-10 17:30:00.000000000 -05:00
@@ -25,7 +24,7 @@ references:
    parenttitle: StackOverflow
    parenturl: http://stackoverflow.com/
 ---
-### Problem
+### Problem:
 I'd like to update my MVC4 project to use the following:
 
 * Bootstrap LESS source (Twitter.Bootstrap.Less nuget package)

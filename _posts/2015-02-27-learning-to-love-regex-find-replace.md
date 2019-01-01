@@ -2,10 +2,9 @@
 title: "Learning to Love RegEx: a Find and Replace example"
  
 date: 2015-02-27 10:45:00.000000000 -05:00
-excerpt: "A text editor and a little RegEx know-how can save a lot of time."
 comments: true
 ---
-# Problem
+# Problem:
 Someone in my blog publishing pipeline -- Github, Jekyll, etc. -- Changed how headings are formatted. Instead of `#Heading`, I had to specify `# Heading`. This makes sense, I just had converted this blog from elsewhere and it wasn't high on my priorities at first. But all of a sudden things broke, so I had to change a lot of headings quickly.
 
 # Solution

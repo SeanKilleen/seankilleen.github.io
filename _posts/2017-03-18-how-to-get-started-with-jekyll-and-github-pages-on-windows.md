@@ -2,7 +2,6 @@
 title: "How to Get Started with Jekyll and Github Pages on Windows"
  
 date: 2017-03-18 02:38:00.000000000 -05:00
-excerpt: "A few setup steps and you're off and running!"
 
 references:
  - title: "Github Pages"

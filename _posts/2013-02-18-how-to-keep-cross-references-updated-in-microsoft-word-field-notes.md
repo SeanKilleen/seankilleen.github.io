@@ -3,11 +3,10 @@
 title: 'How To: Keep Cross-references Updated in Microsoft Word [Field Notes]'
 date: 2013-02-18 19:00:00.000000000 -05:00
 comments: true
-excerpt: "I was writing a Microsoft Word document and making use of cross-references, when I realized that the links to that reference would not update their text."
 redirect_from: 
  - /2013/02/how-to-keep-cross-references-updated-in.html
 ---
-### Problem
+### Problem:
 I was writing a Microsoft Word document and making use of cross-references, when I realized that upon changing the text/title of my cross reference, the links to that reference would not update their text. This led to me having to right-click each reference and choose "Update".
 
 That was not going to fly.

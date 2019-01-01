@@ -16,7 +16,7 @@ references:
 * CentOS 5.x
 
 
-### Problem
+### Problem:
 When attempting to install a CentOS Guest VM from a VirtualBox Win7 x64 host, the installation appears to hang shortly after beginning.
 
 The last line of text on the screen is:

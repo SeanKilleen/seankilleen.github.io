@@ -2,7 +2,6 @@
 title: "On Excella: Avoiding Primitive Obsession in Configuration -- My Approach"
  
 date: 2016-12-27 22:43:00.000000000 -05:00
-excerpt: "A good blog post got my wheels turning."
 references:
 comments: true
 ---

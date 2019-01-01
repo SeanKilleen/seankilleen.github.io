@@ -1,12 +1,11 @@
 ---
  
 title: 'Quick Tip: Always Show Solution in Visual Studio 2010'
-excerpt: "Oftentimes I’d like to perform a task on the solution, but in Visual Studio solutions with only one project, the solution doesn’t show by default."
 date: 2012-04-12 11:39:00.000000000 -04:00
 comments: true
 
 ---
-### Problem
+### Problem:
 Oftentimes I'd like to perform a task on the solution, but in Visual Studio solutions with only one project, the solution doesn't show by default.
 
 ### Solution

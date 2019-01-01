@@ -2,7 +2,6 @@
 title: "Introducing: My Toolbox!"
  
 date: 2016-12-28 01:08:00.000000000 -05:00
-excerpt: "A new running page on the site."
   
 comments: false
 ---

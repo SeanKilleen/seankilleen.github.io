@@ -6,7 +6,7 @@ comments: true
 redirect_from:
  - /2012/07/crystal-reports-avoiding-array-size.html
 ---
-### Problem
+### Problem:
 I have a Crystal Report that needs to pass a list of items to a sub-report, so that the sub-report can find additional items without duplicating items from the master report.
 
 Unfortunately, often times I'm dealing with a large amount of data. Crystal Reports has the following (incredibly frustrating) limitations:

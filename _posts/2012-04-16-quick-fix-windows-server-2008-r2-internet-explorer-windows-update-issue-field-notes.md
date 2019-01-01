@@ -7,7 +7,7 @@ comments: true
 redirect_from: 
  - /2012/04/quick-fix-windows-server-2008-r2.html
 ---
-### Problem
+### Problem:
 On a fresh install of server 2008, after adding IE 9 via Windows Update, the installation appears again in later updates.
 
 When trying to perform this install, you receive the error code `"9c48"`.

@@ -2,7 +2,6 @@
  
 title: 'Fix: Crystal 2008 Doesn''t Refresh After Adding Columns [Field Notes]'
 date: 2011-11-09 11:50:00.000000000 -05:00
-excerpt: "Sometimes Crystal Reports 2008 Designer does not reflect changes made to views or stored procedures, even after refreshing things within Crystal."
 comments: true
 references: 
  - title: "Adding New Fields To Stored Procedure And Updating It In Crystal Reports"
@@ -10,7 +9,7 @@ references:
    parenttitle: Toolbox.com
    parenturl: http://toolbox.com
 ---
-### Problem
+### Problem:
 
 Crystal Reports 2008 Designer does not reflect changes made to views or stored procedures, even after refreshing the database and those views/procedures within Crystal.
 

@@ -4,11 +4,10 @@ title: When using Twitter Bootstrap LESS with IIS, don't forget to create the MI
   Type [Field Notes]
 date: 2012-09-10 18:00:00.000000000 -04:00
 comments: true
-excerpt: "I'm using the Twitter Bootstrap LESS source with LessJS / MVC3 Project / IIS. When I open the site on my development or production boxes, the CSS doesn't display."
 redirect_from: 
  - /2012/09/when-using-twitter-bootstrap-less-with.html
 ---
-### Problem
+### Problem:
 I am using the Twitter Bootstrap LESS source with LessJS in an ASP.NET MVC3 Project that deploys to IIS.
 
 * When I run my local source, the web site displays fine.

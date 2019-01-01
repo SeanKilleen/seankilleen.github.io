@@ -2,7 +2,6 @@
 title: "New Year, New Look!"
 
 date: 2018-12-31 17:00:00:00.000000000 -05:00
-excerpt: "A fresh update to the blog for the new year."
 
 comments: true
 ---

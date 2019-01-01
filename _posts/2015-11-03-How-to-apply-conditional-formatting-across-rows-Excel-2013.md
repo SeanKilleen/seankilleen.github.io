@@ -2,7 +2,6 @@
 title: "How to: Apply Per-Row Conditional Formatting across rows in Excel 2013"
  
 date: 2015-11-03 23:15:00.000000000 -05:00
-excerpt: "With animated goodness!"
 comments: true
 ---
 I really appreciate conditional formatting in Excel. It's a great way to highlight critical pieces of information, provide quick visual distinctions, etc. 

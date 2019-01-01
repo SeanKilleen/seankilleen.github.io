@@ -2,7 +2,6 @@
  
 title: 'How to: Fix error 0x80041010 on Windows 8.1 + Hyper-V'
 date: 2013-11-24 17:47:00.000000000 -05:00
-excerpt: "After upgrading to Windows 8.1 Pro recently, I opened my Event Log to show a TON of errors from WMI."
 comments: true
 redirect_from:
  - /2013/11/how-to-fix-error-0x80041010-on-windows.html
@@ -15,7 +14,7 @@ references:
    parenturl: https://downloadcenter.intel.com/Default.aspx?lang=eng
 
 ---
-### Problem
+### Problem:
 
 After upgrading to Windows 8.1 Pro recently, I opened my Event Log to show a ***TON*** of errors from WMI. Event showed as an error and had the following text:
 

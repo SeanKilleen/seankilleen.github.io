@@ -18,7 +18,7 @@ references:
    parenttitle: Lucian Maran
    parenturl: http://maran.ro/
 ---
-### Problem
+### Problem:
 * Using Visual 2012 and IIS Express
 * Building an MVC4 Intranet project
 * Authentication Doesn't appear to work; I always get an "Access Denied" screen on every page.

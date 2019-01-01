@@ -2,7 +2,6 @@
 title: "Now Running On CloudFlare! Here's How I did it."
  
 date: 2016-12-27 21:10:00.000000000 -05:00
-excerpt: "Good advice leads to a great result"
 references:
  - title: "CloudFlare"
    url: https://www.cloudflare.com/

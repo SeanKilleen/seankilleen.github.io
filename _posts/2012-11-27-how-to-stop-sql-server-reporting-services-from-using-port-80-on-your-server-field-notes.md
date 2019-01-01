@@ -1,6 +1,5 @@
 ---
  
-excerpt: "SSRS (SQL Server Reporting Services) uses port 80 by default on any server it’s installed on. Ugh"
 title: 'How To: Stop SQL Server Reporting Services from using Port 80 on your Server
   [Field Notes]'
 date: 2012-11-27 17:00:00.000000000 -05:00
@@ -9,7 +8,7 @@ comments: true
 redirect_from:
  - /2012/11/how-to-stop-sql-server-reporting.html
 ---
-### Problem
+### Problem:
 SSRS (SQL Server Reporting Services) uses port 80 by default on any server it's installed on.
 
 This is *crazy annoying*, because you may want to have web servers or other application servers that also use the default http port 80.

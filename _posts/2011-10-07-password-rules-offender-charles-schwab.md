@@ -3,7 +3,6 @@
 title: 'Password Rules Offender: Charles Schwab'
 date: 2011-10-07 12:24:00.000000000 -04:00
 comments: true
-excerpt: "Dear Charles Schwab, it is 2011. Why do you have a maximum length of 8 characters on an account password?"
 redirect_from: 
  - /2011/10/password-rules-offender-charles-schwab.html
 references: 

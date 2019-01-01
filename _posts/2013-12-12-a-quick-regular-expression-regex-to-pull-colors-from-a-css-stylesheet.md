@@ -7,7 +7,7 @@ comments: true
 ---
 This one's mostly for my quick personal reference. It wasn't hard by any means but figured someone else might find it useful.
 
-### Problem
+### Problem:
 I need to find all hex color codes in a style sheet so I can extract them.
 
 ### Solution

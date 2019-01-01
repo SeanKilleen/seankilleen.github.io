@@ -1,7 +1,6 @@
 ---
 title: "Why I keep an 'Accomplishments / Good Stuff' List"
 date: 2018-12-29 20:54:00:00.000000000 -05:00
-excerpt: "I highly recommend it."
 
 comments: true
 ---

@@ -5,7 +5,7 @@ date: 2011-10-25 13:12:00.000000000 -04:00
 comments: true
 
 ---
-### Problem
+### Problem:
 I hid the Outlook envelope by accident, thinking it was temporary. Of course, it isn't. D'oh.
 
 ### Solution

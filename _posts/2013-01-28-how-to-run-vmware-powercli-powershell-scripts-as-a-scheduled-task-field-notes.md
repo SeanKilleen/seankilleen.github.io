@@ -4,7 +4,6 @@ title: 'How To: Run VMWare PowerCLI (PowerShell) Scripts as a Scheduled Task [Fi
   Notes]'
 date: 2013-01-28 19:00:00.000000000 -05:00
 comments: true
-excerpt: "I need to create a scheduled task that runs a powershell script that takes actions against my VMWare environment."
 redirect_from: 
  - /2013/01/how-to-run-vmware-powercli-powershell.html
  
@@ -16,7 +15,7 @@ references:
  - title: "Powershell VMWare Script not running from Scheduled Task"
    url: https://serverfault.com/questions/473072/powershell-vmware-script-not-running-from-scheduled-task/473086
 ---
-### Problem
+### Problem:
 I need to create a scheduled task that runs a powershell script that takes actions against my VMWare environment.
 
 For this article, we'll use the example of shutting down all VMs in a Non-Production folder when we're not scheduled to be at our desk (a real problem I'd faced).
