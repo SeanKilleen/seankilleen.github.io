@@ -19,7 +19,7 @@ The items below are links -- feel free to click and explore!
 * **[CheckerPlus for Gmail] [CheckerPlus for Gmail]**: A fantastic extension to help me quickly see incoming e-mail from multiple Gmail accounts.
 * **[Feedly] [Feedly]**: The best RSS Reader app, in my opinion.
 * **[Github Selfies] [Github Selfies]**: Allows you to take selfie animations while commenting on issues or pull requests in Github.
-* **[Instapaper] [Instapaper]**: Save articles and events for later reading.
+* **[Pocket](https://getpocket.com)**: Save articles and events for later reading.
 * **[LastPass] [LastPass]**: My choice of password manager.
 * **[ArtooJS] [ArtooJS]** (Scraping) - A bookmarklet that injects a javascript library into any page on command that will enable many scraping/parsing scenarios more easily.
 * **[Amazon Assistant] [Amazon Assistant]** - Great access to amazon, including wish list management & additions.
@@ -27,16 +27,23 @@ The items below are links -- feel free to click and explore!
 * **[Tweetdeck] [Tweetdeck]** - My favorite twitter client for everyday use.
 
 ## Editors
-* **[Visual Studio 2015] [Visual Studio 2015]** - The quintessential editor for .NET-based applications.
+* **[Visual Studio] [Visual Studio]** - The quintessential editor for .NET-based applications.
 * **[VSCode] [VSCode]** - A free, lightweight, open-source, cross-platform editor also supported by Microsoft. Great for web work and C#/F# work. Very extensible.
-* **[Atom Editor] [Atom Editor]** - Another popular/free/public/cross-platform editor
 
 ## Visual Studio Extensions / Tools
 * **[ReSharper] [ReSharper]** - The ultimate "second pair of eyes" for development using Visual Studio. Additional syntax highlighting, test running, recommendations, advanced search, and a slew of other features. An almost indispensable product for .NET Development. A commercial product from JetBrains.
 * **[NDepend] [NDepend]** - A great static analysis toolset for .NET projects. Particularly for large legacy projects, this has a number of great warnings, and the ability to gain tons of different insights into how the code is currently situated. Includes the ability to spelunk code with custom queries and rules.
 * **[SpecFlow] [SpecFlow]** - A helpful tool on .NET for doing BDD development. SpecFlow will generate specification files from human readable tests that can then be connected to a unit testing framework for execution. This helps ensure that the code is adhering to the requirements, and that acceptance tests are automated as much as possible.
 * **[NCrunch] [NCrunch]** - An automated test runner that integrates with Visual Studio. NCrunch runs only the tests for code that's changed and provides immediate feedback in the IDE. Can greatly reduce development time, especially when taking a TDD approach.
-* **[Storyteller] [Storyteller]** – Another form of automated acceptance test tooling that is gaining popularity. With Storyteller, developers can surface certain types of functionality to the tool, which will then allow business users to craft scenarios any way they choose. This can be hugely important in a collaborative environment where the dev team wants the users to explore their own testing.
+
+## VS Code Extensions
+* **[VSCodeCanDoThat](http://vscodecandothat.com)** - a great resource for tips & tricks.
+* **[File watcher extension](https://seankilleen.com/2018/08/vscode-tip-watch-files/)** - Comes in handy often
+* **VS Code Live Share** - this is awesome, allows you to live code with one or more people remotely. Super for remote pairing / mobbing.
+* **Docker Extension** - great extension; lets me easily see in a sidebar what containers are running, lets me quickly open a shell into them, etc.
+* **GitLens** - great UI integration of various pieces of git information
+* **Azure Account** - common sign-in / subscription management
+* **Beautify** - beautify code in place for VS Code
 
 ## Nuget Packages Worth Knowing
 * **[xUnit] [xUnit]** - a modern unit testing library for .NET. Used by the Microsoft team on the .NET framework itself, and fully compatible with .NET Core. Amazing tooling, fast execution, and a short learning curve. It's my testing framework of choice.
@@ -113,7 +120,7 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 [Instapaper]: http://Instapaper.com
 [LastPass]: http://lastpass.com
 [ArtooJS]: https://medialab.github.io/artoo/
-[Visual Studio 2015]: https://www.visualstudio.com/vs/
+[Visual Studio]: https://www.visualstudio.com/vs/
 [VSCode]: http://code.visualstudio.com/
 [Atom Editor]: https://atom.io/
 [ReSharper]: https://www.jetbrains.com/resharper/
