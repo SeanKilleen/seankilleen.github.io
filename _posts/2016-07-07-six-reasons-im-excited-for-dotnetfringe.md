@@ -1,5 +1,6 @@
 ---
 title: "On Excella: 5 (6!) Reasons I’m Excited for the Upcoming dotNetFringe Conference"
+canonical_url: https://www.excella.com/insights/5-6-reasons-im-excited-for-the-upcoming-dotnetfringe-conference
  
 date: 2016-07-07 12:39:00.000000000 -05:00
 references:

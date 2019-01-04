@@ -4,6 +4,7 @@ title: "On Excella: Avoiding Primitive Obsession in Configuration -- My Approach
 date: 2016-12-27 22:43:00.000000000 -05:00
 references:
 comments: true
+canonical_url: https://www.excella.com/insights/avoiding-primitive-obsession-in-configuration-my-approach
 ---
 
 I woke up this morning and saw [a great blog post by Arialdo Martini] that inspired me to blog a little bit (thanks, Arialdo!) 
