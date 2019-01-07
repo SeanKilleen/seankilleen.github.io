@@ -20,21 +20,21 @@ So, in short, a Tomcat 6.0 connector in server.xml that enforces TLS looks somet
 
 ```conf
 <Connector
-	port="8443"
-	protocol="HTTP/1.1"
-	protocols="TLSv1"
-	SSLEnabled="true"
-	enableLookups="false"
-	acceptCount="100"
-	maxThreads="200"
-	scheme="https"
-	keystoreFile="d:keystore.keystore"
-	keystorePass="changeme"
-	secure="true"
-	clientAuth="false"
-	sslProtocol="TLSv1"
-	cipher="AES"
-	allowUnsafeLegacyRenegotiation="false"
+    port="8443"
+    protocol="HTTP/1.1"
+    protocols="TLSv1"
+    SSLEnabled="true"
+    enableLookups="false"
+    acceptCount="100"
+    maxThreads="200"
+    scheme="https"
+    keystoreFile="d:keystore.keystore"
+    keystorePass="changeme"
+    secure="true"
+    clientAuth="false"
+    sslProtocol="TLSv1"
+    cipher="AES"
+    allowUnsafeLegacyRenegotiation="false"
 >
 ```
 
