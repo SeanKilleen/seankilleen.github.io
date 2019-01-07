@@ -15,7 +15,7 @@ Create a formula with a shared variable in your report -- for the sake of this e
 
 The contents of the formula should look like this:
 
-```vbnet
+```vb
 // Excute this formula as records are read into the report
 WhileReadingRecords;
 
@@ -42,7 +42,7 @@ Note that the formula we have created will return `null` when there are no recor
 
 If you want to **hide a section if there are no results**, enter the following:
 
-```vbnet
+```vb
 If IsNull({@RecordCount}) then true
 else false
 ```
@@ -51,14 +51,14 @@ This tells Crystal to hide the section if the `RecordCount` is null (i.e. there 
 
 If you want to **show a section if there are no results**, enter the following: 
 
-```vbnet
+```vb
 If IsNull({@RecordCount}) then false
 else true
 ```
 
 Or:
 
-```vbnet
+```vb
 If (Not(IsNull({@RecordCount}))) then true
 else false
 ```
