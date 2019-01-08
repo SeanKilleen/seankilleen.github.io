@@ -7,8 +7,6 @@ comments: true
 published: false
 ---
 
-## The Challenge:
-
 I have a client where we use Zoom meetings which require dialing and then extra digits. We use these meetings all the time.
 
 The client's conference phones allow for pauses to be saved in the address book, but not enough space to enter all the numbers for the conference call.
@@ -84,7 +82,7 @@ When you are done with the TwiML bin, be sure to save it.
 * Select to accept voice calls
 * Under `a call comes in`, select `TwiML` and select the TwiML bin you previously created. 
  
-### Trying it it out
+### Trying it out
 
 Dial your number and hear it in action!
 
