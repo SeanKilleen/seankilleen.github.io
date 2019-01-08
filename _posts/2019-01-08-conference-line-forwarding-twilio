@@ -80,7 +80,8 @@ When you are done with the TwiML bin, be sure to save it.
 * Return to [the phone numbers screen](https://www.twilio.com/console/phone-numbers/incoming)
 * Click on the phone number you previously purchased
 * Select to accept voice calls
-* Under `a call comes in`, select `TwiML` and select the TwiML bin you previously created. 
+* Under `a call comes in`, select `TwiML` and select the TwiML bin you previously created.
+* Save the phone number settings.
  
 ### Trying it out
 
