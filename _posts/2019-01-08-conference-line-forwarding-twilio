@@ -13,11 +13,13 @@ I have a client where we use Zoom meetings which require dialing and then extra 
 
 The client's conference phones allow for pauses to be saved in the address book, but not enough space to enter all the numbers for the conference call.
 
+I really want to have a speed dial button we can use to save the time entering and remembering these numbers.
+
 Not a problem! We have a solution for that.
 
 ## The Solution: Enter Twilio & TwiML bins
 
-Twilio, a voice & SMS platform, has great support for a solution to this sort of solution.
+[Twilio](https://www.twilio.com), a voice & SMS platform, has great -- and cost-effective -- support for a solution to this sort of solution.
 
 In this article, we'll walk step by step through how to set up forwarding for a conference phone with Twilio.
 
@@ -88,4 +90,4 @@ Dial your number and hear it in action!
 
 ## What do you think? 
 
-Have you solved this problem in a different way? Sound off in the comments!
+Did you hit any snags? Have you solved this problem in a different way? Sound off in the comments!
