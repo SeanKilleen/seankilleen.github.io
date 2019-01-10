@@ -1,0 +1,32 @@
+---
+layout: default
+
+# NOTE: This layout is taken from the minimal-mistakes repo and was copied here as an override so I could add carbon ads.
+---
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% elsif page.header.video.id and page.header.video.provider %}
+  {% include page__hero_video.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <div class="archive">
+    <!-- Carbon ads script -->
+    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7DLK7I&placement=seankilleencom" id="_carbonads_js"></script>
+    <!-- End Carbon ads script -->
+
+    {% unless page.header.overlay_color or page.header.overlay_image %}
+      <h1 id="page-title" class="page__title">{{ page.title }}</h1>
+    {% endunless %}
+    {{ content }}
+  </div>
+</div>
