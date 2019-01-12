@@ -51,6 +51,17 @@ My solution is going to make use of:
 * The rest of the options (Standard pricing, principle, network access) can all remain in their default selections.
 * Click `Create` to create the keyvault, and allow a little time for the deployment to complete
 
+## Add Your Keys to the Key Vault
+
+* Open your Key Vault resource by navigating to "All resources", finding the key vault you created, and clicking on it.
+* Under settings, click `Secrets`.
+* When the `Secrets` blade appears, click `Generate/Import`.
+* Enter the name of the secret. First up, we'll use `feedly-user-id`.
+* Paste the user ID you previously generated, and then click `Create`.
+* Repeat the process for secrets that we'll call `feedly-access-token` and `feedly-refresh-token`.
+
+Awesome! Now you can delete that notepad doc you have lying around.
+
 ## Setting up the Azure Function Project
 
 ## Setting up a function to refresh the auth key
