@@ -79,30 +79,20 @@ These instructions assume that you're creating all of the below within a reposit
 * Clone the new repository you created from GitHub
 * Open the root of the repository in VS Code
 * Open a terminal in VSCode via the `Terminal` menu or the keyboard shortcut.
+* Install [the AzureFunctions extension](vscode:extension/ms-azuretools.vscode-azurefunctions)
 
-### Downloading the Azure Functions dotnet new templates
+### A quick sidebar: Why I love VS Code
 
-We're going to use the `dotnet new` command to create our templates, so first we need to make those templates available to ourselves.
+Since I wasn't using Visual Studio, I was prepared to use the command line to create the Azure functions project, and wrote up a few sections on it. However, halfway through that, I discovered there's an [Azure Functions extension](vscode:extension/ms-azuretools.vscode-azurefunctions) which makes the whole process quick and easy directly from within VS Code. Beautiful.
 
-The [Azure Functions docs have a nice guide to doing this](https://github.com/Azure/azure-functions-templates/wiki/Using-the-templates-directly-via-dotnet-new), so I'm following their steps:
+### Creating an Azure Function project using the extension
 
-* I head to <https://functionscdn.azureedge.net/public/cli-feed-v3.json>
-* I look for the latest `v2` release -- at the time of this writing, `2.15.0`.
-* I head to the `2.15.0` entry, and copy the URLs for the `itemTemplates` and `projectTemplates` entries.
-* I go to each URL in a browser, which downloads the respective `nupkg` file.
-* I then run `dotnet new -i` for each nupkg file I downloaded, e.g. `dotnet new -i C:\users\SeanK\Downloads\microsoft.azure.webjobs.itemtemplates.2.0.10321.nupkg`.
-
-#### Creating a Project From the dotnet new template
-
-* In the terminal, create a directory to hold the code and enter it: `mkdir src; cd src`
-* Create a new solution: `dotnet new sln --name FeedlyOpmlExport`
-* Create a directory for the functions project: `mkdir FeedlyOpmlExport.Functions; cd FeedlyOpmlExport.Functions`
-* Create a new project: `dotnet new AzureFunctions` (will automatically take the name of the directory)
-
-* Move back to the top-level solution directory: `cd ..`
-* Add the project to the solution `dotnet sln FeedlyOpmlExport.sln add FeedlyOpmlExport.Functions`
-
-At this point, you should have a project structure similar to the following: (TODO: Add image)
+* Create a new folder called `src` to hold our code.
+* Click the Azure Functions toolbar icon on the left-hand side, and then click to create a new project.
+* For the project location, click `Browse...` and select the `src` folder as the location.
+* A dialog pops up asking about the language. For this tutorial, we're using C#.
+* Next, we'll choose a runtime. We're going with `v2 (.NET Standard)` for this tutorial.
+* Next, we'll choose to add this project to our workspace.
 
 ## Setting up a function to refresh the auth key
 
