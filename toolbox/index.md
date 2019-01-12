@@ -40,6 +40,7 @@ The items below are links -- feel free to click and explore!
 * **GitLens** - great UI integration of various pieces of git information
 * **Azure Account** - common sign-in / subscription management
 * **Beautify** - beautify code in place for VS Code
+* **Markdown shortcuts** - I write a lot of markdown for the blog. Markdown shortcuts is really helpful with quick formatting changes (e.g. `CTRL + B` bolds text). Super useful.
 
 ## Nuget Packages Worth Knowing
 * **[xUnit] [xUnit]** - a modern unit testing library for .NET. Used by the Microsoft team on the .NET framework itself, and fully compatible with .NET Core. Amazing tooling, fast execution, and a short learning curve. It's my testing framework of choice.
