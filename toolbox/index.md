@@ -10,6 +10,7 @@ There are so many great tools in this industry that I rely on on a regular basis
 The items below are links -- feel free to click and explore!
 
 ## Chrome Extensions
+
 * **[ActiveInbox] [ActiveInbox]**: This is a great productivity web app that I use to enhance my GMail experience. They're the reason why I often have zero messages in my inbox and can find things quickly.
 * **[CardCounter for Trello with Totalizer] [CardCounter for Trello]**: This extension is simple -- it adds a count of cards to every Trello List.
 * **[CheckerPlus for Gmail] [CheckerPlus for Gmail]**: A fantastic extension to help me quickly see incoming e-mail from multiple Gmail accounts.
@@ -23,16 +24,19 @@ The items below are links -- feel free to click and explore!
 * **[Tweetdeck] [Tweetdeck]** - My favorite twitter client for everyday use.
 
 ## Editors
+
 * **[Visual Studio] [Visual Studio]** - The quintessential editor for .NET-based applications.
 * **[VSCode] [VSCode]** - A free, lightweight, open-source, cross-platform editor also supported by Microsoft. Great for web work and C#/F# work. Very extensible.
 
 ## Visual Studio Extensions / Tools
+
 * **[ReSharper] [ReSharper]** - The ultimate "second pair of eyes" for development using Visual Studio. Additional syntax highlighting, test running, recommendations, advanced search, and a slew of other features. An almost indispensable product for .NET Development. A commercial product from JetBrains.
 * **[NDepend] [NDepend]** - A great static analysis toolset for .NET projects. Particularly for large legacy projects, this has a number of great warnings, and the ability to gain tons of different insights into how the code is currently situated. Includes the ability to spelunk code with custom queries and rules.
 * **[SpecFlow] [SpecFlow]** - A helpful tool on .NET for doing BDD development. SpecFlow will generate specification files from human readable tests that can then be connected to a unit testing framework for execution. This helps ensure that the code is adhering to the requirements, and that acceptance tests are automated as much as possible.
 * **[NCrunch] [NCrunch]** - An automated test runner that integrates with Visual Studio. NCrunch runs only the tests for code that's changed and provides immediate feedback in the IDE. Can greatly reduce development time, especially when taking a TDD approach.
 
 ## VS Code Extensions
+
 * **[VSCodeCanDoThat](http://vscodecandothat.com)** - a great resource for tips & tricks.
 * **[File watcher extension](https://seankilleen.com/2018/08/vscode-tip-watch-files/)** - Comes in handy often
 * **VS Code Live Share** - this is awesome, allows you to live code with one or more people remotely. Super for remote pairing / mobbing.
@@ -43,6 +47,7 @@ The items below are links -- feel free to click and explore!
 * **Markdown shortcuts** - I write a lot of markdown for the blog. Markdown shortcuts is really helpful with quick formatting changes (e.g. `CTRL + B` bolds text). Super useful.
 
 ## Nuget Packages Worth Knowing
+
 * **[xUnit] [xUnit]** - a modern unit testing library for .NET. Used by the Microsoft team on the .NET framework itself, and fully compatible with .NET Core. Amazing tooling, fast execution, and a short learning curve. It's my testing framework of choice.
 * **[FluentAssertions] [FluentAssertions]** - Sometimes, assertions are hard to read in tests and cause confusion. FluentAssertions provides an easily readable way. If a variable called "myValue" should be equal to 5, NUnit's assert syntax might be Assert.That(myValue, Is.EqualTo(5)). With FA, that becomes "myValue.Should().Be(5)". It also has great built-in assertions, such as "ShouldBeEquivalentTo", "ShouldContain()", and "ShouldNotBeEmpty()"
 * **[Serilog] [Serilog]** - A structured logging library for .NET. Structured logging beats the pants off of regular text logging because you can surface more information about the structure of the log message itself.
@@ -55,28 +60,31 @@ The items below are links -- feel free to click and explore!
 * **[Toggler] [Toggler] (feature toggling)** - Feature toggling is important, especially when beta-testing features or in large software environments where enabling a feature may cause unwanted impact (or when a feature isn't yet fully complete). Feature toggling enables shorter branches because code paths can be committed that will not be executed unless the toggle is enabled. Toggler is  great .NET library for doing that.
 * **[Github's Scientist.NET] [Github's Scientist.NET]** - A library for carefully refactoring critical paths. It basically creates A/B testing for paths through your code so that you can see if  certain paths begin failing after refactoring, or when you try a different approach. A way to know that live code will have an issue before fully flipping the switch on it.
 * **[Moq] [Moq] / [FakeItEasy] [FakeItEasy]** - Unit testing projects need mocking libraries. Moq and FakeItEasy are two good ones.
-* **[Autofac] [Autofac] / [Ninject] [Ninject] / [StructureMap] [StructureMap]** - Dependency injection can be a pain. These tools will enable you to do so much easier. They all have their various quirks but get the job done. 
+* **[Autofac] [Autofac] / [Ninject] [Ninject] / [StructureMap] [StructureMap]** - Dependency injection can be a pain. These tools will enable you to do so much easier. They all have their various quirks but get the job done.
 * **[LiteGuard] [LiteGuard]** - Defensive programming is important. This includes guard clauses – pieces of code that run in the beginning of a method to make sure that the inputs are correct. LiteGuard is a nice, small, fast library that encapsulates a number of these common guard clauses and saves some repetition.
 * **[FluentValidation] [FluentValidation]** - Validating complex data is hard. Like, really hard. And custom validation logic often fails at handling things like different contexts or testability without becoming incredibly bloated. FluentValidation is a great library that assists in validating business objects in different contexts in a friendly to use way.
 * **[Humanizer] [Humanizer]** - A great tool for manipulating and displaying strings, enums, dates, times, numbers, and quantities. If you're wondering how to display pluralization, different cases, truncate text, etc. This library is hugely helpful.
 * **[Selenium] [Selenium]** - A library for driving a web browser, hugely helpful in acceptance test scenarios. The website looks out of date, but the tool is rock solid. The selenium grid can also be used to test multiple browsers on multiple OSes at once.
 
 ## Favorite ReSharper Extensions
+
 ReSharper is such a popular plugin that I have my own favorite extensions for it, sourceable from the ReSharper plugins menu:
 
 * **ReSpeller** - Checks for typos in your code. Has saved me from a bad method name many a time.
 * **Enhanced Tooltip** - Better visual tooltips when mousing over code.
 * **Cyclomatic Complexity** - Shows when a method is growing too complex and should be refactored.
-* **Heap Allocations viewer** - Helpful to surface when you're accidentally creating an object 1,000 times in a loop. :) 
+* **Heap Allocations viewer** - Helpful to surface when you're accidentally creating an object 1,000 times in a loop. :)
 * **JetBox** -  Pulls the reSharper settings from dropbox. Really nice when my dev environments can sync up like this.
 * **Exceptional**: Analyzes exceptions that might be thrown and is a nice reminder to be handling them.
 
 ## Design
+
 * **[Pingendo] [Pingendo]** - An awesome free app if you plan on building a site with Bootstrap. Pingendo is an app for windows or Mac that allows you to visually layout mockups / sites using re-usable bootstrap components, and will then generate the HTML required to produce those components on a web page. A nice tool that makes getting started really quick & easy for a bootstrap-enabled web site.
 * **[Balsamiq] [Balsamiq]** - A popular commercial tool for mockups & workflows 
 * **[The Pencil Project] [The Pencil Project]** – A free/OSS wire-framing tool for all platforms. 
 
 ## Build & Deployment Tolls
+
 * **[NCover] [NCover] / [dotCover] [dotCover]** - A code coverage tool to help determine how many of your code paths are actually covered by unit tests.
 * **[TeamCity] [TeamCity]** - A build pipeline tool popular in many .NET shops, TeamCity is a great choice for continuous integration pipelines and ensuring a rigorous quality standard.
 * **[Jenkins] [Jenkins]** – A worse version of TeamCity. :) No but seriously, while the UI is lacking, it's highly customizable. For example, the BlueOcean plugin for Jenkins is an incredibly promising way to visualize and parallelize build pipelines.
@@ -86,6 +94,7 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 * **[PhantomJS] [PhantomJS]** - A headless webkit-based browser that can be used to run acceptance tests quickly and output screenshots of the results.
 
 ## Infrastructure / Ecosystem Tools
+
 * **[Seq] [Seq]** - A commercial tool for searching and visualizing sturcture logs such as those produced by Serilog. Makes it insanely easy to search logs to diagnose problems. Great price points for almost any business. I used this with great success on a commercial project a little while back.
 * **[Terraform] [Terraform]** - Sometimes your app needs a lot of infrastructure, or you need to manage that across cloud providers. Terraform is a tool that allows you to write out your infrastructure (e.g. 3 servers, 2 network switches, some firewall rules, etc.) and then spin up a new environment or apply changes to an existing environment. A breakthrough for deploying application infrastructure in a reliable way without huge handoffs between the "dev" and "ops" pieces of DevOps.
 * **[MiniProfiler] [MiniProfiler]** - A great profiler that shows you how long things take right within your web app, profiling database requests and surfacing common issues. Originally built by the folks at StackExchange, so it's battle-tested.
@@ -95,6 +104,7 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 * **[OTRS] [OTRS]** - An IT Service Management tool. If you need a ticketing system, helpdesk system, or CMDB that adheres to ITIL principles and is free/reasonably easy to setup, look no further.
 
 ## Helpful Windows apps for Coders
+
 * **[Github Desktop for Windows] [Github Desktop for Windows]** - Work with Github projects on Windows? This makes it dead simple.
 * **[ScriptCS] [ScriptCS]** - A way of writing scripts in C# if you hate powershell.
 * **[Fiddler] [Fiddler]** - Send and profile http requests; very useful when working with API projects.
