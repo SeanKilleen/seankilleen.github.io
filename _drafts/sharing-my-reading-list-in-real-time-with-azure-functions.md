@@ -89,8 +89,20 @@ The [Azure Functions docs have a nice guide to doing this](https://github.com/Az
 * I head to <https://functionscdn.azureedge.net/public/cli-feed-v3.json>
 * I look for the latest `v2` release -- at the time of this writing, `2.15.0`.
 * I head to the `2.15.0` entry, and copy the URLs for the `itemTemplates` and `projectTemplates` entries.
-* I go to each URL in a browsers, which downloads the respective `nupkg` file.
+* I go to each URL in a browser, which downloads the respective `nupkg` file.
 * I then run `dotnet new -i` for each nupkg file I downloaded, e.g. `dotnet new -i C:\users\SeanK\Downloads\microsoft.azure.webjobs.itemtemplates.2.0.10321.nupkg`.
+
+#### Creating a Project From the dotnet new template
+
+* In the terminal, create a directory to hold the code and enter it: `mkdir src; cd src`
+* Create a new solution: `dotnet new sln --name FeedlyOpmlExport`
+* Create a directory for the functions project: `mkdir FeedlyOpmlExport.Functions; cd FeedlyOpmlExport.Functions`
+* Create a new project: `dotnet new AzureFunctions` (will automatically take the name of the directory)
+
+* Move back to the top-level solution directory: `cd ..`
+* Add the project to the solution `dotnet sln FeedlyOpmlExport.sln add FeedlyOpmlExport.Functions`
+
+At this point, you should have a project structure similar to the following: (TODO: Add image)
 
 ## Setting up a function to refresh the auth key
 
