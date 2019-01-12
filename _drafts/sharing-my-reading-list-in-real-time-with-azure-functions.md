@@ -98,6 +98,21 @@ We can see at this point that the project is named `src`, which probably isn't w
 
 * Right-click the `src.csproj` filename and rename it to  `FeedlyOpmlExport.Functions.csproj`.
 
+### Adding a timer-based function to the project
+
+Our first function will be a timer-based function that will refresh the Feedly auth tokens using the Key Vault. The Feedly auth token expires every 2 days, but we'll run our refresh every 6 hours just to be sure we've got some buffer.
+
+* Go to the extension again, but this time select `Create Function`.
+* Select your `src` folder as the location.
+* You'll see a prompt that you need to set a project language. Select `C#`.
+* You'll see a prompt that you need to set a project runtime. Select `v2`.
+* When prompted for a template, use `TimerTrigger`.
+* When prompted for a name, use `RefreshFeedlyAuthToken`.
+* When prmopted for a namespace, use `FeedlyOpmlExport.Functions`.
+* When prompted for the CRON expression, use `0 0 */4 * * *` (Every 6 hours of every day)
+
+At this point, the function will be created within your project.
+
 ## Setting up a function to refresh the auth key
 
 ## Setting up a function to extract the OPML
