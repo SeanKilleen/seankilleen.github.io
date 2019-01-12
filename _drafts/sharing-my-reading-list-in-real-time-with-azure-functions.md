@@ -92,7 +92,11 @@ Since I wasn't using Visual Studio, I was prepared to use the command line to cr
 * For the project location, click `Browse...` and select the `src` folder as the location.
 * A dialog pops up asking about the language. For this tutorial, we're using C#.
 * Next, we'll choose a runtime. We're going with `v2 (.NET Standard)` for this tutorial.
-* Next, we'll choose to add this project to our workspace.
+* Next, we'll choose to add this project to our workspace. We see the data structure below
+
+We can see at this point that the project is named `src`, which probably isn't what we're looking for.
+
+* Right-click the `src.csproj` filename and rename it to  `FeedlyOpmlExport.Functions.csproj`.
 
 ## Setting up a function to refresh the auth key
 
