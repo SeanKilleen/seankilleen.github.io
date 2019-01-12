@@ -98,9 +98,11 @@ We can see at this point that the project is named `src`, which probably isn't w
 
 * Right-click the `src.csproj` filename and rename it to  `FeedlyOpmlExport.Functions.csproj`.
 
-### Adding a timer-based function to the project
+## Setting up a function to refresh the auth key
 
 Our first function will be a timer-based function that will refresh the Feedly auth tokens using the Key Vault. The Feedly auth token expires every 2 days, but we'll run our refresh every 6 hours just to be sure we've got some buffer.
+
+### Creating the Function
 
 * Go to the extension again, but this time select `Create Function`.
 * Select your `src` folder as the location.
@@ -109,17 +111,23 @@ Our first function will be a timer-based function that will refresh the Feedly a
 * When prompted for a template, use `TimerTrigger`.
 * When prompted for a name, use `RefreshFeedlyAuthToken`.
 * When prmopted for a namespace, use `FeedlyOpmlExport.Functions`.
-* When prompted for the CRON expression, use `0 0 */4 * * *` (Every 6 hours of every day)
+* When prompted for the CRON expression, use `0 0 */6 * * *` (Every 6 hours of every day)
 
 At this point, the function will be created within your project.
 
-## Setting up a function to refresh the auth key
+### Adding Settings for the Feedly Auth Tokens
+
+Using settings is how we'll be able to develop locally and also ensure we get settings out of the key vault.
 
 ## Setting up a function to extract the OPML
 
 ## Creating the Storage Blob to hold the outputted file
 
 ## Creating the function to persist the file
+
+## Setting up Deployment for the Functions project
+
+## Using the Key Vault to retrieve the sensitive data
 
 ## Updating the readability of the blob so we can access it from the blog
 
