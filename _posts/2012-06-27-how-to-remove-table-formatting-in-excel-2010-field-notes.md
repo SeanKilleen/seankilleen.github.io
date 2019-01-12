@@ -22,4 +22,11 @@ This is called "converting to a range." To convert a table back to a range:
 * Excel will ask you if you're sure. Click Yes.
 * The range will be converted to normal cells.
 
+### See it in Action
+
+I put together an animated version here for those who are more visual: 
+
+![An animation of removing table formatting]({{site.post-images}}/Excel_RemoveTableFormatting.gif)
+
+
 Hope this helps!
