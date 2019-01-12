@@ -27,6 +27,7 @@ My solution is going to make use of:
 * **The Feedly API.** Feedly is kind enough to provide a developer API for access to your feeds (I think even for non-pro users?). This is what will give us access to our feeds.
 * **Azure Functions** is a perfect fit for this. A small, light-weight, cost-effective, easily-deployable solution to interact with APIs. We'll use functions to keep the Feedly auth token up to date (it needs to be refreshed), and to filter the OPML feed file to to the contents that we want.
 * **Azure KeyVault**. Since we're dealing with authorization tokens, I'm not just going to be dumping them any old place, even though it would probably be pretty fast to dump them plain-text into a private Azure storage blob. Safety first!
+* **Azure Storage Blobs**. We'll have the function post the current list to a storage blob, where we can expose its contents publicly and link to it directly from this static site. 
 
 ## Getting Started
 
@@ -64,12 +65,26 @@ Awesome! Now you can delete that notepad doc you have lying around.
 
 ## Setting up the Azure Function Project
 
+You can create Azure functions directly from the portal, but that bugs me because I want the benefits of source control, automated deployments, etc. -- so, for the purposes of this project, I'm going to create [a repository on GitHub](https://github.com/SeanKilleen/feedly-opml-export). You can create one and follow along, or feel free to [clone my repo](https://github.com/SeanKilleen/feedly-opml-export).
+
+* Create a repository on GitHub 
+
 ## Setting up a function to refresh the auth key
 
 ## Setting up a function to extract the OPML
 
-## Getting the OPML file into my blog as a link
+## Creating the Storage Blob to hold the outputted file
+
+## Creating the function to persist the file
+
+## Updating the readability of the blob so we can access it from the blog
+
+## Adding the link to the content
 
 ## See it in action!
 
 You can find the source code for this project on GitHub -- feel free to use it yourself! (TODO: Add link)
+
+## What do you think?
+
+Have you found a similar way to do something? Do you have thoughts on the best way to accomplish this? I'd love to hear your feedback on this or about different approaches. Sound off in the comments!
