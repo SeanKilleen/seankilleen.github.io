@@ -74,6 +74,23 @@ These instructions assume that you're creating all of the below within a reposit
 
 ## Creating the Azure Functions Project
 
+### Getting Set up in VS Code
+
+* Clone the new repository you created from GitHub
+* Open the root of the repository in VS Code
+* Open a terminal in VSCode via the `Terminal` menu or `CTRL + Shift + ``` `
+
+### Downloading the Azure Functions dotnet new templates
+
+We're going to use the `dotnet new` command to create our templates, so first we need to make those templates available to ourselves.
+
+The [Azure Functions docs have a nice guide to doing this](https://github.com/Azure/azure-functions-templates/wiki/Using-the-templates-directly-via-dotnet-new), so I'm following their steps:
+
+* I head to <https://functionscdn.azureedge.net/public/cli-feed-v3.json>
+* I look for the latest `v2` release -- at the time of this writing, `2.15.0`.
+* I head to the `2.15.0` entry, and copy the URLs for the `itemTemplates` and `projectTemplates` entries.
+* I go to each URL in a browsers, which downloads the respective `nupkg` file.
+* I then run `dotnet new -i` for each nupkg file I downloaded, e.g. `dotnet new -i C:\users\SeanK\Downloads\microsoft.azure.webjobs.itemtemplates.2.0.10321.nupkg`.
 
 ## Setting up a function to refresh the auth key
 
