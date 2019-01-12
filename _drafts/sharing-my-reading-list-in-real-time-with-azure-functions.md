@@ -31,9 +31,25 @@ My solution is going to make use of:
 ## Getting Started
 
 * **Sign up for an Azure account**. You can [do it here](https://azure.microsoft.com/free/) if you don't already have an account (I believe they provide 30 days free with roughly $200 in credit, which is pretty awesome.)
-* **Get a Feedly API key**. You can [obtain the key here](https://feedly.com/v3/auth/dev), which will ask you to sign in, and then will provide you with your User ID and a link to your auth token. Place these in a notepad document or someplace temporary, or in a password manager.
+* **Get a Feedly API key**. You can [obtain the key here](https://feedly.com/v3/auth/dev), which will ask you to sign in, and then will provide you with your User ID and a link to your auth token & refresh token. Place these IDs and tokens in a notepad document or someplace temporary, or in a password manager.
+
+## Create a Resource Group in Azure
+
+* Log into your [Azure Portal](http://portal.azure.com)
+* Click `Resource Groups` on the left-hand side, and click "Create Resource Group"
+* Enter the information for your resource group. Here, I'm using `sean-feedly-opml-export`.
+* Click the review and then create buttons to create the group.
 
 ## Setting up the Azure Key Vault
+
+* Open the resource group you created, either by going to `Resource Groups` on the left-hand menu or selecting "Go to resource group" when the success message appears upon creation.
+* Click "Add" to add a resource.
+* Search for `Key Vault`, and select the Azure Key Vault offering by Microsoft.
+* In the blade that opens to the right, click "Create".
+* Give the key vault a name. I chose `feedly-export-keyvault`.
+* For the `Resource Group`, select the group you previously created.
+* The rest of the options (Standard pricing, principle, network access) can all remain in their default selections.
+* Click `Create` to create the keyvault, and allow a little time for the deployment to complete
 
 ## Setting up the Azure Function Project
 
