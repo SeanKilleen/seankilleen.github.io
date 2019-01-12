@@ -1,7 +1,7 @@
 ---
 title: "Sharing my reading list in real-time with Feedly and Azure Functions"
 
-date: 2019-01-02 14:00:00:00.000000000 -05:00
+date: 2019-01-11 14:00:00:00.000000000 -05:00
 
 comments: false
 published: false
