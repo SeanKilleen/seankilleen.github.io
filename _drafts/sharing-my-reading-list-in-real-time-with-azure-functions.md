@@ -78,7 +78,7 @@ These instructions assume that you're creating all of the below within a reposit
 
 * Clone the new repository you created from GitHub
 * Open the root of the repository in VS Code
-* Open a terminal in VSCode via the `Terminal` menu or `CTRL + Shift + ``` `
+* Open a terminal in VSCode via the `Terminal` menu or the keyboard shortcut.
 
 ### Downloading the Azure Functions dotnet new templates
 
