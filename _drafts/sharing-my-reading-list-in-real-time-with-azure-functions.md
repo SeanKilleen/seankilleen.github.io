@@ -1,6 +1,7 @@
 ---
 title: "Sharing my reading list in real-time with Feedly and Azure Functions"
 
+# Don't forget to check for TODOs before you publish! (TODO)
 date: 2019-01-11 14:00:00:00.000000000 -05:00
 
 comments: false
@@ -148,7 +149,6 @@ This will bind the variables to an environment variable, which we'll connect to 
 
 ### Coding the Function
 
-
 ## Setting up a function to extract the OPML
 
 ## Creating the Storage Blob to hold the outputted file
@@ -179,6 +179,27 @@ OK, so we have a Function App, but how do we connect that with our GitHub repo w
 You now have an Azure Function running in production. Not too shabby!
 
 ## Using the Key Vault to retrieve the sensitive data
+
+So we have the app, but now we need to make sure we're getting the right data out of the key vault. To do this, we'll have to give our function app a managed identity, grant that identity access ot the Key Vault, and update the app's settings to reference key vault locations.
+
+### Adding a System Managed Identity for the Function App
+
+* In the Platform Features screen for the Function App, Choose `Identity`
+* Chose the `System Assigned` tab, choose `Enable`, and Save.
+
+You'll see an `Object ID` field with a value in it.
+
+### Get the URIs for the Secrets
+
+### Granting Access for the Function Identity
+
+* Open the Key Vault settings in the Azure Portal
+* Select `Access Policies` and click to add a new policy.
+* For the Principal, select the `feedly-opml-export` application by searching for it.
+* Grant the application the authority to list, read, and set secrets.
+* Save the access policy.
+
+### Update the function app's settings to read from the key vault
 
 ## Updating the readability of the blob so we can access it from the blog
 
