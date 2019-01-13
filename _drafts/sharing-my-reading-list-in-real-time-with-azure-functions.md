@@ -215,7 +215,10 @@ So, if your URI was `https://myvault.vault.azure.net/secrets/mysecret/ec96f02080
 Now that we have the right format, we're ready to update our app settings with this.
 
 * Open the Function App's settings within the Azure Portal
+* Add settings that correspond to the app settings we created (`feedly-user-id`, `feedly-access-token`, `feedly-refresh-token`)
+* Enter the Key Vault formatted text for the app settings
 
+At this point, the app should read your app, which has been granted access to read from the key vault, should now be able to directly pull its settings from there.
 
 ## Updating the readability of the blob so we can access it from the blog
 
