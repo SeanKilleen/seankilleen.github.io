@@ -117,7 +117,37 @@ At this point, the function will be created within your project.
 
 ### Adding Settings for the Feedly Auth Tokens
 
-Using settings is how we'll be able to develop locally and also ensure we get settings out of the key vault.
+Using settings is how we'll be able to develop locally and also ensure we get settings out of the key vault in a future step.
+
+In your `local.settings.json` file, add three settings to track the Feedly-related values, after which your settings file will look along the lines of:
+
+```json
+{
+    "IsEncrypted": false,
+    "Values": {
+        "AzureWebJobsStorage": "",
+        "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+        "feedly-user-id": "",
+        "feedly-access-token": "",
+        "feedly-refresh-token": ""
+    }
+}
+```
+
+### Binding the Function to use the Settings
+
+Add these lines inside of the class definition for the function:
+
+```csharp
+public static string userId = System.Environment.GetEnvironmentVariable("feedly-user-id");
+public static string accessToken = System.Environment.GetEnvironmentVariable("feedly-access-token");
+public static string refreshToken = System.Environment.GetEnvironmentVariable("feedly-refresh-token");
+```
+
+This will bind the variables to an environment variable, which we'll connect to the key vault.
+
+### Coding the Function
+
 
 ## Setting up a function to extract the OPML
 
@@ -125,7 +155,28 @@ Using settings is how we'll be able to develop locally and also ensure we get se
 
 ## Creating the function to persist the file
 
+## Creating the Function Project in Azure
+
+* Open your Azure portal and go to `all resources`.
+* Click "Add" and search for "Function". Select `Function App` and click `Create`.
+* Add a name for the function app.
+* Choose the resource group that we created earlier.
+* Create a new storage account to be used by the app.
+* Click to create the function app.
+
+Allow a bit of time for the function app to finish deploying.
+
 ## Setting up Deployment for the Functions project
+
+OK, so we have a Function App, but how do we connect that with our GitHub repo where all our work is actually stored?
+
+* Open the function app in the Azure portal
+* Under the `Platform Features` tab, click `Deployment Center`.
+* When thne deployment center appears, select `GitHub` as the source.
+* Select your organization, the repo we created, and the `master` branch.
+* Complete the wizard and allow some time for the app to deploy.
+
+You now have an Azure Function running in production. Not too shabby!
 
 ## Using the Key Vault to retrieve the sensitive data
 
