@@ -189,7 +189,12 @@ So we have the app, but now we need to make sure we're getting the right data ou
 
 You'll see an `Object ID` field with a value in it.
 
-### Get the URIs for the Secrets
+### Get the Secret Identifiers for the Secrets
+
+The secret identifier is a URL that tells us how to access the secret.
+
+* Open the Key Vault and click `Secrets`.
+* For each secret, click on the secret and copy the `Secret Identifier` into a notepad document so you'll have it for a later step.
 
 ### Granting Access for the Function Identity
 
@@ -200,6 +205,17 @@ You'll see an `Object ID` field with a value in it.
 * Save the access policy.
 
 ### Update the function app's settings to read from the key vault
+
+Remember those Secret URIs you copied to notepad earlier? Great; time to put them to use.
+
+First, you'll want to re-format each of them so that they're using the Key Vault formatting. This format is `@Microsoft.KeyVault(SecretUri={Uri})`.
+
+So, if your URI was `https://myvault.vault.azure.net/secrets/mysecret/ec96f02080254f109c51a1f14cdb1931`, your formatted text should become `@Microsoft.KeyVault(SecretUri=https://myvault.vault.azure.net/secrets/mysecret/ec96f02080254f109c51a1f14cdb1931)`.
+
+Now that we have the right format, we're ready to update our app settings with this.
+
+* Open the Function App's settings within the Azure Portal
+
 
 ## Updating the readability of the blob so we can access it from the blog
 
