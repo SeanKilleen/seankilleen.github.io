@@ -120,7 +120,7 @@ At this point, the function will be created within your project.
 
 Using settings is how we'll be able to develop locally and also ensure we get settings out of the key vault in a future step.
 
-In your `local.settings.json` file, add three settings to track the Feedly-related values, after which your settings file will look along the lines of:
+In your `local.settings.json` file, add a setting to track the feedly refresh token, after which your settings file will look along the lines of:
 
 ```json
 {
@@ -128,26 +128,138 @@ In your `local.settings.json` file, add three settings to track the Feedly-relat
     "Values": {
         "AzureWebJobsStorage": "",
         "FUNCTIONS_WORKER_RUNTIME": "dotnet",
-        "feedly-user-id": "",
-        "feedly-access-token": "",
         "feedly-refresh-token": ""
     }
 }
 ```
 
-### Binding the Function to use the Settings
+### Using Environment Variable Settings from the Function
 
 Add these lines inside of the class definition for the function:
 
 ```csharp
-public static string userId = System.Environment.GetEnvironmentVariable("feedly-user-id");
-public static string accessToken = System.Environment.GetEnvironmentVariable("feedly-access-token");
 public static string refreshToken = System.Environment.GetEnvironmentVariable("feedly-refresh-token");
 ```
 
-This will bind the variables to an environment variable, which we'll connect to the key vault.
+This will bind the variables to an environment variable, which we'll connect to the key vault later.
 
 ### Coding the Function
+
+I created some POCOs to represent the request and what I need from the response:
+
+```csharp
+public class FeedlyRefreshRequest
+{
+    private const string FEEDLY_CLIENT_ID = "feedlydev"; // hard-coded for users with Pro accounts
+
+    public string refresh_token { get; }
+    public string client_id =>  FEEDLY_CLIENT_ID;
+    public string client_secret => FEEDLY_CLIENT_ID;
+    public string grant_type => "refresh_token";
+
+    public FeedlyRefreshRequest(string refreshToken)
+    {
+        refresh_token = refreshToken;
+    }
+}
+
+public class FeedlyRefreshResponse
+{
+    public string access_token { get; set; }
+}
+```
+
+I created then created a `FeedlyManager.cs`:
+
+```csharp
+public static class FeedlyManager
+{
+    private const string FEEDLY_BASE_URL = "https://cloud.feedly.com/v3/";
+
+    // We for now we're assuming we're passing in an access token. We'll get to that in a second.
+    public static async Task<FeedlyRefreshResponse> RefreshFeedlyAccessToken(string accessToken, ILogger log, string refreshToken)
+    {
+        var client = CreateFeedlyHttpClient(accessToken);
+
+        var request = new FeedlyRefreshRequest(refreshToken);
+        var response = await client.PostAsJsonAsync("auth/token", request);
+
+        if (!response.IsSuccessStatusCode)
+        {
+            var errorContent = await response.Content.ReadAsStringAsync();
+            log.LogWarning($"Response failed. Status {response.StatusCode}, Reason {response.ReasonPhrase}");
+            log.LogWarning($"Error content: {errorContent}");
+        }
+
+        response.EnsureSuccessStatusCode(); // Will ensure it blows up if the response isn't a success.
+
+        return JsonConvert.DeserializeObject<FeedlyRefreshResponse>(await response.Content.ReadAsStringAsync());
+    }
+
+    private static HttpClient CreateFeedlyHttpClient(string accessToken)
+    {
+        var client = new HttpClient { BaseAddress = new Uri(FEEDLY_BASE_URL) };
+        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
+        return client;
+    }
+}
+```
+
+Now that we have the ability to talk to Feedly, we'll need to get it an actual access token via the key vault. For this, I create a `KeyVaultManager` because I'm real good with names like that.
+
+```csharp
+public static class KeyVaultManager
+{
+    // You'll change these depending on what yours is called; or, you can extract them into settings.
+    private const string KEY_VAULT_BASE_URL = "https://feedly-export-keyvault.vault.azure.net";
+    private const string ACCESS_TOKEN_KEY_NAME = "feedly-access-token";
+
+    // we'll always just have one, because functions are short-lived.
+    private static KeyVaultClient theClient = CreateKeyVaultClient();
+
+    public static async Task<string> GetFeedlyAccessToken()
+    {
+        var accessToken = await theClient.GetSecretAsync(KEY_VAULT_BASE_URL, ACCESS_TOKEN_KEY_NAME, CancellationToken.None);
+        return accessToken.Value;
+    }
+
+    private static KeyVaultClient CreateKeyVaultClient()
+    {
+        // Ed. Note: I'm still amazed that this is all I have to do to allow secure access to the key vault from my app.
+        var azureServiceTokenProvider = new AzureServiceTokenProvider();
+        var authenticationCallback = new KeyVaultClient.AuthenticationCallback(azureServiceTokenProvider.KeyVaultTokenCallback);
+
+        return new KeyVaultClient(authenticationCallback);
+    }
+
+    public static async Task UpdateFeedlyAccessToken(string feedlyResponseAccessToken)
+    {
+        await theClient.SetSecretAsync(KEY_VAULT_BASE_URL, ACCESS_TOKEN_KEY_NAME, feedlyResponseAccessToken);
+    }
+}
+```
+
+Then, we can put it all together in our function definition:
+
+```csharp
+    // Ed. Note: I leave a lot of logging out here for brevity.
+    public static class RefreshFeedlyAuthToken
+    {
+        // These will be read from a settings file, or environment variables, which in production will point to the key vault.
+        private static readonly string userId = Environment.GetEnvironmentVariable("feedly-user-id");
+        private static readonly string refreshToken = Environment.GetEnvironmentVariable("feedly-refresh-token");
+
+        [FunctionName("RefreshFeedlyAuthToken")]
+        public static async Task Run([TimerTrigger("0 0 */6 * * *")]TimerInfo myTimer, ILogger log)
+        {
+            var accessToken = await KeyVaultManager.GetFeedlyAccessToken();
+
+            var feedlyResponse = await FeedlyManager.RefreshFeedlyAccessToken(accessToken, log, refreshToken);
+
+            await KeyVaultManager.UpdateFeedlyAccessToken(feedlyResponse.access_token);
+        }
+    }
+```
 
 ## Setting up a function to extract the OPML
 
@@ -204,6 +316,12 @@ The secret identifier is a URL that tells us how to access the secret.
 * Grant the application the authority to list, read, and set secrets.
 * Save the access policy.
 
+### Add the KeyVault package to your project
+
+You'll need to add the KeyVault package so that it will actually unencrypt the settings.
+
+You can do this via running `dotnet add package Microsoft.Azure.KeyVault` from the `src` folder within your project, in a terminal window.
+
 ### Update the function app's settings to read from the key vault
 
 Remember those Secret URIs you copied to notepad earlier? Great; time to put them to use.
@@ -217,6 +335,7 @@ Now that we have the right format, we're ready to update our app settings with t
 * Open the Function App's settings within the Azure Portal
 * Add settings that correspond to the app settings we created (`feedly-user-id`, `feedly-access-token`, `feedly-refresh-token`)
 * Enter the Key Vault formatted text for the app settings
+* Save the settings
 
 At this point, the app should read your app, which has been granted access to read from the key vault, should now be able to directly pull its settings from there.
 
