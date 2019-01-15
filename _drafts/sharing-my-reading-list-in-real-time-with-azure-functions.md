@@ -33,6 +33,8 @@ My solution is going to make use of:
 
 ## Getting Started
 
+**Before we get started: I'm here to help!** If the example is unclear, or something isn't working for you, drop me a line in the comments and we'll figure out a way to get a straightened out.
+
 * **Sign up for an Azure account**. You can [do it here](https://azure.microsoft.com/free/) if you don't already have an account (I believe they provide 30 days free with roughly $200 in credit, which is pretty awesome.)
 * **Get a Feedly API key**. You can [obtain the key here](https://feedly.com/v3/auth/dev), which will ask you to sign in, and then will provide you with your User ID and a link to your auth token & refresh token. Place these IDs and tokens in a notepad document or someplace temporary, or in a password manager.
 * **Install .NET Core SDK.** We'll be using .NET Core to develop our app. You can get it here. You can get it from <https://dotnet.microsoft.com/>.
@@ -115,6 +117,15 @@ Our first function will be a timer-based function that will refresh the Feedly a
 * When prompted for the CRON expression, use `0 0 */6 * * *` (Every 6 hours of every day)
 
 At this point, the function will be created within your project.
+
+### Adding some Nuget Packages
+
+I ~~happen to know~~ discovered along the way that we'll need some nuget packgaes so you may want to install them. The commands to do this via the terminal are:
+
+* `dotnet add package Microsoft.Azure.KeyVault`
+* `dotnet add package Microsoft.Azure.Services.AppAuthentication`
+* `dotnet add package Microsoft.Azure.WebJobs.Extensions.Storage`
+* `dotnet add package Microsoft.NET.Sdk.Functions`
 
 ### Adding Settings for the Feedly Auth Tokens
 
@@ -270,7 +281,8 @@ public static async Task<string> GetOpmlContents(string accessToken)
 {
     var client = CreateFeedlyHttpClient(accessToken);
 
-    var response = await client.GetAsync("opml"); // this returns a string of the actual file contents.
+    // this returns a string of the actual file contents.
+    var response = await client.GetAsync("opml");
     response.EnsureSuccessStatusCode();
 
     return await response.Content.ReadAsStringAsync();
@@ -281,7 +293,7 @@ Then, I create a new `ExtractFeelyOpml` Azure function:
 
 ```csharp
 // Ed. Note: Logging and the XML filtering/labeling classes ommitted for brevity.
-// See the link to the full repo for the full source.
+// See the link to the repo for the full source.
 
 public static class ExtractFeedlyOPML
 {
@@ -379,14 +391,42 @@ At this point, the app should read your app, which has been granted access to re
 
 ## Creating the Storage Blob to hold the outputted file
 
-## Updating the readability of the blob so we can access it from the blog
+When you created the azure function project, you also created a storage account. Well, isn't that convenient!
+
+* Click on the storage account
+* Click on `Blobs`
+* Click the `+ Container` button to add a container
+* Name the container `opml-file`.
+* Set the public access level to `Container`, which will allow anonymous access to the container and the blobs in it. It's fine in this case because this is the thing we want to publicly serve up.
+
+## Run the Function
+
+At this point, you should be able to run the function and see a file created in the blob.
 
 ## Adding the link to the content
 
-## See it in action!
+* Click on the blob that was created when you ran the function.
+* In the properties, copy the URL.
 
-You can find the source code for this project on GitHub -- feel free to use it yourself! (TODO: Add link)
+Now you've got the link to the file to paste wherever you want! I put mine on my [Reading List page](https://SeanKilleen.com/reading-list).
+
+## We did it!
+
+Whew, that was a heck of a journey. We:
+
+* Created an Azure function project
+* Used environment variables for secrets
+* Created a key vault
+* Configured secure access to the key vault
+* Wrote a function to make API calls and update the key vault
+* Wrote a function to process a file from an API result
+* Deployed the Function App to Azure right from GitHub
+* Hooked a function to an Azure storage blob with a public URL
+
+## See the full source project in action!
+
+[You can find the source code for this project on GitHub](https://github.com/SeanKilleen/feedly-opml-export) -- feel free to use it yourself!
 
 ## What do you think?
 
-Have you found a similar way to do something? Do you have thoughts on the best way to accomplish this? I'd love to hear your feedback on this or about different approaches. Sound off in the comments!
+Did I miss something? Have you found a similar (or better?) way to do this? I'd love to hear your feedback on this or about different approaches. Sound off in the comments!
