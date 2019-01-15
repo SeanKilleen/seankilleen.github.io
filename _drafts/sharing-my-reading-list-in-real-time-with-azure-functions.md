@@ -1,5 +1,5 @@
 ---
-title: "Sharing my reading list in real-time with Feedly and Azure Functions"
+title: "Tutorial: A real-time reading list with Feedly and Azure Functions"
 
 # Don't forget to check for TODOs before you publish! (TODO)
 date: 2019-01-11 14:00:00:00.000000000 -05:00
