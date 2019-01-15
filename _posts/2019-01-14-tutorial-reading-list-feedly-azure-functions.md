@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: An Automated reading list with Feedly and Azure Functions"
 
-date: 2019-01-11 14:00:00:00.000000000 -05:00
+date: 2019-01-14 21:00:00:00.000000000 -05:00
 
 tags: [azure, azure functions, apis, cloud, key vault, tutorial, csharp,.NET]
 comments: true
