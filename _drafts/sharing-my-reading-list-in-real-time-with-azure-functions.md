@@ -242,30 +242,68 @@ public static class KeyVaultManager
 Then, we can put it all together in our function definition:
 
 ```csharp
-    // Ed. Note: I leave a lot of logging out here for brevity.
-    public static class RefreshFeedlyAuthToken
+// Ed. Note: I leave a lot of logging out here for brevity.
+public static class RefreshFeedlyAuthToken
+{
+    // These will be read from a settings file, or environment variables, which in production will point to the key vault.
+    private static readonly string userId = Environment.GetEnvironmentVariable("feedly-user-id");
+    private static readonly string refreshToken = Environment.GetEnvironmentVariable("feedly-refresh-token");
+
+    [FunctionName("RefreshFeedlyAuthToken")]
+    public static async Task Run([TimerTrigger("0 0 */6 * * *")]TimerInfo myTimer, ILogger log)
     {
-        // These will be read from a settings file, or environment variables, which in production will point to the key vault.
-        private static readonly string userId = Environment.GetEnvironmentVariable("feedly-user-id");
-        private static readonly string refreshToken = Environment.GetEnvironmentVariable("feedly-refresh-token");
+        var accessToken = await KeyVaultManager.GetFeedlyAccessToken();
 
-        [FunctionName("RefreshFeedlyAuthToken")]
-        public static async Task Run([TimerTrigger("0 0 */6 * * *")]TimerInfo myTimer, ILogger log)
-        {
-            var accessToken = await KeyVaultManager.GetFeedlyAccessToken();
+        var feedlyResponse = await FeedlyManager.RefreshFeedlyAccessToken(accessToken, log, refreshToken);
 
-            var feedlyResponse = await FeedlyManager.RefreshFeedlyAccessToken(accessToken, log, refreshToken);
-
-            await KeyVaultManager.UpdateFeedlyAccessToken(feedlyResponse.access_token);
-        }
+        await KeyVaultManager.UpdateFeedlyAccessToken(feedlyResponse.access_token);
     }
+}
 ```
 
 ## Setting up a function to extract the OPML
 
-## Creating the Storage Blob to hold the outputted file
+We'll add a method to our `FeedlyManager`:
 
-## Creating the function to persist the file
+```csharp
+public static async Task<string> GetOpmlContents(string accessToken)
+{
+    var client = CreateFeedlyHttpClient(accessToken);
+
+    var response = await client.GetAsync("opml"); // this returns a string of the actual file contents.
+    response.EnsureSuccessStatusCode();
+
+    return await response.Content.ReadAsStringAsync();
+}
+```
+
+Then, I create a new `ExtractFeelyOpml` Azure function:
+
+```csharp
+// Ed. Note: Logging and the XML filtering/labeling classes ommitted for brevity.
+// See the link to the full repo for the full source.
+
+public static class ExtractFeedlyOPML
+{
+    [FunctionName("ExtractFeedlyOPML")]
+    public static async Task Run(
+        [TimerTrigger("0 0 5 * * *")]TimerInfo myTimer
+        , ILogger log
+        , [Blob("opml-file/SeanKilleenBlogs.opml", FileAccess.Write)] Stream blobOutput)
+    {
+        var accessToken = await KeyVaultManager.GetFeedlyAccessToken();
+        var opmlXml = await FeedlyManager.GetOpmlContents(accessToken);
+
+        var categories = new List<string> { "development", "tech" }; // Because hard-coding strings never caused a problem before. ;)
+        var filteredDoc = OpmlFilterer.FilterToCategories(opmlXml, categories);
+
+        var filterAndLabeledDoc = OpmlLabeler.LabelOpmlFile(filteredDoc);
+
+        var thing = Encoding.Default.GetBytes(filterAndLabeledDoc);
+        await blobOutput.WriteAsync(thing, 0, thing.Length);
+    }
+}
+```
 
 ## Creating the Function Project in Azure
 
@@ -338,6 +376,8 @@ Now that we have the right format, we're ready to update our app settings with t
 * Save the settings
 
 At this point, the app should read your app, which has been granted access to read from the key vault, should now be able to directly pull its settings from there.
+
+## Creating the Storage Blob to hold the outputted file
 
 ## Updating the readability of the blob so we can access it from the blog
 
