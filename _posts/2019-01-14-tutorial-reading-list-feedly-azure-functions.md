@@ -161,23 +161,6 @@ I ~~happen to know~~ discovered along the way that we'll need some nuget packgae
 * `dotnet add package Microsoft.Azure.WebJobs.Extensions.Storage`
 * `dotnet add package Microsoft.NET.Sdk.Functions`
 
-### Adding Settings for the Feedly Auth Tokens
-
-Using settings is how we'll be able to develop locally and also ensure we get settings out of the key vault in a future step.
-
-In your `local.settings.json` file, add a setting to track the feedly refresh token, after which your settings file will look along the lines of:
-
-```json
-{
-    "IsEncrypted": false,
-    "Values": {
-        "AzureWebJobsStorage": "",
-        "FUNCTIONS_WORKER_RUNTIME": "dotnet",
-        "feedly-refresh-token": ""
-    }
-}
-```
-
 ### Using Environment Variable Settings from the Function
 
 Add these lines inside of the class definition for the function:
