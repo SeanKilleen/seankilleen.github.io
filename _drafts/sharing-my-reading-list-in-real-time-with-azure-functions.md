@@ -474,7 +474,7 @@ Given that Azure Functions gives us our first _million_ calls for free, and we'r
 
 ## See the full source project in action!
 
-[You can find the source code for this project on GitHub](https://github.com/SeanKilleen/feedly-opml-export) -- feel free to use it yourself!
+[You can find the source code for this project on GitHub](https://github.com/SeanKilleen/feedly-opml-export) -- feel free to use it yourself! Pull requests welcome.
 
 ## What do you think?
 
