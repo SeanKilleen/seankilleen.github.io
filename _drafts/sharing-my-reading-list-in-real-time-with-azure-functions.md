@@ -108,12 +108,24 @@ Since I wasn't using Visual Studio, I was prepared to use the command line to cr
 
 * Create a new folder called `src` to hold our code.
 * Click the Azure Functions toolbar icon on the left-hand side, and then click to create a new project.
+
+![Button to create a new azure functions project]({{site.post-images}}/azure-feedly-export/createproject-extension-button.png)
+
 * For the project location, click `Browse...` and select the `src` folder as the location.
+
+![Browsing to the location]({{site.post-images}}/azure-feedly-export/createproject-extension-browse.png)
+
 * A dialog pops up asking about the language. For this tutorial, we're using C#.
+
+![Choose C# for language]({{site.post-images}}/azure-feedly-export/createproject-extension-selectlanguage.png)
+
 * Next, we'll choose a runtime. We're going with `v2 (.NET Standard)` for this tutorial.
-* Next, we'll choose to add this project to our workspace. We see the data structure below
+
+![Selecting the v2 Runtime]({{site.post-images}}/azure-feedly-export/createproject-extension-selectruntime.png)
 
 We can see at this point that the project is named `src`, which probably isn't what we're looking for.
+
+![Oops, wrong name]({{site.post-images}}/azure-feedly-export/createproject-after-namedsrc.png)
 
 * Right-click the `src.csproj` filename and rename it to  `FeedlyOpmlExport.Functions.csproj`.
 
