@@ -371,7 +371,7 @@ OK, so we have a Function App, but how do we connect that with our GitHub repo w
 * Open the function app in the Azure portal
 * Under the `Platform Features` tab, click `Deployment Center`.
 
-> ![Deployment center button in the potal]({{site.post-images}}/azure-feedly-export/functionsettings-deploymentcenter-button.png)
+> ![Deployment center button in the portal]({{site.post-images}}/azure-feedly-export/functionsettings-deploymentcenter-button.png)
 
 * When the deployment center appears, select `GitHub` as the source.
 * Select your organization, the repo we created, and the `master` branch.
@@ -427,6 +427,9 @@ Now that we have the right format, we're ready to update our app settings with t
 * Open the Function App's settings within the Azure Portal
 * Add settings that correspond to the app settings we created (`feedly-user-id`, `feedly-access-token`, `feedly-refresh-token`)
 * Enter the Key Vault formatted text for the app settings
+
+> ![Changing the app settings to refer to the keyvault]({{site.post-images}}/azure-feedly-export/appsettings-addkeyvaultvalues.png)
+
 * Save the settings
 
 At this point, the app should read your app, which has been granted access to read from the key vault, should now be able to directly pull its settings from there.
@@ -440,6 +443,8 @@ When you created the azure function project, you also created a storage account.
 * Click the `+ Container` button to add a container
 * Name the container `opml-file`.
 * Set the public access level to `Container`, which will allow anonymous access to the container and the blobs in it. It's fine in this case because this is the thing we want to publicly serve up.
+
+![Blob container settings]({{site.post-images}}/azure-feedly-export/blobcontainer-create.png)
 
 ## Run the Function
 
