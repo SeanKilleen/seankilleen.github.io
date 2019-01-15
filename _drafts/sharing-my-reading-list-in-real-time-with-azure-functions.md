@@ -6,6 +6,8 @@ date: 2019-01-11 14:00:00:00.000000000 -05:00
 
 tags: [azure, azure functions, apis, cloud, key vault, tutorial, csharp,.NET]
 comments: true
+
+# TODO: Jekyll / theme tool to outline?
 ---
 
 I've been a fan of RSS feeds for a long time. I love curating a collection of knowledge that streams to me at my pace, and I consider feeds to be a fundamental piece of how I keep up with technology and stay fresh. I currently use [Feedly](http://feedly.com) and have been a happy pro user for years.
