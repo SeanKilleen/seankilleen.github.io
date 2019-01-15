@@ -48,11 +48,11 @@ My solution is going to make use of:
 * Log into your [Azure Portal](http://portal.azure.com)
 * Click `Resource Groups` on the left-hand side, and click "Create Resource Group"
 
-![The add resource group button]({{site.post-images}}/azure-feedly-export/create-resource-group-button.png)
+> ![The add resource group button]({{site.post-images}}/azure-feedly-export/create-resource-group-button.png)
 
 * Enter the information for your resource group. Here, I'm using `sean-feedly-opml-export`.
 
-![Entering the information for the resource group]({{site.post-images}}/azure-feedly-export/create-resource-group-info.png)
+> ![Entering the information for the resource group]({{site.post-images}}/azure-feedly-export/create-resource-group-info.png)
 
 * Click the review and then create buttons to create the group.
 
@@ -62,7 +62,7 @@ My solution is going to make use of:
 * Click "Add" to add a resource.
 * Search for `Key Vault`, and select the Azure Key Vault offering by Microsoft.
 
-![Search for Key Vault]({{site.post-images}}/azure-feedly-export/create-keyvault-search.png)
+> ![Search for Key Vault]({{site.post-images}}/azure-feedly-export/create-keyvault-search.png)
 
 * In the blade that opens to the right, click "Create".
 * Give the key vault a name. I chose `feedly-export-keyvault`.
@@ -76,12 +76,12 @@ My solution is going to make use of:
 * Under settings, click `Secrets`.
 * When the `Secrets` blade appears, click `Generate/Import`.
 
-![The button to add the a secret]({{site.post-images}}/azure-feedly-export/addkeys-secret-add.png)
+> ![The button to add the a secret]({{site.post-images}}/azure-feedly-export/addkeys-secret-add.png)
 
 * Enter the name of the secret. First up, we'll use `feedly-user-id`.
 * Paste the user ID you previously generated, and then click `Create`.
 
-![Entering the secret information]({{site.post-images}}/azure-feedly-export/addkeys-secret-info.png)
+> ![Entering the secret information]({{site.post-images}}/azure-feedly-export/addkeys-secret-info.png)
 
 * Repeat the process for secrets that we'll call `feedly-access-token` and `feedly-refresh-token`.
 
@@ -111,23 +111,23 @@ Since I wasn't using Visual Studio, I was prepared to use the command line to cr
 * Create a new folder called `src` to hold our code.
 * Click the Azure Functions toolbar icon on the left-hand side, and then click to create a new project.
 
-![Button to create a new azure functions project]({{site.post-images}}/azure-feedly-export/createproject-extension-button.png)
+> ![Button to create a new azure functions project]({{site.post-images}}/azure-feedly-export/createproject-extension-button.png)
 
 * For the project location, click `Browse...` and select the `src` folder as the location.
 
-![Browsing to the location]({{site.post-images}}/azure-feedly-export/createproject-extension-browse.png)
+> ![Browsing to the location]({{site.post-images}}/azure-feedly-export/createproject-extension-browse.png)
 
 * A dialog pops up asking about the language. For this tutorial, we're using C#.
 
-![Choose C# for language]({{site.post-images}}/azure-feedly-export/createproject-extension-selectlanguage.png)
+> ![Choose C# for language]({{site.post-images}}/azure-feedly-export/createproject-extension-selectlanguage.png)
 
 * Next, we'll choose a runtime. We're going with `v2 (.NET Standard)` for this tutorial.
 
-![Selecting the v2 Runtime]({{site.post-images}}/azure-feedly-export/createproject-extension-selectruntime.png)
+> ![Selecting the v2 Runtime]({{site.post-images}}/azure-feedly-export/createproject-extension-selectruntime.png)
 
 We can see at this point that the project is named `src`, which probably isn't what we're looking for.
 
-![Oops, wrong name]({{site.post-images}}/azure-feedly-export/createproject-after-namedsrc.png)
+> ![Oops, wrong name]({{site.post-images}}/azure-feedly-export/createproject-after-namedsrc.png)
 
 * Right-click the `src.csproj` filename and rename it to  `FeedlyOpmlExport.Functions.csproj`.
 
@@ -138,10 +138,16 @@ Our first function will be a timer-based function that will refresh the Feedly a
 ### Creating the Function
 
 * Go to the extension again, but this time select `Create Function`.
+
+> ![Create function button within VS Code]({{site.post-images}}/azure-feedly-export/createfunction-button.png)
+
 * Select your `src` folder as the location.
 * You'll see a prompt that you need to set a project language. Select `C#`.
 * You'll see a prompt that you need to set a project runtime. Select `v2`.
 * When prompted for a template, use `TimerTrigger`.
+
+> ![Selecting timer trigger]({{site.post-images}}/azure-feedly-export/createfunction-timertrigger.png)
+
 * When prompted for a name, use `RefreshFeedlyAuthToken`.
 * When prmopted for a namespace, use `FeedlyOpmlExport.Functions`.
 * When prompted for the CRON expression, use `0 0 */6 * * *` (Every 6 hours of every day)
@@ -356,7 +362,7 @@ public static class ExtractFeedlyOPML
 * Create a new storage account to be used by the app.
 * Click to create the function app.
 
-Allow a bit of time for the function app to finish deploying.
+Allow a bit of time for the function app to finish creation.
 
 ## Setting up Deployment for the Functions project
 
@@ -364,7 +370,10 @@ OK, so we have a Function App, but how do we connect that with our GitHub repo w
 
 * Open the function app in the Azure portal
 * Under the `Platform Features` tab, click `Deployment Center`.
-* When thne deployment center appears, select `GitHub` as the source.
+
+> ![Deployment center button in the potal]({{site.post-images}}/azure-feedly-export/functionsettings-deploymentcenter-button.png)
+
+* When the deployment center appears, select `GitHub` as the source.
 * Select your organization, the repo we created, and the `master` branch.
 * Complete the wizard and allow some time for the app to deploy.
 
@@ -392,15 +401,18 @@ The secret identifier is a URL that tells us how to access the secret.
 
 * Open the Key Vault settings in the Azure Portal
 * Select `Access Policies` and click to add a new policy.
+
+> ![Button to add an access policy]({{site.post-images}}/azure-feedly-export/accesspolicy-addbutton.png)
+
 * For the Principal, select the `feedly-opml-export` application by searching for it.
+
+> ![Selecting the principal for the access policy]({{site.post-images}}/azure-feedly-export/accesspolicy-selectprincipal.png)
+
 * Grant the application the authority to list, read, and set secrets.
+
+![Selecting the secret permissions]({{site.post-images}}/azure-feedly-export/accesspolicy-secretpermissions.png)
+
 * Save the access policy.
-
-### Add the KeyVault package to your project
-
-You'll need to add the KeyVault package so that it will actually unencrypt the settings.
-
-You can do this via running `dotnet add package Microsoft.Azure.KeyVault` from the `src` folder within your project, in a terminal window.
 
 ### Update the function app's settings to read from the key vault
 
