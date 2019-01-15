@@ -423,6 +423,10 @@ Whew, that was a heck of a journey. We:
 * Deployed the Function App to Azure right from GitHub
 * Hooked a function to an Azure storage blob with a public URL
 
+## But What did it Cost?
+
+Given that Azure Functions gives us our first _million_ calls for free, and we're only storing a tiny text file, I think I'll be charged roughly *$.01* per month for this tech. I think I'm willing to shell out $.12/year for this. :smile:
+
 ## See the full source project in action!
 
 [You can find the source code for this project on GitHub](https://github.com/SeanKilleen/feedly-opml-export) -- feel free to use it yourself!
