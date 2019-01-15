@@ -408,7 +408,7 @@ The secret identifier is a URL that tells us how to access the secret.
 
 * Grant the application the authority to list, read, and set secrets.
 
-![Selecting the secret permissions]({{site.post-images}}/azure-feedly-export/accesspolicy-secretpermissions.png)
+> ![Selecting the secret permissions]({{site.post-images}}/azure-feedly-export/accesspolicy-secretpermissions.png)
 
 * Save the access policy.
 
@@ -442,7 +442,7 @@ When you created the azure function project, you also created a storage account.
 * Name the container `opml-file`.
 * Set the public access level to `Container`, which will allow anonymous access to the container and the blobs in it. It's fine in this case because this is the thing we want to publicly serve up.
 
-![Blob container settings]({{site.post-images}}/azure-feedly-export/blobcontainer-create.png)
+> ![Blob container settings]({{site.post-images}}/azure-feedly-export/blobcontainer-create.png)
 
 ## Run the Function
 
