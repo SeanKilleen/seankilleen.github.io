@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: A real-time reading list with Feedly and Azure Functions"
+title: "Tutorial: An Automated reading list with Feedly and Azure Functions"
 
 date: 2019-01-11 14:00:00:00.000000000 -05:00
 
@@ -10,7 +10,7 @@ comments: true
 
 I've been a fan of RSS feeds for a long time. I love curating a collection of knowledge that streams to me at my pace, and I consider feeds to be a fundamental piece of how I keep up with technology and stay fresh. I currently use [Feedly](http://feedly.com) and have been a happy pro user for years.
 
-But something is missing. As much as I like reading, I also like sharing.
+But something is missing. As much as I like reading, I also like sharing. So, I'm going to build a system that will share my reading list in an automated way so that it stays evergreen.
 
 ## The Requirements
 
@@ -20,7 +20,7 @@ I think the requirements for this mini-project will be:
 * **Can continuously run with minimal intervention**. I need this system to be pretty low maintenance. It can't be held together with duct tape.
 * **Cost-effective.** I don't want to spend a ton of money on this.
 
-Luckily, with the benefits of Azure functions and APIs, I think we can make this work in a cost-effective way.
+Luckily, with the benefits of Azure Functions and APIs, I think we can make this work in a cost-effective way.
 
 ## The Ingredients
 
@@ -34,7 +34,7 @@ My solution is going to make use of:
 
 ## Getting Started
 
-**Before we get started: I'm here to help!** If the example is unclear, or something isn't working for you, drop me a line in the comments and we'll figure out a way to get a straightened out.
+**Before we get started: I'm here to help!** If the example is unclear, or something isn't working for you, drop me a line in the comments and we'll figure out a way to get it straightened out.
 
 * **Sign up for an Azure account**. You can [do it here](https://azure.microsoft.com/free/) if you don't already have an account (I believe they provide 30 days free with roughly $200 in credit, which is pretty awesome.)
 * **Get a Feedly API key**. You can [obtain the key here](https://feedly.com/v3/auth/dev), which will ask you to sign in, and then will provide you with your User ID and a link to your auth token & refresh token. Place these IDs and tokens in a notepad document or someplace temporary, or in a password manager.
@@ -87,7 +87,7 @@ Awesome! Now you can delete that notepad doc you have lying around.
 
 ## Setting up the Azure Function Project
 
-You can create Azure functions directly from the portal, but that bugs me because I want the benefits of source control, automated deployments, etc. -- so, for the purposes of this project, I'm going to create [a repository on GitHub](https://github.com/SeanKilleen/feedly-opml-export). You can create one and follow along, or feel free to [clone my repo](https://github.com/SeanKilleen/feedly-opml-export).
+You can create Azure Functions directly from the portal, but that bugs me because I want the benefits of source control, automated deployments, etc. -- so, for the purposes of this project, I'm going to create [a repository on GitHub](https://github.com/SeanKilleen/feedly-opml-export). You can create one and follow along, or feel free to [clone my repo](https://github.com/SeanKilleen/feedly-opml-export).
 
 These instructions assume that you're creating all of the below within a repository that will be hosted on GitHub. If you have any questions about getting that piece set up, drop a line in the comments and I'll be happy to try to assist.
 
@@ -102,7 +102,7 @@ These instructions assume that you're creating all of the below within a reposit
 
 ### A quick sidebar: Why I love VS Code
 
-Since I wasn't using Visual Studio, I was prepared to use the command line to create the Azure functions project, and wrote up a few sections on it. However, halfway through that, I discovered there's an [Azure Functions extension](vscode:extension/ms-azuretools.vscode-azurefunctions) which makes the whole process quick and easy directly from within VS Code. Beautiful.
+Since I wasn't using Visual Studio, I was prepared to use the command line to create the Azure Functions project, and wrote up a few sections on it. However, halfway through that, I discovered there's an [Azure Functions extension](vscode:extension/ms-azuretools.vscode-azurefunctions) which makes the whole process quick and easy directly from within VS Code. Beautiful.
 
 ### Creating an Azure Function project using the extension
 
