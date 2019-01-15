@@ -28,7 +28,7 @@ My solution is going to make use of:
 
 * **The Feedly API.** Feedly is kind enough to provide a developer API for access to your feeds (I think even for non-pro users?). This is what will give us access to our feeds.
 * **Azure Functions** is a perfect fit for this. A small, light-weight, cost-effective, easily-deployable solution to interact with APIs. We'll use functions to keep the Feedly auth token up to date (it needs to be refreshed), and to filter the OPML feed file to to the contents that we want.
-* **Azure KeyVault**. Since we're dealing with authorization tokens, I'm not just going to be dumping them any old place, even though it would probably be pretty fast to dump them plain-text into a private Azure storage blob. Safety first!
+* **Azure Key Vault**. Since we're dealing with authorization tokens, I'm not just going to be dumping them any old place, even though it would probably be pretty fast to dump them plain-text into a private Azure storage blob. Safety first!
 * **Azure Storage Blobs**. We'll have the function post the current list to a storage blob, where we can expose its contents publicly and link to it directly from this static site.
 * **VS Code**. This time around, I'm going to try to do everything from VS Code and the command line. Because why not?
 
@@ -66,7 +66,7 @@ My solution is going to make use of:
 * Give the key vault a name. I chose `feedly-export-keyvault`.
 * For the `Resource Group`, select the group you previously created.
 * The rest of the options (Standard pricing, principle, network access) can all remain in their default selections.
-* Click `Create` to create the keyvault, and allow a little time for the deployment to complete
+* Click `Create` to create the key vault, and allow a little time for the deployment to complete
 
 ## Add Your Keys to the Key Vault
 
@@ -426,7 +426,7 @@ Now that we have the right format, we're ready to update our app settings with t
 * Add settings that correspond to the app settings we created (`feedly-user-id`, `feedly-access-token`, `feedly-refresh-token`)
 * Enter the Key Vault formatted text for the app settings
 
-> ![Changing the app settings to refer to the keyvault]({{site.post-images}}/azure-feedly-export/appsettings-addkeyvaultvalues.png)
+> ![Changing the app settings to refer to the key vault]({{site.post-images}}/azure-feedly-export/appsettings-addkeyvaultvalues.png)
 
 * Save the settings
 
