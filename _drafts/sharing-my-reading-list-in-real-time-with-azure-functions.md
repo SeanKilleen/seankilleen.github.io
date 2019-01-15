@@ -45,7 +45,13 @@ My solution is going to make use of:
 
 * Log into your [Azure Portal](http://portal.azure.com)
 * Click `Resource Groups` on the left-hand side, and click "Create Resource Group"
+
+![The add resource group button]({{site.post-images}}/azure-feedly-export/create-resource-group-button.png)
+
 * Enter the information for your resource group. Here, I'm using `sean-feedly-opml-export`.
+
+![Entering the information for the resource group]({{site.post-images}}/azure-feedly-export/create-resource-group-info.png)
+
 * Click the review and then create buttons to create the group.
 
 ## Setting up the Azure Key Vault
@@ -53,6 +59,9 @@ My solution is going to make use of:
 * Open the resource group you created, either by going to `Resource Groups` on the left-hand menu or selecting "Go to resource group" when the success message appears upon creation.
 * Click "Add" to add a resource.
 * Search for `Key Vault`, and select the Azure Key Vault offering by Microsoft.
+
+![Search for Key Vault]({{site.post-images}}/azure-feedly-export/create-keyvault-search.png)
+
 * In the blade that opens to the right, click "Create".
 * Give the key vault a name. I chose `feedly-export-keyvault`.
 * For the `Resource Group`, select the group you previously created.
@@ -64,8 +73,14 @@ My solution is going to make use of:
 * Open your Key Vault resource by navigating to "All resources", finding the key vault you created, and clicking on it.
 * Under settings, click `Secrets`.
 * When the `Secrets` blade appears, click `Generate/Import`.
+
+![The button to add the a secret]({{site.post-images}}/azure-feedly-export/addkeys-secret-add.png)
+
 * Enter the name of the secret. First up, we'll use `feedly-user-id`.
 * Paste the user ID you previously generated, and then click `Create`.
+
+![Entering the secret information]({{site.post-images}}/azure-feedly-export/addkeys-secret-info.png)
+
 * Repeat the process for secrets that we'll call `feedly-access-token` and `feedly-refresh-token`.
 
 Awesome! Now you can delete that notepad doc you have lying around.
