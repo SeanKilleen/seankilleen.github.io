@@ -35,4 +35,4 @@ At least daily. If I add any feeds, you'll see them in the list. The whole thing
 
 A mix of The Feedly API and Azure Functions, Azure Key Vault, and Azure Storage Blobs.
 
-Stay tuned for a blog post on that subject soon.
+[Check out a tutorial to see how I did this step-by-step!]({% post_url 2019-01-14-tutorial-reading-list-feedly-azure-functions %})
