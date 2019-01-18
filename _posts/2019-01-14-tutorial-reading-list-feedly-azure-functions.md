@@ -154,7 +154,7 @@ At this point, the function will be created within your project.
 
 ### Adding some Nuget Packages
 
-I ~~happen to know~~ discovered along the way that we'll need some nuget packgaes so you may want to install them. The commands to do this via the terminal are:
+I ~~happen to know~~ discovered along the way that we'll need some nuget packages so you may want to install them. The commands to do this via the terminal are:
 
 * `dotnet add package Microsoft.Azure.KeyVault`
 * `dotnet add package Microsoft.Azure.Services.AppAuthentication`
