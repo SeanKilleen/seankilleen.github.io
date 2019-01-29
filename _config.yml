@@ -143,6 +143,9 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/SeanKilleen"
+    - label: "BMC"
+      icon: "fas fa-fw fa-mug-hot"
+      url: "http://buymeacoff.ee/SeanKilleen"
 
 
 # Reading Files
