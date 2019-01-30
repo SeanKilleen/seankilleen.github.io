@@ -53,15 +53,13 @@ layout: default
           </aside>
         {% endif %}
         {% if page.popular %}
-        <hr/>
-        <h4>Did this article help you?</h4>
-        <p class="small">
-          I'd be grateful to you if you'd be willing to <a href="http://buymeacoff.ee/SeanKilleen" target="_blank">buy me a coffee.</a>
-        </p>
-        <hr/>
+        {% include _bmc.html %}
         {% endif %}
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+        {% if page.popular %}
+        {% include _bmc.html %}
+        {% endif %}
       </section>
 
       <footer class="page__meta">
