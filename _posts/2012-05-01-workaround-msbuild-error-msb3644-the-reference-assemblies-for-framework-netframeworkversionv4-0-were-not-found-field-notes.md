@@ -4,6 +4,7 @@ title: 'Workaround: MSBuild Error MSB3644: "The reference assemblies for framewo
   ".NETFramework,Version=v4.0" were not found" [Field Notes]'
 date: 2012-05-01 19:29:00.000000000 -04:00
 comments: true
+popular: true
 redirect_from:
  - /2012/05/workaround-msbuild-error-msb3644.html
 ---

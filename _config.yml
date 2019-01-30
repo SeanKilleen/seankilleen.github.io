@@ -118,6 +118,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/SeanKilleen"
+    - label: "BMC"
+      icon: "fas fa-fw fa-mug-hot"
+      url: "http://buymeacoff.ee/SeanKilleen"
     - label: "StackOverflow"
       icon: "fab fa-fw fa-stack-overflow"
       url: "https://stackoverflow.com/users/story/316847"
@@ -127,12 +130,6 @@ author:
     - label: "dev.to"
       icon: "fab fa-fw fa-dev"
       url: "https://dev.to/SeanKilleen"
-    - label: "Excella Blog"
-      icon: "fas fa-fw fa-briefcase"
-      url: "https://www.excella.com/insights/author/sean-killeen"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/skilleen"
 
 # Site Footer
 footer:
@@ -146,6 +143,9 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/SeanKilleen"
+    - label: "BMC"
+      icon: "fas fa-fw fa-mug-hot"
+      url: "http://buymeacoff.ee/SeanKilleen"
 
 
 # Reading Files

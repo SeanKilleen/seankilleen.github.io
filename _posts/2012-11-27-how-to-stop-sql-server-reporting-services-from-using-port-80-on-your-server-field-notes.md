@@ -4,7 +4,7 @@ title: 'How To: Stop SQL Server Reporting Services from using Port 80 on your Se
   [Field Notes]'
 date: 2012-11-27 17:00:00.000000000 -05:00
 comments: true
-
+popular: true
 redirect_from:
  - /2012/11/how-to-stop-sql-server-reporting.html
 ---

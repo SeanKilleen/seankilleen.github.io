@@ -5,6 +5,8 @@ title: 'Robocopy: "You do not have the Backup and Restore Files user rights" [Fi
 date: 2011-10-18 12:29:00.000000000 -04:00
 excerpt: "In Windows 7, using Robocopy with the /B or /ZB switches I see the error 'You do not have the Backup and Restore Files user rights'."
 comments: true
+popular: true
+
 redirect_from: 
  - /2011/10/robocopy-you-do-not-have-backup-and.html
  
