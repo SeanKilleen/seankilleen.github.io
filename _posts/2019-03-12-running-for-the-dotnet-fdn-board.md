@@ -10,7 +10,7 @@ comments: true
 
 I'm excited to announce [my candidacy for the .NET Foundation's Board of Directors](https://election.dotnetfoundation.org/campaign-2019/sean-killeen.html)!
 
-I believe transparent, community-focused governance and OSS involvement is vital to the future of .NET's success, and I'd be exicited to support that however I can.
+I believe transparent, community-focused governance and OSS involvement is vital to the future of .NET's success, and I'd be excited to support that however I can.
 
 ## I'm interested in your thoughts!
 
