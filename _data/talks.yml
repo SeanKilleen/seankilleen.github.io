@@ -1,5 +1,23 @@
 talks: 
   - title: An Introduction to the Actor Model and Akka.NET
+    date: 2018-08-09
+    group: Code on the Beach
+    eventLink: https://www.codeonthebeach.com/
+    description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
+    location: Atlantic Beach, FL
+    sessionLink: https://www.codeonthebeach.com/COTB2018/session/3195/an-introduction-to-the-actor-model-and-akka-net
+    slidesLink: https://seankilleen.com/Presentations/2018-08_AkkaIntro/presentation
+    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/2018-08_AkkaIntro
+    videoLink: https://www.youtube.com/watch?v=4Afz-cdL7HU
+  - title: "(Fr)agile: How Agile Falls Apart, and What You Can Do to Hold It All Together"
+    date: 2018-10-02
+    group: TechBash 2018
+    eventLink: https://www.techbash.com/
+    description: Working in an agile mindset – especially when favoring specific approaches – can go wrong in about 100 ways. In this talk, I describe some lessons as a technical lead working on agile teams, holding it together with duct tape and a little help from my friends.
+    location: Kalahari Resort, PA
+    sessionLink: https://www.techbash.com/sessions/fragile-how-agile-falls-apart-and-what-you-can-do-to-hold-it-all-together
+    slidesLink: http://seankilleen.com/Presentations/2018-10_Fragile
+  - title: An Introduction to the Actor Model and Akka.NET
     date: 2019-03-14
     group: NYC .NET
     eventLink: https://www.meetup.com/NYC-NET-Developers/events/257961950
