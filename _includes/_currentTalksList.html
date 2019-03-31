@@ -1,0 +1,19 @@
+<table>
+    <thead>
+        <th>Presentation Name</th>
+        <th>Date</th>
+        <th>Venue</th>
+        <th>Description</th>
+    </thead>
+    <tbody>
+        {% for talk in site.data.talks.talks %}
+        <tr>
+            <td>{{ talk.title }}</td>
+            <td>{{ talk.date }}</td>
+            <td>{% if talk.eventLink %} <a href="{{ talk.eventLink }}">{{ talk.group }}</a>{% else %}{{ talk.group }}{% endif %}</td>
+            <td>{{ talk.description}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+

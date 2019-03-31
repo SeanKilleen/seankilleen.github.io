@@ -7,19 +7,15 @@ modified: 2019-03-30T09:25:00.000000-05:00
 comments: false
 ---
 
+I love to present on a variety of topics, from the lastest in the .NET & Cloud ecosystems, to the fundamentals of quality software development, to agile principles & practices. Below is a sample of what I'm presenting on.
+
 ## Have Something You'd Like to See?
 
 [Let me know](mailto:SeanKilleen@gmail.com) -- maybe I can present on it!
 
 ## Auto-Generated
 
-| Presentation Name | Date | Venue | Description |
-|-------------------|------|-------|-------------|
-
-  {% for talk in site.data.talks %}
-  | {{ talk.title }} | {{ talk.date }} | {% if talk.eventLink %} [{{ talk.group }}]({{ talk.eventLink }}) {% else %} {{ talk.group }} {% endif %} | {{ talk.description}} |
-
-  {% endfor %}
+{% include _currentTalksList.html %}
 
 ## Upcoming Presentations
 
