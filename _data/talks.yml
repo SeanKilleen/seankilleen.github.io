@@ -1,4 +1,96 @@
 talks: 
+  - title: "Attack-a the Akka! A brief intro to Akka.NET"
+    date: 2015-07-29
+    group: BaltoMSDN Meetup
+    description: Along with my co-presenter Matt Burleigh, I gave an introductory presentation on concepts behind the actor model and .NET’s most popular library for implementing the actor model, Akka.NET.
+    sessionLink: http://www.meetup.com/BaltoMSDN/events/223763140/
+    eventLink: http://www.meetup.com/BaltoMSDN
+    location: Baltimore, MD
+    slidesLink: https://github.com/SeanKilleen/Presentations/tree/master/2015-07-29_AkkaIntro_BaltoMSDN
+  - title: "TeamCity, OctopusDeploy, and Azure: So Happy Together"
+    date: 2016-02-16
+    group: DevOps DC Meetup
+    eventLink: http://www.meetup.com/DevOpsDC
+    sessionLink: http://www.meetup.com/DevOpsDC/events/226750186/
+    slidesLink: https://github.com/SeanKilleen/Presentations/tree/master/2016-02-18_TCAndOcto_DevOpsDC
+    description: This presentation sought to explain the pleasantly symbiotic relationship between a build server such as TeamCity and a release tool, such as OctopusDeploy. There weren’t as many .NET-focused developers there as expected, and time was a little short, but I’m looking forward to making some tweaks to this one and giving it again soon.
+    location: Reston, VA
+    slidesLink: https://seankilleen.com/Presentations/2018-03-28_TCOctopusAzure
+  - title: "Attack-a the Akka!"
+    date: 2016-06-05
+    group: Capital Area .NET Users Group
+    description: A revised update of a previous Akka.NET introductory presentation. I’ll endeavor to explain concepts and benefits behind the actor model, show how Akka.NET enables such a model with relative ease, and demonstrate some of the top features of the framework via code samples / demos. I have some additional time this go-round, so I’m hoping I’ll be able to add some more code samples.
+    sessionLink: http://www.meetup.com/CapArea-Net/events/231217207/
+    eventLink: http://www.meetup.com/CapArea-Net
+    location: Vienna, VA
+  - title: "Attack-a the Akka!"
+    date: 2016-06-05
+    group: Tech Talk DC
+    description: A revised update of a previous Akka.NET introductory presentation. I’ll endeavor to explain concepts and benefits behind the actor model, show how Akka.NET enables such a model with relative ease, and demonstrate some of the top features of the framework via code samples / demos. I have some additional time this go-round, so I’m hoping I’ll be able to add some more code samples.
+    sessionLink: http://www.meetup.com/TechTalkDC/events/231392513/
+    eventLink: http://www.meetup.com/TechTalkDC
+    location: Arlington, VA
+  - title: "Attack-a the Akka!"
+    date: 2017-03-29
+    group: Microsoft Maniacs
+    description: A revised version of my Akka.NET Talk
+    sessionLink: https://www.meetup.com/Microsoft-Maniacs/events/237553578
+    eventLink: https://www.meetup.com/Microsoft-Maniacs
+    location: Sterling, VA
+    slidesLink: https://seankilleen.com/Presentations/2017-03_AkkaIntro/presentation
+  - title: "Intro to OSS"
+    date: 2017-04-04
+    group: OSS Dev Conf 2017
+    description: A presentation on the "why" of OSS software with an introduction on how to contribute.
+    location: Blacksburg, VA
+    slidesLink: http://seankilleen.com/Presentations/2017-03_IntroToOSS
+  - title: "Casting a Wider .NET: Working Toward More OSS Maturity in the .NET Community"
+    date: 2017-06-05
+    group: .NET Fringe Conference
+    eventLink: http://2017.dotnetfringe.org
+    sessionLink: http://2017.dotnetfringe.org/speakers.html#sean-killeen
+    description: This talk discusses how to bring a model of open-source maturity to the .NET community in the hopes of getting others involved to realize our shared vision to make .NET a great space for open-source.
+    location: Portland, OR
+    slidesLink: https://seankilleen.com/Presentations/2017-06_AWiderDotNet
+    videoLink: https://www.youtube.com/watch?v=jFDXNGFvcYg
+  - title: "Stretching .NET: An Introduction to ElasticSearch"
+    date: 2017-11-15
+    group: Capital Area .NET Users Group
+    eventLink: https://www.meetup.com/CapArea-Net
+    sessionLink: https://www.meetup.com/CapArea-Net/events/244895364/
+    description: An introduction to ElasticSearch for .NET developers, with concepts & code.
+    location: Vienna, VA
+    slidesLink: http://seankilleen.com/Presentations/2017-11_ElasticSearch
+  - title: Certified Agile Testing & Automation
+    date: 2018-01-22
+    group: Excella Consulting
+    eventLink: https://www.excella.com/training#courses
+    sessionLink: https://www.excella.com/training#courses
+    description: Our ICAgile (ICP-TST/ATA) certified testing course is happening in January. Check the links for more info!
+    location: Arlington, VA
+  - title: Certified Agile Testing & Automation
+    date: 2018-03-05
+    group: Excella Consulting
+    eventLink: https://www.excella.com/training#courses
+    sessionLink: https://www.excella.com/training#courses
+    description: Our ICAgile (ICP-TST/ATA) certified testing course is happening in March. Check the links for more info!
+    location: Arlington, VA
+  - title: Introduction to Akka .NET
+    date: 2018-03-06
+    group: Central Maryland Association for .NET Professionals (CMAP)
+    eventLink: https://www.meetup.com/CMAP-Online
+    sessionLink: https://www.meetup.com/CMAP-Online/events/247545849/
+    description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
+    location: Columbia, MD
+    slidesLink: https://seankilleen.com/Presentations/2018-03_AkkaIntro/presentation
+  - title: "TeamCity, OctopusDeploy, and Azure: So Happy Together"
+    date: 2018-03-20
+    group: .NET DC User Group
+    eventLink: https://www.meetup.com/dotnetdc/
+    sessionLink: http://meetu.ps/e/DYnG9/1Zghg/d
+    description: Sean Killeen is going where no presenter should ever go – a live demo! Continuous integration and automated delivery are considered best practices, but how does it actually happen? During this talk, Sean will create – from scratch – a CI/CD pipeline for a real project using TeamCity, OctopusDeploy, and the Azure cloud. Along the way, we’ll discuss Chocolatey, deployment slots, nuget packages, and more. We’ll also touch on Appveyor and some other Azure deployment methods, as well as the “why” of CI/CD.
+    location: Bethesda, MD
+    slidesLink: https://seankilleen.com/Presentations/2018-03_TCOctopusAzure
   - title: "TeamCity, OctopusDeploy, and Azure: So Happy Together"
     date: 2018-03-28
     group: Tech Talk DC
@@ -60,7 +152,6 @@ talks:
   - title: "Serverless is more: An Introduction to Azure Functions"
     date: 2019-05-07
     group: Central Maryland Association for .NET Professionals (CMAP)
-    # eventLink: 
     description: In this session, Sean will walk through how to use Azure Functions and Azure Key Vault to create a system to continually share his RSS subscriptions with the world. Follow along as we discuss concepts of serverless computing, build a functional application, an marvel at all the things we didn’t have to do.
     location: Columbia, MD
   - title: "(Fr)agile: How Agile Falls Apart, and What You Can Do to Hold It All Together"
