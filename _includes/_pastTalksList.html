@@ -1,0 +1,14 @@
+<table>
+    <thead>
+        <th>Presentation Name</th>
+        <th>Date</th>
+        <th>Venue</th>
+        <th>Description</th>
+    </thead>
+    <tbody>
+        {% for talk in site.data.talks.talks %}
+        {% include _talkRow.html title=talk.title date=talk.date eventLink=talk.eventLink group=talk.group description=talk.description sessionLink=talk.sessionLink location=talk.location slidesLink=talk.slidesLink codeLink=talk.codeLink videoLink=talk.videoLink %}
+        {% endfor %}
+    </tbody>
+</table>
+
