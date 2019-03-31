@@ -6,7 +6,7 @@
         <th>Description</th>
     </thead>
     <tbody>
-        {% assign latestFirst = (site.data.talks.talks | sort: 'date' ) | reverse %}
+        {% assign latestFirst = (site.data.talks.past | sort: 'date' ) | reverse %}
         {% for talk in latestFirst %}
         {% include _talkRow.html title=talk.title date=talk.date eventLink=talk.eventLink group=talk.group description=talk.description sessionLink=talk.sessionLink location=talk.location slidesLink=talk.slidesLink codeLink=talk.codeLink videoLink=talk.videoLink %}
         {% endfor %}
