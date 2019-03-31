@@ -1,0 +1,6 @@
+<tr>
+    <td>{{ include.title }}</td>
+    <td>{{ include.date }}</td>
+    <td>{% if include.eventLink %} <a href="{{ include.eventLink }}">{{ include.group }}</a>{% else %}{{ include.group }}{% endif %}</td>
+    <td>{{ include.description}}</td>
+</tr>

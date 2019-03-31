@@ -7,12 +7,7 @@
     </thead>
     <tbody>
         {% for talk in site.data.talks.talks %}
-        <tr>
-            <td>{{ talk.title }}</td>
-            <td>{{ talk.date }}</td>
-            <td>{% if talk.eventLink %} <a href="{{ talk.eventLink }}">{{ talk.group }}</a>{% else %}{{ talk.group }}{% endif %}</td>
-            <td>{{ talk.description}}</td>
-        </tr>
+        {% include _talkRow.html title=talk.title date=talk.date eventLink=talk.eventLink group=talk.group description=talk.description %}
         {% endfor %}
     </tbody>
 </table>
