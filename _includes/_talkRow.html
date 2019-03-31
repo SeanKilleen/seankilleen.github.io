@@ -1,5 +1,5 @@
 <tr>
-    <td>{% if include.sessionLink %}<a href="{{ include.sessionLink }}">{{ include.title }}</a>{% else %}{{ include.title }}{% endif %} {% if include.slidesLink or include.codeLink or include.videoLink %}({% if include.slidesLink %}<a href="{{include.slidesLink}}">slides</a>{% endif %}){% endif %}</td>
+    <td>{% if include.sessionLink %}<a href="{{ include.sessionLink }}">{{ include.title }}</a>{% else %}{{ include.title }}{% endif %} {% if include.slidesLink or include.codeLink or include.videoLink %}({% if include.slidesLink %}<a href="{{include.slidesLink}}">slides</a>{% endif %}{% if include.codeLink %}, <a href="{{include.codeLink}}">code</a>{% endif %}{% if include.videoLink %}, <a href="{{include.videoLink}}">video</a>{% endif %}){% endif %}</td>
     <td>{{ include.date | date: "%b %d, %Y" }}</td>
     <td>{% if include.eventLink %} <a href="{{ include.eventLink }}">{{ include.group }}</a>{% else %}{{ include.group }}{% endif %} ({{ include.location }})</td>
     <td>{{ include.description }}</td>
