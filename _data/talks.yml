@@ -1,4 +1,19 @@
 talks: 
+  - title: "TeamCity, OctopusDeploy, and Azure: So Happy Together"
+    date: 2018-03-28
+    group: Tech Talk DC
+    eventLink: https://www.meetup.com/TechTalkDC
+    sessionLink: https://www.meetup.com/TechTalkDC/events/248663061/
+    description: Sean Killeen is going where no presenter should ever go – a live demo! Continuous integration and automated delivery are considered best practices, but how does it actually happen? During this talk, Sean will create – from scratch – a CI/CD pipeline for a real project using TeamCity, OctopusDeploy, and the Azure cloud. Along the way, we’ll discuss Chocolatey, deployment slots, nuget packages, and more. We’ll also touch on Appveyor and some other Azure deployment methods, as well as the “why” of CI/CD.
+    location: Arlington, VA
+    slidesLink: https://seankilleen.com/Presentations/2018-03-28_TCOctopusAzure
+  - title: Introduction to Akka .NET
+    date: 2018-04-20
+    group: Free public webinar
+    eventLink: https://xluh.co/akka2018
+    description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
+    location: Online
+    slidesLink: https://seankilleen.com/Presentations/2018-04_AkkaIntro/presentation
   - title: How I Learned to Stop Worrying and Love Feedback Loops
     date: 2018-04-21
     group: OSS Dev Conf
