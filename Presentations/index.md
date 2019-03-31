@@ -15,7 +15,7 @@ I love to present on a variety of topics, from the lastest in the .NET & Cloud e
 
 ## Auto-Generated
 
-{% include _currentTalksList.html %}
+{% include _upcomingTalksList.html %}
 
 ## Upcoming Presentations
 
