@@ -1,5 +1,5 @@
 <tr>
-    <td>{{ include.title }}</td>
+    <td>{% if include.sessionLink %}<a href="{{ include.sessionLink }}">{{ include.title }}</a>{% else %}{{ include.title }}{% endif %}</td>
     <td>{{ include.date | date: "%b %d, %Y" }}</td>
     <td>{% if include.eventLink %} <a href="{{ include.eventLink }}">{{ include.group }}</a>{% else %}{{ include.group }}{% endif %} ({{ include.location }})</td>
     <td>{{ include.description }}</td>
