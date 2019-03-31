@@ -12,8 +12,8 @@ main:
 - title: Toolbox
   url: /toolbox/
 
-- title: Presentations
-  url: /presentationcatalog/
+- title: Talks
+  url: /talks/
   
 - title: AMA
   url: https://github.com/SeanKilleen/ama
