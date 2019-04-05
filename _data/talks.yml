@@ -54,6 +54,13 @@ past:
     slidesLink: https://seankilleen.com/Presentations/2017-06_AWiderDotNet
     videoLink: https://www.youtube.com/watch?v=jFDXNGFvcYg
   - title: "Stretching .NET: An Introduction to ElasticSearch"
+    date: 2017-10-10
+    group: NoVA Code Camp
+    eventLink: http://novacodecamp.org/
+    description: An introduction to ElasticSearch for .NET developers, with concepts & code.
+    location: Reston, VA
+    slidesLink: http://seankilleen.com/Presentations/2017-10_ElasticSearch
+  - title: "Stretching .NET: An Introduction to ElasticSearch"
     date: 2017-11-15
     group: Capital Area .NET Users Group
     eventLink: https://www.meetup.com/CapArea-Net
