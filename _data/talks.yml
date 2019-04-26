@@ -182,5 +182,12 @@ upcoming:
     date: 2019-06-19
     group: Microsoft Maniacs
     eventLink: https://www.meetup.com/Microsoft-Maniacs/
+    sessionLink: https://www.meetup.com/Microsoft-Maniacs/events/260895955/
     description: In this session, Sean will walk through how to use Azure Functions and Azure Key Vault to create a system to continually share his RSS subscriptions with the world. Follow along as we discuss concepts of serverless computing, build a functional application, an marvel at all the things we didn’t have to do.
     location: Sterling, VA
+  - title: "Future-proofing Your Desktop Apps With .NET Core"
+    date: 2019-06-20
+    group: Microsoft Insider Dev Tour
+    eventLink: https://insiderdevtour.com/
+    description: (Coming soon.)
+    location: Arena Stage at the Mead Center for American Theater, Washington, DC
