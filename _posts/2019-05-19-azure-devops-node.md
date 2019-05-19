@@ -12,7 +12,7 @@ I recently created [’unanet-summarizer’, a small utility to give my colleagu
 
 It was time for a build and deployment system, and I'm in love with [Azure DevOps](http://dev.azure.com) so I wanted to take this oportunity to write up the process and document it for my colleagues and others.
 
-## Goals
+# Goals
 
 I wanted to achieve the following for this JS project:
 
@@ -21,7 +21,11 @@ I wanted to achieve the following for this JS project:
 * Status badges for builds and releases
 * I want anyone to be able to view the builds and deployments
 
-# Steps from Comments
+# The Walkthrough
+
+What follows below is a full walkthrough, complete with some struggles, because I want it to be clear when you might miss things or run into confusing steps.
+
+## Setting up the Project
 
 * I go to <http://dev.azure.com> and sign in with my Excella account.
 * I create a new project:
@@ -50,6 +54,9 @@ I wanted to achieve the following for this JS project:
 > ![image](https://user-images.githubusercontent.com/2148318/57156491-1d9ad680-6dac-11e9-9e09-3621161f93d6.png)
 
 * I am then asked to authenticate with my Excella account again. No idea why.
+
+## Setting up the Pipeline
+
 * I'm taken back to the pipelines page, where I am on the "configuration" step and can now choose what kind of pipeline I want. I choose `node.js` because I think that'll be most suitable
 
 > ![image](https://user-images.githubusercontent.com/2148318/57156602-5e92eb00-6dac-11e9-94e8-345cb6ae468a.png)
@@ -70,7 +77,7 @@ I wanted to achieve the following for this JS project:
 
 > ![image](https://user-images.githubusercontent.com/2148318/57157681-66a05a00-6daf-11e9-80de-cf314fae9629.png)
 
-# Status Badge
+## Status Badge
 
 Next up, I'd like to set up a status badge for the builds that I can show in the `README` file. 
 
@@ -90,7 +97,7 @@ Next up, I'd like to set up a status badge for the builds that I can show in the
 
 * Nice! I'll create a PR and add that to the `README`.
 
-Oh shoot, that's on me. I meant to add a PR but accidentally pushed it to master: https://github.com/excellalabs/unanet-summarizer/commit/3abb2e71968cb329f6a025225a05fe60e3713d1d
+## Outputting the distribution files
 
 * I create a PR that adds the following to the azure pipelines file. The YAML will (I think) take the `dist` folder of our build and output it, but only when the branch is the master branch. I chose the `dist` folder so we wouldn't have to deal with `node_modules`, and I chose only the `master` branch because we really only will do anything with the output when it is the master branch we're building, since that's what we'll release.
 
@@ -129,17 +136,15 @@ OK, well that was actually a little weird. It turns out that the build directori
 
 ...and when I changed to that, it still didn't work. Azure Pipelines isn't finding the output files. 
 
-I tried seeing via #52 if Azure was maybe doing some magic to copy things but it looks like that's not the case, so I'm back to looking at the copy files task.
-
 OK hmm, all of a sudden it works and I don't know why. I see in the logs:
 
 `Copying /home/vsts/work/1/s/dist/unanet-summarizer-release.js to /home/vsts/work/1/a/dist/unanet-summarizer-release.js`
 
 And it copied 6000 files including node_modules etc.
 
-So i'm going to update it now to output from `dist`. A very interesting issue. I'll look into this more and post the details of the task once I get it right.
+So i'm going to update it now to output from `dist`. A very interesting issue. 
 
-OK for some reason, this ended up being the task to do it:
+For some reason, this ended up being the task to do it:
 
 ```yaml
 - task: CopyFiles@2
@@ -151,7 +156,13 @@ OK for some reason, this ended up being the task to do it:
 
 I still don't understand what the final change was that made it work, but this does at least make sense to me.
 
-Onward! The next step will be to create an Azure blob and then deploy the released JS to it.
+Onward! 
+
+## Creating the Container for Storage
+
+NOTE: This is only one way amongst many to do this. You might want to push files to GitHub pages, Netlify, etc. -- this just happened to work for me.
+
+The next step will be to create an Azure blob and then deploy the released JS to it.
 
 * I login to the Azure portal using my Excella account
 * I navigate to the resource group we use for these things
@@ -184,6 +195,8 @@ Onward! The next step will be to create an Azure blob and then deploy the releas
 > ![image](https://user-images.githubusercontent.com/2148318/57162656-dff27980-6dbc-11e9-8538-12ad1bbd7fdb.png)
 
 This is where we'll eventually deploy to.
+
+## Creating the Deployment
 
 Speaking of, sounds like we should go create that deployment!
 
