@@ -257,6 +257,8 @@ Speaking of, sounds like we should go create that deployment!
 
 So, I'll leave off here for now until my IT dept is able to unblock me. 
 
+## A Note on Azure Subscription Permissions
+
 And we're back! Fun fact: clicking that authorize button attempts to do so for a whole subscription, but if you click the advanced options:
 
 > ![image](https://user-images.githubusercontent.com/2148318/57164041-e4b92c80-6dc0-11e9-9e4a-696bb0c85194.png)
@@ -267,7 +269,7 @@ You can select a resource group, and then it will work since I have access to th
 
 ...okay, back to our regularly scheduled show.
 
-____
+## Selecting the Deployment Destination and Deploying
 
 * I select the destination type and point it towards the storage account I created:
 
@@ -295,6 +297,8 @@ ____
 
 * Just to check, I get the URL of the blob (<https://unanetsummarizer.blob.core.windows.net/unanet-summarizer/unanet-summarizer-release.js>) and i hit it in my browser. It works!
 
+## Adding a Release Badge
+
 Now, releases to prod are cool, so I want to show them off publicly. How do I do that?
 
 * I [open the release definition in Azure DevOps](https://dev.azure.com/excellaco/unanet-summarizer/_releaseDefinition?definitionId=1&_a=environments-editor-preview). I click Options, Integrations, enable the status badge, copy the URL, and then Save the release options:
@@ -305,6 +309,8 @@ We can check it here: ![Status](https://vsrm.dev.azure.com/excellaco/_apis/publi
 
 Sweet! I think I'll add it to the README as well. 
 
+## Oops: Let's *actually* Continuously Deploy
+
 Oops, one last thing: I'd messed up on the continuous deployment trigger option earlier. When I said it would do so continuously, I forgot you had to explicitly enable that first (which makes sense and I appreciate.)
 
 * I edit the release definition
@@ -314,7 +320,9 @@ Oops, one last thing: I'd messed up on the continuous deployment trigger option 
 
 * I save the release.
 
-...*now* it deploys automatically.
+...*now* it deploys automatically. For real for real.
+
+## The Results
 
 Now I see:
 
@@ -324,4 +332,4 @@ Now I see:
 ✅ The timestamps on the blob are updated
 ✅ The status indicators on the README are correct.
 
-And with that, I think we can close this ticket as having completed this part of the process for now.
+And with that, our work is done!
