@@ -8,9 +8,18 @@ comments: true
 
 ---
 
-## Background 
+I recently created [’unanet-summarizer’, a small utility to give my colleagues some additional summary information on their timesheets](http://github.com/excellalabs/unanet-summarizer). It got a little more attention than I expected, but best of all it got others wanting to help out, and the infrastructure grew out rapidly. 
 
-TODO
+It was time for a build and deployment system, and I'm in love with [Azure DevOps](http://dev.azure.com) so I wanted to take this oportunity to write up the process and document it for my colleagues and others.
+
+## Goals
+
+I wanted to achieve the following for this JS project:
+
+* A build that runs as part of every pull requesr so we can detect any broken changes
+* A production release that outputs artifacts to a hosting location (in this case, a simple storage blob on Azure)
+* Status badges for builds and releases
+* I want anyone to be able to view the builds and deployments
 
 # Steps from Comments
 
