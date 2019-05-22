@@ -71,11 +71,11 @@ What follows below is a full walkthrough, complete with some struggles, because 
 
 * We are given options for how to commit to the repo. I choose to commit directly to master because I live on the edge. No, kidding, but I do choose it because I see the contents and know committing to master will allow the build to kick off.
 
-> ![image](https://user-images.githubusercontent.com/2148318/57157590-27720900-6daf-11e9-8529-ec62ebdda608.png)
+> ![the set up and run screen which allows me to commit the files to the master branch](https://user-images.githubusercontent.com/2148318/57157590-27720900-6daf-11e9-8529-ec62ebdda608.png)
 
 * An agent prepares itself and then [runs the job](https://dev.azure.com/excellaco/unanet-summarizer/_build/results?buildId=207). It's a success! We're just not doing anything with the output yet.
 
-> ![image](https://user-images.githubusercontent.com/2148318/57157681-66a05a00-6daf-11e9-80de-cf314fae9629.png)
+> ![build success](https://user-images.githubusercontent.com/2148318/57157681-66a05a00-6daf-11e9-80de-cf314fae9629.png)
 
 ## Status Badge
 
@@ -85,11 +85,11 @@ Next up, I'd like to set up a status badge for the builds that I can show in the
 
 * In the drop-down to the right, I select `Status Badge`:
 
-> ![image](https://user-images.githubusercontent.com/2148318/57157794-aebf7c80-6daf-11e9-9f8d-5d76eb31dc98.png)
+> ![build menu dropdown](https://user-images.githubusercontent.com/2148318/57157794-aebf7c80-6daf-11e9-9f8d-5d76eb31dc98.png)
 
 * I choose the branch, and then copy the provided markdown (which is nice):
 
-> ![image](https://user-images.githubusercontent.com/2148318/57157904-f1815480-6daf-11e9-8318-d56a43d2f99b.png)
+> ![copying the provided markdown](https://user-images.githubusercontent.com/2148318/57157904-f1815480-6daf-11e9-8318-d56a43d2f99b.png)
 
 *  I test that markdown here: (because why not?) 
 
@@ -113,11 +113,11 @@ You know what. Building this PR makes me realize we never turned on the azure pi
 
 ...wait, nevermind, we don't have to. Azure Pipelines already set that up. 
 
-> ![image](https://user-images.githubusercontent.com/2148318/57158614-d7e10c80-6db1-11e9-94df-44342895d316.png)
+> ![azure pipelines build status](https://user-images.githubusercontent.com/2148318/57158614-d7e10c80-6db1-11e9-94df-44342895d316.png)
 
 * I watch the job go through on the Azure Pipelines and it totally! ....fails. Oops, I think I picked the wrong directory maybe?
 
-> ![image](https://user-images.githubusercontent.com/2148318/57158716-1b3b7b00-6db2-11e9-8556-ce4c7ff4b388.png)
+> ![pipeline error about a path not existing](https://user-images.githubusercontent.com/2148318/57158716-1b3b7b00-6db2-11e9-8556-ce4c7ff4b388.png)
 
 Interesting. In the build output itself I see ` /home/vsts/work/1/s` instead of an `a`. Maybe I'm using the wrong build variable? 
 
@@ -168,31 +168,31 @@ The next step will be to create an Azure blob and then deploy the released JS to
 * I navigate to the resource group we use for these things
 * I click "Add" to add a resource.
 
-> ![image](https://user-images.githubusercontent.com/2148318/57162354-fea44080-6dbb-11e9-8cc6-475fa05dde67.png)
+> ![the add resource button](https://user-images.githubusercontent.com/2148318/57162354-fea44080-6dbb-11e9-8cc6-475fa05dde67.png)
 
 * I type "storage" and select "Storage Account"
 
-> ![image](https://user-images.githubusercontent.com/2148318/57162384-15e32e00-6dbc-11e9-90ef-ee37a19a5c27.png)
+> ![selecting the storage type](https://user-images.githubusercontent.com/2148318/57162384-15e32e00-6dbc-11e9-90ef-ee37a19a5c27.png)
 
 * I click "Create" on the intro screen.
 * I provide a name, region, and type for the blob storage:
 
-> ![image](https://user-images.githubusercontent.com/2148318/57162462-5478e880-6dbc-11e9-8db7-03765b345a40.png)
+> ![filling in the information for our blob storage](https://user-images.githubusercontent.com/2148318/57162462-5478e880-6dbc-11e9-8db7-03765b345a40.png)
 
 * On the review screen, I click create.
 * When the creation completes, I click to go to the resource.
 * I don't have any containers yet, so I click to add one:
 
-> ![image](https://user-images.githubusercontent.com/2148318/57162530-88eca480-6dbc-11e9-9cc6-0e56aa800a7f.png)
+> ![creating a container](https://user-images.githubusercontent.com/2148318/57162530-88eca480-6dbc-11e9-9cc6-0e56aa800a7f.png)
 
 * I provide a name, and select container level anonymous read access, since our intention is explicitly to serve our scripts for the entire world to see.
 
-> ![image](https://user-images.githubusercontent.com/2148318/57162589-ade11780-6dbc-11e9-917a-447b336b1b7f.png)
+> ![providing information on the storage container](https://user-images.githubusercontent.com/2148318/57162589-ade11780-6dbc-11e9-917a-447b336b1b7f.png)
 
 * After the container is created, I click into it. 
 * I then click properties on the left-hand menu, and get the URL of <https://unanetsummarizer.blob.core.windows.net/unanet-summarizer>:
 
-> ![image](https://user-images.githubusercontent.com/2148318/57162656-dff27980-6dbc-11e9-8538-12ad1bbd7fdb.png)
+> ![getting the URL for the blob container](https://user-images.githubusercontent.com/2148318/57162656-dff27980-6dbc-11e9-8538-12ad1bbd7fdb.png)
 
 This is where we'll eventually deploy to.
 
