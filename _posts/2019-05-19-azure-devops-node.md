@@ -326,10 +326,10 @@ Oops, one last thing: I'd messed up on the continuous deployment trigger option 
 
 Now I see:
 
-✅ The build finishes 
-✅ The release created itself
-✅ The release deploys the blob appropriately
-✅ The timestamps on the blob are updated
-✅ The status indicators on the README are correct.
+* ✅ The build finishes 
+* ✅ The release created itself
+* ✅ The release deploys the blob appropriately
+* ✅ The timestamps on the blob are updated
+* ✅ The status indicators on the README are correct.
 
 And with that, our work is done!
