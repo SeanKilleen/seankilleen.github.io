@@ -30,28 +30,28 @@ What follows below is a full walkthrough, complete with some struggles, because 
 * I go to <http://dev.azure.com> and sign in with my Excella account.
 * I create a new project:
 
-> ![image](https://user-images.githubusercontent.com/2148318/57156121-31920880-6dab-11e9-92d5-6042e6525340.png)
+> ![the create new project button on azure devops](https://user-images.githubusercontent.com/2148318/57156121-31920880-6dab-11e9-92d5-6042e6525340.png)
 
 * I give it a name and select the options, keeping it public so that anyone will be able to view the builds & releases:
 
-> ![image](https://user-images.githubusercontent.com/2148318/57156195-5d14f300-6dab-11e9-9045-d8c3bdebd75e.png)
+> ![entering my informaton for the project](https://user-images.githubusercontent.com/2148318/57156195-5d14f300-6dab-11e9-9045-d8c3bdebd75e.png)
 
 * In the left navigation, I click pipelines, which tells me (unsurprisingly) that no pipelines exist. I click to create one:
  
-> ![image](https://user-images.githubusercontent.com/2148318/57156269-8df52800-6dab-11e9-96fb-a1af1c973be6.png)
+> ![new pipeline button on the pipelines page](https://user-images.githubusercontent.com/2148318/57156269-8df52800-6dab-11e9-96fb-a1af1c973be6.png)
 
 * I select GitHub for the location of the code:
 
-> ![image](https://user-images.githubusercontent.com/2148318/57156315-a6fdd900-6dab-11e9-9538-8def3a51b2c3.png)
+> ![seleting the GitHub option](https://user-images.githubusercontent.com/2148318/57156315-a6fdd900-6dab-11e9-9538-8def3a51b2c3.png)
 
 * I select all repositories from the dropdown (since it's not my repo but rather `excellalabs`). I then search for unanet and click the summarizer project.
 
-> ![image](https://user-images.githubusercontent.com/2148318/57156425-f2b08280-6dab-11e9-84f0-e82aa57cf53f.png)
+> ![selecting the project](https://user-images.githubusercontent.com/2148318/57156425-f2b08280-6dab-11e9-84f0-e82aa57cf53f.png)
 
 * I authenticate with GitHub
 * In GitHub, I am then asked to give permission for the Azure Pipelines app to access the repo. I approve. 👍 
 
-> ![image](https://user-images.githubusercontent.com/2148318/57156491-1d9ad680-6dac-11e9-9e09-3621161f93d6.png)
+> ![approving permissions](https://user-images.githubusercontent.com/2148318/57156491-1d9ad680-6dac-11e9-9e09-3621161f93d6.png)
 
 * I am then asked to authenticate with my Excella account again. No idea why.
 
@@ -59,15 +59,15 @@ What follows below is a full walkthrough, complete with some struggles, because 
 
 * I'm taken back to the pipelines page, where I am on the "configuration" step and can now choose what kind of pipeline I want. I choose `node.js` because I think that'll be most suitable
 
-> ![image](https://user-images.githubusercontent.com/2148318/57156602-5e92eb00-6dac-11e9-94e8-345cb6ae468a.png)
+> ![choosing the default type of pipeline](https://user-images.githubusercontent.com/2148318/57156602-5e92eb00-6dac-11e9-94e8-345cb6ae468a.png)
 
 * Hey cool, Azure DevOps creates a YAML file that has a build set up for us that is triggered on any PR and anytime we push to master. It runs `npm install` and `npm build`. That seems pretty spot on. 
 
-> ![image](https://user-images.githubusercontent.com/2148318/57156857-10cab280-6dad-11e9-9966-c4944e6bae68.png)
+> ![the YAML file that is created for us](https://user-images.githubusercontent.com/2148318/57156857-10cab280-6dad-11e9-9966-c4944e6bae68.png)
 
 * Azure DevOps also has this nice Save & run button which will commit the YAML file back to our repo and begin the build process. So I click that to save it.
 
-> ![image](https://user-images.githubusercontent.com/2148318/57157459-c2b6ae80-6dae-11e9-82a0-1bb58b89897a.png)
+> ![clicking the save and run button](https://user-images.githubusercontent.com/2148318/57157459-c2b6ae80-6dae-11e9-82a0-1bb58b89897a.png)
 
 * We are given options for how to commit to the repo. I choose to commit directly to master because I live on the edge. No, kidding, but I do choose it because I see the contents and know committing to master will allow the build to kick off.
 
