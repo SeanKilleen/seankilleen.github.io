@@ -202,47 +202,47 @@ Speaking of, sounds like we should go create that deployment!
 
 * Back into Azure DevOps, I choose [Releases](https://dev.azure.com/excellaco/unanet-summarizer/_release) from the left-hand menu. I don't have yet, which makes sense. I choose to create a new one.
 
-> ![image](https://user-images.githubusercontent.com/2148318/57162755-3e1f5c80-6dbd-11e9-8ab0-49a362df232f.png)
+> ![screen showing no release pipelines](https://user-images.githubusercontent.com/2148318/57162755-3e1f5c80-6dbd-11e9-8ab0-49a362df232f.png)
 
 * I'm prompted to start with a template but because we're outputting to a blob, I think that an empty job probably makes the most sense.
 
-> ![image](https://user-images.githubusercontent.com/2148318/57162838-6eff9180-6dbd-11e9-835f-a8e91f6a72f5.png)
+> ![selecting a job type of empty job](https://user-images.githubusercontent.com/2148318/57162838-6eff9180-6dbd-11e9-835f-a8e91f6a72f5.png)
 
 * I get a default stage (what you might do for different environments, etc.). In our case, we have just one stage so far: "Deploy to the production blob". So I give the stage a name.
 
-> ![image](https://user-images.githubusercontent.com/2148318/57162911-a3734d80-6dbd-11e9-8ee6-772555942729.png)
+> ![providing a name for the release stage](https://user-images.githubusercontent.com/2148318/57162911-a3734d80-6dbd-11e9-8ee6-772555942729.png)
 
 * I'm not actually pulling in any artifacts that would kick off a release yet, so I click to do that:
 
-> ![image](https://user-images.githubusercontent.com/2148318/57162935-bbe36800-6dbd-11e9-8ff8-9b662f741ca3.png)
+> ![clicking the button to add an artifact](https://user-images.githubusercontent.com/2148318/57162935-bbe36800-6dbd-11e9-8ff8-9b662f741ca3.png)
 
 * I tell the release that I want it to use the artifacts from the latest build of the `master` branch, and I click save:
 
-> ![image](https://user-images.githubusercontent.com/2148318/57163018-fe0ca980-6dbd-11e9-9ee5-00154e543efe.png)
+> ![providing the information for the artifact to pull in](https://user-images.githubusercontent.com/2148318/57163018-fe0ca980-6dbd-11e9-9ee5-00154e543efe.png)
 
 * Note the lightning bolt on the artifacts. That means that anytime a new one of these artifacts shows up, a release will be created and executed.
 
-> ![image](https://user-images.githubusercontent.com/2148318/57163071-21375900-6dbe-11e9-823e-285b19c93d90.png)
+> ![showing the label of the lightning bolt, which means continuous deployment](https://user-images.githubusercontent.com/2148318/57163071-21375900-6dbe-11e9-823e-285b19c93d90.png)
 
 * I click to view the tasks for the stage, since we haven't added any yet:
 
-> ![image](https://user-images.githubusercontent.com/2148318/57163129-4a57e980-6dbe-11e9-9643-3eedad2afd14.png)
+> ![clicking the link to view stage tasks](https://user-images.githubusercontent.com/2148318/57163129-4a57e980-6dbe-11e9-9643-3eedad2afd14.png)
 
 * I click to add a task to the agent job:
 
-> ![image](https://user-images.githubusercontent.com/2148318/57163155-5cd22300-6dbe-11e9-9f13-91c838dd3c8f.png)
+> ![clicking the plus icon to add a task](https://user-images.githubusercontent.com/2148318/57163155-5cd22300-6dbe-11e9-9f13-91c838dd3c8f.png)
 
 * In the tasks, list, I search for "blob" (this is literally my first time doing this), and awesomely, "Azure File Copy" comes up. I click to add it.
 
-> ![image](https://user-images.githubusercontent.com/2148318/57163197-7d01e200-6dbe-11e9-9a87-ee5428bdbceb.png)
+> ![searching for and selecting azure file copy](https://user-images.githubusercontent.com/2148318/57163197-7d01e200-6dbe-11e9-9a87-ee5428bdbceb.png)
 
 * I see that "some settings need my attention", so I click into it:
 
-> ![image](https://user-images.githubusercontent.com/2148318/57163227-930fa280-6dbe-11e9-9c35-ac51bc910ddc.png)
+> ![a validation warning showing that some settings need attention](https://user-images.githubusercontent.com/2148318/57163227-930fa280-6dbe-11e9-9c35-ac51bc910ddc.png)
 
 * I need to select a source. Luckily, there's an elipsis menu that lets me select the location based on my artifact output:
 
-> ![image](https://user-images.githubusercontent.com/2148318/57163309-d2d68a00-6dbe-11e9-9096-99f9a10d4a7b.png)
+> ![the empty source with an ellipsis to indicate more options](https://user-images.githubusercontent.com/2148318/57163309-d2d68a00-6dbe-11e9-9096-99f9a10d4a7b.png)
 
 
 * I choose the artifact folder that I want to copy from:
