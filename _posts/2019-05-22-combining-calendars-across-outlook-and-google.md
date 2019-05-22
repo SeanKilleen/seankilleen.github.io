@@ -27,12 +27,12 @@ The easiest way I've found so far to do this on Windows is to use [Outlook Googl
 
 If you want the reverse and want to overlay your personal calendar in your outlook, you can do that with google calendar too. 
 
-• Go into google calendar settings
-• Scroll into "Integrate Google Calendar" section
-• Copy the "secret address in iCal format"
-• Go into your outlook account settings
-• Go to the "internet calendars" tab
-• Hit new & paste the URL
+* Go into google calendar settings
+* Scroll into "Integrate Google Calendar" section
+* Copy the "secret address in iCal format"
+* Go into your outlook account settings
+* Go to the "internet calendars" tab
+* Hit new & paste the URL
 
 ## How do You Accomplish This?
 
