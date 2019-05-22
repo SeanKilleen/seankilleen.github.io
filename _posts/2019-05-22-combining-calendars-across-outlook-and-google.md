@@ -10,13 +10,22 @@ comments: true
 
 This came up in a conversation and I realized my methods might be helpful for someone. I figured I can write it up with step-by-steps here.
 
-My response: 
+## Background / Goals
 
-On Windows, I use Outlook Google Calendar Sync --  Free, OSS app. Sits in your system tray and does a sync from Excella --> GCal since that's how I have it set up. I sync my Excella to a Google calendar called "work" that I overlay with my personal calendar in Google Cal. https://phw198.github.io/OutlookGoogleCalendarSync/
+* I have a work calendar, via Outlook
+* I have a personal calendar, using Google
+* I want to overlay my work calendar in google so that I see work obligations when considering personal plans
+* Similarly, I want to have access to my personal calendar from work so I don't agree to teach a training class during a family visit, etc.
 
-If you want the reverse and want to overlay your personal calendar in your outlook, you can do that with google calendar too. Open the sharing settings for the calendar, get a shareable link. I then believe you can "add a calendar from the internet" in outlook, paste that link, and it should show up (I don't do this currently though).
+## Getting Work Events into Google Calendar
 
-EDIT: My above information was a little old for getting GCal into outlook. If you want to do that, you actually:
+The easiest way I've found so far to do this on Windows is to use [Outlook Google Calendar Sync --  a free, OSS app](https://phw198.github.io/OutlookGoogleCalendarSync/). It sits in my system tray and does a sync from Excella --> GCal since that's how I have it set up. I sync my Excella calendar to a Google calendar called "work" that I the  overlay with my personal calendar in Google Cal. 
+
+**NOTE**: This app has to be open and running somewhere in order to sync the changes. I have an idea of porting ame of this code to use Azure functions on a timer so that it won't be tied to a machine / tray app.
+
+## Getting Personal Events into Outlook
+
+If you want the reverse and want to overlay your personal calendar in your outlook, you can do that with google calendar too. 
 
 • Go into google calendar settings
 • Scroll into "Integrate Google Calendar" section
@@ -24,3 +33,7 @@ EDIT: My above information was a little old for getting GCal into outlook. If yo
 • Go into your outlook account settings
 • Go to the "internet calendars" tab
 • Hit new & paste the URL
+
+## How do You Accomplish This?
+
+Your turn, dear reader! I'm very interested to hear other ways you've solved this problem, and whether you'd find a free/OSS cloud sync project beneficial. Sound off in the comments!
