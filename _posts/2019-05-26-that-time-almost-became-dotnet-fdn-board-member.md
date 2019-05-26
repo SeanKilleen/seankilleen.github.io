@@ -9,11 +9,11 @@ comments: true
 
 The .NET Foundation Board elections recently took place, [and I was the last one eliminated, one of my proudest accomplishments to date](https://www.opavote.com/results/5042387845906432).
 
-I thought I’d share some reflections and lessons learned from [my candidacy](https://election.dotnetfoundation.org/campaign-2019/sean-killeen.html)
+I thought I’d share some reflections and lessons learned from [my candidacy](https://election.dotnetfoundation.org/campaign-2019/sean-killeen.html).
 
 It’s a little bit of a weird post to write, but I figure reflection is part of this whole blogging thing; can’t just be how-tos all the time. 
 
-## Mistakes were me made (the value of learning in public)
+## Mistakes were made (the value of learning in public)
 
 I learned a great lesson right out of the gate, even if a painful one to learn in public. Wanted to jot it down here because that’s how it goes and I think was the biggest point of growth for me throughout the process.
 
