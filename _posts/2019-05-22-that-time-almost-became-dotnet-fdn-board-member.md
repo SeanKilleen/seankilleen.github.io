@@ -1,4 +1,3 @@
-
 —-
 title: “That Time I Almost Got Elected to the .NET Foundation Board of Directors”
 
