@@ -1,11 +1,11 @@
-—-
+---
 title: “That Time I Almost Got Elected to the .NET Foundation Board of Directors”
 
-date: 2019-05-25 05:50:00.000000000 -05:00
+date: 2019-05-26 05:50:00.000000000 -05:00
 
 tags: [dotnet, community]
 comments: true
-—-
+---
 
 The .NET Foundation Board elections recently took place, [and I was the last one eliminated, one of my proudest accomplishments to date](https://www.opavote.com/results/5042387845906432).
 
