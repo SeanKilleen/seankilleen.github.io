@@ -52,7 +52,7 @@ I don’t mention these things just to toot my own horn. I wanted to highlight t
 * A community that welcomes — and accepts — contributions is so much better off for it.
 * There are always people willing to help. The helpers are the future.
 
-I was by no means the only person pitching in on these things. Again,  [Khalid](https://twitter.com/buhakmeh) saved the day with some awesome pull requests to help randomize the picture order for candidates so that nobody would stay at the top the whole time. And [Dave Glick](https://twitter.com/daveaglick) went through to capture every single candidate’s information so that we could create a Twitter list for folks to follow. [Spencer Scheidenbach](https://twitter.com/schneidenbach) even created a quick interview process for candidates who were at the MVP summit and [Andrew Hoefling](https://twitter.com/andrew_hoefling) carried this process on for those who couldn't attend. 
+I was by no means the only person pitching in on these things. Again,  [Khalid](https://twitter.com/buhakmeh) saved the day with some awesome pull requests to help randomize the picture order for candidates so that nobody would stay at the top the whole time. And [Dave Glick](https://twitter.com/daveaglick) went through to capture every single candidate’s information so that we could create a Twitter list for folks to follow. [Spencer Scheidenbach](https://twitter.com/schneidenbach) even created a quick interview process for candidates who were at the MVP summit and [Andrew Hoefling](https://twitter.com/andrew_hoefling) carried this process on for those who couldn't attend. I'm sure I'm likely forgetting a bunch of great contributions off the top of my head, too.
 
 It takes a village, as they say, and we've got a great one.
 
