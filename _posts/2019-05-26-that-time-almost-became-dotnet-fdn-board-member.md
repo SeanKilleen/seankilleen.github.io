@@ -15,7 +15,7 @@ It’s a little bit of a weird post to write, but I figure reflection is part of
 
 ## Mistakes were made (the value of learning in public)
 
-I learned a great lesson right out of the gate, even if a painful one to learn in public. Wanted to jot it down here because that’s how it goes and I think was the biggest point of growth for me throughout the process.
+I learned a great lesson right out of the gate, even if a painful one to learn in public. Wanted to jot it down here because that’s how it goes and I think it was the biggest point of growth for me throughout the process.
 
 My original candidacy statement echoed Jon Skeet’s in that it preferred a board to be made up of diverse members so that the board would function with diverse backgrounds. I’d mentioned that I didn’t want it to be a board made up of all white guys. But after listening to the feedback on these points from folks all over the community it became clear that it was problematic for several (obvious in hindsight) reasons:
 
@@ -72,4 +72,8 @@ This is a tough one, as I’m not directly in the drivers seat. So from my curre
 
 * Regular, detailed information radiation from the Board around its initiatives and direction it’s taking
 * Outreach to all sorts of constituencies in the .NET community so that they know they have a voice
-* The rolling up of sleeves to accomplish something quickly for the community, so that the community sees the board is invested and the new energy and momentum doesn’t dissipate 
+* The rolling up of sleeves to accomplish something quickly for the community, so that the community sees the board is invested and the new energy and momentum doesn’t dissipate.
+
+## I'd love your thoughts!
+
+Questions? Insights? Sound off in the comments!
