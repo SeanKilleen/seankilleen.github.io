@@ -1,5 +1,5 @@
 ---
-title: “That Time I Almost Got Elected to the .NET Foundation Board of Directors”
+title: "That Time I Almost Got Elected to the .NET Foundation Board of Directors"
 
 date: 2019-05-26 05:50:00.000000000 -05:00
 
