@@ -30,28 +30,28 @@ What follows below is a full walkthrough, complete with some struggles, because 
 * I go to <http://dev.azure.com> and sign in with my Excella account.
 * I create a new project:
 
-> ![the create new project button on azure devops](images/post-images/2019-05-azure-devops-node/01_create-project.png)
+> ![the create new project button on azure devops]({{site.post-images}}/2019-05-azure-devops-node/01_create-project.png)
 
 * I give it a name and select the options, keeping it public so that anyone will be able to view the builds & releases:
 
-> ![entering my informaton for the project](images/post-images/2019-05-azure-devops-node/02_project-info.png)
+> ![entering my informaton for the project]({{site.post-images}}/2019-05-azure-devops-node/02_project-info.png)
 
 * In the left navigation, I click pipelines, which tells me (unsurprisingly) that no pipelines exist. I click to create one:
  
-> ![new pipeline button on the pipelines page](images/post-images/2019-05-azure-devops-node/03_new-pipeline.png)
+> ![new pipeline button on the pipelines page]({{site.post-images}}/2019-05-azure-devops-node/03_new-pipeline.png)
 
 * I select GitHub for the location of the code:
 
-> ![seleting the GitHub option](images/post-images/2019-05-azure-devops-node/04_select-location.png)
+> ![seleting the GitHub option]({{site.post-images}}/2019-05-azure-devops-node/04_select-location.png)
 
 * I select all repositories from the dropdown (since it's not my repo but rather `excellalabs`). I then search for unanet and click the summarizer project.
 
-> ![selecting the project](images/post-images/2019-05-azure-devops-node/05_select-repo.png)
+> ![selecting the project]({{site.post-images}}/2019-05-azure-devops-node/05_select-repo.png)
 
 * I authenticate with GitHub
 * In GitHub, I am then asked to give permission for the Azure Pipelines app to access the repo. I approve. 👍 
 
-> ![approving permissions](images/post-images/2019-05-azure-devops-node/06_grant-permission.png)
+> ![approving permissions]({{site.post-images}}/2019-05-azure-devops-node/06_grant-permission.png)
 
 * I am then asked to authenticate with my Excella account again. No idea why.
 
@@ -59,23 +59,23 @@ What follows below is a full walkthrough, complete with some struggles, because 
 
 * I'm taken back to the pipelines page, where I am on the "configuration" step and can now choose what kind of pipeline I want. I choose `node.js` because I think that'll be most suitable
 
-> ![choosing the default type of pipeline](images/post-images/2019-05-azure-devops-node/07_configure-pipeline-node.png)
+> ![choosing the default type of pipeline]({{site.post-images}}/2019-05-azure-devops-node/07_configure-pipeline-node.png)
 
 * Hey cool, Azure DevOps creates a YAML file that has a build set up for us that is triggered on any PR and anytime we push to master. It runs `npm install` and `npm build`. That seems pretty spot on. 
 
-> ![the YAML file that is created for us](images/post-images/2019-05-azure-devops-node/08_pipeline-yaml.png)
+> ![the YAML file that is created for us]({{site.post-images}}/2019-05-azure-devops-node/08_pipeline-yaml.png)
 
 * Azure DevOps also has this nice Save & run button which will commit the YAML file back to our repo and begin the build process. So I click that to save it.
 
-> ![clicking the save and run button](images/post-images/2019-05-azure-devops-node/09_save-and-run.png)
+> ![clicking the save and run button]({{site.post-images}}/2019-05-azure-devops-node/09_save-and-run.png)
 
 * We are given options for how to commit to the repo. I choose to commit directly to master because I live on the edge. No, kidding, but I do choose it because I see the contents and know committing to master will allow the build to kick off.
 
-> ![the set up and run screen which allows me to commit the files to the master branch](images/post-images/2019-05-azure-devops-node/10_commit-message.png)
+> ![the set up and run screen which allows me to commit the files to the master branch]({{site.post-images}}/2019-05-azure-devops-node/10_commit-message.png)
 
 * An agent prepares itself and then [runs the job](https://dev.azure.com/excellaco/unanet-summarizer/_build/results?buildId=207). It's a success! We're just not doing anything with the output yet.
 
-> ![build success](images/post-images/2019-05-azure-devops-node/11_build-result.png)
+> ![build success]({{site.post-images}}/2019-05-azure-devops-node/11_build-result.png)
 
 ## Status Badge
 
@@ -89,7 +89,7 @@ Next up, I'd like to set up a status badge for the builds that I can show in the
 
 * I choose the branch, and then copy the provided markdown (which is nice):
 
-> ![copying the provided markdown](images/post-images/2019-05-azure-devops-node/13_status-badge-info.png)
+> ![copying the provided markdown]({{site.post-images}}/2019-05-azure-devops-node/13_status-badge-info.png)
 
 *  I test that markdown here: (because why not?) 
 
@@ -113,7 +113,7 @@ You know what. Building this PR makes me realize we never turned on the azure pi
 
 ...wait, nevermind, we don't have to. Azure Pipelines already set that up. 
 
-> ![azure pipelines build status](https://user-images.githubusercontent.com/2148318/57158614-d7e10c80-6db1-11e9-94df-44342895d316.png)
+> ![azure pipelines build status]({{site.post-images}}/2019-05-azure-devops-node/14_status-checks.png)
 
 * I watch the job go through on the Azure Pipelines and it totally! ....fails. Oops, I think I picked the wrong directory maybe?
 
