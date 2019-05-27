@@ -242,16 +242,16 @@ Speaking of, sounds like we should go create that deployment!
 
 * I need to select a source. Luckily, there's an elipsis menu that lets me select the location based on my artifact output:
 
-> ![the empty source with an ellipsis to indicate more options](https://user-images.githubusercontent.com/2148318/57163309-d2d68a00-6dbe-11e9-9096-99f9a10d4a7b.png)
+> ![the empty source with an ellipsis to indicate more options]({{site.post-images}}/2019-05-azure-devops-node/32_source-with-ellipsis.png)
 
 
 * I choose the artifact folder that I want to copy from:
 
-> ![choosing the drop folder from a list of folders](https://user-images.githubusercontent.com/2148318/57163269-b89cac00-6dbe-11e9-82a4-f8c196a47bff.png)
+> ![choosing the drop folder from a list of folders]({{site.post-images}}/2019-05-azure-devops-node/33_select-file-from-artifacts.png)
 
 * I select the subscription ID (omitting that here) and then click `Authorize` to allow azure devops to get the access it needs:
 
-> ![the authorize button for subscription access](https://user-images.githubusercontent.com/2148318/57163391-04e7ec00-6dbf-11e9-8f02-0943fc59adfe.png)
+> ![the authorize button for subscription access]({{site.post-images}}/2019-05-azure-devops-node/34_authorize-subscription.png)
 
 ...and I get an error. Which is fair, because I'm using a company resource and don't have full admin rights there (which I'm OK with). Normally on personal subscriptions it Just Works™️ 
 
@@ -261,11 +261,11 @@ So, I'll leave off here for now until my IT dept is able to unblock me.
 
 And we're back! Fun fact: clicking that authorize button attempts to do so for a whole subscription, but if you click the advanced options:
 
-> ![the dropdown button on the authorize menu that shows advanced options](https://user-images.githubusercontent.com/2148318/57164041-e4b92c80-6dc0-11e9-9e4a-696bb0c85194.png)
+> ![the dropdown button on the authorize menu that shows advanced options]({{site.post-images}}/2019-05-azure-devops-node/35_authorize-advanced-options.png)
 
 You can select a resource group, and then it will work since I have access to the resource group: 
 
-> ![selecting a specific resource group rather than a whole subscription](https://user-images.githubusercontent.com/2148318/57164074-fac6ed00-6dc0-11e9-8eab-810b0e76f946.png)
+> ![selecting a specific resource group rather than a whole subscription]({{site.post-images}}/2019-05-azure-devops-node/36_authorization-info.png)
 
 ...okay, back to our regularly scheduled show.
 
@@ -273,27 +273,27 @@ You can select a resource group, and then it will work since I have access to th
 
 * I select the destination type and point it towards the storage account I created:
 
-> ![information for the storage account to push to](https://user-images.githubusercontent.com/2148318/57164143-306bd600-6dc1-11e9-868c-b62f92540a20.png)
+> ![information for the storage account to push to]({{site.post-images}}/2019-05-azure-devops-node/37_deployment-destination.png)
 
 * OK, I think that's pretty much it and I'm ready to save the release and see how this worked out.
 
-> ![clicking the save button on the configuration](https://user-images.githubusercontent.com/2148318/57164182-4e393b00-6dc1-11e9-819d-fd155f6e483c.png)
+> ![clicking the save button on the configuration]({{site.post-images}}/2019-05-azure-devops-node/38_save-release.png)
 
 * Let's give this a shot! I got to the releases page and click to create a release:
 
-> ![clicking the button to create a release](https://user-images.githubusercontent.com/2148318/57164240-80e33380-6dc1-11e9-8c6f-a6cbe3095c4f.png)
+> ![clicking the button to create a release]({{site.post-images}}/2019-05-azure-devops-node/39_create-release.png)
 
 * I give the release a description, and then click `Create`: 
 
-> ![adding a description for the release](https://user-images.githubusercontent.com/2148318/57164282-a1ab8900-6dc1-11e9-853a-6312a609b7b7.png)
+> ![adding a description for the release]({{site.post-images}}/2019-05-azure-devops-node/40_description.png)
 
 * Looks like it worked!
 
-> ![a release summary showing all the tasks were successful](https://user-images.githubusercontent.com/2148318/57164357-d7e90880-6dc1-11e9-9cf5-06dde2e816b7.png)
+> ![a release summary showing all the tasks were successful]({{site.post-images}}/2019-05-azure-devops-node/41_release-success.png)
 
 * I go back to the Azure portal to check, an lo and behold, it's there!
 
-> ![showing the file created within the blob container](https://user-images.githubusercontent.com/2148318/57164390-f64f0400-6dc1-11e9-87fc-941ae44d4f3b.png)
+> ![showing the file created within the blob container]({{site.post-images}}/2019-05-azure-devops-node/42_files-deployed.png)
 
 * Just to check, I get the URL of the blob (<https://unanetsummarizer.blob.core.windows.net/unanet-summarizer/unanet-summarizer-release.js>) and i hit it in my browser. It works!
 
@@ -303,7 +303,7 @@ Now, releases to prod are cool, so I want to show them off publicly. How do I do
 
 * I [open the release definition in Azure DevOps](https://dev.azure.com/excellaco/unanet-summarizer/_releaseDefinition?definitionId=1&_a=environments-editor-preview). I click Options, Integrations, enable the status badge, copy the URL, and then Save the release options:
 
-> ![the release integrations options screen](https://user-images.githubusercontent.com/2148318/57164702-ef74c100-6dc2-11e9-9326-d27538dfd926.png)
+> ![the release integrations options screen]({{site.post-images}}/2019-05-azure-devops-node/43_release-status-badge.png)
 
 We can check it here: ![Status](https://vsrm.dev.azure.com/excellaco/_apis/public/Release/badge/ab42bd87-c4a4-44b8-9bcc-02ab7408d6c0/1/1)
 
@@ -316,7 +316,7 @@ Oops, one last thing: I'd messed up on the continuous deployment trigger option 
 * I edit the release definition
 * I click the lightning bolt, enable continuous deployments, and add a filter for the branch:
 
-> ![clicking the lightning bolt icon](https://user-images.githubusercontent.com/2148318/57165296-a9b8f800-6dc4-11e9-811d-c72e7292161c.png)
+> ![clicking the lightning bolt icon]({{site.post-images}}/2019-05-azure-devops-node/44_enable-continuous-deployment.png)
 
 * I save the release.
 
