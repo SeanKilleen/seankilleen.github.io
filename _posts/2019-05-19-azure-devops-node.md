@@ -8,11 +8,11 @@ comments: true
 
 ---
 
-I recently created [’unanet-summarizer’, a small utility to give my colleagues some additional summary information on their timesheets](http://github.com/excellalabs/unanet-summarizer). It got a little more attention than I expected, but best of all it got others wanting to help out, and the codebase grew out rapidly. 
+I recently created [’unanet-summarizer’, a small utility to give my colleagues some additional summary information on their timesheets](http://github.com/excellalabs/unanet-summarizer). It got a little more attention than I expected, but best of all it got others wanting to help out, and the codebase grew out rapidly.
 
 It was time for a build and deployment system, and I'm in love with [Azure DevOps](http://dev.azure.com) so I wanted to take this oportunity to write up the process and document it for my colleagues and others.
 
-# Goals
+## Goals
 
 I wanted to achieve the following for this JS project:
 
@@ -21,7 +21,7 @@ I wanted to achieve the following for this JS project:
 * Status badges for builds and releases
 * I want anyone to be able to view the builds and deployments
 
-# The Walkthrough
+## The Walkthrough
 
 What follows below is a full walkthrough, complete with some struggles, because I want it to be clear when you might miss things or run into confusing steps.
 
@@ -30,28 +30,28 @@ What follows below is a full walkthrough, complete with some struggles, because 
 * I go to <http://dev.azure.com> and sign in with my Excella account.
 * I create a new project:
 
-> ![the create new project button on azure devops](https://user-images.githubusercontent.com/2148318/57156121-31920880-6dab-11e9-92d5-6042e6525340.png)
+> ![the create new project button on azure devops]({{site.post-images}}/2019-05-azure-devops-node/01_create-project.png)
 
 * I give it a name and select the options, keeping it public so that anyone will be able to view the builds & releases:
 
-> ![entering my informaton for the project](https://user-images.githubusercontent.com/2148318/57156195-5d14f300-6dab-11e9-9045-d8c3bdebd75e.png)
+> ![entering my informaton for the project]({{site.post-images}}/2019-05-azure-devops-node/02_project-info.png)
 
 * In the left navigation, I click pipelines, which tells me (unsurprisingly) that no pipelines exist. I click to create one:
- 
-> ![new pipeline button on the pipelines page](https://user-images.githubusercontent.com/2148318/57156269-8df52800-6dab-11e9-96fb-a1af1c973be6.png)
+
+> ![new pipeline button on the pipelines page]({{site.post-images}}/2019-05-azure-devops-node/03_new-pipeline.png)
 
 * I select GitHub for the location of the code:
 
-> ![seleting the GitHub option](https://user-images.githubusercontent.com/2148318/57156315-a6fdd900-6dab-11e9-9538-8def3a51b2c3.png)
+> ![seleting the GitHub option]({{site.post-images}}/2019-05-azure-devops-node/04_select-location.png)
 
 * I select all repositories from the dropdown (since it's not my repo but rather `excellalabs`). I then search for unanet and click the summarizer project.
 
-> ![selecting the project](https://user-images.githubusercontent.com/2148318/57156425-f2b08280-6dab-11e9-84f0-e82aa57cf53f.png)
+> ![selecting the project]({{site.post-images}}/2019-05-azure-devops-node/05_select-repo.png)
 
 * I authenticate with GitHub
-* In GitHub, I am then asked to give permission for the Azure Pipelines app to access the repo. I approve. 👍 
+* In GitHub, I am then asked to give permission for the Azure Pipelines app to access the repo. I approve. 👍
 
-> ![approving permissions](https://user-images.githubusercontent.com/2148318/57156491-1d9ad680-6dac-11e9-9e09-3621161f93d6.png)
+> ![approving permissions]({{site.post-images}}/2019-05-azure-devops-node/06_grant-permission.png)
 
 * I am then asked to authenticate with my Excella account again. No idea why.
 
@@ -59,39 +59,39 @@ What follows below is a full walkthrough, complete with some struggles, because 
 
 * I'm taken back to the pipelines page, where I am on the "configuration" step and can now choose what kind of pipeline I want. I choose `node.js` because I think that'll be most suitable
 
-> ![choosing the default type of pipeline](https://user-images.githubusercontent.com/2148318/57156602-5e92eb00-6dac-11e9-94e8-345cb6ae468a.png)
+> ![choosing the default type of pipeline]({{site.post-images}}/2019-05-azure-devops-node/07_configure-pipeline-node.png)
 
-* Hey cool, Azure DevOps creates a YAML file that has a build set up for us that is triggered on any PR and anytime we push to master. It runs `npm install` and `npm build`. That seems pretty spot on. 
+* Hey cool, Azure DevOps creates a YAML file that has a build set up for us that is triggered on any PR and anytime we push to master. It runs `npm install` and `npm build`. That seems pretty spot on.
 
-> ![the YAML file that is created for us](https://user-images.githubusercontent.com/2148318/57156857-10cab280-6dad-11e9-9966-c4944e6bae68.png)
+> ![the YAML file that is created for us]({{site.post-images}}/2019-05-azure-devops-node/08_pipeline-yaml.png)
 
 * Azure DevOps also has this nice Save & run button which will commit the YAML file back to our repo and begin the build process. So I click that to save it.
 
-> ![clicking the save and run button](https://user-images.githubusercontent.com/2148318/57157459-c2b6ae80-6dae-11e9-82a0-1bb58b89897a.png)
+> ![clicking the save and run button]({{site.post-images}}/2019-05-azure-devops-node/09_save-and-run.png)
 
 * We are given options for how to commit to the repo. I choose to commit directly to master because I live on the edge. No, kidding, but I do choose it because I see the contents and know committing to master will allow the build to kick off.
 
-> ![the set up and run screen which allows me to commit the files to the master branch](https://user-images.githubusercontent.com/2148318/57157590-27720900-6daf-11e9-8529-ec62ebdda608.png)
+> ![the set up and run screen which allows me to commit the files to the master branch]({{site.post-images}}/2019-05-azure-devops-node/10_commit-message.png)
 
 * An agent prepares itself and then [runs the job](https://dev.azure.com/excellaco/unanet-summarizer/_build/results?buildId=207). It's a success! We're just not doing anything with the output yet.
 
-> ![build success](https://user-images.githubusercontent.com/2148318/57157681-66a05a00-6daf-11e9-80de-cf314fae9629.png)
+> ![build success]({{site.post-images}}/2019-05-azure-devops-node/11_build-result.png)
 
 ## Status Badge
 
-Next up, I'd like to set up a status badge for the builds that I can show in the `README` file. 
+Next up, I'd like to set up a status badge for the builds that I can show in the `README` file.
 
 * I go to [the build definition](https://dev.azure.com/excellaco/unanet-summarizer/_build?definitionId=5&_a=summary)
 
 * In the drop-down to the right, I select `Status Badge`:
 
-> ![build menu dropdown](https://user-images.githubusercontent.com/2148318/57157794-aebf7c80-6daf-11e9-9f8d-5d76eb31dc98.png)
+> ![build menu dropdown]({{site.post-images}}/2019-05-azure-devops-node/12_status-badge-menu.png)
 
 * I choose the branch, and then copy the provided markdown (which is nice):
 
-> ![copying the provided markdown](https://user-images.githubusercontent.com/2148318/57157904-f1815480-6daf-11e9-8318-d56a43d2f99b.png)
+> ![copying the provided markdown]({{site.post-images}}/2019-05-azure-devops-node/13_status-badge-info.png)
 
-*  I test that markdown here: (because why not?) 
+* I test that markdown here: (because why not?)
 
 [![Build Status](https://dev.azure.com/excellaco/unanet-summarizer/_apis/build/status/excellalabs.unanet-summarizer?branchName=master)](https://dev.azure.com/excellaco/unanet-summarizer/_build/latest?definitionId=5&branchName=master)
 
@@ -111,15 +111,15 @@ Next up, I'd like to set up a status badge for the builds that I can show in the
 
 You know what. Building this PR makes me realize we never turned on the azure pipelines for PR builds within GitHub. So let's do that.
 
-...wait, nevermind, we don't have to. Azure Pipelines already set that up. 
+...wait, nevermind, we don't have to. Azure Pipelines already set that up.
 
-> ![azure pipelines build status](https://user-images.githubusercontent.com/2148318/57158614-d7e10c80-6db1-11e9-94df-44342895d316.png)
+> ![azure pipelines build status]({{site.post-images}}/2019-05-azure-devops-node/14_status-checks.png)
 
 * I watch the job go through on the Azure Pipelines and it totally! ....fails. Oops, I think I picked the wrong directory maybe?
 
-> ![pipeline error about a path not existing](https://user-images.githubusercontent.com/2148318/57158716-1b3b7b00-6db2-11e9-8556-ce4c7ff4b388.png)
+> ![pipeline error about a path not existing]({{site.post-images}}/2019-05-azure-devops-node/15_artifact-fail.png)
 
-Interesting. In the build output itself I see ` /home/vsts/work/1/s` instead of an `a`. Maybe I'm using the wrong build variable? 
+Interesting. In the build output itself I see `/home/vsts/work/1/s` instead of an `a`. Maybe I'm using the wrong build variable?
 
 ...oh, whoops. In order to publish the staging contents, we'd probably have to put something there first, wouldn't we? So I'll add the below in a PR:
 
@@ -130,11 +130,11 @@ Interesting. In the build output itself I see ` /home/vsts/work/1/s` instead of 
     contents: '**\*'
     targetFolder: $(Build.ArtifactStagingDirectory)
   displayName: Copy Files to Staging Directory
-``` 
+```
 
 OK, well that was actually a little weird. It turns out that the build directories in the variable seem to be `C:\agent` etc. but in the Ubuntu VM it's `/home/vsts/work/1/s`. So I needed to hard-code that in order to find the files. The default didn't work. Strange.
 
-...and when I changed to that, it still didn't work. Azure Pipelines isn't finding the output files. 
+...and when I changed to that, it still didn't work. Azure Pipelines isn't finding the output files.
 
 OK hmm, all of a sudden it works and I don't know why. I see in the logs:
 
@@ -142,7 +142,7 @@ OK hmm, all of a sudden it works and I don't know why. I see in the logs:
 
 And it copied 6000 files including node_modules etc.
 
-So i'm going to update it now to output from `dist`. A very interesting issue. 
+So i'm going to update it now to output from `dist`. A very interesting issue.
 
 For some reason, this ended up being the task to do it:
 
@@ -156,7 +156,7 @@ For some reason, this ended up being the task to do it:
 
 I still don't understand what the final change was that made it work, but this does at least make sense to me.
 
-Onward! 
+Onward!
 
 ## Creating the Container for Storage
 
@@ -168,31 +168,31 @@ The next step will be to create an Azure blob and then deploy the released JS to
 * I navigate to the resource group we use for these things
 * I click "Add" to add a resource.
 
-> ![the add resource button](https://user-images.githubusercontent.com/2148318/57162354-fea44080-6dbb-11e9-8cc6-475fa05dde67.png)
+> ![the add resource button]({{site.post-images}}/2019-05-azure-devops-node/16_add-resource.png)
 
 * I type "storage" and select "Storage Account"
 
-> ![selecting the storage type](https://user-images.githubusercontent.com/2148318/57162384-15e32e00-6dbc-11e9-90ef-ee37a19a5c27.png)
+> ![selecting the storage type]({{site.post-images}}/2019-05-azure-devops-node/17_select-storage.png)
 
 * I click "Create" on the intro screen.
 * I provide a name, region, and type for the blob storage:
 
-> ![filling in the information for our blob storage](https://user-images.githubusercontent.com/2148318/57162462-5478e880-6dbc-11e9-8db7-03765b345a40.png)
+> ![filling in the information for our blob storage]({{site.post-images}}/2019-05-azure-devops-node/18_storage-info.png)
 
 * On the review screen, I click create.
 * When the creation completes, I click to go to the resource.
 * I don't have any containers yet, so I click to add one:
 
-> ![creating a container](https://user-images.githubusercontent.com/2148318/57162530-88eca480-6dbc-11e9-9cc6-0e56aa800a7f.png)
+> ![creating a container]({{site.post-images}}/2019-05-azure-devops-node/19_add-container.png)
 
 * I provide a name, and select container level anonymous read access, since our intention is explicitly to serve our scripts for the entire world to see.
 
-> ![providing information on the storage container](https://user-images.githubusercontent.com/2148318/57162589-ade11780-6dbc-11e9-917a-447b336b1b7f.png)
+> ![providing information on the storage container]({{site.post-images}}/2019-05-azure-devops-node/20_container-info.png)
 
-* After the container is created, I click into it. 
+* After the container is created, I click into it.
 * I then click properties on the left-hand menu, and get the URL of <https://unanetsummarizer.blob.core.windows.net/unanet-summarizer>:
 
-> ![getting the URL for the blob container](https://user-images.githubusercontent.com/2148318/57162656-dff27980-6dbc-11e9-8538-12ad1bbd7fdb.png)
+> ![getting the URL for the blob container]({{site.post-images}}/2019-05-azure-devops-node/21_container-url.png)
 
 This is where we'll eventually deploy to.
 
@@ -202,70 +202,69 @@ Speaking of, sounds like we should go create that deployment!
 
 * Back into Azure DevOps, I choose [Releases](https://dev.azure.com/excellaco/unanet-summarizer/_release) from the left-hand menu. I don't have yet, which makes sense. I choose to create a new one.
 
-> ![screen showing no release pipelines](https://user-images.githubusercontent.com/2148318/57162755-3e1f5c80-6dbd-11e9-8ab0-49a362df232f.png)
+> ![screen showing no release pipelines]({{site.post-images}}/2019-05-azure-devops-node/22_no-release-pipelines.png)
 
 * I'm prompted to start with a template but because we're outputting to a blob, I think that an empty job probably makes the most sense.
 
-> ![selecting a job type of empty job](https://user-images.githubusercontent.com/2148318/57162838-6eff9180-6dbd-11e9-835f-a8e91f6a72f5.png)
+> ![selecting a job type of empty job]({{site.post-images}}/2019-05-azure-devops-node/23_empty-job.png)
 
 * I get a default stage (what you might do for different environments, etc.). In our case, we have just one stage so far: "Deploy to the production blob". So I give the stage a name.
 
-> ![providing a name for the release stage](https://user-images.githubusercontent.com/2148318/57162911-a3734d80-6dbd-11e9-8ee6-772555942729.png)
+> ![providing a name for the release stage]({{site.post-images}}/2019-05-azure-devops-node/24_stage-name.png)
 
 * I'm not actually pulling in any artifacts that would kick off a release yet, so I click to do that:
 
-> ![clicking the button to add an artifact](https://user-images.githubusercontent.com/2148318/57162935-bbe36800-6dbd-11e9-8ff8-9b662f741ca3.png)
+> ![clicking the button to add an artifact]({{site.post-images}}/2019-05-azure-devops-node/25_add-artifact.png)
 
 * I tell the release that I want it to use the artifacts from the latest build of the `master` branch, and I click save:
 
-> ![providing the information for the artifact to pull in](https://user-images.githubusercontent.com/2148318/57163018-fe0ca980-6dbd-11e9-9ee5-00154e543efe.png)
+> ![providing the information for the artifact to pull in]({{site.post-images}}/2019-05-azure-devops-node/26_artifact-info.png)
 
 * Note the lightning bolt on the artifacts. That means that anytime a new one of these artifacts shows up, a release will be created and executed.
 
-> ![showing the label of the lightning bolt, which means continuous deployment](https://user-images.githubusercontent.com/2148318/57163071-21375900-6dbe-11e9-823e-285b19c93d90.png)
+> ![showing the label of the lightning bolt, which means continuous deployment]({{site.post-images}}/2019-05-azure-devops-node/27_continuous-deployment.png)
 
 * I click to view the tasks for the stage, since we haven't added any yet:
 
-> ![clicking the link to view stage tasks](https://user-images.githubusercontent.com/2148318/57163129-4a57e980-6dbe-11e9-9643-3eedad2afd14.png)
+> ![clicking the link to view stage tasks]({{site.post-images}}/2019-05-azure-devops-node/28_add-task-link.png)
 
 * I click to add a task to the agent job:
 
-> ![clicking the plus icon to add a task](https://user-images.githubusercontent.com/2148318/57163155-5cd22300-6dbe-11e9-9f13-91c838dd3c8f.png)
+> ![clicking the plus icon to add a task]({{site.post-images}}/2019-05-azure-devops-node/29_add-task.png)
 
 * In the tasks, list, I search for "blob" (this is literally my first time doing this), and awesomely, "Azure File Copy" comes up. I click to add it.
 
-> ![searching for and selecting azure file copy](https://user-images.githubusercontent.com/2148318/57163197-7d01e200-6dbe-11e9-9a87-ee5428bdbceb.png)
+> ![searching for and selecting azure file copy]({{site.post-images}}/2019-05-azure-devops-node/30_azure-file-copy.png)
 
 * I see that "some settings need my attention", so I click into it:
 
-> ![a validation warning showing that some settings need attention](https://user-images.githubusercontent.com/2148318/57163227-930fa280-6dbe-11e9-9c35-ac51bc910ddc.png)
+> ![a validation warning showing that some settings need attention]({{site.post-images}}/2019-05-azure-devops-node/31_settings-need-attention.png)
 
 * I need to select a source. Luckily, there's an elipsis menu that lets me select the location based on my artifact output:
 
-> ![the empty source with an ellipsis to indicate more options](https://user-images.githubusercontent.com/2148318/57163309-d2d68a00-6dbe-11e9-9096-99f9a10d4a7b.png)
-
+> ![the empty source with an ellipsis to indicate more options]({{site.post-images}}/2019-05-azure-devops-node/32_source-with-ellipsis.png)
 
 * I choose the artifact folder that I want to copy from:
 
-> ![choosing the drop folder from a list of folders](https://user-images.githubusercontent.com/2148318/57163269-b89cac00-6dbe-11e9-82a4-f8c196a47bff.png)
+> ![choosing the drop folder from a list of folders]({{site.post-images}}/2019-05-azure-devops-node/33_select-file-from-artifacts.png)
 
 * I select the subscription ID (omitting that here) and then click `Authorize` to allow azure devops to get the access it needs:
 
-> ![the authorize button for subscription access](https://user-images.githubusercontent.com/2148318/57163391-04e7ec00-6dbf-11e9-8f02-0943fc59adfe.png)
+> ![the authorize button for subscription access]({{site.post-images}}/2019-05-azure-devops-node/34_authorize-subscription.png)
 
-...and I get an error. Which is fair, because I'm using a company resource and don't have full admin rights there (which I'm OK with). Normally on personal subscriptions it Just Works™️ 
+...and I get an error. Which is fair, because I'm using a company resource and don't have full admin rights there (which I'm OK with). Normally on personal subscriptions it Just Works™️.
 
-So, I'll leave off here for now until my IT dept is able to unblock me. 
+So, I'll leave off here for now until my IT dept is able to unblock me.
 
 ## A Note on Azure Subscription Permissions
 
 And we're back! Fun fact: clicking that authorize button attempts to do so for a whole subscription, but if you click the advanced options:
 
-> ![the dropdown button on the authorize menu that shows advanced options](https://user-images.githubusercontent.com/2148318/57164041-e4b92c80-6dc0-11e9-9e4a-696bb0c85194.png)
+> ![the dropdown button on the authorize menu that shows advanced options]({{site.post-images}}/2019-05-azure-devops-node/35_authorize-advanced-options.png)
 
-You can select a resource group, and then it will work since I have access to the resource group: 
+You can select a resource group, and then it will work since I have access to the resource group:
 
-> ![selecting a specific resource group rather than a whole subscription](https://user-images.githubusercontent.com/2148318/57164074-fac6ed00-6dc0-11e9-8eab-810b0e76f946.png)
+> ![selecting a specific resource group rather than a whole subscription]({{site.post-images}}/2019-05-azure-devops-node/36_authorization-info.png)
 
 ...okay, back to our regularly scheduled show.
 
@@ -273,27 +272,27 @@ You can select a resource group, and then it will work since I have access to th
 
 * I select the destination type and point it towards the storage account I created:
 
-> ![information for the storage account to push to](https://user-images.githubusercontent.com/2148318/57164143-306bd600-6dc1-11e9-868c-b62f92540a20.png)
+> ![information for the storage account to push to]({{site.post-images}}/2019-05-azure-devops-node/37_deployment-destination.png)
 
 * OK, I think that's pretty much it and I'm ready to save the release and see how this worked out.
 
-> ![clicking the save button on the configuration](https://user-images.githubusercontent.com/2148318/57164182-4e393b00-6dc1-11e9-819d-fd155f6e483c.png)
+> ![clicking the save button on the configuration]({{site.post-images}}/2019-05-azure-devops-node/38_save-release.png)
 
 * Let's give this a shot! I got to the releases page and click to create a release:
 
-> ![clicking the button to create a release](https://user-images.githubusercontent.com/2148318/57164240-80e33380-6dc1-11e9-8c6f-a6cbe3095c4f.png)
+> ![clicking the button to create a release]({{site.post-images}}/2019-05-azure-devops-node/39_create-release.png)
 
-* I give the release a description, and then click `Create`: 
+* I give the release a description, and then click `Create`:
 
-> ![adding a description for the release](https://user-images.githubusercontent.com/2148318/57164282-a1ab8900-6dc1-11e9-853a-6312a609b7b7.png)
+> ![adding a description for the release]({{site.post-images}}/2019-05-azure-devops-node/40_description.png)
 
 * Looks like it worked!
 
-> ![a release summary showing all the tasks were successful](https://user-images.githubusercontent.com/2148318/57164357-d7e90880-6dc1-11e9-9cf5-06dde2e816b7.png)
+> ![a release summary showing all the tasks were successful]({{site.post-images}}/2019-05-azure-devops-node/41_release-success.png)
 
 * I go back to the Azure portal to check, an lo and behold, it's there!
 
-> ![showing the file created within the blob container](https://user-images.githubusercontent.com/2148318/57164390-f64f0400-6dc1-11e9-87fc-941ae44d4f3b.png)
+> ![showing the file created within the blob container]({{site.post-images}}/2019-05-azure-devops-node/42_files-deployed.png)
 
 * Just to check, I get the URL of the blob (<https://unanetsummarizer.blob.core.windows.net/unanet-summarizer/unanet-summarizer-release.js>) and i hit it in my browser. It works!
 
@@ -303,11 +302,11 @@ Now, releases to prod are cool, so I want to show them off publicly. How do I do
 
 * I [open the release definition in Azure DevOps](https://dev.azure.com/excellaco/unanet-summarizer/_releaseDefinition?definitionId=1&_a=environments-editor-preview). I click Options, Integrations, enable the status badge, copy the URL, and then Save the release options:
 
-> ![the release integrations options screen](https://user-images.githubusercontent.com/2148318/57164702-ef74c100-6dc2-11e9-9326-d27538dfd926.png)
+> ![the release integrations options screen]({{site.post-images}}/2019-05-azure-devops-node/43_release-status-badge.png)
 
 We can check it here: ![Status](https://vsrm.dev.azure.com/excellaco/_apis/public/Release/badge/ab42bd87-c4a4-44b8-9bcc-02ab7408d6c0/1/1)
 
-Sweet! I think I'll add it to the README as well. 
+Sweet! I think I'll add it to the README as well.
 
 ## Oops: Let's *actually* Continuously Deploy
 
@@ -316,7 +315,7 @@ Oops, one last thing: I'd messed up on the continuous deployment trigger option 
 * I edit the release definition
 * I click the lightning bolt, enable continuous deployments, and add a filter for the branch:
 
-> ![clicking the lightning bolt icon](https://user-images.githubusercontent.com/2148318/57165296-a9b8f800-6dc4-11e9-811d-c72e7292161c.png)
+> ![clicking the lightning bolt icon]({{site.post-images}}/2019-05-azure-devops-node/44_enable-continuous-deployment.png)
 
 * I save the release.
 
@@ -326,10 +325,10 @@ Oops, one last thing: I'd messed up on the continuous deployment trigger option 
 
 Now I see:
 
-* ✅ The build finishes 
+* ✅ The build finishes
 * ✅ The release created itself
 * ✅ The release deploys the blob appropriately
 * ✅ The timestamps on the blob are updated
-* ✅ The status indicators on the README are correct.
+* ✅ The status indicators on the `README` are correct.
 
 And with that, our work is done!
