@@ -117,7 +117,7 @@ You know what. Building this PR makes me realize we never turned on the azure pi
 
 * I watch the job go through on the Azure Pipelines and it totally! ....fails. Oops, I think I picked the wrong directory maybe?
 
-> ![pipeline error about a path not existing](https://user-images.githubusercontent.com/2148318/57158716-1b3b7b00-6db2-11e9-8556-ce4c7ff4b388.png)
+> ![pipeline error about a path not existing]({{site.post-images}}/2019-05-azure-devops-node/15_artifact-fail.png)
 
 Interesting. In the build output itself I see ` /home/vsts/work/1/s` instead of an `a`. Maybe I'm using the wrong build variable? 
 
@@ -168,22 +168,22 @@ The next step will be to create an Azure blob and then deploy the released JS to
 * I navigate to the resource group we use for these things
 * I click "Add" to add a resource.
 
-> ![the add resource button](https://user-images.githubusercontent.com/2148318/57162354-fea44080-6dbb-11e9-8cc6-475fa05dde67.png)
+> ![the add resource button]({{site.post-images}}/2019-05-azure-devops-node/16_add-resource.png)
 
 * I type "storage" and select "Storage Account"
 
-> ![selecting the storage type](https://user-images.githubusercontent.com/2148318/57162384-15e32e00-6dbc-11e9-90ef-ee37a19a5c27.png)
+> ![selecting the storage type]({{site.post-images}}/2019-05-azure-devops-node/17_select-storage.png)
 
 * I click "Create" on the intro screen.
 * I provide a name, region, and type for the blob storage:
 
-> ![filling in the information for our blob storage](https://user-images.githubusercontent.com/2148318/57162462-5478e880-6dbc-11e9-8db7-03765b345a40.png)
+> ![filling in the information for our blob storage]({{site.post-images}}/2019-05-azure-devops-node/18_storage-info.png)
 
 * On the review screen, I click create.
 * When the creation completes, I click to go to the resource.
 * I don't have any containers yet, so I click to add one:
 
-> ![creating a container](https://user-images.githubusercontent.com/2148318/57162530-88eca480-6dbc-11e9-9cc6-0e56aa800a7f.png)
+> ![creating a container]({{site.post-images}}/2019-05-azure-devops-node/19_add-container.png)
 
 * I provide a name, and select container level anonymous read access, since our intention is explicitly to serve our scripts for the entire world to see.
 
