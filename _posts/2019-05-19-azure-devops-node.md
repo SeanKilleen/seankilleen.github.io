@@ -330,6 +330,6 @@ Now I see:
 * ✅ The release created itself
 * ✅ The release deploys the blob appropriately
 * ✅ The timestamps on the blob are updated
-* ✅ The status indicators on the README are correct.
+* ✅ The status indicators on the `README` are correct.
 
 And with that, our work is done!
