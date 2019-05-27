@@ -85,7 +85,7 @@ Next up, I'd like to set up a status badge for the builds that I can show in the
 
 * In the drop-down to the right, I select `Status Badge`:
 
-> ![build menu dropdown](12_status-badge-menu.png)
+> ![build menu dropdown]({{site.post-images}}/2019-05-azure-devops-node/12_status-badge-menu.png)
 
 * I choose the branch, and then copy the provided markdown (which is nice):
 
