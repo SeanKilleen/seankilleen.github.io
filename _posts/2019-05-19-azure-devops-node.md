@@ -8,11 +8,11 @@ comments: true
 
 ---
 
-I recently created [’unanet-summarizer’, a small utility to give my colleagues some additional summary information on their timesheets](http://github.com/excellalabs/unanet-summarizer). It got a little more attention than I expected, but best of all it got others wanting to help out, and the codebase grew out rapidly. 
+I recently created [’unanet-summarizer’, a small utility to give my colleagues some additional summary information on their timesheets](http://github.com/excellalabs/unanet-summarizer). It got a little more attention than I expected, but best of all it got others wanting to help out, and the codebase grew out rapidly.
 
 It was time for a build and deployment system, and I'm in love with [Azure DevOps](http://dev.azure.com) so I wanted to take this oportunity to write up the process and document it for my colleagues and others.
 
-# Goals
+## Goals
 
 I wanted to achieve the following for this JS project:
 
@@ -21,7 +21,7 @@ I wanted to achieve the following for this JS project:
 * Status badges for builds and releases
 * I want anyone to be able to view the builds and deployments
 
-# The Walkthrough
+## The Walkthrough
 
 What follows below is a full walkthrough, complete with some struggles, because I want it to be clear when you might miss things or run into confusing steps.
 
@@ -37,7 +37,7 @@ What follows below is a full walkthrough, complete with some struggles, because 
 > ![entering my informaton for the project]({{site.post-images}}/2019-05-azure-devops-node/02_project-info.png)
 
 * In the left navigation, I click pipelines, which tells me (unsurprisingly) that no pipelines exist. I click to create one:
- 
+
 > ![new pipeline button on the pipelines page]({{site.post-images}}/2019-05-azure-devops-node/03_new-pipeline.png)
 
 * I select GitHub for the location of the code:
@@ -49,7 +49,7 @@ What follows below is a full walkthrough, complete with some struggles, because 
 > ![selecting the project]({{site.post-images}}/2019-05-azure-devops-node/05_select-repo.png)
 
 * I authenticate with GitHub
-* In GitHub, I am then asked to give permission for the Azure Pipelines app to access the repo. I approve. 👍 
+* In GitHub, I am then asked to give permission for the Azure Pipelines app to access the repo. I approve. 👍
 
 > ![approving permissions]({{site.post-images}}/2019-05-azure-devops-node/06_grant-permission.png)
 
@@ -61,7 +61,7 @@ What follows below is a full walkthrough, complete with some struggles, because 
 
 > ![choosing the default type of pipeline]({{site.post-images}}/2019-05-azure-devops-node/07_configure-pipeline-node.png)
 
-* Hey cool, Azure DevOps creates a YAML file that has a build set up for us that is triggered on any PR and anytime we push to master. It runs `npm install` and `npm build`. That seems pretty spot on. 
+* Hey cool, Azure DevOps creates a YAML file that has a build set up for us that is triggered on any PR and anytime we push to master. It runs `npm install` and `npm build`. That seems pretty spot on.
 
 > ![the YAML file that is created for us]({{site.post-images}}/2019-05-azure-devops-node/08_pipeline-yaml.png)
 
@@ -79,7 +79,7 @@ What follows below is a full walkthrough, complete with some struggles, because 
 
 ## Status Badge
 
-Next up, I'd like to set up a status badge for the builds that I can show in the `README` file. 
+Next up, I'd like to set up a status badge for the builds that I can show in the `README` file.
 
 * I go to [the build definition](https://dev.azure.com/excellaco/unanet-summarizer/_build?definitionId=5&_a=summary)
 
@@ -91,7 +91,7 @@ Next up, I'd like to set up a status badge for the builds that I can show in the
 
 > ![copying the provided markdown]({{site.post-images}}/2019-05-azure-devops-node/13_status-badge-info.png)
 
-*  I test that markdown here: (because why not?) 
+* I test that markdown here: (because why not?)
 
 [![Build Status](https://dev.azure.com/excellaco/unanet-summarizer/_apis/build/status/excellalabs.unanet-summarizer?branchName=master)](https://dev.azure.com/excellaco/unanet-summarizer/_build/latest?definitionId=5&branchName=master)
 
@@ -111,7 +111,7 @@ Next up, I'd like to set up a status badge for the builds that I can show in the
 
 You know what. Building this PR makes me realize we never turned on the azure pipelines for PR builds within GitHub. So let's do that.
 
-...wait, nevermind, we don't have to. Azure Pipelines already set that up. 
+...wait, nevermind, we don't have to. Azure Pipelines already set that up.
 
 > ![azure pipelines build status]({{site.post-images}}/2019-05-azure-devops-node/14_status-checks.png)
 
@@ -119,7 +119,7 @@ You know what. Building this PR makes me realize we never turned on the azure pi
 
 > ![pipeline error about a path not existing]({{site.post-images}}/2019-05-azure-devops-node/15_artifact-fail.png)
 
-Interesting. In the build output itself I see ` /home/vsts/work/1/s` instead of an `a`. Maybe I'm using the wrong build variable? 
+Interesting. In the build output itself I see `/home/vsts/work/1/s` instead of an `a`. Maybe I'm using the wrong build variable?
 
 ...oh, whoops. In order to publish the staging contents, we'd probably have to put something there first, wouldn't we? So I'll add the below in a PR:
 
@@ -130,11 +130,11 @@ Interesting. In the build output itself I see ` /home/vsts/work/1/s` instead of 
     contents: '**\*'
     targetFolder: $(Build.ArtifactStagingDirectory)
   displayName: Copy Files to Staging Directory
-``` 
+```
 
 OK, well that was actually a little weird. It turns out that the build directories in the variable seem to be `C:\agent` etc. but in the Ubuntu VM it's `/home/vsts/work/1/s`. So I needed to hard-code that in order to find the files. The default didn't work. Strange.
 
-...and when I changed to that, it still didn't work. Azure Pipelines isn't finding the output files. 
+...and when I changed to that, it still didn't work. Azure Pipelines isn't finding the output files.
 
 OK hmm, all of a sudden it works and I don't know why. I see in the logs:
 
@@ -142,7 +142,7 @@ OK hmm, all of a sudden it works and I don't know why. I see in the logs:
 
 And it copied 6000 files including node_modules etc.
 
-So i'm going to update it now to output from `dist`. A very interesting issue. 
+So i'm going to update it now to output from `dist`. A very interesting issue.
 
 For some reason, this ended up being the task to do it:
 
@@ -156,7 +156,7 @@ For some reason, this ended up being the task to do it:
 
 I still don't understand what the final change was that made it work, but this does at least make sense to me.
 
-Onward! 
+Onward!
 
 ## Creating the Container for Storage
 
@@ -189,7 +189,7 @@ The next step will be to create an Azure blob and then deploy the released JS to
 
 > ![providing information on the storage container]({{site.post-images}}/2019-05-azure-devops-node/20_container-info.png)
 
-* After the container is created, I click into it. 
+* After the container is created, I click into it.
 * I then click properties on the left-hand menu, and get the URL of <https://unanetsummarizer.blob.core.windows.net/unanet-summarizer>:
 
 > ![getting the URL for the blob container]({{site.post-images}}/2019-05-azure-devops-node/21_container-url.png)
@@ -244,7 +244,6 @@ Speaking of, sounds like we should go create that deployment!
 
 > ![the empty source with an ellipsis to indicate more options]({{site.post-images}}/2019-05-azure-devops-node/32_source-with-ellipsis.png)
 
-
 * I choose the artifact folder that I want to copy from:
 
 > ![choosing the drop folder from a list of folders]({{site.post-images}}/2019-05-azure-devops-node/33_select-file-from-artifacts.png)
@@ -253,9 +252,9 @@ Speaking of, sounds like we should go create that deployment!
 
 > ![the authorize button for subscription access]({{site.post-images}}/2019-05-azure-devops-node/34_authorize-subscription.png)
 
-...and I get an error. Which is fair, because I'm using a company resource and don't have full admin rights there (which I'm OK with). Normally on personal subscriptions it Just Works™️ 
+...and I get an error. Which is fair, because I'm using a company resource and don't have full admin rights there (which I'm OK with). Normally on personal subscriptions it Just Works™️.
 
-So, I'll leave off here for now until my IT dept is able to unblock me. 
+So, I'll leave off here for now until my IT dept is able to unblock me.
 
 ## A Note on Azure Subscription Permissions
 
@@ -263,7 +262,7 @@ And we're back! Fun fact: clicking that authorize button attempts to do so for a
 
 > ![the dropdown button on the authorize menu that shows advanced options]({{site.post-images}}/2019-05-azure-devops-node/35_authorize-advanced-options.png)
 
-You can select a resource group, and then it will work since I have access to the resource group: 
+You can select a resource group, and then it will work since I have access to the resource group:
 
 > ![selecting a specific resource group rather than a whole subscription]({{site.post-images}}/2019-05-azure-devops-node/36_authorization-info.png)
 
@@ -283,7 +282,7 @@ You can select a resource group, and then it will work since I have access to th
 
 > ![clicking the button to create a release]({{site.post-images}}/2019-05-azure-devops-node/39_create-release.png)
 
-* I give the release a description, and then click `Create`: 
+* I give the release a description, and then click `Create`:
 
 > ![adding a description for the release]({{site.post-images}}/2019-05-azure-devops-node/40_description.png)
 
@@ -307,7 +306,7 @@ Now, releases to prod are cool, so I want to show them off publicly. How do I do
 
 We can check it here: ![Status](https://vsrm.dev.azure.com/excellaco/_apis/public/Release/badge/ab42bd87-c4a4-44b8-9bcc-02ab7408d6c0/1/1)
 
-Sweet! I think I'll add it to the README as well. 
+Sweet! I think I'll add it to the README as well.
 
 ## Oops: Let's *actually* Continuously Deploy
 
@@ -326,7 +325,7 @@ Oops, one last thing: I'd messed up on the continuous deployment trigger option 
 
 Now I see:
 
-* ✅ The build finishes 
+* ✅ The build finishes
 * ✅ The release created itself
 * ✅ The release deploys the blob appropriately
 * ✅ The timestamps on the blob are updated
