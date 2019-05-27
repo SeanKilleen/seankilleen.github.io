@@ -67,15 +67,15 @@ What follows below is a full walkthrough, complete with some struggles, because 
 
 * Azure DevOps also has this nice Save & run button which will commit the YAML file back to our repo and begin the build process. So I click that to save it.
 
-> ![clicking the save and run button](https://user-images.githubusercontent.com/2148318/57157459-c2b6ae80-6dae-11e9-82a0-1bb58b89897a.png)
+> ![clicking the save and run button](images/post-images/2019-05-azure-devops-node/09_save-and-run.png)
 
 * We are given options for how to commit to the repo. I choose to commit directly to master because I live on the edge. No, kidding, but I do choose it because I see the contents and know committing to master will allow the build to kick off.
 
-> ![the set up and run screen which allows me to commit the files to the master branch](https://user-images.githubusercontent.com/2148318/57157590-27720900-6daf-11e9-8529-ec62ebdda608.png)
+> ![the set up and run screen which allows me to commit the files to the master branch](images/post-images/2019-05-azure-devops-node/10_commit-message.png)
 
 * An agent prepares itself and then [runs the job](https://dev.azure.com/excellaco/unanet-summarizer/_build/results?buildId=207). It's a success! We're just not doing anything with the output yet.
 
-> ![build success](https://user-images.githubusercontent.com/2148318/57157681-66a05a00-6daf-11e9-80de-cf314fae9629.png)
+> ![build success](images/post-images/2019-05-azure-devops-node/11_build-result.png)
 
 ## Status Badge
 
@@ -85,11 +85,11 @@ Next up, I'd like to set up a status badge for the builds that I can show in the
 
 * In the drop-down to the right, I select `Status Badge`:
 
-> ![build menu dropdown](https://user-images.githubusercontent.com/2148318/57157794-aebf7c80-6daf-11e9-9f8d-5d76eb31dc98.png)
+> ![build menu dropdown](12_status-badge-menu.png)
 
 * I choose the branch, and then copy the provided markdown (which is nice):
 
-> ![copying the provided markdown](https://user-images.githubusercontent.com/2148318/57157904-f1815480-6daf-11e9-8318-d56a43d2f99b.png)
+> ![copying the provided markdown](images/post-images/2019-05-azure-devops-node/13_status-badge-info.png)
 
 *  I test that markdown here: (because why not?) 
 
