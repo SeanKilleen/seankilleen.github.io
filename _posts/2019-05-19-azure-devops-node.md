@@ -187,12 +187,12 @@ The next step will be to create an Azure blob and then deploy the released JS to
 
 * I provide a name, and select container level anonymous read access, since our intention is explicitly to serve our scripts for the entire world to see.
 
-> ![providing information on the storage container](https://user-images.githubusercontent.com/2148318/57162589-ade11780-6dbc-11e9-917a-447b336b1b7f.png)
+> ![providing information on the storage container]({{site.post-images}}/2019-05-azure-devops-node/20_container-info.png)
 
 * After the container is created, I click into it. 
 * I then click properties on the left-hand menu, and get the URL of <https://unanetsummarizer.blob.core.windows.net/unanet-summarizer>:
 
-> ![getting the URL for the blob container](https://user-images.githubusercontent.com/2148318/57162656-dff27980-6dbc-11e9-8538-12ad1bbd7fdb.png)
+> ![getting the URL for the blob container]({{site.post-images}}/2019-05-azure-devops-node/21_container-url.png)
 
 This is where we'll eventually deploy to.
 
@@ -202,43 +202,43 @@ Speaking of, sounds like we should go create that deployment!
 
 * Back into Azure DevOps, I choose [Releases](https://dev.azure.com/excellaco/unanet-summarizer/_release) from the left-hand menu. I don't have yet, which makes sense. I choose to create a new one.
 
-> ![screen showing no release pipelines](https://user-images.githubusercontent.com/2148318/57162755-3e1f5c80-6dbd-11e9-8ab0-49a362df232f.png)
+> ![screen showing no release pipelines]({{site.post-images}}/2019-05-azure-devops-node/22_no-release-pipelines.png)
 
 * I'm prompted to start with a template but because we're outputting to a blob, I think that an empty job probably makes the most sense.
 
-> ![selecting a job type of empty job](https://user-images.githubusercontent.com/2148318/57162838-6eff9180-6dbd-11e9-835f-a8e91f6a72f5.png)
+> ![selecting a job type of empty job]({{site.post-images}}/2019-05-azure-devops-node/23_empty-job.png)
 
 * I get a default stage (what you might do for different environments, etc.). In our case, we have just one stage so far: "Deploy to the production blob". So I give the stage a name.
 
-> ![providing a name for the release stage](https://user-images.githubusercontent.com/2148318/57162911-a3734d80-6dbd-11e9-8ee6-772555942729.png)
+> ![providing a name for the release stage]({{site.post-images}}/2019-05-azure-devops-node/24_stage-name.png)
 
 * I'm not actually pulling in any artifacts that would kick off a release yet, so I click to do that:
 
-> ![clicking the button to add an artifact](https://user-images.githubusercontent.com/2148318/57162935-bbe36800-6dbd-11e9-8ff8-9b662f741ca3.png)
+> ![clicking the button to add an artifact]({{site.post-images}}/2019-05-azure-devops-node/25_add-artifact.png)
 
 * I tell the release that I want it to use the artifacts from the latest build of the `master` branch, and I click save:
 
-> ![providing the information for the artifact to pull in](https://user-images.githubusercontent.com/2148318/57163018-fe0ca980-6dbd-11e9-9ee5-00154e543efe.png)
+> ![providing the information for the artifact to pull in]({{site.post-images}}/2019-05-azure-devops-node/26_artifact-info.png)
 
 * Note the lightning bolt on the artifacts. That means that anytime a new one of these artifacts shows up, a release will be created and executed.
 
-> ![showing the label of the lightning bolt, which means continuous deployment](https://user-images.githubusercontent.com/2148318/57163071-21375900-6dbe-11e9-823e-285b19c93d90.png)
+> ![showing the label of the lightning bolt, which means continuous deployment]({{site.post-images}}/2019-05-azure-devops-node/27_continuous-deployment.png)
 
 * I click to view the tasks for the stage, since we haven't added any yet:
 
-> ![clicking the link to view stage tasks](https://user-images.githubusercontent.com/2148318/57163129-4a57e980-6dbe-11e9-9643-3eedad2afd14.png)
+> ![clicking the link to view stage tasks]({{site.post-images}}/2019-05-azure-devops-node/28_add-task-link.png)
 
 * I click to add a task to the agent job:
 
-> ![clicking the plus icon to add a task](https://user-images.githubusercontent.com/2148318/57163155-5cd22300-6dbe-11e9-9f13-91c838dd3c8f.png)
+> ![clicking the plus icon to add a task]({{site.post-images}}/2019-05-azure-devops-node/29_add-task.png)
 
 * In the tasks, list, I search for "blob" (this is literally my first time doing this), and awesomely, "Azure File Copy" comes up. I click to add it.
 
-> ![searching for and selecting azure file copy](https://user-images.githubusercontent.com/2148318/57163197-7d01e200-6dbe-11e9-9a87-ee5428bdbceb.png)
+> ![searching for and selecting azure file copy]({{site.post-images}}/2019-05-azure-devops-node/30_azure-file-copy.png)
 
 * I see that "some settings need my attention", so I click into it:
 
-> ![a validation warning showing that some settings need attention](https://user-images.githubusercontent.com/2148318/57163227-930fa280-6dbe-11e9-9c35-ac51bc910ddc.png)
+> ![a validation warning showing that some settings need attention]({{site.post-images}}/2019-05-azure-devops-node/31_settings-need-attention.png)
 
 * I need to select a source. Luckily, there's an elipsis menu that lets me select the location based on my artifact output:
 
