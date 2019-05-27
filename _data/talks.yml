@@ -164,7 +164,6 @@ past:
     slidesLink: https://seankilleen.com/Presentations/2019-04_ServerlessIsMore/
     description: In this session, Sean will walk through how to use Azure Functions and Azure Key Vault to create a system to continually share his RSS subscriptions with the world. Follow along as we discuss concepts of serverless computing, build a functional application, an marvel at all the things we didn’t have to do.
     location: Philadelphia, PA    
-upcoming:
   - title: "Serverless is more: An Introduction to Azure Functions"
     date: 2019-05-07
     group: Central Maryland Association for .NET Professionals (CMAP)
@@ -172,6 +171,7 @@ upcoming:
     location: Columbia, MD
     eventLink: https://www.meetup.com/CMAP-Online
     sessionLink: https://www.meetup.com/CMAP-Online/events/260651634
+upcoming:
   - title: "(Fr)agile: How Agile Falls Apart, and What You Can Do to Hold It All Together"
     date: 2019-06-06
     group: RevolutionConf
