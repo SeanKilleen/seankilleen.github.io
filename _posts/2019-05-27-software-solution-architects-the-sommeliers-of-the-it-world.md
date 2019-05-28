@@ -1,7 +1,7 @@
 ---
 title: 'Software/Solution Architects: The Sommeliers of the IT World'
 comments: true
-tags: 'List ["jobs", "careers", "metaphors", "architecture"]'
+tags: ["jobs", "careers", "metaphors", "architecture"]
 date: '2019-05-27 10:26 -0400'
 ---
 
