@@ -1,5 +1,4 @@
 ---
-layout: post
 title: What I Learned From Taking a Two-Week Vacation for my Honeymoon
 comments: true
 tags: 'List ["jobs", "careers", "metaphors", "architecture"]'
