@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Software/Solution Architects: The Sommeliers of the IT World'
 comments: true
 tags: 'List ["jobs", "careers", "metaphors", "architecture"]'
