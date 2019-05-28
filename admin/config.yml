@@ -3,7 +3,7 @@ backend:
   repo: seankilleen/seankilleen.github.io 
   branch: master # Branch to update (master by default)
   site_domain: seankilleen.com # so we can get the github login redirected correctly
-
+publish_mode: editorial_workflow
 media_folder: "images/post-images" # Folder where user uploaded files should go
 
 collections: # A list of collections the CMS should be able to edit
