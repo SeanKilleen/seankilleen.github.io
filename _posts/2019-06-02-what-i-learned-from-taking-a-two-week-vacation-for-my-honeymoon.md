@@ -2,10 +2,11 @@
 title: What I Learned From Taking a Two-Week Vacation for my Honeymoon
 comments: true
 tags:
-  - jobs
-  - careers
-  - metaphors
-  - architecture
+  - personal
+  - balance
+  - burnout
+  - productivity
+  - health
 date: '2019-06-02 10:00 -0400'
 ---
 My wife and I recently took our honeymoon a year and a half after we got married. It was the longest vacation I've ever taken, and probably the first one I can remember where I didn't bring my laptop. 
