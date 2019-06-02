@@ -6,7 +6,7 @@ tags:
   - agile
   - retrospectives
   - safety
-date: '2019-06-02 02:36 -0400'
+date: '2019-06-02 14:36 -0400'
 ---
 _I'm considering a series called "Agile Survival Guide", designed to muse on / attempt to tackle some common things I've seen happen on projects that are attempting to embrace an agile mindset but are maybe falling a little bit short._
 
