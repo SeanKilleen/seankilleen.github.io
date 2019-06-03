@@ -23,10 +23,10 @@ collections: # A list of collections the CMS should be able to edit
       preview: false
   - name: "talks"
     label: "Talks"
-    files: ["_data/talks.yml"]
-    fields: 
+    files: 
       - label: "Past Talks"
         name: past
+        file: "_data/talks.yml"
         widget: list
         fields: 
           - { label: "Title", name: title, widget: string }
@@ -40,6 +40,7 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Code Link", name: codeLink, widget: string, required: false }
       - label: "Upcoming Talks"
         name: upcoming
+        file: "_data/talks.yml"
         widget: list
         fields:
           - { label: "Title", name: title, widget: string }
