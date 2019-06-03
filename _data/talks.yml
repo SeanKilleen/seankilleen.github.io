@@ -187,7 +187,25 @@ upcoming:
     location: Sterling, VA
   - title: "Future-proofing Your Desktop Apps With .NET Core"
     date: 2019-06-20
-    group: Microsoft Insider Dev Tour
+    group: Microsoft Insider Dev Tour DC
     eventLink: https://insiderdevtour.com/
-    description: (Coming soon.)
+    description: "Having a WPF or WinForms application doesn’t mean you have old code. Moving your app to the next version of .NET Core will give you access to all the benefits of the Open Source version of .NET, including better performance, easier deployment and all its new features. In this session we will show how to create a new .NET Core app, why would you do it, and how to upgrade an existing project."
     location: Arena Stage at the Mead Center for American Theater, Washington, DC
+  - title: "Introduction to Microsoft Graph Services"
+    date: 2019-06-29
+    group: Microsoft Insider Dev Tour NYC
+    eventLink: https://insiderdevtour.com/
+    description: "Microsoft Graph provides a unified programmability model that you can use to build apps for organizations and consumers that interact with the data of millions of users. You can use the Microsoft Graph REST APIs to access data in Azure Active Directory, Office 365 services, Enterprise Mobility and Security services, Windows 10 services, Dynamics 365, and more."
+    location: TBD
+  - title: "Introduction to Microsoft Graph Services"
+    date: 2019-06-29
+    group: Microsoft Insider Dev Tour NYC
+    eventLink: https://insiderdevtour.com/
+    description: "Microsoft Graph provides a unified programmability model that you can use to build apps for organizations and consumers that interact with the data of millions of users. You can use the Microsoft Graph REST APIs to access data in Azure Active Directory, Office 365 services, Enterprise Mobility and Security services, Windows 10 services, Dynamics 365, and more."
+    location: TBD
+  - title: "Serverless is more: An Introduction to Azure Functions"
+    date: 2019-07-25
+    group: CodeOnTheBeach
+    eventLink: https://www.codeonthebeach.com/
+    description: In this session, Sean will walk through how to use Azure Functions and Azure Key Vault to create a system to continually share his RSS subscriptions with the world. Follow along as we discuss concepts of serverless computing, build a functional application, an marvel at all the things we didn’t have to do.
+    location: Atlantic Beach, FL
