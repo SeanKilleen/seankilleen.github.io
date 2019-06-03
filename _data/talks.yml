@@ -197,12 +197,6 @@ upcoming:
     eventLink: https://insiderdevtour.com/
     description: "Microsoft Graph provides a unified programmability model that you can use to build apps for organizations and consumers that interact with the data of millions of users. You can use the Microsoft Graph REST APIs to access data in Azure Active Directory, Office 365 services, Enterprise Mobility and Security services, Windows 10 services, Dynamics 365, and more."
     location: TBD
-  - title: "Introduction to Microsoft Graph Services"
-    date: 2019-06-29
-    group: Microsoft Insider Dev Tour NYC
-    eventLink: https://insiderdevtour.com/
-    description: "Microsoft Graph provides a unified programmability model that you can use to build apps for organizations and consumers that interact with the data of millions of users. You can use the Microsoft Graph REST APIs to access data in Azure Active Directory, Office 365 services, Enterprise Mobility and Security services, Windows 10 services, Dynamics 365, and more."
-    location: TBD
   - title: "Serverless is more: An Introduction to Azure Functions"
     date: 2019-07-25
     group: CodeOnTheBeach
