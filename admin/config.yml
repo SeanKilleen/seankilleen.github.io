@@ -18,6 +18,35 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Comments", name: "comments", widget: "boolean", default: true}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm ZZ"}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm ZZ"}
     editor:
       preview: false
+  - name: "talks"
+    label: "Talks"
+    file: "_data/talks.yml"
+      fields: 
+        - label: "Past Talks"
+          name: past
+          widget: list
+          fields: 
+            - { label: "Title", name: title, widget: string }
+            - { label: "Date", name: date, widget: date }
+            - { label: "Group", name: group, widget: string }
+            - { label: "Location", name: location, widget: string }
+            - { label: "Description", name: description, widget: string }
+            - { label: "Session Link", name: sessionLink, widget: string, required: false }
+            - { label: "Event Link", name: eventLink, widget: string, required: false }
+            - { label: "Slides Link", name: slidesLink, widget: string, required: false }
+            - { label: "Code Link", name: codeLink, widget: string, required: false }
+        - label: "Upcoming Talks"
+          name: upcoming
+          widget: list
+            - { label: "Title", name: title, widget: string }
+            - { label: "Date", name: date, widget: date }
+            - { label: "Group", name: group, widget: string }
+            - { label: "Location", name: location, widget: string }
+            - { label: "Description", name: description, widget: string }
+            - { label: "Session Link", name: sessionLink, widget: string, required: false }
+            - { label: "Event Link", name: eventLink, widget: string, required: false }
+            - { label: "Slides Link", name: slidesLink, widget: string, required: false }
+            - { label: "Code Link", name: codeLink, widget: string, required: false }
