@@ -23,7 +23,7 @@ collections: # A list of collections the CMS should be able to edit
       preview: false
   - name: "talks"
     label: "Talks"
-    files: "_data/talks.yml"
+    files: ["_data/talks.yml"]
     fields: 
       - label: "Past Talks"
         name: past
