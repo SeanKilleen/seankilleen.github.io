@@ -1,3 +1,9 @@
 {
-    "hideElements": "#carbonads, section.page__share"
+    "hideElements": "#carbonads, section.page__share, html > body > iframe",
+    "chromeLaunchConfig": {
+        "args": [
+            "--disable-extensions",
+            "--disable-plugins"
+        ]
+    }
 }

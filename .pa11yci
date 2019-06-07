@@ -1,5 +1,5 @@
 {
     "defaults": {
-        "hideElements": "#carbonads"
+        "hideElements": "#carbonads, section.page__share, html > body > iframe",
     }
 }
