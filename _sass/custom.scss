@@ -18,3 +18,11 @@ p.page__meta {
 .pagination > ul > li > a.disabled {
     color: $darker-contrast-color;
 }
+
+footer > p {
+    color: $darker-contrast-color;
+}
+
+.pagination--pager, .pagination--pager.disabled {
+    color: $darker-contrast-color;
+}
