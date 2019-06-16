@@ -36,6 +36,8 @@ date: '2019-06-16 16:56 -0400'
 
 \* Setting up Dependabot for a private GitHub Enterprise Repository using Docker
 
+\* Hosting a Docker image via Azure Container Instances 
+
 \## Setting up Dependabot for a Public GitHub repository
 
-\## Setting up Dependabot for a private repo
+\## Setting up Dependabot for a Private Repo with Docker
