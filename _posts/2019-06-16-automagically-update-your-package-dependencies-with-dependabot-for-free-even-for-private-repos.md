@@ -31,6 +31,14 @@ But updating packages isn't exactly a breeze. A lot of teams hold off on upgradi
 
 [Dependabot](https://dependabot.com) is a tool for keeping your dependencies -- npm packages, nuget packages, ruby gems, etc -- up to date in an incremental fashion. 
 
+Some things I love about Dependabot:
+
+* **It updates dependencies incrementally**: Rather than in one fell swoop, or upgrading a package to the absolute latest version, Dependabot gets you where you need to go in a steady, incremental way, ensuring that you're less likely to suffer breakages.
+* **It does the work for you**: What I _absolutely love_ about Dependabot is that it will actually make the pull request for you, along with information about the update and whether it anticipates breaking changes. So you don't even have to do most of the work.  
+* **It provides handy tooling**: Did another PR cause a conflict somehow? Dependabot is smart enough to rebase its changes. 
+
+So, combined with a CI pipeline that executes tests to ensure things work well, Dependabot is part of a balanced coding breakfast -- it allows you to keep things updated with minimal hassle. 
+
 ## What We'll Cover in This Article
 
 * Setting up Dependabot for a Public GitHub repository
