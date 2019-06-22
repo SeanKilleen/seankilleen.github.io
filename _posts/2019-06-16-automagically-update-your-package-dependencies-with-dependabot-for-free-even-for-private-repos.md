@@ -51,6 +51,22 @@ So, combined with a CI pipeline that executes tests to ensure things work well, 
 * Head to [http://dependabot.com to sign up for an account](http://dependabot.com).
 * In the [Dependabot app](https://app.dependabot.com), click `Add Repos` from the top menu:
 
-![Dependabot menu with a button for adding repos](/images/post-images/01_addrepo.png)
+> ![Dependabot menu with a button for adding repos](/images/post-images/01_addrepo.png)
+
+* Grant access to a repository
+* Add each language the package uses, with a reference to the configuration file (e.g. to your `gems` file, or your `package.json` file, or your `packages.config` file)
+* Set up your preferences for the repository
+* ...sit back and wait! Dependabot will now start making pull requests on your behalf.
+
+## An example Dependabot PR
+
+Here's [a recent PR that dependabot opened for my blog's repo](https://github.com/SeanKilleen/seankilleen.github.io/pull/352). It contains some really helpful information:
+
+* Release notes from the update
+* A list of commits that were made by the authors as part of the update
+* A compatibility score based on all the other projects that Dependabot has made this update for, and whether they worked. 97% compatibility? Nice -- even more confidence!
+* A list of commands I can run with Dependabot right within the PR to help me out.
+
+Beautiful! My blog has a CI/CD process via Netlify -- if Netlify can run and generate a preview, that tells me we're probably doing OK. So in the end, I see a PR with notes and tests passing, and a preview of my blog. That helps me feel pretty good about the changes.
 
 ## Setting up Dependabot for a Private Repo with Docker
