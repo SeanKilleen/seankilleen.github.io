@@ -171,20 +171,21 @@ past:
     location: Columbia, MD
     eventLink: https://www.meetup.com/CMAP-Online
     sessionLink: https://www.meetup.com/CMAP-Online/events/260651634
-upcoming:
-  - title: "(Fr)agile: How Agile Falls Apart, and What You Can Do to Hold It All Together"
-    date: 2019-06-06
-    group: RevolutionConf
-    eventLink: https://revolutionconf.com/
-    description: Working in an agile mindset – especially when favoring specific approaches – can go wrong in about 100 ways. In this talk, I describe some lessons as a technical lead working on agile teams, holding it together with duct tape and a little help from my friends.
-    location: Virginia Beach, VA
   - title: "Serverless is more: An Introduction to Azure Functions"
     date: 2019-06-19
     group: Microsoft Maniacs
     eventLink: https://www.meetup.com/Microsoft-Maniacs/
     sessionLink: https://www.meetup.com/Microsoft-Maniacs/events/260895955/
     description: In this session, Sean will walk through how to use Azure Functions and Azure Key Vault to create a system to continually share his RSS subscriptions with the world. Follow along as we discuss concepts of serverless computing, build a functional application, an marvel at all the things we didn’t have to do.
-    location: Sterling, VA
+    location: Sterling, VA    
+    slidesLink: https://seankilleen.com/Presentations/ServerlessIsMore/
+  - title: "(Fr)agile: How Agile Falls Apart, and What You Can Do to Hold It All Together"
+    date: 2019-06-06
+    group: RevolutionConf
+    eventLink: https://revolutionconf.com/
+    description: Working in an agile mindset – especially when favoring specific approaches – can go wrong in about 100 ways. In this talk, I describe some lessons as a technical lead working on agile teams, holding it together with duct tape and a little help from my friends.
+    location: Virginia Beach, VA
+upcoming:
   - title: "Introduction to Microsoft Graph Services"
     date: 2019-06-29
     group: Microsoft Insider Dev Tour NYC
