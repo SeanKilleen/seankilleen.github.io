@@ -36,6 +36,7 @@ Some things I love about Dependabot:
 * **It updates dependencies incrementally**: Rather than in one fell swoop, or upgrading a package to the absolute latest version, Dependabot gets you where you need to go in a steady, incremental way, ensuring that you're less likely to suffer breakages.
 * **It does the work for you**: What I _absolutely love_ about Dependabot is that it will actually make the pull request for you, along with information about the update and whether it anticipates breaking changes. So you don't even have to do most of the work.  
 * **It provides handy tooling**: Did another PR cause a conflict somehow? Dependabot is smart enough to rebase its changes. 
+* **It stores its configuration along with the repo**: You can set it up from Dependabot's interface, but you can also save the configuration in a YAML file right alongside your code.
 
 So, combined with a CI pipeline that executes tests to ensure things work well, Dependabot is part of a balanced coding breakfast -- it allows you to keep things updated with minimal hassle. 
 
@@ -46,5 +47,10 @@ So, combined with a CI pipeline that executes tests to ensure things work well, 
 * Hosting a Docker image via Azure Container Instances 
 
 ## Setting up Dependabot for a Public GitHub repository
+
+* Head to [http://dependabot.com to sign up for an account](http://dependabot.com).
+* In the [Dependabot app](https://app.dependabot.com), click `Add Repos` from the top menu:
+
+![Dependabot menu with a button for adding repos](/images/post-images/01_addrepo.png)
 
 ## Setting up Dependabot for a Private Repo with Docker
