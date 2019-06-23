@@ -70,3 +70,7 @@ Here's [a recent PR that dependabot opened for my blog's repo](https://github.co
 Beautiful! My blog has a CI/CD process via Netlify -- if Netlify can run and generate a preview, that tells me we're probably doing OK. So in the end, I see a PR with notes and tests passing, and a preview of my blog. That helps me feel pretty good about the changes, and I can merge the results quickly.
 
 ## Setting up Dependabot for a Private Repo with Docker
+
+OK, so that's great -- but what if my repository is hosted on GitHub Enterprise behind a firewall where Dependabot can never get to it?
+
+...well, the folks about Dependabot have been awesome enough to [make dependabot-core OSS](https://github.com/dependabot/dependabot-core).
