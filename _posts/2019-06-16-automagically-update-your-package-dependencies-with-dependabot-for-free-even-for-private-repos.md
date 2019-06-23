@@ -73,4 +73,10 @@ Beautiful! My blog has a CI/CD process via Netlify -- if Netlify can run and gen
 
 OK, so that's great -- but what if my repository is hosted on GitHub Enterprise behind a firewall where Dependabot can never get to it?
 
-...well, the folks about Dependabot have been awesome enough to [make dependabot-core OSS](https://github.com/dependabot/dependabot-core).
+...well, the folks about Dependabot have been awesome enough to [make dependabot-core OSS](https://github.com/dependabot/dependabot-core), because as their README file says:
+
+> we're more interested in it having an impact than we are in making a buck from it.
+
+Isn't that a wonderful thing?
+
+OK, so you want to host a Dependabot instance via Docker. Assuming you have Docker with linux containers installed / enabled, the following should work:
