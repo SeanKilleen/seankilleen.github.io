@@ -25,3 +25,18 @@ Examples:
 * Mandating that certain aspects of the RFP will become part of the final product. Really, the quality metrics table for reporting is going to never change, despite you wanting to change the way your applications are built and perceived? We're not going to learn anything between RFP and the end of this contract?
 * Contracts leave very little room for learning. I wonder if we haven't appropriately figured out the legal way to say "we're going to set common goals, pursue them together, and learn things along the way". 
 * Treating complex, complicated problems and situations as something that you can order a solution for from a vending machine.
+
+## You're Hiring Someone to Raise Your Consciousness. THAT's Your RFP. 
+
+## So, what would I recommend the RFP?
+
+* Start small
+* Be up-front about how big you plan on going
+* Use very few words to ask about process
+* Use lots of words to talk about challenges and outcomes
+* Talk about where you feel the need to be more cautious currently
+* Be vulnerable. 
+
+## ...But the best tip?
+
+Get someone you trust involved up front. Do you have training partners, former consultants former employees who've helped you out? Involve them in your RFP process. This is important, and it could impact your culture and your outcomes for years into the future. Pull in the people you trust and get them to advise you on the things the RFP needs to say -- and more importantly, what it doesn't need to say. 
