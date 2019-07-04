@@ -20,3 +20,10 @@ I'd like to recreate it. IFTTT can hit a URL, and LinkedIn has an API. Let's coo
 ## What We're Building
 
 We're going to build an open-source Azure Function application -- that you can deploy for your own use -- to set LinkedIn updates on your behalf.
+
+## First up: Registering an Application
+
+OK, LinkedIn makes you jump through some hoops here. You'll need to add a company to LinkedIn, and then you'll need to register an app for that company. Unfortunately you can't register them to an individual. So that's...a bummer. But for the sake of this example, we'll do it.
+
+* Head to the LinkedIn developers page at <https://www.linkedin.com/developers/apps>. 
+* Click the `Create App` button
