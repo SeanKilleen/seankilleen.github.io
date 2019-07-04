@@ -6,7 +6,7 @@ tags:
   - dependency management
   - devops
   - bots
-date: '2019-06-16 16:56 -0400'
+date: '2019-07-04 11:00 -0400'
 ---
 With the news that [Dependabot has been acquired by GitHub](https://dependabot.com/blog/hello-github/), I thought it was a good time to explain what a phenomenal help I find this tool to be, and how you can get it set up on your own repositories to keep your packages up to date without a sweat.
 
