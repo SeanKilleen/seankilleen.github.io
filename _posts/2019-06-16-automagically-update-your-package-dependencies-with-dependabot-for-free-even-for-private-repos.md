@@ -69,6 +69,6 @@ OK, so that's great -- but what if my repository is hosted on GitHub Enterprise 
 
 > we're more interested in it having an impact than we are in making a buck from it.
 
-Isn't that a wonderful thing?
+Isn't that a wonderful thing? If folks are interested I may do a tutorial on that in the near future.
 
-Go forth and keep things current. Happy developing!
+SO, go forth and keep things current. Happy coding!
