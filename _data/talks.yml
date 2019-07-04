@@ -199,6 +199,13 @@ upcoming:
     sessionLink: https://web.cvent.com/event/c3a13011-eacc-4b39-8c55-1b3c2f346656/summary
     description: "A 3-day course on Agile Engineering Principles and Practices that is considered the technical requirement for the Certified Scrum Developer (CSD) certification."
     location: Arlington, VA
+  - title: "(ICP-TST/ATA) Certified Agile Testing Training"
+    date: 2019-08-12
+    group: Excella Training
+    eventLink: http://xluh.co/training
+    sessionLink: https://web.cvent.com/event/05708718-9a54-4826-b2ac-547bcb0e7255/summary
+    description: "A 3-day course on Agile Testing for folks in QA or product ownership who are doing manual testing but want to learn about applying the testing mindset from day 1. ICAgile-certified."
+    location: Arlington, VA
   - title: "Serverless is more: An Introduction to Azure Functions"
     date: 2019-07-25
     group: CodeOnTheBeach
