@@ -185,13 +185,20 @@ past:
     eventLink: https://revolutionconf.com/
     description: Working in an agile mindset – especially when favoring specific approaches – can go wrong in about 100 ways. In this talk, I describe some lessons as a technical lead working on agile teams, holding it together with duct tape and a little help from my friends.
     location: Virginia Beach, VA
-upcoming:
   - title: "Introduction to Microsoft Graph Services"
     date: 2019-06-29
     group: Microsoft Insider Dev Tour NYC
     eventLink: https://insiderdevtour.com/
     description: "Microsoft Graph provides a unified programmability model that you can use to build apps for organizations and consumers that interact with the data of millions of users. You can use the Microsoft Graph REST APIs to access data in Azure Active Directory, Office 365 services, Enterprise Mobility and Security services, Windows 10 services, Dynamics 365, and more."
-    location: TBD
+    location: New York City, NY
+upcoming:
+  - title: "(CSD) Agile Engineering 3-Day Training Course"
+    date: 2019-07-08
+    group: Excella Training
+    eventLink: http://xluh.co/training
+    sessionLink: https://web.cvent.com/event/c3a13011-eacc-4b39-8c55-1b3c2f346656/summary
+    description: "A 3-day course on Agile Engineering Principles and Practices that is considered the technical requirement for the Certified Scrum Developer (CSD) certification."
+    location: Arlington, VA
   - title: "Serverless is more: An Introduction to Azure Functions"
     date: 2019-07-25
     group: CodeOnTheBeach
