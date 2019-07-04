@@ -1,7 +1,5 @@
 ---
-title: >-
-  Automagically Update Your Package Dependencies With Dependabot For Free --
-  Even for Private Repos!
+title: Automagically Update Your Package Dependencies With Dependabot -- For Free!
 comments: true
 tags:
   - tutorial
@@ -40,12 +38,6 @@ Some things I love about Dependabot:
 
 So, combined with a CI pipeline that executes tests to ensure things work well, Dependabot is part of a balanced coding breakfast -- it allows you to keep things updated with minimal hassle. 
 
-## What We'll Cover in This Article
-
-* Setting up Dependabot for a Public GitHub repository
-* Setting up Dependabot for a private GitHub Enterprise Repository using Docker
-* Hosting a Docker image via Azure Container Instances 
-
 ## Setting up Dependabot for a Public GitHub repository
 
 * Head to [http://dependabot.com to sign up for an account](http://dependabot.com).
@@ -69,7 +61,7 @@ Here's [a recent PR that dependabot opened for my blog's repo](https://github.co
 
 Beautiful! My blog has a CI/CD process via Netlify -- if Netlify can run and generate a preview, that tells me we're probably doing OK. So in the end, I see a PR with notes and tests passing, and a preview of my blog. That helps me feel pretty good about the changes, and I can merge the results quickly.
 
-## Setting up Dependabot for a Private Repo with Docker
+## With a little work, Dependabot can also be used with private repositories!
 
 OK, so that's great -- but what if my repository is hosted on GitHub Enterprise behind a firewall where Dependabot can never get to it?
 
@@ -79,4 +71,4 @@ OK, so that's great -- but what if my repository is hosted on GitHub Enterprise 
 
 Isn't that a wonderful thing?
 
-OK, so you want to host a Dependabot instance via Docker. Assuming you have Docker with linux containers installed / enabled, the following should work:
+Go forth and keep things current. Happy developing!
