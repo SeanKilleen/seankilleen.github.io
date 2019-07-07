@@ -23,6 +23,8 @@ These web sites have been kept (roughly) in sync via manual updates but have sma
 
 Any change made to the schema involved generating SQL scripts and was inconsistent at best and often a headache, preventing them from going faster. The site used an EDMX that was generated from a database a long time ago but wasn't necessarily up to date.
 
+Additionally, because there were no migrations, nobody could easily create an accurate local version of the DB. Sure they could use data tools, but it wasn't guaranteed to be exactly the same since their environments weren't perfectly in sync.
+
 Migrations weren't an option as/is -- the databases already existed, and none of their models were quite the same (though they were highly compatible), so I would have run into errors when applying to some environment. And also, given that this is on a web site that they're running, I didn't want to screw anything up or add risk for them.
 
 ## The Goal
@@ -33,14 +35,13 @@ I wanted to enable my friend to:
 * Move to a code-first migrations setup
 * Not break anything running
 
-## The Overall Approach
+## How I did it
 
 I decided to:
 
-* Move to EF code-first migrations
+* Move to EF code-first migrations in the code
+* Test it on a local SQLExpress DB
 * Copy the SQL Server using Azure RM
 * Apply migrations
 * Use SSDT to get the data into my new DBs 
 * Switch the connection strings
-
-## What I did
