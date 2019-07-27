@@ -191,7 +191,6 @@ past:
     eventLink: https://insiderdevtour.com/
     description: "Microsoft Graph provides a unified programmability model that you can use to build apps for organizations and consumers that interact with the data of millions of users. You can use the Microsoft Graph REST APIs to access data in Azure Active Directory, Office 365 services, Enterprise Mobility and Security services, Windows 10 services, Dynamics 365, and more."
     location: New York City, NY
-upcoming:
   - title: "(CSD) Agile Engineering 3-Day Training Course"
     date: 2019-07-08
     group: Excella Training
@@ -199,6 +198,15 @@ upcoming:
     sessionLink: https://web.cvent.com/event/c3a13011-eacc-4b39-8c55-1b3c2f346656/summary
     description: "A 3-day course on Agile Engineering Principles and Practices that is considered the technical requirement for the Certified Scrum Developer (CSD) certification."
     location: Arlington, VA
+  - title: "Serverless is more: An Introduction to Azure Functions"
+    date: 2019-07-25
+    group: CodeOnTheBeach
+    eventLink: https://www.codeonthebeach.com/
+    slidesLink: https://seankilleen.com/Presentations/ServerlessIsMore/
+    codeLink: https://github.com/seankilleen/feedly-opml-export
+    description: In this session, Sean will walk through how to use Azure Functions and Azure Key Vault to create a system to continually share his RSS subscriptions with the world. Follow along as we discuss concepts of serverless computing, build a functional application, an marvel at all the things we didn’t have to do.
+    location: Atlantic Beach, FL
+upcoming:
   - title: "(ICP-TST/ATA) Certified Agile Testing Training"
     date: 2019-08-12
     group: Excella Training
@@ -206,9 +214,10 @@ upcoming:
     sessionLink: https://web.cvent.com/event/05708718-9a54-4826-b2ac-547bcb0e7255/summary
     description: "A 3-day course on Agile Testing for folks in QA or product ownership who are doing manual testing but want to learn about applying the testing mindset from day 1. ICAgile-certified."
     location: Arlington, VA
-  - title: "Serverless is more: An Introduction to Azure Functions"
-    date: 2019-07-25
-    group: CodeOnTheBeach
-    eventLink: https://www.codeonthebeach.com/
-    description: In this session, Sean will walk through how to use Azure Functions and Azure Key Vault to create a system to continually share his RSS subscriptions with the world. Follow along as we discuss concepts of serverless computing, build a functional application, an marvel at all the things we didn’t have to do.
-    location: Atlantic Beach, FL
+  - title: "Full-Day Workshop: Modernizing to .NET Core"
+    date: 2019-11-12
+    group: TechBash
+    eventLink: https://techbash.com/
+    sessionLink: https://techbash.com/
+    description: In this workshop, we'll introduce .NET Core conceptually and work to modernize .NET Framework application. We'll have practical tips and discussions of pitfalls along the way.
+    location: Poconos, PA
