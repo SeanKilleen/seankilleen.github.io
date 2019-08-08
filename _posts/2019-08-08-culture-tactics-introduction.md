@@ -1,5 +1,5 @@
 ---
-title: 'Culture > Tactics: Introduction'
+title: 'Culture > Tactics: Why Your Agile Investments Aren''t Paying Off'
 comments: true
 tags:
   - culture
