@@ -7,11 +7,11 @@ tags:
   - blueprints
 date: '2019-08-09 08:24 -0400'
 ---
-I recently connected with someone on Twitter who had some questions about architecture. I thought the challenge was interesting, so below are the parameters of the challenge and how I went about trying to architect a solution for her (who I'll generally call "the client" from here on out, even though money isn't changing hands here).
+I recently connected with someone on Twitter who had some questions about architecture for a personal setup in the cloud. I thought the challenge was interesting, so below are the parameters of the question and how I went about trying to architect a solution for her (who I'll generally call "the client" from here on out, even though money isn't changing hands here).
 
 ## Background / Goal
 
-The client is moving overseas and cannot take their desktop equipment with them because they'll have no place to store it. They previously used this desktop as a central workhorse -- VPNing into it during travel, etc. -- and are looking to re-create that sort of central place without being tied to the physical presence of desktop hardware.
+The client is moving overseas and cannot take their desktop equipment with them because they'll have no place to store it. They previously used this desktop as a central machine -- VPNing into it during travel, etc. -- and are looking to re-create that sort of central place without being tied to the physical presence of desktop hardware.
 
 ## The Stated Constraints
 
