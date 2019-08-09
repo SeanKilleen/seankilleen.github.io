@@ -48,6 +48,7 @@ OK, that's a lot of good information to go on. Here's what I'm thinking:
 ## Trade-Offs
 
 * **Data security concerns vs. Cost Effectiveness**: Client raised the (totally reasonable) point that MS holds the encryption keys to OneDrive storage and so they normally keep minimal files there. However, a 2 TB disk attached to an Azure VM -- excluding backup costs -- will likely run $80-100/mo, which bumps up against the budget constraints. 
+* **Graphics**: The client mentioned Adobe Photoshop / InDesign, etc. One of the areas this solution is weak in is that the machines in this setup don't have discrete graphics cards. I'm not sure what to do about that, nor am I sure what the impact will be overall. 
 
 ## Calculating the Cost
 
