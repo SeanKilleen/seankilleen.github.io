@@ -25,7 +25,7 @@ The client is moving overseas and cannot take their desktop equipment with them 
 * **What kinds of data / information?** Occasional graphics-intensive workloads (think Adobe Photoshop & InDesign); Outlook e-mail files; Audacity music files
 * **Budget**: Generally speaking, she'd like to keep this as expensive as new hardware would cost when spread over 3 years, so think $1k/year or $83/mo. 
 * **Stretch budget**: Client mentioned that if the solution delivered, they could pay up to roughly $200/month, which does give us some wiggle room.
-* **Where (roughly) will the client be located?** TODO; will affect pricing and what regions we'll want to consider utilizing for VMs, etc.
+* **Where (roughly) will the client be located?** The client will be located in the UK, but has some data that can't cross boundaries, and so things can be located in the US (they're aware of the lag possibility).
 * **How much time per day does the client anticipate using the machine?** TODO; We can use this to extrapolate costs based on our system
 * **Roughly how much data?** TODO; this will affect our understanding of costs for things like VM backup
 
