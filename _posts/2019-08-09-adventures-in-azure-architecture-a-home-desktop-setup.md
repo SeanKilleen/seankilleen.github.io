@@ -53,27 +53,27 @@ OK, that's a lot of good information to go on. Here's what I'm thinking:
 
 I used the [Azure pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/) to attempt to whip up an estimate.
 
-| Item | Using OneDrive Storge | No OneDrive | Notes | 
-| ---- | ---------------------:| -----------:| ----- |
-| **Regular VM** | | | |
-| Machine | $36.55 | $36.55 | 2 vCPU, 8 GB RAM. Assumes 6 hours use per day. |
-| Storage | $19 | $82 | This is a Standard HDD; SSD would be $153. 256 GB assumed if using OneDrive since most if it stays on the cloud. |
-| VM Backup | $10 | $50 |  |
-| **"Intense Use" VM** | | | Used less often, for more demanding workloads |
-| Machine | $3.78 | $3.78 | 4 vCPU, 32 GB RAM. Assumes 6 hours use *per month*. |
-| Storage | $9.60 | $9.60 | SSD, 64 GB (assuming she'll use this for work and then store things elsewhere). |
-| VM Backup | $10 | $10 |  |
-| **Backblaze Subscription** | $0 | $6 | Recommended if not primarily storing things on an automatically backed up system like OneDrive |
-|   |   |   |  |
-| **Total** | $89 | $198 |  |
+| Item                       | Using OneDrive Storge | No OneDrive | Notes                                                                                                            |
+| -------------------------- | --------------------- | ----------- | ---------------------------------------------------------------------------------------------------------------- |
+| **Regular VM**             |                       |             |                                                                                                                  |
+| Machine                    | $36.55                | $36.55      | 2 vCPU, 8 GB RAM. Assumes 6 hours use per day.                                                                   |
+| Storage                    | $19                   | $82         | This is a Standard HDD; SSD would be $153. 256 GB assumed if using OneDrive since most if it stays on the cloud. |
+| VM Backup                  | $10                   | $50         |                                                                                                                  |
+| **"Intense Use" VM**       |                       |             | Used less often, for more demanding workloads                                                                    |
+| Machine                    | $3.78                 | $3.78       | 4 vCPU, 32 GB RAM. Assumes 6 hours use _per month_.                                                              |
+| Storage                    | $9.60                 | $9.60       | SSD, 64 GB (assuming she'll use this for work and then store things elsewhere).                                  |
+| VM Backup                  | $10                   | $10         |                                                                                                                  |
+| **Backblaze Subscription** | $0                    | $6          | Recommended if not primarily storing things on an automatically backed up system like OneDrive                   |
+|                            |                       |             |                                                                                                                  |
+| **Total**                  | $89                   | $198        |                                                                                                                  |
 
-Looks like we came in reasonably under budget
+Looks like we came in reasonably under budget!
 
 ## Elbow Grease & Other Suggestions
 
 * **This assumes we build a small trigger to turn a VM on/off**: To implement this solution, we'll have to get our hands dirty with Azure Functions or Bot Framework, which should be essentially free to implement but will take a little time to figure out.
 * **Find tiers of data importance**: Family photos aren't the same as e-mails that are already stored on another server. For the most important stuff, put it in OneDrive and on a backed up VM disk. Then you'll have a cloud sync, a separate location, and a backup of that separate location. If you add in Backblaze on the VM disk, that gives you an additional backup provider as well.
 
-## How'd I Do?
+## How'd I Do? What Did I Miss?
 
-Dear readers, how does this solution shape up? Anything you would have done differently? I'd love to hear about it in the comments!
+This was a fun exercise. But dear readers, how does this solution shape up? Anything you would have planned/done differently? I'd love to hear about it in the comments!
