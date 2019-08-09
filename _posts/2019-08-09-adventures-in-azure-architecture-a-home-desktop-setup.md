@@ -5,7 +5,7 @@ tags:
   - azure
   - architecture
   - blueprints
-date: '2019-08-09 08:24 -0400'
+date: '2019-08-09 18:30 -0400'
 ---
 I recently connected with someone on Twitter who had some questions about architecture for a personal setup in the cloud. I thought the challenge was interesting, so below are the parameters of the question and how I went about trying to architect a solution for her (who I'll generally call "the client" from here on out, even though money isn't changing hands here).
 
@@ -66,7 +66,7 @@ I used the [Azure pricing calculator](https://azure.microsoft.com/en-us/pricing/
 | VM Backup                  | $10                   | $10         |                                                                                                                  |
 | **Backblaze Subscription** | $0                    | $6          | Recommended if not primarily storing things on an automatically backed up system like OneDrive                   |
 |                            |                       |             |                                                                                                                  |
-| **Total**                  | $89                   | $198        |                                                                                                                  |
+| **Monthly Total**          | $89                   | $198        |                                                                                                                  |
 
 Looks like we came in reasonably under budget!
 
