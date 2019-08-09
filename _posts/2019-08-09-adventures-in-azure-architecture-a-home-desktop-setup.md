@@ -51,13 +51,15 @@ OK, that's a lot of good information to go on. Here's what I'm thinking:
 
 ## Calculating the Cost
 
+I used the [Azure pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/) to attempt to whip up an estimate.
+
 | Item | Using OneDrive Storge | No OneDrive | Notes | 
 | ---- | ---------------------:| -----------:| ----- |
 | **Regular VM** | | | |
 | Machine | $36.55 | $36.55 | 2 vCPU, 8 GB RAM. Assumes 6 hours use per day. |
 | Storage | $19 | $82 | This is a Standard HDD; SSD would be $153. 256 GB assumed if using OneDrive since most if it stays on the cloud. |
 | VM Backup | $10 | $50 |  |
-| **"Intense Use VM** | | | Used less often, for more demanding workloads |
+| **"Intense Use" VM** | | | Used less often, for more demanding workloads |
 | Machine | $3.78 | $3.78 | 4 vCPU, 32 GB RAM. Assumes 6 hours use *per month*. |
 | Storage | $9.60 | $9.60 | SSD, 64 GB (assuming she'll use this for work and then store things elsewhere). |
 | VM Backup | $10 | $10 |  |
