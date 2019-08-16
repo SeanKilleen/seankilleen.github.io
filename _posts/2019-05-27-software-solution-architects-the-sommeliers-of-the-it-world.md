@@ -42,7 +42,7 @@ This person has the potential to change the trajectory for an entire team — to
 
 ## The Same Tools, Applied Differently
 
-Both sets of sommeliers in my strange little metaphor have earned the right to be called that. Both have the requisite knowledge and experience. The difference is in how 
+Both sets of sommeliers in my strange little metaphor have earned the right to be called that. Both have the requisite knowledge and experience. The difference is in how that experience is applied.
 
 **The difference isn’t about software at all**. Technical skills, it turns out, are really not the point here. It’s about what an organization's politics and structure allows for, and it’s about whether an individual embraces the idea of leadership and collaboration as foundational/core skills. (I avoid calling them "soft skills" for exactly these sorts of reasons).
 
