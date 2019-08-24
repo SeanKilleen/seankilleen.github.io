@@ -64,6 +64,6 @@ A resilient, agile culture is something that takes time to create. Teams and lea
 
 Agility isn't something that comes in a box. It isn't something that consultants alone can bestow on you. It gets to the heart of how your company thinks. 
 
-
+## Let's Jump In.
 
 Over the course of this series, I'll attempt to dive into what certain practices look like when they are approached culturally, rather than tactically, and to showcase the benefits that the cultural approach can yield.
