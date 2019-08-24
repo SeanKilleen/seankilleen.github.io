@@ -61,3 +61,9 @@ That's not to say these companies don't take agility. They have large R&D depart
 Unsurprisingly, most folks opt for tactical improvements rather than cultural ones because it's easier to see progress, and easier to keep at arms length. 
 
 A resilient, agile culture is something that takes time to create. Teams and leadership will need to feel empowered to challenge the status quo. They will need to engage -- and wrestle -- with a company's vision, goals, and norms. Trust will need to be built; natural friction and conflict will need to be overcome.
+
+Agility isn't something that comes in a box. It isn't something that consultants alone can bestow on you. It gets to the heart of how your company thinks. 
+
+
+
+Over the course of this series, I'll attempt to dive into what certain practices look like when they are approached culturally, rather than tactically, and to showcase the benefits that the cultural approach can yield.
