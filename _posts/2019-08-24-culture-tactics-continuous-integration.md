@@ -14,7 +14,7 @@ _TODO: Insert the blurb about what this series is about._
 ## What a Tactical Approach to Continuous Integration Looks Like
 
 * We have a build server
-* Our build server runs tests 
+* Maybe our build server even runs tests 
 
 ## What a Cultural Approach Looks like
 
