@@ -24,6 +24,8 @@ I know it's possible. I've seen it done. I've also seen most organizations stop 
 
 If you're looking for new terms or tools -- Agile, Scrum, SAFe, Kanban -- but are only considering how they fit into your current process / thinking, you may not be going about growing your organization the right way. The goal is to figure out how your business can be better, more evolved to fulfill your organization's vision quickly -- not to put a buzzword bandage on your existing environment. 
 
+So much of what exists in the current agile space is centered around "thing you can do to make your team fit the definition of Agile". This saddens me, as it falls short on so many fronts. 
+
 ## Agile Isn't Something The Developers Do.
 
 Or rather, adopting an agile mindset isn't something that _only the development team_ does.
@@ -40,10 +42,22 @@ I once had a client -- in the role of Product Owner -- tell me "Agile is just so
 
 A slightly faster canoe is nothing compared to getting everyone to row together.
 
+It's true: your teams can turn out "stuff" so much faster even with small tactical improvements. But if that stuff isn't serving your customers, it's only creating dead weight in your product. If you're not moving closer to the company's goals, you're only moving further away from them. 
 
+Agility is building in the mindset to all of your teams that they should seek to understand and clarify your organization's vision, and move your organization or product closer to its goals. Teams should learn along the way how to do this better, and should share and collaborate as they go.  
 
-## Agility Implies Adapting How Your Company Thinks
+Don't mistake motion for progress. A giant subway station roadmap to agility is not going to save your culture, and that's where the competition is happening.
 
-## Agile Doesn't Need to be a fit for your organization
+## Not everyone benefits from agile tactics. Everyone benefits from agile culture.
+
+Gasp! We don't need everything to be a nail for an agile hammer. 
+
+Your organization may not benefit from something like scrum in its development efforts. If you're building satellites, much of the logic is rooted in mathematics where there is often one objectively right solution to a problem. Much of the design of the machines has to be done up front -- you're not trying to build a tiny satellite and then iterate to a large one.
+
+That's not to say these companies don't take agility. They have large R&D departments; they invest time in thinking about new ways to design and produce. They run a barrage of tests on their equipment to ensure they have as many feedback loops as possible prior to launch. 
 
 ## This stuff isn't easy. Adjust Your Expectations.
+
+Unsurprisingly, most folks opt for tactical improvements rather than cultural ones because it's easier to see progress, and easier to keep at arms length. 
+
+A resilient, agile culture is something that takes time to create. Teams and leadership will need to feel empowered to challenge the status quo. They will need to engage -- and wrestle -- with a company's vision, goals, and norms. Trust will need to be built; natural friction and conflict will need to be overcome.
