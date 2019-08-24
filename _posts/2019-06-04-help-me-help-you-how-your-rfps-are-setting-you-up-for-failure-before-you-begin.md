@@ -29,21 +29,37 @@ A brief, incomplete set of examples:
 * **Giant RFPs requiring 100-person teams**. The best efforts seek competent teams to orient toward a goal, learn along the way, and grow when there's good progress. Asking for a large team points to a large objective that we think is known, and "bodies" to fill that objective. Investment wise, it is smarter to attempt to connect with a partner who can help you learn quickly and grow along the way. Otherwise, you're inviting a lot of churn and organizational backlash, and I've yet to see a company that's actually prepared for a transformation with full organizational buy-in.
 * **Requiring expertise in known outdated technologies (Flash, anyone?)** By requiring us to speak to expertise in outdated technologies, you're limiting the quality of candidates we can bring you, and are already into the solutioning space, when oftentimes the problem is partly that you haven't moved beyond these technologies. By restricting us from assisting in re-thinking some of these steps, you're hamstringing your org already.
 * **Wanting a consultant or partner, but specifying a contractor.** Companies want the results of consultants and partnerships, while setting themselves up to employ contractors who respond to direction. RFPs that require signing off on hiring of team members, or that indicate that the vendor will be performing work always at the direction of the client, set companies up for less than ideal results. You should want someone who moves you forward and teaches you as they go. 
-* **No clear metrics for success in the RFP**. I've seen "lack of customer complaints" defined as the only quality metric. If you don't have metrics for success, it's OK to ask for help defining them. If you allow the space for a company to tell you who they are rather than what they'll do, you'll get a sense for whether someone would be a good partner to help you come up with these metrics.
-* **Mandating that certain aspects of the RFP will become part of the final product**. Really, the quality metrics table in the RFP is never going to change, despite you wanting to change the way your applications are built and perceived? We're not going to learn anything between RFP and the end of this contract?
+* **No clear metrics for success in the RFP**. I've seen "lack of customer complaints" defined as the only quality metric. If you don't have metrics for success, it's OK to ask for help defining them. If you allow the space for a company to tell you who they are rather than what they'll do, you'll get a sense for whether someone would be a good partner to help you come up with these metrics. Given how tricky metrics are to begin with, I suggest not requiring a respondent to speak to any specific metric.
+* **Mandating that certain aspects of the RFP will become part of the final product**. Really? The quality metrics table in the RFP is never going to change, despite you wanting to change the way your applications are built and perceived? We're not going to learn anything between RFP and the end of this contract? If those things aren't 100% true, why specify that a table in the RFP will be continued all the way through a multi-year effort without allowing that things might change and evolve?
 * **Contracts leave very little room for learning.** I wonder if we haven't appropriately figured out the legal way to say "we're going to set common goals, pursue them together, and learn things along the way". 
+
+## You Can't Wordsmith Your Way Out of Risk.
+
+"Customer collaboration over contract negotiation" is right there in [the Agile Manifesto](http://agilemanifesto.org/), and for good reason. Your contract writing isn't going to save you, no matter how clever it is. Picking a partner you can trust and collaborate with is what's going to reduce your long-term risk and lead to the best outcomes for your organization. 
+
+You learn more from an open-ended question than a multiple choice response. So, the best way to make space for a great partner to reveal themselves is to...give them the space to do so. If your RFP is so rigid that companies aren't able to differentiate themselves, it's much harder to know if you'll choose the right partner for your organization. Ask them how they've approached similar problems. Tell them about your current challenges. Ask them to explain the "why" of their approach. Look for authenticity and clear examples. You'll quickly spot who cares about your success and who wants to try to wave a magic buzzword wand. 
 
 ## You're Hiring Someone to Raise Your Consciousness. THAT's Your RFP.
 
-## So, what would I recommend the RFP?
+If you're seeking outside help, most of the time it's because your organization has hit some sort of a wall or a plateau. If you write the RFP from the perspective of your organization's current state of the art, you're missing out on the opportunity for a respondent to bring you closer to their level of consciousness -- which ideally _is more advanced than yours_. After all, that's why you're looking for them in the first place.
 
-* Start small
-* Be up-front about how big you plan on going
-* Use very few words to ask about process
-* Use lots of words to talk about challenges and outcomes
-* Talk about where you feel the need to be more cautious currently
-* Be vulnerable. 
+Don't tie their hands.
+
+## So, what would I recommend for RFPs?
+
+* **Start small**. A team or two to run experiments, test hypotheses, get some initial iterations and learning underway, with the option to expand once you've connected and found great solid footing. Massive engagements leas to massive waste; meaningful engagements lead to meaningful results.
+* **Be up-front about how big you plan on going**. I agree that some larger partners may balk at seeing 1-3 teams initially for a large project (in that case, you dodged a bullet anyway). But, to counter this, you may want to include how much you'd be looking to scale this project up, but be clear that it will be based on what you learn and not a desire to go big quickly. 
+* **Use very few words to ask about process**. If we're operating under the assumption that the ideal partner has a deeper understanding of modern approaches and practices that compliments yours, it's best to not ask about specific processes or tactics so that potential partners have a better change to reveal themselves.
+* **Use lots of words to talk about challenges and outcomes**. What are you looking to achieve? Why? What challenges have you had getting there so far? What things have you tried so far that haven't worked quite how you've wanted them to? This can be invaluable information for a potential partner, and they should be able to speak to how they'll meet you on that journey and help you achieve your goals.
+* **Ask for respondents to question your assumptions**. You will undoubtedly make assumptions; that's only natural. I suggest explicitly asking potential partners to question those assumptions. In doing so, you'll see which partners for an engagement are invested in deeply thinking about your challenges vs. those who'd prefer to throw some generic language at you. You'll see who's ready to move you forward, and who really cares about your outcomes.
+* **Talk about where you feel the need to be more cautious currently**. Sometimes companies have certain things they're _not_ looking to do at a point in time, and sometimes they even have good reasons for this. State this up front. Have you been burned on an agile transformation before? Did you scale yourselves into a disastrous state? Is there a difference of opinion among different business units? A partner should be able to 1) respect this current state 2) push back a bit when warranted, and 3) speak about how they'll meet you where they are.
+* **Be vulnerable**. If you're going to ask for support from an outside party, set yourself up for success by stating the outcomes you're attempting to improve, and what you wish was better. No sense in asking for help if you don't want to talk about what help you're looking for. 
+* **Make it human.** Your teams aren't robots, and neither should any companies you partner with on your journey. You're going to work together with people. Look to see how your respondents come through as people.
 
 ## ...But the best tip?
 
-Get someone you trust involved up front. Do you have training partners, former consultants former employees who've helped you out? Involve them in your RFP process. This is important, and it could impact your culture and your outcomes for years into the future. Pull in the people you trust and get them to advise you on the things the RFP needs to say -- and more importantly, what it doesn't need to say.
+Get someone you trust involved up front. Do you have training partners, former consultants former employees who've helped you out? Involve them in your RFP process. This is important, and it could impact your culture and your outcomes for years into the future. Pull in the people you trust and get them to advise you on the things the RFP needs to say -- and more importantly, what it doesn't need to say. 
+
+## What Am I missing? What did I get Wrong?
+
+I'd love to hear your opinions in the comments!
