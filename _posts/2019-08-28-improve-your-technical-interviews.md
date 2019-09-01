@@ -82,6 +82,23 @@ OK, so say I've made some notes or seen some "flags" on a resume, and I want to 
 
 I have found that this allows me to explore concerns I might have while providing someone space to speak about them in an open way, which usually tells me if a concern is actually a concern. 
 
+How does this work in practice? I'll take one (potentially problematic) example: a number of short-term jobs in someone's recent work history.
+
+* Finding: "Uh-oh, I see a lot of short-term gigs here. That looks like a red flag. Did they not work out? Is there a persistent issue with this person? Are they job hopping and only looking to use us as a stepping stone rather than committing?" (remember: this is the spot where I allow myself to be human with biases, concerns, and not much of a filter).
+* Concern: What's the actual concern here? We're looking for folks to grow with our company, and I need someone who is going to stick around and embrace our company, at least in good faith at first assuming that it stays mutually beneficial.
+* Questions: OK, how can I help someone explore that topic in a way that will address my potential concerns. Maybe some questions would be:
+ * "What do you look for in a long-term fit with a company?"
+ * "What is an ideal day-to-day experience like?" 
+ * "When have you felt best when working with a team?" 
+ * "What do you think keeps you engaged when working somewhere?" 
+* Conversation -- result could be: 
+ * Oh, it turns out that this person is really looking for the kind of culture and experience we offer, but hadn't found it yet and was willing to keep moving. 
+ * Oh, it turns out that this person really wants to affect change in ways that I'm completely on board with, but they kept hitting walls and knew they wouldn't be able to make a long-term impact.
+ * Oh, this person took a gig with a staffing agency because they needed some specific flexibility but they're looking for a long-term fit now. That makes sense.
+ * Oh, this person is really only looking for something short-term and weren't entirely clear on how we operate, but we were able to have a conversation around it.
+
+
+
 ## The Importance of Open-Ended Questions
 
 I could probably do a separate post on this alone (and I might).
@@ -103,8 +120,8 @@ I can't stress this enough: write down these questions ahead of time. This way y
 ## The Actual Interview
 
 * Just before heading in, remember what it's like to interview. The dread, the lingering feeling afterward on whether you did well, the self-doubt, the headspace you're in, the  muscle memory folks have from past environments and cultures. Remember that no matter what, you want this person to tell other people how good this company would be to work for. Remember that you want them to succeed. Now, you are ready to head into the room.
-* Make sure they feel comfortable. Ask them for a drink of water.
-* Let them know this is more of a conversation than a quiz.
+* Make sure they feel comfortable. Ask them if they want a drink of water.
+* Let them know this is more of a conversation than a quiz, and that you will be sure to leave room for questions.
 * Are you taking notes? Let them know it's just to write down what they said, not to cast judgment in real time.
 * Start off with a "recent win". Is there anything -- preferably professional, but outside of work is acceptable -- lately that someone feels is a "win" for them? I like this because people seem to immediately relax. They can talk about something they know from experience, and it kicks the interview off on a positive note. It also tells me something about what the interviewee values and why, and what they consider to be a positive impact in their lives.
 
