@@ -72,8 +72,15 @@ Don't forget the positives! I also look for:
 
 ## Findings --> Concerns --> Questions --> Conversation
 
-OK, so say I've made some notes or seen some "flags" on a resume, and I want to address them in a fair way. 
+OK, so say I've made some notes or seen some "flags" on a resume, and I want to address them but in a way that is truly open and keeps me rooting for the interviewee. 
 
+* I note my findings while reading through the resume. I encourage myself to be critical, and I don't hold back. I'm picky even.
+* I take a step back, and I think about what concerns these findings give me, or what areas I need to follow up on / challenge / explore further.
+* At this point, my findings are no longer relevant. I am only considering the concerns I've surfaced. Oftentimes, I disregard some of my findings as unhelpful, because they aren't tied to a real concern that I can express.
+* I create open-ended questions based on these concerns to explore things further. 
+* In the interview, we have a conversation around these questions, where I am rooting for someone and genuinely trying to get to know them.
+
+I have found that this allows me to explore concerns I might have while providing someone space to speak about them in an open way, which usually tells me if a concern is actually a concern. 
 
 ## The Importance of Open-Ended Questions
 
@@ -81,7 +88,10 @@ I could probably do a separate post on this alone (and I might).
 
 If I'm looking for a colleague that I can collaborate with, I want to know that I can have a conversation with them, and that they will not expect to be a lone wolf developer in a basement somewhere. I think that conversation is key to that. You learn a lot about a person's capabilities, personality, values, and expectations when you give them space to tell you. 
 
-* Am I concerned about someone's depth on a concept? I might
+* Am I concerned about someone's depth on a concept? I might ask them to apply to a certain problem or situation.
+* 
+
+I can't stress this enough: write down these questions ahead of time. This way you don't word them poorly when you ask them, and you have a sort of structure to the conversation.
 
 ## Structuring the Interview
 
