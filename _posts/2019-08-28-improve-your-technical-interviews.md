@@ -62,7 +62,7 @@ I look at:
 * Is there anything I feel the need to challenge? A listed achievement or piece of experience that seems worth confirming or exploring?
 * Do they take individual credit for what really seems like a team activity? 
 * Or conversely, do they not mention their involvement in large accomplishments?
-* What don't they list that I might be concerned about walking in with
+* What don't they list that I might be concerned about them not walking in with (a critical technology, a conceptual understanding, etc.)
 
 **There's an important next step: countering bias in these cases**. Does someone have a lot of short-term work? That doesn't necessarily mean anything; it could mean they worked for a staffing firm and were asked to move around a lot, or that they sought out short-term gigs for a period of time. There are many good reasons for someone to have a large gap, including caring for a loved one, raising a child, illness, etc. 
 
