@@ -91,12 +91,12 @@ How does this work in practice? I'll take one (potentially problematic) example:
  * "What is an ideal day-to-day experience like?" 
  * "When have you felt best when working with a team?" 
  * "What do you think keeps you engaged when working somewhere?" 
-* Conversation -- result could be: 
+* Conversation -- potential results could be: 
  * Oh, it turns out that this person is really looking for the kind of culture and experience we offer, but hadn't found it yet and was willing to keep moving. 
  * Oh, it turns out that this person really wants to affect change in ways that I'm completely on board with, but they kept hitting walls and knew they wouldn't be able to make a long-term impact.
  * Oh, this person took a gig with a staffing agency because they needed some specific flexibility but they're looking for a long-term fit now. That makes sense.
  * Oh, this person is really only looking for something short-term and weren't entirely clear on how we operate, but we were able to have a conversation around it.
-
+ * Oh, this person really seems to be motivated by money, and they mentioned that they kept getting better offers and jumping ship. This tells me that our potential offer might not be compelling, and also that they don't appear to be ready to put down roots somewhere for a bit. There's nothing wrong with money, but this might not be the right person to invest in on-boarding at this time, especially if other aspects don't line up.
 
 
 ## The Importance of Open-Ended Questions
