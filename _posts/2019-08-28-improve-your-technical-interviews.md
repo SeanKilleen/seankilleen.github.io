@@ -109,9 +109,10 @@ I could probably do a separate post on this alone (and I might).
 If I'm looking for a colleague that I can collaborate with, I want to know that I can have a conversation with them, and that they will not expect to be a lone wolf developer in a basement somewhere. I think that conversation is key to that. You learn a lot about a person's capabilities, personality, values, and expectations when you give them space to tell you. 
 
 * Am I concerned about someone's depth on a concept? I might ask them to apply to a certain problem or situation.
-* 
+* Am I concerned that they appear to be a lone wolf? I might ask them what makes a great team, or what it means to them to be a leader. 
+* Am I concerned that someone has very narrow experience? I may ask what technology interests them, what new things they're excited about, or how they keep their skills up to date to understand what's coming in the future. 
 
-I can't stress this enough: write down these questions ahead of time. This way you don't word them poorly when you ask them, and you have a sort of structure to the conversation.
+**Write down these questions ahead of time**, and try to get them in a rough order. This way you don't word them poorly when you ask them, and you have a sort of structure to the conversation.
 
 ## Structuring the Interview
 
