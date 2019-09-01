@@ -126,10 +126,14 @@ If I'm looking for a colleague that I can collaborate with, I want to know that 
 * Just before heading in, remember what it's like to interview. The dread, the lingering feeling afterward on whether you did well, the self-doubt, the headspace you're in, the  muscle memory folks have from past environments and cultures. Remember that no matter what, you want this person to tell other people how good this company would be to work for. Remember that you want them to succeed. Now, you are ready to head into the room.
 * Make sure they feel comfortable. Ask them if they want a drink of water.
 * Let them know this is more of a conversation than a quiz, and that you will be sure to leave room for questions.
+* Let them know the agenda. 
+* Also, let them know what **won't** be on the agenda. Will you not be running a coding exam? Let them know that (and likely listen to that huge, sweet sigh of relief.)
 * Are you taking notes? Let them know it's just to write down what they said, not to cast judgment in real time.
 * Start off with a "recent win". Is there anything -- preferably professional, but outside of work is acceptable -- lately that someone feels is a "win" for them? I like this because people seem to immediately relax. They can talk about something they know from experience, and it kicks the interview off on a positive note. It also tells me something about what the interviewee values and why, and what they consider to be a positive impact in their lives.
 
-## My Stances on Certain Interview Practices
+## My Opinions on Certain Interview Practices
+
+These are my personal opinions with some reasoning behind them.
 
 ### Should candidates code during the interview?
 
@@ -144,3 +148,39 @@ I have not found that I get much out of code in whiteboard format. It will at be
 ### Should I push the interviewees buttons to see how they respond?
 
 Absolutely not. Would you do this to them in the real world? I should certainly hope not. If a client or coworker were to do this in some situation and someone handled it poorly, hopefully you'd be mentoring and coaching someone on how to improve, and also advocating for them in an instance where someone was treating them poorly.
+
+### We'll be doing coding; should they use Google?
+
+If you ask someone to code, I'd suggest that you should treat it like you're pairing with a teammate. 
+
+* It should be collaborative
+* Tooling and resources should be available
+* They should be able to use the machine / development environment of their choice
+
+Otherwise, what's the point? Pretending that devs don't use tools or Google things just shows an interviewee that the exercise is pointless.
+
+### What about having the candidate solve FizzBuzz?
+
+If you're bringing someone into a technical interview and don't know whether or not they'd pass a problem like FizzBuzz, I think that's the real problem. 
+
+Shift that process to the left and answer those questions earlier on. Ask a few screening questions. Run a small coding exam with something like coderpad.io, but don't make it something so overdone. Put a little thought in. Be creative and clear.
+
+### We came up with a pretty intricate problem we're proud of. We think it'll be a good litmus test.
+
+Great. You should ask everyone on your team -- particularly less senior developers -- to complete that problem. And then you should adjust that problem based on what you will inevitably learn. And then you should think about how cloudy someone's brain is when they feel under pressure, 
+
+### Should I have someone balance a B-tree, do factorial calculations, etc.?
+
+Only if someone on your team has had to do something similar to that in the past year. 
+
+Otherwise you're optimizing for the wrong-thing. I don't need an algorithm wiz to write a great line-of-business app; I need someone who cares about a domain, collaborates with stakeholders, and is invested in improving as they go.
+
+If you ask how someone would implement a fast-sorting algorithm and their answer is "first, I'd understand what we're trying to optimize for, and then I'd open Google and research about different types of sorting algorithms" -- I'd say that's a solid answer. 
+
+### Should We use HackerRank, etc.?
+
+No. (TODO: why)
+
+### I can't really tell so much from conversation as what you're expecting. Is that a problem?
+
+I'd say yes. If you can't have a conversation and determine whether this is the sort of person who will make the impact you need at your team / company, I would argue that you may not be the best person to give the interview. 
