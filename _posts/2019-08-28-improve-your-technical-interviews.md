@@ -102,7 +102,7 @@ I can't stress this enough: write down these questions ahead of time. This way y
 
 ## The Actual Interview
 
-* Just before heading in, remember what it's like to interview. The terror, the dread, the lingering feeling afterward on whether you did well. Remember that no matter what, you want this person to tell other people how good this company would be to work for. Remember that you want them to succeed. Now, you are ready to head into the room.
+* Just before heading in, remember what it's like to interview. The dread, the lingering feeling afterward on whether you did well, the self-doubt, the headspace you're in, the  muscle memory folks have from past environments and cultures. Remember that no matter what, you want this person to tell other people how good this company would be to work for. Remember that you want them to succeed. Now, you are ready to head into the room.
 * Make sure they feel comfortable. Ask them for a drink of water.
 * Let them know this is more of a conversation than a quiz.
 * Are you taking notes? Let them know it's just to write down what they said, not to cast judgment in real time.
