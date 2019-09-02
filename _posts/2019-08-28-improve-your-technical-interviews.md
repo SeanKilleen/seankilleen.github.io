@@ -23,9 +23,8 @@ I would argue that an additional goal of a technical interview is to ensure that
 
 ## Your Overall Approach
 
-* You should be rooting for the interviewee. You should want them to succeed.
-* You should be introducing them to your org's culture by living it.
-* You are -- whether you realize it or not -- showcasing your company's values.
+* **You should be rooting for the interviewee**. You should want them to succeed. There is no point to running your interview process like a gauntlet that someone has to get through. That’s just hazing. You should believe that this person has the potential to add something to your team. If you don’t, don’t schedule the interview.
+* **You are -- whether you realize it or not -- showcasing your company's values**. You should be introducing them to your org's culture by living it. You want to make sure the employee thinks they’ll have a great environment. What better way to do that than to...give them a great environment from the interview onward.
 
 ## Think: what kind of person are you looking for?
 
