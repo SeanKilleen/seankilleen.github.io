@@ -124,10 +124,18 @@ If I'm looking for a colleague that I can collaborate with, I want to know that 
 * Just before heading in, remember what it's like to interview. The dread, the lingering feeling afterward on whether you did well, the self-doubt, the headspace you're in, the  muscle memory folks have from past environments and cultures. Remember that no matter what, you want this person to tell other people how good this company would be to work for. Remember that you want them to succeed. Now, you are ready to head into the room.
 * Make sure they feel comfortable. Ask them if they want a drink of water.
 * Let them know this is more of a conversation than a quiz, and that you will be sure to leave room for questions.
-* Let them know the agenda. 
+* Let them know the agenda. This allows them to have expectations, and to mentally prepare for what will come after them. 
 * Also, let them know what **won't** be on the agenda. Will you not be running a coding exam? Let them know that (and likely listen to that huge, sweet sigh of relief.)
 * Are you taking notes? Let them know it's just to write down what they said, not to cast judgment in real time.
 * Start off with a "recent win". Is there anything -- preferably professional, but outside of work is acceptable -- lately that someone feels is a "win" for them? I like this because people seem to immediately relax. They can talk about something they know from experience, and it kicks the interview off on a positive note. It also tells me something about what the interviewee values and why, and what they consider to be a positive impact in their lives.
+
+## Assessing During the Interview
+
+TODO
+
+## Making the Decision
+
+TODO
 
 ## My Opinions on Certain Interview Practices
 
@@ -181,4 +189,12 @@ No. (TODO: why)
 
 ### I can't really tell so much from conversation as what you're expecting. Is that a problem?
 
-I'd say yes. If you can't have a conversation and determine whether this is the sort of person who will make the impact you need at your team / company, I would argue that you may not be the best person to give the interview. 
+I'd say yes. If you can't have a conversation and determine whether this is the sort of person who will make the impact you need at your team / company, I would argue that you may not be the best person to give the interview.
+
+### What about half-day / whole day interviews?
+
+My opinion:
+
+* If you’re scheduling a long interview because everyone needs to take a turn with an interviewee, I would argue that your interview process may be broken. Figure out who are the people to trust, and make the interview with them. At my current company we’ve had fantastic success with a 1-1.5 hour interview with two folks from a practice area, and a 30 minute conversation with one of our executives.
+* If you bring someone in for a half day technical interview, it should be to work on a real style problem in a pairing or team setting, as close to an actual work day setup as possible. They should have access to tools, google, OSS, etc. during the process.
+* If you’re having someone join an actual team for a half or full day session to work on actual client or product work, you need to compensate them for their time. Agree on an hourly rate that shows someone you respect their time and effort. Pay them for their time even if the interview ends early. Are you worried they’ll only last an hour? Do more prep and screening work up front.
