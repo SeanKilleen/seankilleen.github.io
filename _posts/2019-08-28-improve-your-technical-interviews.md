@@ -1,5 +1,5 @@
 ---
-title: Improve Your Technical Interviews
+title: The Path to Better Technical Interviews
 comments: true
 tags:
   - interviews
@@ -7,20 +7,18 @@ tags:
   - hiring
 date: '2019-08-28 13:26 -0400'
 ---
-I'm writing this up because I'm frustrated by so much of the conversation I tend to see around it. I have a certain philosophy I've developed and I'm attempting to write that down here, both to get feedback and to see if it resonates.
+I'm writing this post because I'm so often frustrated much of the conversation I tend to see around technical interviews. I have a certain approahch over the years. I'm attempting to write that down here, both to get feedback and to see if it resonates.
 
 ## Why I'm Writing This
 
 * I've gotten very positive feedback from multiple interviewees on the interviews I've conducted -- both those that we've moved forward with and those that we haven't. 
 * I feel like I've hired some really great people who've gone on to do great things as colleagues.
 
-## Interviews Work Both Ways
-
-TODO
-
 ## What are the goals of a technical interview?
 
-TODO
+If a technical interview goes well, you’ll have a new teammate who can contribute to both your code and your team’s culture.
+
+I would argue that an additional goal of a technical interview is to ensure that the team doesn’t move backwards in any significant way. By this, I mean that if you don’t optimize for the whole experience of your team, you could wind up with someone who improves your codebase but at the cost of demoralizing your whole team.
 
 ## Your Overall Approach
 
