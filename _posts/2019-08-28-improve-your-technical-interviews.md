@@ -7,12 +7,13 @@ tags:
   - hiring
 date: '2019-08-28 13:26 -0400'
 ---
-I'm writing this post because I'm so often frustrated much of the conversation I tend to see around technical interviews. I have a certain approahch over the years. I'm attempting to write that down here, both to get feedback and to see if it resonates.
+I'm so often frustrated much of the conversation I tend to see around technical interviews. I have a certain approach I’ve cultivated over the years. I'm attempting to write that down here, both to get feedback and to see if it resonates.
 
 ## Why I'm Writing This
 
 * I've gotten very positive feedback from multiple interviewees on the interviews I've conducted -- both those that we've moved forward with and those that we haven't. 
 * I feel like I've hired some really great people who've gone on to do great things as colleagues.
+* I see a lot of discussion around interviews that either argue against these points, or touch on some of them in isolation. It seems that folks might benefit from seeing thoughts on the whole process ne place.
 
 ## What are the goals of a technical interview?
 
