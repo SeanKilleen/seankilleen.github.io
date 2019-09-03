@@ -208,7 +208,7 @@ past:
     location: Atlantic Beach, FL
 upcoming:
   - title: "(ICP-TST/ATA) Certified Agile Testing Training"
-    date: 2019-08-12
+    date: 2019-12-09
     group: Excella Training
     eventLink: http://xluh.co/training
     sessionLink: https://web.cvent.com/event/05708718-9a54-4826-b2ac-547bcb0e7255/summary
@@ -221,3 +221,9 @@ upcoming:
     sessionLink: https://techbash.com/
     description: In this workshop, we'll introduce .NET Core conceptually and work to modernize .NET Framework application. We'll have practical tips and discussions of pitfalls along the way.
     location: Poconos, PA
+  - title: An Introduction to the Actor Model and Akka.NET
+    date: 2019-09-18
+    group: The SwiftKick Show
+    eventLink: https://swiftkick.in/shows
+    description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
+    location: Live Video Broadcast
