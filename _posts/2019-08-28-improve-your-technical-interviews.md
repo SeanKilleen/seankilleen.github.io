@@ -114,20 +114,21 @@ If I'm looking for a colleague that I can collaborate with, I want to know that 
 * Am I concerned about someone's depth on a concept? I might ask them to apply to a certain problem or situation.
 * Am I concerned that they appear to be a lone wolf? I might ask them what makes a great team, or what it means to them to be a leader. 
 * Am I concerned that someone has very narrow experience? I may ask what technology interests them, what new things they're excited about, or how they keep their skills up to date to understand what's coming in the future. 
+* Am I concerned about someone's potential engagement? I might ask what has them excited about the field or their potential upcoming work, or when they've been happiest. Oftentimes I'm concerned about this with any candidate, so I try to provide a question up front that lets someone demonstrate their engagement.
 
 **Write down these questions ahead of time**, and try to get them in a rough order. This way you don't word them poorly when you ask them, and you have a sort of structure to the conversation.
 
 ## Structuring the Interview
 
-* Preparation is key. Your ability to manage time and ask appropriate questions. 
-* Pitch your company first. Why do you like it? Help them understand why it's a great place to work, in ways that are relevant to them. Allow for some questions up front.
-* Confirm how long you have them for. This lets you know if you have a little extra room for questions. 
-* Leave enough time for questions at the end.
+* **Preparation is key**. Your ability to manage time and ask appropriate questions can make all the difference. I have to force myself to write out questions so that I can stick to the agenda without it getting away from me, for example. 
+* **Pitch your company first**. Why do you like it? Help them understand why it's a great place to work, in ways that are relevant to them. Allow for some questions up front. Get them excited. This shows you understand that a mutual fit is important. Also, whether the person is an appropriate hire or not, they'll leave armed with information and a good feeling about the place. 
+* **Confirm how long you have them in the interview**. This lets you know if you have a little extra room for questions, and also sends the signal that you respect their time.
+* **Leave enough time for questions at the end**. The interview needs to be a two-way street.
 
 ## The Actual Interview
 
-* Just before heading in, remember what it's like to interview. The dread, the lingering feeling afterward on whether you did well, the self-doubt, the headspace you're in, the  muscle memory folks have from past environments and cultures. Remember that no matter what, you want this person to tell other people how good this company would be to work for. Remember that you want them to succeed. Now, you are ready to head into the room.
-* Make sure they feel comfortable. Ask them if they want a drink of water.
+* **Just before heading in, remember what it's like to interview**. The dread, the lingering feeling afterward on whether you did well, the self-doubt, the headspace you're in, the  muscle memory folks have from past environments and cultures. Remember that no matter what, you want this person to tell other people how good this company would be to work for. Remember that you want them to succeed. Now, you are ready to head into the room.
+* **Make sure they feel comfortable**. Ask them if they want a drink of water.
 * Let them know this is more of a conversation than a quiz, and that you will be sure to leave room for questions.
 * Let them know the agenda. This allows them to have expectations, and to mentally prepare for what will come after them. 
 * Also, let them know what **won't** be on the agenda. Will you not be running a coding exam? Let them know that (and likely listen to that huge, sweet sigh of relief.)
