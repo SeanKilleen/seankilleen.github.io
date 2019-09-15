@@ -7,7 +7,7 @@ tags:
   - hiring
 date: '2019-08-28 13:26 -0400'
 ---
-I'm so often frustrated much of the conversation I tend to see around technical interviews. I have a certain approach I’ve cultivated over the years. I'm attempting to write that down here, both to get feedback and to see if it resonates.
+I'm often frustrated by the conversation I see around technical interviews. To combat this, I have a certain approach I’ve cultivated over the years. I'm attempting to write that down here, both to get feedback and to see if it resonates.
 
 ## Why I'm Writing This
 
@@ -17,14 +17,14 @@ I'm so often frustrated much of the conversation I tend to see around technical 
 
 ## What are the goals of a technical interview?
 
-If a technical interview goes well, you’ll have a new teammate who can contribute to both your code and your team’s culture.
+If a technical interview goes well, you’ll have a new teammate who can contribute to both your code and your team/org culture.
 
 I would argue that an additional goal of a technical interview is to ensure that the team doesn’t move backwards in any significant way. By this, I mean that if you don’t optimize for the whole experience of your team, you could wind up with someone who improves your codebase but at the cost of demoralizing your whole team.
 
 ## Your Overall Approach
 
-* **You should be rooting for the interviewee**. You should want them to succeed. There is no point to running your interview process like a gauntlet that someone has to get through. That’s just hazing. You should believe that this person has the potential to add something to your team. If you don’t, don’t schedule the interview.
-* **You are showcasing your company's values**. You should be introducing them to your org's culture by living it. You want to make sure the employee thinks they’ll have a great environment. What better way to do that than to...give them a great environment from the interview onward.
+* **You should be rooting for the interviewee**. You should want them to succeed. There is no point to running your interview process like a gauntlet that someone has to get through. That’s just hazing. You should believe that this person has the potential to add something to your team. If you don’t, don’t schedule the interview, or figure out a less costly way to determine that.
+* **You are showcasing your company's values**. You should be introducing them to your org's culture by living it. You want to make sure the employee thinks they’ll have a great environment. What better way to do that than to...give them a great environment from the interview onward?
 
 ## Think: what kind of person are you looking for?
 
@@ -40,9 +40,11 @@ You probably also need someone to be collaborative, and to be productive long-te
 
 > We need someone to fit.
 
-This is where a lot of bias creeps in. You want someone to _add_ to your culture; you don't want someone to only conform to it. 
+This is where a lot of bias creeps in. You want someone to _add_ to your culture; you don't want someone to only conform to it.
 
 ## Preparing for the Interview
+
+I firmly believe that a successful interview is based on the preparation the interviewer is able to do. Some of my ground rules include:
 
 * Allow time to prep.
 * Study the resume and the candidate.
@@ -50,27 +52,30 @@ This is where a lot of bias creeps in. You want someone to _add_ to your culture
 * Find areas you need to dig deeper, and come up with questions for that
 * Add these questions / concerns / etc. to a cheat sheet so that you can use it in the interview
 
+More information on this below.
+
 ## Studying the Resume
 
 I look at:
 
-* The way they describe impact
-* Whether the resume is buzzword-heavy
+* The way they describe impact they make. Do they appear to grasp that their software matters to real people and stakeholders?
+* Whether the resume is buzzword-heavy. 
 * If there are many short-term work engagements or large gaps.
 * Is there anything I feel the need to challenge? A listed achievement or piece of experience that seems worth confirming or exploring?
 * Do they take individual credit for what really seems like a team activity? 
-* Or conversely, do they not mention their involvement in large accomplishments?
+* Or conversely, do they not mention their involvement in large accomplishments at all?
 * What don't they list that I might be concerned about them not walking in with (a critical technology, a conceptual understanding, etc.)
 
 **There's an important next step: countering bias in these cases**. Does someone have a lot of short-term work? That doesn't necessarily mean anything; it could mean they worked for a staffing firm and were asked to move around a lot, or that they sought out short-term gigs for a period of time. There are many good reasons for someone to have a large gap, including caring for a loved one, raising a child, illness, etc. 
 
-The key is to think to process those findings correctly. I've developed a process that I think works for me, at least personally. I'll talk about it below.
+The key is to think in order to process those findings correctly. I've developed a process that I think works for me, at least personally. I'll talk about it below.
 
-**Don't forget the positives!** I also look for:
+**Don't forget the positives!** **I also look for**:
 
 * Awesome things they've accomplished that we could really utilize
 * What they might bring to our environment / culture that we don't already have
 * Any technology experience that could round out our overall capabilities.
+* Any leadership or core skills -- mentoring, teaching, facilitating, presenting, writing.
 
 ## Findings --> Concerns --> Questions --> Conversation
 
