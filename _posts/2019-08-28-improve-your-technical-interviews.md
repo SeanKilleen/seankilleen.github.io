@@ -9,20 +9,28 @@ date: '2019-08-28 13:26 -0400'
 ---
 I'm often frustrated by the conversation I see around technical interviews. To combat this, I have a certain approach I’ve cultivated over the years. I'm attempting to write that down here, both to get feedback and to see if it resonates.
 
-## Why I'm Writing This Series
+## Why I'm Writing This Series
 
 * I've gotten very positive feedback from multiple interviewees on the interviews I've conducted -- both those that we've moved forward with and those that we haven't. 
 * I feel like I've hired some really great people who've gone on to do great things as colleagues.
 * I see a lot of discussion around interviews that either argues against these points, or touches on some of them in isolation. It seems that folks might benefit from seeing thoughts on the whole process in one place.
 * I firmly believe that the interview process makes or breaks the success of any company in the long term.
 
+## What are my Qualifications?
+
+I've served as a technical leader in several contexts and organizations. I'm a trainer and facilitator, and people generally don't seem to speak too much ill of me. :)
+
+Which is to say...not a whole lot of qualifications. I encourage you to look at the following ideas in terms of whether they work for you in your current context, and not to think I'm attempting to say these are the only way to have a successful technical interview. This is a heuristic approach, not something that claims to be the only way forward.
+
 ## What are the goals of a technical interview?
+
+Let's jump in, because the stakes are high!
 
 If a technical interview goes well, you’ll have a new teammate who can contribute to both your code and your team/org culture.
 
-I would argue that an additional goal of a technical interview is to ensure that the team doesn’t move backwards in any significant way. By this, I mean that if you don’t optimize for the whole experience of your team, you could wind up with someone who improves your codebase but at the cost of demoralizing your whole team.
+I would argue that an additional goal of a technical interview is to ensure that the team doesn’t move backwards in any significant way. By this, I mean that if you don’t optimize for the whole experience of your team, you could wind up with someone who improves your codebase but at the cost of demoralizing your whole team. If a technical interview goes poorly, you could accidentally introduce toxic elements that stifle your teams and the important work they're doing.
 
-## Your Overall Approach
+## Overall Approach to Interviewing
 
 * **You should be rooting for the interviewee**. You should want them to succeed. There is no point to running your interview process like a gauntlet that someone has to get through. That’s just hazing. You should believe that this person has the potential to add something to your team. If you don’t, don’t schedule the interview, or figure out a less costly way to determine that.
 * **You are showcasing your company's values**. You should be introducing them to your org's culture by living it. You want to make sure the employee thinks they’ll have a great environment. What better way to do that than to...give them a great environment from the interview onward?
