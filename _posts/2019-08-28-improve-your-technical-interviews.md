@@ -7,14 +7,13 @@ tags:
   - hiring
 date: '2019-08-28 13:26 -0400'
 ---
-I'm often frustrated by the conversation I see around technical interviews. To combat this, I have a certain approach I’ve cultivated over the years. I'm attempting to write that down here, both to get feedback and to see if it resonates.
+I have a certain approach to technical interviews that I’ve cultivated over the years. It's a sensitive subject, so I'm attempting to write that approach down here, both to get feedback and to see if it resonates.
 
 ## About This Series
 
 ### Why I'm Writing This Series
 
-* I've gotten very positive feedback from multiple interviewees on the interviews I've conducted -- both those that we've moved forward with and those that we haven't. 
-* I feel like I've hired some really great people who've gone on to do great things as colleagues.
+* I'm often frustrated by the conversation I see around technical interviews. The suggested approaches I've seen -- coding competitions, white-board coding, rapid fire panel interviews, brain teasers -- don't seem to foster the kind of environment that I think makes for a highly functioning team.
 * I see a lot of discussion around interviews that either argues against these points, or touches on some of them in isolation. It seems that folks might benefit from seeing thoughts on the whole process in one place.
 * I firmly believe that the interview process makes or breaks the success of any company in the long term.
 
@@ -27,6 +26,8 @@ TODO
 I've served as a technical leader in several contexts and organizations. I'm a trainer and facilitator, and people generally don't seem to speak too much ill of me. :)
 
 Which is to say...not a whole lot of qualifications by the book I guess. I encourage you to look at the following ideas in terms of whether they work for you in your current context, and not to think I'm attempting to say these are the only way to have a successful technical interview. This is a heuristic approach, not something that claims to be the only way forward.
+
+I've gotten very positive feedback from multiple interviewees on the interviews I've conducted -- both those that we've moved forward with and those that we haven't.  Also, I feel like I've hired some really great people who've gone on to do great things as colleagues. So that's the experience I'm working with.
 
 ## What are the goals of a technical interview?
 
