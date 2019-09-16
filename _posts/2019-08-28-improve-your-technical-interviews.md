@@ -17,9 +17,9 @@ I have a certain approach to technical interviews that I’ve cultivated over th
 * I see a lot of discussion around interviews that either argues against these points, or touches on some of them in isolation. It seems that folks might benefit from seeing thoughts on the whole process in one place.
 * I firmly believe that the interview process makes or breaks the success of any company in the long term.
 
-### Quick Note: This is going to be a doc with a lot of edits.
+### Quick Note: This is going to be a series with a lot of edits.
 
-TODO
+I have continuously found myself saying "oooh, one more thing!" while I've written this series. I'm looking forward to editing it based on feedback, and to expanding on certain points. This series probably won't stay static.
 
 ### What are my Qualifications?
 
