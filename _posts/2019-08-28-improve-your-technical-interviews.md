@@ -40,7 +40,7 @@ I would argue that an additional goal of a technical interview is to ensure that
 ## Overall Approach to Interviewing
 
 * **You should be rooting for the interviewee**. You should want them to succeed. There is no point to running your interview process like a gauntlet that someone has to get through. That’s just hazing. You should believe that this person has the potential to add something to your team. If you don’t, don’t schedule the interview, or figure out a less costly way to determine that.
-* **You are showcasing your company's values**. You should be introducing them to your org's culture by living it. You want to make sure the employee thinks they’ll have a great environment. What better way to do that than to...give them a great environment from the interview onward?
+* **You are showcasing your company's values**. You should be introducing them to your org's culture by living it. You want to make sure the employee thinks they’ll have a great environment. What better way to do that than to...give them a great environment from the interview onward!
 * **You should be having a conversation.** The process is allowed to be human, it's allowed to be a space for connection, and it's allowed to feel natural. There's no reason it has to feel like a pop quiz or an inquisition. Aim to have a conversation with folks you interview. We'll discuss how to balance this conversational technique with the need to obtain the important information about a candidate.
 
 ## Think: what kind of person are you looking for?
@@ -49,11 +49,11 @@ I think this often informs the process incorrectly so many times because compani
 
 ### "We're looking for someone who can code."
 
-Is that all? My guess is you're looking for someone who can learn.
+Is that all? My guess is you're looking for someone who can learn, adapt, communicate with stakeholders.
 
 ### "We need someone to be productive."
 
-You probably also need someone to be collaborative, and to be productive long-term.
+You probably also need someone to be collaborative, and to be productive long-term, which is different than banging away at a keyboard for many hours a day.
 
 ### "We need someone proficient in specific technology x."
 
