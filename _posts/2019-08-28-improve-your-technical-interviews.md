@@ -9,14 +9,20 @@ date: '2019-08-28 13:26 -0400'
 ---
 I'm often frustrated by the conversation I see around technical interviews. To combat this, I have a certain approach I’ve cultivated over the years. I'm attempting to write that down here, both to get feedback and to see if it resonates.
 
-## Why I'm Writing This Series
+## About This Series
+
+### Why I'm Writing This Series
 
 * I've gotten very positive feedback from multiple interviewees on the interviews I've conducted -- both those that we've moved forward with and those that we haven't. 
 * I feel like I've hired some really great people who've gone on to do great things as colleagues.
 * I see a lot of discussion around interviews that either argues against these points, or touches on some of them in isolation. It seems that folks might benefit from seeing thoughts on the whole process in one place.
 * I firmly believe that the interview process makes or breaks the success of any company in the long term.
 
-## What are my Qualifications?
+### Quick Note: This is going to be a doc with a lot of edits.
+
+TODO
+
+### What are my Qualifications?
 
 I've served as a technical leader in several contexts and organizations. I'm a trainer and facilitator, and people generally don't seem to speak too much ill of me. :)
 
