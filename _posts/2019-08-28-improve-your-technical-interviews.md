@@ -39,14 +39,18 @@ I would argue that an additional goal of a technical interview is to ensure that
 
 I think this often informs the process incorrectly so many times because companies think they're looking for a certain type of person. This not only comes with its own bias which is an issue, but it also sets up the interview process to unsuccessfully weed out good candidates.
 
-> We're looking for someone who can code.
+### "We're looking for someone who can code."
 
 Is that all? My guess is you're looking for someone who can learn.
 
-> We need someone to be productive.
+### "We need someone to be productive."
 
 You probably also need someone to be collaborative, and to be productive long-term.
 
-> We need someone to fit.
+### "We need someone proficient in specific technology x." 
 
-This is where a lot of bias creeps in. You want someone to _add_ to your culture; you don't want someone to only conform to it.
+I would argue that this trips up companies so much of the time. Look for someone who has a handle on x technology or something related to it. Don't be the company that expects 5 years of experience in a framework that is 4 years old. Factor in a learning culture to whoever you bring on. (and if you don't have that, maybe fix that before hiring a bunch of folks.)
+
+### "We need someone to fit our culture."
+
+_Record-scratch noise_. This is where a lot of bias creeps in. You want someone to _add_ to your culture; you don't want someone to only conform to it.
