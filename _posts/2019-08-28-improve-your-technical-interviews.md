@@ -1,5 +1,5 @@
 ---
-title: 'Better Technical Interviews: Part 1 -- What''s it all about?'
+title: 'Better Technical Interviews: Part 1 -- What''s the point?'
 comments: true
 tags:
   - interviews
