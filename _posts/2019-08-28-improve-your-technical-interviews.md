@@ -20,13 +20,13 @@ I'm often frustrated by the conversation I see around technical interviews. To c
 
 I've served as a technical leader in several contexts and organizations. I'm a trainer and facilitator, and people generally don't seem to speak too much ill of me. :)
 
-Which is to say...not a whole lot of qualifications. I encourage you to look at the following ideas in terms of whether they work for you in your current context, and not to think I'm attempting to say these are the only way to have a successful technical interview. This is a heuristic approach, not something that claims to be the only way forward.
+Which is to say...not a whole lot of qualifications by the book I guess. I encourage you to look at the following ideas in terms of whether they work for you in your current context, and not to think I'm attempting to say these are the only way to have a successful technical interview. This is a heuristic approach, not something that claims to be the only way forward.
 
 ## What are the goals of a technical interview?
 
 Let's jump in, because the stakes are high!
 
-If a technical interview goes well, you’ll have a new teammate who can contribute to both your code and your team/org culture.
+If a technical interview goes well, you’ll have a new teammate and/or colleague who can contribute to both your code and your team/org culture.
 
 I would argue that an additional goal of a technical interview is to ensure that the team doesn’t move backwards in any significant way. By this, I mean that if you don’t optimize for the whole experience of your team, you could wind up with someone who improves your codebase but at the cost of demoralizing your whole team. If a technical interview goes poorly, you could accidentally introduce toxic elements that stifle your teams and the important work they're doing.
 
@@ -47,10 +47,14 @@ Is that all? My guess is you're looking for someone who can learn.
 
 You probably also need someone to be collaborative, and to be productive long-term.
 
-### "We need someone proficient in specific technology x." 
+### "We need someone proficient in specific technology x."
 
 I would argue that this trips up companies so much of the time. Look for someone who has a handle on x technology or something related to it. Don't be the company that expects 5 years of experience in a framework that is 4 years old. Factor in a learning culture to whoever you bring on. (and if you don't have that, maybe fix that before hiring a bunch of folks.)
 
 ### "We need someone to fit our culture."
 
 _Record-scratch noise_. This is where a lot of bias creeps in. You want someone to _add_ to your culture; you don't want someone to only conform to it.
+
+## Think: Where do you want your team to go next?
+
+I think this is an important conversation to have -- at least with yourself -- prior to conducting an interview. What does the team need? In what ways does it need to evolve?
