@@ -13,9 +13,7 @@ I have a certain approach to technical interviews that I’ve cultivated over th
 
 ### Why I'm Writing This Series
 
-* I'm often frustrated by the conversation I see around technical interviews. The suggested approaches I've seen -- coding competitions, white-board coding, rapid fire panel interviews, brain teasers -- don't seem to foster the kind of environment that I think makes for a highly functioning team.
-* I see a lot of discussion around interviews that either argues against these points, or touches on some of them in isolation. It seems that folks might benefit from seeing thoughts on the whole process in one place.
-* I firmly believe that the interview process makes or breaks the success of any company in the long term.
+* I'm often frustrated by the conversation I see around technical interviews. The suggested approaches I've seen -- coding competitions, white-board coding, rapid fire panel interviews, brain teasers -- don't seem to foster the kind of environment that I think makes for a highly functioning team.* I see a lot of discussion around interviews that either argues against these points, or touches on some of them in isolation. It seems that folks might benefit from seeing thoughts on the whole process in one place.* I firmly believe that the interview process makes or breaks the success of any company in the long term.
 
 ### Quick Note: This is going to be a series with a lot of edits.
 
@@ -46,6 +44,8 @@ So for me, the point of a technical interview is to 1) add a great new colleague
 * **You should be having a conversation.** The process is allowed to be human, it's allowed to be a space for connection, and it's allowed to feel natural. There's no reason it has to feel like a pop quiz or an inquisition. Aim to have a conversation with folks you interview. We'll discuss how to balance this conversational technique with the need to obtain the important information about a candidate.
 
 ## Thinking Before You Begin
+
+I find this to be an important step no matter who you are in the interview process, and one that has made the difference for me between interviews I felt I did well and ones I didn't.
 
 ### Think: what kind of person are you looking for?
 
