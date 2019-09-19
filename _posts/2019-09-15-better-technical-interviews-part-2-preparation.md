@@ -38,8 +38,7 @@ The key is to think in order to process those findings correctly. I've developed
 * What they might bring to our environment / culture that we don't already have
 * Any technology experience that could round out our overall capabilities.
 * Any leadership or core skills -- mentoring, teaching, facilitating, presenting, writing.
-
-## Findings --> Concerns --> Questions --> Conversation
+* Findings --> Concerns --> Questions --> Conversation
 
 OK, so say I've made some notes or seen some "flags" on a resume, and I want to address them but in a way that is truly open and keeps me rooting for the interviewee.
 
@@ -56,19 +55,20 @@ How does this work in practice? I'll take one (potentially problematic) example:
 * **Finding**: "Uh-oh, I see a lot of short-term gigs here. That looks like a red flag. Did they not work out? Is there a persistent issue with this person? Are they job hopping and only looking to use us as a stepping stone rather than committing?" (remember: this is the spot where I allow myself to be human with biases, concerns, and not much of a filter).
 * **Concern**: What's the actual concern here? We're looking for folks to grow with our company, and I need someone who is going to stick around and embrace our company, at least in good faith at first assuming that it stays mutually beneficial.
 * **Questions**: OK, how can I help someone explore that topic in a way that will address my potential concerns. Maybe some questions would be:  
-
   * "What do you look for in a long-term fit with a company?"  
   * "What is an ideal day-to-day experience like?"
   * "When have you felt best when working with a team?"
   * "What do you think keeps you engaged when working somewhere?"
-
 * **Conversation**: Potential results could be:
-
   * Oh, it turns out that this person is really looking for the kind of culture and experience we offer, but hadn't found it yet and was willing to keep moving.
   * Oh, it turns out that this person really wants to affect change in ways that I'm completely on board with, but they kept hitting walls and knew they wouldn't be able to make a long-term impact.  
   * Oh, this person took a gig with a staffing agency because they needed some specific flexibility but they're looking for a long-term fit now. That makes sense.  
   * Oh, this person is really only looking for something short-term and weren't entirely clear on how we operate, but we were able to have a conversation around it.  
   * Oh, this person really seems to be motivated by money, and they mentioned that they kept getting better offers and jumping ship. This tells me that our potential offer might not be compelling, and also that they don't appear to be ready to put down roots somewhere for a bit. There's nothing wrong with money, but this might not be the right person to invest in on-boarding at this time, especially if other aspects don't line up.
+
+**What about alternate resumes? GitHub presence and things like that?**
+
+My stance on this is that I'm interested in anything a candidate is willing to put forth. I don't require someone to have a GitHub (people can do things outside of work that aren't coding!), but if they pass one along I'll happily look at it..
 
 ## The Importance of Open-Ended Questions
 
