@@ -85,3 +85,5 @@ If I'm looking for a colleague that I can collaborate with, I want to know that 
 * Am I concerned about someone's potential engagement? I might ask what has them excited about the field or their potential upcoming work, or when they've been happiest. Oftentimes I'm concerned about this with any candidate, so I try to provide a question up front that lets someone demonstrate their engagement.
 
 **Write down these open-ended questions ahead of time**, and try to get them in a rough order. This way you don't word them poorly when you ask them, and you have a sort of structure to the conversation, which allows you to segue between in a natural way.
+
+With all of this preparation underway, you're ready to execute the interview. Onward!
