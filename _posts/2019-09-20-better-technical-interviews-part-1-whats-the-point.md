@@ -13,7 +13,9 @@ I have a certain approach to technical interviews that I’ve cultivated over th
 
 ### Why I'm Writing This Series
 
-* I'm often frustrated by the conversation I see around technical interviews. The suggested approaches I've seen -- coding competitions, white-board coding, rapid fire panel interviews, brain teasers -- don't seem to foster the kind of environment that I think makes for a highly functioning team.* I see a lot of discussion around interviews that either argues against these points, or touches on some of them in isolation. It seems that folks might benefit from seeing thoughts on the whole process in one place.* I firmly believe that the interview process makes or breaks the success of any company in the long term.
+* I'm often frustrated by the conversation I see around technical interviews. The suggested approaches I've seen -- coding competitions, white-board coding, rapid fire panel interviews, brain teasers -- don't seem to foster the kind of environment that I think makes for a highly functioning team.
+* I see a lot of discussion around interviews that either argues against these points, or touches on some of them in isolation. It seems that folks might benefit from seeing thoughts on the whole process in one place.
+* I firmly believe that the interview process makes or breaks the success of any company in the long term.
 
 ### Quick Note: This is going to be a series with a lot of edits.
 
