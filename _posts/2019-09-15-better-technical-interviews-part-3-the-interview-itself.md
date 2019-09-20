@@ -9,6 +9,10 @@ date: '2019-09-15 21:33 -0400'
 ---
 _This post is part of a series I'm writing on better technical interviews. I'd love your thoughts in the comments!_
 
+* [Part 1 - What's the Point?]({% post_url 2019-09-20-better-technical-interviews-part-1-whats-the-point %})
+* [Part 2 - Preparation]({% post_url 2019-09-20-better-technical-interviews-part-2-preparation %})
+* Part 3 - The Interview Itself (this post)
+
 OK! Now that we're well-prepared, the day of the interview is here and it's time to execute on it.
 
 ## The Actual Interview
