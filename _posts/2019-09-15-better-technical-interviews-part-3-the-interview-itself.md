@@ -32,4 +32,13 @@ OK! Now that we're well-prepared, the day of the interview is here and it's time
 * **Challenging in the moment**. It is important to push back if an interviewee says something that is incorrect or that you want to dig into a little further. However, this doesn't have to be done in a stand-offish way. How would you do that with a teammate? Follow-up, clarifying questions that give the benefit of the doubt are likely the way to go in this instance.
 * **Does an interviewee get a question wrong?** If the interviewee answers a more cut & dry question incorrectly, it's a good idea to let them know what you were looking for & why, as well as telling them it's OK. The interviewee may be able to clarify their understanding, or to provide further information on their perspective. It's also an option to see if folks are open to being corrected or if they get very defensive. Also, it's an interview; remember that people are nervous and they get questions wrong sometimes. Making sure you show that you're not judging them is an important part of how you present yourself and your company in the interview.
 
-Phew! You've survived executing the the interview. Congrats! In the next post, we'll take a look at what happens after.
+## Delivering Your Feedback on the Interviewee
+
+Once you're done, I think it's important to do a thorough write-up of the interview -- a three-dimensional look that includes potential strengths and weaknesses of the candidate and the context in which you're thinking about the hire. Map the interviewee's performance to your company's goals and values, and to the relevant skill level of your company.
+
+I think these kinds of thorough debriefings are important for a few reasons:
+
+* **They allow you to receive feedback**. My interview notes have surfaced conversations with recruiting teams that have led me to understand their approach and ways I might be thinking about it differently than they'd like me to. In some cases I've adjusted my approach because of this; in other cases, I've stood firm. But the key is that the information allowed for the conversation.
+* **There still might be a place for a person you reject**. If someone wasn't a fit for a senior-level role in this case, there's no reason that they might not be an excellent fit for a mid-level role shortly down the line. And because if your interview prep and empathetic execution, they may still be interested when they come to mind for that role.
+
+Phew! You've survived executing the the interview. Congrats! In the next post, we'll wrap up with some odds and ends on my thoughts on various interview practices.
