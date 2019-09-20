@@ -9,10 +9,7 @@ date: '2019-09-15 21:33 -0400'
 ---
 _This post is part of a series I'm writing on better technical interviews. I'd love your thoughts in the comments!_
 
-## Structuring the Interview
-
-* **Preparation is key**. Your ability to manage time and ask appropriate questions can make all the difference. I have to force myself to write out questions so that I can stick to the agenda without it getting away from me, for example.
-* ****
+OK! Now that we're well-prepared, the day of the interview is here and it's time to execute on it.
 
 ## The Actual Interview
 
