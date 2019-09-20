@@ -9,6 +9,9 @@ date: '2019-09-20 14:00 -0400'
 ---
 I have a certain approach to technical interviews that I’ve cultivated over the years. It's a sensitive subject, so I'm attempting to write that approach down here, both to get feedback and to see if it resonates.
 
+* Part 1 - What's the Point? (this post)
+* [Part 2 - Preparation]({% post_url 2019-09-20-better-technical-interviews-part-2-preparation %})
+
 ## About This Series
 
 ### Why I'm Writing This Series
