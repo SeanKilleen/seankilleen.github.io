@@ -51,7 +51,11 @@ If you ask how someone would implement a fast-sorting algorithm and their answer
 
 ### Should We use HackerRank, etc.?
 
-No. (TODO: why)
+No. At least not unless you're utilizing the pairing functionality.
+
+* These tools feed into the idea that if someone can solve a coding problem, they'll be a good fit for a team. 
+* These tools risk dropping some senior folks from the funnel who avoid the sort of algorithmic minutae that this article recommends against.
+* In my opinion, broadly speaking, these tools are reductive and commoditize the skillset you're looking for and the notion of the work we do.
 
 ### I can't really tell so much from conversation as what you're expecting. Is that a problem?
 
