@@ -6,6 +6,12 @@ tags:
   - hiring
 date: '2019-09-15 21:31 -0400'
 ---
+_This post part of a series I'm writing on Better Technical Interviews. I'd love your feedback in the comments!_
+
+
+
+OK, now that we understand the point of the technical interview and are in the right mindset, we need to prepare.
+
 ## Preparing for the Interview
 
 I firmly believe that a successful interview is based on the preparation the interviewer is able to do. Some of my ground rules include:
@@ -38,7 +44,8 @@ The key is to think in order to process those findings correctly. I've developed
 * What they might bring to our environment / culture that we don't already have
 * Any technology experience that could round out our overall capabilities.
 * Any leadership or core skills -- mentoring, teaching, facilitating, presenting, writing.
-* Findings --> Concerns --> Questions --> Conversation
+
+## Findings --> Concerns --> Questions --> Conversation
 
 OK, so say I've made some notes or seen some "flags" on a resume, and I want to address them but in a way that is truly open and keeps me rooting for the interviewee.
 
@@ -66,13 +73,11 @@ How does this work in practice? I'll take one (potentially problematic) example:
   * Oh, this person is really only looking for something short-term and weren't entirely clear on how we operate, but we were able to have a conversation around it.  
   * Oh, this person really seems to be motivated by money, and they mentioned that they kept getting better offers and jumping ship. This tells me that our potential offer might not be compelling, and also that they don't appear to be ready to put down roots somewhere for a bit. There's nothing wrong with money, but this might not be the right person to invest in on-boarding at this time, especially if other aspects don't line up.
 
-**What about alternate resumes? GitHub presence and things like that?**
+**What about alternate resumes? GitHub presence, portfolios, and things like that?**
 
-My stance on this is that I'm interested in anything a candidate is willing to put forth. I don't require someone to have a GitHub (people can do things outside of work that aren't coding!), but if they pass one along I'll happily look at it..
+My stance on this is that I'm interested in anything a candidate is willing to put forth. I don't require someone to have a GitHub profile (people can do things outside of work that aren't coding!), but if they pass one along I'll happily look at it.
 
 ## The Importance of Open-Ended Questions
-
-I could probably do a separate post on this alone (and I might).
 
 If I'm looking for a colleague that I can collaborate with, I want to know that I can have a conversation with them, and that they will not expect to be a lone wolf developer in a basement somewhere. I think that conversation is key to that. You learn a lot about a person's capabilities, personality, values, and expectations when you give them space to tell you.
 
@@ -81,7 +86,7 @@ If I'm looking for a colleague that I can collaborate with, I want to know that 
 * Am I concerned that someone has very narrow experience? I may ask what technology interests them, what new things they're excited about, or how they keep their skills up to date to understand what's coming in the future.
 * Am I concerned about someone's potential engagement? I might ask what has them excited about the field or their potential upcoming work, or when they've been happiest. Oftentimes I'm concerned about this with any candidate, so I try to provide a question up front that lets someone demonstrate their engagement.
 
-**Write down these questions ahead of time**, and try to get them in a rough order. This way you don't word them poorly when you ask them, and you have a sort of structure to the conversation.
+**Write down these open-ended questions ahead of time**, and try to get them in a rough order. This way you don't word them poorly when you ask them, and you have a sort of structure to the conversation, which allows you to segue between in a natural way.
 
 ## Structuring the Interview
 
