@@ -34,6 +34,7 @@ I look at:
 * What don't they list that I might be concerned about them not walking in with (a critical technology, a conceptual understanding, etc.)
 
 **There's an important next step: countering bias in these cases**. Does someone have a lot of short-term work? That doesn't necessarily mean anything; it could mean they worked for a staffing firm and were asked to move around a lot, or that they sought out short-term gigs for a period of time. There are many good reasons for someone to have a large gap, including caring for a loved one, raising a child, illness, etc. 
+
 The key is to think in order to process those findings correctly. I've developed a process that I think works for me, at least personally. I'll talk about it below.
 
 **Don't forget the positives!** **I also look for**:
@@ -79,7 +80,7 @@ My stance on this is that I'm interested in anything a candidate is willing to p
 
 If I'm looking for a colleague that I can collaborate with, I want to know that I can have a conversation with them, and that they will not expect to be a lone wolf developer in a basement somewhere. I think that conversation is key to that. You learn a lot about a person's capabilities, personality, values, and expectations when you give them space to tell you.
 
-* Am I concerned about someone's depth on a concept? I might ask them to apply to a certain problem or situation.
+* Am I concerned about someone's depth on a concept? I might ask them to apply it to a certain problem or situation.
 * Am I concerned that they appear to be a lone wolf? I might ask them what makes a great team, or what it means to them to be a leader.
 * Am I concerned that someone has very narrow experience? I may ask what technology interests them, what new things they're excited about, or how they keep their skills up to date to understand what's coming in the future.
 * Am I concerned about someone's potential engagement? I might ask what has them excited about the field or their potential upcoming work, or when they've been happiest. Oftentimes I'm concerned about this with any candidate, so I try to provide a question up front that lets someone demonstrate their engagement.
