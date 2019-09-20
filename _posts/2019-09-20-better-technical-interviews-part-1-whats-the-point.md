@@ -5,7 +5,7 @@ tags:
   - interviews
   - culture
   - hiring
-date: '2019-08-28 13:26 -0400'
+date: '2019-09-20 14:00 -0400'
 ---
 I have a certain approach to technical interviews that I’ve cultivated over the years. It's a sensitive subject, so I'm attempting to write that approach down here, both to get feedback and to see if it resonates.
 
