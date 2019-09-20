@@ -1,5 +1,5 @@
 ---
-title: 'Better Technical Interviews: Part 5 -- My Opinions on Various Techniques'
+title: 'Better Technical Interviews: Part 4 -- My Opinions on Various Techniques'
 comments: true
 tags:
   - interviewing
