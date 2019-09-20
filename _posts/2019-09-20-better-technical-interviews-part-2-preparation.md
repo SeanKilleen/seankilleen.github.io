@@ -4,7 +4,7 @@ comments: true
 tags:
   - interviews.culture
   - hiring
-date: '2019-09-15 21:31 -0400'
+date: '2019-09-20 14:45 -0400'
 ---
 _This post part of a series I'm writing on better technical interviews. I'd love your feedback in the comments!_
 
