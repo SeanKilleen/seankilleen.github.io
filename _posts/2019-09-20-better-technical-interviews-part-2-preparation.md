@@ -7,7 +7,7 @@ tags:
   - hiring
 date: '2019-09-20 14:45 -0400'
 ---
-_This post part of [a series](({% post_url 2019-09-20-better-technical-interviews-part-1-whats-the-point %})) I'm writing on better technical interviews. I'd love your feedback in the comments!_
+_This post part of [a series]({% post_url 2019-09-20-better-technical-interviews-part-1-whats-the-point %}) I'm writing on better technical interviews. I'd love your feedback in the comments!_
 
 OK, now that we understand the point of the technical interview and are in the right mindset, we need to prepare.
 
