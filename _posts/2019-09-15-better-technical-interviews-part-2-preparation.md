@@ -6,9 +6,7 @@ tags:
   - hiring
 date: '2019-09-15 21:31 -0400'
 ---
-_This post part of a series I'm writing on Better Technical Interviews. I'd love your feedback in the comments!_
-
-
+_This post part of a series I'm writing on Better technical interviews. I'd love your feedback in the comments!_
 
 OK, now that we understand the point of the technical interview and are in the right mindset, we need to prepare.
 
