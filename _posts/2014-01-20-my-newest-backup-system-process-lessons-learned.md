@@ -19,5 +19,5 @@ So, following [Scott Hanselman's advice][Hanselman Link], I'm upping my backup g
 
 Looking forward to getting this set up ASAP.
 
-[Hanselman Link]: http://www.hanselman.com/blog/TheComputerBackupRuleOfThree.aspx
+[Hanselman Link]: https://www.hanselman.com/blog/TheComputerBackupRuleOfThree.aspx
 [Hanselman GMail]: http://www.hanselman.com/blog/AutomaticallyBackupYourGmailAccountOnAScheduleWithGMVaultAndWindowsTaskScheduler.aspx

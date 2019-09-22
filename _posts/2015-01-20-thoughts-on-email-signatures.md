@@ -13,7 +13,7 @@ references:
    parenttitle: Fortune.com
    parenturl: http://fortune.com/
  - title: "By reading this, you agree to stop adding useless disclaimers"
-   url: http://www.theguardian.com/media/2009/jan/11/useless-disclaimers-computing
+   url: https://www.theguardian.com/media/2009/jan/11/useless-disclaimers-computing
    parenttitle: The Guardian
    parenturl: http://www.theguardian.com/
  - title: "Disclaimers in Email Signatures are Not Just Annoying, But Legally Meaningless"
@@ -75,6 +75,6 @@ Am I off base here? Do these tips make sense? Drop a line in the comments.
 
 [Example1]: http://www.economist.com/node/18529895
 [Example2]: http://fortune.com/2013/10/15/the-short-history-of-email-disclaimers/
-[Example3]: http://www.theguardian.com/media/2009/jan/11/useless-disclaimers-computing
+[Example3]: https://www.theguardian.com/media/2009/jan/11/useless-disclaimers-computing
 [Example4]: http://lifehacker.com/5790930/disclaimers-in-email-signatures-are-not-just-annoying-but-legally-meaningless
 [PleaseConsider]: http://thinkbeforeprinting.org/get-the-message.php
