@@ -2,6 +2,6 @@ require 'html-proofer'
 
 task :test do
   sh "bundle exec jekyll build"
-  options = { :assume_extension => true, :ssl_verifypeer => false, :url_ignore => "/edit\/gh_pages/"  }
+  options = { :assume_extension => true, :ssl_verifypeer => false, :ignore => "/edit\/gh_pages/"  }
   HTMLProofer.check_directory("./_site", options).run
 end
