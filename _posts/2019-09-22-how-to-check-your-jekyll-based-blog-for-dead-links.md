@@ -8,8 +8,6 @@ tags:
   - ruby
 date: '2019-09-22 17:40 -0400'
 ---
-I all, 
-
 I thought someone might find this quick tip useful, so I'm writing it up.
 
 ## The Challenge
