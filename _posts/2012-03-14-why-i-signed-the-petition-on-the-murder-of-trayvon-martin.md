@@ -15,7 +15,7 @@ If you agree, please consider signing as well.
 
 Some news articles with information about the case are below (I've attempted to include a balanced mix of news sources):
 
-* <http://articles.orlandosentinel.com/2012-03-14/news/os-trayvon-martin-shooting-death-rally-20120314_1_demand-justice-fatal-shooting-bryant>
+* <https://www.orlandosentinel.com/news/seminole-county/os-trayvon-martin-shooting-death-rally-20120314-story.html>
 * <http://abcnews.go.com/US/neighborhood-watch-shooting-trayvon-martin-probe-reveals-questionable/story?id=15907136#.T2D6WBEgfl4> 
 * <http://www.dailymail.co.uk/news/article-2114152/Trayvon-Martin-shot-dead-Police-say-theres-evidence-dispute-claim-neighbourhood-watch-captain-George-Zimmerman-acted-self-defence.html>
 * <http://www.foxnews.com/us/2012/03/08/family-wants-answers-in-fla-teens-death> 
