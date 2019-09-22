@@ -3,7 +3,6 @@ layout: single
 author_profile: true 
 
 title: "Credits"
-tags: [credits, info, meta]
 modified: 2018-12-31T10:53:07.573882-04:00
 sitemap: true
 ---  

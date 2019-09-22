@@ -2,7 +2,6 @@
 layout: single
 author_profile: true 
 title: "Talks / Presentations Catalog"
-tags: [info, meta, presentations, talks]
 modified: 2019-03-30T09:25:00.000000-05:00
 comments: false
 ---

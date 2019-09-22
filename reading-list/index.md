@@ -2,7 +2,6 @@
 layout: single
 author_profile: true 
 title: My (Automated) Reading List
-tags: [info, meta, tools, reading, rss, feeds]
 modified: 2019-01-14T09:25:00.000000-05:00
 comments: true
 ---
