@@ -2,10 +2,10 @@ require 'html-proofer'
 
 def run_htmlproofer()
   options = { 
-    :assume_extension => true,
+    assume_extension: true,
     :typhoeus => { :ssl_verifypeer => false },
-    :allow_hash_href => true,
-    :url_ignore => ["gh-pages"]
+    allow_hash_href: true,
+    url_ignore: [/edit\/gh-pages/]
   }
   HTMLProofer.check_directory("./_site", options).run
 end
