@@ -13,7 +13,7 @@ _This post part of [a series]({% post_url 2019-09-20-better-technical-interviews
 * [Part 1 - What's the Point?]({% post_url 2019-09-20-better-technical-interviews-part-1-whats-the-point %})
 * [Part 2 - Preparation]({% post_url 2019-09-20-better-technical-interviews-part-2-preparation %})
 * [Part 3 - The Actual Interview]({% post_url 2019-09-21-better-technical-interviews-part-3-the-interview-itself %})
-* [Part 4 - My Opinion on Various Techniques]({% 2019-09-25-better-technical-interviews-part-4-my-opinions-on-various-techniques %})
+* [Part 4 - My Opinion on Various Techniques]({% post_url 2019-09-25-better-technical-interviews-part-4-my-opinions-on-various-techniques %})
 
 I have a certain approach to technical interviews that I’ve cultivated over the years. It's a sensitive subject, so I'm attempting to write that approach down here, both to get feedback and to see if it resonates.
 
