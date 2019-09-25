@@ -5,8 +5,9 @@ tags:
   - interviewing
   - culture
   - hiring
-date: '2019-09-15 21:35 -0400'
+date: '2019-09-25 11:30 -0400'
 ---
+
 ## My Opinions on Certain Interview Practices
 These are my personal opinions with some reasoning behind them.
 
