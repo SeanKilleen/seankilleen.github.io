@@ -37,11 +37,11 @@ In the end, I am grateful for what Backblaze offers, and hope that it can follow
 * Is Backblaze neglecting its restoration services knowing that customers will likely opt for the $99-189 purchase of a shipped HDD because their data is precious? I certainly hope not, but it seems to be a possible conflict of interest.
 
 ### Footnotes
-[^1]: I've heard this in the industry for years, but since I don't know the originator, I'll give [Scott Hanselman](http://www.hanselman.com/blog/TheComputerBackupRuleOfThree.aspx) the credit.
+[^1]: I've heard this in the industry for years, but since I don't know the originator, I'll give [Scott Hanselman](https://www.hanselman.com/blog/TheComputerBackupRuleOfThree.aspx) the credit.
 
 [^2]: Side note: If you are going to scan your documents -- like say, **serial keys to your OS** -- don't keep them as remote files only. In general, I'll be switching to an additional form of backup for local as well.
 
 [^3]: Seriously, I commend his willingness to engage with a slightly-frustrated customer who found him on Twitter during the weekend. It was a long shot but his response inspires confidence. [Here's the Storify of our conversation so far]() (Ed. Note: unfortunately this link has been lost to time); I'll edit it as progress is made.
 
 [HN Link]: https://news.ycombinator.com/item?id=7093016
-[CrashPlan]: http://www.code42.com/crashplan/
+[CrashPlan]: https://www.crashplan.com/en-us/

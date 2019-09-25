@@ -7,7 +7,7 @@ tags: [dotnet, community]
 comments: true
 ---
 
-The .NET Foundation Board elections recently took place, [and I was the last one eliminated, one of my proudest accomplishments to date](https://www.opavote.com/results/5042387845906432).
+The .NET Foundation Board elections recently took place, and I was the last one eliminated, one of my proudest accomplishments to date (the link, unfortunately, has since expired. Should have taken a screenshot!)
 
 I thought I’d share some reflections and lessons learned from [my candidacy](https://election.dotnetfoundation.org/campaign-2019/sean-killeen.html).
 

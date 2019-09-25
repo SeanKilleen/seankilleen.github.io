@@ -28,4 +28,4 @@ Use for any bookmarklet you need.
 
 [Google Chrome]: https://www.google.com/intl/en/chrome/browser/
 [Delicious]: http://delicious.com/
-[Scott Hanselman's workflow]: http://www.hanselman.com/blog/InstapaperDeliveredToYourKindleChangesHowYouConsumeWebContentPlusIFTTTBlogsAndMore.aspx
+[Scott Hanselman's workflow]: https://www.hanselman.com/blog/InstapaperDeliveredToYourKindleChangesHowYouConsumeWebContentPlusIFTTTBlogsAndMore.aspx

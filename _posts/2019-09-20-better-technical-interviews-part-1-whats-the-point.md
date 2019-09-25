@@ -7,10 +7,13 @@ tags:
   - hiring
 date: '2019-09-20 14:00 -0400'
 ---
-I have a certain approach to technical interviews that I’ve cultivated over the years. It's a sensitive subject, so I'm attempting to write that approach down here, both to get feedback and to see if it resonates.
+_This post part of [a series]({% post_url 2019-09-20-better-technical-interviews-part-1-whats-the-point %}) I'm writing on better technical interviews. I'd love your feedback in the comments!_
 
-* Part 1 - What's the Point? (this post)
+* [Part 1 - What's the Point?]({% post_url 2019-09-20-better-technical-interviews-part-1-whats-the-point %})
 * [Part 2 - Preparation]({% post_url 2019-09-20-better-technical-interviews-part-2-preparation %})
+* [Part 3 - The Actual Interview]({% post_url 2019-09-21-better-technical-interviews-part-3-the-interview-itself %})
+
+I have a certain approach to technical interviews that I’ve cultivated over the years. It's a sensitive subject, so I'm attempting to write that approach down here, both to get feedback and to see if it resonates.
 
 ## About This Series
 

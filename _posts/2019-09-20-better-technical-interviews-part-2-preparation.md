@@ -9,10 +9,11 @@ date: '2019-09-20 14:45 -0400'
 ---
 _This post part of [a series]({% post_url 2019-09-20-better-technical-interviews-part-1-whats-the-point %}) I'm writing on better technical interviews. I'd love your feedback in the comments!_
 
-OK, now that we understand the point of the technical interview and are in the right mindset, we need to prepare.
-
 * [Part 1 - What's the Point?]({% post_url 2019-09-20-better-technical-interviews-part-1-whats-the-point %})
-* Part 2 - Preparation (this post)
+* [Part 2 - Preparation]({% post_url 2019-09-20-better-technical-interviews-part-2-preparation %})
+* [Part 3 - The Actual Interview]({% post_url 2019-09-21-better-technical-interviews-part-3-the-interview-itself %})
+
+OK, now that we understand the point of the technical interview and are in the right mindset, we need to prepare.
 
 ## Preparing for the Interview
 

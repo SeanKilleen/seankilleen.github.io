@@ -3,7 +3,6 @@ layout: single
 author_profile: true 
 
 title: "Credits"
-tags: [credits, info, meta]
 modified: 2018-12-31T10:53:07.573882-04:00
 sitemap: true
 ---  
@@ -27,7 +26,7 @@ request the old fashioned way.
 
 {% for contributor in site.github.contributors %}
   <li>
-    <img src="{{ contributor.avatar_url }}" /> <a href="{{ contributor.html_url }}">{{ contributor.login }}</a>
+    <img src="{{ contributor.avatar_url }}" alt="the profile picture of {{ contributor.login }}" /> <a href="{{ contributor.html_url }}">{{ contributor.login }}</a>
   </li>
 {% endfor %}
 
