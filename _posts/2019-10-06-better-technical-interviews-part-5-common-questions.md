@@ -19,24 +19,22 @@ _This post part of [a series]({% post_url 2019-09-20-better-technical-interviews
 
 Please recall that throughout preceding articles, I mentioned that the interview process needs to be heavily tailored to the position you're seeking to fill, and to the research you've done on an interviewee.
 
-I mention this again here because it's really important. If you treat the questions below as a one-size-fits-all playbook, you will be doing your team and your interviewees a disservice. There is no overall interview playbook in my opinion.
+I mention this again here because it's really important. If you treat the questions below as a one-size-fits-all play book, you will be doing your team and your interviewees a disservice. There is no overall interview play book in my opinion.
 
 The goal of the questions below is to show the types of open-ended questions I might ask to give the candidate space to show and tell me who they are around certain topics. These questions rarely exist on their own, but I usually try to turn them into mini conversations. **The follow-up is key.**
 
-With that said, here are some common questions I tend to ask and my reasoning behind them. 
+With that said, here are some common questions I tend to ask and my reasoning behind them.
 
 ## My Common Interview Questions, and their aims
 
 ### "Tell me about a recent win you've had. Could be work-related, but doesn't have to be."
 
-* **When I ask this question:**
-* **Why I ask this question:**
-* **What sorts of answers do I look for:**
+* **When I ask this question:** I tend to ask this at the start of an interview, usually as the first question.
+* **Why I ask this question:** I've gotten feedback that it allows interviewees to open up and it removes some of the tension because we celebrate the win together. It doesn't start them out in a defensive posture. I also ask this to see where someone's priorities are and what they value as an accomplishment.
+* **What sorts of answers do I look for:** I look for someone to have _something_ that they're proud of in work or outside of work, in at least some small way. Fork work-related answers, I also check to see if they've connected that accomplishment to delivering some sort of value for a larger audience. For personal answers, I look to see the ways they value spending their time and I try to relate it to work or to our pitch in future parts of the conversation.
 
 ### With so much happening in this industry, how do you keep your skills up to date?
-
 ### What are some differences between mediocre and great teams? What are some things that great teams do?
-
 ### "Tell me about a recent win you've had. Could be work-related, but doesn't have to be."
 ### Do you know what SOLID principles are? If so, do you have opinions on where they're useful / not useful?
 ### What is the difference between inheritance and composition? 
@@ -46,6 +44,7 @@ With that said, here are some common questions I tend to ask and my reasoning be
 ### If you had a large legacy application and needed to refactor a large part of the code base, how would you approach that? 
 ### What are some key characteristics of a good unit test? 
 ### What does it mean to be a leader?
+### Tell me about the different access modifiers and what they do?
 ### What are some key components of high performing teams in your view? 
 ### How would you mentor a junior developer who was more junior than you?
 ### You’re going to miss deadline, what do you do?
