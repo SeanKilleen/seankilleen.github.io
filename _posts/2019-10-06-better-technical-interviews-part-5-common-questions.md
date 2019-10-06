@@ -15,4 +15,4 @@ _This post part of [a series]({% post_url 2019-09-20-better-technical-interviews
 * [Part 3 - The Actual Interview]({% post_url 2019-09-21-better-technical-interviews-part-3-the-interview-itself %})
 * [Part 4 - My Opinion on Various Techniques]({% post_url 2019-09-25-better-technical-interviews-part-4-my-opinions-on-various-techniques %})
 
-## My Common Interview Questionsn
+## My Common Interview Questions
