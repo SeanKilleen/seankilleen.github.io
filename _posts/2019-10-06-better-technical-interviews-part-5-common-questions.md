@@ -28,29 +28,147 @@ With that said, here are some common questions I tend to ask and my reasoning be
 
 ## My Common Interview Questions, and their aims
 
-### "Tell me about a recent win you've had. Could be work-related, but doesn't have to be."
+### Tell me about a recent win you've had. Could be work-related, but doesn't have to be.
 
 * **When I ask this question:** I tend to ask this at the start of an interview, usually as the first question.
 * **Why I ask this question:** I've gotten feedback that it allows interviewees to open up and it removes some of the tension because we celebrate the win together. It doesn't start them out in a defensive posture. I also ask this to see where someone's priorities are and what they value as an accomplishment.
 * **What sorts of answers do I look for:** I look for someone to have _something_ that they're proud of in work or outside of work, in at least some small way. Fork work-related answers, I also check to see if they've connected that accomplishment to delivering some sort of value for a larger audience. For personal answers, I look to see the ways they value spending their time and I try to relate it to work or to our pitch in future parts of the conversation.
 
 ### With so much happening in this industry, how do you keep your skills up to date?
+
+* **When I ask this question:** 
+* **Why I ask this question:**
+* **What sorts of answers do I look for:** 
+
 ### What are some differences between mediocre and great teams? What are some things that great teams do?
+
+* **When I ask this question:** 
+* **Why I ask this question:**
+* **What sorts of answers do I look for:** 
+
 ### "Tell me about a recent win you've had. Could be work-related, but doesn't have to be."
+
+* **When I ask this question:** 
+* **Why I ask this question:**
+* **What sorts of answers do I look for:** 
+
 ### Do you know what SOLID principles are? If so, do you have opinions on where they're useful / not useful?
+
+* **When I ask this question:** 
+* **Why I ask this question:**
+* **What sorts of answers do I look for:** 
+
 ### What is the difference between inheritance and composition? 
+
+* **When I ask this question:** 
+* **Why I ask this question:**
+* **What sorts of answers do I look for:** 
+
 ### What are interfaces, and why are they useful? 
+
+* **When I ask this question:** 
+* **Why I ask this question:**
+* **What sorts of answers do I look for:** 
+
 ### What kind of automated tests have you worked with? 
+
+* **When I ask this question:** 
+* **Why I ask this question:**
+* **What sorts of answers do I look for:** 
+
 ### What is the difference between code first and database first? 
+
+* **When I ask this question:** 
+* **Why I ask this question:**
+* **What sorts of answers do I look for:** 
+
 ### If you had a large legacy application and needed to refactor a large part of the code base, how would you approach that? 
+
+* **When I ask this question:** 
+* **Why I ask this question:**
+* **What sorts of answers do I look for:** 
+
 ### What are some key characteristics of a good unit test? 
+
+* **When I ask this question:** 
+* **Why I ask this question:**
+* **What sorts of answers do I look for:** 
+
 ### What does it mean to be a leader?
+
+* **When I ask this question:** 
+* **Why I ask this question:**
+* **What sorts of answers do I look for:** 
+
 ### Tell me about the different access modifiers and what they do?
+
+* **When I ask this question:** 
+* **Why I ask this question:**
+* **What sorts of answers do I look for:** 
+
 ### What are some key components of high performing teams in your view? 
+
+* **When I ask this question:** 
+* **Why I ask this question:**
+* **What sorts of answers do I look for:** 
+
 ### How would you mentor a junior developer who was more junior than you?
+
+* **When I ask this question:** 
+* **Why I ask this question:**
+* **What sorts of answers do I look for:** 
+
 ### You’re going to miss deadline, what do you do?
+
+* **When I ask this question:** 
+* **Why I ask this question:**
+* **What sorts of answers do I look for:** 
+
 ### What is your ideal day to day?
+
+* **When I ask this question:** 
+* **Why I ask this question:**
+* **What sorts of answers do I look for:** 
+
 ### Ideal process from requirement --> Production
+
+* **When I ask this question:** 
+* **Why I ask this question:**
+* **What sorts of answers do I look for:** 
+
 ### What are you excited about in the .NET world right now?
+
+* **When I ask this question:** 
+* **Why I ask this question:**
+* **What sorts of answers do I look for:** 
+
 ### What are you looking for in a long-term fit?
+
+* **When I ask this question:** 
+* **Why I ask this question:**
+* **What sorts of answers do I look for:** 
+
 ### What is an ORM? What are its pros and cons?
+
+* **When I ask this question:** 
+* **Why I ask this question:**
+* **What sorts of answers do I look for:** 
+
+### How do you ensure quality in an enterprise environment?
+
+* **When I ask this question:** 
+* **Why I ask this question:**
+* **What sorts of answers do I look for:** 
+
+### Tell me about different types of automated tests.
+
+* **When I ask this question:** 
+* **Why I ask this question:**
+* **What sorts of answers do I look for:** 
+
+### If you were building a modern web application with server and client aspects, what technology stack would you start with today and why? 
+
+* **When I ask this question:** 
+* **Why I ask this question:**
+* **What sorts of answers do I look for:** 
+
