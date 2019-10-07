@@ -36,9 +36,10 @@ With that said, here are some common questions I tend to ask and my reasoning be
 
 ### With so much happening in this industry, how do you keep your skills up to date?
 
-* **When I ask this question:** 
-* **Why I ask this question:**
-* **What sorts of answers do I look for:** 
+* **When I ask this question:** I sometimes use this question as a go-to when I don't have a good segue between topics, to give me some mental space to queue up something else because it's a question I can pay attention to without it being too much of a burden.
+* **Why I ask this question:** Keeping skills up to date is important, and is something that is a struggle for almost any developer.
+* **What sorts of answers do I look for:** More than a specific answer, I look to understand that someone has some sort of a plan for themselves, and it's OK if that includes the expectation of learning some things on the job. People learn different ways -- could include reading blogs, Pluralsight or other video training, conferences, or books. I usually ask a follow up question on what someone's favorite resources are, mostly because I'm always looking to expand my list.
+* **NOTE**: As I've stated elsewhere in the series, it also needs to be acceptable for someone to say "I don't get a lot of time outside of work for training due to (raising family / taking care of loved ones / really any outside work reason)". In this case, I follow up to ask what kind of learning they'd like to do if they had more bandwidth, and I use the opportunity to plug our professional development opportunities.
 
 ### What are some differences between mediocre and great teams? What are some things that great teams do?
 
