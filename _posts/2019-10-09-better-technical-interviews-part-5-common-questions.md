@@ -5,7 +5,7 @@ tags:
   - interviewing
   - culture
   - hiring
-date: '2019-10-06 17:00 -0400'
+date: '2019-10-09 17:00 -0400'
 ---
 
 _This post part of [a series]({% post_url 2019-09-20-better-technical-interviews-part-1-whats-the-point %}) I'm writing on better technical interviews. I'd love your feedback in the comments!_
