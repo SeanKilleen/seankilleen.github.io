@@ -43,8 +43,7 @@ With that said, here are some common questions I tend to ask and my reasoning be
 
 ### What are some differences between mediocre and great teams? What are some things that great teams do?
 
-* **When I ask this question:** 
-* **Why I ask this question:**
+* **Why I ask this question:** I want to ensure that someone thinks about their place within a team, no matter what role they'll be taking on. Collaboration and teamwork is a big part of what we do. I especially tend to ask this question if the resume or any initial conversations give me the impression they might consider themselves a "lone wolf" developer.
 * **What sorts of answers do I look for:** 
 
 ### "Tell me about a recent win you've had. Could be work-related, but doesn't have to be."
