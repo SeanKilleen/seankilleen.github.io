@@ -206,6 +206,16 @@ past:
     codeLink: https://github.com/seankilleen/feedly-opml-export
     description: In this session, Sean will walk through how to use Azure Functions and Azure Key Vault to create a system to continually share his RSS subscriptions with the world. Follow along as we discuss concepts of serverless computing, build a functional application, an marvel at all the things we didn’t have to do.
     location: Atlantic Beach, FL
+  - title: An Introduction to the Actor Model and Akka.NET
+    date: 2019-10-04
+    group: The SwiftKick Show
+    eventLink: https://swiftkick.in/shows
+    videoLink: https://www.youtube.com/watch?v=Qa5TU_16GzE
+    slidesLink: https://seankilleen.com/Presentations/AkkaIntro/presentation
+    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code-dotnetcore
+    description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
+    location: Live Video Broadcast
+
 upcoming:
   - title: "(ICP-TST/ATA) Certified Agile Testing Training"
     date: 2019-12-09
@@ -221,9 +231,3 @@ upcoming:
     sessionLink: https://techbash.com/
     description: In this workshop, we'll introduce .NET Core conceptually and work to modernize .NET Framework application. We'll have practical tips and discussions of pitfalls along the way.
     location: Poconos, PA
-  - title: An Introduction to the Actor Model and Akka.NET
-    date: 2019-09-18
-    group: The SwiftKick Show
-    eventLink: https://swiftkick.in/shows
-    description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
-    location: Live Video Broadcast
