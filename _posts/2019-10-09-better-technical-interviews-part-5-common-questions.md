@@ -20,7 +20,7 @@ _This post part of [a series]({% post_url 2019-09-20-better-technical-interviews
 
 Please recall that throughout preceding articles, I mentioned that the interview process needs to be heavily tailored to the position you're seeking to fill, and to the research you've done on an interviewee.
 
-I mention this again here because it's really important. If you treat the questions below as a one-size-fits-all play book, you will be doing your team and your interviewees a disservice. There is no overall interview play book in my opinion.
+I mention this again here because it's really important. If you treat the questions below as a one-size-fits-all play book, you will be doing your team and your interviewees a disservice. **There is no overall interview play book in my opinion**.
 
 The goal of the questions below is to show the types of open-ended questions I might ask to give the candidate space to show and tell me who they are around certain topics. These questions rarely exist on their own, but I usually try to turn them into mini conversations. **The follow-up is key.**
 
@@ -43,14 +43,8 @@ With that said, here are some common questions I tend to ask and my reasoning be
 
 ### What are some differences between mediocre and great teams? What are some things that great teams do?
 
-* **Why I ask this question:** I want to ensure that someone thinks about their place within a team, no matter what role they'll be taking on. Collaboration and teamwork is a big part of what we do. I especially tend to ask this question if the resume or any initial conversations give me the impression they might consider themselves a "lone wolf" developer.
-* **What sorts of answers do I look for:** 
-
-### "Tell me about a recent win you've had. Could be work-related, but doesn't have to be."
-
-* **When I ask this question:** 
-* **Why I ask this question:**
-* **What sorts of answers do I look for:** 
+* **Why I ask this question:** I want to ensure that someone thinks about their place within a team, no matter what role they'll be taking on. Collaboration and teamwork is a big part of what we do. I especially tend to ask this question if the resume or any initial conversations give me the impression they might consider themselves a "lone wolf" developer. I want a team member who has opinions on how to improve the overall team / system.
+* **What sorts of answers do I look for:** Answers around collaboration and communication are the two big umbrella topics that I tend to hope for in answers. I love hearing about collective ownership, respect, vulnerability, and learning from each other. I also love hearing about psychological safety and a focus on delivering value. There are a number of potentially good answers to this question.
 
 ### Do you know what SOLID principles are? If so, do you have opinions on where they're useful / not useful?
 
