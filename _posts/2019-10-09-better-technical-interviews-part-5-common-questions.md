@@ -52,17 +52,17 @@ With that said, here are some common questions I tend to ask and my reasoning be
 * **Why I ask this question:** If someone isn't familiar with the terms, I can introduce the terms, give small explanations, and then ask some questions. If someone claims knowledge of it, I expect them to be able to expound on it. And the opinion component means
 * **What sorts of answers do I look for:** The SOLID principles are important, but they're not necessarily gospel. I want someone to be able to engage with an idea and provide an informed opinion about it. I also do what to ensure some basic knowledge about what it means to build software with object-oriented programming well. Oftentimes a lack of knowledge about these principles leads down a discussion path where a lack of fundamental knowledge is revealed in several ways.
 
-### What is the difference between inheritance and composition? 
+### What is the difference between inheritance and composition?
 
-* **When I ask this question:** 
-* **Why I ask this question:**
-* **What sorts of answers do I look for:** 
+* **When I ask this question:** Again, when someone's OOP skills seem to be lacking or when they have proclaimed themselves to be expert in OOP principles and practices.
+* **Why I ask this question:** Interfaces and abstractions are really important concepts that someone who is a professional developer should understand. I also come across many developers that attempt to shove everything into an inheritance hierarchy (danger zone!)
+* **What sorts of answers do I look for:** I love to hear about the Liskov Substitution Principal. I also look for an understanding that composition means composing an object of behaviors (by implementing interfaces) rather than assuming that objects should inherit from each other. It's great if someone knows the difference between "Is-a" (inheritance) and "Has-a" (composition).
 
-### What are interfaces, and why are they useful? 
+### What are interfaces, and why are they useful?
 
-* **When I ask this question:** 
-* **Why I ask this question:**
-* **What sorts of answers do I look for:** 
+* **When I ask this question:** If it seems like someone might suffer in other areas of their knowledge about the language, or if I see large complex inheritance structures in sample code they've submitted.
+* **Why I ask this question:** Interfaces are a core piece of many OOP languages (e.g. C#, which I normally interview in).
+* **What sorts of answers do I look for:** Interfaces are contracts. They are definitions of behavior without actually implementing the behaviors themselves. I love it when someone gives an analogy, e.g. an electrical socket. Programming to abstractions rather than concretions is part of the SOLID principles of development. But beyond that, programming to contracts also gives us several advantages, like being able to create fake or mock objects that adhere to those contracts. 
 
 ### What kind of automated tests have you worked with? 
 
