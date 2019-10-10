@@ -82,11 +82,11 @@ With that said, here are some common questions I tend to ask and my reasoning be
 * **Why I ask this question:** I want to understand someone's big picture thinking, and their understanding around what a quality process looks like.
 * **What sorts of answers do I look for:** Most important for me is that the candidate knows the importance of testing and verification in the refactoring process. Refactoring means to change the underlying design without changing external behavior, and we can't prove external behavior hasn't changed without tests. Beyond that, I look to see that someone does have a method of sorts or at least a consistent thought process, and that it involves communicating about large scale refactorings rather than going off on their own for weeks at a time to complete them.
 
-### What are some key characteristics of a good unit test? 
+### What are some key characteristics of a good unit test?
 
 * **When I ask this question:** When someone claims unit or automated testing experience.
-* **Why I ask this question:**
-* **What sorts of answers do I look for:** 
+* **Why I ask this question:** Knowing the difference between unit tests and integration tests or other types of tests is important.
+* **What sorts of answers do I look for:** Anything in the FIRST acronym (fast, isolated, repeatable, self-verifying, timely). Of particular importance is that someone understands the isolation aspect of a unit test, which tells me they've probably had to grapple with unit tests and mocking before. I also like to hear about clear arrange / act / assert portions of the test, or that it should be readable first & foremost (even if some code is repeated).
 
 ### What does it mean to be a leader?
 
