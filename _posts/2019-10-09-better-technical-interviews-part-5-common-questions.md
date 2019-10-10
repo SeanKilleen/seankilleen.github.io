@@ -62,29 +62,29 @@ With that said, here are some common questions I tend to ask and my reasoning be
 
 * **When I ask this question:** If it seems like someone might suffer in other areas of their knowledge about the language, or if I see large complex inheritance structures in sample code they've submitted.
 * **Why I ask this question:** Interfaces are a core piece of many OOP languages (e.g. C#, which I normally interview in).
-* **What sorts of answers do I look for:** Interfaces are contracts. They are definitions of behavior without actually implementing the behaviors themselves. I love it when someone gives an analogy, e.g. an electrical socket. Programming to abstractions rather than concretions is part of the SOLID principles of development. But beyond that, programming to contracts also gives us several advantages, like being able to create fake or mock objects that adhere to those contracts. 
+* **What sorts of answers do I look for:** Interfaces are contracts. They are definitions of behavior without actually implementing the behaviors themselves. I love it when someone gives an analogy, e.g. an electrical socket. Programming to abstractions rather than concretions is part of the SOLID principles of development. But beyond that, programming to contracts also gives us several advantages, like being able to create fake or mock objects that adhere to those contracts.
 
-### What kind of automated tests have you worked with? 
+### What kind of automated tests have you worked with?
 
-* **When I ask this question:** 
-* **Why I ask this question:**
-* **What sorts of answers do I look for:** 
+* **When I ask this question:** If someone's experience with testing isn't immediately evident or they claim expertise.
+* **Why I ask this question:** It gives me a background on someone's overall experience and almost always invites follow-up discussion.
+* **What sorts of answers do I look for:** I don't need someone to have experience writing automated tests in order to hire them. What I do need is for someone to understand why it's important for developers to write tests, and that they would expect to learn how to do so. What is a big red flag for me is an explanation that "QA folks do the testing", "I don't need to test my code because it works the first time", or other similar answers that show a lack of responsibility for the quality of development work.
 
 ### What is the difference between code first and database first? 
 
-* **When I ask this question:** 
-* **Why I ask this question:**
-* **What sorts of answers do I look for:** 
+* **When I ask this question:** When someone's experience doesn't appear to include object-relational mapper (ORM) libraries or the position in question will have a lot of hands-on work doing database design.
+* **Why I ask this question:** I want to know that a developer understands the trade-offs in how they use a tool. I want to know that they are familiar with different approaches, and that they are aware of issues around this sort of technology.
+* **What sorts of answers do I look for:** A general understanding of these terms as applied to at least one ORM-style tool (EF, NHibernate, etc.s)
 
 ### If you had a large legacy application and needed to refactor a large part of the code base, how would you approach that? 
 
-* **When I ask this question:** 
-* **Why I ask this question:**
-* **What sorts of answers do I look for:** 
+* **When I ask this question:** When someone claims an architect or lead developer style role in their past experience.
+* **Why I ask this question:** I want to understand someone's big picture thinking, and their understanding around what a quality process looks like.
+* **What sorts of answers do I look for:** Most important for me is that the candidate knows the importance of testing and verification in the refactoring process. Refactoring means to change the underlying design without changing external behavior, and we can't prove external behavior hasn't changed without tests. Beyond that, I look to see that someone does have a method of sorts or at least a consistent thought process, and that it involves communicating about large scale refactorings rather than going off on their own for weeks at a time to complete them.
 
 ### What are some key characteristics of a good unit test? 
 
-* **When I ask this question:** 
+* **When I ask this question:** When someone claims unit or automated testing experience.
 * **Why I ask this question:**
 * **What sorts of answers do I look for:** 
 
