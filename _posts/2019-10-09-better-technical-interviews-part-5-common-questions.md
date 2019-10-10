@@ -48,9 +48,9 @@ With that said, here are some common questions I tend to ask and my reasoning be
 
 ### Do you know what SOLID principles are? If so, do you have opinions on where they're useful / not useful?
 
-* **When I ask this question:** 
-* **Why I ask this question:**
-* **What sorts of answers do I look for:** 
+* **When I ask this question:** When someone claims knowledge of them or claims expert OOP knowledge. Sometimes I ask out of curiosity.
+* **Why I ask this question:** If someone isn't familiar with the terms, I can introduce the terms, give small explanations, and then ask some questions. If someone claims knowledge of it, I expect them to be able to expound on it. And the opinion component means
+* **What sorts of answers do I look for:** The SOLID principles are important, but they're not necessarily gospel. I want someone to be able to engage with an idea and provide an informed opinion about it. I also do what to ensure some basic knowledge about what it means to build software with object-oriented programming well. Oftentimes a lack of knowledge about these principles leads down a discussion path where a lack of fundamental knowledge is revealed in several ways.
 
 ### What is the difference between inheritance and composition? 
 
