@@ -8,7 +8,7 @@ tags:
 date: '2019-09-21 16:00 -0400'
 ---
 
-_This post part of [a series]({% post_url 2019-09-20-better-technical-interviews-part-1-whats-the-point %}) I'm writing on better technical interviews. I'd love your feedback in the comments!_
+_This post is part of [a series]({% post_url 2019-09-20-better-technical-interviews-part-1-whats-the-point %}) I'm writing on better technical interviews. I'd love your feedback in the comments!_
 
 * [Part 1 - What's the Point?]({% post_url 2019-09-20-better-technical-interviews-part-1-whats-the-point %})
 * [Part 2 - Preparation]({% post_url 2019-09-20-better-technical-interviews-part-2-preparation %})
