@@ -116,27 +116,29 @@ A little background on this question: I tend to phrase this along the lines of: 
 
 ### What is your ideal day to day?
 
-* **When I ask this question:** 
-* **Why I ask this question:**
-* **What sorts of answers do I look for:** 
+* **When I ask this question:** When there are gaps on a resume or jumps that might indicate that someone hasn't found a long-term fit yet, or when I sense that someone's disposition may not match with the organization they'd be coming in to.
+* **Why I ask this question:** Because I can usually tell when someone's BSing about it. It also allows me to level-set expectations if the role / organization could potentially be far off of what that person is looking for.
+* **What sorts of answers do I look for:** Mostly: honesty. The rest is about fit. If I hear that someone wants to code all day and never talk to people, a good consulting company may not be the best fit. If I hear someone say that they want to work on open-source all day, I'm not going to hold that against them but I might ensure they'd also be comfortable doing proprietary client work. I also like to get a sense of whether someone hates meetings, whether they prefer or avoid pairing and mobbing, and how much they want to be interacting with client stakeholders. 
 
 ### Ideal process from requirement --> Production
 
-* **When I ask this question:** 
-* **Why I ask this question:**
-* **What sorts of answers do I look for:** 
+I usually phrase this question along the lines of: "OK, say that you picked up a work item / story to begin implementing it. All of the details are there and from a business perspective, you know exactly what work to do. Talk to me about your ideal process, from the time you pick up that story to work on it to the time it's in production."
 
-### What are you excited about in the .NET world right now?
+* **When I ask this question:** When I feel like someone may not grasp important lifecycle concepts such as source control, branching, integration, testing, or deployment. I also tend to ask it if someone claims DevOps expertise.
+* **Why I ask this question:** I want to ensure that someone thinks about code in a way other than "I write it and I throw it over a wall for other people". I need developers on my team to at least understand that these lifecycles exist and who want them to be a quality lifecycle.
+* **What sorts of answers do I look for:** I look for anything other than a shrug here. Hopefully someone mentions source control, creating a branch, building the code in a test-first fashion, getting feedback from a CI system along the way, merging the code, having a CI system automatically deploy and promote code across environments. This is usually where I can tell if developers who claim automated testing experience still see it as a separate phase of development rather than their responsibility.
 
-* **When I ask this question:** 
-* **Why I ask this question:**
-* **What sorts of answers do I look for:** 
+### What's something you are excited about in the .NET world right now?
+
+* **When I ask this question:** When I want to see if someone is invested in the industry or if they've been heads down for a while. (absence of this isn't necessarily a mark against someone)
+* **Why I ask this question:** It's important to me, especially in a consulting environment, that developers be aware of the larger ecosystem and things that are going on. I also ask it because I almost always learn something. Quite frankly, I often ask it to identify devs who don't care. Even strictly 9-5 developers on legacy systems should take a look around every so often.
+* **What sorts of answers do I look for:** Anything. Folks might mention their excitement around the OSSing of large parts of the .NET ecosystem. They might get excited about .NET Core and its cross-platform capabilities. They might be excited about an IDE tool they learned about, or a library that made their lives easier, or a conference they just heard about and what to attend. I look for folks to be able to point to _something_ in the community / ecosystem that they think is a little cool. It's a red flag for me if a question this broad doesn't elicit a meaningful response.
 
 ### What are you looking for in a long-term fit?
 
-* **When I ask this question:** 
-* **Why I ask this question:**
-* **What sorts of answers do I look for:** 
+* **When I ask this question:** When I see a lot of gaps on someone's resume or many short-term gigs (which again, are not disqualifying on their own)
+* **Why I ask this question:** I usually ask this whenever I ask the day-to-day question, because it's interesting to see whether those two answers map well together and to follow up if they don't. I also want to make sure everyone's got their eyes open in terms of expectations.
+* **What sorts of answers do I look for:** Here again, I'm looking mostly for honesty. The rest is all about fit. If someone is looking to become a leader on a team of other leaders, or to solve important problems for clients using new technology or good techniques for revitalizing legacy systems, chances are there's a fun spot for them at my employer.
 
 ### What is an ORM? What are its pros and cons?
 
