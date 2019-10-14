@@ -148,19 +148,18 @@ I usually phrase this question along the lines of: "OK, say that you picked up a
 
 ### How do you ensure quality in an enterprise environment?
 
-* **When I ask this question:** 
-* **Why I ask this question:**
-* **What sorts of answers do I look for:** 
+* **When I ask this question:** When I feel like someone may have been in an environment that didn't value quality development practices, or when they raise concerns for me on other questions about process / attention to technical excellence.
+* **Why I ask this question:** This is an open-ended question that allows someone to explore what quality means to them.
+* **What sorts of answers do I look for:** I want someone to indicate that quality is everyone's job and not outsource it to another group / department. Someone should at least mention automated tests or a test harness during this discussion. If someone gets into the cultural aspects of quality -- feedback loops, continuous integration and deployment, empathetic code reviews, etc. then we're in a pretty good place.
 
 ### Tell me about different types of automated tests.
 
-* **When I ask this question:** 
-* **Why I ask this question:**
-* **What sorts of answers do I look for:** 
+* **When I ask this question:** If someone doesn't mention automated testing experience.
+* **Why I ask this question:** Automated testing is extremely important to me, and I expect developers to know a little bit about it unless they're coming in as a junior.
+* **What sorts of answers do I look for:** If someone mentions unit testing, integration testing, and functional or acceptance testing and can speak to the merits / place of all three, we're in a pretty good spot. I love to hear any discussion about testing quadrants or the testing pyramid, and I love to hear someone discuss test frameworks (NUnit, xUnit, etc.) and other testing tools (e.g. test double frameworks, SpecFlow, or Selenium).
 
 ### If you were building a modern web application with server and client aspects, what technology stack would you start with today and why? 
 
 * **When I ask this question:** 
 * **Why I ask this question:**
 * **What sorts of answers do I look for:** 
-
