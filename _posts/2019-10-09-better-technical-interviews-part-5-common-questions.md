@@ -142,9 +142,9 @@ I usually phrase this question along the lines of: "OK, say that you picked up a
 
 ### What is an ORM? What are its pros and cons?
 
-* **When I ask this question:** 
-* **Why I ask this question:**
-* **What sorts of answers do I look for:** 
+* **When I ask this question:** When I feel like someone may not have experience working with data in modern applications, many of which use object-relational mappers (ORMs)
+* **Why I ask this question:** I want to know not only that the interviewee knows what an ORM is, but that they understand they're not the end-all be-all in the world.
+* **What sorts of answers do I look for:** I want to make sure that someone can speak to what an ORM is and talk about mapping objects to database tables. Ideally I like for someone to talk about impedance mismatch and some of the performance penalties of using ORMs. Id they are able to contrast various tools such as ADO.NET, EF/NHibernate, Dapper, etc. that's a big plus.
 
 ### How do you ensure quality in an enterprise environment?
 
