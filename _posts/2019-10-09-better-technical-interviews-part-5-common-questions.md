@@ -74,9 +74,9 @@ With that said, here are some common questions I tend to ask and my reasoning be
 
 * **When I ask this question:** When someone's experience doesn't appear to include object-relational mapper (ORM) libraries or the position in question will have a lot of hands-on work doing database design.
 * **Why I ask this question:** I want to know that a developer understands the trade-offs in how they use a tool. I want to know that they are familiar with different approaches, and that they are aware of issues around this sort of technology.
-* **What sorts of answers do I look for:** A general understanding of these terms as applied to at least one ORM-style tool (EF, NHibernate, etc.s)
+* **What sorts of answers do I look for:** A general understanding of these terms as applied to at least one ORM-style tool (EF, NHibernate, etc.). Even when candidates don't have this knowledge, I'll explain the terms a little bit and ask them to walk me through what making a change might look like using one system or another. In that case I', looking for someone's ability to apply a concept we just introduced.
 
-### If you had a large legacy application and needed to refactor a large part of the code base, how would you approach that? 
+### If you had a large legacy application and needed to refactor a large part of the code base, how would you approach that?
 
 * **When I ask this question:** When someone claims an architect or lead developer style role in their past experience.
 * **Why I ask this question:** I want to understand someone's big picture thinking, and their understanding around what a quality process looks like.
@@ -90,33 +90,29 @@ With that said, here are some common questions I tend to ask and my reasoning be
 
 ### What does it mean to be a leader?
 
-* **When I ask this question:** 
-* **Why I ask this question:**
-* **What sorts of answers do I look for:** 
+* **When I ask this question:** Whenever someone is interviewing for a leadership position, and usually for senior positions as well.
+* **Why I ask this question:** This question often reveals biases. Does someone see leaders as authoritarian? Do they view leadership as having all the answers? I want to see how someone thinks about leadership both in terms of someone else being a leader they work with and also themselves as a leader.
+* **What sorts of answers do I look for:** I look for answers around servant leadership, mentoring, growing more leaders, supporting those on your team. I look for answers around good communication and feedback, clarity of vision and purpose, and encourgaement. I look for answers about a positive attitude. If I sense that someone maybe hasn't encountered that sort of definition of leadership before, I may prod a bit. Mostly what I'm looking for is that someone isn't actively against that idea of leadership.
 
 ### Tell me about the different access modifiers and what they do?
 
-* **When I ask this question:** 
-* **Why I ask this question:**
-* **What sorts of answers do I look for:** 
+* **When I ask this question:** To test the basics of someone's language capabilities, especially when I sense someone might be padding their skillset or not have a grasp on some of the fundamentals. I will also sometimes ask this as a introductory question when building to other questions.
+* **Why I ask this question:** I don't need someone to be perfect on this topic. I've got Google like everyone else. But these are the basics and if someone really struggles, it's a flag that I need to dig deeper because they might have a rough time of things.
+* **What sorts of answers do I look for:** I mainly am looking to know if someone can distinguish between public and private, and why the distinction is important. If someone talks about that and managing encapsulated state, I'll feel ok about it. `internal`, `sealed`, etc. are great keywords to delve into and I might ask someone about them if they don't mention it but it's not the end-all for me. If someone does know the distinction correctly, I'm listening to how they explain it to me and whether they use any great techniques / examples to get the point home.
 
-### What are some key components of high performing teams in your view? 
+### How would you mentor a developer who was more junior than you? More senior than you?
 
-* **When I ask this question:** 
-* **Why I ask this question:**
-* **What sorts of answers do I look for:** 
+* **When I ask this question:** When I have any flags around someone's ability to collaborate and grow with their colleagues. 
+* **Why I ask this question:** Rather than putting them in the learner's seat, I try to get them to put themselves in the mentorship position. Asking it from both perspectives allows me to see how they might adjust their answer based on perceived authority.
+* **What sorts of answers do I look for:** Getting buy-in; creating a plan; meeting someone at their level; learning while you teach.
 
-### How would you mentor a junior developer who was more junior than you?
+### You’re going to miss a deadline; what do you do?
 
-* **When I ask this question:** 
-* **Why I ask this question:**
-* **What sorts of answers do I look for:** 
+A little background on this question: I tend to phrase this along the lines of: "You're working on an assignment with a really important deadline for your client. As the deadline draws nearer, you realize there's no way that you and your team will be able to make the delivery you committed to by the deadline. This is an unpleasant position to be in. What do you do?
 
-### You’re going to miss deadline, what do you do?
-
-* **When I ask this question:** 
-* **Why I ask this question:**
-* **What sorts of answers do I look for:** 
+* **When I ask this question:** When I want to explore how someone ties their work to value delivery, or when I want to see if someone understands an important part of the agile value proposition.
+* **Why I ask this question:** I ask this question to see if someone communicates well, and if they're able to think about their work beyond assignments and in terms of things like scope or value delivery.
+* **What sorts of answers do I look for:** I look for someone to acknowledge the human piece of failure and communicating that honestly and without hesitation. I look for people to talk about how they might prevent that situation (e.g. scoping things correctly, delivering small chunks of value consistently). I look for folks to talk about de-scoping, or asking questions about what the different pieces of value might be and seeing if they can deliver as much value as possible for the deadline. I also look for someone to talk prevention and mitigation strategies for future work. If this is someone who's never been in a leadership role, I'd be looking for how they communicate with their internal team. If it's someone who is looking for a senior or leadership role, I'll likely push them to ask them about how they'd communicate with the client on this as well.
 
 ### What is your ideal day to day?
 
