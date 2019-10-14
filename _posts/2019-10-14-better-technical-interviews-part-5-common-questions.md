@@ -5,7 +5,7 @@ tags:
   - interviewing
   - culture
   - hiring
-date: '2019-10-09 17:00 -0400'
+date: '2019-10-14 17:00 -0400'
 ---
 
 _This post part of [a series]({% post_url 2019-09-20-better-technical-interviews-part-1-whats-the-point %}) I'm writing on better technical interviews. I'd love your feedback in the comments!_
@@ -70,7 +70,7 @@ With that said, here are some common questions I tend to ask and my reasoning be
 * **Why I ask this question:** It gives me a background on someone's overall experience and almost always invites follow-up discussion.
 * **What sorts of answers do I look for:** I don't need someone to have experience writing automated tests in order to hire them. What I do need is for someone to understand why it's important for developers to write tests, and that they would expect to learn how to do so. What is a big red flag for me is an explanation that "QA folks do the testing", "I don't need to test my code because it works the first time", or other similar answers that show a lack of responsibility for the quality of development work.
 
-### What is the difference between code first and database first? 
+### What is the difference between code first and database first?
 
 * **When I ask this question:** When someone's experience doesn't appear to include object-relational mapper (ORM) libraries or the position in question will have a lot of hands-on work doing database design.
 * **Why I ask this question:** I want to know that a developer understands the trade-offs in how they use a tool. I want to know that they are familiar with different approaches, and that they are aware of issues around this sort of technology.
@@ -102,7 +102,7 @@ With that said, here are some common questions I tend to ask and my reasoning be
 
 ### How would you mentor a developer who was more junior than you? More senior than you?
 
-* **When I ask this question:** When I have any flags around someone's ability to collaborate and grow with their colleagues. 
+* **When I ask this question:** When I have any flags around someone's ability to collaborate and grow with their colleagues.
 * **Why I ask this question:** Rather than putting them in the learner's seat, I try to get them to put themselves in the mentorship position. Asking it from both perspectives allows me to see how they might adjust their answer based on perceived authority.
 * **What sorts of answers do I look for:** Getting buy-in; creating a plan; meeting someone at their level; learning while you teach.
 
@@ -118,7 +118,7 @@ A little background on this question: I tend to phrase this along the lines of: 
 
 * **When I ask this question:** When there are gaps on a resume or jumps that might indicate that someone hasn't found a long-term fit yet, or when I sense that someone's disposition may not match with the organization they'd be coming in to.
 * **Why I ask this question:** Because I can usually tell when someone's BSing about it. It also allows me to level-set expectations if the role / organization could potentially be far off of what that person is looking for.
-* **What sorts of answers do I look for:** Mostly: honesty. The rest is about fit. If I hear that someone wants to code all day and never talk to people, a good consulting company may not be the best fit. If I hear someone say that they want to work on open-source all day, I'm not going to hold that against them but I might ensure they'd also be comfortable doing proprietary client work. I also like to get a sense of whether someone hates meetings, whether they prefer or avoid pairing and mobbing, and how much they want to be interacting with client stakeholders. 
+* **What sorts of answers do I look for:** Mostly: honesty. The rest is about fit. If I hear that someone wants to code all day and never talk to people, a good consulting company may not be the best fit. If I hear someone say that they want to work on open-source all day, I'm not going to hold that against them but I might ensure they'd also be comfortable doing proprietary client work. I also like to get a sense of whether someone hates meetings, whether they prefer or avoid pairing and mobbing, and how much they want to be interacting with client stakeholders.
 
 ### Ideal process from requirement --> Production
 
@@ -158,8 +158,8 @@ I usually phrase this question along the lines of: "OK, say that you picked up a
 * **Why I ask this question:** Automated testing is extremely important to me, and I expect developers to know a little bit about it unless they're coming in as a junior.
 * **What sorts of answers do I look for:** If someone mentions unit testing, integration testing, and functional or acceptance testing and can speak to the merits / place of all three, we're in a pretty good spot. I love to hear any discussion about testing quadrants or the testing pyramid, and I love to hear someone discuss test frameworks (NUnit, xUnit, etc.) and other testing tools (e.g. test double frameworks, SpecFlow, or Selenium).
 
-### If you were building a modern web application with server and client aspects, what technology stack would you start with today and why? 
+### If you were building a modern web application with server and client aspects, what technology stack would you start with today and why?
 
-* **When I ask this question:** 
-* **Why I ask this question:**
-* **What sorts of answers do I look for:** 
+* **When I ask this question:** When someone needs to have some high-level architectural capability, or when I want to step into a different head-space or have someone diagram a little bit.
+* **Why I ask this question:** I usually learn something from someone's proposed stack. I'll often give a small hypothetical and walk through how that would work in their mind.
+* **What sorts of answers do I look for:** I look for someone who isn't blatantly misusing tools / libraries beyond their intended purpose. I also look for someone who is able to zoom our a little bit and discuss trade-offs. Lastly, I'm looking for understanding of high-level concepts ("Oh, an MVC framework, nice! Tell me about what MVC means. When would that _not_ be a good choice?").
