@@ -25,7 +25,9 @@ For example: if you aim to continuously deploy to an environment in a backwards-
 
 If you are approaching blue/green to ease your deployment pain, you may be approaching the next pitfall.
 
-## Pitfall #2: Conflating blue/green with Zero-Downtime Deployments
+## Pitfall #2: Conflating blue/green with Minimal-Downtime Deployments
+
+Minimal-downtime deployments can be achieved without blue/green architecture, particularly in low-traffic environments. A combination of configuration flags and taking servers out of the load-balancer to update them should be 
 
 ## Pitfall #3: Attempting to Coordinate blue/green across multiple apps
 
