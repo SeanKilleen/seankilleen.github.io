@@ -65,7 +65,11 @@ Businesses who attempt to keep all systems aligned in blue/green also end up dep
 
 ## Pitfall #4: Assuming blue/green won't require much change
 
-## Pitfall #5: Not Considering the Database in blue/green planning
+For many development teams, the shift to blue/green isn't a shift in process or tooling -- it's a paradigm shift in how they think about deploying software. It often comes alongside other development practices such as feature flagging and trunk-based development (as opposed to longer feature branches or gitflow). There's also a consideration for backward-compatibility (and the maintenance that goes with it) that needs to be actively in the mind of the development team.
+
+These practices -- while excellent and worthy of pursuit -- take time to adjust to, especially if your team is unfamiliar with them. Mistakes will happen, and adjustments will need to be made. It's important to ensure that your company's culture is fine with focusing on short recovery times vs never having a problem occur (for more information on this, I recommend the book Accelerate.)
+
+## Pitfall #5: Not Considering the Database in blue/green deployments
 
 ## Pitfall #6: Organizing blue/green as the server level
 
