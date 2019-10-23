@@ -69,10 +69,16 @@ For many development teams, the shift to blue/green isn't a shift in process or 
 
 These practices -- while excellent and worthy of pursuit -- take time to adjust to, especially if your team is unfamiliar with them. Mistakes will happen, and adjustments will need to be made. It's important to ensure that your company's culture is fine with focusing on short recovery times vs never having a problem occur (for more information on this, I recommend the book Accelerate.)
 
-## Pitfall #5: Not Considering the Database in blue/green deployments
+## Pitfall #5: Forgetting about tests in blue/green deployments
 
-## Pitfall #6: Organizing blue/green as the server level
+As I mentioned above, mistakes will be made. If you're continuously deploying to your "off" environment so that you can switch over at any time, you need to have the confidence that the deployment pipeline is stable and you won't be introducing problems. 
 
-## Pitfall #7: Pinning blue and green environments to specific "states"
+I highly recommend that you have an automated test suite that provides you with as much of a safety harness as possible prior to attempting blue/green deployments. This way, the flipping of a switch for deployments becomes a nothing event with no cause for concern. "Move fast and break things" is not a strategy I'd advise for most teams.
+
+## Pitfall #6: Not Considering the Database in blue/green deployments
+
+## Pitfall #7: Organizing blue/green as the server level
+
+## Pitfall #8: Pinning blue and green environments to specific "states"
 
 E.g. blue environments always being non-prod.
