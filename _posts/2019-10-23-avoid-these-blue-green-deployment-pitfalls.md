@@ -36,3 +36,7 @@ Minimal-downtime deployments can be achieved without blue/green architecture, pa
 ## Pitfall #5: Not Considering the Database in blue/green planning
 
 ## Pitfall #6: Organizing blue/green as the server level
+
+## Pitfall #7: Pinning blue and green environments to specific "states"
+
+E.g. blue environments always being non-prod.
