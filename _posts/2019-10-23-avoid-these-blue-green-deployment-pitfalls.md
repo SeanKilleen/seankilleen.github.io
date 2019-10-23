@@ -77,6 +77,10 @@ I highly recommend that you have an automated test suite that provides you with 
 
 ## Pitfall #6: Not Considering the Database in blue/green deployments
 
+Databases often throw a wrench into thinking about blue/green deployments. What do migrations mean when they need to be backward compatible?
+
+
+
 ## Pitfall #7: Organizing blue/green as the server level
 
 ## Pitfall #8: Pinning blue and green environments to specific "states"
