@@ -67,7 +67,7 @@ Businesses who attempt to keep all systems aligned in blue/green also end up dep
 
 For many development teams, the shift to blue/green isn't a shift in process or tooling -- it's a paradigm shift in how they think about deploying software. It often comes alongside other development practices such as feature flagging and trunk-based development (as opposed to longer feature branches or "git flow"). There's also a consideration for backward-compatibility (and the maintenance that goes with it) that needs to be actively in the mind of the development team.
 
-These practices -- while excellent and worthy of pursuit -- take time to adjust to, especially if your team is unfamiliar with them. Mistakes will happen, and adjustments will need to be made. It's important to ensure that your company's culture is fine with focusing on short recovery times vs never having a problem occur (for more information on this, I recommend the book Accelerate.)
+These practices -- while excellent and worthy of pursuit -- take time to adjust to, especially if your team is unfamiliar with them. Mistakes will happen, and adjustments will need to be made. It's important to ensure that your company's culture is fine with focusing on short recovery times vs never having a problem occur (for more information on this, I recommend [the book _Accelerate_](https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations-ebook/dp/B07B9F83WM/ref=sr_1_3).)
 
 ## Pitfall #5: Forgetting about tests in blue/green deployments
 
@@ -79,9 +79,34 @@ I highly recommend that you have an automated test suite that provides you with 
 
 Databases often throw a wrench into thinking about blue/green deployments. What do migrations mean when they need to be backward compatible?
 
+Consider how you might go about renaming a column in a database from `ColumnA` to `ColumnB`. Rather than a migration that simply does that in one shot, you'll now need to:
+
+* Add a feature toggle that treats writes to `ColumnA` as writes to both `ColumnA` and `ColumnB` (toggle it off).
+* Add commit with a migration that creates a column `ColumnB` and populates it with existing data, and that toggles the flag on.
+* A commit that turns off the feature flag to write to both columns and instead now writes only to `ColumnB`
+* A commit that adds a migration that deletes `ColumnA`
+
+As you can tell, that's a tiny bit more complex than one migration.
+
 ## Pitfall #7: Trying to do database changes prior to code changes
 
-## Pitfall #8: Organizing blue/green as the server level
+One strategy -- normally due to a long deployment lifecycle (pitfall #1) -- is the idea that database changes will be done separately from the code, and will be done in advance of the deployment. 
+
+But let's allow this to play out. Someone now has to:
+
+* Understand the upcoming work one release in advance. Monthly release cycle? Hope you know the database changes associated with it an extra month in advance!
+* Make the change 
+* Ensure you don't accidentally utilize that change for a month
+* Now pick up the story, a month later, and remember to appropriately utilize the prior change
+* Wait another month afterward to do any cleanup
+
+## Pitfall #8: Flipping blue/green switches at the server level
+
+Organizations sometimes try to identify "blue" and "green" servers at the server level -- that is to say, you attach certain servers to always having an identity of "blue" or "green", rather than configuring a load balancer to point to those pools of servers.
+
+When this happens, you oftentimes end up attempting to drop files in certain locations on a server to have them inserted or removed from a load balancer pool. This is prone to error, and can result in a server incorrectly being in the active or non-active environment. 
+
+Better instead to add these servers to `green.myapp.com` and `blue.myapp.com` and then configure your load balancer's instance to point to one DNS pool or the other. 
 
 ## Pitfall #9: Pinning blue and green environments to specific "states"
 
