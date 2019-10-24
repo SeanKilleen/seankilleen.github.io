@@ -126,7 +126,11 @@ If those changes collect in a non-production environment, you're not necessarily
 
 ## Pitfall #11: Attempting to Minimize Failure Instead of Recovery Time
 
+As I mentioned earlier, mistakes will be made. One of the key pitfalls a group can make is aiming to maximize the time between problems rather than minimize the time it takes to get past problems when they inevitably occur. 
 
+If a group is trying to prevent failure with blue/green, they're likely not fully understanding the promise of blue/green deployments. On the other hand, a group that fully embraces continuous delivery knows that sometimes things will go wrong. They will aim to be able to fix that in a matter of minutes, learn from it, and build up the tooling and knowledge to ultimately prevent many more issues from occurring.
+
+If a culture is not, realistically, a learning culture that values progress over a perfect track record, many of the benefits of blue/green deployments will be lost on the organization.
 
 ## A Tale of Two Teams
 
