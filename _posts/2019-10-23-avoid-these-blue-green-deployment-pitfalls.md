@@ -88,3 +88,7 @@ Databases often throw a wrench into thinking about blue/green deployments. What 
 E.g. blue environments always being non-prod.
 
 ## Pitfall #10: Not continuously deploying to your "off" environment
+
+## A Tale of Two Teams
+
+Let's contrast two hypothetical teams -- one that is hitting these pitfalls, and one which has not fallen into these traps.
