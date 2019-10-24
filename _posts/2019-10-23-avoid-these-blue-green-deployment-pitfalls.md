@@ -79,8 +79,12 @@ I highly recommend that you have an automated test suite that provides you with 
 
 Databases often throw a wrench into thinking about blue/green deployments. What do migrations mean when they need to be backward compatible?
 
-## Pitfall #7: Organizing blue/green as the server level
+## Pitfall #7: Trying to do database changes prior to code changes
 
-## Pitfall #8: Pinning blue and green environments to specific "states"
+## Pitfall #8: Organizing blue/green as the server level
+
+## Pitfall #9: Pinning blue and green environments to specific "states"
 
 E.g. blue environments always being non-prod.
+
+## Pitfall #10: Not continuously deploying to your "off" environment
