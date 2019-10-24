@@ -100,7 +100,7 @@ But let's allow this to play out. Someone now has to:
 * Now pick up the story, a month later, and remember to appropriately utilize the prior change
 * Wait another month afterward to do any cleanup
 
-## Pitfall #8: Flipping blue/green switches at the server level
+## Pitfall #8: Flipping blue/green switches at the server level instead of a load balancer
 
 Organizations sometimes try to identify "blue" and "green" servers at the server level -- that is to say, you attach certain servers to always having an identity of "blue" or "green", rather than configuring a load balancer to point to those pools of servers.
 
@@ -110,9 +110,23 @@ Better instead to add these servers to `green.myapp.com` and `blue.myapp.com` an
 
 ## Pitfall #9: Pinning blue and green environments to specific "states"
 
-E.g. blue environments always being non-prod.
+I've seen some organizations get nervous about the idea of toggling back and forth to different environments. In response to this, they set a group of servers to always be considered "blue" or "inactive", and attempt to consider the green servers to always be the "active" servers. 
+
+In this case, pitfall #8 comes into place as well, and organizations attempt to move servers into and out of blue and green groups as part of a deployment, rather than flipping the switch on a load balancer.
 
 ## Pitfall #10: Not continuously deploying to your "off" environment
+
+In places where deployment has a high visibility or fear level -- usually prior to instituting proper continuous deployment practices or building up confidence in the code -- _going to production_ :TM: carries a lot of weight. 
+
+In that situation, why would anyone ever deploy to your prod environment, even the inactive one?
+
+Deploying to the non-production environment often is how we force small changes over time rather than larger, riskier changes. It's also how we get very quick feedback on whether our "backwards compatible" changes really are, indeed, compatible.
+
+If those changes collect in a non-production environment, you're not necessarily testing them with real users, and even with a massive acceptance test suite, it will be hard to know if anything is actually broken. Then when you do deploy to your inactive production environment and something breaks, it's _Panic Time_ :TM:.
+
+## Pitfall #11: Attempting to Minimize Failure Instead of Recovery Time
+
+
 
 ## A Tale of Two Teams
 
