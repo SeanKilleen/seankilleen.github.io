@@ -135,3 +135,11 @@ If a culture is not, realistically, a learning culture that values progress over
 ## A Tale of Two Teams
 
 Let's contrast two hypothetical teams -- one that is hitting these pitfalls, and one which has not fallen into these traps.
+
+#### The Team Hitting the Pitfalls
+
+TODO
+
+#### The Team That Avoids the Pitfalls
+
+TODO
