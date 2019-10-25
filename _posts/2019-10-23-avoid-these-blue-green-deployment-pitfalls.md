@@ -51,7 +51,9 @@ Many teams, for example enterprise teams, have much more leeway beyond that. The
 
 This is minimal downtime, scoped within the business's actual constraints. It's still 100% automated and the risk is only slightly higher.
 
-Consider your application's actual needs. You may wish to start with minimal downtime deployments before attempting zero-downtime deployments.
+Another approach -- though certainly one that comes along with its own potential pitfalls -- is adopting a microservices architecture. When built in a truly decoupled fashion, microservices enable graceful degradation when a service isn't available. For applications architected in this way, they can remove an old version of a microservice, allow for the application to experience that outage and gracefully recover, and deploy the new microservice. This also avoids the complexity of blue/green deployments, though graceful degradation is another art-form.
+
+The bottom line: consider your application's actual needs. You may wish to start with minimal downtime deployments before attempting zero-downtime deployments or embracing the full complexity of blue/green deployments.
 
 ## Pitfall #3: Attempting to Coordinate blue/green across multiple applications
 
