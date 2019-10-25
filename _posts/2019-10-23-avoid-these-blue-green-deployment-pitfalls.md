@@ -108,17 +108,11 @@ But let's allow this to play out. Someone now has to:
 
 Organizations sometimes try to identify "blue" and "green" servers at the server level -- that is to say, you attach certain servers to always having an identity of "blue" or "green", rather than configuring a load balancer to point to those pools of servers.
 
-When this happens, you oftentimes end up attempting to drop files in certain locations on a server to have them inserted or removed from a load balancer pool. This is prone to error, and can result in a server incorrectly being in the active or non-active environment. 
+When this happens, organizations attempt to move servers into and out of blue and green groups as part of a deployment, and you oftentimes end up attempting to drop files in certain locations on a server to have them inserted or removed from a load balancer pool. This is prone to error, and can result in a server incorrectly being in the active or non-active environment. 
 
-Better instead to add these servers to `green.myapp.com` and `blue.myapp.com` and then configure your load balancer's instance to point to one DNS pool or the other. 
+Better instead to add these servers to a `green` load balancer pool and a `blue` load balancer pool and then configure your load balancer's instance to point to one pool or the other. 
 
-## Pitfall #9: Pinning blue and green environments to specific "states"
-
-I've seen some organizations get nervous about the idea of toggling back and forth to different environments. In response to this, they set a group of servers to always be considered "blue" or "inactive", and attempt to consider the green servers to always be the "active" servers. 
-
-In this case, pitfall #8 comes into place as well, and organizations attempt to move servers into and out of blue and green groups as part of a deployment, rather than flipping the switch on a load balancer.
-
-## Pitfall #10: Not continuously deploying to your "off" environment
+## Pitfall #9: Not continuously deploying to your "off" environment
 
 In places where deployment has a high visibility or fear level -- usually prior to instituting proper continuous deployment practices or building up confidence in the code -- _going to production_ :TM: carries a lot of weight. 
 
@@ -128,7 +122,7 @@ Deploying to the non-production environment often is how we force small changes 
 
 If those changes collect in a non-production environment, you're not necessarily testing them with real users, and even with a massive acceptance test suite, it will be hard to know if anything is actually broken. Then when you do deploy to your inactive production environment and something breaks, it's _Panic Time_ :TM:.
 
-## Pitfall #11: Attempting to Minimize Failure Instead of Recovery Time
+## Pitfall #10: Attempting to Minimize Failure Instead of Recovery Time
 
 As I mentioned earlier, mistakes will be made. One of the key pitfalls a group can make is aiming to maximize the time between problems rather than minimize the time it takes to get past problems when they inevitably occur. 
 
