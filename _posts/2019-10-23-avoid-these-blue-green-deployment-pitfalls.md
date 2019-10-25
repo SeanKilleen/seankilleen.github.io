@@ -138,7 +138,7 @@ Let's contrast two hypothetical teams -- one that is hitting these pitfalls, and
 
 #### The Team Hitting the Pitfalls
 
-TODO
+This team is stressed about their deployments. Even though they're supposed to be zero-downtime, it feels like their deployments haven't gotten much faster. Multiple people need to be available to coordinate load balancer activities and switch the servers over from blue to green. They deploy to the inactive production site the day before launch, but everyone is tense because there's almost always a backwards compatibility issue that they have to scramble to fix. Their customers are complaining that stories are taking so much longer, but what can they do -- the backwards compatibility is important. 
 
 #### The Team That Avoids the Pitfalls
 
