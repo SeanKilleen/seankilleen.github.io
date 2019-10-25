@@ -92,7 +92,7 @@ Consider how you might go about renaming a column in a database from `ColumnA` t
 
 As you can tell, that's a tiny bit more complex than one migration.
 
-## Pitfall #7: Trying to do database changes prior to code changes
+## Pitfall #7: Treating database changes separately from code changes
 
 One strategy -- normally due to a long deployment lifecycle (pitfall #1) -- is the idea that database changes will be done separately from the code, and will be done in advance of the deployment. 
 
