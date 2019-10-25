@@ -146,4 +146,14 @@ Wasn't this supposed to get better?
 
 #### The Team That Avoids the Pitfalls
 
-TODO
+Deployments are a non-event. The team learned about the steps they'd need to take to ensure backwards compatibility before beginning. The good news is, because deployments are happening all the time, these backwards compatibility changes can happen pretty quickly back to back so nobody forgets about them.
+
+There was a problem with one of the backwards compatibility changes last week, but luckily since the whole pipeline is streamlined and moving to production, all it took was the time to write the fix and review the code change before it went out to production and resolved the issue. Way better than the scrambling over down-time before! 
+
+They also had some pain points with testing -- it turns out they were over-confident about some of their code once or twice. Luckily, a quick deployment for the fix combined with lessons learned means there's a lot more knowledge on the overall team about what to look for and test for in their code. The stakeholder's confidence is high because issues are resolved quickly, and bugs aren't re-appearing because the code test coverage is improving. Plus, it's worth the trade-off anyway to not have to wait months for releases!
+
+Since deployments are a non-event now, users see new value on a regular basis, and nobody has to argue about whose changes are making it into which release. The team has a lot more leeway, because "it will be in production soon" now has a long track-record of success.
+
+Even better, the little stuff now gets done much faster. Since we're collaborating at the speed of our users, we can fix a problem or satisfy a request in an hour as long as the product owner is on board with it, saving a ton of time on prioritization, ticket write-ups, etc. It's even made collaboration a bit more fun -- it's empowering for the team and for users to fix a problem and then just watch it work in production.
+
+Things feel...better.
