@@ -161,3 +161,5 @@ Things feel...better.
 ## What do you think?
 
 Have you encountered any other pitfalls when attempting blue/green deployments? Are you on the other side and blissfully deploying all the time without a care in the world?
+
+I'd love to hear your thoughts in the comments!
