@@ -9,19 +9,21 @@ tags:
   - blue green
 date: '2019-10-23 11:24 -0400'
 ---
-I've seen organizations make some interesting decisions lately around the concept of "blue/green deployments". I think in some cases, these changes can lead to some pretty big pitfalls, so I wanted to write up some thoughts here so that I could refer to them later.
+I've seen organizations make some interesting decisions around the concept of "blue/green deployments". In some cases, these changes can lead to some pretty big pitfalls, so I wanted to write up some thoughts here to help folks avoid them.
 
 ## A Quick Introduction: What do we mean by "blue/green deployment"?
 
-Blue/green deployments -- generally speaking -- refers to an approach to deployments in which there are "blue" and "green" environments in production, with a load balancer that points to one of the environments at a time. Deployments are continuously made to whichever environment is not "on" -- in a backwards-compatible way -- and then the load balancer is switched. These switches may happen per change, but generally happen after a short amount of time. If a problem happens upon switching, the environment can be switched back, removing the issue.
+Blue/green deployments are an approach to deployments in which there are "blue" and "green" environments in production, with a load balancer that points to one of the environments at a time. Deployments are continuously made to whichever environment is not "on" -- in a backwards-compatible way -- and then the load balancer is gradually switched to point to both environments and then to the newly active environment only. 
 
-There are a ton of benefits to blue/green deployments -- the ability to quickly deploy fixes and features, a built in belt-and-suspenders system if a deployment goes wrong, and reducing fear of deployment and change across an organization.
+These switches may happen per commit, but generally happen after a short amount of time. If a problem happens upon switching (informed by monitoring and metrics), the environment can be switched back, removing the issue.
 
-## Pitfall #1: Not Understanding the Goals of blue/green
+There are a ton of benefits to blue/green deployments, including the ability to quickly deploy fixes and features; a built in belt-and-suspenders system if a deployment goes wrong; and reducing fear of deployment and change across an organization.
 
-blue/green -- at its core -- is a technique to enable teams to deploy faster and more often. If your team is not interested in decreasing its deployment lifecycle times or deploying more often, the complexities of blue/green deployments may outweigh the benefits.
+## Pitfall #1: Not Understanding the Goals of blue/green deployments
 
-For example: if you aim to continuously deploy to an environment in a backwards-compatible way, but plan to keep a 2 month release cycle, then you will need to ensure that 2 months of changes can be deployed to the "off" environment, including database changes, without breaking backwards compatibility. It also means that any configuration flags related to features or changes will need to remain in an environment for the next 2 months, creating additional cruft and risk that the context of those cleanups will be lost. The amount of discipline a team needs to have in this case is much greater than when employing blue/green.
+blue/green -- at its core -- is a technique to enable teams to deploy faster and more often. If your team is not interested in decreasing its deployment lifecycle times, increasing their feedback loops, or deploying more often, the complexities of blue/green deployments may outweigh the benefits.
+
+For example: if you aim to continuously deploy to an environment in a backwards-compatible way, but plan to keep a 2 month release cycle, then you will need to ensure that 2 months of changes can be deployed to the "off" environment, including database changes, without breaking backwards compatibility. It also means that any configuration flags related to features or changes will need to remain in an environment for the next 2 months, creating additional cruft and risk that the context of those cleanups will be lost. The amount of discipline a team needs to have in this case is much greater than when employing blue/green with smaller cycles of hours or days.
 
 If you are planning to utilize blue/green purely to ease your deployment pain, you may be approaching the next pitfall.
 
@@ -130,7 +132,7 @@ As I mentioned earlier, mistakes will be made. One of the key pitfalls a group c
 
 If a group is trying to prevent failure with blue/green, they're likely not fully understanding the promise of blue/green deployments. On the other hand, a group that fully embraces continuous delivery knows that sometimes things will go wrong. They will aim to be able to fix that in a matter of minutes, learn from it, and build up the tooling and knowledge to ultimately prevent many more issues from occurring.
 
-If a culture is not, realistically, a learning culture that values progress over a perfect track record, many of the benefits of blue/green deployments will be lost on the organization.
+If a company's culture is not, realistically, a learning culture that values progress over a perfect track record, many of the benefits of blue/green deployments will be lost on the organization.
 
 ## A Tale of Two Teams
 
