@@ -136,7 +136,7 @@ If a culture is not, realistically, a learning culture that values progress over
 
 Let's contrast two hypothetical teams -- one that is hitting these pitfalls, and one which has not fallen into these traps.
 
-#### The Team Hitting the Pitfalls
+### The Team Hitting the Pitfalls
 
 This team is stressed about their deployments. Even though they're supposed to be zero-downtime, it feels like their deployments haven't gotten much faster. Multiple people need to be available to coordinate load balancer activities and switch the servers over from blue to green. They deploy to the inactive production site the day before launch, but everyone is tense because there's almost always a backwards compatibility issue from the past few months of coding that they have to scramble to fix. Their customers are complaining that stories are taking so much longer, but what can they do -- the backwards compatibility is important, and it still takes a while to deploy so we need to make sure there are no problems before a release.
 
@@ -144,7 +144,7 @@ On top of the stress about deploying, stories aren't moving faster. Stakeholders
 
 Wasn't this supposed to get better at some point?
 
-#### The Team That Avoids the Pitfalls
+### The Team That Avoids the Pitfalls
 
 Deployments are a non-event. The team learned about the steps they'd need to take to ensure backwards compatibility before beginning. The good news is, because deployments are happening all the time, these backwards compatibility changes can happen pretty quickly back to back so nobody forgets about them.
 
