@@ -138,11 +138,11 @@ Let's contrast two hypothetical teams -- one that is hitting these pitfalls, and
 
 #### The Team Hitting the Pitfalls
 
-This team is stressed about their deployments. Even though they're supposed to be zero-downtime, it feels like their deployments haven't gotten much faster. Multiple people need to be available to coordinate load balancer activities and switch the servers over from blue to green. They deploy to the inactive production site the day before launch, but everyone is tense because there's almost always a backwards compatibility issue that they have to scramble to fix. Their customers are complaining that stories are taking so much longer, but what can they do -- the backwards compatibility is important. 
+This team is stressed about their deployments. Even though they're supposed to be zero-downtime, it feels like their deployments haven't gotten much faster. Multiple people need to be available to coordinate load balancer activities and switch the servers over from blue to green. They deploy to the inactive production site the day before launch, but everyone is tense because there's almost always a backwards compatibility issue from the past few months of coding that they have to scramble to fix. Their customers are complaining that stories are taking so much longer, but what can they do -- the backwards compatibility is important, and it still takes a while to deploy so we need to make sure there are no problems before a release.
 
 On top of the stress about deploying, stories aren't moving faster. Stakeholders still have an intense prioritization system where there's a lot of fear about whether something will be tested enough to go out the door. Large chunks of work are still done off of the main branch in long-running branches that are painful to integrate.
 
-Wasn't this supposed to get better?
+Wasn't this supposed to get better at some point?
 
 #### The Team That Avoids the Pitfalls
 
@@ -157,3 +157,7 @@ Since deployments are a non-event now, users see new value on a regular basis, a
 Even better, the little stuff now gets done much faster. Since we're collaborating at the speed of our users, we can fix a problem or satisfy a request in an hour as long as the product owner is on board with it, saving a ton of time on prioritization, ticket write-ups, etc. It's even made collaboration a bit more fun -- it's empowering for the team and for users to fix a problem and then just watch it work in production.
 
 Things feel...better.
+
+## What do you think?
+
+Have you encountered any other pitfalls when attempting blue/green deployments? Are you on the other side and blissfully deploying all the time without a care in the world?
