@@ -215,6 +215,13 @@ past:
     codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code-dotnetcore
     description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
     location: Live Video Broadcast
+  - title: "Full-Day Workshop: Modernizing to .NET Core"
+    date: 2019-11-12
+    group: TechBash
+    eventLink: https://techbash.com/
+    sessionLink: https://techbash.com/2019-schedule
+    description: In this workshop, we'll introduce .NET Core conceptually and work to modernize .NET Framework application. We'll have practical tips and discussions of pitfalls along the way.
+    location: Poconos, PA
 
 upcoming:
   - title: "(ICP-TST/ATA) Certified Agile Testing Training"
@@ -224,13 +231,6 @@ upcoming:
     sessionLink: https://www.eventbrite.com/e/certified-agile-testing-and-automation-training-in-arlington-va-registration-66677753957
     description: "A 3-day course on Agile Testing for folks in QA or product ownership who are doing manual testing but want to learn about applying the testing mindset from day 1. ICAgile-certified."
     location: Arlington, VA
-  - title: "Full-Day Workshop: Modernizing to .NET Core"
-    date: 2019-11-12
-    group: TechBash
-    eventLink: https://techbash.com/
-    sessionLink: https://techbash.com/2019-schedule
-    description: In this workshop, we'll introduce .NET Core conceptually and work to modernize .NET Framework application. We'll have practical tips and discussions of pitfalls along the way.
-    location: Poconos, PA
   - title: "A Brave dotnet-new world: Using and building templates in .NET Core"
     date: 2019-11-14
     group: TechBash
@@ -239,9 +239,16 @@ upcoming:
     description: In this session, I'll demonstrate how to create a template for a .NET Core solution, and will show an end to end out of the box template I've created to be up and running quickly with a .NET Core project, front-end project, containers, and a CI pipeline.
     location: Poconos, PA
   - title: "The Joy of Functional Testing with SpecFlow"
-    date: 2019-11-15
+    date: 2019-11-13
     group: TechBash
     eventLink: https://techbash.com/
     sessionLink: https://techbash.com/2019-schedule
     description: Functional testing is a great way to ensure we're not just building the thing right, but building the right thing. In this session, we'll example the testing pyramid, the place of functional testing, and how to write Gherkin syntax with SpecFlow to move toward acceptance test driven development. We'll use real world codebase and show a few cycles of acceptance tests in the language of the business, and talk about one project's real-world functional testing journey.
+    location: Poconos, PA
+  - title: "An Introduction to the Actor Model and Akka.NET"
+    date: 2019-11-13
+    group: TechBash
+    eventLink: https://techbash.com/
+    sessionLink: https://techbash.com/2019-schedule
+    description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
     location: Poconos, PA
