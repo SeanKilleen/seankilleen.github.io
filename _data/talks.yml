@@ -236,8 +236,6 @@ past:
     sessionLink: https://techbash.com/2019-schedule
     description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
     location: Poconos, PA
-
-upcoming:
   - title: "(ICP-TST/ATA) Certified Agile Testing Training"
     date: 2019-12-09
     group: Excella Training
@@ -252,3 +250,5 @@ upcoming:
     sessionLink: https://techbash.com/2019-schedule
     description: In this session, I'll demonstrate how to create a template for a .NET Core solution, and will show an end to end out of the box template I've created to be up and running quickly with a .NET Core project, front-end project, containers, and a CI pipeline.
     location: Poconos, PA
+
+upcoming:

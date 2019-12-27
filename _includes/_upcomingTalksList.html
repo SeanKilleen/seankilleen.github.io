@@ -1,3 +1,4 @@
+{% if site.data.talks.upcoming %}
 <table>
     <thead>
         <th>Talk</th>
@@ -12,4 +13,6 @@
         {% endfor %}
     </tbody>
 </table>
-
+{% else %}
+No upcoming talks at this time. Check back soon!
+{% endif %}
