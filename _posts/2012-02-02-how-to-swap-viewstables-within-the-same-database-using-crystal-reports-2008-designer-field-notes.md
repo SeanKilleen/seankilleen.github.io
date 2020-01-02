@@ -4,6 +4,7 @@ title: 'How To: Swap Views/Tables Within the Same Database Using Crystal Reports
   Designer [Field Notes]'
 date: 2012-02-02 20:14:00.000000000 -05:00
 comments: true
+popular: true
 redirect_from: 
  - /2012/02/how-to-swap-viewstables-within-same.html
 ---
