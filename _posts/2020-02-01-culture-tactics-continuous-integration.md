@@ -6,6 +6,7 @@ tags:
   - tactics
   - ci
   - cd
+  - DevOps
 date: '2020-02-01 00:16 -0500'
 ---
 _TODO: Insert the blurb about what this series is about._
