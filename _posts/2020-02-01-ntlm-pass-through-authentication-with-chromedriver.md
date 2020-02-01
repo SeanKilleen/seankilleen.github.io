@@ -14,7 +14,7 @@ date: '2020-02-01 00:08 -0500'
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome]
-"AuthNegotiateDelegateWhitelist"="*.nreca.org,*.nreca.coop"
+"AuthNegotiateDelegateWhitelist"="*.companydomain.org,*.companydomain.coop"
 "AuthSchemes"="basic,digest,ntlm,negotiate"
-"AuthServerWhitelist"="*.nreca.org,*.nreca.coop"
+"AuthServerWhitelist"="*.companydomain.org,*.companydomain.coop"
 ```
