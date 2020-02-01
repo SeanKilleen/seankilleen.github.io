@@ -8,7 +8,7 @@ tags:
   - registry
   - authentication
   - ntlm
-date: '2020-02-01 00:08 -0500'
+date: '2020-02-02 00:08 -0500'
 ---
 ```
 Windows Registry Editor Version 5.00
