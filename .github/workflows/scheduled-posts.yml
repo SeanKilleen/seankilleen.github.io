@@ -1,0 +1,20 @@
+# Pushes a blank commit to the master branch, which should trigger a build.
+
+name: Build every 2 hours
+
+on:
+  schedule:
+   - cron: '0 */2 * * *'
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up git
+      run: |
+        git remote add github "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
+        git pull github master --ff-only
+        git commit -m 'rebuild pages' --allow-empty
+        git push github master
