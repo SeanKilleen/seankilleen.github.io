@@ -8,7 +8,7 @@ tags:
   - consulting
   - agile
   - contracts
-date: '2020-02-01 00:22 -0500'
+date: '2020-02-02 10:23 -0500'
 ---
 Are you someone who has a hand in crafting Requests for Proposals (RFPs) for your company? This article is for you, and is based off of some things I've seen lately that compel me to make some recommendations. 
 
