@@ -25,6 +25,8 @@ After a hunch and some intense googling, we found that there are registry settin
 
 The key is to add the following to your registry, to ensure you're enabling the desired auth schemes for the desired domains.
 
+An example `.reg` file is below that you can modify to use. After running applying these settings to our build agents, the problems were resolved.
+
 ```
 Windows Registry Editor Version 5.00
 
