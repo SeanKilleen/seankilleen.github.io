@@ -1,5 +1,7 @@
 ---
-title: NTLM pass-through authentication with ChromeDriver
+title: >-
+  Quick tip: NTLM / Windows pass-through authentication with Selenium and
+  ChromeDriver
 comments: true
 tags:
   - chromedriver
@@ -10,6 +12,18 @@ tags:
   - ntlm
 date: '2020-02-02 00:08 -0500'
 ---
+## Challenge 
+
+I was on a project for a web application that used Windows Active Directory authentication for internal users.
+
+We had some automated acceptance tests using Selenium and ChromeDriver. However, these tests would always fail on our build agents, and we couldn't figure out why. There were errors around authentication.
+
+## Solution
+
+After a hunch and some intense googling, we found that there are registry settings where you can enable Chrome to allow ChromeDriver to accept NTLM authentication negotiation by default. 
+
+The key is to add the following to your registry, to ensure you're enabling the desired auth schemes for the desired domains.
+
 ```
 Windows Registry Editor Version 5.00
 
