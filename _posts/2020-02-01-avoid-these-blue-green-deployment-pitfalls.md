@@ -7,7 +7,7 @@ tags:
   - deployments
   - infrastructure
   - blue green
-date: '2020-02-01 00:10 -0500'
+date: '2020-02-02 11:39 -0500'
 ---
 I've seen organizations make some ...interesting decisions around the concept of "blue/green deployments." In some cases, these changes can lead to some pretty big pitfalls, so I wanted to write up some thoughts here to help folks avoid them.
 
@@ -18,6 +18,8 @@ Blue/green deployments are an approach to releases in which there are "blue" and
 These switches may happen per commit but generally happen after a short amount of time. If a problem occurs upon switching (informed by monitoring and metrics), the environment can be switched back, removing the issue.
 
 There are a ton of benefits to blue/green deployments, including the ability to quickly deploy fixes and features; a built-in belt-and-suspenders system if a deployment goes wrong; and reducing fear of deployment and change across an organization.
+
+But those benefits are only realized if we avoid the pitfalls. So without further ado, let's get into them.
 
 ## Pitfall #1: Not Understanding the Goals of blue/green deployments
 
@@ -112,13 +114,13 @@ When this happens, organizations attempt to move servers into and out of blue an
 
 Better instead to add these servers to a `green` load balancer pool and a `blue` load balancer pool and then configure your load balancer's instance to point to one pool or the other. 
 
-## Pitfall #9: Not continuously deploying to your "off" environment
+## Pitfall #9: Not continuously deploying to your "inactive" environment
 
-In places where deployments are highly visible or the organization is fearful -- usually prior to instituting proper continuous deployment practices or building up confidence in the code -- _going to production_ :TM: carries a lot of weight. 
+In places where deployments are highly visible or the organization is fearful -- usually prior to instituting proper continuous deployment practices or building up confidence in the code -- _going to production_ (TM) carries a lot of weight. 
 
-In that situation, why would anyone ever deploy to your prod environment, even the inactive one?
+In that situation, why would anyone ever deploy to your prod environment, even an inactive one? (remember, even your inactive prod environment is still a prod environment.) Teams may be tempted to accrue a bunch of changes in a QA or dev environment rather than pushing them through to the inactive prod environment.
 
-Deploying to the non-production environment often is how we force small changes over time rather than larger, riskier changes. It's also how we get very quick feedback on whether our "backward compatible" changes really are, indeed, compatible.
+But, deploying to the inactive prod environment often is how we force small changes over time rather than larger, riskier changes. It's also how we get very quick feedback on whether our "backward compatible" changes really are, indeed, compatible.
 
 If those changes collect in a non-production environment, you're not necessarily testing them with real users, and even with a massive acceptance test suite, it will be hard to know if anything is actually broken. Then when you do deploy to your inactive production environment and something breaks, it's _Panic Time_ :TM:.
 
