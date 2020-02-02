@@ -36,3 +36,4 @@ Windows Registry Editor Version 5.00
 "AuthServerWhitelist"="*.companydomain.org,*.companydomain.coop"
 ```
 
+Happy testing!
