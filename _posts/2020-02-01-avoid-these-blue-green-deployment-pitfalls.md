@@ -1,5 +1,5 @@
 ---
-title: Avoid These Blue/Green Deployment Pitfalls
+title: 'Avoid the Blue/Green Blues: Watch out for these Blue/Green Deployment Pitfalls'
 comments: true
 tags:
   - ci
