@@ -10,13 +10,13 @@ tags:
   - contracts
 date: '2020-02-01 00:22 -0500'
 ---
-Are you someone who has a hand in crafting Requests for Proposals (RFPs) for your company? This article is for you, ans is based off of some things I've seen lately that compel me to make some recommendations. 
+Are you someone who has a hand in crafting Requests for Proposals (RFPs) for your company? This article is for you, and is based off of some things I've seen lately that compel me to make some recommendations. 
 
 _NOTE: Below, I say "us" a lot. This refers to a generic company model, and not my specific current employer._
 
 ## RFPs are Important!
 
-Crafting an RFP for your proposal limits the entire universe in which vendors can respond, because part of submitting a proposal is remaining compliant with the RFP for readability and scorability. So without crafting RFPs in a way that is conscious of this, you will get proposals that will not necessarily match the best result for your company, and you may be none the wiser about it. 
+Crafting an RFP for your proposal limits the entire universe in which vendors can respond, because part of submitting a proposal is remaining compliant with the RFP for readability and scorability. So without crafting RFPs in a way that is conscious of this, you will end up receiving proposals that will not necessarily match the best result or value for your organization, and you may be none the wiser about it. 
 
 ## Ways I've Seen RFP's go wrong
 
