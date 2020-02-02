@@ -43,7 +43,8 @@ You learn more from an open-ended question than a multiple choice response. So, 
 
 If you're seeking outside help, most of the time it's because your organization has hit some sort of a wall or a plateau. If you write the RFP from the perspective of your organization's current state of the art, you're missing out on the opportunity for a respondent to bring you closer to their level of consciousness -- which ideally _is more advanced than yours_. After all, that's why you're looking for them in the first place.
 
-Don't tie their hands. Make space for them to show you why they're the right partner.
+Don't tie their hands.
+ Make space for them to show you why they're the right partner.
 
 ## So, what would I recommend for RFPs?
 
