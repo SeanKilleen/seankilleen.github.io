@@ -10,7 +10,8 @@ tags:
   - registry
   - authentication
   - ntlm
-date: '2020-02-02 00:08 -0500'
+  - quick tips
+date: '2020-02-02 09:58 -0500'
 ---
 ## Challenge 
 
@@ -32,3 +33,4 @@ Windows Registry Editor Version 5.00
 "AuthSchemes"="basic,digest,ntlm,negotiate"
 "AuthServerWhitelist"="*.companydomain.org,*.companydomain.coop"
 ```
+
