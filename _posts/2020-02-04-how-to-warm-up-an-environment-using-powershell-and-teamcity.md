@@ -9,8 +9,8 @@ tags:
   - deployments
 date: '2020-02-04 12:21 -0500'
 ---
-\`\``powershell
+```powershell
 
 Invoke-WebRequest -Uri http://theURLToHit -UseDefaultCredentials
 
-\`\``
+```
