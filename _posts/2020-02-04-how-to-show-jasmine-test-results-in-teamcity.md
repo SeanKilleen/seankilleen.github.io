@@ -10,11 +10,11 @@ tags:
   - ''
 date: '2020-02-04 12:28 -0500'
 ---
-\* Add the \`jasmine-reporters\` package: \`npm -i jasmine-reporters --save-dev\`
+ Add the `jasmine-reporters` package: `npm -i jasmine-reporters --save-dev`
 
-\* Add an \`index.js\` to set up the tests if you haven't already:
+* Add an `index.js` to set up the tests if you haven't already:
 
-\`\``javascript
+```javascript
 
 var Jasmine = require('jasmine'); 
 
@@ -34,31 +34,31 @@ var jasmine = new Jasmine();
 
 jasmine.execute();
 
-\`\``
+```
 
-\* Prior to executing the steps, add the TeamCity reporter:
+* Prior to executing the steps, add the TeamCity reporter:
 
-\`\``javascript\
+```javascript
 var teamCityReporter = new reporters.TeamCityReporter();
 
 jasmine.configureDefaultReporter(teamCityReporter);
 
-\`\``
+```
 
-\* Update the "test" or "tests" command in your \`package.json\`:
+* Update the "test" or "tests" command in your `package.json`:
 
-\`\``javascript
+```javascript
 
 "tests": "node .path/to/specs/index.js"
 
-\`\``
+```
 
-\* Prior to executing, add an additional NUnit XML Reporter:
+* Prior to executing, add an additional NUnit XML Reporter:
 
-\`\``javascript
+```javascript
 
 var nunitXmlReporter = new reporters.NUnitXmlReporter();
 
 jasmine.addReporter(nunitXmlReporter);
 
-\`\``
+```
