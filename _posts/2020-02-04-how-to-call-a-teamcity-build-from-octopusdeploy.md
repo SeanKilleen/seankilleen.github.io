@@ -8,7 +8,7 @@ tags:
   - teamcity
 date: '2020-02-04 12:16 -0500'
 ---
-\`\``powershell
+```powershell
 
 $parsedUrlString = "$TeamCityServerURL" + "/app/rest/buildQueue" $parsedXmlBody = '<build><buildType id="' + $TeamCityBuildConfigID + '"/></build>'
 
@@ -19,4 +19,4 @@ Write-Host "Attempting to run the $TeamCityBuildConfigID build" Write-Host "Conn
 
 Invoke-WebRequest -UseBasicParsing $parsedUrlString -ContentType "application/xml" -Method POST -Body $parsedXmlBody -Headers $HeaderFields
 
-\`\``
+```
