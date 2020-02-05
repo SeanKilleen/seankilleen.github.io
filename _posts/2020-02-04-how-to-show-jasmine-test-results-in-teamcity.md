@@ -17,7 +17,6 @@ A colleague wanted to surface their jasmine tests in a TeamCity build system. Wa
 * Add an `index.js` to set up the tests if you haven't already:
 
 ```javascript
-
 var Jasmine = require('jasmine'); 
 
 var reporters = require('jasmine-reporters');
@@ -35,7 +34,6 @@ var jasmine = new Jasmine();
   });
 
 jasmine.execute();
-
 ```
 
 * Prior to executing the steps, add the TeamCity reporter:
@@ -44,25 +42,20 @@ jasmine.execute();
 var teamCityReporter = new reporters.TeamCityReporter();
 
 jasmine.configureDefaultReporter(teamCityReporter);
-
 ```
 
 * Update the "test" or "tests" command in your `package.json`:
 
 ```javascript
-
 "tests": "node .path/to/specs/index.js"
-
 ```
 
 * Prior to executing, add an additional NUnit XML Reporter:
 
 ```javascript
-
 var nunitXmlReporter = new reporters.NUnitXmlReporter();
 
 jasmine.addReporter(nunitXmlReporter);
-
 ```
 
 ## Updating TeamCity
