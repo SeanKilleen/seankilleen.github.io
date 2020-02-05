@@ -9,14 +9,11 @@ tags:
   - ci
 date: '2020-02-04 21:53 -0500'
 ---
-## Challenge
-
 A colleague wanted to surface their jasmine tests in a TeamCity build system. Wanted to document the steps I used to help them solve their problem.
 
 ## Setting up the Jasmine Output
 
-Add the `jasmine-reporters` package: `npm -i jasmine-reporters --save-dev`
-
+* Add the `jasmine-reporters` package: `npm -i jasmine-reporters --save-dev`
 * Add an `index.js` to set up the tests if you haven't already:
 
 ```javascript
