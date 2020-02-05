@@ -7,10 +7,15 @@ tags:
   - tests
   - tests runners
   - ci
-  - ''
-date: '2020-02-04 12:28 -0500'
+date: '2020-02-04 21:53 -0500'
 ---
- Add the `jasmine-reporters` package: `npm -i jasmine-reporters --save-dev`
+## Challenge
+
+A colleague wanted to surface their jasmine tests in a TeamCity build system. Wanted to document the steps I used to help them solve their problem.
+
+## Setting up the Jasmine Output
+
+Add the `jasmine-reporters` package: `npm -i jasmine-reporters --save-dev`
 
 * Add an `index.js` to set up the tests if you haven't already:
 
@@ -62,3 +67,35 @@ var nunitXmlReporter = new reporters.NUnitXmlReporter();
 jasmine.addReporter(nunitXmlReporter);
 
 ```
+
+## Updating TeamCity
+
+* Open the build in question
+* From the Menu, add a build feature:
+
+![TeamCity build menu showing the option to add a build feature]({{site.post-images}}/jasmine_tests_teamcity/AddBuildFeatureMenu.png)
+
+* Select the "XML Report Processing" feature, choose an NUnit-style report, and point it to `nunitresults.xml` (the default location for the jasmine NUnit output):
+
+![XML report processing options]({{site.post-images}}/jasmine_tests_teamcity/XMLReportProcessingFeature.png)
+
+* Double-check the saved feature: 
+
+![The added build feature]({{site.post-images}}/jasmine_tests_teamcity/BuildFeatureResult.png)
+
+## The Results
+
+We see our tests listed in the build list:
+
+![Tests in the build list]({{site.post-images}}/jasmine_tests_teamcity/TestsPassing.png)
+
+And we see the test output in the overview tab:
+
+![Tests in the overview page of the build]({{site.post-images}}/jasmine_tests_teamcity/TestsPassing_OnOverview.png)
+
+
+And we see the a tests tab with the output of each individual test:
+
+![Tests in the build's tests tab]({{site.post-images}}/jasmine_tests_teamcity/TestsTab.png)
+
+Hope this helps! Happy testing!
