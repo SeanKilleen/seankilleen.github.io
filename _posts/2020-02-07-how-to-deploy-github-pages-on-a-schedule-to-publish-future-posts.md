@@ -67,10 +67,12 @@ We then specify the curl arguments. I'll break these down.
 * `-X POST`: this will be an HTTP POST request
 * `-H 'Authorization: token ${{ secrets.PAGES_ACCESS_TOKEN }}'`: Uses the secret that contains our access token, in order to authenticate.
 * `-H 'Accept: application/vnd.github.ant-man-preview+json'`: This is apparently required by the GitHub API in order to allow access
-* `https://api.github.com/repos/YourUserName/YourRepository/pages/builds`: This is the API endpoint of GitHub pages if you want to trigger a pages build.
+* `https://api.github.com/repos/YourUserName/YourRepository/pages/builds`: This is the API endpoint of GitHub pages if you want to trigger a pages build. (substituting your username and repository name)
 
 ### The Result?
 
 You can [see the current workflow here in my master branch](https://github.com/SeanKilleen/seankilleen.github.io/blob/master/.github/workflows/scheduled-posts.yml)
 
-Happy blogging!
+I'm excited that GitHub has enabled this kind of functionality; it has a ton of potential to make life easier for those of us using the platform.
+
+Happy publishing!
