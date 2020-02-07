@@ -7,7 +7,7 @@ tags:
   - tests
   - tests runners
   - ci
-date: '2020-02-04 21:53 -0500'
+date: '2020-02-13 14:00 -0500'
 ---
 A colleague wanted to surface their jasmine tests in a TeamCity build system. Wanted to document the steps I used to help them solve their problem.
 
