@@ -8,12 +8,9 @@ tags:
   - teamcity
 date: '2020-02-04 12:16 -0500'
 ---
-## Background / Challenge
+We have an OctopusDeploy deployment that deploys our code to an automated acceptance test environment. And we have a TeamCity build that executes our automated acceptance tests
 
-* We have an OctopusDeploy deployment that deploys our code to an automated acceptance test environment
-* We have a TeamCity build that executes our automated acceptance tests
-
-The problem is: the TeamCity build kicked off after our code was merged, not after the deployment was finished. We wanted the tests to kick off only after the environment was ready.
+The challenge is: the TeamCity build kicked off after our code was merged, not after the deployment was finished. We wanted the tests to kick off only after the environment was ready.
 
 ## Solution
 
