@@ -6,7 +6,7 @@ tags:
   - cd
   - octopusdeploy
   - teamcity
-date: '2020-02-04 12:16 -0500'
+date: '2020-02-10 12:16 -0500'
 ---
 We have an OctopusDeploy deployment that deploys our code to an automated acceptance test environment. And we have a TeamCity build that executes our automated acceptance tests
 
