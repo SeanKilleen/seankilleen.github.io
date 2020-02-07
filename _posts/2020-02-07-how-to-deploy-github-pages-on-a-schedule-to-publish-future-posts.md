@@ -50,7 +50,7 @@ jobs:
     - name: curl
       uses: wei/curl@master
       with:
-        args: "-X POST -H 'Authorization: token ${{{{ secrets.PAGES_ACCESS_TOKEN }}}}' -H 'Accept: application/vnd.github.ant-man-preview+json' https://api.github.com/repos/YourUserName/YourRepository/pages/builds"
+        args: "-X POST -H 'Authorization: token {% raw %}${{ secrets.PAGES_ACCESS_TOKEN }}{% endraw %}' -H 'Accept: application/vnd.github.ant-man-preview+json' https://api.github.com/repos/YourUserName/YourRepository/pages/builds"
 ```
 
 Let's break this down line by line:
@@ -65,7 +65,7 @@ Let's break this down line by line:
 We then specify the curl arguments. I'll break these down.
 
 * `-X POST`: this will be an HTTP POST request
-* `-H 'Authorization: token ${{{{ secrets.PAGES_ACCESS_TOKEN }}}}'`: Uses the secret that contains our access token, in order to authenticate.
+* `-H 'Authorization: token {% raw %}${{ secrets.PAGES_ACCESS_TOKEN }}{% endraw %}'`: Uses the secret that contains our access token, in order to authenticate.
 * `-H 'Accept: application/vnd.github.ant-man-preview+json'`: This is apparently required by the GitHub API in order to allow access
 * `https://api.github.com/repos/YourUserName/YourRepository/pages/builds`: This is the API endpoint of GitHub pages if you want to trigger a pages build. (substituting your username and repository name)
 
