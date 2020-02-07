@@ -8,7 +8,7 @@ tags:
   - serverless
   - docker
   - jekyll
-date: '2020-02-07 14:00 -0500'
+date: '2020-02-07 13:00 -0500'
 ---
 I have a Jekyll-based blog that is deployed via GitHub Pages. Because Jekyll is a static site generator, you can't release future posts unless you trigger a build (normally by making a commit).
 
