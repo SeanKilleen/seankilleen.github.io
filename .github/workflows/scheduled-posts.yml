@@ -4,15 +4,10 @@ on:
   schedule:
    - cron: '0 */2 * * *'
 jobs:
-  build:
-
+  curl:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up git
-      run: |
-        git remote add github "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
-        git pull github master --ff-only
-        git commit -m 'rebuild pages' --allow-empty
-        git push github master
+    - name: curl
+      uses: wei/curl@master
+      with:
+        args: https://api.github.com/repos/seankilleen/seankilleen.github.io/pages/deployments -X POST -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github.ant-man-preview+json"
