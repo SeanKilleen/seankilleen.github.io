@@ -31,7 +31,17 @@ We're going to use GitHub Actions and a little bit of `curl` to accomplish what 
 * Navigate to Settings --> Secrets
 * Create a new secret, named `PAGES_ACCESS_TOKEN` and paste in your personal access token that you created.
 
-### Create a GitHub action
+### Step 3: Update Your Jekyll Configuration 
+
+You'll need to disable the publishing of future posts.
+
+In your `_config.yml` file, add:
+
+```yaml
+future: false
+```
+
+### Step 4: Create a GitHub action
 
 In your repository, create a file at `/github/workflows/scheduled-posts.yml`. 
 
