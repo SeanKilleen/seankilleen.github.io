@@ -1,6 +1,8 @@
 # Custom Sean stuff
 post-images: "/images/post-images"
 
+future: false # Sean added this in an attempt to prevent future posts.
+
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your entire site, values
