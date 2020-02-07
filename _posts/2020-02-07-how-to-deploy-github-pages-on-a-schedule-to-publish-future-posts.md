@@ -10,8 +10,6 @@ tags:
   - jekyll
 date: '2020-02-07 14:00 -0500'
 ---
-## Challenge
-
 I have a Jekyll-based blog that is deployed via GitHub Pages. Because Jekyll is a static site generator, you can't release future posts unless you trigger a build (normally by making a commit).
 
 However, today we're going to fix that. With any luck, this is the first post that I scheduled and published in advance!
