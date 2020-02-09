@@ -7,7 +7,7 @@ tags:
   - deployments
   - infrastructure
   - blue green
-date: '2020-02-02 11:39 -0500'
+date: '2020-02-27 14:00 -0500'
 ---
 I've seen organizations make some ...interesting decisions around the concept of "blue/green deployments." In some cases, these changes can lead to some pretty big pitfalls, so I wanted to write up some thoughts here to help folks avoid them.
 
