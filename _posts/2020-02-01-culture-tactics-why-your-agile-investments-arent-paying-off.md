@@ -12,7 +12,7 @@ Oftentimes, companies begin an "Agile Transformation" or exploration, only to se
 
 If you're investing in agility but only considering tactical improvements or outcomes, you're going to be stuck wondering why your investments aren't paying off. This article and series talks a bit about the "why". 
 
-## Changing the Outputs vs Changing Your Trajectory
+## Changing Outputs vs Changing Trajectory
 
 Too often, companies and their leadership make an investment in the tactical side of things -- producing "stuff" `x%` faster, releasing `y times` per month. Agile methodologies are seen as a way to improve on these metrics.
 
