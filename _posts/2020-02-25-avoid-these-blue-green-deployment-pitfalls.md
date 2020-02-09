@@ -7,7 +7,7 @@ tags:
   - deployments
   - infrastructure
   - blue green
-date: '2020-02-27 14:00 -0500'
+date: '2020-02-25 10:00 -0500'
 toc: true
 toc_label: "Table of Contents"
 toc_icon: "cog"

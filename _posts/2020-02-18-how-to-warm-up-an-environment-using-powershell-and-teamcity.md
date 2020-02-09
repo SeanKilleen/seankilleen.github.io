@@ -7,7 +7,7 @@ tags:
   - powershell
   - teamcity
   - deployments
-date: '2020-02-20 14:00 -0500'
+date: '2020-02-18 10:00 -0500'
 ---
 Prior to running some tests on a .NET web application, we wanted to send a request to the environment to "warm it up" -- so that the initial start of the application pool would be completed before the tests started running.
 
