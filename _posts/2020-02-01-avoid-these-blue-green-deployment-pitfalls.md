@@ -8,7 +8,12 @@ tags:
   - infrastructure
   - blue green
 date: '2020-02-27 14:00 -0500'
+toc: true
+toc_label: "Table of Contents"
+toc_icon: "cog"
+toc_sticky: true
 ---
+
 I've seen organizations make some ...interesting decisions around the concept of "blue/green deployments." In some cases, these changes can lead to some pretty big pitfalls, so I wanted to write up some thoughts here to help folks avoid them.
 
 ## A Quick Introduction: What do we mean by "blue/green deployment"?
