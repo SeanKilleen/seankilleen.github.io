@@ -1,5 +1,7 @@
 ---
-title: Installing & building Jekyll / GitHub Pages blogs with Ruby on Windows 10
+title: >-
+  Jekyll Two Ways on Windows: Installing & building Jekyll / GitHub Pages blogs
+  with Ruby on Windows 10
 comments: true
 tags:
   - jekyll
@@ -9,7 +11,7 @@ tags:
   - wsl
 date: '2020-02-15 10:32 -0500'
 ---
-Wanted to write up these quick steps as I took the time to get my blog up and running on my new laptop. 
+I wanted to write up these quick steps as I took the time to get my blog up and running on my new laptop. 
 
 Today, we'll explore two ways of doing this -- the Windows way for those of you who like working via Windows, and the WSL way. I like having both set up so that I can use whatever suits me.
 
