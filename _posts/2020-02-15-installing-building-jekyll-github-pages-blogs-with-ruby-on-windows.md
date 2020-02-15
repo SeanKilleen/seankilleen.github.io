@@ -63,7 +63,7 @@ These steps assume I'll still be committing & pushing code via my Windows instal
 * Open your WSL instance once it's installed and set a password when you're prompted to do so. (Pssst -- do you have the new Windows Terminal? You can open a prompt right from that. It's nifty.)
 * Run `sudo apt-get update` to update your packages
 * Run `sudo apt-get install ruby-full build-essential` to install Ruby
-* Run `gem install bundler` to install bundler
+* Run `sudo gem install bundler` to install bundler
 * Head to your current source code's directory (mine is in `C:\SeanK\Repositories\seankilleen.github.io`, so I used `cd /mnt/c/Users/SeanK/Repositories/seankilleen.github.io`
 * Run `bundle install`
 * Run `bundle exec jekyll serve`
