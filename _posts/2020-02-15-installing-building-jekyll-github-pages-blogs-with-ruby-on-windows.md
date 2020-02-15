@@ -11,7 +11,7 @@ date: '2020-02-15 10:32 -0500'
 ---
 Wanted to write up these quick steps as I took the time to get my blog up and running on my new laptop. 
 
-Today, we'll explore two ways of doing this -- the Windows way for those of you who like working via Windows, and the WSL way. I like having both set up so that I can do whatever suits me.
+Today, we'll explore two ways of doing this -- the Windows way for those of you who like working via Windows, and the WSL way. I like having both set up so that I can use whatever suits me.
 
 ## The Windows Way
 
@@ -55,6 +55,8 @@ Today, we'll explore two ways of doing this -- the Windows way for those of you 
 * I run `bundle exec jekyll serve` to compile and serve the site
 
 ## The WSL (Windows Subsystem for Linux) Way
+
+These steps assume I'll still be committing & pushing code via my Windows install, so they leave out setting up git on Ubuntu. (Happy to discuss how to do that in the comments; just ping me if you get stuck.)
 
 * Enable WSL. If you haven't already open powershell as an admin an run `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`. You'll need to restart after.
 * Go to the windows store and install a Linux distro of choice. I chose Ubuntu 18.04 LTS.
