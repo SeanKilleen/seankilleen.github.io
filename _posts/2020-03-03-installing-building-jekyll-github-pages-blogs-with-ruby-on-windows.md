@@ -9,7 +9,7 @@ tags:
   - rindows
   - github pages
   - wsl
-date: '2020-02-20 09:00 -0500'
+date: '2020-03-03 09:00 -0500'
 ---
 I wanted to write up these steps as I took the time to get my blog up and running on my new laptop, in case it helps someone else get started.
 
