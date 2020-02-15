@@ -39,4 +39,11 @@ date: '2020-02-15 10:32 -0500'
 * I run `bundler --version` and see that it's `1.17.x` out of the box.
 * I run `gem install bundler` to upgrade it to version `2.x`
 
+### Step 4: Installing the packages
+
+* I go to the source directory that has my `Gemfile`.
+* I delete the `gemfile.lock` file, as I'd like to ensure the packages are being recreated as bundler sees fit.
+* I run `bundle install`
+* I wait. For a while. Because I have native dependencies in some of these gems, some code literally needs to get compiled while I wait. I sip some coffee.
+
 ## The WSL (Windows Subsystem for Linux) Way
