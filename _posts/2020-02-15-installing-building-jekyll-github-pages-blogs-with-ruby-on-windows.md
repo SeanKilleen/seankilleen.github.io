@@ -11,7 +11,7 @@ tags:
   - wsl
 date: '2020-02-15 10:32 -0500'
 ---
-I wanted to write up these quick steps as I took the time to get my blog up and running on my new laptop. 
+I wanted to write up these steps as I took the time to get my blog up and running on my new laptop, in case it helps someone else get started.
 
 Today, we'll explore two ways of doing this -- the Windows way for those of you who like working via Windows, and the WSL way. I like having both set up so that I can use whatever suits me.
 
