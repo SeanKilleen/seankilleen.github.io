@@ -1,0 +1,42 @@
+---
+title: 'Installing & building Jekyll / GitHub Pages blogs with Ruby on Windows '
+comments: true
+tags:
+  - jekyll
+  - ruby
+  - rindows
+  - github pages
+  - wsl
+date: '2020-02-15 10:32 -0500'
+---
+## The Windows Way
+
+### Before we Begin: Pitfalls we'll be avoiding
+
+* **FYI: Normally**, I'd run `choco install ruby -y`, which would install ruby `v2.7.0.1` at the time of this writing. However, that led to a pitfall later in the process where I'd see that `nokogiri` is not currently supported on Ruby 2.7, so I need to pin the 2.6.x package, which we'll do during this tutorial for this reason. 
+* Ruby DevKit used to be a thing for windows. Now ridk uses msys2, so we'll be installing that during this step as well.
+
+###  Step 1: Install the Packages
+
+* Open Powershell as an admin (this is important for chocolately packages)
+* We'll need `msys`, so I run `choco install msys2 -y`
+* I need to find the 2.6.x version of ruby that will work, so I go to [the Chocolatey page for the Ruby package](https://chocolatey.org/packages/ruby)
+* I expand the "Version History" section and see the current 2.6 version is 2.6.5.1
+* So, I run `choco install ruby --version=2.6.5.1 -y`
+* I then pin the package so it won't accidentally be upgraded later. To do this, I run `choco pin add -n=ruby`.
+
+### Step 2: Getting the Ruby DevKit installed
+
+* I close and re-open powershell as a non-admin (to let the paths update, and maybe because I'm just a little superstitious at this point).
+* I run `ridk version` to make sure that the prompt shows up and the version numbers look correct
+* I run `ridk install`. At the prompt, I hit `enter` to let it do its thing.
+* It installs. At the end, I see the phrase `there is nothing to do` so I hit enter at the prompt and allow it to exit.
+* I run `ridk enable` to enable it.
+
+### Step 3: Getting the Bundler Installer Configured
+
+* I re-open the powershell window (superstition, remember?) 
+* I run `bundler --version` and see that it's `1.17.x` out of the box.
+* I run `gem install bundler` to upgrade it to version `2.x`
+
+## The WSL (Windows Subsystem for Linux) Way
