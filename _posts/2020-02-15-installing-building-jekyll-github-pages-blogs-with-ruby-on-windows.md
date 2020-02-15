@@ -46,4 +46,9 @@ date: '2020-02-15 10:32 -0500'
 * I run `bundle install`
 * I wait. For a while. Because I have native dependencies in some of these gems, some code literally needs to get compiled while I wait. I sip some coffee.
 
+### Step 5: Running the site
+
+* I run `bundle exec jekyll serve` to compile and serve the site
+
 ## The WSL (Windows Subsystem for Linux) Way
+
