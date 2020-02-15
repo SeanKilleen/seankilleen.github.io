@@ -1,5 +1,5 @@
 ---
-title: 'Installing & building Jekyll / GitHub Pages blogs with Ruby on Windows '
+title: Installing & building Jekyll / GitHub Pages blogs with Ruby on Windows 10
 comments: true
 tags:
   - jekyll
@@ -9,6 +9,10 @@ tags:
   - wsl
 date: '2020-02-15 10:32 -0500'
 ---
+Wanted to write up these quick steps as I took the time to get my blog up and running on my new laptop. 
+
+Today, we'll explore two ways of doing this -- the Windows way for those of you who like working via Windows, and the WSL way. I like having both set up so that I can do whatever suits me.
+
 ## The Windows Way
 
 ### Before we Begin: Pitfalls we'll be avoiding
@@ -52,3 +56,12 @@ date: '2020-02-15 10:32 -0500'
 
 ## The WSL (Windows Subsystem for Linux) Way
 
+* Enable WSL. If you haven't already open powershell as an admin an run `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`. You'll need to restart after.
+* Go to the windows store and install a Linux distro of choice. I chose Ubuntu 18.04 LTS.
+* Open your WSL instance once it's installed and set a password when you're prompted to do so. (Pssst -- do you have the new Windows Terminal? You can open a prompt right from that. It's nifty.)
+* Run `sudo apt-get update` to update your packages
+* Run `sudo apt-get install ruby-full build-essential` to install Ruby
+* Run `gem install bundler` to install bundler
+* Head to your current source code's directory (mine is in `C:\SeanK\Repositories\seankilleen.github.io`, so I used `cd /mnt/c/Users/SeanK/Repositories/seankilleen.github.io`
+* Run `bundle install`
+* Run `bundle exec jekyll serve`
