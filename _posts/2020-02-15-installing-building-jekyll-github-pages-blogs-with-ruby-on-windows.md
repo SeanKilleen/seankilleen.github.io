@@ -65,5 +65,10 @@ These steps assume I'll still be committing & pushing code via my Windows instal
 * Run `sudo apt-get install ruby-full build-essential` to install Ruby
 * Run `sudo gem install bundler` to install bundler
 * Head to your current source code's directory (mine is in `C:\SeanK\Repositories\seankilleen.github.io`, so I used `cd /mnt/c/Users/SeanK/Repositories/seankilleen.github.io`
-* Run `bundle install`
-* Run `bundle exec jekyll serve`
+* You'll have to install some other dependencies (at least on Ubuntu) -- `sudo apt-get install --reinstall zlibc zlib1g zlib1g-dev`
+* Run `bundle install`. You'll be prompted for your password during. Allow it time to finish.
+* Run `bundle exec jekyll serve`.
+
+And there you have it! Jekyll two ways on Windows. :) 
+
+Happy publishing!
