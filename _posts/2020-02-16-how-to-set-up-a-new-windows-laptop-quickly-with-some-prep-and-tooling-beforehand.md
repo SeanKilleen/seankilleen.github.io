@@ -9,9 +9,9 @@ tags:
   - chocolatey
 date: '2020-02-16 15:46 -0500'
 ---
-I recently got a new laptop (which is incredible and which I'll do another post on shortly).
+I recently got a new laptop (which is incredible! and which I'll do another post on shortly.) Shout-out to my employer, [Excella](http://excella.com/), who picks up 80% of the cost of this machine. 
 
-But I was very pleased this time at how quickly my new machine was able to become my main machine. In probably 1.5 hours, I was able to close my old laptop and haven't needed to open it since. 
+I was very pleased this time at how quickly my new machine was able to become my main machine. In under 2 hours, I was able to close my old laptop and haven't needed to open it since. 
 
 Here's how I made that happen.
 
