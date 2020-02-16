@@ -23,7 +23,7 @@ I've been storing most of my files within OneDrive, and also using it to back up
 
 ## Packages: Chocolatey (and Chocolatey package backup) to the rescue
 
-I install and manage my software as much as humanly possible using [Chocolatey](http://chocolatey.org/). It is the first place I go to when I need to install software, and most of the time there's an official or supported package listed there. I had 122 chocolatey packages on my old laptop.
+I install and manage my software as much as humanly possible using [Chocolatey](http://chocolatey.org/). It is the first place I go to when I need to install software, and most of the time there's an official or supported package listed there. I had 122 Chocolatey packages on my old laptop.
 
 I have a particular Chocolatey package, `choco-package-list-backup`, that I use to export my package list & installed programs to OneDrive and Dropbox. I run it on a scheduled task and it does its thing. (Shout out to [Bill Curran](https://www.patreon.com/bcurran3) for making a great tool!). Any machine I own has an up-to-date list of everything that's installed on it.
 
@@ -39,9 +39,9 @@ If I code anything, it goes into a repository as soon as it's something that I m
 
 * I opened the new laptop and set up Windows. During the course of that setup, I was asked for my Microsoft login, which then also set up my OneDrive account to sync to the new machine. All my files (desktop, docs, etc.) were available to me as soon as I started up.
 * I installed Chocolatey, like I normally do with any machine.
-* I opened my one-drive folder, found the `packages.config` for my old laptop exported by the chocolatey package list backup tool.
+* I opened my one-drive folder, found the `packages.config` for my old laptop exported by the Chocolatey package list backup tool.
 * I copied and edited the packages config file (removed some old tools I no longer used, etc.)
-* I used chocolatey to install GitHub Desktop and Google Chrome since I knew I'd want to use them in the meantime.
+* I used Chocolatey to install GitHub Desktop and Google Chrome since I knew I'd want to use them in the meantime.
 * I ran `choco install packages.config -y` and waited for everything to install. 
 * While I was waiting for those to install, I used GitHub Desktop to pull down the repositories that I knew I wanted to work with. I also opened Chrome and signed in to sync things up.
 
