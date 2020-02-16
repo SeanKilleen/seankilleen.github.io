@@ -33,3 +33,4 @@ What are some ways that this can manifest itself?
 * *We aren't afraid of showing our work early and often*
 * *There is no "merge phase" or "integration phase"*
 * *Any code we merge can go to production if it needs to.*
+* *Quality gateways in the build process.*
