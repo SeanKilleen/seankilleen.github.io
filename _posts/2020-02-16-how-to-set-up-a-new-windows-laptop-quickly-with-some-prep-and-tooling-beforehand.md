@@ -4,9 +4,9 @@ title: >-
   beforehand)
 comments: true
 tags:
-  - machines
   - setup
-  - ''
+  - machine setup
+  - chocolatey
 date: '2020-02-16 15:46 -0500'
 ---
 I recently got a new laptop (which is incredible and which I'll do another post on shortly).
