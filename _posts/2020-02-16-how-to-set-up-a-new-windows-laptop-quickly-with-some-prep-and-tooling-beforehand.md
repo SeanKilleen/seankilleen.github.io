@@ -29,7 +29,7 @@ I have a particular Chocolatey package, `choco-package-list-backup`, that I use 
 
 ## Chrome profile sync
 
-I have a lot of extensions, bookmarks, etc. so as much as I don't like Google having even more information about me, I've found that sync tool to be valuable. 
+I have a lot of extensions, bookmarks, etc. so as much as I don't like Google having even more information about me, I've found that sync settings to be valuable. 
 
 ## Code: GitHub, GitLab, etc.
 
@@ -37,16 +37,18 @@ If I code anything, it goes into a repository as soon as it's something that I m
 
 ## So, how did this all play out on my new laptop?
 
-* I opened the new laptop and set up Windows. During the course of that setup, I was asked for my Microsoft login, which then also set up my OneDrive account to sync to the new machine.
-* I installed Chocolatey
+* I opened the new laptop and set up Windows. During the course of that setup, I was asked for my Microsoft login, which then also set up my OneDrive account to sync to the new machine. All my files (desktop, docs, etc.) were available to me as soon as I started up.
+* I installed Chocolatey, like I normally do with any machine.
 * I opened my one-drive folder, found the `packages.config` for my old laptop exported by the chocolatey package list backup tool.
-* I edited the packages config file (removed some old tools I no longer used, etc.)
-* I used chocolatey to install GitHub Desktop and Google Chrome.
+* I copied and edited the packages config file (removed some old tools I no longer used, etc.)
+* I used chocolatey to install GitHub Desktop and Google Chrome since I knew I'd want to use them in the meantime.
 * I ran `choco install packages.config -y` and waited for everything to install. 
 * While I was waiting for those to install, I used GitHub Desktop to pull down the repositories that I knew I wanted to work with. I also opened Chrome and signed in to sync things up.
 
-Not long after, my environment was basically ready to go. I found a few more apps that I'd used on the old laptop that were missing, that now had Chocolatey packages, so I installed those too. 
-
 ## The End Result?
 
+Not long after, my environment was basically ready to go. I found a few more apps that I'd used on the old laptop that were missing, that now had Chocolatey packages, so I installed those too. 
+
 In under 2 hours, my new laptop was setup and ready to go, and I felt right at home! A little prep went a long way.
+
+Hope you find this useful. Happy computing!
