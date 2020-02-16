@@ -7,7 +7,7 @@ tags:
   - setup
   - machine setup
   - chocolatey
-date: '2020-03-10 15:46 -0400'
+date: '2020-03-10 09:00 -0400'
 ---
 I recently got a new laptop (which is incredible! and which I'll do another post on shortly.) Shout-out to my employer, [Excella](http://excella.com/), who picks up 80% of the cost of this machine. 
 
