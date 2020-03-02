@@ -46,7 +46,7 @@ If a technical interview goes well, you’ll have a new teammate and/or colleagu
 
 I would argue that an additional goal of a technical interview is to ensure that the team doesn’t move backwards in any significant way. By this, I mean that if you don’t optimize for the whole experience of your team, you could wind up with someone who improves your codebase but at the cost of demoralizing your whole team. If a technical interview goes poorly, you could accidentally introduce toxic elements that stifle your teams and the important work they're doing.
 
-So for me, the point of a technical interview is to 1) add a great new colleague to a technical team and 2) avoid adding a colleague that would stifle my eisting colleagues.
+So for me, the point of a technical interview is to 1) add a great new colleague to a technical team and 2) avoid adding a colleague that would stifle my existing colleagues.
 
 ## Overall Approach to Interviewing
 
