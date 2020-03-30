@@ -16,7 +16,7 @@ but have the input and output values as parameters to the alias.
 
 ## You can't do this with PowerShell...
 
-In PowerShell, aliases are meant to be for hard-coded commands and aren't able to be parameterized. 
+In PowerShell, aliases are meant to be for hard-coded commands and aren't able to be parameterized. Bummer.
 
 ## ...but you can accomplish the same thing by storing a function in your profile!
 
