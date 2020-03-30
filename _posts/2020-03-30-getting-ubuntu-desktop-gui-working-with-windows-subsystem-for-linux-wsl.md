@@ -17,6 +17,7 @@ We won't discuss how to obtain these things here, but feel free to comment if yo
 * Windows Subsystem for Linux (WSL)
 * An Ubuntu WSL Distribution from the Windows Store
 * Chocolatey installed on your Windows machine
+* A chunk of free disk space (~2 GBish to dedicate to the effort on top of your normal needs)
 
 ## Let's Do this!
 
@@ -38,3 +39,4 @@ Return to your WSL Instance
 * If you want this done every time you start up, also run `echo "export DISPLAY=localhost:0.0" >> ~/.bashrc`
 * Run `sudo apt install ubuntu-desktop` to install the goodies
 * Run `sudo apt install gedit` to install the common GUI-based text editor
+* Run `sudo apt install yad` to allow the creation of graphical dialogs from shell scripts
