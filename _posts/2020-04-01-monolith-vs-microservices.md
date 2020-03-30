@@ -6,7 +6,7 @@ tags:
   - monolith
   - microservices
   - ''
-date: '2020-02-08 12:02 -0500'
+date: '2020-04-01 12:02 -0500'
 ---
 https://segment.com/blog/goodbye-microservices/My general take: "every problem can be solved by another level of abstraction, except too many levels of abstraction."
 
