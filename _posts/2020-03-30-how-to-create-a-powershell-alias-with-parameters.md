@@ -29,7 +29,7 @@ We'll create a function to do what we need to do, with the appropriate parameter
 For example, let's say we call the function `Encode-Video`: 
 
 ```powershell
-function Encode-RyanVideo([string]$VideoFileName, [string]$OutputFileName)
+function Encode-Video([string]$VideoFileName, [string]$OutputFileName)
 { 
     ffmpeg -i "$VideoFileName" -vcodec h264 -acodec mp2 "$OutputFileName" 
 }
