@@ -31,7 +31,7 @@ While you're waiting on that, switch back to Windows.
 * Open an admin powershell window
 * Run `choco install vcxsrv`
 * When that completes, look for `XLaunch` in your start menu and run it.
-* Set up XLaunch as you'd like. I chose to do full-screen, and then moved the XLaunch window to a virtual desktop once it appears -- best of all worlds!
+* Set up XLaunch as you'd like. I chose to do a large window without a title bar, and then moved the XLaunch window to a virtual desktop once it appears -- best of all worlds!
 
 Return to your WSL Instance
 
