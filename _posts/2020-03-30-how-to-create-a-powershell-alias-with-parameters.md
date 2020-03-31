@@ -4,7 +4,7 @@ comments: true
 tags:
   - PowerShell
   - aliases
-date: '2020-03-30 11:18 -0400'
+date: '2020-04-01 10:00 -0400'
 ---
 I was recently asked how to create a PowerShell command alias that accepts parameters.
 
