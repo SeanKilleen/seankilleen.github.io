@@ -93,3 +93,8 @@ terraform {
     }
 }
 ```
+
+* Run `terraform apply` and notice that it tells you the back-end changed.
+* Now tun `terraform init` again. It will prompt you on whether to add your state to the new back-end. Say yes!
+
+Now Terraform is ready to rock and roll -- you've got the basics for your 
