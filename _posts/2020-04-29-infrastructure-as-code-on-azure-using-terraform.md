@@ -8,10 +8,7 @@ tags:
   - terraform
 date: 2020-04-29 09:48 -0400
 ---
-* Create a resource group
-* Create some storage for the terraform metadata (we'll use this as the TF backend)
 * Login to the azure cli `az login`
-* Set the subscription `az account set --subscription BlahBlahBlah`
 * Install Terraform `choco install terraform`
 * Add the provider:
 
@@ -22,23 +19,77 @@ provider "azurerm" {
 
   subscription_id = "SECRET_SUB_ID"
   tenant_id       = "SECRET_TENANT_ID"
-  features {}
+  features {} # This is required so that it doesn't throw an error.
 }
 ```
 
-* Setup the backend:
+* Setup the azure resources that you'll use for your back-end:
+
+```
+resource "azurerm_resource_group" "backendrg" {
+    name     = "TestTFProject"
+    location = var.DeploymentRegion
+}
+
+resource "azurerm_storage_account" "backendstorageacct" {
+    name                     = "terraformmetadata"
+    resource_group_name      = azurerm_resource_group.backendrg.name
+    location                 = azurerm_resource_group.backendrg.location
+    account_tier             = "Standard"
+    account_replication_type = "LRS"
+    access_tier              = "Cool"
+}
+
+resource "azurerm_storage_container" "backendstoragecontainer" {
+    name                  = "tfstate"
+    storage_account_name  = azurerm_storage_account.backendstorageacct.name
+    container_access_type = "private"
+}
+```
+
+* Add a variables file or section
+
+```
+variable "AzureSubscriptionId" {
+    description = "The subscription in which you are trying to set up this Terraform config"
+    type = string
+}
+
+variable "AzureTenantId" {
+    description = "The tenant in which you are trying to set up this Terraform config"
+    type = string
+}
+
+variable "DeploymentRegion" {
+    default="eastus2"
+    description="The region you want to create resources in."
+    type = string
+}
+```
+
+* Add the file where you fill out the variables
+
+```
+AzureSubscriptionId="MY_SECRET_SUB
+AzureTenantId="MYY_SECRET_TENANT"
+```
+
+* Run `terraform init` which will create your state locally.
+* Run `terraform apply` to create the infrastructure
+
+That's great, but now all our state is stored locally. This is Not A Good Idea (TM).
+
+So, add the backend:
 
 ```
 terraform {
-      backend "azurerm" {
-    resource_group_name  = "TerraFormMetadata"
-    storage_account_name = "terraformmetadata"
-    container_name       = "tfstate"
-    key                  = "prod.terraform.tfstate"
-  }
-
+    backend "azurerm" {
+        resource_group_name  = "TestTFProject"
+        storage_account_name = "terraformmetadata"
+        container_name       = "tfstate"
+        key                  = "terraform.tfstate"
+        subscription_id = "d10f1412-44d2-4a88-9740-aa87e164b172" # TODO: Variable somehow?
+        tenant_id       = "cf8f1ebd-81a2-49c8-a1e0-12bde7964425" # TODO: Variable somehow?
+    }
 }
 ```
-
-* Run `terraform init` which will pull from the back-end storage and create the file.
-* Run `terraform import` on the resource group, the storage, the container
