@@ -41,3 +41,4 @@ terraform {
 ```
 
 * Run `terraform init` which will pull from the back-end storage and create the file.
+* Run `terraform import` on the resource group, the storage, the container
