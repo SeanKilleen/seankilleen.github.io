@@ -10,9 +10,10 @@ date: 2020-04-29 09:48 -0400
 ---
 * Create a resource group
 * Create some storage for the terraform metadata (we'll use this as the TF backend)
+* Login to the azure cli `az login`
+* Set the subscription `az account set --subscription BlahBlahBlah`
 * Install Terraform `choco install terraform`
-
-* Add the provider
+* Add the provider:
 
 ```
 provider "azurerm" {
