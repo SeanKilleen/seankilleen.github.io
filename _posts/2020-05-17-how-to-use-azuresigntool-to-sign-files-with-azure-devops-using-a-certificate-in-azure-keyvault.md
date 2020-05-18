@@ -103,30 +103,9 @@ At this point, the application principal -- which we have a client ID and secret
 
 ## Setting up our Azure DevOps build
 
-I am assuming that 
+I am assuming that you're using Azure DevOps here, but the steps will generally work as long as you're executing them in your build system in whatever way it allows.
 
-
-* Create
-
-A lightweight guide on how to use this tool in context.
-
-* Obtain a certificate.
-* Within your Azure subscription, create an Azure KeyVault. Note the URL of the KeyVault; this will be your input to `-kvu` later.
-* Upload your certificate into the KeyVault, giving it a name.
-* Within your Azure AD, register an application with a name (no need to worry about the redirect URL).
-* In the overview screen for the application, note the Application ID -- this will be the client ID input into the `-kvi` parameter later.
-* Create a client secret for the application and give it a description (e.g. "Access to KeyVault certificate for signing"). Be sure to copy the secret somewhere temporarily, as you won't be able to see it after initially creating it. This secret will be passed into the `-kvs` parameter later.
-* Return to your KeyVault's settings, and go to the `Access Policies` section.
-* Create an access policy that applies to your registered application, e.g. if the app you registered in AD was called `MyApp`, this policy should apply to the `MyApp` user.
-* For the access policy, set the below permissions:
-
-| Area | Permissions |
-| ---- | ----------- |
-| Key | Verify, Sign, Get, List |
-| Secret | Get, List |
-| Certificate | Get, List |
-
-* In your Azure DevOps build configuration, add a step to install the global tool:
+Firstly, we need to add a command within our Azure DevOps build in order to download the AzureSignTool, which can be installed as a .NET Core Global Tool. Add the below as a step prior to your signing step.
 
 ```yml
 - task: DotNetCoreCLI@2
@@ -137,15 +116,23 @@ A lightweight guide on how to use this tool in context.
   displayName: Install AzureSignTool
 ```
 
-* In your Azure DevOps build configuration, add a step to use the tool, with the values we captured earlier in the bracketed placeholders:
+Now, we need to add a task to actually do the signing. This is the information you'll gather:
+
+* The KeyVault URL from earlier
+* The Application ID from the app registration
+* The Application client secret from the app registration
+* The name of the certificate you uploaded
+* A list of the files you want to sign.
+
+Once you have those, add the build task to call the AzureSignTool, replacing the brackets and text within them with your values:
 
 ```yml
 - task: CmdLine@2
   displayName: 'Sign outputted .exe with global AzureSignTool'
   inputs:
-    script: AzureSignTool sign -du "[YOUR_URL]" -kvu "https://[VAULT_ID].vault.azure.net" -kvi "[REDACTED_APPLICATION_ID]" -kvs "[REDACTED_APPLICATION_CLIENT_SECRET" -kvc "[REDACTED_CERT_NAME]" -v [FILES_YOU_WANT_TO_SIGN]
+    script: AzureSignTool sign -du "[YOUR_URL]" -kvu "https://[VAULT_ID].vault.azure.net" -kvi "[APPLICATION_ID]" -kvs "[APPLICATION_CLIENT_SECRET" -kvc "[CERT_NAME]" -v [FILES_YOU_WANT_TO_SIGN]
 ```
 
-At this point, the build should be able to run and sign the files you have listed.
+At this point, the build should be able to run your build and sign the files you have listed.
 
-Happy signing!
+Happy Signing! Let me know if you've got any questions in the comments.
