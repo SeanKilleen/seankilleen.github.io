@@ -22,6 +22,18 @@ To ensure users can trust my application, I need to digitally sign it. That was 
 
 A huge thanks here goes to [Kevin Jones] for the [AzureSignTool] utility, which is the only thing that makes this possible in a way I feel confident about.
 
+## Obtaining the Certificate
+
+This was probably the most involved part of the process. I bit the bullet and paid roughly $80/year for an Authenticode signing certificate under the name of my LLC. Once I purchased the certificate, I was contacted by a company named Sectigo. I provided documents to prove that my LLC existed, such as tax records and pointer to us on a state registration web site. However, they also needed to validate my phone number. This led me to register with Dun & Bradstreet for a DUNS number and listing on their site. After a phone interview and a short wait (it can take up to 30 business days; mine took 2, I believe), I had a DUNS number and a listing on their site. This allowed Sectigo to give me the green light on verification and approve the certificate, which I could then download and export.
+
+While the process is unnecessarily cumbersome and annoying, I had to remind myself that certificates are about trust. At the end of the day, I'd much prefer certificate authorities who do their due diligence to those who are lax. So, it is what it is. 
+
+TODO: JKSimmons_Shrugging_Farmers.gif
+
+## Setting up the Azure Pieces
+
+
+
 A lightweight guide on how to use this tool in context.
 
 * Obtain a certificate.
