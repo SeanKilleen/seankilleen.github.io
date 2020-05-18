@@ -23,15 +23,90 @@ To ensure users can trust my application, I need to digitally sign it. That was 
 
 A huge thanks here goes to [Kevin Jones](https://twitter.com/vcsjones) for the [AzureSignTool](https://github.com/vcsjones/AzureSignTool) utility, which is the only thing that makes this possible in a way I feel confident about.
 
+## Ingredients
+
+Today we'll be making use of:
+
+* A Signing Certificate
+* An Azure Subscription
+* Azure KeyVault (TODO: Check KeyVault vs Key Vault)
+* Azure Active Directory (AD) app registrations
+* AzureSignTool
+* Azure DevOps
+
+If you're not using these exact pieces, my hope is that there's something in it for you regardless.
+
 ## Obtaining the Certificate
 
 This was probably the most involved part of the process. I bit the bullet and paid roughly $80/year for an Authenticode signing certificate under the name of my LLC. Once I purchased the certificate, I was contacted by a company named Sectigo. I provided documents to prove that my LLC existed, such as tax records and pointer to us on a state registration web site. However, they also needed to validate my phone number. This led me to register with Dun & Bradstreet for a DUNS number and listing on their site. After a phone interview and a short wait (it can take up to 30 business days; mine took 2, I believe), I had a DUNS number and a listing on their site. This allowed Sectigo to give me the green light on verification and approve the certificate, which I could then download and export.
 
-While the process is unnecessarily cumbersome and annoying, I had to remind myself that certificates are about trust. At the end of the day, I'd much prefer certificate authorities who do their due diligence to those who are lax. So, it is what it is. 
+While the process is unnecessarily cumbersome and annoying, I had to remind myself that certificates are about trust. At the end of the day, I'd much prefer certificate authorities who do their due diligence to those who are lax. So, it is what it is.
 
-TODO: JKSimmons_Shrugging_Farmers.gif
+![Actor JK Simmons, shrugging. It is what it is.]({{site.post-images}}/2020-05_SigningCert/JKSimmons_Shrugging_Farmers.gif)
 
 ## Setting up the Azure Pieces
+
+* Log into your Azure account
+* Create a resource group. This is so that your related resources can be, well, grouped.
+* Add an Azure KeyVault within the resource group. Note the URL of your KeyVault; you'll need it later.
+
+TODO: Pics
+
+* Import your certificate into the Azure KeyVault, providing your password as you do so. Be sure to give your certificate a descriptive name, e.g. `ComodoAuthenticodeSigningCertificate`.
+
+TODO: Pics
+
+## Creating an Application Principal to Allow Access
+
+Okay, so we've got the certificate in the KeyVault. But now we need a secure way to access it. But we don't want any hard-coded direct credentials involved. This is where an application principal comes in handy.
+
+* Within your Azure Portal, go to the Azure Active Directory page.
+
+TODO: Image
+
+* In the Application Registration section, register a new application. Give it a descriptive name, and don't worry about the redirect URL.
+
+TODO: Image
+
+* Once it's created, note the Application ID. This is the "client ID" that we'll provide to AzureSignTool later.
+
+TODO: Image
+
+We'll also need a secret to pair with the client ID. How do we get that? By adding a client secret.
+
+* In the app registration page, go to the "Client Secret" (TODO: Check this) section.
+
+TODO: Image
+
+* Create a new secret. Give it a descriptive name, e.g. `Access to KeyVault certificate for signing`. Be sure to copy the secret somewhere temporarily, as this is the last time you'll see it.
+
+## Granting KeyVault Access to the Principal
+
+Merely creating the principal is not enough to grant us access -- we must do so explicitly within the KeyVault.
+
+* Open the KeyVault settings, and go to the `Access Policies` section.
+
+TODO: Image
+
+* Create an access policy that applies to your registered application, e.g. if the app you registered in AD was called `MyApp`, this policy should apply to the `MyApp` user.
+* For the access policy, set the below permissions:
+
+| Area | Permissions |
+| ---- | ----------- |
+| Key | Verify, Sign, Get, List |
+| Secret | Get, List |
+| Certificate | Get, List |
+
+* Save your settings.
+
+At this point, the application principal -- which we have a client ID and secret for -- can now access the KeyVault.
+
+## Setting up our Azure DevOps build
+
+I am assuming that 
+
+
+* Create
 
 A lightweight guide on how to use this tool in context.
 
