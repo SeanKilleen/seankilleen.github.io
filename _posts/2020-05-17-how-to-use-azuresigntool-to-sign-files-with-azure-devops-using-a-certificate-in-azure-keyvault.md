@@ -32,8 +32,6 @@ TODO: JKSimmons_Shrugging_Farmers.gif
 
 ## Setting up the Azure Pieces
 
-
-
 A lightweight guide on how to use this tool in context.
 
 * Obtain a certificate.
