@@ -14,13 +14,14 @@ tags:
   - signing.
 date: 2020-05-17 15:55 -0400
 ---
+
 Phew! That title is a mouthful.
 
 I have a small office add-in product that I'm building to scratch an itch in actually delivering a product to market. I've found the local version quite useful and it's time to get it into others' hands.
 
 To ensure users can trust my application, I need to digitally sign it. That was ...a pain, so I figured I'd write up how I did it for others' benefit.
 
-A huge thanks here goes to [Kevin Jones] for the [AzureSignTool] utility, which is the only thing that makes this possible in a way I feel confident about.
+A huge thanks here goes to [Kevin Jones](https://twitter.com/vcsjones) for the [AzureSignTool](https://github.com/vcsjones/AzureSignTool) utility, which is the only thing that makes this possible in a way I feel confident about.
 
 ## Obtaining the Certificate
 
