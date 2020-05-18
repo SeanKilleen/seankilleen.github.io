@@ -124,7 +124,6 @@ Now, we need to add a task to actually do the signing. This is the information y
 * The name of the certificate you uploaded
 * A list of the files you want to sign.
 
-
 Once you have those, add the build task to call the AzureSignTool, replacing the brackets and text within them with your values:
 
 ### ...BUT WAIT! Don't add this directly....see if you can spot why. I'll explain below.
@@ -142,14 +141,24 @@ Did you spot the issue? If we drop the client ID and secret right into our build
 
 * In Azure DevOps, open your pipeline
 * Click the `Library` menu.
+
+TODO: Image
+
 * Add variables for the signing cert name, the client id, the client secret, and the vault URL.
+
+TODO: Image
+
+* Click the lock icon next to the variables to mark them as sensitive.
+
+TODO: Image
+
 * Save the variables.
 
-Now replace the line above with:
+Now instead, replace the script of the AzureSignTool call with:
 
 `script: AzureSignTool sign -du "$(SigningURL)" -kvu "$(SigningVaultURL)" -kvi "$(SigningClientId)" -kvs "$(SigningClientSecret)" -kvc "$(SigningCertName)" -v $(Build.ArtifactStagingDirectory)\\setup.exe"`
 
-Thaaaat's more like it.
+Thaaaat's more like it. Now Azure DevOps will utilize the variables but also not output them in logs, which is nice.
 
 At this point, the build should be able to run your build and sign the files you have listed.
 
