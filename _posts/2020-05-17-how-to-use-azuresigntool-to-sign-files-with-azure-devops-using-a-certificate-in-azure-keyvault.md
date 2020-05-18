@@ -137,7 +137,7 @@ What's wrong with this picture?
     script: AzureSignTool sign -du "[YOUR_URL]" -kvu "https://[VAULT_ID].vault.azure.net" -kvi "[APPLICATION_ID]" -kvs "[APPLICATION_CLIENT_SECRET" -kvc "[CERT_NAME]" -v [FILES_YOU_WANT_TO_SIGN]
 ```
 
-Did you spot the issue? If we drop the client ID and secret right into our build definition, which is right in our source control, are we really that secure? We should probably not have it in there.
+Did you spot the issue? If we drop the client ID and secret right into our build definition, which is right in our source control, are we really that secure? We should probably not keep it there.
 
 * In Azure DevOps, open your pipeline
 * Click the `Library` menu.
