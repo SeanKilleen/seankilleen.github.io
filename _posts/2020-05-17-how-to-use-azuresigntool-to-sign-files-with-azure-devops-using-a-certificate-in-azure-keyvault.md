@@ -124,7 +124,12 @@ Now, we need to add a task to actually do the signing. This is the information y
 * The name of the certificate you uploaded
 * A list of the files you want to sign.
 
+
 Once you have those, add the build task to call the AzureSignTool, replacing the brackets and text within them with your values:
+
+### ...BUT WAIT! Don't add this directly....see if you can spot why. I'll explain below.
+
+What's wrong with this picture?
 
 ```yml
 - task: CmdLine@2
@@ -132,6 +137,19 @@ Once you have those, add the build task to call the AzureSignTool, replacing the
   inputs:
     script: AzureSignTool sign -du "[YOUR_URL]" -kvu "https://[VAULT_ID].vault.azure.net" -kvi "[APPLICATION_ID]" -kvs "[APPLICATION_CLIENT_SECRET" -kvc "[CERT_NAME]" -v [FILES_YOU_WANT_TO_SIGN]
 ```
+
+Did you spot the issue? If we drop the client ID and secret right into our build definition, which is right in our source control, are we really that secure? We should probably not have it in there.
+
+* In Azure DevOps, open your pipeline
+* Click the `Library` menu.
+* Add variables for the signing cert name, the client id, the client secret, and the vault URL.
+* Save the variables.
+
+Now replace the line above with:
+
+`script: AzureSignTool sign -du "$(SigningURL)" -kvu "$(SigningVaultURL)" -kvi "$(SigningClientId)" -kvs "$(SigningClientSecret)" -kvc "$(SigningCertName)" -v $(Build.ArtifactStagingDirectory)\\setup.exe"`
+
+Thaaaat's more like it.
 
 At this point, the build should be able to run your build and sign the files you have listed.
 
