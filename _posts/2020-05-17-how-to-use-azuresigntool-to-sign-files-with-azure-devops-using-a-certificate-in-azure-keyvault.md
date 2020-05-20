@@ -59,9 +59,21 @@ While the process is unnecessarily cumbersome and annoying, I had to remind myse
 
 > ![Selecting Key Vault]({{site.post-images}}/2020-05_SigningCert/04_KeyVault.png)
 
+> ![KeyVault options]({{site.post-images}}/2020-05_SigningCert/05_KeyVaultOptions.png)
+
+* Note the KeyVault URL because you'll use it later.
+
+> ![KeyVault options]({{site.post-images}}/2020-05_SigningCert/06_VaultURL.png)
+
 * Import your certificate into the Azure KeyVault, providing your password as you do so. Be sure to give your certificate a descriptive name, e.g. `ComodoAuthenticodeSigningCertificate`.
 
-TODO: Pics
+> ![KeyVault options]({{site.post-images}}/2020-05_SigningCert/07_CertificateSettings.png)
+
+> ![KeyVault options]({{site.post-images}}/2020-05_SigningCert/08_GenerateImport.png)
+
+> ![KeyVault options]({{site.post-images}}/2020-05_SigningCert/09_CertUpload.png)
+
+> ![KeyVault options]({{site.post-images}}/2020-05_SigningCert/10_CertAdded.png)
 
 ## Creating an Application Principal to Allow Access
 
