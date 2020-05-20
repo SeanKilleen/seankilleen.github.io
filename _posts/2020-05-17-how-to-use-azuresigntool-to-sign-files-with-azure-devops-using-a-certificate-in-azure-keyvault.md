@@ -48,6 +48,7 @@ While the process is unnecessarily cumbersome and annoying, I had to remind myse
 
 * Log into your Azure account
 * Create a resource group. This is so that your related resources can be, well, grouped.
+
 * Add an Azure KeyVault within the resource group. Note the URL of your KeyVault; you'll need it later.
 
 TODO: Pics
