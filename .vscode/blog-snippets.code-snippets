@@ -17,7 +17,7 @@
 	// }
 	"Post image": {
 		"scope": "markdown,md",
-		"prefix": "postimage",
+		"prefix": "pimg",
 		"body": [
 			"![$1]({{site.post-images}}/$2)"
 		],
