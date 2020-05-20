@@ -20,6 +20,7 @@
 		"prefix": "img",
 		"body": [
 			"![$1]({{site.post-images}}/$2)"
-		]
+		],
+		"description": "Markdown image"
 	}
 }
