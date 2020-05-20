@@ -49,9 +49,15 @@ While the process is unnecessarily cumbersome and annoying, I had to remind myse
 * Log into your Azure account
 * Create a resource group. This is so that your related resources can be, well, grouped.
 
+> ![Resource Group Settings]({{site.post-images}}/2020-05_SigningCert/01_ResourceGroup.png)
+
 * Add an Azure KeyVault within the resource group. Note the URL of your KeyVault; you'll need it later.
 
-TODO: Pics
+> ![Add Resource button]({{site.post-images}}/2020-05_SigningCert/02_AddResource.png)
+
+> ![Key Vault Search]({{site.post-images}}/2020-05_SigningCert/03_KeyVault.png)
+
+> ![Selecting Key Vault]({{site.post-images}}/2020-05_SigningCert/04_KeyVault.png)
 
 * Import your certificate into the Azure KeyVault, providing your password as you do so. Be sure to give your certificate a descriptive name, e.g. `ComodoAuthenticodeSigningCertificate`.
 
