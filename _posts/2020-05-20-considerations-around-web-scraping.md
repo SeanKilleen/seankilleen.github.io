@@ -1,5 +1,5 @@
 ---
-title: Considerations around web scraping
+title: "Radnom thoughts: Considerations around web scraping"
 comments: true
 tags:
   - web scraping
