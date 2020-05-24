@@ -80,12 +80,11 @@ While the process is unnecessarily cumbersome and annoying, I had to remind myse
 Okay, so we've got the certificate in the KeyVault. But now we need a secure way to access it. But we don't want any hard-coded direct credentials involved. This is where an application principal comes in handy.
 
 * Within your Azure Portal, go to the Azure Active Directory page.
-
-TODO: Image
-
 * In the Application Registration section, register a new application. Give it a descriptive name, and don't worry about the redirect URL.
 
-TODO: Image
+> ![Adding an app registration]({{site.post-images}}/2020-05_SigningCert/11_AppRegistration.png)
+
+> ![App registration settings]({{site.post-images}}/2020-05_SigningCert/12_AppRegistration.png)
 
 * Once it's created, note the Application ID. This is the "client ID" that we'll provide to AzureSignTool later.
 
@@ -95,17 +94,19 @@ We'll also need a secret to pair with the client ID. How do we get that? By addi
 
 * In the app registration page, go to the "Client Secret" (TODO: Check this) section.
 
-TODO: Image
+> ![Adding a clietn secret]({{site.post-images}}/2020-05_SigningCert/13_AddSecret.png)
 
 * Create a new secret. Give it a descriptive name, e.g. `Access to KeyVault certificate for signing`. Be sure to copy the secret somewhere temporarily, as this is the last time you'll see it.
+
+> ![The created secret]({{site.post-images}}/2020-05_SigningCert/14_CertPricipalName.png)
 
 ## Granting KeyVault Access to the Principal
 
 Merely creating the principal is not enough to grant us access -- we must do so explicitly within the KeyVault.
 
-* Open the KeyVault settings, and go to the `Access Policies` section.
+* Open the KeyVault settings, and go to the `Access Policies` section. Click the `Add Access Policy` link.
 
-TODO: Image
+> ![Add access policy link]({{site.post-images}}/2020-05_SigningCert/15_AccessPolicyLink.png)
 
 * Create an access policy that applies to your registered application, e.g. if the app you registered in AD was called `MyApp`, this policy should apply to the `MyApp` user.
 * For the access policy, set the below permissions:
@@ -115,6 +116,8 @@ TODO: Image
 | Key | Verify, Sign, Get, List |
 | Secret | Get, List |
 | Certificate | Get, List |
+
+> ![Access Policy options]({{site.post-images}}/2020-05_SigningCert/16_AccessPolicyOptions.png)
 
 * Save your settings.
 
@@ -161,15 +164,15 @@ Did you spot the issue? If we drop the client ID and secret right into our build
 * In Azure DevOps, open your pipeline
 * Click the `Library` menu.
 
-TODO: Image
+> ![The DevOps library menu]({{site.post-images}}/2020-05_SigningCert/17_LibraryMenu.png)
 
 * Add variables for the signing cert name, the client id, the client secret, and the vault URL.
 
-TODO: Image
+> ![Adding a Variable Group]({{site.post-images}}/2020-05_SigningCert/18_AddVariableGroup.png)
 
 * Click the lock icon next to the variables to mark them as sensitive.
 
-TODO: Image
+> ![Variable List with secrets kept]({{site.post-images}}/2020-05_SigningCert/19_VariableList.png)
 
 * Save the variables.
 
@@ -177,8 +180,8 @@ Now instead, replace the script of the AzureSignTool call with:
 
 `script: AzureSignTool sign -du "$(SigningURL)" -kvu "$(SigningVaultURL)" -kvi "$(SigningClientId)" -kvs "$(SigningClientSecret)" -kvc "$(SigningCertName)" -v $(Build.ArtifactStagingDirectory)\\setup.exe"`
 
-Thaaaat's more like it. Now Azure DevOps will utilize the variables but also not output them in logs, which is nice.
+Thaaaat's more like it. Now Azure DevOps will utilize the variables and also not output them in logs, which is nice.
 
 At this point, the build should be able to run your build and sign the files you have listed.
 
-Happy Signing! Let me know if you've got any questions in the comments.
+Happy signing! Let me know if you've got any questions in the comments.
