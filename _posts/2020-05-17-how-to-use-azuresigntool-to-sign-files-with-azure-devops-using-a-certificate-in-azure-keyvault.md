@@ -88,13 +88,11 @@ Okay, so we've got the certificate in the Key Vault. But now we need a secure wa
 
 * Once it's created, note the Application ID. This is the "client ID" that we'll provide to AzureSignTool later.
 
-TODO: Image
-
 We'll also need a secret to pair with the client ID. How do we get that? By adding a client secret.
 
-* In the app registration page, go to the "Client Secret" (TODO: Check this) section.
+* In the app registration page, go to the "Certificates & Secrets" section.
 
-> ![Adding a clietn secret]({{site.post-images}}/2020-05_SigningCert/13_AddSecret.png)
+> ![Adding a client secret]({{site.post-images}}/2020-05_SigningCert/13_AddSecret.png)
 
 * Create a new secret. Give it a descriptive name, e.g. `Access to Key Vault certificate for signing`. Be sure to copy the secret somewhere temporarily, as this is the last time you'll see it.
 
