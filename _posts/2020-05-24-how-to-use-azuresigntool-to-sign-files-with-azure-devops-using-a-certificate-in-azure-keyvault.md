@@ -2,6 +2,7 @@
 title: "How to: Use AzureSignTool to sign files with Azure DevOps using a
   certificate in Azure Key Vault"
 comments: true
+excerpt: "Automated code signing for fun and (hopefully someday) profit."
 tags:
   - azure
   - azure devops
