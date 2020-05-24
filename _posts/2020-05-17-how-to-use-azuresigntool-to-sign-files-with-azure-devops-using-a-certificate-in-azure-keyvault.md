@@ -1,11 +1,11 @@
 ---
 title: "How to: Use AzureSignTool to sign files with Azure DevOps using a
-  certificate in Azure KeyVault"
+  certificate in Azure Key Vault"
 comments: true
 tags:
   - azure
   - azure devops
-  - azure keyvault
+  - azure key vault
   - ci
   - cd
   - build process
@@ -29,7 +29,7 @@ Today we'll be making use of:
 
 * A Signing Certificate
 * An Azure Subscription
-* Azure KeyVault (TODO: Check KeyVault vs Key Vault)
+* Azure Key Vault
 * Azure Active Directory (AD) app registrations
 * AzureSignTool
 * Azure DevOps
@@ -51,7 +51,7 @@ While the process is unnecessarily cumbersome and annoying, I had to remind myse
 
 > ![Resource Group Settings]({{site.post-images}}/2020-05_SigningCert/01_ResourceGroup.png)
 
-* Add an Azure KeyVault within the resource group. Note the URL of your KeyVault; you'll need it later.
+* Add an Azure Key Vault within the resource group. Note the URL of your Key Vault; you'll need it later.
 
 > ![Add Resource button]({{site.post-images}}/2020-05_SigningCert/02_AddResource.png)
 
@@ -59,25 +59,25 @@ While the process is unnecessarily cumbersome and annoying, I had to remind myse
 
 > ![Selecting Key Vault]({{site.post-images}}/2020-05_SigningCert/04_KeyVault.png)
 
-> ![KeyVault options]({{site.post-images}}/2020-05_SigningCert/05_KeyVaultOptions.png)
+> ![Key Vault options]({{site.post-images}}/2020-05_SigningCert/05_KeyVaultOptions.png)
 
-* Note the KeyVault URL because you'll use it later.
+* Note the Key Vault URL because you'll use it later.
 
-> ![KeyVault options]({{site.post-images}}/2020-05_SigningCert/06_VaultURL.png)
+> ![Key Vault URL]({{site.post-images}}/2020-05_SigningCert/06_VaultURL.png)
 
 * Import your certificate into the Azure KeyVault, providing your password as you do so. Be sure to give your certificate a descriptive name, e.g. `ComodoAuthenticodeSigningCertificate`.
 
-> ![KeyVault options]({{site.post-images}}/2020-05_SigningCert/07_CertificateSettings.png)
+> ![Certificate settings]({{site.post-images}}/2020-05_SigningCert/07_CertificateSettings.png)
 
-> ![KeyVault options]({{site.post-images}}/2020-05_SigningCert/08_GenerateImport.png)
+> ![Selecting the generate / import button]({{site.post-images}}/2020-05_SigningCert/08_GenerateImport.png)
 
-> ![KeyVault options]({{site.post-images}}/2020-05_SigningCert/09_CertUpload.png)
+> ![Uploading the cert]({{site.post-images}}/2020-05_SigningCert/09_CertUpload.png)
 
-> ![KeyVault options]({{site.post-images}}/2020-05_SigningCert/10_CertAdded.png)
+> ![Adding the cert]({{site.post-images}}/2020-05_SigningCert/10_CertAdded.png)
 
 ## Creating an Application Principal to Allow Access
 
-Okay, so we've got the certificate in the KeyVault. But now we need a secure way to access it. But we don't want any hard-coded direct credentials involved. This is where an application principal comes in handy.
+Okay, so we've got the certificate in the Key Vault. But now we need a secure way to access it. But we don't want any hard-coded direct credentials involved. This is where an application principal comes in handy.
 
 * Within your Azure Portal, go to the Azure Active Directory page.
 * In the Application Registration section, register a new application. Give it a descriptive name, and don't worry about the redirect URL.
@@ -96,15 +96,15 @@ We'll also need a secret to pair with the client ID. How do we get that? By addi
 
 > ![Adding a clietn secret]({{site.post-images}}/2020-05_SigningCert/13_AddSecret.png)
 
-* Create a new secret. Give it a descriptive name, e.g. `Access to KeyVault certificate for signing`. Be sure to copy the secret somewhere temporarily, as this is the last time you'll see it.
+* Create a new secret. Give it a descriptive name, e.g. `Access to Key Vault certificate for signing`. Be sure to copy the secret somewhere temporarily, as this is the last time you'll see it.
 
 > ![The created secret]({{site.post-images}}/2020-05_SigningCert/14_CertPricipalName.png)
 
-## Granting KeyVault Access to the Principal
+## Granting Key Vault Access to the Principal
 
-Merely creating the principal is not enough to grant us access -- we must do so explicitly within the KeyVault.
+Merely creating the principal is not enough to grant us access -- we must do so explicitly within the Key Vault.
 
-* Open the KeyVault settings, and go to the `Access Policies` section. Click the `Add Access Policy` link.
+* Open the Key Vault settings, and go to the `Access Policies` section. Click the `Add Access Policy` link.
 
 > ![Add access policy link]({{site.post-images}}/2020-05_SigningCert/15_AccessPolicyLink.png)
 
@@ -121,7 +121,7 @@ Merely creating the principal is not enough to grant us access -- we must do so 
 
 * Save your settings.
 
-At this point, the application principal -- which we have a client ID and secret for -- can now access the KeyVault.
+At this point, the application principal -- which we have a client ID and secret for -- can now access the Key Vault.
 
 ## Setting up our Azure DevOps build
 
@@ -140,7 +140,7 @@ Firstly, we need to add a command within our Azure DevOps build in order to down
 
 Now, we need to add a task to actually do the signing. This is the information you'll gather:
 
-* The KeyVault URL from earlier
+* The Key Vault URL from earlier
 * The Application ID from the app registration
 * The Application client secret from the app registration
 * The name of the certificate you uploaded
