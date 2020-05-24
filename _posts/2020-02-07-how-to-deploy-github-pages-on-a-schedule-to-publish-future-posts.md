@@ -23,6 +23,7 @@ We're going to use GitHub Actions and a little bit of `curl` to accomplish what 
 * Head to <https://github.com/settings/tokens>.
 * Click the button to create a new token
 * Give it a name, such as "GitHub Pages Automated Build" or something similar.
+* For the permissions, you should be able to get by with `public_repo` (thanks to [gurucharan94](http://twitter.com/gurucharan94) for [pointing this out](https://github.com/SeanKilleen/seankilleen.github.io/issues/452)!)
 * Copy the access token somewhere temporarily, since you'll lose it after you navigate away.
 
 ### Step 2: Create a Secret for Your Access Token
