@@ -98,7 +98,7 @@ We'll also need a secret to pair with the client ID. How do we get that? By addi
 
 * Create a new secret. Give it a descriptive name, e.g. `Access to Key Vault certificate for signing`. Be sure to copy the secret somewhere temporarily, as this is the last time you'll see it.
 
-> ![The created secret]({{site.post-images}}/2020-05_SigningCert/14_CertPricipalName.png)
+> ![The created secret]({{site.post-images}}/2020-05_SigningCert/14_CertPrincipalName.png)
 
 ## Granting Key Vault Access to the Principal
 
