@@ -3,7 +3,6 @@ title: "How to Properly Add 'FYI events' in Outlook"
  
 date: 2015-02-27 10:15:00.000000000 -05:00
 comments: true
-popular: true
 ---
 ## Problem:
 Ever wanted to inform your coworkers of an event -- perhaps a calendar notification that you would be out of office? Outlook doesn't actually make this easy to do.
