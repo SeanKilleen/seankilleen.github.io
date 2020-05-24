@@ -8,7 +8,7 @@ tags:
   - opinions
 date: 2020-05-20 18:25 -0400
 ---
-Someone approached me with a question about considerations for a team who was considering scraping a commercial web site for data that was behind a paywall. The development team was thinking in terms of something being technically feasible, but not necessarily about the broader implications. 
+Someone approached me with a question about considerations for a team who was thinking about scraping a commercial web site for data that was behind a paywall. The development team was thinking in terms of something being technically feasible, but not necessarily about the broader implications. 
 
 TODO: Image -- "can" vs "should"
 
