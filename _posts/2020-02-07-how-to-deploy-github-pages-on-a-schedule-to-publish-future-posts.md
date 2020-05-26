@@ -44,7 +44,7 @@ future: false
 
 ### Step 4: Create a GitHub action
 
-In your repository, create a file at `/github/workflows/scheduled-posts.yml`. 
+In your repository, create a file at `/.github/workflows/scheduled-posts.yml`. 
 
 Drop the following lines into it:
 
