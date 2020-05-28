@@ -23,11 +23,11 @@ Here's what I did.
 
 (If you'd like help on any of the above, leave a message in the comments and I'll expand on this blog post.)
 
-* Pulled my repo
-* Went back and forth installing ruby and gems, installing missing libs along the way. 
+Then, I went back and forth on dependencies and installation stuff, but it wasn't that bad.
 
-## The shortcut, if you don't want to do all that
+## The shortcut, if you don't want to do all of that back and forth
 
+* Update package list: `sudo apt update`
 * For Ruby: `sudo apt-get install ruby-full`
 * For Bundler: `sudo gem install bundler`
 * Install dev dependencies that my gems need: `sudo apt-get install make gcc gpp build-essential zlib1g zlib1g-dev`
@@ -35,5 +35,12 @@ Here's what I did.
 * _now_ it works.
 * Run `bundle exec jekyll serve`
 * Watch it build and run in Linux and watch my blog be available in Windows.
+
+## The long steps
+
+* Pulled my repo
+* Went back and forth installing ruby and gems, installing missing libs along the way. 
+
+TODO: Add more steps.
 
 Sweet!
