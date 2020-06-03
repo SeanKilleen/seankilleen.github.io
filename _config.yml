@@ -126,6 +126,9 @@ author:
     - label: "dev.to"
       icon: "fab fa-fw fa-dev"
       url: "https://dev.to/SeanKilleen"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/seankilleen"
 
 # Site Footer
 footer:
