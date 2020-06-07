@@ -5,7 +5,7 @@ tags:
   - twitch
   - announcement
   - streaming
-date: 2020-06-07 14:54 -0400
+date: 2020-06-07 15:00 -0400
 ---
 I've been [starting to stream on Twitch](https://twitch.tv/sjkilleen).
 
