@@ -19,7 +19,7 @@ I was [the last one eliminated in the previous election](https://seankilleen.com
 * Diversity of candidates as an explicitly stated goal.
 * Term Limits
 * Staggered Election, and how it's being implemented.
-* Nominating committees as an encouraging force 
+* Nominating committees as an encouraginging/enabling body 
 * Voting system. Same one as last time, that seems to make sense.
 * Requirement of time commitment
 
