@@ -23,4 +23,5 @@ Here are the steps we took:
 * Transferred the resources from the transfer subscription into the client's subscription
 * Deleted the transfer subscription
 * Checked Azure DevOps to make sure things still ran correctly
+* Needed to switch the subscription in the DevOps releases to authorize the new subscription and select the now-transferred app service.
 * Set up the alerts again
