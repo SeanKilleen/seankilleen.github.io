@@ -18,6 +18,7 @@ Here are the steps we took:
 * Created a new subscription within my company's AD to hold the transfer items. This is because you can transfer a subscription but not resources from within a subscription. Called this the "Transfer Subscription".
 * Transferred resources into that subscription (had to leave a few metric alerts behind as they didn't transfer).
 * Waited (nervously) for the transfer to complete. This is the first time this was happening and it was using a running web site. 
+* It worked! Wow, that's cool.
 
 
 * Transferred the transfer subscription into their Azure AD
