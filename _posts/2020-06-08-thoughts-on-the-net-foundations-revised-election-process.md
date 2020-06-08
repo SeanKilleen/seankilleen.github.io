@@ -12,7 +12,11 @@ date: 2020-06-08 11:34 -0400
 ---
 Claire Ovotny, Director of the .NET Foundation, recently sent out an e-mail about the revised election strategy and policy.
 
-I was [the last one eliminated in the previous election](https://seankilleen.com/2019/05/that-time-almost-became-dotnet-fdn-board-member/), so I figured I would take a few minutes to at least jot down what I like and what could be improved about the new process.
+I was [the last one eliminated in the previous election](https://seankilleen.com/2019/05/that-time-almost-became-dotnet-fdn-board-member/), so I figured I would take a few minutes to at least jot down what I like and what I'm unsure about with the new process.
+
+## Before we get started
+
+Lest someone misinterpret the point of this post, I :heart: the .NET Foundation and its board and I think they want the best for the .NET community in general and work hard to achieve those things.
 
 ## What I Like
 
