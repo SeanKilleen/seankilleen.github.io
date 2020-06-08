@@ -19,8 +19,6 @@ Here are the steps we took:
 * Transferred resources into that subscription (had to leave a few metric alerts behind as they didn't transfer).
 * Waited (nervously) for the transfer to complete. This is the first time this was happening and it was using a running web site. 
 * It worked! Wow, that's cool.
-
-
 * Transferred the transfer subscription into their Azure AD
 * Transferred the resources from the transfer subscription into the client's subscription
 * Deleted the transfer subscription
