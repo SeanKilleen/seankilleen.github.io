@@ -1,5 +1,5 @@
 ---
-title: "Solved: .NET Core Azure AD in Docker Container Incorrectly Uses an
+title: "Solved: .NET Core Azure AD in Docker Container Incorrectly Uses a
   non-https redirect URI"
 comments: true
 tags:
