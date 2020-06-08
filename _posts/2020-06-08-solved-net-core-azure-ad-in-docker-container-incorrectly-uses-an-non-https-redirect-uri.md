@@ -10,7 +10,7 @@ tags:
   - azuread
   - authentication
   - https
-date: 2020-06-08 17:02 -0400
+date: 2020-06-11 10:00 -0400
 ---
 I've hit this problem several times and only recently figured it out.
 
@@ -66,3 +66,7 @@ app.UseForwardedHeaders();
 ```
 
 I mention it because I've forgotten that step twice now and then been confused as to why my changes didn't work. :laughing:
+
+---
+
+If you've run into a similar problem, I hope this helps. Happy coding!
