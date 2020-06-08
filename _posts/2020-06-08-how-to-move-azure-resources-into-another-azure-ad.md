@@ -22,6 +22,9 @@ Here are the steps we took:
 * Transferred the transfer subscription into their Azure AD
 * Transferred the resources from the transfer subscription into the client's subscription
 * Deleted the transfer subscription
-* Checked Azure DevOps to make sure things still ran correctly
-* Needed to switch the subscription in the DevOps pipelines and releases to authorize the new subscription and select the now-transferred app service.
 * Set up the metric alerts again.
+
+Checked Azure DevOps to make sure things still ran correctly. I needed to:
+
+* Go into each release job to specify the new azure subscription. The first time I did this, I had to authorize the new azure subscription. The second time, I had to select the existing subscription that I'd just authorized.
+* Go into Service Connections. Deleted the existing service connection for our container registry. Added a new service connection to the new subscription's container registry that we'd transferred, and gave the service connection the same name as the old one I'd just deleted.
