@@ -26,7 +26,7 @@ I was [the last one eliminated in the previous election](https://seankilleen.com
 ## What I'm Unsure About
 
 * Nominating Committees as a filter 
-* Board-chosen nominating committee
+* Board-chosen nominating committee. They're not on the committees themselves, but they can choose who is?
 * Requirements to be nominated (excepting that of the time commitment). 
 * Current board chosen requirements (that would, presumably, favor the current board)
 * Voting per seat vs the top candidates winning the seats.
