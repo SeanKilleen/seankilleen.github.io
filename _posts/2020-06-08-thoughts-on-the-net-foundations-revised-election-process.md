@@ -35,3 +35,4 @@ Lest someone misinterpret the point of this post, I :heart: the .NET Foundation 
 * Current board chosen requirements (that would, presumably, favor the current board)
 * Voting per seat vs the top candidates winning the seats.
 * A desire to filter down to 3 candidates per seat. Why? If an expression is the will of the membership, why filter down so quickly?
+* The Foundation's members didn't vote on it. The first ever elected board changed the rules without membership involvement. I'm not sure that's the precedent we want to be setting.
