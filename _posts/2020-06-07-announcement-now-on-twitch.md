@@ -7,7 +7,7 @@ tags:
   - streaming
 date: 2020-06-07 15:00 -0400
 ---
-I've been [starting to stream on Twitch](https://twitch.tv/sjkilleen).
+I've been [starting to stream on Twitch](https://twitch.tv/sjkilleen). Blahblahblah
 
 I've only done three sessions but it's been a blast so far. I've been enjoying working/thinking out loud, reasoning through problems when I get stuck, and meeting others in the community.
 
