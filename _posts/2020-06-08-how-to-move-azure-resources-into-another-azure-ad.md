@@ -7,7 +7,7 @@ tags:
   - subscriptions
   - management
   - resources
-date: 2020-06-08 08:47 -0400
+date: 2020-06-18 10:00 -0400
 ---
 I recently completed some work for a client. The work had been done within my company's Azure org, but I wanted to ensure the client had full control of their resources in a secure way. 
 
