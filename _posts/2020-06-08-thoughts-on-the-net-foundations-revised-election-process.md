@@ -10,20 +10,20 @@ tags:
   - opinion
 date: 2020-06-08 11:34 -0400
 ---
-Claire Ovotny, Director of the .NET Foundation, recently sent out an e-mail about the revised election strategy and policy.
+Claire Ovotny, Director of the .NET Foundation, recently sent out an e-mail about the [revised election strategy and policy](https://dotnetfoundation.org/about/election/policy).
 
-I was [the last one eliminated in the previous election](https://seankilleen.com/2019/05/that-time-almost-became-dotnet-fdn-board-member/), so I figured I would take a few minutes to at least jot down what I like and what I'm unsure about with the new process.
+I was [the last one eliminated in the previous election](https://seankilleen.com/2019/05/that-time-almost-became-dotnet-fdn-board-member/), so I figured I would take a few minutes to at least jot down what I like and what I'm unsure about with the new process, which I hadn't heard about until Claire's e-mail.
 
 ## Before we get started
 
 Lest someone misinterpret the point of this post, I :heart: the .NET Foundation and its board and I think they want the best for the .NET community in general and work hard to achieve those things.
 
-## What I Like
+## What I Like About the Process
 
-* Diversity of candidates as an explicitly stated goal.
-* Term Limits
+* **Diversity of candidates as an explicitly stated goal.** We recognized this need during the last election, and a nominating comittee has the ability to ensure that a slate of candidates is diverse.
+* **Term Limits.** I like the idea that a board's 
 * Staggered Election, and how it's being implemented.
-* Nominating committees as an encouraginging/enabling body 
+* Nominating committees as an encouraging/enabling body 
 * Voting system. Same one as last time, that seems to make sense.
 * Requirement of time commitment
 
