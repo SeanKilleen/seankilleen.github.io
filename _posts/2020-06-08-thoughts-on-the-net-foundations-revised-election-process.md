@@ -22,7 +22,7 @@ Also, my thoughts below are based on the current policy overall, not the diffs b
 
 ## What I Like About the Process
 
-* **Diversity of candidates as an explicitly stated goal.** We recognized this need during the last election, and a nominating comittee has the ability to ensure that a slate of candidates is diverse.
+* **Diversity of candidates as an explicitly stated goal.** We recognized this need during the last election, and a nominating committee has the ability to ensure that a slate of candidates is diverse.
 * **Term Limits.** I like the idea that someone can only serve on a board for a certain amount of time. We need a rotation and I hope we can find a way to honor past board members, perhaps on the Foundation site.
 * **Staggered terms, and how it's being implemented.** I like the idea that the some of the board will phase out at different times. I think having the continuity is important. I also like that after this election, the plan is to choose half the board at random for a shorter term. That seems like the fairest way to achieve this goal.
 * **Nominating committees as an encouraging/enabling body.** Empowering a nominating committee to seek out and encourage potential candidates is a great way to achieve a diverse slate. I like this as a purpose of the nominating committee.
