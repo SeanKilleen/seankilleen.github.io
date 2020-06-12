@@ -24,7 +24,11 @@ Here are the steps we took:
 * Deleted the transfer subscription
 * Set up the metric alerts again.
 
-Checked Azure DevOps to make sure things still ran correctly. I needed to:
+Then, I checked Azure DevOps to make sure things still ran correctly. I needed to:
 
-* Go into each release job to specify the new azure subscription. The first time I did this, I had to authorize the new azure subscription. The second time, I had to select the existing subscription that I'd just authorized.
+* Go into each release job to specify the new azure subscription. The first time I did this, I had to authorize the new azure subscription. The second time, I had to select the existing subscription that I'd just authorized. The UX was slightly confusing; for a few minutes I was accidentally attempting to re-authorize the same subscription rather than select it, which resulted in an error.)
 * Go into Service Connections. Deleted the existing service connection for our container registry. Added a new service connection to the new subscription's container registry that we'd transferred, and gave the service connection the same name as the old one I'd just deleted.
+
+With that, the transfer was complete! Whole thing took roughly an hour, and that's factoring in my caution and the time to move the resources.
+
+What experience have you had moving resources in the cloud? Sound off in the comments!
