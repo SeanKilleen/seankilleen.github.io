@@ -16,10 +16,15 @@ Could this work?
 * OSS projects need tie and contributions
 * Companies (and even individuals) normally have little economical incentive for someone to contribute
 
+[via LegalZoom](https://info.legalzoom.com/article/what-kind-donation-501c3):
+
+> When a nonprofit organization receives an in-kind contribution, the charity records the gift as revenue. To determine the amount of revenue, the charity must value the in-kind contribution at its [fair market value](https://www.legalzoom.com/knowledge/corporation/glossary/fair-market-value?_ga=2.263870860.1611812806.1592065210-921857059.1591147466) on the date of the donation.
+
 Idea:
 
 * We pioneer the legal aspects of making contributions and tracking them
 * We create a bot in concert with GitHub and Microsoft that allows users to request a "receipt" for their time spent.
+* We work to help set a legally accepted definition of fair market value for OSS contributions.
 * We find a way to help users group their contributions by org
 * We celebrate those organizations and individuals and we finally have a $ amount to put to it.
 
