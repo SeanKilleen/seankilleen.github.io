@@ -23,9 +23,10 @@ Could this work?
 Idea:
 
 * We pioneer the legal aspects of making contributions and tracking them
-* We create a bot in concert with GitHub and Microsoft that allows users to request a "receipt" for their time spent.
-* We work to help set a legally accepted definition of fair market value for OSS contributions.
+* We work to help set a legally accepted definition of fair market value for OSS contributions (as a guideline for orgs should they choose to use it)
+* We create a bot (in concert with some big orgs? GitHub and Microsoft?) that allows users to request a "receipt" for their time spent or get it approved ahead of time.
 * We find a way to help users group their contributions by org
+* We help advertise orgs that are willing to do this -- tags on their orgs that surface them, a web site to help find them, etc.
 * We celebrate those organizations and individuals and we finally have a $ amount to put to it.
 
 Challenges
