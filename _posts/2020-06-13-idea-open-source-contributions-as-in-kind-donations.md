@@ -31,5 +31,5 @@ Idea:
 
 Challenges
 
-* How to track the time spent or calculate the donation? A standard amount? Do we have to trust the people submitting and have them certify it?
+* How to track the time spent or calculate the donation? A standard amount? Do we have to trust the people submitting and have them certify it? I think this might need to be on the part of the donor; we could help organizations come up with amounts.
 * It looks like time / services generally cannot be deducted. However, would my hourly rate at my employer count as an out of pocket expense for them on their behalf?
