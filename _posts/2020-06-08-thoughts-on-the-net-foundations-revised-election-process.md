@@ -10,7 +10,7 @@ tags:
   - opinion
 date: 2020-06-08 11:34 -0400
 ---
-[Claire Ovotny](https://twitter.com/clairernovotny?lang=en), Director of the [.NET Foundation](https://dotnetfoundation.org/), recently sent out an e-mail about the [revised election strategy and policy](https://dotnetfoundation.org/about/election/policy) for this year's elections.
+[Claire Ovotny](https://twitter.com/clairernovotny), Director of the [.NET Foundation](https://dotnetfoundation.org/), recently sent out an e-mail about the [revised election strategy and policy](https://dotnetfoundation.org/about/election/policy) for this year's elections.
 
 I was [the last one eliminated in the previous election](https://seankilleen.com/2019/05/that-time-almost-became-dotnet-fdn-board-member/), so I figured I would take a few minutes to at least jot down what I like and what I'm unsure about with the overall election process, which I hadn't heard about until Claire's e-mail.
 
@@ -32,7 +32,7 @@ Also, my thoughts below are based on the current policy overall, not the diffs b
 ## What I'm Unsure About
 
 * **Nominating Committees as a filter for 3 candidates per seat.** I know there were a lot of candidates last year, but I quite liked that because I enjoyed the many varied ideas and experiences. I became aware of new people and their contributions, etc. Why are many candidates a problem? If an election is the expression of the membership, why filter down so quickly? I think a "primary" would be fine to select down to a certain number, if paring down is necessary. I think the nominating committee won't necessarily be looking for people like me, and I'm not sure that I will make it past a nominating committee in the future. 
-* **Board-chosen nominating committee.** Even though the board is not on the nominating comittee itself, they still choose who is from what I can tell. While I would trust the current board members to ensure there are no conflicts here, what about future board members? 
+* **Board-chosen nominating committee.** Even though the board is not on the nominating committee itself, they still choose who is from what I can tell. While I would trust the current board members to ensure there are no conflicts here, what about future board members? 
 * **Requirements to be nominated (excepting that of the time commitment).** Rules/guidelines mean that the elections will select for a certain kind of person. How will change be intoduced if participants are required to come from inside the system? Will we be looking at a slate of the same well-known people from inside the .NET Foundation's ecosystem? I get that this incentivizes others to participate, but I'm not sure it's the best approach. Furthermore, if diversity is a stated goal (and I agree it should be), does it constrain the candidate pool too much? 
 * **The current board chose these requirements.** I worry that the requirements therefore can't help but reflect the current make-up of the board. 
 * Voting per seat vs the top candidates winning the seats.
