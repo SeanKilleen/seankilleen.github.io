@@ -8,7 +8,7 @@ tags:
   - .net foundation
   - election
   - opinion
-date: 2020-06-08 11:34 -0400
+date: 2020-06-15 18:00 -0400
 ---
 [Claire Ovotny](https://twitter.com/clairernovotny), Director of the [.NET Foundation](https://dotnetfoundation.org/), recently sent out an e-mail about the [revised election strategy and policy](https://dotnetfoundation.org/about/election/policy) for this year's elections.
 
