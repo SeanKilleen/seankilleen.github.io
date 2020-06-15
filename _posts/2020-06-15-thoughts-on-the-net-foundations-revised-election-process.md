@@ -10,7 +10,7 @@ tags:
   - opinion
 date: 2020-06-15 18:00 -0400
 ---
-[Claire Ovotny](https://twitter.com/clairernovotny), Director of the [.NET Foundation](https://dotnetfoundation.org/), recently sent out an e-mail about the [revised election strategy and policy](https://dotnetfoundation.org/about/election/policy) for this year's elections.
+[Claire Novotny](https://twitter.com/clairernovotny), Director of the [.NET Foundation](https://dotnetfoundation.org/), recently sent out an e-mail about the [revised election strategy and policy](https://dotnetfoundation.org/about/election/policy) for this year's elections.
 
 I was [the last one eliminated in the previous election](https://seankilleen.com/2019/05/that-time-almost-became-dotnet-fdn-board-member/), so I figured I would take a few minutes to at least jot down what I like and what I'm unsure about with the overall election process, which I hadn't heard about until Claire's e-mail.
 
