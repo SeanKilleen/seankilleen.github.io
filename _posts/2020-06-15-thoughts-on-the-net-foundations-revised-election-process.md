@@ -39,6 +39,13 @@ Also, my thoughts below are based on the current policy overall, not the diffs b
 * **Requirements to be nominated (excepting that of the time commitment).** Rules/guidelines mean that the elections will select for a certain kind of person. How will change be introduced if participants are required to come from inside the system? Will we be looking at a slate of the same well-known people from inside the .NET Foundation's members? I get that this incentivizes others to participate, but I'm not sure it's the best approach. Furthermore, if diversity is a stated goal (and I agree it should be), does it constrain the candidate pool too much? My hope is that it does not, but I am unsure. 
 * **The current board chose these requirements.** I worry that the requirements therefore can't help but reflect the current make-up of the board. 
 * **Voting per seat vs the top candidates winning the seats.** If there are three open seats, I feel that those seats should go to the people who get the three top votes. Anything else feels like it could ignore the will of the people who vote on it.
+
+An update on this -- Claire has corrected that the open seats were a way of determining the overall amount of candidates, rather than nominating x people per seat. So while I think this could have been communicated better, I'm happy that they're not actually approaching things this way. I thought I'd read the policy pretty clearly.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">&gt;Voting per seat vs the top candidates winning the seats.<br><br>The top 3 (6 this time) win, full stop. There are not 3 or 6 individual contests.</p>&mdash; Claire Novotny (@clairernovotny) <a href="https://twitter.com/clairernovotny/status/1272672646635958274?ref_src=twsrc%5Etfw">June 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">That was intended to scope a total number.</p>&mdash; Claire Novotny (@clairernovotny) <a href="https://twitter.com/clairernovotny/status/1272677385620664320?ref_src=twsrc%5Etfw">June 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
 * **The Foundation's members didn't vote on it.** The first ever elected board changed the rules without membership vote on it. I'm not sure that's the precedent we want to be setting.
 
 ## So, Will I Run?
