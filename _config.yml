@@ -27,7 +27,7 @@ description              : "Ramblings on bytes and life from a digital thirty-so
 url                      : "https://SeanKilleen.com"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "SeanKilleen/seankilleen.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-defaultbranch            : "defaultbranch"
+defaultbranch            : "main"
 #teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
