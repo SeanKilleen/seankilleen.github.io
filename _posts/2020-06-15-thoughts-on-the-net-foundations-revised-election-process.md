@@ -40,13 +40,19 @@ Also, my thoughts below are based on the current policy overall, not the diffs b
 * **The current board chose these requirements.** I worry that the requirements therefore can't help but reflect the current make-up of the board. 
 * **Voting per seat vs the top candidates winning the seats.** If there are three open seats, I feel that those seats should go to the people who get the three top votes. Anything else feels like it could ignore the will of the people who vote on it.
 
-An update on this -- Claire has corrected that the open seats were a way of determining the overall amount of candidates, rather than nominating x people per seat. So while I think this could have been communicated better, I'm happy that they're not actually approaching things this way. I thought I'd read the policy pretty clearly.
+**Update:** Claire has corrected that the open seats were a way of determining the overall amount of candidates, rather than nominating x people per seat. So while I think this could have been communicated better, I'm happy that they're not actually approaching things this way. I thought I'd read the policy pretty clearly.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">&gt;Voting per seat vs the top candidates winning the seats.<br><br>The top 3 (6 this time) win, full stop. There are not 3 or 6 individual contests.</p>&mdash; Claire Novotny (@clairernovotny) <a href="https://twitter.com/clairernovotny/status/1272672646635958274?ref_src=twsrc%5Etfw">June 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">That was intended to scope a total number.</p>&mdash; Claire Novotny (@clairernovotny) <a href="https://twitter.com/clairernovotny/status/1272677385620664320?ref_src=twsrc%5Etfw">June 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 * **The Foundation's members didn't vote on it.** The first ever elected board changed the rules without membership vote on it. I'm not sure that's the precedent we want to be setting.
+
+**Update:** Claire responded on this one too, though the response was not as satisfying to me as her others.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">&gt; The Foundation’s members didn’t vote on it. <br><br>The Foundation doesn&#39;t run by referendum of all members. The members elect the board and the board sets the policies, rules, etc. That&#39;s why the elections matter.</p>&mdash; Claire Novotny (@clairernovotny) <a href="https://twitter.com/clairernovotny/status/1272673004988895232?ref_src=twsrc%5Etfw">June 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+In this exchange, she cites the need to get the election moving quickly after changing the process and not wanting to delay further. I think had the board been transparent about the process changes it was looking to make, and involved the community earlier, they could have accomplished both an increased understanding of delayed elections and a procces that helped people feel better about the election process overall. But honestly, that doesn't matter so much at this point -- time to move forward.
 
 ## So, Will I Run?
 
