@@ -45,7 +45,7 @@ comments:
 #     theme                : # "github-light" (default), "github-dark"
 # staticman:
 #   allowedFields          : # ['name', 'email', 'url', 'message']
-#   branch                 : # "master"
+#   branch                 : # "main"
 #   commitMessage          : # "New comment by {fields.name}"
 #   filename               : # comment-{@timestamp}
 #   format                 : # "yml"
