@@ -9,7 +9,7 @@ tags:
   - netlify
   - azure devops
   - ""
-date: 2020-06-16 16:21 -0400
+date: 2020-06-17 10:00 -0400
 ---
 There's been some discussion lately about the term `master` for a branch as insensitive and a term that can make others feel uncomfortable and rise to the level of a micro-aggression by default. 
 
