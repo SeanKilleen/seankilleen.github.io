@@ -24,7 +24,7 @@ I worry that there are some dead links about.
 
 Now you'll pull down `html-proofer` in your bundle install. So how do we get it to actually do the installation?
 
-Modify your Rakefile to add something along these lines (my current one [can be found here](https://github.com/seankilleen/seankilleen.github.io/blob/master/RakeFile)): 
+Modify your Rakefile to add something along these lines (my current one [can be found here](https://github.com/seankilleen/seankilleen.github.io/blob/main/RakeFile)): 
 
 ```ruby
 require 'html-proofer' # Ensures we have the html-proofer library available to use
