@@ -10,7 +10,7 @@ tags:
   - azuread
   - authentication
   - https
-date: 2020-06-11 10:00 -0400
+date: 2020-06-18 07:00 -0400
 ---
 I've hit this problem several times and only recently figured it out.
 
