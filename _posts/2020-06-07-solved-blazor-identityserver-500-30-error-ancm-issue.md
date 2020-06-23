@@ -19,7 +19,7 @@ My Dad is building a client-side Blazor app, because he's more hip with technolo
 
 ## Problem
 
-When publishing / deploying the app, upon it attempting to talk to start-up and communicate with a Web API, we see an error of `HTTP Error 500.30 - ANCM In-Process Start Failure`
+When publishing / deploying the app, upon it attempting to start up and communicate with a Web API, we see an error of `HTTP Error 500.30 - ANCM In-Process Start Failure`.
 
 ## Solution
 
