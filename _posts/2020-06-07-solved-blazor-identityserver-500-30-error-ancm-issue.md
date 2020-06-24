@@ -51,19 +51,19 @@ At this point, you should have a `.pfx` file with the appropriate password that 
 * Open the Azure portal and navigate to your web site
 * On the left-hand settings menu, select `TLS/SSL Settings`
 
-> ![TLS SSL Menu]({{site.post-images}}/2020-06_BlazorANCM/01_TlsSslSettings.png)
+> ![TLS SSL Menu]({{site.post-images}}/2020-06_BlazorANCM/01_TlsSslSettings.png){:height="50%" width="50%"}
 
 * In the top menu, select `Private Key Certificates (.pfx)`
 
-> ![Private certificates menu]({{site.post-images}}/2020-06_BlazorANCM/02_PrivateCertificates.png)
+> ![Private certificates menu]({{site.post-images}}/2020-06_BlazorANCM/02_PrivateCertificates.png){:height="50%" width="50%"}
 
 * From the sub-menu, select upload.
 
-![Upload menu button]({{site.post-images}}/2020-06_BlazorANCM/03_Upload.png)
+![Upload menu button]({{site.post-images}}/2020-06_BlazorANCM/03_Upload.png){:height="50%" width="50%"}
 
 * Select the cert location and enter the password you previously chose for it.
 
-![Certificate upload dialog]({{site.post-images}}/2020-06_BlazorANCM/04_CertificateInfo.png)
+![Certificate upload dialog]({{site.post-images}}/2020-06_BlazorANCM/04_CertificateInfo.png){:height="50%" width="50%"}
 
 * Upload the cert. You will now see it in the certificates list.
 
