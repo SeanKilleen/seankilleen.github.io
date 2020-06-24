@@ -9,7 +9,7 @@ tags:
   - security
   - powershell
   - identityserver
-date: 2020-06-07 14:31 -0400
+date: 2020-06-24 8:00 -0400
 ---
 Ran into this this issue while hacking on a problem with my Dad, [Jim Killeen](https://twitter.com/JimK_). (Side note: looking at tech stuff with my Dad remains one of my great joys in life.) 
 
