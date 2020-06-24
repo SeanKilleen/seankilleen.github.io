@@ -27,7 +27,7 @@ This is caused because the client-side web app cannot communicate securely with 
 
 ### Creating the Self-Signed Certificate
 
-Modify the variables in the below powershell to create a self-signed certificate.
+Modify the variables in the below powershell and then execute it (save as a `.ps1` and run it or enter it line by line into a console) to create a self-signed certificate.
 
 ```powershell
 $AzureWebsiteName = "mywebsite.azurewebsites.net"
