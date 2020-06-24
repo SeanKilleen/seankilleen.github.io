@@ -67,6 +67,16 @@ At this point, you should have a `.pfx` file with the appropriate password that 
 
 * Upload the cert. You will now see it in the certificates list.
 
+### Add the Certificate Thumbprint to your Azure Web Site Configuration
+
+Next, we need to ensure that Azure can access the certificate you've provided. There's a configuration setting for that.
+
+* In your certificates list, you should see your newly uploaded certificate
+* Click on the certificate and copy its thumbprint
+* Go to the Configuration variables for your web application
+* Create a variable called `WEBSITE_LOAD_CERTIFICATES` and set its value to the thumprint you copied
+* Save the settings.
+
 ### Updating the IdentityServer Settings
 
 Okay, so there's one more part to go. In your `appSettings.json` or wherever that is being transformed, add or edit IdentityServer configuration as follows:
