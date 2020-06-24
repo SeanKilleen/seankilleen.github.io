@@ -87,3 +87,5 @@ Replacing `CN=MyApplication with your site name, e.g. `CN=mywebsite.azurewebsite
 ### Give it a spin!
 
 Open up the application in Azure, annnd success. :) 
+
+I hope this helps someone out. Happy coding!
