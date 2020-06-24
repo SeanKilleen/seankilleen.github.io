@@ -27,6 +27,25 @@ This is caused because the client-side web app cannot communicate securely with 
 
 ### Creating the Self-Signed Certificate
 
+Modify the variables in the below powershell to create a self-signed certificate.
+
+```powershell
+$AzureWebsiteName = "mywebsite.azurewebsites.net"
+$CertPassword = "MyPassword!123" # Pick a better password than this. Please.
+$PfxOutputLocation = "C:\temp\cert.pfx" # Folder must already exist
+
+#### You shouldn't need to modify anything below this line.
+
+$cert = New-SelfSignedCertificate -certstorelocation cert:\localmachine\my -dnsname $AzureWebsiteName
+	
+$pwd = ConvertTo-SecureString -String $CertPassword -Force -AsPlainText
+
+$path = 'cert:\localMachine\my\' + $cert.thumbprint 
+Export-PfxCertificate -cert $path -FilePath $PfxOutputLocation -Password $pwd
+```
+
+At this point, you should have a `.pfx` file with the appropriate password that you specified.
+
 ### Uploading the Certificate into Azure
 
 ### Updating the IdentityServer Settings
