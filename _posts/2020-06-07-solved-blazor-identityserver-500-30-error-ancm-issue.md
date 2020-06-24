@@ -82,7 +82,7 @@ Okay, so there's one more part to go. In your `appSettings.json` or wherever tha
 }
 ```
 
-Replacing `CN=MyApplication with your site name, e.g. `CN=mywebsite.azurewebsites.net`.
+Replacing `CN=MyApplication` with your site name, e.g. `CN=mywebsite.azurewebsites.net`.
 
 ### Give it a spin!
 
