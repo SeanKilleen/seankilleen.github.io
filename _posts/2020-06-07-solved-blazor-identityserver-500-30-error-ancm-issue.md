@@ -48,8 +48,42 @@ At this point, you should have a `.pfx` file with the appropriate password that 
 
 ### Uploading the Certificate into Azure
 
+* Open the Azure portal and navigate to your web site
+* On the left-hand settings menu, select `TLS/SSL Settings`
+
+TODO: Pic
+
+* In the top menu, select `Private Key Certificates (.pfx)`
+
+TODO: Pic
+
+* From the sub-menu, select upload.
+
+TODO: Pic
+
+* Select the cert location and enter the password you previously chose for it.
+
+TODO: Pic
+
+* Upload the cert. You will now see it in the certificates list.
+
 ### Updating the IdentityServer Settings
 
+Okay, so there's one more part to go. In your `appSettings.json` or wherever that is being transformed, add or edit IdentityServer configuration as follows:
 
+```json
+"IdentityServer": {
+  "Key": {
+    "Type": "Store",
+    "StoreName": "My",
+    "StoreLocation": "CurrentUser",
+    "Name": "CN=MyApplication"
+  }
+}
+```
 
-Annnd success. :) 
+Replacing `CN=MyApplication with your site name, e.g. `CN=mywebsite.azurewebsites.net`.
+
+### Give it a spin!
+
+Open up the application in Azure, annnd success. :) 
