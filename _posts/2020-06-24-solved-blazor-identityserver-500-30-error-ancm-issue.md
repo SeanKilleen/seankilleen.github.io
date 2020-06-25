@@ -63,7 +63,7 @@ At this point, you should have a `.pfx` file with the appropriate password that 
 
 * Select the cert location and enter the password you previously chose for it.
 
-![Certificate upload dialog]({{site.post-images}}/2020-06_BlazorANCM/04_CertificateInfo.png){:height="50%" width="50%"}
+![Certificate upload dialog]({{site.post-images}}/2020-06_BlazorANCM/04_CertInfo.png){:height="50%" width="50%"}
 
 * Upload the cert. You will now see it in the certificates list.
 
