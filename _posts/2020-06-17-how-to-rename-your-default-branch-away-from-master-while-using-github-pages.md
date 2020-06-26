@@ -10,7 +10,7 @@ tags:
   - azure devops
 date: 2020-06-17 10:00 -0400
 ---
-There's been some discussion lately about the term `master` for a branch as insensitive and a term that can make others feel uncomfortable and rise to the level of a micro-aggression by default. 
+There's been some discussion lately about the term `master` for a branch as insensitive and a term that can make others feel uncomfortable and rise to the level of a micro-aggression by default.
 
 My stance on this:
 
@@ -21,18 +21,18 @@ My stance on this:
 
 ## Is it easy to do?
 
-Yes, and a little bit no. 
+Yes, and a little bit no.
 
-Yes, in the sense that renaming branches and pushing them is easy. Less so in the sense that you have to account for the ecosystem around the branches (builds, deploys, other products, etc.) 
+Yes, in the sense that renaming branches and pushing them is easy. Less so in the sense that you have to account for the ecosystem around the branches (builds, deploys, other products, etc.)
 
-## So, let's jump in and do it! 
+## So, let's jump in and do it!
 
-I did a stream to demonstrate this, and I'll post the steps below as well. 
+I did a stream to demonstrate this, and I'll post the steps below as well.
 
 The stream covers two repositories:
 
 * My <https://SeanKilleen.com> site, which is a Jekyll-based blog that uses Netlify for previews, Netlify Admin as a CMS, and GitHub pages to publish the content.
-* A public repository I've been working on that's a .NET core app packaged up into a container by Azure DevOps. 
+* A public repository I've been working on that's a .NET core app packaged up into a container by Azure DevOps.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WlLpZt5Is2Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -55,13 +55,13 @@ The stream covers two repositories:
 * Edited my azure pipelines yaml to replace the branch names
 * In Azure Pipelines, updated my release so that it was looking for artifacts from the `main` branch.
 
-## "But this is virtue signaling / performative allyship!" 
+## "But this is virtue signaling / performative allyship!"
 
 I don't refuse to do good things because someone might look at it and say I was trying to do good things. Let's just...do the better thing and be better.
 
 Also, like I said, this isn't the only way to attempt to be an ally. I didn't start with this and I certainly won't stop with it.
 
-## "But this is absurd / ridiculous! We shouldn't have to do this." 
+## "But this is absurd / ridiculous! We shouldn't have to do this."
 
 You're probably not the target audience for this post. But please re-examine this view. I hope you'll reconsider.
 
