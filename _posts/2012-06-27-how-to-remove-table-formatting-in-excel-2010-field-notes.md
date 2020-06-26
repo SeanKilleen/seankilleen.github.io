@@ -9,11 +9,13 @@ redirect_from:
 
 ---
 ### Problem:
+
 I added a table in Excel 2010 and now I need to get rid of the table aspect and make them normal cells again.
 
 Just changing the formatting to "Normal" doesn't remove the programmatic features of table formatting (I can still sort my data as a table, etc. which I don't want to be able to do.
 
 ### Solution
+
 This is called "converting to a range." To convert a table back to a range:
 
 * Highlight the table in your spreadsheet
@@ -24,9 +26,8 @@ This is called "converting to a range." To convert a table back to a range:
 
 ### See it in Action
 
-I put together an animated version here for those who are more visual: 
+I put together an animated version here for those who are more visual:
 
 ![An animation of removing table formatting]({{site.post-images}}/Excel_RemoveTableFormatting.gif)
-
 
 Hope this helps!
