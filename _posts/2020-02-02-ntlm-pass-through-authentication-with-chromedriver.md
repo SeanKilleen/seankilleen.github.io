@@ -27,7 +27,7 @@ The key is to add the following to your registry, to ensure you're enabling the 
 
 An example `.reg` file is below that you can modify to use. After running applying these settings to our build agents, the problems were resolved.
 
-```
+```ini
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome]
