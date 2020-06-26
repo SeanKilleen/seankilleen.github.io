@@ -8,7 +8,7 @@ date: '2020-04-01 10:00 -0400'
 ---
 I was recently asked how to create a PowerShell command alias that accepts parameters.
 
-The asker wanted to know how to run a command such as: 
+The asker wanted to know how to run a command such as:
 
 `ffmpeg -i "take 1.avi" -vcodec h264 -acodec mp2 output.mp4`
 
@@ -26,12 +26,12 @@ We'll be able to get the desired outcome in just a few steps, by creating our ow
 
 We'll create a function to do what we need to do, with the appropriate parameters.
 
-For example, let's say we call the function `Encode-Video`: 
+For example, let's say we call the function `Encode-Video`:
 
 ```powershell
 function Encode-Video([string]$VideoFileName, [string]$OutputFileName)
-{ 
-    ffmpeg -i "$VideoFileName" -vcodec h264 -acodec mp2 "$OutputFileName" 
+{
+    ffmpeg -i "$VideoFileName" -vcodec h264 -acodec mp2 "$OutputFileName"
 }
 ```
 
