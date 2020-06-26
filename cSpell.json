@@ -15,7 +15,11 @@
         "CMDB",
         "Camtasia",
         "Greenshot",
-        "screencast"    
+        "screencast",
+        "Opserver",
+        "Ninject",
+        "Pingendo",
+        "Blackbox"
     ],
     "ignoreWords": [
         "seankilleen",
