@@ -38,7 +38,11 @@
         "seankilleen",
         "devkit",
         "GOOG",
-        "FIXURL"
+        "FIXURL",
+        "certstorelocation",
+        "localmachine",
+        "dnsname",
+        "azurewebsites"
     ],
     "ignoreRegExpList": [
         "\\((.*)\\)", // Markdown links
