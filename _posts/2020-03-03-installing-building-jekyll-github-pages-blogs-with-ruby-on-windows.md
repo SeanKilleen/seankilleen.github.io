@@ -6,7 +6,7 @@ comments: true
 tags:
   - jekyll
   - ruby
-  - rindows
+  - windows
   - github pages
   - wsl
 date: '2020-03-03 09:00 -0500'
