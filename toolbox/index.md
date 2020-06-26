@@ -89,7 +89,7 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 * **[Jenkins] [Jenkins]** – A worse version of TeamCity. :) No but seriously, while the UI is lacking, it's highly customizable. For example, the BlueOcean plugin for Jenkins is an incredibly promising way to visualize and parallelize build pipelines.
 * **[OctopusDeploy] [OctopusDeploy]** - Takes over where TeamCity leaves off. When TeamCity produces a package of code, OctopusDeploy is the best tool for creating deployments, transforming configurations, and visualizing the process to promote your build through your various environments, all the way through to production.
 * **[RoundhousE] [RoundhousE]** - A database migration utility for .NET using SQL Files and versioning based on source control. A popular alternative to EntityFramework code-first migrations.
-* **[PayPal's AATT] [PayPal's AATT]** - A NodeJS baased toolkit for automating the accessibility testing of web pages.
+* **[PayPal's AATT] [PayPal's AATT]** - A NodeJS-based toolkit for automating the accessibility testing of web pages.
 * **[PhantomJS] [PhantomJS]** - A headless webkit-based browser that can be used to run acceptance tests quickly and output screenshots of the results.
 
 ## Infrastructure / Ecosystem Tools
