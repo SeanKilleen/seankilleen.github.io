@@ -7,7 +7,15 @@
         "Feedly",
         "Womp",
         "Disqus",
-        "thumbprint"
+        "thumbprint",
+        "Nagios",
+        "Serilog",
+        "OTRS",
+        "ITIL",
+        "CMDB",
+        "Camtasia",
+        "Greenshot",
+        "screencast"    
     ],
     "ignoreWords": [
         "seankilleen",
