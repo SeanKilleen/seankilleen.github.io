@@ -94,7 +94,7 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 
 ## Infrastructure / Ecosystem Tools
 
-* **[Seq] [Seq]** - A commercial tool for searching and visualizing sturcture logs such as those produced by Serilog. Makes it insanely easy to search logs to diagnose problems. Great price points for almost any business. I used this with great success on a commercial project a little while back.
+* **[Seq] [Seq]** - A commercial tool for searching and visualizing structure logs such as those produced by Serilog. Makes it insanely easy to search logs to diagnose problems. Great price points for almost any business. I used this with great success on a commercial project a little while back.
 * **[Terraform] [Terraform]** - Sometimes your app needs a lot of infrastructure, or you need to manage that across cloud providers. Terraform is a tool that allows you to write out your infrastructure (e.g. 3 servers, 2 network switches, some firewall rules, etc.) and then spin up a new environment or apply changes to an existing environment. A breakthrough for deploying application infrastructure in a reliable way without huge handoffs between the "dev" and "ops" pieces of DevOps.
 * **[MiniProfiler] [MiniProfiler]** - A great profiler that shows you how long things take right within your web app, profiling database requests and surfacing common issues. Originally built by the folks at StackExchange, so it's battle-tested.
 * **[Opserver] [Opserver]** - A monitoring system used by the folks at StackExchange. Could be very helpful for even a basic .NET shop. New monitoring pieces being added all the time.
@@ -115,7 +115,7 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 * **[Greenshot] [Greenshot]** - An excellent free tool for capturing screenshots and saving to various destinations.
 * **[ImgBurn] [ImgBurn]** - A tool for creating disc images
 * **[Virtual CloneDrive] [Virtual CloneDrive]** – a good free tool to mount disc images.
-* **[LogParser 2.x Studio] [LogParser 2.x Studio]** - A tool for easily loading and quering log files in classic formats (such as IIS logs)
+* **[LogParser 2.x Studio] [LogParser 2.x Studio]** - A tool for easily loading and qyuering log files in classic formats (such as IIS logs)
 * **[RDCMan] [RDCMan]** - A tool for managing many remote desktop connections. Useful in large client environments where you may need to remote into many machines.
 
 [ActiveInbox]: http://activeinboxhq.com
