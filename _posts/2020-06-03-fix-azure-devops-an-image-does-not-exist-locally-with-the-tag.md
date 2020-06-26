@@ -24,7 +24,7 @@ The fix in this case actually has to do with how the Azure DevOps tasks work, in
 
 I pulled the repo and looked into [the DockerV2 task's source code](https://github.com/microsoft/azure-pipelines-tasks/tree/master/Tasks/DockerV2) to find the solution.
 
-I noticed that in the build and publish tasks specify a registry name if the `containerRegistry` value is set or the service connection exists. My publish step was specifying this attribute, but my build step was not. 
+I noticed that in the build and publish tasks specify a registry name if the `containerRegistry` value is set or the service connection exists. My publish step was specifying this attribute, but my build step was not.
 
 I modified the build step to also pass in this parameter, and the correct tags were created across both steps to resolve the issue.
 

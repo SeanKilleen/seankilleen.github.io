@@ -6,9 +6,11 @@ comments: true
 
 ---
 ### Problem:
+
 I hid the Outlook envelope by accident, thinking it was temporary. Of course, it isn't. D'oh.
 
 ### Solution
+
 To get it back:
 
 * `Tools Menu > Options`

@@ -8,7 +8,7 @@ date: 2013-01-13 12:45:00.000000000 -05:00
 ---
 I use [Google Chrome] for a lot of browsing, and I've been getting into [Delicious] for archiving content that I know I might want to find again but don't want hanging out in my Google Reader. It's sort of a take on [Scott Hanselman's workflow] for reading and archiving.
 
-The other day I thought: it would be nice if I had a keyboard shortcut while browsing to save to delicious, instead of navigating through the bookmarks bar to click it? And a short google search later, up popped [a great process]() (Ed. note: unfortunately this link has been lost to time.) from the Switched Download Squad.
+The other day I thought: it would be nice if I had a keyboard shortcut while browsing to save to delicious, instead of navigating through the bookmarks bar to click it? And a short google search later, up popped a great process (Ed. note: unfortunately this link has been lost to time.) from the Switched Download Squad.
 
 #### The abbreviated steps are:
 
@@ -19,6 +19,7 @@ The other day I thought: it would be nice if I had a keyboard shortcut while bro
 * Paste in the javascript.
 
 #### Now, to use it:
+
 * Navigate to a page that you want to save
 * Type `CTRL + L` (this activates the search bar), then your keyword (`d` in my case), then enter.
 

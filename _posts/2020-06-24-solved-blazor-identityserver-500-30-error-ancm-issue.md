@@ -11,7 +11,7 @@ tags:
   - identityserver
 date: 2020-06-24 8:00 -0400
 ---
-Ran into this this issue while hacking on a problem with my Dad, [Jim Killeen](https://twitter.com/JimK_). (Side note: looking at tech stuff with my Dad remains one of my great joys in life.) 
+Ran into this this issue while hacking on a problem with my Dad, [Jim Killeen](https://twitter.com/JimK_). (Side note: looking at tech stuff with my Dad remains one of my great joys in life.)
 
 ## Context
 
@@ -37,10 +37,10 @@ $PfxOutputLocation = "C:\temp\cert.pfx" # Folder must already exist
 #### You shouldn't need to modify anything below this line.
 
 $cert = New-SelfSignedCertificate -certstorelocation cert:\localmachine\my -dnsname $AzureWebsiteName
-	
+
 $pwd = ConvertTo-SecureString -String $CertPassword -Force -AsPlainText
 
-$path = 'cert:\localMachine\my\' + $cert.thumbprint 
+$path = 'cert:\localMachine\my\' + $cert.thumbprint
 Export-PfxCertificate -cert $path -FilePath $PfxOutputLocation -Password $pwd
 ```
 
@@ -96,6 +96,6 @@ Replacing `CN=MyApplication` with your site name, e.g. `CN=mywebsite.azurewebsit
 
 ### Give it a spin!
 
-Open up the application in Azure, annnd success. :) 
+Open up the application in Azure, annnd success. :smile:
 
 I hope this helps someone out. Happy coding!

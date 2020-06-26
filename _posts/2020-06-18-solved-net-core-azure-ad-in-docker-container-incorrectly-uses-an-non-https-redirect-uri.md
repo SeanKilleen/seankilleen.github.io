@@ -24,11 +24,11 @@ I'd expect to be able to authenticate, but instead I see:
 
 > AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application
 
-And when I look at the URL, indeed my webapp appears to be passing along a redirect URI that begins with `http`, not `https`. 
+And when I look at the URL, indeed my webapp appears to be passing along a redirect URI that begins with `http`, not `https`.
 
 ## The Issue
 
-I started [an issue in the ASP.NET Core Repository](https://github.com/dotnet/aspnetcore/issues/22572) to try to get to the bottom of it. 
+I started [an issue in the ASP.NET Core Repository](https://github.com/dotnet/aspnetcore/issues/22572) to try to get to the bottom of it.
 
 [Barry Dorrans](https://twitter.com/blowdart) (Thanks Barry!)  aptly noted:
 
@@ -36,7 +36,7 @@ I started [an issue in the ASP.NET Core Repository](https://github.com/dotnet/as
 
 This seems to be a templating issue more than anything. When enabling both Azure AD login and Docker support, you need to be sure to forward headers. But, this doesn't happen out of the box with the template. (I've created [an issue on the templating repository](https://github.com/dotnet/templating/issues/2394) to try to address that.)
 
-## The Fix 
+## The Fix
 
 The fix comes in two parts.
 
@@ -45,17 +45,17 @@ First, in the `ConfigureServices` method of your `Startup.cs` class, add:
 ```csharp
 services.Configure<ForwardedHeadersOptions>(options =>
 {
-	options.ForwardedHeaders = ForwardedHeaders.XForwardedFor |
-							   ForwardedHeaders.XForwardedProto;
-	// Only loopback proxies are allowed by default.
-	// Clear that restriction because forwarders are enabled by explicit 
-	// configuration.
-	options.KnownNetworks.Clear();
-	options.KnownProxies.Clear();
+  options.ForwardedHeaders = ForwardedHeaders.XForwardedFor |
+                ForwardedHeaders.XForwardedProto;
+  // Only loopback proxies are allowed by default.
+  // Clear that restriction because forwarders are enabled by explicit
+  // configuration.
+  options.KnownNetworks.Clear();
+  options.KnownProxies.Clear();
 });
 ```
 
-You'll also need to bring in a reference: `using Microsoft.AspNetCore.HttpOverrides;` 
+You'll also need to bring in a reference: `using Microsoft.AspNetCore.HttpOverrides;`
 
 This sets up the header forwarding for https.
 

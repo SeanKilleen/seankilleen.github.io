@@ -32,7 +32,7 @@ We're going to use GitHub Actions and a little bit of `curl` to accomplish what 
 * Navigate to Settings --> Secrets
 * Create a new secret, named `PAGES_ACCESS_TOKEN` and paste in your personal access token that you created.
 
-### Step 3: Update Your Jekyll Configuration 
+### Step 3: Update Your Jekyll Configuration
 
 You'll need to disable the publishing of future posts.
 
@@ -44,7 +44,7 @@ future: false
 
 ### Step 4: Create a GitHub action
 
-In your repository, create a file at `/.github/workflows/scheduled-posts.yml`. 
+In your repository, create a file at `/.github/workflows/scheduled-posts.yml`.
 
 Drop the following lines into it:
 
@@ -69,7 +69,7 @@ Let's break this down line by line:
 * First, we give the workflow a name
 * Then, we specify that it will run on a cron schedule of every hour, on the hour.
 * We then specify what jobs the action will run.
-* In this case, we specify a job called `curl`. 
+* In this case, we specify a job called `curl`.
 * We create one step underneath this job, which we also call `curl`.
 * We specify that we're using a container, in this case `wei/curl`, which is a container that installs curl on top of Alpine Linux.
 

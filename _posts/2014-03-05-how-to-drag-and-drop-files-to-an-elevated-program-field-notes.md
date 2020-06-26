@@ -21,12 +21,13 @@ Thanks to [a handy discussion on the HowToGeek site][HTG Link], I found the foll
 [Caveat: this [works on my machine][WOMM Link], a work desktop using Windows 7.]
 
 #### To enable an elevated windows explorer:
+
 * Right-click on the task bar and select `Start Task Manager`
 * In Task Manager, select `File > New Task (Run...)`
-* You should see a note that this will be run using administrative privileges. 
+* You should see a note that this will be run using administrative privileges.
 
 * Enter `explorer.exe` and hit enter.
-You can now drag and drop files into other elevated windows with ease! 
+You can now drag and drop files into other elevated windows with ease!
 
 [HTG Link]: http://www.howtogeek.com/forum/topic/how-to-run-explorerexe-shell-as-an-administrator-win7
 [WOMM Link]: http://blog.codinghorror.com/the-works-on-my-machine-certification-program/
