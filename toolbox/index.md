@@ -115,7 +115,7 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 * **[Greenshot] [Greenshot]** - An excellent free tool for capturing screenshots and saving to various destinations.
 * **[ImgBurn] [ImgBurn]** - A tool for creating disc images
 * **[Virtual CloneDrive] [Virtual CloneDrive]** – a good free tool to mount disc images.
-* **[LogParser 2.x Studio] [LogParser 2.x Studio]** - A tool for easily loading and qyuering log files in classic formats (such as IIS logs)
+* **[LogParser 2.x Studio] [LogParser 2.x Studio]** - A tool for easily loading and querying log files in classic formats (such as IIS logs)
 * **[RDCMan] [RDCMan]** - A tool for managing many remote desktop connections. Useful in large client environments where you may need to remote into many machines.
 
 [ActiveInbox]: http://activeinboxhq.com
