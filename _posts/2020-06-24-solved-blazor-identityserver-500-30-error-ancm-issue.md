@@ -74,7 +74,7 @@ Next, we need to ensure that Azure can access the certificate you've provided. T
 * In your certificates list, you should see your newly uploaded certificate
 * Click on the certificate and copy its thumbprint
 * Go to the Configuration variables for your web application
-* Create a variable called `WEBSITE_LOAD_CERTIFICATES` and set its value to the thumprint you copied
+* Create a variable called `WEBSITE_LOAD_CERTIFICATES` and set its value to the thumbprint you copied
 * Save the settings.
 
 ### Updating the IdentityServer Settings
