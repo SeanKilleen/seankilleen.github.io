@@ -67,7 +67,7 @@ The items below are links -- feel free to click and explore!
 
 ## Favorite ReSharper Extensions
 
-ReSharper is such a popular plugin that I have my own favorite extensions for it, sourceable from the ReSharper plugins menu:
+ReSharper is such a popular plugin that I have my own favorite extensions for it, source-able from the ReSharper plugins menu:
 
 * **ReSpeller** - Checks for typos in your code. Has saved me from a bad method name many a time.
 * **Enhanced Tooltip** - Better visual tooltips when mousing over code.
