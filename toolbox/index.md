@@ -14,7 +14,7 @@ The items below are links -- feel free to click and explore!
 * **[CardCounter for Trello with Totalizer] [CardCounter for Trello]**: This extension is simple -- it adds a count of cards to every Trello List.
 * **[CheckerPlus for Gmail] [CheckerPlus for Gmail]**: A fantastic extension to help me quickly see incoming e-mail from multiple Gmail accounts.
 * **[Feedly] [Feedly]**: The best RSS Reader app, in my opinion.
-* **[Github Selfies] [Github Selfies]**: Allows you to take selfie animations while commenting on issues or pull requests in Github.
+* **[GitHub Selfies] [GitHub Selfies]**: Allows you to take selfie animations while commenting on issues or pull requests in GitHub.
 * **[Pocket](https://getpocket.com)**: Save articles and events for later reading.
 * **[LastPass] [LastPass]**: My choice of password manager.
 * **[ArtooJS] [ArtooJS]** (Scraping) - A bookmarklet that injects a javascript library into any page on command that will enable many scraping/parsing scenarios more easily.
@@ -57,7 +57,7 @@ The items below are links -- feel free to click and explore!
 * **[Squirrel] [Squirrel]** - "It's like ClickOnce but Works". A free/OSS way to package app installers in a Click-once way and handle things such as auto-updating software when new versions are released.
 * **[MassTransit] [MassTransit]** - A free / OSS message bus platform for .NET that integrates with Azure ServiceBus, RabbitMQ, etc. For more reliable message handling and easier pub/sub.
 * **[Toggler] [Toggler] (feature toggling)** - Feature toggling is important, especially when beta-testing features or in large software environments where enabling a feature may cause unwanted impact (or when a feature isn't yet fully complete). Feature toggling enables shorter branches because code paths can be committed that will not be executed unless the toggle is enabled. Toggler is  great .NET library for doing that.
-* **[Github's Scientist.NET] [Github's Scientist.NET]** - A library for carefully refactoring critical paths. It basically creates A/B testing for paths through your code so that you can see if  certain paths begin failing after refactoring, or when you try a different approach. A way to know that live code will have an issue before fully flipping the switch on it.
+* **[GitHub's Scientist.NET] [GitHub's Scientist.NET]** - A library for carefully refactoring critical paths. It basically creates A/B testing for paths through your code so that you can see if  certain paths begin failing after refactoring, or when you try a different approach. A way to know that live code will have an issue before fully flipping the switch on it.
 * **[Moq] [Moq] / [FakeItEasy] [FakeItEasy]** - Unit testing projects need mocking libraries. Moq and FakeItEasy are two good ones.
 * **[Autofac] [Autofac] / [Ninject] [Ninject] / [StructureMap] [StructureMap]** - Dependency injection can be a pain. These tools will enable you to do so much easier. They all have their various quirks but get the job done.
 * **[LiteGuard] [LiteGuard]** - Defensive programming is important. This includes guard clauses – pieces of code that run in the beginning of a method to make sure that the inputs are correct. LiteGuard is a nice, small, fast library that encapsulates a number of these common guard clauses and saves some repetition.
@@ -104,7 +104,7 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 
 ## Helpful Windows apps for Coders
 
-* **[Github Desktop for Windows] [Github Desktop for Windows]** - Work with Github projects on Windows? This makes it dead simple.
+* **[GitHub Desktop for Windows] [GitHub Desktop for Windows]** - Work with GitHub projects on Windows? This makes it dead simple.
 * **[ScriptCS] [ScriptCS]** - A way of writing scripts in C# if you hate powershell.
 * **[Fiddler] [Fiddler]** - Send and profile http requests; very useful when working with API projects.
 * **[Slack] [Slack]** - The chat client that everyone knows and loves
@@ -122,10 +122,10 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 [CardCounter for Trello]: https://chrome.google.com/webstore/detail/cardcounter-for-trello-wi/jbdmgabkegidhagemkfdogmplgelaoab
 [CheckerPlus for Gmail]: https://chrome.google.com/webstore/detail/checker-plus-for-gmail/oeopbcgkkoapgobdbedcemjljbihmemj?hl=en
 [Feedly]: http://Feedly.com
-[Github Selfies]: https://chrome.google.com/webstore/detail/github-selfies/ldnpkdnkgkogfnahcnldaedcoadjbkbl
+[GitHub Selfies]: https://chrome.google.com/webstore/detail/GitHub-selfies/ldnpkdnkgkogfnahcnldaedcoadjbkbl
 [Instapaper]: http://Instapaper.com
 [LastPass]: http://lastpass.com
-[ArtooJS]: https://medialab.github.io/artoo/
+[ArtooJS]: https://medialab.GitHub.io/artoo/
 [Visual Studio]: https://www.visualstudio.com/vs/
 [VSCode]: http://code.visualstudio.com/
 [Atom Editor]: https://atom.io/
@@ -133,26 +133,26 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 [NDepend]: http://www.ndepend.com/
 [SpecFlow]: http://specflow.org/
 [NCrunch]: http://www.ncrunch.net/
-[Storyteller]: http://storyteller.github.io/
-[xUnit]: https://xunit.github.io/
+[Storyteller]: http://storyteller.GitHub.io/
+[xUnit]: https://xunit.GitHub.io/
 [FluentAssertions]: http://www.fluentassertions.com/
 [Serilog]: https://serilog.net/
-[NBench]: https://github.com/petabridge/NBench
-[ElasticSearch & ElasticSearch.NET]: https://github.com/elastic/elasticsearch-net
+[NBench]: https://GitHub.com/petabridge/NBench
+[ElasticSearch & ElasticSearch.NET]: https://GitHub.com/elastic/elasticsearch-net
 [Akka.NET]: http://getakka.net/
-[CsvHelper]: https://joshclose.github.io/CsvHelper/
-[Squirrel]: https://github.com/Squirrel/Squirrel.Windows
+[CsvHelper]: https://joshclose.GitHub.io/CsvHelper/
+[Squirrel]: https://GitHub.com/Squirrel/Squirrel.Windows
 [MassTransit]: http://masstransit-project.com/
-[Toggler]: https://github.com/manojlds/Toggler
-[Github's Scientist.NET]: https://github.com/github/Scientist.net
-[Moq]: https://github.com/moq/moq4
-[FakeItEasy]: https://fakeiteasy.github.io/
+[Toggler]: https://GitHub.com/manojlds/Toggler
+[GitHub's Scientist.NET]: https://GitHub.com/GitHub/Scientist.net
+[Moq]: https://GitHub.com/moq/moq4
+[FakeItEasy]: https://fakeiteasy.GitHub.io/
 [Autofac]: https://autofac.org/
 [Ninject]: http://www.ninject.org/
-[StructureMap]: http://structuremap.github.io/
-[LiteGuard]: https://github.com/adamralph/liteguard
-[FluentValidation]: https://github.com/JeremySkinner/FluentValidation
-[Humanizer]: https://github.com/Humanizr/Humanizer
+[StructureMap]: http://structuremap.GitHub.io/
+[LiteGuard]: https://GitHub.com/adamralph/liteguard
+[FluentValidation]: https://GitHub.com/JeremySkinner/FluentValidation
+[Humanizer]: https://GitHub.com/Humanizr/Humanizer
 [Selenium]: http://www.seleniumhq.org/
 [Pingendo]: http://pingendo.com/
 [Balsamiq]: https://balsamiq.com/
@@ -162,17 +162,17 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 [TeamCity]: https://www.jetbrains.com/teamcity/
 [Jenkins]: https://jenkins.io/
 [OctopusDeploy]: https://octopus.com/
-[RoundhousE]: https://github.com/chucknorris/roundhouse
-[PayPal's AATT]: https://github.com/paypal/AATT
+[RoundhousE]: https://GitHub.com/chucknorris/roundhouse
+[PayPal's AATT]: https://GitHub.com/paypal/AATT
 [PhantomJS]: http://phantomjs.org/
 [Seq]: https://getseq.net/
 [Terraform]: https://www.terraform.io/
 [MiniProfiler]: http://miniprofiler.com/
-[Opserver]: https://github.com/opserver/Opserver
-[StackExchange's Blackbox]: https://github.com/StackExchange/blackbox
+[Opserver]: https://GitHub.com/opserver/Opserver
+[StackExchange's Blackbox]: https://GitHub.com/StackExchange/blackbox
 [Nagios]: https://www.nagios.org/
 [OTRS]: https://www.otrs.com/
-[Github Desktop for Windows]: https://desktop.github.com/
+[GitHub Desktop for Windows]: https://desktop.GitHub.com/
 [ScriptCS]: http://scriptcs.net/
 [Fiddler]: http://www.telerik.com/fiddler
 [Slack]: https://slack.com/
