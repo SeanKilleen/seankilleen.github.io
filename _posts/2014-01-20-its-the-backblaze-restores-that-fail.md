@@ -11,7 +11,7 @@ redirect_from:
 
 Folks involved in systems administration may likely be familiar with the adage that "Backups always work; it's the restores that fail." [^1]
 
-For years, I've put a lot of trust into http://www.backblaze.com as an online backup application. I have evangelized them to many people; my family members and girlfriend in particular will attest to the fact that I've often foisted the solution upon them, and I've even gone so far as to buy a subscription for a friend of mine who is a writer but didn't have a backup solution.
+For years, I've put a lot of trust into <http://www.backblaze.com> as an online backup application. I have evangelized them to many people; my family members and girlfriend in particular will attest to the fact that I've often foisted the solution upon them, and I've even gone so far as to buy a subscription for a friend of mine who is a writer but didn't have a backup solution.
 
 **However, currently I'm stuck in a frustrating restoration process that is making me rethink the decision to use Backblaze.**
 
@@ -32,16 +32,18 @@ Given the slow speed of transfer and technical difficulties with a 6GB file, how
 In the end, I am grateful for what Backblaze offers, and hope that it can follow through on it to remedy the situation.
 
 ### Conclusions / Concerns
+
 * **Don't be like Sean -- do what Scott Hanselman says and always have a local backup, too**. I now have an additional 1TB SATA drive and plan to use it specifically for this purpose. I thought I was sacrificing convenience for dollars, but it was worse than that. This was hubris on my part.
 * Backblaze really needs to up its restore game. A LOT. Restoring your precious files is generally an anxious process; as a technical person I hit a ton of roadblocks. I don't pay them to back my things up; I pay them to restore my things when I need them.
 * Is Backblaze neglecting its restoration services knowing that customers will likely opt for the $99-189 purchase of a shipped HDD because their data is precious? I certainly hope not, but it seems to be a possible conflict of interest.
 
 ### Footnotes
+
 [^1]: I've heard this in the industry for years, but since I don't know the originator, I'll give [Scott Hanselman](https://www.hanselman.com/blog/TheComputerBackupRuleOfThree.aspx) the credit.
 
 [^2]: Side note: If you are going to scan your documents -- like say, **serial keys to your OS** -- don't keep them as remote files only. In general, I'll be switching to an additional form of backup for local as well.
 
-[^3]: Seriously, I commend his willingness to engage with a slightly-frustrated customer who found him on Twitter during the weekend. It was a long shot but his response inspires confidence. [Here's the Storify of our conversation so far]() (Ed. Note: unfortunately this link has been lost to time); I'll edit it as progress is made.
+[^3]: Seriously, I commend his willingness to engage with a slightly-frustrated customer who found him on Twitter during the weekend. It was a long shot but his response inspires confidence. Here's the Storify of our conversation so far (Ed. Note: unfortunately this link has been lost to time); I'll edit it as progress is made.
 
 [HN Link]: https://news.ycombinator.com/item?id=7093016
 [CrashPlan]: https://www.crashplan.com/en-us/
