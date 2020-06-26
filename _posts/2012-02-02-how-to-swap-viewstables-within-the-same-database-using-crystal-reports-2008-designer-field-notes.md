@@ -8,14 +8,17 @@ redirect_from:
  - /2012/02/how-to-swap-viewstables-within-same.html
 ---
 ### Background
+
 I have a database with a few different views. They all return the same fields in copies of the same exact report, but those fields are calculated differently (hence the views).
 
 ### The Problem
+
 I wanted to be able to swap these views out without losing my fields, but couldn't seem to find a way to do it
 
 Crystal has a method for changing data sources, and for setting tables up to be overridden in this way, but there didn't seem to be any way to swap out a view that was already in the same database.
 
 ### The Solution
+
 **NOTE:** The solution below depends on the fact that your new tables or views should be returning the exact same fields (the new one can have additional fields, but not vice versa, which makes sense).
 
 After some playing around, I figured it out. The best solution I've been able to come up with is:
