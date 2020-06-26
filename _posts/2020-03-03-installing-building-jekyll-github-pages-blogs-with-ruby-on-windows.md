@@ -19,11 +19,11 @@ Today, we'll explore two ways of doing this -- the Windows way for those of you 
 
 ### Before we Begin: Pitfalls we'll be avoiding
 
-* **FYI: Normally**, I'd run `choco install ruby -y`, which would install ruby `v2.7.0.1` at the time of this writing. However, that led to a pitfall later in the process where I'd see that `nokogiri` is not currently supported on Ruby 2.7, so I need to pin the 2.6.x package, which we'll do during this tutorial for this reason. 
+* **FYI: Normally**, I'd run `choco install ruby -y`, which would install ruby `v2.7.0.1` at the time of this writing. However, that led to a pitfall later in the process where I'd see that `nokogiri` is not currently supported on Ruby 2.7, so I need to pin the 2.6.x package, which we'll do during this tutorial for this reason.
 
 * Ruby DevKit used to be a thing for windows. Now ridk uses msys2, so we'll be installing that during this step as well.
 
-###  Step 1: Install the Packages
+### Step 1: Install the Packages
 
 * Open PowerShell as an admin (this is important for chocolately packages)
 
@@ -43,7 +43,7 @@ Today, we'll explore two ways of doing this -- the Windows way for those of you 
 
 ### Step 3: Getting the Bundler Installer Configured
 
-* I re-open the PowerShell window (superstition, remember?) 
+* I re-open the PowerShell window (superstition, remember?)
 * I run `bundler --version` and see that it's `1.17.x` out of the box.
 * I run `gem install bundler` to upgrade it to version `2.x`
 
@@ -73,6 +73,6 @@ These steps assume I'll still be committing & pushing code via my Windows instal
 * Run `bundle install`. You'll be prompted for your password during. Allow it time to finish.
 * Run `bundle exec jekyll serve`.
 
-And there you have it! Jekyll two ways on Windows. :) 
+And there you have it! Jekyll two ways on Windows. :smile:
 
 Happy publishing!
