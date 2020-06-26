@@ -19,7 +19,16 @@
         "Opserver",
         "Ninject",
         "Pingendo",
-        "Blackbox"
+        "Blackbox",
+        "Akka",
+        "Helpdesk",
+        "Balsamiq",
+        "Cyclomatic",
+        "toolset",
+        "Autofac",
+        "Nuget",
+        "Gmail",
+        "Trello"
     ],
     "ignoreWords": [
         "seankilleen",
