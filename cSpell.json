@@ -40,7 +40,13 @@
         "Dorrans",
         "dotnetcore",
         "AzureAD",
-        "autoplay"
+        "autoplay",
+        "Maximo",
+        "Novotny",
+        "allyship",
+        "devops",
+        "livestream",
+        "Excella"
     ],
     "ignoreWords": [
         "seankilleen",
@@ -53,7 +59,10 @@
         "azurewebsites",
         "AATT",
         "mywebsite",
-        "AADSTS"
+        "AADSTS",
+        "sjkilleen",
+        "allowfullscreen",
+        "powercli"
     ],
     "ignoreRegExpList": [
         "\\((.*)\\)", // Markdown links
