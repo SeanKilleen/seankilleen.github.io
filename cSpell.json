@@ -33,7 +33,14 @@
         "bookmarklet",
         "Artoo",
         "Dunkin",
-        "octopress"
+        "octopress",
+        "Blazor",
+        "IdentityServer",
+        "templating",
+        "Dorrans",
+        "dotnetcore",
+        "AzureAD",
+        "autoplay"
     ],
     "ignoreWords": [
         "seankilleen",
@@ -45,8 +52,8 @@
         "dnsname",
         "azurewebsites",
         "AATT",
-        "Blazor",
-        "IdentityServer"
+        "mywebsite",
+        "AADSTS"
     ],
     "ignoreRegExpList": [
         "\\((.*)\\)", // Markdown links
