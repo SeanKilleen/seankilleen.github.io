@@ -32,7 +32,8 @@
         "Tweetdeck",
         "bookmarklet",
         "Artoo",
-        "Dunkin"
+        "Dunkin",
+        "octopress"
     ],
     "ignoreWords": [
         "seankilleen",
@@ -42,7 +43,10 @@
         "certstorelocation",
         "localmachine",
         "dnsname",
-        "azurewebsites"
+        "azurewebsites",
+        "AATT",
+        "Blazor",
+        "IdentityServer"
     ],
     "ignoreRegExpList": [
         "\\((.*)\\)", // Markdown links
