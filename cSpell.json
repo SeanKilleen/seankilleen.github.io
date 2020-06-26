@@ -28,11 +28,17 @@
         "Autofac",
         "Nuget",
         "Gmail",
-        "Trello"
+        "Trello",
+        "Tweetdeck",
+        "bookmarklet",
+        "Artoo",
+        "Dunkin"
     ],
     "ignoreWords": [
         "seankilleen",
-        "devkit"
+        "devkit",
+        "GOOG",
+        "FIXURL"
     ],
     "ignoreRegExpList": [
         "\\((.*)\\)", // Markdown links
