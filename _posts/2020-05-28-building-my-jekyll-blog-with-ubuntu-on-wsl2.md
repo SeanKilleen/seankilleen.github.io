@@ -52,6 +52,16 @@ I re-did this again the hard way, for you dear reader! I'll try to capture what 
 * See an error: `Gem::Ext::BuildError: ERROR: Failed to build gem native extension.` Also: `An error occurred while installing commonmarker (0.17.13), and Bundler cannot continue.`
 * Do some googling, see that I might need more of ruby
 * `sudo apt-get install ruby-full`
+* Try again: `bundle install`. See error: `make not found`
+* `sudo apt-get install make`
+* Try again: `bundle install`. Get error: `make: gcc: Command not found`
+* `sudo apt-get install gcc`
+* Try again: `bundle install`. We get further! Commonmark is now installed. but we see another error: `make: g++: Command not found`
+* `sudo apt-get install gpp` (got lucky here and assumed `++` translated to `pp`)
+* Try again: `bundle install`. Same error. Weird.
+* Google. Find [an answer that suggests](https://askubuntu.com/questions/284779/g-installation) using `build-essential` instead. Seems reasonable.
+* `sudo apt-get install build-essential`
+
 
 ---
 
