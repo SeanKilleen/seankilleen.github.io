@@ -20,7 +20,7 @@ OK! Now that we're well-prepared, the day of the interview is here and it's time
 
 ## The Actual Interview
 
-* **Just before heading in, remember what it's like to interview**. The dread, the lingering feeling afterward on whether you did well, the self-doubt, the headspace you're in, the  muscle memory folks have from past environments and cultures. Remember that no matter what, you want this person to tell other people how good this company would be to work for. Remember that you want them to succeed. Now, you are ready to head into the room.
+* **Just before heading in, remember what it's like to interview**. The dread, the lingering feeling afterward on whether you did well, the self-doubt, the head-space you're in, the  muscle memory folks have from past environments and cultures. Remember that no matter what, you want this person to tell other people how good this company would be to work for. Remember that you want them to succeed. Now, you are ready to head into the room.
 
 * **The introduction matters. A lot**. I like to do the following to start off on the right foot:
   * **Make sure they feel comfortable**. Ask them if they want a drink of water.

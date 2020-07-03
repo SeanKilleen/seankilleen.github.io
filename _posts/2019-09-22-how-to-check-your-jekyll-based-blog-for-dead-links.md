@@ -38,7 +38,7 @@ def run_htmlproofer() # The function that will run the proofer, so that we can r
     allow_hash_href: true, # Won't fail for local links
     url_ignore: [/edit\/gh-pages/] # This is because all my pages have a link to edit them, which will fail when generated locally.
   }
-  HTMLProofer.check_directory("./_site", options).run # Calls html-proofer and uses the Jektll _site folder
+  HTMLProofer.check_directory("./_site", options).run # Calls html-proofer and uses the Jekyll _site folder
 end
 
 task :test do

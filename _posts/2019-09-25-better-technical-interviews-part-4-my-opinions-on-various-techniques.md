@@ -47,7 +47,7 @@ Otherwise, what's the point? Pretending that devs don't use tools or Google thin
 
 If you're bringing someone into a technical interview and don't know whether or not they'd pass a problem like FizzBuzz, I think that's the real problem.
 
-Shift that process to the left and answer those questions earlier on. Ask a few screening questions. Run a small coding exam with something like coderpad.io, but don't make it something so overdone. Put a little thought in. Be creative and clear.
+Shift that process to the left and answer those questions earlier on. Ask a few screening questions. Run a small coding exam with something like <http://coderpad.io>, but don't make it something so overdone. Put a little thought in. Be creative and clear.
 
 ### We came up with a pretty intricate problem we're proud of. We think it'll be a good litmus test.
 
