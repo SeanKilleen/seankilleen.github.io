@@ -59,10 +59,14 @@ I re-did this again the hard way, for you dear reader! I'll try to capture what 
 * Try again: `bundle install`. We get further! Commonmark is now installed. but we see another error: `make: g++: Command not found`
 * `sudo apt-get install gpp` (got lucky here and assumed `++` translated to `pp`)
 * Try again: `bundle install`. Same error. Weird.
-* Google. Find [an answer that suggests](https://askubuntu.com/questions/284779/g-installation) using `build-essential` instead. Seems reasonable.
+* Google. Find [an answer that suggests](https://askubuntu.com/questions/284779/g-installation) using `build-essential` instead. Seems reasonable. (I think I also could have actually done `sudo apt-get install g++` as well. So much for my translation!)
 * `sudo apt-get install build-essential`
-
-
+* Try again: `bundle install`. We get farther! `eventmachine` is now installed.
+* nokogiri installation fails. See error: `zlib is missing; necessary for building libxml2`
+* `sudo apt-get install zlib`. Not found. 
+* Google. [Find some help](https://www.systutorials.com/how-to-install-the-zlib-library-in-ubuntu/). Apparently it's `zlib1g`.
+* `sudo apt-get install zlib1g`. Weird. It's already installed? 
+* The error is a build error, so let's try `sudo apt-get install zlib1g-dev`.
 ---
 
 Sweet! Happy WSLing, all.
