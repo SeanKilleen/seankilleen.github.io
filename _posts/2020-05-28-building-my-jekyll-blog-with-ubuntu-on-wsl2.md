@@ -67,6 +67,10 @@ I re-did this again the hard way, for you dear reader! I'll try to capture what 
 * Google. [Find some help](https://www.systutorials.com/how-to-install-the-zlib-library-in-ubuntu/). Apparently it's `zlib1g`.
 * `sudo apt-get install zlib1g`. Weird. It's already installed? 
 * The error is a build error, so let's try `sudo apt-get install zlib1g-dev`.
+* Try again: `bundle install`. INSTALLATION SUCCEEDS!
+* `bundle exec jekyll serve`
+* Things are built an served on `localhost:4000`. Looks good!
+
 ---
 
 Sweet! Happy WSLing, all.
