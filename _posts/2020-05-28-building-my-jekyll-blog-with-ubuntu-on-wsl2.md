@@ -36,11 +36,15 @@ Then, I went back and forth on dependencies and installation stuff, but it wasn'
 * Run `bundle exec jekyll serve`
 * Watch it build and run in Linux and watch my blog be available in Windows.
 
-## The long steps
+## The (painful) long steps
 
-* Pulled my repo
-* Went back and forth installing ruby and gems, installing missing libs along the way. 
+I'll try to capture what I learned along the way.
 
-TODO: Add more steps.
+* Install Ubuntu 20.04 LTS from the windows store. Start it up set a PW, etc.
+* `mkdir repos` to create a directory for my repositories
+* `cd repos`
+* Pulled my repo: `git pull https://github.com/SeanKilleen/seankilleen.github.io.git`
 
-Sweet!
+----
+
+Sweet! Happy WSLing, all.
