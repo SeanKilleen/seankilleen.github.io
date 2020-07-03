@@ -36,15 +36,23 @@ Then, I went back and forth on dependencies and installation stuff, but it wasn'
 * Run `bundle exec jekyll serve`
 * Watch it build and run in Linux and watch my blog be available in Windows.
 
-## The (painful) long steps
+## The (more painful) long steps
 
-I'll try to capture what I learned along the way.
+I re-did this again the hard way, for you dear reader! I'll try to capture what I learned along the way.
 
 * Install Ubuntu 20.04 LTS from the windows store. Start it up set a PW, etc.
 * `mkdir repos` to create a directory for my repositories
 * `cd repos`
-* Pulled my repo: `git pull https://github.com/SeanKilleen/seankilleen.github.io.git`
+* Pulled my repo: `git clone https://github.com/SeanKilleen/seankilleen.github.io.git`
+* Update package list: `sudo apt update`
+* Install ruby: `sudo apt-get install ruby`
+* Bundler: `sudo gem install bundler`
+* Open my repo: `cd seankilleen.github.io`
+* `bundle install`
+* See an error: `Gem::Ext::BuildError: ERROR: Failed to build gem native extension.` Also: `An error occurred while installing commonmarker (0.17.13), and Bundler cannot continue.`
+* Do some googling, see that I might need more of ruby
+* `sudo apt-get install ruby-full`
 
-----
+---
 
 Sweet! Happy WSLing, all.
