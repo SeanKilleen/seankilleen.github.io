@@ -76,12 +76,14 @@
         "solutioning",
         "teamcity",
         "templating",
+        "testwithoutbuild",
         "thumbprint",
         "toolset",
         "Touchpad",
         "Trello",
         "Tweetdeck",
         "vcodec",
+        "verifypeer",
         "Womp"
     ],
     "ignoreWords": [
