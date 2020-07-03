@@ -248,7 +248,7 @@ Versioning a CDN works by appending a QueryString to the end of the url. The CDN
 
 ### Enabling QueryString versioning via Azure
 
-* In the Azure Managment Portal, go to your CDN's section.
+* In the Azure Management Portal, go to your CDN's section.
 * Enable QueryStrings via the button at the bottom:
 
 ![A screenshot of the location to enable QueryStrings]({{site.post-images}}/AzureCDN_11_EnableQueryString.png)

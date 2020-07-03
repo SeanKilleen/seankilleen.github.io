@@ -48,7 +48,7 @@ In fairness, it's been a while since I've really dug into it. If I'm wrong on an
 ## Bad Reasons to Justify Using MSTest
 
 * **Microsoft uses it.** Pssst, they're actually [mostly][mostly] [using][using] [xUnit][xunit] [now][now].
-* **It's the default and that's good enough.** This is a failure of attitude. Woe to the developer who thinks this way. Continuous improvement, particularly in terms of toolsets, should be second-nature to a developer.
+* **It's the default and that's good enough.** This is a failure of attitude. Woe to the developer who thinks this way. Continuous improvement, particularly in terms of tool-sets, should be second-nature to a developer.
 
 ## What do *you* Think?
 

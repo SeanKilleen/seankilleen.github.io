@@ -20,7 +20,7 @@ As of a few hours ago, this site runs on `https` by default and likely pretty da
 
 ## What I'm Getting Out of This
 
-This site is already run on [Github Pages](https://pages.github.com/) using Jekyll. So, I get a pretty fast site generated automatically and served via Github Pages, from my markdown content, which runs on Github's own infrastructure. That's already bullet-proof.
+This site is already run on [Github Pages](https://pages.github.com/) using Jekyll. So, I get a pretty fast site generated automatically and served via Github Pages, from my markdown content, which runs on GitHub's own infrastructure. That's already bullet-proof.
 
 So, why introduce this extra component?
 
