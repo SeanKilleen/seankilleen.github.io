@@ -35,15 +35,15 @@ I've done enough various cycles of this that I've started to learn where my brai
 
 ## Try to give yourself multiple access points for your motivation/energy
 
-This takes a while, is easier said than done, and usually involves a lot of self-discovery. 
+This takes a while, is easier said than done, and usually involves a lot of self-discovery.
 
 I know that on a given day, I will be potentially motivated by several types of things:
 
 * Coding
 * Writing
 * Deep thinking
-* People skills / connections 
-* Ideation / divergent thinking 
+* People skills / connections
+* Ideation / divergent thinking
 
 Luckily, I'm in a space where I'm usually able to be productive around one of those things. So my key is -- I try to always have at least one item in my queue/backlog that I can map to a motivation. If I have some coding stuff on my plate but am really motivated by writing that day, maybe I'll try to bang out some e-mails or give myself space in the morning or at lunch to map out a blog post. If I need to be thinking about strategy or business development but I have an urge to code, I'll let myself deviate for a bit to scratch that itch.
 
@@ -51,7 +51,7 @@ Honestly, the jury's still out for me on whether this is a good thing or not. I 
 
 ## Find your Impacts and Dive in
 
-In the last section I talked about not knowing if I'm as impactful as I could be when I just follow my energy. This is different in one big way: If there's a major piece of impact in front of me, or something where I think I can really move the needle, I will throw my whole self at it. There, my energy tends to focus around the impact I can make. Can I really help open a client's eyes to some technology or technique? All of a sudden I'll have no problem coding up a sample, doing a power point, and writing up documentation around it. The impact itself becomes my energy, and I start firing on all cylinders, because I feel like I have an opportunity to really effect some serious change. 
+In the last section I talked about not knowing if I'm as impactful as I could be when I just follow my energy. This is different in one big way: If there's a major piece of impact in front of me, or something where I think I can really move the needle, I will throw my whole self at it. There, my energy tends to focus around the impact I can make. Can I really help open a client's eyes to some technology or technique? All of a sudden I'll have no problem coding up a sample, doing a power point, and writing up documentation around it. The impact itself becomes my energy, and I start firing on all cylinders, because I feel like I have an opportunity to really effect some serious change.
 
 These are the best days.
 
@@ -63,12 +63,12 @@ I often forget this, and every time I remember it, I feel like I have a better d
 
 ## Balance doesn't mean 50/50 (at least for me)
 
-This is for better and worse -- especially when taking into account a marriage, etc. -- but my work/life balance is something that other people would probably say is _way off_, certainly at times. I have found work in an industry that constantly piques my curiosity, teaches me things, allows me to create, and presents fun and challenging problems in need of solving. So it's my hobby too. This is not the case for many people -- nor should it need to be. But a key helper on my productive days, I think, is that I love what I do and I feel like I get to bring my whole self to it. This means that I'm more likely to "leave it all on the field". This balance is as problematic for me as it is helpful, but one thing is for sure -- it's my balance, and your mileage will vary. 
+This is for better and worse -- especially when taking into account a marriage, etc. -- but my work/life balance is something that other people would probably say is _way off_, certainly at times. I have found work in an industry that constantly piques my curiosity, teaches me things, allows me to create, and presents fun and challenging problems in need of solving. So it's my hobby too. This is not the case for many people -- nor should it need to be. But a key helper on my productive days, I think, is that I love what I do and I feel like I get to bring my whole self to it. This means that I'm more likely to "leave it all on the field". This balance is as problematic for me as it is helpful, but one thing is for sure -- it's my balance, and your mileage will vary.
 
-Finding and understanding where your balance is, and basing your own productivity off of that target, is a really important part of finding a good pace for yourself instead of keeping up with others. 
+Finding and understanding where your balance is, and basing your own productivity off of that target, is a really important part of finding a good pace for yourself instead of keeping up with others.
 
 ## Wrapping up
 
-I think it's interesting that you said "burn the candle at both ends". This sounds like something you're looking to emulate -- but it's generally a negative idiom. Burning the candle at both ends means one is exhausting oneself, trying to do too much, and ultimately running out of finite resources (the candle, one's life) twice as fast. 
+I think it's interesting that you said "burn the candle at both ends". This sounds like something you're looking to emulate -- but it's generally a negative idiom. Burning the candle at both ends means one is exhausting oneself, trying to do too much, and ultimately running out of finite resources (the candle, one's life) twice as fast.
 
 I think the key is more to understand what keeps your candle built up, and what increases or decreases the burn rate. I feel like it's a lifetime to figure out that balance, and I'm nowhere near having it figured out. But trying to figure it out has yielded a lot of positive results for me.
