@@ -11,9 +11,9 @@ date: 2020-05-28 10:52 -0400
 ---
 The steps weren't entirely obvious to me so I thought I'd write about it here for others who are newer to that ecosystem.
 
-Windows 10 v2004 is available, and with it comes the addition of long-awaited toolset -- WSL2, the successor to the original Windows Subsystem for Linux. WSL2 is great -- much faster, and it uses an actual Linux kernel, making it 100% Linux compatible. 
+Windows 10 v2004 is available, and with it comes the addition of long-awaited toolset -- WSL2, the successor to the original Windows Subsystem for Linux. WSL2 is great -- much faster, and it uses an actual Linux kernel, making it 100% Linux compatible.
 
-## High-level view 
+## High-level view
 
 Here's what I did.
 
@@ -63,9 +63,9 @@ I re-did this again the hard way, for you dear reader! I'll try to capture what 
 * `sudo apt-get install build-essential`
 * Try again: `bundle install`. We get farther! `eventmachine` is now installed.
 * nokogiri installation fails. See error: `zlib is missing; necessary for building libxml2`
-* `sudo apt-get install zlib`. Not found. 
+* `sudo apt-get install zlib`. Not found.
 * Google. [Find some help](https://www.systutorials.com/how-to-install-the-zlib-library-in-ubuntu/). Apparently it's `zlib1g`.
-* `sudo apt-get install zlib1g`. Weird. It's already installed? 
+* `sudo apt-get install zlib1g`. Weird. It's already installed?
 * The error is a build error, so let's try `sudo apt-get install zlib1g-dev`.
 * Try again: `bundle install`. INSTALLATION SUCCEEDS!
 * `bundle exec jekyll serve`
