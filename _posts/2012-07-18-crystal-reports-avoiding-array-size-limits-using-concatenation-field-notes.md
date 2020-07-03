@@ -93,7 +93,7 @@ The trick here is to remember that the last few items in the temporary string wo
 #### Step 5: Linking the Array to the sub-report
 
 * Create the sub-report to display your data (outside the scope of this topic)
-* Right-click on the sub-report and choose `Change Subreport Links`
+* Right-click on the sub-report and choose `Change sub-report Links`
 * Move the array display formula into the `Field(s) to link to` box by clicking &rarr;.
 * Click OK.
 

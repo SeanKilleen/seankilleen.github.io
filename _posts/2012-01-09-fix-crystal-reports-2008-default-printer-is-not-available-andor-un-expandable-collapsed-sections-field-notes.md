@@ -13,7 +13,7 @@ In Crystal Reports 2008, when opening up a report that came from elsewhere (usua
 
 > default printer is not available.
 
-Oftentimes, this will be accompanied by a strange behavior that will cause reports (or subreports) to look completely collapsed, like the following image:
+Oftentimes, this will be accompanied by a strange behavior that will cause reports (or sub-reports) to look completely collapsed, like the following image:
 
 ![Collapsed Crystal Reports]({{site.post-images}}//CrystalReports_CollapsedSectionProblem.png)
 
