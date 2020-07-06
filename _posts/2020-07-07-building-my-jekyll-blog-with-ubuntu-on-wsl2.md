@@ -7,7 +7,7 @@ tags:
   - ruby
   - jekyll
   - ubuntu
-date: 2020-05-28 10:52 -0400
+date: 2020-07-07 8:00 -0400
 ---
 The steps weren't entirely obvious to me so I thought I'd write about it here for others who are newer to that ecosystem.
 
