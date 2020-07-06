@@ -36,3 +36,4 @@ The position on that spectrum can change. "We were highly confident that our key
 ## Multiple paths from here
 
 Confidence meters allow for multiple approaches and steps to improve confidence, and so they allow for divergent thinking rather than judgment against some ultimately flawed idea of "maturity".
+
