@@ -9,6 +9,8 @@ date: 2020-07-03 10:33 -0400
 ---
 _I run [an ongoing AMA (ask me anything) on GitHub](https://github.com/SeanKilleen/ama) where folks can drop questions. [Give it a try!](https://github.com/SeanKilleen/ama/issues/new) Occasionally I'll post topics here that I think a wider audience might be interested in._
 
+**Editor's Note:** This was pre-pandemic and pre-baby. :smile: The last few months have left me very drained, and so I've been placing extra emphasis on self-care and adjusting my expectations for impact. 
+
 Today's AMA Post:
 
 > How do you find / make time to stay productive? Do you find it's a mindset? Scheduling tricks? Finding energy and motivation for extra-curriculars is often an issue of mine. I'd love to hear more about how you can manage to burn the candle at both ends
