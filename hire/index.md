@@ -17,7 +17,7 @@ I'm pretty happy where I am but am happy to have a conversation as well.
 * Open to Lead, Principal, or Director level positions. While I am passionate about technical work and capable of performing it, I am likely not a strong fit for an individual contributor role unless the compensation is significant. I am at my best when I'm providing a large impact across teams or an organization.
 * Mostly open to full-time options. Will consider contract opportunities but the rate may be a non-starter for most.
 * Happy to work in consulting environments but a product or services company I believe in is probably a better fit.
-* The organization I work for is important to me, because I plan to invest in it.
+* The organization I work for is important to me, because I plan to invest in it. If you contact me, please indicate who the client is and where the position is situated within it. If you're a recruiter, please trust me -- I have no desire to circumvent you if you bring me a great opportunity.
 
 ## At a Glance
 
