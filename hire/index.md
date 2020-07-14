@@ -2,6 +2,7 @@
 layout: single
 author_profile: true 
 title: "Work With Sean"
+disable_ads: true
 ---
 
 I created this page because I receive a lot of contacts from those recruiting for a position.
