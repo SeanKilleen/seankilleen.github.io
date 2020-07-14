@@ -4,21 +4,24 @@ author_profile: true
 title: "Work With Sean"
 ---
 
+I created this page because I receive a lot of contacts from those recruiting for a position.
+
 Do you want to know if I'd be a good fit for your organization, or would you like to work together? Read on below to see if we should chat!
 
 ## My Current Status
 
 I'm pretty happy where I am but am happy to have a conversation as well.
 
-## The Basics
+## What I'm Looking for
 
+* Open to Lead, Principal, or Director level positions. While I am passionate about technical work and capable of performing it, I am likely not a strong fit for an individual contributor role unless the compensation is significant. I am at my best when I'm providing a large impact across teams or an organization.
 * Mostly open to full-time options. Will consider contract opportunities but the rate may be a non-starter for most.
 * Happy to work in consulting environments but a product or services company I believe in is probably a better fit.
-* Open to Lead, Principal, or Director level positions. While I can do the work, I am likely not a strong fit for an individual contributor role unless the compensation is significant. I am at my best when I'm providing a large impact across teams or an organization.
+* The organization I work for is important to me, because I plan to invest in it.
 
 ## At a Glance
 
-* 15+ years developing software
+* 15+ years developing software in the .NET ecosystem
 * 5+ years leading teams
 * Microsoft MVP in Developer Technologies (~200 in this category in the US)
 * Certified instructor for ScrumAlliance (CSD) and ICAgile (ICP-TST, ICP-ATA) certifications
@@ -31,6 +34,7 @@ I'm pretty happy where I am but am happy to have a conversation as well.
 * The growth of leaders within teams and organizations
 * Organizational agility
 * A culture of learning, experimentation, and quality
+* DevOps-related expertise (CI/CD pipelines, operational visibility, robust delivery mechanisms)
 
 ## Feedback from my 2020 performance appraisal
 
