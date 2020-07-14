@@ -27,6 +27,7 @@ I'm pretty happy where I am but am happy to have a conversation as well.
 * Certified instructor for ScrumAlliance (CSD) and ICAgile (ICP-TST, ICP-ATA) certifications
 * Lead of the NUnit Documentation project and avid open-source contributor
 * National speaker
+* A history of substantial impact
 
 ## Outcomes I Provide
 
