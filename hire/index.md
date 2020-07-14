@@ -20,8 +20,9 @@ I'm pretty happy where I am but am happy to have a conversation as well.
 
 * 15+ years developing software
 * 5+ years leading teams
-* Microsoft MVP in Developer technologies (roughly 200 in this category in the US)
+* Microsoft MVP in Developer Technologies (~200 in this category in the US)
 * Certified instructor for ScrumAlliance (CSD) and ICAgile (ICP-TST, ICP-ATA) certifications
+* Lead of the NUnit Documentation project and avid open-source contributor
 * National speaker
 
 ## Outcomes I Provide
@@ -33,7 +34,7 @@ I'm pretty happy where I am but am happy to have a conversation as well.
 
 ## Feedback from my 2020 performance appraisal
 
-Highlights from what my peers recently said about me, anonymously.
+Highlights from what my peers recently said about me, anonymously. I am incredibly proud of this feedback, and feel it represents what I can bring to an organization.
 
 > "Though he had many non-client obligations, he was the lead developer on the account and provided great results, value, and impact both to the client and our firm."
 
