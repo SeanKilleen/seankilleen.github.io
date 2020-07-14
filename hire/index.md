@@ -76,7 +76,7 @@ Highlights from what my peers recently said about me, anonymously.
 
 > "Sean brought a potential opportunity with a client to the private sector and he contributed heavily to the proposal. Sean wrote the majority of the content, held conversations with his contact, and represented our firm at the client presentation. Throughout, Sean dedicated all of his energy and spare time to the opportunity, even during times when he was sick or tied up with travel and teaching a course."
 
-> "Sean's willingness to help out everyone and always go above an beyond is beyond words. While he was dealing with Employee issues he did so with the utmost empathy to those that were affected by that employee. I know that he is someone I can always trust and rely on."
+> "**I know that he is someone I can always trust and rely on.**"
 
 > "Sean is **possibly the most genuine and passionate person I have ever had the fortune and pleasure to work with**.  He cares so deeply about people, culture, leadership, technology, technical delivery/client satisfaction, and the general success of our firm, that I am perpetually astounded at the incredible results he's able to attain in each of these areas."
 
