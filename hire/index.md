@@ -18,11 +18,18 @@ I'm pretty happy where I am but am happy to have a conversation as well.
 
 ## At a Glance
 
-* Microsoft MVP in Developer technologies (amongst )
 * 15+ years developing software
 * 5+ years leading teams
+* Microsoft MVP in Developer technologies (roughly 200 in this category in the US)
+* Certified instructor for ScrumAlliance (CSD) and ICAgile (ICP-TST, ICP-ATA) certifications
+* National speaker
 
 ## Outcomes I Provide
+
+* High-performance teams
+* The growth of leaders within teams and organizations
+* Organizational agility
+* A culture of learning, experimentation, and quality
 
 ## Feedback from my most recent performance appraisal
 
