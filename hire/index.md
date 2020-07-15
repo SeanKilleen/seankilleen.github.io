@@ -57,6 +57,7 @@ I'm pretty happy where I am but am happy to have a conversation as well.
 | **Automated Testing Techniques** | TDD, BDD, Gherkin, AATs |
 | **Other common libraries** | FluentValidation |
 | **Ticketing and workflows** | Jira, Trello, GitHub Projects, Azure DevOps, TFS |
+| **Static Sites** | Jekyll, GitHub Pages, Azure Static Sites, Netlify |
 | **Methodologies and Mindsets** | Scrum, Kanban, Organizational Agility, DevOps, Product mindset |
 | **Leadership** | Transformational leadership, leader/leader model |
 
