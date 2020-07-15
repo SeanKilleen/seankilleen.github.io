@@ -38,8 +38,7 @@ I'm pretty happy where I am but am happy to have a conversation as well.
 * In-depth expertise and delivery across the .NET / Microsoft ecosystem
 * High-performing, enabled, and engaged teams
 * The growth of leaders within teams and organizations
-* Organizational agility
-* A culture of learning, experimentation, and quality
+* Organizational agility -- a culture of learning, experimentation, and quality
 * DevOps-related expertise (CI/CD pipelines, operational visibility, robust delivery mechanisms)
 
 ## Alphabet Soup -- Keywords, General Skills, etc.
