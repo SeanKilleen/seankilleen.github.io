@@ -5,7 +5,7 @@ title: "Work With Sean"
 disable_ads: true
 ---
 
-I created this page because I receive a lot of contacts from those recruiting for a position.
+I created this page because I receive a lot of contacts from those recruiting for a position. It is meant to complement [my LinkedIn profile](https://linkedin.com/in/SeanKilleen)
 
 Do you want to know if I'd be a good fit for your organization, or would you like to work together? Read on below to see if we should chat!
 
