@@ -46,7 +46,7 @@ I'm pretty happy where I am but am happy to have a conversation as well.
 | Category | General run-down [^1] |
 | -------- | ---------- |
 | **Languages** | C#, TypeScript, Javascript, Ruby, Python, Java |
-| **Platforms & Frameworks** | .NET 4.x, .NET Core / .NET 5, ASP.NET, MVC, WebAPI |
+| **Platforms & Frameworks** | .NET 4.x, .NET Core / .NET 5, ASP.NET, MVC, WebAPI, Akka.NET |
 | **Front-end** | React, Vue, Angular to a lesser extent. Experience with Backbone, Knockout, jQuery |
 | **Build Tools** | GitHub Actions, Azure DevOps, TeamCity, Jenkins, CircleCI, TravisCI, MSBuild |
 | **Databases** | General SQL/NoSQL, SQL Server, Neo4j, CosmosDB, ElasticSearch |
