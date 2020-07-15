@@ -32,6 +32,7 @@ I'm pretty happy where I am but am happy to have a conversation as well.
 
 ## Outcomes I Provide
 
+* In-depth expertise and delivery across the .NET / Microsoft ecosystem
 * High-performance teams
 * The growth of leaders within teams and organizations
 * Organizational agility
