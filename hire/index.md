@@ -19,6 +19,8 @@ I'm pretty happy where I am but am happy to have a conversation as well.
 * Full-time roles. Will consider contract opportunities but the rate may be a non-starter for most. I commit to my employer, and I expect them to commit to me.
 * Happy to work in consulting environments, but for my next journey, a product or services company I believe in is probably the best fit.
 * The organization I work for is important to me, because I plan to invest in it. If you contact me, please indicate who the client is and where the position is situated within it. If you're a recruiter, please trust me -- I have no desire to circumvent you.
+* I am comfortable and productive with full-time remote work. I operate in a remote-first mindset.
+* If commuting, I'm aiming to be within 30 minutes of Arlington, VA.
 
 ## At a Glance
 
