@@ -48,7 +48,7 @@ I'm pretty happy where I am but am happy to have a conversation as well.
 | **Languages** | C#, TypeScript, Javascript, Ruby, Python, Java |
 | **Platforms & Frameworks** | .NET 4.x, .NET Core / .NET 5, ASP.NET, MVC, WebAPI |
 | **Front-end** | React, Vue, Angular to a lesser extent. Experience with Backbone, Knockout, jQuery |
-| **Build servers** | GitHub Actions, Azure DevOps, TeamCity, Jenkins, CircleCI, TravisCI, etc. |
+| **Build Tools** | GitHub Actions, Azure DevOps, TeamCity, Jenkins, CircleCI, TravisCI, MSBuild |
 | **Databases** | General SQL/NoSQL, SQL Server, Neo4j, CosmosDB, ElasticSearch |
 | **ORMs & Migrations** | EntityFramework, EF Core, Dapper Roundhouse |
 | **Solutions Architecture** | Azure PaaS / SaaS, Serverless, AWS |
