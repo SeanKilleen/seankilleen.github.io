@@ -39,6 +39,26 @@ I'm pretty happy where I am but am happy to have a conversation as well.
 * A culture of learning, experimentation, and quality
 * DevOps-related expertise (CI/CD pipelines, operational visibility, robust delivery mechanisms)
 
+## Alphabet Soup -- Keywords, General Skills, etc.
+
+| Category | General run-down [^1] |
+| -------- | ---------- |
+| **Languages** | C#, TypeScript, Javascript, Ruby, Python, Java |
+| **Platforms & Frameworks** | .NET 4.x, .NET Core / .NET 5, ASP.NET, MVC, WebAPI |
+| **Front-end** | React, Vue, Angular to a lesser extent. Experience with Backbone, Knockout, jQuery |
+| **Build servers** | GitHub Actions, Azure DevOps, TeamCity, Jenkins, CircleCI, TravisCI, etc. |
+| **Databases** | General SQL/NoSQL, SQL Server, Neo4j, CosmosDB, ElasticSearch |
+| **ORMs & Migrations** | EntityFramework, EF Core, Dapper Roundhouse |
+| **Solutions Architecture** | Azure PaaS / SaaS, Serverless, AWS |
+| **DevOps tooling** | ARM, Terraform |
+| **Automated Testing tools** | NUnit, xUnit, SpecFlow, Moq, FluentAssertions, Bogus |
+| **Automated Testing Techniques** | TDD, BDD, Gherkin, AATs |
+| **Other common libraries** | FluentValidation |
+| **Methodologies and Mindsets** | Scrum, Kanban, Organizational Agility, DevOps, Product mindset |
+| **Leadership** | Transformational leadership, leader/leader model |
+
+[^1]: This is not an exhaustive list.
+
 ## Feedback from my 2020 performance appraisal
 
 Highlights from what my peers recently said about me, anonymously. I am incredibly proud of this feedback, and feel it represents what I can bring to an organization.
@@ -104,23 +124,3 @@ Highlights from what my peers recently said about me, anonymously. I am incredib
 > "Another great characteristic of Sean is how he cheers and recognizes individual and Team accomplishments at the client. He is always giving credit to the Team or individuals making sure the client is aware of these accomplishments."
 
 > "But the best thing about Sean isn't any of that. It's that you can rely on him. You can count on his ability to hear you out when something's going wrong. You can rely on his advice to be as unbiased as possible, while still being empathetic."
-
-## Alphabet Soup -- Keywords, General Skills, etc.
-
-| Category | General run-down [^1] |
-| -------- | ---------- |
-| **Languages** | C#, TypeScript, Javascript, Ruby, Python, Java |
-| **Platforms & Frameworks** | .NET 4.x, .NET Core / .NET 5, ASP.NET, MVC, WebAPI |
-| **Front-end** | React, Vue, Angular to a lesser extent. Experience with Backbone, Knockout, jQuery |
-| **Build servers** | GitHub Actions, Azure DevOps, TeamCity, Jenkins, CircleCI, TravisCI, etc. |
-| **Databases** | General SQL/NoSQL, SQL Server, Neo4j, CosmosDB, ElasticSearch |
-| **ORMs & Migrations** | EntityFramework, EF Core, Dapper Roundhouse |
-| **Solutions Architecture** | Azure PaaS / SaaS, Serverless, AWS |
-| **DevOps tooling** | ARM, Terraform |
-| **Automated Testing tools** | NUnit, xUnit, SpecFlow, Moq, FluentAssertions, Bogus |
-| **Automated Testing Techniques** | TDD, BDD, Gherkin, AATs |
-| **Other common libraries** | FluentValidation |
-| **Methodologies and Mindsets** | Scrum, Kanban, Organizational Agility, DevOps, Product mindset |
-| **Leadership** | Transformational leadership, leader/leader model |
-
-[^1]: This is not an exhaustive list.
