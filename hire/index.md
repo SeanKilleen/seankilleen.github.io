@@ -24,10 +24,10 @@ I'm pretty happy where I am but am happy to have a conversation as well.
 
 ## At a Glance
 
+* Microsoft MVP in Developer Technologies (~200 in this category in the US)
 * 15+ years developing software in the .NET ecosystem
 * Polyglot developer beyond .NET -- comfortable with Javascript (prefer TypeScript), Ruby, Python, and others
 * 5+ years leading teams
-* Microsoft MVP in Developer Technologies (~200 in this category in the US)
 * Certified instructor for ScrumAlliance (CSD) and ICAgile (ICP-TST, ICP-ATA) certifications
 * Lead of the NUnit Documentation project and avid open-source contributor
 * National speaker
