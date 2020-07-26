@@ -6,9 +6,9 @@ tags:
   - containers
 date: 2020-07-26 16:02 -0400
 ---
-Inspired by Immo Landwerth's tweet: 
+Inspired by Immo Landwerth's tweet:
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I’m using Azure App Service run my ASPNET Core app (Linux). What’s the benefit of using docker?</p>&mdash; Immo Landwerth (@terrajobst) <a href="https://twitter.com/terrajobst/status/1287458432547606529?ref_src=twsrc%5Etfw">July 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I’m using Azure App Service run my ASPNET Core app (Linux). What’s the benefit of using docker?</p>&mdash; Immo Landwerth (@terrajobst) <a href="https://twitter.com/terrajobst/status/1287458432547606529?ref_src=twsrc%5Etfw">July 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I figured I'd add my (hopefully reasonably nuanced) opinion here.
 
