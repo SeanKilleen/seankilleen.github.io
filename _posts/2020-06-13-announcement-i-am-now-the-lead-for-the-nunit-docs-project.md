@@ -9,7 +9,7 @@ tags:
   - community
 date: 2020-06-13 09:32 -0400
 ---
-I recently helped the NUnit docs team re-launch their documentation at <https://docs.nunit.org>. As the result of this effort, I have been been given -- and accepted -- an invitation to lead [the NUnit docs project](https://github.com/nunit/docs)! I couldn't be more excited to continue to foster learning and growth for a foundational and fundamental tool in the .NET ecosystem. With [over 81 million total downloads on Nuget](https://www.nuget.org/packages/NUnit/), we have a large community to support, and I don't take that lightly. 
+I recently helped the NUnit docs team re-launch their documentation at <https://docs.nunit.org>. As the result of this effort, I have been been given -- and accepted -- an invitation to lead [the NUnit docs project](https://github.com/nunit/docs)! I couldn't be more excited to continue to foster learning and growth for a foundational and fundamental tool in the .NET ecosystem. With [over 81 million total downloads on Nuget](https://www.nuget.org/packages/NUnit/), we have a large community to support, and I don't take that lightly.
 
 I have some fun follow-up posts planned about making this happen, but I wanted to reflect a bit on some of the circumstances surrounding how this all came to be in case folks can take something away from the story.
 
@@ -25,15 +25,15 @@ This all started because I saw, and loved, the idea of the [NUnit Analyzers proj
 
 Giving back in small ways like this to projects I like or care about is something that gives me great joy, and also something that has opened up many opportunities for me.
 
-## "Why not?" 
+## "Why not?"
 
-After updating the analyzer docs, [Chris Maddock noticed and posed a question about allowing pull requests to the docs](https://github.com/nunit/docs/issues/337). 
+After updating the analyzer docs, [Chris Maddock noticed and posed a question about allowing pull requests to the docs](https://github.com/nunit/docs/issues/337).
 
 This would be a large undertaking, but it was an exciting challenge to me. As part of the discussion, Chris asked if it would be too ambitious an undertaking. My answer? Opening a pull request to start the work and saying:
 
 > I suppose there's only one way to find out if it's too ambitious! :grin:
 
-If there's something that needs doing, and you're able to start it, and you believe it could be helpful -- why not start? 
+If there's something that needs doing, and you're able to start it, and you believe it could be helpful -- why not start?
 
 ## A labor of love
 
@@ -49,7 +49,7 @@ It's worth noting that I was attempting to improve one thing (the NUnit docs exp
 
 Making changes and offering help can create opportunities.
 
-(Also -- yes, I acknowledge that my inspirational story contains immense privilege in terms of time and space to make these changes, a group who was willing to work with me, etc. etc. and these opportunities aren't always afforded to everyone. My goal is to encourage everyone to try to the extent that they're able.) 
+(Also -- yes, I acknowledge that my inspirational story contains immense privilege in terms of time and space to make these changes, a group who was willing to work with me, etc. etc. and these opportunities aren't always afforded to everyone. My goal is to encourage everyone to try to the extent that they're able.)
 
 ## Not me; us. (Jump in!)
 
