@@ -49,7 +49,7 @@ It's worth noting that I was attempting to improve one thing (the NUnit docs exp
 
 Making changes and offering help can create opportunities.
 
-(Also -- yes, I acknowledge that my inspirational story contains immense privilege in terms of time and space to make these changes, a group who was willing to work with me, etc. etc. and these opportunities aren't always afforded to everyone. My goal is to encourage everyone to try to the extent that they're able.)
+To be clear, I need acknowledge that my inspirational story contains immense privilege in terms of time and space to make these changes, a group who was willing to work with me, etc. etc. and these opportunities aren't always afforded to everyone. My goal is to encourage everyone to try to the extent that they're able.
 
 ## Not me; us. (Jump in!)
 
