@@ -6,7 +6,6 @@ tags:
   - containers
 date: 2020-07-26 16:02 -0400
 ---
-
 Inspired by Immo's tweet: https://twitter.com/terrajobst/status/1287458432547606529?s=20
 
 * It might not make sense (or more sense) to use containers. They're not always a much better solution. That's rule number one of any assessment like this.
