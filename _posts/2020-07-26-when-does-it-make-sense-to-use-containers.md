@@ -6,7 +6,11 @@ tags:
   - containers
 date: 2020-07-26 16:02 -0400
 ---
-Inspired by Immo's tweet: <https://twitter.com/terrajobst/status/1287458432547606529?s=20>
+Inspired by Immo Landwerth's tweet: 
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I’m using Azure App Service run my ASPNET Core app (Linux). What’s the benefit of using docker?</p>&mdash; Immo Landwerth (@terrajobst) <a href="https://twitter.com/terrajobst/status/1287458432547606529?ref_src=twsrc%5Etfw">July 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+I figured I'd add my (hopefully reasonably nuanced) opinion here.
 
 * It might **not** make sense (or more sense) to use containers. They're not always a much better solution. That's rule number one of any opinion like this.
 * Containers make a lot of sense when people might be using differing environmental setups, especially those that differ across OSes (node version differences, ruby with native gems, python environments). If everyone is using a standard environment or can easily configure an environment to match yours, this benefit is reduced.
