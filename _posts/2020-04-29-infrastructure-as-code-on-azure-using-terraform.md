@@ -9,9 +9,13 @@ tags:
 date: 2020-04-29 09:48 -0400
 ---
 
-* Login to the azure cli `az login`
-* Install Terraform (on Windows like me? I suggest using [Chocolatey](https://chocolatey.org): `choco install terraform`)
-* Add the provider:
+* Install the azure cli (on Windows like me? I suggest using [Chocolatey](https://chocolatey.org): `choco install azure-cli`)
+* Login to the azure cli: `az login`
+* List your subscriptions: `az account list`. Note the Guid ID of the subscription you care about.
+* Choose the subscription you want to create resources within: `az account set --subscription YOUR_SUBSCRIPTION_ID`
+* Install Terraform (again, with chocolatey: `choco install terraform`)
+* Create a file for your terraform script, e.g. `environment-setup.tf`, and open it.
+* Add the provider to your terraform file:
 
 ```hcl
 provider "azurerm" {
@@ -24,7 +28,7 @@ provider "azurerm" {
 }
 ```
 
-* Setup the azure resources that you'll use for your back-end:
+* Add the setup for the azure resources that you'll use for your back-end:
 
 ```hcl
 resource "azurerm_resource_group" "backendrg" {
@@ -48,7 +52,7 @@ resource "azurerm_storage_container" "backendstoragecontainer" {
 }
 ```
 
-* Add a variables file or section
+* Add a variables file or section, e.g. `myvars.tfvars` and add the following variables to it:
 
 ```hcl
 variable "AzureSubscriptionId" {
@@ -68,11 +72,11 @@ variable "DeploymentRegion" {
 }
 ```
 
-* Add the file where you fill out the variables
+* Add the file where you fill out the variables, e.g. `thesecrets.tf`
 
 ```hcl
-AzureSubscriptionId="MY_SECRET_SUB
-AzureTenantId="MYY_SECRET_TENANT"
+AzureSubscriptionId="MY_SECRET_SUB"
+AzureTenantId="MY_SECRET_TENANT"
 ```
 
 * Run `terraform init` which will create your state locally.
