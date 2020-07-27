@@ -8,24 +8,26 @@ tags:
   - terraform
 date: 2020-04-29 09:48 -0400
 ---
+
 * Login to the azure cli `az login`
-* Install Terraform `choco install terraform`
+* Install Terraform (on Windows like me? I suggest using [Chocolatey](https://chocolatey.org): `choco install terraform`)
 * Add the provider:
 
-```
+```hcl
 provider "azurerm" {
   # Whilst version is optional, we /strongly recommend/ using it to pin the version of the Provider being used
   version = "=2.7.0"
 
   subscription_id = "SECRET_SUB_ID"
   tenant_id       = "SECRET_TENANT_ID"
-  features {} # This is required so that it doesn't throw an error.
+  features {}
+ # This is required so that it doesn't throw an error.
 }
 ```
 
 * Setup the azure resources that you'll use for your back-end:
 
-```
+```hcl
 resource "azurerm_resource_group" "backendrg" {
     name     = "TestTFProject"
     location = var.DeploymentRegion
@@ -49,7 +51,7 @@ resource "azurerm_storage_container" "backendstoragecontainer" {
 
 * Add a variables file or section
 
-```
+```hcl
 variable "AzureSubscriptionId" {
     description = "The subscription in which you are trying to set up this Terraform config"
     type = string
@@ -69,7 +71,7 @@ variable "DeploymentRegion" {
 
 * Add the file where you fill out the variables
 
-```
+```hcl
 AzureSubscriptionId="MY_SECRET_SUB
 AzureTenantId="MYY_SECRET_TENANT"
 ```
@@ -81,7 +83,7 @@ That's great, but now all our state is stored locally. This is Not A Good Idea (
 
 So, add the backend:
 
-```
+```hcl
 terraform {
     backend "azurerm" {
         resource_group_name  = "TestTFProject"
@@ -97,4 +99,6 @@ terraform {
 * Run `terraform apply` and notice that it tells you the back-end changed.
 * Now tun `terraform init` again. It will prompt you on whether to add your state to the new back-end. Say yes!
 
-Now Terraform is ready to rock and roll -- you've got the basics for your 
+Now Terraform is ready to rock and roll -- you've got the basics for your IaC setup.
+
+Happy Terraforming!
