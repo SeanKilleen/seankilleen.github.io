@@ -18,7 +18,7 @@ It usually depends on the environment of the project. I usually contribute in a 
 * Docs
 * More substantial source code contributions (could also mean automated tests or CI/CD support)
 
-Projects are normally really grateful to receive docs contributions, so if I'm looking to introduce myself to that project, I'll often start out by offering docs. It also helps me start digging into the codebase.
+Projects are normally really grateful to receive docs contributions, so if I'm looking to introduce myself to that project, I'll often start out by offering docs. It also helps me start digging into the code-base.
 
 I think it's important to start with issues, not pull requests, especially if you're new. I look for issues that are tagged `up-for-grabs`, `good-first-issue`, `help-wanted`, etc. I usually comment on those issues and ask if someone's OK if I jump into it, and mention that I'm a bit newer to contributing on this project but I'm interested. If I want to suggest any changes myself -- docs contributions, any code contributions, I usually add an issue for discussion unless it's abundantly clear that it's needed.
 
