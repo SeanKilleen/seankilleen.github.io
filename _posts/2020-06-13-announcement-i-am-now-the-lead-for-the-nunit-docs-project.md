@@ -7,7 +7,7 @@ tags:
   - docs
   - oss
   - community
-date: 2020-06-13 09:32 -0400
+date: 2020-07-27 10:00 -0400
 ---
 I recently helped the NUnit docs team re-launch their documentation at <https://docs.nunit.org>. As the result of this effort, I have been been given -- and accepted -- an invitation to lead [the NUnit docs project](https://github.com/nunit/docs)! I couldn't be more excited to continue to foster learning and growth for a foundational and fundamental tool in the .NET ecosystem. With [over 81 million total downloads on Nuget](https://www.nuget.org/packages/NUnit/), we have a large community to support, and I don't take that lightly.
 
