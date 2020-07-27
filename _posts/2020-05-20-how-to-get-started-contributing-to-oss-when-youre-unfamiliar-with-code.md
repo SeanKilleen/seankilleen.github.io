@@ -20,7 +20,7 @@ It usually depends on the environment of the project. I usually contribute in a 
 
 Projects are normally really grateful to receive docs contributions, so if I'm looking to introduce myself to that project, I'll often start out by offering docs. It also helps me start digging into the code-base.
 
-I think it's important to start with issues, not pull requests, especially if you're new. I look for issues that are tagged `up-for-grabs`, `good-first-issue`, `help-wanted`, etc. I usually comment on those issues and ask if someone's OK if I jump into it, and mention that I'm a bit newer to contributing on this project but I'm interested. If I want to suggest any changes myself -- docs contributions, any code contributions, I usually add an issue for discussion unless it's abundantly clear that it's needed.
+I think it's important to start with issues, not pull requests -- especially if you're new. I look for issues that are tagged `up-for-grabs`, `good-first-issue`, `help-wanted`, etc. I usually comment on those issues and ask if someone's OK if I jump into it, and mention that I'm a bit newer to contributing on this project but I'm interested. If I want to suggest any changes myself -- docs contributions, any code contributions, I usually add an issue for discussion unless it's abundantly clear that it's needed.
 
 If someone is OK with me hopping onto an issue, I'll start a PR early, use draft PRs, and make many small commits. And I'll use the PR text to be crystal clear about what I'm doing, the effect I think it'll have, my thought process, and answering any "why" questions. I also make it super-explicit that I'd love and welcome feedback, the earlier the better.
 
