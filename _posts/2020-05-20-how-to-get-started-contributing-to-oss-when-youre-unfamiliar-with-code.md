@@ -26,10 +26,9 @@ If someone is OK with me hopping onto an issue, I'll start a PR early, use draft
 
 The rest of it is just "working out loud". I push commits, I add comments along the way summarizing my progress and any stumbling blocks, etc.
 
-In my colleague's example, the project they are interested in has a `good-first-issue` label. This indicates it's a good way to ease in, and they'll help you with it
-
+In my colleague's example, the project they are interested in has a `good-first-issue` label. This indicates it's a good way to ease in, and they'll help you with the process.
 That's a great sign -- it means they're interested in contributions and will be friendly about you offering yours. I'd take them up on one of those.
 
-Don't worry; it will be humbling. Every new codebase is. But the end result feels really good. A way to make this fun: stream it! If you're worried about slogging through, 100 other people probably are, too. If you show your thought process and your noodling through things, other people might even join and help. It takes a bit of guts but if you embrace the learning part of it and don't think of it like a conference talk, people actually get really into co-creating with you (learned that one from Alex Slotte who is having a great time streaming, with great success.)
+Don't worry; it will be humbling. Every new code-base is. But the end result feels really good. A way to make this fun: stream it! If you're worried about slogging through, 100 other people probably are, too. If you show your thought process and your noodling through things, other people might even join and help. It takes a bit of guts but if you embrace the learning part of it and don't think of it like a conference talk, people actually get really into co-creating with you (learned that one from colleague and fellow Microsoft MVP [Alex Slotte](https://twitter.com/alexslotte) who is having [a great time streaming](https://www.twitch.tv/alexslotte), with great success.)
 
 The most important thing: get started! If you are humble, willing to accept feedback, and care about being kind and helping out, chances are you're going to make a great and welcome impact.
