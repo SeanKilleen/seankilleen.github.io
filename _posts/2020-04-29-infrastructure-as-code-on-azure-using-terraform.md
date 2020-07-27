@@ -20,8 +20,7 @@ provider "azurerm" {
 
   subscription_id = "SECRET_SUB_ID"
   tenant_id       = "SECRET_TENANT_ID"
-  features {}
- # This is required so that it doesn't throw an error.
+  features {} # This is required so that it doesn't throw an error.
 }
 ```
 
@@ -90,8 +89,8 @@ terraform {
         storage_account_name = "terraformmetadata"
         container_name       = "tfstate"
         key                  = "terraform.tfstate"
-        subscription_id = "d10f1412-44d2-4a88-9740-aa87e164b172" # TODO: Variable somehow?
-        tenant_id       = "cf8f1ebd-81a2-49c8-a1e0-12bde7964425" # TODO: Variable somehow?
+        subscription_id = "YOUR_AZURE_SUBSCRIPTION_ID" # TODO: Variable somehow?
+        tenant_id       = "YOUR_AZURE_TENANT_ID" # TODO: Variable somehow?
     }
 }
 ```
