@@ -28,9 +28,12 @@ layout: default
     {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date: "%B %d, %Y" }}">{% endif %}
 
     <div class="page__inner-wrap">
+
+      {% unless page.disable_ads == true %}
       <!-- Carbon ads script -->
       <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7DLK7I&placement=seankilleencom" id="_carbonads_js"></script>
       <!-- End Carbon ads script -->
+      {% endunless %}
 
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
@@ -52,14 +55,8 @@ layout: default
             </nav>
           </aside>
         {% endif %}
-        {% if page.popular %}
-        {% include _bmc.html %}
-        {% endif %}
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
-        {% if page.popular %}
-        {% include _bmc.html %}
-        {% endif %}
       </section>
 
       <footer class="page__meta">
