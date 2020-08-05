@@ -25,6 +25,7 @@ references:
    parenturl: http://stackoverflow.com/
 ---
 ### Problem:
+
 I'd like to update my MVC4 project to use the following:
 
 * Bootstrap LESS source (Twitter.Bootstrap.Less nuget package)
@@ -37,6 +38,7 @@ However, this can be a pain for the following reasons:
 * Font-Awesome's MIME types are not all recognized by the internal webapps
 
 ### Solution
+
 Thanks to the Excellent [Twitter.Bootstrap.Less.MVC4][Nuget Link] package by Christopher Deutsch, this process is a lot easier.
 
 #### Install Bootstrap LESS and Dotless
@@ -44,7 +46,7 @@ Thanks to the Excellent [Twitter.Bootstrap.Less.MVC4][Nuget Link] package by Chr
 * Create a net ASP.NET MVC4 Web Project.
 * Open the package manager console.
 * Ensure that your MVC4 Project is set as the current project in the package manager
-* Install Chris's package by using the following command: 
+* Install Chris's package by using the following command:
 
 ```powershell
 install-package Twitter.Bootstrap.Less.MVC4
@@ -59,11 +61,12 @@ install-package Twitter.Bootstrap.Less.MVC4
 
 #### Install FontAwesome
 
-* From the package manager, run: 
+* From the package manager, run:
 
 ```powershell
 install-package FontAwesome
 ```
+
 * In the Bootstrap.BundleConfig.cs file, add the font-awesome.css file to the StyleBundle so that the line reads as follows:
 
 ```csharp
@@ -74,6 +77,7 @@ var css = new StyleBundle("~/Content/css")
 * Open your twitter.bootstrap file and comment out the line importing sprites.less. FontAwesome and Bootstrap's sprites naturally conflict as FontAwesome is designed to replace them.
 
 #### Update IIS Settings to allow FontAwesome's Static Content
+
 * Add the following to web.config in the `<system.WebServer>` section:
 
 ```xml

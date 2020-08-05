@@ -26,9 +26,9 @@ Now, this is all well and good. However, what if the default value changes? Or t
 However, when using Moq, it allows you to use a lambda to specify things *about* a string, rather than the whole string itself:
 
 ```csharp
-mockLogger.Verify(x=> x.Warning(It.Is<string>(str => 
-     str.Contains("Setting") && 
-     str.Contains("has no value") && 
+mockLogger.Verify(x=> x.Warning(It.Is<string>(str =>
+     str.Contains("Setting") &&
+     str.Contains("has no value") &&
      str.Contains("using default"))));
 ```
 

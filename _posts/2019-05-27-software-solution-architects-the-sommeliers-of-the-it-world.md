@@ -6,7 +6,7 @@ date: '2019-05-27 10:26 -0400'
 canonical_url: https://excellalabs.com/talks/software-solution-architects-sommeliers-it-world/
 ---
 
-I recently had a colleague ask me about how to describe the difference between an great software architect and a mediocre one, or how to deal with "ivory tower" architects. I personally eschew the title of software/solutions architect because I don’t like to be lumped into that category, but I was struggling to sum up the differences well. 
+I recently had a colleague ask me about how to describe the difference between an great software architect and a mediocre one, or how to deal with "ivory tower" architects. I personally eschew the title of software/solutions architect because I don’t like to be lumped into that category, but I was struggling to sum up the differences well.
 
 Then I took a trip to Greece, met a sommelier named Angelo, and had one of the best experiences I’ve ever had tasting wine.
 
@@ -57,10 +57,10 @@ This is the hard part. The mileage varies, but it was part of the question I was
 * **Show them a better way.** If an architect only respects expertise, show them some folks with real expertise leading by example.
 * **Be patient**. It will take some time for the guard to come down. Once they know you’re there to help them and there’s some movement towards a culture that allows them to let go a bit, you may make some good progress.
 * **Show them work can be fun.** Building things together can be great cause for celebration. Celebrate them along with the team rather than separate from the team.
-* **Build the relationship**. After all, it’s what you want them to do, right? Find out if there are fears, anxieties, a bad history in a broken organization. 
+* **Build the relationship**. After all, it’s what you want them to do, right? Find out if there are fears, anxieties, a bad history in a broken organization.
 
 ## I’d love your thoughts!
 
-What are some examples of sommeliers in our industry? Has your experience with sommeliers generally been positive or negative? How have you successfully (or less successfully) tried to change a sommelier's approach? Is this all just a ridiculous metaphor? 
+What are some examples of sommeliers in our industry? Has your experience with sommeliers generally been positive or negative? How have you successfully (or less successfully) tried to change a sommelier's approach? Is this all just a ridiculous metaphor?
 
 Add your voice to the comments! I won’t bite! I’m on vacation and just musing.
