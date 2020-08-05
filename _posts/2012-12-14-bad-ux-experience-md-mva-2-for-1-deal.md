@@ -18,6 +18,7 @@ Even better: Since I had to get creative with the symbols in the name, I shorten
 Eventually, I had to force it to use the original, so now it will read "BVD", and I'm sure it's only a matter of time before I'll have to get that corrected.
 
 ### Additional Bad UX Example
+
 While writing this blog post, I attempted to link to the change of address form, so I right-clicked on the link titled "change of address form" and chose to copy the URL. When I pasted it just now, I got:
 
     javascript:__doPostBack('ctl00$btnChangeOfAddress','')
@@ -29,6 +30,7 @@ Really? We're still doing postbacks on buttons this way? I guess the best way to
 There are already great posts on falsehoods programmers believe about [names], [time], [networks], [geography], [build systems] -- It seems like one on addresses is long overdue. In the spirit of those posts, I'll begin one below based on my experience.
 
 #### In the context of addresses, all of the following are wrong:
+
 * The street address will be less than 30 characters
 * The location will have a house number
 * The city will be less than 30 characters
