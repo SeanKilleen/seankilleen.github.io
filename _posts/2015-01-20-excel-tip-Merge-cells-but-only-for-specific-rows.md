@@ -7,8 +7,9 @@ redirect_from:
  - /2015/01/excel-tip-Merge-cells-but-only-for-specific-rows%20-%20Copy/
  - /2015/01/excel-tip-Merge-cells-but-only-for-specific-rows - Copy/
 ---
-## Problem:
-When using Excel, sometimes I have multiple rows that I want to Merge and center, but only within that row. 
+## Problem
+
+When using Excel, sometimes I have multiple rows that I want to Merge and center, but only within that row.
 
 ![The rows prior to the merge.]({{site.post-images}}/01_PriorToMerge.png)
 
@@ -27,6 +28,5 @@ In Excel 2013 [^1], you can select the drop-down next to `Merge and Center` and 
 And now, you see two rows of text, each merged & centered separately.
 
 ![The finished product.]({{site.post-images}}/04_RowsMerged.png)
-
 
 [^1]: (and possibly earlier versions, I haven't tested)

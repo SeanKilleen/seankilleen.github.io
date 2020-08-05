@@ -14,7 +14,8 @@ references:
 ---
 Ran into this today; thought I'd document it for others.
 
-### Problem:
+### Problem
+
 When installing Windows Updates on Windows 8, it seems to stall while processing the following update:
 
 "Security Update for Microsoft OneNote 2010 (KB2760600) 32-Bit Edition"
