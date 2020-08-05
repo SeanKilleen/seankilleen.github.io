@@ -9,6 +9,7 @@ series: building-a-build-process
 {% include _buildseries-intro.md %}
 
 ### Why Undertake This (Plus: Look at my Presentation!)
+
 I've seen too many instances in various jobs and projects where the build/integration process is not afforded due diligence (or *any* diligence, really).
 
 I decided I needed to do something about it. Part experiment, part challenge, part reference guide. I'm going to see if I can put together an entire continuous integration / build process for .NET environments from scratch.
@@ -38,6 +39,7 @@ The build process so far will include the following:
 * Utilizing Nuget packages and Octopus to transform releases for different environments.
 
 ### Hoo-boy, Here We Go
+
 It's a lofty goal -- especially for someone who's not a pro developer -- but I'm excited for everything I'm about to learn during this process.
 
 Onward and Upward!

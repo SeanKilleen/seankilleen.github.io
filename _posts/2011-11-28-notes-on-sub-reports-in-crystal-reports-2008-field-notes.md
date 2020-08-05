@@ -25,7 +25,7 @@ The post is excerpted (though poorly formatted) below in case the originating si
 
 >The most important thing to remember when using shared variables is that Crystal Reports must first evaluate the formula where the value is stored before evaluating the formula that retrieves the shared variable. For example if you want to pass a grand total from the subreport to do a calculation in the main report, follow these steps:
 
- * In the subreport, create a formula similar to the one below:
+> * In the subreport, create a formula similar to the one below:
 
 ```vb
 // SubFormula
@@ -38,8 +38,7 @@ Shared CurrencyVar myTotal := Sum ({Orders.Order Amount})
 ```
 
 > * Place this formula in your subreport.
-> 
-* In the main report, create a formula that declares the same variable name:
+> * In the main report, create a formula that declares the same variable name:
 
 ```vb
 //@MainFormula
