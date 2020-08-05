@@ -12,7 +12,7 @@ _I'm considering a series called "Agile Survival Guide", designed to muse on / a
 
 ## "I feel like we're not having real retros."
 
-I've heard this more than a few times over the years and I've dealt with it in a few different ways, and seen some tips from others. 
+I've heard this more than a few times over the years and I've dealt with it in a few different ways, and seen some tips from others.
 
 The goal of a retrospective, broadly speaking, is for the team (the _entire_ team) to reflect on their current process and approaches as a whole to see what they could do better.
 
@@ -35,6 +35,6 @@ In the past, I've had success with some of the techniques below, none of which o
 * **Embrace a "share, then discuss" approach**: Sometimes, when discussing topics, particularly contentious ones, the loud folks weigh in first and the discussion goes off the rails. Meanwhile, people who have valuable perspectives or who may feel disconnected have to fight their way in. If instead a discussion starts first by all attendees sharing their perspectives (should they choose to do so), everyone has had a chance to speak, and ideas and consensus begin to form among the team. This may require some timeboxing, but is a really helpful way to get the full spectrum of feeling and help others be heard. This enforces the concept of equal voice, which lends people to feel safer in sharing their opinions / observations, knowing they won't be rejected outright.
 * **Vegas Rules**. While I may surface a summary of what actions the team intends to take or any major risks, retrospective discussions should generally adhere to "Vegas Rules" (what happens in vegas, stays in vegas) unless the entire team feels comfortable sharing more. This is another way for folks to know that they can speak freely in a meeting, and the team doesn't have to worry about any dirty laundry being aired that led to their decisions.
 
-## What are your Tips? 
+## What are your Tips?
 
 Have you heard a phrase similar to the above? Do you have an additional factor that causes this problem, or an additional solution you've tried with success? I'd love to hear it in the comments!

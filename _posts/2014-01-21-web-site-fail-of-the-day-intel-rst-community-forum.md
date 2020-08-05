@@ -23,7 +23,6 @@ And the kicker: Maybe I'm getting my username wrong and I can have them e-mail i
 
 ![False invalid e-mail message]({{site.post-images}}/IntelRST_ValidEmailIssue.png)
 
-
 Not really sure what else I can legitimately do to try to get into this web site..
 
 Bonus! I found out that the Intel &amp; Intel Communities logins are different. OK, could have been my bad. I see the button to link the accounts:

@@ -3,7 +3,6 @@
 title: 'Crystal Reports: Display Month Name and Year of Last Month [Field Notes]'
 date: 2012-06-18 17:00:00.000000000 -04:00
 comments: true
-popular: true
 redirect_from:
  - /2012/06/crystal-reports-display-month-name-and.html
  - /2012/06/crystal-reports-display-month-name-and-year-of-last-month-field-notes/undefined
@@ -19,14 +18,18 @@ references:
    parenturl: http://crystaltricks.com/wordpress/
 ---
 ### Problem:
+
 A report I'm running gets the data for the last Month. I'd like to nicely display the name of the month and year.
 
 ### Solution
 
 #### Step 1: Formula to Return the Date 1 Month Ago
+
 Use the DateAdd function in the formula to get the date minus one month:
 
-    DateAdd("m", -1, CurrentDate)
+```crystal
+DateAdd("m", -1, CurrentDate)
+```
 
 This says to use "month" intervals, subtract one, and use the current date as the starting point.
 

@@ -5,9 +5,9 @@ date: 2010-11-11 10:08:00.000000000 -05:00
 comments: true
 
 ---
-_[Updated with some corrections from Mom.]_
+(Updated with some corrections from Mom.)
 
-My Great-Uncle Tommy passed away today. 
+My Great-Uncle Tommy passed away today.
 
 It's hard to ever pay tribute to someone completely, but I feel like I should at least attempt to do so here, however the scattered thoughts present themselves. The details might be slightly incorrect, but that happens sometime when there's some myth attached to the man.
 
@@ -19,7 +19,7 @@ He was a big man, in the way that statues are big to a kid. He was a veteran, bu
 
 Some stories -- unfortunately the details are lacking, because I didn't experience them first-hand, but nevertheless, here they are anyway:
 
-My mom always loved to tell me about the time, for his daughter (my Aunt) Barb's wedding, he went down to the Navy Yard and somehow "acquired" an entire van-full of liquor. I mean we're talking Econo-van sized, full of liquor. And just brought it back and parked it in the yard. 
+My mom always loved to tell me about the time, for his daughter (my Aunt) Barb's wedding, he went down to the Navy Yard and somehow "acquired" an entire van-full of liquor. I mean we're talking Econo-van sized, full of liquor. And just brought it back and parked it in the yard.
 
 Also, after my mom's first marriage, when it didn't work out, he told her "why didn't you just tell us at the wedding? We'd have had a party anyway!" -- he was always very supportive like that.
 
