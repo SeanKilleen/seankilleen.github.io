@@ -5,6 +5,7 @@ layout: default
 # Ways in which this differs from the original layout:
 
 # * CarbonAds is inserted
+# * Edit links functionality is added after the call to post__meta.html
 ---
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
@@ -39,7 +40,7 @@ layout: default
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
           {% if page.title %}<h1 id="page-title" class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
-          {% include post__meta.html %}
+          {% include post__meta.html %} | <a href="https://github.com/{{site.repository}}/edit/{{site.defaultbranch}}/{{ page.path }}"><i class="fas fa-edit"></i> Suggest an edit</a> | <a href="{{ site.github.repository_url }}/issues/new?labels=FromTheSite"><i class="fa fa-question-circle"></i> Issue? Question?</a>
         </header>
       {% endunless %}
 
