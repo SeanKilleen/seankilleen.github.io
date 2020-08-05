@@ -7,7 +7,7 @@ comments: true
 ---
 I was featured on the Charity: Water blog!
 
-Check it out [Here]() (Update: link has since been lost to history) I'm the one next to the cupcake.
+Check it out Here (Update: link has since been lost to history) I'm the one next to the cupcake.
 
 Then, please consider [donating to a good cause][CW Page]
 
