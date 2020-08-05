@@ -6,7 +6,7 @@ tags:
   - cd
   - octopusdeploy
   - teamcity
-date: '2020-02-10 12:16 -0500'
+date: '2020-02-10 10:00 -0500'
 ---
 We have an OctopusDeploy deployment that deploys our code to an automated acceptance test environment. And we have a TeamCity build that executes our automated acceptance tests
 
@@ -16,7 +16,7 @@ The challenge is: the TeamCity build kicked off after our code was merged, not a
 
 I created an OctopusDeploy step template to kick off a TeamCity build, and then utilized that step template in the Octopus deployment.
 
-It works via crafting an `HTTP POST` request against the TeamCity API. 
+It works via crafting an `HTTP POST` request against the TeamCity API.
 
 ### Step Template Contents
 

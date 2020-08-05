@@ -17,7 +17,7 @@ request the old fashioned way.
 ## General Credits
 
 * I think much credit is due to [Phil Haack](http://haacked.com/). He inspired me with the idea that the entirety of a blog could be collaborative, and his posts on it removed some of the fear for me. His blog is the reason that I have an edit link, an issue submission link, and, well, this credits page. He's a constant source of inspiration.
-* Thanks to [Pat Hawks][Pat Github] for helping [fix][pat 1] [several][pat 2] [issues][pat 3] early on. Thanks, Pat! 
+* Thanks to [Pat Hawks][Pat Github] for helping [fix][pat 1] [several][pat 2] [issues][pat 3] early on. Thanks, Pat!
 
 ## Contributors
 

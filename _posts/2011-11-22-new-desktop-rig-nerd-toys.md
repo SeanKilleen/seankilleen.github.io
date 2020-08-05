@@ -10,9 +10,10 @@ Recently, I decided to invest in something that would meet two very important cr
 The end result -- I'm getting a new desktop rig, and building one from scratch for the first time.
 
 ### Components in the New Desktop
+
 I've followed largely in the footsteps of the [Jeff Atwood build] (when someone really smart has already done a lot of research, it's a huge leg up). The components are below, with links:
 
-*  **Case:** [Corsair Graphite Series 600T CC600TM][Case Link]. Big, but plenty of room for configuration despite my bumbling coordination. Also, primed for airflow and apparently very easy to work with. Also has a bay for SSDs so I didn't have to buy a mounting kit. Initially ordered the one without a window, but shipping considerations led me towards this one.
+* **Case:** [Corsair Graphite Series 600T CC600TM][Case Link]. Big, but plenty of room for configuration despite my bumbling coordination. Also, primed for airflow and apparently very easy to work with. Also has a bay for SSDs so I didn't have to buy a mounting kit. Initially ordered the one without a window, but shipping considerations led me towards this one.
 * **Motherboard:** [ASUS P8Z68-V PRO][MB Link] Z68 chipset, 32GB max memory, Sata 6GB/s, USB 3.0, RAID for drives, SSD caching.
 * **Processor:** [Intel Core i7-2600K][i7 Link]. 3.4 GHz Quad-Core out of the box. Crazy overclockable (which I plan to attempt)
 * **Memory**: [16GB (2 x 8GB) G. Skill Ripjaws series DDR3 SDRAM 1888 (PC3 1066)][RAM Link]. Got a great deal on this from Newegg during one of their sale sprints. Couldn't pass up the ability to still expand memory later.
@@ -24,7 +25,7 @@ I've followed largely in the footsteps of the [Jeff Atwood build] (when someone 
 * **SSD:** [Crucial CT064M4SSD2 64 GB][SSD Link] -- This is a beautiful thing. I will use the 64GB to serve as a cache for the two 1 TB drives. This means most things I do often (OS, etc.) should run at near-SSD speeds. I'm excited to see this in action.
 * **Optical Drive**: [Samsung SH-B123L/BSBP][Optical Link] -- Blu-Ray reader, writes everything else, does LightScribe.
 * **USB 3.0**: [Superspeed USB3.0 Bay Hub Kit][USB Link]. High-speed hub? Yes, thank you.
-* **Graphics Card:** [Sapphire HD 6850 PCIE Video Card][Video Link]. There are so many of these out there, it's hard to choose. I shot towards the middle of the good stuff. Triple monitor output is appealing, for sure. Plus it's got the ability to be paired with a friend in the future. 
+* **Graphics Card:** [Sapphire HD 6850 PCIE Video Card][Video Link]. There are so many of these out there, it's hard to choose. I shot towards the middle of the good stuff. Triple monitor output is appealing, for sure. Plus it's got the ability to be paired with a friend in the future.
 * **OS**: [Windows 7 Professional 64-bit System Builder DVD][Win Link]. I use Win7, I love it, and I like it to be legitimately licensed.
 * **Extras**: [Thermal paste][Thermal Link], [SATA cables][SATA Link], etc.
 * **For the future**: Egg crate foam / sound-proofing materials. I'll cobble these together from eBay or something.
@@ -38,7 +39,7 @@ I've followed largely in the footsteps of the [Jeff Atwood build] (when someone 
 
 ### What I Plan to do With It
 
-* **Get better at doing this sort of thing.** Seriously, it amazes me that I've gone this long without building my own rig. It's such a rite of passage in the tech world. I have plenty of knowledge of how these things tend to work, but there's no substitute for *doing *it.
+* **Get better at doing this sort of thing.** Seriously, it amazes me that I've gone this long without building my own rig. It's such a rite of passage in the tech world. I have plenty of knowledge of how these things tend to work, but there's no substitute for *doing* it.
 * **Back it up**. The first piece of software to go on this baby after Windows will be Backblaze, which is currently my backup provider of choice. Unlimited data + external HDDs for $50/year. Unbeatable.
 * **Overclock it**. The word itself makes me nervous and conjures images of silicon melting, but it's apparently mind-numbingly simple with the 2600k.
 * **Virtualize on it.** 16 GB of memory and all that HDD space means prime virtualization territory. I'll stop short of putting XenServer on it because I still want to play games, etc. natively on Windows, but I plan to use VirtualBox to set up a number of of VMs, which leads me to my next point..
@@ -47,6 +48,7 @@ I've followed largely in the footsteps of the [Jeff Atwood build] (when someone 
 * **Go to dual (and eventually triple) monitors**. It's its own reason.
 
 ### What Do You Think?
+
 Sound off in the comments -- I'm interested to hear your thoughts!
 
 [Case Link]: http://www.amazon.com/gp/product/B004X63JWS/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=seankilcom-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B004X63JWS

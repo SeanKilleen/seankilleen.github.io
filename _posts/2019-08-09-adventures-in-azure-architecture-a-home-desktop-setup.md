@@ -23,7 +23,7 @@ The client is moving overseas and cannot take their desktop equipment with them 
 ## Additional Questions I Asked
 
 * **What kinds of data / information?** Occasional graphics-intensive workloads (think Adobe Photoshop & InDesign); Outlook e-mail files; Audacity music files
-* **Budget**: Generally speaking, she'd like to keep this as expensive as new hardware would cost when spread over 3 years, so think $1k/year or $83/mo. 
+* **Budget**: Generally speaking, she'd like to keep this as expensive as new hardware would cost when spread over 3 years, so think $1k/year or $83/mo.
 * **Stretch budget**: Client mentioned that if the solution delivered, they could pay up to roughly $200/month, which does give us some wiggle room.
 * **Where (roughly) will the client be located?** The client will be located in the UK, but has some data that can't cross boundaries, and so things can be located in the US (they're aware of the lag possibility).
 * **How much time per day does the client anticipate using the machine?** Client uses the machine roughly 2-3 hours per day. We can use this to extrapolate costs assuming we can get the tooling in place.
@@ -47,8 +47,8 @@ OK, that's a lot of good information to go on. Here's what I'm thinking:
 
 ## Trade-Offs
 
-* **Data security concerns vs. Cost Effectiveness**: Client raised the (totally reasonable) point that MS holds the encryption keys to OneDrive storage and so they normally keep minimal files there. However, a 2 TB disk attached to an Azure VM -- excluding backup costs -- will likely run $80-100/mo, which bumps up against the budget constraints. 
-* **Graphics**: The client mentioned Adobe Photoshop / InDesign, etc. One of the areas this solution is weak in is that the machines in this setup don't have discrete graphics cards. I'm not sure what to do about that, nor am I sure what the impact will be overall. 
+* **Data security concerns vs. Cost Effectiveness**: Client raised the (totally reasonable) point that MS holds the encryption keys to OneDrive storage and so they normally keep minimal files there. However, a 2 TB disk attached to an Azure VM -- excluding backup costs -- will likely run $80-100/mo, which bumps up against the budget constraints.
+* **Graphics**: The client mentioned Adobe Photoshop / InDesign, etc. One of the areas this solution is weak in is that the machines in this setup don't have discrete graphics cards. I'm not sure what to do about that, nor am I sure what the impact will be overall.
 
 ## Calculating the Cost
 

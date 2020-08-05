@@ -63,12 +63,12 @@ Add some TwiML along the following lines.
 
 Let's break this down a bit. You can think of it like a script for whatever actions Twilio will take during the call.
 
-* The `111111111` is our redacted Zoom Meeting ID, 
+* The `111111111` is our redacted Zoom Meeting ID,
 * The `222-222-2222` is our redacted main Zoom dial-in number
 * First, we say a phrase in a generic man's voice. (I chose the phrase so that the callers would know what was happening. I chose a generic man's voice because I was messing around with voice functionality one day, but there are a lot of options there.
 * Next, we dial the number.
 * After we say the phrase and dial the number, we send some digits & wait. In this case, a `w` represents a certain amount of time waiting. I fiddled with this a bit to get it right.
-* Regarding `#ww#`: we need to enter `#` after we dial the meeting number, wait for it to ask our participant ID, and then hit `#`. 
+* Regarding `#ww#`: we need to enter `#` after we dial the meeting number, wait for it to ask our participant ID, and then hit `#`.
 
 You can also refer to the [TwiML documentation](https://www.twilio.com/docs/voice/twiml) -- there's a bunch of stuff you can do with it.
 
@@ -81,11 +81,11 @@ When you are done with the TwiML bin, be sure to save it.
 * Select to accept voice calls
 * Under `a call comes in`, select `TwiML` and select the TwiML bin you previously created.
 * Save the phone number settings.
- 
+
 ### Trying it out
 
 Dial your number and hear it in action!
 
-## What do you think? 
+## What do you think?
 
 Did you hit any snags? Have you solved this problem in a different way? Sound off in the comments!
