@@ -18,15 +18,17 @@ references:
 Alright, I just couldn’t take the guilt. I can’t abide Subversion and Apache being set up without defaulting to https and a TLS encrypted connection. We’ll remedy this below.
 
 ### Install The Required Packages
+
 On the CentOS server, login as root and type the following in the terminal to install packages:
 
 ```sh
     yum install mod_ssl openssl
 ```
-    
+
 These packages may already be installed; don’t worry if yum tells you that it has nothing to do.
 
 ### Use OpenSSL to Generate a Self-Signed Certificate
+
 Navigate to the certificate store by heading to:
 
 ```sh
@@ -38,13 +40,13 @@ Next, we’ll need to create a strong private key (2048-bit encryption):
 ```sh
 openssl genrsa -out ca.key 2048
 ```
-    
+
 Then, we generate a CSR (Certificate Signing Request):
 
 ```sh
 openssl req -new -key ca.key -out ca.csr
 ```
- 
+
 You’ll then have to enter the following fields:
 
 * 2-digit country code (e.g. `US`)  
@@ -72,6 +74,7 @@ cp ca.cr /etc/pli/tls/private/ca.csr
 ```
 
 ### Modify Apache’s Configuration to offer SSL
+
 Open the file for editing:
 
 ```sh
@@ -99,7 +102,8 @@ Next, restart apache – from the console:
 ```
 
 #### Redirect Non-SSL connections to the SSL Connection
-To do this, we need to edit the apache configuration file. 
+
+To do this, we need to edit the apache configuration file.
 
 ```sh
 gedit /etc/httpd/conf/httpd.conf
@@ -134,6 +138,7 @@ NameVirtualHost *:443
 Now point your browser to *https*://[your ip or host name] and you’ll see that the site loads under an http connection. *NOTE:* you may get an error about the certificate, but this is because it does not come from a CA and thus is not “trusted” by your computer. The encryption is still TLS 1.0 256-bit encryption.
 
 ### Enforce SSL/TLS Only (Redirect http to https)
+
 I put this in a separate section because I wanted the additions to be compartmentalized.
 
 To use mod_rewrite to redirect any http requests to https, change the VirtualHost *:80 to the following:
@@ -152,6 +157,7 @@ To use mod_rewrite to redirect any http requests to https, change the VirtualHos
 ```
 
 ### Configure the Firewall to Allow Port 443 Connections
+
 On the console:
 
 ```sh
@@ -160,8 +166,8 @@ iptables –A INPUT –p tcp –dport 443 –j ACCEPT
 iptables –L –v
 ```
 
-Now, try heading to `http:[your ip or hostname]/svn`, and watch it redirect to https. 
+Now, try heading to `http:[your ip or hostname]/svn`, and watch it redirect to https.
 
-Success! 
+Success!
 
 {% include _buildseries-footer.md %}

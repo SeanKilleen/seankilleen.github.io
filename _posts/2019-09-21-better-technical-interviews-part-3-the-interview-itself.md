@@ -26,7 +26,7 @@ OK! Now that we're well-prepared, the day of the interview is here and it's time
   * **Make sure they feel comfortable**. Ask them if they want a drink of water.
   * **Confirm how long you have them in the interview**. This lets you know if you have a little extra room for questions, and also sends the signal that you respect their time.
   * **Let them know this is more of a conversation than a quiz**, and that you will be sure to leave room for questions.
-  * **Let them know the agenda**. This allows them to have expectations, and to mentally prepare for what will come after them. 
+  * **Let them know the agenda**. This allows them to have expectations, and to mentally prepare for what will come after them.
 * **Pitch your company first**. Why do you like it? Help them understand why it's a great place to work, in ways that are relevant to them. Allow for some questions up front. Get them excited. This shows you understand that a mutual fit is important. Also, whether the person is an appropriate hire or not, they'll leave armed with information and a good feeling about the place.
 * **Also, let them know what _won't_ be on the agenda**. Will you not be running a coding exam? Let them know that (and likely listen to that huge, sweet sigh of relief.)
 * **Are you taking notes?** Let them know it's just to write down what they said, not to cast judgment in real time.
@@ -35,7 +35,7 @@ OK! Now that we're well-prepared, the day of the interview is here and it's time
 
 ## Assessing During the Interview
 
-* **Notes**. I tend to take short-hand notes on anything the candidates say that find to be of substance / value. I start this during their "recent win" section, to ensure they know I'm not just making marks against them in a notebook. 
+* **Notes**. I tend to take short-hand notes on anything the candidates say that find to be of substance / value. I start this during their "recent win" section, to ensure they know I'm not just making marks against them in a notebook.
 * **Use your outline**. I use the open-ended list of questions I've prepared, and I try to make notes near those sections when we get into those areas of discussion.
 * **Challenging in the moment**. It is important to push back if an interviewee says something that is incorrect or that you want to dig into a little further. However, this doesn't have to be done in a stand-offish way. How would you do that with a teammate? Follow-up, clarifying questions that give the benefit of the doubt are likely the way to go in this instance.
 * **Does an interviewee get a question wrong?** If the interviewee answers a more cut & dry question incorrectly, it's a good idea to let them know what you were looking for & why, as well as telling them it's OK. The interviewee may be able to clarify their understanding, or to provide further information on their perspective. It's also an option to see if folks are open to being corrected or if they get very defensive. Also, it's an interview; remember that people are nervous and they get questions wrong sometimes. Making sure you show that you're not judging them is an important part of how you present yourself and your company in the interview.

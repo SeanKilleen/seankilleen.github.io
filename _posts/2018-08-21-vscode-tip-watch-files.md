@@ -49,6 +49,7 @@ So on a whim one day, I said "I wonder if VS Code can do that". I search the ext
 ```
 
 ## What are the Results?
+
 The log viewer opens a screen, and we can see all the applicable watches and view their updates as they change.
 
 ![Results]({{site.post-images}}//2018-08-21_vscode-logviewer-watches.png)
@@ -56,4 +57,5 @@ The log viewer opens a screen, and we can see all the applicable watches and vie
 I love that I can define patterns and not just file paths, so that I can watch multiple files at once.
 
 ## What do you Think?
+
 Hope you enjoyed this tip! Drop your other favorite tips in the comments, and check out [VS Code Can do That?!](https://vscodecandothat.com/) for a lot of other great tips!

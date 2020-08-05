@@ -25,17 +25,19 @@ references:
 Now we’re getting ready for some of the fun stuff. This time around, we’re going to install Apache (aka “httpd”) and Subversion (aka “svn”) and prepare to create a basic repository over https authentication.
 
 ### Installing the Binaries
+
 * Login to your CentOS VM as the root user.
 * Open the Terminal (it can be found in `Applications > Accessories > Terminal`)
-* Type the following in the terminal: 
+* Type the following in the terminal:
 
 ```sh
 yum install mod_dav_svn subversion
 ```
-    
-	This tells CentOS to use its package manager to pull down the subversion module for Apache and the subversion binaries itself. *NOTE:* A nice feature here is that CentOS knows that `mod_dav_svn` requires Apache, and so it’s going to install Apache for us as well. Very kind!
-    
+
+This tells CentOS to use its package manager to pull down the subversion module for Apache and the subversion binaries itself. *NOTE:* A nice feature here is that CentOS knows that `mod_dav_svn` requires Apache, and so it’s going to install Apache for us as well. Very kind!
+
 ### Creating Directories for Subversion
+
 We need to give the subversion repositories a place to live, and we want to provide a common directory for subversion authentication.
 
 In the terminal, type the following:
@@ -49,6 +51,7 @@ mkdir /var/www/svn/auth
 This will create the Subversion folder that lives within Apache’s www directory.
 
 ### Create Local User Accounts
+
 These accounts are separate from operating system accounts – they’ll apply only to Apache via the configuration files we’ll be setting up soon. **NOTE:** These user accounts will apply across multiple repositories if we’d like them to; think of them as “subversion-wide” user accounts.
 
 We’ll create two test users by running the following via the terminal:
@@ -63,6 +66,7 @@ htpasswd -sb /var/www/svn/auth/svn.htpasswd svnuser2 passw0rd2
 This creates the credentials for both users in the svn.htpasswd file. `–c` is the command to create a new file, `–s` forces SHA encryption of the password, and `–b` lets us pass the password via the command line (otherwise, it would have prompted us one at a time).
 
 ### Creating our First Repository
+
 We’ll create a repository called TestProjectRepo under our repositories directory that we’ve created by running the following on the terminal:
 
 ```sh
@@ -72,6 +76,7 @@ svnadmin create /var/www/svn/repositories/TestProjectRepo
 That’s it! We’ve created the repository. Pretty simple, huh?
 
 ### Granting Apache Ownership of the Repository Folder
+
 Apache installs its own user account when setting itself up. The user, of course, is “apache”, and a group called “apache” now exists as well.
 
 Run the following command in the terminal to grant apache the access it needs:
@@ -81,13 +86,14 @@ chown -R apache:apache /var/www/svn/repositories/TestProjectRepo
 ```
 
 ### Editing the Apache Configuration to View our Repository
+
 First, we’ll need to create configuration file. To do this by creating and opening a blank file, type the following into your terminal:
 
 ```sh
 gedit /etc/httpd/conf.d/svn.conf
 ```
-    
-This brings up gedit, a nice graphical text editor (**Nerd note**: I can feel the Linux pros glaring at me for not suggesting that we use “vi”.) 
+
+This brings up gedit, a nice graphical text editor (**Nerd note**: I can feel the Linux pros glaring at me for not suggesting that we use “vi”.)
 
 Enter the following into the text file:
 
@@ -121,6 +127,7 @@ We need to restart the server for these changes to take effect. To do this, ente
 ```
 
 ### Seeing it in Action
+
 Since the default configuration for apache is to host web site’s on port 80, you should be able to point a web browser on another machine to your subversion server’s web site via its IP address and get the result.
 
 I didn’t know what the IP address was for my subversion server, so I typed `ifconfig` into the terminal to get it. I saw that my `inet addr` for my connection `eth0` is `10.0.0.15`, and I know that the site is hosted on port `80` by default (which I don’t have to enter into my web browser because it knows this), and I know that the virtual directory is /svn, so I type the following into my web browser:
@@ -130,11 +137,12 @@ I didn’t know what the IP address was for my subversion server, so I typed `if
 
 ![SVN Repository working with a list of repositories]({{site.post-images}}/09-252520-252520SVN-252520on-252520Apache_thumb-25255B1-25255D.png)
 
-Great – I can see my repository! 
+Great – I can see my repository!
 
 Now, bear in mind, this is an empty repository, so clicking on it won’t give you the satisfaction of seeing any project files. But don’t worry, we’ll be taking care of that next.
 
 ### Starting Apache Upon System Startup
+
 For use multiple times, it will likely make sense to have Apache start up with the system.
 
 On the Centos VM command line, run the collowing:
