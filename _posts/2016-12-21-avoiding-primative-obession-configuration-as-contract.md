@@ -18,11 +18,11 @@ references:
    url: https://autofac.org/
 comments: true
 ---
-I woke up this morning and saw [a great blog post by Arialdo Martini] that inspired me to blog a little bit (thanks, Arialdo!) 
+I woke up this morning and saw [a great blog post by Arialdo Martini] that inspired me to blog a little bit (thanks, Arialdo!)
 
  In the post, he describes the problems of using primitive variables in your classes, and the pitfalls of using a service locator pattern to resolve those issues. It's a good read; I recommend checking it out. The conclusion he came to (and I'm greatly oversimplifying here) is that configuration settings work better as value objects, and shows some tricks for how to achieve this in a more painless way.
 
- I definitely agree that a value object is better than a primitive when it makes sense. However, there are times when a collection of primitives does make the most sense. 
+ I definitely agree that a value object is better than a primitive when it makes sense. However, there are times when a collection of primitives does make the most sense.
 
  So, I thought I'd share some current thoughts on how I prefer to inject configuration into my classes.
 
@@ -55,19 +55,19 @@ sender.SendEmail("Hello world");
 
  This becomes cumbersome when:
 
- * **The number of configuration properties grows**. One setting might be fine, but 5 configuration settings is much more cumbersome.
- * (Side note: one could argue that if you need 5 different configuration parameters, your class is doing too much and should be broken down anyway, but roll with me on this.)
+* **The number of configuration properties grows**. One setting might be fine, but 5 configuration settings is much more cumbersome.
+* (Side note: one could argue that if you need 5 different configuration parameters, your class is doing too much and should be broken down anyway, but roll with me on this.)
 * **You're trying to keep similar configuration uniform**. Using different configuration properties in different ways can cause confusion.
 * **You have to hit AppSettings to create this object**. That's pretty annoying, and makes your code dependent on something you can't test.
 * **You try to use an IoC container to inject these primitives.** This is what Arialdo's post helps a great deal with. IoC containers play much better when you're not injecting many small primitives.
 * **You attempt to account for real world scenarios.** What happens when a config is missing or you need to supply a default or an override of some kind? How can you be sure the app works?
 
 ## My Preferred Solution to this Problem
- 
+
 When faced with a number of primitive configurations, my preferred steps to refactor our way out of it are:
 
 ### Extract the Configuration to an Interface / Immutable POCO
- 
+
 **NOTE:** This would be one interface per type of configuration that you need. Don't be afraid to inject multiple small interfaces into your class rather than one giant configuration. Interfaces may eventually be re-used, and it's nice to keep contracts small.
 
  So, we'd create an interface & immutable POCO like:
@@ -198,7 +198,7 @@ public class EmailSettingsObtainer
    public EmailSettings GetSettings()
   {
       var theFromAddress = _appSettings.GetValue("emailFromAddress");
-      var theSmtpServer = _appSettings.GetValue("smtpServer"); 
+      var theSmtpServer = _appSettings.GetValue("smtpServer");
       return new EmailSettings(theFromAddress, theSmtpServer);
   }
 }
@@ -217,10 +217,10 @@ containerBuilder.Register(c => new EmailSettingsObtainer(new AppSettingsWrapper(
 
 Bonus points if we'd been doing it all along the way. :) Some common scenarios I like to cover are:
 
- * What happens if `ConfigurationManager` throws an error?
+* What happens if `ConfigurationManager` throws an error?
 * What happens if a setting is empty?
 * What happens if a setting has a garbage value?
-* Do you want something to have a default value? 
+* Do you want something to have a default value?
 * Do you have tests where a setting should be different depending on the source setting?
 * Are you converting values from strings to their expected types correctly?
 
@@ -237,14 +237,14 @@ As your code is covered by tests, extracting out some pieces to do common types 
 int configItem = GetValueOrDefault<int>(_appSettings.GetValue("aNumberSetting"), defaultValue: 47);
 ```
 
- This will start to yield a greater degree of flexibility in how you ingest and deal with configuration values. 
+ This will start to yield a greater degree of flexibility in how you ingest and deal with configuration values.
 
 ### ...and Beyond!
 
 * With this set up, you can still introduce value objects in the place of primitives where they make sense.
 * You could also set up an easy configuration check by using your IoC container to instantiate a number of settings objects upon startup and intelligently surfacing any errors with configuration.
 * Optional values: You could use these interfaces to communicate optional values (there's a great library called [Optional] that can help with this)
- * Including values that may be optional for one type of configuration but required or defaulted for another.
+* Including values that may be optional for one type of configuration but required or defaulted for another.
 * What other possibilities do you see? Sound off in the comments!
 
 ## Benefits of This Approach
@@ -259,14 +259,14 @@ int configItem = GetValueOrDefault<int>(_appSettings.GetValue("aNumberSetting"),
 
 To be fair, there are some drawbacks that I can think of off-hand:
 
- * **Lots more classes**: Depending on how many configuration settings you have and all the different places they're used, this may lead to a number of new, albeit smaller, classes and interfaces, which may seem cumbersome to navigate.
+* **Lots more classes**: Depending on how many configuration settings you have and all the different places they're used, this may lead to a number of new, albeit smaller, classes and interfaces, which may seem cumbersome to navigate.
 * **More work when configs are still churning:** If your project is in the early stages and the configurations are evolving rapidly, you may not want to take this approach yet. When the solution has settled down a bit, you can apply the refactoring steps in this article to introduce more robust configuration handling.
 
- To me, the trade-offs are worth it. But I might be missing some (drop me a line in the comments if you think of a drawback that I'm not faily considering here).
+To me, the trade-offs are worth it. But I might be missing some (drop me a line in the comments if you think of a drawback that I'm not faily considering here).
 
 ## A Working Source Code Example
 
-What's better to demonstrate an example than some running code, right? 
+What's better to demonstrate an example than some running code, right?
 
  I lay out some of these concepts in [a sample repository on GitHub]. Feel free to check it out and run it on your own!
 

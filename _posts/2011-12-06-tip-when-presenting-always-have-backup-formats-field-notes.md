@@ -22,5 +22,4 @@ I try copying it from the USB Drive to the Desktop, I open it ...*and PowerPoint
 
 **Luckily,** I had also exported the presentation to a PDF file. I open that in Adobe Acrobat Reader, put it in full-screen mode, **and gave the presentation**.
 
-
 I hope that illustrates the point well enough without further explanation.

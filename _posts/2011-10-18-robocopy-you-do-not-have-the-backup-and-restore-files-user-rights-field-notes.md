@@ -14,11 +14,13 @@ redirect_from:
 *[**Ed. Note:** "Field Notes" is a place where I plan to succinctly describe solutions to problems that I run across in my daily work. They are meant as a reference; ask if you have any questions!]*
 
 ### Problem
+
 In Windows 7, Using Robocopy with the `/B` or `/ZB` switches yields the error:
 
 > You do not have the Backup and Restore Files user rights
 
 ### Solution
-This is due to UAC. 
+
+This is due to UAC.
 
 Either run the command prompt as an administrator (with appropriate credentials) or ensure that your scheduled task has appropriate credentials.

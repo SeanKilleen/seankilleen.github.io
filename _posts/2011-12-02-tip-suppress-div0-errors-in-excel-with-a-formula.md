@@ -6,11 +6,13 @@ comments: true
 
 ---
 ### Problem:
+
 If you ever receive a `#DIV/0` error in Excel that you expect to be there (i.e. calculating percentages from other data which may not have accumulated yet), you can suppress  it by using an `IF` statement in the formula.
 
 Let's say you have three columns -- `A`, `B`, and `C`. `C` calculates the percentage of `B` and `A` (i.e `B/A`), but if `A` is 0 or empty, you'll get the `DIV/0` error which throws off formulas, coloring, highlighting, etc.
 
 ### Solution
+
 Instead of `= B1/A1`, do something along the lines of the following:
 
     =IF(A1=0, 0, B1/A1)

@@ -6,7 +6,7 @@ comments: true
 
 ---
 
-*[Cross-posted on the Eidos Facebook page. I really hope they get themselves together over there.]*
+(Cross-posted on the Eidos Facebook page. I really hope they get themselves together over there.)
 
 Steps to attempt to pay for / download / install Eidos' Hitman 2: Silent assassin:
 
@@ -17,10 +17,10 @@ Steps to attempt to pay for / download / install Eidos' Hitman 2: Silent assassi
 1. Go back to Eidos.com realize that for some reason it thinks you're British and click on the "USA" link to switch the locale.
 1. Note that the "Store" icon is greyed out completely, with no explanation whatsoever. Clicking on it does nothing.
 1. Frustrated, realize that it must be because you don't have an Eidos.com login. That's cool, you're happy to create one.
-1. Click "Register". You are taken to a simple-enough registration page. 
+1. Click "Register". You are taken to a simple-enough registration page.
 1. Enter your name (no spaces) as your username, enter your correct e-mail, enter a password of letters &amp; numbers (9+ characters), date of birth, be sure to select the right options.
 1. Receive an error: "Sorry, the Eidos Connect account could not be created because of the following error(s): Profile is invalid"
-1. Think maybe it's because you entered something wrong. Enter the information again. 
+1. Think maybe it's because you entered something wrong. Enter the information again.
 1. Receive the same error.
 1. Enter the information again including all optional fields.
 1. Receive the same error again, with still no indication of anything you could have done wrong.
