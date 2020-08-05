@@ -10,7 +10,7 @@ I had this drafted for a while as notes I'd sent to someone who is faced with im
 
 ## "What do I have to add to the Conversation?"
 
-You have a ton. Your story is invaluable, and your skills can absolutely help someone, somewhere, level up. 
+You have a ton. Your story is invaluable, and your skills can absolutely help someone, somewhere, level up.
 
 We need your voice!
 

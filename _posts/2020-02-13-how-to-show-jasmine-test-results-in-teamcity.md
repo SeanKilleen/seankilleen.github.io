@@ -17,7 +17,7 @@ A colleague wanted to surface their jasmine tests in a TeamCity build system. Wa
 * Add an `index.js` to set up the tests if you haven't already:
 
 ```javascript
-var Jasmine = require('jasmine'); 
+var Jasmine = require('jasmine');
 
 var reporters = require('jasmine-reporters');
 
@@ -69,7 +69,7 @@ jasmine.addReporter(nunitXmlReporter);
 
 ![XML report processing options]({{site.post-images}}/jasmine_tests_teamcity/XMLReportProcessingFeature.png)
 
-* Double-check the saved feature: 
+* Double-check the saved feature:
 
 ![The added build feature]({{site.post-images}}/jasmine_tests_teamcity/BuildFeatureResult.png)
 
@@ -82,7 +82,6 @@ We see our tests listed in the build list:
 And we see the test output in the overview tab:
 
 ![Tests in the overview page of the build]({{site.post-images}}/jasmine_tests_teamcity/TestsPassing_OnOverview.png)
-
 
 And we see the a tests tab with the output of each individual test:
 

@@ -6,10 +6,12 @@ comments: true
 
 ---
 ### Benchmarks
+
 This is the desktop, assembled, without the enhanced airflow in the rear and with *no overclocking yet.*
 
 #### Windows Experience Score (out of 7.9)
-* **Processor:** 7.8 
+
+* **Processor:** 7.8
 * **Memory (RAM):** 7.8
 * **Graphics:** 7.7
 * **Gaming Graphics:** 7.7
@@ -22,6 +24,7 @@ This is the desktop, assembled, without the enhanced airflow in the rear and wit
 **Gaming Temp**: ~93F (tested with Call of Duty: Black Ops)
 
 ### Next Steps
+
 * The "overclockening" -- when I feel like it. It runs smooth like butter now and I have no reason to push it (this is going to be part server, after all)
 * Increasing the air flow
 * Ensuring everything is backed up (Backblaze is chugging along now)
@@ -31,6 +34,7 @@ This is the desktop, assembled, without the enhanced airflow in the rear and wit
 * Virtualization, and tons of it. Setting up a bunch of systems (more posts on why later)
 
 ### Also, a Big Thank You
+
 Thanks to John Herron, a former co-worker and excellent techie, I also now have a 20" LCD monitor. The kindness of nerds astounds.
 
 Any ideas for other benchmarks? Let me know!
