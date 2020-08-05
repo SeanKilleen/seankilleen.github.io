@@ -25,6 +25,8 @@ Pretty simple -- it uses Chocolatey's list command with the -lo flag to show loc
 
 I saved it in DropBox. The next step was to set a scheduled task. Again, easy! I created a simple task to run at 4am everyday. The action item is simply:
 
-    powershell -NoLogo C:\Users\Sean\Dropbox\MyPCName\Scripts\ExportChocolateyPackageList.ps1
+```cmd
+powershell -NoLogo C:\Users\Sean\Dropbox\MyPCName\Scripts\ExportChocolateyPackageList.ps1
+```
 
 Now I get a date-versioned list of all my installed packages synced to any of my devices every morning at 4am.

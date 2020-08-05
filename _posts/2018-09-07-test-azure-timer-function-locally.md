@@ -39,4 +39,6 @@ For example, if azure functions is running on `localhost:7071` and I have a func
 
 and the function would then be executed.
 
+**Update 6/23/2020**: Thanks to Bill and Scott in the commnts below, who correctly point out that you need to specify an empty data paylod (`{}`) and a content type of `application/json`. If running using curl, it'd be `curl -i -X POST -H "Content-Type:application/json" -d "{}" http://localhost:7071/admin/functions/[FunctionName]`. I was drafting this quickly and used an app that helpfully abstracted those things away, but it doesn't help when explaining. :smile: Thanks to you both!
+
 Hope this can help save some time for someone else. Happy coding!
