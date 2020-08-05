@@ -16,8 +16,8 @@ I believe transparent, community-focused governance and OSS involvement is vital
 
 This post is short because my candidacy page has most of my thoughts, but I'm more interested in what *you* think.
 
-* What are the challenges facing the .NET Foundation? 
-* How are you looking to be represented? 
+* What are the challenges facing the .NET Foundation?
+* How are you looking to be represented?
 * What do you think a .NET Foundation board member should be doing to support the .NET community?
 * Is there anything you wish you knew about the Foundation, me, or my candidacy?
 

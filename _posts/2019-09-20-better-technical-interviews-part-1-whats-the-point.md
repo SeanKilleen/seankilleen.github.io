@@ -84,14 +84,14 @@ I think this is an important conversation to have -- at least with yourself -- p
 
 ## Conversational Interviewing
 
-Another piece of my overall recommended approach to interviewing is to make a shift to, or invest more heavily in, conversational interviewing. What I mean by this is the art of engaging with someone in a way that isn't rigily defined (e.g. solving problems on a white board, coding a problem, etc.) and instead delving into the nebulous world of conversational interviewing, with open-ended questions, follow-up, and the time well-managed. We'll talk more about this in future posts and I'll make specific recommendations. 
+Another piece of my overall recommended approach to interviewing is to make a shift to, or invest more heavily in, conversational interviewing. What I mean by this is the art of engaging with someone in a way that isn't rigily defined (e.g. solving problems on a white board, coding a problem, etc.) and instead delving into the nebulous world of conversational interviewing, with open-ended questions, follow-up, and the time well-managed. We'll talk more about this in future posts and I'll make specific recommendations.
 
 ## Are you ready to interview this way? Is your team ready?
 
 Adopting an interview style along these lines assumes some things about your team:
 
 * They are open to giving and receiving feedback, and to mentoring/coaching. If they aren't open to giving each other feedback, it will be harder for someone to adapt, and therefore you may need to be a bit more rigid in your interviewing. If you have this problem, I suggest working on that before seeking to hire someone new.
-* You're not looking for someone to lead an overall practice. In this case, you may need someone with truly verified technical abilities and I'd recommend extending the interview to a more involved process that includes some hands-on collaboration with folks. 
+* You're not looking for someone to lead an overall practice. In this case, you may need someone with truly verified technical abilities and I'd recommend extending the interview to a more involved process that includes some hands-on collaboration with folks.
 
 ## Interviewing Well is a Commitment
 

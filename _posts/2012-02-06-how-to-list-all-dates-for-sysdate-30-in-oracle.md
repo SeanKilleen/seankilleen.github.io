@@ -8,9 +8,11 @@ comments: true
 Discovered an answer to [a StackOverflow question I'd posted][SO Link], and wanted to share.
 
 ### The Problem
+
 I needed to, within a view, dynamically generate a list of dates before or after sysdate. I wanted to do this so that I could limit some of the records coming back (we have millions but the date range will always be between 31 days before sysdate or 31 says after.
 
 ### The Solution
+
 In Oracle, the SQL to do this is as follows:
 
 ```sql
@@ -21,7 +23,7 @@ FROM   (SELECT TRUNC(SYSDATE - ROWNUM) DateItem
         UNION
         SELECT TRUNC(SYSDATE + ROWNUM) DateItem
         FROM   DUAL
-        CONNECT BY ROWNUM < 32)DATERANGE; 
+        CONNECT BY ROWNUM < 32)DATERANGE;
 ```
 
 This SQL does the following:

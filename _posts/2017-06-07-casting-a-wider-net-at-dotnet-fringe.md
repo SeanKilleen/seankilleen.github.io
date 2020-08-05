@@ -24,13 +24,14 @@ I'm very excited to release a talk that has been percolating in my head for a bi
 
 I was even more excited -- and a tiny bit terrified -- to be chosen to kick off the conference!
 
-You can watch the talk, embedded below: 
+You can watch the talk, embedded below:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jFDXNGFvcYg" frameborder="0" allowfullscreen></iframe>
 
 I've also launched a companion site to go along with the talk: <http://AWider.NET>.
 
-I'll be writing a lot more about Fringe and about the mission of AWider.NET in the coming days, but I wanted to take the opportunity to get it out into the wild ASAP. 
+I'll be writing a lot more about Fringe and about the mission of AWider.NET in the coming days, but I wanted to take the opportunity to get it out into the wild ASAP.
 
 ## Questions? Thoughts? Ideas?
+
 I'd love to hear your feedback on the talk, especially if there's something you don't agree with or think could be improved. Feel free to respond here or on the [AWider.NET Github Site](http://github.com/AWiderDotNet/AWiderDotNet.github.io).

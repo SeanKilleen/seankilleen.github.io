@@ -13,7 +13,7 @@ I think this is an okay start:
 
 * A green pepper &amp; a yellow pepper
 * Sliced baby bella mushrooms (I'm lazy, sue me)
-* 6  apples 
+* 6  apples
 * Dozen eggs
 * An onion
 * A tomato
@@ -26,6 +26,7 @@ I think this is an okay start:
 * Garlic
 
 #### My Plan
+
 * Apples for Snacks
 * Tonight: Orzo (package some up for lunch tomorrow with an apple, celery sticks, &amp; sliced pepper to snack on throughout the day)
 * Tomorrow morning: Eggs and leftover tomato &amp; onion with garlic

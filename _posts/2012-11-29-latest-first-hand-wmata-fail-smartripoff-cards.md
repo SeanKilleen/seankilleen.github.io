@@ -8,6 +8,7 @@ comments: true
 OK, technically second-hand; this story comes to us courtesy of the lovely [Caroline].
 
 ### How's This for an Epic WMATA fail?
+
 I'll bullet it out for easy digestion:
 
 * The buses require you to pay either cash or a Smartrip card.
