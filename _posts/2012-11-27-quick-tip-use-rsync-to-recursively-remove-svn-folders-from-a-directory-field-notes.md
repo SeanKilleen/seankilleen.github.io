@@ -6,7 +6,8 @@ date: 2012-11-27 17:00:00.000000000 -05:00
 comments: true
 
 ---
-### Problem:
+### Problem
+
 I have a directory structure that contains Subversion metadata folders (folders named ".svn").
 
 I would like to remove those folders but "svn export" won't work.
@@ -17,10 +18,14 @@ Rsync to the rescue. Let's say the folder containing .svn folder structures is n
 
 * In the same directory as the problem folder, create a "clean" folder to output the contents of problemfolder to eventually.
 
-	"mkdir problemfolder_clean"
-	
+```cmd
+"mkdir problemfolder_clean"
+```
+
 * Run rsync, excluding .svn folders and their contents, to copy the problem directory to the clean directory.
 
-	rsync -avr --exclude='.svn*' /path/to/problemfolder/ path/to/problemfolder_clean
-	
+```cmd
+rsync -avr --exclude='.svn*' /path/to/problemfolder/ path/to/problemfolder_clean
+```
+
 At this point, the contents of "problemfolder" (minus the .svn folders) will be in the clean folder you created.

@@ -23,13 +23,14 @@ I received this e-mail from a campaign that I'm somehow subscribed to:
 
 > Signing up for the campaign is just the first step. We make it easy for you to tell us about businesses playing FOX. If you're willing to talk with them, we'll provide you with straightforward materials that explain why they shouldn't be a party to what FOX is doing. And if there are businesses you know that want to tell the world they would never play FOX, you can help them declare themselves a "FOX-free zone."
 
-> As businesses Turn off FOX and stand up as FOX Free, and as we encourage our friends and family to do the same, we'll help make clear, to people across the country, what FOX is about. And we'll reduce their ability to do harm. 
+> As businesses Turn off FOX and stand up as FOX Free, and as we encourage our friends and family to do the same, we'll help make clear, to people across the country, what FOX is about. And we'll reduce their ability to do harm.
 
 ### Thoughts on this:
-* Both sides need to be heard in a debate.  
-* The best way to battle Fox isn't to censor them, it's to highlight the flaws in what they say. 
 
-### The e-mail I sent back: 
+* Both sides need to be heard in a debate.  
+* The best way to battle Fox isn't to censor them, it's to highlight the flaws in what they say.
+
+### The e-mail I sent back:
 
 > As a moderate, this campaign concerns me. I don't like Fox, and I certainly don't agree with 99% of its content, and agree with the statements made about its divisiveness.
 
@@ -37,7 +38,7 @@ I received this e-mail from a campaign that I'm somehow subscribed to:
 
 > Get Fox out there on the TVs or start a "fox watchdog" group to fact-check and exploit the way that fox reports news. THEN you'll have my support. Heck, I'd even help you plan / run it.
 
-> But a word of caution to you: limiting either side of a conversation is never a way to make sure that your side is heard. Those are the tactics employed by, well, places like Fox. 
+> But a word of caution to you: limiting either side of a conversation is never a way to make sure that your side is heard. Those are the tactics employed by, well, places like Fox.
 
 The way to win in the fight against Fox is not to attempt to silence the network -- it's a multi-million dollar corporation and the bottom line is, you're not going to get it turned off. The way to fight Fox is by making sure that when Fox says something divisive or incendiary or false, someone is there to counter it with well-reasoned argument (which is to say, not partisan hackery of the opposite end of the spectrum, either).  
 
