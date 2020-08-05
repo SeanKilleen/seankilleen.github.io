@@ -43,7 +43,7 @@ To summarize, I'd say: It takes putting yourself out there in an effort to help 
 
 ## Is MVP a stepping stone to working at MS?
 
-That's hard to say. It hasn't been for me, at least yet. 😄 One thing that's important to note is that you can't be an MVP and work at Microsoft; you'd have to give it up the designation order to do so.
+That's hard to say. It hasn't been for me, at least yet. 😄 One thing that's important to note is that you can't be an MVP and work at Microsoft; you'd have to give up the designation order to do so.
 
 I think it's healthy for there to be a large group of people outside of Microsoft who are heavily invested in the ecosystem (and in making it better for everyone.) So I don't think the MVP program is necessarily a recruiting avenue for Microsoft. However, the other aspect is that MVPs tend to be known more by Microsoft and interact more with people from Microsoft, so there are opportunities there to connect and I assume sometimes job opportunities are an artifact of those connections.
 
