@@ -8,7 +8,9 @@ redirect_from:
  - /2012/01/fix-crystal-reports-2008-default.html
 ---
 ### Problem:
-In Crystal Reports 2008, when opening up a report that came from elsewhere (usually another user's machine), I see: 
+
+In Crystal Reports 2008, when opening up a report that came from elsewhere (usually another user's machine), I see:
+
 > default printer is not available.
 
 Oftentimes, this will be accompanied by a strange behavior that will cause reports (or subreports) to look completely collapsed, like the following image:
@@ -22,11 +24,13 @@ Oftentimes, this will be accompanied by a strange behavior that will cause repor
 Your report sections. It *is* as painful as it looks.
 
 ### Solution
+
 Luckily, per usual, [StackOverflow was a big help here][SO Link].
 
 This solution has two different parts -- you may only need one or the other, but I've found them both to be a pretty effective one-two punch in this situation.
 
 #### Part 1: Change Your Printer Settings
+
 * While in the report, click `File > Page Setup...`
 * Check the box labeled `No Printer (optimize for screen display)`.
 * Check the box labeled `Dissociate formatting page size and Printer Paper Size`.
@@ -36,6 +40,7 @@ This solution has two different parts -- you may only need one or the other, but
 That should do it.
 
 #### Part 2: Change Display Options
+
 In case you have some sub-reports, etc. that didn't quite get the message to *thaw out, bro*, it's likely because they were hidden before or hidden as a result of the printer situation being screwy.
 
 Try the following:

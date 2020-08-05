@@ -5,7 +5,6 @@ date: 2019-05-22 04:50:00.000000000 -05:00
 
 tags: [Productivity, Outlook, Google, Calendar]
 comments: true
-popular: true
 
 ---
 
@@ -20,13 +19,13 @@ This came up in a conversation and I realized my methods might be helpful for so
 
 ## Getting Work Events into Google Calendar
 
-The easiest way I've found so far to do this on Windows is to use [Outlook Google Calendar Sync --  a free, OSS app](https://phw198.github.io/OutlookGoogleCalendarSync/). It sits in my system tray and does a sync from Excella --> GCal since that's how I have it set up. I sync my Excella calendar to a Google calendar called "work" that I the  overlay with my personal calendar in Google Cal. 
+The easiest way I've found so far to do this on Windows is to use [Outlook Google Calendar Sync --  a free, OSS app](https://phw198.github.io/OutlookGoogleCalendarSync/). It sits in my system tray and does a sync from Excella --> GCal since that's how I have it set up. I sync my Excella calendar to a Google calendar called "work" that I the  overlay with my personal calendar in Google Cal.
 
 **NOTE**: This app has to be open and running somewhere in order to sync the changes. I have an idea of porting ame of this code to use Azure functions on a timer so that it won't be tied to a machine / tray app.
 
 ## Getting Personal Events into Outlook
 
-If you want the reverse and want to overlay your personal calendar in your outlook, you can do that with google calendar too. 
+If you want the reverse and want to overlay your personal calendar in your outlook, you can do that with google calendar too.
 
 * Go into google calendar settings
 * Scroll into "Integrate Google Calendar" section
