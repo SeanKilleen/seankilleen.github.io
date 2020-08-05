@@ -23,10 +23,11 @@ locale                   : "en-US"
 title                    : "SeanKilleen.com"
 title_separator          : "-"
 name                     : "SeanKilleen.com"
-description              : "Ramblings on bytes and life from a digital thirty-something."
+description              : "Ramblings on bytes and life."
 url                      : "https://SeanKilleen.com"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "SeanKilleen/seankilleen.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+defaultbranch            : "main"
 #teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -45,7 +46,7 @@ comments:
 #     theme                : # "github-light" (default), "github-dark"
 # staticman:
 #   allowedFields          : # ['name', 'email', 'url', 'message']
-#   branch                 : # "master"
+#   branch                 : # "main"
 #   commitMessage          : # "New comment by {fields.name}"
 #   filename               : # comment-{@timestamp}
 #   format                 : # "yml"
@@ -123,9 +124,15 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/SeanKilleen"
+    - label: "Twitch"
+      icon: "fab fa-fw fa-twitch"
+      url: "https://twitch.tv/sjkilleen"
     - label: "dev.to"
       icon: "fab fa-fw fa-dev"
       url: "https://dev.to/SeanKilleen"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/seankilleen"
 
 # Site Footer
 footer:

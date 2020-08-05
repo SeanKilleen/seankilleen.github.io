@@ -4,9 +4,9 @@ title: 'How to: Delegate a NameCheap Domain Name'
 date: 2015-01-29 22:20:00.000000000 -05:00
 comments: true
 ---
-## Problem:
+## Problem
 
-When building a web site for a customer, you need access to domain name properties to change things such as DNS settings. 
+When building a web site for a customer, you need access to domain name properties to change things such as DNS settings.
 
 However, if a customer provides you with access to their domain by sharing their login, they could put themselves at risk, too. Most customers don't want to trust an IT professional with the keys to their branding, particularly if the relationship is new or if they have several domains with one account.
 
@@ -42,11 +42,11 @@ The next time you sign in, you'll see the domain name in your domain name list, 
 
 ![A screenshot of the delegated domain]({{site.post-images}}/NameCheap_DelegatedDomain.png)
 
-## To Recap: Why do this again?
+## To Recap: Why we're doing this
 
-* **Doesn't Expose other customer domains:** if a customer has 20 domains under their account, they can grant you rights to just the one they're interested in. 
-* **No shared logins:** Both parties are more secure since there's no need to share passwords. 
+* **Doesn't Expose other customer domains:** if a customer has 20 domains under their account, they can grant you rights to just the one they're interested in.
+* **No shared logins:** Both parties are more secure since there's no need to share passwords.
 * **Power resides with the customer:** They can remove your rights entirely at any time they desire or share with multiple people. This puts the power/control in their hands which is usually a good thing.
 * **You can both use two-factor authentication:** Because passwords aren't shared, two-factor authentication (one of the more secure approaches to logins that uses "something you know", e.g. a password, and something you have, e.g. your cell phone to receive a text) is now possible. This greatly reduces potential for a security breach.
 
-Happy domaining! 
+Happy domaining!

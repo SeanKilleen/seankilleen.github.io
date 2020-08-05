@@ -15,15 +15,14 @@ For a list of all the folks who've helped via pull requests, check out [the cred
 
 * Dunkin (in all seriousness, there is probably some considerable caffeine to blame for this).
 * The [Jekyll][jekyll link] markdown blogging platform (which is run on [Ruby][ruby link])
-	* The [jekyll-sitemap][jekyll-sitemap link] gem
-    * The [octopress][octopress link] gem
-	* The [jekyll-redirect-from][jekyll-redirect-from link] gem (saved my butt when trying to redirect my old Blogger pages).
+* The [jekyll-sitemap][jekyll-sitemap link] gem
+* The [octopress][octopress link] gem
+* The [jekyll-redirect-from][jekyll-redirect-from link] gem (saved my butt when trying to redirect my old Blogger pages).
 * All of this is hosted (for free!) On [Github pages][github-pages link], because they're awesome.
 * The [Minimal Mistakes theme][minimal mistakes link] (which I tweaked a bit).
 * Comments are hosted on [Disqus][disqus link].
 
 Thanks to all of these things, I can host this small chunk of my brain on the internet.
-
 
 [jekyll link]: http://jekyllrb.com/
 [ruby link]: https://www.ruby-lang.org/en/

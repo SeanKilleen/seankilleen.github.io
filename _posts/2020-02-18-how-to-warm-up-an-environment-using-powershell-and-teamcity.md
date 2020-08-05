@@ -17,7 +17,7 @@ Prior to running some tests on a .NET web application, we wanted to send a reque
 * Create a TeamCity build configuration
 * Add a build step to the configuration of type "Powershell Script"
 * Select an in-line script
-* Add the following powershell: 
+* Add the following powershell:
 
 ```powershell
 Invoke-WebRequest -Uri http://theURLToHit -UseDefaultCredentials
