@@ -11,7 +11,7 @@ The .NET Foundation Board elections recently took place, and I was the last one 
 
 I thought I’d share some reflections and lessons learned from [my candidacy](https://election.dotnetfoundation.org/campaign-2019/sean-killeen.html).
 
-It’s a little bit of a weird post to write, but I figure reflection is part of this whole blogging thing; can’t just be how-tos all the time. 
+It’s a little bit of a weird post to write, but I figure reflection is part of this whole blogging thing; can’t just be how-tos all the time.
 
 ## Mistakes were made (the value of learning in public)
 
@@ -38,7 +38,7 @@ He provided a lot of great feedback to a number of folks out there, and we owe h
 
 One way I think I was successful in showing instead of telling was that I saw a need for election support and I jumped in to make some pull requests and suggestions to help move things forward:
 
-* I saw that we needed a forum for candidates to ask questions, and the election would be coming to a close soon. It seemed there was uncertainty about which apps to use for questions. Rather than requiring Jon to set up yet another app, I proposed a system to allow candidates to answer questions via GitHub. 
+* I saw that we needed a forum for candidates to ask questions, and the election would be coming to a close soon. It seemed there was uncertainty about which apps to use for questions. Rather than requiring Jon to set up yet another app, I proposed a system to allow candidates to answer questions via GitHub.
 * I knew Jon was swamped adding members but needed to send some important emails around the election. So, I created a draft of the email in a PR so that candidates and Jon could submit edits. He was then able to send it out with only minor tweaks.
 * I knew with questions we’d need the ability to mention the candidates, so I collected everyone’s github handles so that Jon could add them to a group within GitHub.
 

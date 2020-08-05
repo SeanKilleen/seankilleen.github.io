@@ -3,7 +3,9 @@ layout: default
 
 # This is copied from the theme repo itself, in order to override the layout.
 # Ways in which this differs from the original layout:
-# * _editlinks.html is now included
+
+# * CarbonAds is inserted
+# * post__meta.html include contents are copied so that edit links can be added without interfering with other uses of post__meta
 ---
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
@@ -24,21 +26,54 @@ layout: default
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
-    {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date: "%B %d, %Y" }}">{% endif %}
+    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
+    {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
 
     <div class="page__inner-wrap">
+
+      {% unless page.disable_ads == true %}
       <!-- Carbon ads script -->
       <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7DLK7I&placement=seankilleencom" id="_carbonads_js"></script>
       <!-- End Carbon ads script -->
+      {% endunless %}
 
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
           {% if page.title %}<h1 id="page-title" class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
-          {% if page.read_time %}
-            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %} | {% include _editlinks.html %}</p> 
-          {% else %}
-            <p class="page__meta">{% include _editlinks.html %}</p>
+          {% assign page = post | default: page %}
+
+          {% if page.read_time or page.show_date %}
+            <p class="page__meta">
+          
+              {% if page.show_date %}
+                {% assign date = page.date %}
+                <i class="far {% if include.type == 'grid' and page.read_time and page.show_date %}fa-fw {% endif %}fa-calendar-alt" aria-hidden="true"></i>
+                <time datetime="{{ date | date_to_xmlschema }}">{{ date | date: "%B %-d, %Y" }}</time>
+              {% endif %}
+          
+              {% if page.read_time and page.show_date %}
+                {% if include.type == "grid" %}
+                  <br \>
+                {% else %}
+                <span class="post__meta-sep"></span>
+                {% endif %}
+              {% endif %}
+          
+              {% if page.read_time %}
+                {% assign words_per_minute = page.words_per_minute | default: site.words_per_minute | default: 200 %}
+                {% assign words = page.content | strip_html | number_of_words %}
+          
+                <i class="far {% if include.type == 'grid' and page.read_time and page.show_date %}fa-fw {% endif %}fa-clock" aria-hidden="true"></i>
+                {% if words < words_per_minute %}
+                  {{ site.data.ui-text[site.locale].less_than | default: "less than" }} 1 {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+                {% elsif words == words_per_minute %}
+                  1 {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+                {% else %}
+                  {{ words | divided_by:words_per_minute }} {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
+                {% endif %}
+              {% endif %}
+              | <a href="https://github.com/{{site.repository}}/edit/{{site.defaultbranch}}/{{ page.path }}"><i class="fas fa-edit"></i> Suggest an edit</a> | <a href="{{ site.github.repository_url }}/issues/new?labels=FromTheSite"><i class="fa fa-question-circle"></i> Issue? Question?</a>
+            </p>
           {% endif %}
         </header>
       {% endunless %}
@@ -47,7 +82,7 @@ layout: default
         {% if page.toc %}
           <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
             <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label }}</h4></header>
+              <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4></header>
               {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" %}
             </nav>
           </aside>
@@ -61,11 +96,7 @@ layout: default
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
         {% endif %}
         {% include page__taxonomy.html %}
-        {% if page.last_modified_at %}
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%B %d, %Y" }}</time></p>
-        {% elsif page.date %}
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
-        {% endif %}
+        {% include page__date.html %}
       </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}

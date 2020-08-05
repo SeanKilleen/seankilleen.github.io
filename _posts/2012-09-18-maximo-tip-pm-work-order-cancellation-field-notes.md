@@ -7,6 +7,7 @@ redirect_from:
  - /2012/09/maximo-tip-pm-work-order-cancellation.html
 ---
 ### Problem:
+
 In Maximo, I want to cancel a PM work order because the work wasn't done for that particular scheduled PM.
 
 However, when I attempt to cancel the PM, the following may happen:
@@ -15,6 +16,7 @@ However, when I attempt to cancel the PM, the following may happen:
 * I receive error BMXAA4507E: "warning-wo{0} is in a non-cancel condition"
 
 ### Solution
+
 This happens because of PM work order sequencing within Maximo. The rules is: You cannot cancel a PM work order without first cancelling all the PM work orders that generated after that particular PM work order. The reasoning behind this is that based on how Maximo generates next PMs, a break in the sequence would cause this generation to fail. (I happen to see that as a design flaw, but hey, that's just me.)
 
 What I didn't realize was that **if you've completed a newer PM work order, it cannot be canceled, and therefore none of the previous PM work orders that generated for that PM can be cancelled.**

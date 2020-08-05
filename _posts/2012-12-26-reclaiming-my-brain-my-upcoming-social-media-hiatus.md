@@ -20,7 +20,7 @@ The list is extensive when I lay it all out.
 
 * Facebook
 * Twitter
-* Google + 
+* Google +
 * Google Reader
 * App.me
 * LinkedIn
@@ -37,7 +37,8 @@ The list is extensive when I lay it all out.
 I'll allow myself e-mail, but only as a tool to reach out when necessary or to reconnect with friends. While using it, I'll be unsubscribing from everything possible so I can stop the deluge of e-mail I get. I'll also allow myself to write, and may actually start putting some personal thoughts out there somewhere (this blog has always been largely technical.)
 
 ### What I hope to Achieve
-* **Better Sleep**. I was constantly browsing social media and Google Reader before sleep, which would be fine, except I had to read *all *of it. I'm hoping this will let me turn off the screen before bed and get some solid sleep.
+
+* **Better Sleep**. I was constantly browsing social media and Google Reader before sleep, which would be fine, except I had to read *all* of it. I'm hoping this will let me turn off the screen before bed and get some solid sleep.
 * **Better Focus**. I want to do some deep thinking on projects &amp; problems. I want to free up space for my mind to fill in with ideas, etc.
 * **Better Memory**. Due to the nature of my brain jumping around all the time I think, my memory has become terrible due to transient information constantly bombarding it. I want to do some exercises and see if I can't improve my memory.
 * **Better Friendship**. My friendship skills have seriously an inexcusably fallen off. Social media doesn't equate with being social. I need to get out in the world again and say hello instead of typing it.
@@ -49,6 +50,7 @@ I'll allow myself e-mail, but only as a tool to reach out when necessary or to r
 * **Separating Signal from Noise**. I hope that stepping back will help remind me what's important and what I actually miss about social media, which will help me learn to more wisely consume it in the future.
 
 ### How I'm Preparing &amp; Cutting Myself Off
+
 My brother accepted the challenge to barricade me from Social media, so I'm giving him the keys to the kingdom. I'll be doing the following:
 
 * Analyzing social media, the e-mails I've received, and apps I have linked to Facebook/Twitter. This is my detox list.
@@ -59,5 +61,6 @@ My brother accepted the challenge to barricade me from Social media, so I'm givi
 * Utilizing a blocker -- in every web browser on every computer -- to completely block all of the aforementioned web sites.
 
 ### Possible Issues
+
 * **Self-sabotage**. I'm crafty, and while I think I can stay away, I'm sure it will be tempting to try to open something. If you see me on social media somehow in January, yell at me. Like, a lot.
 * **Fear of Missing Out (FOMO)**. Apparently this is a real thing, and I'm sure I'll experience some of it, but I'm hoping that it won't materialize.
