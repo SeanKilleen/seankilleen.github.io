@@ -36,7 +36,7 @@ Blue/green is often touted as "the way to zero-downtime deployments." But while 
 
 Minimal-downtime deployments are achievable without blue/green architecture, particularly in low-traffic environments. A combination of configuration flags and taking servers out of a load-balancer to update them could be sufficient. When combined with automation, this could look like:
 
-* A deployment is kicked off. 
+* A deployment is kicked off.
 * Backwards-compatible database changes are run
 * Server by server:
 * A server is taken out of the load balancer
@@ -48,7 +48,7 @@ Many teams, e.g., enterprise teams, have much more leeway beyond that. They coul
 
 * Use their deployment tooling to schedule a deployment out of hours
 * Take the application offline for 5 minutes using a flag or convention such as `offline.html`
-* Deploy database changes 
+* Deploy database changes
 * Update all servers at once
 * Remove the offline flags
 
@@ -78,7 +78,7 @@ These practices -- while excellent and worthy of pursuit -- take time to adjust 
 
 ## Pitfall #5: Forgetting about tests in blue/green deployments
 
-As I mentioned above, mistakes will be made. If you're continuously deploying to your "off" environment so that you can switch over at any time, you need to have the confidence that the deployment pipeline is stable, and you won't be introducing problems. 
+As I mentioned above, mistakes will be made. If you're continuously deploying to your "off" environment so that you can switch over at any time, you need to have the confidence that the deployment pipeline is stable, and you won't be introducing problems.
 
 I highly recommend that you have an automated test suite that provides you with as much of a safety harness as possible prior to attempting blue/green deployments. This way, the flipping of a switch for deployments becomes a nothing event with no cause for concern. "Move fast and break things" is not a strategy I'd advise for most teams.
 
@@ -97,12 +97,12 @@ As you can tell, that's a tiny bit more complex than one migration.
 
 ## Pitfall #7: Treating database changes separately from code changes
 
-One strategy -- normally due to a long deployment lifecycle (pitfall #1) -- is the idea that database changes will be done separately from the code, and will be done in advance of the deployment. 
+One strategy -- normally due to a long deployment lifecycle (pitfall #1) -- is the idea that database changes will be done separately from the code, and will be done in advance of the deployment.
 
 But let's allow this to play out. Someone now has to:
 
 * Understand the upcoming work one release in advance. Monthly release cycle? I hope you know the database changes associated with it an extra month in advance!
-* Make the change 
+* Make the change
 * Ensure you don't accidentally utilize that change for a month
 * Now pick up the story, a month later, and remember to utilize the prior change appropriately
 * Wait another month afterward to do any cleanup
@@ -111,13 +111,13 @@ But let's allow this to play out. Someone now has to:
 
 Organizations sometimes try to identify "blue" and "green" servers at the server level -- that is to say, you attach certain servers to always having an identity of "blue" or "green", rather than configuring a load balancer to point to those pools of servers.
 
-When this happens, organizations attempt to move servers into and out of blue and green groups as part of a deployment, and you oftentimes end up attempting to drop files in certain locations on a server to have them inserted or removed from a load balancer pool. This is prone to error and can result in a server incorrectly being in the active or non-active environment. 
+When this happens, organizations attempt to move servers into and out of blue and green groups as part of a deployment, and you oftentimes end up attempting to drop files in certain locations on a server to have them inserted or removed from a load balancer pool. This is prone to error and can result in a server incorrectly being in the active or non-active environment.
 
-Better instead to add these servers to a `green` load balancer pool and a `blue` load balancer pool and then configure your load balancer's instance to point to one pool or the other. 
+Better instead to add these servers to a `green` load balancer pool and a `blue` load balancer pool and then configure your load balancer's instance to point to one pool or the other.
 
 ## Pitfall #9: Not continuously deploying to your "inactive" environment
 
-In places where deployments are highly visible or the organization is fearful -- usually prior to instituting proper continuous deployment practices or building up confidence in the code -- _going to production_ (TM) carries a lot of weight. 
+In places where deployments are highly visible or the organization is fearful -- usually prior to instituting proper continuous deployment practices or building up confidence in the code -- _going to production_ (TM) carries a lot of weight.
 
 In that situation, why would anyone ever deploy to your prod environment, even an inactive one? (remember, even your inactive prod environment is still a prod environment.) Teams may be tempted to accrue a bunch of changes in a QA or dev environment rather than pushing them through to the inactive prod environment.
 
@@ -127,7 +127,7 @@ If those changes collect in a non-production environment, you're not necessarily
 
 ## Pitfall #10: Attempting to Minimize Failure Instead of Recovery Time
 
-As I mentioned earlier, mistakes will be made. One of the key pitfalls a group can make is aiming to maximize the time between problems rather than minimize the time it takes to get past problems when they inevitably occur. 
+As I mentioned earlier, mistakes will be made. One of the key pitfalls a group can make is aiming to maximize the time between problems rather than minimize the time it takes to get past problems when they inevitably occur.
 
 If a group is trying to prevent failure with blue/green, they're likely not fully understanding the promise of blue/green deployments. On the other hand, a group that fully embraces continuous delivery knows that sometimes things will go wrong. They will aim to be able to fix that in a matter of minutes, learn from it, and build up the tooling and knowledge to ultimately prevent many more issues from occurring.
 
@@ -149,7 +149,7 @@ Wasn't this supposed to get better at some point?
 
 Deployments are a non-event. The team learned about the steps they'd need to take to ensure backward compatibility before beginning. The good news is because deployments are happening all the time, these backward compatibility changes can happen pretty quickly back to back, so nobody forgets about them.
 
-There was a problem with one of the backward compatibility changes last week, but luckily since the whole pipeline is streamlined and moving to production, all it took was the time to write the fix and review the code change before it went out to production and resolved the issue. Way better than the scrambling over downtime before! 
+There was a problem with one of the backward compatibility changes last week, but luckily since the whole pipeline is streamlined and moving to production, all it took was the time to write the fix and review the code change before it went out to production and resolved the issue. Way better than the scrambling over downtime before!
 
 They also had some pain points with testing -- it turns out they were over-confident about some of their code once or twice. Luckily, a quick deployment for the fix combined with lessons learned means there's a lot more knowledge on the overall team about what to look for and test for in their code. The stakeholder's confidence is high because issues are resolved quickly, and bugs aren't re-appearing because the code test coverage is improving. Plus, it's worth the trade-off anyway to not have to wait months for releases!
 

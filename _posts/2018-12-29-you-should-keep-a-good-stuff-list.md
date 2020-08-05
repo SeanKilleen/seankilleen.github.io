@@ -32,7 +32,7 @@ I take down:
 * **Updating a resume.** Whether it's an internal work resume for potential new clients, or my own personal resume, it's great to be able to list specific accomplishments that I already feel good about.
 * **Performance reviews.** Again, being able to speak to a list of specific accomplishments during a performance review feels good (though I try to supplement with facts & figures that I wouldn't necessarily capture in my accomplishments list)
 * **Year-in-review.** I just wrote my year in review blog post for 2018 and I kid you not, I 100% forgot that I was promoted at work this year. That's bananas!
-* **Tough days.** I think this is the most useful. Everyone -- myself included -- has days when they just feel not great at their job or at things in general. If I feel like I'm in a slump, these lists can remind me of my strengths and inspire me to think about what the next thing is that I might want to jot down. The kind words from others help the most in this context; it's a great reminder that someone, somewhere, thought you weren't the worst. :) 
+* **Tough days.** I think this is the most useful. Everyone -- myself included -- has days when they just feel not great at their job or at things in general. If I feel like I'm in a slump, these lists can remind me of my strengths and inspire me to think about what the next thing is that I might want to jot down. The kind words from others help the most in this context; it's a great reminder that someone, somewhere, thought you weren't the worst. :smile:
 
 ## These lists aren't just for you!
 

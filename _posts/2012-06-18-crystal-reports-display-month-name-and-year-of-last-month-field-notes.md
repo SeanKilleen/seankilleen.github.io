@@ -18,14 +18,18 @@ references:
    parenturl: http://crystaltricks.com/wordpress/
 ---
 ### Problem:
+
 A report I'm running gets the data for the last Month. I'd like to nicely display the name of the month and year.
 
 ### Solution
 
 #### Step 1: Formula to Return the Date 1 Month Ago
+
 Use the DateAdd function in the formula to get the date minus one month:
 
-    DateAdd("m", -1, CurrentDate)
+```crystal
+DateAdd("m", -1, CurrentDate)
+```
 
 This says to use "month" intervals, subtract one, and use the current date as the starting point.
 

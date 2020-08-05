@@ -7,9 +7,11 @@ comments: true
 
 ---
 ### Problem:
+
 I accidentally deleted the group name text from a section of my Crystal Report in Crystal Reports 2008, and now I would like to re-insert the text.
 
 ### Solution
+
 This is embarrassingly simple, and yet I found it to be surprisingly counter-intuitive. Maybe it's just me..
 
 In the `Field Explorer` section, expand the `Group Name Fields` section and drag the name onto the report.

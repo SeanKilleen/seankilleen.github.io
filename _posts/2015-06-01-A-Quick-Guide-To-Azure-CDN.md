@@ -17,11 +17,11 @@ references:
  - title: Namecheap.com
    url: http://namecheap.com
 ---
-Happy June, readers! I recently helped design a [AlliesForACure.com, a web site for a charity contest]() (Ed. note: unfortunately the link has been lost to time). We had some static content (images, etc.) and wanted to keep pages loading quickly while keeping our costs low.
+Happy June, readers! I recently helped design a AlliesForACure.com, a web site for a charity contest (Ed. note: unfortunately the link has been lost to time). We had some static content (images, etc.) and wanted to keep pages loading quickly while keeping our costs low.
 
 This sounded like a job for [Azure CDN](http://azure.microsoft.com/en-us/services/cdn/). But I had never used it before, so I figured this would be a good opportunity to make a blog post out of it.
 
-### In this article, we'll:
+## In this article, we'll:
 
 * Discuss the merits of a CDN
 * Setup an Azure storage account and add some files
@@ -30,21 +30,21 @@ This sounded like a job for [Azure CDN](http://azure.microsoft.com/en-us/service
 * Add a `HtmlHelper` that will make it easier to reference CDN content
 * Enable CDN versioning and update our helper to include it.
 
-# Back up a second -- What's all this CDN Business about?
+## Back up a second -- What's all this CDN Business about?
 
-## What a CDN Does
+### What a CDN Does
 
 In short, all the stuff sitting on your server -- your web site's images, videos, sound files, style sheets, etc. -- all has to be served up to the user. What we often neglect is that those files have to be transferred all the way from the server to the user's PC, which takes time and costs bandwidth. If your server is in New York, and your user is in California, the files have to travel all the way there.
 
-CDNs distribute your files to various places around the globe, and are really good at caching them. As a result, if your server is in New York, and your user is in California, when they go to the URL for the image, it might actually be served to the from some place much closer, saving valuable time. 
+CDNs distribute your files to various places around the globe, and are really good at caching them. As a result, if your server is in New York, and your user is in California, when they go to the URL for the image, it might actually be served to the from some place much closer, saving valuable time.
 
-## Why CDNs? Why Azure CDN?
+### Why CDNs? Why Azure CDN?
 
-Why use a CDN? Because it can dramatically cut down on load time for your users, and most of the time it adds value to the price you'd be paying to serve these files up on your own anyway. 
+Why use a CDN? Because it can dramatically cut down on load time for your users, and most of the time it adds value to the price you'd be paying to serve these files up on your own anyway.
 
 Why use Azure CDN? In this case, just because I want to play around with it. There are many credible alternatives out there. In our case, our site was already served with Azure, so I figured why not?
 
-# First Step: Think About The Content You Want to Serve
+## First Step: Think About The Content You Want to Serve
 
 CDNs often involve the concept of "containers", a sort of one-level folder structure. Azure is no different. So, I wanted to think about the different types of content I wanted to serve up. This boiled down to:
 
@@ -52,13 +52,13 @@ CDNs often involve the concept of "containers", a sort of one-level folder struc
 * Headshots of team members
 * Photos that we used in the campaign
 
-# Setting up the Storage Component
+## Setting up the Storage Component
 
-## Prerequisites
+### Prerequisites
 
 I assume you have an Azure account and have used the portal before. If not, it's not that hard to do -- I have faith in you. Let me know in the comments if you're having trouble.
 
-## Create an Azure Storage Account
+### Create an Azure Storage Account
 
 * From the [Azure Management Site](http://manage.windowsazure.com) [^1], follow the path to quick create a storage account:
 
@@ -68,28 +68,30 @@ I assume you have an Azure account and have used the portal before. If not, it's
 
 ![Entering storage account details]({{site.post-images}}/AzureCDN_02_StorageAccountSetup.png)
 
-## Obtain Your Access Key
+### Obtain Your Access Key
+
 While we're here, we'll snag your access key. You'll need this when connecting to your account later.
 
 * Click on the Storage account once it is created
-* At the bottom of the screen, click on `Manage Access Keys`: 
+* At the bottom of the screen, click on `Manage Access Keys`:
 
 ![The location of access key management]({{site.post-images}}/AzureCDN_03a_ManageAccessKeys.png)
 
-* Click the Copy icon next to the Primary access key: 
+* Click the Copy icon next to the Primary access key:
 
 ![Location of the copy icon]({{site.post-images}}/AzureCDN_03b_AccessKeyInfo.png)
 
 * Paste it somewhere temporarily. You'll use it in a little bit.
 
-## Create Your Containers and Add Your Files
-There are tons of ways to get files into Microsoft Azure. For this exercise, we'll use [Azure Storage Explorer](https://azurestorageexplorer.codeplex.com/), because it's a GUI tool that will get the job done quickly. 
+### Create Your Containers and Add Your Files
+
+There are tons of ways to get files into Microsoft Azure. For this exercise, we'll use [Azure Storage Explorer](https://azurestorageexplorer.codeplex.com/), because it's a GUI tool that will get the job done quickly.
 
 ### Installing Azure Storage Explorer
 
 * Point your browser to the [Azure Storage Explorer Download Page](https://azurestorageexplorer.codeplex.com/releases/view/125870) and download the latest version
 * Unzip the files
-* Run the installer. 
+* Run the installer.
 
 ### Add Your Storage Account to Azure Storage Explorer
 
@@ -118,22 +120,23 @@ There are tons of ways to get files into Microsoft Azure. For this exercise, we'
 
 ![A screenshot of the location of the upload button]({{site.post-images}}/AzureCDN_09_UploadButton.png)
 
-* Select multiple files for upload -- in this case, headshots of our awesome team: 
+* Select multiple files for upload -- in this case, headshots of our awesome team:
 
 ![A screenshot of selecting files for upload]({{site.post-images}}/AzureCDN_10_SelectMultipleFilesForUpload.png)
 
 Once those files are uploaded, you're all set!
 
-# Create the CDN on top of the Storage Account
+## Create the CDN on top of the Storage Account
 
 * Back in the Azure Storage Portal, select `New --> App Services --> CDN --> Quick Create`.
-* Select your subscription, `Storage Accounts` for the origin type, and choose the URL for the origin as the storage account you created earlier. 
+* Select your subscription, `Storage Accounts` for the origin type, and choose the URL for the origin as the storage account you created earlier.
 
 ![A screenshot entering information for CDN setup]({{site.post-images}}/AzureCDN_04_CDNSetup.png)
 
-* Azure will create your CDN with a random name, something like ours which is `az766003`. 
+* Azure will create your CDN with a random name, something like ours which is `az766003`.
 
-## Accessing your files via CDN
+### Accessing your files via CDN
+
 Voila! With the CDN created, we can now access our files. To do this, we look at how an Azure CDN URL is constructed.
 
 `http://[CDN Endpoint].vo.msecnd.net/[Container]/[ImageName.extension]`
@@ -144,12 +147,13 @@ Voila! With the CDN created, we can now access our files. To do this, we look at
 
 So if we wanted to get to an image in our headshots container, we could type `http://az766003.vo.msecnd.net/headshots/image.png`.[^3]
 
-But honestly, **That long-ass URL is gross and doesn't feel like our domain**. Wouldn't it be great if it was a little more home-y, like say `cdn.alliesforacure.com`? 
+But honestly, **That long-ass URL is gross and doesn't feel like our domain**. Wouldn't it be great if it was a little more home-y, like say `cdn.alliesforacure.com`?
 
 Yeah. Let's do that.
 
-# Set Up a sub-domain that points to your CDN
-On this project, we use [NameCheap](http://namecheap.com) as our registrar -- I'm a big fan of theirs. 
+## Set Up a sub-domain that points to your CDN
+
+On this project, we use [NameCheap](http://namecheap.com) as our registrar -- I'm a big fan of theirs.
 
 ## Add the Sub-domain with your DNS provider
 
@@ -172,17 +176,19 @@ On this project, we use [NameCheap](http://namecheap.com) as our registrar -- I'
 
 ![A screenshot entering the domain name]({{site.post-images}}/AzureCDN_06_EnterDomainInAzure.png)
 
-## Potential Problems with the Current Setup
+### Potential Problems with the Current Setup
+
 Even with that nice new sub-domain, there could be some issues ahead:
 
 * If you decide to change the subdomain, or you move to different CDN point, the beginning of the URL could change.
-* Similarly with the blob name or the file name. 
+* Similarly with the blob name or the file name.
 * If these URLs are all over the place, changing them could be a huge bummer or at best a find & replace operation.
 
-With MVC's goodies, it shouldn't be hard to whip something up to help manage this complexity. 
+With MVC's goodies, it shouldn't be hard to whip something up to help manage this complexity.
 
-# Making it Easier: An HtmlHelper for CDN Content
-I know, I know -- let's get to some code! We can use HtmlHelpers in MVC to achieve this. 
+## Making it Easier: An HtmlHelper for CDN Content
+
+I know, I know -- let's get to some code! We can use HtmlHelpers in MVC to achieve this.
 
 I'd like to add the capability for someone to use `Html.CDN("cdnUrl", "containerName", "fileName.png")` to specify where to load a piece of CDN content from.
 
@@ -193,70 +199,73 @@ This small bit of code should work just fine:
 ```csharp
 public static class CDNHelper
 {
-	public static string CDN(this HtmlHelper helper, string containerName, string blobName)
-	{
-		//If they don't provide a baseUrl, look for it in the AppSettings
-		var baseUrl = ConfigurationManager.AppSettings["CDNBaseUrl"];
-		return CDN(helper, baseUrl, containerName, blobName);
-	}
+    public static string CDN(this HtmlHelper helper, string containerName, string blobName)
+    {
+        //If they don't provide a baseUrl, look for it in the AppSettings
+        var baseUrl = ConfigurationManager.AppSettings["CDNBaseUrl"];
+        return CDN(helper, baseUrl, containerName, blobName);
+    }
 
-	public static string CDN(this HtmlHelper helper, string baseUrl, string containerName, string blobName)
-	{
-		var baseUrlToUse = RemoveTrailingSlashFrom(baseUrl);
-		var containerToUse = RemoveTrailingSlashFrom(containerName);
+    public static string CDN(this HtmlHelper helper, string baseUrl, string containerName, string blobName)
+    {
+        var baseUrlToUse = RemoveTrailingSlashFrom(baseUrl);
+        var containerToUse = RemoveTrailingSlashFrom(containerName);
 
-		return string.Format("{0}/{1}/{2}", baseUrlToUse, containerToUse, blobName);
-	}
+        return string.Format("{0}/{1}/{2}", baseUrlToUse, containerToUse, blobName);
+    }
 
-	private static string RemoveTrailingSlashFrom(string stringToRemoveTrailingSlashFrom)
-	{
-		if (stringToRemoveTrailingSlashFrom.EndsWith("/"))
-		{
-			return stringToRemoveTrailingSlashFrom.Remove(stringToRemoveTrailingSlashFrom.Length - 1);
-		}
+    private static string RemoveTrailingSlashFrom(string stringToRemoveTrailingSlashFrom)
+    {
+        if (stringToRemoveTrailingSlashFrom.EndsWith("/"))
+        {
+            return stringToRemoveTrailingSlashFrom.Remove(stringToRemoveTrailingSlashFrom.Length - 1);
+        }
 
-		return stringToRemoveTrailingSlashFrom;
-	}
+        return stringToRemoveTrailingSlashFrom;
+    }
 }
 ```
 
-## What the heck does this code do?
-This is an extension method onto `HtmlHelper`. When you call into it, it looks for the CDN at the `CDNBaseUrl` application setting. 
+### What the heck does this code do?
 
-It then removes any single trailing slashes from the baseUrl and the containerName on the off-chance you put them in there. 
+This is an extension method onto `HtmlHelper`. When you call into it, it looks for the CDN at the `CDNBaseUrl` application setting.
+
+It then removes any single trailing slashes from the baseUrl and the containerName on the off-chance you put them in there.
 
 After that, it re-assembles the correct URL, which is what winds up in the place of wherever you used this HtmlHelper.
 
-Now, instead of having to type `http://az766003.vo.msecnd.net/headshots/image.png`, we can use `@Html.CDN("headshots", "image.png")`. Much better. 
+Now, instead of having to type `http://az766003.vo.msecnd.net/headshots/image.png`, we can use `@Html.CDN("headshots", "image.png")`. Much better.
 
-## I Changed the Files but the Files Didn't change!
+### I Changed the Files but the Files Didn't change!
+
 CDNs, as you might imagine, are really good at caching things so they can distribute them everywhere. But sometimes, you change something -- like a logo, editing an image or css file, etc. -- and you would really like that to work.
 
-Don't worry, we have something up our sleeves for you, too. 
+Don't worry, we have something up our sleeves for you, too.
 
-# Adding "Versioning" to the CDN
+## Adding "Versioning" to the CDN
+
 Versioning a CDN works by appending a QueryString to the end of the url. The CDN thinks that `image.png` is different from `image.png?v1`. That means if you can auto-generate that little bit on the end, you'll be able to refresh your CDN content whenever you need to.
 
-## Enabling QueryString versioning via Azure
+### Enabling QueryString versioning via Azure
 
-* In the Azure Managment Portal, go to your CDN's section. 
+* In the Azure Managment Portal, go to your CDN's section.
 * Enable QueryStrings via the button at the bottom:
 
 ![A screenshot of the location to enable QueryStrings]({{site.post-images}}/AzureCDN_11_EnableQueryString.png)
 
 That's all you need to do.
 
-## Updating our HtmlHelper to Support CDN Versioning 
+### Updating our HtmlHelper to Support CDN Versioning
+
 We add a boolean value for `versioning` and pass it through, defaulting to true:
 
 ```csharp
 public static string CDN(this HtmlHelper helper, string containerName, string blobName, bool versioning = true)
 {
-	//If they don't provide a baseUrl, look for it in the AppSettings
-	var baseUrl = ConfigurationManager.AppSettings["CDNBaseUrl"];
-	return CDN(helper, baseUrl, containerName, blobName, versioning);
+    //If they don't provide a baseUrl, look for it in the AppSettings
+    var baseUrl = ConfigurationManager.AppSettings["CDNBaseUrl"];
+    return CDN(helper, baseUrl, containerName, blobName, versioning);
 }
-
 ```
 
 And we add a branching statement when we concatenate the URL:
@@ -264,21 +273,21 @@ And we add a branching statement when we concatenate the URL:
 ```csharp
 public static string CDN(this HtmlHelper helper, string baseUrl, string containerName, string blobName, bool versioning = true)
 {
-	var baseUrlToUse = RemoveTrailingSlashFrom(baseUrl);
-	var containerToUse = RemoveTrailingSlashFrom(containerName);
+    var baseUrlToUse = RemoveTrailingSlashFrom(baseUrl);
+    var containerToUse = RemoveTrailingSlashFrom(containerName);
 
-	if (versioning)
-	{
-		var versionNumber = ConfigurationManager.AppSettings["CDNVersionNumber"];
-		return string.Format("{0}/{1}/{2}?v{3}", baseUrlToUse, containerToUse, blobName, versionNumber);
-	}
+    if (versioning)
+    {
+        var versionNumber = ConfigurationManager.AppSettings["CDNVersionNumber"];
+        return string.Format("{0}/{1}/{2}?v{3}", baseUrlToUse, containerToUse, blobName, versionNumber);
+    }
 
-	return string.Format("{0}/{1}/{2}", baseUrlToUse, containerToUse, blobName);
+    return string.Format("{0}/{1}/{2}", baseUrlToUse, containerToUse, blobName);
 }
-
 ```
 
-## Adding a Config setting in your project
+### Adding a Config setting in your project
+
 We probably should specify a version number just so we have one. We add the following to our `appSettings` section in `web.config`:
 
 ```xml
@@ -287,12 +296,13 @@ We probably should specify a version number just so we have one. We add the foll
 
 Now we can change that setting from web.config or override it within the Azure control panel and the static content will refresh every time. We could even hook this into a build system that increments it each time to ensure CDN content is updated when we push code.
 
-# Some Caveats
+## Some Caveats
 
 * CDNs cache content for a long time. You can get around this using Azure CDN QueryStrings, but be careful because it kind of defeats the purpose. Usually querystrings are used with something like a version of a site, e.g. `myImage.jpg?v=1.2.3`.
 * Don't forget to check css files, etc. for urls to things like in-line images. I missed this at first and couldn't figure out why certain things weren't showing up. Just a brief moment of "d'oh!".
 
-# That's a Wrap!
+## That's a Wrap!
+
 I hope you found this useful. If you did, please consider making a donation at AlliesForACure.com.
 
 Also, I'd love to hear your thoughts -- sound off in the comments!
