@@ -15,4 +15,4 @@ This will allow the `jekyll-github-metadata` plugin to perform as expected and m
 * `gem install bundler`
 * cd to the project's rood
 * `bundle install`
-* `bundle exec jekyll serve` should build the site and serve it at `http://localhost:4000`
+* `bundle exec jekyll serve` should build the site and serve it at `http://localhost:4000`. For future posts, you can build with `bundle exec jeykll serve --future true`
