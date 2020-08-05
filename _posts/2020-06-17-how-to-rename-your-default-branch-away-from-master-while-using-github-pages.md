@@ -27,7 +27,7 @@ Yes, in the sense that renaming branches and pushing them is easy. Less so in th
 
 ## So, let's jump in and do it!
 
-I did a stream to demonstrate this, and I'll post the steps below as well.
+I'm [on Twitch](https://twitch.tv/sjkilleen) so I did a stream to demonstrate this, and I'll post the steps below as well.
 
 The stream covers two repositories:
 
