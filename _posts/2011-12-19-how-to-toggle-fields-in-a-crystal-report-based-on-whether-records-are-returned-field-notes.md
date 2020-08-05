@@ -7,10 +7,13 @@ comments: true
 
 ---
 ### Problem:
+
 In a Crystal Report, you would like to show or hide sections based upon whether the report contains results or not.
 
 ### Solution
+
 #### Step 1: Create a Shared Variable and Increment it
+
 Create a formula with a shared variable in your report -- for the sake of this example, we'll call it `v_RecordCount`.
 
 The contents of the formula should look like this:
@@ -27,6 +30,7 @@ RecordCount := RecordCount+1;
 ```
 
 #### Step 2: Place the Variable in the Report header and Suppress it
+
 * Drag the formula into the `Report Header A` section.
 * Right-click on the formula you added in the report and select `Format Field...`
 * Click the `Common` tab.
@@ -34,6 +38,7 @@ RecordCount := RecordCount+1;
 * Click `OK`
 
 #### Step 3: Craft the Proper Suppression Formula for the Sections
+
 Note that the formula we have created will return `null` when there are no records. This is key to crafting the formula.
 
 * Right-click on the section you would like to show or hide based on having results.
@@ -49,7 +54,7 @@ else false
 
 This tells Crystal to hide the section if the `RecordCount` is null (i.e. there are no results), and to show it otherwise.
 
-If you want to **show a section if there are no results**, enter the following: 
+If you want to **show a section if there are no results**, enter the following:
 
 ```vb
 If IsNull({@RecordCount}) then false

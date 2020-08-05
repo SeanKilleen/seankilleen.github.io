@@ -11,5 +11,4 @@ Outlook 2010 has made this much easier with the addition of a “Contact Attende
 
 ![Screenshot of Contact Attendees Button]({{site.post-images}}/2012-03-23_Office2010_ContactAttendees.png)
 
-
 Hope you find it useful!

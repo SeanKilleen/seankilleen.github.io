@@ -6,16 +6,18 @@ comments: true
 
 ---
 ### The Problem
+
 I needed to pull back a list of dates in a certain range for each employee, but didn't have a common join criteria, as I wanted all the dates but they did not come from a table.
 
 ### The Solution
+
 I knew that the dates would never equal the employee name, so in this case, I could actually use a "not-equal" join to connect the two. I always forget about this one, but it's handy.
 
 I did something along the following (edited for brevity):
 
 ```sql
-select * from (...) ActiveLabor 
-    left outer join (...)DateRange 
+select * from (...) ActiveLabor
+    left outer join (...)DateRange
     on (activelabor.laborcode != to_char(DateRange.DateItem))
 ```
 

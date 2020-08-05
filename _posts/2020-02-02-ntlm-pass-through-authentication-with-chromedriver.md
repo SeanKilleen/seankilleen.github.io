@@ -13,7 +13,7 @@ tags:
   - quick tips
 date: '2020-02-02 09:58 -0500'
 ---
-## Challenge 
+## Challenge
 
 I was on a project for a web application that used Windows Active Directory authentication for internal users.
 
@@ -21,13 +21,13 @@ We had some automated acceptance tests using Selenium and ChromeDriver. However,
 
 ## Solution
 
-After a hunch and some intense googling, we found that there are registry settings where you can enable Chrome to allow ChromeDriver to accept NTLM authentication negotiation by default. 
+After a hunch and some intense googling, we found that there are registry settings where you can enable Chrome to allow ChromeDriver to accept NTLM authentication negotiation by default.
 
 The key is to add the following to your registry, to ensure you're enabling the desired auth schemes for the desired domains.
 
 An example `.reg` file is below that you can modify to use. After running applying these settings to our build agents, the problems were resolved.
 
-```
+```ini
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\Software\Policies\Google\Chrome]

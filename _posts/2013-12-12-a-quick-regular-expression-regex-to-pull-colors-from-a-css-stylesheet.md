@@ -7,14 +7,18 @@ comments: true
 ---
 This one's mostly for my quick personal reference. It wasn't hard by any means but figured someone else might find it useful.
 
-### Problem:
+### Problem
+
 I need to find all hex color codes in a style sheet so I can extract them.
 
 ### Solution
+
 I came up with a quick Regex (regular expression) to do this:
 
+```regex
     #([A-Fa-f0-9]*);
-    
+```
+
 Essentially, it just looks for a pound symbol (`#`), followed by any amount of numbers 0-9 or letters a-f, followed by a semi-colon.
 
 If you're interested to try it, you can view [my example over at Regex Tester].
