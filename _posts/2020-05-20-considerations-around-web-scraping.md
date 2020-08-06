@@ -7,8 +7,15 @@ tags:
   - good practices
   - opinions
 date: 2020-08-06 18:25 -0400
+header:
+  overlay_image: /assets/images/unsplash-image-1.jpg
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+  actions:
+    - label: "More Info"
+      url: "https://unsplash.com"
 ---
-Someone recently approached me with a question about considerations for a team who was thinking about scraping a commercial web site for data that was behind a paywall. The development team was thinking in terms of something being technically feasible, but not necessarily about the broader implications. 
+Someone recently approached me with a question about considerations for a team who was thinking about scraping a commercial web site for data that was behind a paywall. The development team was thinking in terms of something being technically feasible, but not necessarily about the broader implications.
 
 I wrote back and figured I'd put my thoughts up here. Standard disclaimer: I am not a lawyer.
 
@@ -23,7 +30,7 @@ Here's an article that warns businesses about the dangers of web scraping, in ca
 
 Here's a nice succinct idea of ethics in web scraping: <https://towardsdatascience.com/ethics-in-web-scraping-b96b18136f01>
 
-The difference is that your target site likely doesn't fall into the "ethical site owner" category in this article, as they are going to protect the data as a source of their IP, and that data is not something they'd consider part of the open web (especially if it's behind a login screen or subscription or portal of any kind.) 
+The difference is that your target site likely doesn't fall into the "ethical site owner" category in this article, as they are going to protect the data as a source of their IP, and that data is not something they'd consider part of the open web (especially if it's behind a login screen or subscription or portal of any kind.)
 
 In short, I would push back strongly on the practice unless someone can show you that:
 
