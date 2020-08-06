@@ -1,5 +1,5 @@
 ---
-title: "Random thoughts: Considerations around web scraping"
+title: "Random Thoughts: Considerations Around Web Scraping"
 comments: true
 tags:
   - web scraping
