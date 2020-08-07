@@ -3,8 +3,8 @@
 # The minimum number of reviews from each association that approve the pull request before
 # doing an automatic merge. For more information about associations see:
 # https://developer.github.com/v4/enum/commentauthorassociation/
-minApprovals:
-    OWNER: 1
+# minApprovals:
+#    OWNER: 1
   
   # The maximum number of reviews from each association that request changes to the pull request.
   # Setting this number higher than 0 will allow automatic merging while changes are still requested.
@@ -60,15 +60,15 @@ minApprovals:
   
   # Whenever required labels are configured, pull requests will only be automatically merged whenever
   # all of these labels are attached to a pull request.
-  # requiredLabels:
-  # - automerge
+   requiredLabels:
+   - automerge
   
   # Pull requests will only be automatically merged if there is a match between the regular expression
   # and its title
   # requiredTitleRegex: '\bmerge\b'
   
   # Automatic merges will be blocked if there is a match between the regular expression and title
-#   blockingTitleRegex: '\bwip\b'
+   blockingTitleRegex: '\bwip\b'
   
   # Automatic merges will be blocked if there is a match between the regular expression and body
   blockingBodyRegex: '\bDo not merge\b'
