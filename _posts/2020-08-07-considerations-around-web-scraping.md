@@ -6,7 +6,7 @@ tags:
   - ethics
   - good practices
   - opinions
-date: 2020-08-06 18:25 -0400
+date: 2020-08-07 9:00 -0400
 excerpt: "It's risky, and you need to know what you're doing."
 header:
   overlay_image: https://images.unsplash.com/photo-1557075831-9227ec7d0097?ixlib=rb-1.2.1&auto=format
