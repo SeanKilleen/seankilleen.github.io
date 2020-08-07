@@ -52,7 +52,7 @@ resource "azurerm_storage_container" "backendstoragecontainer" {
 }
 ```
 
-* Add a variables file or section, e.g. `myvars.tfvars` and add the following variables to it:
+* Add a variables file or section, e.g. `terraform.tfvars` (a special name which is loaded automatically) and add the following variables to it:
 
 ```hcl
 variable "AzureSubscriptionId" {
