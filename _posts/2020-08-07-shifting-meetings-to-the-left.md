@@ -16,3 +16,5 @@ date: 2020-08-07 09:16 -0400
 * Shift ambiguity to the left by setting expectations
 * Shift questions to the left with prep
 * Shift actionability to the left with action items
+
+ meetings as a value stream. What is the outcome of a meeting? Surely we can get to that outcome faster.
