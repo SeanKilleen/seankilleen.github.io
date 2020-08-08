@@ -5,7 +5,7 @@ tags:
   - ama
   - balance
   - productivity
-date: 2020-07-03 10:33 -0400
+date: 2020-08-10 10:00 -0400
 ---
 _I run [an ongoing AMA (ask me anything) on GitHub](https://github.com/SeanKilleen/ama) where folks can drop questions. [Give it a try!](https://github.com/SeanKilleen/ama/issues/new) Occasionally I'll post topics here that I think a wider audience might be interested in._
 
