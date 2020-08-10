@@ -42,6 +42,11 @@ I'm pretty happy where I am but am happy to have a conversation as well.
 * Organizational agility -- a culture of learning, experimentation, and quality
 * DevOps-related expertise (CI/CD pipelines, operational visibility, robust delivery mechanisms)
 
+## Clearances
+
+* I have held Public Trust clearances via both NIST and DHS.
+* I believe I would be clearable at TS/SCI w/poly if need be.
+
 ## Alphabet Soup -- Keywords, General Skills, etc.
 
 | Category | General run-down [^1] |
