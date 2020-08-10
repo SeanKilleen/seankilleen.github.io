@@ -127,7 +127,7 @@ Highlights from what my peers recently said about me, anonymously. I am incredib
 
 > "Sean's passion in infectious and he is a tribute to the culture of leadership we have at our firm."
 
-> "Sean operates at a level on par with the best our firm has ever employed. In a lot of ways, Sean is the ultimate colleague. Sean brings in BD opportunities, Sean solves technical problems for clients, Sean helps to solve cultural problems across the our firm organization, Sean represents our firm as a technical leader at a myriad of conferences — Sean does it all."
+> "Sean operates at a level on par with the best our firm has ever employed. In a lot of ways, Sean is the ultimate colleague. Sean brings in BD opportunities, Sean solves technical problems for clients, Sean helps to solve cultural problems across our organization, Sean represents our firm as a technical leader at a myriad of conferences — Sean does it all."
 
 > "Sean was an exceptional supervisor in my opinion. We had constantly 1:1 check-ins during the year were he provided me valuable guidance, feedback and clearly set the expectation about my performance. Sean made himself available even when he wasn't working at the client to help me if I needed."
 
