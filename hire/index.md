@@ -24,7 +24,7 @@ I'm pretty happy where I am but am happy to have a conversation as well.
 
 ## At a Glance
 
-* Microsoft MVP in Developer Technologies (~200 in this category in the US)
+* Microsoft MVP in Developer Technologies (~150 in this category in the US)
 * 15+ years developing software in the .NET ecosystem
 * Recently led the modernization of a system that industry analysts called more complex than the moon landing
 * Polyglot developer beyond .NET -- comfortable with Javascript (prefer TypeScript), Ruby, Python, and others
