@@ -6,6 +6,10 @@ tags:
   - balance
   - productivity
 date: 2020-08-10 10:00 -0400
+header:
+  overlay_image: https://images.unsplash.com/photo-1508962914676-134849a727f0?ixlib=rb-1.2.1&auto=format
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  caption: "Photo credit: [**Agê Barros @ Unsplash**](https://unsplash.com/@agebarros?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)"
 ---
 _I run [an ongoing AMA (ask me anything) on GitHub](https://github.com/SeanKilleen/ama) where folks can drop questions. [Give it a try!](https://github.com/SeanKilleen/ama/issues/new) Occasionally I'll post topics here that I think a wider audience might be interested in._
 
