@@ -23,8 +23,9 @@ Steps to attempt to troubleshoot:
 ```powershell
 # TODO: Paste here
 ```
-
-* Downloaded an off-line version of the Upgrade
+* Decided that probably didn't matter and it wasn't worth trying to download again. Went for an offline tool
+* Downloaded [the Windows Upgrade Assistant](https://www.microsoft.com/en-us/software-download/windows10) directly
+* Created a USB stick for an offline upgrade
 * Disabling devices -- wrote a powershell script to do it
 
 ```powershell
