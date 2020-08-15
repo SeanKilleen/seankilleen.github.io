@@ -15,10 +15,20 @@ date: 2020-08-11 23:14 -0400
 
 Steps to attempt to troubleshoot:
 
-* The incantation of stopping windows update services, removing downloaded files, etc.
-* Running sfc /scannow
-* Running DISM
 * Disabling anti-virus
-* Downloading an off-line version of the Upgrade
-* Disabling Wi-fi adapter
-* Detaching all peripherals (including mouse & keyboard once things kick off).
+* Running DISM: `DISM /online /cleanup-image /restorehealth`
+* Running SFC: `sfc /scannow`
+* The incantation of stopping windows update services, removing downloaded files, etc. -- wrote a powershell script to do it.
+
+```powershell
+# TODO: Paste here
+```
+
+* Downloaded an off-line version of the Upgrade
+* Disabling devices -- wrote a powershell script to do it
+
+```powershell
+# TODO: Paste here
+```
+
+* Detaching all peripherals (including mouse & keyboard -- used an old classic USB keyboard)
