@@ -1,5 +1,5 @@
 ---
-title: How to get started contributing to OSS when you're unfamiliar with code
+title: How to Contribute to OSS When You're Unfamiliar With Its Code
 comments: true
 tags:
   - OSS
@@ -7,6 +7,11 @@ tags:
   - culture
   - getting started
 date: 2020-08-24 9:00 -0400
+excerpt: "An OSS journey with a fun result."
+header:
+  overlay_image: https://images.unsplash.com/photo-1489533119213-66a5cd877091?ixlib=rb-1.2.1&auto=format
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  caption: "Photo credit: [**Danielle MacInnes @ Unsplash**](https://unsplash.com/@dsmacinnes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 ---
 I had a great question from a colleague recently and I figured I'd put my answer out there.
 
