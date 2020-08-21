@@ -1,5 +1,5 @@
 ---
-title: "Announcement: I am now the lead for the NUnit docs project!"
+title: "Announcement: I am Now the Lead for the NUnit Docs Project!"
 comments: true
 tags:
   - nunit
