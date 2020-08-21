@@ -7,7 +7,8 @@ tags:
   - culture
   - getting started
 date: 2020-08-24 9:00 -0400
-excerpt: "An OSS journey with a fun result."
+excerpt: "It can seem daunting, but there are some ways in."
+
 header:
   overlay_image: https://images.unsplash.com/photo-1489533119213-66a5cd877091?ixlib=rb-1.2.1&auto=format
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
