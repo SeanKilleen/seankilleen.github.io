@@ -12,7 +12,7 @@ excerpt: "An OSS journey with a fun result."
 header:
   overlay_image: https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&auto=format
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
-  caption: "Photo credit: [**Alfons Morales @ Unsplash**](https://unsplash.com/@alfonsmc10?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
+  caption: "Photo credit: [**Danielle MacInnes @ Unsplash**](https://unsplash.com/@dsmacinnes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 ---
 I recently helped the NUnit docs team re-launch their documentation at <https://docs.nunit.org>. As the result of this effort, I have been been given -- and accepted -- an invitation to lead [the NUnit docs project](https://github.com/nunit/docs)! I couldn't be more excited to continue to foster learning and growth for a foundational and fundamental tool in the .NET ecosystem. With [over 81 million total downloads on Nuget](https://www.nuget.org/packages/NUnit/), we have a large community to support, and I don't take that lightly.
 
