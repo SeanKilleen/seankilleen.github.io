@@ -15,16 +15,16 @@ I'm pretty happy where I am but am happy to have a conversation as well.
 
 ## What I'm Open To
 
-* Lead, Principal, or Director level positions. While I am passionate about technical work and capable of performing it, I am likely not a strong fit for an individual contributor role unless the compensation is commensurate with such roles. I am at my best when I'm providing a large impact across teams or an organization.
+* Technical Leadership. Depending on the organization, this may be a Director, Fellow, Principal, or Technical Manager role (or similar). While I am passionate about technical work and capable of performing it, I am likely not a strong fit for an individual contributor role unless the compensation is commensurate with such roles. I am at my best when I'm providing a large impact across teams or an organization and empowering / enabling teams to achieve that impact.
 * Full-time roles. Will consider contract opportunities but the rate may be a non-starter for most. I commit to my employer, and I expect them to commit to me.
-* Happy to work in consulting environments, but for my next journey, a product or services company I believe in is probably the best fit.
+* Happy to work in consider consulting environments as I have a great deal of experience there, but for my next journey, a product or services company I believe in is potentially the best fit.
 * The organization I work for is important to me, because I plan to invest in it. If you contact me, please indicate who the client is and where the position is situated within it. If you're a recruiter, please trust me -- I have no desire to circumvent you.
 * I am comfortable and productive with full-time remote work. I operate in a remote-first mindset. And in these times, a 100% remote role is a big plus for me.
 * If commuting, I'm aiming to be within 30 minutes of Arlington, VA.
 
 ## At a Glance
 
-* Microsoft MVP in Developer Technologies (~200 in this category in the US)
+* Microsoft MVP in Developer Technologies (~150 in this category in the US)
 * 15+ years developing software in the .NET ecosystem
 * Recently led the modernization of a system that industry analysts called more complex than the moon landing
 * Polyglot developer beyond .NET -- comfortable with Javascript (prefer TypeScript), Ruby, Python, and others
@@ -41,6 +41,12 @@ I'm pretty happy where I am but am happy to have a conversation as well.
 * The growth of leaders within teams and organizations
 * Organizational agility -- a culture of learning, experimentation, and quality
 * DevOps-related expertise (CI/CD pipelines, operational visibility, robust delivery mechanisms)
+
+## Clearances
+
+* I have held Public Trust clearances via both NIST and DHS.
+* I believe I would be clearable at TS/SCI w/poly if need be.
+* I do not currently hold any active clearance (my Public Trust clearances expired along with the work I was doing for those agencies.)
 
 ## Alphabet Soup -- Keywords, General Skills, etc.
 
@@ -122,7 +128,7 @@ Highlights from what my peers recently said about me, anonymously. I am incredib
 
 > "Sean's passion in infectious and he is a tribute to the culture of leadership we have at our firm."
 
-> "Sean operates at a level on par with the best our firm has ever employed. In a lot of ways, Sean is the ultimate colleague. Sean brings in BD opportunities, Sean solves technical problems for clients, Sean helps to solve cultural problems across the our firm organization, Sean represents our firm as a technical leader at a myriad of conferences — Sean does it all."
+> "Sean operates at a level on par with the best our firm has ever employed. In a lot of ways, Sean is the ultimate colleague. Sean brings in BD opportunities, Sean solves technical problems for clients, Sean helps to solve cultural problems across our organization, Sean represents our firm as a technical leader at a myriad of conferences — Sean does it all."
 
 > "Sean was an exceptional supervisor in my opinion. We had constantly 1:1 check-ins during the year were he provided me valuable guidance, feedback and clearly set the expectation about my performance. Sean made himself available even when he wasn't working at the client to help me if I needed."
 
