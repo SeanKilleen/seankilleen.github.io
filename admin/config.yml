@@ -9,6 +9,7 @@ media_folder: "images/post-images" # Folder where user uploaded files should go
 collections: # A list of collections the CMS should be able to edit
   - name: "blog" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Blog" # Used in the UI, ie.: "New Post"
+    label_singular: "Blog"
     folder: "_posts/" # The path to the folder where the documents are stored
     sort: "date:desc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
@@ -19,5 +20,22 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm ZZ"}
+      - label: "Header Image"
+        name: 'header'
+        required: false
+        widget: 'object'
+        fields:
+          - { label: 'Image URL', name: 'overlay_image', widget: 'string', required: false }
+          - { label: 'Opacity', name: 'overlay_filter', widget: 'number', valueType: 'float', default: 0.5, required: false }
+          - { label: 'Caption', name: 'caption', widget: string, default: 'Photo credit: [**TODO @ Unsplash**](https://unsplash.com/@TODO?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)', required: false }
+      - label: 'References'
+        name: 'references'
+        required: false
+        widget: 'list'
+        fields: 
+          - { label: 'Title', name: 'title', widget: 'string', required: true }
+          - { label: 'URL', name: 'url', widget: 'string', required: true }
+          - { label: 'Parent Title', name: 'parenttitle', widget: 'string', required: false }
+          - { label: 'Parent URL', name: 'parenturl', widget: 'string', required: false }
     editor:
       preview: false
