@@ -7,9 +7,9 @@ publish_mode: editorial_workflow
 media_folder: "images/post-images" # Folder where user uploaded files should go
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "Posts" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Posts" # Used in the UI, ie.: "New Post"
-    label_singular: "Post"
+  - name: "blog" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Blog" # Used in the UI, ie.: "New Post"
+    label_singular: "Blog"
     folder: "_posts/" # The path to the folder where the documents are stored
     sort: "date:desc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
