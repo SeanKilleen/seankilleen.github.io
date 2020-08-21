@@ -26,9 +26,9 @@ collections: # A list of collections the CMS should be able to edit
           required: false
           widget: 'object'
           fields:
-            - { label: 'Image URL', name: 'overlay_image', widget: 'string' }
-            - { label: 'Opacity', name: 'overlay_filter', widget: 'number', valueType: 'float', default: 0.5 }
-            - { label: 'Caption' name: 'caption', widget: string, default: 'Photo credit: [**TODO @ Unsplash**](https://unsplash.com/@TODO?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)'
+            - { label: 'Image URL', name: 'overlay_image', widget: 'string', required: true }
+            - { label: 'Opacity', name: 'overlay_filter', widget: 'number', valueType: 'float', default: 0.5, required: true }
+            - { label: 'Caption' name: 'caption', required: true, widget: string, default: 'Photo credit: [**TODO @ Unsplash**](https://unsplash.com/@TODO?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)'
         }
       - label: 'References'
         name: 'references'
