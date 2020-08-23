@@ -9,7 +9,7 @@ date: 2020-08-23 16:16 -0400
 ---
 ## Problem
 
-Despite it previously working, I see a "Source not Supported" error when attempting to Chromecast to a device. This also occasionally manifests itself as a device not showing up for Chromecasting.
+Despite it previously working, I see a `Source not Supported` error when attempting to Chromecast to a device. This also occasionally manifests itself as a device not showing up for Chromecasting.
 
 ## Solution
 
