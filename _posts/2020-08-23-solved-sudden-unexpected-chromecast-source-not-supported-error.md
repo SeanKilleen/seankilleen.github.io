@@ -13,7 +13,7 @@ Despite it previously working, I see a `Source not Supported` error when attempt
 
 ## Solution
 
-The solution in my case was to set the `Load Media Router Component Extension` setting to `Enabled`. 
+The solution in my case was to set the `Load Media Router Component Extension` setting to `Enabled`.
 
 * Open Chrome
 * Navigate to [chrome://flags/#media-router](chrome://flags/#media-router)
