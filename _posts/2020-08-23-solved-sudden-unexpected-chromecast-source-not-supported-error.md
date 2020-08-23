@@ -18,8 +18,8 @@ The solution in my case was to set the `Load Media Router Component Extension` s
 * Open Chrome
 * Navigate to [chrome://flags/#media-router](chrome://flags/#media-router)
 * Search for `Router Component` or similar
-* Set from `default` to `Enabled`
+* Set from `Default` to `Enabled`
 
-In my case, some organization managed settings had changed defaults away from what they were previously.
+In my case, some organization-managed settings had changed defaults away from what they were previously.
 
 Happy casting!
