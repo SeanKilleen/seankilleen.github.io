@@ -1,5 +1,5 @@
 ---
-title: 'Solved: Sudden/unexpected Chromecast "Source not Supported" Error'
+title: 'Solved: Chromecast "Source not Supported" Error When Attempting to Cast'
 comments: true
 tags:
   - chromecast
