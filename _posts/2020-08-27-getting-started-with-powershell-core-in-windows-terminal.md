@@ -19,28 +19,28 @@ So, I wanted to work it into my [Windows Terminal](https://github.com/microsoft/
 * I installed PowerShell Core by running `choco install powershell-core`. 
 * I opened Windows Terminal and check the list of shells. Great, PowerShell Core is in there!
 
-![]({{site.post-images}}/getting-started-with-powershell-core-in-windows-terminal/01_PowerShellTerminalInList.png)
+![The shell list in Windows Terminal, showing PowerShell Core in the list]({{site.post-images}}/getting-started-with-powershell-core-in-windows-terminal/01_PowerShellTerminalInList.png)
 
 But, it's not yet my default. Let's fix that.
 
 * Click the settings icon in the terminal, which opens a settings file (in VS code, in my case, because it's a `.json` file.)
 
-![]({{site.post-images}}/getting-started-with-powershell-core-in-windows-terminal/02_Settings.png)
+![The settings link in in the shell list]({{site.post-images}}/getting-started-with-powershell-core-in-windows-terminal/02_Settings.png)
 
 * Find the section that lists my profiles:
 
-![]({{site.post-images}}/getting-started-with-powershell-core-in-windows-terminal/03_ProfilesListInSettings.png)
+![The settings file showing the location of the profiles list]({{site.post-images}}/getting-started-with-powershell-core-in-windows-terminal/03_ProfilesListInSettings.png)
 
 * Find the entry for `Windows.Terminal.PowershellCore` and copy the GUID
 
-![]({{site.post-images}}/getting-started-with-powershell-core-in-windows-terminal/04_FindingGuid.png)
+![The profile entry for powershell core in the terminal settings, showing the unique identifier for it]({{site.post-images}}/getting-started-with-powershell-core-in-windows-terminal/04_FindingGuid.png)
 
 * Scroll up to the `defaultProfile` setting, and paste the GUID.
 
-![]({{site.post-images}}/getting-started-with-powershell-core-in-windows-terminal/05_PastingGuid.png)
+![The unique identifier pasted into the default profile setting]({{site.post-images}}/getting-started-with-powershell-core-in-windows-terminal/05_PastingGuid.png)
 
 * Restart Windows Terminal, and bingo -- my default shell is now PowerShell Core!
 
-![]({{site.post-images}}/getting-started-with-powershell-core-in-windows-terminal/06_ItWorks.png)
+![Windows terminal opened with an icon that indiciates that powershell core is the default]({{site.post-images}}/getting-started-with-powershell-core-in-windows-terminal/06_ItWorks.png)
 
 Happy shelling!
