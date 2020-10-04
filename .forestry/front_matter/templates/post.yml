@@ -1,0 +1,32 @@
+---
+label: Post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: boolean
+  name: comments
+  label: comments
+- type: list
+  name: tags
+  label: tags
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: excerpt
+  label: excerpt
+- type: field_group
+  name: header
+  label: header
+  fields:
+  - type: text
+    name: overlay_image
+    label: overlay_image
+  - type: number
+    name: overlay_filter
+    label: overlay_filter
+  - type: textarea
+    name: caption
+    label: caption
