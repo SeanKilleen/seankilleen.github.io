@@ -42,7 +42,9 @@ We can see the output below:
 
 ![The resulting 27 tests passing, showing some of the combinations]({{site.post-images}}/2020-cool-things-nunit/GeneratedTests.png)
 
-This is a nice gateway to property-based testing as well. More on that in a future post.
+The `[Pairwise]` attribute works similarly to the `[Combinatorial]` attribute, but rather than executing every input against each other, it reduces the test cases to only those that actually test a unique combination. This avoids duplicate tests and longer executions.
+
+These options are a nice gateway to property-based testing as well. More on that in a future post.
 
 ## Multiple Assertions with More Information Using Assert.Multiple
 
