@@ -9,7 +9,7 @@ tags:
   - keyboard shortcut
   - shortcuts
   - quick tips
-date: 2020-08-27 07:40 -0400
+date: 2020-12-07 10:00 -0500
 ---
 I can't believe I hadn't come across this yet! Posting in case you can benefit from it, too.
 
