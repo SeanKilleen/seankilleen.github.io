@@ -15,7 +15,7 @@ I've used NUnit for a long time in various cases, but I still learned a bunch of
 
 ## Combinatorial Testing with The `[Combinatorial]` and `[Pairwise]` Testing Attributes
 
-Sometimes, you have two or three inputs to a test and you want to ensure that every possible combination of those inputs is tested. You could manually create `TestCase` entries to accomplish this, but what happens if a change to your inputs occur?
+Sometimes, you have two or three inputs to a test and you want to ensure that every possible combination of those inputs is tested. You could manually create `TestCase` entries to accomplish this, but what happens if a change to your inputs occurs?
 
 The [`Combinatorial` attribute](https://docs.nunit.org/articles/nunit/writing-tests/attributes/combinatorial.html) ensures that NUnit generates tests for all possible combinations of your test input.
 
@@ -147,4 +147,4 @@ public void WebServiceIntegrationTest()
 }
 ```
 
-I had a blast learning about these. Check out [the NUnit docs](https://nunit.org/docs/) and let us know if you find any of your own fun tips, or have any to add!
+I had a blast learning about these. Check out [the NUnit docs](https://nunit.org/docs/) and let me know if you find any of your own fun tips, or have any to add!
