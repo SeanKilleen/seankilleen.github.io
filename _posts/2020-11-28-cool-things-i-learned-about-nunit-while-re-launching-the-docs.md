@@ -132,24 +132,19 @@ I can see NCrunch reports in its test output:
 
 > NCrunch: This test reported an inconclusive result.
 
-Similarly, there's a `Warn.If` syntax that is useful for integration tests; it will tell you if something smelly might be happening.
-
-## Bring Your Own Comparisons
-
-Occasionally, you may need to compare objects in your test. Perhaps you have a complex sort of comparison that you'd like to check, which involves testing three different properties to ensure something is equal. In your unit test, you might need to do something like:
+Similarly, there's a `Warn.If` syntax that is useful for integration tests; it will tell you if something smelly might be happening by placing a warning in the output:
 
 ```csharp
-// TODO: example of comparing multiple properties
-```
+[Test]
+public void WebServiceIntegrationTest()
+{
+    var isAvailable = false; // hard-coded for example
+    Warn.If(!isAvailable, "The web service is not available; failures may be due to this.");
 
-This seems a little unclean and it can be hard to re-use in your tests.
+    var result = CallWebService();
 
-Instead, you can now use a custom comparer to achieve this.
-
-TODO: custom comparers for greater than, etc. e.g `Assert.That(myOwnObject, Is.GreaterThan(theExpected).Using(myComparer));`
-
-```csharp
-// TODO
+    Assert.That(result, Is.True);
+}
 ```
 
 I had a blast learning about these. Check out [the NUnit docs](https://nunit.org/docs/) and let us know if you find any of your own fun tips, or have any to add!
