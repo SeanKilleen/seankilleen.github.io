@@ -7,7 +7,7 @@ tags:
   - windows terminal
   - shells
   - chocolatey
-date: 2020-08-27 07:47 -0400
+date: 2020-11-30 10:00 -0500
 ---
 I believe in scripting and automation, and I have come to love PowerShell for its eloquence, especially in a Windows environment.
 
