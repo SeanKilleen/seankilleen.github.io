@@ -11,7 +11,7 @@ Do you want to know if I'd be a good fit for your organization, or would you lik
 
 ## My Current Status
 
-I'm pretty happy where I am but am happy to have a conversation as well.
+I have recently accepted a new position and am not open to new opportunities at this time.
 
 ## What I'm Open To
 
