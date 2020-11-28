@@ -25,19 +25,19 @@ I try not to create multiple assertions in my tests, because:
 * A test will fail at the first assertion, and upon fixing that, you may discover that the second assertion fails.
 * I believe that a test that is asserting multiple things is usually doing too much.
 
-However, there are some cases where a number of assertions helps clarify a logical assertion where additional tests would feel like overkill or be less clear. In these cases, you can use NUnit's `Assert.Multiple` syntax to your benefit.
+However, there are some cases where a number of assertions help clarify a logical assertion where additional tests would feel like overkill or be less clear. In these cases, you can use NUnit's `Assert.Multiple` syntax to your benefit.
 
 ```csharp
 Assert.Multiple(() => { // things to assert });
 ```
 
-TODO: Exmaple
+TODO: Example
 
 ## Asserting Your Assumptions for Better Clarity with Assume.That and Warn.If
 
 This is another helper that assists with some "smelly" tests.
 
-Tests can sometimes fail due to their setup, their data, or other state in your tests. Ideally, you'd want to write your unit tests with as little state as possible and ensuring they will work reliably, but crafting a test suite that allows for this isn't possible in every case. For example, say I have a test that relies on an actual web service. Ideally I'd want to mock out that web service or use some sort of reply testing to mimic its behavior. But if I'm writing an acceptance test, it may be that I want to use real components.
+Tests can sometimes fail due to their setup, their data, or other state in your tests. Ideally, you'd want to write your unit tests with as little state as possible and ensuring they will work reliably, but crafting a test suite that allows for this isn't possible in every case. For example, say I have a test that relies on an actual web service. Ideally, I'd want to mock out that web service or use some sort of reply testing to mimic its behavior. But if I'm writing an acceptance test, it may be that I want to use real components.
 
 In that situation, how do I handle it if the web service is unavailable? I could fail the test, but the problem isn't necessarily in my code itself, it's in a pre-requisite for the test, or part of the universe of the test that has to be true in order for the test to have value.
 
