@@ -7,7 +7,7 @@ tags:
   - testing
   - csharp
   - libraries
-date: 2020-11-28 11:28 -0500
+date: 2020-12-02 10:00 -0500
 ---
 While [porting the NUnit docs to a new, modern web site](https://seankilleen.com/2020/07/announcement-i-am-now-the-lead-for-the-nunit-docs-project/) I had a great opportunity -- to actually read a ton of the docs!
 
