@@ -46,23 +46,39 @@ The `[Pairwise]` attribute works similarly to the `[Combinatorial]` attribute, b
 
 These options are a nice gateway to property-based testing as well. More on that in a future post.
 
-## Multiple Assertions with More Information Using Assert.Multiple
+## Multiple Assertions Gracefully Using `Assert.Multiple`
 
 I try not to create multiple assertions in my tests, because:
 
-* I generally believe that those belong in separate tests so that I can more easily triangulate
-* A test will fail at the first assertion, and upon fixing that, you may discover that the second assertion fails.
+* I generally believe that those belong in separate tests so that I can more easily triangulate failures or issues
+* A test may fail at the first assertion, and upon fixing that, you may discover that the second assertion fails as well.
 * I believe that a test that is asserting multiple things is usually doing too much.
 
-However, there are some cases where a number of assertions help clarify a logical assertion where additional tests would feel like overkill or be less clear. In these cases, you can use NUnit's `Assert.Multiple` syntax to your benefit.
+However, there are some cases where a number of assertions help clarify a logical assertion (and where additional tests would feel like overkill or be less clear). In these cases, you can use NUnit's `Assert.Multiple` syntax to your benefit.
 
 ```csharp
-Assert.Multiple(() => { // things to assert });
+Assert.Multiple(() => {
+  // assertions to assert
+  });
 ```
 
-TODO: Example
+The below test, for example, will generate two test failures, rather than stopping at the first failure:
 
-## Asserting Your Assumptions for Better Clarity with Assume.That and Warn.If
+```csharp
+[Test]
+public void AssertingMultipleThings()
+{
+    Assert.Multiple(() =>
+    {
+        Assert.That(1+1,Is.EqualTo(3));
+        Assert.That(DateTime.Now.Year, Is.EqualTo(2050));
+    });
+}
+```
+
+In my test runner output, I see failures at both lines, rather than the first, and I see information about both sets of expected and actual values.
+
+## Asserting Your Assumptions for Better Clarity using `Assume.That` and `Warn.If`
 
 This is another helper that assists with some "smelly" tests.
 
