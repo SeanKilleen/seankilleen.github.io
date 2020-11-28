@@ -13,9 +13,36 @@ While [porting the NUnit docs to a new, modern web site](https://seankilleen.com
 
 I've used NUnit for a long time in various cases, but I still learned a bunch of new things. I'll highlight a few here below in case you were less familiar as well.
 
-## Combinatorial Testing with The [Combinatorial] and [Pairwise] Testing Attributes
+## Combinatorial Testing with The `[Combinatorial]` and `[Pairwise]` Testing Attributes
 
-TODO
+Sometimes, you have two or three inputs to a test and you want to ensure that every possible combination of those inputs is tested. You could manually create `TestCase` entries to accomplish this, but what happens if a change to your inputs occur?
+
+The [`Combinatorial` attribute](https://docs.nunit.org/articles/nunit/writing-tests/attributes/combinatorial.html) ensures that NUnit generates tests for all possible combinations of your test input.
+
+For example, the below code will generate 27 tests, one for each possible combination of inputs:
+
+```csharp
+public class AdditionTests
+{
+    [Test, Combinatorial]
+    public void LinqSumIsEqualToTraditionalSum(
+      [Values(1,2,3)] int number1,
+      [Values(1, 2, 3)] int number2,
+      [Values(1, 2, 3)] int number3)
+    {
+        var traditional = number1 + number2 + number3;
+        var linq = new[] {number1, number2, number3}.Sum();
+
+        Assert.That(linq, Is.EqualTo(traditional));
+    }
+}
+```
+
+We can see the output below:
+
+![The resulting 27 tests passing, showing some of the combinations]({{site.post-images}}/2020-cool-things-nunit/GeneratedTests.png)
+
+This is a nice gateway to property-based testing as well. More on that in a future post.
 
 ## Multiple Assertions with More Information Using Assert.Multiple
 
