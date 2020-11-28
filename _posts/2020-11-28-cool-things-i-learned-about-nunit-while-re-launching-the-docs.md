@@ -82,13 +82,57 @@ In my test runner output, I see failures at both lines, rather than the first, a
 
 This is another helper that assists with some "smelly" tests.
 
-Tests can sometimes fail due to their setup, their data, or other state in your tests. Ideally, you'd want to write your unit tests with as little state as possible and ensuring they will work reliably, but crafting a test suite that allows for this isn't possible in every case. For example, say I have a test that relies on an actual web service. Ideally, I'd want to mock out that web service or use some sort of reply testing to mimic its behavior. But if I'm writing an acceptance test, it may be that I want to use real components.
+Tests can sometimes fail due to their setup, their data, or other state in your tests. Ideally, you'd want to write your unit tests with as little state as possible and ensure they will work reliably, but crafting a complete test suite that allows for this isn't possible in every case. For example, say I have an integration test that relies on an actual web service. Ideally, I'd want to mock out that web service or use some sort of reply testing to mimic its behavior. But if I'm writing an acceptance test, it may be that I want to use real components.
 
 In that situation, how do I handle it if the web service is unavailable? I could fail the test, but the problem isn't necessarily in my code itself, it's in a pre-requisite for the test, or part of the universe of the test that has to be true in order for the test to have value.
 
-TODO: There's an Assume.That syntax which works like an assertion but sets the test to Inconclusive instead of failed. So you can use it to assert things that need to be true for the test to make sense. While this is a bit of a smell, I can see it being potentially useful in integration tests.
+There's an `Assume.That` syntax which works like an assertion but sets the test to `Inconclusive` instead of `Failed`. So you can use it to assert things that need to be true for the test to make sense. While this is a bit of a smell, I can see it being potentially useful in integration tests.
 
-TODO: Similarly, there's a Warn.If syntax that is mentioned as being useful for integration tests that will tell you if something smelly might be happening.
+For example, the below test will fail:
+
+```csharp
+[Test]
+public void WebServiceIntegrationTest()
+{
+    var isAvailable = true; // hard-coded for example
+    Assume.That(isAvailable, Is.True);
+
+    var result = CallWebService();
+
+    Assert.That(result, Is.True);
+}
+
+private bool CallWebService()
+{
+    return false;
+}
+```
+
+But if I change `isAvailable` to `false` and re-run:
+
+```csharp
+[Test]
+public void WebServiceIntegrationTest()
+{
+    var isAvailable = false; // hard-coded for example
+    Assume.That(isAvailable, Is.True);
+
+    var result = CallWebService();
+
+    Assert.That(result, Is.True);
+}
+
+private bool CallWebService()
+{
+    return false;
+}
+```
+
+I can see NCrunch reports in its test output:
+
+> NCrunch: This test reported an inconclusive result.
+
+Similarly, there's a `Warn.If` syntax that is useful for integration tests; it will tell you if something smelly might be happening.
 
 ## Bring Your Own Comparisons
 
