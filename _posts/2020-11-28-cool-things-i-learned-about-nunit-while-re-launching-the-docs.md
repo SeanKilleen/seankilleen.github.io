@@ -9,7 +9,7 @@ tags:
   - libraries
 date: 2020-11-28 11:28 -0500
 ---
-While [porting the NUnit docs to a new, modern web site](https://seankilleen.com/2020/07/announcement-i-am-now-the-lead-for-the-nunit-docs-project/) I had a great opportunity -- to actually read a ton of the docs! 
+While [porting the NUnit docs to a new, modern web site](https://seankilleen.com/2020/07/announcement-i-am-now-the-lead-for-the-nunit-docs-project/) I had a great opportunity -- to actually read a ton of the docs!
 
 I've used NUnit for a long time in various cases, but I still learned a bunch of new things. I'll highlight a few here below in case you were less familiar as well.
 
@@ -19,7 +19,7 @@ TODO
 
 ## Multiple Assertions with More Information Using Assert.Multiple
 
-I try not to create multiple assertions in my tests, because: 
+I try not to create multiple assertions in my tests, because:
 
 * I generally believe that those belong in separate tests so that I can more easily triangulate
 * A test will fail at the first assertion, and upon fixing that, you may discover that the second assertion fails.
