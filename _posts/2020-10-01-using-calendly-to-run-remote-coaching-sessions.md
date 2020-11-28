@@ -45,20 +45,19 @@ scheduled* I set the meeting increments in 15-minute chunks to ensure that someo
 * I set an e-mail to follow-up 1 hour after the meeting -- this is where the feedback form comes into play. I used the template below:
 
 > Hi `{{invitee_first_name}}`,
-> 
+>
 > Thank you for attending `{{event_name}}` at `{{event_time}}` on `{{event_date}}`.
-> 
+>
 > I'd love your feedback! Please see [TODO: the link] for a brief, anonymous feedback survey. You can also respond to this e-mail and provide me your feedback directly.
-> 
-> Also, don't forget to schedule your next sessions at https://calendly.com/[my link]. 
-You can schedule several sessions in advance before dates fill up. Be sure to use up our allotted time by [Date]!
-> 
+>
+> Also, don't forget to schedule your next sessions at <https://calendly.com/MyCalendlyLink>.
+You can schedule several sessions in advance before dates fill up. Be sure to use up our allotted time by `[Date]`!
+>
 > Thanks,
-> 
+>
 > Sean
-> 
+>
 > PS sorry that this is automated; I normally prefer to do these in a more personal way but the volume of meetings prohibits that at this time.
-```
 
 I could also use the Calendly invite prompts to ask the coachee to provide a number of topics, but we did that within the space of the meeting.
 
