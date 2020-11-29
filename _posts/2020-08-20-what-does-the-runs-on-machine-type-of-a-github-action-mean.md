@@ -6,7 +6,7 @@ tags:
   - github actions
   - devops
   - ci
-date: 2020-08-20 17:13 -0400
+date: 2020-12-14 10:00 -0500
 ---
 Received a really good question recently and I thought I'd post the result here.
 
