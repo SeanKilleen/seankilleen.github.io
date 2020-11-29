@@ -61,6 +61,17 @@ You can schedule several sessions in advance before dates fill up. Be sure to us
 
 I could also use the Calendly invite prompts to ask the coachee to provide a number of topics, but we did that within the space of the meeting.
 
+## What Were the Benefits?
+
+* Coachees scheduled 70+ coaching sessions using the tool, and we rarely had an issue or conflict.
+* My calendars, and thus availability, were always up to date. I could add calendar events or meetings and know I didn't have to update coaching sessions.
+* I got 20+ pieces of anonymous feedback from the automated link that was sent out, without needing to do additional work between sessions, because the form was automated.
+* I generally had nice gaps between coaching sessions where I could take a breath and gather notes before the next call.
+
+## What are Your Favorite Tools / Processes?
+
+Are you doing any one on one coaching? What are your favorite setups these days?
+
 Happy coaching!
 
 [^1]: No affiliate link, promotions or kickbacks; just a happy customer.
