@@ -5,7 +5,7 @@ tags:
   - chromecast
   - settings
   - error
-date: 2020-08-23 16:16 -0400
+date: 2020-12-16 10:00 -0400
 ---
 ## Problem
 
