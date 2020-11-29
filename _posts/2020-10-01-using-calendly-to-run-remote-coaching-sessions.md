@@ -14,7 +14,7 @@ A little while back, as part of a client assignment, I ran some remote one-on-on
 
 I figured I would jot down how I used the tool in case anyone finds themselves in a similar situation.
 
-## Create a form for Feedback
+## Create a Form for Feedback
 
 Feedback is essential in any coaching engagement. I prefer to ensure I'm receiving feedback in person, but sometimes folks aren't 100% comfortable and an anonymous feedback form can be helpful.
 
@@ -28,13 +28,13 @@ I kept my feedback form simple so that folks would use it, asking the following:
 * Anything else I should know?
 * Would you like me to follow up on this feedback? If so, contact info.
 
-## Sync your Calendars
+## Sync Your Calendars
 
 At the time, I had both my employer's calendar and my client's calendar that needed to be taken into account for those who wanted to schedule meetings. I synced both calendars with Calendly.
 
-## Set up meetings for others to schedule coaching sessions
+## Set up a Slot for Others to Schedule Coaching Sessions
 
-I set up meetings for various time lengths (15, 30, 45, 60, 90 minutes) so that coachees could choose the session style to best suit their needs.
+I set up meetings slots for various time lengths (15, 30, 45, 60, 90 minutes) so that coachees could choose the session style to best suit their needs.
 
 For each meeting type, I set it up as follows:
 
@@ -44,9 +44,9 @@ scheduled* I set the meeting increments in 15-minute chunks to ensure that someo
 * On the invitation form, I ask for their name and e-mail -- to ensure I know who I'll be talking to.
 * I set an e-mail to follow-up 1 hour after the meeting -- this is where the feedback form comes into play. I used the template below:
 
-> Hi `{{invitee_first_name}}`,
+> Hi `{{{{invitee_first_name}}}}`,
 >
-> Thank you for attending `{{event_name}}` at `{{event_time}}` on `{{event_date}}`.
+> Thank you for attending `{{{{event_name}}}}` at `{{{{event_time}}}}` on `{{{{event_date}}}}`.
 >
 > I'd love your feedback! Please see [TODO: the link] for a brief, anonymous feedback survey. You can also respond to this e-mail and provide me your feedback directly.
 >
@@ -60,5 +60,7 @@ You can schedule several sessions in advance before dates fill up. Be sure to us
 > PS sorry that this is automated; I normally prefer to do these in a more personal way but the volume of meetings prohibits that at this time.
 
 I could also use the Calendly invite prompts to ask the coachee to provide a number of topics, but we did that within the space of the meeting.
+
+Happy coaching!
 
 [^1]: No affiliate link, promotions or kickbacks; just a happy customer.
