@@ -31,17 +31,25 @@ So as not to mess anything up unintentionally, I created a staging area, and cop
 
 ## How Metatogger works
 
-Metatogger allows you load files and to make a number of changes within its space. Then, once you save the collection, those files are persisted to disk and any of the metadata changes are actually applied.
+Metatogger allows you load files and to make a number of changes within its space. Then, once you save the collection, those files are persisted to disk and any of the metadata changes are actually applied. It also has a handy feature to select and check off a subset of songs to apply a change to.
 
 ## Correcting the metadata / tags
 
 I sorted by album, since in most cases I would want to clean up one or two albums at a time. I made the following corrections:
 
-* **Splitting the Track Numbers**: Many files had track numbers like `1/10`, `2/10`, etc. but I didn't want to keep the total number of tracks, partly because I'd be using this in the file names later. In the "Scripts" section, there was already a handy script to split the track numbers. I applied this to all tracks and saved.
-* **Using two-digit track numbers**: Similarly, there was a script to convert all track numbers to use two digits. Consistency! I applied it to all tracks and saved.
-* Artist names
+### Correcting the Track Numbers
 
-* Metadata correction with CDDB / audio fingerprinting
-* Updating filenames and locations based on metadata and using filtering to remove them as we go
-* Importing some metadata based on file names and locations
-* Cleaning up garbage tags
+Many files had track numbers like `1/10`, `2/10`, etc. but I didn't want to keep the total number of tracks, partly because I'd be using this in the file names later. In the "Scripts" section, there was already a handy script to split the track numbers. I applied this to all tracks and saved.
+
+Similarly, there was a script to convert all track numbers to use two digits. Consistency! I applied it to all tracks and saved.
+
+### Artist names
+
+Some artist names were too large and unwieldy, such as including composers in the title along with an orchestra name. We already had that metadata on the track, so I cleaned up these individually. I checked off the files I cared about, and then used the "Add or Modify Tags" to replace values. I saved these as I went.
+
+## Metadata correction with CDDB / audio fingerprinting
+## Updating filenames and locations based on metadata and using filtering to remove them as we go
+## Importing some metadata based on file names and locations
+## Cleaning up garbage tags
+## Outputting the Files
+## Dealing with Duplicates
