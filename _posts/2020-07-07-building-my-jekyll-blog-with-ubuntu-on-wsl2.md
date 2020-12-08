@@ -27,6 +27,9 @@ Then, I went back and forth on dependencies and installation stuff, but it wasn'
 
 ## The shortcut, if you don't want to do all of that back and forth
 
+* `mkdir repos` to create a directory for my repositories
+* `cd repos`
+* Pulled my repo: `git clone https://github.com/SeanKilleen/seankilleen.github.io.git`
 * Update package list: `sudo apt update`
 * For Ruby: `sudo apt-get install ruby-full`
 * For Bundler: `sudo gem install bundler`
