@@ -1,13 +1,14 @@
 ---
-title: How to Clean up a messed up MP3 library With Metatogger
+title: How to Clean up a Messed up MP3 Library With Metatogger
 comments: true
 tags:
   - tools
   - music
   - mp3
   - organization
-date: 2020-12-06 10:14 -0500
+date: 2020-12-28 10:00 -0500
 ---
+
 [Metatogger](http://www.luminescence-software.org/en/metatogger) is my favorite .NET app of the week after it helped me recover my Mother-in-Law's MP3 collection. I figured I'd talk a little bit about how I used it to fix things up.
 
 ## Background / Challenge
@@ -16,10 +17,10 @@ iTunes on Windows is hot garbage. Aside from being not so user friendly, when th
 
 Through a series of unfortunate events (no fault of her own I'm 99% sure), my MIL's library was experiencing:
 
-* Duplicate files both on disk and in the iTunes library
-* Some missing files
-* Some files only on her iPod somehow, that we were able to recover, but with cryptic 4-letter file names like "AJDF.mp3".
-* Inconsistent metadata
+- Duplicate files both on disk and in the iTunes library
+- Some missing files
+- Some files only on her iPod somehow, that we were able to recover, but with cryptic 4-letter file names like "AJDF.mp3".
+- Inconsistent metadata
 
 Additionally, my Father-in-law had some MP3's he'd extracted from tape. These had file names he wanted, but no metadata.
 
@@ -53,7 +54,7 @@ There were a few tracks that looked like they could do with some more official m
 
 ## Importing some metadata based on file names and locations
 
-For some tracks, such as those my Father-in-law rescued from old cassettes, we needed to import the title, artist, and album from the file structure itself. 
+For some tracks, such as those my Father-in-law rescued from old cassettes, we needed to import the title, artist, and album from the file structure itself.
 
 Metatogger has a "Tree" tab, where you can specify the pattern that the folder structure and file names have, and then can use that to import metadata from the folder and file names. I specified how the tracks were laid out, and voila, instant metadata, even if it was just the basics.
 
@@ -73,5 +74,6 @@ I selected the "current file path" column to be displayed, and then right-clicke
 
 Now that we had clean metadata, we were ready to output the files.
 
-I did this in two steps -- albums that had single artists, and compilation albums. 
+I did this in two steps -- albums that had single artists, and compilation albums.
+
 ## Dealing with Duplicates
