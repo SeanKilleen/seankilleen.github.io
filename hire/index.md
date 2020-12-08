@@ -11,7 +11,7 @@ Do you want to know if I'd be a good fit for your organization, or would you lik
 
 ## My Current Status
 
-I'm pretty happy where I am but am happy to have a conversation as well.
+I have recently accepted a new position and am not open to new opportunities at this time.
 
 ## What I'm Open To
 
@@ -46,6 +46,7 @@ I'm pretty happy where I am but am happy to have a conversation as well.
 
 * I have held Public Trust clearances via both NIST and DHS.
 * I believe I would be clearable at TS/SCI w/poly if need be.
+* I do not currently hold any active clearance (my Public Trust clearances expired along with the work I was doing for those agencies.)
 
 ## Alphabet Soup -- Keywords, General Skills, etc.
 
