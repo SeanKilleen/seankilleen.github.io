@@ -56,9 +56,7 @@ Side note: Did you see what I see? A `Scripts` screen that lets me write C# to p
 
 Some artist names were too large and unwieldy, such as including composers in the title along with an orchestra name. We already had that metadata on the track, so I cleaned up these individually. I checked off the files I cared about -- usually for a given album -- and then used the "Add or Modify Tags" to replace values. I saved these as I went.
 
-## Metadata correction with CDDB / audio fingerprinting
-
-There were a few tracks that looked like they could do with some more official metadata than they had. In these cases, I checked off the tracks and used the "MusicBrainz" feature to update the tags from the [MusicBrainz Encyclopedia](https://musicbrainz.org/)
+![Animation of updating an artist name manually]({{site.post-images}}/2020-12_Metatogger/04_ManualUpdates.gif)
 
 ## Importing some metadata based on file names and locations
 
@@ -71,6 +69,8 @@ Metatogger has a "Tree" tab, where you can specify the pattern that the folder s
 Over time, a lot of crud kept into the metadata. A lot of iTunes specific stuff -- old versions, metadata fields that were clearly not in use, defunct copyright fields that had garbage data, etc.
 
 I used the "Clean Up" tab in metatogger to set a list of tags that needed their data removed, selected all the tracks, and applied the the change.
+
+![Animation of cleaning up tags]({{site.post-images}}/2020-12_Metatogger/05_CleanUpTags.gif)
 
 ## Setting up an output filter
 
