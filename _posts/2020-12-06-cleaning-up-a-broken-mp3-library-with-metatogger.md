@@ -45,11 +45,33 @@ Similarly, there was a script to convert all track numbers to use two digits. Co
 
 ### Artist names
 
-Some artist names were too large and unwieldy, such as including composers in the title along with an orchestra name. We already had that metadata on the track, so I cleaned up these individually. I checked off the files I cared about, and then used the "Add or Modify Tags" to replace values. I saved these as I went.
+Some artist names were too large and unwieldy, such as including composers in the title along with an orchestra name. We already had that metadata on the track, so I cleaned up these individually. I checked off the files I cared about -- usually for a given album -- and then used the "Add or Modify Tags" to replace values. I saved these as I went.
 
 ## Metadata correction with CDDB / audio fingerprinting
-## Updating filenames and locations based on metadata and using filtering to remove them as we go
+
+There were a few tracks that looked like they could do with some more official metadata than they had. In these cases, I checked off the tracks and used the "MusicBrainz" feature to update the tags from the [MusicBrainz Encyclopedia](https://musicbrainz.org/)
+
 ## Importing some metadata based on file names and locations
+
+For some tracks, such as those my Father-in-law rescued from old cassettes, we needed to import the title, artist, and album from the file structure itself. 
+
+Metatogger has a "Tree" tab, where you can specify the pattern that the folder structure and file names have, and then can use that to import metadata from the folder and file names. I specified how the tracks were laid out, and voila, instant metadata, even if it was just the basics.
+
 ## Cleaning up garbage tags
+
+Over time, a lot of crud kept into the metadata. A lot of iTunes specific stuff -- old versions, metadata fields that were clearly not in use, defunct copyright fields that had garbage data, etc.
+
+I used the "Clean Up" tab in metatogger to set a list of tags that needed their data removed, selected all the tracks, and applied the the change.
+
+## Setting up an output filter
+
+I was ready to start outputting files. But how would I know what I'd outputted already? This is where the Finished folder I talked about came in handy, along with Metatogger's filtering capability.
+
+I selected the "current file path" column to be displayed, and then right-clicked on it to create a filter. I filtered out the path of my output directory. Now, when files were movd to the output directory, they'd also disappear from view within metatogger, which is exactly what I wanted to happen. It turned Metatogger into a sort of inbox to clear.
+
 ## Outputting the Files
+
+Now that we had clean metadata, we were ready to output the files.
+
+I did this in two steps -- albums that had single artists, and compilation albums. 
 ## Dealing with Duplicates
