@@ -18,7 +18,7 @@ I figured I'd give a quick run-down on the journey of that test, how I ultimatel
 
 ## Mocking a Large Object
 
-I have a function in my app called `GetRepoQuotaFromOrg`. Its purpose is to use the Octokit library and pull in the repository quota that the organization has. I wanted to write a test that proves that demonstrates that my code is using the `PrivateRepos` field from the GitHub organization.
+I have a function in my app called `GetRepoQuotaFromOrg`. Its purpose is to use the Octokit library and pull in the repository quota that the organization has. I wanted to write a test that proves my code is using the `PrivateRepos` field from the GitHub organization.
 
 But, there's a challenge here. I need my mock `IOrganizationClient` client to return an `Organization` object. But here's the constructor for the `Organization` object:
 
