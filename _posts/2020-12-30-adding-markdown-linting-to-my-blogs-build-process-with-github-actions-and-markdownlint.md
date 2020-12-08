@@ -11,11 +11,22 @@ tags:
 date: 2020-12-30 10:00 -0500
 ---
 
-## Locally
+I'll confess, reader. My markdown formatting was messy. I decided to fix it and automate it.
 
-- Install the markdown lint extension in VS Code
-- `npm install markdownlint-cli -g`
-- Add a `.markdownrc` file to capture rules
+The solution involves:
+
+- The great [markdownlint](https://github.com/DavidAnson/markdownlint) tool
+- A VS Code Extension that gives me linting within the IDE
+- A rules file to allow for some exceptions in cases where I truly need them
+- A GitHub Action to run as part of my pull requests, to keep me honest.
+
+## Installing the Markdownlint Extension
+
+In the extensions window, search for `markdownlint` and install it (extension ID: `davidanson.vscode-markdownlint`)
+
+## Create a Rules File
+
+- Add a `.markdownrc` file to the root of your repository to capture rules. You can turn off various rules as things fail if you need to. My example rules file [can be found here](https://github.com/SeanKilleen/seankilleen.github.io/blob/main/.markdownlintrc)
 
 ## As part of build
 
