@@ -22,8 +22,6 @@ Through a series of unfortunate events (no fault of her own I'm 99% sure), my MI
 - Some files only on her iPod somehow, that we were able to recover, but with cryptic 4-letter file names like "AJDF.mp3".
 - Inconsistent metadata
 
-Additionally, my Father-in-law had some MP3's he'd extracted from tape. These had file names he wanted, but no metadata.
-
 Got it? Okay, let's do this.
 
 ## Gathering the files and adding them
@@ -84,10 +82,24 @@ Then, I right-clicked on it to create a filter. I filtered out the path of my ou
 
 ![Animation of creating a filter to filter out the finished files]({{site.post-images}}/2020-12_Metatogger/07_CreateFilter.gif)
 
-## Outputting the Files
+## Updating the Outputs
 
-Now that we had clean metadata, we were ready to output the files.
+Once I'd gone through all the files and had clean metadata, I was ready to output the files -- this was the final step once we were complete.
 
-I did this in two steps -- albums that had single artists, and compilation albums.
+I did this in two steps -- albums that had single artists, and compilation albums. Luckily, Metatogger made it quick & easy to set this up for both.
+
+I used the "Tidy Up" tab, which has some presets for outputting files. I used a preset option for the track name (`## - Title`), but added an option to output the files where I wanted (in my case, `G:\Finished\Artist - AlbumTitle`). Along the way, I used the preview to help me understand where it would wind up. I created an additional preset for compilations to exist at `G:\Finished\Various Artists - AlbumTitle`.
+
+## Applying the Changes to Output the Files
+
+For each handful of albums, I applied the changes and clicked "Save". This moved the files into my Finished folder, which then triggered the filter to hide them. Wash, rinse, repeat until the Metatogger list was empty.
 
 ## Dealing with Duplicates
+
+Occasionally, when saving the files, I'd get errors about duplicates (remember, there were some dupliate files in the library). Because of the way I had it set up, the duplicate files remained in Metatogger (they weren't filtered out) and I saw error messages about duplicates. I could then select those remaining files and go to the `Tools --> Delete Selected` option to remove them.
+
+## A Clean Music Home is a Happy Music Home
+
+And with that, we were able to remove all the existing files from the iTunes library, drag these files in from a new location on the PC, and watch as the iTunes library became pristine once more.
+
+Happy listening!
