@@ -36,17 +36,21 @@ So as not to mess anything up unintentionally, I created a staging area, and cop
 
 Metatogger allows you load files and to make a number of changes within its space. Then, once you save the collection, those files are persisted to disk and any of the metadata changes are actually applied. It also has a handy feature to select and check off a subset of songs to apply a change to.
 
-![An animation of adding the files]({{site.post-images}}/2020-12_Metatogger/02_SelectingFiles.gif)
+![An animation of selecting multiple files within metatogger]({{site.post-images}}/2020-12_Metatogger/02_SelectingFiles.gif)
 
 ## Correcting the metadata / tags
 
-I sorted by album, since in most cases I would want to clean up one or two albums at a time. I made the following corrections:
+I sorted by album, since in most cases I would want to clean up one or two albums at a time.
 
 ### Correcting the Track Numbers
 
 Many files had track numbers like `1/10`, `2/10`, etc. but I didn't want to keep the total number of tracks, partly because I'd be using this in the file names later. In the "Scripts" section, there was already a handy script to split the track numbers. I applied this to all tracks and saved.
 
 Similarly, there was a script to convert all track numbers to use two digits. Consistency! I applied it to all tracks and saved.
+
+![An animated walkthrough of using the scripts screen]({{site.post-images}}/2020-12_Metatogger/02_TrackNumbers.gif)
+
+Side note: Did you see what I see? A `Scripts` screen that lets me write C# to process the tracks, so that I can do whatever I want? Swoon.
 
 ### Artist names
 
