@@ -9,7 +9,7 @@ tags:
   - fake data
   - dotnet
   - .net
-date: 2020-12-21 18:23 -0400
+date: 2020-12-21 10:00 -0400
 ---
 
 I was recently working with the excellent [Octokit.NET](https://github.com/octokit/octokit.net) library for working with GitHub, and like many developers, I needed to write a test.
