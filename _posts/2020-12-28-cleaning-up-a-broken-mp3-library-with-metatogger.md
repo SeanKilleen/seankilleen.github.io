@@ -30,9 +30,13 @@ Got it? Okay, let's do this.
 
 So as not to mess anything up unintentionally, I created a staging area, and copied every MP3 there that I could find (including the cryptically-named files from the iPod). I also created a "Finished" folder where I would output the MP3s eventually once they were cleaned up.
 
+![An animation of adding the files]({{site.post-images}}/2020-12_Metatogger/01_AddingFiles.gif)
+
 ## How Metatogger works
 
 Metatogger allows you load files and to make a number of changes within its space. Then, once you save the collection, those files are persisted to disk and any of the metadata changes are actually applied. It also has a handy feature to select and check off a subset of songs to apply a change to.
+
+![An animation of adding the files]({{site.post-images}}/2020-12_Metatogger/02_SelectingFiles.gif)
 
 ## Correcting the metadata / tags
 
