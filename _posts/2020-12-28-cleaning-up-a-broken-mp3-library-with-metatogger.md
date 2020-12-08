@@ -76,7 +76,13 @@ I used the "Clean Up" tab in metatogger to set a list of tags that needed their 
 
 I was ready to start outputting files. But how would I know what I'd outputted already? This is where the Finished folder I talked about came in handy, along with Metatogger's filtering capability.
 
-I selected the "current file path" column to be displayed, and then right-clicked on it to create a filter. I filtered out the path of my output directory. Now, when files were movd to the output directory, they'd also disappear from view within metatogger, which is exactly what I wanted to happen. It turned Metatogger into a sort of inbox to clear.
+First, I selected the "current file path" column to be displayed:
+
+![Animation of showing a column in the UI]({{site.post-images}}/2020-12_Metatogger/06_AddPathColumn.gif)
+
+Then, I right-clicked on it to create a filter. I filtered out the path of my output directory. Now, when files were moved to the output directory, they'd also disappear from view within Metatogger, which is exactly what I wanted to happen. It turned Metatogger into a sort of inbox to clear.
+
+![Animation of creating a filter to filter out the finished files]({{site.post-images}}/2020-12_Metatogger/07_CreateFilter.gif)
 
 ## Outputting the Files
 
