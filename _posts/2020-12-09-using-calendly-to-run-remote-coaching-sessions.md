@@ -1,5 +1,5 @@
 ---
-title: Using Calendly to run remote coaching sessions
+title: Using Calendly to Run Remote Coaching Sessions
 comments: true
 tags:
   - coaching
