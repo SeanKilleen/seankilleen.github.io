@@ -38,6 +38,6 @@ I'm doing the steps here manually but it could almost certainly be automated in 
 
 - Set the value of the credential manager back to what it was, e.g manager-core in my case: `git config --system credential.helper manager-core`
 
-That will let you quickly do one-time operations as husky-episerver without needing to log out / in, mess up your other git credentials, etc.
+That will let you quickly do one-time operations as the other account without needing to log out / in, mess up your other git credentials, etc.
 
 Happy gitting!
