@@ -12,7 +12,6 @@ past:
     group: DevOps DC Meetup
     eventLink: http://www.meetup.com/DevOpsDC
     sessionLink: http://www.meetup.com/DevOpsDC/events/226750186/
-    slidesLink: https://github.com/SeanKilleen/Presentations/tree/master/2016-02-18_TCAndOcto_DevOpsDC
     description: This presentation sought to explain the pleasantly symbiotic relationship between a build server such as TeamCity and a release tool, such as OctopusDeploy. There weren’t as many .NET-focused developers there as expected, and time was a little short, but I’m looking forward to making some tweaks to this one and giving it again soon.
     location: Reston, VA
     slidesLink: https://seankilleen.com/Presentations/2018-03-28_TCOctopusAzure
@@ -250,5 +249,19 @@ past:
     sessionLink: https://techbash.com/2019-schedule
     description: In this session, I'll demonstrate how to create a template for a .NET Core solution, and will show an end to end out of the box template I've created to be up and running quickly with a .NET Core project, front-end project, containers, and a CI pipeline.
     location: Poconos, PA
+  - title: "An Introduction to the Actor Model and Akka.NET"
+    date: 2020-10-14
+    group: Triangle .NET User Group
+    eventLink: https://www.meetup.com/TRINUG
+    sessionLink: https://www.meetup.com/TRINUG/events/273872535
+    description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
+    location: Online
+    slidesLink: https://seankilleen.com/Presentations/AkkaIntro/presentation
+    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code-dotnetcore
+  - title: "The Future of CI: Learning to Love Feedback Loops"
+    date: 2020-10-02
+    group: Private Client Event
+    description: A presentation about how feedback loops strengthen your team and organization, which ones matter most, and how to embrace smaller feedback loops for positive change.
+    location: Online
 
 upcoming:

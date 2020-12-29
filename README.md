@@ -1,6 +1,6 @@
 # seankilleen.github.io
 
-The blog reboot.
+Sean's blog hosted at <https://SeanKilleen.com>
 
 ## You'll need a GitHub token for certain functionality
 

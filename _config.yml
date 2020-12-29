@@ -23,7 +23,7 @@ locale                   : "en-US"
 title                    : "SeanKilleen.com"
 title_separator          : "-"
 name                     : "SeanKilleen.com"
-description              : "Ramblings on bytes and life from a digital thirty-something."
+description              : "Ramblings on bytes and life."
 url                      : "https://SeanKilleen.com"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "SeanKilleen/seankilleen.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -101,9 +101,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          : UA-18306171-3
+    tracking_id          : G-XLHBWFGGNQ
     anonymize_ip         : # true, false (default)
 
 
