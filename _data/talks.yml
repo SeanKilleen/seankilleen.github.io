@@ -258,5 +258,10 @@ past:
     location: Online
     slidesLink: https://seankilleen.com/Presentations/AkkaIntro/presentation
     codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code-dotnetcore
+  - title: "The Future of CI: Learning to Love Feedback Loops"
+    date: 2020-10-02
+    group: Private Client Event
+    description: A presentation about how feedback loops strengthen your team and organization, which ones matter most, and how to embrace smaller feedback loops for positive change.
+    location: Online
 
 upcoming:
