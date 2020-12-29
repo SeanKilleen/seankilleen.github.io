@@ -154,13 +154,21 @@
         "Repos",
         "Chromecast",
         "Coachees",
+        "Coachee",
         "Calendly",
         "Linq",
         "MVPs",
         "CPUs",
         "Dependabot's",
         "likert",
-        "Visio"
+        "Visio",
+        "Chromecasting",
+        "curriculars",
+        "Dockerfiles",
+        "VPNing",
+        "VM's",
+        "eyeroll",
+        "POCOs"
     ],
     "ignoreWords": [
         "seankilleen",
@@ -184,7 +192,12 @@
         "Metatogger",
         "Metatogger's",
         "gitting",
-        "AATs"
+        "AATs",
+        "WSLing",
+        "ASPNET",
+        "nokogiri",
+        "Commonmark",
+        "waaay"
     ],
     "ignoreRegExpList": [
         "\\((.*)\\)", // Markdown links
