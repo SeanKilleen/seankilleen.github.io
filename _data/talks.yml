@@ -12,7 +12,6 @@ past:
     group: DevOps DC Meetup
     eventLink: http://www.meetup.com/DevOpsDC
     sessionLink: http://www.meetup.com/DevOpsDC/events/226750186/
-    slidesLink: https://github.com/SeanKilleen/Presentations/tree/master/2016-02-18_TCAndOcto_DevOpsDC
     description: This presentation sought to explain the pleasantly symbiotic relationship between a build server such as TeamCity and a release tool, such as OctopusDeploy. There weren’t as many .NET-focused developers there as expected, and time was a little short, but I’m looking forward to making some tweaks to this one and giving it again soon.
     location: Reston, VA
     slidesLink: https://seankilleen.com/Presentations/2018-03-28_TCOctopusAzure
