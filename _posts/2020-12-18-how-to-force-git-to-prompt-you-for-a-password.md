@@ -3,6 +3,7 @@ title: How to force git to prompt you for a password
 comments: true
 tags:
   - git
+  - github
   - authorization
   - passwords
 date: 2020-12-18 11:18 -0500
@@ -10,7 +11,7 @@ date: 2020-12-18 11:18 -0500
 
 A fun git challenge! I had to make a request against a remote repository in git. The only issue is that only a shared GitHub account had access, not my own account (due to a vendor limitation). So when I occasionally needed to use this remote, I would have to log out and log in as the service account and it just seemed a bit messy.
 
-I found a reasonable way to do this, and I'll run through the steps below. Have a better way? I'd love to hear about it in the comments!
+I found a reasonable way to do this, and I'll run through the steps below. (Have a better way? I'd love to hear about it in the comments!)
 
 ## Generate an Access Token for the Shared Account
 
