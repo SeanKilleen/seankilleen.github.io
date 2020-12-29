@@ -152,7 +152,15 @@
         "else's",
         "Octokit",
         "Repos",
-        "Chromecast"
+        "Chromecast",
+        "Coachees",
+        "Calendly",
+        "Linq",
+        "MVPs",
+        "CPUs",
+        "Dependabot's",
+        "likert",
+        "Visio"
     ],
     "ignoreWords": [
         "seankilleen",
@@ -174,7 +182,9 @@
         "markdownlint",
         "avtodev",
         "Metatogger",
-        "gitting"
+        "Metatogger's",
+        "gitting",
+        "AATs"
     ],
     "ignoreRegExpList": [
         "\\((.*)\\)", // Markdown links
