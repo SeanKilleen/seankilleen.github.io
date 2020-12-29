@@ -1,0 +1,41 @@
+<h2>Upcoming Talks</h2>
+
+{% if site.data.talks.upcoming %}
+<table>
+    <thead>
+        <th>Talk</th>
+        <th>Date</th>
+        <th>Venue</th>
+        <th>Description</th>
+    </thead>
+    <tbody>
+        {% assign soonestFirst = (site.data.talks.upcoming | sort: 'date' ) %}
+        {% for talk in soonestFirst %}
+        {% include _talkRow.html title=talk.title date=talk.date eventLink=talk.eventLink group=talk.group
+        description=talk.description sessionLink=talk.sessionLink location=talk.location slidesLink=talk.slidesLink
+        codeLink=talk.codeLink videoLink=talk.videoLink %}
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+No upcoming talks at this time. Check back soon!
+{% endif %}
+
+<h2>Catalog of Past Talks</h2>
+
+<table>
+    <thead>
+        <th>Talk</th>
+        <th>Date</th>
+        <th>Venue</th>
+        <th>Description</th>
+    </thead>
+    <tbody>
+        {% assign latestFirst = (site.data.talks.past | sort: 'date' ) | reverse %}
+        {% for talk in latestFirst %}
+        {% include _talkRow.html title=talk.title date=talk.date eventLink=talk.eventLink group=talk.group
+        description=talk.description sessionLink=talk.sessionLink location=talk.location slidesLink=talk.slidesLink
+        codeLink=talk.codeLink videoLink=talk.videoLink %}
+        {% endfor %}
+    </tbody>
+</table>
