@@ -1,9 +1,19 @@
-{% assign upcomingTalks = site.data.talks | where: "date", "> now" %}
-{% assign pastTalks = site.data.talks | where: "date", "< now" %} 
+{% assign today_date = "today" | date: '%s' %}
+{% assign upcomingTalks = "" | split: ',' %}
+{% assign pastTalks = "" | split: ',' %}
+
+{% for talkItem in site.data.talks.talksList %}
+{% assign talkDate = talkItem.date | date: '%s' %}
+{% if talkDate >= today_date %}
+{% assign upcomingTalks = upcomingTalks | push: talkItem %}
+{% else %}
+{% assign pastTalks = pastTalks | push: talkItem %}
+{% endif %}
+{% endfor %}
 
 <h2>Upcoming Talks</h2>
 
-{% if upcomingTalks %}
+{% if upcomingTalks.count > 0 %}
 <table>
     <thead>
         <th>Talk</th>
