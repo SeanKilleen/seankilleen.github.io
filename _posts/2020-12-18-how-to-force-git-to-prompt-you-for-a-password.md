@@ -1,5 +1,5 @@
 ---
-title: How to force git to prompt you for a password
+title: How to Force git to Prompt You For a Password
 comments: true
 tags:
   - git
@@ -9,7 +9,7 @@ tags:
 date: 2020-12-18 11:18 -0500
 ---
 
-A fun git challenge! I had to make a request against a remote repository in git. The only issue is that only a shared GitHub account had access, not my own account (due to a vendor limitation). So when I occasionally needed to use this remote, I would have to log out and log in as the service account and it just seemed a bit messy.
+A fun git challenge! I had to make a request against a remote repository in git. The only issue is that only a shared GitHub account had access, not my own account (due to a vendor limitation). So when I occasionally needed to use this remote, I would have to log out and log in as the service account. It just seemed a bit messy.
 
 I found a reasonable way to do this, and I'll run through the steps below. (Have a better way? I'd love to hear about it in the comments!)
 
@@ -27,13 +27,13 @@ I found a reasonable way to do this, and I'll run through the steps below. (Have
 
 I'm doing the steps here manually but it could almost certainly be automated in a tiny script.
 
-- Check the value of credential manager: `git config --system credential.helper`. Save this value for later; you will need it to set things back.
+- Check the value of credential manager: `git config --system credential.helper`. Note this value for later; you will need it to set things back.
 - Unset the credential manager, which will prompt you for PW going forward: `git config --system --unset credential.helper`
 
 ## Running the command
 
-- Run your applicable command, e.g. `git fetch upstream` in my case
-- Use the shared account name as user, and the access token as the password
+- Run your applicable command, e.g. `git fetch upstream` in my case. You'll be prompted for a password.
+- Use the shared account username, and the personal access token as the password
 
 ## Return things to normal
 
