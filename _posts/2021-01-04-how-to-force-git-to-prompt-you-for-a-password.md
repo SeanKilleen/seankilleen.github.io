@@ -6,7 +6,7 @@ tags:
   - github
   - authorization
   - passwords
-date: 2020-12-18 11:18 -0500
+date: 2021-01-04 10:00 -0500
 ---
 
 A fun git challenge! I had to make a request against a remote repository in git. The only issue is that only a shared GitHub account had access, not my own account (due to a vendor limitation). So when I occasionally needed to use this remote, I would have to log out and log in as the service account. It just seemed a bit messy.
