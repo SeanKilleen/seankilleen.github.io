@@ -14,13 +14,13 @@ I found a reasonable way to do this, and I'll run through the steps below. Have 
 
 ## Generate an Access Token for the Shared Account
 
-* Login with the shared account. Since I had the credentials, I did this via a normal browser session (in a private window since I was just logging in once.)
-* Generate a personal access token. If you're unfamiliar with this, you can [follow the steps in the GitHub docs]().
-* Store in my password manager. This access token is as good as a password, so I treat it with the respect it deserves.
+- Login with the shared account. Since I had the credentials, I did this via a normal browser session (in a private window since I was just logging in once.)
+- Generate a personal access token. If you're unfamiliar with this, you can [follow the steps in the GitHub docs](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token).
+- Store in my password manager. This access token is as good as a password, so I treat it with the respect it deserves.
 
 ## Add the Remote in Git
 
-* Add the remote if it's not already added: `git remote add REMOTE_NAME THE_URL_OF_THE_REMOTE`
+- Add the remote if it's not already added: `git remote add REMOTE_NAME THE_URL_OF_THE_REMOTE`
 
 ## Unset the git credential manager temporarily
 
