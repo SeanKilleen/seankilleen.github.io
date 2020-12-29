@@ -43,10 +43,7 @@ Directions for both options are shown below. For what it’s worth, **I now pref
 
 * Log off the Administrator account and sign in as your new CI account.  
 * Run the command prompt  
-* Run `svn info` to accept the certificate. This can be done by running:
-
-        svn info https://[repo URL or hostname]svn/TestProjectRepo –username svnuser1 –password passw0rd1
-
+* Run `svn info` to accept the certificate. This can be done by running: `svn info https://[repo URL or hostname]svn/TestProjectRepo –username svnuser1 –password passw0rd1`
 * Type `p` to accept the certificate permanently, and you’re all set!
 
 #### Option 1 Part 3: Run the CruiseControl.NET Service as the CI User
