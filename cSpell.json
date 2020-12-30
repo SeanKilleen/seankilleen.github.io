@@ -179,7 +179,12 @@
         "skillsets",
         "Powershell's",
         "FYIs",
-        "d'oh"
+        "d'oh",
+        "Photoshop",
+        "Namecheap's",
+        "Killeen's",
+        "Atlassian"
+        
     ],
     "ignoreWords": [
         "seankilleen",
@@ -229,7 +234,22 @@
         "Robocopy",
         "Lifehacker",
         "Xpert",
-        "libcurl"
+        "libcurl",
+        "tada",
+        "Wayback",
+        "mingw",
+        "gjtorikian",
+        "miiiiiiight",
+        "Papercut",
+        "Arialdo",
+        "Uhhh",
+        "factly",
+        "SCOM",
+        "Cichelli",
+        "Plex",
+        "domaining",
+        "renderable"
+
     ],
     "ignoreRegExpList": [
         "\\((.*)\\)", // Markdown links
