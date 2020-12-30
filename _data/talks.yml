@@ -1,4 +1,4 @@
-past:
+talksList:
   - title: "Attack-a the Akka! A brief intro to Akka.NET"
     date: 2015-07-29
     group: BaltoMSDN Meetup
@@ -154,7 +154,7 @@ past:
     description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
     location: Philadelphia, PA
     slidesLink: https://seankilleen.com/Presentations/2019-04_AkkaIntro/presentation/#/
-    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/2019-04_AkkaIntro/code    
+    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/2019-04_AkkaIntro/code
   - title: "Serverless is more: An Introduction to Azure Functions"
     date: 2019-04-13
     group: Philly.NET CodeCamp
@@ -162,7 +162,7 @@ past:
     sessionLink: http://phillydotnet.org/2019-1-sessions.html#sz-session-84230
     slidesLink: https://seankilleen.com/Presentations/2019-04_ServerlessIsMore/
     description: In this session, Sean will walk through how to use Azure Functions and Azure Key Vault to create a system to continually share his RSS subscriptions with the world. Follow along as we discuss concepts of serverless computing, build a functional application, an marvel at all the things we didn’t have to do.
-    location: Philadelphia, PA    
+    location: Philadelphia, PA
   - title: "Serverless is more: An Introduction to Azure Functions"
     date: 2019-05-07
     group: Central Maryland Association for .NET Professionals (CMAP)
@@ -176,7 +176,7 @@ past:
     eventLink: https://www.meetup.com/Microsoft-Maniacs/
     sessionLink: https://www.meetup.com/Microsoft-Maniacs/events/260895955/
     description: In this session, Sean will walk through how to use Azure Functions and Azure Key Vault to create a system to continually share his RSS subscriptions with the world. Follow along as we discuss concepts of serverless computing, build a functional application, an marvel at all the things we didn’t have to do.
-    location: Sterling, VA    
+    location: Sterling, VA
     slidesLink: https://seankilleen.com/Presentations/ServerlessIsMore/
   - title: "(Fr)agile: How Agile Falls Apart, and What You Can Do to Hold It All Together"
     date: 2019-06-06
@@ -263,5 +263,3 @@ past:
     group: Private Client Event
     description: A presentation about how feedback loops strengthen your team and organization, which ones matter most, and how to embrace smaller feedback loops for positive change.
     location: Online
-
-upcoming:

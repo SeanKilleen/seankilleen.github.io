@@ -1,0 +1,54 @@
+{% assign today_date = "today" | date: '%s' %}
+{% assign upcomingTalks = "" | split: ',' %}
+{% assign pastTalks = "" | split: ',' %}
+
+{% for talkItem in site.data.talks.talksList %}
+{% assign talkDate = talkItem.date | date: '%s' %}
+{% if talkDate >= today_date %}
+{% assign upcomingTalks = upcomingTalks | push: talkItem %}
+{% else %}
+{% assign pastTalks = pastTalks | push: talkItem %}
+{% endif %}
+{% endfor %}
+
+<h2>Upcoming Talks</h2>
+
+{% if upcomingTalks.size > 0 %}
+<table>
+    <thead>
+        <th>Talk</th>
+        <th>Date</th>
+        <th>Venue</th>
+        <th>Description</th>
+    </thead>
+    <tbody>
+        {% assign soonestFirst = (upcomingTalks | sort: 'date' ) %}
+        {% for talk in soonestFirst %}
+        {% include _talkRow.html title=talk.title date=talk.date eventLink=talk.eventLink group=talk.group
+        description=talk.description sessionLink=talk.sessionLink location=talk.location slidesLink=talk.slidesLink
+        codeLink=talk.codeLink videoLink=talk.videoLink %}
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+No upcoming talks at this time. Check back soon!
+{% endif %}
+
+<h2>Catalog of Past Talks</h2>
+
+<table>
+    <thead>
+        <th>Talk</th>
+        <th>Date</th>
+        <th>Venue</th>
+        <th>Description</th>
+    </thead>
+    <tbody>
+        {% assign latestFirst = (pastTalks | sort: 'date' ) | reverse %}
+        {% for talk in latestFirst %}
+        {% include _talkRow.html title=talk.title date=talk.date eventLink=talk.eventLink group=talk.group
+        description=talk.description sessionLink=talk.sessionLink location=talk.location slidesLink=talk.slidesLink
+        codeLink=talk.codeLink videoLink=talk.videoLink %}
+        {% endfor %}
+    </tbody>
+</table>
