@@ -183,7 +183,10 @@
         "Photoshop",
         "Namecheap's",
         "Killeen's",
-        "Atlassian"
+        "Atlassian",
+        "ISOs",
+        "creds",
+        "vmware"
         
     ],
     "ignoreWords": [
@@ -248,7 +251,27 @@
         "Cichelli",
         "Plex",
         "domaining",
-        "renderable"
+        "renderable",
+        "Yiiiikes",
+        "Kristensen",
+        "underscorejs",
+        "procexp",
+        "Lente",
+        "Feely",
+        "reimagining",
+        "Joybubbles",
+        "beglittered",
+        "sinceratrons",
+        "electroculture",
+        "hivey",
+        "Paducah",
+        "Koko",
+        "aswing",
+        "pigeoned",
+        "rabbity",
+        "unstuffed",
+        "Junod",
+        "Junod's"
 
     ],
     "ignoreRegExpList": [
