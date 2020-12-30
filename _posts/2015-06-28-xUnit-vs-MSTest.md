@@ -16,7 +16,7 @@ Also, while I'm about to contrast two testing frameworks, I can't stress enough 
 
 * **`[Fact]` vs. `[Theory]` attributes**. A fact is something that should always be true. A theory is something that, if it's wrong, could be because you fed it bad data.
 * **The simplicity of passing data to tests with `[InlineData]`.** I think this a highly readable way to pass data into a test.
-* **Forgetting `[Setup]` and `[Teardown]`**. My tests flow naturally, just like normal classes and methods should. This prevents me from overcomplicating things[^3].
+* **Forgetting `[Setup]` and `[Teardown]`**. My tests flow naturally, just like normal classes and methods should. This prevents me from over-complicating things[^3].
 * **None of that gross `[ExpectedException]`**. In xUnit, I can use `Assert.Throws<T>`, or with a library like [FluentAssertions](http://www.fluentassertions.com/) I can catch exceptions right in my test using an `Action`:
 
 ```csharp

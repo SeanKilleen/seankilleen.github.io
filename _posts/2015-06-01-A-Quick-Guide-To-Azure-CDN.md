@@ -6,7 +6,7 @@ comments: true
 references: 
  - title: Azure CDN
    url: http://azure.microsoft.com/en-us/services/cdn/
- - title: Azure Managament Site
+ - title: Azure Management Site
    url: http://manage.windowsazure.com
  - title: Azure Portal
    url: http://portal.azure.com
@@ -142,8 +142,8 @@ Voila! With the CDN created, we can now access our files. To do this, we look at
 `http://[CDN Endpoint].vo.msecnd.net/[Container]/[ImageName.extension]`
 
 * **CDN Endpoint** is the endpoint of your CDN, e.g. `az766003`.
-* **Container** is the nanme of your container, e.g. `headshots`.
-* **ImageName.extention** is the image, such as `image.png`
+* **Container** is the name of your container, e.g. `headshots`.
+* **ImageName.extension** is the image, such as `image.png`
 
 So if we wanted to get to an image in our headshots container, we could type `http://az766003.vo.msecnd.net/headshots/image.png`.[^3]
 

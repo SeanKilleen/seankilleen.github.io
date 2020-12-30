@@ -17,7 +17,7 @@ Below, I demonstrate two different techniques -- with animations to help guide t
 * Select the cell and apply the conditional formatting, referencing other cells in the row.
 * Highlight the row
 * Drag the corner of the row down to the bottom of the cells you want to apply the formatting to -- just as if you were going to replace all the content.
-* However, an icon appears in the lower-right-hannd corner. Click this icon
+* However, an icon appears in the lower-right-hand corner. Click this icon
 * Select "formatting only" to replace the formatting only, which will include the conditional formatting.
 
 Example below (click to expand):
