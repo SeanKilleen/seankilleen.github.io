@@ -9,15 +9,15 @@ tags:
   - markdown
   - jekyll
   - github pages
-date: 2020-12-29 22:33 -0500
+date: 2021-01-06 10:00 -0500
 ---
 I'm always worried I'll have a typo in my blog posts, and I suspected I had a few lying around in these pages. I don't like that, so I decided to fix it and automate it.
 
 The solution involves:
 
 - The great [cSpell](https://github.com/streetsidesoftware/cspell) tool
-- A VS Code Extension, `Code Spell Checker` that gives me cSpell-based checking within the IDE
-- A rules file to allow for ignoring some words/patterns or adding words to a dictionary
+- A VS Code Extension, `Code Spell Checker`, that gives me cSpell-based checking within the IDE
+- A config file to allow for ignoring some words/patterns or adding words to a dictionary
 - A GitHub Action to run as part of my pull requests
 
 ## Installing the Code Spell Checker Extension
