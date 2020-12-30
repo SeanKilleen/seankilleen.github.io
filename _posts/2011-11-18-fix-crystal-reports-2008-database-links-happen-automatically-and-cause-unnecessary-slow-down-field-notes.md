@@ -9,7 +9,7 @@ comments: true
 ---
 ### Problem:
 
-In Crysal Reports, whenever adding a table from an existing data source, or adding a new datasource, when I click "OK", Crystal automatically switches to the "Links" tab and auto-calculates links.
+In Crystal Reports, whenever adding a table from an existing data source, or adding a new datasource, when I click "OK", Crystal automatically switches to the "Links" tab and auto-calculates links.
 
 99% of the time this is something I **don't** want it to do.
 
