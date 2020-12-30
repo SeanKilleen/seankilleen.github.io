@@ -65,10 +65,7 @@ Directions for both options are shown below. For what it’s worth, **I now pref
 * Unzip the PsExec zip file  
 * open a command prompt and navigate to the folder of PsTools  
 * Run `psexec -u "nt authoritynetwork service" cmd.exe.` This will run the command prompt as the network service user.  
-* Run svn info to accept the certificate. This can be done by running:
-
-        svn info https://[svn ip or hostname]/svn/TestProjectRepo –username svnuser1 –password passw0rd1
-  
+* Run svn info to accept the certificate. This can be done by running: `svn info https://[svn ip or hostname]/svn/TestProjectRepo –username svnuser1 –password passw0rd1`  
 * Type `p` to accept the certificate permanently, and you’re all set!
 
 ### Add a CI User to the Repository

@@ -72,7 +72,7 @@ On the E: drive, create the following directory structure:
 * Run the CruiseControl.NET Setup executable as an administrator by right-clicking and selecting "Run as Administrator".
 * Agree to the license agreement.
 * All options are selected by default; leave them and continue.
-* Leave both checkmarks checked to install the CruiseControl .NET dashboard and to install CCNet as a service.
+* Leave both check marks checked to install the CruiseControl .NET dashboard and to install CCNet as a service.
 * Leave the default installation directory or customize to your preference (I left the default for this setup)
 * Leave the default value for the Program Files folder group and click `Next`. CruiseControl.NET will commence installation.
 * Click `Finish` and exit the wizard.

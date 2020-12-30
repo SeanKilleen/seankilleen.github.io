@@ -23,7 +23,7 @@ While writing this blog post, I attempted to link to the change of address form,
 
     javascript:__doPostBack('ctl00$btnChangeOfAddress','')
 
-Really? We're still doing postbacks on buttons this way? I guess the best way to avoid link rot is to make sure your link is never a link in the first place.
+Really? We're still doing post-backs on buttons this way? I guess the best way to avoid link rot is to make sure your link is never a link in the first place.
 
 ### What can we as Developers Learn From This?
 

@@ -88,7 +88,7 @@ The trick here is to remember that the last few items in the temporary string wo
 
 * Insert the `CreateOrReset` formula in the group heading (or an additional, suppressed group heading)
 * Insert the increment formula in the details section (suppress if necessary)
-* To test, insert the display formula in the group footer. In reality, we won't be "displaying" it in the classic sense, but rather passing it to the sub-report for futher analysis.
+* To test, insert the display formula in the group footer. In reality, we won't be "displaying" it in the classic sense, but rather passing it to the sub-report for further analysis.
 
 #### Step 5: Linking the Array to the sub-report
 

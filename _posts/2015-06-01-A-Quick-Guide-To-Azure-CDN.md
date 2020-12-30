@@ -298,7 +298,7 @@ Now we can change that setting from web.config or override it within the Azure c
 
 ## Some Caveats
 
-* CDNs cache content for a long time. You can get around this using Azure CDN QueryStrings, but be careful because it kind of defeats the purpose. Usually querystrings are used with something like a version of a site, e.g. `myImage.jpg?v=1.2.3`.
+* CDNs cache content for a long time. You can get around this using Azure CDN QueryStrings, but be careful because it kind of defeats the purpose. Usually query strings are used with something like a version of a site, e.g. `myImage.jpg?v=1.2.3`.
 * Don't forget to check css files, etc. for urls to things like in-line images. I missed this at first and couldn't figure out why certain things weren't showing up. Just a brief moment of "d'oh!".
 
 ## That's a Wrap!

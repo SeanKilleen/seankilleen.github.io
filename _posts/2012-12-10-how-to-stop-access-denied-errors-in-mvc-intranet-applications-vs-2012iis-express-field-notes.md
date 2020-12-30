@@ -26,8 +26,7 @@ references:
 
 ### Cause
 
-This happens because IIS Express isn't configured by default for Windo
-ws Authentication.
+This happens because IIS Express isn't configured by default for Windows Authentication.
 
 ### Solution
 
