@@ -11,7 +11,7 @@ tags:
   - github pages
 date: 2020-12-29 22:33 -0500
 ---
-I'm always worried I'll have typo in my blog posts, and I suspected I had a few lying around in these pages. I don't like that, so I decided to fix it and automate it.
+I'm always worried I'll have a typo in my blog posts, and I suspected I had a few lying around in these pages. I don't like that, so I decided to fix it and automate it.
 
 The solution involves:
 
