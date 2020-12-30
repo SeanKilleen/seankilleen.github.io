@@ -26,7 +26,7 @@ In the extensions window, search for `Code Spell Checker` and install it (extens
 
 Now, you'll start getting feedback on what needs fixing when you have a file open. It's really helpful.
 
-## Create a Rules File
+## Create a Config File
 
 - Add a `cSpell.json` file to the root of your repository to capture words to add to the dictionary. My example cSpell file [can be found here](https://github.com/SeanKilleen/seankilleen.github.io/blob/main/cSpell.json)
 
