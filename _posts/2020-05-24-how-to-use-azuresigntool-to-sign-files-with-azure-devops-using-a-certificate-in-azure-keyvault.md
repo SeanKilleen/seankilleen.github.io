@@ -179,7 +179,7 @@ Now instead, replace the script of the AzureSignTool call with:
 
 `script: AzureSignTool sign -du "$(SigningURL)" -kvu "$(SigningVaultURL)" -kvi "$(SigningClientId)" -kvs "$(SigningClientSecret)" -kvc "$(SigningCertName)" -v $(Build.ArtifactStagingDirectory)\\setup.exe"`
 
-Thaaaat's more like it. Now Azure DevOps will utilize the variables and also not output them in logs, which is nice.
+_That's_ more like it. Now Azure DevOps will utilize the variables and also not output them in logs, which is nice.
 
 At this point, the build should be able to run your build and sign the files you have listed.
 

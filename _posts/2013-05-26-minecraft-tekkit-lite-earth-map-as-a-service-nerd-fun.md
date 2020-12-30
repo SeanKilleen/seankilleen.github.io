@@ -45,7 +45,7 @@ I'm going to set up my own Tekkit Lite server, using the 1:1500 Earth Map, and r
 Now that we have a working installation, we want to make this a legitimate service that runs all the time in the background.
 
 * **Copy your server files to "Program Files"**. I do this because it's a really good way to ensure that you don't delete them when you clear out your downloads folder.
-* **Find the PID of your server**. I recommend using a tool like [procexp] to view all your processes. You need to find the `java.exe` process that is running the Tekkit Lite server. It will likely be something like `java  -Xmx3G -Xms2G -jar TekkitLite.jar nogui`. The PID for this will be a number (procexp is helpful and lists it for you).
+* **Find the PID of your server**. I recommend using a tool like [procexp](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer) to view all your processes. You need to find the `java.exe` process that is running the Tekkit Lite server. It will likely be something like `java  -Xmx3G -Xms2G -jar TekkitLite.jar nogui`. The PID for this will be a number (procexp is helpful and lists it for you).
 * **Generate your wrapper.conf file**. Open a command prompt and navigate to the `yajsw\bat` directory. (e.g. `your minecraft server\service\yajsw\bat`). Run `genConfig [pid]`, where you replace `[pid]` with the process ID.
   * e.g. if the PID you found was 1234, you'd run "genConfig 1234".
 * This will create the wrapper.conf file that you need.

@@ -12,7 +12,7 @@ You win this one, UPS. But maybe batch those e-mails to 4 in the morning or so?
 ---
 Normally, when you pay for extra convenience despite the fact that a service business's reputation is normally based on that coming standard, you would expect a little something extra, right? UPS MyChoice doesn't seem to think so.
 
-I paid $40 for the year to join the service, which promises more convenient options such as holding shipments at the UPS store, delivering shipments to another address, picking a 2-hour delivery timeframe window, etc. This is great, considering [the problems I've had with package carriers]({% post_url 2011-04-14-free-million-dollar-idea-package-carriers-b2b-success %}).
+I paid $40 for the year to join the service, which promises more convenient options such as holding shipments at the UPS store, delivering shipments to another address, picking a 2-hour delivery time-frame window, etc. This is great, considering [the problems I've had with package carriers]({% post_url 2011-04-14-free-million-dollar-idea-package-carriers-b2b-success %}).
 
 And at first, the service does seem promising. You receive e-mails that tell you when a package is en route to your address, and when it is expected to arrive -- even if you didn't have a tracking number. This e-mail allows you to change options for the package, etc.
 

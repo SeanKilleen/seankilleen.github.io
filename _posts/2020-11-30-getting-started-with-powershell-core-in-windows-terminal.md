@@ -41,6 +41,6 @@ But, it's not yet my default. Let's fix that.
 
 * Restart Windows Terminal, and bingo -- my default shell is now PowerShell Core!
 
-![Windows terminal opened with an icon that indiciates that powershell core is the default]({{site.post-images}}/getting-started-with-powershell-core-in-windows-terminal/06_ItWorks.png)
+![Windows terminal opened with an icon that indicates that powershell core is the default]({{site.post-images}}/getting-started-with-powershell-core-in-windows-terminal/06_ItWorks.png)
 
 Happy shelling!

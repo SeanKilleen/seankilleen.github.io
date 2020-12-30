@@ -14,6 +14,6 @@ How to demo this? I went a little meta on things. :) See below for a gif of a Sc
 
 ![An animation using ScreenToGif to capture the usage of ScreenToGif]({{site.post-images}}/ScreenToGif_Tutorial.gif)
 
-The app is well built and fulfills its main purspoe with relatively little cruft.  Best of all, it's free and open source! I definitely recommend adding it to your toolbox.
+The app is well built and fulfills its main purpose with relatively little cruft.  Best of all, it's free and open source! I definitely recommend adding it to your toolbox.
 
 Let me know if you have any questions or similar tools in the comments.
