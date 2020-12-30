@@ -145,7 +145,7 @@ Now, bear in mind, this is an empty repository, so clicking on it won’t give y
 
 For use multiple times, it will likely make sense to have Apache start up with the system.
 
-On the Centos VM command line, run the collowing:
+On the Centos VM command line, run the following:
 
 ```sh
 chkconfig httpd on
