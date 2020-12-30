@@ -47,7 +47,7 @@ Otherwise, what's the point? Pretending that devs don't use tools or Google thin
 
 If you're bringing someone into a technical interview and don't know whether or not they'd pass a problem like FizzBuzz, I think that's the real problem.
 
-Shift that process to the left and answer those questions earlier on. Ask a few screening questions. Run a small coding exam with something like coderpad.io, but don't make it something so overdone. Put a little thought in. Be creative and clear.
+Shift that process to the left and answer those questions earlier on. Ask a few screening questions. Run a small coding exam with something like <http://coderpad.io>, but don't make it something so overdone. Put a little thought in. Be creative and clear.
 
 ### We came up with a pretty intricate problem we're proud of. We think it'll be a good litmus test.
 
@@ -66,7 +66,7 @@ If you ask how someone would implement a fast-sorting algorithm and their answer
 No. At least not unless you're utilizing the pairing functionality.
 
 * These tools feed into the idea that if someone can solve a coding problem, they'll be a good fit for a team.
-* These tools risk dropping some senior folks from the funnel who avoid the sort of algorithmic minutae that this article recommends against.
+* These tools risk dropping some senior folks from the funnel who avoid the sort of algorithmic minutiae that this article recommends against.
 * In my opinion, broadly speaking, these tools are reductive and commoditize the skillset you're looking for and the notion of the work we do.
 
 ### I can't really tell so much from conversation as what you're expecting. Is that a problem?

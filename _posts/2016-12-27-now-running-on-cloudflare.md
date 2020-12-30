@@ -20,7 +20,7 @@ As of a few hours ago, this site runs on `https` by default and likely pretty da
 
 ## What I'm Getting Out of This
 
-This site is already run on [Github Pages](https://pages.github.com/) using Jekyll. So, I get a pretty fast site generated automatically and served via Github Pages, from my markdown content, which runs on Github's own infrastructure. That's already bullet-proof.
+This site is already run on [Github Pages](https://pages.github.com/) using Jekyll. So, I get a pretty fast site generated automatically and served via Github Pages, from my markdown content, which runs on GitHub's own infrastructure. That's already bullet-proof.
 
 So, why introduce this extra component?
 
@@ -36,7 +36,7 @@ So, why introduce this extra component?
 These are surprisingly few & easy.
 
 * **Sign up for a CloudFlare account**. This is quick and easy via the CloudFlare site.
-* **Add My Site to CloudFlare**. CloudFlare automatically pulls in the DNS settings from my current site, so that when I cut over to their service there won't be any pain. Reall nice experience.
+* **Add My Site to CloudFlare**. CloudFlare automatically pulls in the DNS settings from my current site, so that when I cut over to their service there won't be any pain. Really nice experience.
 * **Convert my Nameservers to CloudFlare's Nameservers**. I was using Namecheap's default nameservers, so I used their docs to do this.
 * **Wait until CloudFlare said it was active.** This didn't take long -- a few minutes, definitely under 30.
 * **Change the Security Setting to "Full".** This is easily done from CloudFlare's control panel, and automatically generated a certificate (that will auto-renew).

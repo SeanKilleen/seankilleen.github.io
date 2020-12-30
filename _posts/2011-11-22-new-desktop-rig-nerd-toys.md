@@ -15,7 +15,7 @@ I've followed largely in the footsteps of the [Jeff Atwood build] (when someone 
 
 * **Case:** [Corsair Graphite Series 600T CC600TM][Case Link]. Big, but plenty of room for configuration despite my bumbling coordination. Also, primed for airflow and apparently very easy to work with. Also has a bay for SSDs so I didn't have to buy a mounting kit. Initially ordered the one without a window, but shipping considerations led me towards this one.
 * **Motherboard:** [ASUS P8Z68-V PRO][MB Link] Z68 chipset, 32GB max memory, Sata 6GB/s, USB 3.0, RAID for drives, SSD caching.
-* **Processor:** [Intel Core i7-2600K][i7 Link]. 3.4 GHz Quad-Core out of the box. Crazy overclockable (which I plan to attempt)
+* **Processor:** [Intel Core i7-2600K][i7 Link]. 3.4 GHz Quad-Core out of the box. Crazy over-clockable (which I plan to attempt)
 * **Memory**: [16GB (2 x 8GB) G. Skill Ripjaws series DDR3 SDRAM 1888 (PC3 1066)][RAM Link]. Got a great deal on this from Newegg during one of their sale sprints. Couldn't pass up the ability to still expand memory later.
 * **Heat Sink**: [Thermalright Venomous X - RT][Sink Link]
 * **Additional Fan:** [Noctua Ultra Silent 140mm Fan NF-P14 FLX][Fan Link] -- should fit in the back nicely and give me some extra quiet cooling.

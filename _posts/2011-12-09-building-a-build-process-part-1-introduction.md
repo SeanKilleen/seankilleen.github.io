@@ -28,7 +28,7 @@ The build process so far will include the following:
 * Build Server VM (Windows Server 2008 R2)
 * CruiseControl.NET running on the Build Server
 * Building the Project with MSBuild via CCNet
-* Building a Release build via CCNet; if successful, publishes to AppHarber via a cloned git repository
+* Building a Release build via CCNet; if successful, publishes to AppHarbor via a cloned git repository
 * NUnit Tests
 * NCover code coverage metrics
 * SpecFlow User Acceptance Test / Feature Test coverage

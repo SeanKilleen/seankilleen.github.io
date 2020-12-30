@@ -15,7 +15,7 @@ VMs that leave ISOs mounted cause problems. I'd like to find all the VMs that ha
 
 ### Solution (NOTE: Update)
 
-**The first solution I provided here wasn't that great, so I'm updating this post.** The original contents have been changed because they previously would disconnect the entire CD-ROM drive, vs. just unmounting the ISO. As you can imagine, pulling the equivalent of ripping a CD-ROM drive out while a machine is running can cause some interesting behavior. The solution below outlines a much better way to do this.
+**The first solution I provided here wasn't that great, so I'm updating this post.** The original contents have been changed because they previously would disconnect the entire CD-ROM drive, vs. just un-mounting the ISO. As you can imagine, pulling the equivalent of ripping a CD-ROM drive out while a machine is running can cause some interesting behavior. The solution below outlines a much better way to do this.
 
 Two one-line PowerCLI scripts will help us with this.
 

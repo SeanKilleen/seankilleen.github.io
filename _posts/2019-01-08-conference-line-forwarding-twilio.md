@@ -47,7 +47,7 @@ You can join Twilio with a free account via <https://www.twilio.com/try-twilio> 
 * Click the `+` icon to add a TwiML bin.
 * Give your TwiML bin a friendly name, e.g. `Conference Line Forward` and look at the last section for adding the TwiML.
 
-#### Adding and Examinig the TwiML
+#### Adding and Examining the TwiML
 
 Add some TwiML along the following lines.
 

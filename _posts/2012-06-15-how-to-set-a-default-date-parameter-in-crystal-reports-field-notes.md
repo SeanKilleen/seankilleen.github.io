@@ -18,7 +18,7 @@ references:
 
 I have a report that I'd like to be able to query the date range for. However, I'd also like to have a default value of "today" so that when I run it on a schedule, etc. it's just me passing in a different parameter, and not changing the actual record selection process.
 
-Crystal Reports doesn't have a default mechanism to do this. It appears to be pretty sought after in the Crystal community, but I haven't seen any solutions that would allow one to, say, use a variable like "currentdate" as the default for a date field.
+Crystal Reports doesn't have a default mechanism to do this. It appears to be pretty sought after in the Crystal community, but I haven't seen any solutions that would allow one to, say, use a variable like `currentdate` as the default for a date field.
 
 ## Solution
 

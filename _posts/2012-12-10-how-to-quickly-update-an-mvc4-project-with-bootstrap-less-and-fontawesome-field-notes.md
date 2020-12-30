@@ -35,7 +35,7 @@ However, this can be a pain for the following reasons:
 
 * Dotless and Bootstrap's LESS used to not play nicely together
 * The "@import" directives sometimes gave dotless an error and had to be worked around.
-* Font-Awesome's MIME types are not all recognized by the internal webapps
+* Font-Awesome's MIME types are not all recognized by the internal web apps
 
 ### Solution
 

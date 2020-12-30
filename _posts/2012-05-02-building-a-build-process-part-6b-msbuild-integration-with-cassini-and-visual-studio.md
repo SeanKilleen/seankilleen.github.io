@@ -24,7 +24,7 @@ In this round, we’re going to discuss:
 
 * How to Start the Cassini Web Server Asynchronously
 * How to Stop the Cassini Web Server  
-* How to (not quite) get Visual Studio to seemlessly Follow the Same directions that your MSBuild file follows.
+* How to (not quite) get Visual Studio to seamlessly Follow the Same directions that your MSBuild file follows.
 
 ### Starting the Web Server (Asynchronously!)
 

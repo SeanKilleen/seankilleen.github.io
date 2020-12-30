@@ -79,7 +79,7 @@ Under the top-level folder of your mailbox, create an "Archive" folder on the sa
 
 #### Create a Digital Signature for VBA Projects
 
-This is necessary to avoid a macro warning pop-up everytime you do something in Outlook. Highly recommended.
+This is necessary to avoid a macro warning pop-up every time you do something in Outlook. Highly recommended.
 
 * Open the `Digital Certificate for VBA Projects` utility
 * Start typing it into the start menu and it should come up).

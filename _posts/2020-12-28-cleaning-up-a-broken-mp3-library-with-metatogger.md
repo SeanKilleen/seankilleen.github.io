@@ -19,7 +19,7 @@ Through a series of unfortunate events (no fault of her own I'm 99% sure), my MI
 
 - Duplicate files both on disk and in the iTunes library
 - Some missing files
-- Some files only on her iPod somehow, that we were able to recover, but with cryptic 4-letter file names like "AJDF.mp3".
+- Some files only on her iPod somehow, that we were able to recover, but with cryptic 4-letter file names like `AJDF.mp3`.
 - Inconsistent metadata
 
 Got it? Okay, let's do this.

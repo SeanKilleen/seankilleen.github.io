@@ -20,7 +20,7 @@ HP Driver setup for a wireless printer already configured on your network yields
 
 I have not tested this in any other environments, so I'm assuming it applies to:
 
-* HP PhotoSmart B-209a printers that have already been configued on the wireless network
+* HP PhotoSmart B-209a printers that have already been configured on the wireless network
 * Win 7 Professional 64-bit
 
 ### The Solution Steps

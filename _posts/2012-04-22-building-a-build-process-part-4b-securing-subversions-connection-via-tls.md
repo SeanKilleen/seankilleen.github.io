@@ -81,7 +81,7 @@ Open the file for editing:
 gedit +/SSLCertificateFile /etc/httpd/conf.d/ssl.conf
 ```
 
-Find the line referencing “SSLCertificateFile” and change it to the location of your keyfile. It should look like this when you’re done:
+Find the line referencing “SSLCertificateFile” and change it to the location of your key file. It should look like this when you’re done:
 
 ```conf
 SSLCertificateFile /etc/pki/tls/certs/ca.crt

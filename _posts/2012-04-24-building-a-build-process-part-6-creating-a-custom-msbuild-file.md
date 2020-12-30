@@ -85,7 +85,7 @@ Instead of going back and refactoring after showing you a full examples, I’m g
 
 ### The Basics: Cleaning and Initializing Our Directory
 
-Next, we create two targets. One, “Clean”, will delete the .buildartifacts folder. The second, “Init”, will recreate it. Pretty simple. The XML to accomplish this is below:
+Next, we create two targets. One, “Clean”, will delete the `.buildartifacts` folder. The second, “Init”, will recreate it. Pretty simple. The XML to accomplish this is below:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -107,15 +107,15 @@ Next, we create two targets. One, “Clean”, will delete the .buildartifacts f
 
 You’ll notice that I have the “Init” target depend on the “Clean” target via DependsOnTargets. This means that any time we create the folder, we’ll first delete it to make sure we’re starting fresh.
 
-Also notice that instead of putting a path to the buildartifacts folder directly, I’m using `@(BuildArtifacts)`, which tells MSBuild to refer to the ItemGroup variable we created earlier.
+Also notice that instead of putting a path to the `buildartifacts` folder directly, I’m using `@(BuildArtifacts)`, which tells MSBuild to refer to the ItemGroup variable we created earlier.
 
 ### Trying our “Clean” and “Init” Targets in PowerShell
 
 * Open PowerShell in Admin mode  
 * Navigate to the Solution folder (e.g. `cd Users\Sean\Projects\TestProject` for me)  
-* Also open this folder in Windows Explorer. See the buildartifacts folder there?  
+* Also open this folder in Windows Explorer. See the `buildartifacts` folder there?  
 * In PowerShell, run: `MSBuild TestProject.build /Target:Clean`  
-* Note that in Windows Explorer, the buildartifacts folder is gone.  
+* Note that in Windows Explorer, the `buildartifacts` folder is gone.  
 * In PowerShell, run: `MSBuild TestProject.build /Target:Init`  
 * Note that the folder has reappeared. Add a file to the folder – a text file or something small.  
 * In PowerShell, run: `MSBuild TestProject.build /Target:Init`  
@@ -132,7 +132,7 @@ Up until this point, we haven’t compiled our code. Since that’s what gets us
 ```
 
 This calls the MSBuild exe from within MSBuild (I know…*whoa, dude*), passes it the solution, and compiles the program by passing it in our solution file variable. It also specifies that the Output Directory should be buildartifacts. **Tip:** See the `.FullPath`? Our variables are also objects, and so MSBuild will know that `%(BuildArtifacts)` is an object and thus will pick up on the FullPath property of it.
-Note that we’ve made “Compile” dependent on “Init”, so that everytime we compile, the buildartifacts folder will be blown away and re-created.
+Note that we’ve made “Compile” dependent on “Init”, so that every time we compile, the `buildartifacts` folder will be blown away and re-created.
 **Try it out**: In PowerShell, run `MSBuild TestProject.build /Target:Compile` and watch our solution be compiled to the buildartifacts directory. Pretty sweet, huh?
 
 ### Telling MSBuild What to do by Default
