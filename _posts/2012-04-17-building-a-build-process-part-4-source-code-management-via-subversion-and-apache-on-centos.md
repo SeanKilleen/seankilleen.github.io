@@ -61,7 +61,7 @@ htpasswd -csb /var/www/svn/auth/svn.htpasswd svnuser1 passw0rd1
 htpasswd -sb /var/www/svn/auth/svn.htpasswd svnuser2 passw0rd2
 ```
 
-**NOTE:** Leave off the `-c` parameter from the second line, or you’ll create a completely new file, erasing your svnuser1 account!
+**NOTE:** Leave off the `-c` parameter from the second line, or you’ll create a completely new file, erasing your `svnuser1` account!
 
 This creates the credentials for both users in the svn.htpasswd file. `–c` is the command to create a new file, `–s` forces SHA encryption of the password, and `–b` lets us pass the password via the command line (otherwise, it would have prompted us one at a time).
 
