@@ -8,15 +8,15 @@ comments: true
 
 ---
 
-I recently created [’unanet-summarizer’, a small utility to give my colleagues some additional summary information on their timesheets](http://github.com/excellalabs/unanet-summarizer). It got a little more attention than I expected, but best of all it got others wanting to help out, and the codebase grew out rapidly.
+I recently created [’unanet-summarizer’, a small utility to give my colleagues some additional summary information on their time sheets](http://github.com/excellalabs/unanet-summarizer). It got a little more attention than I expected, but best of all it got others wanting to help out, and the codebase grew out rapidly.
 
-It was time for a build and deployment system, and I'm in love with [Azure DevOps](http://dev.azure.com) so I wanted to take this oportunity to write up the process and document it for my colleagues and others.
+It was time for a build and deployment system, and I'm in love with [Azure DevOps](http://dev.azure.com) so I wanted to take this opportunity to write up the process and document it for my colleagues and others.
 
 ## Goals
 
 I wanted to achieve the following for this JS project:
 
-* A build that runs as part of every pull requesr so we can detect any broken changes
+* A build that runs as part of every pull request so we can detect any broken changes
 * A production release that outputs artifacts to a hosting location (in this case, a simple storage blob on Azure)
 * Status badges for builds and releases
 * I want anyone to be able to view the builds and deployments
@@ -34,7 +34,7 @@ What follows below is a full walkthrough, complete with some struggles, because 
 
 * I give it a name and select the options, keeping it public so that anyone will be able to view the builds & releases:
 
-> ![entering my informaton for the project]({{site.post-images}}/2019-05-azure-devops-node/02_project-info.png)
+> ![entering my information for the project]({{site.post-images}}/2019-05-azure-devops-node/02_project-info.png)
 
 * In the left navigation, I click pipelines, which tells me (unsurprisingly) that no pipelines exist. I click to create one:
 
@@ -42,7 +42,7 @@ What follows below is a full walkthrough, complete with some struggles, because 
 
 * I select GitHub for the location of the code:
 
-> ![seleting the GitHub option]({{site.post-images}}/2019-05-azure-devops-node/04_select-location.png)
+> ![selecting the GitHub option]({{site.post-images}}/2019-05-azure-devops-node/04_select-location.png)
 
 * I select all repositories from the dropdown (since it's not my repo but rather `excellalabs`). I then search for unanet and click the summarizer project.
 
@@ -240,7 +240,7 @@ Speaking of, sounds like we should go create that deployment!
 
 > ![a validation warning showing that some settings need attention]({{site.post-images}}/2019-05-azure-devops-node/31_settings-need-attention.png)
 
-* I need to select a source. Luckily, there's an elipsis menu that lets me select the location based on my artifact output:
+* I need to select a source. Luckily, there's an ellipsis menu that lets me select the location based on my artifact output:
 
 > ![the empty source with an ellipsis to indicate more options]({{site.post-images}}/2019-05-azure-devops-node/32_source-with-ellipsis.png)
 

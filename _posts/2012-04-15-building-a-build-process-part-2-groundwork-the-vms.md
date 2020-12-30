@@ -98,7 +98,7 @@ We need to add the installation media for each OS so that it boots up with that 
 
 From the `Settings` window, click the `Storage` section.  You'll be greeted by the storage window below. Note the "Empty" IDE controller, as this is where we'll attach our ISO files for the installations.
 
-Click the Empty entry, then click the CD-ROM icon to the right, select `Choose a Virtual CD/DVD Disk File`, and choose the ISO for your instsallation:
+Click the Empty entry, then click the CD-ROM icon to the right, select `Choose a Virtual CD/DVD Disk File`, and choose the ISO for your installation:
 
 ![ISO Installation Choice]({{site.post-images}}/04-Adding-the-ISO.png)
 

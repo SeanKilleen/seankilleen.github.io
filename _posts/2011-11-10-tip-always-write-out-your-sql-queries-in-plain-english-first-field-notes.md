@@ -18,7 +18,7 @@ Consider the difference between just talking about what you want to return and h
 
 #### Example: What Your Process Will Be To Get it
 
-* I'll get the hours summary, labor cost summary, and item cost summary by task workorder number, by joining the workorder number across workorder, labor, and items
+* I'll get the hours summary, labor cost summary, and item cost summary by task work order number, by joining the work order number across work order, labor, and items
   * I'll Constrain this by making sure the work order is a task
   * I'll call this Work Order Summary
 * Once I have that working, I'll put it on the inside of another set of summaries, by parent so that I can sum up the summaries and have them for each parent work order.

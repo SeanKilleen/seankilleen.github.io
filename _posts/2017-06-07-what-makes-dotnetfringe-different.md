@@ -38,13 +38,13 @@ The conference isn't based around a product launch. It's not based around a cult
 
 But far from their mere attendance of the event, what really blows me away every year is how personable and accessible all these people are, and how the conference space encourages that. There is no cult of personality at .NET fringe, because everyone there has a lot of personality. :smile:
 
-In the time after my talk, I was able to get great feedback from Jon Galloway, which is a huge deal for me as he runs the [.NET Foundation](http://dotnetfoundation.org) which is a seriously important institution in my opinion. I was also able to speak with many of the folks who gave great talks, and to have an "unconference" session with some of the .NET framework maintainers about insulating maintainers from abuse in OSS projects.
+In the time after my talk, I was able to get great feedback from Jon Galloway, which is a huge deal for me as he runs the [.NET Foundation](http://dotnetfoundation.org) which is a seriously important institution in my opinion. I was also able to speak with many of the folks who gave great talks, and to have an "un-conference" session with some of the .NET framework maintainers about insulating maintainers from abuse in OSS projects.
 
 At no time during the conference did I feel like an outsider, and I felt welcomed everywhere I chose to insert myself. It's not often that one is able to feel that way about a conference, let alone for 3 years running.
 
-## Unconference Sessions
+## un-conference Sessions
 
-Speaking of unconference sessions, the idea of these alone is very powerful to me. While many folks still focus on the talks happening on stage, there is an entire parallel unconference track running in a separate area. Here, attendees can expand on topics they've been introduced to or start a completely new conversation. All that's required is a post-it note holding a time slot.
+Speaking of un-conference sessions, the idea of these alone is very powerful to me. While many folks still focus on the talks happening on stage, there is an entire parallel un-conference track running in a separate area. Here, attendees can expand on topics they've been introduced to or start a completely new conversation. All that's required is a post-it note holding a time slot.
 
 I love this because I think it puts a lot of organizing power in the hands of attendees. Those who want something different than the conference is offering at that moment are empowered to create it, and I had some great follow-up conversations as a result.
 

@@ -6,7 +6,7 @@ comments: true
 references: 
  - title: Azure CDN
    url: http://azure.microsoft.com/en-us/services/cdn/
- - title: Azure Managament Site
+ - title: Azure Management Site
    url: http://manage.windowsazure.com
  - title: Azure Portal
    url: http://portal.azure.com
@@ -142,8 +142,8 @@ Voila! With the CDN created, we can now access our files. To do this, we look at
 `http://[CDN Endpoint].vo.msecnd.net/[Container]/[ImageName.extension]`
 
 * **CDN Endpoint** is the endpoint of your CDN, e.g. `az766003`.
-* **Container** is the nanme of your container, e.g. `headshots`.
-* **ImageName.extention** is the image, such as `image.png`
+* **Container** is the name of your container, e.g. `headshots`.
+* **ImageName.extension** is the image, such as `image.png`
 
 So if we wanted to get to an image in our headshots container, we could type `http://az766003.vo.msecnd.net/headshots/image.png`.[^3]
 
@@ -248,7 +248,7 @@ Versioning a CDN works by appending a QueryString to the end of the url. The CDN
 
 ### Enabling QueryString versioning via Azure
 
-* In the Azure Managment Portal, go to your CDN's section.
+* In the Azure Management Portal, go to your CDN's section.
 * Enable QueryStrings via the button at the bottom:
 
 ![A screenshot of the location to enable QueryStrings]({{site.post-images}}/AzureCDN_11_EnableQueryString.png)
@@ -298,7 +298,7 @@ Now we can change that setting from web.config or override it within the Azure c
 
 ## Some Caveats
 
-* CDNs cache content for a long time. You can get around this using Azure CDN QueryStrings, but be careful because it kind of defeats the purpose. Usually querystrings are used with something like a version of a site, e.g. `myImage.jpg?v=1.2.3`.
+* CDNs cache content for a long time. You can get around this using Azure CDN QueryStrings, but be careful because it kind of defeats the purpose. Usually query strings are used with something like a version of a site, e.g. `myImage.jpg?v=1.2.3`.
 * Don't forget to check css files, etc. for urls to things like in-line images. I missed this at first and couldn't figure out why certain things weren't showing up. Just a brief moment of "d'oh!".
 
 ## That's a Wrap!
