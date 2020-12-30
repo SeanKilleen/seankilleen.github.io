@@ -197,7 +197,9 @@
         "cruisecontrol",
         "Nerdgasm",
         "Centos",
-        "SpecFlow"
+        "SpecFlow",
+        "HDDs",
+        "PCIE"
     ],
     "ignoreWords": [
         "seankilleen",
@@ -338,8 +340,29 @@
         "webkitallowfullscreen",
         "mozallowfullscreen",
         "marginheight",
-        "marginwidth"
-
+        "marginwidth",
+        "datasources",
+        "inte",
+        "gchat",
+        "doesn",
+        "Herron",
+        "overclockening",
+        "nerding",
+        "Superspeed",
+        "BSBP",
+        "chipset",
+        "CMPSU",
+        "NZXT",
+        "Noctua",
+        "Newegg",
+        "Thermalright",
+        "ASUS",
+        "SSDs",
+        "ODBC",
+        "Feld",
+        "iphone",
+        "Gmail's",
+        "SLAs"
     ],
     "ignoreRegExpList": [
         "\\((.*)\\)", // Markdown links
