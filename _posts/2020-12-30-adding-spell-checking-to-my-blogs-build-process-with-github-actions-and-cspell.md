@@ -76,7 +76,7 @@ Once I committed this file to a PR, I saw the checking begin.
 
 ## Wash, Rinse, Repeat
 
-makingThe first time I enabled this with a PR, I got a lot of failures, as one might expect. I kept making small commits over time and eventually I got there. I ran `cspell --config ./cSpell.json "**/*.md"` from my terminal as I went and kept making changes until the issues dropped to zero.
+The first time I enabled this with a PR, I got a lot of failures, as one might expect. I kept making small commits over time and eventually I got there. I ran `cspell --config ./cSpell.json "**/*.md"` from my terminal as I went and kept making changes until the issues dropped to zero.
 
 ## Voila!
 
