@@ -362,7 +362,14 @@
         "Feld",
         "iphone",
         "Gmail's",
-        "SLAs"
+        "SLAs",
+        "clockable",
+        "suntrust",
+        "Econo",
+        "crapware",
+        "technologier",
+        "Sacca",
+        "listserv"
     ],
     "ignoreRegExpList": [
         "\\((.*)\\)", // Markdown links
