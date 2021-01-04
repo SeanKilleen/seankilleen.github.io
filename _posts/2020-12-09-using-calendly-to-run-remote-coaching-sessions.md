@@ -39,7 +39,7 @@ I set up meetings slots for various time lengths (15, 30, 45, 60, 90 minutes) so
 For each meeting type, I set it up as follows:
 
 * I set a time range of when people could book the meeting (through the end of my coaching assignment, as many meetings as they'd like.)
-scheduled* I set the meeting increments in 15-minute chunks to ensure that someone didn't schedule meetings at 2:03 pm.
+* I set the meeting increments in 15-minute chunks to ensure that someone didn't schedule meetings at 2:03 pm.
 * I set that there should be a break between meetings of 15 minutes. This allowed me time for notes, bathroom breaks, etc. which is important if you're going to be doing video meetings all day.
 * On the invitation form, I ask for their name and e-mail -- to ensure I know who I'll be talking to.
 * I set an e-mail to follow-up 1 hour after the meeting -- this is where the feedback form comes into play. I used the template below:
