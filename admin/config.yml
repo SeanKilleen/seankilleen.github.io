@@ -19,18 +19,5 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm ZZ"}
-      - label: "Header"
-        name: "header"
-        widget: object
-        required: false
-        fields:
-          - {
-              label: "Overlay Image",
-              name: "overlay_image",
-              widget: "string",
-              required: false,
-            }
-          - { label: 'Opacity', name: 'overlay_filter', widget: 'number', value_type: 'float' }
-          - { label: "Caption", name: "caption", widget: "string" }      
     editor:
       preview: false
