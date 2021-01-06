@@ -45,9 +45,9 @@ collections: # A list of collections the CMS should be able to edit
               name: "overlay_filter",
               widget: "number",
               value_type: "float",
-              min: 0.0,
-              max: 1.0,
-              step: 0.1,
+              min: 0,
+              max: 1,
+              step: .1,
               default: 0.5,
             }
           - { label: "Caption", name: "caption", widget: "string" }
