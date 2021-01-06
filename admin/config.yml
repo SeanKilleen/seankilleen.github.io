@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: seankilleen/seankilleen.github.io
+  repo: seankilleen/seankilleen.github.io 
   branch: main # Branch to update
   site_domain: seankilleen.com # so we can get the github login redirected correctly
 publish_mode: editorial_workflow
@@ -14,39 +14,10 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: # The fields each document in this collection have
-      - { label: "Title", name: "title", widget: "string" }
-      - {
-          label: "Comments",
-          name: "comments",
-          widget: "boolean",
-          default: true,
-        }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Tags", name: "tags", widget: "list" }
-      - {
-          label: "Publish Date",
-          name: "date",
-          widget: "datetime",
-          format: "YYYY-MM-DD HH:mm ZZ",
-        }
-      - label: "Header"
-        name: "header"
-        widget: object
-        required: false
-        fields:
-          - {
-              label: "Overlay Image",
-              name: "overlay_image",
-              widget: "string",
-              required: false,
-            }
-          - {
-              label: "Opacity",
-              name: "opacity",
-              widget: "number",
-              value_type: "float",
-              default: 0.5,
-            }
-          - { label: "Caption", name: "caption", widget: "string" }
+      - {label: "Title", name: "title", widget: "string"}      
+      - {label: "Comments", name: "comments", widget: "boolean", default: true}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm ZZ"}
     editor:
       preview: false
