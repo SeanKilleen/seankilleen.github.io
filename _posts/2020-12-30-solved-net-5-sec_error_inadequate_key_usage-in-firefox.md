@@ -7,7 +7,7 @@ tags:
   - .net core
   - firefox
   - certificate
-date: 2020-12-30 12:00 -0500
+date: 2021-01-19 10:00 -0500
 ---
 Ran across an issue I had to fix where a .NET 5 application, which happened to be running in a Docker container (this ended up being irrelevant), couldn't start up in Firefox due to a certificate error, even though I'd accepted the .NET certificate at the root. I saw a `SEC_ERROR_INADEQUATE_KEY_USAGE` error in the browser.
 
