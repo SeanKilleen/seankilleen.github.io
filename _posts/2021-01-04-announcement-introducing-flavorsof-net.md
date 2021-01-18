@@ -6,7 +6,7 @@ tags:
   - dotnet
   - .net
   - .net core
-date: 2021-01-04 15:05 -0500
+date: 2021-01-21 10:00 -0500
 ---
 I'd received more than a few questions about the naming and differences between .NET Framework, .NET Core, .NET 5, Mono, Xamarin, etc. 
 
