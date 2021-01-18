@@ -3,7 +3,9 @@ require 'html-proofer' # Ensures we have the html-proofer library available to u
 def run_htmlproofer() # The function that will run the proofer, so that we can re-use it between our two rake tasks
   options = { 
     assume_extension: true, # Assumes html file extensions
+    http_status_ignore: [999,429],
     :typhoeus => { # The options for the curl library that's used.
+    
       :ssl_verifypeer => false, # This will stop you from getting errors when certs can't be parsed, which doesn't matter in this case.
       :headers => { "User-Agent" => "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0"}
     }, 
