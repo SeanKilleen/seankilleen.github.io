@@ -9,7 +9,7 @@ comments: true
 
 The .NET Foundation Board elections recently took place, and I was the last one eliminated, one of my proudest accomplishments to date (the link, unfortunately, has since expired. Should have taken a screenshot!)
 
-I thought I’d share some reflections and lessons learned from [my candidacy](https://election.dotnetfoundation.org/campaign-2019/sean-killeen.html).
+I thought I’d share some reflections and lessons learned from my candidacy (_Ed. Note:_ There was a link here, but it has been lost to time).
 
 It’s a little bit of a weird post to write, but I figure reflection is part of this whole blogging thing; can’t just be how-tos all the time.
 

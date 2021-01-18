@@ -69,16 +69,16 @@ talksList:
     slidesLink: http://seankilleen.com/Presentations/2017-11_ElasticSearch
   - title: Certified Agile Testing & Automation
     date: 2018-01-22
-    group: Excella Consulting
-    eventLink: https://www.excella.com/training#courses
-    sessionLink: https://www.excella.com/training#courses
+    group: Excella Training (now NextUp Solutions)
+    eventLink: https://nextupsolutions.com/training/all-training-courses
+    sessionLink: https://nextupsolutions.com/training/all-training-courses
     description: Our ICAgile (ICP-TST/ATA) certified testing course is happening in January. Check the links for more info!
     location: Arlington, VA
   - title: Certified Agile Testing & Automation
     date: 2018-03-05
-    group: Excella Consulting
-    eventLink: https://www.excella.com/training#courses
-    sessionLink: https://www.excella.com/training#courses
+    group: Excella Training (now NextUp Solutions)
+    eventLink: https://nextupsolutions.com/training/all-training-courses
+    sessionLink: https://nextupsolutions.com/training/all-training-courses
     description: Our ICAgile (ICP-TST/ATA) certified testing course is happening in March. Check the links for more info!
     location: Arlington, VA
   - title: Introduction to Akka .NET
@@ -122,10 +122,8 @@ talksList:
   - title: An Introduction to the Actor Model and Akka.NET
     date: 2018-08-09
     group: Code on the Beach
-    eventLink: https://www.codeonthebeach.com/
     description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
     location: Atlantic Beach, FL
-    sessionLink: https://www.codeonthebeach.com/COTB2018/session/3195/an-introduction-to-the-actor-model-and-akka-net
     slidesLink: https://seankilleen.com/Presentations/2018-08_AkkaIntro/presentation
     codeLink: https://github.com/SeanKilleen/Presentations/tree/master/2018-08_AkkaIntro
     videoLink: https://www.youtube.com/watch?v=4Afz-cdL7HU
@@ -135,7 +133,6 @@ talksList:
     eventLink: https://www.techbash.com/
     description: Working in an agile mindset – especially when favoring specific approaches – can go wrong in about 100 ways. In this talk, I describe some lessons as a technical lead working on agile teams, holding it together with duct tape and a little help from my friends.
     location: Kalahari Resort, PA
-    sessionLink: https://www.techbash.com/sessions/fragile-how-agile-falls-apart-and-what-you-can-do-to-hold-it-all-together
     slidesLink: http://seankilleen.com/Presentations/2018-10_Fragile
   - title: An Introduction to the Actor Model and Akka.NET
     date: 2019-03-14
@@ -187,7 +184,6 @@ talksList:
   - title: "Introduction to Microsoft Graph Services"
     date: 2019-06-29
     group: Microsoft Insider Dev Tour NYC
-    eventLink: https://insiderdevtour.com/
     description: "Microsoft Graph provides a unified programmability model that you can use to build apps for organizations and consumers that interact with the data of millions of users. You can use the Microsoft Graph REST APIs to access data in Azure Active Directory, Office 365 services, Enterprise Mobility and Security services, Windows 10 services, Dynamics 365, and more."
     location: New York City, NY
   - title: "(CSD) Agile Engineering 3-Day Training Course"
@@ -200,7 +196,6 @@ talksList:
   - title: "Serverless is more: An Introduction to Azure Functions"
     date: 2019-07-25
     group: CodeOnTheBeach
-    eventLink: https://www.codeonthebeach.com/
     slidesLink: https://seankilleen.com/Presentations/ServerlessIsMore/
     codeLink: https://github.com/seankilleen/feedly-opml-export
     description: In this session, Sean will walk through how to use Azure Functions and Azure Key Vault to create a system to continually share his RSS subscriptions with the world. Follow along as we discuss concepts of serverless computing, build a functional application, an marvel at all the things we didn’t have to do.
@@ -208,7 +203,7 @@ talksList:
   - title: An Introduction to the Actor Model and Akka.NET
     date: 2019-10-04
     group: The SwiftKick Show
-    eventLink: https://swiftkick.in/shows
+    eventLink: https://www.youtube.com/swiftkick
     videoLink: https://www.youtube.com/watch?v=Qa5TU_16GzE
     slidesLink: https://seankilleen.com/Presentations/AkkaIntro/presentation
     codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code-dotnetcore
