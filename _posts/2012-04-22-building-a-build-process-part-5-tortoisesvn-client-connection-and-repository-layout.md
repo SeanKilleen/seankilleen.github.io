@@ -13,9 +13,9 @@ references:
  - title: Subversion book
    url:  http://svnbook.red-bean.com/
  - title: Download TortoiseSVN
-   url:  http://tortoisesvn.net/downloads.html
+   url:  https://tortoisesvn.net/downloads.html
  - title: Donate to TortoiseSVN
-   url: http://tortoisesvn.tigris.org/donate.html
+   url: https://tortoisesvn.net/donate.html
 ---
 {% include _buildseries-intro.md %}
 
@@ -181,4 +181,4 @@ Congratulations! You’ve fully completed a solution setup with Visual Studio an
 
 [their downloads page]: http://tortoisesvn.net/downloads.html
 
-[donate to the TortoiseSVN project]: http://tortoisesvn.tigris.org/donate.html
+[donate to the TortoiseSVN project]: https://tortoisesvn.net/donate.html

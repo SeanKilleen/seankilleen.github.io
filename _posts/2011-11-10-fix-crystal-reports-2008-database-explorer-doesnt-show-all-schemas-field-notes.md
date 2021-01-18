@@ -10,10 +10,6 @@ references:
    url: http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html
  - title: DBVisualizer
    url: http://www.dbvis.com/
- - title: "Crystal Reports 2008 doesn't show all schemas with ODBC"
-   url: https://community.oracle.com/thread/968005
-   parenttitle: Oracle Forums
-   parenturl: https://forums.oracle.com
 
 ---
 ### Problem:
@@ -24,7 +20,7 @@ However, when I go into the Database Explorer and create an ODBC connection, cer
 
 ### Solution
 
-This seems to be a strange bug. According to [this helpful (but obscure) forum post], the way to resolve the issue is to:
+This seems to be a strange bug. According to this helpful (but obscure) forum post (_Ed. Note_: unfortunately, the link has been lost to time), the way to resolve the issue is to:
 
 * On the menu bar, select `File > Options`
 * Click the `Database` tab.
@@ -34,4 +30,3 @@ I have no idea why this fixes the issue, but it certainly did. Very happy to hav
 
 [SQL Developer]: http://www.oracle.com/technetwork/developer-tools/sql-developer/overview/index.html
 [DBVisualizer]: http://www.dbvis.com/
-[this helpful (but obscure) forum post]: https://forums.oracle.com/forums/thread.jspa?threadID=966005

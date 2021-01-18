@@ -28,7 +28,7 @@ Got it? Okay, let's do this.
 
 So as not to mess anything up unintentionally, I created a staging area, and copied every MP3 there that I could find (including the cryptically-named files from the iPod). I also created a "Finished" folder where I would output the MP3s eventually once they were cleaned up.
 
-![An animation of adding the files]({{site.post-images}}/2020-12_Metatogger/01_AddingFiles.gif)
+![An animation of adding the files]({{site.post-images}}/2020-12_Metatogger/01_AddFiles.gif)
 
 ## How Metatogger works
 
@@ -46,7 +46,7 @@ Many files had track numbers like `1/10`, `2/10`, etc. but I didn't want to keep
 
 Similarly, there was a script to convert all track numbers to use two digits. Consistency! I applied it to all tracks and saved.
 
-![An animated walkthrough of using the scripts screen]({{site.post-images}}/2020-12_Metatogger/02_TrackNumbers.gif)
+![An animated walkthrough of using the scripts screen]({{site.post-images}}/2020-12_Metatogger/03_TrackNumbers.gif)
 
 Side note: Did you see what I see? A `Scripts` screen that lets me write C# to process the tracks, so that I can do whatever I want? Swoon.
 

@@ -10,7 +10,7 @@ tags:
   - calendly
 date: 2020-12-09 10:00 -0500
 ---
-A little while back, as part of a client assignment, I ran some remote one-on-one DevOps coaching sessions for a group of about 30 people. This was newer territory for me and I didn't have a go-to "toolbox" for maintaining these sessions. However, I had a great experience with [Calendly](https//calendly.com/) [^1]
+A little while back, as part of a client assignment, I ran some remote one-on-one DevOps coaching sessions for a group of about 30 people. This was newer territory for me and I didn't have a go-to "toolbox" for maintaining these sessions. However, I had a great experience with [Calendly](https://calendly.com/) [^1]
 
 I figured I would jot down how I used the tool in case anyone finds themselves in a similar situation.
 
