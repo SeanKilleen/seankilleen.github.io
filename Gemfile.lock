@@ -292,6 +292,3 @@ DEPENDENCIES
   rake
   tzinfo-data
   wdm
-
-BUNDLED WITH
-   2.1.4
