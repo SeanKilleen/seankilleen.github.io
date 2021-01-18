@@ -1,5 +1,5 @@
 ---
-title: "Announcement: Introducing FlavorsOf.NET"
+title: "Announcement: Introducing FlavorsOf.NET!"
 comments: true
 tags:
   - launch
@@ -13,3 +13,5 @@ I'd received more than a few questions about the naming and differences between 
 So I decided to put up a small one-pager at <https://flavorsof.net>.
 
 I'll polish it up a bit soon but wanted to post it here in case you can benefit from it.
+
+Cheers!
