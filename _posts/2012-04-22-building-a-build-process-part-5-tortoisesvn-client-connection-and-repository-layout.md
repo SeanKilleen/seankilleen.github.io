@@ -181,4 +181,4 @@ Congratulations! You’ve fully completed a solution setup with Visual Studio an
 
 [their downloads page]: http://tortoisesvn.net/downloads.html
 
-[donate to the TortoiseSVN project]: http://tortoisesvn.tigris.org/donate.html
+[donate to the TortoiseSVN project]: https://tortoisesvn.net/donate.html

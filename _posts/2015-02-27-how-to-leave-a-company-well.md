@@ -50,7 +50,7 @@ My transition document generally contains:
 * **Software I made use of**: This can be helpful, particularly if this software was responsible for any "magic" results you achieved.
 * **Web Sites I made use of**: Similarly, a list of helpful web-based tools can do a lot to ease a transition.
 * **Recommended Books**: If there are books that I find would be good for development groups or companies to read, I'll likely include them here, particularly if I felt that they would have helped us better align to avoid me leaving.
-* **Next Actions based on assessment.** This is probably the most important part. Based on everything you wrote above, what are all the things you and others need to do to ensure a successful transition? I would go so far as to add these tasks to a [Trello board](https://Trello.com) and invite the appropriate stakeholders so that they can keep tabs on things as they progress.
+* **Next Actions based on assessment.** This is probably the most important part. Based on everything you wrote above, what are all the things you and others need to do to ensure a successful transition? I would go so far as to add these tasks to a [Trello board](https://trello.com/) and invite the appropriate stakeholders so that they can keep tabs on things as they progress.
 
 ### Meeting with Stakeholders
 
