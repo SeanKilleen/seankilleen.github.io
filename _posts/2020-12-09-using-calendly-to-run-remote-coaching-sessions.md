@@ -1,6 +1,6 @@
 ---
 title: Using Calendly to Run Remote Coaching Sessions
-
+comments: true
 tags:
   - coaching
   - tools
@@ -44,10 +44,9 @@ For each meeting type, I set it up as follows:
 * On the invitation form, I ask for their name and e-mail -- to ensure I know who I'll be talking to.
 * I set an e-mail to follow-up 1 hour after the meeting -- this is where the feedback form comes into play. I used the template below:
 
-{% raw %}
-> Hi `{{invitee_first_name}}`,
+> Hi `{{{{invitee_first_name}}}}`,
 >
-> Thank you for attending `{{event_name}}` at `{{event_time}}` on `{{event_date}}`.
+> Thank you for attending `{{{{event_name}}}}` at `{{{{event_time}}}}` on `{{{{event_date}}}}`.
 >
 > I'd love your feedback! Please see [TODO: the link] for a brief, anonymous feedback survey. You can also respond to this e-mail and provide me your feedback directly.
 >
@@ -59,7 +58,6 @@ You can schedule several sessions in advance before dates fill up. Be sure to us
 > Sean
 >
 > PS sorry that this is automated; I normally prefer to do these in a more personal way but the volume of meetings prohibits that at this time.
-{% endraw %}
 
 I could also use the Calendly invite prompts to ask the coachee to provide a number of topics, but we did that within the space of the meeting.
 

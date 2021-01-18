@@ -4,7 +4,7 @@ title: "I'm Running for the .NET Foundation's Board of Directors!"
 date: 2019-03-12 07:00:00:00.000000000 -05:00
 
 tags: [.NET,Community,Leadership]
-
+comments: true
 
 ---
 

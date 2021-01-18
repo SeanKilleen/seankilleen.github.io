@@ -200,7 +200,6 @@ talksList:
     codeLink: https://github.com/seankilleen/feedly-opml-export
     description: In this session, Sean will walk through how to use Azure Functions and Azure Key Vault to create a system to continually share his RSS subscriptions with the world. Follow along as we discuss concepts of serverless computing, build a functional application, an marvel at all the things we didn’t have to do.
     location: Atlantic Beach, FL
-    videoLink: https://www.youtube.com/watch?v=E4cLR1TYDUA
   - title: An Introduction to the Actor Model and Akka.NET
     date: 2019-10-04
     group: The SwiftKick Show
@@ -254,64 +253,8 @@ talksList:
     location: Online
     slidesLink: https://seankilleen.com/Presentations/AkkaIntro/presentation
     codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code-dotnetcore
-  - title: "The Joy of Functional Testing with SpecFlow"
-    date: 2021-03-09
-    group: Hampton Roads .NET User Group (HRNUG)
-    eventLink: https://www.meetup.com/Hampton-Roads-NET-Users-Group/
-    sessionLink: https://www.meetup.com/Hampton-Roads-NET-Users-Group/events/276626715/
-    description: "Functional testing is a great way to ensure we're not just building the thing right, but building the right thing. In this session, we'll examine the testing pyramid, the place of functional testing, and how to write Gherkin syntax with SpecFlow to move toward acceptance test driven development. We'll use a real world sample to show a few cycles of acceptance tests in the language of the business, and talk about one project's real-world functional testing journey."
-    location: Online
-    slidesLink: https://joyoffunctionaltesting.seankilleen.com
-    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/joy-of-functional-mdx/code
-    videoLink: https://www.youtube.com/watch?v=cIYP_2epZt4
-  - title: "The Joy of Functional Testing with SpecFlow"
-    date: 2021-03-02
-    group: Central Maryland Association of .NET Professionals (CMAP)
-    eventLink: https://www.meetup.com/CMAP-Online/
-    sessionLink: https://www.meetup.com/CMAP-Online/events/276605011/
-    description: "Functional testing is a great way to ensure we're not just building the thing right, but building the right thing. In this session, we'll examine the testing pyramid, the place of functional testing, and how to write Gherkin syntax with SpecFlow to move toward acceptance test driven development. We'll use a real world sample to show a few cycles of acceptance tests in the language of the business, and talk about one project's real-world functional testing journey."
-    location: Online
-    slidesLink: https://joyoffunctionaltesting.seankilleen.com
-    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/joy-of-functional-mdx/code
-  - title: "The Joy of Functional Testing with SpecFlow"
-    date: 2021-02-23
-    group: DC Agile Software Testing Group (DCAST)
-    eventLink: https://www.meetup.com/dcast-io/
-    sessionLink: https://www.meetup.com/dcast-io/events/276394536/
-    description: "Functional testing is a great way to ensure we're not just building the thing right, but building the right thing. In this session, we'll examine the testing pyramid, the place of functional testing, and how to write Gherkin syntax with SpecFlow to move toward acceptance test driven development. We'll use a real world sample to show a few cycles of acceptance tests in the language of the business, and talk about one project's real-world functional testing journey."
-    location: Online
-    slidesLink: https://joyoffunctionaltesting.seankilleen.com
-    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/joy-of-functional-mdx/code
-    videoLink: https://www.youtube.com/watch?v=gRBGyJnikko
-  - title: "An Introduction to the Actor Model with Akka.NET"
-    date: 2021-05-06
-    group: Roanoke Valley .NET User Group (RVNUG)
-    eventLink: https://www.meetup.com/Roanoke-Valley-NET-User-Group/
-    description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
-    sessionLink: https://www.meetup.com/Roanoke-Valley-NET-User-Group/events/fbbrnrycchbjb/
-    slidesLink: https://seankilleen.com/Presentations/AkkaIntro/presentation
-    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code-dotnetcore
-    location: Online
-  - title: "An Introduction to the Actor Model with Akka.NET"
-    date: 2021-05-18
-    group: ".NET DC User Group"
-    eventLink: https://www.meetup.com/dotnetdc/
-    description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
-    sessionLink: https://www.meetup.com/dotnetdc/events/278129709/
-    slidesLink: https://seankilleen.com/Presentations/AkkaIntro/presentation
-    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code-dotnetcore
-    location: Online
-  - title: "Learning Docker for Smaller Feedback Loops"
-    date: 2021-05-27
-    group: "DockerCon 2021"
-    eventLink: https://docker.events.cube365.net/dockercon-live/2021/
-    sessionLink: https://docker.events.cube365.net/dockercon-live/2021/community/ozpQHbdFbLEYD7kie
-    description: A high-level talk for those new to Docker on the importance of smaller feedback loops and how Docker helps us get there.
-    location: Online
-  - title: "An Introduction to the Actor Model with Akka.NET"
-    date: 2021-07-27
-    group: "Orlando .NET User Group (ONETUG)"
-    eventLink: https://www.meetup.com/ONETUG/
-    sessionLink: https://meetu.ps/e/K76s9/1Zghg/d
-    description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
+  - title: "The Future of CI: Learning to Love Feedback Loops"
+    date: 2020-10-02
+    group: Private Client Event
+    description: A presentation about how feedback loops strengthen your team and organization, which ones matter most, and how to embrace smaller feedback loops for positive change.
     location: Online

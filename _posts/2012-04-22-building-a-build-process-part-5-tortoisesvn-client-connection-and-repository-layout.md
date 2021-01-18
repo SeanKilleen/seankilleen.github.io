@@ -3,7 +3,7 @@
 title: 'Building a Build Process: TortoiseSVN Client Connection and Repository
   Layout'
 date: 2012-04-22 22:24:00.000000000 -04:00
-
+comments: true
 series: building-a-build-process
 redirect_from: 
  - /2012/04/building-build-process-part-5.html
