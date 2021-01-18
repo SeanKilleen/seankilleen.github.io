@@ -9,7 +9,7 @@ redirect_from:
  - /2012/05/building-build-process-part-6b-msbuild.html
 references: 
  - title: Pluralsight Continuous Integration Course
-   url:  http://www.pluralsight-training.net/microsoft/courses/TableOfContents?courseName=continuous-integration&amp;highlight=james-kovacs_ci-part1*3!james-kovacs_ci-part3*2!james-kovacs_ci-part2*2!james-kovacs_ci-part6*4,12#ci-part1
+   url:  https://www.pluralsight.com/courses/continuous-integration
  - title: MSBuild Extension Pack web site
    url: http://msbuildextensionpack.codeplex.com/
  - title: MsBuild Extension Pack AsyncExec Reference 

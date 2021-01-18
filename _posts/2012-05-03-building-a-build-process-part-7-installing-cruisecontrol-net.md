@@ -109,7 +109,7 @@ Keep going:
 
 * Click on `Default Web Site`
 * On the right-hand side Action menu, click `Start` to start the default web site (if it’s not already started).
-* Open a web browser on the build server and navigate to <http://localhost/ccnet>
+* Open a web browser on the build server and navigate to `http://localhost/ccnet`
 
 If a web site shows up at all, you’re good to go. Don’t worry about any errors within the web dashboard application, as we’ll be configuring CCNet later.
 
