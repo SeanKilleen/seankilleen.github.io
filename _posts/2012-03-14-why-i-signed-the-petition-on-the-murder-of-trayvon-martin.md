@@ -18,7 +18,7 @@ Some news articles with information about the case are below (I've attempted to 
 * <https://www.orlandosentinel.com/news/seminole-county/os-trayvon-martin-shooting-death-rally-20120314-story.html>
 * <http://abcnews.go.com/US/neighborhood-watch-shooting-trayvon-martin-probe-reveals-questionable/story?id=15907136#.T2D6WBEgfl4>
 * <http://www.dailymail.co.uk/news/article-2114152/Trayvon-Martin-shot-dead-Police-say-theres-evidence-dispute-claim-neighbourhood-watch-captain-George-Zimmerman-acted-self-defence.html>
-* <http://www.foxnews.com/us/2012/03/08/family-wants-answers-in-fla-teens-death>
+* (Ed. Note: This link has been lost to time)
 * <http://www.theatlantic.com/national/archive/2012/03/stand-your-ground-and-trayvon-martin/254444>
 
 **Update:** It appears the case has been turned over to the Florida State Attorney's office, but the petition could likely use support all the same. Updated stories below:

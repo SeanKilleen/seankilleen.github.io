@@ -116,7 +116,6 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 * **[ImgBurn] [ImgBurn]** - A tool for creating disc images
 * **[Virtual CloneDrive] [Virtual CloneDrive]** – a good free tool to mount disc images.
 * **[LogParser 2.x Studio] [LogParser 2.x Studio]** - A tool for easily loading and querying log files in classic formats (such as IIS logs)
-* **[RDCMan] [RDCMan]** - A tool for managing many remote desktop connections. Useful in large client environments where you may need to remote into many machines.
 
 [ActiveInbox]: http://activeinboxhq.com
 [CardCounter for Trello]: https://chrome.google.com/webstore/detail/cardcounter-for-trello-wi/jbdmgabkegidhagemkfdogmplgelaoab
@@ -134,7 +133,7 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 [SpecFlow]: http://specflow.org/
 [NCrunch]: http://www.ncrunch.net/
 [Storyteller]: http://storyteller.GitHub.io/
-[xUnit]: https://xunit.GitHub.io/
+[xUnit]: https://xunit.net/
 [FluentAssertions]: http://www.fluentassertions.com/
 [Serilog]: https://serilog.net/
 [NBench]: https://GitHub.com/petabridge/NBench
@@ -174,7 +173,7 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 [OTRS]: https://www.otrs.com/
 [GitHub Desktop for Windows]: https://desktop.GitHub.com/
 [ScriptCS]: http://scriptcs.net/
-[Fiddler]: http://www.telerik.com/fiddler
+[Fiddler]: https://www.telerik.com/fiddler
 [Slack]: https://slack.com/
 [Camtasia]: https://www.techsmith.com/camtasia.html
 [ScreenToGif]: http://www.screentogif.com/
@@ -184,7 +183,6 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 [ImgBurn]: http://www.imgburn.com/
 [Virtual CloneDrive]: https://www.elby.ch/en/products/vcd.html
 [LogParser 2.x Studio]: https://gallery.technet.microsoft.com/office/Log-Parser-Studio-cd458765
-[RDCMan]: https://www.microsoft.com/en-us/download/details.aspx?id=44989
 [Amazon Assistant]: https://chrome.google.com/webstore/detail/amazon-assistant-for-chro/pbjikboenpfhbbejgkoklgkhjpfogcam?hl=en-US
 [RescueTime]: https://www.rescuetime.com/
 [Tweetdeck]: https://tweetdeck.twitter.com/

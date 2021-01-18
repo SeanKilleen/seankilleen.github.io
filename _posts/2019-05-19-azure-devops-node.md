@@ -190,7 +190,7 @@ The next step will be to create an Azure blob and then deploy the released JS to
 > ![providing information on the storage container]({{site.post-images}}/2019-05-azure-devops-node/20_container-info.png)
 
 * After the container is created, I click into it.
-* I then click properties on the left-hand menu, and get the URL of <https://unanetsummarizer.blob.core.windows.net/unanet-summarizer>:
+* I then click properties on the left-hand menu, and get the URL of `https://unanetsummarizer.blob.core.windows.net/unanet-summarizer`:
 
 > ![getting the URL for the blob container]({{site.post-images}}/2019-05-azure-devops-node/21_container-url.png)
 

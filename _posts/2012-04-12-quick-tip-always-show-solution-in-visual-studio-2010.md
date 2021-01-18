@@ -21,4 +21,4 @@ Thanks to [K. Scott Allen] in a [Pluralsight] video (unfortunately, I forget whi
 And voila! A solution will always be there
 
 [K. Scott Allen]: http://odetocode.com/blogs/scott/
-[Pluralsight]: http://www.pluralsight-training.net/microsoft/
+[Pluralsight]: https://www.pluralsight.com
