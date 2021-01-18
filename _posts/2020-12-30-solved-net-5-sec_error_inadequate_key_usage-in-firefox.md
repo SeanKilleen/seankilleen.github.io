@@ -13,7 +13,7 @@ Ran across an issue I had to fix where a .NET 5 application, which happened to b
 
 ## Solution
 
-This is because Firefox is not utilizing the Windows certificatee store, so I have to force it to do so.
+This is because Firefox is not utilizing the Windows certificate store, so I have to force it to do so.
 
 * Open the Firefox settings by going to `about:config`
 * Search for `security.enterprise_roots.enabled`
