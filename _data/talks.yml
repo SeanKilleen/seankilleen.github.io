@@ -253,8 +253,10 @@ talksList:
     location: Online
     slidesLink: https://seankilleen.com/Presentations/AkkaIntro/presentation
     codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code-dotnetcore
-  - title: "The Future of CI: Learning to Love Feedback Loops"
-    date: 2020-10-02
-    group: Private Client Event
-    description: A presentation about how feedback loops strengthen your team and organization, which ones matter most, and how to embrace smaller feedback loops for positive change.
+  - title: "TBD"
+    date: 2021-03-09
+    group: Hampton Roads .NET User Group (HRNUG)
+    eventLink: https://www.meetup.com/Hampton-Roads-NET-Users-Group/
+    #sessionLink: https://techbash.com/2019-schedule
+    description: ""
     location: Online
