@@ -257,13 +257,20 @@ talksList:
     date: 2021-03-09
     group: Hampton Roads .NET User Group (HRNUG)
     eventLink: https://www.meetup.com/Hampton-Roads-NET-Users-Group/
-    #sessionLink: https://techbash.com/2019-schedule
+    #sessionLink: 
     description: ""
     location: Online
   - title: "TBD"
     date: 2021-03-02
     group: Central Maryland Association of .NET Professionals (CMAP)
     eventLink: https://www.meetup.com/CMAP-Online/
-    #sessionLink: https://techbash.com/2019-schedule
+    #sessionLink: 
+    description: ""
+    location: Online
+  - title: "TBD"
+    date: 2021-05-06
+    group: Roanoke Valley .NET User Group (RVNUG)
+    eventLink: https://www.meetup.com/Roanoke-Valley-NET-User-Group/
+    #sessionLink: 
     description: ""
     location: Online
