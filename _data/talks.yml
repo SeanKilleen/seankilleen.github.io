@@ -274,3 +274,10 @@ talksList:
     #sessionLink: 
     description: ""
     location: Online
+  - title: "TBD"
+    date: 2021-05-06
+    group: Roanoke Valley .NET User Group (RVNUG)
+    eventLink: https://www.meetup.com/Roanoke-Valley-NET-User-Group/
+    #sessionLink: 
+    description: ""
+    location: Online
