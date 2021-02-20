@@ -267,12 +267,12 @@ talksList:
     #sessionLink: 
     description: ""
     location: Online
-  - title: "TBD"
+  - title: "The Joy of Functional Testing with SpecFlow"
     date: 2021-02-23
     group: DC Agile Software Testing Group (DCAST)
     eventLink: https://www.meetup.com/dcast-io/
-    #sessionLink: 
-    description: ""
+    sessionLink: https://www.meetup.com/dcast-io/events/276394536/
+    description: "Functional testing is a great way to ensure we're not just building the thing right, but building the right thing. In this session, we'll examine the testing pyramid, the place of functional testing, and how to write Gherkin syntax with SpecFlow to move toward acceptance test driven development. We'll use a real world sample to show a few cycles of acceptance tests in the language of the business, and talk about one project's real-world functional testing journey."
     location: Online
   - title: "TBD"
     date: 2021-05-06
