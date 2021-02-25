@@ -253,12 +253,12 @@ talksList:
     location: Online
     slidesLink: https://seankilleen.com/Presentations/AkkaIntro/presentation
     codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code-dotnetcore
-  - title: "TBD"
+  - title: "The Joy of Functional Testing with SpecFlow"
     date: 2021-03-09
     group: Hampton Roads .NET User Group (HRNUG)
     eventLink: https://www.meetup.com/Hampton-Roads-NET-Users-Group/
     #sessionLink: 
-    description: ""
+    description: "Functional testing is a great way to ensure we're not just building the thing right, but building the right thing. In this session, we'll examine the testing pyramid, the place of functional testing, and how to write Gherkin syntax with SpecFlow to move toward acceptance test driven development. We'll use a real world sample to show a few cycles of acceptance tests in the language of the business, and talk about one project's real-world functional testing journey."
     location: Online
   - title: "The Joy of Functional Testing with SpecFlow"
     date: 2021-03-02
