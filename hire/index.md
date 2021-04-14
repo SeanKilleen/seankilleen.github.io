@@ -11,16 +11,7 @@ Do you want to know if I'd be a good fit for your organization, or would you lik
 
 ## My Current Status
 
-I have recently accepted a new position and am not open to new opportunities at this time.
-
-## What I'm Open To
-
-* Technical Leadership. Depending on the organization, this may be a Director, Fellow, Principal, or Technical Manager role (or similar). While I am passionate about technical work and capable of performing it, I am likely not a strong fit for an individual contributor role unless the compensation is commensurate with such roles. I am at my best when I'm providing a large impact across teams or an organization and empowering / enabling teams to achieve that impact.
-* Full-time roles. Will consider contract opportunities but the rate may be a non-starter for most. I commit to my employer, and I expect them to commit to me.
-* Happy to work in consider consulting environments as I have a great deal of experience there, but for my next journey, a product or services company I believe in is potentially the best fit.
-* The organization I work for is important to me, because I plan to invest in it. If you contact me, please indicate who the client is and where the position is situated within it. If you're a recruiter, please trust me -- I have no desire to circumvent you.
-* I am comfortable and productive with full-time remote work. I operate in a remote-first mindset. And in these times, a 100% remote role is a big plus for me.
-* If commuting, I'm aiming to be within 30 minutes of Arlington, VA.
+I am passively open to new opportunities as a way of keeping an open mind. If you think you have a great fit, feel free to send it my way.
 
 ## At a Glance
 
@@ -29,7 +20,7 @@ I have recently accepted a new position and am not open to new opportunities at 
 * Recently led the modernization of a system that industry analysts called more complex than the moon landing
 * Polyglot developer beyond .NET -- comfortable with Javascript (prefer TypeScript), Ruby, Python, and others
 * 5+ years leading teams of between 5-20 individuals
-* Certified instructor for ScrumAlliance (CSD) and ICAgile (ICP-TST, ICP-ATA) certifications
+* Previously certified instructor for ScrumAlliance (CSD) and ICAgile (ICP-TST, ICP-ATA) certifications
 * Lead of the NUnit Documentation project and avid open-source contributor
 * National speaker
 * A history of substantial impact
@@ -40,7 +31,53 @@ I have recently accepted a new position and am not open to new opportunities at 
 * High-performing, enabled, and engaged teams
 * The growth of leaders within teams and organizations
 * Organizational agility -- a culture of learning, experimentation, and quality
+* Confidence in code via automated testing and great processes
 * DevOps-related expertise (CI/CD pipelines, operational visibility, robust delivery mechanisms)
+
+## Are we a good match?
+
+### Types of Work
+
+I'm likely a fit for the following types of roles or similar:
+
+* **Technical Leadership:** Rallying a team or organization toward an objective and moving things forward is something I'm very partial to. Depending on the organization, this may be a Director, Fellow, Principal, or Technical Manager role (or similar). I am at my best when I'm providing a large impact across teams or an organization and empowering / enabling teams to achieve that impact.
+* **Developer Relations:** I love forming relationships and speaking / blogging / streaming / teaching about technology and development approaches.
+* **Internal / productivity engineering:** I delight in being a force multiplier and enabling my colleagues to do their best. Tooling, CI/CD pipelines and systems, removing blockers, etc. I'd probably do best when combining this with some sort of technical leadership capacity, as I believe everyone should be invested in these things.
+* **Sales Engineering:** I see this as similar to developer relations, in that I love helping potential customers see where they could derive benefit, and I enjoy contributing value to a variety of challenges.
+
+### I'm potentially a great fit if...
+
+(You don't have to check all of these boxes, especially if you'd like me to help move you to that place.)
+
+* :heavy_check_mark: **The position is full-time**. I'm looking to find a place I can grow with and make a substantial impact.
+* :heavy_check_mark: **You work in the Microsoft / .NET space**. I'm comfortable in other arenas but am currently most invested in that ecosystem.
+* :heavy_check_mark: **The position is remote**, particularly if the organization is remote-first. I don't mind being in person, but COVID-10 adjusted my priorities.
+* :heavy_check_mark: **Your organization is looking to embrace agility.**
+* :heavy_check_mark: **You want smaller feedback loops.** I like to move organizations toward streams of value, working iteratively and incrementally to produce it.
+* :heavy_check_mark: **Culture is on the table.** I believe people who work at an organization have (and should have) a hand in shaping culture.
+* :heavy_check_mark: **I can work in public.** I enjoy working transparently in the open. If you happen to build open source software or collaborate in an open format, that's something I'd be interested in. This is part of the appeal of developer relations / sales engineering for me as well.
+* :heavy_check_mark: **I can teach.** Whether it's the general public or my own team, I love learning from others and I love helping to level others up.
+* :heavy_check_mark: **I can create content around my work.** I tend to create content -- tweets, blog posts, demos, streams -- around the work I'm doing. It doesn't have to be part of the day to day, but sharing with the world is very important to me, so it at least shouldn't be frowned upon. (I'd never reveal anything in confidence, etc. of course.)
+* :heavy_check_mark: **You're at least cloud-curious.** The cloud offers a great deal of potential for organizations. If you're not currently using it, it would be great if you're at least open to considering the value it can provide.
+* :heavy_check_mark: **Your organization has policies that care about people.** Flexible / Unlimited / Mandatory PTO, unlimited sick time, an environment of freedom/trust.
+* :heavy_check_mark: **You don't want me to stay "in a lane".** I am someone who loves "honey-combing" to provide value across an organization.
+* :heavy_check_mark: **You want ideas for improvement.** I have been described as an "idea-dense" person. They're not all going to be gold, but receptive organizations will benefit the most from me.
+* :heavy_check_mark: **You believe that technology delivery is a team sport.**
+* :heavy_check_mark: **You care about a culture which very much includes Diversity, Inclusion, and Belonging.** I have no desire to reinforce harmful status quo or toxic systems of inequality.
+
+### I'm potentially not a great fit if...
+
+(It's OK if you check some of these boxes, especially if you want my help in fixing them.)
+
+* :x: **The position is contract / temporary.** I'm only seeking full-time roles where I can invest effort and make an impact.
+* :x: **The work is in consulting (at least not right now).** I have a background in great consulting impact, but am looking to switch things up a bit and bring my full potential and impact to bear on the mission of an organization.
+* :x: **I will be stuck using less-than-ideal equipment, especially if I can't bring my own.** While not a game-changer, this usually signals a lack of investment in engineering culture, as the time loss of underpowered hardware vastly outweighs the cost savings.
+* :x: **You work with non-civilian government.** I want to ensure my personal ethics remain aligned with my work.
+* :x: **You are looking for a super-senior individual contributor.** While I have the technical skills and can certainly do this as needed, I prefer working with and leveling up teams. Technology delivery is a team sport.
+* :x: **You are located < 30 min from Arlington, VA (if not remote).** I am a Dad to a little guy and I'd like to spend more of my time at home instead of commuting.
+* :x: **Your organization uses SAFe or scaled agile approaches.** Honestly? I just don't think they work, and I think they impede organizational agility. I keep an open mind, though, and you're welcome to try to change it.
+* :x: **You don't want to move things forward.** I am continually seeking to move approaches, technology, and organizational culture forward. It's how I'm programmed. I'm a realist -- these things don't happen overnight, and I don't have some grand perfect vision -- but if your organization isn't interested in that, it's probably not a great fit.
+* :x: **You 'do Agile' or think there's one way to be agile.** Agility takes many forms and is a continual pursuit.
 
 ## Clearances
 
@@ -53,24 +90,24 @@ I have recently accepted a new position and am not open to new opportunities at 
 | Category | General run-down [^1] |
 | -------- | ---------- |
 | **Languages** | C#, TypeScript, Javascript, Ruby, Python, Java |
-| **Platforms & Frameworks** | .NET 4.x, .NET Core / .NET 5, ASP.NET, MVC, WebAPI, Akka.NET |
+| **Platforms & Frameworks** | .NET Core / .NET 5, .NET 4.x, ASP.NET, MVC, WebAPI, Akka.NET |
 | **Front-end** | React, Vue, Angular to a lesser extent. Experience with Backbone, Knockout, jQuery |
-| **Build Tools** | GitHub Actions, Azure DevOps, TeamCity, Jenkins, CircleCI, TravisCI, MSBuild |
+| **Build Tools** | GitHub Actions, Azure DevOps, OctopusDeploy, TeamCity, Jenkins, CircleCI, TravisCI, MSBuild |
 | **Databases** | General SQL/NoSQL, SQL Server, Neo4j, CosmosDB, ElasticSearch |
-| **ORMs & Migrations** | EntityFramework, EF Core, Dapper Roundhouse |
-| **Solutions Architecture** | Azure PaaS / SaaS, Serverless, AWS |
-| **DevOps tooling** | ARM, Terraform |
+| **ORMs & Migrations** | Entity Framework, EF Core, Dapper, Roundhouse |
+| **Cloud** | Azure PaaS / SaaS, Serverless |
+| **Infrastructure tooling** | Terraform, ARM, Bicep |
 | **Automated Testing tools** | NUnit, xUnit, SpecFlow, Moq, FluentAssertions, Bogus |
 | **Automated Testing Techniques** | TDD, BDD, Gherkin, AATs |
 | **Other common libraries** | FluentValidation |
 | **Ticketing and workflows** | Jira, Trello, GitHub Projects, Azure DevOps, TFS |
-| **Static Sites** | Jekyll, GitHub Pages, Azure Static Sites, Netlify |
-| **Methodologies and Mindsets** | Scrum, Kanban, Organizational Agility, DevOps, Product mindset |
+| **Static Sites** | Jekyll, GitHub Pages, Azure Static Sites, Netlify, Statiq |
+| **Methodologies and Mindsets** | Agility, Scrum, Kanban, DevOps, Product mindset |
 | **Leadership** | Transformational leadership, leader/leader model |
 
 [^1]: This is not an exhaustive list.
 
-## Feedback from my 2020 performance appraisal
+## Feedback from Prior Performance Appraisals
 
 Highlights from what my peers recently said about me, anonymously. I am incredibly proud of this feedback, and feel it represents what I can bring to an organization.
 
