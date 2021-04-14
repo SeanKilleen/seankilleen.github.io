@@ -11,7 +11,21 @@ Do you want to know if I'd be a good fit for your organization, or would you lik
 
 ## My Current Status
 
-I have recently accepted a new position and am not open to new opportunities at this time.
+I am passively open to new opportunities as a way of keeping an open mind. If you think you have a great fit, feel free to send it my way.
+
+## Are we a good match?
+
+### I'm a great fit if...
+
+* :heavy_check_mark: The position is full-time
+* :heavy_check_mark: The position is full-time
+* :heavy_check_mark: The position is full-time
+
+### I'm not a great fit if...
+
+* :x: The position is contract / temporary
+* :x: The position is contract / temporary
+* :x: The position is contract / temporary
 
 ## What I'm Open To
 
