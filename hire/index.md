@@ -13,16 +13,58 @@ Do you want to know if I'd be a good fit for your organization, or would you lik
 
 I am passively open to new opportunities as a way of keeping an open mind. If you think you have a great fit, feel free to send it my way.
 
+## At a Glance
+
+* Microsoft MVP in Developer Technologies (~150 in this category in the US)
+* 15+ years developing software in the .NET ecosystem
+* Recently led the modernization of a system that industry analysts called more complex than the moon landing
+* Polyglot developer beyond .NET -- comfortable with Javascript (prefer TypeScript), Ruby, Python, and others
+* 5+ years leading teams of between 5-20 individuals
+* Previously certified instructor for ScrumAlliance (CSD) and ICAgile (ICP-TST, ICP-ATA) certifications
+* Lead of the NUnit Documentation project and avid open-source contributor
+* National speaker
+* A history of substantial impact
+
+## Outcomes I Provide
+
+* In-depth expertise and delivery across the .NET / Microsoft ecosystem
+* High-performing, enabled, and engaged teams
+* The growth of leaders within teams and organizations
+* Organizational agility -- a culture of learning, experimentation, and quality
+* DevOps-related expertise (CI/CD pipelines, operational visibility, robust delivery mechanisms)
+
 ## Are we a good match?
 
-### I'm a great fit if...
+### Types of Work
 
-* :heavy_check_mark: The position is full-time
-* :heavy_check_mark: The position is full-time
-* :heavy_check_mark: The position is full-time
+I'm likely a fit for the following sort of roles:
 
-### I'm not a great fit if...
+* **Developer Relations:**
+* **Technical Leadership**
+* **Internal / productivity engineering:**
+* **Sales Engineering:**
 
+### I'm potentially a great fit if...
+
+(You don't have to check all of these boxes.)
+
+* :heavy_check_mark: **The position is full-time**. I'm looking to find a place I can grow with and make a substantial impact.
+* :heavy_check_mark: **You work in the Microsoft / .NET space**. I'm comfortable in other arenas but am currently most invested in that ecosystem.
+* :heavy_check_mark: **The position is remote**, particularly if the organization is remote-first. I don't mind being in person, but COVID-10 adjusted my priorities.
+* :heavy_check_mark: **Your organization is looking to embrace agility.**
+* :heavy_check_mark: **You want smaller feedback loops.**
+* :heavy_check_mark: **Culture is on the table.**
+* :heavy_check_mark: **I can work in public.**
+* :heavy_check_mark: **I can teach.**
+* :heavy_check_mark: **I can create content around my work.**
+
+### I'm potentially not a great fit if...
+
+(It's OK if you check some of these boxes.)
+
+* :x: The position is contract / temporary.
+* :x: The work is in consulting (at least not right now). I have a background in consulting but am looking to switch things up a bit and bring my full potential and impact to bear on the mission of an organization.
+* :x: The position is contract / temporary
 * :x: The position is contract / temporary
 * :x: The position is contract / temporary
 * :x: The position is contract / temporary
@@ -67,24 +109,24 @@ I am passively open to new opportunities as a way of keeping an open mind. If yo
 | Category | General run-down [^1] |
 | -------- | ---------- |
 | **Languages** | C#, TypeScript, Javascript, Ruby, Python, Java |
-| **Platforms & Frameworks** | .NET 4.x, .NET Core / .NET 5, ASP.NET, MVC, WebAPI, Akka.NET |
+| **Platforms & Frameworks** | .NET Core / .NET 5, .NET 4.x, ASP.NET, MVC, WebAPI, Akka.NET |
 | **Front-end** | React, Vue, Angular to a lesser extent. Experience with Backbone, Knockout, jQuery |
-| **Build Tools** | GitHub Actions, Azure DevOps, TeamCity, Jenkins, CircleCI, TravisCI, MSBuild |
+| **Build Tools** | GitHub Actions, Azure DevOps, OctopusDeploy, TeamCity, Jenkins, CircleCI, TravisCI, MSBuild |
 | **Databases** | General SQL/NoSQL, SQL Server, Neo4j, CosmosDB, ElasticSearch |
-| **ORMs & Migrations** | EntityFramework, EF Core, Dapper Roundhouse |
-| **Solutions Architecture** | Azure PaaS / SaaS, Serverless, AWS |
-| **DevOps tooling** | ARM, Terraform |
+| **ORMs & Migrations** | Entity Framework, EF Core, Dapper, Roundhouse |
+| **Cloud** | Azure PaaS / SaaS, Serverless |
+| **Infrastructure tooling** | Terraform, ARM, Bicep |
 | **Automated Testing tools** | NUnit, xUnit, SpecFlow, Moq, FluentAssertions, Bogus |
 | **Automated Testing Techniques** | TDD, BDD, Gherkin, AATs |
 | **Other common libraries** | FluentValidation |
 | **Ticketing and workflows** | Jira, Trello, GitHub Projects, Azure DevOps, TFS |
-| **Static Sites** | Jekyll, GitHub Pages, Azure Static Sites, Netlify |
-| **Methodologies and Mindsets** | Scrum, Kanban, Organizational Agility, DevOps, Product mindset |
+| **Static Sites** | Jekyll, GitHub Pages, Azure Static Sites, Netlify, Statiq |
+| **Methodologies and Mindsets** | Agility, Scrum, Kanban, DevOps, Product mindset |
 | **Leadership** | Transformational leadership, leader/leader model |
 
 [^1]: This is not an exhaustive list.
 
-## Feedback from my 2020 performance appraisal
+## Feedback from my Prior performance appraisals
 
 Highlights from what my peers recently said about me, anonymously. I am incredibly proud of this feedback, and feel it represents what I can bring to an organization.
 
