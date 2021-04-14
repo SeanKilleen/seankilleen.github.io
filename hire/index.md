@@ -61,6 +61,7 @@ I'm likely a fit for the following types of roles or similar:
 * :heavy_check_mark: **You don't want me to stay "in a lane".** I am someone who loves "honey-combing" to provide value across an organization.
 * :heavy_check_mark: **You want ideas for improvement.** I have been described as an "idea-dense" person. They're not all going to be gold, but receptive organizations will benefit the most from me.
 * :heavy_check_mark: **You believe that technology delivery is a team sport.**
+* :heavy_check_mark: **You care about a culture which very much includes Diversity, Inclusion, and Belonging.** I have no desire to reinforce harmful status quo or toxic systems of inequality. 
 
 ### I'm potentially not a great fit if...
 
