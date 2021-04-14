@@ -69,11 +69,11 @@ I'm likely a fit for the following types of roles or similar:
 * :x: **The position is contract / temporary.** I'm only seeking full-time roles where I can invest effort and make an impact.
 * :x: **The work is in consulting (at least not right now).** I have a background in great consulting impact, but am looking to switch things up a bit and bring my full potential and impact to bear on the mission of an organization.
 * :x: **I will be stuck using less-than-ideal equipment, especially if I can't bring my own.** While not a game-changer, this usually signals a lack of investment in engineering culture, as the time loss of underpowered hardware vastly outweighs the cost savings.
-* :x: **You work with non-civilian government.** I have some hang-ups about supporting certain organizations and I want to keep my personal ethics aligned with my work.
+* :x: **You work with non-civilian government.** I want to ensure my personal ethics remain aligned with my work.
 * :x: **You are looking for a super-senior individual contributor.** While I have the technical skills and can certainly do this as needed, I prefer working with and leveling up teams. Technology delivery is a team sport.
 * :x: **You are located < 30 min from Arlington, VA (if not remote).** I am a Dad to a little guy and I'd like to spend more of my time at home instead of commuting.
 * :x: **Your organization uses SAFe or scaled agile approaches.** Honestly? I just don't they work, and I think they impede organizational agility. I keep an open mind, though, and you're welcome to try to change it.
-* :x: **You don't want to move forward.** I am continually seeking to move approaches, technology, and organizational culture forward. It's how I'm programmed. I'm a realist -- these things don't happen overnight, and I don't have some grand perfect vision -- but if your organization isn't interested in that, it's probably not a great fit.
+* :x: **You don't want to move things forward.** I am continually seeking to move approaches, technology, and organizational culture forward. It's how I'm programmed. I'm a realist -- these things don't happen overnight, and I don't have some grand perfect vision -- but if your organization isn't interested in that, it's probably not a great fit.
 
 ## Clearances
 
