@@ -52,11 +52,12 @@ I'm likely a fit for the following types of roles or similar:
 * :heavy_check_mark: **You work in the Microsoft / .NET space**. I'm comfortable in other arenas but am currently most invested in that ecosystem.
 * :heavy_check_mark: **The position is remote**, particularly if the organization is remote-first. I don't mind being in person, but COVID-10 adjusted my priorities.
 * :heavy_check_mark: **Your organization is looking to embrace agility.**
-* :heavy_check_mark: **You want smaller feedback loops.**
-* :heavy_check_mark: **Culture is on the table.**
+* :heavy_check_mark: **You want smaller feedback loops.** I like to move organizations toward streams of value and eliminate 
+* :heavy_check_mark: **Culture is on the table.** I believe people who work at an organization have (and should have) a hand in shaping culture.
 * :heavy_check_mark: **I can work in public.**
 * :heavy_check_mark: **I can teach.**
-* :heavy_check_mark: **I can create content around my work.**
+* :heavy_check_mark: **I can create content around my work.** I tend to create content -- tweets, blog posts, demos, streams -- around the work I'm doing. It doesn't have to be part of the day to day, but sharing with the world is very important to me, so it at least shouldn't be frowned upon. (I'd never reveal anything in confidence, etc. of course.)
+* :heavy_check_mark: **You're at least cloud-curious.** The cloud offers a great deal of potential for organizations. If you're not currently using it, it would be great if you're at least open to considering the value it can provide.
 * :heavy_check_mark: **Your organization has policies that care about people.** Flexible / Unlimited / Mandatory PTO, unlimited sick time, an environment of freedom/trust.
 * :heavy_check_mark: **You don't want me to stay "in a lane".** I am someone who loves "honey-combing" to provide value across an organization.
 * :heavy_check_mark: **You want ideas for improvement.** I have been described as an "idea-dense" person. They're not all going to be gold, but receptive organizations will benefit the most from me.
@@ -75,6 +76,7 @@ I'm likely a fit for the following types of roles or similar:
 * :x: **You are located < 30 min from Arlington, VA (if not remote).** I am a Dad to a little guy and I'd like to spend more of my time at home instead of commuting.
 * :x: **Your organization uses SAFe or scaled agile approaches.** Honestly? I just don't they work, and I think they impede organizational agility. I keep an open mind, though, and you're welcome to try to change it.
 * :x: **You don't want to move things forward.** I am continually seeking to move approaches, technology, and organizational culture forward. It's how I'm programmed. I'm a realist -- these things don't happen overnight, and I don't have some grand perfect vision -- but if your organization isn't interested in that, it's probably not a great fit.
+* :x: **You 'do Agile' or think there's one way to be agile.** Agility takes many forms and is a continual pursuit.
 
 ## Clearances
 
