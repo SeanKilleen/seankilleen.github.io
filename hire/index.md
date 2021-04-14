@@ -55,8 +55,8 @@ I'm likely a fit for the following types of roles or similar:
 * :heavy_check_mark: **Your organization is looking to embrace agility.**
 * :heavy_check_mark: **You want smaller feedback loops.** I like to move organizations toward streams of value and eliminate 
 * :heavy_check_mark: **Culture is on the table.** I believe people who work at an organization have (and should have) a hand in shaping culture.
-* :heavy_check_mark: **I can work in public.**
-* :heavy_check_mark: **I can teach.**
+* :heavy_check_mark: **I can work in public.** I enjoy working transparently in the open. If you happen to build open source software or collaborate in an open format, that's something I'd be interested in. This is part of the appeal of developer relations / sales engineering for me as well.
+* :heavy_check_mark: **I can teach.** Whether it's the general public or my own team, I love learning from others and I love helping to level others up.
 * :heavy_check_mark: **I can create content around my work.** I tend to create content -- tweets, blog posts, demos, streams -- around the work I'm doing. It doesn't have to be part of the day to day, but sharing with the world is very important to me, so it at least shouldn't be frowned upon. (I'd never reveal anything in confidence, etc. of course.)
 * :heavy_check_mark: **You're at least cloud-curious.** The cloud offers a great deal of potential for organizations. If you're not currently using it, it would be great if you're at least open to considering the value it can provide.
 * :heavy_check_mark: **Your organization has policies that care about people.** Flexible / Unlimited / Mandatory PTO, unlimited sick time, an environment of freedom/trust.
