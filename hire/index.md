@@ -40,7 +40,7 @@ I am passively open to new opportunities as a way of keeping an open mind. If yo
 
 I'm likely a fit for the following types of roles or similar:
 
-* **Technical Leadership:** Rallying a team or organization toward an objective and moving things forward is something I'm very partial to. Depending on the organization, this may be a Director, Fellow, Principal, or Technical Manager role (or similar). I am at my best when I'm providing a large impact across teams or an organization and empowering / enabling teams to achieve that impact.
+* **Technical Leadership:** Rallying a team or organization toward an objective and moving things forward is something that's in my veins. Depending on the organization, this may be a Director, Fellow, Principal, or Technical Manager role (or similar). I am at my best when I'm providing a large impact across teams or an organization and empowering / enabling teams to achieve that impact.
 * **Developer Relations:** I love forming relationships and speaking / blogging / streaming / teaching about technology and development approaches.
 * **Internal / productivity engineering:** I delight in being a force multiplier and enabling my colleagues to do their best. Tooling, CI/CD pipelines and systems, removing blockers, etc. I'd probably do best when combining this with some sort of technical leadership capacity, as I believe everyone should be invested in these things.
 * **Sales Engineering:** I see this as similar to developer relations, in that I love helping potential customers see where they could derive benefit, and I enjoy contributing value to a variety of challenges.
@@ -51,7 +51,7 @@ I'm likely a fit for the following types of roles or similar:
 
 * :heavy_check_mark: **The position is full-time**. I'm looking to find a place I can grow with and make a substantial impact.
 * :heavy_check_mark: **You work in the Microsoft / .NET space**. I'm comfortable in other arenas but am currently most invested in that ecosystem.
-* :heavy_check_mark: **The position is remote**, particularly if the organization is remote-first. I don't mind being in person, but COVID-10 adjusted my priorities.
+* :heavy_check_mark: **The position is remote**, particularly if the organization is remote-first. I don't mind being in person, but COVID-19 adjusted my priorities.
 * :heavy_check_mark: **Your organization is looking to embrace agility.**
 * :heavy_check_mark: **You want smaller feedback loops.** I like to move organizations toward streams of value, working iteratively and incrementally to produce it.
 * :heavy_check_mark: **Culture is on the table.** I believe people who work at an organization have (and should have) a hand in shaping culture.
