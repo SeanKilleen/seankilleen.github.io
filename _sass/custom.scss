@@ -1,7 +1,10 @@
 // Custom overrides
 
-article.page {
-    padding-right: 100px;
+
+@media only screen and (min-width: 600px) { 
+    article.page {
+        padding-right: 100px;
+    }
 }
 
 // accessibility improvements suggested by pa11y
