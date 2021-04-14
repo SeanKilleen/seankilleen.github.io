@@ -39,9 +39,9 @@ I am passively open to new opportunities as a way of keeping an open mind. If yo
 
 I'm likely a fit for the following types of roles or similar:
 
-* **Developer Relations:** I love forming relationships and speaking / blogging / streaming / teaching about technology.
 * **Technical Leadership:** Rallying a team or organization toward an objective and moving things forward is something I'm very partial to. Depending on the organization, this may be a Director, Fellow, Principal, or Technical Manager role (or similar). I am at my best when I'm providing a large impact across teams or an organization and empowering / enabling teams to achieve that impact.
-* **Internal / productivity engineering:** I delight in being a force multiplier and enabling my colleagues to do their best. Tooling, CI/CD pipelines and systems, removing blockers, etc.
+* **Developer Relations:** I love forming relationships and speaking / blogging / streaming / teaching about technology and development approaches.
+* **Internal / productivity engineering:** I delight in being a force multiplier and enabling my colleagues to do their best. Tooling, CI/CD pipelines and systems, removing blockers, etc. I'd probably do best when combining this with some sort of technical leadership capacity, as I believe everyone should be invested in these things.
 * **Sales Engineering:** I see this as similar to developer relations, in that I love helping potential customers see where they could derive benefit, and I enjoy contributing value to a variety of challenges.
 
 ### I'm potentially a great fit if...
@@ -71,7 +71,9 @@ I'm likely a fit for the following types of roles or similar:
 * :x: **I will be stuck using less-than-ideal equipment, especially if I can't bring my own.** While not a game-changer, this usually signals a lack of investment in engineering culture, as the time loss of underpowered hardware vastly outweighs the cost savings.
 * :x: **You work with non-civilian government.** I have some hang-ups about supporting certain organizations and I want to keep my personal ethics aligned with my work.
 * :x: **You are looking for a super-senior individual contributor.** While I have the technical skills and can certainly do this as needed, I prefer working with and leveling up teams. Technology delivery is a team sport.
-* :x: **You are located < 30 min from Arlington, VA (if not remote).** 
+* :x: **You are located < 30 min from Arlington, VA (if not remote).** I am a Dad to a little guy and I'd like to spend more of my time at home instead of commuting.
+* :x: **Your organization uses SAFe or scaled agile approaches.** Honestly? I just don't they work, and I think they impede organizational agility. I keep an open mind, though, and you're welcome to try to change it.
+* :x: **You don't want to move forward.** I am continually seeking to move approaches, technology, and organizational culture forward. It's how I'm programmed. I'm a realist -- these things don't happen overnight, and I don't have some grand perfect vision -- but if your organization isn't interested in that, it's probably not a great fit.
 
 ## Clearances
 
