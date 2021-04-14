@@ -199,7 +199,9 @@
         "Centos",
         "SpecFlow",
         "HDDs",
-        "PCIE"
+        "PCIE",
+        "COVID",
+        "Statiq"
     ],
     "ignoreWords": [
         "seankilleen",
