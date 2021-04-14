@@ -53,7 +53,7 @@ I'm likely a fit for the following types of roles or similar:
 * :heavy_check_mark: **You work in the Microsoft / .NET space**. I'm comfortable in other arenas but am currently most invested in that ecosystem.
 * :heavy_check_mark: **The position is remote**, particularly if the organization is remote-first. I don't mind being in person, but COVID-10 adjusted my priorities.
 * :heavy_check_mark: **Your organization is looking to embrace agility.**
-* :heavy_check_mark: **You want smaller feedback loops.** I like to move organizations toward streams of value and eliminate 
+* :heavy_check_mark: **You want smaller feedback loops.** I like to move organizations toward streams of value, working iteratively and incrementally to produce it.
 * :heavy_check_mark: **Culture is on the table.** I believe people who work at an organization have (and should have) a hand in shaping culture.
 * :heavy_check_mark: **I can work in public.** I enjoy working transparently in the open. If you happen to build open source software or collaborate in an open format, that's something I'd be interested in. This is part of the appeal of developer relations / sales engineering for me as well.
 * :heavy_check_mark: **I can teach.** Whether it's the general public or my own team, I love learning from others and I love helping to level others up.
@@ -63,7 +63,7 @@ I'm likely a fit for the following types of roles or similar:
 * :heavy_check_mark: **You don't want me to stay "in a lane".** I am someone who loves "honey-combing" to provide value across an organization.
 * :heavy_check_mark: **You want ideas for improvement.** I have been described as an "idea-dense" person. They're not all going to be gold, but receptive organizations will benefit the most from me.
 * :heavy_check_mark: **You believe that technology delivery is a team sport.**
-* :heavy_check_mark: **You care about a culture which very much includes Diversity, Inclusion, and Belonging.** I have no desire to reinforce harmful status quo or toxic systems of inequality. 
+* :heavy_check_mark: **You care about a culture which very much includes Diversity, Inclusion, and Belonging.** I have no desire to reinforce harmful status quo or toxic systems of inequality.
 
 ### I'm potentially not a great fit if...
 
