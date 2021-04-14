@@ -31,6 +31,7 @@ I am passively open to new opportunities as a way of keeping an open mind. If yo
 * High-performing, enabled, and engaged teams
 * The growth of leaders within teams and organizations
 * Organizational agility -- a culture of learning, experimentation, and quality
+* Confidence in code via automated testing and great processes
 * DevOps-related expertise (CI/CD pipelines, operational visibility, robust delivery mechanisms)
 
 ## Are we a good match?
