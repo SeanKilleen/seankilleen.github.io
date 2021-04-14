@@ -37,16 +37,16 @@ I am passively open to new opportunities as a way of keeping an open mind. If yo
 
 ### Types of Work
 
-I'm likely a fit for the following sort of roles:
+I'm likely a fit for the following types of roles or similar:
 
-* **Developer Relations:**
-* **Technical Leadership**
-* **Internal / productivity engineering:**
-* **Sales Engineering:**
+* **Developer Relations:** I love forming relationships and speaking / blogging / streaming / teaching about technology.
+* **Technical Leadership:** Rallying a team or organization toward an objective and moving things forward is something I'm very partial to. Depending on the organization, this may be a Director, Fellow, Principal, or Technical Manager role (or similar). I am at my best when I'm providing a large impact across teams or an organization and empowering / enabling teams to achieve that impact.
+* **Internal / productivity engineering:** I delight in being a force multiplier and enabling my colleagues to do their best. Tooling, CI/CD pipelines and systems, removing blockers, etc.
+* **Sales Engineering:** I see this as similar to developer relations, in that I love helping potential customers see where they could derive benefit, and I enjoy contributing value to a variety of challenges.
 
 ### I'm potentially a great fit if...
 
-(You don't have to check all of these boxes.)
+(You don't have to check all of these boxes, especially if you'd like me to help move you to that place.)
 
 * :heavy_check_mark: **The position is full-time**. I'm looking to find a place I can grow with and make a substantial impact.
 * :heavy_check_mark: **You work in the Microsoft / .NET space**. I'm comfortable in other arenas but am currently most invested in that ecosystem.
@@ -57,17 +57,21 @@ I'm likely a fit for the following sort of roles:
 * :heavy_check_mark: **I can work in public.**
 * :heavy_check_mark: **I can teach.**
 * :heavy_check_mark: **I can create content around my work.**
+* :heavy_check_mark: **Your organization has policies that care about people.** Flexible / Unlimited / Mandatory PTO, unlimited sick time, an environment of freedom/trust.
+* :heavy_check_mark: **You don't want me to stay "in a lane".** I am someone who loves "honey-combing" to provide value across an organization.
+* :heavy_check_mark: **You want ideas for improvement.** I have been described as an "idea-dense" person. They're not all going to be gold, but receptive organizations will benefit the most from me.
+* :heavy_check_mark: **You believe that technology delivery is a team sport.**
 
 ### I'm potentially not a great fit if...
 
-(It's OK if you check some of these boxes.)
+(It's OK if you check some of these boxes, especially if you want my help in fixing them.)
 
-* :x: The position is contract / temporary.
-* :x: The work is in consulting (at least not right now). I have a background in consulting but am looking to switch things up a bit and bring my full potential and impact to bear on the mission of an organization.
-* :x: The position is contract / temporary
-* :x: The position is contract / temporary
-* :x: The position is contract / temporary
-* :x: The position is contract / temporary
+* :x: **The position is contract / temporary.** I'm only seeking full-time roles where I can invest effort and make an impact.
+* :x: **The work is in consulting (at least not right now).** I have a background in great consulting impact, but am looking to switch things up a bit and bring my full potential and impact to bear on the mission of an organization.
+* :x: **I will be stuck using less-than-ideal equipment, especially if I can't bring my own.** While not a game-changer, this usually signals a lack of investment in engineering culture, as the time loss of underpowered hardware vastly outweighs the cost savings.
+* :x: **You work with non-civilian government.** I have some hang-ups about supporting certain organizations and I want to keep my personal ethics aligned with my work.
+* :x: **You are looking for a super-senior individual contributor.** While I have the technical skills and can certainly do this as needed, I prefer working with and leveling up teams. Technology delivery is a team sport.
+* :x: **You are located < 30 min from Arlington, VA (if not remote).** 
 
 ## What I'm Open To
 
@@ -126,7 +130,7 @@ I'm likely a fit for the following sort of roles:
 
 [^1]: This is not an exhaustive list.
 
-## Feedback from my Prior performance appraisals
+## Feedback from Prior Performance Appraisals
 
 Highlights from what my peers recently said about me, anonymously. I am incredibly proud of this feedback, and feel it represents what I can bring to an organization.
 
