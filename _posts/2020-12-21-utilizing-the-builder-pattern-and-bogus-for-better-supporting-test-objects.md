@@ -1,6 +1,6 @@
 ---
 title: Utilizing Bogus with the Builder Pattern for better Mocks
-comments: true
+comments: false
 tags:
   - builder pattern
   - tests
