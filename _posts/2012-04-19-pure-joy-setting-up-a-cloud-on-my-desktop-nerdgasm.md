@@ -2,7 +2,7 @@
  
 title: 'Pure Joy: Setting up a cloud on my desktop [Nerdgasm]'
 date: 2012-04-19 22:25:00.000000000 -04:00
-comments: true
+comments: false
 
 ---
 I am currently running the following setup on my beast of a desktop:

@@ -4,7 +4,7 @@ excerpt: "Using Visual 2012 and IIS Express, when building an MVC4 Intranet proj
 title: 'How To: Stop "Access Denied" errors in MVC Intranet Applications VS 2012/IIS
   Express [Field Notes]'
 date: 2012-12-10 17:00:00.000000000 -05:00
-comments: true
+comments: false
 
 redirect_from:
  - /2012/12/how-to-stop-access-denied-errors-in-mvc.html

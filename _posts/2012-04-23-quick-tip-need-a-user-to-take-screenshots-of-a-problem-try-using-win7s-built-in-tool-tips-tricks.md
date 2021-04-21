@@ -2,7 +2,7 @@
  
 title: "Quick Tip: Need a User to Take Screenshots of a Problem? Try Using Win7's Built-in Tool [Tips and Tricks]"
 date: 2012-04-23 14:11:00.000000000 -04:00
-comments: true
+comments: false
 
 ---
 I can't believe I hadn't heard of this before. There’s a neat tool that ships with Windows 7 called the “Problem Steps Recorder” tool (psr.exe)
