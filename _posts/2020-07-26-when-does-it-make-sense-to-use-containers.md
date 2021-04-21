@@ -1,6 +1,6 @@
 ---
 title: When does it make sense to use containers in a development workflow?
-comments: true
+comments: false
 tags:
   - opinion
   - containers

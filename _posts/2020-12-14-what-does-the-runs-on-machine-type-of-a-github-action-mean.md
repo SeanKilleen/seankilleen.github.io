@@ -1,6 +1,6 @@
 ---
 title: What does the "runs-on" machine type of a GitHub Action mean?
-comments: true
+comments: false
 tags:
   - docker
   - github actions

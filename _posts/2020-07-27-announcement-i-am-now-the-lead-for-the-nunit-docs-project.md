@@ -1,6 +1,6 @@
 ---
 title: "Announcement: I am Now the Lead for the NUnit Docs Project!"
-comments: true
+comments: false
 tags:
   - nunit
   - testing
