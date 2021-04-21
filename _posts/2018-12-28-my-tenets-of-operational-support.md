@@ -3,7 +3,7 @@ title: "My Tenets of Operational Support"
  
 date: 2018-12-28 22:00:00.000000000 -05:00
 
-comments: true
+comments: false
 ---
 
 I had this drafted for a while as notes I'd sent to a colleague, and I figured I would write it up here.
