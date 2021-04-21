@@ -2,7 +2,7 @@
  
 title: 'Mr. Rogers: Can you say hero?'
 date: 2013-03-16 13:08:00.000000000 -04:00
-comments: true
+comments: false
 redirect_from: 
  - /2013/03/mr-rogers-can-you-say-hero.html
 ---
