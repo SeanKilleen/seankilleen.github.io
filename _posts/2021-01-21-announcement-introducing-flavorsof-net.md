@@ -1,6 +1,6 @@
 ---
 title: "Announcement: Introducing FlavorsOf.NET!"
-comments: true
+comments: false
 tags:
   - launch
   - dotnet
