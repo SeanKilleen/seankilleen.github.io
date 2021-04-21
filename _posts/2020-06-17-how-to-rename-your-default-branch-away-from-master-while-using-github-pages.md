@@ -1,6 +1,6 @@
 ---
 title: How to rename your default branch away from master while using GitHub pages
-comments: true
+comments: false
 tags:
   - github
   - branches

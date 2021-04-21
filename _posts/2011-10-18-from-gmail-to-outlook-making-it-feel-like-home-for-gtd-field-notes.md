@@ -2,7 +2,7 @@
  
 title: 'From GMail to Outlook: Making it Feel Like Home for GTD [Field Notes]'
 date: 2011-10-18 13:27:00.000000000 -04:00
-comments: true
+comments: false
 references: 
  - title: "Add A Gmail-like Archive Button to Microsoft Outlook"
    url: http://lifehacker.com/5175347/add-a-gmail+like-archive-button-to-microsoft-outlook

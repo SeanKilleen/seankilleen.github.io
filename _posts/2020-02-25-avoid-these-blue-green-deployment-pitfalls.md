@@ -1,6 +1,6 @@
 ---
 title: 'Avoid the Blue/Green Deployment Blues: Watch out for these 10 Pitfalls'
-comments: true
+comments: false
 tags:
   - ci
   - cd

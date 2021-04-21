@@ -3,7 +3,7 @@
 title: 'Building a Build Process, Part 6b: MSBuild Integration With Cassini and Visual
   Studio'
 date: 2012-05-02 22:39:00.000000000 -04:00
-comments: true
+comments: false
 series: building-a-build-process
 redirect_from: 
  - /2012/05/building-build-process-part-6b-msbuild.html

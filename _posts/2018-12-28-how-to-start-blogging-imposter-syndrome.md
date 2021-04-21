@@ -3,7 +3,7 @@ title: "How to Start Blogging When Faced with Imposter Syndrome"
  
 date: 2018-12-28 22:3c0:00.000000000 -05:00
 
-comments: true
+comments: false
 ---
 
 I had this drafted for a while as notes I'd sent to someone who is faced with imposter syndrome and not sure they have something to add, and I figured I would write it up here rather than stashing it in my drafts.

@@ -1,6 +1,6 @@
 ---
 title: Cool things I learned about NUnit while re-launching the docs
-comments: true
+comments: false
 tags:
   - nunit
   - docs

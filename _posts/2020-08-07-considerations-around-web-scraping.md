@@ -1,6 +1,6 @@
 ---
 title: "Random Thoughts: Considerations Around Web Scraping"
-comments: true
+comments: false
 tags:
   - web scraping
   - ethics

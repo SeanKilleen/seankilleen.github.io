@@ -2,7 +2,7 @@
 title: 'ReSharper tip: Locate Open File in Solution'
  
 date: 2015-01-22 12:34:00.000000000 -05:00
-comments: true
+comments: false
 ---
 ## Problem:
 

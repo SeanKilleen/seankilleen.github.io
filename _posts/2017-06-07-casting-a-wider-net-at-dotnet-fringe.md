@@ -18,7 +18,7 @@ references:
    parenturl: http://github.com
 
 
-comments: true
+comments: false
 ---
 I'm very excited to release a talk that has been percolating in my head for a bit. I'm grateful for the opportunity to share this with the world via the [.NET Fringe Conference](http://dotnetfringe.org) earlier this week.
 

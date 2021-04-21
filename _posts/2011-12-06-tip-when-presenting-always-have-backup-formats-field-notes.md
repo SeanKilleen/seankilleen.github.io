@@ -2,7 +2,7 @@
  
 title: 'Tip: When presenting, ALWAYS have backup formats [Field Notes]'
 date: 2011-12-06 11:15:00.000000000 -05:00
-comments: true
+comments: false
 
 ---
 A brief anecdote:

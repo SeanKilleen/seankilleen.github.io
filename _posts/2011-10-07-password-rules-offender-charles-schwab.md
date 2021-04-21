@@ -2,7 +2,7 @@
  
 title: 'Password Rules Offender: Charles Schwab'
 date: 2011-10-07 12:24:00.000000000 -04:00
-comments: true
+comments: false
 redirect_from: 
  - /2011/10/password-rules-offender-charles-schwab.html
 references: 

@@ -1,6 +1,6 @@
 ---
 title: 'From the AMA: "How do you find/make time to stay productive?"'
-comments: true
+comments: false
 tags:
   - ama
   - balance

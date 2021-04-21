@@ -1,6 +1,6 @@
 ---
 title: "Quick Tip: A Keyboard Shortcut to Start a Taskbar App as an Administrator"
-comments: true
+comments: false
 tags:
   - shells
   - powershell

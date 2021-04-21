@@ -3,7 +3,7 @@ title: "2018: Year in Review"
  
 date: 2018-12-27 10:00:00.000000000 -05:00
 
-comments: true
+comments: false
 ---
 
 I liked doing this recap last year, so I figured I'd make it a tradition. :) 2018, like most years, held a lot, so I'm trying to jot some of it down here.

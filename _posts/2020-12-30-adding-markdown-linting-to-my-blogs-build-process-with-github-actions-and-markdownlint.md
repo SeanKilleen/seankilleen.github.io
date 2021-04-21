@@ -1,6 +1,6 @@
 ---
 title: Adding Markdown Linting to my Blog's Build Process with GitHub Actions and markdownlint
-comments: true
+comments: false
 tags:
   - github
   - github actions

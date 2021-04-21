@@ -2,7 +2,7 @@
  
 title: 'SQL Tricks: The Not-Equals Join [Field Notes]'
 date: 2012-02-07 11:32:00.000000000 -05:00
-comments: true
+comments: false
 
 ---
 ### The Problem

@@ -1,6 +1,6 @@
 ---
 title: 'Agile Survival Guide: Retrospective Safety'
-comments: true
+comments: false
 tags:
   - agile-survival-guide
   - agile

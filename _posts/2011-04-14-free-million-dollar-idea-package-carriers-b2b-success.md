@@ -2,7 +2,7 @@
  
 title: 'Free Million Dollar Idea: Package Carriers + B2B = Success'
 date: 2011-04-14 07:00:00.000000000 -04:00
-comments: true
+comments: false
 
 ---
 I'll try to keep this post brief or see if I can sketch it out in bullet-points.
