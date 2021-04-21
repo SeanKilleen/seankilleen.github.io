@@ -2,7 +2,7 @@
 title: >-
   Help Me Help You: How your RFPs are setting you up for failure before you
   begin
-comments: true
+comments: false
 tags:
   - rfps
   - consulting
