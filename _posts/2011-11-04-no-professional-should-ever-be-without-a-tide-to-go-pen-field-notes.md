@@ -2,7 +2,7 @@
  
 title: No Professional Should Ever Be Without a Tide To Go Pen [Field Notes]
 date: 2011-11-04 08:27:00.000000000 -04:00
-comments: true
+comments: false
 
 ---
 Dressed up nicely today for a big meeting with the head of our division at work.

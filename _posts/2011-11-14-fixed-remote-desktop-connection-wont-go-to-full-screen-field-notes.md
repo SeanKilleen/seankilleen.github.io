@@ -2,7 +2,7 @@
  
 title: 'Fixed: Remote Desktop Connection Won''t go to Full Screen [Field Notes]'
 date: 2011-11-14 22:26:00.000000000 -05:00
-comments: true
+comments: false
 redirect_from: 
  - /2011/11/fixed-remote-desktop-connection-wont-go.html
 ---

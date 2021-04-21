@@ -2,7 +2,7 @@
  
 title: 'Plaintext password offender: Yankodesign.com'
 date: 2011-12-21 07:52:00.000000000 -05:00
-comments: true
+comments: false
 
 ---
 I recently created an account at Yanko Design (they have some neat stuff I wanted to further explore).
