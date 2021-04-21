@@ -11,7 +11,7 @@ references:
    parenttitle: "Insights | Excella Consulting"
    parenturl: https://www.excella.com/insights
  
-comments: true
+comments: false
 ---
 In a few days, I’ll be lucky enough to attend the [dotNetFringe conference](http://dotNetFringe.org) in Portland, OR. While there are about a million reasons I’m excited about the conference, I’m going to do my best to keep it to 5 reasons as I explain why.
 
