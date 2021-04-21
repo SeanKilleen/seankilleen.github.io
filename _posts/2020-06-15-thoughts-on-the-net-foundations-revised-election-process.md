@@ -1,6 +1,6 @@
 ---
 title: Thoughts on the .NET Foundation's Revised Election Process
-comments: true
+comments: false
 tags:
   - dotnet
   - dotnet foundation

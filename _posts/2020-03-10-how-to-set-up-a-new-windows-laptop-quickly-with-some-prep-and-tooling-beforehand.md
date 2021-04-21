@@ -2,7 +2,7 @@
 title: >-
   How to: Set up a new Windows laptop quickly (with some prep and tooling
   beforehand)
-comments: true
+comments: false
 tags:
   - setup
   - machine setup
