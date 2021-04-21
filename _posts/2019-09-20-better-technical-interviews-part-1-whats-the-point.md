@@ -1,6 +1,6 @@
 ---
 title: 'Better Technical Interviews: Part 1 -- What''s the point?'
-comments: true
+comments: false
 tags:
   - interviews
   - culture

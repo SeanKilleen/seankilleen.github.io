@@ -1,6 +1,6 @@
 ---
 title: Automagically Update Your Package Dependencies With Dependabot -- For Free!
-comments: true
+comments: false
 tags:
   - tutorial
   - dependency management

@@ -1,6 +1,6 @@
 ---
 title: 'Adventures in Azure Architecture: A Home Desktop Setup'
-comments: true
+comments: false
 tags:
   - azure
   - architecture

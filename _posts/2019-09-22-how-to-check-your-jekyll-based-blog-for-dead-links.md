@@ -1,6 +1,6 @@
 ---
 title: 'How to: Check your Jekyll-based blog for dead links'
-comments: true
+comments: false
 tags:
   - tips
   - jekyll
