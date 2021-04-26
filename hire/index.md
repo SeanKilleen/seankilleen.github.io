@@ -70,7 +70,7 @@ I'm likely a fit for the following types of roles or similar:
 (It's OK if you check some of these boxes, especially if you want my help in fixing them.)
 
 * :x: **The position is contract / temporary.** I'm only seeking full-time roles where I can invest effort and make an impact.
-* :x: **The work is in consulting (at least not right now).** I have a background in great consulting impact, but am looking to switch things up a bit and bring my full potential and impact to bear on the mission of an organization.
+* :x: **The work is in consulting.** I have a background in great consulting impact, but am considering switching things up a bit and bring my full potential and impact to bear on the mission of an organization.
 * :x: **I will be stuck using less-than-ideal equipment, especially if I can't bring my own.** While not a game-changer, this usually signals a lack of investment in engineering culture, as the time loss of underpowered hardware vastly outweighs the cost savings.
 * :x: **You work with non-civilian government.** I want to ensure my personal ethics remain aligned with my work.
 * :x: **You are looking for a super-senior individual contributor.** While I have the technical skills and can certainly do this as needed, I prefer working with and leveling up teams. Technology delivery is a team sport.
