@@ -6,23 +6,6 @@ updates:
     interval: daily
     time: "10:00"
   open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: html-proofer
-    versions:
-    - 3.18.6
-    - 3.18.8
-    - 3.19.0
-  - dependency-name: minimal-mistakes-jekyll
-    versions:
-    - 4.22.0
-  - dependency-name: tzinfo-data
-    versions:
-    - 1.2021.1
-  - dependency-name: github-pages
-    versions:
-    - "211"
-    - "212"
-    - "213"
 - package-ecosystem: npm
   directory: "/"
   schedule:
