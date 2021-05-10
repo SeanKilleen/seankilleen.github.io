@@ -200,6 +200,7 @@ talksList:
     codeLink: https://github.com/seankilleen/feedly-opml-export
     description: In this session, Sean will walk through how to use Azure Functions and Azure Key Vault to create a system to continually share his RSS subscriptions with the world. Follow along as we discuss concepts of serverless computing, build a functional application, an marvel at all the things we didn’t have to do.
     location: Atlantic Beach, FL
+    videoLink: https://www.youtube.com/watch?v=E4cLR1TYDUA
   - title: An Introduction to the Actor Model and Akka.NET
     date: 2019-10-04
     group: The SwiftKick Show
