@@ -59,7 +59,7 @@ I'm likely a fit for the following types of roles or similar:
 * :heavy_check_mark: **I can teach.** Whether it's the general public or my own team, I love learning from others and I love helping to level others up.
 * :heavy_check_mark: **I can create content around my work.** I tend to create content -- tweets, blog posts, demos, streams -- around the work I'm doing. It doesn't have to be part of the day to day, but sharing with the world is very important to me, so it at least shouldn't be frowned upon. (I'd never reveal anything in confidence, etc. of course.)
 * :heavy_check_mark: **You're at least cloud-curious.** The cloud offers a great deal of potential for organizations. If you're not currently using it, it would be great if you're at least open to considering the value it can provide.
-* :heavy_check_mark: **Your organization has policies that care about people.** Flexible / Unlimited / Mandatory PTO, unlimited sick time, an environment of freedom/trust.
+* :heavy_check_mark: **Your organization has policies that treat staff as humans.** Flexible / Unlimited / Mandatory PTO, unlimited sick time, an environment of freedom/trust, etc. are some examples.
 * :heavy_check_mark: **You don't want me to stay "in a lane".** I am someone who loves "honey-combing" to provide value across an organization.
 * :heavy_check_mark: **You want ideas for improvement.** I have been described as an "idea-dense" person. They're not all going to be gold, but receptive organizations will benefit the most from me.
 * :heavy_check_mark: **You believe that technology delivery is a team sport.**
