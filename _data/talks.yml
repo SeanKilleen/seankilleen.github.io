@@ -305,5 +305,5 @@ talksList:
     date: 2021-05-27
     group: "DockerCon 2021"
     eventLink: https://docker.events.cube365.net/dockercon-live/2021/
-    description: A high-level talk for those new to Docker on the importance of smaller feedback loops and how docker helps us get there.
+    description: A high-level talk for those new to Docker on the importance of smaller feedback loops and how Docker helps us get there.
     location: Online
