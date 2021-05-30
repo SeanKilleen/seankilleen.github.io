@@ -308,3 +308,9 @@ talksList:
     sessionLink: https://docker.events.cube365.net/dockercon-live/2021/community/ozpQHbdFbLEYD7kie
     description: A high-level talk for those new to Docker on the importance of smaller feedback loops and how Docker helps us get there.
     location: Online
+  - title: "An Introduction to the Actor Model with Akka.NET"
+    date: 2021-07-27
+    group: "Orlando .NET User Group (ONETUG)"
+    eventLink: https://www.meetup.com/ONETUG/
+    description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
+    location: Online
