@@ -1,0 +1,14 @@
+digraph g {
+    goal[label="Vibrant .NET OSS Ecosystem"]
+    
+    persona_maintainer [label="OSS Maintainers"]
+    persona_consumerorg [label="Orgs Using OSS"]
+    persona_microsoft [label="Microsoft"]
+    persona_dotnetfdn [label=".NET Foundation"]
+    
+    persona_maintainer -> goal
+    persona_consumerorg -> goal
+    persona_microsoft -> goal
+    persona_dotnetfdn -> goal
+
+}
