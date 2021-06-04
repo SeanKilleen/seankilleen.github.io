@@ -15,8 +15,8 @@ digraph g {
     persona_newtooss -> goal
     persona_devsatorgs -> goal
 
-    behavior_todo_dontreinvent
+    behavior_todo_dontreinventoss
 
-    behavior_todo_dontreinvent -> persona_microsoft
+    behavior_todo_dontreinventos -> persona_microsoft
 
 }
