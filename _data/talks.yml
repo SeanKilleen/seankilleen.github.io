@@ -263,7 +263,7 @@ talksList:
     location: Online
     slidesLink: https://joyoffunctionaltesting.seankilleen.com
     codeLink: https://github.com/SeanKilleen/Presentations/tree/master/joy-of-functional-mdx/code
-    videoLink: https://www.twitch.tv/videos/943407868
+    videoLink: https://www.youtube.com/watch?v=cIYP_2epZt4
   - title: "The Joy of Functional Testing with SpecFlow"
     date: 2021-03-02
     group: Central Maryland Association of .NET Professionals (CMAP)
