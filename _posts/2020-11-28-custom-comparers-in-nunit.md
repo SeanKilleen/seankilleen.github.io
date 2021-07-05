@@ -14,14 +14,14 @@ For example, let's say we had two classes, representing celsius and farenheit te
 ```csharp
 public class CelsiusThing
 {
-    private decimal Temp { get; }
+    public decimal Temp { get; }
 
     public CelsiusThing(decimal temp) { Temp = temp; }
 }
 
 public class FarenheitThing
 {
-    private decimal Temp { get; }
+    public decimal Temp { get; }
 
     public CelsiusThing(decimal temp) { Temp = temp; }
 }
