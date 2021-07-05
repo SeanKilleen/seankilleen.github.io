@@ -3,7 +3,7 @@ title: "Announcement: Sharing my Reading List in Real-Time"
 
 date: 2019-01-14 09:00:00:00.000000000 -05:00
 
-comments: true
+comments: false
 ---
 
 A quick update: you can now find an OPML export of all of the dev/tech feeds I read at <https://SeanKilleen.com/reading-list>.

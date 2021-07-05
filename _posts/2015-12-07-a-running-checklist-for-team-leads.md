@@ -17,7 +17,7 @@ references:
    parenturl: http://5whys.com/   
    
    
-comments: true
+comments: false
 ---
 I'm fortunate enough to be starting my first position soon as a software team lead. I'm very excited -- and a small bit terrified. :smile:
 
@@ -56,7 +56,7 @@ Below is my compiled list with a rough categorization. Feel free to discuss and 
 
 ## On Introspection
 
-* **What frustrates me lately? What can I constructively do about it?** Everyone gets frustrated. Do I feel like I'm banging my head against a wall? Is a technique not working? Is there an issue aroud office politics? If so, how can I adjust my approach or lead to get past it? Articulating individual frustrations goes a long way to avoid them snowballing into an overwhelming feeling of anxiety or defeatism.
+* **What frustrates me lately? What can I constructively do about it?** Everyone gets frustrated. Do I feel like I'm banging my head against a wall? Is a technique not working? Is there an issue around office politics? If so, how can I adjust my approach or lead to get past it? Articulating individual frustrations goes a long way to avoid them snowballing into an overwhelming feeling of anxiety or defeatism.
 * **What am I too sure about?** I'm a confident person. It usually works out well but as you might not expect, it's not always a good thing. What items do I hold to be self-evident? What aspects of my job and my approach to development am I too religious about? I should question these thoroughly and seek outside opinions to ensure I remain practical and am not stifling innovation around those ideas.
 * **What parts of our code (or even my code) do I know the least about?** Is there any "magic" in the codebase for applications? Answer: yes, there is; if you haven't seen any yet, you're not looking hard enough or learning enough. Find a piece of code or concept within your application(s) that you don't understand fully and get clarification. Read up on the technique/pattern and the language/framework feature that enables it. At some point, this piece will break or need to be changed, and you'll be thankful you have a larger depth of understanding.
 * **Am I the right leader for this team? Why / why not?** This is a tough but important question to ask. While I wouldn't harp on it, it's important to take stock and understand whether your team is truly well-served by having you in your position. Are you able to get them what they need? Are you able to elevate them? Are you able to keep growing their skills and your own? Are you able to truly help them deliver? If not, it may be time for a change.
@@ -70,7 +70,7 @@ Below is my compiled list with a rough categorization. Feel free to discuss and 
 * **Is code quality getting better or worse? How can I actually tell?** If you're not in the code as often as you'd like to be, this can be difficult to tell. If you can't immediately answer this question, get involved in code reviews, talk to your team about areas of technical debt they may have seen, and think about different metrics that you can glean from the code itself. However, remember when dealing with metrics that they can only ever be guide-posts and will never give you the whole story. Relying solely on metrics (e.g. test coverage) is a path to ruin.
 * **What's something that could be automated?** Have you repeated anything lately? Has your team? How can you make sure that thing doesn't get repeated anymore?
 * **What do the people supporting the app know that my team doesn't?** If your team doesn't act as the front line of support for the code they write (something I recommend rotating team members on), then it's important to have a good understanding of the challenges that the support team faces. What are the trends in issues and requests that they're seeing? What areas do they think are the most used? Can you find any parts of the application where 20% of the work can get you 80% of the benefit?
-* **What personas does my team's app service? Has anything evolved about them? Are we leaving a persona out?** Oftentimes teams use personas to define certain stereotypical user/custmomer behavior across the application (e.g. a technical novice, a power user, etc.)
+* **What personas does my team's app service? Has anything evolved about them? Are we leaving a persona out?** Oftentimes teams use personas to define certain stereotypical user/customer behavior across the application (e.g. a technical novice, a power user, etc.)
 * **Is there an unpleasant task I could take off of someone else's plate?** As a team lead, you don't only get to do the glamorous stuff -- it's your job to help your team with the crap work. Find someone who has some crap work, and take it off their plate for them. They'll likely be thankful, and you'll be that much more motivated to automate or reduce the strain of it in some way.
 * **What would I improve about how our code makes its way to production?** This is a more specific piece of process improvement, but one that's important to consider separately. Is there a place where things take a long time? Is the build clunky? Does the team tip-toe around certain parts of a release? Does something feel fragile about it? Is anything stopping you from feeling good about continuously deploying? There's room for improvement there.
 
@@ -81,4 +81,4 @@ Below is my compiled list with a rough categorization. Feel free to discuss and 
 
 ## What do you think?
 
-I'd love to hear your opinions and enhancements in the comments. Is there anything you disagree with? A peronal tidbit that you'd put on this list? Let me know and if I add it, I'll be sure to provide you with credit and a link!
+I'd love to hear your opinions and enhancements in the comments. Is there anything you disagree with? A personal tidbit that you'd put on this list? Let me know and if I add it, I'll be sure to provide you with credit and a link!

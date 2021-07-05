@@ -1,6 +1,6 @@
 ---
 title: Getting Started With PowerShell Core in Windows Terminal
-comments: true
+comments: false
 tags:
   - powershell
   - powershell core
@@ -15,7 +15,7 @@ PowerShell Core really takes this to the next level. It is what PowerShell will 
 
 So, I wanted to work it into my [Windows Terminal](https://github.com/microsoft/terminal) installation and make sure I'm using it by default so I can get used to any differences. Here's how I did it!
 
-* I use [the Chocolatey package manager], so I installed windows terminal via `choco install windows-terminal`.
+* I use [the Chocolatey package manager](https://chocolatey.org), so I installed windows terminal via `choco install windows-terminal`.
 * I installed PowerShell Core by running `choco install powershell-core`.
 * I opened Windows Terminal and check the list of shells. Great, PowerShell Core is in there!
 
@@ -41,6 +41,6 @@ But, it's not yet my default. Let's fix that.
 
 * Restart Windows Terminal, and bingo -- my default shell is now PowerShell Core!
 
-![Windows terminal opened with an icon that indiciates that powershell core is the default]({{site.post-images}}/getting-started-with-powershell-core-in-windows-terminal/06_ItWorks.png)
+![Windows terminal opened with an icon that indicates that powershell core is the default]({{site.post-images}}/getting-started-with-powershell-core-in-windows-terminal/06_ItWorks.png)
 
 Happy shelling!

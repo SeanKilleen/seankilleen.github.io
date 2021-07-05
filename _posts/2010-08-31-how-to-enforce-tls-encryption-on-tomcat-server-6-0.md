@@ -2,7 +2,7 @@
  
 title: 'How To: Enforce TLS Encryption on Tomcat Server 6.0'
 date: 2010-08-31 13:35:00.000000000 -04:00
-comments: true
+comments: false
 redirect_from: 
  - /2010/08/how-to-enforce-tls-encryption-on-tomcat.html
 ---

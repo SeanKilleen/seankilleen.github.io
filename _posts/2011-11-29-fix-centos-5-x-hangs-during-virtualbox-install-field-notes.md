@@ -2,7 +2,7 @@
  
 title: 'Fix: CentOS 5.x hangs during VirtualBox install [Field Notes]'
 date: 2011-11-29 20:12:00.000000000 -05:00
-comments: true
+comments: false
 
 references:
  - title: "Failure Installing CentOS 5.4 on VB 3.0.8"

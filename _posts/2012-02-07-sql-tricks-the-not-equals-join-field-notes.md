@@ -2,7 +2,7 @@
  
 title: 'SQL Tricks: The Not-Equals Join [Field Notes]'
 date: 2012-02-07 11:32:00.000000000 -05:00
-comments: true
+comments: false
 
 ---
 ### The Problem
@@ -25,4 +25,4 @@ This allows the left outer join only if the items are not equal (which we happen
 
 The end result? As I expected -- the full list of dates showed up for each employee, just as I'd hoped.
 
-**A Note:** Because I was comparing a date to a string, I had to cast the date as a varchar2 in the join statement. The date value itself still comes back as a date, but during the comparison we need to make sure we're giving Oracle an apples-to-apples comparison.
+**A Note:** Because I was comparing a date to a string, I had to cast the date as a `varchar2` in the join statement. The date value itself still comes back as a date, but during the comparison we need to make sure we're giving Oracle an apples-to-apples comparison.

@@ -2,7 +2,7 @@
  
 title: Some Things I've Been Bad at, and What I'm Going to do to Change it.
 date: 2012-01-24 19:41:00.000000000 -05:00
-comments: true
+comments: false
 
 ---
 ***Ed. Note:** This is one of those weird public-disclosure blog posts. If you only come here for tech stuff, then move along; nothing to see here. :)*
@@ -24,7 +24,7 @@ Some ways in which I'm guilty of this:
 * Don't even get me started on exercise.
 * I let work fill in the cracks of my life because I feel responsible or it's necessary or it feels good/rewarding.
 
-But overall, there was one major theme: **instead of making time to keep myself healthy and take care of myself, I've been letting the bullshit of being "busy" take away too much from some important things**. Generally, I havent' been respecting the time it takes to do these important things, and as a result have been trying to minimize them or shortcut them.
+But overall, there was one major theme: **instead of making time to keep myself healthy and take care of myself, I've been letting the bullshit of being "busy" take away too much from some important things**. Generally, I haven't been respecting the time it takes to do these important things, and as a result have been trying to minimize them or shortcut them.
 
 So I decided to knock it off. Cold turkey. I'm not phasing it in, because I've let "busy" distract me from the things I need to do for so long. I'm just doing it, and I'm going to do my best to stop making excuses not to do these things, because there is no excuse not to take better care of myself.
 

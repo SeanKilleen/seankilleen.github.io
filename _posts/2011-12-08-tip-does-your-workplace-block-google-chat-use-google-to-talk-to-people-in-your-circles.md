@@ -3,7 +3,7 @@
 title: 'Tip: Does your workplace block Google Chat? Use Google+ to talk to people
   in your circles'
 date: 2011-12-08 09:21:00.000000000 -05:00
-comments: true
+comments: false
 
 ---
 *[**Ed. Note**: For the record, I discovered this by accident, and don't particularly intend to use it unless absolutely necessary.]*

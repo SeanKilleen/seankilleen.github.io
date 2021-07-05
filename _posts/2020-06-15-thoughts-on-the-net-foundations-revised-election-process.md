@@ -1,6 +1,6 @@
 ---
 title: Thoughts on the .NET Foundation's Revised Election Process
-comments: true
+comments: false
 tags:
   - dotnet
   - dotnet foundation
@@ -52,9 +52,9 @@ The things I feel a little uneasy about are below.
 
 **Update:** Claire responded on this one too, though the response was not as satisfying to me as her others.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">&gt; The Foundation’s members didn’t vote on it. <br><br>The Foundation doesn&#39;t run by referendum of all members. The members elect the board and the board sets the policies, rules, etc. That&#39;s why the elections matter.</p>&mdash; Claire Novotny (@clairernovotny) <a href="https://twitter.com/clairernovotny/status/1272673004988895232?ref_src=twsrc%5Etfw">June 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">&gt; The Foundation’s members didn’t vote on it. <br><br>The Foundation doesn't run by referendum of all members. The members elect the board and the board sets the policies, rules, etc. That&#39;s why the elections matter.</p>&mdash; Claire Novotny (@clairernovotny) <a href="https://twitter.com/clairernovotny/status/1272673004988895232?ref_src=twsrc%5Etfw">June 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-In this exchange, she cites the need to get the election moving quickly after changing the process and not wanting to delay further. I think had the board been transparent about the process changes it was looking to make, and involved the community earlier, they could have accomplished both an increased understanding of delayed elections and a procces that helped people feel better about the election process overall. But honestly, that doesn't matter so much at this point -- time to move forward.
+In this exchange, she cites the need to get the election moving quickly after changing the process and not wanting to delay further. I think had the board been transparent about the process changes it was looking to make, and involved the community earlier, they could have accomplished both an increased understanding of delayed elections and a process that helped people feel better about the election process overall. But honestly, that doesn't matter so much at this point -- time to move forward.
 
 ## So, Will I Run?
 

@@ -25,7 +25,7 @@ references:
    parenttitle: "GitHub"
    parenturl: https://github.com
 
-comments: true
+comments: false
 ---
 
 ## The Goal / Problem

@@ -2,7 +2,7 @@
  
 title: 'Some Thoughts on Corporate E-Mail Signatures'
 date: 2015-01-20 09:59:00.000000000 -05:00
-comments: true
+comments: false
 references: 
  - title: "Spare us the e-mail yada-yada"
    url: http://www.economist.com/node/18529895
@@ -30,7 +30,7 @@ Corporate e-mail signatures are normally those oft-mandated extra bits appended 
 
 ## Use "alt" text for your images
 
-Companies often display their logo, etc. in e-mail signatures. The only problem is, on the web, images break -- the URLs change, or some technical issue renders them unrenderable.
+Companies often display their logo, etc. in e-mail signatures. The only problem is, on the web, images break -- the URLs change, or some technical issue renders them un-renderable.
 
 In case this happens, you always want to use alt text. In an html Image tag, you can add `alt="Company Logo"` or something similar, which will cause that text to show whenever the image can't, so the person at least knows what they would have been looking at.
 

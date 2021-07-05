@@ -3,7 +3,7 @@
 title: When using Twitter Bootstrap LESS with IIS, don't forget to create the MIME
   Type [Field Notes]
 date: 2012-09-10 18:00:00.000000000 -04:00
-comments: true
+comments: false
 redirect_from: 
  - /2012/09/when-using-twitter-bootstrap-less-with.html
 ---

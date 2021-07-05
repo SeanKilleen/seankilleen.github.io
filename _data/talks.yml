@@ -1,4 +1,4 @@
-past:
+talksList:
   - title: "Attack-a the Akka! A brief intro to Akka.NET"
     date: 2015-07-29
     group: BaltoMSDN Meetup
@@ -12,7 +12,6 @@ past:
     group: DevOps DC Meetup
     eventLink: http://www.meetup.com/DevOpsDC
     sessionLink: http://www.meetup.com/DevOpsDC/events/226750186/
-    slidesLink: https://github.com/SeanKilleen/Presentations/tree/master/2016-02-18_TCAndOcto_DevOpsDC
     description: This presentation sought to explain the pleasantly symbiotic relationship between a build server such as TeamCity and a release tool, such as OctopusDeploy. There weren’t as many .NET-focused developers there as expected, and time was a little short, but I’m looking forward to making some tweaks to this one and giving it again soon.
     location: Reston, VA
     slidesLink: https://seankilleen.com/Presentations/2018-03-28_TCOctopusAzure
@@ -70,16 +69,16 @@ past:
     slidesLink: http://seankilleen.com/Presentations/2017-11_ElasticSearch
   - title: Certified Agile Testing & Automation
     date: 2018-01-22
-    group: Excella Consulting
-    eventLink: https://www.excella.com/training#courses
-    sessionLink: https://www.excella.com/training#courses
+    group: Excella Training (now NextUp Solutions)
+    eventLink: https://nextupsolutions.com/training/all-training-courses
+    sessionLink: https://nextupsolutions.com/training/all-training-courses
     description: Our ICAgile (ICP-TST/ATA) certified testing course is happening in January. Check the links for more info!
     location: Arlington, VA
   - title: Certified Agile Testing & Automation
     date: 2018-03-05
-    group: Excella Consulting
-    eventLink: https://www.excella.com/training#courses
-    sessionLink: https://www.excella.com/training#courses
+    group: Excella Training (now NextUp Solutions)
+    eventLink: https://nextupsolutions.com/training/all-training-courses
+    sessionLink: https://nextupsolutions.com/training/all-training-courses
     description: Our ICAgile (ICP-TST/ATA) certified testing course is happening in March. Check the links for more info!
     location: Arlington, VA
   - title: Introduction to Akka .NET
@@ -123,10 +122,8 @@ past:
   - title: An Introduction to the Actor Model and Akka.NET
     date: 2018-08-09
     group: Code on the Beach
-    eventLink: https://www.codeonthebeach.com/
     description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
     location: Atlantic Beach, FL
-    sessionLink: https://www.codeonthebeach.com/COTB2018/session/3195/an-introduction-to-the-actor-model-and-akka-net
     slidesLink: https://seankilleen.com/Presentations/2018-08_AkkaIntro/presentation
     codeLink: https://github.com/SeanKilleen/Presentations/tree/master/2018-08_AkkaIntro
     videoLink: https://www.youtube.com/watch?v=4Afz-cdL7HU
@@ -136,7 +133,6 @@ past:
     eventLink: https://www.techbash.com/
     description: Working in an agile mindset – especially when favoring specific approaches – can go wrong in about 100 ways. In this talk, I describe some lessons as a technical lead working on agile teams, holding it together with duct tape and a little help from my friends.
     location: Kalahari Resort, PA
-    sessionLink: https://www.techbash.com/sessions/fragile-how-agile-falls-apart-and-what-you-can-do-to-hold-it-all-together
     slidesLink: http://seankilleen.com/Presentations/2018-10_Fragile
   - title: An Introduction to the Actor Model and Akka.NET
     date: 2019-03-14
@@ -144,7 +140,7 @@ past:
     sessionLink: https://www.meetup.com/NYC-NET-Developers/events/257961950
     eventLink: https://www.meetup.com/NYC-NET-Developers
     slidesLink: https://seankilleen.com/Presentations/2019-03_AkkaIntro/presentation/#/
-    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/2019-03_AkkaIntro/code
+    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code
     description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
     location: New York, NY
   - title: An Introduction to the Actor Model and Akka.NET
@@ -155,7 +151,7 @@ past:
     description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
     location: Philadelphia, PA
     slidesLink: https://seankilleen.com/Presentations/2019-04_AkkaIntro/presentation/#/
-    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/2019-04_AkkaIntro/code    
+    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code
   - title: "Serverless is more: An Introduction to Azure Functions"
     date: 2019-04-13
     group: Philly.NET CodeCamp
@@ -163,7 +159,7 @@ past:
     sessionLink: http://phillydotnet.org/2019-1-sessions.html#sz-session-84230
     slidesLink: https://seankilleen.com/Presentations/2019-04_ServerlessIsMore/
     description: In this session, Sean will walk through how to use Azure Functions and Azure Key Vault to create a system to continually share his RSS subscriptions with the world. Follow along as we discuss concepts of serverless computing, build a functional application, an marvel at all the things we didn’t have to do.
-    location: Philadelphia, PA    
+    location: Philadelphia, PA
   - title: "Serverless is more: An Introduction to Azure Functions"
     date: 2019-05-07
     group: Central Maryland Association for .NET Professionals (CMAP)
@@ -177,7 +173,7 @@ past:
     eventLink: https://www.meetup.com/Microsoft-Maniacs/
     sessionLink: https://www.meetup.com/Microsoft-Maniacs/events/260895955/
     description: In this session, Sean will walk through how to use Azure Functions and Azure Key Vault to create a system to continually share his RSS subscriptions with the world. Follow along as we discuss concepts of serverless computing, build a functional application, an marvel at all the things we didn’t have to do.
-    location: Sterling, VA    
+    location: Sterling, VA
     slidesLink: https://seankilleen.com/Presentations/ServerlessIsMore/
   - title: "(Fr)agile: How Agile Falls Apart, and What You Can Do to Hold It All Together"
     date: 2019-06-06
@@ -188,7 +184,6 @@ past:
   - title: "Introduction to Microsoft Graph Services"
     date: 2019-06-29
     group: Microsoft Insider Dev Tour NYC
-    eventLink: https://insiderdevtour.com/
     description: "Microsoft Graph provides a unified programmability model that you can use to build apps for organizations and consumers that interact with the data of millions of users. You can use the Microsoft Graph REST APIs to access data in Azure Active Directory, Office 365 services, Enterprise Mobility and Security services, Windows 10 services, Dynamics 365, and more."
     location: New York City, NY
   - title: "(CSD) Agile Engineering 3-Day Training Course"
@@ -201,15 +196,15 @@ past:
   - title: "Serverless is more: An Introduction to Azure Functions"
     date: 2019-07-25
     group: CodeOnTheBeach
-    eventLink: https://www.codeonthebeach.com/
     slidesLink: https://seankilleen.com/Presentations/ServerlessIsMore/
     codeLink: https://github.com/seankilleen/feedly-opml-export
     description: In this session, Sean will walk through how to use Azure Functions and Azure Key Vault to create a system to continually share his RSS subscriptions with the world. Follow along as we discuss concepts of serverless computing, build a functional application, an marvel at all the things we didn’t have to do.
     location: Atlantic Beach, FL
+    videoLink: https://www.youtube.com/watch?v=E4cLR1TYDUA
   - title: An Introduction to the Actor Model and Akka.NET
     date: 2019-10-04
     group: The SwiftKick Show
-    eventLink: https://swiftkick.in/shows
+    eventLink: https://www.youtube.com/swiftkick
     videoLink: https://www.youtube.com/watch?v=Qa5TU_16GzE
     slidesLink: https://seankilleen.com/Presentations/AkkaIntro/presentation
     codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code-dotnetcore
@@ -250,5 +245,73 @@ past:
     sessionLink: https://techbash.com/2019-schedule
     description: In this session, I'll demonstrate how to create a template for a .NET Core solution, and will show an end to end out of the box template I've created to be up and running quickly with a .NET Core project, front-end project, containers, and a CI pipeline.
     location: Poconos, PA
-
-upcoming:
+  - title: "An Introduction to the Actor Model and Akka.NET"
+    date: 2020-10-14
+    group: Triangle .NET User Group
+    eventLink: https://www.meetup.com/TRINUG
+    sessionLink: https://www.meetup.com/TRINUG/events/273872535
+    description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
+    location: Online
+    slidesLink: https://seankilleen.com/Presentations/AkkaIntro/presentation
+    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code-dotnetcore
+  - title: "The Joy of Functional Testing with SpecFlow"
+    date: 2021-03-09
+    group: Hampton Roads .NET User Group (HRNUG)
+    eventLink: https://www.meetup.com/Hampton-Roads-NET-Users-Group/
+    sessionLink: https://www.meetup.com/Hampton-Roads-NET-Users-Group/events/276626715/
+    description: "Functional testing is a great way to ensure we're not just building the thing right, but building the right thing. In this session, we'll examine the testing pyramid, the place of functional testing, and how to write Gherkin syntax with SpecFlow to move toward acceptance test driven development. We'll use a real world sample to show a few cycles of acceptance tests in the language of the business, and talk about one project's real-world functional testing journey."
+    location: Online
+    slidesLink: https://joyoffunctionaltesting.seankilleen.com
+    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/joy-of-functional-mdx/code
+    videoLink: https://www.youtube.com/watch?v=cIYP_2epZt4
+  - title: "The Joy of Functional Testing with SpecFlow"
+    date: 2021-03-02
+    group: Central Maryland Association of .NET Professionals (CMAP)
+    eventLink: https://www.meetup.com/CMAP-Online/
+    sessionLink: https://www.meetup.com/CMAP-Online/events/276605011/
+    description: "Functional testing is a great way to ensure we're not just building the thing right, but building the right thing. In this session, we'll examine the testing pyramid, the place of functional testing, and how to write Gherkin syntax with SpecFlow to move toward acceptance test driven development. We'll use a real world sample to show a few cycles of acceptance tests in the language of the business, and talk about one project's real-world functional testing journey."
+    location: Online
+    slidesLink: https://joyoffunctionaltesting.seankilleen.com
+    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/joy-of-functional-mdx/code
+  - title: "The Joy of Functional Testing with SpecFlow"
+    date: 2021-02-23
+    group: DC Agile Software Testing Group (DCAST)
+    eventLink: https://www.meetup.com/dcast-io/
+    sessionLink: https://www.meetup.com/dcast-io/events/276394536/
+    description: "Functional testing is a great way to ensure we're not just building the thing right, but building the right thing. In this session, we'll examine the testing pyramid, the place of functional testing, and how to write Gherkin syntax with SpecFlow to move toward acceptance test driven development. We'll use a real world sample to show a few cycles of acceptance tests in the language of the business, and talk about one project's real-world functional testing journey."
+    location: Online
+    slidesLink: https://joyoffunctionaltesting.seankilleen.com
+    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/joy-of-functional-mdx/code
+    videoLink: https://www.youtube.com/watch?v=gRBGyJnikko
+  - title: "An Introduction to the Actor Model with Akka.NET"
+    date: 2021-05-06
+    group: Roanoke Valley .NET User Group (RVNUG)
+    eventLink: https://www.meetup.com/Roanoke-Valley-NET-User-Group/
+    description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
+    sessionLink: https://www.meetup.com/Roanoke-Valley-NET-User-Group/events/fbbrnrycchbjb/
+    slidesLink: https://seankilleen.com/Presentations/AkkaIntro/presentation
+    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code-dotnetcore
+    location: Online
+  - title: "An Introduction to the Actor Model with Akka.NET"
+    date: 2021-05-18
+    group: ".NET DC User Group"
+    eventLink: https://www.meetup.com/dotnetdc/
+    description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
+    sessionLink: https://www.meetup.com/dotnetdc/events/278129709/
+    slidesLink: https://seankilleen.com/Presentations/AkkaIntro/presentation
+    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code-dotnetcore
+    location: Online
+  - title: "Learning Docker for Smaller Feedback Loops"
+    date: 2021-05-27
+    group: "DockerCon 2021"
+    eventLink: https://docker.events.cube365.net/dockercon-live/2021/
+    sessionLink: https://docker.events.cube365.net/dockercon-live/2021/community/ozpQHbdFbLEYD7kie
+    description: A high-level talk for those new to Docker on the importance of smaller feedback loops and how Docker helps us get there.
+    location: Online
+  - title: "An Introduction to the Actor Model with Akka.NET"
+    date: 2021-07-27
+    group: "Orlando .NET User Group (ONETUG)"
+    eventLink: https://www.meetup.com/ONETUG/
+    sessionLink: https://meetu.ps/e/K76s9/1Zghg/d
+    description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
+    location: Online

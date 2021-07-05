@@ -3,7 +3,7 @@ title: "Preparing .NET Projects for Business Trips"
  
 date: 2018-08-21 10:00:00.000000000 -05:00
 
-comments: true
+comments: false
 ---
 
 I have the the good fortune to take some interesting business trips occasionally. However, there are few business trip feelings worse than being mid-flight and realizing that you've forgotten to pull the latest changes for that project you meant to work on.

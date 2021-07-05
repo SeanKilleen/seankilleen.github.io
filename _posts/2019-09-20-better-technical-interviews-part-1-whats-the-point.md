@@ -1,6 +1,6 @@
 ---
 title: 'Better Technical Interviews: Part 1 -- What''s the point?'
-comments: true
+comments: false
 tags:
   - interviews
   - culture
@@ -84,7 +84,7 @@ I think this is an important conversation to have -- at least with yourself -- p
 
 ## Conversational Interviewing
 
-Another piece of my overall recommended approach to interviewing is to make a shift to, or invest more heavily in, conversational interviewing. What I mean by this is the art of engaging with someone in a way that isn't rigily defined (e.g. solving problems on a white board, coding a problem, etc.) and instead delving into the nebulous world of conversational interviewing, with open-ended questions, follow-up, and the time well-managed. We'll talk more about this in future posts and I'll make specific recommendations.
+Another piece of my overall recommended approach to interviewing is to make a shift to, or invest more heavily in, conversational interviewing. What I mean by this is the art of engaging with someone in a way that isn't rigidly defined (e.g. solving problems on a white board, coding a problem, etc.) and instead delving into the nebulous world of conversational interviewing, with open-ended questions, follow-up, and the time well-managed. We'll talk more about this in future posts and I'll make specific recommendations.
 
 ## Are you ready to interview this way? Is your team ready?
 

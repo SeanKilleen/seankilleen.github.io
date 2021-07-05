@@ -3,7 +3,7 @@
 title: 'Fix: Crystal Reports 2008: "Default printer is not available" and/or Un-expandable
   Collapsed Sections [Field Notes]'
 date: 2012-01-09 17:36:00.000000000 -05:00
-comments: true
+comments: false
 redirect_from: 
  - /2012/01/fix-crystal-reports-2008-default.html
 ---
@@ -13,7 +13,7 @@ In Crystal Reports 2008, when opening up a report that came from elsewhere (usua
 
 > default printer is not available.
 
-Oftentimes, this will be accompanied by a strange behavior that will cause reports (or subreports) to look completely collapsed, like the following image:
+Oftentimes, this will be accompanied by a strange behavior that will cause reports (or sub-reports) to look completely collapsed, like the following image:
 
 ![Collapsed Crystal Reports]({{site.post-images}}//CrystalReports_CollapsedSectionProblem.png)
 

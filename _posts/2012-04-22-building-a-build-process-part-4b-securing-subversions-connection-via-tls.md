@@ -2,7 +2,7 @@
  
 title: 'Building a Build Process: Securing Subversion''s Connection via TLS'
 date: 2012-04-22 01:01:00.000000000 -04:00
-comments: true
+comments: false
 series: building-a-build-process
 references: 
  - title: http://wiki.centos.org/HowTos/Https
@@ -81,7 +81,7 @@ Open the file for editing:
 gedit +/SSLCertificateFile /etc/httpd/conf.d/ssl.conf
 ```
 
-Find the line referencing “SSLCertificateFile” and change it to the location of your keyfile. It should look like this when you’re done:
+Find the line referencing “SSLCertificateFile” and change it to the location of your key file. It should look like this when you’re done:
 
 ```conf
 SSLCertificateFile /etc/pki/tls/certs/ca.crt

@@ -3,7 +3,7 @@
 title: 'Building a Build Process: TortoiseSVN Client Connection and Repository
   Layout'
 date: 2012-04-22 22:24:00.000000000 -04:00
-comments: true
+comments: false
 series: building-a-build-process
 redirect_from: 
  - /2012/04/building-build-process-part-5.html
@@ -13,9 +13,9 @@ references:
  - title: Subversion book
    url:  http://svnbook.red-bean.com/
  - title: Download TortoiseSVN
-   url:  http://tortoisesvn.net/downloads.html
+   url:  https://tortoisesvn.net/downloads.html
  - title: Donate to TortoiseSVN
-   url: http://tortoisesvn.tigris.org/donate.html
+   url: https://tortoisesvn.net/donate.html
 ---
 {% include _buildseries-intro.md %}
 
@@ -117,15 +117,15 @@ Create some new directories so the folder structure looks like the following:
 
 These folders have the following purposes:
 
-* **TestProject (root folder)**: This is where your solution file will be. Later in this series, it will also be where we place the MSBuild XML file that applies to our software.  
-* **buildartifacts**: This is the place where we’re eventually going to put all of the code that we’ve compiled, automatically, via the MSBuild script. This folder should be left out of source control because everyone’s binaries will be different and not of much use except to the developer (more on that later).  
-* **src**: as you probably guessed, this is where all our actual source code is going to go.  
-* **app**: this will store all the application source code (your individual projects will eventually be in this directory)  
-* **test**: this is where all your unit testing and integration testing projects will live. This will let us do some handy things later as far as packaging up the project for release, etc.  
-* **thirdparty**: this where code goes that isn’t yours. Could be something you referenced, or an open-source project that you make use of, etc.  
-* **libs**: this is specifically for third-party libraries that you use within your source code.  
-* **tools**: this is for DLLs or applications that help you with the build process or things external to your source code. Think NUnit for running unit tests, or special add-ons to the MSBuild DLLs.  
-* **doc**: this is where all your documentation for your projects should live, if you need to reference it. It could be internal documentation if you choose to keep it this way, a user manual that evolves along with the project, a dictionary of acronyms or documentation on processes for your developers or business use cases or marketing materials. Any documentation that is based on the code in the src folder that evolves along with it should be included here.
+* `TestProject` (root folder): This is where your solution file will be. Later in this series, it will also be where we place the MSBuild XML file that applies to our software.  
+* `buildartifacts`: This is the place where we’re eventually going to put all of the code that we’ve compiled, automatically, via the MSBuild script. This folder should be left out of source control because everyone’s binaries will be different and not of much use except to the developer (more on that later).  
+* `src`: as you probably guessed, this is where all our actual source code is going to go.  
+* `app`: this will store all the application source code (your individual projects will eventually be in this directory)  
+* `test`: this is where all your unit testing and integration testing projects will live. This will let us do some handy things later as far as packaging up the project for release, etc.  
+* `thirdparty`: this where code goes that isn’t yours. Could be something you referenced, or an open-source project that you make use of, etc.  
+* `libs`: this is specifically for third-party libraries that you use within your source code.  
+* `tools`: this is for DLLs or applications that help you with the build process or things external to your source code. Think NUnit for running unit tests, or special add-ons to the MSBuild DLLs.  
+* `doc`: this is where all your documentation for your projects should live, if you need to reference it. It could be internal documentation if you choose to keep it this way, a user manual that evolves along with the project, a dictionary of acronyms or documentation on processes for your developers or business use cases or marketing materials. Any documentation that is based on the code in the src folder that evolves along with it should be included here.
 
 At this point, let’s update the solution by right-clicking TestProject and selecting `SVN Update`. Since no other changes to our files were detected, the update completes successfully. We then commit the changes by right-clicking on TestProject and choosing `SVN Commit`, following the same process as we did earlier. (did you remember to add a commit message?)
 
@@ -147,7 +147,7 @@ Next, complete the following steps:
 * Right-click on the newly-created solution in Visual Studio and select `Add > New Project`.  
 * Add a C# class library called `TestProject.Core`, in the location of `Test\Project\src\app (the folder structure that we’d created previously). This will be the project that holds all of your application’s shared core logic (in case you need to share code common to both a web site and a WPF app, etc).  
 * Delete the `class1.cs` file from the Core Project (we won’t need it).  
-* Right-click on the solution and add another C# class project, `TestProject.Core.Tests` (this will hold the tests for the core business code). Give the location of this project TestProjectsrctest. Delete its class1.cs file as well.  
+* Right-click on the solution and add another C# class project, `TestProject.Core.Tests` (this will hold the tests for the core business code). Give the location of this project `TestProject\src\test`. Delete its class1.cs file as well.  
 * Repeat this process for two more projects, An MVC3 Web App called `TestProject.Web` and a class library called `TestProject.Web.Tests`. Can you figure out the right directories to put them in?
 
 At this point, we’ve got a full project setup.
@@ -164,7 +164,7 @@ I’d mentioned earlier that the `buildartifacts` directory doesn’t really mak
 With this done, we’re ready to commit all our changes.
 
 * Right-click on the TestProject folder and select …if you guessed *commit*, you’re wrong! Remember, we should update the solution first (it’s a good habit to get into). Select `Update`.  
-* With no conflicts detected, select `Commit` and click `all` to select all the new unversioned files.  
+* With no conflicts detected, select `Commit` and click `all` to select all the new un-versioned files.  
 * Hit `OK` and the files will be committed to the repository.
 
 Congratulations! You’ve fully completed a solution setup with Visual Studio and Subversion.
@@ -181,4 +181,4 @@ Congratulations! You’ve fully completed a solution setup with Visual Studio an
 
 [their downloads page]: http://tortoisesvn.net/downloads.html
 
-[donate to the TortoiseSVN project]: http://tortoisesvn.tigris.org/donate.html
+[donate to the TortoiseSVN project]: https://tortoisesvn.net/donate.html

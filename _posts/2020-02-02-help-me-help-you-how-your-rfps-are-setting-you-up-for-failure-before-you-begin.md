@@ -2,7 +2,7 @@
 title: >-
   Help Me Help You: How your RFPs are setting you up for failure before you
   begin
-comments: true
+comments: false
 tags:
   - rfps
   - consulting
@@ -16,9 +16,9 @@ _NOTE: Below, I say "us" a lot. This refers to a generic company model, and not 
 
 ## RFPs are Important!
 
-Crafting an RFP for your proposal limits the entire universe in which vendors can respond, because part of submitting a proposal is remaining compliant with the RFP for readability and scorability. So without crafting RFPs in a way that is conscious of this, you will end up receiving proposals that will not necessarily match the best result or value for your organization, and you may be none the wiser about it.
+Crafting an RFP for your proposal limits the entire universe in which vendors can respond, because part of submitting a proposal is remaining compliant with the RFP for readability and score-ability. So without crafting RFPs in a way that is conscious of this, you will end up receiving proposals that will not necessarily match the best result or value for your organization, and you may be none the wiser about it.
 
-## Ways I've Seen RFP's go wrong
+## Ways I've Seen RFPs go wrong
 
 A brief, incomplete set of examples:
 

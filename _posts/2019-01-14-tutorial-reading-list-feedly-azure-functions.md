@@ -4,7 +4,7 @@ title: "Tutorial: An Automated reading list with Feedly and Azure Functions"
 date: 2019-01-14 21:00:00:00.000000000 -05:00
 
 tags: [azure, azure functions, apis, cloud, key vault, tutorial, csharp,.NET]
-comments: true
+comments: false
 
 ---
 
@@ -147,7 +147,7 @@ Our first function will be a timer-based function that will refresh the Feedly a
 > ![Selecting timer trigger]({{site.post-images}}/azure-feedly-export/createfunction-timertrigger.png)
 
 * When prompted for a name, use `RefreshFeedlyAuthToken`.
-* When prmopted for a namespace, use `FeedlyOpmlExport.Functions`.
+* When prompted for a namespace, use `FeedlyOpmlExport.Functions`.
 * When prompted for the CRON expression, use `0 0 */6 * * *` (Every 6 hours of every day)
 
 At this point, the function will be created within your project.
@@ -309,7 +309,7 @@ public static async Task<string> GetOpmlContents(string accessToken)
 Then, I create a new `ExtractFeelyOpml` Azure function:
 
 ```csharp
-// Ed. Note: Logging and the XML filtering/labeling classes ommitted for brevity.
+// Ed. Note: Logging and the XML filtering/labeling classes omitted for brevity.
 // See the link to the repo for the full source.
 
 public static class ExtractFeedlyOPML

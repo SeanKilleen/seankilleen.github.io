@@ -2,7 +2,7 @@
  
 title: 'From GMail to Outlook: Making it Feel Like Home for GTD [Field Notes]'
 date: 2011-10-18 13:27:00.000000000 -04:00
-comments: true
+comments: false
 references: 
  - title: "Add A Gmail-like Archive Button to Microsoft Outlook"
    url: http://lifehacker.com/5175347/add-a-gmail+like-archive-button-to-microsoft-outlook
@@ -79,7 +79,7 @@ Under the top-level folder of your mailbox, create an "Archive" folder on the sa
 
 #### Create a Digital Signature for VBA Projects
 
-This is necessary to avoid a macro warning pop-up everytime you do something in Outlook. Highly recommended.
+This is necessary to avoid a macro warning pop-up every time you do something in Outlook. Highly recommended.
 
 * Open the `Digital Certificate for VBA Projects` utility
 * Start typing it into the start menu and it should come up).

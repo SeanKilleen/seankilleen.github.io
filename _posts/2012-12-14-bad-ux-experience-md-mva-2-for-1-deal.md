@@ -2,7 +2,7 @@
  
 title: 'Bad UX Experience: MD MVA (2 for 1 deal!)'
 date: 2012-12-14 10:13:00.000000000 -05:00
-comments: true
+comments: false
 
 ---
 I know this comes as a shock to nobody, but MD's don't-call-it-the-DMV "Motor Vehicle Association" isn't the easiest to get around.
@@ -23,7 +23,7 @@ While writing this blog post, I attempted to link to the change of address form,
 
     javascript:__doPostBack('ctl00$btnChangeOfAddress','')
 
-Really? We're still doing postbacks on buttons this way? I guess the best way to avoid link rot is to make sure your link is never a link in the first place.
+Really? We're still doing post-backs on buttons this way? I guess the best way to avoid link rot is to make sure your link is never a link in the first place.
 
 ### What can we as Developers Learn From This?
 

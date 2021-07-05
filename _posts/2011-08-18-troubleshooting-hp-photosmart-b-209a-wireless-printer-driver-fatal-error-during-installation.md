@@ -3,7 +3,7 @@
 title: 'Troubleshooting: HP PhotoSmart B-209a Wireless Printer Driver "Fatal Error
   During Installation"'
 date: 2011-08-18 21:35:00.000000000 -04:00
-comments: true
+comments: false
 
 ---
 I recently re-installed Windows 7 x64 on my laptop due to purchasing an SSD. I expected fantastic speed &amp; performance, more productivity, etc.
@@ -20,7 +20,7 @@ HP Driver setup for a wireless printer already configured on your network yields
 
 I have not tested this in any other environments, so I'm assuming it applies to:
 
-* HP PhotoSmart B-209a printers that have already been configued on the wireless network
+* HP PhotoSmart B-209a printers that have already been configured on the wireless network
 * Win 7 Professional 64-bit
 
 ### The Solution Steps

@@ -1,6 +1,6 @@
 ---
 title: "Announcement: Now on Twitch!"
-comments: true
+comments: false
 tags:
   - twitch
   - announcement

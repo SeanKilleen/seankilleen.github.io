@@ -1,7 +1,7 @@
 ---
 title: 'How To: Allow only Specific IP Addresses in Tomcat 6.0'
 date: 2010-09-30 11:47:00.000000000 -04:00
-comments: true
+comments: false
 redirect_from: 
  - /2010/09/how-to-allow-only-specific-ip-addresses_30.html
 ---
@@ -18,7 +18,7 @@ Use Tomcat to block all connections with the exception of administrator IP Addre
 
 ### The Steps
 
-* Open the context.xml file, located in [Tomcat[^1]]confcontext.xml.
+* Open the context.xml file, located in [Tomcat[^1]]`confcontext.xml`.
 * If you've never edited this file before, you should see a line like the following:
 
 ```conf

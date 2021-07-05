@@ -2,7 +2,7 @@
  
 title: 'Building a Build Process: Installing CruiseControl.NET'
 date: 2012-05-03 00:48:00.000000000 -04:00
-comments: true
+comments: false
 series: building-a-build-process
 redirect_from: 
  - /2012/05/building-build-process-part-7.html
@@ -72,7 +72,7 @@ On the E: drive, create the following directory structure:
 * Run the CruiseControl.NET Setup executable as an administrator by right-clicking and selecting "Run as Administrator".
 * Agree to the license agreement.
 * All options are selected by default; leave them and continue.
-* Leave both checkmarks checked to install the CruiseControl .NET dashboard and to install CCNet as a service.
+* Leave both check marks checked to install the CruiseControl .NET dashboard and to install CCNet as a service.
 * Leave the default installation directory or customize to your preference (I left the default for this setup)
 * Leave the default value for the Program Files folder group and click `Next`. CruiseControl.NET will commence installation.
 * Click `Finish` and exit the wizard.
@@ -109,7 +109,7 @@ Keep going:
 
 * Click on `Default Web Site`
 * On the right-hand side Action menu, click `Start` to start the default web site (if it’s not already started).
-* Open a web browser on the build server and navigate to <http://localhost/ccnet>
+* Open a web browser on the build server and navigate to `http://localhost/ccnet`
 
 If a web site shows up at all, you’re good to go. Don’t worry about any errors within the web dashboard application, as we’ll be configuring CCNet later.
 

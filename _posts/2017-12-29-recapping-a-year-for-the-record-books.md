@@ -3,7 +3,7 @@ title: "2017: Year in Review"
  
 date: 2017-12-31 10:00:00.000000000 -05:00
 
-comments: true
+comments: false
 ---
 
 What a year, what a year! So much was packed into 2017 that for the first time I felt like a recap post actually makes sense, if only so I can keep it all straight.

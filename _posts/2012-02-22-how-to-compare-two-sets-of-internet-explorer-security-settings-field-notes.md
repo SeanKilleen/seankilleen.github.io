@@ -2,14 +2,14 @@
  
 title: 'How To: Compare Two Sets of Internet Explorer Security Settings [Field Notes]'
 date: 2012-02-22 13:43:00.000000000 -05:00
-comments: true
+comments: false
 redirect_from: 
  - /2012/02/how-to-compare-two-sets-of-internet.html
 references: 
  - title: "Aaron Margosis' Non-Admin, App-Compat and Sysinternals WebLog"
-   url: http://blogs.msdn.com/b/aaron_margosis/
-   parenttitle: MSDN Blogs
-   parenturl: http://blogs.msdn.com
+   url: https://docs.microsoft.com/en-us/archive/blogs/aaron_margosis/
+   parenttitle: MSDN Blog Archive
+   parenturl: https://docs.microsoft.com/en-us/archive/blogs/
  - title: IEZoneAnalyzer v3.5 with Zone Map Viewer
    url: http://blogs.technet.com/b/fdcc/archive/2011/09/22/iezoneanalyzer-v3-5-with-zone-map-viewer.aspx
    parenttitle: Microsoft's USGCB Tech Blog
@@ -40,7 +40,7 @@ At this point, the program will pop up a window with all the different zone sett
 
 And that's it! Thank you to Aaron for providing such an excellent utility.
 
-[Aaron Link]: http://blogs.msdn.com/b/aaron_margosis/
+[Aaron Link]: https://docs.microsoft.com/en-us/archive/blogs/aaron_margosis/
 [IEZoneAnalyzer utility]: https://blogs.technet.microsoft.com/fdcc/2011/09/22/iezoneanalyzer-v3-5-with-zone-map-viewer/
 [IEZ Download Link]: https://blogs.technet.microsoft.com/fdcc/2011/09/22/iezoneanalyzer-v3-5-with-zone-map-viewer/
 [IEZ Direct]: https://msdnshared.blob.core.windows.net/media/TNBlogsFS/prod.evol.blogs.technet.com/telligent.evolution.components.attachments/01/5808/00/00/03/45/50/87/IEZoneAnalyzer.3.5.0.5.zip

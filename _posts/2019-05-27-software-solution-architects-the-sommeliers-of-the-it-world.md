@@ -1,9 +1,9 @@
 ---
 title: 'Software/Solution Architects: The Sommeliers of the IT World'
-comments: true
+comments: false
 tags: ["jobs", "careers", "metaphors", "architecture"]
 date: '2019-05-27 10:26 -0400'
-canonical_url: https://excellalabs.com/talks/software-solution-architects-sommeliers-it-world/
+canonical_url: https://excellalabs.com/software-solution-architects-the-sommeliers-of-the-it-world/
 ---
 
 I recently had a colleague ask me about how to describe the difference between an great software architect and a mediocre one, or how to deal with "ivory tower" architects. I personally eschew the title of software/solutions architect because I don’t like to be lumped into that category, but I was struggling to sum up the differences well.

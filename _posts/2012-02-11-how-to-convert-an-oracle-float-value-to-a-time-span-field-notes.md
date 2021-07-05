@@ -8,7 +8,7 @@ redirect_from:
 ---
 ### The Problem
 
-We have a bunch of "durations" stored in Oracle as `FLOAT` datatypes (as day intervals, meaning they are an interval that includes days).
+We have a bunch of "durations" stored in Oracle as `FLOAT` data types (as day intervals, meaning they are an interval that includes days).
 
 This makes sense. from a database storage perspective. However, I didn't know how to get those values into the more human-comprehensible hh:mm:ss format.
 
@@ -20,7 +20,7 @@ An Oracle function called `NUMTODSINTERVAL` is exactly what we need here. As the
 
 **Basic Example:** `NUMTODSINTERVAL (tablename.durationfield, 'DAY')`
 
-The above example takes my field named 'durationfield' and tells oracle it's a DAY interval. From here, we use the `EXTRACT` function to get what we want.
+The above example takes my field named `durationfiel`' and tells oracle it's a DAY interval. From here, we use the `EXTRACT` function to get what we want.
 
 ### Solution Examples
 

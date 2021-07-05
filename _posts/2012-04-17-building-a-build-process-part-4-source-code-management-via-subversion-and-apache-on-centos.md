@@ -3,7 +3,7 @@
 title: 'Building a Build Process: Source Code Management via Subversion and
   Apache on CentOS'
 date: 2012-04-17 00:14:00.000000000 -04:00
-comments: true
+comments: false
 series: building-a-build-process
 references:
  - title: "HowTos/Subversion"
@@ -61,7 +61,7 @@ htpasswd -csb /var/www/svn/auth/svn.htpasswd svnuser1 passw0rd1
 htpasswd -sb /var/www/svn/auth/svn.htpasswd svnuser2 passw0rd2
 ```
 
-**NOTE:** Leave off the `-c` parameter from the second line, or you’ll create a completely new file, erasing your svnuser1 account!
+**NOTE:** Leave off the `-c` parameter from the second line, or you’ll create a completely new file, erasing your `svnuser1` account!
 
 This creates the credentials for both users in the svn.htpasswd file. `–c` is the command to create a new file, `–s` forces SHA encryption of the password, and `–b` lets us pass the password via the command line (otherwise, it would have prompted us one at a time).
 
@@ -145,7 +145,7 @@ Now, bear in mind, this is an empty repository, so clicking on it won’t give y
 
 For use multiple times, it will likely make sense to have Apache start up with the system.
 
-On the Centos VM command line, run the collowing:
+On the Centos VM command line, run the following:
 
 ```sh
 chkconfig httpd on

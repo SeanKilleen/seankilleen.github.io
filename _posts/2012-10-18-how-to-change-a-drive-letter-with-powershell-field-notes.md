@@ -2,7 +2,7 @@
  
 title: 'How To: Change a Drive Letter With PowerShell [Field Notes]'
 date: 2012-10-18 18:00:00.000000000 -04:00
-comments: true
+comments: false
 redirect_from: 
  - /2012/10/how-to-change-drive-letter-with.html
 references: 

@@ -2,7 +2,7 @@
  
 title: CruiseControl .NET, VisualSVN, and SSL Certificates [Field Notes]
 date: 2012-05-01 17:58:00.000000000 -04:00
-comments: true
+comments: false
 
 redirect_from: 
  - /2012/05/cruisecontrol-net-visualsvn-and-ssl.html

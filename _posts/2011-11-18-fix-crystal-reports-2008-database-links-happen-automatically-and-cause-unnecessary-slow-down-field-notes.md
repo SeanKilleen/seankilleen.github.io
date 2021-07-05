@@ -3,13 +3,13 @@
 title: 'Fix: Crystal Reports 2008: Database Links Happen Automatically and Cause Unnecessary
   Slow-down [Field Notes]'
 date: 2011-11-18 12:15:00.000000000 -05:00
-comments: true
+comments: false
 
 
 ---
 ### Problem:
 
-In Crysal Reports, whenever adding a table from an existing data source, or adding a new datasource, when I click "OK", Crystal automatically switches to the "Links" tab and auto-calculates links.
+In Crystal Reports, whenever adding a table from an existing data source, or adding a new datasource, when I click "OK", Crystal automatically switches to the "Links" tab and auto-calculates links.
 
 99% of the time this is something I **don't** want it to do.
 

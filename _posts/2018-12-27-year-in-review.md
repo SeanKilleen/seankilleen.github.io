@@ -3,7 +3,7 @@ title: "2018: Year in Review"
  
 date: 2018-12-27 10:00:00.000000000 -05:00
 
-comments: true
+comments: false
 ---
 
 I liked doing this recap last year, so I figured I'd make it a tradition. :) 2018, like most years, held a lot, so I'm trying to jot some of it down here.
@@ -15,7 +15,7 @@ I liked doing this recap last year, so I figured I'd make it a tradition. :) 201
 * **Blog posts** both here and [on Excella's blog](https://www.excella.com/insights/author/sean-killeen) on a smattering of things -- VS Code, WSL, Azure Functions, agile tech leads, and more.
 * **AMAs**: I answered 7 questions on [my AMA site](https://github.com/SeanKilleen/ama):
   * [Not great after 10 years; what to do?](https://github.com/SeanKilleen/ama/issues/4)
-  * [Is coding a young persons's career?](https://github.com/SeanKilleen/ama/issues/5)
+  * [Is coding a young person's career?](https://github.com/SeanKilleen/ama/issues/5)
   * [The best tool for the job?](https://github.com/SeanKilleen/ama/issues/6)
   * [Maintaining your regression suite as your application grows](https://github.com/SeanKilleen/ama/issues/7)
   * [Imposter syndrome](https://github.com/SeanKilleen/ama/issues/8)

@@ -36,7 +36,7 @@ references:
  - title: "Git - the simple guide - no deep shit!"
    url: http://rogerdudler.github.io/git-guide/
  
-comments: true
+comments: false
 ---
 **Update:** I've purchased <http://AWider.NET> (empty right now) to take this project further. I've created [a GitHub repository](https://github.com/SeanKilleen/AWiderDotNet) and I hope you'll join me for some planning discussion in the [issues section](https://github.com/SeanKilleen/AWiderDotNet/issues). Let's help cast a wider .NET!
 
@@ -105,7 +105,7 @@ But the thing is, when you finally say hello at this party, you realize that mos
 * **I need to spend time building my brand / resume**: Uhhh, OSS is a fantastic way to do that. I can offer a personal example: I jumped in in a very small way to help out [Akka.NET](http://getakka.net) with some of their documentation and a script to add some licensing comments to code. I thought it was pretty minor, but it turned out to help them clear a hurdle in getting to v1. They thanked me in front of a room of people I looked up to at dotNetFringe, and I'm currently listed on their contributors page! (Ed. Note: this link has been lost to time.) How's that for brand-building? I've met a ton of people that I really respect in the community, and I feel more like a member now than I ever have.
 * **I'm not sure where to jump in**: Yeah, this is a hard question. The good news is, there's an easy answer: start anywhere. There's a great site, [Up-for-grabs.net](http://up-for-grabs.net/#/tags/.NET) that features projects that are specifically asking for help. Find one that looks cool enough to you and jump in!
 * **I've seen people react badly to newcomers before.** Well, there are some cultural rules to follow ([GitHub has a nice guide](https://guides.github.com/activities/contributing-to-open-source/) on how to do it well). Or those people may have been having a bad day. Or maybe they're jerks and you should look for a new OSS project to contribute to.
-* **Can't I just keep relying on Microsoft to do it for me?** Well, yes and no. In case you haven't noticed, [Microsoft is embarcing OSS](https://github.com/dotnet) more than ever before. Which is awesome. You could choose to rely on others to provide your tools, but that limits you as a developer and allows other people to create the future of your industry for you. Why not at least give it a shot and see what it's all about? Ownership and having a stake in things can feel awesome.
+* **Can't I just keep relying on Microsoft to do it for me?** Well, yes and no. In case you haven't noticed, [Microsoft is embracing OSS](https://github.com/dotnet) more than ever before. Which is awesome. You could choose to rely on others to provide your tools, but that limits you as a developer and allows other people to create the future of your industry for you. Why not at least give it a shot and see what it's all about? Ownership and having a stake in things can feel awesome.
 
 ## What do you think?
 

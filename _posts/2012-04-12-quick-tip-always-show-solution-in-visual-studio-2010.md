@@ -2,7 +2,7 @@
  
 title: 'Quick Tip: Always Show Solution in Visual Studio 2010'
 date: 2012-04-12 11:39:00.000000000 -04:00
-comments: true
+comments: false
 
 ---
 ### Problem:
@@ -21,4 +21,4 @@ Thanks to [K. Scott Allen] in a [Pluralsight] video (unfortunately, I forget whi
 And voila! A solution will always be there
 
 [K. Scott Allen]: http://odetocode.com/blogs/scott/
-[Pluralsight]: http://www.pluralsight-training.net/microsoft/
+[Pluralsight]: https://www.pluralsight.com

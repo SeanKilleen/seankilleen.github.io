@@ -3,13 +3,13 @@
 title: 'Building a Build Process, Part 6b: MSBuild Integration With Cassini and Visual
   Studio'
 date: 2012-05-02 22:39:00.000000000 -04:00
-comments: true
+comments: false
 series: building-a-build-process
 redirect_from: 
  - /2012/05/building-build-process-part-6b-msbuild.html
 references: 
  - title: Pluralsight Continuous Integration Course
-   url:  http://www.pluralsight-training.net/microsoft/courses/TableOfContents?courseName=continuous-integration&amp;highlight=james-kovacs_ci-part1*3!james-kovacs_ci-part3*2!james-kovacs_ci-part2*2!james-kovacs_ci-part6*4,12#ci-part1
+   url:  https://www.pluralsight.com/courses/continuous-integration
  - title: MSBuild Extension Pack web site
    url: http://msbuildextensionpack.codeplex.com/
  - title: MsBuild Extension Pack AsyncExec Reference 
@@ -24,7 +24,7 @@ In this round, we’re going to discuss:
 
 * How to Start the Cassini Web Server Asynchronously
 * How to Stop the Cassini Web Server  
-* How to (not quite) get Visual Studio to seemlessly Follow the Same directions that your MSBuild file follows.
+* How to (not quite) get Visual Studio to seamlessly Follow the Same directions that your MSBuild file follows.
 
 ### Starting the Web Server (Asynchronously!)
 

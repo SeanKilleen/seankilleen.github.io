@@ -2,7 +2,7 @@
 title: "Why I Prefer xUnit over MSTest"
  
 date: 2015-06-28 22:34:00.000000000 -05:00
-comments: true
+comments: false
 ---
 I was recently asked to explain[^1] my preference for xUnit over something like MSTest. To my surprise, while I felt very strongly -- and have for some time -- I struggled to clearly articulate my reasons. This is an attempt to get that part right. I sourced some help from folks on Twitter, who I'll be quoting here as well.
 
@@ -16,7 +16,7 @@ Also, while I'm about to contrast two testing frameworks, I can't stress enough 
 
 * **`[Fact]` vs. `[Theory]` attributes**. A fact is something that should always be true. A theory is something that, if it's wrong, could be because you fed it bad data.
 * **The simplicity of passing data to tests with `[InlineData]`.** I think this a highly readable way to pass data into a test.
-* **Forgetting `[Setup]` and `[Teardown]`**. My tests flow naturally, just like normal classes and methods should. This prevents me from overcomplicating things[^3].
+* **Forgetting `[Setup]` and `[Teardown]`**. My tests flow naturally, just like normal classes and methods should. This prevents me from over-complicating things[^3].
 * **None of that gross `[ExpectedException]`**. In xUnit, I can use `Assert.Throws<T>`, or with a library like [FluentAssertions](http://www.fluentassertions.com/) I can catch exceptions right in my test using an `Action`:
 
 ```csharp
@@ -48,7 +48,7 @@ In fairness, it's been a while since I've really dug into it. If I'm wrong on an
 ## Bad Reasons to Justify Using MSTest
 
 * **Microsoft uses it.** Pssst, they're actually [mostly][mostly] [using][using] [xUnit][xunit] [now][now].
-* **It's the default and that's good enough.** This is a failure of attitude. Woe to the developer who thinks this way. Continuous improvement, particularly in terms of toolsets, should be second-nature to a developer.
+* **It's the default and that's good enough.** This is a failure of attitude. Woe to the developer who thinks this way. Continuous improvement, particularly in terms of tool-sets, should be second-nature to a developer.
 
 ## What do *you* Think?
 

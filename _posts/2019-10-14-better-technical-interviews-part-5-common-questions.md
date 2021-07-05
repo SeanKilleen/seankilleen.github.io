@@ -92,7 +92,7 @@ With that said, here are some common questions I tend to ask and my reasoning be
 
 * **When I ask this question:** Whenever someone is interviewing for a leadership position, and usually for senior positions as well.
 * **Why I ask this question:** This question often reveals biases. Does someone see leaders as authoritarian? Do they view leadership as having all the answers? I want to see how someone thinks about leadership both in terms of someone else being a leader they work with and also themselves as a leader.
-* **What sorts of answers do I look for:** I look for answers around servant leadership, mentoring, growing more leaders, supporting those on your team. I look for answers around good communication and feedback, clarity of vision and purpose, and encourgaement. I look for answers about a positive attitude. If I sense that someone maybe hasn't encountered that sort of definition of leadership before, I may prod a bit. Mostly what I'm looking for is that someone isn't actively against that idea of leadership.
+* **What sorts of answers do I look for:** I look for answers around servant leadership, mentoring, growing more leaders, supporting those on your team. I look for answers around good communication and feedback, clarity of vision and purpose, and encouragement. I look for answers about a positive attitude. If I sense that someone maybe hasn't encountered that sort of definition of leadership before, I may prod a bit. Mostly what I'm looking for is that someone isn't actively against that idea of leadership.
 
 ### Tell me about the different access modifiers and what they do?
 
@@ -132,7 +132,7 @@ I usually phrase this question along the lines of: "OK, say that you picked up a
 
 * **When I ask this question:** When I want to see if someone is invested in the industry or if they've been heads down for a while. (absence of this isn't necessarily a mark against someone)
 * **Why I ask this question:** It's important to me, especially in a consulting environment, that developers be aware of the larger ecosystem and things that are going on. I also ask it because I almost always learn something. Quite frankly, I often ask it to identify devs who don't care. Even strictly 9-5 developers on legacy systems should take a look around every so often.
-* **What sorts of answers do I look for:** Anything. Folks might mention their excitement around the OSSing of large parts of the .NET ecosystem. They might get excited about .NET Core and its cross-platform capabilities. They might be excited about an IDE tool they learned about, or a library that made their lives easier, or a conference they just heard about and what to attend. I look for folks to be able to point to _something_ in the community / ecosystem that they think is a little cool. It's a red flag for me if a question this broad doesn't elicit a meaningful response.
+* **What sorts of answers do I look for:** Anything. Folks might mention their excitement around the OSS-ing of large parts of the .NET ecosystem. They might get excited about .NET Core and its cross-platform capabilities. They might be excited about an IDE tool they learned about, or a library that made their lives easier, or a conference they just heard about and what to attend. I look for folks to be able to point to _something_ in the community / ecosystem that they think is a little cool. It's a red flag for me if a question this broad doesn't elicit a meaningful response.
 
 ### What are you looking for in a long-term fit?
 

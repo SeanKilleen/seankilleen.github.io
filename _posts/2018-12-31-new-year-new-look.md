@@ -3,7 +3,7 @@ title: "New Year, New Look!"
 
 date: 2018-12-31 17:00:00:00.000000000 -05:00
 
-comments: true
+comments: false
 ---
 
 This blog, as it turns out, has been around for a little bit. :sweat_smile: The UI was feeling its age, and I thought: what better time to update things than the new year? And so, here we are.

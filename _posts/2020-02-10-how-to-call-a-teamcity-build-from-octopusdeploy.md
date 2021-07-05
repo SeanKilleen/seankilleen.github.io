@@ -1,6 +1,6 @@
 ---
 title: 'How to: Call a TeamCity build from OctopusDeploy'
-comments: true
+comments: false
 tags:
   - ci
   - cd
@@ -47,7 +47,7 @@ From the variables in the script, Octopus will generate step templates:
 
 * Click to create the access token:
 
-![the menu for creating an ccess token]({{site.post-images}}/teamcity_from_octopus/CreateAccessToken.png)
+![the menu for creating an access token]({{site.post-images}}/teamcity_from_octopus/CreateAccessToken.png)
 
 * Give the access token a name:
 

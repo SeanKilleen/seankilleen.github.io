@@ -2,7 +2,7 @@
  
 title: 'A Tale of Two Platforms: From iPhone to Android and Back Again'
 date: 2010-09-13 11:51:00.000000000 -04:00
-comments: true
+comments: false
 
 ---
 
@@ -20,7 +20,7 @@ Why go to Android? The list was extensive, but a few of my top reasons were:
 * Expandable storage
 * A notifications area (no more awful push notifications!)
 * Multi-tasking capabilities
-  * the iPhone 3G was incapable of it by Apple's standards, except then I jailbroke it and it worked perfectly
+  * the iPhone 3G was incapable of it by Apple's standards, except then I jail-broke it and it worked perfectly
 * In general, a more "open" ecosystem.
 
 After the iOS upgrades turned my 3G -- which otherwise had served me reasonably well -- into iMolasses, I was fed up. "I've had enough!" I proclaimed to friends -- "I'm switching to Android!" ...and then some time went by and I finally put some upgrade where my mouth was. I switched to the Samsung Captivate on AT&T (AT&T's variant of the Samsung Galaxy S).
@@ -39,7 +39,7 @@ But the application still worked, right? Well...not really. To be fair, this mor
 
 So, next up, I decided to load a great utility, PdaNet, because I'd paid for it before only to find out that I had to jailbreak my iPhone 3G to use it (a point of contention with me). But Android Market wasn't the locked down app store, and I was excited to finally be able to access it. Except...when I searched for it, it wasn't there. I know the popularity of this application -- surely it would be listed in the market? It turns out, it _is_ listed, but AT&T **censored the Android Market results**. AppBrain found the application, but upon attempting to install or update, the package could not be found. I searched on-line and found that this was something AT&T had done.But certainly I could side-load apps, right? Nope. AT&T had taken that ability away, too.
 
-I hate to use the pun -- I truly do -- but this was not the 'droid I was looking for. I've heard similar things about other carriers -- crapware, custom UIs, lockdowns, and other carrier-introduced features are effectively destroying the intended Android experience.
+I hate to use the pun -- I truly do -- but this was not the 'droid I was looking for. I've heard similar things about other carriers -- crapware, custom UIs, lock-downs, and other carrier-introduced features are effectively destroying the intended Android experience.
 
 ### "Closed" vs. the Myth of "open"
 
@@ -75,8 +75,8 @@ All is not lost, and I think Google has the ability to save the Android platform
 
 What does Android need to do?
 
-1. **Google Needs to wrestle control away from the carriers.** Carriers have taken Android's good name and reduced it to a second-class mobile OS. Google has the finances and industry power to get tough with its licensing, and now that Android is accepted as the main alternartive to iOS in the smartphone world, Google needs to treat it like such and lead the charge against carriers wrecking its product.
-1. **UI Consistency Standards need to be agreed upon and passionately enforced; branding should be relegated to the hardware.** A part of removing carrier control should be to disallow any UI modifications that users don't explicitly authorize. They deserve to start on the same level as all other Android products, and carriers UIs should succeed on the basis of their merits, not carrier lockdown. Let carriers compete to be offering the best phones that run Android, and not trying to differentiate themselves through crapware and UI branding that does nothing but give Android a bad name.
+1. **Google Needs to wrestle control away from the carriers.** Carriers have taken Android's good name and reduced it to a second-class mobile OS. Google has the finances and industry power to get tough with its licensing, and now that Android is accepted as the main alternative to iOS in the smartphone world, Google needs to treat it like such and lead the charge against carriers wrecking its product.
+1. **UI Consistency Standards need to be agreed upon and passionately enforced; branding should be relegated to the hardware.** A part of removing carrier control should be to disallow any UI modifications that users don't explicitly authorize. They deserve to start on the same level as all other Android products, and carriers UIs should succeed on the basis of their merits, not carrier lock-down. Let carriers compete to be offering the best phones that run Android, and not trying to differentiate themselves through crapware and UI branding that does nothing but give Android a bad name.
 1. **Open needs to commit to being open to realize its full potential.** Android has more potential than any OS because its ecosystem wants to be open. If it embraces this mantra in an unwavering way, and backs it up, it will rightly dominate the smartphone OS market.
 
 For now, I'll wait to see if Android grows up into the power mobile OS that I know it can be.

@@ -3,7 +3,7 @@
 title: 'Quick Tip: The "shell:" prefix in Windows 8.1 dialogs (Finding the Startup
   Folder in Windows 8.1 quickly and more!)'
 date: 2014-01-18 22:34:00.000000000 -05:00
-comments: true
+comments: false
 references: 
  - title: "KB 0000709 - 'Where's the Startup Folder?'"
    url: http://www.petenetlive.com/KB/Article/0000709.htm

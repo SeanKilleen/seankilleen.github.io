@@ -1,6 +1,6 @@
 ---
 title: 'Adventures in Azure Architecture: A Home Desktop Setup'
-comments: true
+comments: false
 tags:
   - azure
   - architecture
@@ -54,7 +54,7 @@ OK, that's a lot of good information to go on. Here's what I'm thinking:
 
 I used the [Azure pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/) to attempt to whip up an estimate.
 
-| Item                       | Using OneDrive Storge | No OneDrive | Notes                                                                                                            |
+| Item                       | Using OneDrive Storage | No OneDrive | Notes                                                                                                            |
 | -------------------------- | --------------------- | ----------- | ---------------------------------------------------------------------------------------------------------------- |
 | **Regular VM**             |                       |             |                                                                                                                  |
 | Machine                    | $36.55                | $36.55      | 2 vCPU, 8 GB RAM. Assumes 6 hours use per day.                                                                   |

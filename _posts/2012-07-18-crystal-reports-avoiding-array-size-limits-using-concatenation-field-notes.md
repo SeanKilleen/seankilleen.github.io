@@ -2,7 +2,7 @@
  
 title: 'Crystal Reports: Avoiding Array Size Limits Using Concatenation [Field Notes]'
 date: 2012-07-18 17:00:00.000000000 -04:00
-comments: true
+comments: false
 redirect_from:
  - /2012/07/crystal-reports-avoiding-array-size.html
 ---
@@ -88,12 +88,12 @@ The trick here is to remember that the last few items in the temporary string wo
 
 * Insert the `CreateOrReset` formula in the group heading (or an additional, suppressed group heading)
 * Insert the increment formula in the details section (suppress if necessary)
-* To test, insert the display formula in the group footer. In reality, we won't be "displaying" it in the classic sense, but rather passing it to the sub-report for futher analysis.
+* To test, insert the display formula in the group footer. In reality, we won't be "displaying" it in the classic sense, but rather passing it to the sub-report for further analysis.
 
 #### Step 5: Linking the Array to the sub-report
 
 * Create the sub-report to display your data (outside the scope of this topic)
-* Right-click on the sub-report and choose `Change Subreport Links`
+* Right-click on the sub-report and choose `Change sub-report Links`
 * Move the array display formula into the `Field(s) to link to` box by clicking &rarr;.
 * Click OK.
 
