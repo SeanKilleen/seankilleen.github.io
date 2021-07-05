@@ -34,8 +34,7 @@ If we want to compare them to see which is greater, we couldn't just compare the
 
 Instead, you can use a custom comparer to achieve this, by implementing your own Comparer and utilizing it.
 
-
-## Writing the Comparer 
+## Writing the Comparer
 
 Below, we define the classes that would make up the comparer. These would go in your test project, unless you're making use of this comparer in your production code as well.
 
@@ -65,7 +64,7 @@ public class TemperatureComparer : Comparer<Temperature>
 
 ## Using the Comparer in Our Tests
 
-Now that we have the Comparer defined, we can use it in our test: 
+Now that we have the Comparer defined, we can use it in our test:
 
 ```csharp
 public class TemperatureTests
