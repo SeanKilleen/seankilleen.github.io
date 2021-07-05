@@ -8,7 +8,7 @@ date: 2020-11-28 16:29 -0500
 
 Occasionally, you may need to compare objects in your test. Perhaps you have a complex sort of comparison that you'd like to check, which involves testing three different properties to ensure something is equal.
 
-For example, let's say we had a class with the ability to represent Celsius and Farenheit temperatures:
+For example, let's say we had a class with the ability to represent Celsius and Fahrenheit temperatures:
 
 ```csharp
 public enum TemperatureFormat
