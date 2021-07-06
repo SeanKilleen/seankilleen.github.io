@@ -2,7 +2,7 @@
  
 title: 'How to: Ensure IIS and ASP.NET MVC Play Nice with Web Fonts [Field Notes]'
 date: 2012-09-10 18:00:00.000000000 -04:00
-comments: true
+comments: false
 redirect_from: 
  - /2012/09/how-to-ensure-iis-and-aspnet-mvc-play.html
 references: 
