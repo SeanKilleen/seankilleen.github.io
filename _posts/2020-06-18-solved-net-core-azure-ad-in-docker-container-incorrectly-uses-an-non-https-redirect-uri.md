@@ -1,7 +1,7 @@
 ---
 title: "Solved: .NET Core Azure AD in Docker Container Incorrectly Uses a
   non-https redirect URI"
-comments: false
+
 tags:
   - azure
   - docker

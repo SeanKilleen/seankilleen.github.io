@@ -1,6 +1,6 @@
 ---
 title: 'How to: Call a TeamCity build from OctopusDeploy'
-comments: false
+
 tags:
   - ci
   - cd

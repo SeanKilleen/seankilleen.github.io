@@ -18,7 +18,7 @@ references:
    parenturl: http://github.com
 
 
-comments: false
+
 ---
 I recently attended the [.NET Fringe 2017](http://dotnetfringe.org) conference in Portland, OR -- in fact, I'm on the plane back now as I write this.
 

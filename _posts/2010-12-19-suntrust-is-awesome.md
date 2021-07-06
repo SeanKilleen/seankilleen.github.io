@@ -2,7 +2,7 @@
  
 title: SunTrust is Awesome.
 date: 2010-12-19 13:57:00.000000000 -05:00
-comments: false
+comments: true
 redirect_from:
  - /2010/12/suntrust-is-awesome.html
 references: 

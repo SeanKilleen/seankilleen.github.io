@@ -3,7 +3,7 @@ title: "Quick Tip: A Shortcut to Temporarily Disable ReSharper"
  
 date: 2016-12-27 23:08:00.000000000 -05:00
   
-comments: false
+
 ---
 ## Problem
 

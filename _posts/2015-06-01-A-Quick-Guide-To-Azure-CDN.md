@@ -2,7 +2,7 @@
 title: "Tutorial: Easily Using Azure CDN with ASP.NET MVC Projects"
  
 date: 2015-06-01 22:34:00.000000000 -05:00
-comments: false
+
 references: 
  - title: Azure CDN
    url: http://azure.microsoft.com/en-us/services/cdn/

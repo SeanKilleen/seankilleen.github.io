@@ -2,7 +2,7 @@
 title: "How To: Check Firewall Port Openings with Powershell"
  
 date: 2015-11-11 23:15:00.000000000 -05:00
-comments: false
+
 ---
 ## The Problem
 

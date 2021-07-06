@@ -3,7 +3,7 @@
 title: 'Crystal Reports Error: "A subscript must be between 1 and the size of the
   array." [Field Notes]'
 date: 2011-11-01 16:48:00.000000000 -04:00
-comments: false
+comments: true
 redirect_from: 
  - /2011/11/crystal-reports-error-subscript-must-be.html
 ---

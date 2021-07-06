@@ -2,7 +2,7 @@
 title: 'How to Copy ACL Permissions For Folders, Using Powershell'
  
 date: 2015-01-22 12:47:00.000000000 -05:00
-comments: false
+
 
 ---
 ## Problem:

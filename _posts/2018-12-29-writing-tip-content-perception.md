@@ -3,7 +3,7 @@ title: "Quick Writing Tip: Content and Perception"
  
 date: 2018-12-29 18:00:00.000000000 -05:00
 
-comments: false
+
 ---
 
 *I've had this quick tip sitting around for a while in my drafts, and figured I really need to publish more of these things, so here it is.*

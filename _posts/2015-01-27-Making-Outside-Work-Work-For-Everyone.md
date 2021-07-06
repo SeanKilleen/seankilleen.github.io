@@ -2,7 +2,7 @@
 title: 'Making Outside Work Work For Everyone: Guidelines for Success'
  
 date: 2015-01-27 22:34:00.000000000 -05:00
-comments: false
+
 ---
 I've been doing some thinking lately on policies surrounding outside work for employees and companies.
 

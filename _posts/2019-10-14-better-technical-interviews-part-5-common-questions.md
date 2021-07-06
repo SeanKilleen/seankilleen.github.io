@@ -1,6 +1,6 @@
 ---
 title: 'Better Technical Interviews: Part 5 -- My Common Interview Questions'
-comments: false
+
 tags:
   - interviewing
   - culture

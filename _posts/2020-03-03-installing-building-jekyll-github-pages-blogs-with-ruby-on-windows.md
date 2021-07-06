@@ -2,7 +2,7 @@
 title: >-
   Jekyll Two Ways on Windows: Installing & building Jekyll / GitHub Pages blogs
   with Ruby on Windows 10
-comments: false
+
 tags:
   - jekyll
   - ruby

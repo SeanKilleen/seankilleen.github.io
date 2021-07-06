@@ -16,7 +16,7 @@ references:
    parenturl: https://github.com/nlkl
  - title: "Autofac" 
    url: https://autofac.org/
-comments: false
+
 ---
 I woke up this morning and saw [a great blog post by Arialdo Martini] that inspired me to blog a little bit (thanks, Arialdo!)
 

@@ -3,7 +3,7 @@
 title: 'Quick Tip: Run Multiple NUnit Assemblies with one Exec Command in MSBuild
   [Field Notes]'
 date: 2012-05-15 10:52:00.000000000 -04:00
-comments: false
+
 redirect_from:
  - /2012/05/quick-tip-run-multiple-nunit-assemblies.html
 references: 

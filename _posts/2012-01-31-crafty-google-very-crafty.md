@@ -2,7 +2,7 @@
  
 title: Crafty, Google+. Very Crafty.
 date: 2012-01-31 22:27:00.000000000 -05:00
-comments: false
+
 
 ---
 A quick observation: on most social networks (LinkedIn, Facebook, etc.) you'll see the option to connect with folks that you know.

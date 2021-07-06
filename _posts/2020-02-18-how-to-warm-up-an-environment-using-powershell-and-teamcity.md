@@ -1,6 +1,6 @@
 ---
 title: 'How to: "warm up" an environment using PowerShell and TeamCity'
-comments: false
+
 tags:
   - ci
   - cd

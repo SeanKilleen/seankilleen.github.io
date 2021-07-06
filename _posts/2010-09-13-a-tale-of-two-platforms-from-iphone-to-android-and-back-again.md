@@ -2,7 +2,7 @@
  
 title: 'A Tale of Two Platforms: From iPhone to Android and Back Again'
 date: 2010-09-13 11:51:00.000000000 -04:00
-comments: false
+comments: true
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: 'How to: Create a PowerShell alias with parameters'
-comments: false
+
 tags:
   - PowerShell
   - aliases

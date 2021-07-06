@@ -11,7 +11,7 @@ references:
  - title: "VS Code Can Do That?!"
    url: https://vscodecandothat.com/
 
-comments: false
+
 ---
 
 File this under [VS Code Can do That?!](https://vscodecandothat.com/)

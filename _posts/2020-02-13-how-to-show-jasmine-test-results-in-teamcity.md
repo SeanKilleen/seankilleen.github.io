@@ -1,6 +1,6 @@
 ---
 title: 'How to: Show Jasmine test results in TeamCity'
-comments: false
+
 tags:
   - jasmine
   - teamcity

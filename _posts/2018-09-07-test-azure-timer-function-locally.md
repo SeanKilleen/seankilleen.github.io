@@ -9,7 +9,7 @@ references:
    parenttitle: "Microsoft Docs"
    parenturl: https://docs.microsoft.com
 
-comments: false
+
 ---
 
 I've been digging into Azure Functions lately and it's pretty great. I hit a small stumbling block so figured I'd document it here in case anyone else had the same question.

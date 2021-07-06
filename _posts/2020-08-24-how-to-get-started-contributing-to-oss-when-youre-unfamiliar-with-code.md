@@ -1,6 +1,6 @@
 ---
 title: How to Contribute to OSS Projects When You're Unfamiliar With Their Code
-comments: false
+
 tags:
   - OSS
   - contributions

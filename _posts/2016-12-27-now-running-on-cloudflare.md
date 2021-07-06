@@ -14,7 +14,7 @@ references:
  - title: "DeathByPapercut on Twitter"
    url: http://twitter.com/deathbypapercut
   
-comments: false
+
 ---
 As of a few hours ago, this site runs on `https` by default and likely pretty darn fast. That's all thanks to [CloudFlare](https://www.cloudflare.com/), and to [my](http://RyanKilleen.com) [brother](http://Github.com/RyKilleen) [Ryan](http://twitter.com/deathbypapercut), who showed me how easy it was to get up and running with CloudFlare on an upcoming project of ours.
 

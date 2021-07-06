@@ -2,7 +2,7 @@
 
 title: Site Rebirth
 date: 2010-08-31 12:59:00.000000000 -04:00
-comments: false
+comments: true
 
 ---
 Hello, everyone! Since redirecting the SeanKilleen.com domain name to WordPress, I’ve been trying to invest more time into revamping the look and content of the site.

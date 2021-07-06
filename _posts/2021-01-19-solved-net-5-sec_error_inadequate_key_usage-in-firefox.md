@@ -1,6 +1,6 @@
 ---
 title: 'Solved: .NET 5 "SEC_ERROR_INADEQUATE_KEY_USAGE" in Firefox'
-comments: false
+
 tags:
   - .net
   - .net 5
