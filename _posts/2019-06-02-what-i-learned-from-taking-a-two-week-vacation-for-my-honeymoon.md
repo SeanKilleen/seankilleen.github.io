@@ -1,6 +1,6 @@
 ---
 title: What I Learned From Taking a Two-Week Vacation for my Honeymoon
-comments: true
+comments: false
 tags:
   - personal
   - balance
