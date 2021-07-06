@@ -72,6 +72,16 @@ layout: default
 
     {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
       {% include comments.html %}
+    {% else %}
+      {% if jekyll.environment != 'production' %}
+        <h1>COMMENTS DISABLED DUE TO ENVIRONMENT</h1>
+      {% endif %}
+      {% if !site.comments.provider %}
+        <h1>COMMENTS DISABLED DUE TO LACK OF PROVIDER</h1>
+      {% endif %}
+      {% if !page.comments %}
+        <h1>COMMENTS DISABLED DUE TO LACK OF PAGE COMMENTS</h1>
+      {% endif %}
     {% endif %}
   </article>
 
