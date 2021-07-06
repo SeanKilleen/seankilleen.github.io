@@ -2,7 +2,7 @@
 title: "Why I keep an 'Accomplishments / Good Stuff' List"
 date: 2018-12-29 20:54:00:00.000000000 -05:00
 
-comments: true
+comments: false
 ---
 
 I was reviewing my year recently, and one of the biggest parts of that is looking back at my "accomplishments / good stuff" list for the year. I've been in the habit of updating this list for years now, and it's one of the habits that's really helped me, so I figured I'd write about it here a bit.
