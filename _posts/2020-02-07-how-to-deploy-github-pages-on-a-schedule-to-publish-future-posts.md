@@ -1,6 +1,6 @@
 ---
 title: 'How to: Deploy GitHub Pages on a Schedule to Publish Future Posts'
-comments: true
+
 tags:
   - github
   - github pages

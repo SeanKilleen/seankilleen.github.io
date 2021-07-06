@@ -2,7 +2,7 @@
  
 title: 'Maximo Tip: PM Work Order Cancellation [Field Notes]'
 date: 2012-09-18 18:00:00.000000000 -04:00
-comments: false
+
 redirect_from: 
  - /2012/09/maximo-tip-pm-work-order-cancellation.html
 ---

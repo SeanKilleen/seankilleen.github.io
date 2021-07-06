@@ -2,7 +2,7 @@
  
 title: 'Fix: Crystal 2008 Doesn''t Refresh After Adding Columns [Field Notes]'
 date: 2011-11-09 11:50:00.000000000 -05:00
-comments: false
+comments: true
 references: 
  - title: "Adding New Fields To Stored Procedure And Updating It In Crystal Reports"
    url: http://it.toolbox.com/blogs/programming-life/adding-new-fields-to-stored-procedure-and-updating-it-in-crystal-reports-30072

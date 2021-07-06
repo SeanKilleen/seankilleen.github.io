@@ -2,7 +2,7 @@
  
 title: 'Building A Build Process: Groundwork -- The VMs'
 date: 2012-04-15 22:49:00.000000000 -04:00
-comments: false
+
 series: building-a-build-process
 redirect_from: 
  - /2011/12/building-build-process-part-2.html

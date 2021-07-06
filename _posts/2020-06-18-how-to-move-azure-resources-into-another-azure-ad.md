@@ -1,6 +1,6 @@
 ---
 title: "How to: Move Azure Resources into another Azure AD"
-comments: false
+
 tags:
   - azure
   - ad

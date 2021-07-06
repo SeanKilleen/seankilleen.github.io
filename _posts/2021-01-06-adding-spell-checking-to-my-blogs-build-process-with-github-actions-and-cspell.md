@@ -1,6 +1,6 @@
 ---
 title: Adding Spell Checking to my Blog's Build Process with GitHub Actions and cSpell
-comments: false
+
 tags:
   - github
   - github actions

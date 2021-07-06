@@ -2,7 +2,7 @@
  
 title: Using JSHint with Underscore.js in Visual Studio 2012 [Field Notes]
 date: 2013-11-25 18:30:00.000000000 -05:00
-comments: false
+
 redirect_from: 
  - /2013/11/using-jshint-with-underscorejs-in.html
 

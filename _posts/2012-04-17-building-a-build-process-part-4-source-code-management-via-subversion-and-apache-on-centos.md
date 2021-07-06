@@ -3,7 +3,7 @@
 title: 'Building a Build Process: Source Code Management via Subversion and
   Apache on CentOS'
 date: 2012-04-17 00:14:00.000000000 -04:00
-comments: false
+
 series: building-a-build-process
 references:
  - title: "HowTos/Subversion"

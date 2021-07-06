@@ -2,7 +2,7 @@
  
 title: 'Fix: Notepad++ Tabs From Your Last Session'
 date: 2011-12-04 21:26:00.000000000 -05:00
-comments: false
+
 
 ---
 Just found myself doing this again on the new setup; figured it might be worth posting.

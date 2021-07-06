@@ -1,6 +1,6 @@
 ---
 title: 'Better Technical Interviews: Part 2 -- Preparation'
-comments: false
+
 tags:
   - interviews
   - culture

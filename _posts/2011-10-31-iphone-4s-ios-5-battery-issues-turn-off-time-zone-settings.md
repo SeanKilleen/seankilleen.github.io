@@ -2,7 +2,7 @@
  
 title: iPhone 4S / iOS 5 battery issues? Turn off time zone settings
 date: 2011-10-31 07:22:00.000000000 -04:00
-comments: false
+comments: true
 redirect_from: 
  - /2011/10/iphone-4s-ios-5-battery-issues-turn-off.html
 references:

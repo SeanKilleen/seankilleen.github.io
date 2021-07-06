@@ -2,7 +2,7 @@
  
 title: 'Building a Build Process: CruiseControl.NET Preparation'
 date: 2012-05-03 13:36:00.000000000 -04:00
-comments: false
+
 series: building-a-build-process
 redirect_from: 
  - /2012/05/building-build-process-part-8.html

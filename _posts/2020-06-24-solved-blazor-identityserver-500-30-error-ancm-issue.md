@@ -1,6 +1,6 @@
 ---
 title: "Solved: Blazor IdentityServer 500.30 Error (ANCM Issue)"
-comments: true
+
 tags:
   - blazor
   - azure

@@ -2,7 +2,7 @@
 title: "Great Tool Spotlight: Animate it with ScreenToGif"
  
 date: 2015-11-10 23:15:00.000000000 -05:00
-comments: false
+
 ---
 On this blog, I often use screenshots to illustrate tutorials. This leads to long blog posts and I never feel like the full context is there because they're not animated. I avoided trying to capture animations because, in my experience, the software out there to do so was buggy or overly complex and added more burden value.
 

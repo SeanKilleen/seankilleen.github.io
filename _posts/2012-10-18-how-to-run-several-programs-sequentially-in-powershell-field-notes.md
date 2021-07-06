@@ -2,7 +2,7 @@
  
 title: 'How To: Run Several Programs Sequentially in PowerShell [Field Notes]'
 date: 2012-10-18 19:00:00.000000000 -04:00
-comments: false
+
 redirect_from: 
  - /2012/10/how-to-run-several-programs.html
 

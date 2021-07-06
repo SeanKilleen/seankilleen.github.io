@@ -1,7 +1,7 @@
 ---
  
 title: 'Chrome Tip: Add a Keyboard Shortcut to a Bookmarklet'
-comments: false
+
 
 date: 2013-01-13 12:45:00.000000000 -05:00
 

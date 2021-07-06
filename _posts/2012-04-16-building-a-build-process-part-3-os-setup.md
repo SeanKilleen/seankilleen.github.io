@@ -2,7 +2,7 @@
  
 title: 'Building a Build Process: OS Setup'
 date: 2012-04-16 22:28:00.000000000 -04:00
-comments: false
+
 series: building-a-build-process
 ---
 {% include _buildseries-intro.md %}

@@ -2,7 +2,7 @@
  
 title: 'A Birthday Gift to the World: Let''s Give Others Clean Water!'
 date: 2011-08-30 12:08:00.000000000 -04:00
-comments: false
+comments: true
 
 ---
 I'm a lucky guy, and I've had by all standards a great and fantastic 25 years so far. I've got most things I could want in life, and everything I need.

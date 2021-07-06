@@ -2,7 +2,7 @@
 title: "How to Leave a Company Well"
  
 date: 2015-02-27 11:00:00.000000000 -05:00
-comments: false
+
 ---
 I recently had lunch with the owner of a company I'd moved on from. Besides being a general catch up, it served as a sort of check-in/reflection point on constructive criticisms from our time together.
 

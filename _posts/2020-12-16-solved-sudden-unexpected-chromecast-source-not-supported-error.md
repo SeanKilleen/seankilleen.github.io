@@ -1,6 +1,6 @@
 ---
 title: 'Solved: Chromecast "Source not Supported" Error When Attempting to Cast'
-comments: false
+
 excerpt: 'A Chrome flag does the trick.'
 tags:
   - chromecast

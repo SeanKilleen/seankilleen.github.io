@@ -1,6 +1,6 @@
 ---
 title: 'From the AMA: "How did you become a Microsoft MVP?"'
-comments: false
+
 tags:
   - ama
   - microsoft mvp

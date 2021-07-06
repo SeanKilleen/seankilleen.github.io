@@ -2,7 +2,7 @@
  
 title: Minecraft Tekkit Lite Earth Map as a Service [Nerd Fun]
 date: 2013-05-26 13:35:00.000000000 -04:00
-comments: false
+
 redirect_from: 
  - /2013/05/minecraft-tekkit-lite-earth-map-as.html
 

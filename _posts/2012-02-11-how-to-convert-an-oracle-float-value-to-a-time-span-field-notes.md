@@ -2,7 +2,7 @@
  
 title: 'How To: Convert an Oracle FLOAT Value to A Time Span [Field Notes]'
 date: 2012-02-11 16:38:00.000000000 -05:00
-comments: false
+
 redirect_from: 
  - /2012/02/how-to-convert-oracle-float-value-to.html
 ---

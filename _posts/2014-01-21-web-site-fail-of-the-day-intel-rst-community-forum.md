@@ -2,7 +2,7 @@
  
 title: 'Web site fail of the day: Intel RST Community Forum'
 date: 2014-01-21 06:39:00.000000000 -05:00
-comments: false
+
 
 ---
 The Intel RST Community Forum is a tough club to get into!

@@ -1,6 +1,6 @@
 ---
 title: How to Force git to Prompt You For a Password
-comments: false
+
 tags:
   - git
   - github

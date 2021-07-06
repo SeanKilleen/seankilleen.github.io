@@ -1,6 +1,6 @@
 ---
 title: Getting Started With PowerShell Core in Windows Terminal
-comments: false
+
 tags:
   - powershell
   - powershell core
