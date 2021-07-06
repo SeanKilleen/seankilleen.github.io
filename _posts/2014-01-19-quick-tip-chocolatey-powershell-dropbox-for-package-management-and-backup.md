@@ -2,7 +2,7 @@
  
 title: 'Quick tip: Chocolatey + Powershell + Dropbox for package management and backup'
 date: 2014-01-19 01:55:00.000000000 -05:00
-comments: true
+comments: falses
 redirect_from: 
  - /2014/01/quick-tip-chocolatey-powershell-dropbox.html
 ---
