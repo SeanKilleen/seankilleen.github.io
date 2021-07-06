@@ -2,7 +2,7 @@
 title: >-
   Quick tip: NTLM / Windows pass-through authentication with Selenium and
   ChromeDriver
-comments: false
+
 tags:
   - chromedriver
   - selenium

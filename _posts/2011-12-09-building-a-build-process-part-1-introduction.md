@@ -2,7 +2,7 @@
  
 title: 'Building a Build Process: Introduction'
 date: 2011-12-09 23:15:00.000000000 -05:00
-comments: false
+
 series: building-a-build-process
 ---
 

@@ -36,7 +36,7 @@ references:
  - title: "Git - the simple guide - no deep shit!"
    url: http://rogerdudler.github.io/git-guide/
  
-comments: false
+
 ---
 **Update:** I've purchased <http://AWider.NET> (empty right now) to take this project further. I've created [a GitHub repository](https://github.com/SeanKilleen/AWiderDotNet) and I hope you'll join me for some planning discussion in the [issues section](https://github.com/SeanKilleen/AWiderDotNet/issues). Let's help cast a wider .NET!
 

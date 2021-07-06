@@ -2,7 +2,7 @@
  
 title: Some Things I've Been Bad at, and What I'm Going to do to Change it.
 date: 2012-01-24 19:41:00.000000000 -05:00
-comments: false
+
 
 ---
 ***Ed. Note:** This is one of those weird public-disclosure blog posts. If you only come here for tech stuff, then move along; nothing to see here. :)*

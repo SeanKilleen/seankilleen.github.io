@@ -14,9 +14,8 @@ references:
    url: https://rubyinstaller.org/downloads/
 
 
-comments: true
+
 ---
-**Update**: Comments have now been enabled for this post.
 
 [Github Pages](https://pages.github.com/) has become a great place to host content on the web. You can host HTML and JavaScript files there and even map them to domain names for free. As a result, many sites (including this blog) use Github Pages to host their site.
 

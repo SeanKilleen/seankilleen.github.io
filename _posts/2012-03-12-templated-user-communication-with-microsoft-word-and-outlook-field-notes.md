@@ -2,7 +2,7 @@
  
 title: Templated User Communication With Microsoft Word and Outlook [Field Notes]
 date: 2012-03-12 09:37:00.000000000 -04:00
-comments: false
+
 
 ---
 As part of my job, I have to send a lot of e-mail communications to users. I like them to be as standard and repeatable as possible.

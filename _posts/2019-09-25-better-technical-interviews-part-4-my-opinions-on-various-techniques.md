@@ -1,6 +1,6 @@
 ---
 title: 'Better Technical Interviews: Part 4 -- My Opinions on Various Techniques'
-comments: false
+
 tags:
   - interviewing
   - culture

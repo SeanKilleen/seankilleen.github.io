@@ -3,7 +3,7 @@ title: "Updates coming (RSS feeds may break)"
 
 date: 2018-12-31 14:00:00:00.000000000 -05:00
 
-comments: false
+
 ---
 
 FYI, there are some changes coming that may impact this blog's RSS feeds.

@@ -17,7 +17,7 @@ references:
    parenturl: http://5whys.com/   
    
    
-comments: false
+
 ---
 I'm fortunate enough to be starting my first position soon as a software team lead. I'm very excited -- and a small bit terrified. :smile:
 

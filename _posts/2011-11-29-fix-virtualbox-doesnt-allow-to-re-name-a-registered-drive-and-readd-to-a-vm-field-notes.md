@@ -3,7 +3,7 @@
 title: 'Fix: VirtualBox doesn''t allow to re-name a registered drive and readd to
   a VM [Field Notes]'
 date: 2011-11-29 23:23:00.000000000 -05:00
-comments: false
+
 
 ---
 ### Problem:

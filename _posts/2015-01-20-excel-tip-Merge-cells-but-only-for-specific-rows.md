@@ -2,7 +2,7 @@
  
 title: 'Excel Tip: Merge Cells, but for One Row at a Time'
 date: 2015-01-20 09:07:00.000000000 -05:00
-comments: false
+
 redirect_from:
  - /2015/01/excel-tip-Merge-cells-but-only-for-specific-rows%20-%20Copy/
  - /2015/01/excel-tip-Merge-cells-but-only-for-specific-rows - Copy/

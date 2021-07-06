@@ -15,7 +15,7 @@ future: false # Sean added this in an attempt to prevent future posts.
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-remote_theme           : "mmistakes/minimal-mistakes@4.24.0"
+remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -32,9 +32,17 @@ defaultbranch            : "main"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2", "utterances", "custom"
-  disqus:
-    shortname            : "seankilleencom" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  provider               : "giscus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2", "utterances", "custom"
+  giscus:
+    repo_id              : "MDEwOlJlcG9zaXRvcnkyNDg1MTcxNQ==" # Shown during giscus setup at https://giscus.app
+    category_name        : "Specific Post Comments" # Full text name of the category
+    category_id          : "MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyODcwMjY4" # Shown during giscus setup at https://giscus.app
+    discussion_term      : "pathname" # "pathname" (default), "url", "title", "og:title"
+    reactions_enabled    : 1 # '1' for enabled (default), '0' for disabled
+    theme                : "light" # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+  staticman:  
+  # disqus:
+  #   shortname            : "seankilleencom" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
 #   discourse:
 #     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
 #   facebook:
@@ -290,6 +298,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true

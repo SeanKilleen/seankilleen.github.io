@@ -2,7 +2,7 @@
  
 title: 'Quick Tip: Maximo 7 -- Location of Work Order Status Information [Field Notes]'
 date: 2012-04-23 11:53:00.000000000 -04:00
-comments: false
+
 
 ---
 A quick note for myself an anyone else who might be interested:

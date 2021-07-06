@@ -2,7 +2,7 @@
 title: "Quick Tip: When Testing with Moq, Try Lambdas for More Flexible Tests"
  
 date: 2015-06-28 22:34:00.000000000 -05:00
-comments: false
+
 ---
 Mocks are invaluable to the art of testing. For those who are unfamiliar, mocks are essentially a way to fake a component and have it do exactly what you want it to do (e.g. a validator that always fails, or a method that always returns `1` when given a certain parameter).
 

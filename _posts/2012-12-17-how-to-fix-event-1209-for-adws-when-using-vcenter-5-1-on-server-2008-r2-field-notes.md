@@ -3,7 +3,7 @@
 title: 'How to: Fix Event 1209 for ADWS when using vCenter 5.1 on Server 2008 R2 [Field
   Notes]'
 date: 2012-12-17 17:00:00.000000000 -05:00
-comments: false
+
 redirect_from: 
  - /2012/12/how-to-fix-event-1209-for-adws-when.html
  - /2012/12/how-to-fix-event-1209-for-adws-when.htm

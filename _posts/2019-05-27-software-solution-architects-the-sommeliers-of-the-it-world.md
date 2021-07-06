@@ -1,6 +1,6 @@
 ---
 title: 'Software/Solution Architects: The Sommeliers of the IT World'
-comments: false
+
 tags: ["jobs", "careers", "metaphors", "architecture"]
 date: '2019-05-27 10:26 -0400'
 canonical_url: https://excellalabs.com/software-solution-architects-the-sommeliers-of-the-it-world/

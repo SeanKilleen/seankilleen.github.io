@@ -2,7 +2,7 @@
  
 title: 'Some Thoughts on Corporate E-Mail Signatures'
 date: 2015-01-20 09:59:00.000000000 -05:00
-comments: false
+
 references: 
  - title: "Spare us the e-mail yada-yada"
    url: http://www.economist.com/node/18529895

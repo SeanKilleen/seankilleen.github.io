@@ -1,6 +1,6 @@
 ---
 title: Building my Jekyll blog with Ubuntu on WSL2
-comments: true
+
 tags:
   - wsl
   - wsl2

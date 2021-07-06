@@ -16,7 +16,7 @@ references:
  - title: ".NET Fringe"
    url: http://dotnetfringe.org/
    
-comments: false
+
 ---
 **A brief update:** To keep this conversation going, I authored an additional post: [How (and Why) to Lobby Companies to Support .NET OSS]({% post_url 2016-01-30-how-and-why-to-lobby-for-oss %})
 

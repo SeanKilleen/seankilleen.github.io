@@ -1,6 +1,6 @@
 ---
 title: 'Better Technical Interviews: Part 3 -- The Interview Itself'
-comments: true
+
 tags:
   - interviewing
   - culture
