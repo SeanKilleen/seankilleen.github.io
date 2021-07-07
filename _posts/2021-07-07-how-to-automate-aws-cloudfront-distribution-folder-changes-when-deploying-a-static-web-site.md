@@ -51,7 +51,7 @@ Thinking about this more deeply led me to `jq` when I realized I didn't want to 
 
 ## Walking Through the Script
 
-Below is the solution I wound up with.
+Below is the solution I wound up with. Note that all the steps below are all a part of the same bash script; I've only broken them out here to walk through them.
 
 ### A Few General Points to Understand
 
@@ -121,7 +121,7 @@ echo "----- GETTING ETAG VALUE FOR LATER USE -----"
 etag=`cat output.json | jq -r ".ETag"`
 echo $etag
 ```
-### Updating the CloudFront distribution
+### Updating the CloudFront Distribution
 
 I initially got stuck here on the ETag issue and then on passing in the JSON string. Upon reading further, I was relieved to know I could specify `file://` and a path to the JSON rather than the long escaped text itself.
 
@@ -136,58 +136,11 @@ aws cloudfront update-distribution --id $cloudfront_distribution_id --profile $p
 
 With this script in place in our build step and the variables populated correctly, the CloudFront distribution is updated to point to the S3 folder of our latest deployment.
 
-**NOTE**: This script will run as successful when the CloudFront distribution deployment begins. However, there is still a chunk of time prior to that deployment completing.
-{: .notice--info}
+## Next Steps
 
-## Next steps for me. 
+* This script will exit with a success code when the CloudFront distribution deployment begins. However, there is still a chunk of time prior to that deployment completing. I'd like to add a wait for that, which I think is an additional call to get the deployment status and wait on it.
+* It is still unclear to me whether I need to force an empty of the CloudFront cache in order to have the new files be picked up. My expectation is that pointing to a new distribution folder would take care of that, but I haven't confirmed. it.
 
-## The Full Bash Script for Reference
+## That's a Wrap!
 
-```bash
-cloudfront_distribution_id=`get_octopusvariable "CloudfrontDistributionId"`
-profile_name=`get_octopusvariable "AWSProfileName"`
-region=`get_octopusvariable "AWSRegion"`
-release_number=`get_octopusvariable "Octopus.Release.Number"`
-cloudfront_s3_origin_id=`get_octopusvariable "CloudfrontS3OriginId"`
-
-echo "Distribution ID: $cloudfront_distribution_id"
-echo "Profile Name: $profile_name"
-echo "Region: $region"
-echo "Release Number: $release_number"
-echo "Cloudfront S3 Origin ID: $cloudfront_s3_origin_id"
-
-# Get the current distribution's config as a JSON file and output it 
-# to a file.
-aws cloudfront get-distribution-config --id $cloudfront_distribution_id --profile $profile_name --region $region > output.json
-
-echo "----- ORIGINAL JSON -----"
-
-cat output.json
-
-echo "----- RUNNING JQ -----"
-
-# This takes the JSON file, removes the ETag field, selects the 
-# appropriate distribution config item, and sets the origin path 
-# to the S3 folder we expect. It then spits that config out to 
-# its own file
-
-cat output.json | jq "del(.ETag) | (.DistributionConfig.Origins.Items[] | select(.Id == \"$cloudfront_s3_origin_id\")).OriginPath = \"/$release_number\" | .DistributionConfig" > updated-config.json
-
-echo "----- UPDATED JSON: -----"
-cat updated-config.json
-
-echo "----- GETTING ETAG VALUE FOR LATER USE -----"
-
-# AWS CLI Requires us to specify the etag from this request, to make 
-# sure nobody has made a change since we last pulled the config.
-# This extracts the content of that tag. The -r parameter outputs
-# the field as "raw" data, without quotes, which we want for our
-# variable.
-etag=`cat output.json | jq -r ".ETag"`
-echo $etag
-
-echo "----- CALLING TO UPDATE -----":
-# Pass in the modified configuration file and the etag value to
-# the cli command to update the distribution.
-aws cloudfront update-distribution --id $cloudfront_distribution_id --profile $profile_name --region $region --if-match="$etag" --distribution-config file://updated-config.json
-```
+It was fun for me to dive into AWS, the AWS CLI, jq, and bash all at the same time to pull this one off. And being on the other side of it feels good. 
