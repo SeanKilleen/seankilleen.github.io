@@ -3,12 +3,13 @@ title: How to Use Custom Comparers in NUnit
 comments: true
 tags:
   - nunit
-date: 2020-11-28 16:29 -0500
+  - tips
+date: 2021-07-07 10:00 -0500
 ---
 
-Occasionally, you may need to compare objects in your test. Perhaps you have a complex sort of comparison that you'd like to check, which involves testing three different properties to ensure something is equal.
+Occasionally, you may need to compare objects in an automated test. Perhaps you have a complex sort of comparison that you'd like to check, or adding the comparison logic to your test itself is making things a bit less readable (remember, tests get the same care that production code does).
 
-For example, let's say we had a class with the ability to represent Celsius and Fahrenheit temperatures:
+As an example, let's say we had a class with the ability to represent Celsius and Fahrenheit temperatures:
 
 ```csharp
 public enum TemperatureFormat
@@ -83,4 +84,6 @@ public class TemperatureTests
 
 ## Other Things to Consider
 
-* **Does the comparison belong in your production code?** In the example above, the comparison might best reside in the production code so that your logic would remain consistent.
+* **Does the comparison belong in your production code?** In the example above, the comparison might best reside in the production code so that your logic would remain consistent. If you're implementing this sort of logic in the object itself, your tests will nnaturally use it.
+
+Happy testing!
