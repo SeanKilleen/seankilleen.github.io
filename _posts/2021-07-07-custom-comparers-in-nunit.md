@@ -84,6 +84,6 @@ public class TemperatureTests
 
 ## Other Things to Consider
 
-* **Does the comparison belong in your production code?** In the example above, the comparison might best reside in the production code so that your logic would remain consistent. If you're implementing this sort of logic in the object itself, your tests will nnaturally use it.
+* **Does the comparison belong in your production code?** In the example above, the comparison might best reside in the production code so that your logic would remain consistent. If you're implementing this sort of logic in the object itself, your tests will naturally use it during the tests.
 
 Happy testing!
