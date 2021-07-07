@@ -45,43 +45,103 @@ We need to:
 
 * **Using `sed` to do a regex find/replace**: Prior to using `jq`, I attempted to use `sed` to accomplish the find/replace. I spent a long time looking into the right regex to use, only to discover that `sed` doesn't easily support multi-line regex.
 * **Using Perl for a multi-line regex**: I've never been great at Perl. This time was no exception.
+* **Some incorrect approaches to `jq`**: I hit a wall a few times understanfing `jq`'s synta but [StackOverflow came to my rescue.](https://stackoverflow.com/questions/68074046/how-can-i-output-the-whole-document-in-jq-while-replacing-an-item-based-on-a-fie/68074394)
 
 Thinking about this more deeply led me to `jq` when I realized I didn't want to find/replace -- I wanted to modify the structure of a JSON document. That's the purpose of `jq`.
 
-* Can't just point to new code folder; need to pull config, modify it, and update it
-* AWS CLI allows you to pull the configuration
-```bash
-aws cloudfront get-distribution-config --id $cloudfront_distribution_id --profile $profile_name --region $region > output.json
-```
-* jq can parse the configuration in a reliable way
- 
-```bash
-cat output.json | jq ".ETag = \"\" | (.DistributionConfig.Origins.Items[] | select(.Id == \"THE_ID_OF_THE_ORIGIN\")).OriginPath = \"/THE_NAME_OF_YOUR_FOLDER\""
-```
+## Walking Through the Script
 
-Some things to understand:
+Below is the solution I wound up with.
+
+### A Few General Points to Understand
 
 * We escape the quotes using `\`.
-* We're escaping them because we're using `"` vs `'` because my actual script uses references to variables, e.g. `$myVariable`, which needs double-quotes in order to be interpolated.
+* We're escaping them because we're using `"` vs `'` because my actual script uses references to variables, e.g. `$myVariable`, which needs double-quotes in order to be interpolated. (...I think. My bash is rusty.)
 
-So modify the command above to spit it out to another file: 
+### Setting up our variables
 
-```bash
-cat output.json | jq ".ETag = \"\" | (.DistributionConfig.Origins.Items[] | select(.Id == \"THE_ID_OF_THE_ORIGIN\")).OriginPath = \"/THE_NAME_OF_YOUR_FOLDER\"" > updated-config.json
-```
-
-And now you can modify the config as well:
+We use variable references that Octopus fills in here (I love their variable management, btw), but you can feel free to populate them however you'd like. 
 
 ```bash
-TODO -- add bash command
+cloudfront_distribution_id=`get_octopusvariable "CloudfrontDistributionId"`
+profile_name=`get_octopusvariable "AWSProfileName"`
+region=`get_octopusvariable "AWSRegion"`
+release_number=`get_octopusvariable "Octopus.Release.Number"`
+cloudfront_s3_origin_id=`get_octopusvariable "CloudfrontS3OriginId"`
+
+echo "Distribution ID: $cloudfront_distribution_id"
+echo "Profile Name: $profile_name"
+echo "Region: $region"
+echo "Release Number: $release_number"
+echo "Cloudfront S3 Origin ID: $cloudfront_s3_origin_id"
 ```
 
+### Getting the Current Configuration
 
-Reference the SO question:
+```bash
+# Get the current distribution's config as a JSON file and output it 
+# to a file.
+aws cloudfront get-distribution-config --id $cloudfront_distribution_id --profile $profile_name --region $region > output.json
 
-* https://stackoverflow.com/questions/68074046/how-can-i-output-the-whole-document-in-jq-while-replacing-an-item-based-on-a-fie/68074394
+echo "----- ORIGINAL JSON -----"
 
-## Full OctopusDeploy step
+cat output.json
+```
+
+### Filtering and modifying the JSON with jq
+
+We need to remove the ETag field and update the origin path in the JSON, and output that to an updated JSON file.
+
+```bash
+echo "----- RUNNING JQ -----"
+
+# This takes the JSON file, removes the ETag field, selects the 
+# appropriate distribution config item, and sets the origin path 
+# to the S3 folder we expect. It then spits that config out to 
+# its own file
+
+cat output.json | jq "del(.ETag) | (.DistributionConfig.Origins.Items[] | select(.Id == \"$cloudfront_s3_origin_id\")).OriginPath = \"/$release_number\" | .DistributionConfig" > updated-config.json
+
+echo "----- UPDATED JSON: -----"
+cat updated-config.json
+```
+
+### Getting the ETag
+
+Even though we're removing the ETag, we still need to supply it to the update command, which is how AWS makes sure we're not supplying conflicting changes. If the ETag has changed since we last pulled the configuration, our command will fail.
+
+```bash
+echo "----- GETTING ETAG VALUE FOR LATER USE -----"
+
+# AWS CLI Requires us to specify the etag from this request, to make 
+# sure nobody has made a change since we last pulled the config.
+# This extracts the content of that tag. The -r parameter outputs
+# the field as "raw" data, without quotes, which we want for our
+# variable.
+etag=`cat output.json | jq -r ".ETag"`
+echo $etag
+```
+### Updating the CloudFront distribution
+
+I initially got stuck here on the ETag issue and then on passing in the JSON string. Upon reading further, I was relieved to know I could specify `file://` and a path to the JSON rather than the long escaped text itself.
+
+```bash
+echo "----- CALLING TO UPDATE -----":
+# Pass in the modified configuration file and the etag value to
+# the cli command to update the distribution.
+aws cloudfront update-distribution --id $cloudfront_distribution_id --profile $profile_name --region $region --if-match="$etag" --distribution-config file://updated-config.json
+```
+
+## That Oughta do it!
+
+With this script in place in our build step and the variables populated correctly, the CloudFront distribution is updated to point to the S3 folder of our latest deployment.
+
+**NOTE**: This script will run as successful when the CloudFront distribution deployment begins. However, there is still a chunk of time prior to that deployment completing.
+{: .notice--info}
+
+## Next steps for me. 
+
+## The Full Bash Script for Reference
 
 ```bash
 cloudfront_distribution_id=`get_octopusvariable "CloudfrontDistributionId"`
