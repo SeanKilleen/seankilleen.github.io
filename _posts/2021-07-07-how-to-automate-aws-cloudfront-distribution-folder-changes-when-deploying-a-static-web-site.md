@@ -20,26 +20,33 @@ When our code was deployed, we still needed to update the CloudFront distributio
 
 ## The Ingredients
 
-At our disposal in this case, we had:
+At our disposal in this case we had:
 
 * An OctopusDeploy instance
 * An Octopus Linux Worker with [jq](https://stedolan.github.io/jq/) installed.
 * The AWS CLI with a profile we could make use of that had appropriate permissions
 
+This approach should work with anyone that has a deployment worker that can run jq and a bash script or similar.
+
 ## The Overall Approach
 
 We need to:
 
-* Get the CloudFront distribution's configuration
+* Get the CloudFront distribution's configuration, and save the JSON
 * Strip out the ETag (per Amazon docs)
 * Modify the configuration we want
 * Save the new JSON
 * Update the configuration using that JSON
 
-**Warning!** It's really important that you understand the sequence above. CloudFront updates are full replacements, not additive. If you only supply the changed part of the configuration, the rest will be reset, which doesn't sound like a fun time to me.
+**Danger!** It's really important that you understand the sequence above. CloudFront updates are full replacements, not additive. If you only supply the changed part of the configuration, the rest will be reset, which doesn't sound like a fun time to me.
 {: .notice--warning}
 
-## A few things I tried that didn't work.
+## A Few Things I Tried That Didn't Work
+
+* **Using `sed` to do a regex find/replace**: Prior to using `jq`, I attempted to use `sed` to accomplish the find/replace. I spent a long time looking into the right regex to use, only to discover that `sed` doesn't easily support multi-line regex.
+* **Using Perl for a multi-line regex**: I've never been great at Perl. This time was no exception.
+
+Thinking about this more deeply led me to `jq` when I realized I didn't want to find/replace -- I wanted to modify the structure of a JSON document. That's the purpose of `jq`.
 
 * Can't just point to new code folder; need to pull config, modify it, and update it
 * AWS CLI allows you to pull the configuration
