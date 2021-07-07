@@ -56,7 +56,7 @@ Below is the solution I wound up with. Note that all the steps below are all a p
 ### A Few General Points to Understand
 
 * We escape the quotes using `\`.
-* We're escaping them because we're using `"` vs `'` because my actual script uses references to variables, e.g. `$myVariable`, which needs double-quotes in order to be interpolated. (...I think. My bash is rusty.)
+* We're escaping them because we're using `"` vs `'` because my actual script uses references to variables, e.g. `$myVariable`, which needs double quotes in order to be interpolated. (...I think. My bash is rusty.)
 
 ### Setting up our variables
 
@@ -88,7 +88,7 @@ echo "----- ORIGINAL JSON -----"
 cat output.json
 ```
 
-### Filtering and modifying the JSON with jq
+### Filtering and modifying the JSON with `jq`
 
 We need to remove the ETag field and update the origin path in the JSON, and output that to an updated JSON file.
 
@@ -143,4 +143,4 @@ With this script in place in our build step and the variables populated correctl
 
 ## That's a Wrap!
 
-It was fun for me to dive into AWS, the AWS CLI, jq, and bash all at the same time to pull this one off. And being on the other side of it feels good. 
+It was fun for me to dive into AWS, the AWS CLI, `jq`, and bash all at the same time to pull this off. And being on the other side of it feels good. 
