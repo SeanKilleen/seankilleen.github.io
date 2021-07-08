@@ -109,6 +109,16 @@ Welp, let's get to work.
 ## Fixing the Links
 
 * The BankSimple link is dead because Simple itself shut down and became part of BBVA. So we'll remove that link
+* The link in the 2012 "Craft, Google+" post stumps me a bit. It looks like Jekyll might be generating something with this URL but formatting it wrong. Odd that it only happens there. I'm going to let it slide for now.
+* IEZoneAnalyzer appears to no longer be available. The file location apparently no longer exists and the link is dead on Microsoft's web page about it. Looks like it was lost to time. I left the link to the web page but removed the direct download link.
+* The `manage.windowsazure.com` link was a fun blast from the past. Updated the links to point to `portal.azure.com`.
+* The `VSCodeCanDoThat` timeout was a fluke. Checked the site, it's up. 
+* Looks like my [Talks page](https://SeanKilleen.com/Talks) page had some old references to code that I'd since consolidated. Fixed that up.
 
-* Fix links
-* Adding the GitHub action
+## Feels Better!
+
+As someone who's been writing on the internet for a little while now, I feel a sense of duty to keep my links from leading people to the wrong place. Cleaning this up feels good.
+
+## A GitHub Action?
+
+I might automate this in the future with a GitHub action, but for now I'm going to hold off, because I don't want to be hammering sites with every build request getting 429 errors. A scheduled task may be the way to go here, so that I regularly receive notice of failures.
