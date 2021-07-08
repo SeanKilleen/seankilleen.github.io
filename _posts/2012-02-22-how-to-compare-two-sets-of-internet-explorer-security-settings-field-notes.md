@@ -27,7 +27,7 @@ Enter [Aaron Margosis][Aaron Link] 's excellent [IEZoneAnalyzer utility]. It all
 
 The steps I generally use are below:
 
-1. **Download the utility**: visit the [IEZoneAnalyzer 3.5 page][IEZ Download Link], or use [this direct download link][IEZ Direct] (from the page).
+1. **Download the utility**: visit the [IEZoneAnalyzer 3.5 page][IEZ Download Link].
 1. **Unzip the utility**: It is a standalone .exe file; no installation necessary.
 1. **Run the utility**. It will analyze some things as it starts up.
 1. From the `File` menu, select `Export Local Settings...` and save under the filename of your choosing.
@@ -43,4 +43,3 @@ And that's it! Thank you to Aaron for providing such an excellent utility.
 [Aaron Link]: https://docs.microsoft.com/en-us/archive/blogs/aaron_margosis/
 [IEZoneAnalyzer utility]: https://blogs.technet.microsoft.com/fdcc/2011/09/22/iezoneanalyzer-v3-5-with-zone-map-viewer/
 [IEZ Download Link]: https://blogs.technet.microsoft.com/fdcc/2011/09/22/iezoneanalyzer-v3-5-with-zone-map-viewer/
-[IEZ Direct]: https://msdnshared.blob.core.windows.net/media/TNBlogsFS/prod.evol.blogs.technet.com/telligent.evolution.components.attachments/01/5808/00/00/03/45/50/87/IEZoneAnalyzer.3.5.0.5.zip
