@@ -45,7 +45,7 @@ We need to:
 
 * **Using `sed` to do a regex find/replace**: Prior to using `jq`, I attempted to use `sed` to accomplish the find/replace. I spent a long time looking into the right regex to use, only to discover that `sed` doesn't easily support multi-line regex.
 * **Using Perl for a multi-line regex**: I've never been great at Perl. This time was no exception.
-* **Some incorrect approaches to `jq`**: I hit a wall a few times understanfing `jq`'s synta but [StackOverflow came to my rescue.](https://stackoverflow.com/questions/68074046/how-can-i-output-the-whole-document-in-jq-while-replacing-an-item-based-on-a-fie/68074394)
+* **Some incorrect approaches to `jq`**: I hit a wall a few times understanding `jq`'s syntax but [StackOverflow came to my rescue.](https://stackoverflow.com/questions/68074046/how-can-i-output-the-whole-document-in-jq-while-replacing-an-item-based-on-a-fie/68074394)
 
 Thinking about this more deeply led me to `jq` when I realized I didn't want to find/replace -- I wanted to modify the structure of a JSON document. That's the purpose of `jq`.
 
@@ -60,7 +60,7 @@ Below is the solution I wound up with. Note that all the steps below are all a p
 
 ### Setting up our variables
 
-We use variable references that Octopus fills in here (I love their variable management, btw), but you can feel free to populate them however you'd like. 
+We use variable references that Octopus fills in here (I love their variable management, btw), but you can feel free to populate them however you'd like.
 
 ```bash
 cloudfront_distribution_id=`get_octopusvariable "CloudfrontDistributionId"`
@@ -121,6 +121,7 @@ echo "----- GETTING ETAG VALUE FOR LATER USE -----"
 etag=`cat output.json | jq -r ".ETag"`
 echo $etag
 ```
+
 ### Updating the CloudFront Distribution
 
 I initially got stuck here on the ETag issue and then on passing in the JSON string. Upon reading further, I was relieved to know I could specify `file://` and a path to the JSON rather than the long escaped text itself.
@@ -132,7 +133,7 @@ echo "----- CALLING TO UPDATE -----":
 aws cloudfront update-distribution --id $cloudfront_distribution_id --profile $profile_name --region $region --if-match="$etag" --distribution-config file://updated-config.json
 ```
 
-## That Oughta do it!
+## That Ought to do it!
 
 With this script in place in our build step and the variables populated correctly, the CloudFront distribution is updated to point to the S3 folder of our latest deployment.
 
@@ -143,4 +144,4 @@ With this script in place in our build step and the variables populated correctl
 
 ## That's a Wrap!
 
-It was fun for me to dive into AWS, the AWS CLI, `jq`, and bash all at the same time to pull this off. And being on the other side of it feels good. 
+It was fun for me to dive into AWS, the AWS CLI, `jq`, and bash all at the same time to pull this off. And being on the other side of it feels good.
