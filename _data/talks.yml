@@ -207,7 +207,7 @@ talksList:
     eventLink: https://www.youtube.com/swiftkick
     videoLink: https://www.youtube.com/watch?v=Qa5TU_16GzE
     slidesLink: https://seankilleen.com/Presentations/AkkaIntro/presentation
-    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code-dotnetcore
+    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code
     description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
     location: Live Video Broadcast
   - title: "Full-Day Workshop: Modernizing to .NET Core"
@@ -253,7 +253,7 @@ talksList:
     description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
     location: Online
     slidesLink: https://seankilleen.com/Presentations/AkkaIntro/presentation
-    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code-dotnetcore
+    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code
   - title: "The Joy of Functional Testing with SpecFlow"
     date: 2021-03-09
     group: Hampton Roads .NET User Group (HRNUG)
@@ -290,7 +290,7 @@ talksList:
     description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
     sessionLink: https://www.meetup.com/Roanoke-Valley-NET-User-Group/events/fbbrnrycchbjb/
     slidesLink: https://seankilleen.com/Presentations/AkkaIntro/presentation
-    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code-dotnetcore
+    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code
     location: Online
   - title: "An Introduction to the Actor Model with Akka.NET"
     date: 2021-05-18
@@ -299,7 +299,7 @@ talksList:
     description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
     sessionLink: https://www.meetup.com/dotnetdc/events/278129709/
     slidesLink: https://seankilleen.com/Presentations/AkkaIntro/presentation
-    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code-dotnetcore
+    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code
     location: Online
   - title: "Learning Docker for Smaller Feedback Loops"
     date: 2021-05-27
