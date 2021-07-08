@@ -30,4 +30,4 @@ jobs:
           node-version: "12"
       - run: npm install -g cspell
       - run: cspell lint --help
-      - run: cspell --config ./cSpell.json "**/*.md"
+      - run: cspell --config ./cSpell.json --no-progress "**/*.md"
