@@ -7,7 +7,7 @@ references:
  - title: Azure CDN
    url: http://azure.microsoft.com/en-us/services/cdn/
  - title: Azure Management Site
-   url: http://manage.windowsazure.com
+   url: http://portal.azure.com
  - title: Azure Portal
    url: http://portal.azure.com
  - title: Azure Storage Explorer
@@ -60,7 +60,7 @@ I assume you have an Azure account and have used the portal before. If not, it's
 
 ### Create an Azure Storage Account
 
-* From the [Azure Management Site](http://manage.windowsazure.com) [^1], follow the path to quick create a storage account:
+* From the [Azure Management Site](http://portal.azure.com) [^1], follow the path to quick create a storage account:
 
 ![Creating a new storage account]({{site.post-images}}/AzureCDN_01_NewStorageAccount.png)
 

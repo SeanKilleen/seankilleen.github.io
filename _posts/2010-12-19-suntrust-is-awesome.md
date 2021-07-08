@@ -8,8 +8,6 @@ redirect_from:
 references: 
  - url: http://www.suntrust.com/
    title: SunTrust Bank
- - url: http://www.banksimple.com/
-   title: BankSimple
  - url: http://www.twitter.com/SunTrust
    title: SunTrust Twitter Account
 ---
@@ -39,11 +37,10 @@ Though it's a hassle, I'm considering moving all my accounts to SunTrust, becaus
 
 Other thoughts stemming from this:
 
-* I hope SunTrust turns out to be the main partner for [BankSimple] (another site I'm excited about). It seems like they have similar mindsets.
+* I hope SunTrust turns out to be the main partner for BankSimple, another site I'm excited about (_Ed. Note_: Simple was acquired by BBVA in 2021). It seems like they have similar mindsets.
 * Another thing that would be awesome? A company that functions as a "Google Voice" concept for your accounts. Which is to say, you set up an account, and pick the providers, but can swap them out. A company that automates the transfers to other organizations. You deal with them directly, but look at your information for them. This would be a great feature set for Mint, or an organization that works with them.
 
 **Update 12/21/2010:** After receiving some thanks from the [SunTrust Twitter account], I mentioned I hadn't received the account creation e-mail yet. They re-sent it (ETA 15 minutes). More continued success and great service!
 
 [SunTrust Bank]: http://www.suntrust.com/
-[BankSimple]: http://www.banksimple.com/
 [SunTrust Twitter account]: http://www.twitter.com/SunTrust
