@@ -108,6 +108,7 @@ Welp, let's get to work.
 
 ## Fixing the Links
 
+* The BankSimple link is dead because Simple itself shut down and became part of BBVA. So we'll remove that link
 
 * Fix links
 * Adding the GitHub action
