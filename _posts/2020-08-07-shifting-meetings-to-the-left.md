@@ -9,8 +9,7 @@ tags:
   - communication
 date: 2020-08-07 09:16 -0400
 ---
-
-I've seen a lot of meetings go sideways. And with the surge of remote work the past year and a half, we've seen a dramatic increase in remote work and the communication challenges that can go along with it, espeiclaly for organizations that aren't adapting to current circumstances.
+I've seen a lot of meetings go sideways. And with the surge of remote work the past year and a half, we've seen a dramatic increase in remote work and the communication challenges that can go along with it, especially for organizations that aren't adapting to current circumstances.
 
 Dear reader, I'd love to save you that trouble.
 
@@ -20,13 +19,21 @@ In software development, feedback loops are key. If we can iterate 10 times on s
 
 If we visualize a process as a series of columns from left to right, such as in Kanban, then "shifting to the left" means avoiding issues earlier in the process. For example, if we have a "QA step" and bugs are often found there, could we shift the process to the left by automating tests earlier on to make QA go more smoothly? If a work item gets to a sign off phase and there are issues, could we work to understand things better up front to avoid that hiccup and achieve a state of flow? 
 
-Meetings are another form of feedback loop. They involve scheduling and logsitcal acrobatics, they steal focus, they cost a lot of money, and they often lead to more meetings. What can we do to get ahead of these expensive feedback loops, or at least make them smaller? 
+## Meetings are another form of feedback loop. 
+
+They involve scheduling and logistical acrobatics, they steal focus, they cost a lot of money, and they often lead to more meetings. What can we do to get ahead of these expensive feedback loops, or at least make them smaller? 
 
 ## The Best Meeting is No Meeting at All
 
-In his great book, [Read This Before our Next Meeting: How we Can Get More Done](https://www.amazon.com/gp/product/159184827X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=159184827X&linkCode=as2&tag=seankilleen04-20&linkId=3502665af4119fc46b3d65bb83ff59d7), Al Pittampalli 
+| If your meeting is to... | ..then try this instead | 
+| ---------------------- | ---------------- |
+| Make an announcement | E-mail, Organization Chat e.g. Slack or Teams |
+| Get Feedback | Set up a form and send via e-mail, take a poll in Slack or similar |
+| Get consensus | Find who the accountable person is and get them to make a decision instead. If you're not sure, ask the group to make someone accountable and volunteer. Did nobody volunteer? Congrats, you're it! Make the decision or drop it. | 
+| Reach people who don't read your e-mails | Accept that those people might be too busy or too disinterested. Maybe they don't need to be involved. If you have a decision to make, make it without them. | 
+| Present an award | Private congratulation and a public e-mail announcement? Make a part of another meeting? (NOTE: awards in meetings can be very nice; just do it consciously.) |
+| Brainstorm | A meeting might be helpful for this. But ensure you facilitate, do the prep work, and block off time |
 
-* Best meeting is no meeting
 * Shift accountability to the left my making a decision first.
 * Shift attendance to the left with an agenda
 * Shift noise to the left by encouraging opt out
