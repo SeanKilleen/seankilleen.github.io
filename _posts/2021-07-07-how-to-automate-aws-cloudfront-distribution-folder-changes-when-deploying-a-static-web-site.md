@@ -27,7 +27,7 @@ At our disposal in this case we had:
 * An Octopus Linux Worker with [jq](https://stedolan.github.io/jq/) installed.
 * The AWS CLI with a profile we could make use of that had appropriate permissions
 
-This approach should work with anyone that has a deployment worker that can run jq and a bash script or similar.
+The approach outlined below should work for an environment that has a deployment worker that can run jq and a bash script or similar.
 
 ## The Overall Approach
 
