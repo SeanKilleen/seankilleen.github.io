@@ -17,7 +17,7 @@ So that we had repeatable builds and weren't overwriting code, every deployment 
 
 ## The Challenge
 
-When our code was deployed, we still needed to update the CloudFront distribution to point to the new location in order to pick up the latest files. Unlike something like a Lambda deployment, AWS doesn't allow you to specify a new folder for the S3 distribution as its own command. You instead have to pull the entire configuration, modify it in a few ways, and then update the configuration.
+When our code was deployed, we still needed to update the CloudFront distribution to point to the new location in order to pick up the latest files. Unlike, say, a Lambda deployment, AWS doesn't allow you to specify a new folder for the CloudFront distribution as its own CLI command. You instead have to pull the entire configuration, modify it in a few ways, and then update the configuration.
 
 ## The Ingredients
 
