@@ -4,7 +4,8 @@ title: How To Automate AWS CloudFront Distribution Folder Changes When Deploying
 comments: true
 tags:
   - CI/CD
-  - deployment.devops
+  - deployment
+  - devops
   - aws
   - cloudfront
   - s3
