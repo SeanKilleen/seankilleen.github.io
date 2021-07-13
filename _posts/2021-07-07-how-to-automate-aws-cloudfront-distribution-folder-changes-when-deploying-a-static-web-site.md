@@ -59,7 +59,7 @@ Below is the solution I wound up with. Note that all the steps below are all a p
 * We escape the quotes using `\`.
 * We're escaping them because we're using `"` vs `'` because my actual script uses references to variables, e.g. `$myVariable`, which needs double quotes in order to be interpolated. (...I think. My bash is rusty.)
 
-### Setting up our variables
+### Setting Up Our Variables
 
 We use variable references that Octopus fills in here (I love their variable management, btw), but you can feel free to populate them however you'd like.
 
@@ -89,7 +89,7 @@ echo "----- ORIGINAL JSON -----"
 cat output.json
 ```
 
-### Filtering and modifying the JSON with `jq`
+### Filtering and Modifying the JSON With `jq`
 
 We need to remove the ETag field and update the origin path in the JSON, and output that to an updated JSON file.
 
@@ -146,3 +146,5 @@ With this script in place in our build step and the variables populated correctl
 ## That's a Wrap!
 
 It was fun for me to dive into AWS, the AWS CLI, `jq`, and bash all at the same time to pull this off. And being on the other side of it feels good.
+
+Do you have a different approach to accomplishing this? I'd love to hear about it -- drop a line in the coments.
