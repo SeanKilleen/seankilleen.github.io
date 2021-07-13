@@ -34,8 +34,8 @@ The approach outlined below should work for an environment that has a deployment
 We need to:
 
 * Get the CloudFront distribution's configuration, and save the JSON
-* Strip out the ETag (per Amazon docs)
-* Modify the configuration we want
+* Strip out the ETag (per [Amazon's docs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/update-distribution.html))
+* Modify the configuration to make our intended updates
 * Save the new JSON
 * Update the configuration using that JSON
 
@@ -44,7 +44,7 @@ We need to:
 
 ## A Few Things I Tried That Didn't Work
 
-* **Using `sed` to do a regex find/replace**: Prior to using `jq`, I attempted to use `sed` to accomplish the find/replace. I spent a long time looking into the right regex to use, only to discover that `sed` doesn't easily support multi-line regex.
+* **Using `sed` to do a regex find/replace**: Prior to using `jq`, I attempted to use `sed` to accomplish the find/replace. I spent a long time looking into the right regex to use, only to discover that `sed` doesn't easily support multi-line regex. I could have forced `sed` to do what I wanted, but it wouldn't have been easily understandable to a fresh set of eyes.
 * **Using Perl for a multi-line regex**: I've never been great at Perl. This time was no exception.
 * **Some incorrect approaches to `jq`**: I hit a wall a few times understanding `jq`'s syntax but [StackOverflow came to my rescue.](https://stackoverflow.com/questions/68074046/how-can-i-output-the-whole-document-in-jq-while-replacing-an-item-based-on-a-fie/68074394)
 
