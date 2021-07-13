@@ -13,7 +13,7 @@ date: 2021-07-06 22:36 -0400
 ---
 I was working on a project that deployed its UI, an Angular site, to an S3 bucket that was then placed behind CloudFront.
 
-So that we had repeatable builds and weren't overwriting code, every deployment when into a new folder in the S3 bucket.
+So that we had repeatable builds and weren't overwriting code, every deployment went into a new folder in the S3 bucket.
 
 ## The Challenge
 
