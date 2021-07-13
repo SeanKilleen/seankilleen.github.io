@@ -46,29 +46,48 @@ How can we make a decision if we're not doing it as a group in meetings?
 * If you're not sure, ask the group to make someone accountable and volunteer for someone to choose you. 
 * Did nobody volunteer? Congrats, you're it! Make the decision or drop it.
 
-## Shift attendance to the left with an agenda that you stick to
+## Shift attendance to the left with an actual agenda
 
 Ever been in a meeting where you or others realized you weren't really needed halfway through? Painful, right? 
 
 Every meeting invite should contain:
 
 * A clear goal / expected outcome of the meeting
-* An idea of why an invitee is invited to the meeting.
+* An idea of why an invitee is invited to the meeting, down to the individual level if possible.
 * Exactly what discussion points you intend to cover
 
-Beyond just listing that, you have to ensure that you actually stick to it, so if the discussion deviates, others who have opted out (more on this later) will have a chance to duck back.
+Beyond just listing those items, you have to ensure that you actually stick to it, so if the discussion deviates, others who have opted out (more on this later) will have a chance to duck back.
 
 ## Shift noise to the left by encouraging opt-out
 
 Sometimes when you invite people to a meeting, they feel that they _have_ to attend. This leads to a lot of wasted time. 
 
-TODO
+State in your meeting invite that it's OK to opt-out -- but also that the work of the meeting will go forward without the attendees who aren't present. If someone really does feel they're critical but has a conflict, they can ask for a re-schedule (or better yet -- delegate their proxy to someone else).
 
 ## Shift focus to the left by respecting time boundaries
-## Shift ambiguity to the left by setting expectations
+
+* Your meetings should start on time. I usually allow two-minute buffer max for technical issues. If someone is late, they should be able to catch up on the notes.
+* Your meetings should end 5 minutes early. Do not be the person who causes someone to be late to their next meeting if you can ever help it. The extra 5 min don't make a difference.
+* Aim to accomplish the purpose of the meeting and end there. Did the meeting run over for some reason or things go off the rails? This is your opportunity to revisit either your planning for the agenda or your facilitation skills.
+
 ## Shift questions to the left with prep
-## Shift actionability to the left with action items
+
+* Add context, background, notes on prior discussions, things that have been tried etc. to the meeting invite. Don't let the invite just be an empty space.
+* Indicate that you expect people to actually read this prep if they're going to attend the meeting.
+* Refuse to recap for anyone or go over the points. Assume people read it.
+
+## Shift ambiguity to the left by capturing notes and actions
+
+* Take notes, or ask someone you trust (and who can type quickly) to take notes. Taking notes is also a great way to remain in a facilitator role rather than taking all the air out of the room while leading the meeting. Don't forego this because you can't type fast. If you're taking meetings and you type slow, cut the scope of the meeting.
+* Your notes should start out with a section for "next actions". Names and rough dates should go next to any item entered there.
+* Capture as much as possible, including any additional decisions made and any additional context needed.
+* If possible, capture the notes on a screen everyone can see. Encourage people to correct the notes if they seem unclear or incorrect.
+* Send the notes out before the end of the meeting. I usually do this as a reply-all to the invite so that people who choose to opt out are still informed, which encourages them to not waste time attending if they don't need to.
+
+## How to get there from here?
 
 ## A great book for reference
+
+I read this book years ago, but it stuck with me. While the exact text has faded from my memory, I know there's a good deal of overlap with and inspiration taken from this book.
 
 TODO: Reference "read this before our next meeting", note that you probably internalized several tips from it.
