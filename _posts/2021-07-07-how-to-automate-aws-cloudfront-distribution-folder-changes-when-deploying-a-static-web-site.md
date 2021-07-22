@@ -140,7 +140,7 @@ With this script in place in our build step and the variables populated correctl
 
 ## ...but, wait!
 
-In this case, I mean that literally. 
+In this case, I mean that literally.
 
 Our CloudFront distribution is updated, but the old files are still cached. We need to invalidate the cache, and in order to do that, we need to wait for the current deployment to complete.
 
@@ -150,7 +150,7 @@ So, I add the command below to wait on the deployment:
 aws cloudfront wait distribution-deployed --id $cloudfront_distribution_id --profile $profile_name --region $region
 ```
 
-And then once that's complete, we move on to the command to initiate the cache invalidation: 
+And then once that's complete, we move on to the command to initiate the cache invalidation:
 
 ```bash
 aws cloudfront create-invalidation --distribution-id $cloudfront_distribution_id --paths "/*" --profile $profile_name --region $region
