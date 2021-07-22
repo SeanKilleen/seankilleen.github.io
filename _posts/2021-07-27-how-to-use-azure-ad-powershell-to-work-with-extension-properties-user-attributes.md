@@ -6,7 +6,7 @@ tags:
   - azure-ad
   - azure-ad-b2c
   - powershell
-date: 2021-02-19 23:32 -0500
+date: 2021-07-27 10:00 -0500
 ---
 Recently I worked on a project that involved working with Azure Active Directory B2C. As part of the Azure AD set up, we had created some extension properties for users. Our counterparts on another team needed to be able to retrieve and set them, and had PowerShell at their disposal.
 
