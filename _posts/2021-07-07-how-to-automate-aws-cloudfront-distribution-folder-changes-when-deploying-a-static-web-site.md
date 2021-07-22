@@ -134,17 +134,32 @@ echo "----- CALLING TO UPDATE -----":
 aws cloudfront update-distribution --id $cloudfront_distribution_id --profile $profile_name --region $region --if-match="$etag" --distribution-config file://updated-config.json
 ```
 
-## That Ought to do it!
+## That Ought to do it...
 
 With this script in place in our build step and the variables populated correctly, the CloudFront distribution is updated to point to the S3 folder of our latest deployment.
 
-## Next Steps
+## ...but, wait!
 
-* This script will exit with a success code when the CloudFront distribution deployment begins. However, there is still a chunk of time prior to that deployment completing. I'd like to add a wait for that, which I think is an additional call to get the deployment status and wait on it.
-* It is still unclear to me whether I need to force an empty of the CloudFront cache in order to have the new files be picked up. My expectation is that pointing to a new distribution folder would take care of that, but I haven't confirmed. it.
+In this case, I mean that literally. 
+
+Our CloudFront distribution is updated, but the old files are still cached. We need to invalidate the cache, and in order to do that, we need to wait for the current deployment to complete.
+
+So, I add the command below to wait on the deployment:
+
+```bash
+aws cloudfront wait distribution-deployed --id $cloudfront_distribution_id --profile $profile_name --region $region
+```
+
+And then once that's complete, we move on to the command to initiate the cache invalidation: 
+
+```bash
+aws cloudfront create-invalidation --distribution-id $cloudfront_distribution_id --paths "/*" --profile $profile_name --region $region
+```
+
+I could wait for that to complete as well, but in our case once it's kicked off I have a high degree of confidence it will complete.
 
 ## That's a Wrap!
 
 It was fun for me to dive into AWS, the AWS CLI, `jq`, and bash all at the same time to pull this off. And being on the other side of it feels good.
 
-Do you have a different approach to accomplishing this? I'd love to hear about it -- drop a line in the coments.
+Do you have a different approach to accomplishing this? I'd love to hear about it -- drop a line in the comments.
