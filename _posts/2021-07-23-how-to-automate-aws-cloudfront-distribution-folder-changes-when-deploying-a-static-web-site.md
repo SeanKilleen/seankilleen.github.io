@@ -9,7 +9,7 @@ tags:
   - aws
   - cloudfront
   - s3
-date: 2021-07-06 22:36 -0400
+date: 2021-07-23 10:00 -0400
 ---
 I was working on a project that deployed its UI, an Angular site, to an S3 bucket that was then placed behind CloudFront.
 
