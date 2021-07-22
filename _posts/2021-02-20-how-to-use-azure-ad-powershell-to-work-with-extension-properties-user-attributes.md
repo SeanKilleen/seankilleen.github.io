@@ -8,9 +8,9 @@ tags:
   - powershell
 date: 2021-02-19 23:32 -0500
 ---
-Recently I worked on a project that involved working with Azure Active Directory B2C. As part of the AzureAD set up, we had created some extension properties for users. Our counterparts on another team needed to be able to retrieve and set them, and had PowerShell at their dispoal. 
+Recently I worked on a project that involved working with Azure Active Directory B2C. As part of the AzureAD set up, we had created some extension properties for users. Our counterparts on another team needed to be able to retrieve and set them, and had PowerShell at their dispoal.
 
-Here are the steps I provided to walk them through the process. 
+Here are the steps I provided to walk them through the process.
 
 * Open an admin PowerShell window
 * Run `Install-Module AzureAD` and follow steps to install the powershell module for working with AzureAD
