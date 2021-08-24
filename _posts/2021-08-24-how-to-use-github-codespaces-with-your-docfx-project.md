@@ -85,3 +85,4 @@ We use a spell-checker and markdown linting vs code extension, and we don't want
 
 ## Check it out!
 
+You can see what the current setup looks like [over at the NUnit docs repository](https://github.com/nunit/docs/tree/master/.devcontainer).
