@@ -16,6 +16,72 @@ So, dear reader, that's what we did. Below is how we made it happen.
 
 ## First Up: A Container
 
-GitHub Codespaces allows us to work within a containerized environment so that you can script everything you need and boot right into it. This means that we can add a `Dockerfile` to our repository in the right place and Codespaces will pick up on it.
+GitHub Codespaces allows us to work within a containerized environment so that we can script everything we need and boot right into it. This means that we can add a `Dockerfile` to our repository in the right place and Codespaces will pick up on it.
 
-Previously, we set up our build process to use [our own `docfx-action` GitHub Action](https://github.com/nunit/docfx-action) -- lovingly forked from Niklas Mollenhauer] ([@nikeee on GitHub](https://github.com/nikeee/docfx-action)). Part of this GitHub action is a `Dockerfile` that defines a container. We published our own take on it at Dockerhub at 
+Previously, we set up our build process to use [our own `docfx-action` GitHub Action](https://github.com/nunit/docfx-action) -- lovingly forked from Niklas Mollenhauer ([@nikeee on GitHub](https://github.com/nikeee/docfx-action)). Part of this GitHub action is a `Dockerfile` that defines a container. We published our own take on it at Dockerhub at <https://hub.docker.com/r/nunitdocs/docfx-action>. 
+
+This highlights what I believe are two great things:
+
+* Because of the awesomeness of OSS, we were able to build upon someone else's work, and the community is better for it.
+* Because of the awesomeness of containers, we can re-use this entire environment for our GitHub Codespace as well.
+
+How is the container built? Working backward, the chain is:
+
+* `nunitdocs/docfx-action`
+* ...is built upon the `mono` container
+* ...which is built upon Debian `buster-slim` Linux
+
+## Setting Up our Codespaces Directory
+
+Now that the container exists, how do we build upon it? In our repository, we create a `.devcontainer` folder. Inside that folder is a `Dockerfile`, with the contents:
+
+```Dockerfile
+FROM nunitdocs/docfx-action:latest
+EXPOSE 8080
+```
+
+This defines our `Dockerfile`, which builds on our general `docfx` container and also exposes port 8080, which will come in handy shortly.
+
+## The `devcontainer.json` file
+
+In our `.devcontainer` folder, we define a `devcontainer.json` file that looks like:
+
+```json
+{
+    "name": "nunit-docs",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "forwardPorts": [8080]
+}
+``` 
+
+This:
+
+* Defines the name of our Codespace
+* Tells Codespaces to use our Dockerfile to build
+* Tells Codespaces to forward port `8080`. 
+
+## But What About Extensions?
+
+We use a spell-checker and markdown linting vs code extension, and we don't want our Codespaces experience to be any different. Luckily, Codespaces allows us to define that right in our JSON file, which we modify to look like:
+
+```json
+{
+    "name": "nunit-docs",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "forwardPorts": [8080],
+    "extensions": [
+        "streetsidesoftware.code-spell-checker", 
+        "oderwat.indent-rainbow", 
+        "mdickin.markdown-shortcuts", 
+        "davidanson.vscode-markdownlint",
+        "redhat.vscode-yaml"
+    ]
+}
+```
+
+## Check it out!
+
