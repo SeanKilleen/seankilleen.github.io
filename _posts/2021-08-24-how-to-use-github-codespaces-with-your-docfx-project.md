@@ -92,8 +92,8 @@ When we open GitHub Codespaces instance, we see a VS Code window in our browser.
 
 ## What's Next?
 
-* I'd love for it to be a little easier for folks to build and run the site. I'll figure out the recommended approach to allow folks to open a terminal and run `build` or `serve` without having to know the directory. Not sure if it'll be a `.bashrc` file, or something with VS Code settings and aliases, or the command palette -- excited to find out!
-* Our build process uses `cSpell` and `markdown-lint`, both of which are installed as `npm` global packages. I plan to update our Codespaces container image to install node and those packages, and then to add some shortcuts to easily enable their use.
+* (Update: [done!](https://github.com/nunit/docs/pull/574)) I'd love for it to be a little easier for folks to build and run the site. I'll figure out the recommended approach to allow folks to open a terminal and run `build` or `serve` without having to know the directory. Not sure if it'll be a `.bashrc` file, or something with VS Code settings and aliases, or the command palette -- excited to find out!
+* (Update: [done!](https://github.com/nunit/docs/pull/574)) Our build process uses `cSpell` and `markdown-lint`, both of which are installed as `npm` global packages. I plan to update our Codespaces container image to install node and those packages, and then to add some shortcuts to easily enable their use.
 * I love the idea of using the [VS Code Tour extension](https://github.com/microsoft/codetour) to show people around the place, so I'll probably try to do something with that too.
 
 ## Check it out!
