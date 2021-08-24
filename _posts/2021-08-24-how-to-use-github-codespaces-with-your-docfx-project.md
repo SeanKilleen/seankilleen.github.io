@@ -89,9 +89,13 @@ When we open GitHub Codespaces instance, we see a VS Code window in our browser.
 
 * To build our docs site, we can `cd docs` and then `docfx build`. This will create a `_site` folder
 * We can then run `docfx serve _site -n "*"`. This runs `docfx serve`, which serves a web app on mono. The `-n "*"` allows all bindings. When it runs, Codespaces sees it running on port 80, and "automagically" creates a URL that you can view in your browser to see things running.
-* If I want to spell-check, I can run 
 
 ## Let's Make That a Little Easier
+
+## What's Next?
+
+* Our build process uses `cSpell` and `markdown-lint`, both of which are installed as `npm` global packages. I plan to update our Codespaces container image to install node and those packages, and then to add some shortcuts to easily enable their use.
+* I love the idea of using the [VS Code Tour extension](https://github.com/microsoft/codetour) to show people around the place, so I'll probably try to do something with that too.
 
 ## Check it out!
 
