@@ -83,6 +83,16 @@ We use a spell-checker and markdown linting vs code extension, and we don't want
 }
 ```
 
+## How Do We Work Within it?
+
+When we open GitHub Codespaces instance, we see a VS Code window in our browser.
+
+* To build our docs site, we can `cd docs` and then `docfx build`. This will create a `_site` folder
+* We can then run `docfx serve _site -n "*"`. This runs `docfx serve`, which serves a web app on mono. The `-n "*"` allows all bindings. When it runs, Codespaces sees it running on port 80, and "automagically" creates a URL that you can view in your browser to see things running.
+* If I want to spell-check, I can run 
+
+## Let's Make That a Little Easier
+
 ## Check it out!
 
 You can see what the current setup looks like [over at the NUnit docs repository](https://github.com/nunit/docs/tree/master/.devcontainer).
