@@ -34,7 +34,7 @@ I am passively open to new opportunities as a way of keeping an open mind. If yo
 * Confidence in code via automated testing and great processes
 * DevOps-related expertise (CI/CD pipelines, operational visibility, robust delivery mechanisms)
 
-## Are We a Good Fatch?
+## Are We a Good Match?
 
 ### Types of Work
 
