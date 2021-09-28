@@ -1,6 +1,10 @@
 ---
 title: How to Keep a VM / Desktop "awake"
 comments: true
+tags:
+  - shortcuts
+  - scripts
+  - autohotkey
 date: 2021-09-28 15:17 -0400
 ---
 I had a situation where I was working partly on a development VM but also doing research on another machine. 
@@ -40,4 +44,4 @@ Let's take it line by line:
 
 ## Why the F15 key?
 
-You'll note that most keyboards only go up to F12. But F13-F15 are valid keys, and chances are they're not mapped to anything because they're not on most keyboards. F15 is a way to mimic a keyboard press without actually pressing keys that could matter.
+You'll note that most keyboards only go up to F12. But F13-F15 are valid keys from the olden days. Chances are they're not mapped to anything already, because they're not on most keyboards. F15 is a solid way to mimic a keyboard press without actually pressing keys that could matter (when you're in the middle of typing or have a window open, for example)
