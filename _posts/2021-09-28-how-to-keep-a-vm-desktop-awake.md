@@ -36,14 +36,14 @@ Return
 
 Let's take it line by line:
 
-* `#Persistent` [keeps an AutoHotkey script permanently running](https://www.autohotkey.com/docs/commands/_Persistent.htm)
+* `#Persistent` [keeps an AutoHotkey script permanently running](https://www.autohotkey.com/docs/commands/_Persistent.htm).
 * `SetTimer, PressTheKey, 120000` says to call the `PressTheKey` function (defined below) every 120,000 milliseconds (or ~2 minutes).
-* `Return` indicates the end of that script (which will be a permanent loop at that point)
-* `PressTheKey:` defines the function that we call in the script
-* `Send, {F15}` presses the `F15` key on the keyboard. More on this below
+* `Return` indicates the end of that script (which will be a permanent loop at that point).
+* `PressTheKey:` defines the function that we call in the script.
+* `Send, {F15}` presses the `F15` key on the keyboard. More on this below.
 
 ## Why the F15 Key?
 
-You'll note that most keyboards only go up to F12. But F13-F15 are valid keys from the olden days. Chances are they're not mapped to anything already, because they're not on most keyboards. F15 is a solid way to mimic a keyboard press without actually pressing keys that could matter (when you're in the middle of typing or have a window open, for example.)
+You'll note that most keyboards only go up to `F12`. But `F13-F15` are valid keys from the olden days. Chances are they're not mapped to anything already, because they're not on most keyboards. F15 is a solid way to mimic a keyboard press without actually pressing keys that could matter (when you're in the middle of typing or have a window open, for example.)
 
 Hope this helps!
