@@ -15,13 +15,13 @@ I am passively open to new opportunities as a way of keeping an open mind. If yo
 
 ## At a Glance
 
-* Microsoft MVP in Developer Technologies (~150 in this category in the US)
+* [Microsoft MVP in Developer Technologies](https://mvp.microsoft.com/en-us/PublicProfile/5003676?fullName=Sean%20James%20Killeen) (~150 in this category in the US at last count)
 * 15+ years developing software in the .NET ecosystem
 * Recently led the modernization of a system that industry analysts called more complex than the moon landing
 * Polyglot developer beyond .NET -- comfortable with Javascript (prefer TypeScript), Ruby, Python, and others
 * 5+ years leading teams of between 5-20 individuals
-* Previously certified instructor for ScrumAlliance (CSD) and ICAgile (ICP-TST, ICP-ATA) certifications
-* Lead of the NUnit Documentation project and avid open-source contributor
+* Previously certified instructor for ScrumAlliance (CSD) and ICAgile (ICP-TST, ICP-ATA) multi-day courses
+* Lead of the [NUnit Documentation project](https://github.com/nunit/docs) and avid open-source contributor
 * National speaker
 * A history of substantial impact
 
@@ -30,11 +30,11 @@ I am passively open to new opportunities as a way of keeping an open mind. If yo
 * In-depth expertise and delivery across the .NET / Microsoft ecosystem
 * High-performing, enabled, and engaged teams
 * The growth of leaders within teams and organizations
-* Organizational agility -- a culture of learning, experimentation, and quality
+* Organizational agility -- a culture of learning, experimentation, quality, and collaboration
 * Confidence in code via automated testing and great processes
 * DevOps-related expertise (CI/CD pipelines, operational visibility, robust delivery mechanisms)
 
-## Are we a good match?
+## Are We a Good Match?
 
 ### Types of Work
 
