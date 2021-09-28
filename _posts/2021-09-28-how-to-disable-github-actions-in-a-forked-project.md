@@ -14,10 +14,10 @@ However, when you fork the project in order to contribute back or for your own p
 
 ## To Turn Off GitHub Actions for a Forked Repository
 
-* Open the repository
-* Click `Settings`
-* In the left-hand navigation menu, click `Actions`
+* Open the repository.
+* Click `Settings`.
+* In the left-hand navigation menu, click `Actions`.
 
-You can then set your preferences to disable actions in the repo, or only allow certain actions.
+You can then set your preferences to disable actions in the repository, or to only allow certain actions.
 
 Happy 'hubbing!
