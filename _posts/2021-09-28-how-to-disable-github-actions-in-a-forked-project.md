@@ -12,7 +12,7 @@ Some GitHub repositories have [GitHub Actions](https://github.com/features/actio
 
 However, when you fork the project in order to contribute back or for your own purposes, you don't necessarily want those actions to run in _your_ repository (such as attempting to publish releases).
 
-## To Turn Off GitHub Actions for a forked repository
+## To Turn Off GitHub Actions for a Forked Repository
 
 * Open the repository
 * Click `Settings`
