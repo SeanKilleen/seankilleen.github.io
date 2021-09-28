@@ -19,3 +19,5 @@ However, when you fork the project in order to contribute back or for your own p
 * In the left-hand navigation menu, click `Actions`
 
 You can then set your preferences to disable actions in the repo, or only allow certain actions.
+
+Happy 'hubbing!
