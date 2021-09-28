@@ -20,7 +20,7 @@ I looked for some quick app-based solutions, but none of them inspired confidenc
 * Open the file you created.
 * Add the contents of the script as below:
 
-```
+```plaintext
 #Persistent
 SetTimer, PressTheKey, 120000
 Return
