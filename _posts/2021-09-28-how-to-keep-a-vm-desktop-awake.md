@@ -7,13 +7,13 @@ tags:
   - autohotkey
 date: 2021-09-28 15:17 -0400
 ---
-I had a situation where I was working partly on a development VM but also doing research on another machine. 
+I had a situation where I was working partly on a development VM but also doing research on another machine.
 
 Every few minutes, the VM would lock me out. It was also the only place where MS Teams reported my status, and I hated that I couldn't use my main machine for more than a few minutes before my Teams status would show as idle / away. I'm right here!
 
 I looked for some quick app-based solutions, but none of them inspired confidence. One exception is [the PowerToys Awake app](https://docs.microsoft.com/en-us/windows/powertoys/awake), but it requires a specific version of windows that not all VMs (e.g. server VMs) are updated to yet.
 
-## Solution: Autohotkey and a Tiny Script
+## Solution: AutoHotkey and a Tiny Script
 
 * Install AutoHotkey: you can head to [their site](https://www.autohotkey.com/), or use  `choco install autohotkey` if you're using Chocolatey.
 * Right-click anywhere in windows explorer and choose "new AutoHotkey script". Or, create a file anywhere you want with the extension `.ahk`
@@ -37,7 +37,7 @@ Return
 Let's take it line by line:
 
 * `#Persistent` [keeps an AutoHotkey script permanently running](https://www.autohotkey.com/docs/commands/_Persistent.htm)
-* `SetTimer, PressTheKey, 120000` says to call the PressTheKey function (defined below) every 120,000 milliseconds (or ~2 min).
+* `SetTimer, PressTheKey, 120000` says to call the `PressTheKey` function (defined below) every 120,000 milliseconds (or ~2 minutes).
 * `Return` indicates the end of that script (which will be a permanent loop at that point)
 * `PressTheKey:` defines the function that we call in the script
 * `Send, {F15}` presses the `F15` key on the keyboard. More on this below
