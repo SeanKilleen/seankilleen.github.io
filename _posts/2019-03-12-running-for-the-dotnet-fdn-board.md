@@ -8,7 +8,7 @@ tags: [.NET,Community,Leadership]
 
 ---
 
-I'm excited to announce my candidacy for the .NET Foundation's Board of Directors! (_Ed. Note:_ Link lost to time)
+I'm excited to announce my [candidacy for the .NET Foundation's Board of Directors!](https://web.archive.org/web/20190605214001/https://election.dotnetfoundation.org/campaign-2019/sean-killeen.html)
 
 I believe transparent, community-focused governance and OSS involvement is vital to the future of .NET's success, and I'd be excited to support that however I can.
 
