@@ -42,9 +42,9 @@ It has been modified to add the edit links.
         {{ words | divided_by:words_per_minute }} {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
       {% endif %}
     {% endif %}
-    | <a href="https://github.com/{{site.repository}}/edit/{{site.defaultbranch}}/{{ page.path }}"><i class="fas fa-edit"></i> Suggest an edit</a> | <a href="{{ site.github.repository_url }}/issues/new?labels=FromTheSite"><i class="fa fa-question-circle"></i> Issue? Question?</a>
+    | <a href="{{edit_link}}"><i class="fas fa-edit"></i> Suggest an edit</a> | <a href="{{ site.github.repository_url }}/issues/new?labels=FromTheSite"><i class="fa fa-question-circle"></i> Issue? Question?</a>
   </p>
 {% endif %}
 {% if page.show_edit_link %}
-  <a href="https://github.com/{{site.repository}}/edit/{{site.defaultbranch}}/{{ page.path }}"><i class="fas fa-edit"></i> Suggest an edit</a> | <a href="{{ site.github.repository_url }}/issues/new?labels=FromTheSite"><i class="fa fa-question-circle"></i> Issue? Question?</a>
+  <a href="{{edit_link}}"><i class="fas fa-edit"></i> Suggest an edit</a> | <a href="{{ site.github.repository_url }}/issues/new?labels=FromTheSite"><i class="fa fa-question-circle"></i> Issue? Question?</a>
 {% endif %}
