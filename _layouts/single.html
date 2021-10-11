@@ -6,7 +6,6 @@ layout: default
 
 # * CarbonAds is inserted
 # * post__meta.html include contents are copied so that edit links can be added without interfering with other uses of post__meta
-# * Web monetization meta tag added
 ---
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
@@ -22,7 +21,6 @@ layout: default
 {% endif %}
 
 <div id="main" role="main">
-  <meta name="monetization" content="{{ site.web_monetization_token }}">
   {% include sidebar.html %}
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
