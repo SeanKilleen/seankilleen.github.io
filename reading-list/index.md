@@ -4,6 +4,7 @@ author_profile: true
 title: My (Automated) Reading List
 modified: 2019-01-14T09:25:00.000000-05:00
 comments: true
+show_edit_link: true
 ---
 
 I'm a big fan of blogs, of RSS readers, and of sharing, so I figured -- why not share my blog feed in a continuously updated way?
