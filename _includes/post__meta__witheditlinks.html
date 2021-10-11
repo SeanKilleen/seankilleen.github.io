@@ -6,6 +6,11 @@ It has been modified to add the edit links.
 {% endcomment %}
 {% assign page = post | default: page %}
 
+{% if page.edit_link %}
+  {% assign edit_link = page.edit_link %}
+{% else %}
+  {% assign edit_link = "https://github.com/" | append: site.repository | append: "/edit/" | append: site.defaultbranch | append: "/" | append: page.path %}
+{% endif %}
 
 {% if page.read_time or page.show_date %}
   <p class="page__meta">
