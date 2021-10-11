@@ -26,9 +26,11 @@ request the old fashioned way.
 {% if site.github.contributors.size > 0 %}
 
 {% for contributor in site.github.contributors %}
+{% unless contributor.login contains "[bot]" %}
   <li>
     <img src="{{ contributor.avatar_url }}" alt="the profile picture of {{ contributor.login }}" /> <a href="{{ contributor.html_url }}">{{ contributor.login }}</a>
   </li>
+{% endunless %}
 {% endfor %}
 
 {% else %}
