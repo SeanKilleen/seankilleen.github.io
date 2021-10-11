@@ -301,3 +301,5 @@ defaults:
       comments: true
       share: true
       related: true
+
+web_monetization_token: "$ilp.uphold.com/YqeR4MhJjyzP"
