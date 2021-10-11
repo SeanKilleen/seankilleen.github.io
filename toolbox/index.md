@@ -3,6 +3,7 @@ layout: single
 author_profile: true
 title: My Toolbox
 modified: 2016-12-27T23:25:00.000000-05:00
+show_edit_link: true
 ---
 There are so many great tools in this industry that I rely on on a regular basis. I thought it would be fitting to highlight them on a continuously updated page so that people can see what I recommend developers use and why.
 

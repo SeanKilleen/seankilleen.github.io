@@ -4,7 +4,8 @@ author_profile: true
 
 title: "Credits"
 modified: 2018-12-31T10:53:07.573882-04:00
-sitemap: true
+sitemap: trues
+show_edit_link: true
 ---  
 
 These lovely people have contributed a fix to my blog. If you want to see yourself in this list, send me a pull request!
