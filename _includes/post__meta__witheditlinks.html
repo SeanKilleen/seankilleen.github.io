@@ -46,5 +46,7 @@ It has been modified to add the edit links.
   </p>
 {% endif %}
 {% if page.show_edit_link %}
+<p class="page__meta">
   <a href="{{edit_link}}"><i class="fas fa-edit"></i> Suggest an edit</a> | <a href="{{ site.github.repository_url }}/issues/new?labels=FromTheSite"><i class="fa fa-question-circle"></i> Issue? Question?</a>
+</p>
 {% endif %}
