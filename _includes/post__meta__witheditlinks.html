@@ -6,7 +6,14 @@ It has been modified to add the edit links.
 {% endcomment %}
 {% assign page = post | default: page %}
 
-{% if page.read_time or page.show_date %}
+
+{% if page.edit_link %}
+  {% assign edit_link = page.edit_link %}
+{% else %}
+  {% assign edit_link = "https://github.com/" | append: site.repository | append: "/edit/" | append: site.defaultbranch | append: "/" | append: page.path %}
+{% endif %}
+
+{% if page.read_time or page.show_date or page.show_edit_link %}
   <p class="page__meta">
 
     {% if page.show_date %}
@@ -23,11 +30,6 @@ It has been modified to add the edit links.
       {% endif %}
     {% endif %}
 
-    {% if page.edit_link %}
-      {% assign edit_link = page.edit_link %}
-    {% else %}
-      {% assign edit_link = "https://github.com/" | append: site.repository | append: "/edit/" | append: site.defaultbranch | append: "/" | append: page.path %}
-    {% endif %}
 
     {% if page.read_time %}
       {% assign words_per_minute = page.words_per_minute | default: site.words_per_minute | default: 200 %}
@@ -42,6 +44,9 @@ It has been modified to add the edit links.
         {{ words | divided_by:words_per_minute }} {{ site.data.ui-text[site.locale].minute_read | default: "minute read" }}
       {% endif %}
     {% endif %}
-    | <a href="{{ edit_link }}"><i class="fas fa-edit"></i> Suggest an edit</a> | <a href="{{ site.github.repository_url }}/issues/new?labels=FromTheSite"><i class="fa fa-question-circle"></i> Issue? Question?</a>
+    {% if page.show_edit_link | default: true %}
+      <span class="post__meta-sep"></span>
+      <a href="{{ edit_link }}"><i class="fas fa-edit"></i> Suggest an edit</a> | <a href="{{ site.github.repository_url }}/issues/new?labels=FromTheSite"><i class="fa fa-question-circle"></i> Issue? Question?</a>
+    {% endif %}
   </p>
 {% endif %}
