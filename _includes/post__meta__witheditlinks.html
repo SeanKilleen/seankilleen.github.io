@@ -39,7 +39,7 @@ It has been modified to add the edit links.
     {% if page.edit_link %}
       {% assign edit_link = page.edit_link %}
     {% else %}
-      {% assign edit_link = "https://github.com/{{site.repository}}/edit/{{site.defaultbranch}}/{{ page.path }}" %}
+      {% assign edit_link = "https://github.com/{site.repository}/edit/{site.defaultbranch}/{ page.path }" %}
     {% endif %}
     | <a href="{{ edit_link }}"><i class="fas fa-edit"></i> Suggest an edit</a> | <a href="{{ site.github.repository_url }}/issues/new?labels=FromTheSite"><i class="fa fa-question-circle"></i> Issue? Question?</a>
   </p>
