@@ -3,6 +3,8 @@ layout: single
 author_profile: true
 title: "Talks / Presentations Catalog"
 modified: 2019-03-30T09:25:00.000000-05:00
+show_edit_link: true
+edit_link: https://github.com/SeanKilleen/seankilleen.github.io/edit/main/_data/talks.yml
 
 ---
 
