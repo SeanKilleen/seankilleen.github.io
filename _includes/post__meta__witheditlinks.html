@@ -6,6 +6,7 @@ It has been modified to add the edit links.
 {% endcomment %}
 {% assign page = post | default: page %}
 
+
 {% if page.read_time or page.show_date %}
   <p class="page__meta">
 
@@ -38,4 +39,7 @@ It has been modified to add the edit links.
     {% endif %}
     | <a href="https://github.com/{{site.repository}}/edit/{{site.defaultbranch}}/{{ page.path }}"><i class="fas fa-edit"></i> Suggest an edit</a> | <a href="{{ site.github.repository_url }}/issues/new?labels=FromTheSite"><i class="fa fa-question-circle"></i> Issue? Question?</a>
   </p>
+{% endif %}
+{% if page.show_edit_link %}
+  <a href="https://github.com/{{site.repository}}/edit/{{site.defaultbranch}}/{{ page.path }}"><i class="fas fa-edit"></i> Suggest an edit</a> | <a href="{{ site.github.repository_url }}/issues/new?labels=FromTheSite"><i class="fa fa-question-circle"></i> Issue? Question?</a>
 {% endif %}
