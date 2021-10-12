@@ -10,7 +10,7 @@ tags:
 date: 2020-07-27 10:00 -0400
 excerpt: "An OSS journey with a fun result."
 header:
-  overlay_image: https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&auto=format
+  overlay_image: /images/overlays/unsplash/photo-1507842217343-583bb7270b66.jpeg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   caption: "Photo credit: [**Alfons Morales @ Unsplash**](https://unsplash.com/@alfonsmc10?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 ---
