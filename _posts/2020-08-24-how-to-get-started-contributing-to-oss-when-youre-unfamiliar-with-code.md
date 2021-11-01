@@ -10,7 +10,7 @@ date: 2020-08-24 9:00 -0400
 excerpt: "It can seem daunting, but there are some ways in."
 
 header:
-  overlay_image: https://images.unsplash.com/photo-1502101872923-d48509bff386?ixlib=rb-1.2.1&auto=format
+  overlay_image: /images/overlays/unsplash/photo-1502101872923-d48509bff386.jpeg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   caption: "Photo credit: [**Jukan Tateisi @ Unsplash**](https://unsplash.com/@tateisimikito?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 ---
