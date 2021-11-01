@@ -11,11 +11,11 @@ I had a situation where I was working partly on a development VM but also doing 
 
 Every few minutes, the VM would lock me out. It was also the only place where MS Teams reported my status, and I hated that I couldn't use my main machine for more than a few minutes before my Teams status would show as idle / away. I'm right here!
 
-I looked for some quick app-based solutions, but none of them inspired confidence. One exception is [the PowerToys Awake app](https://docs.microsoft.com/en-us/windows/powertoys/awake), but it requires a specific version of windows that not all VMs (e.g. server VMs) are updated to yet.
+I looked for some quick app-based solutions, but none of them inspired confidence. One exception is [the PowerToys Awake app](https://docs.microsoft.com/en-us/windows/powertoys/awake), but it requires a specific version of windows that not all VMs (e.g. server VMs) are updated to just yet.
 
 ## Solution: AutoHotkey and a Tiny Script
 
-* Install AutoHotkey: you can head to [their site](https://www.autohotkey.com/), or use  `choco install autohotkey` if you're using Chocolatey.
+* Install AutoHotkey: you can head to [their site](https://www.autohotkey.com/), or use  `choco install autohotkey` if you're using [Chocolatey](https://chocolatey.org/).
 * Right-click anywhere in windows explorer and choose "new AutoHotkey script". Or, create a file anywhere you want with the extension `.ahk`
 * Open the file you created.
 * Add the contents of the script as below:
