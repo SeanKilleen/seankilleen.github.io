@@ -6,6 +6,12 @@ tags:
   - scripts
   - autohotkey
 date: 2021-09-28 15:17 -0400
+
+header:
+  overlay_image: /images/overlays/unsplash/ehimetalor-akhere-unuabona-TvJk52iLxQA-unsplash.jpg
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  caption: "Photo credit: [**Ehimetalor Akhere Unuabona @ Unsplash**](https://unsplash.com/@theeastlondonphotographer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
+
 ---
 I had a situation where I was working partly on a development VM but also doing research on another machine.
 
