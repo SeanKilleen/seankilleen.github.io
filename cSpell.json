@@ -387,6 +387,5 @@
         "\\{%.*%\\}", // liquid syntax
         "/^\\s*```[\\s\\S]*?^\\s*```/gm", // Another attempt at markdown code blocks. https://github.com/streetsidesoftware/vscode-spell-checker/issues/202#issuecomment-377477473
         "^---[\\s\\S]*?---$" // YAML front-matter
-
     ]
 }
