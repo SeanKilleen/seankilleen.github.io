@@ -5,7 +5,30 @@ date: 2021-11-01 23:01 -0400
 ---
 Google Sheets is a phenomenal tool for group collaboration, but occasionally I wish it could do a little bit more.
 
-Lately, this came into play when I had 400+ links with their full URLs in a spreadsheet and they were messy looking. I figured it would be nicer to have a link called 
+Lately, this came into play when I had 400+ links with their full URLs in a spreadsheet and they were messy looking. I figured it would be nicer to have a link text of "Link" that points to the URL, rather than the URL itself.
+
+## How I did it
+
+You'll repeat this process twice, one for each macro you want.
+
+* Open the Google Sheet
+* Click `Tools --> Macro --> Record Macro`
+
+TODO: Image
+
+* Save the Macro with a Name and keyboard shortcut
+
+TODO: Image
+
+* Click to edit the script
+
+TODO: Image
+
+If you miss it, you can click the script editor from the menu:
+
+TODO: Image
+
+* Replace the contents of that function with the contents of one of this function to shorten links
 
 ```js
 // Sets link text to "Link" in current cell
@@ -20,14 +43,14 @@ function ShortenHyperlinkText() {
 };
 ```
 
-```
+Or this function to expand links:
 
+```js
 // Sets link text to the full URL
 function ElongateHyperlinkText() {
   var spreadsheet = SpreadsheetApp.getActive();
   var currentLinkText = spreadsheet.getCurrentCell().getRichTextValue().getLinkUrl();
 
-  
   spreadsheet.getCurrentCell().setRichTextValue(SpreadsheetApp.newRichTextValue()
   .setText(currentLinkText)
   .build());
@@ -37,4 +60,7 @@ function ElongateHyperlinkText() {
 ## Caveats
 
 * Use at your own risk etc. etc.
-* This 
+* This doesn't work on a range of highlighted cells. For this particular script, you have to highlight the cell with the link text and then run the macro.
+* This assumes that when you run the shortener, you have a link. It also assumes that when you elongate a cell with a link, it actually has a link.
+
+It's pretty rudimentary, but it helped me out in a pinch so I figured I'd share.
