@@ -1,6 +1,10 @@
 ---
 title: How to Use a Macro to Shorten Link Text in Google Sheets
 comments: true
+tags:
+  - google drive
+  - macro
+  - automation
 date: 2021-11-08 10:00 -0400
 ---
 Google Sheets is a phenomenal tool for group collaboration, but occasionally I wish it could do a little bit more.
