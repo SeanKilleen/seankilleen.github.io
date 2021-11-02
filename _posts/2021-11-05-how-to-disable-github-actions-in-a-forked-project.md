@@ -9,7 +9,7 @@ tags:
 date: 2021-11-05 10:00 -0400
 
 header:
-  overlay_image: /images/overlays/unsplash/richy-great-MAYEkmn7G6E-unsplash.jpg
+  overlay_image: /images/overlays/unsplash/richy-great-MAYEkmn7G6E-unsplash2.jpg
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   caption: "Photo credit: [**Richy Great @ Unsplash**](https://unsplash.com/@richygreat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 
