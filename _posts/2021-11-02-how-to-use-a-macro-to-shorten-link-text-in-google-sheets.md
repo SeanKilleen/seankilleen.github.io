@@ -12,15 +12,15 @@ Recently, I had 400+ links with their full URLs in a spreadsheet -- and reader, 
 You'll repeat this process twice, one for each macro you want.
 
 * Open the Google Sheet
-* Click `Tools --> Macro --> Record Macro`
+* Click `Tools --> Macro --> Record Macro`:
 
 ![The dialog menu to record the macro]({{site.post-images}}/2021-google-sheet-macro/01_RecordMacro.png)
 
-* Save the Macro with a Name and keyboard shortcut
+* Save the Macro with a Name and keyboard shortcut:
 
 ![The dialog to save a macro]({{site.post-images}}/2021-google-sheet-macro/02_SaveMacroWithShortcut.png)
 
-* Click to edit the script
+* Click to edit the script:
 
 ![The notification that the script has been created, which allows edits]({{site.post-images}}/2021-google-sheet-macro/03_EditScript.png)
 
@@ -28,7 +28,7 @@ If you miss it, you can click the script editor from the menu:
 
 ![The script editor menu]({{site.post-images}}/2021-google-sheet-macro/03b_ScriptEditor.png)
 
-* Replace the contents of that function with the contents of one of this function to shorten links
+* Replace the contents of that function with the contents of this function to shorten links:
 
 ```js
 // Sets link text to "Link" in current cell
