@@ -5,7 +5,7 @@ date: 2021-11-01 23:01 -0400
 ---
 Google Sheets is a phenomenal tool for group collaboration, but occasionally I wish it could do a little bit more.
 
-Lately, this came into play when I had 400+ links with their full URLs in a spreadsheet and they were messy looking. I figured it would be nicer to have a link text of "Link" that points to the URL, rather than the URL itself.
+Recently, I had 400+ links with their full URLs in a spreadsheet -- and reader, they were messy looking. I figured it would be nicer to have a link text of "Link" that points to the URL, rather than the URL itself.
 
 ## How I did it
 
