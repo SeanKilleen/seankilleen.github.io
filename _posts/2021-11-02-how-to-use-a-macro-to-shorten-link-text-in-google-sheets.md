@@ -59,7 +59,7 @@ function ElongateHyperlinkText() {
 
 ## Caveats
 
-* Use at your own risk etc. etc. (luckily, if you change anything you fon't want changed, you should be able to undo it.)
+* Use at your own risk etc. etc. (luckily, if you change anything you don't want changed, you should be able to undo it.)
 * This doesn't work on a range of highlighted cells. For this particular script, you have to highlight the cell with the link text and then run the macro.
 * This assumes that when you run the shortener, you have a link. It also assumes that when you elongate a cell with a link, it actually has a link.
 
