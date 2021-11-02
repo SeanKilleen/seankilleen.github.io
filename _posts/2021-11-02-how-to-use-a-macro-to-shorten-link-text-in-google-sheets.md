@@ -14,19 +14,19 @@ You'll repeat this process twice, one for each macro you want.
 * Open the Google Sheet
 * Click `Tools --> Macro --> Record Macro`
 
-TODO: Image
+![The dialog menu to record the macro]({{site.post-images}}/2021-google-sheet-macro/01_RecordMacro.png)
 
 * Save the Macro with a Name and keyboard shortcut
 
-TODO: Image
+![The dialog to save a macro]({{site.post-images}}/2021-google-sheet-macro/02_SaveMacroWithShortcut.png)
 
 * Click to edit the script
 
-TODO: Image
+![The notification that the script has been created, which allows edits]({{site.post-images}}/2021-google-sheet-macro/03_EditScript.png)
 
 If you miss it, you can click the script editor from the menu:
 
-TODO: Image
+![The script editor menu]({{site.post-images}}/2021-google-sheet-macro/03b_ScriptEditor.png)
 
 * Replace the contents of that function with the contents of one of this function to shorten links
 
@@ -59,7 +59,7 @@ function ElongateHyperlinkText() {
 
 ## Caveats
 
-* Use at your own risk etc. etc.
+* Use at your own risk etc. etc. (luckily, if you change anything you fon't want changed, you should be able to undo it.)
 * This doesn't work on a range of highlighted cells. For this particular script, you have to highlight the cell with the link text and then run the macro.
 * This assumes that when you run the shortener, you have a link. It also assumes that when you elongate a cell with a link, it actually has a link.
 
