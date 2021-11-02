@@ -1,5 +1,5 @@
 ---
-title: How to use a macro to shorten link text in Google Sheets
+title: How to Use a Macro to Shorten Link Text in Google Sheets
 comments: true
 date: 2021-11-01 23:01 -0400
 ---
