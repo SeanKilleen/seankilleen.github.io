@@ -20,15 +20,16 @@ date: 2021-12-19 00:01 -0400
 
 Happy Holiday season, everyone! I'm happy to have snagged one of the spots in this year's [C# Advent Calendar](https://www.csadvent.christmas).
 
-I'm a big fan of automated testing, but I know that many developers in the C# space are still getting used to some of the concepts, so I figured we'd take a this space to do a gentler introduction to test automation with a slightly contrived scenario.
+I'm a big fan of automated testing, but I know that many developers in the C# space are still getting used to some of the concepts, so I figured we'd take a this space to do a gentler introduction to test automation with a slightly contrived scenario, and solve it using NUnit, xUnit, and SpecFlow.
 
-If you're already very used to automated testing, or have very strong opinions on it, this post likely won't be for you as it's meant to be a gentle introduction to applying some of the concepts. But I hope you'll get something useful out of it!
+If you're already very used to automated testing, or have very strong opinions on it, this post likely won't be for you as it's meant to be a gentle introduction to applying some of the concepts. But I hope you'll get something useful out of it regardless!
 
-## How To Use this Post
+## How To Read this Post
 
-* TODO: Using multiple testing frameworks and approaches so you can follow along in the language of your choice
-* TODO: Different posts
-* TODO: Code in branches in a GitHub repository, can check out along the way
+Before jumping in, some words on how this post is structured:
+
+* I wanted to provide examples of different frameworks. So, this post is actually 4 posts. (TODO: Funny image of x % more posts!) This introductory post where we get things set up, and then a choose your own adventure where you can walk through the solution using NUnit, xUnit, or SpecFlow.
+* The code for all of these examples is stored in a repository (link). The different solutions will evolve in their separate branches, and are tagged (TODO: link to tags) at each step along the way.
 
 ## The Challenge
 
@@ -48,6 +49,8 @@ Here's the problem statement:
 
 If you've ever seen [the Mars Rover kata](https://katalyst.codurance.com/mars-rover) before, then this problem will look slightly familiar.
 
+TODO: Example?
+
 ## Breaking the Problem Down
 
 Let's think about what the problem says (and doesn't say):
@@ -60,6 +63,7 @@ Let's think about what the problem says (and doesn't say):
 * There's no restriction on what we can do with the constructor of the object; only on its public methods. This will give us some flexibility in how we implement the solution.
 * We have directions and turn methods, so turning is implied
 * We have the ability to move forward and backward across x and y coordinates based on direction
+* We'll need to thoroughly test the logic
 * We'll have to do some sort of check on the count of presents as we drop them.
 
 This can start to feel overwhelming, or we might have an idea of how we want to jump in. However, we'll want to think about the simplest things we can test first, just to get some momentum and avoid getting ahead of ourselves.
@@ -70,7 +74,7 @@ In this case, I think about the starting coordinates and turning as a good start
 
 ## Setting up Our Solution
 
-_To see the code with this step complete, use tag `all-01-emptyproject`._
+_To see the code with this step complete, use tag `01-emptyproject`._
 
 For this example, we'll create two projects in the same solution:
 
@@ -122,3 +126,9 @@ dotnet add reference ../SantaSleighCode
 TODO: Add menu steps for adding shortcuts
 
 ## Choose Your Own Adventure!
+
+Now that we've got the projects set up, it's time to choose which testing framework you'd like to use next.
+
+* NUnit implementation
+* xUnit implementation
+* SpecFlow implementation
