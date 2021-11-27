@@ -74,12 +74,51 @@ _To see the code with this step complete, use tag `all-01-emptyproject`._
 
 For this example, we'll create two projects in the same solution:
 
-* `SantaSleigh`, a project that will hold our production code
-* `SantaSleigh.Tests`, a project that will hold our test code and reference the production code.
+* `SantaSleighCode`, a project that will hold our production code
+* `SantaSleighCode.Tests`, a project that will hold our test code and reference the production code.
+
+### From the Command Line
 
 If you've got modern .NET (e.g. [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0) or similar) installed, we can use the command line to spin this up:
 
 * Create a folder for this workspace
 * Open a command prompt and head to that folder
+* Create the solution file:
+
+```cmd
+dotnet new sln --name CSharpAdvent
+```
+
+* Create the Source Code Project:
+
+```cmd
+dotnet new classlib --name SantaSleighCode --framework net6.0
+```
+
+* Create the Test Project:
+
+```cmd
+dotnet new classlib --name SantaSleighCode.Tests --framework net6.0
+```
+
+Note: There are actually some test project templates out there that will make this easier, but we're doing a bit of minimal setup so that we can add whatever libraries we want in the coming parts of the tutorial.
+
+* Add both projects to the solution file:
+
+```cmd
+dotnet sln add SantaSleighCode
+dotnet sln add SantaSleighCode.Tests
+```
+
+* Make the test project reference the production code project:
+
+```cmd
+cd .\SantaSleighCode.Tests\
+dotnet add reference ../SantaSleighCode
+```
+
+### From Visual Studio
+
+TODO: Add menu steps for adding shortcuts
 
 ## Choose Your Own Adventure!
