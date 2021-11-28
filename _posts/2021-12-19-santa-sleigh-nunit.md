@@ -151,10 +151,10 @@ This process -- setting up the situation under test, performing an action, and c
 
 A few tips:
 
-* Note that we only have one action. Typically, we want to limit our actions, preferably to one. If it's more than one action, changes are we want the granularity of more than one test to capture it, or that the "action" is actually part of arranging the situation/class under test.
+* Note that we only have one action. Typically, we want to limit our actions to those that are directly involved in achieving the test results. If it's more than one action, changes are we want the granularity of more than one test to capture it, or that the "action" is actually part of arranging the situation/class under test.
 * Note that we only have one assertion. Typically, we want to keep our assertions small, because we want our test to have one and only one reason that it can fail. Multiple assertions could mean that some assertions pass and some fail, and you may not easily be able to see all of them at a glance. Many small tests can help triangulate issues when they occur.
-  * This isn't a hard and fast rule; most things rarely are in testing. I typically say "one logical assertion". It may be that several assertions constitute one logical assertion. In that case, various framework have ways to track multiple assertions.
-* We typically have line breaks between arrange, act, and assert. Some folks add comments such as `// Arrange` to help follow, but I've tended to find that if my tests require this, they may be more complex to digest than I'd like, and I look to make other changes. By all means, feel free to add these as you start if they help you keep the concepts in mind; there's no crime in making things clearer!
+  * This isn't a hard and fast rule; most things rarely are. I typically say "one logical assertion". It may be that several assertions constitute one logical assertion. In that case, frameworks have ways to track multiple assertions, or you can refactor your test code to re-write it into one assertion.
+* I typically leave line breaks between arrange, act, and assert. Some folks also add comments such as `// Arrange` to help follow, but I've tended to find that if my tests require this, they may be more complex to digest than I'd like, and I look to make other changes. By all means, feel free to add these as you start if they help you keep the concepts in mind; there's no crime in making things clearer!
 
 With our test in place and our code not compiling, it's time to write _just enough production code_ for the test to pass.
 
@@ -174,7 +174,7 @@ public class SantaSleigh
 
 We're clearly not anywhere near done yet as the return value is hard-coded. But, we now have a test that will pass if we run the tests via our IDE or `dotnet test`.
 
-Now that we've done the default starting direction, should we move on to the default x and y coordinates? My personal preference is to stick with one concept at a time, and so even though I could add the defaults, I'm going to start with turning right and left.
+TODO: Now that we've done the default starting direction, should we move on to the default x and y coordinates? My personal preference is to stick with one concept at a time, and so even though I could add the defaults, I'm going to start with turning right and left.
 
 So, our next test will be:
 
