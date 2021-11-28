@@ -100,7 +100,7 @@ And with that, we're ready to move on to considering and writing our first tests
 
 TODO: Checkpoint -- the work up to this point can be found in tag `nunit-01-basicsetup`.
 
-## Our First Tests
+## Our First Tests: Following Directions
 
 If we recall the problem statement from the introductory article, it says:
 
@@ -343,3 +343,82 @@ TODO: Info box -- just because this is a refactoring or change that I thought ma
 TODO: You can find this change at nunit-03-refactoring.
 
 This cycle is what's known as the "Red, Green, Refactor" cycle. We wrote a failing test (red), wrote just enough code to make it pass (green), and then eventually we hit a place where we wanted to change the production code, and could do so while guaranteeing via our tests that no functionality was broken (refactoring). This is where we start to really experience the benefits of test-first development (though the true benefit of TDD in my opinion has already happened -- breaking down the problem into small pieces that we can reason about independently).
+
+## Next up: X and Y Coordinates
+
+Our next set of tests will check the coordinates when moving and facing a certain direction. We'll start with the x coordinate. We'll have to think about how moving forward or backward when facing each direction will affect the X axis (the one that runs side to side, not up and down, for those of us like me who were never awesome at geometry TODO: emoji).
+
+The list of tests here is roughly:
+
+* `GetXCoordinate_Default_Zero()`
+* `GetXCoordinate_FacingEastAndMovingForward_One()`
+* `GetXCoordinate_FacingEastAndMovingBackward_NegativeOne()`
+* `GetXCoordinate_FacingWestAndMovingForward_NegativeOne()`
+* `GetXCoordinate_FacingWestAndMovingBackward_One()`
+* `GetXCoordinate_FacingNorthAndMovingForward_NoChange()`
+* `GetXCoordinate_FacingNorthAndMovingBackward_NoChange()`
+* `GetXCoordinate_FacingSouthAndMovingForward_NoChange()`
+* `GetXCoordinate_FacingSouthAndMovingBackward_NoChange()`
+
+Our first few tests look like:
+
+```csharp
+[Test]
+public void GetXCoordinate_Default_Zero()
+{
+    var sut = new SantaSleigh();
+
+    var result = sut.GetXCoordinate();
+
+    result.Should().Be(0);
+}
+
+[Test]
+public void GetXCoordinate_FacingEastAndMovingForward_One()
+{
+    var sut = new SantaSleigh();
+    sut.TurnRight();
+
+    sut.MoveForward(1);
+    var result = sut.GetXCoordinate();
+
+    result.Should().Be(1);
+}
+
+[Test]
+public void GetXCoordinate_FacingEastAndMovingBackward_NegativeOne()
+{
+    var sut = new SantaSleigh();
+    sut.TurnRight();
+
+    sut.MoveBackward(1);
+    var result = sut.GetXCoordinate();
+
+    result.Should().Be(-1);
+}
+```
+
+But we're able to trick the production code to pass the tests without working yet:
+
+```csharp
+// ...
+private int _xCoord = 0;
+
+public int GetXCoordinate()
+{
+    return _xCoord;
+}
+
+public void MoveBackward(int spaces)
+{
+    _xCoord -= spaces; // This will only work when facing East
+}
+public void MoveForward(int spaces)
+{
+    _xCoord += spaces; // This will only work when facing East
+}
+```
+
+TODO Infobox can you spot where I jumped ahead here and didn't do the simplest thing? I automatically used the `spaces` parameter in the `MoveForward` and `MoveBackward` methods, rather than just increasing by 1, which would have then helped me reveal that I needed more tests to handle multiple spaces.
+
+TODO Infobox this can be found at `nunit-04-xcoordinates`.
