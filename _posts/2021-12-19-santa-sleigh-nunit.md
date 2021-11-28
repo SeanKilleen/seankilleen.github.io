@@ -106,17 +106,13 @@ If we recall the problem statement from the introductory article, it says:
 
 > Santa's sleigh starts facing North at coordinate `0,0`.
 
-This seems like a great place to start as it allows us to test our defaults and get a few tests out of the way early on. Let's dive in!
+This seems like a great place to start as it allows us to test a default and get a few tests out of the way early on. Let's dive in!
 
 * In our test project, create a new class file called `SantaSleighTests.cs`. This will serve as the file we use to house the tests for our `SantaSleigh` class.
 
 Next, let's think about how to name our tests. There are a number of acceptable ways to do this, but I've found that good starting point for those who are new to the practice is to think about test names in terms of `[MethodToRun]_[Scenario]_[Expectation]`. It's not a hard and fast rule, and as long as the description is clear you should be good, but we'll use this convention throughout the article.
 
-With this in mind, our first test methods will be named:
-
-* `GetDirection_Default_FacingNorth()`
-* `GetXCoordinate_Default_Zero()`
-* `GetYCoordinate_Default_Zero()`
+With this in mind, our first test method will be named: `GetDirection_Default_FacingNorth()`.
 
 Let's open the `SantaSleighTests.cs` and write our first unit test. You can replace the contents of the file with:
 
@@ -145,13 +141,13 @@ namespace SantaSleighCode.Tests
 Let's take a look at what this test sets up:
 
 * It adds a `using` statement for `FluentAssertions`, which we use later in the test because I love the syntax.
-* It defines a variable called `sut`, which is a short-hand I often use that means "situation under test". I've also often seen `cut` (class under test), or just a clear variable (e.g. `sleigh` in this casee).
+* It defines a variable called `sut`, which is a short-hand I often use that means "situation under test". I've also often seen `cut` (class under test), or just a clear variable (e.g. something like `sleigh` in this casee).
   * Note that it sets the variable to `new SantaSleigh()`, which does not yet exist. This code will currently not compile, so any attempt to run the test will fail. This is OK; we're writing the test before the production code exists.
 * It acts on the situation under test by calling `GetDirection()`, which again doesn't currently exist.
 * Finally, it uses the FluentAssertions syntax to say that the result should be `N`.
   * If we weren't using FluentAssertions, a similar statement using just NUnit could read: `Assert.That(result, Is.EqualTo("N"));`.
 
-This process -- setting up the situation under test, performing an action, and creating an assertion, is known in the unit testing world as "Arrange, Act, Assert" or "AAA". 
+This process -- setting up the situation under test, performing an action, and creating an assertion, is known in the unit testing world as "Arrange, Act, Assert" or "AAA".
 
 A few tips:
 
@@ -177,3 +173,171 @@ public class SantaSleigh
 ```
 
 We're clearly not anywhere near done yet as the return value is hard-coded. But, we now have a test that will pass if we run the tests via our IDE or `dotnet test`.
+
+Now that we've done the default starting direction, should we move on to the default x and y coordinates? My personal preference is to stick with one concept at a time, and so even though I could add the defaults, I'm going to start with turning right and left.
+
+So, our next test will be:
+
+```csharp
+[Test]
+public void GetDirection_TurnRightOnce_FacingEast()
+{
+    var sut = new SantaSleigh();
+
+    sut.TurnRight();
+    var result = sut.GetDirection();
+
+    result.Should().Be("E");
+}
+```
+
+This won't compile, but we'll do the simplest production code to get things to compile:
+
+```csharp
+public class SantaSleigh
+{
+  private string _direction = "N";
+
+  public string GetDirection()
+  {
+      return _direction;
+  }
+
+  public void TurnRight()
+  {
+      _direction = "E";
+  }
+}
+```
+
+We've:
+
+* Introduced a local variable
+* Set the first hard-coded variable to a one-time hard-coded variable, so we've done the simplest thing we can do to get the test to pass, and we're clearly not done, which will necessitate more tests.
+
+Next up, we ping-pong back and forth on a few different tests (you can follow the commits on the NUnit branch: TODO link):
+
+* `GetDirection_TurnRightTwoTimes_FacingSouth()`
+* `GetDirection_TurnRightThreeTimes_FacingWest()`
+* `GetDirection_TurnRightFourTimes_FacingNorth()`
+* `GetDirection_TurnRightFiveTimes_FacingEast()`
+
+And we cover turning left as well:
+
+* `GetDirection_TurnLeftOneTime_FacingWest()`
+* `GetDirection_TurnLeftTwoTimes_FacingSouth()`
+* `GetDirection_TurnLeftThreeTimes_FacingEast()`
+* `GetDirection_TurnLeftFourTimes_FacingNorth()`
+* `GetDirection_TurnLeftFiveTimes_FacingWest()`
+
+That brings us to a C# production code class that looks something like this:
+
+```csharp
+public class SantaSleigh
+{
+    private string _direction = "N";
+
+    public string GetDirection()
+    {
+        return _direction;
+    }
+
+    public void TurnRight()
+    {
+        if (_direction == "N")
+        {
+            _direction = "E";
+            return;
+        }
+        if (_direction == "E")
+        {
+            _direction = "S";
+            return;
+        }
+        if (_direction == "S")
+        {
+            _direction = "W";
+            return;
+        }
+        if (_direction == "W")
+        {
+            _direction = "N";
+            return;
+        }
+    }
+
+    public void TurnLeft()
+    {
+        if (_direction == "N")
+        {
+            _direction = "W";
+            return;
+        }
+        if (_direction == "W")
+        {
+            _direction = "S";
+            return;
+        }
+        if (_direction == "S")
+        {
+            _direction = "E";
+            return;
+        }
+        if (_direction == "E")
+        {
+            _direction = "N";
+            return;
+        }
+    }
+}
+```
+
+This is...fine. But, it could likely be a little neater and more expressive. Since we've already got it covered by tests, we can refactor it into something that might be a little more expressive, using a linked list. This shortens the amount of code we have while still making sense (provided you're familiar with a linked list.)
+
+```csharp
+using System.Collections.Generic;
+
+public class SantaSleigh
+{
+    private LinkedList<string> _directionList = new LinkedList<string>(new string[] { "N", "E", "S", "W" });
+    private string _direction;
+
+    public SantaSleigh()
+    {
+        _direction = _directionList.First.Value;
+    }
+
+    public string GetDirection()
+    {
+        return _direction;
+    }
+
+    public void TurnRight()
+    {
+        if (_direction == _directionList.Last.Value)
+        {
+            _direction = _directionList.First.Value;
+            return;
+        }
+
+        _direction = _directionList.Find(_direction).Next.Value;
+        return;
+    }
+
+    public void TurnLeft()
+    {
+        if (_direction == _directionList.First.Value)
+        {
+            _direction = _directionList.Last.Value;
+            return;
+        }
+
+        _direction = _directionList.Find(_direction).Previous.Value;
+        return;
+    }
+}
+```
+
+TODO: Info box -- just because this is a refactoring or change that I thought makes sense doesn't mean it's the right choice or the only possible choice. These sorts of choices are driven by the shared experience of your team, and trade-offs like readability, performance.
+
+TODO: You can find this change at nunit-03-refactoring.
