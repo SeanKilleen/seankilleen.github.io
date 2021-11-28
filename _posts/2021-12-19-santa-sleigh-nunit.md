@@ -419,6 +419,18 @@ public void MoveForward(int spaces)
 }
 ```
 
-TODO Infobox can you spot where I jumped ahead here and didn't do the simplest thing? I automatically used the `spaces` parameter in the `MoveForward` and `MoveBackward` methods, rather than just increasing by 1, which would have then helped me reveal that I needed more tests to handle multiple spaces.
+### Oops! Calling myself out.
+
+Can you spot where I jumped ahead here and didn't do the simplest thing? I automatically used the `spaces` parameter in the `MoveForward` and `MoveBackward` methods, rather than just increasing by 1, which would have then helped me reveal that I needed more tests to handle multiple spaces.
+
+After implementing the rest of the tests, the tests look like:
+
+TODO: Show tests
+
+And the production code looks like:
+
+TODO: Show production code
+
+We'll go ahead and fix my mistake, adapting some of our tests to account for moving multiple spaces.
 
 TODO Infobox this can be found at `nunit-04-xcoordinates`.
