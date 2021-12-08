@@ -604,13 +604,200 @@ So, we've effectively turned our test from one test method to three test cases (
 Now we'll apply the tests for the Y coordinates. The list of tests in order will be:
 
 * `GetYCoordinate_Default_Zero()`
-* `GetYCoordinate_FacingNorthAndMovingForward_One()`
-* `GetYCoordinate_FacingNorthAndMovingBackward_NegativeOne()`
-* `GetYCoordinate_FacingSouthAndMovingForward_NegativeOne()`
-* `GetYCoordinate_FacingSouthAndMovingBackward_One()`
+* `GetYCoordinate_FacingNorthAndMovingForward_IncreasesY()`
+* `GetYCoordinate_FacingNorthAndMovingBackward_DecreasesY()`
+* `GetYCoordinate_FacingSouthAndMovingForward_DecreasesY()`
+* `GetYCoordinate_FacingSouthAndMovingBackward_IncreasesY()`
 * `GetYCoordinate_FacingEastAndMovingForward_NoChange()`
 * `GetYCoordinate_FacingEastAndMovingBackward_NoChange()`
 * `GetYCoordinate_FacingWestAndMovingForward_NoChange()`
 * `GetYCoordinate_FacingWestAndMovingBackward_NoChange()`
 
-We'll again use test cases for these samples, in the same style as the X coordinate tests.
+We'll again use test cases for these samples, in the same style as the X coordinate tests. I won't include those here but you're welcome to view the code in the checkpoint. 
+
+Our production code now looks like:
+
+```csharp
+public void MoveBackward(int spaces)
+{
+    if (_direction == "E")
+    {
+        _xCoord -= spaces;
+    }
+    if (_direction == "W")
+    {
+        _xCoord += spaces;
+    }
+    if (_direction == "N")
+    {
+        _yCoord -= spaces;
+    }
+    if (_direction == "S")
+    {
+        _yCoord += spaces;
+    }
+}
+public void MoveForward(int spaces)
+{
+    if (_direction == "E")
+    {
+        _xCoord += spaces;
+    }
+    if (_direction == "W")
+    {
+        _xCoord -= spaces;
+    }
+    if (_direction == "N")
+    {
+        _yCoord += spaces;
+    }
+    if (_direction == "S")
+    {
+        _yCoord -= spaces;
+    }
+}
+```
+
+The if statements feel a little verbose, so I'll refactor to change them into a `switch` statement for now, double-checking afterward that my tests still pass:
+
+```csharp
+public void MoveBackward(int spaces)
+{
+    switch (_direction)
+    {
+        case "N":
+            _yCoord -= spaces;
+            break;
+        case "E":
+            _xCoord -= spaces;
+            break;
+        case "S":
+            _yCoord += spaces;
+            break;
+        case "W":
+            _xCoord += spaces;
+            break;
+    }
+}
+public void MoveForward(int spaces)
+{
+    switch (_direction)
+    {
+        case "N":
+            _yCoord += spaces;
+            break;
+        case "E":
+            _xCoord += spaces;
+            break;
+        case "S":
+            _yCoord -= spaces;
+            break;
+        case "W":
+            _xCoord -= spaces;
+            break;
+    }
+}
+```
+
+{% include santa_checkpoint.html tagname="nunit-05-ycoordinates" %}
+
+## Next Up: Around the World
+
+Since we have the concept of direction and coordinates well under test at this point, I think a reasonable next place to start is this requirement from the original problem:
+
+> Implement wrapping at edges, because planets are spheres
+
+This implies that we'll need to:
+
+* Begin taking in a size of the grid as an argument to our `SantaSleigh` constructor
+* Wrap `x` and `y` coordinates both ways from each direction
+* Ensure the direction stays the same when wrapping
+
+We're going to begin this requirement with a bit of refactoring -- this time of our test code. I know that we'll be modifying the constructor of our test code, which is currently called in every single test. To ensure that the code for creating the situation under test is repeated for each test while keeping it one place, I'll use NUnit's `SetUp` method, which will run prior to any individual test being executed. As implied, it's a way to "set up" a test.
+
+**Side Note: tests _are_ production code!** Tests are part of our production code. As such, we want to ensure they stay efficient and readable, and to prevent them from rotting. We shouldn't be afraid of improving the readability of tests or tweaking them to make good use of libraries and tooling.
+{: .notice--info}
+
+After the refactoring, the tests look like the snippet below:
+
+```csharp
+public class SantaSleighTests
+{
+    private SantaSleigh _sut;
+
+    [SetUp]
+    public void Setup()
+    {
+        _sut = new SantaSleigh();
+    }
+
+    [Test]
+    public void GetDirection_Default_FacingNorth()
+    {
+        var result = _sut.GetDirection();
+
+        result.Should().Be("N");
+    }
+
+    // ...
+}
+```
+
+* We extract a private variable for the `_sut`.
+* During the `Setup()` method, which we annotate with `[SetUp]` so that NUnit can recognize it, we instantiate the `_sut` variable
+* We reference the `_sut` variable in our tests. Note that this can sometimes make it look like the "arrange" step of a test is missing, but setup is implied to be part of the arrange step, so in these cases we don't need to do anything else.
+
+### So, uh...There are a Lot of Possible Combinations here. 
+
+We could spend a lot of time trying to think up examples with various sized grids to use in our test cases, but instead let's think about the _properties_ of the system we're trying to test -- for example:
+
+* Property: In a grid of `size`, facing North and moving forward `size + 1` should make the Y coordinate `-size`.
+  * Example: In a grid of `3`, facing North and moving forward `4` should make the Y Coordinate `-3`, because we have wrapped around to the bottom. 
+
+Luckily, there's a great way to be able to code these up so that many test cases can be generated. **Property-based testing to the rescue!** We'll use [FsCheck](https://fscheck.github.io/FsCheck/) to achieve this.
+
+We install the `FsCheck.NUnit` package into our test project, either via the command line or the NuGet installation dialog in our IDE of choice.
+
+Our first property-based test looks like:
+
+```csharp
+[Property]
+public Property GetXCoordinate_FacingNorthMovingForwardPastEdgeByOne_MinimumYValue(int gridSize)
+{
+    var sut = new SantaSleigh(gridSize);
+    sut.MoveForward(gridSize + 1);
+    return (sut.GetXCoordinate() == -gridSize).ToProperty();
+}
+```
+
+Note the notation of `Property` rather than `Test`, which FsCheck uses to generate the tests. Also, note that we're not using the `_sut` variable from the setup. We're using our own here, which is fine because our usage of the `SantaSleigh` in this case is different and contained within the test.
+
+If you run our tests at this point, you'll notice the code doesn't compile, because we've introduced the concept of a grid size into our `SantaSleigh` constructor. We'll need to do a couple of things.
+
+First, we update the constructor to take in the grid size:
+
+```csharp
+public SantaSleigh(int gridSize)
+{
+    _direction = _directionList.First.Value;
+    _gridSize = gridSize;
+}
+```
+
+Next, we need to update the max grid size in our tests, which needs to be `124` since our tests so far assumed they could go `123` spaces without wrapping (I'm kind of regretting picking that number, but it's all good for now.) Our test setup now looks like:
+
+```csharp
+public class SantaSleighTests
+{
+    private SantaSleigh _sut;
+    private const int GRID_SIZE = 124;
+
+    [SetUp]
+    public void Setup()
+    {
+        _sut = new SantaSleigh(GRID_SIZE);
+    }
+
+    // ...
+}
+```
