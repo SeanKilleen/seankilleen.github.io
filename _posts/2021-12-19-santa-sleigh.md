@@ -52,6 +52,8 @@ If you've ever seen [the Mars Rover kata](https://katalyst.codurance.com/mars-ro
 
 TODO: Example?
 
+TODO: Image of the grid as a sample?
+
 ## Breaking the Problem Down
 
 Let's think about what the problem says (and doesn't say):
