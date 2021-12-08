@@ -817,4 +817,40 @@ with exception:
 NUnit.Framework.AssertionException: Expected result to be -1, but found 2.
 ```
 
-FsCheck would normally tried many test cases combinations, but it actually failed on the first one in this case.
+FsCheck would normally tried many test case combinations, but it actually failed on the first one in this case.
+
+With that, we can update our switch case for `MoveForward` to add logic that works:
+
+```csharp
+public void MoveForward(int spaces)
+{
+    switch (_direction)
+    {
+        case "N":
+            // Yeah, this took me a minute and there's probably a better way.
+            // Check if we are going to go off the grid
+            if (_yCoord + spaces > _gridSize)
+            {
+                // Get how many spaces off we'd be
+                var spacesOffTheGrid = (_yCoord + spaces) - _gridSize;
+                _yCoord = (-_gridSize) + spacesOffTheGrid - 1;
+            }
+            else
+            {
+                _yCoord += spaces;
+            };
+            break;
+        case "E":
+            _xCoord += spaces;
+            break;
+        case "S":
+            _yCoord -= spaces;
+            break;
+        case "W":
+            _xCoord -= spaces;
+            break;
+    }
+}
+```
+
+Our property-based test now passes! FsCheck ran 100 iterations with positive numbers and couldn't falsify the property.
