@@ -16,7 +16,7 @@ excerpt: "Solving our C# Advent 2021 challenge using the NUnit framework."
 
 ---
 
-_This post is part of my [C# Advent 2021](https://www.csadvent.christmas/) submission. In this post, we'll continue to walk through the Santa Sleigh automated testing example from the [Introductory Blog Post](TODO: Link). If you haven't already, you may want to head there to get the basics set up._
+_This post is part of my [C# Advent 2021](https://www.csadvent.christmas/) submission. In this post, we'll continue to walk through the Santa Sleigh automated testing example from the [Introductory Blog Post](https://seankilleen.com/2021/12/santa-sleigh). If you haven't already, you may want to head there to get the basics set up._
 
 Alright, so we've decided to go with the NUnit testing framework. An excellent choice!
 
@@ -92,13 +92,12 @@ This file:
 
 ## Running `dotnet test` to Check Our Work
 
-We should be able to run `dotnet test` from the command line now and see one passed test:
-
-TODO: Screenshot
+We should be able to run `dotnet test` from the command line now and see one passed test. 
 
 And with that, we're ready to move on to considering and writing our first tests.
 
-TODO: Checkpoint -- the work up to this point can be found in tag `nunit-01-basicsetup`.
+:tada: **Checkpoint!** The work up to this point can be found in tag `nunit-01-basicsetup`.
+{: .notice--success}
 
 ## Our First Tests: Following Directions
 
