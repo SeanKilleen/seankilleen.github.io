@@ -762,15 +762,18 @@ Our first property-based test looks like:
 
 ```csharp
 [Property]
-public Property GetXCoordinate_FacingNorthMovingForwardPastEdgeByOne_MinimumYValue(int gridSize)
+public Property GetXCoordinate_FacingNorthMovingForwardPastEdgeByOne_MinimumYValue(PositiveInt randomSize)
 {
+    var gridSize = ((int)randomSize);
     var sut = new SantaSleigh(gridSize);
     sut.MoveForward(gridSize + 1);
-    return (sut.GetXCoordinate() == -gridSize).ToProperty();
+    var result = _sut.GetXCoordinate();
+
+    return (result == -gridSize).ToProperty();
 }
 ```
 
-Note the notation of `Property` rather than `Test`, which FsCheck uses to generate the tests. Also, note that we're not using the `_sut` variable from the setup. We're using our own here, which is fine because our usage of the `SantaSleigh` in this case is different and contained within the test.
+Note the notation of `Property` rather than `Test`, which FsCheck uses to generate the tests. Also, note that we're not using the `_sut` variable from the setup. We're using our own here, which is fine because our usage of the `SantaSleigh` in this case is different and contained within the test. Lastly, note that we're using the FsCheck-provided `PositiveInt` as a parameter, which is lovely helper to ensure we don't have negative grid numbers.
 
 If you run our tests at this point, you'll notice the code doesn't compile, because we've introduced the concept of a grid size into our `SantaSleigh` constructor. We'll need to do a couple of things.
 
@@ -801,3 +804,17 @@ public class SantaSleighTests
     // ...
 }
 ```
+
+Now the code once again compiles, which is great! We only have our failing test to deal with. The test failure message reads:
+
+```TODO
+  Failed GetXCoordinate_FacingNorthMovingForwardPastEdgeByOne_MinimumYValue [233 ms]
+  Error Message:
+   Falsifiable, after 1 test (1 shrink) (StdGen (1036518656,296973520)):
+Original:
+PositiveInt 2
+Shrunk:
+PositiveInt 1
+```
+
+FsCheck would normally tried many test cases combinations, but it actually failed on the first one in this case.
