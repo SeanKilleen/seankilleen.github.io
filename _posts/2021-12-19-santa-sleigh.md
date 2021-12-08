@@ -10,7 +10,7 @@ tags:
   - xunit
   - specflow
 date: 2021-12-19 00:01 -0400
-#excerpt: "TODO"
+excerpt: "An exploration of TDD in the spirit of the season."
 #header:
 #  overlay_image: /images/overlays/unsplash/ehimetalor-akhere-unuabona-TvJk52iLxQA-unsplash2.jpg
 #  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
@@ -28,8 +28,8 @@ If you're already very used to automated testing, or have very strong opinions o
 
 Before jumping in, some words on how this post is structured:
 
-* I wanted to provide examples of different frameworks. So, this post is actually 4 posts. (TODO: Funny image of x % more posts!) This introductory post where we get things set up, and then a choose your own adventure where you can walk through the solution using NUnit, xUnit, or SpecFlow.
-* The code for all of these examples is stored in a repository (link). The different solutions will evolve in their separate branches, and are tagged (TODO: link to tags) at each step along the way.
+* I wanted to provide examples of different frameworks. So, this post is actually 4 posts. This introductory post where we get things set up, and then a choose your own adventure where you can walk through the solution using NUnit, xUnit, or SpecFlow. See the bottom of this post for those links.
+* The code for all of these examples is stored in a repository (link). The different solutions will evolve in their separate branches, and [are tagged at each step along the way](https://github.com/SeanKilleen/SantaSleigh/tags).
 * **I'd love your feedback!** I haven't explored this kind of long-form tutorial in a blog format yet really and I'd love your feedback on changes I could make or different approaches that would make this post more effective for you. Consider this a living page; I plan to continue to improve it based on feedback.
 
 ## The Challenge
@@ -124,7 +124,12 @@ dotnet add reference ../SantaSleighCode
 
 ### From Visual Studio
 
-TODO: Add menu steps for adding shortcuts
+* Create a new solution
+* Create the two projects above by using the `New Project` dialog and choosing a Class Library project.
+* Right-click on the test project and choose `Add --> Reference` from the menu
+* Select the production code project and click OK to add the reference.
+
+TODO: Review for clarity
 
 ## Choose Your Own Adventure!
 

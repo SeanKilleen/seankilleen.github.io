@@ -96,8 +96,7 @@ We should be able to run `dotnet test` from the command line now and see one pas
 
 And with that, we're ready to move on to considering and writing our first tests.
 
-:tada: **Checkpoint!** The work up to this point can be found in tag `nunit-01-basicsetup`.
-{: .notice--success}
+{% include santa_checkpoint.html tagname="nunit-01-basicsetup" %}
 
 ## Our First Tests: Following Directions
 
@@ -157,7 +156,8 @@ A few tips:
 
 With our test in place and our code not compiling, it's time to write _just enough production code_ for the test to pass.
 
-TODO -- info block -- Side note: Why "just enough production code"? The goal when doing TDD is to write only the required amount of code to make the test pass. If you can outsmart your test and write code that passes the test ut isn't finished, it's a great way to guide yourself to create additional tests.
+**Why "just enough production code"?** The goal when doing TDD is to write only the required amount of code to make the test pass. If you can outsmart your test and write code that passes the test ut isn't finished, it's a great way to guide yourself to create additional tests.
+{: .notice--info} 
 
 In your production code project (`SantaSleigh`, not `SantaSleigh.Tests`), create a `SantaSleigh.cs` class as follows with our simplest implementation possible:
 
@@ -173,7 +173,7 @@ public class SantaSleigh
 
 We're clearly not anywhere near done yet as the return value is hard-coded. But, we now have a test that will pass if we run the tests via our IDE or `dotnet test`.
 
-TODO: Now that we've done the default starting direction, should we move on to the default x and y coordinates? My personal preference is to stick with one concept at a time, and so even though I could add the defaults, I'm going to start with turning right and left.
+Now that we've done the default starting direction, should we move on to the default x and y coordinates? My personal preference is to stick with one concept at a time, and so even though I could add the defaults, I'm going to start with turning right and left.
 
 So, our next test will be:
 
@@ -214,7 +214,7 @@ We've:
 * Introduced a local variable
 * Set the first hard-coded variable to a one-time hard-coded variable, so we've done the simplest thing we can do to get the test to pass, and we're clearly not done, which will necessitate more tests.
 
-Next up, we ping-pong back and forth on a few different tests (you can follow the commits on the NUnit branch: TODO link):
+Next up, we ping-pong back and forth on a few different tests:
 
 * `GetDirection_TurnRightTwoTimes_FacingSouth()`
 * `GetDirection_TurnRightThreeTimes_FacingWest()`
@@ -291,6 +291,8 @@ public class SantaSleigh
 }
 ```
 
+{% include santa_checkpoint.html tagname="nunit-02-turning" %}
+
 This is...fine. But, it could likely be a little neater and more expressive. Since we've already got it covered by tests, we can refactor it into something that might be a little more expressive, using a linked list. This shortens the amount of code we have while still making sense (provided you're familiar with a linked list.)
 
 ```csharp
@@ -337,15 +339,16 @@ public class SantaSleigh
 }
 ```
 
-TODO: Info box -- just because this is a refactoring or change that I thought makes sense doesn't mean it's the right choice or the only possible choice. These sorts of choices are driven by the shared experience of your team, and trade-offs like readability, performance.
+**There's always more than one way to code it!** Just because this is a refactoring or change that I thought makes sense doesn't mean it's the right choice or the only possible choice. These sorts of choices are driven by the shared experience of your team, and trade-offs like readability and performance.
+{: .notice--info} 
 
-TODO: You can find this change at nunit-03-refactoring.
+{% include santa_checkpoint.html tagname="nunit-03-refactoring" %}
 
 This cycle is what's known as the "Red, Green, Refactor" cycle. We wrote a failing test (red), wrote just enough code to make it pass (green), and then eventually we hit a place where we wanted to change the production code, and could do so while guaranteeing via our tests that no functionality was broken (refactoring). This is where we start to really experience the benefits of test-first development (though the true benefit of TDD in my opinion has already happened -- breaking down the problem into small pieces that we can reason about independently).
 
 ## Next up: X and Y Coordinates
 
-Our next set of tests will check the coordinates when moving and facing a certain direction. We'll start with the x coordinate. We'll have to think about how moving forward or backward when facing each direction will affect the X axis (the one that runs side to side, not up and down, for those of us like me who were never awesome at geometry TODO: emoji).
+Our next set of tests will check the coordinates when moving and facing a certain direction. We'll start with the x coordinate. We'll have to think about how moving forward or backward when facing each direction will affect the X axis (the one that runs side to side, not up and down, for those of us like me who were never awesome at geometry :upside_down_face: ).
 
 The list of tests here is roughly:
 
@@ -417,10 +420,6 @@ public void MoveForward(int spaces)
     _xCoord += spaces; // This will only work when facing East
 }
 ```
-
-### Oops! Calling myself out.
-
-Can you spot where I jumped ahead here and didn't do the simplest thing? I automatically used the `spaces` parameter in the `MoveForward` and `MoveBackward` methods, rather than just increasing by 1, which would have then helped me reveal that I needed more tests to handle multiple spaces.
 
 After implementing the rest of the tests, the tests look like:
 
@@ -565,6 +564,10 @@ public void MoveForward(int spaces)
 }
 ``` 
 
+### Oops! Calling myself out.
+
+Can you spot where I jumped ahead here and didn't do the simplest thing? I automatically used the `spaces` parameter in the `MoveForward` and `MoveBackward` methods, rather than just increasing by 1, which would have then helped me reveal that I needed more tests to handle multiple spaces.
+
 Next, we'll go ahead and fix my mistake, adapting some of our tests to account for moving multiple spaces. For this, we'll use the NUnit `TestCase` functionality.
 
 We change our tests to look more like the following:
@@ -593,7 +596,7 @@ What's going on in this code?
 
 So, we've effectively turned our test from one test method to three test cases (which will run as separate tests) that check multiple data points.
 
-TODO: Infobox -- test cases can be a drawback as well. You'll want to make sure that if you're using them, that they really are relevant to the test case at hand and aren't unnecessarily lumping tests together. If you're trying to test something boundless, you might be best off looking at property-based testing, which we'll demonstrate a little later on.
+**Not everything needs test cases:** Test cases can be a drawback as well. You'll want to make sure that if you're using them, that they really are relevant to the test case at hand and aren't unnecessarily lumping tests together. If you're trying to test something that has less explicit examples, you might be best off looking at property-based testing, which we'll demonstrate a little later on.
+{: .notice--info}
 
-
-TODO Infobox this can be found at `nunit-04-xcoordinates`.
+{% include santa_checkpoint.html tagname="nunit-04-xcoordinates" %}
