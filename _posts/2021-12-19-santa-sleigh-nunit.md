@@ -596,7 +596,7 @@ What's going on in this code?
 
 So, we've effectively turned our test from one test method to three test cases (which will run as separate tests) that check multiple data points.
 
-**Not everything needs test cases:** Test cases can be a drawback as well. You'll want to make sure that if you're using them, that they really are relevant to the test case at hand and aren't unnecessarily lumping tests together. If you're trying to test something that has less explicit examples, you might be best off looking at property-based testing, which we'll demonstrate a little later on.
+**Side Note: not everything needs test cases.** Test cases can be a drawback as well. You'll want to make sure that if you're using them, that they really are relevant to the test case at hand and aren't unnecessarily lumping tests together. If you're trying to test something that has less explicit examples, you might be best off looking at property-based testing, which we'll demonstrate a little later on.
 {: .notice--info}
 
 {% include santa_checkpoint.html tagname="nunit-04-xcoordinates" %}
