@@ -8,7 +8,7 @@ tags:
   - automation
   - nunit
 date: 2021-12-19 00:01 -0400
-#excerpt: "TODO"
+excerpt: "Solving our C# Advent 2021 challenge using the NUnit framework."
 #header:
 #  overlay_image: /images/overlays/unsplash/ehimetalor-akhere-unuabona-TvJk52iLxQA-unsplash2.jpg
 #  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
@@ -564,9 +564,35 @@ public void MoveForward(int spaces)
         _xCoord -= spaces;
     }
 }
-```
+``` 
 
 Next, we'll go ahead and fix my mistake, adapting some of our tests to account for moving multiple spaces. For this, we'll use the NUnit `TestCase` functionality.
+
+We change our tests to look more like the following:
+
+```csharp
+[TestCase(1)]
+[TestCase(12)]
+[TestCase(123)]
+public void GetXCoordinate_FacingWestAndMovingBackward_IncreasesX(int numberOfSpaces)
+{
+    var sut = new SantaSleigh();
+    sut.TurnLeft();
+
+    sut.MoveBackward(numberOfSpaces);
+    var result = sut.GetXCoordinate();
+
+    result.Should().Be(numberOfSpaces);
+}
+```
+
+What's going on in this code? 
+
+* We've updated the expectation from a specific number to the understanding that the X value (in this case) should increase.
+* We've used the `TestCase` notation, which will pass along specific values to the test
+* We've added and used the `numberOfSpaces` parameter, which gets the value from the test case and uses it in the test.
+
+So, we've effectively turned our test from one test method to three test cases (which will run as separate tests) that check multiple data points.
 
 TODO: Infobox -- test cases can be a drawback as well. You'll want to make sure that if you're using them, that they really are relevant to the test case at hand and aren't unnecessarily lumping tests together. If you're trying to test something boundless, you might be best off looking at property-based testing, which we'll demonstrate a little later on.
 
