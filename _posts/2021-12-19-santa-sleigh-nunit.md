@@ -762,12 +762,12 @@ Our first property-based test looks like:
 
 ```csharp
 [Property]
-public Property GetXCoordinate_FacingNorthMovingForwardPastEdgeByOne_MinimumYValue(PositiveInt randomSize)
+public Property GetYCoordinate_FacingNorthMovingForwardPastEdgeByOne_MinimumYValue(PositiveInt randomSize)
 {
     var gridSize = ((int)randomSize);
     var sut = new SantaSleigh(gridSize);
     sut.MoveForward(gridSize + 1);
-    var result = _sut.GetXCoordinate();
+    var result = sut.GetYCoordinate();
 
     return (result == -gridSize).ToProperty();
 }
