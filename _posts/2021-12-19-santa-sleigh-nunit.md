@@ -20,7 +20,7 @@ _This post is part of my [C# Advent 2021](https://www.csadvent.christmas/) submi
 
 Alright, so we've decided to go with the NUnit testing framework. An excellent choice!
 
-## Changing the test Project Type
+## Changing the Test Project Type
 
 Because we created a plan class library during our initial setup, we'll want to modify that project so that th ecosystem understand it's a test project.
 
@@ -425,12 +425,150 @@ Can you spot where I jumped ahead here and didn't do the simplest thing? I autom
 
 After implementing the rest of the tests, the tests look like:
 
-TODO: Show tests
+```csharp
+[Test]
+public void GetXCoordinate_Default_Zero()
+{
+    var sut = new SantaSleigh();
+
+    var result = sut.GetXCoordinate();
+
+    result.Should().Be(0);
+}
+
+[Test]
+public void GetXCoordinate_FacingEastAndMovingForward_One()
+{
+    var sut = new SantaSleigh();
+    sut.TurnRight();
+
+    sut.MoveForward(1);
+    var result = sut.GetXCoordinate();
+
+    result.Should().Be(1);
+}
+
+[Test]
+public void GetXCoordinate_FacingEastAndMovingBackward_NegativeOne()
+{
+    var sut = new SantaSleigh();
+    sut.TurnRight();
+
+    sut.MoveBackward(1);
+    var result = sut.GetXCoordinate();
+
+    result.Should().Be(-1);
+}
+
+[Test]
+public void GetXCoordinate_FacingWestAndMovingForward_NegativeOne()
+{
+    var sut = new SantaSleigh();
+    sut.TurnLeft();
+
+    sut.MoveForward(1);
+    var result = sut.GetXCoordinate();
+
+    result.Should().Be(-1);
+}
+
+[Test]
+public void GetXCoordinate_FacingWestAndMovingBackward_One()
+{
+    var sut = new SantaSleigh();
+    sut.TurnLeft();
+
+    sut.MoveBackward(1);
+    var result = sut.GetXCoordinate();
+
+    result.Should().Be(1);
+}
+
+[Test]
+public void GetXCoordinate_FacingNorthAndMovingForward_NoChange()
+{
+    var sut = new SantaSleigh();
+
+    sut.MoveForward(1);
+    var result = sut.GetXCoordinate();
+
+    result.Should().Be(0);
+}
+
+[Test]
+public void GetXCoordinate_FacingNorthAndMovingBackward_NoChange()
+{
+    var sut = new SantaSleigh();
+
+    sut.MoveBackward(1);
+    var result = sut.GetXCoordinate();
+
+    result.Should().Be(0);
+}
+
+[Test]
+public void GetXCoordinate_FacingSouthAndMovingForward_NoChange()
+{
+    var sut = new SantaSleigh();
+    sut.TurnLeft();
+    sut.TurnLeft();
+
+    sut.MoveForward(1);
+    var result = sut.GetXCoordinate();
+
+    result.Should().Be(0);
+}
+
+[Test]
+public void GetXCoordinate_FacingSouthAndMovingBackward_NoChange()
+{
+    var sut = new SantaSleigh();
+    sut.TurnLeft();
+    sut.TurnLeft();
+
+    sut.MoveBackward(1);
+    var result = sut.GetXCoordinate();
+
+    result.Should().Be(0);
+}
+```
 
 And the production code looks like:
 
-TODO: Show production code
+```csharp
+public int GetXCoordinate()
+{
+    return _xCoord;
+}
 
-We'll go ahead and fix my mistake, adapting some of our tests to account for moving multiple spaces.
+public void MoveBackward(int spaces)
+{
+    if (_direction == "E")
+    {
+        _xCoord -= spaces;
+    }
+    if (_direction == "W")
+    {
+        _xCoord += spaces;
+    }
+}
+
+public void MoveForward(int spaces)
+{
+    if (_direction == "E")
+    {
+        _xCoord += spaces;
+    }
+    if (_direction == "W")
+    {
+        _xCoord -= spaces;
+    }
+}
+```
+
+Next, we'll go ahead and fix my mistake, adapting some of our tests to account for moving multiple spaces. For this, we'll use the NUnit `TestCase` functionality.
+
+TODO: Infobox -- test cases can be a drawback as well. You'll want to make sure that if you're using them, that they really are relevant to the test case at hand and aren't unnecessarily lumping tests together. If you're trying to test something boundless, you might be best off looking at property-based testing, which we'll demonstrate a little later on.
+
 
 TODO Infobox this can be found at `nunit-04-xcoordinates`.
