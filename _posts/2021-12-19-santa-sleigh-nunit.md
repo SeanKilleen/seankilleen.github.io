@@ -808,13 +808,13 @@ public class SantaSleighTests
 Now the code once again compiles, which is great! We only have our failing test to deal with. The test failure message reads:
 
 ```TODO_standardout
-  Failed GetXCoordinate_FacingNorthMovingForwardPastEdgeByOne_MinimumYValue [233 ms]
+Failed GetYCoordinate_FacingNorthMovingForwardPastEdgeByOne_MinimumYValue [336 ms]
   Error Message:
-   Falsifiable, after 1 test (1 shrink) (StdGen (1036518656,296973520)):
+   Falsifiable, after 1 test (0 shrinks) (StdGen (830650822,296973528)):
 Original:
-PositiveInt 2
-Shrunk:
 PositiveInt 1
+with exception:
+NUnit.Framework.AssertionException: Expected result to be -1, but found 2.
 ```
 
 FsCheck would normally tried many test cases combinations, but it actually failed on the first one in this case.
