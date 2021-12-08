@@ -600,3 +600,17 @@ So, we've effectively turned our test from one test method to three test cases (
 {: .notice--info}
 
 {% include santa_checkpoint.html tagname="nunit-04-xcoordinates" %}
+
+Now we'll apply the tests for the Y coordinates. The list of tests in order will be:
+
+* `GetYCoordinate_Default_Zero()`
+* `GetYCoordinate_FacingNorthAndMovingForward_One()`
+* `GetYCoordinate_FacingNorthAndMovingBackward_NegativeOne()`
+* `GetYCoordinate_FacingSouthAndMovingForward_NegativeOne()`
+* `GetYCoordinate_FacingSouthAndMovingBackward_One()`
+* `GetYCoordinate_FacingEastAndMovingForward_NoChange()`
+* `GetYCoordinate_FacingEastAndMovingBackward_NoChange()`
+* `GetYCoordinate_FacingWestAndMovingForward_NoChange()`
+* `GetYCoordinate_FacingWestAndMovingBackward_NoChange()`
+
+We'll again use test cases for these samples, in the same style as the X coordinate tests.
