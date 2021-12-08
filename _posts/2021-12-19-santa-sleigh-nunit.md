@@ -853,4 +853,45 @@ public void MoveForward(int spaces)
 }
 ```
 
-Our property-based test now passes! FsCheck ran 100 iterations with positive numbers and couldn't falsify the property.
+Our property-based test now passes! FsCheck ran 100 iterations with positive numbers and couldn't falsify the property of the system.
+
+Now that I have my ugly logic in place, I'm going to see if I can extract it to a method that will make more sense and that I can re-use for the other directions.
+
+```csharp
+public void MoveForward(int spaces)
+{
+    switch (_direction)
+    {
+        case "N":
+            // Yeah, this took me a minute and there's probably a better way.
+            // Check if we are going to go off the grid
+            _yCoord = IncreaseCoordinateAgainstGridSize(_yCoord, spaces, _gridSize);
+            break;
+        case "E":
+            _xCoord += spaces;
+            break;
+        case "S":
+            _yCoord -= spaces;
+            break;
+        case "W":
+            _xCoord -= spaces;
+            break;
+    }
+}
+
+private int IncreaseCoordinateAgainstGridSize(int coord, int spaces, int gridSize)
+{
+    if (coord + spaces > gridSize)
+    {
+        // Get how many spaces off we'd be
+        var spacesOffTheGrid = (coord + spaces) - gridSize;
+        return (-gridSize) + spacesOffTheGrid - 1;
+    }
+    else
+    {
+        return coord += spaces;
+    };
+}
+```
+
+TOOD Infobox -- do I need to test the private method too? No, because it is being tested via the test against the public method. Just because we're writing tests doesn't mean we need to make every method public and test it.
