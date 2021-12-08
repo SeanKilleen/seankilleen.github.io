@@ -45,8 +45,8 @@ Here's the problem statement:
 > * void TurnLeft()
 > * void TurnRight()
 > * int RemainingPresents()
-> * int GetX()
-> * int GetY()
+> * int GetXCoordinate()
+> * int GetYCoordinate()
 
 If you've ever seen [the Mars Rover kata](https://katalyst.codurance.com/mars-rover) before, then this problem will look slightly familiar.
 
