@@ -61,7 +61,7 @@ Let's think about what the problem says (and doesn't say):
 * We'll receive the size of the grid
 * We'll receive a list with points and a number of presents
 * We'll receive a starting number of presents
-* We'll start at 0 x and 0 y
+* We'll start at 0 `x` and 0 `y` coordinates
 * We'll start facing north
 * There's no restriction on what we can do with the constructor of the object; only on its public methods. This will give us some flexibility in how we implement the solution.
 * We have directions and turn methods, so turning is implied
