@@ -975,3 +975,72 @@ public void GetDirection_AfterRandomTurnsAndWrappingAround_StillTheSame(Positive
 ```
 
 {% include santa_checkpoint.html tagname="nunit-06-wrapping" %}
+
+## ...and Who Doesn't Love Presents?!
+
+With turning, coordinates, grid size, and wrapping under our belt, it's time for Santa to deliver the goods.
+
+First, we'll get the idea of the starting number of presents out of the way with a property based test, and we'll have to refactor our other tests to include this number in the constructor, as well as creating the `RemainingPresents` method defined in the original problem description.
+
+The new test we added:
+
+```csharp
+[Property]
+public void RemainingPresents_Default_EqualsWhatWasPutIn(NonNegativeInt numberOfPresents)
+{
+    var dummyGridSize = 5;
+    var sut = new SantaSleigh(dummyGridSize, (int)numberOfPresents);
+
+    var result = sut.RemainingPresents();
+
+    result.Should().Be((int)numberOfPresents);
+}
+```
+
+The modified constructor:
+
+```csharp
+// ...
+private int _numberOfPresents;
+private string _direction;
+private int _gridSize;
+
+public SantaSleigh(int gridSize, int numberOfPresents)
+{
+    _direction = _directionList.First.Value;
+    _gridSize = gridSize;
+    _numberOfPresents = numberOfPresents;
+}
+```
+
+The new method that passes the test: 
+
+```csharp
+public int RemainingPresents()
+{
+    return _numberOfPresents;
+}
+```
+
+And an example of how I modified a prior test: 
+
+```csharp
+[Property]
+public void GetDirection_AfterRandomTurnsAndWrappingAround_StillTheSame(PositiveInt randomSize, NonNegativeInt numberOfTurns)
+{
+    var gridSize = ((int)randomSize);
+    var sut = new SantaSleigh(gridSize, DUMMY_NUMBER_OF_PRESENTS);
+    foreach (var i in Enumerable.Range(0, (int)numberOfTurns))
+    {
+        sut.TurnLeft();
+    }
+    var startingDirection = sut.GetDirection();
+
+    sut.MoveForward(gridSize + 1);
+    var result = sut.GetDirection();
+
+    result.Should().Be(startingDirection);
+}
+```
+
+TODO Infobox note the class-level constant I created, `DUMMY_NUMBER_OF_PRESENTS`. I gave this a particularly obvious name, but I like blunt names like this for any other strings or numbers that might be used in a test that aren't actually relevant to the test but are required for the operation of the code. 
