@@ -1051,6 +1051,7 @@ Next, I thought about some of the things I might want to test for:
 * What about a house that requests zero presents?
   * For our tutorial, passing over a house that requested zero presents doesn't get any; we're going to treat this as an opt-out and respect preferences.
 * Property Test: Passing over a house that requests `x` presents, when we have `x+1` presents, will leave us with zero remaining presents.
+  * (zero because part of the instructions were that Santa provides one more than is asked for.)
 * When over a house, turning should not cause presents to be dropped more than once.
 * Houses shouldn't receive presents twice; once Santa delivers there, they're done even if he flies over their house again.
 * What about houses along the way during movement? If I move forward 5 spaces and space 3 holds a house, should we drop a present there?
