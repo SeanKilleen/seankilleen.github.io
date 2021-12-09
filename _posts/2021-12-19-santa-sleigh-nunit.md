@@ -1043,11 +1043,13 @@ public void GetDirection_AfterRandomTurnsAndWrappingAround_StillTheSame(Positive
 }
 ```
 
-TODO Infobox note the class-level constant I created, `DUMMY_NUMBER_OF_PRESENTS`. I gave this a particularly obvious name, but I like blunt names like this for any other strings or numbers that might be used in a test that aren't actually relevant to the test but are required for the operation of the code. 
+**Calling attention to irrelevance**: Note the class-level constant I created, `DUMMY_NUMBER_OF_PRESENTS`. I gave this a particularly obvious name, but I like blunt names like this for any other strings or numbers that might be used in a test that aren't actually relevant to the test but are required for the operation of the code. This way, you can quickly see the values in a test that matter and you should pay attention to. In my experience, conveying intent in this way is helpful.
+{: .notice--info} 
 
 Next, I thought about some of the things I might want to test for:
 
-* Passing over a house that requested zero presents doesn't get any; we're going to treat this as an opt-out and respect preferences.
+* What about a house that requests zero presents?
+  * For our tutorial, passing over a house that requested zero presents doesn't get any; we're going to treat this as an opt-out and respect preferences.
 * Property Test: Passing over a house that requests `x` presents, when we have `x+1` presents, will leave us with zero remaining presents.
 * When over a house, turning should not cause presents to be dropped more than once.
 * Houses shouldn't receive presents twice; once Santa delivers there, they're done even if he flies over their house again.
