@@ -895,3 +895,58 @@ private int IncreaseCoordinateAgainstGridSize(int coord, int spaces, int gridSiz
 ```
 
 TODO Infobox -- do I need to test the private method too? No, because it is being tested via the test against the public method. Just because we're writing tests doesn't mean we need to make every method public and test it.
+
+We then write similar tests, one by one in TDD fashion, to force us to utilize the new method in every place in the production code that increases a coordinate, and then we do the same with an additional new method for every time we want to decrease a coordinate. When we're done, our production code looks like this:
+
+```csharp
+// ...
+
+public void MoveForward(int spaces)
+{
+    switch (_direction)
+    {
+        case "N":
+            _yCoord = IncreaseCoordinateAgainstGridSize(_yCoord, spaces, _gridSize);
+            break;
+        case "E":
+            _xCoord = IncreaseCoordinateAgainstGridSize(_xCoord, spaces, _gridSize);
+            break;
+        case "S":
+            _yCoord = DecreaseCoordinateAgainstGridSize(_yCoord, spaces, _gridSize);
+            break;
+        case "W":
+            _xCoord = DecreaseCoordinateAgainstGridSize(_xCoord, spaces, _gridSize);
+            break;
+    }
+}
+
+private int IncreaseCoordinateAgainstGridSize(int coord, int spaces, int gridSize)
+{
+    if (coord + spaces > gridSize)
+    {
+        // Get how many spaces off we'd be
+        var spacesOffTheGrid = (coord + spaces) - gridSize;
+        return (-gridSize) + spacesOffTheGrid - 1;
+    }
+    else
+    {
+        return coord += spaces;
+    };
+}
+
+private int DecreaseCoordinateAgainstGridSize(int coord, int spaces, int gridSize)
+{
+    if (coord - spaces < -gridSize)
+    {
+        // Get how many spaces off we'd be
+        var spacesOffTheGrid = (coord - spaces) + gridSize;
+        return (gridSize) + spacesOffTheGrid + 1;
+    }
+    else
+    {
+        return coord -= spaces;
+    };
+}
+```
+
+Lastly, we want to ensure that no matter what direction we're facing, we remain in that direction when wrapping around the grid.
