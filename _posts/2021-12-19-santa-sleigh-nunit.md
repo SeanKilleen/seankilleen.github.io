@@ -949,4 +949,29 @@ private int DecreaseCoordinateAgainstGridSize(int coord, int spaces, int gridSiz
 }
 ```
 
-Lastly, we want to ensure that no matter what direction we're facing, we remain in that direction when wrapping around the grid.
+We also want to ensure that no matter what direction we're facing, we remain in that direction when wrapping around the grid. Thinking through this test, my brain phrases it something like:
+
+> After turning between 0 and x times, and going beyond the edge of the grid by 2, we should still be facing the same direction.
+
+This seems to be another good candidate for a property-based test:
+
+```csharp
+[Property]
+public void GetDirection_AfterRandomTurnsAndWrappingAround_StillTheSame(PositiveInt randomSize, NonNegativeInt numberOfTurns)
+{
+    var gridSize = ((int)randomSize);
+    var sut = new SantaSleigh(gridSize);
+    foreach (var i in Enumerable.Range(0, (int)numberOfTurns))
+    {
+        sut.TurnLeft();
+    }
+    var startingDirection = sut.GetDirection();
+
+    sut.MoveForward(gridSize + 1);
+    var result = sut.GetDirection();
+
+    result.Should().Be(startingDirection);
+}
+```
+
+{% include santa_checkpoint.html tagname="nunit-06-wrapping" %}
