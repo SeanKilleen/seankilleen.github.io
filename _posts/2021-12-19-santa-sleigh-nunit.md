@@ -1044,3 +1044,12 @@ public void GetDirection_AfterRandomTurnsAndWrappingAround_StillTheSame(Positive
 ```
 
 TODO Infobox note the class-level constant I created, `DUMMY_NUMBER_OF_PRESENTS`. I gave this a particularly obvious name, but I like blunt names like this for any other strings or numbers that might be used in a test that aren't actually relevant to the test but are required for the operation of the code. 
+
+Next, I thought about some of the things I might want to test for:
+
+* Passing over a house that requested zero presents doesn't get any; we're going to treat this as an opt-out and respect preferences.
+* Property Test: Passing over a house that requests `x` presents, when we have `x+1` presents, will leave us with zero remaining presents.
+* When over a house, turning should not cause presents to be dropped more than once.
+* Houses shouldn't receive presents twice; once Santa delivers there, they're done even if he flies over their house again.
+* What about houses along the way during movement? If I move forward 5 spaces and space 3 holds a house, should we drop a present there?
+  * For the sake of tutorial length and our contrived example, we'll opt for the easier route of "only a house that santa stops at receives presents; not every house he passes over."
