@@ -1168,3 +1168,107 @@ public record NeighborhoodHouse(int X, int Y, int RequestedPresents);
 ```
 
 This test also passes by default, so we use the same trick as before to force the test to fail in a specific way that makes sense, so that we can be sure our test is valid (which I'll omit here for brveity.)
+
+Next up, it's time to test the decrementing of the presents when we fly over a house. I think we can do this with a property-based test. I'll choose to express the property of the system as `RemainingPresents_WhenFlyingOverAHouseThatRequestsPresents_WillBeReducedByOneMoreThanAskedFor()`:
+
+```csharp
+[Property]
+public void RemainingPresents_WhenFlyingOverAHouseThatRequestsPresents_WillBeReducedByOneMoreThanAskedFor(PositiveInt numberOfRequestedPresents)
+{
+    var gridSize = 5;
+    var totalPresents = (int)numberOfRequestedPresents + 1;
+    var house = new NeighborhoodHouse(1, 1, (int)numberOfRequestedPresents);
+    var houseList = new List<NeighborhoodHouse> { house };
+    var sut = new SantaSleigh(gridSize, totalPresents, houseList);
+
+    sut.MoveForward(1); // now at 1 on y axis
+    sut.TurnRight();
+    sut.MoveForward(1); // now at 1 on x axis
+
+    var result = sut.RemainingPresents();
+    result.Should().Be(0);
+}
+```
+
+This predictably fails because we're not reducing the number of presents. So we'll modify our production code in the simplest way possible to force ourselves to write new tests later. In this case, our simpler cases force us to pretty much write the full logic in the `MoveForward` method:
+
+```csharp
+public void MoveForward(int spaces)
+{
+    switch (_direction)
+    {
+        // ...
+    }
+
+    var matchingHouse = _neighborhoodHouses.SingleOrDefault(house => house.X == _xCoord && house.Y == _yCoord);
+    if (matchingHouse != null && matchingHouse.RequestedPresents > 0)
+    {
+        _numberOfPresents -= (matchingHouse.RequestedPresents + 1);
+    }
+}
+```
+
+This passes the test, but I don't like that magic number `1` in our production code, so we extract a variable called `magicalExtraPresents` and assign it to that:
+
+```csharp
+if (matchingHouse != null && matchingHouse.RequestedPresents > 0)
+{
+    var magicalExtraPresents = 1;
+    _numberOfPresents -= (matchingHouse.RequestedPresents + magicalExtraPresents);
+}
+```
+
+So we've placed this code in the `MoveForward` method, but we'll need to test the `MoveBackward` method too. So we'll do an additional property-based test where we back into being over the house:
+
+```csharp
+[Property]
+public void RemainingPresents_WhenBackingOverAHouseThatRequestsPresents_WillBeReducedByOneMoreThanAskedFor(PositiveInt numberOfRequestedPresents)
+{
+    var gridSize = 5;
+    var totalPresents = (int)numberOfRequestedPresents + 1;
+    var house = new NeighborhoodHouse(1, 1, (int)numberOfRequestedPresents);
+    var houseList = new List<NeighborhoodHouse> { house };
+    var sut = new SantaSleigh(gridSize, totalPresents, houseList);
+
+    sut.MoveForward(1); // now at 1 on y axis
+    sut.TurnLeft();
+    sut.MoveBackward(1); // now at 1 on x axis
+
+    var result = sut.RemainingPresents();
+    result.Should().Be(0);
+}
+```
+
+I can copy and paste the production code that we added for `MoveForward` into `MoveBackward`, which I do to make the test pass. But once the tests are passing, I can refactor it:
+
+```csharp
+public void MoveBackward(int spaces)
+{
+    switch (_direction)
+    {
+        // ...
+    }
+
+    DropPresents();
+}
+public void MoveForward(int spaces)
+{
+    switch (_direction)
+    {
+        // ...
+    }
+
+    DropPresents();
+}
+
+private void DropPresents()
+{
+    var matchingHouse = _neighborhoodHouses.SingleOrDefault(house => house.X == _xCoord && house.Y == _yCoord);
+
+    if (matchingHouse != null && matchingHouse.RequestedPresents > 0)
+    {
+        var magicalExtraPresents = 1;
+        _numberOfPresents -= (matchingHouse.RequestedPresents + magicalExtraPresents);
+    }
+}
+```
