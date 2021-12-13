@@ -1412,9 +1412,14 @@ private void DropPresents()
 }
 ```
 
+{% include santa_checkpoint.html tagname="nunit-08-exception" %}
+
 ## So, let's see how we did:
 
 TODO -- recap the requirement paragraph and break it down with checkmarks, plus the number of tests and test cases.
 
 ## Thanks for Reading, and Happy Holidays!
 
+I'd love your feedback and comments on this post or any of the associated code. Feel free to drop me a line in the comments or privately anytime!
+
+I hope you and yours stay safe this holiday season, and that you get everything you could possibly want.
