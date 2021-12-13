@@ -1054,6 +1054,7 @@ Next, I thought about some of the things I might want to test for:
   * For our tutorial, passing over a house that requested zero presents doesn't get any; we're going to treat this as an opt-out and respect preferences.
 * Property Test: Stopping over a house that requests `x` presents, when we have `x+1` presents, will leave us with zero remaining presents.
   * (zero because part of the instructions were that Santa provides one more than is asked for.)
+* Stopping over multiple houses should continue to reduce presents
 * When over a house, turning should not cause presents to be dropped more than once.
 * Houses shouldn't receive presents twice; once Santa delivers there, they're done even if he flies over their house again.
 * What about houses along the way during movement? If I move forward 5 spaces and space 3 holds a house, should we drop a present there?
@@ -1139,5 +1140,31 @@ public void MoveForward(int spaces)
 }
 ```
 
-When I run my test I see that my test fails, and for the reason I expect it to. I can then remove the erroneous code and be confident that my test is covering the expected path.
+When I run my tests, I see that my test fails, and for the reason I expect it to. I can then remove the erroneous code and be confident that my test is covering the expected path.
 
+Next up, ensuring that a house that requests zero presents doesn't reduce the present count. This will force us to take `x` and `y` coordinates into accont in our `NeighborhoodHouse` type.
+
+```csharp
+[Test]
+public void RemainingPresents_WhenStoppingOverHouseThatRequestsZeroPresents_StaysTheSame(){
+    var gridSize = 5;
+    var house = new NeighborhoodHouse(1,1,0);
+    var houseList = new List<NeighborhoodHouse> { house };
+    var sut = new SantaSleigh(gridSize, DUMMY_NUMBER_OF_PRESENTS, houseList);
+
+    sut.MoveForward(1); // now at 1 on y axis
+    sut.TurnRight(); 
+    sut.MoveForward(1); // now at 1 on x axis
+
+    var result = sut.RemainingPresents();
+    result.Should().Be(DUMMY_NUMBER_OF_PRESENTS);
+}
+```
+
+And we make the update to the record type so that it will compile:
+
+```csharp
+public record NeighborhoodHouse(int X, int Y, int RequestedPresents);
+```
+
+This test also passes by default, so we use the same trick as before to force the test to fail in a specific way that makes sense, so that we can be sure our test is valid (which I'll omit here for brveity.)
