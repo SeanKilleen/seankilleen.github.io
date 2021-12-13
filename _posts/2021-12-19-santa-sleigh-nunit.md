@@ -1055,10 +1055,9 @@ Next, I thought about some of the things I might want to test for:
 * Property Test: Stopping over a house that requests `x` presents, when we have `x+1` presents, will leave us with zero remaining presents.
   * (zero because part of the instructions were that Santa provides one more than is asked for.)
 * Stopping over multiple houses should continue to reduce presents
-* When over a house, turning should not cause presents to be dropped more than once.
 * Houses shouldn't receive presents twice; once Santa delivers there, they're done even if he flies over their house again.
 * What about houses along the way during movement? If I move forward 5 spaces and space 3 holds a house, should we drop a present there?
-  * For the sake of tutorial length and our contrived example, we'll opt for the easier route of "only a house that santa stops at receives presents; not every house he passes over."
+  * For the sake of tutorial length and our contrived example, we'll opt for the easier route of "only a house that santa stops at receives presents; not every house he passes over." We'll still write a test to demonstrate that this is the case, though.
 * Exception if there aren't enough presents left.
 
 We should be able to do the first test as simply as possible -- the contents of `RemainingPresents_Default_EqualsWhatWasPutIn`:
@@ -1296,3 +1295,40 @@ public void RemainingPresents_WhenStoppingOverMultipleHouses_ReducesAsExpected()
 ```
 
 This test also passes right way so we again change our production code to make it fail on purpose in order to check it.
+
+Next, we need to confirm that houses won't receive presents twice: 
+
+```csharp
+[Test]
+public void RemainingPresents_WhenStoppingOverAHouseTwice_OnlyDecrementsTheFirstTime()
+{
+    var gridSize = 5;
+    var totalPresents = 10;
+    var house1 = new NeighborhoodHouse(0, 1, 2);
+    var houseList = new List<NeighborhoodHouse> { house1 };
+    var sut = new SantaSleigh(gridSize, totalPresents, houseList);
+
+    sut.MoveForward(1); // now at 1 on y axis, dropping 2 + 1 = 3 presents
+    sut.MoveForward(1); // going past the location
+    sut.MoveBackward(1); // going back to the location
+
+    var result = sut.RemainingPresents();
+    result.Should().Be(7);
+}
+```
+
+We then update the `DropPresents` method to ensure the house is removed from the list once it's been served: 
+
+```csharp
+private void DropPresents()
+{
+    var matchingHouse = _neighborhoodHouses.SingleOrDefault(house => house.X == _xCoord && house.Y == _yCoord);
+
+    if (matchingHouse != null && matchingHouse.RequestedPresents > 0)
+    {
+        var magicalExtraPresents = 1;
+        _numberOfPresents -= (matchingHouse.RequestedPresents + magicalExtraPresents);
+        _neighborhoodHouses.Remove(matchingHouse);
+    }
+}
+```
