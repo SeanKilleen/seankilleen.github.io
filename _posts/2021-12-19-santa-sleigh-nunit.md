@@ -1048,11 +1048,96 @@ public void GetDirection_AfterRandomTurnsAndWrappingAround_StillTheSame(Positive
 
 Next, I thought about some of the things I might want to test for:
 
+* The presents shouldn't reduce if we don't move.
+* The presents shouldn't reduce if we stop at a coordinate that doesn't have a house.
 * What about a house that requests zero presents?
   * For our tutorial, passing over a house that requested zero presents doesn't get any; we're going to treat this as an opt-out and respect preferences.
-* Property Test: Passing over a house that requests `x` presents, when we have `x+1` presents, will leave us with zero remaining presents.
+* Property Test: Stopping over a house that requests `x` presents, when we have `x+1` presents, will leave us with zero remaining presents.
   * (zero because part of the instructions were that Santa provides one more than is asked for.)
 * When over a house, turning should not cause presents to be dropped more than once.
 * Houses shouldn't receive presents twice; once Santa delivers there, they're done even if he flies over their house again.
 * What about houses along the way during movement? If I move forward 5 spaces and space 3 holds a house, should we drop a present there?
   * For the sake of tutorial length and our contrived example, we'll opt for the easier route of "only a house that santa stops at receives presents; not every house he passes over."
+
+We should be able to do the first test as simply as possible -- the contents of `RemainingPresents_Default_EqualsWhatWasPutIn`:
+
+```csharp
+[Property]
+public void RemainingPresents_Default_EqualsWhatWasPutIn(NonNegativeInt numberOfPresents)
+{
+    var dummyGridSize = 5;
+    var sut = new SantaSleigh(dummyGridSize, (int)numberOfPresents);
+
+    var result = sut.RemainingPresents();
+
+    result.Should().Be((int)numberOfPresents);
+}
+```
+
+Truth be told, that's probably an example of going a little too far testing something that probably doesn't need testing. This case will be covered by upcoming tests. But it's not the end of the world and the trade-off isn't big to keep it around so we might as well leave it.
+
+For the next test, `RemainingPresents_WhenStoppingOverCoordinateThatIsntInPresentsList_StaysTheSame()`, we can pass in an empty list of houses, and I'll use a `record` type represent a `NeighborhoodHouse`. The test will look like the below: 
+
+```csharp
+[Test]
+public void RemainingPresents_WhenStoppingOverCoordinateThatIsntInPresentsList_StaysTheSame()
+{
+    var dummyGridSize = 5;
+    var emptyList = new List<NeighborhoodHouse>();
+    var sut = new SantaSleigh(dummyGridSize, DUMMY_NUMBER_OF_PRESENTS, emptyList);
+
+    sut.MoveForward(1);
+
+    var result = sut.RemainingPresents();
+    result.Should().Be(DUMMY_NUMBER_OF_PRESENTS);
+}
+```
+
+At this point, the code will fail to compile -- we've introduced a new class and modified the constructor, so we'll need to fix up the code before it will compile again.
+
+In our production code, underneath the `SantaSleigh` class, we define the new record type (there are no fields yet, as our tests have not required us to add them):
+
+```csharp
+public record NeighborhoodHouse();
+```
+
+We modify the constructor to take in the new list and save it:
+
+```csharp
+// ...
+private List<NeighborhoodHouse> _neighborhoodHouses;
+
+public SantaSleigh(int gridSize, int numberOfPresents, List<NeighborhoodHouse> houses)
+{
+    _direction = _directionList.First.Value;
+    _gridSize = gridSize;
+    _numberOfPresents = numberOfPresents;
+    _neighborhoodHouses = houses;
+}
+```
+
+Then we modify the tests to include the list in our situations under test -- one example: 
+
+```csharp
+// Side note -- I really dig the newly-introduced new() syntax for cases like this.
+private List<NeighborhoodHouse> DUMMY_EMPTY_HOUSE_LIST = new();
+
+[SetUp]
+public void Setup()
+{
+    _sut = new SantaSleigh(GRID_SIZE, DUMMY_NUMBER_OF_PRESENTS, DUMMY_EMPTY_HOUSE_LIST);
+}
+```
+
+Once we've done this, all our tests will pass because it's a default behavior. But this is a little bit of a smell -- where is the "red" in our "red, green, refactor" cycle? If we don't actually see a test fail, how do we know it's testing what we think it is? Not save to assume. So, I'd like to modify something to see the test fail. In this case, the `MoveForward` method is called, so I'll add some code to set the number of presents to a hard-coded number, which should guarantee some tests fail.
+
+```csharp
+public void MoveForward(int spaces)
+{
+    _numberOfPresents = 1; // This is erroneous
+    // ...
+}
+```
+
+When I run my test I see that my test fails, and for the reason I expect it to. I can then remove the erroneous code and be confident that my test is covering the expected path.
+
