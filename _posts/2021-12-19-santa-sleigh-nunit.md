@@ -1059,6 +1059,7 @@ Next, I thought about some of the things I might want to test for:
 * Houses shouldn't receive presents twice; once Santa delivers there, they're done even if he flies over their house again.
 * What about houses along the way during movement? If I move forward 5 spaces and space 3 holds a house, should we drop a present there?
   * For the sake of tutorial length and our contrived example, we'll opt for the easier route of "only a house that santa stops at receives presents; not every house he passes over."
+* Exception if there aren't enough presents left.
 
 We should be able to do the first test as simply as possible -- the contents of `RemainingPresents_Default_EqualsWhatWasPutIn`:
 
@@ -1272,3 +1273,5 @@ private void DropPresents()
     }
 }
 ```
+
+Next up, we'll verify that multiple houses reduce the presents by the expected amount.
