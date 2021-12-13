@@ -1356,3 +1356,4 @@ public void RemainingPresents_WhenPassingOverAHouse_DoesNotDecrement()
 
 **Side Note on Comments**: Wherever I can, I like the code to be as clear as possible about what it's doing conceptually, to eliminate the need for a lot of extraneous comments. But I really find comments helpful when they help my mental model or allow me to quickly wrap my head around something at a glance. In some of the tests above, I've added comments so that it should be clear about exactly what's happening and why I structured the test as I did. If future me returns to those tests, I should be able to quickly dive in and understand the landscape.
 {: .notice--info} 
+
