@@ -1358,3 +1358,63 @@ public void RemainingPresents_WhenPassingOverAHouse_DoesNotDecrement()
 {: .notice--info} 
 
 {% include santa_checkpoint.html tagname="nunit-07-presents" %}
+
+## Our Last Tests...and They're Exceptional.
+
+The last requirement we had was to throw an `Exception` in the truly exceptional, unthinkable case where Santa may not have enough presents to go around.
+
+The requirements seem to leave some choices to us. We could create a new `Exception` with a specific message, or we could create our own `OutOfPresentsException` that inherits from Exception. For the sake of this example, we'll create our own type of Exception.
+
+```csharp
+[Test]
+public void ThrowsExceptionWhenNotEnoughPresentsRemain()
+{
+    var requestedPresents = 3;
+    var totalPresents = 3; // so Santa can't fulfill the +1 rule.
+    var gridSize = 5;
+    var house1 = new NeighborhoodHouse(0, 1, requestedPresents);
+    var houseList = new List<NeighborhoodHouse> { house1 };
+    var sut = new SantaSleigh(gridSize, totalPresents, houseList);
+
+    Action action = () => sut.MoveForward(1);
+
+    action.Should().Throw<OutOfPresentsException>().And.Message.Should().Be("I'm so-ho-ho sorry!");
+}
+```
+
+As we might expect, this test fails because the exception type does not currently exist. So we'll add it to our production code:
+
+```csharp
+public class OutOfPresentsException : Exception
+{
+    public OutOfPresentsException(string message) : base(message) { }
+}
+```
+
+Now the test will fail because we're not actually throwing the exception, so we'll do so in the `DropPresents` method:
+
+```csharp
+private void DropPresents()
+{
+    var matchingHouse = _neighborhoodHouses.SingleOrDefault(house => house.X == _xCoord && house.Y == _yCoord);
+
+    if (matchingHouse != null && matchingHouse.RequestedPresents > 0)
+    {
+        var magicalExtraPresents = 1;
+        var presentsToDecrement = matchingHouse.RequestedPresents + magicalExtraPresents;
+        if (_numberOfPresents - presentsToDecrement < 0)
+        {
+            throw new OutOfPresentsException("I'm so-ho-ho sorry!");
+        }
+        _numberOfPresents -= presentsToDecrement;
+        _neighborhoodHouses.Remove(matchingHouse);
+    }
+}
+```
+
+## So, let's see how we did:
+
+TODO -- recap the requirement paragraph and break it down with checkmarks, plus the number of tests and test cases.
+
+## Thanks for Reading, and Happy Holidays!
+
