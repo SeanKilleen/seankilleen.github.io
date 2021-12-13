@@ -1332,3 +1332,27 @@ private void DropPresents()
     }
 }
 ```
+
+Now, we'd decided earlier that if a house was on the the line in-between two points, we wouldn't drop presents as we flew over; we'd need to actually land on the coordinate to drop a present. This is a sort of implicit requirement, so I find it's helpful to make these choices explicit in case anyone should come across the code and be curious.
+
+```csharp
+[Test]
+public void RemainingPresents_WhenPassingOverAHouse_DoesNotDecrement()
+{
+    var gridSize = 5;
+    var totalPresents = 10;
+    var house1 = new NeighborhoodHouse(0, 1, 2);
+    var house2 = new NeighborhoodHouse(0, 3, 3);
+    var houseList = new List<NeighborhoodHouse> { house1, house2 };
+    var sut = new SantaSleigh(gridSize, totalPresents, houseList);
+
+    sut.MoveForward(2); // now at 2 on y axis, skipping the first house
+    sut.MoveForward(1); // now at 3 on y axis, dropping 3 + 1 = 4 presents
+
+    var result = sut.RemainingPresents();
+    result.Should().Be(6);
+}
+```
+
+**Side Note on Comments**: Wherever I can, I like the code to be as clear as possible about what it's doing conceptually, to eliminate the need for a lot of extraneous comments. But I really find comments helpful when they help my mental model or allow me to quickly wrap my head around something at a glance. In some of the tests above, I've added comments so that it should be clear about exactly what's happening and why I structured the test as I did. If future me returns to those tests, I should be able to quickly dive in and understand the landscape.
+{: .notice--info} 
