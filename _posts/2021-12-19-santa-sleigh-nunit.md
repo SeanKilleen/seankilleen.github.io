@@ -809,7 +809,7 @@ public class SantaSleighTests
 
 Now the code once again compiles, which is great! We only have our failing test to deal with. The test failure message reads:
 
-```TODO_standardout
+```console
 Failed GetYCoordinate_FacingNorthMovingForwardPastEdgeByOne_MinimumYValue [336 ms]
   Error Message:
    Falsifiable, after 1 test (0 shrinks) (StdGen (830650822,296973528)):
