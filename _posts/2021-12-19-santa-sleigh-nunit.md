@@ -1417,7 +1417,7 @@ private void DropPresents()
 
 {% include santa_checkpoint.html tagname="nunit-08-exception" priorTag="nunit-07-presents" %}
 
-## So, let's see how we did:
+## So, Let's See How We did.
 
 TODO -- recap the requirement paragraph and break it down with check marks, plus the number of tests and test cases.
 
