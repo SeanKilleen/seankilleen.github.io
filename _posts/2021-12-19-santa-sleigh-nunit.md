@@ -1145,7 +1145,7 @@ public void MoveForward(int spaces)
 
 When I run my tests, I see that my test fails, and for the reason I expect it to. I can then remove the erroneous code and be confident that my test is covering the expected path.
 
-Next up, ensuring that a house that requests zero presents doesn't reduce the present count. This will force us to take `x` and `y` coordinates into accont in our `NeighborhoodHouse` type.
+Next up, ensuring that a house that requests zero presents doesn't reduce the present count. This will force us to take `x` and `y` coordinates into account in our `NeighborhoodHouse` type.
 
 ```csharp
 [Test]
