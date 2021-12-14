@@ -819,7 +819,7 @@ with exception:
 NUnit.Framework.AssertionException: Expected result to be -1, but found 2.
 ```
 
-FsCheck would normally tried many test case combinations, but it actually failed on the first one in this case.
+FsCheck would normally try many test case combinations, but it actually failed on the first one in this case.
 
 With that, we can update our switch case for `MoveForward` to add logic that works:
 

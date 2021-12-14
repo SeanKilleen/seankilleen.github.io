@@ -713,7 +713,7 @@ This implies that we'll need to:
 * Wrap `x` and `y` coordinates both ways from each direction
 * Ensure the direction stays the same when wrapping
 
-We're going to begin this requirement with a bit of refactoring -- this time of our test code. I know that we'll be modifying the constructor of our test code, which is currently called in every single test. To ensure that the code for creating the situation under test is repeated for each test while keeping it one place, I'll use NUnit's `SetUp` method, which will run prior to any individual test being executed. As implied, it's a way to "set up" a test.
+We're going to begin this requirement with a bit of refactoring -- this time of our test code. I know that we'll be modifying the constructor of our test code, which is currently called in every single test. To ensure that the code for creating the situation under test is repeated for each test while keeping it one place, I'll use xUnit's convention of wiring these up in the constructor of the test class, which will naturally run prior to any individual test being executed.
 
 **Side Note: tests _are_ production code!** Tests are part of our production code. As such, we want to ensure they stay efficient and readable, and to prevent them from rotting. We shouldn't be afraid of improving the readability of tests or tweaking them to make good use of libraries and tooling.
 {: .notice--info}
@@ -725,13 +725,12 @@ public class SantaSleighTests
 {
     private SantaSleigh _sut;
 
-    [SetUp]
-    public void Setup()
+    public SantaSleighTests()
     {
         _sut = new SantaSleigh();
     }
 
-    [Test]
+    [Fact]
     public void GetDirection_Default_FacingNorth()
     {
         var result = _sut.GetDirection();
@@ -744,7 +743,7 @@ public class SantaSleighTests
 ```
 
 * We extract a private variable for the `_sut`.
-* During the `Setup()` method, which we annotate with `[SetUp]` so that NUnit can recognize it, we instantiate the `_sut` variable
+* During the test classes constructor, we instantiate the `_sut` variable
 * We reference the `_sut` variable in our tests. Note that this can sometimes make it look like the "arrange" step of a test is missing, but setup is implied to be part of the arrange step, so in these cases we don't need to do anything else.
 
 ### So, uh...There are a Lot of Possible Combinations here.
@@ -756,24 +755,26 @@ We could spend a lot of time trying to think up examples with various sized grid
 
 Luckily, there's a great way to be able to code these up so that many test cases can be generated. **Property-based testing to the rescue!** We'll use [FsCheck](https://fscheck.github.io/FsCheck/) to achieve this.
 
-We install the `FsCheck.NUnit` package into our test project, either via the command line or the NuGet installation dialog in our IDE of choice.
+We install the `FsCheck.xUnit` package into our test project, either via the command line or the NuGet installation dialog in our IDE of choice.
 
 Our first property-based test looks like:
 
 ```csharp
 [Property]
-public Property GetYCoordinate_FacingNorthMovingForwardPastEdgeByOne_MinimumYValue(PositiveInt randomSize)
+public void GetYCoordinate_FacingNorthMovingForwardPastEdgeByOne_MinimumYValue(PositiveInt randomSize)
 {
     var gridSize = ((int)randomSize);
     var sut = new SantaSleigh(gridSize);
     sut.MoveForward(gridSize + 1);
     var result = sut.GetYCoordinate();
 
-    return (result == -gridSize).ToProperty();
+    result.Should().Be(-gridSize);
 }
 ```
 
-Note the notation of `Property` rather than `Test`, which FsCheck uses to generate the tests. Also, note that we're not using the `_sut` variable from the setup. We're using our own here, which is fine because our usage of the `SantaSleigh` in this case is different and contained within the test. Lastly, note that we're using the FsCheck-provided `PositiveInt` as a parameter, which is lovely helper to ensure we don't have negative grid numbers.
+* Note the notation of `Property` rather than `Fact`, which FsCheck uses to generate the tests. 
+* Also, note that we're not using the `_sut` variable from the setup. We're using our own here, which is fine because our usage of the `SantaSleigh` in this case is different and contained within the test. 
+* Lastly, note that we're using the FsCheck-provided `PositiveInt` as a parameter, which is lovely helper to ensure we don't have negative grid numbers.
 
 If you run our tests at this point, you'll notice the code doesn't compile, because we've introduced the concept of a grid size into our `SantaSleigh` constructor. We'll need to do a couple of things.
 
@@ -817,7 +818,7 @@ with exception:
 NUnit.Framework.AssertionException: Expected result to be -1, but found 2.
 ```
 
-FsCheck would normally tried many test case combinations, but it actually failed on the first one in this case.
+FsCheck would normally try many test case combinations, but it actually failed on the first one in this case.
 
 With that, we can update our switch case for `MoveForward` to add logic that works:
 
@@ -896,6 +897,8 @@ private int IncreaseCoordinateAgainstGridSize(int coord, int spaces, int gridSiz
 
 **Do I need to test the private method too?** In this case, no, because its behavior is being tested via the test against the public method. Just because we're writing tests doesn't mean we need to make every method public and test it.
 {: .notice--info}
+
+TODO TODO TODO TODO TODO left off here.
 
 We then write similar tests, one by one in TDD fashion, to force us to utilize the new method in every place in the production code that increases a coordinate, and then we do the same with an additional new method for every time we want to decrease a coordinate. When we're done, our production code looks like this:
 
