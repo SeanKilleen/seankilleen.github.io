@@ -659,24 +659,7 @@ public void MoveBackward(int spaces)
 The if statements feel a little verbose, so I'll refactor to change them into a `switch` statement for now, double-checking afterward that my tests still pass:
 
 ```csharp
-public void MoveBackward(int spaces)
-{
-    switch (_direction)
-    {
-        case "N":
-            _yCoord -= spaces;
-            break;
-        case "E":
-            _xCoord -= spaces;
-            break;
-        case "S":
-            _yCoord += spaces;
-            break;
-        case "W":
-            _xCoord += spaces;
-            break;
-    }
-}
+// ...
 public void MoveForward(int spaces)
 {
     switch (_direction)
@@ -695,9 +678,28 @@ public void MoveForward(int spaces)
             break;
     }
 }
+
+public void MoveBackward(int spaces)
+{
+    switch (_direction)
+    {
+        case "N":
+            _yCoord -= spaces;
+            break;
+        case "E":
+            _xCoord -= spaces;
+            break;
+        case "S":
+            _yCoord += spaces;
+            break;
+        case "W":
+            _xCoord += spaces;
+            break;
+    }
+}
 ```
 
-{% include santa_checkpoint.html tagname="nunit-05-ycoordinates" priorTag="nunit-04-xcoordinates" %}
+{% include santa_checkpoint.html tagname="xunit-05-ycoordinates" priorTag="xunit-04-xcoordinates" %}
 
 ## Next Up: Around the World
 
