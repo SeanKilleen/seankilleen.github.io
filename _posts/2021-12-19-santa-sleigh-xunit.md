@@ -213,8 +213,6 @@ public class SantaSleigh
 }
 ```
 
-TODO TODO TODO TODO TODO: I stopped here in my conversion of the post to xUnit format.
-
 We've:
 
 * Introduced a local variable
@@ -252,22 +250,18 @@ public class SantaSleigh
         if (_direction == "N")
         {
             _direction = "E";
-            return;
         }
-        if (_direction == "E")
+        else if (_direction == "E")
         {
             _direction = "S";
-            return;
         }
-        if (_direction == "S")
+        else if (_direction == "S")
         {
             _direction = "W";
-            return;
         }
-        if (_direction == "W")
+        else if (_direction == "W")
         {
             _direction = "N";
-            return;
         }
     }
 
@@ -276,28 +270,24 @@ public class SantaSleigh
         if (_direction == "N")
         {
             _direction = "W";
-            return;
         }
-        if (_direction == "W")
+        else if (_direction == "W")
         {
             _direction = "S";
-            return;
         }
-        if (_direction == "S")
+        else if (_direction == "S")
         {
             _direction = "E";
-            return;
         }
-        if (_direction == "E")
+        else if (_direction == "E")
         {
             _direction = "N";
-            return;
         }
     }
 }
 ```
 
-{% include santa_checkpoint.html tagname="nunit-02-turning" priorTag="nunit-01-basicsetup" %}
+{% include santa_checkpoint.html tagname="xunit-02-turning" priorTag="xunit-01-basicsetup" %}
 
 This is...fine. But, it could likely be a little neater and more expressive. Since we've already got it covered by tests, we can refactor it into something that might be a little more expressive, using a linked list. This shortens the amount of code we have while still making sense (provided you're familiar with a linked list.)
 
@@ -348,7 +338,9 @@ public class SantaSleigh
 **There's always more than one way to code it!** Just because this is a refactoring or change that I thought makes sense doesn't mean it's the right choice or the only possible choice. These sorts of choices are driven by the shared experience of your team, and trade-offs like readability and performance. Covering your code with tests can give you more confidence to be flexible in the future and try different techniques.
 {: .notice--info}
 
-{% include santa_checkpoint.html tagname="nunit-03-refactoring" priorTag="nunit-02-turning" %}
+{% include santa_checkpoint.html tagname="xunit-03-refactoring" priorTag="xunit-02-turning" %}
+
+TODO TODO TODO TODO TODO TODO This is where I left off converting the xUnit post.
 
 This cycle is what's known as the "Red, Green, Refactor" cycle. We wrote a failing test (red), wrote just enough code to make it pass (green), and then eventually we hit a place where we wanted to change the production code, and could do so while guaranteeing via our tests that no functionality was broken (refactoring). This is where we start to really experience the benefits of test-first development (though the true benefit of TDD in my opinion has already happened -- breaking down the problem into small pieces that we can reason about independently).
 
