@@ -291,7 +291,7 @@ public class SantaSleigh
 }
 ```
 
-{% include santa_checkpoint.html tagname="nunit-02-turning" %}
+{% include santa_checkpoint.html tagname="nunit-02-turning" priorTag="nunit-01-basicsetup" %}
 
 This is...fine. But, it could likely be a little neater and more expressive. Since we've already got it covered by tests, we can refactor it into something that might be a little more expressive, using a linked list. This shortens the amount of code we have while still making sense (provided you're familiar with a linked list.)
 
@@ -342,7 +342,7 @@ public class SantaSleigh
 **There's always more than one way to code it!** Just because this is a refactoring or change that I thought makes sense doesn't mean it's the right choice or the only possible choice. These sorts of choices are driven by the shared experience of your team, and trade-offs like readability and performance.
 {: .notice--info} 
 
-{% include santa_checkpoint.html tagname="nunit-03-refactoring" %}
+{% include santa_checkpoint.html tagname="nunit-03-refactoring" priorTag="nunit-02-turning" %}
 
 This cycle is what's known as the "Red, Green, Refactor" cycle. We wrote a failing test (red), wrote just enough code to make it pass (green), and then eventually we hit a place where we wanted to change the production code, and could do so while guaranteeing via our tests that no functionality was broken (refactoring). This is where we start to really experience the benefits of test-first development (though the true benefit of TDD in my opinion has already happened -- breaking down the problem into small pieces that we can reason about independently).
 
@@ -599,7 +599,7 @@ So, we've effectively turned our test from one test method to three test cases (
 **Side Note: not everything needs test cases.** Test cases can be a drawback as well. You'll want to make sure that if you're using them, that they really are relevant to the test case at hand and aren't unnecessarily lumping tests together. If you're trying to test something that has less explicit examples, you might be best off looking at property-based testing, which we'll demonstrate a little later on.
 {: .notice--info}
 
-{% include santa_checkpoint.html tagname="nunit-04-xcoordinates" %}
+{% include santa_checkpoint.html tagname="nunit-04-xcoordinates" priorTag="nunit-03-refactoring" %}
 
 Now we'll apply the tests for the Y coordinates. The list of tests in order will be:
 
@@ -699,7 +699,7 @@ public void MoveForward(int spaces)
 }
 ```
 
-{% include santa_checkpoint.html tagname="nunit-05-ycoordinates" %}
+{% include santa_checkpoint.html tagname="nunit-05-ycoordinates" priorTag="nunit-04-xcoordinates" %}
 
 ## Next Up: Around the World
 
@@ -974,7 +974,7 @@ public void GetDirection_AfterRandomTurnsAndWrappingAround_StillTheSame(Positive
 }
 ```
 
-{% include santa_checkpoint.html tagname="nunit-06-wrapping" %}
+{% include santa_checkpoint.html tagname="nunit-06-wrapping" priorTag="nunit-05-ycoordinates" %}
 
 ## ...and Who Doesn't Love Presents?!
 
@@ -1357,7 +1357,7 @@ public void RemainingPresents_WhenPassingOverAHouse_DoesNotDecrement()
 **Side Note on Comments**: Wherever I can, I like the code to be as clear as possible about what it's doing conceptually, to eliminate the need for a lot of extraneous comments. But I really find comments helpful when they help my mental model or allow me to quickly wrap my head around something at a glance. In some of the tests above, I've added comments so that it should be clear about exactly what's happening and why I structured the test as I did. If future me returns to those tests, I should be able to quickly dive in and understand the landscape.
 {: .notice--info} 
 
-{% include santa_checkpoint.html tagname="nunit-07-presents" %}
+{% include santa_checkpoint.html tagname="nunit-07-presents" priorTag="nunit-06-wrapping" %}
 
 ## Our Last Tests...and They're Exceptional.
 
@@ -1412,7 +1412,7 @@ private void DropPresents()
 }
 ```
 
-{% include santa_checkpoint.html tagname="nunit-08-exception" %}
+{% include santa_checkpoint.html tagname="nunit-08-exception" priorTag="nunit-07-presents" %}
 
 ## So, let's see how we did:
 
