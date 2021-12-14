@@ -16,7 +16,9 @@ excerpt: "Solving our C# Advent 2021 challenge using the NUnit framework."
 
 ---
 
-_This post is part of my [C# Advent 2021](https://www.csadvent.christmas/) submission. In this post, we'll continue to walk through the Santa Sleigh automated testing example from the [Introductory Blog Post]({% link _posts/2021-12-19-santa-sleigh.md %}). If you haven't already, you may want to head there to get the basics set up._
+This post is part of my [C# Advent 2021](https://www.csadvent.christmas/) submission. In this post, we'll continue to walk through the Santa Sleigh automated testing example from the [Introductory Blog Post]({% link _posts/2021-12-19-santa-sleigh.md %}). If you haven't already, you may want to head there to get the basics set up.
+
+____
 
 Alright, so we've decided to go with the NUnit testing framework. An excellent choice!
 
