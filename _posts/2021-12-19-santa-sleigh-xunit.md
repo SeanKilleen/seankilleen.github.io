@@ -340,8 +340,6 @@ public class SantaSleigh
 
 {% include santa_checkpoint.html tagname="xunit-03-refactoring" priorTag="xunit-02-turning" %}
 
-TODO TODO TODO TODO TODO TODO This is where I left off converting the xUnit post.
-
 This cycle is what's known as the "Red, Green, Refactor" cycle. We wrote a failing test (red), wrote just enough code to make it pass (green), and then eventually we hit a place where we wanted to change the production code, and could do so while guaranteeing via our tests that no functionality was broken (refactoring). This is where we start to really experience the benefits of test-first development (though the true benefit of TDD in my opinion has already happened -- breaking down the problem into small pieces that we can reason about independently).
 
 ## Next up: X and Y Coordinates
@@ -363,7 +361,7 @@ The list of tests here is roughly:
 Our first few tests look like:
 
 ```csharp
-[Test]
+[Fact]
 public void GetXCoordinate_Default_Zero()
 {
     var sut = new SantaSleigh();
@@ -373,7 +371,7 @@ public void GetXCoordinate_Default_Zero()
     result.Should().Be(0);
 }
 
-[Test]
+[Fact]
 public void GetXCoordinate_FacingEastAndMovingForward_One()
 {
     var sut = new SantaSleigh();
@@ -385,7 +383,7 @@ public void GetXCoordinate_FacingEastAndMovingForward_One()
     result.Should().Be(1);
 }
 
-[Test]
+[Fact]
 public void GetXCoordinate_FacingEastAndMovingBackward_NegativeOne()
 {
     var sut = new SantaSleigh();
@@ -422,7 +420,7 @@ public void MoveForward(int spaces)
 After implementing the rest of the tests, the tests look like:
 
 ```csharp
-[Test]
+[Fact]
 public void GetXCoordinate_Default_Zero()
 {
     var sut = new SantaSleigh();
@@ -432,7 +430,7 @@ public void GetXCoordinate_Default_Zero()
     result.Should().Be(0);
 }
 
-[Test]
+[Fact]
 public void GetXCoordinate_FacingEastAndMovingForward_One()
 {
     var sut = new SantaSleigh();
@@ -444,7 +442,7 @@ public void GetXCoordinate_FacingEastAndMovingForward_One()
     result.Should().Be(1);
 }
 
-[Test]
+[Fact]
 public void GetXCoordinate_FacingEastAndMovingBackward_NegativeOne()
 {
     var sut = new SantaSleigh();
@@ -456,7 +454,7 @@ public void GetXCoordinate_FacingEastAndMovingBackward_NegativeOne()
     result.Should().Be(-1);
 }
 
-[Test]
+[Fact]
 public void GetXCoordinate_FacingWestAndMovingForward_NegativeOne()
 {
     var sut = new SantaSleigh();
@@ -468,7 +466,7 @@ public void GetXCoordinate_FacingWestAndMovingForward_NegativeOne()
     result.Should().Be(-1);
 }
 
-[Test]
+[Fact]
 public void GetXCoordinate_FacingWestAndMovingBackward_One()
 {
     var sut = new SantaSleigh();
@@ -480,7 +478,7 @@ public void GetXCoordinate_FacingWestAndMovingBackward_One()
     result.Should().Be(1);
 }
 
-[Test]
+[Fact]
 public void GetXCoordinate_FacingNorthAndMovingForward_NoChange()
 {
     var sut = new SantaSleigh();
@@ -491,7 +489,7 @@ public void GetXCoordinate_FacingNorthAndMovingForward_NoChange()
     result.Should().Be(0);
 }
 
-[Test]
+[Fact]
 public void GetXCoordinate_FacingNorthAndMovingBackward_NoChange()
 {
     var sut = new SantaSleigh();
@@ -502,7 +500,7 @@ public void GetXCoordinate_FacingNorthAndMovingBackward_NoChange()
     result.Should().Be(0);
 }
 
-[Test]
+[Fact]
 public void GetXCoordinate_FacingSouthAndMovingForward_NoChange()
 {
     var sut = new SantaSleigh();
@@ -515,7 +513,7 @@ public void GetXCoordinate_FacingSouthAndMovingForward_NoChange()
     result.Should().Be(0);
 }
 
-[Test]
+[Fact]
 public void GetXCoordinate_FacingSouthAndMovingBackward_NoChange()
 {
     var sut = new SantaSleigh();
