@@ -138,5 +138,5 @@ TODO: Review for clarity
 Now that we've got the projects set up, it's time to choose which testing framework you'd like to use next.
 
 * [NUnit implementation]({% link _posts/2021-12-19-santa-sleigh-nunit.md %})
-* xUnit implementation
+* [xUnit implementation]({% link _posts/2021-12-19-santa-sleigh-xunit.md %})
 * SpecFlow implementation
