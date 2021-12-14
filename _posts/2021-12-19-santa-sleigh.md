@@ -48,9 +48,9 @@ Here's the problem statement:
 > * int GetXCoordinate()
 > * int GetYCoordinate()
 
-If you've ever seen [the Mars Rover kata](https://katalyst.codurance.com/mars-rover) before, then this problem will look slightly familiar.
+If you've ever seen [the Mars Rover Coding Exercise](https://katalyst.codurance.com/mars-rover) before, then this problem will look slightly familiar.
 
-**Assuming valid data:** For simplicity's sake, we will be assuming all inputs to generally be in the correct ranges. For exmaple, we could add a lot of tests for validation to ensure the `SantaSleigh` isn't initialized with `-10` presents, but it would feel like clutter as we went through the tutorial. Typically, production code would also include tests to ensure you take appropriate action on invalid inputs.
+**Assuming valid data:** For simplicity's sake, we will be assuming all inputs to generally be in the correct ranges. For example, we could add a lot of tests for validation to ensure the `SantaSleigh` isn't initialized with `-10` presents, but it would feel like clutter as we went through the tutorial. Typically, production code would also include tests to ensure you take appropriate action on invalid inputs.
 {: .notice--info}
 
 TODO: Example?
