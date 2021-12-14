@@ -564,7 +564,7 @@ public void MoveForward(int spaces)
 
 Can you spot where I jumped ahead here and didn't do the simplest thing? I automatically used the `spaces` parameter in the `MoveForward` and `MoveBackward` methods, rather than just increasing by 1, which would have then helped me reveal that I needed more tests to handle multiple spaces.
 
-Next, we'll go ahead and fix my mistake, adapting some of our tests to account for moving multiple spaces. For this, we'll use the NUnit `TestCase` functionality.
+Next, we'll go ahead and fix my mistake, adapting some of our tests to account for moving multiple spaces. For this, we'll use the xUnit `Theory` functionality. Unlike a `Fact` in xUnit, a `Theory` is something that may or may not always be true, depending on what data is passed into it. We'll use the `Theory` attribute along with the `InlineData` attribute to pass some parameters to our tests as test cases.
 
 We change our tests to look more like the following:
 
@@ -587,15 +587,16 @@ public void GetXCoordinate_FacingWestAndMovingBackward_IncreasesX(int numberOfSp
 What's going on in this code?
 
 * We've updated the expectation from a specific number to the understanding that the X value (in this case) should increase.
-* We've used the `TestCase` notation, which will pass along specific values to the test
-* We've added and used the `numberOfSpaces` parameter, which gets the value from the test case and uses it in the test.
+* We've used the `Theory` attribute instead of the `Fact` attribute.
+* We've used the `InlineData` notation, which will pass along specific values to the test
+* We've added and used the `numberOfSpaces` parameter, which gets the value from the `InlineData` attribute and uses it in the test.
 
-So, we've effectively turned our test from one test method to three test cases (which will run as separate tests) that check multiple data points.
+So, we've effectively turned our test from one test method to three test cases (which will run as separate tests) that check multiple data points. We'll apply this `InlineData` to any of the tests that care about moving a number of spaces.
 
 **Side Note: not everything needs test cases.** Test cases can be a drawback as well. You'll want to make sure that if you're using them, that they really are relevant to the test case at hand and aren't unnecessarily lumping tests together. If you're trying to test something that has less explicit examples, you might be best off looking at property-based testing, which we'll demonstrate a little later on.
 {: .notice--info}
 
-{% include santa_checkpoint.html tagname="nunit-04-xcoordinates" priorTag="nunit-03-refactoring" %}
+{% include santa_checkpoint.html tagname="xunit-04-xcoordinates" priorTag="xunit-03-refactoring" %}
 
 Now we'll apply the tests for the Y coordinates. The list of tests in order will be:
 
@@ -609,30 +610,12 @@ Now we'll apply the tests for the Y coordinates. The list of tests in order will
 * `GetYCoordinate_FacingWestAndMovingForward_NoChange()`
 * `GetYCoordinate_FacingWestAndMovingBackward_NoChange()`
 
-We'll again use test cases for these samples, in the same style as the X coordinate tests. I won't include those here but you're welcome to view the code in the checkpoint.
+We'll again use theories and `InlineData` for these samples, in the same style as the X coordinate tests. I won't include those here but you're welcome to view the code in the checkpoint.
 
 Our production code now looks like:
 
 ```csharp
-public void MoveBackward(int spaces)
-{
-    if (_direction == "E")
-    {
-        _xCoord -= spaces;
-    }
-    if (_direction == "W")
-    {
-        _xCoord += spaces;
-    }
-    if (_direction == "N")
-    {
-        _yCoord -= spaces;
-    }
-    if (_direction == "S")
-    {
-        _yCoord += spaces;
-    }
-}
+// ...
 public void MoveForward(int spaces)
 {
     if (_direction == "E")
@@ -650,6 +633,25 @@ public void MoveForward(int spaces)
     if (_direction == "S")
     {
         _yCoord -= spaces;
+    }
+}
+public void MoveBackward(int spaces)
+{
+    if (_direction == "E")
+    {
+        _xCoord -= spaces;
+    }
+    if (_direction == "W")
+    {
+        _xCoord += spaces;
+    }
+    if (_direction == "N")
+    {
+        _yCoord -= spaces;
+    }
+    if (_direction == "S")
+    {
+        _yCoord += spaces;
     }
 }
 ```
