@@ -1419,7 +1419,7 @@ private void DropPresents()
 
 ## So, let's see how we did:
 
-TODO -- recap the requirement paragraph and break it down with checkmarks, plus the number of tests and test cases.
+TODO -- recap the requirement paragraph and break it down with check marks, plus the number of tests and test cases.
 
 ## Thanks for Reading, and Happy Holidays!
 
