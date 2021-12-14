@@ -1422,4 +1422,4 @@ TODO -- recap the requirement paragraph and break it down with checkmarks, plus 
 
 I'd love your feedback and comments on this post or any of the associated code. Feel free to drop me a line in the comments or privately anytime!
 
-I hope you and yours stay safe this holiday season, and that you get everything you could possibly want.
+I hope you and yours are happy and healthy this holiday season, and that you get everything you could possibly want.
