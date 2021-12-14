@@ -26,9 +26,9 @@ Alright, so we've decided to go with the xUnit testing framework. An excellent c
 
 Because we created a plan class library during our initial setup, we'll want to modify that project so that the ecosystem understands it's a test project.
 
-## Adding Nuget Packages
+## Adding NuGet Packages
 
-We'll want to add some nuget packages to our `SantaSleigh.Tests` project to enable us to write and run xUnit tests. I'll show the examples via the command line but you're welcome to install the packages in the test project via your development tool of choice.
+We'll want to add some NuGet packages to our `SantaSleigh.Tests` project to enable us to write and run xUnit tests. I'll show the examples via the command line but you're welcome to install the packages in the test project via your development tool of choice.
 
 * Head to the test project directory:
 
