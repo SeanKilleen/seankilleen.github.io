@@ -24,7 +24,7 @@ Alright, so we've decided to go with the NUnit testing framework. An excellent c
 
 ## Changing the Test Project Type
 
-Because we created a plan class library during our initial setup, we'll want to modify that project so that th ecosystem understand it's a test project.
+Because we created a plan class library during our initial setup, we'll want to modify that project so that the ecosystem understands it's a test project.
 
 ## Adding Nuget Packages
 
