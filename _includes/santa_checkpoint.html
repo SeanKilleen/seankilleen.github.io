@@ -1,2 +1,7 @@
+{% if include.priorTag %}
+:tada: **Checkpoint!** The work up to this point can be found in tag [`{{include.tagname}}`](https://github.com/SeanKilleen/SantaSleigh/releases/tag/{{include.tagname}}). You can [see the changes here](https://github.com/SeanKilleen/SantaSleigh/compare/{{include.priorTag}}...{{include.tagname}}).
+{: .notice--success}
+{% else %}
 :tada: **Checkpoint!** The work up to this point can be found in tag [`{{include.tagname}}`](https://github.com/SeanKilleen/SantaSleigh/releases/tag/{{include.tagname}}).
 {: .notice--success}
+{% endif %}
