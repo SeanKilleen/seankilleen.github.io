@@ -112,7 +112,8 @@ This seems like a great place to start as it allows us to test a default and get
 
 Next, let's think about how to name our tests. There are a number of acceptable ways to do this, but I've found that good starting point for those who are new to the practice is to think about test names in terms of `[MethodToRun]_[Scenario]_[Expectation]`. It's not a hard and fast rule, and as long as the description is clear you should be good, but we'll use this convention throughout the article.
 
-TODO Infobox -- xUnit has a nice convention that follows the structure of C# classes. So, sometimes I like to nest the classes and use one test class per method I'm testing. It can help keep things appropriately isolated and organizaed, especially when there are a lot of tests. But, this is a style preference. In this tutorial, to keep it simpler, we'll keep our tests in one class.
+**A note on conventions:** xUnit has a nice convention that follows the structure of C# classes. So, sometimes I like to nest the classes and use one nested test class per method I'm testing. It can help keep things appropriately isolated and organizaed, especially when there are a lot of tests. But, this is a style preference. In this tutorial, to keep it simpler, we'll keep our tests in one class.
+{: .notice--info}
 
 With this in mind, our first test method will be named: `GetDirection_Default_FacingNorth()`.
 
