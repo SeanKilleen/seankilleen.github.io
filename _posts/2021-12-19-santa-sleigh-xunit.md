@@ -160,7 +160,7 @@ A few tips:
 
 With our test in place and our code not compiling, it's time to write _just enough production code_ for the test to pass.
 
-**Why "just enough production code"?** The goal when doing TDD is to write only the required amount of code to make the test pass. If you can outsmart your test and write code that passes the test ut isn't finished, it's a great way to guide yourself to create additional tests.
+**Why "just enough production code"?** The goal when doing TDD is to write only the required amount of code to make the test pass. If you can outsmart your test and write code that passes the test but isn't finished, it's a great way to guide yourself to create additional tests.
 {: .notice--info}
 
 In your production code project (`SantaSleigh`, not `SantaSleigh.Tests`), create a `SantaSleigh.cs` class as follows with our simplest implementation possible:
