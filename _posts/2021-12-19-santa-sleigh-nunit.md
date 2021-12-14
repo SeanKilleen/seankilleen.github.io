@@ -32,31 +32,31 @@ We'll want to add some nuget packages to our `SantaSleigh.Tests` project to enab
 
 * Head to the test project directory:
 
-```cmd
+```console
 cd SantaSleigh.Tests
 ```
 
 * Add the Test SDK library which allows discovery and running of tests:
 
-```cmd
+```console
 dotnet add package Microsoft.NET.Test.Sdk
 ```
 
 * Add the NUnit libraries:
 
-```cmd
+```console
 dotnet add package NUnit
 ```
 
 * Add the NUnit test adapter which helps surface the tests:
 
-```cmd
+```console
 dotnet add package NUnit3TestAdapter
 ```
 
 * Add the FluentAssertions library, which I love and will demonstrate in this post:
 
-```cmd
+```console
 dotnet add package FluentAssertions
 ```
 
