@@ -898,7 +898,7 @@ private int IncreaseCoordinateAgainstGridSize(int coord, int spaces, int gridSiz
 **Do I need to test the private method too?** In this case, no, because its behavior is being tested via the test against the public method. Just because we're writing tests doesn't mean we need to make every method public and test it.
 {: .notice--info}
 
-TODO TODO TODO TODO TODO left off here.
+TODO TODO TODO TODO TODO left off here. Need to Finish all the tests according to the NUnit commits.
 
 We then write similar tests, one by one in TDD fashion, to force us to utilize the new method in every place in the production code that increases a coordinate, and then we do the same with an additional new method for every time we want to decrease a coordinate. When we're done, our production code looks like this:
 
