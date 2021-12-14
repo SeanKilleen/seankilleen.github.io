@@ -341,7 +341,7 @@ public class SantaSleigh
 }
 ```
 
-**There's always more than one way to code it!** Just because this is a refactoring or change that I thought makes sense doesn't mean it's the right choice or the only possible choice. These sorts of choices are driven by the shared experience of your team, and trade-offs like readability and performance.
+**There's always more than one way to code it!** Just because this is a refactoring or change that I thought makes sense doesn't mean it's the right choice or the only possible choice. These sorts of choices are driven by the shared experience of your team, and trade-offs like readability and performance. Covering your code with tests can give you more confidence to be flexible in the future and try different techniques.
 {: .notice--info}
 
 {% include santa_checkpoint.html tagname="nunit-03-refactoring" priorTag="nunit-02-turning" %}
