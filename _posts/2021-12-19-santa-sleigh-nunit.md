@@ -896,7 +896,8 @@ private int IncreaseCoordinateAgainstGridSize(int coord, int spaces, int gridSiz
 }
 ```
 
-TODO Infobox -- do I need to test the private method too? No, because it is being tested via the test against the public method. Just because we're writing tests doesn't mean we need to make every method public and test it.
+**Do I need to test the private method too?** In this case, no, because its behavior is being tested via the test against the public method. Just because we're writing tests doesn't mean we need to make every method public and test it.
+{: .notice--info}
 
 We then write similar tests, one by one in TDD fashion, to force us to utilize the new method in every place in the production code that increases a coordinate, and then we do the same with an additional new method for every time we want to decrease a coordinate. When we're done, our production code looks like this:
 
