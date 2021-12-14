@@ -1133,7 +1133,7 @@ public void Setup()
 }
 ```
 
-Once we've done this, all our tests will pass because it's a default behavior. But this is a little bit of a smell -- where is the "red" in our "red, green, refactor" cycle? If we don't actually see a test fail, how do we know it's testing what we think it is? Not save to assume. So, I'd like to modify something to see the test fail. In this case, the `MoveForward` method is called, so I'll add some code to set the number of presents to a hard-coded number, which should guarantee some tests fail.
+Once we've done this, all our tests will pass because it's a default behavior. But this is a little bit of a smell -- where is the "red" in our "red, green, refactor" cycle? If we don't actually see a test fail, how do we know it's testing what we think it is? Not safe to assume. So, I'd like to modify something to see the test fail. In this case, the `MoveForward` method is called, so I'll add some code to set the number of presents to a hard-coded number, which should guarantee some tests fail.
 
 ```csharp
 public void MoveForward(int spaces)
