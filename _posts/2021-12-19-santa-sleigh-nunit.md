@@ -1170,7 +1170,7 @@ And we make the update to the record type so that it will compile:
 public record NeighborhoodHouse(int X, int Y, int RequestedPresents);
 ```
 
-This test also passes by default, so we use the same trick as before to force the test to fail in a specific way that makes sense, so that we can be sure our test is valid (which I'll omit here for brveity.)
+This test also passes by default, so we use the same trick as before to force the test to fail in a specific way that makes sense, so that we can be sure our test is valid (which I'll omit here for brevity.)
 
 Next up, it's time to test the decrementing of the presents when we fly over a house. I think we can do this with a property-based test. I'll choose to express the property of the system as `RemainingPresents_WhenFlyingOverAHouseThatRequestsPresents_WillBeReducedByOneMoreThanAskedFor()`:
 
