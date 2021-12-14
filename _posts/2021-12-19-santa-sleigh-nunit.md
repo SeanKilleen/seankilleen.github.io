@@ -342,7 +342,7 @@ public class SantaSleigh
 ```
 
 **There's always more than one way to code it!** Just because this is a refactoring or change that I thought makes sense doesn't mean it's the right choice or the only possible choice. These sorts of choices are driven by the shared experience of your team, and trade-offs like readability and performance.
-{: .notice--info} 
+{: .notice--info}
 
 {% include santa_checkpoint.html tagname="nunit-03-refactoring" priorTag="nunit-02-turning" %}
 
@@ -564,7 +564,7 @@ public void MoveForward(int spaces)
         _xCoord -= spaces;
     }
 }
-``` 
+```
 
 ### Oops! Calling myself out.
 
@@ -590,7 +590,7 @@ public void GetXCoordinate_FacingWestAndMovingBackward_IncreasesX(int numberOfSp
 }
 ```
 
-What's going on in this code? 
+What's going on in this code?
 
 * We've updated the expectation from a specific number to the understanding that the X value (in this case) should increase.
 * We've used the `TestCase` notation, which will pass along specific values to the test
@@ -615,7 +615,7 @@ Now we'll apply the tests for the Y coordinates. The list of tests in order will
 * `GetYCoordinate_FacingWestAndMovingForward_NoChange()`
 * `GetYCoordinate_FacingWestAndMovingBackward_NoChange()`
 
-We'll again use test cases for these samples, in the same style as the X coordinate tests. I won't include those here but you're welcome to view the code in the checkpoint. 
+We'll again use test cases for these samples, in the same style as the X coordinate tests. I won't include those here but you're welcome to view the code in the checkpoint.
 
 Our production code now looks like:
 
@@ -749,12 +749,12 @@ public class SantaSleighTests
 * During the `Setup()` method, which we annotate with `[SetUp]` so that NUnit can recognize it, we instantiate the `_sut` variable
 * We reference the `_sut` variable in our tests. Note that this can sometimes make it look like the "arrange" step of a test is missing, but setup is implied to be part of the arrange step, so in these cases we don't need to do anything else.
 
-### So, uh...There are a Lot of Possible Combinations here. 
+### So, uh...There are a Lot of Possible Combinations here.
 
 We could spend a lot of time trying to think up examples with various sized grids to use in our test cases, but instead let's think about the _properties_ of the system we're trying to test -- for example:
 
 * Property: In a grid of `size`, facing North and moving forward `size + 1` should make the Y coordinate `-size`.
-  * Example: In a grid of `3`, facing North and moving forward `4` should make the Y Coordinate `-3`, because we have wrapped around to the bottom. 
+  * Example: In a grid of `3`, facing North and moving forward `4` should make the Y Coordinate `-3`, because we have wrapped around to the bottom.
 
 Luckily, there's a great way to be able to code these up so that many test cases can be generated. **Property-based testing to the rescue!** We'll use [FsCheck](https://fscheck.github.io/FsCheck/) to achieve this.
 
@@ -1015,7 +1015,7 @@ public SantaSleigh(int gridSize, int numberOfPresents)
 }
 ```
 
-The new method that passes the test: 
+The new method that passes the test:
 
 ```csharp
 public int RemainingPresents()
@@ -1024,7 +1024,7 @@ public int RemainingPresents()
 }
 ```
 
-And an example of how I modified a prior test: 
+And an example of how I modified a prior test:
 
 ```csharp
 [Property]
@@ -1046,7 +1046,7 @@ public void GetDirection_AfterRandomTurnsAndWrappingAround_StillTheSame(Positive
 ```
 
 **Calling attention to irrelevance**: Note the class-level constant I created, `DUMMY_NUMBER_OF_PRESENTS`. I gave this a particularly obvious name, but I like blunt names like this for any other strings or numbers that might be used in a test that aren't actually relevant to the test but are required for the operation of the code. This way, you can quickly see the values in a test that matter and you should pay attention to. In my experience, conveying intent in this way is helpful.
-{: .notice--info} 
+{: .notice--info}
 
 Next, I thought about some of the things I might want to test for:
 
@@ -1079,7 +1079,7 @@ public void RemainingPresents_Default_EqualsWhatWasPutIn(NonNegativeInt numberOf
 
 Truth be told, that's probably an example of going a little too far testing something that probably doesn't need testing. This case will be covered by upcoming tests. But it's not the end of the world and the trade-off isn't big to keep it around so we might as well leave it.
 
-For the next test, `RemainingPresents_WhenStoppingOverCoordinateThatIsntInPresentsList_StaysTheSame()`, we can pass in an empty list of houses, and I'll use a `record` type represent a `NeighborhoodHouse`. The test will look like the below: 
+For the next test, `RemainingPresents_WhenStoppingOverCoordinateThatIsntInPresentsList_StaysTheSame()`, we can pass in an empty list of houses, and I'll use a `record` type represent a `NeighborhoodHouse`. The test will look like the below:
 
 ```csharp
 [Test]
@@ -1119,7 +1119,7 @@ public SantaSleigh(int gridSize, int numberOfPresents, List<NeighborhoodHouse> h
 }
 ```
 
-Then we modify the tests to include the list in our situations under test -- one example: 
+Then we modify the tests to include the list in our situations under test -- one example:
 
 ```csharp
 // Side note -- I really dig the newly-introduced new() syntax for cases like this.
@@ -1298,7 +1298,7 @@ public void RemainingPresents_WhenStoppingOverMultipleHouses_ReducesAsExpected()
 
 This test also passes right way so we again change our production code to make it fail on purpose in order to check it.
 
-Next, we need to confirm that houses won't receive presents twice: 
+Next, we need to confirm that houses won't receive presents twice:
 
 ```csharp
 [Test]
@@ -1319,7 +1319,7 @@ public void RemainingPresents_WhenStoppingOverAHouseTwice_OnlyDecrementsTheFirst
 }
 ```
 
-We then update the `DropPresents` method to ensure the house is removed from the list once it's been served: 
+We then update the `DropPresents` method to ensure the house is removed from the list once it's been served:
 
 ```csharp
 private void DropPresents()
@@ -1357,7 +1357,7 @@ public void RemainingPresents_WhenPassingOverAHouse_DoesNotDecrement()
 ```
 
 **Side Note on Comments**: Wherever I can, I like the code to be as clear as possible about what it's doing conceptually, to eliminate the need for a lot of extraneous comments. But I really find comments helpful when they help my mental model or allow me to quickly wrap my head around something at a glance. In some of the tests above, I've added comments so that it should be clear about exactly what's happening and why I structured the test as I did. If future me returns to those tests, I should be able to quickly dive in and understand the landscape.
-{: .notice--info} 
+{: .notice--info}
 
 {% include santa_checkpoint.html tagname="nunit-07-presents" priorTag="nunit-06-wrapping" %}
 
