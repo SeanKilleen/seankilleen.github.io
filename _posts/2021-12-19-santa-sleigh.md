@@ -30,7 +30,8 @@ Before jumping in, some words on how this post is structured:
 
 * I wanted to provide examples of different frameworks. So, this post is actually 4 posts. This introductory post where we get things set up, and then a choose your own adventure where you can walk through the solution using NUnit, xUnit, or SpecFlow. See the bottom of this post for those links.
 * The code for all of these examples is stored in a repository (link). The different solutions will evolve in their separate branches, and [are tagged at each step along the way](https://github.com/SeanKilleen/SantaSleigh/tags).
-* **I'd love your feedback!** I haven't explored this kind of long-form tutorial in a blog format yet really and I'd love your feedback on changes I could make or different approaches that would make this post more effective for you. Consider this a living page; I plan to continue to improve it based on feedback.
+* There's no way a blog post tutorial can cover all of the concepts; I've taught multi-day courses on this. I hope it gives you some insight into a process, allows you to explore at your own pace, and piques your interest in a topic that I think is crucial for software development.
+* **I'd love your feedback and questions!** I haven't explored this kind of long-form tutorial in a blog format yet really and I'd love your feedback on changes I could make or different approaches that would make this post more effective for you. Consider this a living page; I plan to continue to improve it based on feedback.
 
 ## The Challenge
 
