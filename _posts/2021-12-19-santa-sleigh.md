@@ -53,10 +53,6 @@ If you've ever seen [the Mars Rover Coding Exercise](https://katalyst.codurance.
 **Assuming valid data:** For simplicity's sake, we will be assuming all inputs to generally be in the correct ranges. For example, we could add a lot of tests for validation to ensure the `SantaSleigh` isn't initialized with `-10` presents, but it would feel like clutter as we went through the tutorial. Typically, production code would also include tests to ensure you take appropriate action on invalid inputs.
 {: .notice--info}
 
-TODO: Example?
-
-TODO: Image of the grid as a sample?
-
 ## Breaking the Problem Down
 
 Let's think about what the problem says (and doesn't say):
