@@ -77,7 +77,7 @@ In this case, I think about the starting coordinates and turning as a good start
 
 ## Setting up Our Solution
 
-_To see the code with this step complete, use tag `01-emptyproject`._
+_To check out the code with this step complete so you can follow along, use tag `01-emptyproject`._
 
 For this example, we'll create two projects in the same solution:
 
