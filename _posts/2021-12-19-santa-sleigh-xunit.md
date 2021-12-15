@@ -569,9 +569,10 @@ Next, we'll go ahead and fix my mistake, adapting some of our tests to account f
 We change our tests to look more like the following:
 
 ```csharp
-[TestCase(1)]
-[TestCase(12)]
-[TestCase(123)]
+[Theory]
+[InlineData(1)]
+[InlineData(12)]
+[InlineData(123)]
 public void GetXCoordinate_FacingWestAndMovingBackward_IncreasesX(int numberOfSpaces)
 {
     var sut = new SantaSleigh();
