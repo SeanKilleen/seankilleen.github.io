@@ -30,6 +30,7 @@ If you're already very used to automated testing, or have very strong opinions o
 Before I begin, some thank-yous are in order:
 
 * Thank you to [Joseph N. Musser](https://twitter.com/jnm236), NUnit team member and much more, for a thorough review and catching way more typos than I hoped existed.
+* Thanks to [Khalid Abuhakmeh](https://twitter.com/buhakmeh) for looking this over and suggesting some good changes.
 * Thank you to every open-source author, contributor, maintainer, and champion. Every bit of this tutorial is brought to you by OSS, and I'm forever grateful for what standing on the shoulders of giants has enabled me to accomplish.
 
 ## How To Read this Post
