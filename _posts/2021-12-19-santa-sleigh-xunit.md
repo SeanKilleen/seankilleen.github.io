@@ -9,10 +9,10 @@ tags:
   - xunit
 date: 2021-12-19 00:01 -0400
 excerpt: "Solving our C# Advent 2021 challenge using the xUnit framework."
-#header: TODO
-#  overlay_image: /images/overlays/unsplash/ehimetalor-akhere-unuabona-TvJk52iLxQA-unsplash2.jpg
-#  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
-#  caption: "Photo credit: [**Ehimetalor Akhere Unuabona @ Unsplash**](https://unsplash.com/@theeastlondonphotographer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
+header:
+ overlay_image: /images/overlays/unsplash/hue12-photography-2qzZubxw7WE-unsplash.jpg
+ overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+ caption: "Photo credit: [**hue12 Photography @ Unsplash**](https://unsplash.com/@hue12_photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 
 ---
 
