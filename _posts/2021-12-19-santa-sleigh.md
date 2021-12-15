@@ -126,12 +126,10 @@ dotnet add reference ../SantaSleighCode
 
 ### From Visual Studio
 
-* Create a new solution
-* Create the two projects above by using the `New Project` dialog and choosing a Class Library project.
+* Create a new solution using the name above
+* Create the two projects using the names above by using the `New Project` dialog and choosing a Class Library project in each case.
 * Right-click on the test project and choose `Add --> Reference` from the menu
 * Select the production code project and click OK to add the reference.
-
-TODO: Review for clarity
 
 ## Choose Your Own Adventure!
 
