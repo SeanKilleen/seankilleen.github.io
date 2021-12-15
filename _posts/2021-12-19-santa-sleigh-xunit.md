@@ -1386,7 +1386,7 @@ The last requirement we had was to throw an `Exception` in the truly exceptional
 The requirements seem to leave some choices to us. We could create a new `Exception` with a specific message, or we could create our own `OutOfPresentsException` that inherits from Exception. For the sake of this example, we'll create our own type of Exception.
 
 ```csharp
-[Test]
+[Fact]
 public void ThrowsExceptionWhenNotEnoughPresentsRemain()
 {
     var requestedPresents = 3;
@@ -1432,7 +1432,7 @@ private void DropPresents()
 }
 ```
 
-{% include santa_checkpoint.html tagname="nunit-08-exception" priorTag="nunit-07-presents" %}
+{% include santa_checkpoint.html tagname="xunit-08-exception" priorTag="xunit-07-presents" %}
 
 ## So, Let's See How We did.
 
