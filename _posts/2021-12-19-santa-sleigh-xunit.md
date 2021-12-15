@@ -898,8 +898,6 @@ private int IncreaseCoordinateAgainstGridSize(int coord, int spaces, int gridSiz
 **Do I need to test the private method too?** In this case, no, because its behavior is being tested via the test against the public method. Just because we're writing tests doesn't mean we need to make every method public and test it.
 {: .notice--info}
 
-TODO TODO TODO TODO TODO left off here. Need to Finish all the tests according to the NUnit commits.
-
 We then write similar tests, one by one in TDD fashion, to force us to utilize the new method in every place in the production code that increases a coordinate, and then we do the same with an additional new method for every time we want to decrease a coordinate. When we're done, our production code looks like this:
 
 ```csharp
@@ -920,6 +918,24 @@ public void MoveForward(int spaces)
             break;
         case "W":
             _xCoord = DecreaseCoordinateAgainstGridSize(_xCoord, spaces, _gridSize);
+            break;
+    }
+}
+
+public void MoveBackward(int spaces)
+{
+    switch (_direction)
+    {
+        case "N":
+            _yCoord = DecreaseCoordinateAgainstGridSize(_yCoord, spaces, _gridSize); break;
+        case "E":
+            _xCoord = DecreaseCoordinateAgainstGridSize(_xCoord, spaces, _gridSize);
+            break;
+        case "S":
+            _yCoord = IncreaseCoordinateAgainstGridSize(_yCoord, spaces, _gridSize);
+            break;
+        case "W":
+            _xCoord = IncreaseCoordinateAgainstGridSize(_xCoord, spaces, _gridSize);
             break;
     }
 }
@@ -978,7 +994,7 @@ public void GetDirection_AfterRandomTurnsAndWrappingAround_StillTheSame(Positive
 }
 ```
 
-{% include santa_checkpoint.html tagname="nunit-06-wrapping" priorTag="nunit-05-ycoordinates" %}
+{% include santa_checkpoint.html tagname="xunit-06-wrapping" priorTag="xunit-05-ycoordinates" %}
 
 ## ...and Who Doesn't Love Presents?!
 
@@ -1280,7 +1296,7 @@ private void DropPresents()
 Next up, we'll verify that multiple houses reduce the presents by the expected amount.
 
 ```csharp
-[Test]
+[Fact]
 public void RemainingPresents_WhenStoppingOverMultipleHouses_ReducesAsExpected()
 {
     var gridSize = 5;
@@ -1303,7 +1319,7 @@ This test also passes right way so we again change our production code to make i
 Next, we need to confirm that houses won't receive presents twice:
 
 ```csharp
-[Test]
+[Fact]
 public void RemainingPresents_WhenStoppingOverAHouseTwice_OnlyDecrementsTheFirstTime()
 {
     var gridSize = 5;
@@ -1340,7 +1356,7 @@ private void DropPresents()
 Now, we'd decided earlier that if a house was on the the line in-between two points, we wouldn't drop presents as we flew over; we'd need to actually land on the coordinate to drop a present. This is a sort of implicit requirement, so I find it's helpful to make these choices explicit in case anyone should come across the code and be curious.
 
 ```csharp
-[Test]
+[Fact]
 public void RemainingPresents_WhenPassingOverAHouse_DoesNotDecrement()
 {
     var gridSize = 5;
@@ -1361,7 +1377,7 @@ public void RemainingPresents_WhenPassingOverAHouse_DoesNotDecrement()
 **Side Note on Comments**: Wherever I can, I like the code to be as clear as possible about what it's doing conceptually, to eliminate the need for a lot of extraneous comments. But I really find comments helpful when they help my mental model or allow me to quickly wrap my head around something at a glance. In some of the tests above, I've added comments so that it should be clear about exactly what's happening and why I structured the test as I did. If future me returns to those tests, I should be able to quickly dive in and understand the landscape.
 {: .notice--info}
 
-{% include santa_checkpoint.html tagname="nunit-07-presents" priorTag="nunit-06-wrapping" %}
+{% include santa_checkpoint.html tagname="xunit-07-presents" priorTag="xunit-06-wrapping" %}
 
 ## Our Last Tests...and They're Exceptional.
 
