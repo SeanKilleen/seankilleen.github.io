@@ -380,7 +380,8 @@
         "technologier",
         "Sacca",
         "listserv",
-        "Musser"
+        "Musser",
+        "Abuhakmeh"
     ],
     "ignoreRegExpList": [
         "\\((.*)\\)", // Markdown links
