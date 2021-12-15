@@ -1100,7 +1100,7 @@ Truth be told, that's probably an example of going a little too far testing some
 For the next test, `RemainingPresents_WhenStoppingOverCoordinateThatIsntInPresentsList_StaysTheSame()`, we can pass in an empty list of houses, and I'll use a `record` type represent a `NeighborhoodHouse`. The test will look like the below:
 
 ```csharp
-[Test]
+[Fact]
 public void RemainingPresents_WhenStoppingOverCoordinateThatIsntInPresentsList_StaysTheSame()
 {
     var dummyGridSize = 5;
@@ -1165,8 +1165,9 @@ When I run my tests, I see that my test fails, and for the reason I expect it to
 Next up, ensuring that a house that requests zero presents doesn't reduce the present count. This will force us to take `x` and `y` coordinates into account in our `NeighborhoodHouse` type.
 
 ```csharp
-[Test]
-public void RemainingPresents_WhenStoppingOverHouseThatRequestsZeroPresents_StaysTheSame(){
+[Fact]
+public void RemainingPresents_WhenStoppingOverHouseThatRequestsZeroPresents_StaysTheSame()
+{
     var gridSize = 5;
     var house = new NeighborhoodHouse(1,1,0);
     var houseList = new List<NeighborhoodHouse> { house };
