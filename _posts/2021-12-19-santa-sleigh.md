@@ -8,7 +8,6 @@ tags:
   - automation
   - nunit
   - xunit
-  - specflow
 date: 2021-12-19 00:01 -0400
 excerpt: "An exploration of TDD in the spirit of the season."
 #header:
@@ -137,4 +136,3 @@ Now that we've got the projects set up, it's time to choose which testing framew
 
 * [NUnit implementation]({% link _posts/2021-12-19-santa-sleigh-nunit.md %})
 * [xUnit implementation]({% link _posts/2021-12-19-santa-sleigh-xunit.md %})
-* SpecFlow implementation
