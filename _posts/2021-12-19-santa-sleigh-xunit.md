@@ -815,7 +815,7 @@ Failed GetYCoordinate_FacingNorthMovingForwardPastEdgeByOne_MinimumYValue [336 m
 Original:
 PositiveInt 1
 with exception:
-NUnit.Framework.AssertionException: Expected result to be -1, but found 2.
+Expected result to be -1, but found 2.
 ```
 
 FsCheck would normally try many test case combinations, but it actually failed on the first one in this case.
