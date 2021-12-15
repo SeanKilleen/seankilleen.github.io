@@ -17,7 +17,9 @@ header:
 
 ---
 
-Happy Holiday season, everyone! I'm happy to have snagged one of the spots in this year's [C# Advent Calendar](https://www.csadvent.christmas).
+Happy Holiday season, everyone! I'm happy to have snagged one of the spots in this year's [C# Advent Calendar](https://www.csadvent.christmas). Be sure to check out the other 49 great posts when you're done here!
+
+_____
 
 I'm a big fan of automated testing, but I know that many developers in the C# space are still getting used to some of the concepts, so I figured we'd take a this space to do a gentler introduction to test automation with a slightly contrived scenario, and solve it using NUnit, xUnit, and SpecFlow.
 
