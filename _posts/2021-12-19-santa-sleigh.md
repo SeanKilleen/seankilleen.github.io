@@ -25,6 +25,12 @@ I'm a big fan of automated testing, but I know that many developers in the C# sp
 
 If you're already very used to automated testing, or have very strong opinions on it, this post likely won't be for you as it's meant to be a gentle introduction to applying some of the concepts. But I hope you'll get something useful out of it regardless!
 
+## Thanks!
+
+Before I begin, some thank-yous are in order:
+
+* Thank you to [Joseph N. Musser](https://twitter.com/jnm236), NUnit team member and much more, for a thorough review and catching way more typos than I hoped existed.
+
 ## How To Read this Post
 
 Before jumping in, some words on how this post is structured:
