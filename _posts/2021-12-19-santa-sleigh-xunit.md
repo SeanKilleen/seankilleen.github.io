@@ -772,8 +772,8 @@ public void GetYCoordinate_FacingNorthMovingForwardPastEdgeByOne_MinimumYValue(P
 }
 ```
 
-* Note the notation of `Property` rather than `Fact`, which FsCheck uses to generate the tests. 
-* Also, note that we're not using the `_sut` variable from the setup. We're using our own here, which is fine because our usage of the `SantaSleigh` in this case is different and contained within the test. 
+* Note the notation of `Property` rather than `Fact`, which FsCheck uses to generate the tests.
+* Also, note that we're not using the `_sut` variable from the setup. We're using our own here, which is fine because our usage of the `SantaSleigh` in this case is different and contained within the test.
 * Lastly, note that we're using the FsCheck-provided `PositiveInt` as a parameter, which is lovely helper to ensure we don't have negative grid numbers.
 
 If you run our tests at this point, you'll notice the code doesn't compile, because we've introduced the concept of a grid size into our `SantaSleigh` constructor. We'll need to do a couple of things.
