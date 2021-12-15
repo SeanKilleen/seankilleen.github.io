@@ -379,7 +379,8 @@
         "crapware",
         "technologier",
         "Sacca",
-        "listserv"
+        "listserv",
+        "Musser"
     ],
     "ignoreRegExpList": [
         "\\((.*)\\)", // Markdown links
