@@ -21,7 +21,7 @@ Happy Holiday season, everyone! I'm happy to have snagged one of the spots in th
 
 _____
 
-I'm a big fan of automated testing, but I know that many developers in the C# space are still getting used to some of the concepts, so I figured we'd take this time to do a gentler introduction to test automation with a slightly contrived scenario, and solve it using NUnit, xUnit, and SpecFlow.
+I'm a big fan of automated testing, but I know that many developers in the C# space are still getting used to some of the concepts, so I figured we'd take this time to do a gentler introduction to test automation with a slightly contrived scenario, and solve it using NUnit and xUnit.
 
 If you're already very used to automated testing, or have very strong opinions on it, this post likely won't be for you as it's meant to be a gentle introduction to applying some of the concepts. But I hope you'll get something useful out of it regardless!
 
