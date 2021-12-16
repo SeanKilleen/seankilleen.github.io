@@ -30,6 +30,7 @@ If you're already very used to automated testing, or have very strong opinions o
 Before I begin, some thank-yous are in order:
 
 * Thank you to [Joseph N. Musser](https://twitter.com/jnm236), NUnit team member and much more, for a thorough review and catching way more typos than I hoped existed.
+* Thanks to [Khalid Abuhakmeh](https://twitter.com/buhakmeh) for looking this over and suggesting some good changes.
 * Thank you to every open-source author, contributor, maintainer, and champion. Every bit of this tutorial is brought to you by OSS, and I'm forever grateful for what standing on the shoulders of giants has enabled me to accomplish.
 
 ## How To Read this Post
@@ -145,3 +146,7 @@ Now that we've got the projects set up, it's time to choose which testing framew
 
 * [NUnit implementation]({% link _posts/2021-12-19-santa-sleigh-nunit.md %})
 * [xUnit implementation]({% link _posts/2021-12-19-santa-sleigh-xunit.md %})
+
+## Thanks!
+
+I'd love to keep in touch! Feel free to follow on [Twitter at @sjkilleen](https://twitter.com/sjkilleen), [Twitch @sjkilleen](https://twitch.tv/sjkilleen). Don't forget to add this blog to your feeds to receive the latest posts. And again, feedback is welcome anytime through any channel. Thanks again!
