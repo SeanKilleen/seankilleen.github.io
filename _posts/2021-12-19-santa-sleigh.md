@@ -11,9 +11,9 @@ tags:
 date: 2021-12-19 00:01 -0400
 excerpt: "An exploration of TDD in the spirit of the season."
 header:
- overlay_image: /images/overlays/unsplash/hue12-photography-2qzZubxw7WE-unsplash.jpg
+ overlay_image: /images/overlays/santa-sleigh-g6328721e2_1920.jpg
  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
- caption: "Photo credit: [**hue12 Photography @ Unsplash**](https://unsplash.com/@hue12_photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
+ caption: "Photo credit: [**Tumisu @ Pixelbay**](https://pixabay.com/users/tumisu-148124)"
 
 ---
 
@@ -21,7 +21,7 @@ Happy Holiday season, everyone! I'm happy to have snagged one of the spots in th
 
 _____
 
-I'm a big fan of automated testing, but I know that many developers in the C# space are still getting used to some of the concepts, so I figured we'd take this time to do a gentler introduction to test automation with a slightly contrived scenario, and solve it using NUnit, xUnit, and SpecFlow.
+I'm a big fan of automated testing, but I know that many developers in the C# space are still getting used to some of the concepts, so I figured we'd take this time to do a gentler introduction to test automation with a slightly contrived scenario, and solve it using NUnit and xUnit.
 
 If you're already very used to automated testing, or have very strong opinions on it, this post likely won't be for you as it's meant to be a gentle introduction to applying some of the concepts. But I hope you'll get something useful out of it regardless!
 
@@ -147,6 +147,6 @@ Now that we've got the projects set up, it's time to choose which testing framew
 * [NUnit implementation]({% link _posts/2021-12-19-santa-sleigh-nunit.md %})
 * [xUnit implementation]({% link _posts/2021-12-19-santa-sleigh-xunit.md %})
 
-## Thanks!
+## Thank You!
 
 I'd love to keep in touch! Feel free to follow on [Twitter at @sjkilleen](https://twitter.com/sjkilleen), [Twitch @sjkilleen](https://twitch.tv/sjkilleen). Don't forget to add this blog to your feeds to receive the latest posts. And again, feedback is welcome anytime through any channel. Thanks again!
