@@ -10,9 +10,9 @@ tags:
 date: 2021-12-19 00:01 -0400
 excerpt: "Solving our C# Advent 2021 challenge using the NUnit framework."
 header:
- overlay_image: /images/overlays/unsplash/hue12-photography-2qzZubxw7WE-unsplash.jpg
+ overlay_image: /images/overlays/santa-sleigh-g6328721e2_1920.jpg
  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
- caption: "Photo credit: [**hue12 Photography @ Unsplash**](https://unsplash.com/@hue12_photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
+ caption: "Photo credit: [**Tumisu @ Pixelbay**](https://pixabay.com/users/tumisu-148124)"
 
 ---
 
