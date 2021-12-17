@@ -29,3 +29,7 @@ footer > p {
 .pagination--pager, .pagination--pager.disabled {
     color: $darker-contrast-color;
 }
+
+.author__urls-wrapper {
+    z-index: 101; // hack to make sure the follow links are on top of the carbon ads
+}
