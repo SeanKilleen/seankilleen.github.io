@@ -1,7 +1,7 @@
 // Custom overrides
 
 
-@media only screen and (min-width: 600px) { 
+@media only screen and (min-width: 600px) {
     article.page {
         padding-right: 100px;
     }
@@ -10,7 +10,7 @@
 // accessibility improvements suggested by pa11y
 $darker-contrast-color: #74777a;
 
-.pagination li  a {
+.pagination li a {
     color: $darker-contrast-color;
 }
 
@@ -18,15 +18,16 @@ p.page__meta {
     color: $darker-contrast-color;
 }
 
-.pagination > ul > li > a.disabled {
+.pagination>ul>li>a.disabled {
     color: $darker-contrast-color;
 }
 
-footer > p {
+footer>p {
     color: $darker-contrast-color;
 }
 
-.pagination--pager, .pagination--pager.disabled {
+.pagination--pager,
+.pagination--pager.disabled {
     color: $darker-contrast-color;
 }
 
