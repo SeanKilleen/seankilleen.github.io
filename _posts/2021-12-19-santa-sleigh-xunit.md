@@ -7,7 +7,7 @@ tags:
   - testing
   - automation
   - xunit
-date: 2021-12-19 00:01 -0400
+date: 2021-12-19 00:01
 excerpt: "Solving our C# Advent 2021 challenge using the xUnit framework."
 header:
  overlay_image: /images/overlays/santa-sleigh-g6328721e2_1920.jpg

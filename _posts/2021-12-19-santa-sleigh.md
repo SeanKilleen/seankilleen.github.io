@@ -8,7 +8,7 @@ tags:
   - automation
   - nunit
   - xunit
-date: 2021-12-19 00:01 -0400
+date: 2021-12-19 00:01
 excerpt: "An exploration of TDD in the spirit of the season."
 header:
  overlay_image: /images/overlays/santa-sleigh-g6328721e2_1920.jpg
