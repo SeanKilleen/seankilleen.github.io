@@ -13,6 +13,10 @@ I've seen a lot of calls from various areas in the community asking how we can b
 
 So, that's what I'm setting out to change. I've compiled the first edition of the .NET OSS Maintainer Support Survey. 
 
+## Who Should Submit a Response?
+
+Anyone who is a large contributor to or maintainer of an OSS project in .NET
+
 ## Who's running this survey?
 
 Just me as an individual.
@@ -26,6 +30,8 @@ Just me as an individual.
 
 Forward this to your favorite maintainer. Don't spam their repository, but reach out to them. Let them know that you'd like their thoughts because it 
 
-The survey can be found at <https://docs.google.com/forms/d/e/1FAIpQLSdMvnARfsQ6vgrgaRK-fzR80zXDKfAL2eJUhA_aD7EFjAX8ew/viewform?usp=sf_link>. I'm also embedding it below:
+The survey can be found at <https://docs.google.com/forms/d/e/1FAIpQLSdMvnARfsQ6vgrgaRK-fzR80zXDKfAL2eJUhA_aD7EFjAX8ew/viewform?usp=sf_link>. 
+
+I'm also embedding it below. Thanks for considering!
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdMvnARfsQ6vgrgaRK-fzR80zXDKfAL2eJUhA_aD7EFjAX8ew/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
