@@ -16,25 +16,33 @@ I've seen a lot of calls from various areas in the community asking how we can b
 
 So, that's what I'm setting out to change. I've compiled the first edition of the .NET OSS Maintainer Support Survey. 
 
-## Who Should Submit a Response?
+## Q & A
+
+### Where can I find the survey?
+
+The survey can be found at <https://docs.google.com/forms/d/e/1FAIpQLSdMvnARfsQ6vgrgaRK-fzR80zXDKfAL2eJUhA_aD7EFjAX8ew/viewform?usp=sf_link>. 
+
+I'm also embedding it at the bottom of this post. 
+
+### Who Should Submit a Response?
 
 Anyone who is a large contributor to or maintainer of an OSS project in .NET
 
-## Who's running this survey?
+### Who's running this survey?
 
-Just me as an individual.
+Just me as an individual. [My employer](https://excella.com) is pretty awesome and supports me doing things like this.
 
-## What will you do with the data?
+### What will you do with the data?
 
 * I'm going to aggregate it, anonymize it, and share it -- I hope that this data can inform our community's overall efforts.
 *  I'll use the contact information, with respondents' permission, to follow up with them for more insight and attempt to include that.
 
-## How can you help?
+### How can I help?
 
 Forward this to your favorite maintainer. Don't spam their repository, but reach out to them. Let them know that you'd like their thoughts because it 
 
-The survey can be found at <https://docs.google.com/forms/d/e/1FAIpQLSdMvnARfsQ6vgrgaRK-fzR80zXDKfAL2eJUhA_aD7EFjAX8ew/viewform?usp=sf_link>. 
+___
 
-I'm also embedding it below. Thanks for considering!
+Thanks for considering!
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdMvnARfsQ6vgrgaRK-fzR80zXDKfAL2eJUhA_aD7EFjAX8ew/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
