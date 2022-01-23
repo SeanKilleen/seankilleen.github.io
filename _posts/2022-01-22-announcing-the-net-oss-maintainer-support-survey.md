@@ -9,8 +9,7 @@ date: 2022-01-22 16:35 -0500
 ---
 **Summary:** Are you a maintainer of, or large contributor to, an OSS project in .NET? Please [take the survey about how we in the community can better support you.](https://docs.google.com/forms/d/e/1FAIpQLSdMvnARfsQ6vgrgaRK-fzR80zXDKfAL2eJUhA_aD7EFjAX8ew/viewform?usp=sf_link) (it's also at the bottom of this article.)
 
-I've long been passionate about supporting open source software in the .NET 
-community -- and supporting those who give us their time, effort, and expertise to make it happen.
+I've long been passionate about supporting open source software in the .NET community -- and supporting those who give us their time, effort, and expertise to make it happen.
 
 I've seen a lot of calls from various areas in the community asking how we can better support maintainers. As I've been thinking about my own [impact map](https://impactmapping.org) for how to encourage our community to support maintainers (more on that in a future post), one thing that's become clear is there appear to be no good data for how supported .NET OSS maintainers feel in various ways and how they'd like to be supported. How do we know we're making an impact if we're not measuring these things?
 
