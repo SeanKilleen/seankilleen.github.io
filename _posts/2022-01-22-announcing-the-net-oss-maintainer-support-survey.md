@@ -9,7 +9,7 @@ tags:
 date: 2022-01-22 16:35 -0500
 excerpt: "Learning what maintainers need most, so we can take action."
 header:
- overlay_image: /images/overlays/isaac-smith-AT77Q0Njnt0-unsplash.jpg
+ overlay_image: /images/overlays/unsplash/isaac-smith-AT77Q0Njnt0-unsplash.jpg
  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
  caption: "Photo credit: [**Isaac Smith @ Unsplash**](https://unsplash.com/@isaacmsmith?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 ---
