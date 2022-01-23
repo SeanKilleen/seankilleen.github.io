@@ -20,9 +20,9 @@ So, that's what I'm setting out to change. I've compiled the first edition of th
 
 ### Where can I find the survey?
 
-The survey can be found at <https://docs.google.com/forms/d/e/1FAIpQLSdMvnARfsQ6vgrgaRK-fzR80zXDKfAL2eJUhA_aD7EFjAX8ew/viewform?usp=sf_link>. 
+The survey can be found at <https://docs.google.com/forms/d/e/1FAIpQLSdMvnARfsQ6vgrgaRK-fzR80zXDKfAL2eJUhA_aD7EFjAX8ew/viewform?usp=sf_link>.
 
-I'm also embedding it at the bottom of this post. 
+I'm also embedding it at the bottom of this post.
 
 ### Who Should Submit a Response?
 
