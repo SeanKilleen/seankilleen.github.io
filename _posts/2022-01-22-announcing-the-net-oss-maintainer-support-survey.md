@@ -51,6 +51,6 @@ I see this as a renewed first step toward ecosystem-wide improvements that I hop
 
 ___
 
-Thanks for considering!
+Thanks for considering! Your voice is welcome in the comments.
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdMvnARfsQ6vgrgaRK-fzR80zXDKfAL2eJUhA_aD7EFjAX8ew/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
