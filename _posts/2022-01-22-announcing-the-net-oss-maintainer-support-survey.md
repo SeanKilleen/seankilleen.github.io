@@ -1,5 +1,5 @@
 ---
-title: "Announcing: The .NET OSS Maintainer Support Survey!"
+title: "Hot off the Press: The .NET OSS Maintainer Support Survey!"
 comments: true
 tags:
   - dotnet
