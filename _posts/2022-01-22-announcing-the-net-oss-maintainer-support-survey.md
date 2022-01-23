@@ -46,7 +46,7 @@ I see this as a renewed first step toward ecosystem-wide improvements that I hop
 ### What will you do with the data?
 
 * I'm going to aggregate it, anonymize it, and share it with insights -- I hope that this data can inform our community's overall efforts.
-* I'll use the contact information, with respondents' permission, to follow up with them for more insight and attempt to include that.
+* I'll use the contact information, with respondents' permission, to follow up with them for more insight and attempt to include those insights alongside the data.
 * I'll endeavor to perform this survey regularly so that we can start to understand trends.
 
 ### How can I help?
