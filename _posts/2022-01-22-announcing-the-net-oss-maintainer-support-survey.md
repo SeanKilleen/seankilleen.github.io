@@ -7,6 +7,11 @@ tags:
   - community
   - survey
 date: 2022-01-22 16:35 -0500
+excerpt: "Learning what maintainers need most, so we can take action."
+header:
+ overlay_image: /images/overlays/isaac-smith-AT77Q0Njnt0-unsplash.jpg
+ overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+ caption: "Photo credit: [**Isaac Smith @ Unsplash**](https://unsplash.com/@isaacmsmith?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 ---
 **Summary:** Are you a maintainer of, or large contributor to, an OSS project in .NET? Please [take the survey about how we in the community can better support you.](https://docs.google.com/forms/d/e/1FAIpQLSdMvnARfsQ6vgrgaRK-fzR80zXDKfAL2eJUhA_aD7EFjAX8ew/viewform?usp=sf_link) (it's also at the bottom of this article.)
 
