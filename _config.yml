@@ -15,32 +15,32 @@ future: false # Sean added this in an attempt to prevent future posts.
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "SeanKilleen.com"
-title_separator          : "-"
-name                     : "SeanKilleen.com"
-description              : "Ramblings on bytes and life."
-url                      : "https://SeanKilleen.com"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "SeanKilleen/seankilleen.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-defaultbranch            : "main"
+locale: "en-US"
+title: "SeanKilleen.com"
+title_separator: "-"
+name: "SeanKilleen.com"
+description: "Ramblings on bytes and life."
+url: "https://SeanKilleen.com"
+baseurl: "" # the subpath of your site, e.g. "/blog"
+repository: "SeanKilleen/seankilleen.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+defaultbranch: "main"
 #teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+words_per_minute: 200
 comments:
-  provider               : "giscus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2", "utterances", "custom"
+  provider: "giscus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2", "utterances", "custom"
   giscus:
-    repo_id              : "MDEwOlJlcG9zaXRvcnkyNDg1MTcxNQ==" # Shown during giscus setup at https://giscus.app
-    category_name        : "Specific Post Comments" # Full text name of the category
-    category_id          : "MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyODcwMjY4" # Shown during giscus setup at https://giscus.app
-    discussion_term      : "pathname" # "pathname" (default), "url", "title", "og:title"
-    reactions_enabled    : 1 # '1' for enabled (default), '0' for disabled
-    theme                : "light" # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
-  staticman:  
+    repo_id: "MDEwOlJlcG9zaXRvcnkyNDg1MTcxNQ==" # Shown during giscus setup at https://giscus.app
+    category_name: "Specific Post Comments" # Full text name of the category
+    category_id: "MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyODcwMjY4" # Shown during giscus setup at https://giscus.app
+    discussion_term: "pathname" # "pathname" (default), "url", "title", "og:title"
+    reactions_enabled: 1 # '1' for enabled (default), '0' for disabled
+    theme: "light" # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+  staticman:
   # disqus:
   #   shortname            : "seankilleencom" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
 #   discourse:
@@ -73,10 +73,10 @@ comments:
 #   siteKey                :
 #   secret                 :
 atom_feed:
-  path                   : # blank (default) uses feed.xml
-search                   : true # true, false (default)
-search_full_content      : true # true, false (default)
-search_provider          : "lunr" # lunr (default), algolia, google
+  path: # blank (default) uses feed.xml
+search: true # true, false (default)
+search_full_content: true # true, false (default)
+search_provider: "lunr" # lunr (default), algolia, google
 # algolia:
 #   application_id         : # YOUR_APPLICATION_ID
 #   index_name             : # YOUR_INDEX_NAME
@@ -87,41 +87,40 @@ search_provider          : "lunr" # lunr (default), algolia, google
 #   instant_search         : # false (default), true
 
 # SEO Related
-google_site_verification :
-bing_site_verification   :
-yandex_site_verification :
-naver_site_verification  :
+google_site_verification:
+bing_site_verification:
+yandex_site_verification:
+naver_site_verification:
 
 # Social Sharing
 twitter:
-  username               : sjkilleen
+  username: sjkilleen
 facebook:
-  username               : SeanKilleen
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
+  username: SeanKilleen
+  app_id:
+  publisher:
+og_image: # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type: # Person or Organization (defaults to Person)
+  name: # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
 # Analytics
 analytics:
-  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
-  google:
-    tracking_id          : G-XLHBWFGGNQ
-    anonymize_ip         : # true, false (default)
-
+  provider: "custom" # false (default), "google", "google-universal", "google-gtag", "custom"
+  #google:
+  #  tracking_id          : G-XLHBWFGGNQ
+  #  anonymize_ip         : # true, false (default)
 
 # Site Author
 author:
-  name             : "Sean Killeen"
-  avatar           : "/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "A mind at work. Microsoft MVP and passionate .NET dev. Trying to be all the human I can be in the time I have. (he/him)"
-  location         : "Arlington, VA, USA"
-  email            : "SeanKilleen@gmail.com"
+  name: "Sean Killeen"
+  avatar: "/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio: "A mind at work. Microsoft MVP and passionate .NET dev. Trying to be all the human I can be in the time I have. (he/him)"
+  location: "Arlington, VA, USA"
+  email: "SeanKilleen@gmail.com"
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
@@ -157,7 +156,6 @@ footer:
     - label: "BMC"
       icon: "fas fa-fw fa-mug-hot"
       url: "http://buymeacoff.ee/SeanKilleen"
-
 
 # Reading Files
 include:
@@ -195,14 +193,12 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
 # Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: true
-
 
 # Markdown Processing
 kramdown:
@@ -215,19 +211,16 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
 # Sass/SCSS
 sass:
   sass_dir: _sass
   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
 
 # Outputting
 permalink: /:year/:month/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
 
 # Plugins (previously gems:)
 plugins:
@@ -240,7 +233,6 @@ plugins:
   - jekyll-redirect-from
   - jekyll-github-metadata
 
-
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
@@ -249,7 +241,6 @@ whitelist:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-
 
 # Archives
 #  Type
@@ -279,14 +270,12 @@ tag_archive:
 #     category: /categories/:name/
 #     tag: /tags/:name/
 
-
 # HTML Compression
 # - http://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
     envs: development
-
 
 # Defaults
 defaults:
