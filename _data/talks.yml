@@ -315,10 +315,10 @@ talksList:
     sessionLink: https://meetu.ps/e/K76s9/1Zghg/d
     description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
     location: Online
-  - title: "TBD"
+  - title: "TDD Your Own Adventure!"
     date: 2022-03-22
     group: "CapArea .NET Uer Group"
     eventLink: https://www.meetup.com/CapArea-Net/
     sessionLink: https://www.meetup.com/CapArea-Net/
-    description: ""
+    description: "You're in the driver's seat and Sean's in the hot seat as he works to answer your questions about test automation and TDD in .NET. During this talk, we'll build an example application live while working in all of the questions and topics that you submit beforehand. Let's see where it goes, and what we learn together! Add your input at: https://docs.google.com/forms/d/e/1FAIpQLSfXZU3DKKy3zfQR4leHoQAY6Q4leqfpCSUMZ2XjDSNyjyBAzQ/viewform"
     location: Online
