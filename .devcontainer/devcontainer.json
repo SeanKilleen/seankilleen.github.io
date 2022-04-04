@@ -1,0 +1,16 @@
+{
+    "name": "blog-in-a-box",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "forwardPorts": [4000],
+    "extensions": [
+        "streetsidesoftware.code-spell-checker", 
+        "oderwat.indent-rainbow", 
+        "mdickin.markdown-shortcuts", 
+        "davidanson.vscode-markdownlint",
+        "redhat.vscode-yaml",
+        "vsls-contrib.codetour",
+        "github.vscode-pull-request-github"
+    ]
+}
