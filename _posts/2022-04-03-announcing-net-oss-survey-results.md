@@ -24,12 +24,30 @@ I hoped this survey can drive a few different outcomes:
 * Serving as feedback into an impact map of the type of impact we'd like to make for .NET OSS Maintainers
 * Serving as the starting point for a backlog of re-launching <https://awider.net>, a site I'd dreamed of starting long ago at .NET Fringe and have been meaning to get off the ground ever since.
 
+## How I'm breaking down the results
+
+I'll start with some general observations and numbers. 
+
+Then, for each type of feedback I solicited, I'll try to cover:
+
+* The types of potential help that resonated with respondents
+* Qualitative feedback for that type of support -- quotes and my observations
+* An embedded [impact map](https://www.impactmapping.org/) for how we might want to improve this aspect for maintainers
+
+Along the way, I'll try to break down how I obtain numbers the first time I use them. If you've got questions, leave a comment and I'll clarify. And if an issue is uncovered with my methods, I'll be happy to update or add to the results to ensure they're as accurate as possible; I've never claimed to be a statistician.
+
+
 ## General Observations
 
-* The survey was too long. I had an idea that might be the case, and I'll be working to limits it in the future.
-* The number of responses was much lower than I was hoping for. There were 42 responses in total. This doesn't allow for much confidence in the overall numbers, but we'll work with what we have. This could be due to survey length or the limitations of my own reach and those who broadcast it. Or, it could be indicative of the level of engagement in the broader overall ecosystem. I'm not sure the results tell us that one way or the other.
+* The survey was too long. I figured this might be the case, and I'll be working to limit it in the future.
+* The number of responses was much lower than I was hoping for. There were 42 responses in total. This doesn't allow for much confidence in the overall numbers, but we'll work with what we have. 
+  * This could be due to survey length or the limitations of my own reach and those who broadcast it. Or, it could be indicative of the level of engagement in the broader overall ecosystem. I'm not sure the results tell us that one way or the other.
 * The qualitative responses in many cases were lengthy and thought-out, which I appreciated. Those who responded appeared to be very passionate.
 * There are many ways to be an OSS developer. This might seem obvious, but it was very helpful for me to see how perspectives differed across those who are running businesses based on OSS, to those who consider it purely a hobby and avoid any form of monetization in their project, and everyone in-between. I think it's important to keep in mind that the goals are often different across community segments in order to work toward OSS maintainer happiness in general.
+
+## Some of the Overall Numbers
+
+
 
 ## Testing a Chart
 
