@@ -51,6 +51,31 @@ When asking respondents how burned out they felt about their project and OSS in 
 
 <canvas id="burnoutResults" width="200" height="200"></canvas>
 
+Observations:
+
+* This cohort indicated less burnout than neutral on average
+* On average the difference between burnout on a given project and burnout toward OSS in general was .73, or less than one number difference. This suggests that authors might link their view toward OSS in general with work on their projects.
+* One Third of respondents rated their burnout levels as higher than neutral. In my own personal experience, people tend to underestimate said burnout, which does give me some concern about the state of things overall, given that I'm also concerned that more burned out folks wouldn't have responded at all.
+
+## Stagnation
+
+We asked:
+
+> What is the likelihood that your project(s) will begin to (or already has begun to) stagnate 
+
+Across two dimensions:
+
+* A lack of time, energy, or resources
+* A lack of capability
+
+<canvas id="stagnationResults" width="200" height="200"></canvas>
+
+Observations:
+
+* .NET OSS Maintainers remain confident in their capabilities to deliver their projects. This indicates to me that authors take pride in their work or have selected projects they feel they can contribute to.
+* I will be interested to see how this is borne out in the qualitative responses in the support section. Could those coming responses reveal implicit capability gaps that can be addressed for happiness? Are maintainers associating their own capability with a lack of help?
+* 45% of respondents answered above neutral for stagnation due to lack of time / resources. If this number holds true across the larger community, then my guess is we face a coming slow-down in the .NET OSS ecosystem. 
+* Combined with the answers on burnout, it is more crucial than ever that others in the community step up to support these projects in healthy ways, and it will be crucial to enable them to do so without additional burden on the maintainers.
 
 ## Support Gaps by Category [^1]
 
@@ -83,6 +108,7 @@ const CHART_COLORS = {
 
 const ctxOverallSupportResults = document.getElementById('overallSupportResults').getContext('2d');
 const ctxBurnoutResults = document.getElementById('burnoutResults').getContext('2d');
+const ctxStagnationResults = document.getElementById('stagnationResults').getContext('2d');
 
 const overallSupportResultsChart = new Chart(ctxOverallSupportResults, {
     type: 'bar',
@@ -142,4 +168,28 @@ const burnoutResultsChart = new Chart(ctxBurnoutResults, {
         }
     }
 });
-</script>
+const stagnationResultsChart = new Chart(ctxStagnationResults, {
+    type: 'bar',
+    responsive: true,
+    data: {
+        labels: ['1 - Not at all', '2', '3','4 - Neutral', '5', '6', '7 - Very'],
+        datasets: [{
+            label: 'Time / Energy / Resources',
+            data: [1,4,11,7,9,4,6],
+            borderWidth: 1,
+            backgroundColor: CHART_COLORS.green
+        },{
+            label: 'Capability',
+            data: [10,12,9,5,4,1,1],
+            borderWidth: 1,
+            backgroundColor: CHART_COLORS.blue
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});</script>
