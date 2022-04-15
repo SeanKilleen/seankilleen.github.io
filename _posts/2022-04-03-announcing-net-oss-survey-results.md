@@ -60,6 +60,16 @@ I arrived at these numbers by:
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
 
 <script>
+const CHART_COLORS = {
+  red: 'rgb(255, 99, 132)',
+  orange: 'rgb(255, 159, 64)',
+  yellow: 'rgb(255, 205, 86)',
+  green: 'rgb(75, 192, 192)',
+  blue: 'rgb(54, 162, 235)',
+  purple: 'rgb(153, 102, 255)',
+  grey: 'rgb(201, 203, 207)'
+};
+
 const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'bar',
@@ -70,18 +80,18 @@ const myChart = new Chart(ctx, {
             label: 'Matters',
             data: [-16,-33,20,17,30,27,46,53,45],
             borderWidth: 1,
-            backgroundColor: Utils.CHART_COLORS.green
+            backgroundColor: CHART_COLORS.green
         },{
             label: 'Supported',
             data: [-1,-10,-18,-44,-52,-56,-42,-38,-56],
             borderWidth: 1,
-            backgroundColor: Utils.CHART_COLORS.orange
+            backgroundColor: CHART_COLORS.blue
         },
         {
             label: 'Gap',
             data: [15,23,38,61,82,83,88,91,101],
             borderWidth: 1,
-            backgroundColor: Utils.CHART_COLORS.red
+            backgroundColor: CHART_COLORS.red
         }]
     },
     options: {
