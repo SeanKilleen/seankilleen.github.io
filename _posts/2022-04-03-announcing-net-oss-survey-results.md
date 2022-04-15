@@ -74,8 +74,8 @@ const CHART_COLORS = {
   grey: 'rgb(201, 203, 207)'
 };
 
-const ctx = document.getElementById('overallSupportResults').getContext('2d');
-const myChart = new Chart(ctx, {
+const ctxOverallSupportResults = document.getElementById('overallSupportResults').getContext('2d');
+const overallSupportResultsChart = new Chart(ctxOverallSupportResults, {
     type: 'bar',
     responsive: true,
     data: {
