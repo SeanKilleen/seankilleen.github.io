@@ -14,6 +14,23 @@ header:
  caption: "Photo credit: [**Isaac Smith @ Unsplash**](https://unsplash.com/@isaacmsmith?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 ---
 
+I extended the survey response until the end of March because there were some kind folks who wanted to promote it further. But since then I've been thinking about the best way to interpret and showcase the results. I'm just one person with limited resources, but I'm open to suggestions if you'd like to use the edit or issues link at the top of this post.
+
+## The Overall Goal of This Survey
+
+I hoped this survey can drive a few different outcomes:
+
+* Surfacing quantitative and qualitative feedback on the .NET OSS Maintainer experience
+* Serving as feedback into an impact map of the type of impact we'd like to make for .NET OSS Maintainers
+* Serving as the starting point for a backlog of re-launching <https://awider.net>, a site I'd dreamed of starting long ago at .NET Fringe and have been meaning to get off the ground ever since.
+
+## General Observations
+
+* The survey was too long. I had an idea that might be the case, and I'll be working to limits it in the future.
+* The number of responses was much lower than I was hoping for. There were 42 responses in total. This doesn't allow for much confidence in the overall numbers, but we'll work with what we have. This could be due to survey length or the limitations of my own reach and those who broadcast it. Or, it could be indicative of the level of engagement in the broader overall ecosystem. I'm not sure the results tell us that one way or the other.
+* The qualitative responses in many cases were lengthy and thought-out, which I appreciated. Those who responded appeared to be very passionate.
+* There are many ways to be an OSS developer. This might seem obvious, but it was very helpful for me to see how perspectives differed across those who are running businesses based on OSS, to those who consider it purely a hobby and avoid any form of monetization in their project, and everyone in-between. I think it's important to keep in mind that the goals are often different across community segments in order to work toward OSS maintainer happiness in general.
+
 ## Testing a Chart
 
 <canvas id="myChart" width="200" height="200"></canvas>
