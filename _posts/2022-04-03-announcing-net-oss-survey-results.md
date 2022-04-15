@@ -61,11 +61,19 @@ const myChart = new Chart(ctx, {
     type: 'bar',
     responsive: true,
     data: {
-        labels: [
-          'One-time donations', 'Recurring', 'Small Monetary Donations','Larger monetary donations'],
+        labels: ['Tooling', 'Delivery Support', 'Thanks','Community', 'Non-Code Contributions', 'Time', 'Publicity', 'Code Contributions', 'Financial'],
         datasets: [{
-            label: '# of Votes',
-            data: [19,26,18,21],
+            label: 'Matters',
+            data: [-16,-33,20,17,30,27,46,53,45],
+            borderWidth: 1
+        },{
+            label: 'Supported',
+            data: [-1,-10,-18,-44,-52,-56,-42,-38,-56],
+            borderWidth: 1
+        },
+        {
+            label: 'Gap',
+            data: [15,23,38,61,82,83,88,91,101],
             borderWidth: 1
         }]
     },
