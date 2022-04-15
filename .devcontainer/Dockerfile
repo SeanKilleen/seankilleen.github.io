@@ -1,4 +1,4 @@
-FROM jekyll/jekyll:pages
+FROM jekyll/jekyll:3
 
 RUN apk add dos2unix
 RUN npm install -g cspell markdownlint-cli
