@@ -24,7 +24,6 @@ header:
 const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'bar',
-    indexAxis: 'y',
     responsive: true,
     data: {
         labels: [
@@ -36,8 +35,9 @@ const myChart = new Chart(ctx, {
         }]
     },
     options: {
+        indexAxis: 'y',
         scales: {
-            y: {
+            x: {
                 beginAtZero: true
             }
         }
