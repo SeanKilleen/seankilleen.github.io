@@ -74,7 +74,7 @@ const myChart = new Chart(ctx, {
     type: 'bar',
     responsive: true,
     data: {
-        labels: ['Tooling', 'Delivery Support', 'Thanks','Community', 'Non-Code Contributions', 'Time', 'Publicity', 'Code Contributions', 'Financial'],
+        labels: ['Tooling', 'Delivery Support', 'Thanks','Community', 'Non-Code Contributions', 'Time', 'Publicity', 'Code Contributions', 'Funding / Monetary'],
         datasets: [{
             label: 'Matters',
             data: [-16,-33,20,17,30,27,46,53,45],
