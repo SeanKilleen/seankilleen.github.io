@@ -66,7 +66,7 @@ Observations:
 
 ## Test Mindmup iFrame
 
-<iframe src="https://atlas.mindmup.com/seankilleen/test_map/index.html"></iframe>
+<iframe src="https://atlas.mindmup.com/seankilleen/test_map/index.html" width="100"></iframe>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
 
