@@ -1,5 +1,5 @@
 {
-    "name": "blog-in-a-box",
+    "name": "SeanKilleen.com dev container",
     "build": {
         "dockerfile": "Dockerfile"
     },
