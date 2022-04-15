@@ -49,9 +49,11 @@ Along the way, I'll try to break down how I obtain numbers the first time I use 
 
 <canvas id="overallSupportResults" width="200" height="200"></canvas>
 
-Observations here: 
+Observations: 
 
-* Not surprisingly, 
+* Not surprisingly based on what I'd heard previously, `Funding` and `Contributions` are the largest gaps. These topics and how to address them seem to be a perennial conversation in the OSS space (and particularly the `Contributions` topic in the .NET OSS space).
+* I'm going to pay special attention to the `Thanks` and `Publicity` categories, as I imagine there have got to be some "low-hanging fruit" there in terms behaviors we can better enable.
+* `Non-Code Contributions` had a bit of a higher gap than I thought it would. Again, there may be some great things we can do to enable support even from those who may not feel comfortable enough to submit code contributions.
 
 [^1]: Methodology -- I arrived at these numbers by: taking the 7-point likert scales for how much a given type of support mattered and how much a the respondent felt supported. I converted those numbers to a `-3` through `3` scale to help visualize them. I showed those amounts, and the gap between them. Showed the results in order of smallest support gap to largest support gap. 
 
