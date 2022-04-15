@@ -55,7 +55,7 @@ I arrived at these numbers by:
 * Determining the "support gap" (how much it matters vs. how supported the respondent feels)
 * Showing the results in order of smallest support gap to largest support gap
 
-<canvas id="myChart" width="200" height="200"></canvas>
+<canvas id="overallSupportResults" width="200" height="200"></canvas>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
 
@@ -70,7 +70,7 @@ const CHART_COLORS = {
   grey: 'rgb(201, 203, 207)'
 };
 
-const ctx = document.getElementById('myChart').getContext('2d');
+const ctx = document.getElementById('overallSupportResults').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'bar',
     responsive: true,
