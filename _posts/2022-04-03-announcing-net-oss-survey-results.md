@@ -45,6 +45,13 @@ Along the way, I'll try to break down how I obtain numbers the first time I use 
 * The qualitative responses in many cases were lengthy and well thought-out. For those of you who were worried about passion in the .NET OSS space dwindling, don't worry -- I found some!
 * There are many ways to be an OSS developer. This might seem obvious, but it was very helpful for me to see how perspectives differed across those who are running businesses based on OSS, to those who consider it purely a hobby and avoid any form of monetization in their project, and everyone in-between. I think it's important to keep in mind that the goals are often different across community segments in order to work toward OSS maintainer happiness in general.
 
+## Burnout
+
+When asking respondents how burned out they felt about their project and OSS in general:
+
+<canvas id="burnoutResults" width="200" height="200"></canvas>
+
+
 ## Support Gaps by Category [^1]
 
 <canvas id="overallSupportResults" width="200" height="200"></canvas>
@@ -75,6 +82,8 @@ const CHART_COLORS = {
 };
 
 const ctxOverallSupportResults = document.getElementById('overallSupportResults').getContext('2d');
+const ctxBurnoutResults = document.getElementById('burnoutResults').getContext('2d');
+
 const overallSupportResultsChart = new Chart(ctxOverallSupportResults, {
     type: 'bar',
     responsive: true,
@@ -96,6 +105,33 @@ const overallSupportResultsChart = new Chart(ctxOverallSupportResults, {
             data: [15,23,38,61,82,83,88,91,101],
             borderWidth: 1,
             backgroundColor: CHART_COLORS.red
+        }]
+    },
+    options: {
+        indexAxis: 'y',
+        scales: {
+            x: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+const burnoutResultsChart = new Chart(ctxBurnoutResults, {
+    type: 'bar',
+    responsive: true,
+    data: {
+        labels: ['1 - Not at all', '2', '3','4 - Neutral', '5', '6', '7 - Very'],
+        datasets: [{
+            label: 'Your Project',
+            data: [6,7,6,8,9,4,2],
+            borderWidth: 1,
+            backgroundColor: CHART_COLORS.green
+        },{
+            label: 'OSS In General',
+            data: [6,11,4,7,8,4,2],
+            borderWidth: 1,
+            backgroundColor: CHART_COLORS.blue
         }]
     },
     options: {
