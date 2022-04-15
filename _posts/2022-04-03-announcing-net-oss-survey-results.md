@@ -135,9 +135,8 @@ const burnoutResultsChart = new Chart(ctxBurnoutResults, {
         }]
     },
     options: {
-        indexAxis: 'y',
         scales: {
-            x: {
+            y: {
                 beginAtZero: true
             }
         }
