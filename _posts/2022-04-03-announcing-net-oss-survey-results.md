@@ -42,7 +42,7 @@ Along the way, I'll try to break down how I obtain numbers the first time I use 
 * The survey was too long. I figured this might be the case, and I'll be working to limit it in the future.
 * The number of responses was much lower than I was hoping for. There were 42 responses in total. This doesn't allow for much confidence in the overall numbers, but we'll work with what we have. 
   * This could be due to survey length or the limitations of my own reach and those who broadcast it. Or, it could be indicative of the level of engagement in the broader overall ecosystem. I'm not sure the results tell us that one way or the other.
-* The qualitative responses in many cases were lengthy and thought-out, which I appreciated. Those who responded appeared to be very passionate.
+* The qualitative responses in many cases were lengthy and well thought-out. For those of you who were worried about passion in the .NET OSS space dwindling, don't worry -- I found some!
 * There are many ways to be an OSS developer. This might seem obvious, but it was very helpful for me to see how perspectives differed across those who are running businesses based on OSS, to those who consider it purely a hobby and avoid any form of monetization in their project, and everyone in-between. I think it's important to keep in mind that the goals are often different across community segments in order to work toward OSS maintainer happiness in general.
 
 ## Support Gaps by Category [^1]
