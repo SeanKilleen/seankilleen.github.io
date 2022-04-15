@@ -47,9 +47,13 @@ Along the way, I'll try to break down how I obtain numbers the first time I use 
 
 ## Some of the Overall Numbers
 
+I arrived at these numbers by:
 
-
-## Testing a Chart
+* Taking the 7-point likert scales for how much a given type of support mattered and how much a the respondent felt supported
+* Converting those numbers to a `-3` through `3` scale to help visualize
+* Showing those amounts, and the gap between them
+* Determining the "support gap" (how much it matters vs. how supported the respondent feels)
+* Showing the results in order of smallest support gap to largest support gap
 
 <canvas id="myChart" width="200" height="200"></canvas>
 
