@@ -45,17 +45,16 @@ Along the way, I'll try to break down how I obtain numbers the first time I use 
 * The qualitative responses in many cases were lengthy and thought-out, which I appreciated. Those who responded appeared to be very passionate.
 * There are many ways to be an OSS developer. This might seem obvious, but it was very helpful for me to see how perspectives differed across those who are running businesses based on OSS, to those who consider it purely a hobby and avoid any form of monetization in their project, and everyone in-between. I think it's important to keep in mind that the goals are often different across community segments in order to work toward OSS maintainer happiness in general.
 
-## Some of the Overall Numbers
-
-I arrived at these numbers by:
-
-* Taking the 7-point likert scales for how much a given type of support mattered and how much a the respondent felt supported
-* Converting those numbers to a `-3` through `3` scale to help visualize
-* Showing those amounts, and the gap between them
-* Determining the "support gap" (how much it matters vs. how supported the respondent feels)
-* Showing the results in order of smallest support gap to largest support gap
+## Support Gaps by Category [^1]
 
 <canvas id="overallSupportResults" width="200" height="200"></canvas>
+
+Observations here: 
+
+* Not surprisingly, 
+
+[^1]: Methodology -- I arrived at these numbers by: taking the 7-point likert scales for how much a given type of support mattered and how much a the respondent felt supported. I converted those numbers to a `-3` through `3` scale to help visualize them. I showed those amounts, and the gap between them. Showed the results in order of smallest support gap to largest support gap. 
+
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
 
