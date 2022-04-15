@@ -16,7 +16,19 @@ header:
 
 I extended the survey response until the end of March because there were some kind folks who wanted to promote it further. But since then I've been thinking about the best way to interpret and showcase the results. I'm just one person with limited resources, but I'm open to suggestions if you'd like to use the edit or issues link at the top of this post.
 
-## The Overall Goal of This Survey
+## About These Results
+
+### Feedback welcome!
+
+I am not a data scientist nor a data visualization expert. I am doing my best to interpret numbers, but we all know that can be problematic.
+
+I encourage you to respond with ways I might be able to better visualize or interpret the data. Comments are welcome, and you can even submit pull requests against this post if you'd like.
+
+### Where's the data?
+
+You can see the raw, anonymized data [in this Google Sheet](https://docs.google.com/spreadsheets/d/1zIVaW2j_9RZB_PxPVMTO2yC4kpA4zO2jrEiAe80ra-c/edit?usp=sharing).
+
+### The Overall Goal
 
 I hoped this survey can drive a few different outcomes:
 
@@ -24,7 +36,7 @@ I hoped this survey can drive a few different outcomes:
 * Serving as feedback into an impact map of the type of impact we'd like to make for .NET OSS Maintainers
 * Serving as the starting point for a backlog of re-launching <https://awider.net>, a site I'd dreamed of starting long ago at .NET Fringe and have been meaning to get off the ground ever since.
 
-## How I'm breaking down the results
+## How These Results are Structured
 
 I'll start with some general observations and numbers. 
 
