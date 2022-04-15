@@ -57,6 +57,9 @@ Observations:
 
 [^1]: Methodology -- I arrived at these numbers by: taking the 7-point likert scales for how much a given type of support mattered and how much a the respondent felt supported. I converted those numbers to a `-3` through `3` scale to help visualize them. I showed those amounts, and the gap between them. Showed the results in order of smallest support gap to largest support gap. 
 
+## Test Mindmup iFrame
+
+<iframe src="https://atlas.mindmup.com/seankilleen/test_map/index.html"></iframe>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
 
