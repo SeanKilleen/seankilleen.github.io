@@ -16,7 +16,7 @@ header:
 
 ## Testing a Chart
 
-<canvas id="myChart" width="400" height="400"></canvas>
+<canvas id="myChart" width="200" height="200"></canvas>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
 
@@ -25,12 +25,13 @@ const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'bar',
     indexAxis: 'y',
+    responsive: true,
     data: {
         labels: [
-          'One-time donations', 'Recurring', 'Small Monetary Donations'],
+          'One-time donations', 'Recurring', 'Small Monetary Donations','Larger monetary donations'],
         datasets: [{
             label: '# of Votes',
-            data: [19,26,18],
+            data: [19,26,18,21],
             borderWidth: 1
         }]
     },
