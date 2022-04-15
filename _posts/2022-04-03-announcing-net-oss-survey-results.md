@@ -69,16 +69,19 @@ const myChart = new Chart(ctx, {
         datasets: [{
             label: 'Matters',
             data: [-16,-33,20,17,30,27,46,53,45],
-            borderWidth: 1
+            borderWidth: 1,
+            backgroundColor: Utils.CHART_COLORS.green
         },{
             label: 'Supported',
             data: [-1,-10,-18,-44,-52,-56,-42,-38,-56],
-            borderWidth: 1
+            borderWidth: 1,
+            backgroundColor: Utils.CHART_COLORS.orange
         },
         {
             label: 'Gap',
             data: [15,23,38,61,82,83,88,91,101],
-            borderWidth: 1
+            borderWidth: 1,
+            backgroundColor: Utils.CHART_COLORS.red
         }]
     },
     options: {
