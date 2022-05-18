@@ -1,6 +1,6 @@
 FROM jekyll/jekyll:pages
 
-RUN apk add dos2unix
+RUN apk add dos2unix build-base
 RUN npm install -g cspell markdownlint-cli
 
 # Reference: https://stackoverflow.com/questions/38024160/how-to-get-etc-profile-to-run-automatically-in-alpine-docker
