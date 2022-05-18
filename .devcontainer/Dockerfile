@@ -4,7 +4,7 @@ RUN apk add dos2unix
 RUN npm install -g cspell markdownlint-cli
 
 # Reference: https://stackoverflow.com/questions/38024160/how-to-get-etc-profile-to-run-automatically-in-alpine-docker
-ENV ENV="/etc/profile.d"
+ENV ENV=/etc/profile
 
 COPY aliases.sh /etc/profile.d/alias.sh
 
