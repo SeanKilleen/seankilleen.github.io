@@ -3,8 +3,9 @@ source 'http://rubygems.org'
 install_if -> { RUBY_PLATFORM =~ /mingw|mswin/i } do
     gem "wdm"
 end
-install_if -> { RUBY_PLATFORM =~ /mingw|mswin/i } do
+install_if -> { RUBY_PLATFORM =~ /linux/i } do
     gem "rb-inotify"
+    gem "webrick"
 end
 
 gem 'github-pages', group: :jekyll_plugins
