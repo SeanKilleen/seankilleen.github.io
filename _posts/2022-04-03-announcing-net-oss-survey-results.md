@@ -38,7 +38,7 @@ I hoped this survey can drive a few different outcomes:
 
 ## How These Results are Structured
 
-I'll start with some general observations and numbers. 
+I'll start with some general observations and numbers.
 
 Then, for each type of feedback I solicited, I'll try to cover:
 
@@ -48,11 +48,10 @@ Then, for each type of feedback I solicited, I'll try to cover:
 
 Along the way, I'll try to break down how I obtain numbers the first time I use them. If you've got questions, leave a comment and I'll clarify. And if an issue is uncovered with my methods, I'll be happy to update or add to the results to ensure they're as accurate as possible; I've never claimed to be a statistician.
 
-
 ## General Observations
 
 * The survey was too long. I figured this might be the case, and I'll be working to limit it in the future.
-* The number of responses was much lower than I was hoping for. There were 42 responses in total. This doesn't allow for much confidence in the overall numbers, but we'll work with what we have. 
+* The number of responses was much lower than I was hoping for. There were 42 responses in total. This doesn't allow for much confidence in the overall numbers, but we'll work with what we have.
   * This could be due to survey length or the limitations of my own reach and those who broadcast it. Or, it could be indicative of the level of engagement in the broader overall ecosystem. I'm not sure the results tell us that one way or the other.
 * The qualitative responses in many cases were lengthy and well thought-out. For those of you who were worried about passion in the .NET OSS space dwindling, don't worry -- I found some!
 * There are many ways to be an OSS developer. This might seem obvious, but it was very helpful for me to see how perspectives differed across those who are running businesses based on OSS, to those who consider it purely a hobby and avoid any form of monetization in their project, and everyone in-between. I think it's important to keep in mind that the goals are often different across community segments in order to work toward OSS maintainer happiness in general.
@@ -73,7 +72,7 @@ Observations:
 
 We asked:
 
-> What is the likelihood that your project(s) will begin to (or already has begun to) stagnate 
+> What is the likelihood that your project(s) will begin to (or already has begun to) stagnate
 
 Across two dimensions:
 
@@ -86,24 +85,24 @@ Observations:
 
 * .NET OSS Maintainers remain confident in their capabilities to deliver their projects. This indicates to me that authors take pride in their work or have selected projects they feel they can contribute to.
 * I will be interested to see how this is borne out in the qualitative responses in the support section. Could those coming responses reveal implicit capability gaps that can be addressed for happiness? Are maintainers associating their own capability with a lack of help?
-* 45% of respondents answered above neutral for stagnation due to lack of time / resources. If this number holds true across the larger community, then my guess is we face a coming slow-down in the .NET OSS ecosystem. 
+* 45% of respondents answered above neutral for stagnation due to lack of time / resources. If this number holds true across the larger community, then my guess is we face a coming slow-down in the .NET OSS ecosystem.
 * Combined with the answers on burnout, it is more crucial than ever that others in the community step up to support these projects in healthy ways, and it will be crucial to enable them to do so without additional burden on the maintainers.
 
 ## Support Gaps by Category [^1]
 
 <canvas id="overallSupportResults" width="200" height="200"></canvas>
 
-Observations: 
+Observations:
 
 * Not surprisingly based on what I'd heard previously, `Funding` and `Contributions` are the largest gaps. These topics and how to address them seem to be a perennial conversation in the OSS space (and particularly the `Contributions` topic in the .NET OSS space).
 * I'm going to pay special attention to the `Thanks` and `Publicity` categories, as I imagine there have got to be some "low-hanging fruit" there in terms behaviors we can better enable.
 * `Non-Code Contributions` had a bit of a higher gap than I thought it would. Again, there may be some great things we can do to enable support even from those who may not feel comfortable enough to submit code contributions.
 
-[^1]: Methodology -- I arrived at these numbers by: taking the 7-point likert scales for how much a given type of support mattered and how much a the respondent felt supported. I converted those numbers to a `-3` through `3` scale to help visualize them. I showed those amounts, and the gap between them. Showed the results in order of smallest support gap to largest support gap. 
+[^1]: Methodology -- I arrived at these numbers by: taking the 7-point likert scales for how much a given type of support mattered and how much a the respondent felt supported. I converted those numbers to a `-3` through `3` scale to help visualize them. I showed those amounts, and the gap between them. Showed the results in order of smallest support gap to largest support gap.
 
 ## Test Mindmup iFrame
 
-<iframe src="https://atlas.mindmup.com/seankilleen/test_map/index.html" width="100"></iframe>
+<iframe src="https://atlas.mindmup.com/seankilleen/test_map/index.html" width="100%" height="1000"></iframe>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
 
