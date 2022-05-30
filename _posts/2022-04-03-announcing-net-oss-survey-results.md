@@ -55,6 +55,7 @@ Along the way, I'll try to break down how I obtain numbers the first time I use 
   * This could be due to survey length or the limitations of my own reach and those who broadcast it. Or, it could be indicative of the level of engagement in the broader overall ecosystem. I'm not sure the results tell us that one way or the other.
 * The qualitative responses in many cases were lengthy and well thought-out. For those of you who were worried about passion in the .NET OSS space dwindling, don't worry -- I found some!
 * There are many ways to be an OSS developer. This might seem obvious, but it was very helpful for me to see how perspectives differed across those who are running businesses based on OSS, to those who consider it purely a hobby and avoid any form of monetization in their project, and everyone in-between. I think it's important to keep in mind that the goals are often different across community segments in order to work toward OSS maintainer happiness in general.
+* A number of respondents assumed I was writing this from behalf of the .NET Foundation, and seemed to target their responses toward things the Foundation is doing or not doing. I think that speaks to the Foundation being the largest game in town for .NET OSS support at this point, and how folks feel about that.
 
 ## Burnout
 
