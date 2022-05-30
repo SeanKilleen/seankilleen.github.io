@@ -98,6 +98,21 @@ Observations:
 * I'm going to pay special attention to the `Thanks` and `Publicity` categories, as I imagine there have got to be some "low-hanging fruit" there in terms behaviors we can better enable.
 * `Non-Code Contributions` had a bit of a higher gap than I thought it would. Again, there may be some great things we can do to enable support even from those who may not feel comfortable enough to submit code contributions.
 
+## Going Deeper: Types of Support
+
+For each of the sections below, I'll dive into the top commonly recognized types of support and then attempt to extrapolate an impact map based on the responses I've gotten in that category.
+
+### Quick Intro: What's an Impact Map?
+
+[Impact mapping is a technique coined by Gojko Adzic](https://www.impactmapping.org/) that helps us think about how to make a certain kind of impact or more toward a goal. It works outwards in layers to map:
+
+* The goal or impact (this is the center node on the map)
+* Those people / roles / personas who can help us achieve (or who can hinder) our goal
+* The actions they could take to help or hinder our goal
+* Things we can do to influence or dissuade them from taking those actions
+
+Impact is a great brainstorming technique to set up experiments that lead from concrete actions to hopefully moving toward a goal. In our case, the goal will be increasing a certain type of OSS maintainer satisfaction in the .NET Community. We'll have an impact map for each type of satisfaction, though really they are all part of one goal: "Happier .NET OSS Maintainers."
+
 [^1]: Methodology -- I arrived at these numbers by: taking the 7-point likert scales for how much a given type of support mattered and how much a the respondent felt supported. I converted those numbers to a `-3` through `3` scale to help visualize them. I showed those amounts, and the gap between them. Showed the results in order of smallest support gap to largest support gap.
 
 ## Test Mindmup iFrame
