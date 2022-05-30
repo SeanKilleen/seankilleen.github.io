@@ -18,11 +18,13 @@ I extended the survey response until the end of March because there were some ki
 
 ## About These Results
 
-### Feedback welcome!
+### Feedback Needed!
 
 I am not a data scientist nor a data visualization expert. I am doing my best to interpret numbers, but we all know that can be problematic.
 
 I encourage you to respond with ways I might be able to better visualize or interpret the data. Comments are welcome, and you can even submit pull requests against this post if you'd like.
+
+Additionally, part of this post is to offer up impact maps that include actions we could possibly take as a community to improve these goals. I'd _really_ love your help there, as impact maps are best when they're a brainstorming. Drop any additional suggestions for an impact map in the comments, or feel free to drop it in a message to me on any social channel.
 
 ### Where's the data?
 
