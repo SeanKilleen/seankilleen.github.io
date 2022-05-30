@@ -113,8 +113,6 @@ For each of the sections below, I'll dive into the top commonly recognized types
 
 Impact is a great brainstorming technique to set up experiments that lead from concrete actions to hopefully moving toward a goal. In our case, the goal will be increasing a certain type of OSS maintainer satisfaction in the .NET Community. We'll have an impact map for each type of satisfaction, though really they are all part of one goal: "Happier .NET OSS Maintainers."
 
-[^1]: Methodology -- I arrived at these numbers by: taking the 7-point likert scales for how much a given type of support mattered and how much a the respondent felt supported. I converted those numbers to a `-3` through `3` scale to help visualize them. I showed those amounts, and the gap between them. Showed the results in order of smallest support gap to largest support gap.
-
 ## Test Mindmup iFrame
 
 <iframe src="https://atlas.mindmup.com/seankilleen/test_map/index.html" width="100%" height="1000"></iframe>
@@ -219,3 +217,5 @@ const stagnationResultsChart = new Chart(ctxStagnationResults, {
         }
     }
 });</script>
+
+[^1]: Methodology -- I arrived at these numbers by: taking the 7-point likert scales for how much a given type of support mattered and how much a the respondent felt supported. I converted those numbers to a `-3` through `3` scale to help visualize them. I showed those amounts, and the gap between them. Showed the results in order of smallest support gap to largest support gap.
