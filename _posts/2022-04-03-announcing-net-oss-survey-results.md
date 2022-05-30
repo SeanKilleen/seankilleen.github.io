@@ -112,11 +112,52 @@ For each of the sections below, I'll dive into the top commonly recognized types
 * The actions they could take to help or hinder our goal
 * Things we can do to influence or dissuade them from taking those actions
 
+So to summarize, an impact map can be read from the outside to the center as: "If we take this action, then we might influence this behavior change, in this person/group, that moves us closer to this goal".
+
 Impact is a great brainstorming technique to set up experiments that lead from concrete actions to hopefully moving toward a goal. In our case, the goal will be increasing a certain type of OSS maintainer satisfaction in the .NET Community. We'll have an impact map for each type of satisfaction, though really they are all part of one goal: "Happier .NET OSS Maintainers."
 
-## Test Mindmup iFrame
+### Funding / Monetary Support
 
-<iframe src="https://atlas.mindmup.com/seankilleen/test_map/index.html" width="100%" height="1000"></iframe>
+The top 5 welcomed types of support were (perhaps unsurprisingly):
+
+1. Recurring donations (63.4% of respondents)
+1. Purchasing a support agreement (58.5%)
+1. Larger monetary donations (51.2%)
+1. One-time donations (46.3%)
+1. Small monetary donations (43.9%)
+
+Notable listed challenges:
+
+> * Getting incentives to the right people at companies where they could provide financing
+> * if project succeed then there is a high risk that MS will build its own tool like that
+> * There are no mature tools for getting monetisation from OSS
+> * With a larger team, it becomes very difficult to distribute financial support fairly
+> * We give support for larger companies and the hardest part ia convincing them to purchase support license.
+> * corporate entities less likely to donate
+> * I'm not sure any realistic donation amount would be able to free hours up from my day job.
+> * I often muse if things would be different if Microsoft (maybe via the .NET Foundation) promoted companies supporting OSS projects in their ecosystem (like all the projects in the .NET Foundation).
+> * if you're really good at running your projects then you're rewarded not with more contributions, but higher expectations.
+> * the challenge/obstacle is explaining to consumers the value in providing these contributions
+> * Corporations do not have processes for "donating", they have process for buying stuff.
+> * To generate any measurable income, a forcing function like license terms needs to be involved
+> * .NET has traditionally been "Enterprise" oriented which attracts a different sort of user base
+> * My resistance to treating them as anything other than hobbies, written by myself, for myself.
+> * [Risk of] non-paying users into paying sponsors, some which then feel entitled to be treated as customers
+> * To be able to constantly provide updates in a sustainable way, you have to be paid for that and focus on that.
+
+Notable general feedback:
+
+> * Support for promoting / monestising or coaching on how to monetise OSS
+> * Working on a GitHub sponsor accessible private nuget feed
+> * It would be great if the Foundation could provide the 506 non profit services as Open Collective does. Just that without (or a much smaller) fee
+> * There are over 50 million downloads of my libraries and I've made less than 2 months wages in nearly 2 years of offering support agreements.
+> * I provide [Redacted] under what's sometimes called an "open core" model where the basic framework is permissive but more features falls under licensing terms. In this case the terms include a non-commercial clause that requires payment when the software is used for commercial purposes. This has been quite successful and earned an order of magnitude more than donations do
+> * Setup a 503.c3 if you can, there are online websites for setting it up.
+> * with money comes expectations and obligations, which might not drive maintainer motivation and happiness in the right direction.
+
+Based on this feedback, I've created an initial impact map (reminder: I'd love your feedback in the comments on additional items we could add!)
+
+<iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_funding_monetary_support/index.html" width="100%" height="1000"></iframe>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
 
