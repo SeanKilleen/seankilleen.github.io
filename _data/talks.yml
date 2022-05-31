@@ -326,5 +326,6 @@ talksList:
     date: 2022-07-07
     group: Roanoke Valley .NET User Group (RVNUG)
     eventLink: https://www.meetup.com/Roanoke-Valley-NET-User-Group/
+    sessionLink: https://www.meetup.com/Roanoke-Valley-NET-User-Group/events/286261772
     description: "Functional testing is a great way to ensure we're not just building the thing right, but building the right thing. In this session, we'll examine the testing pyramid, the place of functional testing, and how to write Gherkin syntax with SpecFlow to move toward acceptance test driven development. We'll use a real world sample to show a few cycles of acceptance tests in the language of the business, and talk about one project's real-world functional testing journey."
     location: Online
