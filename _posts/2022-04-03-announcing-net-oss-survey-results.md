@@ -205,6 +205,160 @@ The impact map draft:
 
 <iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_publicity/index.html" width="100%" height="1000"></iframe>
 
+### Thanks
+
+The top welcomed types of support were:
+
+1. TODO (% of respondents)
+1. TODO (%)
+1. TODO (%)
+1. TODO (%)
+1. TODO (%)
+
+Notable challenges:
+
+> * TODO
+
+Notable general feedback:
+
+> TODO
+
+The impact map draft:
+
+<iframe src="TODO" width="100%" height="1000"></iframe>
+
+### Code Contributions
+
+The top welcomed types of support were:
+
+1. TODO (% of respondents)
+1. TODO (%)
+1. TODO (%)
+1. TODO (%)
+1. TODO (%)
+
+Notable challenges:
+
+> * TODO
+
+Notable general feedback:
+
+> TODO
+
+The impact map draft:
+
+<iframe src="TODO" width="100%" height="1000"></iframe>
+
+### Non-Code Contributions
+
+The top welcomed types of support were:
+
+1. TODO (% of respondents)
+1. TODO (%)
+1. TODO (%)
+1. TODO (%)
+1. TODO (%)
+
+Notable challenges:
+
+> * TODO
+
+Notable general feedback:
+
+> TODO
+
+The impact map draft:
+
+<iframe src="TODO" width="100%" height="1000"></iframe>
+
+### Delivery Support
+
+The top welcomed types of support were:
+
+1. TODO (% of respondents)
+1. TODO (%)
+1. TODO (%)
+1. TODO (%)
+1. TODO (%)
+
+Notable challenges:
+
+> * TODO
+
+Notable general feedback:
+
+> TODO
+
+The impact map draft:
+
+<iframe src="TODO" width="100%" height="1000"></iframe>
+
+### Community
+
+The top welcomed types of support were:
+
+1. TODO (% of respondents)
+1. TODO (%)
+1. TODO (%)
+1. TODO (%)
+1. TODO (%)
+
+Notable challenges:
+
+> * TODO
+
+Notable general feedback:
+
+> TODO
+
+The impact map draft:
+
+<iframe src="TODO" width="100%" height="1000"></iframe>
+
+### Tooling
+
+The top welcomed types of support were:
+
+1. TODO (% of respondents)
+1. TODO (%)
+1. TODO (%)
+1. TODO (%)
+1. TODO (%)
+
+Notable challenges:
+
+> * TODO
+
+Notable general feedback:
+
+> TODO
+
+The impact map draft:
+
+<iframe src="TODO" width="100%" height="1000"></iframe>
+
+### Time
+
+The top welcomed types of support were:
+
+1. TODO (% of respondents)
+1. TODO (%)
+1. TODO (%)
+1. TODO (%)
+1. TODO (%)
+
+Notable challenges:
+
+> * TODO
+
+Notable general feedback:
+
+> TODO
+
+The impact map draft:
+
+<iframe src="TODO" width="100%" height="1000"></iframe>
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
 
 <script>
