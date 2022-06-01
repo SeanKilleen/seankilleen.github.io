@@ -169,7 +169,7 @@ Based on this feedback, I've created an initial impact map (reminder: I'd love y
 
 ### Publicity
 
-The top 5 welcomed types of support were (perhaps unsurprisingly):
+The top 5 welcomed types of support were:
 
 1. Blog posts exploring your project's features or what you've accomplished with it (92.3% of respondents)
 1. Recommending your project to others (92.3%)
@@ -201,7 +201,7 @@ Notable general feedback:
 > * I've been building this since 2008 and probably should do more self promotion.
 > * Our project was mentioned on the [Redacted] blog which resulted in many new users
 
-The impact map -- a work in progress:
+The impact map draft:
 
 <iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_publicity/index.html" width="100%" height="1000"></iframe>
 
