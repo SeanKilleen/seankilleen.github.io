@@ -16,6 +16,10 @@ header:
 
 I extended the survey response until the end of March because there were some kind folks who wanted to promote it further. But since then I've been thinking about the best way to interpret and showcase the results. I'm just one person with limited resources, but I'm open to suggestions if you'd like to use the edit or issues link at the top of this post.
 
+## Ooof...turns out there's a lot to this. :sweat_smile:
+
+I initially planned to have this post done by March. A new job, life, and the sheer amount of things I wanted to do with it got in the way. Note to self: next time, smaller pieces and faster. A lesson I think I should have learned by now.
+
 ## About These Results
 
 ### Feedback Needed!
@@ -160,6 +164,44 @@ Notable general feedback:
 Based on this feedback, I've created an initial impact map (reminder: I'd love your feedback in the comments on additional items we could add!)
 
 <iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_funding_monetary_support/index.html" width="100%" height="1000"></iframe>
+
+### Publicity
+
+The top 5 welcomed types of support were (perhaps unsurprisingly):
+
+1. Blog posts exploring your project's features or what you've accomplished with it (92.3% of respondents)
+1. Recommending your project to others (92.3%)
+1. Supportive tweets from those in the community with many followers (87.2%)
+1. Meetup / conference talks on your project (76.9%)
+1. Mentions and showcases on video, e.g. Twitch or YouTube (66.7%)
+
+Notable challenges:
+
+> * if it's allowed, a developer group may be able to use it, but not be in the position to publicize that usage and the benefits it provided
+> * More corporate awareness and leadership level individuals need to be looped in
+> * There are not many official .NET or Microsoft channels which can promote OSS projects
+> * I'm not intrinsically motivated to promote projects, and I don't have experience building a community.
+> * I think it's mostly a discoverability issue at this point
+> * needing to split time between developing and "marketing" means not a lot of sharing / content creation.
+> * We're a vital but not very sexy project. That means we don't get talked about a lot (unless people complain)
+> * How do you get your project in front of people if you don't have a following already?
+> * Don't know how to ask for it
+
+Notable general feedback:
+
+> * Chatter is ... often negative
+> * would really help if Microsoft or the .NET Foundation has someone who would proactively help the projects with marketing
+> * Any further publicity is likely to increase the maintenance burden rather than necessarily be a help
+> * most interactions with non-contributors are bug reports or help requests.
+> * this is something one should also promote from the side.
+> * you basically have to hustle your projects in front of other devs. Whether that is tweeting about the project so often or nearly spamming it on Reddit.
+> * For sure if you want to make your project successful, then it's needed to invest in documentation, blog post, community around it.
+> * I've been building this since 2008 and probably should do more self promotion.
+> * Our project was mentioned on the [Redacted] blog which resulted in many new users
+
+The impact map -- a work in progress:
+
+<iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_publicity/index.html" width="100%" height="1000"></iframe>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
 
