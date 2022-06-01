@@ -320,11 +320,12 @@ talksList:
     group: "CapArea .NET Uer Group"
     eventLink: https://www.meetup.com/CapArea-Net/
     sessionLink: https://www.meetup.com/CapArea-Net/events/284379080/
-    description: "You're in the driver's seat and Sean's in the hot seat as he works to answer your questions about test automation and TDD in .NET. During this talk, we'll build an example application live while working in all of the questions and topics that you submit beforehand. Let's see where it goes, and what we learn together! Add your input at: https://docs.google.com/forms/d/e/1FAIpQLSfXZU3DKKy3zfQR4leHoQAY6Q4leqfpCSUMZ2XjDSNyjyBAzQ/viewform"
+    description: "You're in the driver's seat and Sean's in the hot seat as he works to answer your questions about test automation and TDD in .NET. During this talk, we'll build an example application live while working in all of the questions and topics that you submit beforehand. Let's see where it goes, and what we learn together!"
     location: Online
-  - title: "TBD"
-    date: 2022-06-02
+  - title: "The Joy of Functional Testing with SpecFlow"
+    date: 2022-07-07
     group: Roanoke Valley .NET User Group (RVNUG)
     eventLink: https://www.meetup.com/Roanoke-Valley-NET-User-Group/
-    description: ""
+    sessionLink: https://www.meetup.com/Roanoke-Valley-NET-User-Group/events/286261772
+    description: "Functional testing is a great way to ensure we're not just building the thing right, but building the right thing. In this session, we'll examine the testing pyramid, the place of functional testing, and how to write Gherkin syntax with SpecFlow to move toward acceptance test driven development. We'll use a real world sample to show a few cycles of acceptance tests in the language of the business, and talk about one project's real-world functional testing journey."
     location: Online
