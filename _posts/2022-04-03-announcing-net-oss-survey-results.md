@@ -209,11 +209,9 @@ The impact map draft:
 
 The top welcomed types of support were:
 
-1. TODO (% of respondents)
-1. TODO (%)
-1. TODO (%)
-1. TODO (%)
-1. TODO (%)
+1. Tweets of praise / thanks (84.6% of respondents)
+1. Messages where your project operates (Slack, GitHub Discussions, etc.) to thank the team (69.2%)
+1. One-on-one messages (e-mail, DMs) listing the impact of your work (59%)
 
 Notable challenges:
 
@@ -231,11 +229,11 @@ The impact map draft:
 
 The top welcomed types of support were:
 
-1. TODO (% of respondents)
-1. TODO (%)
-1. TODO (%)
-1. TODO (%)
-1. TODO (%)
+1. Support on basic/help wanted tasks (80.5% of respondents)
+1. Bug fixes (80.5%)
+1. Feature Coding (75.6%)
+1. Automated Tests (68.3%)
+1. Additional Core Maintainers (65.9%)
 
 Notable challenges:
 
@@ -253,11 +251,11 @@ The impact map draft:
 
 The top welcomed types of support were:
 
-1. TODO (% of respondents)
-1. TODO (%)
-1. TODO (%)
-1. TODO (%)
-1. TODO (%)
+1. Creating new documentation (89.7% of respondents)
+1. Keeping documentation current (89.7%)
+1. Clearly written bug reports (or clarifying other reports) (66.7%)
+1. Web site / communication support (64.1%)
+1. Enhancement suggestions that are supportive and detailed (53.8%)
 
 Notable challenges:
 
@@ -275,11 +273,9 @@ The impact map draft:
 
 The top welcomed types of support were:
 
-1. TODO (% of respondents)
-1. TODO (%)
-1. TODO (%)
-1. TODO (%)
-1. TODO (%)
+1. CI/CD Support (66.7% of respondents)
+1. General DevOps Support (50%)
+1. Release Management Help (45.8%)
 
 Notable challenges:
 
@@ -297,11 +293,9 @@ The impact map draft:
 
 The top welcomed types of support were:
 
-1. TODO (% of respondents)
-1. TODO (%)
-1. TODO (%)
-1. TODO (%)
-1. TODO (%)
+1. Recruiting others to get involved (86.5% of respondents)
+1. Participating in the community Slack, Discord, etc. (54.1%)
+1. Moderation of Conversations (14%)
 
 Notable challenges:
 
@@ -319,11 +313,9 @@ The impact map draft:
 
 The top welcomed types of support were:
 
-1. TODO (% of respondents)
-1. TODO (%)
-1. TODO (%)
-1. TODO (%)
-1. TODO (%)
+1. Subscriptions to paid tooling that doesn't offer free OSS licensing (75% of respondents)
+1. Cloud Provider Credits (68.8%)
+1. SaaS Credits of Some Kind (53.1%)
 
 Notable challenges:
 
@@ -341,11 +333,8 @@ The impact map draft:
 
 The top welcomed types of support were:
 
-1. TODO (% of respondents)
-1. TODO (%)
-1. TODO (%)
-1. TODO (%)
-1. TODO (%)
+1. A long-term (paid) sabbatical to focus on OSS (71% of respondents)
+1. Others supporting you during unpaid time in order to focus impact (58.1%)
 
 Notable challenges:
 
