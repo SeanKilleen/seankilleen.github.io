@@ -120,7 +120,9 @@ For each of the sections below, I'll dive into the top commonly recognized types
 
 So to summarize, an impact map can be read from the outside to the center as: "If we take this action, then we might influence this behavior change, in this person/group, that moves us closer to this goal".
 
-Impact is a great brainstorming technique to set up experiments that lead from concrete actions to hopefully moving toward a goal. In our case, the goal will be increasing a certain type of OSS maintainer satisfaction in the .NET Community. We'll have an impact map for each type of satisfaction, though really they are all part of one goal: "Happier .NET OSS Maintainers."
+Impact mapping is a great brainstorming technique to set up experiments that lead from concrete actions to hopefully moving toward a goal. In our case, the goal will be increasing a certain type of OSS maintainer satisfaction in the .NET Community. We'll have an impact map for each type of satisfaction, though really they are all part of one goal: "Happier .NET OSS Maintainers."
+
+One more thing I like about impact maps? They help me move beyond a feeling of stagnation and helplessness, toward action. These are large, complex problems, and sometimes it might not be clear what we can do about them. My hope is that impact mapping leads us to places to start working toward change.
 
 ### Funding / Monetary Support
 
