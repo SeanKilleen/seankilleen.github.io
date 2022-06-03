@@ -215,11 +215,25 @@ The top welcomed types of support were:
 
 Notable challenges:
 
-> * TODO
+> * I suspect very few people actually take the time or energy to reach out in this manner.
+> * it's about the only support I get right now
+> * Needs to be raised and brought into the corporate open source culture.
+> * I appreciate a lot of things but even I don't personally thank every project that I use.
+> * An honest thank you is worth more than a couple of $$$
+> * DMs does not scale, public discussions do.
 
 Notable general feedback:
 
-> TODO
+> * I would not like to have issues on GitHub telling me only that it's a good product, I have work to close it again.
+> * There's not a good way (other than starring the project?) to communicate this (say) on GitHub without creating an issue/discussion that's just "clutter".
+> * Ironically, I see the most public expressions of praise for my library on the bug tracker for a _competing_ library where users write "I switched to [my library] and it fixed this bug!"
+> * Community around [Redacted] or my samples is also one of the things that makes me keep doing it.
+> * It hardly ever happens (like maybe 50 times in almost 18 years of running the project).
+> * Feels good every time.
+> * Personally, this is a huge motivator for me. A single "this project is great, thanks" response is enough to power me though a tough feature, etc.
+> * The folks that we would be trying to reach aren't on those mediums
+> * It needs to be in a public forum...so everyone should get credit.
+> * You're making me realize that I don't reach out with messages of support/thanks to the many, many OSS projects I use
 
 The impact map draft:
 
