@@ -293,7 +293,6 @@ GEM
     unf_ext (0.0.8.1-x64-mingw32)
     unicode-display_width (1.8.0)
     wdm (0.1.1)
-    webrick (1.7.0)
     yell (2.2.2)
 
 PLATFORMS
@@ -307,10 +306,8 @@ DEPENDENCIES
   jekyll-include-cache
   minimal-mistakes-jekyll
   rake
-  rb-inotify
   tzinfo-data
   wdm
-  webrick
 
 BUNDLED WITH
-   2.3.14
+   2.2.16
