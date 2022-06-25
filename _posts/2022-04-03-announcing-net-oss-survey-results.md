@@ -360,11 +360,18 @@ The top welcomed types of support were:
 
 Notable challenges:
 
-> * TODO
+> * People walk again after they have their issues fixed.
+> * The effort required to moderate and answer support/discussions is huge. I don’t have the time for it so I no longer allow support/discussions on our issue tracker and limit it to bug reports only.  
+> * It may require more management to make sure that non-core team contribution are not making more noise than help it brings.
+> * Hardly enough time for my own projects so I can't expect others to have time to contribute in this to mine.
+> * It takes a lot of commitment to be actively involved in a project like [Redacted]. And if you can find somebody like that, you also need to ensure that person has the same mindset about code quality, TDD, etc
+> * Who would actually want to help with recruiting for random projects? With so many projects from random little things to more established side hustles, actually getting help recruiting people seems like a crazily difficult job.
 
 Notable general feedback:
 
-> TODO
+> * For sure, getting right community, with people feeling invited to discuss, contribute is really helpful. We have some people on our channels that are helping others. I started my journey with [Redacted] by answering questions, helping others before I joined the core team.
+> * I would like to see more presentations / show and tell
+> * Most people don’t realize that just spreading the word has such a great potential.
 
 The impact map draft:
 
@@ -380,11 +387,19 @@ The top welcomed types of support were:
 
 Notable challenges:
 
-> * TODO
+> * Hosting costs are often hard to quantify for developer tools
+> * not all tools are owned by large corporates, and their survival often depends on paid customers - so OSS credits are often not the best solution here, nor a scalable one.
 
 Notable general feedback:
 
-> TODO
+> * Azure credits and similar should be provided for any healthy OSS project. Maintainers should not need to pay from their own pockets. If tooling/subscriptions not provided by 3rd party, then project need to raise funds in order to cover the costs.
+> * We got JetBrains licences for OSS, which is incredible help, and using extensively GitHub actions and Azure Devops. That helped us to build the right CI process with matrix builds etc
+> * Very hard to connect with people who can grant this support
+> * We used to get VS licenses and be able to give VS licenses to people contributing to the project from the .NET Foundation. That doesn't seem to happen any more.
+> * MVP status gives our two core developers visual studio, but be useful to have visual studio enterprise subscriptions to our other core members.
+> * We sign up for a lot of the "free for OSS" options from providers
+> * It's not a big deal but covering the costs for running our website and build/test infrastructure  would help us - it's a few virtual machines and databases in Azure.
+> * Love TechSoup.org's HUGE support of the community!!!  
 
 The impact map draft:
 
@@ -399,11 +414,23 @@ The top welcomed types of support were:
 
 Notable challenges:
 
-> * TODO
+> * Finding people willing to pay
+> * It would be expensive
+> * with a large team, who gets the benefit of this support?
+> * the amount of funding available for something like a sabbatical is likely not even close to what an experienced developer would be making "normally."
+> * Not sure the amount of money I'd need to take time away from work could ever be something that someone is willing to donate/supply for my projects.
+> * The donations/sponsorship can't even compensatie for one hour of my paid job. 
+> * .NET community is typically not open for paying
+> * hard to start such process not having enough experience in monetisation.
+> * Irregular injections of time/money aren't going to help long term.
 
 Notable general feedback:
 
-> TODO
+> * Occasionally, I get busy with work or other projects and having someone else responding to questions or fixing bugs would be nice.
+> * We use my project at work, so I've had the ability (within reason) to put time at work into solving critical bugs, instead of it solely being personal time.
+> * I'm currently on said "long-term sabbatical" paid for by savings from self-employment contracts, trying to build this OSS product/company.
+> * Would have been cool to have someone else responding to questions and fixing a few things so that people don't get the impression that the project is dying.
+> * Just not being constantly dragged into issues and pull requests would be nice. I'd like to get around to actually coding rather than managing.
 
 The impact map draft:
 
