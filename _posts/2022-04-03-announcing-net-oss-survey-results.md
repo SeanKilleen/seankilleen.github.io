@@ -306,7 +306,7 @@ Notable challenges:
 > * Are there any good automated documentation tools? I'm only aware of the older stuff from XML comments and options for static generated sites which don't work well for ASP.NET Core sites.
 > * I prefer to do this on my own, although localization would be great.
 > * Triaging issues isn't easy to delegate, you might have people speaking on your behalf that isn't in line with project ideas or agenda. 
-> * Feels very "unglamourous"; I don't really imagine there would be a lot of people interested in participating.
+> * Feels very "un-glamourous"; I don't really imagine there would be a lot of people interested in participating.
 > * We do receive high quality issue reports sometimes, but these are in the minority. 
 > * Good quality documentation contributions are very rare.
 
@@ -344,7 +344,7 @@ Notable general feedback:
 
 > * A lesson learned is how important this can be. A good CI/CD process saves hours of time that could be spent on issue support, feature building, etc. It's often overlooked by new maintainers and is easy to put on the back-burner without realizing what a benefit it is. This is probably one area where an external support structure could have a big impact.
 > * My project has relied on free cloud-hosted CI for years (Travis, Appveyor, Azure Pipelines). This has been an immensely positive change for OSS in the last decade.
-> * Help on tests stability or optimisation might be good. If we decide to build cloud solution around [Redacted] then devops help would be definitely helpful.
+> * Help on tests stability or optimization might be good. If we decide to build cloud solution around [Redacted] then devops help would be definitely helpful.
 
 The impact map draft:
 
@@ -388,12 +388,12 @@ The top welcomed types of support were:
 Notable challenges:
 
 > * Hosting costs are often hard to quantify for developer tools
-> * not all tools are owned by large corporates, and their survival often depends on paid customers - so OSS credits are often not the best solution here, nor a scalable one.
+> * not all tools are owned by large corporations, and their survival often depends on paid customers - so OSS credits are often not the best solution here, nor a scalable one.
 
 Notable general feedback:
 
 > * Azure credits and similar should be provided for any healthy OSS project. Maintainers should not need to pay from their own pockets. If tooling/subscriptions not provided by 3rd party, then project need to raise funds in order to cover the costs.
-> * We got JetBrains licences for OSS, which is incredible help, and using extensively GitHub actions and Azure Devops. That helped us to build the right CI process with matrix builds etc
+> * We got JetBrains licenses for OSS, which is incredible help, and using extensively GitHub actions and Azure Devops. That helped us to build the right CI process with matrix builds etc
 > * Very hard to connect with people who can grant this support
 > * We used to get VS licenses and be able to give VS licenses to people contributing to the project from the .NET Foundation. That doesn't seem to happen any more.
 > * MVP status gives our two core developers visual studio, but be useful to have visual studio enterprise subscriptions to our other core members.
@@ -419,9 +419,9 @@ Notable challenges:
 > * with a large team, who gets the benefit of this support?
 > * the amount of funding available for something like a sabbatical is likely not even close to what an experienced developer would be making "normally."
 > * Not sure the amount of money I'd need to take time away from work could ever be something that someone is willing to donate/supply for my projects.
-> * The donations/sponsorship can't even compensatie for one hour of my paid job. 
+> * The donations/sponsorship can't even compensate for one hour of my paid job. 
 > * .NET community is typically not open for paying
-> * hard to start such process not having enough experience in monetisation.
+> * hard to start such process not having enough experience in monetization.
 > * Irregular injections of time/money aren't going to help long term.
 
 Notable general feedback:
