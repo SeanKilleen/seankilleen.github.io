@@ -251,11 +251,34 @@ The top welcomed types of support were:
 
 Notable challenges:
 
-> * TODO
+> * Onboarding new developers has a ramp up cost, that does not tend to get paid back if they then don't proceed with doing any work. So we need a mechanism which finds people who are genuinely interested in the project over the hackathon.
+> * Right now the capacity for reviewing pull requests is the bottleneck for us, so it we found several new contributors quickly, it would probably demotivate them as they would have to wait some time until someone looks at their PRs.
+> * Getting people to read and respect contribution guidelines
+> * Most contributors seem stretched for time, sometimes taking a week for each iteration of PR feedback.
+> * If the number of contributions grow, it'll also costs me and my project companion more time to review everything. 
+> * Better roadmap
+> * They end up moving on or becoming less active so it is a constant struggle to keep a strong team.
+> * "maintenance mode" for stable/mature projects is not very exciting/enticing for attesting new core maintainers. 
+> * We are very cautious on how and what changes should be made.
+> * We needed to reject most contributions because they broke specific use cases.
+> * It can take a very long time to shepherd a community contribution to the desired level of quality for the project
+> * One-off "Fly-by" contributions are far more common, but these contributors don’t stick around to support/maintain their contributions, leaving the maintenance burden on the existing team. As such, I don’t generally accept code contributions for any major new functionality as the negative impact generally outweighs the positive.
+> * Frustration that people who are professional software developers and apparently need this library for their day job seemingly have no interest in debugging a problem that's blocking them, or in writing the bugfix that would solve their problem.
+> * Organizing in a way that allows a distributed group of folk can drive a project is hard
 
 Notable general feedback:
 
-> TODO
+> * PRS should usually be preceded with a discussion / issue
+> * Be useful to sometimes have someone from Microsoft come in and help us with a challenging issue that has more domain expertise then me or the team.
+> * On a few occasions, I had to undo someone's work or not accept a PR, but most of the help I've received has been really great and I appreciate each person's contributions.
+> * as a maintainer you take responsibility for supporting, updating, and managing all new code that comes into the code base. This can be a blessing and a curse
+> * People like to feel like they're helping.
+> * Learned to say thanks even when rejecting an idea and remind oneself to not be pressured into taking contributions you don't feel right with
+> * It's important to maintain focus -- I recently had to tighten my contribution guidelines to keep things manageable and turn down some PRs.
+> * Dealing with people is usually more stressful than dealing with code
+> * This kind of support is generally only valuable if the contributor is willing to stick at it for the long haul.
+> * Automation of work and defining processes only goes so far, and ultimately it's up to the humans who show up to help actually achieve things in OSS projects
+
 
 The impact map draft:
 
@@ -273,11 +296,21 @@ The top welcomed types of support were:
 
 Notable challenges:
 
-> * TODO
+> * Finding people you can trust
+> * The vast majority of issue reports are low-quality and low-effort (eg lacking details to reproduce the issue etc) despite a lot of effort going into creating issue templates. 
+> * Very little interest in maintaining documentation.
+> * It requires proper CI process.
+> * They are probably the least interesting areas to support - if I can't get someone to contribute code, I doubt I'm going to get someone to contribute any of these things.
+> * We don't have any technical writer resources.
+> * This is the hardest thing to organize as it lies outside the skillset of most software developers. It's like technical writing plus project management plus product management
+> * Are there any good automated documentation tools? I'm only aware of the older stuff from XML comments and options for static generated sites which don't work well for ASP.NET Core sites.
+> * I prefer to do this on my own, although localization would be great.
+> * Triaging issues isn't easy to delegate, you might have people speaking on your behalf that isn't in line with project ideas or agenda. 
+> * Feels very "unglamourous"; I don't really imagine there would be a lot of people interested in participating.
 
 Notable general feedback:
 
-> TODO
+> * Be useful to get a shared technical writer between projects paid for by a core community.
 
 The impact map draft:
 
