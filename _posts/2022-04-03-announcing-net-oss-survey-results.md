@@ -255,10 +255,10 @@ Notable challenges:
 > * Right now the capacity for reviewing pull requests is the bottleneck for us, so it we found several new contributors quickly, it would probably demotivate them as they would have to wait some time until someone looks at their PRs.
 > * Getting people to read and respect contribution guidelines
 > * Most contributors seem stretched for time, sometimes taking a week for each iteration of PR feedback.
-> * If the number of contributions grow, it'll also costs me and my project companion more time to review everything. 
+> * If the number of contributions grow, it'll also costs me and my project companion more time to review everything.
 > * Better roadmap
 > * They end up moving on or becoming less active so it is a constant struggle to keep a strong team.
-> * "maintenance mode" for stable/mature projects is not very exciting/enticing for attesting new core maintainers. 
+> * "maintenance mode" for stable/mature projects is not very exciting/enticing for attesting new core maintainers.
 > * We are very cautious on how and what changes should be made.
 > * We needed to reject most contributions because they broke specific use cases.
 > * It can take a very long time to shepherd a community contribution to the desired level of quality for the project
@@ -279,7 +279,6 @@ Notable general feedback:
 > * This kind of support is generally only valuable if the contributor is willing to stick at it for the long haul.
 > * Automation of work and defining processes only goes so far, and ultimately it's up to the humans who show up to help actually achieve things in OSS projects
 
-
 The impact map draft:
 
 <iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_code_contributions/index.html" width="100%" height="1000"></iframe>
@@ -297,7 +296,7 @@ The top welcomed types of support were:
 Notable challenges:
 
 > * Finding people you can trust
-> * The vast majority of issue reports are low-quality and low-effort (eg lacking details to reproduce the issue etc) despite a lot of effort going into creating issue templates. 
+> * The vast majority of issue reports are low-quality and low-effort (eg lacking details to reproduce the issue etc) despite a lot of effort going into creating issue templates.
 > * Very little interest in maintaining documentation.
 > * It requires proper CI process.
 > * They are probably the least interesting areas to support - if I can't get someone to contribute code, I doubt I'm going to get someone to contribute any of these things.
@@ -305,9 +304,9 @@ Notable challenges:
 > * This is the hardest thing to organize as it lies outside the skillset of most software developers. It's like technical writing plus project management plus product management
 > * Are there any good automated documentation tools? I'm only aware of the older stuff from XML comments and options for static generated sites which don't work well for ASP.NET Core sites.
 > * I prefer to do this on my own, although localization would be great.
-> * Triaging issues isn't easy to delegate, you might have people speaking on your behalf that isn't in line with project ideas or agenda. 
+> * Triaging issues isn't easy to delegate, you might have people speaking on your behalf that isn't in line with project ideas or agenda.
 > * Feels very "un-glamourous"; I don't really imagine there would be a lot of people interested in participating.
-> * We do receive high quality issue reports sometimes, but these are in the minority. 
+> * We do receive high quality issue reports sometimes, but these are in the minority.
 > * Good quality documentation contributions are very rare.
 
 Notable general feedback:
@@ -315,7 +314,7 @@ Notable general feedback:
 > * Be useful to get a shared technical writer between projects paid for by a core community.
 > * A lesson learned would be that users really value examples and I probably should have emphasized that more early-on.
 > * We have README guidance on how to contribute to docs, how to run them locally and automated process around that. That definitely helps.
-> * A few people have gone into documentation and fixed spelling or clarified a point on occasion. This is kind of them. 
+> * A few people have gone into documentation and fixed spelling or clarified a point on occasion. This is kind of them.
 > * We've hired several people as Developer Advocates. We pay these people to create some content - they organize regular meetups, write articles and record videos.
 > * Some of the newer projects are putting requirements on docs being created as part of feature completion but others have struggled
 
@@ -338,7 +337,7 @@ Notable challenges:
 > * It is highly specialized support and requires a lot of co-ordination with the maintainer for what is best-fit for the project
 > * CI CD is tough for a non expert.
 > * Finding the time to set it up.
-> * We would want to avoid the problems associated with accounts held by others that might be used for purposes we did not give permission for (see recent .NET Foundation incidents) 
+> * We would want to avoid the problems associated with accounts held by others that might be used for purposes we did not give permission for (see recent .NET Foundation incidents)
 
 Notable general feedback:
 
@@ -419,7 +418,7 @@ Notable challenges:
 > * with a large team, who gets the benefit of this support?
 > * the amount of funding available for something like a sabbatical is likely not even close to what an experienced developer would be making "normally."
 > * Not sure the amount of money I'd need to take time away from work could ever be something that someone is willing to donate/supply for my projects.
-> * The donations/sponsorship can't even compensate for one hour of my paid job. 
+> * The donations/sponsorship can't even compensate for one hour of my paid job.
 > * .NET community is typically not open for paying
 > * hard to start such process not having enough experience in monetization.
 > * Irregular injections of time/money aren't going to help long term.
