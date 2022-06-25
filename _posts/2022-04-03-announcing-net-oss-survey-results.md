@@ -307,10 +307,17 @@ Notable challenges:
 > * I prefer to do this on my own, although localization would be great.
 > * Triaging issues isn't easy to delegate, you might have people speaking on your behalf that isn't in line with project ideas or agenda. 
 > * Feels very "unglamourous"; I don't really imagine there would be a lot of people interested in participating.
+> * We do receive high quality issue reports sometimes, but these are in the minority. 
+> * Good quality documentation contributions are very rare.
 
 Notable general feedback:
 
 > * Be useful to get a shared technical writer between projects paid for by a core community.
+> * A lesson learned would be that users really value examples and I probably should have emphasized that more early-on.
+> * We have README guidance on how to contribute to docs, how to run them locally and automated process around that. That definitely helps.
+> * A few people have gone into documentation and fixed spelling or clarified a point on occasion. This is kind of them. 
+> * We've hired several people as Developer Advocates. We pay these people to create some content - they organize regular meetups, write articles and record videos.
+> * Some of the newer projects are putting requirements on docs being created as part of feature completion but others have struggled
 
 The impact map draft:
 
@@ -326,11 +333,18 @@ The top welcomed types of support were:
 
 Notable challenges:
 
-> * TODO
+> * Knowing about best-practices for DevOps and knowing who to ask these is a challenge
+> * For security reasons, this requires a higher level of trust
+> * It is highly specialized support and requires a lot of co-ordination with the maintainer for what is best-fit for the project
+> * CI CD is tough for a non expert.
+> * Finding the time to set it up.
+> * We would want to avoid the problems associated with accounts held by others that might be used for purposes we did not give permission for (see recent .NET Foundation incidents) 
 
 Notable general feedback:
 
-> TODO
+> * A lesson learned is how important this can be. A good CI/CD process saves hours of time that could be spent on issue support, feature building, etc. It's often overlooked by new maintainers and is easy to put on the back-burner without realizing what a benefit it is. This is probably one area where an external support structure could have a big impact.
+> * My project has relied on free cloud-hosted CI for years (Travis, Appveyor, Azure Pipelines). This has been an immensely positive change for OSS in the last decade.
+> * Help on tests stability or optimisation might be good. If we decide to build cloud solution around [Redacted] then devops help would be definitely helpful.
 
 The impact map draft:
 
