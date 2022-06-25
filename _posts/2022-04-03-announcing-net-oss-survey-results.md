@@ -49,7 +49,7 @@ I'll start with some general observations and numbers.
 Then, for each type of feedback I solicited, I'll try to cover:
 
 * The types of potential help that resonated with respondents
-* Qualitative feedback for that type of support -- quotes and my observations
+* Qualitative feedback for that type of support -- quotes (with minor readability adjustments) and my observations
 * An embedded [impact map](https://www.impactmapping.org/) for how we might want to improve this aspect for maintainers
 
 Along the way, I'll try to break down how I obtain numbers the first time I use them. If you've got questions, leave a comment and I'll clarify. And if an issue is uncovered with my methods, I'll be happy to update or add to the results to ensure they're as accurate as possible; I've never claimed to be a statistician.
@@ -138,7 +138,7 @@ Notable listed challenges:
 
 > * Getting incentives to the right people at companies where they could provide financing
 > * if project succeed then there is a high risk that MS will build its own tool like that
-> * There are no mature tools for getting monetisation from OSS
+> * There are no mature tools for getting monetization from OSS
 > * With a larger team, it becomes very difficult to distribute financial support fairly
 > * We give support for larger companies and the hardest part ia convincing them to purchase support license.
 > * corporate entities less likely to donate
@@ -155,7 +155,7 @@ Notable listed challenges:
 
 Notable general feedback:
 
-> * Support for promoting / monestising or coaching on how to monetise OSS
+> * Support for promoting / monetizing or coaching on how to monetize OSS
 > * Working on a GitHub sponsor accessible private nuget feed
 > * It would be great if the Foundation could provide the 506 non profit services as Open Collective does. Just that without (or a much smaller) fee
 > * There are over 50 million downloads of my libraries and I've made less than 2 months wages in nearly 2 years of offering support agreements.
