@@ -453,7 +453,7 @@ Whew, that was a heck of a journey. We:
 
 ## But What did it Cost?
 
-Given that Azure Functions gives us our first _million_ calls for free, and we're only storing a tiny text file, I think I'll be charged roughly *$.01* per month for this tech. I think I'm willing to shell out $.12/year for this. :smile:
+Given that Azure Functions gives us our first _million_ calls for free, and we're only storing a tiny text file, I think I'll be charged roughly _$.01_ per month for this tech. I think I'm willing to shell out $.12/year for this. :smile:
 
 ## See the full source project in action!
 

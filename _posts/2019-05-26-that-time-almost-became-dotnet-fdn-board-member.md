@@ -30,7 +30,7 @@ I can’t find the specific Twitter threads and conversations here, but I’m so
 
 I owe a ton of thanks to [Khalid Buhakmeh](https://twitter.com/buhakmeh) as well. While I’ll talk about him a little bit in the next section too, he offered fantastic feedback on my candidacy when I asked for it upon seeing his other contributions.
 
-I believe I could summarize it briefly as “every single candidate is *passionate*; tell me what you’re *going to do*.” It hit me like a ton of bricks. Of course! Show, don’t tell. Basic advice I’d given folks when serving as a writing tutor. I ended up rewriting my whole candidacy with a number of detailed proposals and approaches, which I think is what allowed me to come so close in the end.
+I believe I could summarize it briefly as "every single candidate is _passionate_; tell me what you’re _going to do_." It hit me like a ton of bricks. Of course! Show, don’t tell. Basic advice I’d given folks when serving as a writing tutor. I ended up rewriting my whole candidacy with a number of detailed proposals and approaches, which I think is what allowed me to come so close in the end.
 
 He provided a lot of great feedback to a number of folks out there, and we owe him a lot. That he took the time to provide it despite not being a candidate is a testament to his care for the entire community. Thanks Khalid!
 
