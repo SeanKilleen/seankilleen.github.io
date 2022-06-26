@@ -167,7 +167,7 @@ Notable general feedback:
 
 Based on this feedback, I've created [an initial impact map](https://atlas.mindmup.com/seankilleen/_net_oss_improved_funding_monetary_support/index.html) (reminder: I'd love your feedback in the comments on additional items we could add!).
 
-<iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_funding_monetary_support/index.html" width="100%" height="1000"></iframe>
+<iframe style="display:none;" frameborder="0" class="mindmup" src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_funding_monetary_support/index.html" width="100%" height="1000"></iframe>
 
 ### Publicity
 
@@ -205,7 +205,7 @@ Notable general feedback:
 
 The impact map draft ([full screen link](https://atlas.mindmup.com/seankilleen/_net_oss_improved_publicity/index.html)):
 
-<iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_publicity/index.html" width="100%" height="1000"></iframe>
+<iframe style="display:none;" frameborder="0" class="mindmup" src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_publicity/index.html" width="100%" height="1000"></iframe>
 
 ### Thanks
 
@@ -239,7 +239,7 @@ Notable general feedback:
 
 The impact map draft ([full screen link](https://atlas.mindmup.com/seankilleen/_net_oss_improved_thanks/index.html)):
 
-<iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_thanks/index.html" width="100%" height="1000"></iframe>
+<iframe style="display:none;" frameborder="0" class="mindmup" src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_thanks/index.html" width="100%" height="1000"></iframe>
 
 ### Code Contributions
 
@@ -283,7 +283,7 @@ Notable general feedback:
 
 The impact map draft ([full screen link](https://atlas.mindmup.com/seankilleen/_net_oss_improved_code_contributions/index.html)):
 
-<iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_code_contributions/index.html" width="100%" height="1000"></iframe>
+<iframe style="display:none;" frameborder="0" class="mindmup" src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_code_contributions/index.html" width="100%" height="1000"></iframe>
 
 ### Non-Code Contributions
 
@@ -322,7 +322,7 @@ Notable general feedback:
 
 The impact map draft ([full screen link](https://atlas.mindmup.com/seankilleen/_net_oss_improved_non_code_contribution/index.html)):
 
-<iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_non_code_contribution/index.html" width="100%" height="1000"></iframe>
+<iframe style="display:none;" frameborder="0" class="mindmup" src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_non_code_contribution/index.html" width="100%" height="1000"></iframe>
 
 ### Delivery Support
 
@@ -349,7 +349,7 @@ Notable general feedback:
 
 The impact map draft ([full screen link](https://atlas.mindmup.com/seankilleen/_net_oss_improved_delivery_support/index.html)):
 
-<iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_delivery_support/index.html" width="100%" height="1000"></iframe>
+<iframe style="display:none;" frameborder="0" class="mindmup" src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_delivery_support/index.html" width="100%" height="1000"></iframe>
 
 ### Community
 
@@ -376,7 +376,7 @@ Notable general feedback:
 
 The impact map draft ([full screen link](https://atlas.mindmup.com/seankilleen/_net_oss_improved_community/index.html)):
 
-<iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_community/index.html" width="100%" height="1000"></iframe>
+<iframe style="display:none;" frameborder="0" class="mindmup" src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_community/index.html" width="100%" height="1000"></iframe>
 
 ### Tooling
 
@@ -404,7 +404,7 @@ Notable general feedback:
 
 The impact map draft ([full screen link](https://atlas.mindmup.com/seankilleen/_net_oss_improved_tooling_support/index.html)):
 
-<iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_tooling_support/index.html" width="100%" height="1000"></iframe>
+<iframe style="display:none;" frameborder="0" class="mindmup" src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_tooling_support/index.html" width="100%" height="1000"></iframe>
 
 ### Time
 
@@ -435,7 +435,7 @@ Notable general feedback:
 
 The impact map draft ([full screen link](https://atlas.mindmup.com/seankilleen/_net_oss_improved_time_support/index.html)):
 
-<iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_time_support/index.html" width="100%" height="1000"></iframe>
+<iframe style="display:none;" frameborder="0" class="mindmup" src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_time_support/index.html" width="100%" height="1000"></iframe>
 
 ## So: Where Do We Go From Here?
 
@@ -547,6 +547,10 @@ const stagnationResultsChart = new Chart(ctxStagnationResults, {
 });</script>
 <script>
     const load = () => {
+        const elements = document.getElementsByClassName("mindmup");
+        elements.forEach(el=>{
+            el.style.display = "block";
+        });
         window.scrollTo(0,0);
     }
     window.onload = load;
