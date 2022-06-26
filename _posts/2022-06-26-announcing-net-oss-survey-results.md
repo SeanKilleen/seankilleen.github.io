@@ -165,7 +165,7 @@ Notable general feedback:
 > * Setup a 503.c3 if you can, there are online websites for setting it up.
 > * With money comes expectations and obligations, which might not drive maintainer motivation and happiness in the right direction.
 
-Based on this feedback, I've created an initial impact map (reminder: I'd love your feedback in the comments on additional items we could add!)
+Based on this feedback, I've created [an initial impact map](https://atlas.mindmup.com/seankilleen/_net_oss_improved_funding_monetary_support/index.html) (reminder: I'd love your feedback in the comments on additional items we could add!).
 
 <iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_funding_monetary_support/index.html" width="100%" height="1000"></iframe>
 
@@ -237,7 +237,7 @@ Notable general feedback:
 > * It needs to be in a public forum...so everyone should get credit.
 > * You're making me realize that I don't reach out with messages of support/thanks to the many, many OSS projects I use
 
-The impact map draft ([full screen link]()):
+The impact map draft ([full screen link](https://atlas.mindmup.com/seankilleen/_net_oss_improved_thanks/index.html)):
 
 <iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_thanks/index.html" width="100%" height="1000"></iframe>
 
@@ -281,7 +281,7 @@ Notable general feedback:
 > * This kind of support is generally only valuable if the contributor is willing to stick at it for the long haul.
 > * Automation of work and defining processes only goes so far, and ultimately it's up to the humans who show up to help actually achieve things in OSS projects
 
-The impact map draft ([full screen link]()):
+The impact map draft ([full screen link](https://atlas.mindmup.com/seankilleen/_net_oss_improved_code_contributions/index.html)):
 
 <iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_code_contributions/index.html" width="100%" height="1000"></iframe>
 
@@ -320,7 +320,7 @@ Notable general feedback:
 > * We've hired several people as Developer Advocates. We pay these people to create some content - they organize regular meetups, write articles and record videos.
 > * Some of the newer projects are putting requirements on docs being created as part of feature completion but others have struggled
 
-The impact map draft ([full screen link]()):
+The impact map draft ([full screen link](https://atlas.mindmup.com/seankilleen/_net_oss_improved_non_code_contribution/index.html)):
 
 <iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_non_code_contribution/index.html" width="100%" height="1000"></iframe>
 
@@ -347,7 +347,7 @@ Notable general feedback:
 > * My project has relied on free cloud-hosted CI for years (Travis, Appveyor, Azure Pipelines). This has been an immensely positive change for OSS in the last decade.
 > * Help on tests stability or optimization might be good. If we decide to build cloud solution around `Redacted` then devops help would be definitely helpful.
 
-The impact map draft ([full screen link]()):
+The impact map draft ([full screen link](https://atlas.mindmup.com/seankilleen/_net_oss_improved_delivery_support/index.html)):
 
 <iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_delivery_support/index.html" width="100%" height="1000"></iframe>
 
@@ -374,7 +374,7 @@ Notable general feedback:
 > * I would like to see more presentations / show and tell
 > * Most people don’t realize that just spreading the word has such a great potential.
 
-The impact map draft ([full screen link]()):
+The impact map draft ([full screen link](https://atlas.mindmup.com/seankilleen/_net_oss_improved_community/index.html)):
 
 <iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_community/index.html" width="100%" height="1000"></iframe>
 
@@ -402,7 +402,7 @@ Notable general feedback:
 > * It's not a big deal but covering the costs for running our website and build/test infrastructure  would help us - it's a few virtual machines and databases in Azure.
 > * Love TechSoup.org's HUGE support of the community!!!  
 
-The impact map draft ([full screen link]()):
+The impact map draft ([full screen link](https://atlas.mindmup.com/seankilleen/_net_oss_improved_tooling_support/index.html)):
 
 <iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_tooling_support/index.html" width="100%" height="1000"></iframe>
 
@@ -433,7 +433,7 @@ Notable general feedback:
 > * Would have been cool to have someone else responding to questions and fixing a few things so that people don't get the impression that the project is dying.
 > * Just not being constantly dragged into issues and pull requests would be nice. I'd like to get around to actually coding rather than managing.
 
-The impact map draft ([full screen link]()):
+The impact map draft ([full screen link](https://atlas.mindmup.com/seankilleen/_net_oss_improved_time_support/index.html)):
 
 <iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_time_support/index.html" width="100%" height="1000"></iframe>
 
