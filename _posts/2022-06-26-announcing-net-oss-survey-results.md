@@ -547,7 +547,7 @@ const stagnationResultsChart = new Chart(ctxStagnationResults, {
 });</script>
 <script>
     const load = () => {
-        document.getElementById("#page-title").focus();
+        document.getElementById("page-title").focus();
     }
     window.onload = load;
 </script>
