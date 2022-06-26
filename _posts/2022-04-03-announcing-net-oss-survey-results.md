@@ -40,7 +40,7 @@ I hoped this survey can drive a few different outcomes:
 
 * Surfacing quantitative and qualitative feedback on the .NET OSS Maintainer experience
 * Serving as feedback into an impact map of the type of impact we'd like to make for .NET OSS Maintainers
-* Serving as the starting point for a backlog of re-launching <https://awider.net>, a site I'd dreamed of starting long ago at .NET Fringe and have been meaning to get off the ground ever since.
+* Serving as the starting point for a backlog of re-launching <https://awider.net>, a site I'd dreamed of starting long ago at .NET Fringe (in...2017. Wow.) and have been meaning to get off the ground ever since.
 
 ## How These Results are Structured
 
@@ -159,7 +159,7 @@ Notable general feedback:
 > * Working on a GitHub sponsor accessible private nuget feed
 > * It would be great if the Foundation could provide the 506 non profit services as Open Collective does. Just that without (or a much smaller) fee
 > * There are over 50 million downloads of my libraries and I've made less than 2 months wages in nearly 2 years of offering support agreements.
-> * I provide [Redacted] under what's sometimes called an "open core" model where the basic framework is permissive but more features falls under licensing terms. In this case the terms include a non-commercial clause that requires payment when the software is used for commercial purposes. This has been quite successful and earned an order of magnitude more than donations do
+> * I provide `Redacted` under what's sometimes called an "open core" model where the basic framework is permissive but more features falls under licensing terms. In this case the terms include a non-commercial clause that requires payment when the software is used for commercial purposes. This has been quite successful and earned an order of magnitude more than donations do
 > * Setup a 503.c3 if you can, there are online websites for setting it up.
 > * with money comes expectations and obligations, which might not drive maintainer motivation and happiness in the right direction.
 
@@ -199,7 +199,7 @@ Notable general feedback:
 > * you basically have to hustle your projects in front of other devs. Whether that is tweeting about the project so often or nearly spamming it on Reddit.
 > * For sure if you want to make your project successful, then it's needed to invest in documentation, blog post, community around it.
 > * I've been building this since 2008 and probably should do more self promotion.
-> * Our project was mentioned on the [Redacted] blog which resulted in many new users
+> * Our project was mentioned on the `Redacted` blog which resulted in many new users
 
 The impact map draft:
 
@@ -227,7 +227,7 @@ Notable general feedback:
 > * I would not like to have issues on GitHub telling me only that it's a good product, I have work to close it again.
 > * There's not a good way (other than starring the project?) to communicate this (say) on GitHub without creating an issue/discussion that's just "clutter".
 > * Ironically, I see the most public expressions of praise for my library on the bug tracker for a _competing_ library where users write "I switched to [my library] and it fixed this bug!"
-> * Community around [Redacted] or my samples is also one of the things that makes me keep doing it.
+> * Community around `Redacted` or my samples is also one of the things that makes me keep doing it.
 > * It hardly ever happens (like maybe 50 times in almost 18 years of running the project).
 > * Feels good every time.
 > * Personally, this is a huge motivator for me. A single "this project is great, thanks" response is enough to power me though a tough feature, etc.
@@ -343,7 +343,7 @@ Notable general feedback:
 
 > * A lesson learned is how important this can be. A good CI/CD process saves hours of time that could be spent on issue support, feature building, etc. It's often overlooked by new maintainers and is easy to put on the back-burner without realizing what a benefit it is. This is probably one area where an external support structure could have a big impact.
 > * My project has relied on free cloud-hosted CI for years (Travis, Appveyor, Azure Pipelines). This has been an immensely positive change for OSS in the last decade.
-> * Help on tests stability or optimization might be good. If we decide to build cloud solution around [Redacted] then devops help would be definitely helpful.
+> * Help on tests stability or optimization might be good. If we decide to build cloud solution around `Redacted` then devops help would be definitely helpful.
 
 The impact map draft:
 
@@ -363,12 +363,12 @@ Notable challenges:
 > * The effort required to moderate and answer support/discussions is huge. I don’t have the time for it so I no longer allow support/discussions on our issue tracker and limit it to bug reports only.  
 > * It may require more management to make sure that non-core team contribution are not making more noise than help it brings.
 > * Hardly enough time for my own projects so I can't expect others to have time to contribute in this to mine.
-> * It takes a lot of commitment to be actively involved in a project like [Redacted]. And if you can find somebody like that, you also need to ensure that person has the same mindset about code quality, TDD, etc
+> * It takes a lot of commitment to be actively involved in a project like `Redacted`. And if you can find somebody like that, you also need to ensure that person has the same mindset about code quality, TDD, etc
 > * Who would actually want to help with recruiting for random projects? With so many projects from random little things to more established side hustles, actually getting help recruiting people seems like a crazily difficult job.
 
 Notable general feedback:
 
-> * For sure, getting right community, with people feeling invited to discuss, contribute is really helpful. We have some people on our channels that are helping others. I started my journey with [Redacted] by answering questions, helping others before I joined the core team.
+> * For sure, getting right community, with people feeling invited to discuss, contribute is really helpful. We have some people on our channels that are helping others. I started my journey with `Redacted` by answering questions, helping others before I joined the core team.
 > * I would like to see more presentations / show and tell
 > * Most people don’t realize that just spreading the word has such a great potential.
 
