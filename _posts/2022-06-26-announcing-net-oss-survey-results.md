@@ -6,7 +6,7 @@ tags:
   - oss
   - community
   - survey
-date: 2022-04-03 16:00 -0500
+date: 2022-06-26 16:00 -0500
 excerpt: "The results are in. Where do we go from here?"
 header:
  overlay_image: /images/overlays/unsplash/isaac-smith-AT77Q0Njnt0-unsplash.jpg
