@@ -545,19 +545,5 @@ const stagnationResultsChart = new Chart(ctxStagnationResults, {
         }
     }
 });</script>
-<script>
-    const load = () => {
-        const elements = document.getElementsByClassName("mindmup");
-        for (let i = 0; i < elements.length; i++) {
-            elements[i].style.display = "block";
-        }
-        window.scrollTo(0,0);
-    }
-    const loadWithTimeout = () => {
-        setTimeout(load, 20000);
-    }
-
-    window.onload = loadWithTimeout;
-</script>
 
 [^1]: Methodology -- I arrived at these numbers by: taking the 7-point likert scales for how much a given type of support mattered and how much a the respondent felt supported. I converted those numbers to a `-3` through `3` scale to help visualize them. I showed those amounts, and the gap between them. Showed the results in order of smallest support gap to largest support gap.
