@@ -72,8 +72,8 @@ When asking respondents how burned out they felt about their project and OSS in 
 Observations:
 
 * This cohort indicated less burnout than neutral on average
-* On average the difference between burnout on a given project and burnout toward OSS in general was .73, or less than one number difference. This suggests that authors might link their view toward OSS in general with work on their projects.
-* One Third of respondents rated their burnout levels as higher than neutral. In my own personal experience, people tend to underestimate said burnout, which does give me some concern about the state of things overall, given that I'm also concerned that more burned out folks wouldn't have responded at all.
+* On average the difference between burnout on a given project and burnout toward OSS in general was .73, or less than one number difference. This suggests to me that authors might link their view toward OSS in general with work on their projects.
+* One third of respondents rated their burnout levels as higher than neutral. In my own personal experience, people tend to underestimate said burnout, which does give me some concern about the state of things overall, given that I'm also concerned that more burned out folks wouldn't have responded at all.
 
 ## Stagnation
 
@@ -137,20 +137,20 @@ The top 5 welcomed types of support were (perhaps unsurprisingly):
 Notable listed challenges:
 
 > * Getting incentives to the right people at companies where they could provide financing
-> * if project succeed then there is a high risk that MS will build its own tool like that
+> * If project succeeds then there is a high risk that MS will build its own tool like that
 > * There are no mature tools for getting monetization from OSS
 > * With a larger team, it becomes very difficult to distribute financial support fairly
 > * We give support for larger companies and the hardest part ia convincing them to purchase support license.
-> * corporate entities less likely to donate
+> * Corporate entities less likely to donate
 > * I'm not sure any realistic donation amount would be able to free hours up from my day job.
 > * I often muse if things would be different if Microsoft (maybe via the .NET Foundation) promoted companies supporting OSS projects in their ecosystem (like all the projects in the .NET Foundation).
-> * if you're really good at running your projects then you're rewarded not with more contributions, but higher expectations.
-> * the challenge/obstacle is explaining to consumers the value in providing these contributions
+> * If you're really good at running your projects then you're rewarded not with more contributions, but higher expectations.
+> * The challenge/obstacle is explaining to consumers the value in providing these contributions
 > * Corporations do not have processes for "donating", they have process for buying stuff.
 > * To generate any measurable income, a forcing function like license terms needs to be involved
 > * .NET has traditionally been "Enterprise" oriented which attracts a different sort of user base
 > * My resistance to treating them as anything other than hobbies, written by myself, for myself.
-> * [Risk of] non-paying users into paying sponsors, some which then feel entitled to be treated as customers
+> * (Risk of) non-paying users into paying sponsors, some which then feel entitled to be treated as customers
 > * To be able to constantly provide updates in a sustainable way, you have to be paid for that and focus on that.
 
 Notable general feedback:
@@ -161,7 +161,7 @@ Notable general feedback:
 > * There are over 50 million downloads of my libraries and I've made less than 2 months wages in nearly 2 years of offering support agreements.
 > * I provide `Redacted` under what's sometimes called an "open core" model where the basic framework is permissive but more features falls under licensing terms. In this case the terms include a non-commercial clause that requires payment when the software is used for commercial purposes. This has been quite successful and earned an order of magnitude more than donations do
 > * Setup a 503.c3 if you can, there are online websites for setting it up.
-> * with money comes expectations and obligations, which might not drive maintainer motivation and happiness in the right direction.
+> * With money comes expectations and obligations, which might not drive maintainer motivation and happiness in the right direction.
 
 Based on this feedback, I've created an initial impact map (reminder: I'd love your feedback in the comments on additional items we could add!)
 
@@ -179,12 +179,12 @@ The top 5 welcomed types of support were:
 
 Notable challenges:
 
-> * if it's allowed, a developer group may be able to use it, but not be in the position to publicize that usage and the benefits it provided
+> * If it's allowed, a developer group may be able to use it, but not be in the position to publicize that usage and the benefits it provided
 > * More corporate awareness and leadership level individuals need to be looped in
 > * There are not many official .NET or Microsoft channels which can promote OSS projects
 > * I'm not intrinsically motivated to promote projects, and I don't have experience building a community.
 > * I think it's mostly a discoverability issue at this point
-> * needing to split time between developing and "marketing" means not a lot of sharing / content creation.
+> * Needing to split time between developing and "marketing" means not a lot of sharing / content creation.
 > * We're a vital but not very sexy project. That means we don't get talked about a lot (unless people complain)
 > * How do you get your project in front of people if you don't have a following already?
 > * Don't know how to ask for it
@@ -192,11 +192,11 @@ Notable challenges:
 Notable general feedback:
 
 > * Chatter is ... often negative
-> * would really help if Microsoft or the .NET Foundation has someone who would proactively help the projects with marketing
+> * Would really help if Microsoft or the .NET Foundation has someone who would proactively help the projects with marketing
 > * Any further publicity is likely to increase the maintenance burden rather than necessarily be a help
-> * most interactions with non-contributors are bug reports or help requests.
-> * this is something one should also promote from the side.
-> * you basically have to hustle your projects in front of other devs. Whether that is tweeting about the project so often or nearly spamming it on Reddit.
+> * Most interactions with non-contributors are bug reports or help requests.
+> * This is something one should also promote from the side.
+> * You basically have to hustle your projects in front of other devs. Whether that is tweeting about the project so often or nearly spamming it on Reddit.
 > * For sure if you want to make your project successful, then it's needed to invest in documentation, blog post, community around it.
 > * I've been building this since 2008 and probably should do more self promotion.
 > * Our project was mentioned on the `Redacted` blog which resulted in many new users
@@ -216,7 +216,7 @@ The top welcomed types of support were:
 Notable challenges:
 
 > * I suspect very few people actually take the time or energy to reach out in this manner.
-> * it's about the only support I get right now
+> * It's about the only support I get right now
 > * Needs to be raised and brought into the corporate open source culture.
 > * I appreciate a lot of things but even I don't personally thank every project that I use.
 > * An honest thank you is worth more than a couple of $$$
@@ -415,12 +415,12 @@ Notable challenges:
 
 > * Finding people willing to pay
 > * It would be expensive
-> * with a large team, who gets the benefit of this support?
-> * the amount of funding available for something like a sabbatical is likely not even close to what an experienced developer would be making "normally."
+> * With a large team, who gets the benefit of this support?
+> * The amount of funding available for something like a sabbatical is likely not even close to what an experienced developer would be making "normally."
 > * Not sure the amount of money I'd need to take time away from work could ever be something that someone is willing to donate/supply for my projects.
 > * The donations/sponsorship can't even compensate for one hour of my paid job.
 > * .NET community is typically not open for paying
-> * hard to start such process not having enough experience in monetization.
+> * Hard to start such process not having enough experience in monetization.
 > * Irregular injections of time/money aren't going to help long term.
 
 Notable general feedback:
