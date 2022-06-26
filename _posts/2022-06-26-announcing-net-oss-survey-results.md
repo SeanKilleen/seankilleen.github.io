@@ -546,10 +546,9 @@ const stagnationResultsChart = new Chart(ctxStagnationResults, {
     }
 });</script>
 <script>
-    const load = () => {
-        document.getElementById("page-title").focus();
-    }
-    window.onload = load;
+$(window).load(function() {
+    window.scrollTo(0,0);
+  });
 </script>
 
 [^1]: Methodology -- I arrived at these numbers by: taking the 7-point likert scales for how much a given type of support mattered and how much a the respondent felt supported. I converted those numbers to a `-3` through `3` scale to help visualize them. I showed those amounts, and the gap between them. Showed the results in order of smallest support gap to largest support gap.
