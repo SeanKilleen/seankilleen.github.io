@@ -1,5 +1,5 @@
 ---
-title: "OSS Maintainer Support Survey Results!"
+title: "OSS Maintainer Support Survey -- The Results!"
 comments: true
 tags:
   - dotnet
@@ -14,11 +14,13 @@ header:
  caption: "Photo credit: [**Isaac Smith @ Unsplash**](https://unsplash.com/@isaacmsmith?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 ---
 
+This is a follow-up to [late January's OSS Maintainer Support Survey](https://seankilleen.com/2022/01/announcing-the-net-oss-maintainer-support-survey/).
+
 I extended the survey response until the end of March because there were some kind folks who wanted to promote it further. But since then I've been thinking about the best way to interpret and showcase the results. I'm just one person with limited resources, but I'm open to suggestions if you'd like to use the edit or issues link at the top of this post.
 
 ## Ooof...turns out there's a lot to this. :sweat_smile:
 
-I initially planned to have this post done by March. A new job, life, and the sheer amount of things I wanted to do with it got in the way. Note to self: next time, smaller pieces and faster. A lesson I think I should have learned by now.
+I initially planned to have this post done by March. A new job, life, and the sheer amount of things I wanted to do with it got in the way. Note to self: next time, smaller pieces and faster. A lesson I think I should have learned by now. But I'm choosing this to publish this in a less-refined fashion so that I can iterate on it in public (again, learning to take my own advice.)
 
 ## About These Results
 
@@ -30,7 +32,7 @@ I encourage you to respond with ways I might be able to better visualize or inte
 
 Additionally, part of this post is to offer up impact maps that include actions we could possibly take as a community to improve these goals. I'd _really_ love your help there, as impact maps are best when they're a brainstorming. Drop any additional suggestions for an impact map in the comments, or feel free to drop it in a message to me on any social channel.
 
-### Where's the data?
+### Where's the Data?
 
 You can see the raw, anonymized data [in this Google Sheet](https://docs.google.com/spreadsheets/d/1zIVaW2j_9RZB_PxPVMTO2yC4kpA4zO2jrEiAe80ra-c/edit?usp=sharing).
 
@@ -201,7 +203,7 @@ Notable general feedback:
 > * I've been building this since 2008 and probably should do more self promotion.
 > * Our project was mentioned on the `Redacted` blog which resulted in many new users
 
-The impact map draft:
+The impact map draft ([full screen link](https://atlas.mindmup.com/seankilleen/_net_oss_improved_publicity/index.html)):
 
 <iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_publicity/index.html" width="100%" height="1000"></iframe>
 
@@ -235,7 +237,7 @@ Notable general feedback:
 > * It needs to be in a public forum...so everyone should get credit.
 > * You're making me realize that I don't reach out with messages of support/thanks to the many, many OSS projects I use
 
-The impact map draft:
+The impact map draft ([full screen link]()):
 
 <iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_thanks/index.html" width="100%" height="1000"></iframe>
 
@@ -279,7 +281,7 @@ Notable general feedback:
 > * This kind of support is generally only valuable if the contributor is willing to stick at it for the long haul.
 > * Automation of work and defining processes only goes so far, and ultimately it's up to the humans who show up to help actually achieve things in OSS projects
 
-The impact map draft:
+The impact map draft ([full screen link]()):
 
 <iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_code_contributions/index.html" width="100%" height="1000"></iframe>
 
@@ -318,7 +320,7 @@ Notable general feedback:
 > * We've hired several people as Developer Advocates. We pay these people to create some content - they organize regular meetups, write articles and record videos.
 > * Some of the newer projects are putting requirements on docs being created as part of feature completion but others have struggled
 
-The impact map draft:
+The impact map draft ([full screen link]()):
 
 <iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_non_code_contribution/index.html" width="100%" height="1000"></iframe>
 
@@ -345,7 +347,7 @@ Notable general feedback:
 > * My project has relied on free cloud-hosted CI for years (Travis, Appveyor, Azure Pipelines). This has been an immensely positive change for OSS in the last decade.
 > * Help on tests stability or optimization might be good. If we decide to build cloud solution around `Redacted` then devops help would be definitely helpful.
 
-The impact map draft:
+The impact map draft ([full screen link]()):
 
 <iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_delivery_support/index.html" width="100%" height="1000"></iframe>
 
@@ -372,7 +374,7 @@ Notable general feedback:
 > * I would like to see more presentations / show and tell
 > * Most people don’t realize that just spreading the word has such a great potential.
 
-The impact map draft:
+The impact map draft ([full screen link]()):
 
 <iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_community/index.html" width="100%" height="1000"></iframe>
 
@@ -400,7 +402,7 @@ Notable general feedback:
 > * It's not a big deal but covering the costs for running our website and build/test infrastructure  would help us - it's a few virtual machines and databases in Azure.
 > * Love TechSoup.org's HUGE support of the community!!!  
 
-The impact map draft:
+The impact map draft ([full screen link]()):
 
 <iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_tooling_support/index.html" width="100%" height="1000"></iframe>
 
@@ -431,9 +433,17 @@ Notable general feedback:
 > * Would have been cool to have someone else responding to questions and fixing a few things so that people don't get the impression that the project is dying.
 > * Just not being constantly dragged into issues and pull requests would be nice. I'd like to get around to actually coding rather than managing.
 
-The impact map draft:
+The impact map draft ([full screen link]()):
 
 <iframe src="https://atlas.mindmup.com/seankilleen/_net_oss_improved_time_support/index.html" width="100%" height="1000"></iframe>
+
+## So: Where Do We Go From Here?
+
+One of the reasons I wanted to focus on impact mapping is because this problem is a complex one, meaning there are likely many paths to improving things and no one silver bullet. I see this as a crowd-sourced call to action. These action items and approaches don't have to be owned by me or anyone person or group. But my hope is that the results will inspire collaboration on the impacts we can make to help the community.
+
+And with this in place, I'll be much more prepared to tackle the next round of surveys for improved results time.
+
+But with that said -- let's get to work.
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
 
