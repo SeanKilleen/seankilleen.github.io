@@ -548,9 +548,9 @@ const stagnationResultsChart = new Chart(ctxStagnationResults, {
 <script>
     const load = () => {
         const elements = document.getElementsByClassName("mindmup");
-        elements.forEach(el=>{
-            el.style.display = "block";
-        });
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].style.display = "block";
+        }
         window.scrollTo(0,0);
     }
     window.onload = load;
