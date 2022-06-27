@@ -427,6 +427,16 @@ And with this in place, I'll be much more prepared to tackle the next round of s
 
 But with that said -- let's get to work.
 
+## Going to leave an impact map suggestion in the comments?
+
+I suggest something along the following format (though I'm happy to translate any suggestions onto the impact map):
+
+```text
+* (Role) can help/hinder
+    * By (doing a thing)
+        * And we can influence that by (suggested influence)
+```
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
 
 <script>
