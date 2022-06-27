@@ -14,7 +14,7 @@ header:
  caption: "Photo credit: [**Isaac Smith @ Unsplash**](https://unsplash.com/@isaacmsmith?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 ---
 
-This is a follow-up to [late January's OSS Maintainer Support Survey](https://seankilleen.com/2022/01/announcing-the-net-oss-maintainer-support-survey/).
+This is a follow-up to [late January's .NET OSS Maintainer Support Survey](https://seankilleen.com/2022/01/announcing-the-net-oss-maintainer-support-survey/).
 
 I extended the survey response until the end of March because there were some kind folks who wanted to promote it further. But since then I've been thinking about the best way to interpret and showcase the results. I'm just one person with limited resources, but I'm open to suggestions if you'd like to use the edit or issues link at the top of this post.
 
