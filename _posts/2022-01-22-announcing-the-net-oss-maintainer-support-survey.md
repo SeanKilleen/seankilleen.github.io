@@ -14,7 +14,6 @@ header:
  caption: "Photo credit: [**Isaac Smith @ Unsplash**](https://unsplash.com/@isaacmsmith?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 ---
 **Update**: [The results are now available!](https://seankilleen.com/2022/01/announcing-the-net-oss-maintainer-support-survey/) <https://seankilleen.com/2022/01/announcing-the-net-oss-maintainer-support-survey/>
-
 _____
 
 **Summary:** Are you a maintainer of, or large contributor to, an OSS project in .NET? Please [take the survey about how we in the community can better support you.](https://docs.google.com/forms/d/e/1FAIpQLSdMvnARfsQ6vgrgaRK-fzR80zXDKfAL2eJUhA_aD7EFjAX8ew/viewform?usp=sf_link) (it's also at the bottom of this article.)
