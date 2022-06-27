@@ -58,7 +58,7 @@ I see this as a renewed first step toward ecosystem-wide improvements that I hop
 * Forward this to your favorite maintainer. **Do not spam or mass message projects**, but reach out to individuals. Let them know that you'd like their thoughts because it will hopefully be used to help them. Try to see if they've acknowledged or tweeted about it first so that you aren't the 100th person to tell them.
 * Share this through your social media channels in the hopes that it reaches a wider audience.
 
-___
+---
 
 Thanks for considering! Your voice is welcome in the comments.
 
