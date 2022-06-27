@@ -20,7 +20,7 @@ I extended the survey response until the end of March because there were some ki
 
 ## Ooof...turns out there's a lot to this. :sweat_smile:
 
-I initially planned to have this post done by March. A new job, life, and the sheer amount of things I wanted to do with it got in the way. Note to self: next time, smaller pieces and faster. A lesson I think I should have learned by now. But I'm choosing this to publish this in a less-refined fashion so that I can iterate on it in public (again, learning to take my own advice.)
+I initially planned to have this post done by March. A new job, life while raising a toddler, and the sheer amount of things I wanted to do with it got in the way. Note to self: next time, smaller pieces and faster. A lesson I think I should have learned by now. But I'm choosing this to publish this in a less-refined fashion so that I can iterate on it in public (again, learning to take my own advice.)
 
 As a result, I'm forcing myself to publish this with the impact maps incomplete. Some have a lot of detail, some...not so much. I encourage your participation in the comments and be sure to check back as I complete these, which I will surely do more quickly now that I've forced myself to publish.
 
