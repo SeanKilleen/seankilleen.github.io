@@ -13,6 +13,10 @@ header:
  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
  caption: "Photo credit: [**Isaac Smith @ Unsplash**](https://unsplash.com/@isaacmsmith?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 ---
+**Update**: [The results are now available!](https://seankilleen.com/2022/01/announcing-the-net-oss-maintainer-support-survey/) <https://seankilleen.com/2022/01/announcing-the-net-oss-maintainer-support-survey/>
+
+---
+
 **Summary:** Are you a maintainer of, or large contributor to, an OSS project in .NET? Please [take the survey about how we in the community can better support you.](https://docs.google.com/forms/d/e/1FAIpQLSdMvnARfsQ6vgrgaRK-fzR80zXDKfAL2eJUhA_aD7EFjAX8ew/viewform?usp=sf_link) (it's also at the bottom of this article.)
 
 I've long been passionate about supporting open source software in the .NET community -- and supporting those who give us their time, effort, and expertise to make it happen.
@@ -54,7 +58,7 @@ I see this as a renewed first step toward ecosystem-wide improvements that I hop
 * Forward this to your favorite maintainer. **Do not spam or mass message projects**, but reach out to individuals. Let them know that you'd like their thoughts because it will hopefully be used to help them. Try to see if they've acknowledged or tweeted about it first so that you aren't the 100th person to tell them.
 * Share this through your social media channels in the hopes that it reaches a wider audience.
 
-___
+---
 
 Thanks for considering! Your voice is welcome in the comments.
 
