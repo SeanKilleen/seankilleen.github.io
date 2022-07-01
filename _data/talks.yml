@@ -6,7 +6,8 @@ talksList:
     sessionLink: http://www.meetup.com/BaltoMSDN/events/223763140/
     eventLink: http://www.meetup.com/BaltoMSDN
     location: Baltimore, MD
-    slidesLink: https://github.com/SeanKilleen/Presentations/tree/master/2015-07-29_AkkaIntro_BaltoMSDN
+    slidesLink: https://akkaintro.seankilleen.com
+    codeLink: https://github.com/SeanKilleen/Presentation_AkkaIntro/tree/main/code
   - title: "TeamCity, OctopusDeploy, and Azure: So Happy Together"
     date: 2016-02-16
     group: DevOps DC Meetup
@@ -22,6 +23,8 @@ talksList:
     sessionLink: http://www.meetup.com/CapArea-Net/events/231217207/
     eventLink: http://www.meetup.com/CapArea-Net
     location: Vienna, VA
+    slidesLink: https://akkaintro.seankilleen.com
+    codeLink: https://github.com/SeanKilleen/Presentation_AkkaIntro/tree/main/code
   - title: "Attack-a the Akka!"
     date: 2016-06-05
     group: Tech Talk DC
@@ -29,6 +32,8 @@ talksList:
     sessionLink: http://www.meetup.com/TechTalkDC/events/231392513/
     eventLink: http://www.meetup.com/TechTalkDC
     location: Arlington, VA
+    slidesLink: https://akkaintro.seankilleen.com
+    codeLink: https://github.com/SeanKilleen/Presentation_AkkaIntro/tree/main/code
   - title: "Attack-a the Akka!"
     date: 2017-03-29
     group: Microsoft Maniacs
@@ -36,7 +41,8 @@ talksList:
     sessionLink: https://www.meetup.com/Microsoft-Maniacs/events/237553578
     eventLink: https://www.meetup.com/Microsoft-Maniacs
     location: Sterling, VA
-    slidesLink: https://seankilleen.com/Presentations/2017-03_AkkaIntro/presentation
+    slidesLink: https://akkaintro.seankilleen.com
+    codeLink: https://github.com/SeanKilleen/Presentation_AkkaIntro/tree/main/code
   - title: "Intro to OSS"
     date: 2017-04-04
     group: OSS Dev Conf 2017
@@ -88,7 +94,8 @@ talksList:
     sessionLink: https://www.meetup.com/CMAP-Online/events/247545849/
     description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
     location: Columbia, MD
-    slidesLink: https://seankilleen.com/Presentations/2018-03_AkkaIntro/presentation
+    slidesLink: https://akkaintro.seankilleen.com
+    codeLink: https://github.com/SeanKilleen/Presentation_AkkaIntro/tree/main/code
   - title: "TeamCity, OctopusDeploy, and Azure: So Happy Together"
     date: 2018-03-20
     group: .NET DC User Group
@@ -111,7 +118,8 @@ talksList:
     eventLink: https://xluh.co/akka2018
     description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
     location: Online
-    slidesLink: https://seankilleen.com/Presentations/2018-04_AkkaIntro/presentation
+    slidesLink: https://akkaintro.seankilleen.com
+    codeLink: https://github.com/SeanKilleen/Presentation_AkkaIntro/tree/main/code
   - title: How I Learned to Stop Worrying and Love Feedback Loops
     date: 2018-04-21
     group: OSS Dev Conf
@@ -124,8 +132,8 @@ talksList:
     group: Code on the Beach
     description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
     location: Atlantic Beach, FL
-    slidesLink: https://seankilleen.com/Presentations/2018-08_AkkaIntro/presentation
-    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/2018-08_AkkaIntro
+    slidesLink: https://akkaintro.seankilleen.com
+    codeLink: https://github.com/SeanKilleen/Presentation_AkkaIntro/tree/main/code
     videoLink: https://www.youtube.com/watch?v=4Afz-cdL7HU
   - title: "(Fr)agile: How Agile Falls Apart, and What You Can Do to Hold It All Together"
     date: 2018-10-02
@@ -139,8 +147,8 @@ talksList:
     group: NYC .NET
     sessionLink: https://www.meetup.com/NYC-NET-Developers/events/257961950
     eventLink: https://www.meetup.com/NYC-NET-Developers
-    slidesLink: https://seankilleen.com/Presentations/2019-03_AkkaIntro/presentation/#/
-    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code
+    slidesLink: https://akkaintro.seankilleen.com
+    codeLink: https://github.com/SeanKilleen/Presentation_AkkaIntro/tree/main/code
     description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
     location: New York, NY
   - title: An Introduction to the Actor Model and Akka.NET
@@ -150,8 +158,8 @@ talksList:
     sessionLink: http://phillydotnet.org/2019-1-sessions.html#sz-session-84229
     description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
     location: Philadelphia, PA
-    slidesLink: https://seankilleen.com/Presentations/2019-04_AkkaIntro/presentation/#/
-    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code
+    slidesLink: https://akkaintro.seankilleen.com
+    codeLink: https://github.com/SeanKilleen/Presentation_AkkaIntro/tree/main/code
   - title: "Serverless is more: An Introduction to Azure Functions"
     date: 2019-04-13
     group: Philly.NET CodeCamp
@@ -206,8 +214,8 @@ talksList:
     group: The SwiftKick Show
     eventLink: https://www.youtube.com/swiftkick
     videoLink: https://www.youtube.com/watch?v=Qa5TU_16GzE
-    slidesLink: https://seankilleen.com/Presentations/AkkaIntro/presentation
-    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code
+    slidesLink: https://akkaintro.seankilleen.com
+    codeLink: https://github.com/SeanKilleen/Presentation_AkkaIntro/tree/main/code
     description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
     location: Live Video Broadcast
   - title: "Full-Day Workshop: Modernizing to .NET Core"
@@ -233,6 +241,8 @@ talksList:
     sessionLink: https://techbash.com/2019-schedule
     description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
     location: Poconos, PA
+    slidesLink: https://akkaintro.seankilleen.com
+    codeLink: https://github.com/SeanKilleen/Presentation_AkkaIntro/tree/main/code
   - title: "(ICP-TST/ATA) Certified Agile Testing Training"
     date: 2019-12-09
     group: Excella Training
@@ -254,8 +264,8 @@ talksList:
     sessionLink: https://www.meetup.com/TRINUG/events/273872535
     description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
     location: Online
-    slidesLink: https://seankilleen.com/Presentations/AkkaIntro/presentation
-    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code
+    slidesLink: https://akkaintro.seankilleen.com
+    codeLink: https://github.com/SeanKilleen/Presentation_AkkaIntro/tree/main/code
   - title: "The Joy of Functional Testing with SpecFlow"
     date: 2021-03-09
     group: Hampton Roads .NET User Group (HRNUG)
@@ -291,8 +301,8 @@ talksList:
     eventLink: https://www.meetup.com/Roanoke-Valley-NET-User-Group/
     description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
     sessionLink: https://www.meetup.com/Roanoke-Valley-NET-User-Group/events/fbbrnrycchbjb/
-    slidesLink: https://seankilleen.com/Presentations/AkkaIntro/presentation
-    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code
+    slidesLink: https://akkaintro.seankilleen.com
+    codeLink: https://github.com/SeanKilleen/Presentation_AkkaIntro/tree/main/code
     location: Online
   - title: "An Introduction to the Actor Model with Akka.NET"
     date: 2021-05-18
@@ -300,8 +310,8 @@ talksList:
     eventLink: https://www.meetup.com/dotnetdc/
     description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
     sessionLink: https://www.meetup.com/dotnetdc/events/278129709/
-    slidesLink: https://seankilleen.com/Presentations/AkkaIntro/presentation
-    codeLink: https://github.com/SeanKilleen/Presentations/tree/master/AkkaIntro/code
+    slidesLink: https://akkaintro.seankilleen.com
+    codeLink: https://github.com/SeanKilleen/Presentation_AkkaIntro/tree/main/code
     location: Online
   - title: "Learning Docker for Smaller Feedback Loops"
     date: 2021-05-27
@@ -317,6 +327,8 @@ talksList:
     sessionLink: https://meetu.ps/e/K76s9/1Zghg/d
     description: Akka.NET is an Actor Model Framework that helps .Net developers create powerful concurrent & distributed applications more easily. The Actor Model is a well-established paradigm for building fault-tolerant and scalable applications that has recently seen a resurgence as distributed and asynchronous systems gain popularity. In this introductory talk, Sean will walk you through the concepts of the actor model, its benefits over traditional approaches, and the basics of how to use Akka.NET to achieve these advantages in your .NET applications.
     location: Online
+    slidesLink: https://akkaintro.seankilleen.com
+    codeLink: https://github.com/SeanKilleen/Presentation_AkkaIntro/tree/main/code
   - title: "TDD Your Own Adventure!"
     date: 2022-03-22
     group: "CapArea .NET Uer Group"
