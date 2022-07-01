@@ -48,7 +48,7 @@ talksList:
     group: OSS Dev Conf 2017
     description: A presentation on the "why" of OSS software with an introduction on how to contribute.
     location: Blacksburg, VA
-    slidesLink: http://seankilleen.com/Presentations/2017-03_IntroToOSS
+    slidesLink: https://ossintro.seankilleen.com
   - title: "Casting a Wider .NET: Working Toward More OSS Maturity in the .NET Community"
     date: 2017-06-05
     group: .NET Fringe Conference
