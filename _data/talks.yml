@@ -165,7 +165,7 @@ talksList:
     group: Philly.NET CodeCamp
     eventLink: http://phillydotnet.org/2019-1.html
     sessionLink: http://phillydotnet.org/2019-1-sessions.html#sz-session-84230
-    slidesLink: https://seankilleen.com/Presentations/2019-04_ServerlessIsMore/
+    slidesLink: https://serverlessismore.seankilleen.com
     description: In this session, Sean will walk through how to use Azure Functions and Azure Key Vault to create a system to continually share his RSS subscriptions with the world. Follow along as we discuss concepts of serverless computing, build a functional application, an marvel at all the things we didn’t have to do.
     location: Philadelphia, PA
   - title: "Serverless is more: An Introduction to Azure Functions"
@@ -175,6 +175,7 @@ talksList:
     location: Columbia, MD
     eventLink: https://www.meetup.com/CMAP-Online
     sessionLink: https://www.meetup.com/CMAP-Online/events/260651634
+    slidesLink: https://serverlessismore.seankilleen.com
   - title: "Serverless is more: An Introduction to Azure Functions"
     date: 2019-06-19
     group: Microsoft Maniacs
@@ -182,7 +183,7 @@ talksList:
     sessionLink: https://www.meetup.com/Microsoft-Maniacs/events/260895955/
     description: In this session, Sean will walk through how to use Azure Functions and Azure Key Vault to create a system to continually share his RSS subscriptions with the world. Follow along as we discuss concepts of serverless computing, build a functional application, an marvel at all the things we didn’t have to do.
     location: Sterling, VA
-    slidesLink: https://seankilleen.com/Presentations/ServerlessIsMore/
+    slidesLink: https://serverlessismore.seankilleen.com
   - title: "(Fr)agile: How Agile Falls Apart, and What You Can Do to Hold It All Together"
     date: 2019-06-06
     group: RevolutionConf
@@ -204,7 +205,7 @@ talksList:
   - title: "Serverless is more: An Introduction to Azure Functions"
     date: 2019-07-25
     group: CodeOnTheBeach
-    slidesLink: https://seankilleen.com/Presentations/ServerlessIsMore/
+    slidesLink: https://serverlessismore.seankilleen.com
     codeLink: https://github.com/seankilleen/feedly-opml-export
     description: In this session, Sean will walk through how to use Azure Functions and Azure Key Vault to create a system to continually share his RSS subscriptions with the world. Follow along as we discuss concepts of serverless computing, build a functional application, an marvel at all the things we didn’t have to do.
     location: Atlantic Beach, FL
