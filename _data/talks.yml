@@ -258,6 +258,7 @@ talksList:
     sessionLink: https://techbash.com/2019-schedule
     description: In this session, I'll demonstrate how to create a template for a .NET Core solution, and will show an end to end out of the box template I've created to be up and running quickly with a .NET Core project, front-end project, containers, and a CI pipeline.
     location: Poconos, PA
+    slidesLink: https://brave-dotnet-new-world.seankilleen.com
   - title: "An Introduction to the Actor Model and Akka.NET"
     date: 2020-10-14
     group: Triangle .NET User Group
