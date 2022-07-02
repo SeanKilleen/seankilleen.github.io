@@ -141,7 +141,7 @@ talksList:
     eventLink: https://www.techbash.com/
     description: Working in an agile mindset – especially when favoring specific approaches – can go wrong in about 100 ways. In this talk, I describe some lessons as a technical lead working on agile teams, holding it together with duct tape and a little help from my friends.
     location: Kalahari Resort, PA
-    slidesLink: http://seankilleen.com/Presentations/2018-10_Fragile
+    slidesLink: https://fragile.seankilleen.com
   - title: An Introduction to the Actor Model and Akka.NET
     date: 2019-03-14
     group: NYC .NET
@@ -190,6 +190,7 @@ talksList:
     eventLink: https://revolutionconf.com/
     description: Working in an agile mindset – especially when favoring specific approaches – can go wrong in about 100 ways. In this talk, I describe some lessons as a technical lead working on agile teams, holding it together with duct tape and a little help from my friends.
     location: Virginia Beach, VA
+    slidesLink: https://fragile.seankilleen.com
   - title: "Introduction to Microsoft Graph Services"
     date: 2019-06-29
     group: Microsoft Insider Dev Tour NYC
