@@ -64,7 +64,7 @@ talksList:
     eventLink: http://novacodecamp.org/
     description: An introduction to ElasticSearch for .NET developers, with concepts & code.
     location: Reston, VA
-    slidesLink: http://seankilleen.com/Presentations/2017-10_ElasticSearch
+    slidesLink: http://elasticsearch.seankilleen.com
   - title: "Stretching .NET: An Introduction to ElasticSearch"
     date: 2017-11-15
     group: Capital Area .NET Users Group
@@ -72,7 +72,7 @@ talksList:
     sessionLink: https://www.meetup.com/CapArea-Net/events/244895364/
     description: An introduction to ElasticSearch for .NET developers, with concepts & code.
     location: Vienna, VA
-    slidesLink: http://seankilleen.com/Presentations/2017-11_ElasticSearch
+    slidesLink: http://elasticsearch.seankilleen.com
   - title: Certified Agile Testing & Automation
     date: 2018-01-22
     group: Excella Training (now NextUp Solutions)
