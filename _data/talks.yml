@@ -225,6 +225,7 @@ talksList:
     eventLink: https://techbash.com/
     sessionLink: https://techbash.com/2019-schedule
     description: In this workshop, we'll introduce .NET Core conceptually and work to modernize .NET Framework application. We'll have practical tips and discussions of pitfalls along the way.
+    slidesLink: https://netcore-workshop.seankilleen.com
     location: Poconos, PA
   - title: "The Joy of Functional Testing with SpecFlow"
     date: 2019-11-13
