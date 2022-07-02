@@ -324,6 +324,7 @@ talksList:
     sessionLink: https://docker.events.cube365.net/dockercon-live/2021/community/ozpQHbdFbLEYD7kie
     description: A high-level talk for those new to Docker on the importance of smaller feedback loops and how Docker helps us get there.
     location: Online
+    slidesLink: https://dockerloops.seankilleen.com
   - title: "An Introduction to the Actor Model with Akka.NET"
     date: 2021-07-27
     group: "Orlando .NET User Group (ONETUG)"
