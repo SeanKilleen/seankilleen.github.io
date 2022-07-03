@@ -126,7 +126,7 @@ talksList:
     eventLink: https://www.eventbrite.com/e/blacksburg-open-source-dev-conf-18-tickets-42464145402
     description: Several topics dominate the landscape of modern software delivery – agile principles & practices, DevOps, Continuous Integration & Deployment, automated testing & test-driven development. Central to all of these is the idea of feedback loops. In this talk, I will work through the essence of feedback loops, and the myriad ways that seeking & targeting smaller feedback loops can benefit your team & your organization in its pursuit of agility and excellence.
     location: Blacksburg, VA
-    slidesLink: https://seankilleen.com/Presentations/2018-04_FeedbackLoops
+    slidesLink: https://feedbackloops.seankilleen.com
   - title: An Introduction to the Actor Model and Akka.NET
     date: 2018-08-09
     group: Code on the Beach
