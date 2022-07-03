@@ -15,7 +15,6 @@ talksList:
     sessionLink: http://www.meetup.com/DevOpsDC/events/226750186/
     description: This presentation sought to explain the pleasantly symbiotic relationship between a build server such as TeamCity and a release tool, such as OctopusDeploy. There weren’t as many .NET-focused developers there as expected, and time was a little short, but I’m looking forward to making some tweaks to this one and giving it again soon.
     location: Reston, VA
-    slidesLink: https://seankilleen.com/Presentations/2018-03-28_TCOctopusAzure
   - title: "Attack-a the Akka!"
     date: 2016-06-05
     group: Capital Area .NET Users Group
@@ -56,7 +55,7 @@ talksList:
     sessionLink: http://2017.dotnetfringe.org/speakers.html#sean-killeen
     description: This talk discusses how to bring a model of open-source maturity to the .NET community in the hopes of getting others involved to realize our shared vision to make .NET a great space for open-source.
     location: Portland, OR
-    slidesLink: https://seankilleen.com/Presentations/2017-06_AWiderDotNet
+    slidesLink: https://widerdotnet.seankilleen.com
     videoLink: https://www.youtube.com/watch?v=jFDXNGFvcYg
   - title: "Stretching .NET: An Introduction to ElasticSearch"
     date: 2017-10-10
@@ -103,7 +102,6 @@ talksList:
     sessionLink: http://meetu.ps/e/DYnG9/1Zghg/d
     description: Sean Killeen is going where no presenter should ever go – a live demo! Continuous integration and automated delivery are considered best practices, but how does it actually happen? During this talk, Sean will create – from scratch – a CI/CD pipeline for a real project using TeamCity, OctopusDeploy, and the Azure cloud. Along the way, we’ll discuss Chocolatey, deployment slots, nuget packages, and more. We’ll also touch on Appveyor and some other Azure deployment methods, as well as the “why” of CI/CD.
     location: Bethesda, MD
-    slidesLink: https://seankilleen.com/Presentations/2018-03_TCOctopusAzure
   - title: "TeamCity, OctopusDeploy, and Azure: So Happy Together"
     date: 2018-03-28
     group: Tech Talk DC
@@ -111,7 +109,6 @@ talksList:
     sessionLink: https://www.meetup.com/TechTalkDC/events/248663061/
     description: Sean Killeen is going where no presenter should ever go – a live demo! Continuous integration and automated delivery are considered best practices, but how does it actually happen? During this talk, Sean will create – from scratch – a CI/CD pipeline for a real project using TeamCity, OctopusDeploy, and the Azure cloud. Along the way, we’ll discuss Chocolatey, deployment slots, nuget packages, and more. We’ll also touch on Appveyor and some other Azure deployment methods, as well as the “why” of CI/CD.
     location: Arlington, VA
-    slidesLink: https://seankilleen.com/Presentations/2018-03-28_TCOctopusAzure
   - title: Introduction to Akka .NET
     date: 2018-04-20
     group: Free public webinar
