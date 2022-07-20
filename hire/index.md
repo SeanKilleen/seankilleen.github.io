@@ -17,13 +17,13 @@ I am passively open to new opportunities as a way of keeping an open mind. If yo
 
 * [Microsoft MVP in Developer Technologies](https://mvp.microsoft.com/en-us/PublicProfile/5003676?fullName=Sean%20James%20Killeen) (~100 in this category in the US at last count)
 * 15+ years developing software in the .NET ecosystem
-* Passionate OSS contributor, deeply invested in the success of .NET open source
+* Deeply invested in .NET community and supporting OSS
 * Led the modernization of a system that industry analysts called more complex than the moon landing
 * Polyglot developer beyond .NET -- comfortable with Javascript (prefer TypeScript), Ruby, Python, and others
 * 5+ years leading teams of between 5-20 individuals
 * Previously certified instructor for ScrumAlliance (CSD) and ICAgile (ICP-TST, ICP-ATA) multi-day courses
 * Lead of the [NUnit Documentation project](https://github.com/nunit/docs) and avid open-source contributor
-* National speaker
+* National and Meetup speaker; organizer of [.NET DC](https://meetup.com/dotnetdc/)
 * A history of substantial impact
 
 ## Outcomes I Provide
@@ -91,20 +91,20 @@ I'm likely a fit for the following types of roles or similar:
 | Category | General run-down [^1] |
 | -------- | ---------- |
 | **Languages** | C#, TypeScript, Javascript, Ruby, Python, Java |
-| **Platforms & Frameworks** | .NET Core / .NET 5, .NET 4.x, ASP.NET, MVC, WebAPI, Akka.NET |
+| **Platforms & Frameworks** | .NET Core / .NET 5-7, .NET Framework 4.x, ASP.NET, MVC, WebAPI, Akka.NET |
 | **Front-end** | React, Vue, Angular to a lesser extent. Experience with Backbone, Knockout, jQuery |
 | **Build Tools** | GitHub Actions, Azure DevOps, OctopusDeploy, TeamCity, Jenkins, CircleCI, TravisCI, MSBuild |
 | **Databases** | General SQL/NoSQL, SQL Server, Neo4j, CosmosDB, ElasticSearch |
 | **ORMs & Migrations** | Entity Framework, EF Core, Dapper, Roundhouse |
-| **Cloud** | Azure PaaS / SaaS, Serverless |
+| **Cloud** | Azure PaaS / SaaS, Serverless, AWS .NET Serverless & Terraform IaC |
 | **Infrastructure tooling** | Terraform, ARM, Bicep |
-| **Automated Testing tools** | NUnit, xUnit, SpecFlow, Moq, FluentAssertions, Bogus |
+| **Automated Testing tools** | NUnit, xUnit, SpecFlow, Moq, FluentAssertions, Bogus, Testcontainers |
 | **Automated Testing Techniques** | TDD, BDD, Gherkin, AATs |
 | **Other common libraries** | FluentValidation |
 | **Ticketing and workflows** | Jira, Trello, GitHub Projects, Azure DevOps, TFS |
-| **Static Sites** | Jekyll, GitHub Pages, Azure Static Sites, Netlify, Statiq |
-| **Methodologies and Mindsets** | Agility, Scrum, Kanban, DevOps, Product mindset |
-| **Leadership** | Transformational leadership, leader/leader model |
+| **Static Sites** | Jekyll, GitHub Pages, Azure Static Sites, Netlify |
+| **Methodologies and Mindsets** | Agility, Scrum, Kanban, DevOps, Lean Product |
+| **Leadership** | Transformational leadership, Leader/leader model |
 
 [^1]: This is not an exhaustive list.
 
