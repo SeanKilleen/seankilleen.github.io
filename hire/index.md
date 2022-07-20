@@ -15,9 +15,10 @@ I am passively open to new opportunities as a way of keeping an open mind. If yo
 
 ## At a Glance
 
-* [Microsoft MVP in Developer Technologies](https://mvp.microsoft.com/en-us/PublicProfile/5003676?fullName=Sean%20James%20Killeen) (~150 in this category in the US at last count)
+* [Microsoft MVP in Developer Technologies](https://mvp.microsoft.com/en-us/PublicProfile/5003676?fullName=Sean%20James%20Killeen) (~100 in this category in the US at last count)
 * 15+ years developing software in the .NET ecosystem
-* Recently led the modernization of a system that industry analysts called more complex than the moon landing
+* Passionate OSS contributor, deeply invested in the success of .NET open source
+* Led the modernization of a system that industry analysts called more complex than the moon landing
 * Polyglot developer beyond .NET -- comfortable with Javascript (prefer TypeScript), Ruby, Python, and others
 * 5+ years leading teams of between 5-20 individuals
 * Previously certified instructor for ScrumAlliance (CSD) and ICAgile (ICP-TST, ICP-ATA) multi-day courses
