@@ -1,5 +1,5 @@
 ---
-title: "How I Extracted VA Townhall Comments to further analyze them"
+title: "Extracting VA Townhall Comments on Youngkin's Proposed Transgender PolicyS Shifts"
 comments: true
 tags:
   - artoo
@@ -16,9 +16,9 @@ header:
  caption: "Photo credit: [**Pawel Czerwinski @ Unsplash**](https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 ---
 
-Virginia's Governor Glenn Youngkin has recently made news by announcing a rollback to policies that previously sought to affirm the identity of transgender youth. I've placed my take on the policy at the end of this article, but that's not what I want the article to be about.
+Virginia's current Governor Youngkin [has recently made headlines](https://www.nytimes.com/2022/09/18/us/virginia-transgender-students.html) by announcing a rollback to policies that previously sought to affirm the identity of transgender youth. I've placed my full take on the policy at the end of this article, but that's not what I want this article to be about. (Spoiler: I stand with the Transgender community and believe students are in charge of their identity. And if you know me, I hope that statement is already obvious.)
 
-One of the thing that's been eating at me as public comments poured in is that I want the ability to analyze things better, and the VA Townhall site appears to be an old cold-fusion app with only basic CRUD abilities. Is there a way I could get it into a format where I could query the data?
+One of the things that's been eating at me as public comments poured in is that I want the ability to analyze things better, and the VA Townhall site appears to be an old ColdFusion app with only basic CRUD abilities. Is there a way I could get it into a format where I could query the data?
 
 So I decided to do that, and I'm going to list the steps I took here in case you'd like to do the same.
 
@@ -27,6 +27,7 @@ So I decided to do that, and I'm going to list the steps I took here in case you
 * I didn't see anything anywhere saying I couldn't do this, and the site itself appears to be public. If I've run afoul of any regulations, I'll remove this post, but as far as I can tell I'm in the clear.
 * This post is quick &amp; dirty. I'm trying to get the information out there. If something seems hasty, that's because it is. Feel free to add questions & observations in the comments.
 * I fiddled with this stuff a bunch over the course of an evening. Don't want anyone to get the impression that I just turn this sort of thing out stream-of-consciousness. :smile:
+* You can suggest edits to this page. There's a link at the top. Take me up on it!
 
 ## The Ingredients today
 
@@ -99,7 +100,7 @@ But I was definitely thinking "Hmm, I'll only want to do this for new comments i
 
 ## Step 4: Combine those JSON files
 
-I love `jq` as a tool for processing JSON files.
+I love [jq](https://stedolan.github.io/jq/) as a tool for processing JSON files.
 
 I concatenated a quick list of filenames together in Excel and then ran:
 
@@ -116,7 +117,7 @@ But my big happy file also had some bizarre Unicode stuff going on.
 * I opened in VS Code and did some find &amp; replace to remove the symbols I saw.
 * I also tried a plugin called [Native-Ascii Converter](https://marketplace.visualstudio.com/items?itemName=cwan.native-ascii-converter) but I'm not sure I understood what I was trying to accomplish enough in the moment to use it well.
 * I also changed the file encoding to `UTF-8`.
-* I spot-checked a bit
+* I spot-checked a bit. It wasn't perfect (see my queries later)
 
 ## Step 6: SQL Server (in Docker) Time
 
@@ -132,12 +133,13 @@ Now I had a container running I could connect to.
 ## Step 7: A SQL-ing we go!
 
 * I open Azure Data Studio -- I've come to really enjoy it as a quick SQL GUI.
-* I log into `localhost`, with SQL Server authentication. I use the `sa` username and the password we specified.
+* I log into `localhost`, with SQL Server authentication. I use the `sa` username and the password we specified in the docker command above.
   * (Obviously not production worthy, but it works for this.)
 * I create the table:
 
 ```sql
 CREATE TABLE Comments (
+    -- Note the `IGNORE_DUP_KEY = ON` on the primary key. This way if I keep bulk importing things, I won't get errors; it will only ignore my duplicate entries.
     CommentID int NOT NULL PRIMARY KEY WITH(IGNORE_DUP_KEY = ON),
     CommentDate datetime,
     Commenter nvarchar(MAX),
@@ -145,8 +147,6 @@ CREATE TABLE Comments (
     Comment nvarchar(MAX)
 );
 ```
-
-Note the `IGNORE_DUP_KEY = ON` on the primary key. This way if I keep bulk importing things, I won't get errors; it will only ignore my duplicate entries.
 
 ## Step 8: Importing my Data
 
@@ -185,9 +185,7 @@ Just getting started on that part. :smile: let me know what you want to see!
 
 ## Jump in!
 
-I'm sure this stuff can use cleanup. Feel free to do a pull request against this blog post if you'd like with suggestions.
-
-What do you want to know? Tell me in the comments!
+What do you want to know about this data set? Ask me in the comments and I'll try to get you an answer!
 
 ## My Personal Feelings on the Policy
 
