@@ -29,9 +29,9 @@ So I decided to do that, and I'm going to list the steps I took here in case you
 * I fiddled with this stuff a bunch over the course of an evening. Don't want anyone to get the impression that I just turn this sort of thing out stream-of-consciousness. :smile:
 * You can suggest edits to this page. There's a link at the top. Take me up on it!
 
-## The Ingredients today
+## The Ingredients
 
-I used the following to help me out today:
+I used the following to help me out:
 
 * Artoo.js
 * jq
