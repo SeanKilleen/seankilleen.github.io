@@ -33,7 +33,7 @@ So I decided to do that, and I'm going to list the steps I took here in case you
 I used the following to help me out today:
 
 * Artoo.js
-* JQ
+* jq
 * VS Code
 * Docker
 * SQL Server (the Linux version, running in Docker)
@@ -43,9 +43,62 @@ I used the following to help me out today:
 * Load [the comments page](https://townhall.virginia.gov/L/ViewComments.cfm?GdocForumID=1953)
 * Set the page size to `1000` comments per page and hit `Go` to bring back the first page.
 
-## Step 2: Load Artoo
+## Step 2: Load Artoo and Figure out how to scrape a page
 
-[Artoo.js](https://medialab.github.io/artoo/) is a delightful little client-side scraper. You load it into your browser via bookmarklet and it lets you to all sorts of stuff
+[Artoo.js](https://medialab.github.io/artoo/) is a delightful little client-side scraper. You load it into your browser via bookmarklet and it lets you do all sorts of fun stuff.
+
+In this case, I fiddled around to understand how to extract things. The Townhall site leaves a little to be desired in terms of element naming etc, so some of it's a bit funky.
+
+This script was a one-liner in my browser console window, but I've expanded it here to help make sense of it and explain things.
+
+```javascript
+// Comment box has a class of Cbox
+var pageNum = artoo.$('#vpage').val();
+
+artoo.saveJson(artoo.scrape('.Cbox', {
+    date: function($, el) {
+        // normally it's not this hard but their site isn't awesome and I had to do some cleanup
+        return $(el).children('div > div').text().split('\n')[1].trim()
+    },
+    commenter: function($, el) {
+        // you get a reference to jQuery and the element so you can do all the things you need
+        return $(el).children('div:nth-of-type(2)').text().split('\n')[2].trim()
+    },
+    subject: function($, el) {
+        return $(el).children('div:nth-of-type(2)').text().split('\n')[4].trim()
+    },
+    comment: function($, el) {
+        return $(el).children('div.divComment').text().trim()
+    },
+    commentId: {
+        // or you can simplify it if you don't need a whole big function
+        sel: 'a.linklight',
+        method: 'text'
+    }
+}), {
+    // easily save out to files -- does JSON, CSV, Text, HTML, etc.
+    filename: 'page' + pageNum + '.json',
+    pretty: true
+})
+```
+
+## Step 3: Repeat Step 1 above...for every page.
+
+There are currently 55,000+ comments on this policy.
+
+That meant that for each one of the 56 pages, I had to:
+
+* Click `Next` (this causes a refresh. Thanks, Townhall!)
+* Click the bookmarklet to load Artoo
+* Hit the up arrow in my browser console to run the scrape again
+
+It wasn't fun, and I'm sure I could have automated it, but I did it manually while I thought about automating it and got through it pretty quickly.
+
+But I was definitely thinking "Hmm, I'll only want to do this for new comments in the future without creating duplicates", so I built that into later steps.
+
+## Step 4: Combine those JSON files
+
+I love `jq` as a tool for processing JSON files.
 
 ## My Personal Feelings on the Policy
 
