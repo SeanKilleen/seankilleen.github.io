@@ -182,7 +182,7 @@ INSERT INTO Comments(CommentID, CommentDate, Commenter, Subject, Comment)
 
 ## Now for Some Analysis!
 
-Just getting started on that part. :smile: let me know what you want to see!
+Just getting started on that part. :smile: let me know what you want to see! I'd love to hear anything you're able to find out in your own analysis, too.
 
 * I have 55,000 comments in the DB.
 * Of those, 11,342 have a subject that includes `support`, 18,323 have a subject that includes `oppose`, 26,075 have both words and 240 have neither.
