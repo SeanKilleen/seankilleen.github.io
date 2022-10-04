@@ -150,6 +150,8 @@ Note the `IGNORE_DUP_KEY = ON` on the primary key. This way if I keep bulk impor
 
 ## Step 8: Importing my Data
 
+I learned a bunch about the ability to quickly import JSON into SQL Server. [^1] Pretty nice!
+
 ```sql
 INSERT INTO Comments(CommentID, CommentDate, Commenter, Subject, Comment)
     SELECT 
@@ -200,3 +202,5 @@ I wanted to make this blog post more about enabling anyone to analyze the commen
 > As a white, cisgender man, I don't check many "diversity" boxes. Which is why I want it to be clear and on the record that I wholeheartedly renounce this policy. I know and have known several trans people so far in my life, and one common theme in all of their threads is an incredible and painful struggle to come to the realization, despite societal and institutional pressure, that their identity is not what had been assigned at birth. I have known their joy as they have finally discovered and began living as their true selves. And I have seen the toll it has exacted on them and their families. Their story is one of bravery and resilience and an often painful journey of self-actualization.
 >
 > I stand with trans people, and I want trans and queer youth reading this to know that you are not alone. You deserve to be yourself as you define, and no matter how this administration might try to couch it in other language, we see right through it, too. "These are good days for bad people", but your living your full lives well -- as your true selves, on your own terms -- will be the best revenge on these backwards policies and those who seek to implement them. Glenn Youngkin and his administration may fail you, but you may yet still thrive. May this policy and his administration be consigned to the rubbish bin of history where they belong.  And may you shine on.
+
+[^1]: Yes, other databases do this. Yes, I could have used another database. I just chose SQL Server. And the docs were really helpful, quickly.
