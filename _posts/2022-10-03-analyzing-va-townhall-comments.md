@@ -178,6 +178,7 @@ INSERT INTO Comments(CommentID, CommentDate, Commenter, Subject, Comment)
         FROM OPENROWSET (BULK '/var/opt/mssql/import/theBigOne.json', SINGLE_CLOB, MAXERRORS = 50000) as j 
             CROSS APPLY OPENJSON(BulkColumn)
             WITH(date datetime, commenter nvarchar(max), subject nvarchar(max), comment nvarchar(max), commentId nvarchar(max)) As thing
+    WHERE (thing.date >= (SELECT MAX(CommentDate) from Comments))
 ```
 
 ## Now for Some Analysis!
