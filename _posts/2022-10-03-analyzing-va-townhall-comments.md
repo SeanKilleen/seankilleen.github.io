@@ -183,9 +183,7 @@ Just getting started on that part. :smile: let me know what you want to see!
 
 ## Jump in!
 
-I'm sure this stuff can use cleanup. Feel free to do a pull request against this blog post if you'd like with suggestions.
-
-What do you want to know? Tell me in the comments!
+What do you want to know about this data set? Ask me in the comments and I'll try to get you an answer!
 
 ## My Personal Feelings on the Policy
 
