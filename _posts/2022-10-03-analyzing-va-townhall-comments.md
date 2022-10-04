@@ -1,5 +1,5 @@
 ---
-title: "How I Extracted VA Townhall Comments to further analyze them"
+title: "Extracting VA Townhall Comments on Youngkin's Proposed Transgender PolicyS Shifts"
 comments: true
 tags:
   - artoo
@@ -27,6 +27,7 @@ So I decided to do that, and I'm going to list the steps I took here in case you
 * I didn't see anything anywhere saying I couldn't do this, and the site itself appears to be public. If I've run afoul of any regulations, I'll remove this post, but as far as I can tell I'm in the clear.
 * This post is quick &amp; dirty. I'm trying to get the information out there. If something seems hasty, that's because it is. Feel free to add questions & observations in the comments.
 * I fiddled with this stuff a bunch over the course of an evening. Don't want anyone to get the impression that I just turn this sort of thing out stream-of-consciousness. :smile:
+* You can suggest edits to this page. There's a link at the top. Take me up on it!
 
 ## The Ingredients today
 
@@ -138,6 +139,7 @@ Now I had a container running I could connect to.
 
 ```sql
 CREATE TABLE Comments (
+    -- Note the `IGNORE_DUP_KEY = ON` on the primary key. This way if I keep bulk importing things, I won't get errors; it will only ignore my duplicate entries.
     CommentID int NOT NULL PRIMARY KEY WITH(IGNORE_DUP_KEY = ON),
     CommentDate datetime,
     Commenter nvarchar(MAX),
@@ -145,8 +147,6 @@ CREATE TABLE Comments (
     Comment nvarchar(MAX)
 );
 ```
-
-Note the `IGNORE_DUP_KEY = ON` on the primary key. This way if I keep bulk importing things, I won't get errors; it will only ignore my duplicate entries.
 
 ## Step 8: Importing my Data
 
