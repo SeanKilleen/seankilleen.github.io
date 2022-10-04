@@ -16,6 +16,8 @@ header:
  caption: "Photo credit: [**Pawel Czerwinski @ Unsplash**](https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 ---
 
+**Update**: Here's [the large file with all the comments I scraped in JSON format](https://1drv.ms/u/s!AuaqsrDoMOUHofNXPofXp4xRlm1yYg?e=QaFIYf), in case you want to skip the steps of retrieving it.
+
 Virginia's current Governor Youngkin [has recently made headlines](https://www.nytimes.com/2022/09/18/us/virginia-transgender-students.html) by announcing a rollback to policies that previously sought to affirm the identity of transgender youth. I've placed my full take on the policy at the end of this article, but that's not what I want this article to be about. (Spoiler: I stand with the Transgender community and believe students are in charge of their identity. And if you know me, I hope that statement is already obvious.)
 
 [VA has a system called Townhall that is accepting public comment through 10/26](https://townhall.virginia.gov/L/Comments.cfm?GDocForumID=1953).[^1] One of the things that's been eating at me as public comments poured in is that I want the ability to analyze things better, and the VA Townhall site appears to be an old ColdFusion app with only basic CRUD abilities. Is there a way I could get it into a format where I could query the data?
@@ -86,6 +88,8 @@ artoo.saveJson(artoo.scrape('.Cbox', {
 
 ## Step 3: Repeat Step 1 above...for every page.
 
+(If you just want the data file, [you can find it here.](https://1drv.ms/u/s!AuaqsrDoMOUHofNXPofXp4xRlm1yYg?e=QaFIYf))
+
 There are currently 55,000+ comments on this policy.
 
 That meant that for each one of the 56 pages, I had to:
@@ -100,6 +104,8 @@ But I was definitely thinking "Hmm, I'll only want to do this for new comments i
 
 ## Step 4: Combine those JSON files
 
+(If you just want the data file, [you can find it here.](https://1drv.ms/u/s!AuaqsrDoMOUHofNXPofXp4xRlm1yYg?e=QaFIYf))
+
 I love [jq](https://stedolan.github.io/jq/) as a tool for processing JSON files.
 
 I concatenated a quick list of filenames together in Excel and then ran:
@@ -111,6 +117,8 @@ jq -s 'add' page1.json page2.json page3.json page4.json page5.json page6.json pa
 Now I had one big happy file.
 
 ## Step 5: Data Cleanup
+
+(If you just want the data file, [you can find it here.](https://1drv.ms/u/s!AuaqsrDoMOUHofNXPofXp4xRlm1yYg?e=QaFIYf))
 
 But my big happy file also had some bizarre Unicode stuff going on.
 
