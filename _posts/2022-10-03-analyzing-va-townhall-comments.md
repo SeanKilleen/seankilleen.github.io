@@ -1,5 +1,5 @@
 ---
-title: "Extracting VA Townhall Comments on Youngkin's Proposed Transgender PolicyS Shifts"
+title: "Extracting VA Townhall Comments on Youngkin's Reversed School Protections for Transgender Students"
 comments: true
 tags:
   - artoo
@@ -18,7 +18,7 @@ header:
 
 Virginia's current Governor Youngkin [has recently made headlines](https://www.nytimes.com/2022/09/18/us/virginia-transgender-students.html) by announcing a rollback to policies that previously sought to affirm the identity of transgender youth. I've placed my full take on the policy at the end of this article, but that's not what I want this article to be about. (Spoiler: I stand with the Transgender community and believe students are in charge of their identity. And if you know me, I hope that statement is already obvious.)
 
-One of the things that's been eating at me as public comments poured in is that I want the ability to analyze things better, and the VA Townhall site appears to be an old ColdFusion app with only basic CRUD abilities. Is there a way I could get it into a format where I could query the data?
+[VA has a system called Townhall that is accepting public comment through 10/26](https://townhall.virginia.gov/L/Comments.cfm?GDocForumID=1953).[^1] One of the things that's been eating at me as public comments poured in is that I want the ability to analyze things better, and the VA Townhall site appears to be an old ColdFusion app with only basic CRUD abilities. Is there a way I could get it into a format where I could query the data?
 
 So I decided to do that, and I'm going to list the steps I took here in case you'd like to do the same.
 
@@ -150,7 +150,7 @@ CREATE TABLE Comments (
 
 ## Step 8: Importing my Data
 
-I learned a bunch about the ability to quickly import JSON into SQL Server. [^1] Pretty nice!
+I learned a bunch about the ability to quickly import JSON into SQL Server. [^2] Pretty nice!
 
 ```sql
 INSERT INTO Comments(CommentID, CommentDate, Commenter, Subject, Comment)
@@ -201,4 +201,5 @@ I wanted to make this blog post more about enabling anyone to analyze the commen
 >
 > I stand with trans people, and I want trans and queer youth reading this to know that you are not alone. You deserve to be yourself as you define, and no matter how this administration might try to couch it in other language, we see right through it, too. "These are good days for bad people", but your living your full lives well -- as your true selves, on your own terms -- will be the best revenge on these backwards policies and those who seek to implement them. Glenn Youngkin and his administration may fail you, but you may yet still thrive. May this policy and his administration be consigned to the rubbish bin of history where they belong.  And may you shine on.
 
-[^1]: Yes, other databases do this. Yes, I could have used another database. I just chose SQL Server. And the docs were really helpful, quickly.
+[^1]: I hope you will lend your voice to oppose this policy change.
+[^2]: Yes, other databases do this. Yes, I could have used another database. I just chose SQL Server. And the docs were really helpful, quickly.
