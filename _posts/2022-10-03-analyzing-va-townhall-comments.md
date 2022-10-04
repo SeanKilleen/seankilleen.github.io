@@ -99,7 +99,7 @@ But I was definitely thinking "Hmm, I'll only want to do this for new comments i
 
 ## Step 4: Combine those JSON files
 
-I love `jq` as a tool for processing JSON files.
+I love [jq](https://stedolan.github.io/jq/) as a tool for processing JSON files.
 
 I concatenated a quick list of filenames together in Excel and then ran:
 
@@ -116,7 +116,7 @@ But my big happy file also had some bizarre Unicode stuff going on.
 * I opened in VS Code and did some find &amp; replace to remove the symbols I saw.
 * I also tried a plugin called [Native-Ascii Converter](https://marketplace.visualstudio.com/items?itemName=cwan.native-ascii-converter) but I'm not sure I understood what I was trying to accomplish enough in the moment to use it well.
 * I also changed the file encoding to `UTF-8`.
-* I spot-checked a bit
+* I spot-checked a bit. It wasn't perfect (see my queries later)
 
 ## Step 6: SQL Server (in Docker) Time
 
