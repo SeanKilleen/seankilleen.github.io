@@ -9,7 +9,7 @@ tags:
   - sql
   - vscode
 date: 2022-10-03 11:33 -0400
-excerpt: "Analyzing Reaction to Glenn Youngkin's Proposed policy changes around transgender students."
+excerpt: "Analyzing Reactions, and providing a little of my own."
 header:
  overlay_image: /images/overlays/unsplash/pawel-czerwinski-2dyR13FNg2I-unsplash.jpg
  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
