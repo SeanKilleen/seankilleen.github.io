@@ -10,10 +10,10 @@ tags:
   - vscode
 date: 2022-10-03 11:33 -0400
 excerpt: "Analyzing Reaction to Glenn Youngkin's Proposed policy changes around transgender students."
-# header:
-#  overlay_image: /images/overlays/unsplash/isaac-smith-AT77Q0Njnt0-unsplash.jpg
-#  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
-#  caption: "Photo credit: [**Isaac Smith @ Unsplash**](https://unsplash.com/@isaacmsmith?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
+header:
+ overlay_image: /images/overlays/unsplash/pawel-czerwinski-2dyR13FNg2I-unsplash.jpg
+ overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+ caption: "Photo credit: [**Pawel Czerwinski @ Unsplash**](https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 ---
 
 Virginia's Governor Glenn Youngkin has recently made news by announcing a rollback to policies that previously sought to affirm the identity of transgender youth. I've placed my take on the policy at the end of this article, but that's not what I want the article to be about.
@@ -37,6 +37,7 @@ I used the following to help me out today:
 * VS Code
 * Docker
 * SQL Server (the Linux version, running in Docker)
+* Azure Data Studio
 
 ## Step 1: Load the pages
 
@@ -99,6 +100,92 @@ But I was definitely thinking "Hmm, I'll only want to do this for new comments i
 ## Step 4: Combine those JSON files
 
 I love `jq` as a tool for processing JSON files.
+
+I concatenated a quick list of filenames together in Excel and then ran:
+
+```cmd
+jq -s 'add' page1.json page2.json page3.json page4.json page5.json page6.json page7.json page8.json page9.json page10.json page11.json page12.json page13.json page14.json page15.json page16.json page17.json page18.json page19.json page20.json page21.json page22.json page23.json page24.json page25.json page26.json page27.json page28.json page29.json page30.json page31.json page32.json page33.json page34.json page35.json page36.json page37.json page38.json page39.json page40.json page41.json page42.json page43.json page44.json page45.json page46.json page47.json page48.json page49.json page50.json page51.json page52.json page53.json page54.json page55.json page56.json >> theBigOne.json
+```
+
+Now I had one big happy file.
+
+## Step 5: Data Cleanup
+
+But my big happy file also had some bizarre Unicode stuff going on.
+
+* I opened in VS Code and did some find &amp; replace to remove the symbols I saw.
+* I also tried a plugin called [Native-Ascii Converter](https://marketplace.visualstudio.com/items?itemName=cwan.native-ascii-converter) but I'm not sure I understood what I was trying to accomplish enough in the moment to use it well.
+* I also changed the file encoding to `UTF-8`.
+* I spot-checked a bit
+
+## Step 6: SQL Server (in Docker) Time
+
+* I move my JSON file to `C:\DockerData\youngkin\theBigOne.json` so that I can map it into my Docker container easily
+* I mostly wanted a quick setup with default values so I copied from the SQL Server Dockerhub docs with the exception of mapping my import folder:
+
+```cmd
+docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=yourStrong(!)Password" -p 1433:1433 -v C:\DockerData\youngkin:/var/opt/mssql/import -d mcr.microsoft.com/mssql/server:2019-latest
+```
+
+Now I had a container running I could connect to.
+
+## Step 7: A SQL-ing we go!
+
+* I open Azure Data Studio -- I've come to really enjoy it as a quick SQL GUI.
+* I log into `localhost`, with SQL Server authentication. I use the `sa` username and the password we specified.
+  * (Obviously not production worthy, but it works for this.)
+* I create the table:
+
+```sql
+CREATE TABLE Comments (
+    CommentID int NOT NULL PRIMARY KEY WITH(IGNORE_DUP_KEY = ON),
+    CommentDate datetime,
+    Commenter nvarchar(MAX),
+    Subject nvarchar(MAX),
+    Comment nvarchar(MAX)
+);
+```
+
+Note the `IGNORE_DUP_KEY = ON` on the primary key. This way if I keep bulk importing things, I won't get errors; it will only ignore my duplicate entries.
+
+## Step 8: Importing my Data
+
+```sql
+INSERT INTO Comments(CommentID, CommentDate, Commenter, Subject, Comment)
+    SELECT 
+        -- Some of my scraping turned out to be bad and in certain cases, like when someone left a comment, it would turn the ID into a list of all IDs. At least it started with the correct ID. :) 
+        LEFT(thing.commentId, 6) as commentId, 
+        -- Yeah, I named the object thing. No, I didn't clean it up for this post. It's late.
+        thing.date,
+        thing.commenter,
+        thing.subject,  
+        CASE 
+            -- Another weird scraping issue. When someone didn't leave a comment, the comment was scraped as CommentId: [Id]. So I just scrub it out here.
+            WHEN LEFT(thing.comment, 10) = 'CommentID:' THEN ''
+            ELSE thing.comment
+        END as comment
+        -- I think this is pretty nifty. Import from the location I mapped with my volume, and auto pull the fields from the JSON.
+        FROM OPENROWSET (BULK '/var/opt/mssql/import/theBigOne.json', SINGLE_CLOB, MAXERRORS = 50000) as j 
+            CROSS APPLY OPENJSON(BulkColumn)
+            WITH(date datetime, commenter nvarchar(max), subject nvarchar(max), comment nvarchar(max), commentId nvarchar(max)) As thing
+```
+
+## Now for Some Analysis!
+
+Just getting started on that part. :smile: let me know what you want to see!
+
+* I have 55,000 comments in the DB.
+* Of those, 11,342 have a subject that includes `support`, 18,323 have a subject that includes `oppose`, 26,075 have both words and 240 have neither.
+  * Hard to gauge sentiment from this though because I didn't analyze who/what the comments claim to be supporting & opposing.
+* 33,065 of the 55.5k comments are anonymous
+* The top 4 subject lines are `Strongly oppose` (6,366), `Leave Trans Kids Alone` (4,428), `Youngkin Hates` (2,633), and `Glenn Youngkin Is a Bot` (1,363)
+  * When taking anonymous items out, they were `Strongly Oppose` (1,342), `STRONGLY OPPOSE.` (844), `This will bring Harm to trans kids.` (797), and `I oppose this fully` (774)
+
+## Jump in!
+
+I'm sure this stuff can use cleanup. Feel free to do a pull request against this blog post if you'd like with suggestions.
+
+What do you want to know? Tell me in the comments!
 
 ## My Personal Feelings on the Policy
 
