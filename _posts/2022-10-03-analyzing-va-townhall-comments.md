@@ -133,7 +133,7 @@ Now I had a container running I could connect to.
 ## Step 7: A SQL-ing we go!
 
 * I open Azure Data Studio -- I've come to really enjoy it as a quick SQL GUI.
-* I log into `localhost`, with SQL Server authentication. I use the `sa` username and the password we specified.
+* I log into `localhost`, with SQL Server authentication. I use the `sa` username and the password we specified in the docker command above.
   * (Obviously not production worthy, but it works for this.)
 * I create the table:
 
