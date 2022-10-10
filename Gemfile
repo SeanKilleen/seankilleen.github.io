@@ -11,7 +11,7 @@ end
 gem 'github-pages', group: :jekyll_plugins
 gem 'rake'
 gem 'tzinfo-data'
-gem 'html-proofer'
+gem 'html-proofer', '~> 4.4.1'
 gem 'jekyll-github-metadata'
 gem 'minimal-mistakes-jekyll'
 gem 'jekyll-include-cache'
