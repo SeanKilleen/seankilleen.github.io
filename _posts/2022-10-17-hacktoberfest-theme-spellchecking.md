@@ -6,6 +6,7 @@ tags:
   - github actions
   - cspell
   - oss
+  - hacktoberfest
 date: 2022-10-17 11:33 -0400
 excerpt: "Systematizing OSS contributions and steps for you to jump in."
 #header:
@@ -140,7 +141,7 @@ A quick break-down on this:
 * `words` represents valid words that we want spell-check to suggest
 * `ignoreWords` represents words we don't want to show up as spelling errors, but that we also don't want tooling to suggest as valid replacements.
 * `patterns` defines regex patterns that we want to be able to ignore, which we then place in `ignoreRegExpList`.
-  * :information: This is actually something I learned during the creation of my pull requests this year! Before that, I was using comments, which was messy since JSON isn't really supposed to have them.
+  * :information_source: This is actually something I learned during the creation of my pull requests this year! Before that, I was using comments, which was messy since JSON isn't really supposed to have them.
 
 ### Running cSpell
 
@@ -150,6 +151,29 @@ Next, I:
 * Installed cSpell globally (`npm i -g cSpell`)
 * Ran the same cSpell command locally that I'd set up GitHub Actions to do, e.g. `cspell --config ./cSpell.json "content/**/*.md" --no-progress`
   * The `--no-progress` cuts down on noise a lot when you're just looking for errors, since it doesn't output every file name.
+
+### The Fun Part: Addressing Findings!
+
+Look over the cSpell results. If you're using VS Code, you can click on a finding and it'll take you right there in the editor.
+
+cSpell findings typically fell into a few categories:
+
+* Actual spelling errors. These can be fixed as a one-off or done via find & replace across files in the case of a common misspelling.
+* "Standardizations", e.g. `colour` in the British spelling vs `color` in U.S. English. In these cases, I typically note them and ask whether the author would like me to revert them. I use cSpell's defaults in my default approach, which uses U.S. English.
+* Terms that may not be intended as words but as other terms, e.g. a variable name. I solve this by trying to format them according to their doc system's preference, which is often to place back-ticks around the term.
+* Code snippets that aren't highlighted as such. I use the appropriate markdown to add code fences when I come across these.
+* Something cSpell shouldn't have picked up on but did because a regex ignore pattern was missing. I try to fix that when it happens and add the pattern.
+* Words we want to add to the dictionary. These might be domain-specific words that authors use, or other common words that don't happen to be in cSpell's dictionary. cSpell's VS Code integration gives you the lovely ability to hit `CTRL + .` to bring up a spell-check menu that you can use to add the word to the `cSpell.json` file you've created.
+* Words we want to ignore; they're not correct, but we don't want them to be suggested. Typically names fall into this category, though I'll often put the author's names into the "words we want to add" category.
+  * :information_source: cSpell's VS Code integration doesn't have a way to add words to the ignore list, so I usually so a pass on the `words` list in `cSpell.json` after and separate them out myself.
+
+### The Important Last Part: Adapting to Feedback
+
+Spelling and word choice is a personal thing. I take the position that as long as the maintainers are making a choice consciously and consistently, it isn't "wrong'. And any spell-check systems should adapt to that. Any push-back I have on maintainer preferences is minimal. It's not about correcting someone; it's about being helpful.
+
+* I do a self-review on my PR on GitHub
+* I call attention to things that the maintainers may want to weigh in about
+* I explicitly ask for feedback and adapt to it.
 
 ## Where did I contribute these changes?
 
@@ -163,3 +187,9 @@ You can see the contributions, as well as some of the questions and feedback I r
 * [`mermaid-js/mermaid`](https://github.com/mermaid-js/mermaid/pull/3600)
 * [`microsoft/playwright`](https://github.com/microsoft/playwright/pull/17919)
 * [`unoplatform/uno`](https://github.com/unoplatform/uno/pull/10080)
+
+## The Next Part is Up To You!
+
+Looking for something to complete your #hacktoberfest challenge while feeling good about it? Want to make a difference in the docs of a large project?
+
+Try this approach and let me know how you do! I'm also happy to get you un-stuck; tag me into any PR where you're hitting an issue on this.
