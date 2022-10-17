@@ -181,6 +181,7 @@ Spelling and word choice is a personal thing. I take the position that as long a
 
 You can see the contributions, as well as some of the questions and feedback I received along the way, and those repositories that did not find it helpful.
 
+* [`ChilliCream/hotchocolate`](https://github.com/ChilliCream/hotchocolate/pull/5461)
 * [`prisma/docs`](https://github.com/prisma/docs/pull/3859)
 * [`avaoloniaui/Documentation`](https://github.com/AvaloniaUI/Documentation/pull/348)
 * [`dotnet/benchmarkdotnet`](https://github.com/dotnet/BenchmarkDotNet/pull/2144)
