@@ -1,5 +1,5 @@
 ---
-title: "Theming my #hactkoberfest 2022 contributions -- and how you can, too!"
+title: "My #hacktoberfest Theme: Adding Spellcheck to docs. Join me!"
 comments: true
 tags:
   - spellcheck
@@ -29,11 +29,13 @@ I wanted my Hacktoberfest contribution to:
 
 I've been thinking for a long time about how we could benefit from more mutual aid within OSS. If we can systematize certain kinds of improvements, we can help teach others how to make those improvements, and we can help projects who would benefit from those improvements. Sounds like a true win-win for me, and I'd love to see a hub spring up to offer this sort of mutual aid. (and may just create one myself.)
 
-## What I Chose: Spell-checking!
+## What I Chose: Spellchecking!
 
-It seems small, but lots of development projects have docs. Many of those docs have spelling errors. And in my experience, lots of maintainers welcome the occasional spelling correction.
+It seems small, but lots of development projects have docs. Many of those docs have spelling errors. And in my experience, lots of maintainers welcome the occasional spelling correction, and likely appreciate preventing errors going forward.
 
-## How I Added Spell-checking to Projects (and how you can too)
+## How You can Add Spellcheck for OSS docs
+
+I did the following to make it happen:
 
 ### Adding a GitHub Actions Workflow and Empty cSpell Configuration file
 
@@ -192,4 +194,4 @@ You can see the contributions, as well as some of the questions and feedback I r
 
 Looking for something to complete your #hacktoberfest challenge while feeling good about it? Want to make a difference in the docs of a large project?
 
-Try this approach and let me know how you do! I'm also happy to get you un-stuck; tag me into any PR where you're hitting an issue on this.
+Try this approach and let me know how you do! I'm also happy to get you un-stuck; tag me into any PR where you're hitting an issue on this. Show us your progress in the comments!
