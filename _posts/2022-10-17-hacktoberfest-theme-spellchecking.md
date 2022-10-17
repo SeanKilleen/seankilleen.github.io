@@ -1,5 +1,5 @@
 ---
-title: "My #hacktoberfest Theme: Adding Spellcheck to docs. Join me!"
+title: "My #hacktoberfest Theme: Adding Spellcheck to Docs. Join Me!"
 comments: true
 tags:
   - spellcheck
@@ -9,10 +9,10 @@ tags:
   - hacktoberfest
 date: 2022-10-17 11:33 -0400
 excerpt: "Systematizing OSS contributions and steps for you to jump in."
-#header:
-# overlay_image: /images/overlays/unsplash/pawel-czerwinski-2dyR13FNg2I-unsplash.jpg
-# overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
-# caption: "Photo credit: [**Pawel Czerwinski @ Unsplash**](https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
+header:
+ overlay_image: /images/overlays/unsplash/chris-lawton-5IHz5WhosQE-unsplash.jpg
+ overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+ caption: "Photo credit: [**Chris Lawton @ Unsplash**](https://unsplash.com/@chrislawton?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 ---
 
 ## Personal Criteria for This Year's Hacktoberfest Contributions
