@@ -139,7 +139,17 @@ A quick break-down on this:
 
 * `words` represents valid words that we want spell-check to suggest
 * `ignoreWords` represents words we don't want to show up as spelling errors, but that we also don't want tooling to suggest as valid replacements.
-* `patterns` defines regex patterns that we want to show up
+* `patterns` defines regex patterns that we want to be able to ignore, which we then place in `ignoreRegExpList`.
+  * :information: This is actually something I learned during the creation of my pull requests this year! Before that, I was using comments, which was messy since JSON isn't really supposed to have them.
+
+### Running cSpell
+
+Next, I:
+
+* Installed node 16 (I use nvm, so it was `nvm install 16.x` and then `nvm use [version I installed]`).
+* Installed cSpell globally (`npm i -g cSpell`)
+* Ran the same cSpell command locally that I'd set up GitHub Actions to do, e.g. `cspell --config ./cSpell.json "content/**/*.md" --no-progress`
+  * The `--no-progress` cuts down on noise a lot when you're just looking for errors, since it doesn't output every file name.
 
 ## Where did I contribute these changes?
 
