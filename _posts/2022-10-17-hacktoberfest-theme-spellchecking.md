@@ -8,32 +8,36 @@ tags:
   - oss
   - hacktoberfest
 date: 2022-10-17 11:33 -0400
-excerpt: "Systematizing OSS contributions and steps for you to jump in."
+excerpt: "Systematizing OSS contributions, and steps for you to jump in."
 header:
  overlay_image: /images/overlays/unsplash/chris-lawton-5IHz5WhosQE-unsplash.jpg
  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
  caption: "Photo credit: [**Chris Lawton @ Unsplash**](https://unsplash.com/@chrislawton?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 ---
 
-## Personal Criteria for This Year's Hacktoberfest Contributions
+I love [Hacktoberfest](https://hacktoberfest.com) each fall -- a time when I try to consciously contribute back a little bit to the OSS world that's given us all so much.
 
-I wanted my Hacktoberfest contribution to:
+This year I was thinking about how to approach Hacktoberfest a little differently than I've done in years past. Below is my experience; maybe it will unlock something for you, too!
 
-* Not be huge lifts. I have limited time.
-* Not be a drive-by or "tiny" change. Just feels like I can do a little better than that for targeted contributions.
-* Be fairly "rote", because in downtime I find small repeatable tasks to be a nice way to relax.
-* Be something that I could write up so that others could take and run with
-* Apply to big and small projects alike, as well as both popular and obscure projects.
+## My Personal Criteria for This Year's Hacktoberfest Contributions
+
+I wanted my Hacktoberfest contributions to be:
+
+* Not a huge lift. I have limited time right now to contribute back.
+* Not a drive-by or "tiny" change. Just feels like I can do a little better than that for targeted contributions (and I do those regularly whenever I see them.)
+* Fairly "rote", because in downtime I find small repeatable tasks to be a nice way to relax.
+* Something that I could write up so that others could take and run with
+* Something that could apply to big and small projects alike, as well as both popular and obscure projects.
 
 ## ...And a Background Thought
 
-I've been thinking for a long time about how we could benefit from more mutual aid within OSS. If we can systematize certain kinds of improvements, we can help teach others how to make those improvements, and we can help projects who would benefit from those improvements. Sounds like a true win-win for me, and I'd love to see a hub spring up to offer this sort of mutual aid. (and may just create one myself.)
+I've been thinking for a long time about how we could benefit from more "mutual aid" within OSS, and about marketplaces of needs. If we can systematize certain kinds of improvements, we can help teach others how to make those improvements, and we can help projects who would benefit from those improvements. Sounds like a true win-win for me, and I'd love to see a hub spring up to offer this sort of mutual aid. (and may just create one myself.)
 
-## What I Chose: Spellchecking!
+## This Year's Choice: Spellchecking!
 
 It seems small, but lots of development projects have docs. Many of those docs have spelling errors. And in my experience, lots of maintainers welcome the occasional spelling correction, and likely appreciate preventing errors going forward.
 
-## How You can Add Spellcheck for OSS docs
+## How You can Add Spellcheck for OSS Docs
 
 I did the following to make it happen:
 
@@ -144,6 +148,14 @@ A quick break-down on this:
 * `ignoreWords` represents words we don't want to show up as spelling errors, but that we also don't want tooling to suggest as valid replacements.
 * `patterns` defines regex patterns that we want to be able to ignore, which we then place in `ignoreRegExpList`.
   * :information_source: This is actually something I learned during the creation of my pull requests this year! Before that, I was using comments, which was messy since JSON isn't really supposed to have them.
+
+### Create a "Work in Progress" Pull Request
+
+I believe in creating pull requests as early as possible so that I can use them as a running journal of small commits and thoughts that I leave in the form of comments on the pull request. This serves a few functions:
+
+* If someone isn't interested in my contribution, they can tell me and save us both a bunch of time.
+* If someone has questions, they can ask them along the way.
+* They can see individual commits and what my reasoning is behind a change.
 
 ### Running cSpell
 
