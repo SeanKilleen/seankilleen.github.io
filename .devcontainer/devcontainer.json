@@ -12,5 +12,6 @@
         "redhat.vscode-yaml",
         "vsls-contrib.codetour",
         "github.vscode-pull-request-github"
-    ]
+    ],
+    "postStartCommand": "bundle install"
 }
