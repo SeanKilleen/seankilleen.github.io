@@ -148,6 +148,7 @@ A quick break-down on this:
 * `ignoreWords` represents words we don't want to show up as spelling errors, but that we also don't want tooling to suggest as valid replacements.
 * `patterns` defines regex patterns that we want to be able to ignore, which we then place in `ignoreRegExpList`.
   * :information_source: This is actually something I learned during the creation of my pull requests this year! Before that, I was using comments, which was messy since JSON isn't really supposed to have them.
+* `ignorePaths` is for excluding files or globs from the cSpell check.
 
 ### Create a "Work in Progress" Pull Request
 
@@ -175,6 +176,7 @@ cSpell findings typically fell into a few categories:
 * Actual spelling errors. These can be fixed as a one-off or done via find & replace across files in the case of a common misspelling.
 * "Standardizations", e.g. `colour` in the British spelling vs `color` in U.S. English. In these cases, I typically note them and ask whether the author would like me to revert them. I use cSpell's defaults in my default approach, which uses U.S. English.
 * Terms that may not be intended as words but as other terms, e.g. a variable name. I solve this by trying to format them according to their doc system's preference, which is often to place back-ticks around the term.
+* Whole files that might be excluded, e.g. large release notes files where the text is copied from issues and might be misspelled. Or markdown pages that mostly contain HTML.
 * Code snippets that aren't highlighted as such. I use the appropriate markdown to add code fences when I come across these.
 * Something cSpell shouldn't have picked up on but did because a regex ignore pattern was missing. I try to fix that when it happens and add the pattern.
 * Words we want to add to the dictionary. These might be domain-specific words that authors use, or other common words that don't happen to be in cSpell's dictionary. cSpell's VS Code integration gives you the lovely ability to hit `CTRL + .` to bring up a spell-check menu that you can use to add the word to the `cSpell.json` file you've created.
