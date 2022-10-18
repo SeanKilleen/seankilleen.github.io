@@ -193,14 +193,14 @@ Spelling and word choice is a personal thing. I take the position that as long a
 
 ## Where did I contribute these changes?
 
-You can see the contributions, as well as some of the questions and feedback I received along the way, and those repositories that did not find it helpful.
+You can see the contributions, as well as some of the questions and feedback I received along the way and those repositories where it wasn't a good fit.
 
 * [`ChilliCream/hotchocolate`](https://github.com/ChilliCream/hotchocolate/pull/5461)
 * [`prisma/docs`](https://github.com/prisma/docs/pull/3859)
 * [`avaoloniaui/Documentation`](https://github.com/AvaloniaUI/Documentation/pull/348)
 * [`dotnet/benchmarkdotnet`](https://github.com/dotnet/BenchmarkDotNet/pull/2144)
-* [`n8n-io/n8n-docs` (rejected)](https://github.com/n8n-io/n8n-docs/pull/980)
-* [`puppeteer/puppeteer`](https://github.com/puppeteer/puppeteer/pull/9083)
+* [:x: `n8n-io/n8n-docs`](https://github.com/n8n-io/n8n-docs/pull/980)
+* [:x: `puppeteer/puppeteer`](https://github.com/puppeteer/puppeteer/pull/9083)
 * [`mermaid-js/mermaid`](https://github.com/mermaid-js/mermaid/pull/3600)
 * [`microsoft/playwright`](https://github.com/microsoft/playwright/pull/17919)
 * [`unoplatform/uno`](https://github.com/unoplatform/uno/pull/10080)
