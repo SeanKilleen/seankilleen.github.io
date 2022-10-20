@@ -204,6 +204,8 @@ You can see the contributions, as well as some of the questions and feedback I r
 * [`mermaid-js/mermaid`](https://github.com/mermaid-js/mermaid/pull/3600)
 * [`microsoft/playwright`](https://github.com/microsoft/playwright/pull/17919)
 * [`unoplatform/uno`](https://github.com/unoplatform/uno/pull/10080)
+* [`abpframework/abp`](https://github.com/abpframework/abp/pull/14374)
+* [`dotnet/maui`](https://github.com/dotnet/maui/pull/10774)
 
 ## The Next Part is Up To You!
 
