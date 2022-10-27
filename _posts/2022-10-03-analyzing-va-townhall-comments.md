@@ -22,6 +22,8 @@ header:
 
 **Update**: Here's [a Jupyter Notebook with some queries](https://1drv.ms/u/s!AuaqsrDoMOUHofN3l-yYU62QVVBxYw?e=mZRhW8). I'm still learning how to use this well but if you have suggestions, I'll add things and keep this file up to date.
 
+___
+
 Virginia's current Governor Youngkin [has recently made headlines](https://www.nytimes.com/2022/09/18/us/virginia-transgender-students.html) by announcing a rollback to policies that previously sought to affirm the identity of transgender youth. I've placed my full take on the policy at the end of this article, but that's not what I want this article to be about. (Spoiler: I stand with the Transgender community and believe students are in charge of their identity. And if you know me, I hope that statement is already obvious.)
 
 [VA has a system called Townhall that is accepting public comment through 10/26](https://townhall.virginia.gov/L/Comments.cfm?GDocForumID=1953).[^1] One of the things that's been eating at me as public comments poured in is that I want the ability to analyze things better, and the VA Townhall site appears to be an old ColdFusion app with only basic CRUD abilities. Is there a way I could get it into a format where I could query the data?
