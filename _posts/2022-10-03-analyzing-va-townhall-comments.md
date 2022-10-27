@@ -45,6 +45,7 @@ I used the following to help me out:
 ## Step 1: Load the pages
 
 * Load [the comments page](https://townhall.virginia.gov/L/ViewComments.cfm?GdocForumID=1953)
+* Click the `View all Comments on One Page` link
 * Set the page size to `1000` comments per page and hit `Go` to bring back the first page.
 
 ## Step 2: Load Artoo and Figure out how to scrape a page
