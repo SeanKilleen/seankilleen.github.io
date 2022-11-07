@@ -126,7 +126,7 @@ author:
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/sjkilleen"
     - label: "Mastodon"
-      icon: "fa-brands fa-fw fa-mastodon"
+      icon: "fab fa-fw fa-mastodon"
       url: "https://mastodon.social/@sjkilleen"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
