@@ -8,7 +8,7 @@ tags:
   - dotnet7
   - globaltool
   - nuget
-date: 2022-11-11 8:00 -0500
+date: 2022-11-11 22:00 -0500
 excerpt: "Scratching a development itch to make Terraform provider upgrades easier."
 header:
  overlay_image: /images/overlays/unsplash/ant-rozetsky-SLIFI67jv5k-unsplash.jpg
