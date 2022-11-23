@@ -18,7 +18,7 @@ header:
 
 I had a great excuse to get to dig into and publish a .NET Global Tool recently, so I figured I'd announce it here!
 
-[TF-Whatsup](https://github.com/seankilleen/tf-whatsup), which provides the `whatsuptf` command, is currently at v0.5.0 on [NuGet](https://www.nuget.org/packages/TFWhatsUp.Console/#versions-body-tab)
+[`TF-Whatsup`](https://github.com/seankilleen/tf-whatsup), which provides the `whatsuptf` command, is currently at v0.5.0 on [NuGet](https://www.nuget.org/packages/TFWhatsUp.Console/#versions-body-tab)
 
 ## What it Does
 
