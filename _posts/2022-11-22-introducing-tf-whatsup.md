@@ -10,10 +10,10 @@ tags:
   - nuget
 date: 2022-11-11 8:00 -0500
 excerpt: "Scratching a development itch to make Terraform provider upgrades easier."
-# header:
-#  overlay_image: /images/overlays/unsplash/chris-lawton-5IHz5WhosQE-unsplash.jpg
-#  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
-#  caption: "Photo credit: [**Chris Lawton @ Unsplash**](https://unsplash.com/@chrislawton?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
+header:
+ overlay_image: /images/overlays/unsplash/ant-rozetsky-SLIFI67jv5k-unsplash.jpg
+ overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+ caption: "Photo credit: [**Ant Rozetsky @ Unsplash**](https://unsplash.com/@rozetsky?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)"
 ---
 
 I had a great excuse to get to dig into and publish a .NET Global Tool recently, so I figured I'd announce it here!
