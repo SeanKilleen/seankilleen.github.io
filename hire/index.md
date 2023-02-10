@@ -122,7 +122,7 @@ Highlights from what my peers recently said about me, anonymously. I am incredib
 
 > "Sean is so full of energy and knows so much. He is a very positive influence on the team, and I appreciate his ability to explain conceptual/technical things.  **He performs not only as a tech lead, but also as a mentor explaining the WHY behind decisions. He is humble and helps instill the feeling of community**, bringing together the diversity of experts and non-experts on the team."
 
-> "Sean is **one of the most proactive people that I have worked with**. He has often reached out to `[Client]` folks to try and support us, even presenting a brown bag for `[Client]` (both clients and contractors). He is a postive, tangible presence at a contract he isn't even directly on. Having that lifeline does create some psychological safety that is appreciated."
+> "Sean is **one of the most proactive people that I have worked with**. He has often reached out to `[Client]` folks to try and support us, even presenting a brown bag for `[Client]` (both clients and contractors). He is a positive, tangible presence at a contract he isn't even directly on. Having that lifeline does create some psychological safety that is appreciated."
 
 > "In a totally unqualified statement I can say that **Sean is the best supervisor I've ever had. This is not just best at Excella, this is in my career.**"
 
