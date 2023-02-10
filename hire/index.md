@@ -141,7 +141,6 @@ numerous new advocates for our team."
 
 > "Sean is also very transparent, but in a kind way. He cares about the message he is giving and knows when and how to give feedback. I appreciate having Sean as a teammate because he is never afraid to share his opinions, but also respects the opinions of others."
 
-
 ### Feedback from Prior Years
 
 > "Though he had many non-client obligations, he was the lead developer on the account and provided great results, value, and impact both to the client and our firm."
