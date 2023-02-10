@@ -116,8 +116,7 @@ Highlights from what my peers recently said about me, anonymously. I am incredib
 
 > "Sean had an amazing year with tremendous impact at `[Client]` – the team he leads produced **at least 15 significant "firsts"** for the client and the majority are **directly resulting from Sean's expertise and drive to improve the client's operational capabilities**"
 
-> "He also did significant, impactful coaching of client technical staff,  demonstrating the art of the possible with modern technologies, tools and engineering practices in a way that created excitement and enablement resulting in 
-numerous new advocates for our team."
+> "He also did significant, impactful coaching of client technical staff,  demonstrating the art of the possible with modern technologies, tools and engineering practices in a way that created excitement and enablement resulting in numerous new advocates for our team."
 
 > "Sean is the ultimate technical coach and he is single-handedly setting a new standard for technical and organizational practices at our client while **bringing people along with a positive message** of how learning and collaboration can improve both their individual work and the organization as a whole."
 
