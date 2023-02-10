@@ -108,9 +108,39 @@ I'm likely a fit for the following types of roles or similar:
 
 [^1]: This is not an exhaustive list.
 
-## Feedback from Prior Performance Appraisals
+## Feedback I've Received
 
 Highlights from what my peers recently said about me, anonymously. I am incredibly proud of this feedback, and feel it represents what I can bring to an organization.
+
+### Feedback from 2023
+
+> "Sean had an amazing year with tremendous impact at `[Client]` – the team he leads produced **at least 15 significant "firsts"** for the client and the majority are **directly resulting from Sean's expertise and drive to improve the client's operational capabilities**"
+
+> "He also did significant, impactful coaching of client technical staff,  demonstrating the art of the possible with modern technologies, tools and engineering practices in a way that created excitement and enablement resulting in numerous new advocates for our team."
+
+> "Sean is the ultimate technical coach and he is single-handedly setting a new standard for technical and organizational practices at our client while **bringing people along with a positive message** of how learning and collaboration can improve both their individual work and the organization as a whole."
+
+> "Sean is so full of energy and knows so much. He is a very positive influence on the team, and I appreciate his ability to explain conceptual/technical things.  **He performs not only as a tech lead, but also as a mentor explaining the WHY behind decisions. He is humble and helps instill the feeling of community**, bringing together the diversity of experts and non-experts on the team."
+
+> "Sean is **one of the most proactive people that I have worked with**. He has often reached out to `[Client]` folks to try and support us, even presenting a brown bag for `[Client]` (both clients and contractors). He is a positive, tangible presence at a contract he isn't even directly on. Having that lifeline does create some psychological safety that is appreciated."
+
+> "In a totally unqualified statement I can say that **Sean is the best supervisor I've ever had. This is not just best at Excella, this is in my career.**"
+
+> "he listens deeply, provides thoughtful feedback and encouragement, and by the time I get to the other side of it I have tools and confidence to move forward. Despite the fact that Sean has MSD director and heavy client responsibilities I never feel neglected or that he is phoning it in, which is really impressive to me."
+
+> "Working with Sean I've already seen myself become someone more comfortable with receiving difficult feedback, even inviting it so I can improve more honestly instead of relying on self talk as my barometer for how I'm doing. I've felt more capable of actually following through on some of my personal career and professional development goals with some of the strategies he's shared."
+
+> "**I'd like Sean to be my supervisor forever.**"
+
+> "Sean has been instrumental in helping `[Client]` leadership adopt new ways of doing thing and implementing a lot of firsts at `[Client]`, such as terraform, thousands of automated tests, & event sourcing just to name a few."
+
+> "Above all else, Sean is responsive, helpful, and dependable. In my time at Excella thus far, **I know that if I come to Sean with a problem, he has an answer. And if he doesn't have an answer, he makes it his priority to find one**. I know that Sean wears a lot of hats at Excella, but every time that I have interacted with him, he has been able to make my needs a priority."
+
+> "When I first interviewed with Excella, Sean facilitated my technical interview. After that interview, I felt positive that I wanted to work at Excella, heavily due to the opportunity to work with and learn from Sean."
+
+> "Sean is also very transparent, but in a kind way. He cares about the message he is giving and knows when and how to give feedback. I appreciate having Sean as a teammate because he is never afraid to share his opinions, but also respects the opinions of others."
+
+### Feedback from Prior Years
 
 > "Though he had many non-client obligations, he was the lead developer on the account and provided great results, value, and impact both to the client and our firm."
 
