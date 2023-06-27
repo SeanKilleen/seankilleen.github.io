@@ -11,7 +11,7 @@ Do you want to know if I'd be a good fit for your organization, or would you lik
 
 ## My Current Status
 
-I am passively open to new opportunities as a way of keeping an open mind. If you think you have a great fit, feel free to send it my way.
+I'm embarking on a new opportunity shortly, and therefore am not currently accepting opportunities.
 
 ## At a Glance
 
