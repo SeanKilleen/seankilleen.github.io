@@ -4,7 +4,7 @@ author_profile: true
 title: "About SeanKilleen.com"
 modified: 2018-12-31T10:53:07.573882-04:00
 show_edit_link: true
-cSpell: ignore Giscus
+cSpell:words Giscus
 ---
 
 {% include _i-want-you.md %}
