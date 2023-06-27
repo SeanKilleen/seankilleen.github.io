@@ -21,7 +21,7 @@ For a list of all the folks who've helped via pull requests, check out [the cred
 * The [jekyll-redirect-from][jekyll-redirect-from link] gem (saved my butt when trying to redirect my old Blogger pages).
 * All of this is hosted (for free!) On [Github pages][github-pages link], because they're awesome.
 * The [Minimal Mistakes theme][minimal mistakes link] (which I tweaked a bit).
-* Comments are hosted on [Disqus][disqus link].
+* Comments are done via [Giscus][giscus link], so they're hosted via [GitHub Discussions](https://github.com/SeanKilleen/seankilleen.github.io/discussions).
 
 Thanks to all of these things, I can host this small chunk of my brain on the internet.
 
@@ -32,6 +32,6 @@ Thanks to all of these things, I can host this small chunk of my brain on the in
 [github-pages link]: https://pages.github.com/
 [jekyll-redirect-from link]: https://github.com/jekyll/jekyll-redirect-from
 [minimal mistakes link]: https://github.com/mmistakes/minimal-mistakes
-[disqus link]: https://disqus.com/
+[giscus link]: https://giscus.app/
 [phil haack homepage]: http://haacked.com/
 [credits page link]: https://seankilleen.com/credits
