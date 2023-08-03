@@ -27,9 +27,9 @@ jobs:
         GITHUB_PAGES_VERSION: [226]
     runs-on: ubuntu-latest
     env:
-      RUBY_VERSION: ${{ matrix.RUBY_VERSION }}
-      NODE_MAJOR_VERSION: ${{ matrix.NODE_MAJOR_VERSION }}
-      GITHUB_PAGES_VERSION: ${{ matrix.GITHUB_PAGES_VERSION }}
+      RUBY_VERSION: ${{{{ matrix.RUBY_VERSION }}}}
+      NODE_MAJOR_VERSION: ${{{{ matrix.NODE_MAJOR_VERSION }}}}
+      GITHUB_PAGES_VERSION: ${{{{ matrix.GITHUB_PAGES_VERSION }}}}
 ```
 
 ## ...But do we really want every combination?
