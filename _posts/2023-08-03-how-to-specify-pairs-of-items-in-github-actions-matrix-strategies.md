@@ -60,3 +60,5 @@ jobs:
 ```
 
 Now, I'll still get a build for each node version I specified (16, 18, and 20) and I'll get those in combination with Ruby 2.7.3 / GH Pages 226 and Ruby 2.7.4 / GH Pages 228.
+
+Happy coding!
