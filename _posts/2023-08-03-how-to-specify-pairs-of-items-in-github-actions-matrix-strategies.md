@@ -6,7 +6,7 @@ tags:
   - github-actions
   - devops
   - cicd
-date: 2023-08-02 22:49 -0400
+date: 2023-08-03 09:03 -0400
 ---
 Came across this and wasn't aware of it (though it makes total sense in retrospect), so I figured I'd pass the tip along.
 
