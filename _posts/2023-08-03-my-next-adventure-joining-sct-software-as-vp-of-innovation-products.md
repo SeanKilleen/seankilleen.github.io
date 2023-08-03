@@ -11,6 +11,6 @@ I'm very happy to announce that starting today, I'm joining [SCT Software](https
 
 SCT provides logistics execution solutions within the SAP ecosystem, so I'm definitely going to be drinking from a fire hose for a bit as I adjust to an ecosystem I'm less familiar with. But I'm excited to dive in with SCT's great team to help accelerate delivery, purposefully grow our culture and capabilities, and blaze some new trails together. Not to mention having fun while we do it. :smile:
 
-I'll always be grateful to my previous employer, [Excella](https://excella.com), for being such an integral part of my growth and helping to prepare me for this next step.
+I'll always be grateful to my awesome colleagues at [Excella](https://excella.com) for being such an integral part of my growth and helping to prepare me for this next step.
 
 Onward!
