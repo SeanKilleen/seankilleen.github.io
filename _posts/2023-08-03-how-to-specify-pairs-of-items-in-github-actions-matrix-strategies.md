@@ -27,9 +27,9 @@ jobs:
         GITHUB_PAGES_VERSION: [226]
     runs-on: ubuntu-latest
     env:
-      RUBY_VERSION: ${{ matrix.RUBY_VERSION }}
-      NODE_MAJOR_VERSION: ${{ matrix.NODE_MAJOR_VERSION }}
-      GITHUB_PAGES_VERSION: ${{ matrix.GITHUB_PAGES_VERSION }}
+      RUBY_VERSION: "${{ matrix.RUBY_VERSION }}"
+      NODE_MAJOR_VERSION: "${{ matrix.NODE_MAJOR_VERSION }}"
+      GITHUB_PAGES_VERSION: "${{ matrix.GITHUB_PAGES_VERSION }}"
 ```
 
 ## ...But do we really want every combination?
@@ -50,9 +50,9 @@ jobs:
         NODE_MAJOR_VERSION: [16,18,20]
     runs-on: ubuntu-latest
     env:
-      RUBY_VERSION: ${{ matrix.VERSIONS.ruby }}
-      NODE_MAJOR_VERSION: ${{ matrix.NODE_MAJOR_VERSION }}
-      GITHUB_PAGES_VERSION: ${{ matrix.VERSIONS.ghpages }}
+      RUBY_VERSION: "${{ matrix.VERSIONS.ruby }}"
+      NODE_MAJOR_VERSION: "${{ matrix.NODE_MAJOR_VERSION }}"
+      GITHUB_PAGES_VERSION: "${{ matrix.VERSIONS.ghpages }}"
 ```
 
 Now, I'll still get a build for each node version I specified (16, 18, and 20) and I'll get those in combination with Ruby 2.7.3 / GH Pages 226 and Ruby 2.7.4 / GH Pages 228.
