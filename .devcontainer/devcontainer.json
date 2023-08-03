@@ -4,15 +4,19 @@
         "dockerfile": "Dockerfile"
     },
     "forwardPorts": [4000],
-    "extensions": [
-        "streetsidesoftware.code-spell-checker", 
-        "oderwat.indent-rainbow", 
-        "mdickin.markdown-shortcuts", 
-        "davidanson.vscode-markdownlint",
-        "redhat.vscode-yaml",
-        "vsls-contrib.codetour",
-        "github.vscode-pull-request-github",
-        "ms-azuretools.vscode-docker"
-    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "streetsidesoftware.code-spell-checker", 
+                "oderwat.indent-rainbow", 
+                "mdickin.markdown-shortcuts", 
+                "davidanson.vscode-markdownlint",
+                "redhat.vscode-yaml",
+                "vsls-contrib.codetour",
+                "github.vscode-pull-request-github",
+                "ms-azuretools.vscode-docker"
+            ]
+                }
+    },
     "postStartCommand": "bundle install"
 }
