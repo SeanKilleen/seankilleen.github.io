@@ -35,7 +35,7 @@ I like to create a pull request as soon as possible rather than waiting until my
 * I create a branch. To keep it simple, I typically use the format `[WorkItemNumber]_description-text`, such as `123_add-spellcheck`. Different teams have different standards for branch names; I adapt as necessary.
 * I make a single commit -- or sometimes even an empty commit with `git commit -m "my message" --allow-empty`.
 * I create a pull request based on that branch so that it's available for others ASAP.
-* I ensure the pull request is linked to a work item. In GitHub, means writing `Resolves #123` or `Supports #123` in the body of the pull request. In systems like BitBucket, it might mean putting the Jira work item number in the title of the pull request.
+* I ensure the pull request is linked to a work item. In GitHub, means writing `Resolves #123` (if this PR will close that issue when it's merged) or `Supports #123` in the body of the pull request. In systems like BitBucket, it might mean putting the Jira work item number in the title of the pull request.
 
 ## Doing Work in the Pull Request
 
