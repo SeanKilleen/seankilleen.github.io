@@ -23,4 +23,4 @@ I'm a big fan of working out loud. To me, pull requests represent a way of shari
 
 ## It Starts With a Work Item
 
-Typically, I like to start any pull request by creating an issue or work item in the system I'm using to track those things. This helps ensure the work is visible. It also allows discussion on the value of that particular work, and space to think about its implimentation. Showing up with a pull request skips those valuable steps and might lead to re-work. Lastly, having a work item means I might be able to split the work into multiple small pull requests, allowing me to move work through faster by doing it in smaller batches.
+Typically, I like to start any pull request by creating an issue or work item in the system I'm using to track those things. This helps ensure the work is visible. It also allows discussion on the value of that particular work, and space to think about its implementation. Showing up with a pull request skips those valuable steps and might lead to re-work. Lastly, having a work item means I might be able to split the work into multiple small pull requests, allowing me to move work through faster by doing it in smaller batches.
