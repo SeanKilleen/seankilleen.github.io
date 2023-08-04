@@ -48,4 +48,10 @@ Regardless of whether anyone else will review the PR, when I think it's ready to
 
 I'll put on my reviewer hat and review the PR as if I'd created it. This usually turns up some small tweaks I want to make, and also allows me to add more information, such as drawing attention to riskier areas of my work that need in-depth review, or explaining my thinking around the choices I made.
 
-## What to do with all of those commits?
+Again, the goal is communication. This provides more historical context and makes review conversations faster if reviews are being performed.
+
+## What to Do With all of Those Small Commits?
+
+I squash them! 
+
+Many small commits are helpful for review, but when the pull request is merged, I really only care about the sum of that work. Squashing is a merge strategy that turns all of those small commits into one commit. I use that strategy to keep my main branch's history from becoming cluttered, and so the code from each PR is more easily traceable.
