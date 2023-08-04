@@ -7,7 +7,7 @@ tags:
   - oss
   - pull-requests
   - prs
-date: 2023-08-04 09:32 -0400
+date: 2023-08-07 09:00 -0400
 ---
 I've been asked a lot of times about my process for submitting pull requests, so I figured I'd write it up!
 
