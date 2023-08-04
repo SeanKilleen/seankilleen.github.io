@@ -55,3 +55,9 @@ Again, the goal is communication. This provides more historical context and make
 I squash them! 
 
 Many small commits are helpful for review, but when the pull request is merged, I really only care about the sum of that work. Squashing is a merge strategy that turns all of those small commits into one commit. I use that strategy to keep my main branch's history from becoming cluttered, and so the code from each PR is more easily traceable.
+
+## What's Your Process?
+
+I'd love to hear about your process and where it differs from mine. Feel free to start a discussion in the comments.
+
+Happy coding!
