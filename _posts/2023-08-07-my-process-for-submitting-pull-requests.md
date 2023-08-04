@@ -13,7 +13,7 @@ I've been asked a lot of times about my process for submitting pull requests, so
 
 ## First -- A Few Caveats
 
-* **This is my style; your might vary, and that's fine!** I think there are a lot of ways to do this well, and there's no sense in being dogmatic about it.
+* **This is my style; yours might vary, and that's fine!** I think there are a lot of ways to do this well, and there's no sense in being dogmatic about it.
 * **I don't follow this 100% every time**. I don't think you have to do these things exactly in order to be successful. It's better to adapt to your situation/context.
 * **I'm assuming you're familiar with pull requests and how they work.** If you're not yet familiar with that, I recommend searching around and finding some great articles on that first, or some of this article might be confusing.
 
