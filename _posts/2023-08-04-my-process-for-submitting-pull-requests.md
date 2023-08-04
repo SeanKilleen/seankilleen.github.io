@@ -43,6 +43,10 @@ I make many small commits to the PR as I go. Making small commits lets me backtr
 
 I treat my pull request like a diary - which is to say, I try to "think out loud". If I'm stumped, or if I consult a resource or article, or if I'm debating different directions, I might add that information in a comment. This provides historical context for anyone who might need it in the future.
 
+## Checklists are My Friend
+
+I often create checklists in the descriptions of my pull requests. This way I can jot things down quickly as I go and make sure that I finish everything that's needed before merging (or move it into a new work item). This lets me get it out of my head which helps me stay focused.
+
 ## Self Review
 
 Regardless of whether anyone else will review the PR, when I think it's ready to submit or get feedback on, I try to do a "self review".
