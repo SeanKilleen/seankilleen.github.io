@@ -33,3 +33,19 @@ I like to create a pull request as soon as possible rather than waiting until my
 
 * I check out the main branch
 * I create a branch. To keep it simple, I typically use the format `[WorkItemNumber]_description-text`, such as `123_add-spellcheck`. Different teams have different standards for branch names; I adapt as necessary.
+* I make a single commit -- or sometimes even an empty commit with `git commit -m "my message" --allow-empty`
+* I create a pull request based on that branch so that it's available for others ASAP.
+
+## Doing Work in the Pull Request
+
+I make many small commits to the PR as I go. Making small commits lets me backtrack more easily if I need to, and shows my thought process as I add comments to the commits. I'm not worried about how many commits I make; I take care of that at the end (more on that later).
+
+I treat my pull request like a diary - which is to say, I try to "think out loud". If I'm stumped, or if I consult a resource or article, or if I'm debating different directions, I might add that information in a comment. This provides historical context for anyone who might need it in the future.
+
+## Self Review
+
+Regardless of whether anyone else will review the PR, when I think it's ready to submit or get feedback on, I try to do a "self review". 
+
+I'll put on my reviewer hat and review the PR as if I'd created it. This usually turns up some small tweaks I want to make, and also allows me to add more information, such as drawing attention to riskier areas of my work that need in-depth review, or explaining my thinking around the choices I made.
+
+## What to do with all of those commits?
