@@ -24,3 +24,12 @@ I'm a big fan of working out loud. To me, pull requests represent a way of shari
 ## It Starts With a Work Item
 
 Typically, I like to start any pull request by creating an issue or work item in the system I'm using to track those things. This helps ensure the work is visible. It also allows discussion on the value of that particular work, and space to think about its implementation. Showing up with a pull request skips those valuable steps and might lead to re-work. Lastly, having a work item means I might be able to split the work into multiple small pull requests, allowing me to move work through faster by doing it in smaller batches.
+
+## When to Create a Pull Request
+
+I like to create a pull request as soon as possible rather than waiting until my work is done. This is because it broadcasts what I'm doing to others, allows people to jump in with thoughts, and lets me leave notes as I think through things out loud.
+
+## Creating the PR
+
+* I check out the main branch
+* I create a branch. To keep it simple, I typically use the format `[WorkItemNumber]_description-text`.
