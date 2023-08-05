@@ -20,9 +20,9 @@ I often do a lot of code reviews and pull request reviews. As a follow-up to [my
 
 ## Before Beginning -- the Right Mindset
 
-I try to always keep a few things in mind:
+I try to always keep a few things in mind prior to reviewing code:
 
-* **Reviewers should be rooting for those they're reviewing**. I want the person whose code I'm reviewing to succeed.
+* **Reviewers should be rooting for those they're reviewing**. I should want the person whose code I'm reviewing to succeed.
 * **Code always has a context, and no code/author is perfect.** This perspective is important, I think. Too often, we review pull requests outside of the context in which they're offered.
 
 I find reminding myself of these things put me in the right mindset to add constructive, helpful comments.
