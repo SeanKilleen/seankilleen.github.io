@@ -29,10 +29,20 @@ I find reminding myself of these things put me in the right mindset to add const
 
 ## Tips I Use While Reviewing
 
-* **Look for things I like, too**. PR reviews aren'ty only about critical comments.
-* **Use Agreed-upon or common emojis**. I tend to use :warning: to highlight items I think are important, :information_source: for additional information / context, :blue_book: for readability considerations, :bulb: for ideas for improvements, and :trophy: for things I want to point out that I really like.
+* **Look for things I like, too**. PR reviews aren't only about critical comments.
+* **Use Agreed-upon or common emojis**. More on this below, but I find that including an emoji at the start of a code review item helps provide quick context and understanding to the author.
 * **Make use of suggestions**: TODO
 * **Make use of review batches**: TODO
+
+## Emojis I Tend to Use When Reviewing
+
+* :warning: for items I think are important enough to definitely be changed
+* :information_source: for additional information / context
+* :question: When I have a question about something that may not need to be addressed but that I'd like more information on.
+* :blue_book: for readability considerations, 
+* :bulb: for ideas the PR made me think of (that I don't think need to be addressed now) 
+* :trophy: / :tada: / :+1: for things I want to point out that I like.
+* :pick: A nitpick. Something that matters to me but maybe only me. This is when I have the ruge to say it despite the fact that it may not be that important. (I'm human, too!)
 
 ## Some Common Areas I Review For
 
@@ -42,3 +52,5 @@ I find reminding myself of these things put me in the right mindset to add const
 * **Checking Statuses**: TODO
 * **Ensure the correct branch target**: TODO
 * **Merging Strategy**: TODO
+
+Happy coding!
