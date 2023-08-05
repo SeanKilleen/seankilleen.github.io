@@ -44,7 +44,7 @@ I find reminding myself of these things put me in the right mindset to add const
 * :trophy: / :tada: / :+1: for things I want to point out that I like.
 * :pick: A nitpick. Something that matters to me but maybe only me. This is when I have the urge to say it despite the fact that it may not be that important. (I'm human, too!)
 
-## Some Common Areas I Review For
+## Some Common Areas I Review
 
 In addition to basic correctness and whether the pull request achieves its intended purpose, I tend to look at:
 
