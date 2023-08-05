@@ -14,7 +14,7 @@ We recently got back from a big trip, and that reminded me I've been meaning to 
 
 ## Why a "Continuous" Packing List?
 
-In short? Because I used to forget stuff. _All the time_. By creating a continuous packing list that I reset for every trip, I could continue to add items that I'd forget and then never forget them again. This has a great deal of appeal for me. It has stopped me from getting probably 100 things since I created it, which adds up to some real hassle saved.
+In short? Because I used to forget stuff. _All the time_. By creating a continuous packing list that I reset for every trip, I could continue to add items that I'd forget and then never forget them again. This has a great deal of appeal for me. It has stopped me from forgetting probably 100 things since I created it, which adds up to some real hassle saved.
 
 My wife and I also may need to do some asynchronous planning / packing, especially with our little guy running around, and so the list is especially helpful when one of us thinks of something in the moment. It's a really effective way to talk through this sort of thing with a partner.
 
