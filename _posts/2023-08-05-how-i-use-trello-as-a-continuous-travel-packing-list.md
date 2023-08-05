@@ -1,7 +1,7 @@
 ---
 title: How I Use Trello as a "Continuous Travel Packing List"
 comments: true
-date: 2023-08-04 21:38 -0400
+date: 2023-08-17 09:00 -0400
 ---
 We recently got back from a big trip, and that reminded me I've been meaning to publish a tip on how [Trello](https://trello.com) has saved me a lot of time and hassle around travel -- and how to set it up so that it can benefit you as well. I'm a big fan of kanban boards in general but this may have helped me more than any other.
 
