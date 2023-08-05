@@ -31,8 +31,8 @@ I find reminding myself of these things put me in the right mindset to add const
 
 * **Look for things I like, too**. PR reviews aren't only about critical comments.
 * **Use Agreed-upon or common emojis**. More on this below, but I find that including an emoji at the start of a code review item helps provide quick context and understanding to the author.
-* **Make use of suggestions**: TODO
-* **Make use of review batches**: TODO
+* **Make use of suggestions**: World-class collaborative coding platforms allow the ability to suggest changes during reviews (get with it, BitBucket!) Of thse, I like GitHub's UX the best. Suggesting changes shows the author exactly what you'd suggest changing, and allows them to incorporate your suggestions with one click if they agree. The best part about this for me is the suggestion can be combined with a comment explaining why you're making the suggestion. Even if you're the admin, suggesting the change and then incorporating it provides some nice additional context.
+* **Make use of review batches**: Most collaborative coding platforms allow the ability to store up multiple review notes and deliver them all at once, instead of individual notifications (again, BitBucket lags behind here). Where possible, such as in GitHub, I do my best to "start a review", make review comments/suggestions, and then submit all of the review content at once.
 
 ## Emojis I Tend to Use When Reviewing
 
@@ -46,11 +46,14 @@ I find reminding myself of these things put me in the right mindset to add const
 
 ## Some Common Areas I Review For
 
-* **Wording**: TODO
-* **Variable Names**: TODO
-* **Comments that should be issues**: TODO
-* **Checking Statuses**: TODO
-* **Ensure the correct branch target**: TODO
-* **Merging Strategy**: TODO
+In addition to basic correctness and whether the pull request achieves its intended purpose, I tend to look at:
+
+* **Checking Statuses**: Are all of the automated builds / checks passing for that pull request? I try to look at that first and if something is failling, I try to provide insight.
+* **Wording**: I care a lot about wording/phrasing, which likely comes from having spent several years as a writin tutor. So I try to call out opportunities to be clearer with any wording that's being used.
+* **Variable Names**: I try to ensure variable names are correct and descriptive.
+* **Comments that should be issues**: If there are comments in the code similar to `// TODO`, I will try to get those addressed in the PR
+* **Checklist Items**: If the project or author is using checklist items, I make sure the checklists are complete.
+* **Ensure the correct branch target**: Nobody likes to accidentally merge something to the wrong spot. I usually glance at this (or better yet, use simpler branching strategies that don't 
+* **Merging Strategy**: I usually check to ensure the project's defined merging strategy is being followed. For example, if a project requires one commit for a PR, I make sure the commits have been squashed, or that the automated strategy can be used (such as in GitHub's UI).
 
 Happy coding!
