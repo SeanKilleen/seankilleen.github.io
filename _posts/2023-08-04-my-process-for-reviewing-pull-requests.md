@@ -39,10 +39,10 @@ I find reminding myself of these things put me in the right mindset to add const
 * :warning: for items I think are important enough to definitely be changed
 * :information_source: for additional information / context
 * :question: When I have a question about something that may not need to be addressed but that I'd like more information on.
-* :blue_book: for readability considerations, 
-* :bulb: for ideas the PR made me think of (that I don't think need to be addressed now) 
+* :blue_book: for readability considerations
+* :bulb: for ideas the PR made me think of (that I don't think need to be addressed now)
 * :trophy: / :tada: / :+1: for things I want to point out that I like.
-* :pick: A nitpick. Something that matters to me but maybe only me. This is when I have the ruge to say it despite the fact that it may not be that important. (I'm human, too!)
+* :pick: A nitpick. Something that matters to me but maybe only me. This is when I have the urge to say it despite the fact that it may not be that important. (I'm human, too!)
 
 ## Some Common Areas I Review For
 
