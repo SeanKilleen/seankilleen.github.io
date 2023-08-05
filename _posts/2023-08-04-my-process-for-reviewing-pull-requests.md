@@ -48,12 +48,12 @@ I find reminding myself of these things put me in the right mindset to add const
 
 In addition to basic correctness and whether the pull request achieves its intended purpose, I tend to look at:
 
-* **Checking Statuses**: Are all of the automated builds / checks passing for that pull request? I try to look at that first and if something is failling, I try to provide insight.
-* **Wording**: I care a lot about wording/phrasing, which likely comes from having spent several years as a writin tutor. So I try to call out opportunities to be clearer with any wording that's being used.
+* **Checking Statuses**: Are all of the automated builds / checks passing for that pull request? I try to look at that first and if something is failing, I try to provide insight.
+* **Wording**: I care a lot about wording/phrasing, which likely comes from having spent several years as a writing tutor. So I try to call out opportunities to be clearer with any wording that's being used.
 * **Variable Names**: I try to ensure variable names are correct and descriptive.
-* **Comments that should be issues**: If there are comments in the code similar to `// TODO`, I will try to get those addressed in the PR
+* **Comments that should be issues**: If there are comments in the code similar to `// TODO`, I will try to get those addressed in the PR or moved into a separate work item in our work tracking tool.
 * **Checklist Items**: If the project or author is using checklist items, I make sure the checklists are complete.
-* **Ensure the correct branch target**: Nobody likes to accidentally merge something to the wrong spot. I usually glance at this (or better yet, use simpler branching strategies that don't 
+* **Ensure the correct branch target**: Nobody likes to accidentally merge something to the wrong spot. I usually glance at this -- or better yet, use simpler branching strategies that don't cause confusion in this regard.
 * **Merging Strategy**: I usually check to ensure the project's defined merging strategy is being followed. For example, if a project requires one commit for a PR, I make sure the commits have been squashed, or that the automated strategy can be used (such as in GitHub's UI).
 
 Happy coding!
