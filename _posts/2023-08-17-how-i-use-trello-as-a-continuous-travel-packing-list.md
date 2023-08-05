@@ -73,4 +73,4 @@ I have some Trello automation that moves items back into their respective lists 
 
 ## What's Your Setup?
 
-Do you do something different, or have any tweaks you'd suggest? I'd love to hear about it in the comments Until then, happy trails!
+Do you do something different, or have any tweaks you'd suggest? I'd love to hear about it in the comments. Until then, happy trails!
