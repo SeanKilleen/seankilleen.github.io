@@ -15,8 +15,9 @@ I often do a lot of code reviews and pull request reviews. As a follow-up to [my
 
 * **This is my style; yours might vary, and that's fine!** I think there are a lot of ways to do this well, and there's no sense in being dogmatic about it.
 * **I don't follow this 100% every time**. I don't think you have to do these things exactly in order to be successful. It's better to adapt to your situation/context.
-* **I'm assuming you're familiar with pull requests and how they work.** If you're not yet familiar with that, I recommend searching around and finding some great articles on that first, or some of this article might be confusing.
-* **This advice is geared less toward public OSS projects.** In those cases, there are additional requirements for review IMO, because the OSS authors will have to maintain that code in perpetuity after the change is merged, and the original author may or may not available. This article assumes we're talking about a team project.
+* **I'm assuming you're familiar with pull requests and how they work.** If you're not yet familiar with that, I recommend searching around and finding some great articles on that first, or some of the contents of this article might be confusing.
+* **This advice is geared less toward public OSS projects.** In those cases, there are additional requirements for review IMO, because the OSS authors will have to maintain that code in perpetuity after the change is merged, and the original author may or may not be available. This article assumes we're talking about a team project.
+* **This assumes you _want_ pull requests.** Many teams prefer to forego them because they feel they add unnecessary overhead. I disagree. My point is, if that's how your feel, then this post isn't for you.
 
 ## Before Beginning -- the Right Mindset
 
