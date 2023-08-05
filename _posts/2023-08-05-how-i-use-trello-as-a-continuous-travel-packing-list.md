@@ -22,7 +22,7 @@ Lastly, it makes me a more efficient packer/traveler. I'm someone who, if left t
 
 ## Our Trello Board Setup
 
-### Columns 
+### Columns
 
 I have board columns for (in order):
 
