@@ -27,8 +27,8 @@ Lastly, it makes me a more efficient packer/traveler. I'm someone who, if left t
 I have board columns for (in order):
 
 * Uncommon Items
-* Master List: Departure Checklist
-* Master List
+* Big List: Departure Checklist
+* Big List
 * Pack/Do
 * Staged
 * Done
@@ -53,8 +53,8 @@ I have some Trello automation that moves items back into their respective lists 
 
 ### Planning the Trip
 
-* Move items from the `Master List` into the `Pack/Do` list that we plan to bring
-* Move items from the `Master List: Departure Checklist` into `Pack/Do` in the same fashion.
+* Move items from the `Big List` into the `Pack/Do` list that we plan to bring
+* Move items from the `Big List: Departure Checklist` into `Pack/Do` in the same fashion.
   * I could have combined these lists but the resulting list just felt too small.
 * Check the `Uncommon Items` list for anything we need
 * For anything we need to do, add a due date if it needs to be accomplished before we leave (e.g. charge gadgets, stop the mail)
@@ -63,14 +63,14 @@ I have some Trello automation that moves items back into their respective lists 
 ### Packing
 
 * Move things from `Pack/Do` into `Done` as soon as they're in a bag/container that will be staged.
-* When they're ready, move the container items into the "staging" column (this is so we won't forget to actually put them in our vehicle. This column...exists for a reason.)
+* When they're ready, move the container items into the `Staged` column (this is so we won't forget to actually put them in our vehicle. This column...exists for a reason.)
 * When the `Pack/Do` and `Staged` columns are empty, you're ready to go!
 
 ### When We Return
 
-* Run the Trello automation to reset the lists. This moves items from done back into `Uncommon Items`, `Master List`, or `Master List: Departure Checklist` as applicable.
+* Run the Trello automation to reset the lists. This moves items from done back into `Uncommon Items`, `Big List`, or `Big List: Departure Checklist` as applicable.
 * Run the automation to sort the lists once more, which tidies them up for next time.
 
 ## What's Your Setup?
 
-Do you do something different, or have any tweaks you'd suggest? I'd love to hear about it in the comments Until then, happy trails!
+Do you do something different, or have any tweaks you'd suggest? I'd love to hear about it in the comments. Until then, happy trails!
