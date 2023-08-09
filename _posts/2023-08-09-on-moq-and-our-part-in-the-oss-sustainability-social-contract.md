@@ -19,7 +19,7 @@ Recently, [Moq, an OSS mocking library for .NET](https://github.com/moq/moq), ma
 * At some point, likely for a long time, sustaining the Moq OSS library became untenable.
 * Also as background, some OSS projects have tried things for a long time - asking for sponsors and contributors, changing license terms. All are typically met with some form of hostility from a large group of consumers who have no intention of supporting the software.
 * In January, the maintainer of Moq [blogged about a tool they'd be building called SponsorLink](https://www.cazzulino.com/sponsorlink.html), specifically saying they're "trying something new-ish". This tool collects GitHub e-mail addresses and hashes them, and appears to attempt to ask for sponsorship within the IDE if a user isn't already sponsoring.
-* In April, [it was pointed out via a GitHub comment](https://github.com/devlooped/SponsorLink/issues/10) that this might not be a great approach from a privacy & GDPR perspective. At the time, the author dismissed that concern because they believed the hashing of the e-mails meant there wasn't a privacy violation. This is incorrect but I understand how someone could mistakenly come to that conclusion.
+* In April, [it was pointed out via a GitHub issue](https://github.com/devlooped/SponsorLink/issues/10) that this might not be a great approach from a privacy & GDPR perspective. At the time, the author dismissed that concern because they believed the hashing of the e-mails meant there wasn't a privacy violation. This is incorrect but I understand how someone could mistakenly come to that conclusion.
 * This month, the author [implemented that tooling in a release](https://github.com/moq/moq/releases/tag/v4.20.0), and a lot of folks were (understandably) caught off guard when they made the update. Some had the package flagged for security issues because it contained a new dependency that was making network calls. Some had their builds negatively impacted (such as those who enabled warnings as errors, etc.)
 * As will likely not be surprising, people became pretty quickly irate -- working to rip Moq out of their setups (or at least saying they would), warning other projects that use the library, calling it malware, bashing the library, etc.
 * Roughly a day later, [the change was reverted](https://github.com/moq/moq/releases/tag/v4.20.2). Though, it sounds like there are still plans to continue with it.
@@ -61,7 +61,7 @@ I have to remember that I as a user of Moq I didn't follow the author to stay up
 
 ## It's Not a "Supply Chain" Unless You're a Responsible Consumer
 
-One thing I want to call out because it annoys me to no end: people who complain about having to rip libraries out or get in trouble with their Security / DevSecOps teams and how personally frustrating it is for them.
+One thing I want to call out because I find it personally frustrating: consumers who complain about having to rip libraries out or get in trouble with their Security / DevSecOps teams and how personally frustrating it is for them.
 
 You typically either build software, or buy software. But OSS has introduced an additional category: "software you can use and thankfully don't have to buy." The problem occurs when we remove the "thankfully" and it becomes an expectation of an entire ecosystem.
 
