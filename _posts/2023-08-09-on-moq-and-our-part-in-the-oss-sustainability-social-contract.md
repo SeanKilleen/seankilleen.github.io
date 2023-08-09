@@ -32,7 +32,7 @@ And since I haven't done a single thing to help this library to this point, I ha
 
 ## Looking Inward: How Could This Have Been Prevented?
 
-I like to think about this from an impact perspective. If I wanted a different outcome here, what are some things I could have done?
+I like to think about this from an impact perspective. If I wanted a different outcome here, what are some things I could have done? I'd suggest others could benefit from doing this as well.
 
 * I could have commented my thoughts on the proposed change. But, I didn't actively follow the project beyond consuming it.
   * **Action**: I could follow the authors of the OSS tools I depend on, on various social channels (and add their blogs to my feed reader).
