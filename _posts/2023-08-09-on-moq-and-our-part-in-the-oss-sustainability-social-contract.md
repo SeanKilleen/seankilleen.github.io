@@ -28,6 +28,8 @@ Recently, [Moq, an OSS mocking library for .NET](https://github.com/moq/moq), ma
 
 This is yet another situation where the situation for this project became untenable, traditional paths don't seem to have worked, and the author had an idea for something new and novel. Would I have done it myself? No. Do I think it was a successful idea? Absolutely not. Can I fault them for trying? No. Do I think this author deserves our grace and respect after we've all consumed their work for free for years? Yes.
 
+With that said, I think this is a good example of how not to go about this sort of change. I think the implications of collecting developer email addresses without consent, and introducing a closed source (and obfuscated) binary, were not fully considered. And I think for a change like this, a lot more communication in a lot more formats would be helpful. I think negative-first approach (warning, slowed builds) is bound to frustrate people and make them defensive, which makes them much less likely to donate. Similar with being surprised. And I know the author tried to show how they had no nefarious intent, but they noted that without noting the real frustration that accompanied their actions -- impact matters more than intent.
+
 And since I haven't done a single thing to help this library to this point, I haven't held up my end of the OSS social contract. So, my currency is now in being empathetic and allowing the benefit of the doubt on the author's intentions. "Let they who are without OSS sin cast the first stone."
 
 ## The Social Contract of OSS Sustainability
@@ -43,6 +45,8 @@ The last part of my social think is to strongly consider that I am a member of t
 ## So, Looking Inward: How Could This Have Been Prevented?
 
 I like to think about this from an impact perspective. If I wanted a different outcome here, what are some things I could have done? I'd suggest others could benefit from doing this as well.
+
+I have to remember that I as a user of Moq I didn't follow the author to stay up to date, so I didn't read or comment on the announcement post that is 7 months old. And also I didn't provide monetary support OR community support. I'm not holding up my part of the OSS social contract, so it's hard for me to feel mad when I feel that the author missed the mark on it too. To be outraged at this without prior support is to be a direct part of the problem of OSS sustainability, because it assumes we should be nothing but consumers without fulfilling the obligations of community.
 
 * I could have commented my thoughts on the proposed change. But, I didn't actively follow the project beyond consuming it.
   * **Action**: I could follow the authors of the OSS tools I depend on, on various social channels (and add their blogs to my feed reader).
@@ -65,4 +69,4 @@ Anything else is just magical thinking.
 
 ## Other Perspectives I've Heard (and my responses)
 
-## Bottom Line: We Need Better Systems Thinking Around OSS Ecosystems 
+## Bottom Line: We Need Better Systems Thinking Around OSS Ecosystems
