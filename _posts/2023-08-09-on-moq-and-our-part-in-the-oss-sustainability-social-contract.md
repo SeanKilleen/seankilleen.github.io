@@ -22,7 +22,7 @@ Recently, [Moq, an OSS mocking library for .NET](https://github.com/moq/moq), ma
 * In April, [it was pointed out via a GitHub comment](https://github.com/devlooped/SponsorLink/issues/10) that this might not be a great approach from a privacy & GDPR perspective. At the time, the author dismissed that concern because they believed the hashing of the e-mails meant there wasn't a privacy violation. This is incorrect but I understand how someone could mistakenly come to that conclusion.
 * This month, the author [implemented that tooling in a release](https://github.com/moq/moq/releases/tag/v4.20.0), and a lot of folks were (understandably) caught off guard when they made the update. Some had the package flagged for security issues because it contained a new dependency that was making network calls. Some had their builds negatively impacted (such as those who enabled warnings as errors, etc.)
 * As will likely not be surprising, people became pretty irate -- working to rip Moq out of their setups (or at least saying they would), warning other projects that use the library, calling it malware, bashing the library, etc. 
-* Roughly a day later, [the change was reverted](https://github.com/moq/moq/releases/tag/v4.20.2).
+* Roughly a day later, [the change was reverted](https://github.com/moq/moq/releases/tag/v4.20.2). Though, it sounds like there are still plans to continue with it.
 
 ## My Take
 
@@ -59,8 +59,10 @@ One thing I want to call out because it annoys me to no end: people who complain
 
 These companies have been using this library for free. Presumably it saves them money or time (which to a business _is money_.) Those organizations who are using OSS but not paying attention to the ecosystem they use are ignorant of a free supply chain. As a business, you either need to actively understand your supply chain, or understand your own situation enough that you can adapt if your supply chain changes (without blaming the supply chain). If you don't have a supply chain that is committed to you via a business transaction, then you need to be aware of those risks and work to mitigate them or budget for them in some way. 
 
-Within business contexts, stop pretending that free OSS work owes you the responsibility of being a supplier in a supply chain if you're not doing the appropriate work of being a business consumer (i.e. paying for the supplier).
+Within business contexts, stop pretending that free OSS work owes you the responsibility of being a supplier in a supply chain if you're not doing the appropriate work of being a business consumer (i.e. paying for the supplier). 
 
-## Other Perspectives I've Heard (and Responses)
+Anything else is just magical thinking.
+
+## Other Perspectives I've Heard (and my responses)
 
 ## Bottom Line: We Need Better Systems Thinking Around OSS Ecosystems 
