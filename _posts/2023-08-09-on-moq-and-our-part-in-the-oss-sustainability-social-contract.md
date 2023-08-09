@@ -1,6 +1,13 @@
 ---
 title: On Moq and our Part in the OSS Sustainability Social Contract
 comments: true
+tags:
+  - oss
+  - culture
+  - sustainability
+  - open-source
+  - community
+  - social-contract
 date: 2023-08-09 08:18 -0400
 ---
 Let they who are without OSS sin cast the first stone. Let's look inward on OSS sustainability issues.
