@@ -32,7 +32,16 @@ And since I haven't done a single thing to help this library to this point, I ha
 
 ## Looking Inward: How Could This Have Been Prevented?
 
-I like to think about this.
+I like to think about this from an impact perspective. If I wanted a different outcome here, what are some things I could have done?
+
+* I could have commented my thoughts on the proposed change. But, I didn't actively follow the project beyond consuming it.
+  * **Action**: I could follow the authors of the OSS tools I depend on, on various social channels (and add their blogs to my feed reader).
+  * **Action**: OSS projects could add an announcements repo similar to how the .NET team does it (but without expecting the same rigor)
+* I could have sustained the project in some way. I didn't contribute to it at all despite teaching it in several courses.
+  * **Action**: Look into creating OSS support programs / sustainability funds in my place of employment.
+  * **Action**: Budget for OSS support, in terms of both time and moey
+* I can show support for the creator and their intentions
+  * I'm attempting to being doing that here.
 
 ## The Social Contract of OSS Sustainability
 
