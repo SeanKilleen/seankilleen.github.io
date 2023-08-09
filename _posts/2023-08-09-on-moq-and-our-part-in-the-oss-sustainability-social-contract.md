@@ -102,3 +102,5 @@ I have some thoughts on how to do these things and am going to try to reconfigur
 ## Your Thoughts are Welcome!
 
 This is a pretty nuanced conversation and I'd love to hear your thoughts in the comments.
+
+Happy to be a part of this community, and I hope we work together to keep it going.
