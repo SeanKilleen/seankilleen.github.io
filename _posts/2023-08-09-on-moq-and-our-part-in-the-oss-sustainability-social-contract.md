@@ -61,7 +61,9 @@ I have to remember that I as a user of Moq I didn't follow the author to stay up
 
 One thing I want to call out because it annoys me to no end: people who complain about having to rip libraries out or get in trouble with their Security / DevSecOps teams and how personally frustrating it is for them. 
 
-These companies have been using this library for free. Presumably it saves them money or time (which to a business _is money_.) Those organizations who are using OSS but not paying attention to the ecosystem they use are ignorant of a free supply chain. As a business, you either need to actively understand your supply chain, or understand your own situation enough that you can adapt if your supply chain changes (without blaming the supply chain). If you don't have a supply chain that is committed to you via a business transaction, then you need to be aware of those risks and work to mitigate them or budget for them in some way. 
+You typically either build software, or buy software. But OSS has introduced an additional category: "software you can use and thankfully don't have to buy." The problem occurs when we remove the "thankfully" and it becomes an expectation of an entire ecosystem
+
+These companies have been using this library for free. Presumably it saves them money or time (which to a business _is money_.) Those organizations who are using OSS but not paying attention to the ecosystem they use are making a strategic mistake around a supply chain. As a business, you either need to actively understand your supply chain, or understand your own situation enough that you can adapt if your supply chain changes (without blaming the supply chain). If you don't have a supply chain that is committed to you via a business transaction, then you need to be aware of those risks and work to mitigate them or budget for them in some way. 
 
 Within business contexts, stop pretending that free OSS work owes you the responsibility of being a supplier in a supply chain if you're not doing the appropriate work of being a business consumer (i.e. paying for the supplier). 
 
@@ -70,18 +72,19 @@ Anything else is just magical thinking.
 ## Other Perspectives I've Heard (and my responses)
 
 * **[Concerns were raised](I'd say it was considered but no shits were given https://github.com/devlooped/SponsorLink/issues/10) but the developer didn't care**: I'm not sure I see it the same way. I think someone had an idea for how to maybe address the OSS sustainability crisis within their own sphere of influence and the optimism outweighed the downsides (plus a lack of understanding of the GDPR implications).
-* **This is not well thought through techincally**: Sure, I agree -- I would have rejected such an idea if it came up in my brain. But I only have my context, and this creator only has theirs. So my larger point is: where was the community support & involvement? Where was the jumping in to help support this OSS author?
+* **This is not well thought through technically**: Sure, I agree -- I would have rejected such an idea if it came up in my brain. But I only have my context, and this creator only has theirs. So my larger point is: where was the community support & involvement? Where was the jumping in to help support this OSS author?
 * **They should have expected to be nagged about this**: I understand personal frustration, but I wish that everyone could take a breath before showing up in such an entitled manner. At a minimum we owe the author our respect and reasonable discourse. Mistakes can be made, and I wasn't there to help prevent them, and from what I can tell, a lot of other people weren't there either.
 * **He's burned his political capital all at once**: Not with me. And that's my point. If we can't allow someone to learn and grow, after they did something with reasonable intentions, after creating a library that we've used for free for years, what does that say about us as a community? How flimsy is the currency of our political capital that it's tied to someone doing something for free, forever, without attempting to innovate, and also never making a mistake? If I were them, I'd stop caring about that kind of political capital entirely. It's a bad idea. And we owe this creator the grace of recovering from that bad idea, with continued respectful dialog.
-
+* **Nobody is able to engage on every single OSS project they use. We all have limited time**: Correct. To that extent, I think it's a goal for all of us to get more people involved in the ecosystem to ensure we have "coverage" since we can't be in all places. So let's work on systems that bring more people into these communities.
 
 ## Advice for OSS Authors Going Forward
 
 I play a minor role in this ecosystem but I've thought about it for a while, so I'll humbly add some advice for OSS creators in case it helps (many are already doing lots of these things)
 
 * Ask for financial support when you need it.
-* Have an amout / goal in mind if possible.
-* If you're considering a system to drive financial support think about how to help your audience feel less defensive. This typically means finding ways to pull people into these changes rather than push changes onto them, especially changes that add extra work or result in them feeling defensive or suspicious. For any changes that could have those effects, over-communicate about it in several media (tweets, blog, pinned github issue, release notes) across a period of time prior to enacting the change.
+* Have an amount / goal in mind if possible. This is often easier to help rally a community to support.
+* Build avenues for understanding who your larger / profitable users are, and lobby them (or work with the larger community to lobby them) on how to create OSS Sustainability funds, etc. We should have a better community system to do this.
+* If you're considering a system to drive financial support, think about how to help your audience feel less defensive. This typically means finding ways to pull people into these changes rather than push changes onto them, especially changes that add extra work or result in them feeling defensive or suspicious. For any changes that could have those imapcts, over-communicate about it in several forms of media (tweets, blog, pinned GitHub issue, release notes) across a period of time prior to enacting the change.
 * Assume that small bits of negative feedback early on will be amplified by consumers when the change is released more widely. It shouldn't be this way, but anticipating it might help you give the appropriate weight to that early feedback.
 
 ## Bottom Line: We Need Better Systems Thinking Around OSS Ecosystems
