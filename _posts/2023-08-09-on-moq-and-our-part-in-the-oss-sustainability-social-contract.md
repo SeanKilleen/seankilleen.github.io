@@ -8,7 +8,7 @@ tags:
   - open-source
   - community
   - social-contract
-date: 2023-08-09 08:18 -0400
+date: 2023-08-09 10:00 -0400
 ---
 Let they who are without OSS sin cast the first stone. Let's look inward on OSS sustainability issues.
 
