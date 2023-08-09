@@ -28,7 +28,7 @@ Recently, [Moq, an OSS mocking library for .NET](https://github.com/moq/moq), ma
 
 This is yet another situation where the situation for this project became untenable, traditional paths don't seem to have worked, and the author had an idea for something new and novel. Would I have done it myself? No. Do I think it was a successful idea? Absolutely not. Can I fault them for trying? No. Do I think this author deserves our grace and respect after we've all consumed their work for free for years? Yes.
 
-With that said, I think this is a good example of how not to go about this sort of change. I think the implications of collecting developer email addresses without consent, and introducing a closed source (and obfuscated) binary, were not fully considered. And I think for a change like this, a lot more communication in a lot more formats would be helpful. I think negative-first approach (warning, slowed builds) is bound to frustrate people and make them defensive, which makes them much less likely to donate. Similar with being surprised. And I know the author tried to show how they had no nefarious intent, but they noted that without noting the real frustration that accompanied their actions -- impact matters more than intent.
+With that said, I think this is a good example of how not to go about this sort of change. I think the implications of collecting developer email addresses without consent [^1], and introducing a closed source (and obfuscated) binary, were not fully considered. And I think for a change like this, a lot more communication in a lot more formats would be helpful. I think negative-first approach (warning, slowed builds) is bound to frustrate people and make them defensive, which makes them much less likely to donate. Similar with being surprised. And I know the author tried to show how they had no nefarious intent, but they noted that without noting the real frustration that accompanied their actions -- impact matters more than intent.
 
 And since I haven't done a single thing to help this library to this point, I haven't held up my end of the OSS social contract. So, my currency is now in being empathetic and allowing the benefit of the doubt on the author's intentions. "Let they who are without OSS sin cast the first stone."
 
@@ -104,3 +104,5 @@ I have some thoughts on how to do these things and am going to try to reconfigur
 This is a pretty nuanced conversation and I'd love to hear your thoughts in the comments.
 
 Happy to be a part of this community, and I hope we work together to keep it going.
+
+[^1]: Actually it turns out that there was indeed consent given, though the consumers may not have done their due diligence and may have felt surprised by it. Thanks to those who pointed this out!
