@@ -46,3 +46,7 @@ I like to think about this from an impact perspective. If I wanted a different o
 ## The Social Contract of OSS Sustainability
 
 ## It's Not a "Supply Chain" Unless You're a Responsible Consumer
+
+## Other Perspectives I've Heard (and Responses)
+
+## Bottom Line: We Need Better Systems Thinking Around OSS Ecosystems 
