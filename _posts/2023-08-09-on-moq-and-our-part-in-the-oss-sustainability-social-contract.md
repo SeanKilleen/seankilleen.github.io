@@ -90,3 +90,15 @@ I play a minor role in this ecosystem but I've thought about it for a while, so 
 * Assume that small bits of negative feedback early on will be amplified by consumers when the change is released more widely. It shouldn't be this way, but anticipating it might help you give the appropriate weight to that early feedback.
 
 ## Bottom Line: We Need Better Systems Thinking Around OSS Ecosystems
+
+We need better systemic ways to:
+
+* Allow maintainers to surface the kinds of help they need in a centralized way
+* Allow organizations and consumers to do the right thing by default (ways to contribute to all dependencies they benefit from)
+* Connect people who are willing to help with training to provide the kinds of help that are needed, and connect them with the places that need it.
+
+I have some thoughts on how to do these things and am going to try to reconfigure my priorities to use this instance as a call to action.
+
+## Your Thoughts are Welcome!
+
+This is a pretty nuanced conversation and I'd love to hear your thoughts in the comments.
