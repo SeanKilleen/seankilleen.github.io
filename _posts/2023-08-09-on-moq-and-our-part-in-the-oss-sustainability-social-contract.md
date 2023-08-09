@@ -40,7 +40,7 @@ In my view, there's a social contract around OSS and its sustainability. My word
 
 For the projects I actively contribute to, or where I am willing to provide and commit to a solution, I allow myself to have expectations and expect them to be met. For commercial libraries that are strongly tied to business I do with a given organization, I feel the same. For everything else, I try to remind myself that I'm thankful that it exists, and my concerns need to be expressed with a very different tone, and that some space needs to be given if I feel mistakes have been made.
 
-The last part of my social think is to strongly consider that I am a member of the .NET OSS Community, and thus I am a member of the community and the system that allowed this to happen. What could I do differently? I think about it this way not because it's literally true, but because it allows me to shift my perspective to how I/we better support the OSS ecosystem to get the outcomes we might want.
+The last part of my social contract thinking is to strongly consider that I am a member of the .NET OSS Community, and thus I am a member of the community and the system that allowed this to happen. What could I do differently? I think about it this way not because it's literally true, but because it allows me to shift my perspective to how I/we better support the OSS ecosystem to get the outcomes we might want.
 
 Of _course_ people feel disrupted when a package restricts itself in some way, or adds commercial licensing, or goes dark. But the issue isn't those decisions; the issue is our inability to recognize their value in our supply chain and act accordingly.
 
