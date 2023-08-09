@@ -42,6 +42,8 @@ For the projects I actively contribute to, or where I am willing to provide and 
 
 The last part of my social think is to strongly consider that I am a member of the .NET OSS Community, and thus I am a member of the community and the system that allowed this to happen. What could I do differently? I think about it this way not because it's literally true, but because it allows me to shift my perspective to how I/we better support the OSS ecosystem to get the outcomes we might want.
 
+Of _course_ people feel disrupted when a package restricts itself in some way, or adds commercial licensing, or goes dark. But the issue isn't those decisions; the issue is our inability to recognize their value in our supply chain and act accordingly.
+
 ## So, Looking Inward: How Could This Have Been Prevented?
 
 I like to think about this from an impact perspective. If I wanted a different outcome here, what are some things I could have done? I'd suggest others could benefit from doing this as well.
