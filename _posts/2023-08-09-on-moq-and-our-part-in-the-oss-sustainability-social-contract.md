@@ -38,7 +38,7 @@ In my view, there's a social contract around OSS and its sustainability. My word
 
 > You get to expect things of an OSS project to the extent that you contribute to that OSS project or are willing to help. Everything else should be gratitude or grace.
 
-For the projects I actively contribute to, or where I am willing to provide and commit to a solution, I allow myself to have expectations and expect them to be met. For commercial libraries that are strongly tied to business I do with a gien organization, I feel the same. For everything else, I try to remind myself that I'm thankful that it exists, and my concerns need to be expressed with a very different tone, and that some space needs to be given if I feel mistakes have been made.
+For the projects I actively contribute to, or where I am willing to provide and commit to a solution, I allow myself to have expectations and expect them to be met. For commercial libraries that are strongly tied to business I do with a given organization, I feel the same. For everything else, I try to remind myself that I'm thankful that it exists, and my concerns need to be expressed with a very different tone, and that some space needs to be given if I feel mistakes have been made.
 
 The last part of my social think is to strongly consider that I am a member of the .NET OSS Community, and thus I am a member of the community and the system that allowed this to happen. What could I do differently? I think about it this way not because it's literally true, but because it allows me to shift my perspective to how I/we better support the OSS ecosystem to get the outcomes we might want.
 
@@ -86,7 +86,7 @@ I play a minor role in this ecosystem but I've thought about it for a while, so 
 * Ask for financial support when you need/want it.
 * Have an amount / goal in mind if possible. This is often easier to help rally a community to support.
 * Build avenues for understanding who your larger / profitable users are, and lobby them (or work with the larger community to lobby them) on how to create OSS Sustainability funds, etc. We should have a better community system to do this.
-* If you're considering a system to drive financial support, think about how to help your audience feel less defensive. This typically means finding ways to pull people into these changes rather than push changes onto them, especially changes that add extra work or result in them feeling defensive or suspicious. For any changes that could have those imapcts, over-communicate about it in several forms of media (tweets, blog, pinned GitHub issue, release notes) across a period of time prior to enacting the change.
+* If you're considering a system to drive financial support, think about how to help your audience feel less defensive. This typically means finding ways to pull people into these changes rather than push changes onto them, especially changes that add extra work or result in them feeling defensive or suspicious. For any changes that could have those impacts, over-communicate about it in several forms of media (tweets, blog, pinned GitHub issue, release notes) across a period of time prior to enacting the change.
 * Assume that small bits of negative feedback early on will be amplified by consumers when the change is released more widely. It shouldn't be this way, but anticipating it might help you give the appropriate weight to that early feedback.
 
 ## Bottom Line: We Need Better Systems Thinking Around OSS Ecosystems
