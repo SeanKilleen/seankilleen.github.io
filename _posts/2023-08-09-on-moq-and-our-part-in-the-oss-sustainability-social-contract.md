@@ -30,22 +30,36 @@ This is yet another situation where the situation for this project became untena
 
 And since I haven't done a single thing to help this library to this point, I haven't held up my end of the OSS social contract. So, my currency is now in being empathetic and allowing the benefit of the doubt on the author's intentions. "Let they who are without OSS sin cast the first stone."
 
-## Looking Inward: How Could This Have Been Prevented?
+## The Social Contract of OSS Sustainability
+
+In my view, there's a social contract around OSS and its sustainability. My wording of this social contract is essentially:
+
+> You get to expect things of an OSS project to the extent that you contribute to that OSS project or are willing to help. Everything else should be gratitude or grace.
+
+For the projects I actively contribute to, or where I am willing to provide and commit to a solution, I allow myself to have expectations and expect them to be met. For commercial libraries that are strongly tied to business I do with a gien organization, I feel the same. For everything else, I try to remind myself that I'm thankful that it exists, and my concerns need to be expressed with a very different tone, and that some space needs to be given if I feel mistakes have been made.
+
+The last part of my social think is to strongly consider that I am a member of the .NET OSS Community, and thus I am a member of the community and the system that allowed this to happen. What could I do differently? I think about it this way not because it's literally true, but because it allows me to shift my perspective to how I/we better support the OSS ecosystem to get the outcomes we might want.
+
+## So, Looking Inward: How Could This Have Been Prevented?
 
 I like to think about this from an impact perspective. If I wanted a different outcome here, what are some things I could have done? I'd suggest others could benefit from doing this as well.
 
 * I could have commented my thoughts on the proposed change. But, I didn't actively follow the project beyond consuming it.
   * **Action**: I could follow the authors of the OSS tools I depend on, on various social channels (and add their blogs to my feed reader).
-  * **Action**: OSS projects could add an announcements repo similar to how the .NET team does it (but without expecting the same rigor)
-* I could have sustained the project in some way. I didn't contribute to it at all despite teaching it in several courses.
-  * **Action**: Look into creating OSS support programs / sustainability funds in my place of employment.
-  * **Action**: Budget for OSS support, in terms of both time and moey
+  * **Action**: OSS projects could add an announcements repository similar to how the .NET team does it (but without expecting the same rigor). I could write up some guidance on how to do that.
+* I could have sustained the project in some way. I didn't contribute to it at all despite teaching it in several courses and using it for a long time.
+  * **Action**: Look into creating OSS support programs / sustainability funds in my place of employment. Gather materials to help others do so.
+  * **Action**: Budget for OSS support, in terms of both time and money. Write about doing this. Help others to do so.
 * I can show support for the creator and their intentions
-  * I'm attempting to being doing that here.
-
-## The Social Contract of OSS Sustainability
+  * I'm attempting to do that here.
 
 ## It's Not a "Supply Chain" Unless You're a Responsible Consumer
+
+One thing I want to call out because it annoys me to no end: people who complain about having to rip libraries out or get in trouble with their Security / DevSecOps teams and how personally frustrating it is for them. 
+
+These companies have been using this library for free. Presumably it saves them money or time (which to a business _is money_.) Those organizations who are using OSS but not paying attention to the ecosystem they use are ignorant of a free supply chain. As a business, you either need to actively understand your supply chain, or understand your own situation enough that you can adapt if your supply chain changes (without blaming the supply chain). If you don't have a supply chain that is committed to you via a business transaction, then you need to be aware of those risks and work to mitigate them or budget for them in some way. 
+
+Within business contexts, stop pretending that free OSS work owes you the responsibility of being a supplier in a supply chain if you're not doing the appropriate work of being a business consumer (i.e. paying for the supplier).
 
 ## Other Perspectives I've Heard (and Responses)
 
