@@ -21,7 +21,7 @@ Recently, [Moq, an OSS mocking library for .NET](https://github.com/moq/moq), ma
 * In January, the maintainer of Moq [blogged about a tool they'd be building called SponsorLink](https://www.cazzulino.com/sponsorlink.html), specifically saying they're "trying something new-ish". This tool collects GitHub e-mail addresses and hashes them, and appears to attempt to ask for sponsorship within the IDE if a user isn't already sponsoring.
 * In April, [it was pointed out via a GitHub comment](https://github.com/devlooped/SponsorLink/issues/10) that this might not be a great approach from a privacy & GDPR perspective. At the time, the author dismissed that concern because they believed the hashing of the e-mails meant there wasn't a privacy violation. This is incorrect but I understand how someone could mistakenly come to that conclusion.
 * This month, the author [implemented that tooling in a release](https://github.com/moq/moq/releases/tag/v4.20.0), and a lot of folks were (understandably) caught off guard when they made the update. Some had the package flagged for security issues because it contained a new dependency that was making network calls. Some had their builds negatively impacted (such as those who enabled warnings as errors, etc.)
-* As will likely not be surprising, people became pretty irate -- working to rip Moq out of their setups (or at least saying they would), warning other projects that use the library, calling it malware, bashing the library, etc. 
+* As will likely not be surprising, people became pretty quickly irate -- working to rip Moq out of their setups (or at least saying they would), warning other projects that use the library, calling it malware, bashing the library, etc.
 * Roughly a day later, [the change was reverted](https://github.com/moq/moq/releases/tag/v4.20.2). Though, it sounds like there are still plans to continue with it.
 
 ## My Take
@@ -61,17 +61,17 @@ I have to remember that I as a user of Moq I didn't follow the author to stay up
 
 ## It's Not a "Supply Chain" Unless You're a Responsible Consumer
 
-One thing I want to call out because it annoys me to no end: people who complain about having to rip libraries out or get in trouble with their Security / DevSecOps teams and how personally frustrating it is for them. 
+One thing I want to call out because it annoys me to no end: people who complain about having to rip libraries out or get in trouble with their Security / DevSecOps teams and how personally frustrating it is for them.
 
-You typically either build software, or buy software. But OSS has introduced an additional category: "software you can use and thankfully don't have to buy." The problem occurs when we remove the "thankfully" and it becomes an expectation of an entire ecosystem
+You typically either build software, or buy software. But OSS has introduced an additional category: "software you can use and thankfully don't have to buy." The problem occurs when we remove the "thankfully" and it becomes an expectation of an entire ecosystem.
 
-These companies have been using this library for free. Presumably it saves them money or time (which to a business _is money_.) Those organizations who are using OSS but not paying attention to the ecosystem they use are making a strategic mistake around a supply chain. As a business, you either need to actively understand your supply chain, or understand your own situation enough that you can adapt if your supply chain changes (without blaming the supply chain). If you don't have a supply chain that is committed to you via a business transaction, then you need to be aware of those risks and work to mitigate them or budget for them in some way. 
+These companies have been using this library for free. Presumably it saves them money or time (which to a business _is money_.) Those organizations who are using OSS but not paying attention to the ecosystem they use are making a strategic mistake around a supply chain. As a business, you either need to actively understand your supply chain, or understand your own situation enough that you can adapt if your supply chain changes (without blaming the supply chain). If you don't have a supply chain that is committed to you via a business transaction, then you need to be aware of those risks and work to mitigate them or budget for them in some way.
 
-Within business contexts, stop pretending that free OSS work owes you the responsibility of being a supplier in a supply chain if you're not doing the appropriate work of being a business consumer (i.e. paying for the supplier). 
+Within business contexts, stop pretending that free OSS work owes you the responsibility of being a supplier in a supply chain if you're not doing the appropriate work of being a business consumer (i.e. paying for the supplier).
 
 Anything else is just magical thinking.
 
-## Other Perspectives I've Heard (and my responses)
+## Other Perspectives I've Heard (and My Thoughts)
 
 * **[Concerns were raised](I'd say it was considered but no shits were given https://github.com/devlooped/SponsorLink/issues/10) but the developer didn't care**: I'm not sure I see it the same way. I think someone had an idea for how to maybe address the OSS sustainability crisis within their own sphere of influence and the optimism outweighed the downsides (plus a lack of understanding of the GDPR implications).
 * **This is not well thought through technically**: Sure, I agree -- I would have rejected such an idea if it came up in my brain. But I only have my context, and this creator only has theirs. So my larger point is: where was the community support & involvement? Where was the jumping in to help support this OSS author?
@@ -83,7 +83,7 @@ Anything else is just magical thinking.
 
 I play a minor role in this ecosystem but I've thought about it for a while, so I'll humbly add some advice for OSS creators in case it helps (many are already doing lots of these things)
 
-* Ask for financial support when you need it.
+* Ask for financial support when you need/want it.
 * Have an amount / goal in mind if possible. This is often easier to help rally a community to support.
 * Build avenues for understanding who your larger / profitable users are, and lobby them (or work with the larger community to lobby them) on how to create OSS Sustainability funds, etc. We should have a better community system to do this.
 * If you're considering a system to drive financial support, think about how to help your audience feel less defensive. This typically means finding ways to pull people into these changes rather than push changes onto them, especially changes that add extra work or result in them feeling defensive or suspicious. For any changes that could have those imapcts, over-communicate about it in several forms of media (tweets, blog, pinned GitHub issue, release notes) across a period of time prior to enacting the change.
