@@ -55,7 +55,7 @@ I have some Trello automation that moves items back into their respective lists 
 
 * Move items from the `Big List` into the `Pack/Do` list that we plan to bring
 * Move items from the `Big List: Departure Checklist` into `Pack/Do` in the same fashion.
-  * I could have combined these lists but the resulting list just felt too small.
+  * I could have combined these lists but the resulting list just felt too big.
 * Check the `Uncommon Items` list for anything we need
 * For anything we need to do, add a due date if it needs to be accomplished before we leave (e.g. charge gadgets, stop the mail)
 * Run the Trello automation to sort the list by category
