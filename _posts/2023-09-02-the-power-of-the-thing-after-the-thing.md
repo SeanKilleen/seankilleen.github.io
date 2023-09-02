@@ -3,6 +3,18 @@ title: The Power of "The Thing After the Thing"
 comments: true
 date: 2023-09-02 15:28 -0400
 ---
+I've long been a fan of [The Phoenix Project](), and grateful for the ways its introduced so many to DevOps culture and practices. One of my favorite personal "ah-ha" moments came from its described Third Way of DevOps:
+
+> Improving the work is more important than doing the work.
+
+It's essentially the same principle as compound interest. Any improvement to our approach or process means all future work benefits from that improvement.
+
+____
+
+Notes:
+
+
+
 Realized that a very successful strategy I've employed in multiple environments boils down to "always thinking about the thing after the thing".
 
 Examples:
