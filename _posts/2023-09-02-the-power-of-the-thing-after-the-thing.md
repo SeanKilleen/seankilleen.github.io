@@ -25,10 +25,10 @@ How does this manifest itself? Here are some examples for me:
 
 | The Thing | What I do | Because the next thing is: |
 | --------- | --------- | -------------------------- |
-| Planning a meeting | Try to set an agenda/goals, be clear about who's invited and why, and outline preparation | Executing a successful meeting that doesn't waste anyone's time | 
+| Planning a meeting | Try to set an agenda/goals, be clear about who's invited and why, and outline preparation | Executing a successful meeting that doesn't waste anyone's time |
 | Having a meeting | Try to always take notes especially on next actions / decisions, to be sent out immediately | Clarity and alignment on what needs to happen and how to communicate it|
 | On-boarding to a new org/team | Write down problems/questions/missed steps and create an on-boarding guide | Helping the person after me, systematizing making things easier and setting expectations that others do that, too.|
-| Coding | Think about how to automate getting that code into an environment | Deploying that as often as possible for success| 
+| Coding | Think about how to automate getting that code into an environment | Deploying that as often as possible for success|
 | Coding | Think about logging & operational visibility | Better observability when we inevitably need to troubleshoot something|
 | Coding | Writing automated tests | Pinpointing future bugs or changing code rapidly with confidence to respond to future needs|
 
