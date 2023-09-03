@@ -20,7 +20,7 @@ I recently found a phrase I've started using that seems to resonate, and accurat
 
 ## Always be thinking about "the thing after the thing".
 
-For every piece of work or process we touch, there is often a future state that benefits more if we take the time while doing that work to imagine that future state.
+For every piece of work or process we touch, there is often a future state that benefits in a compounding way if we take the time, while doing that work, to imagine and improve that future state.
 
 ## How Does This Show Up For Me?
 
