@@ -18,9 +18,13 @@ I believe in this principle deeply, but at times it's been difficult to find lan
 
 I recently found a phrase I've started using that seems to resonate, and accurately reflects a lot of the success I've been able to attain so far over my career. It comes down to this:
 
-> Always be thinking about "the thing after the thing".
+## Always be thinking about "the thing after the thing".
 
-How does this manifest itself? Here are some examples for me:
+For every piece of work or process we touch, there is often a future state that benefits more if we take the time while doing that work to imagine that future state.
+
+## How Does This Show Up For Me?
+
+Here are some examples:
 
 | The Thing | What I do | Because the thing after the thing is: |
 | --------- | --------- | -------------------------- |
