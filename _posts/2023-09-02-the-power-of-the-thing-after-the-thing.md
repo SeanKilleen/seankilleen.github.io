@@ -23,7 +23,7 @@ I recently found a phrase I've started using that seems to resonate, and accurat
 
 How does this manifest itself? Here are some examples for me:
 
-| The Thing | What I do | Because the next thing is: |
+| The Thing | What I do | Because the thing after the thing is: |
 | --------- | --------- | -------------------------- |
 | Planning a meeting | Try to set an agenda/goals, be clear about who's invited and why, and outline preparation | Executing a successful meeting that doesn't waste anyone's time |
 | Having a meeting | Try to always take notes especially on next actions / decisions, to be sent out immediately | Clarity and alignment on what needs to happen and how to communicate it|
@@ -32,6 +32,6 @@ How does this manifest itself? Here are some examples for me:
 | Coding | Think about logging & operational visibility | Better observability when we inevitably need to troubleshoot something|
 | Coding | Writing automated tests | Pinpointing future bugs or changing code rapidly with confidence to respond to future needs|
 
-It's only recently that I realized how much I owe a lot of my success to this principle, articulated in this way. So I figured I'd write up a post to challenge you to "think about the thing after the thing", for whatever you or your team is doing.
+It's only recently that I realized how much I owe a lot of my success to this principle, articulated in this way. So I figured I'd write up a post to challenge you to "think about the thing after the thing", for whatever your team or you are currently doing.
 
-And if you have favorite examples of your own, I'd love to hear about them in the comments!
+I'll try to add some more examples here as they occur to me. And if you have favorite examples of your own, I'd love to hear about them in the comments!
