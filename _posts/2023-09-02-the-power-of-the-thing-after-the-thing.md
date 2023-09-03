@@ -9,7 +9,7 @@ tags:
   - ""
 date: 2023-09-02 15:28 -0400
 ---
-I've long been a fan of [The Phoenix Project](), and grateful for the ways its introduced so many to DevOps culture and practices. One of my favorite personal "ah-ha" moments came from part of its described Third Way of DevOps:
+I've long been a fan of [The Phoenix Project](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262509), and grateful for the ways its introduced so many to DevOps culture and practices. One of my favorite personal "ah-ha" moments came from part of its described Third Way of DevOps:
 
 > Improving the work is more important than doing the work.
 
