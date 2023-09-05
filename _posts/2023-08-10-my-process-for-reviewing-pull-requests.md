@@ -49,6 +49,7 @@ I find reminding myself of these things put me in the right mindset to add const
 
 In addition to basic correctness and whether the pull request achieves its intended purpose, I tend to look at:
 
+* **Associated Issues / Work Items**: Has this been discussed before? Is it part of a larger effort? Do I have all the context?
 * **Checking Statuses**: Are all of the automated builds / checks passing for that pull request? I try to look at that first and if something is failing, I try to provide insight.
 * **Wording**: I care a lot about wording/phrasing, which likely comes from having spent several years as a writing tutor. So I try to call out opportunities to be clearer with any wording that's being used.
 * **Variable Names**: I try to ensure variable names are correct and descriptive.
