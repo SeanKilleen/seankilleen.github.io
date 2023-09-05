@@ -10,7 +10,7 @@ date: 2023-09-05 09:00 -0400
 ---
 I've long been a fan of [The Phoenix Project](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262509), and grateful for the ways its introduced so many to DevOps culture and practices. One of my favorite personal "ah-ha" moments came from part of its described Third Way of DevOps:
 
-> Improving the work is more important than doing the work.
+> Improving daily work is more important than doing daily work.
 
 It's essentially the same principle as compound interest. Any improvement to our approach or process means all future work benefits from that improvement.
 
