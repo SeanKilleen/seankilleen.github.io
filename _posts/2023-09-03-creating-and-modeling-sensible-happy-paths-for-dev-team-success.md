@@ -14,11 +14,14 @@ Software delivery is a team sport. Any approach that tries to improve things wit
 
 Not sure if you've done that enough? Here's a barometer: if you've listened enough, some of these suggestions will seem like great ideas and others will fall to the back of your backlog because you'll have a feeling they might not apply.
 
+If you haven't worked to build trust and rapport with your team, do that first.
+
 With that said, let's look at some techniques that have accelerated the happy path on teams I've led.
 
 ## Modeling behavior around issues and "Code Flow"
 
-* Demonstrating traceability is important by creating issues and asking others to do
+* Demonstrating traceability is important. By creating issues and asking others to do so, you'll start to drive visibility of the work your teams are doing.
+* Whenever an "all hands on deck" style issue pops up, even if its pre-production, try to keep track of things that would have helped while you're going through it. Turn those things into follow up tasks
 * Talking about how important the visibility of work is.
 * TODO: link to blog posts on PR creation and review
 
@@ -55,3 +58,9 @@ TODO
 We can disagree on rules or formatting considerations all we want, and I find it best to be flexible in matters of style. But, there should be some tooling and process to auto -enforce the rules we care about.
 
 TODO: "dotnet fmt"
+
+## Normalize Asking for Help and Improving Things
+
+One rule I like for this is the "30 minute rule", as in: don't ask for help until you've spent 30 minutes on trying to solve it yourself, but don't wait longer than 30 minutes to ask for help." I like it because it's an easy thing to remember and it applies to everyone regardless of seniority.
+
+Similarly, improving things is important. Try to regularly hold retrospectives, or at least continually ask what can be improved snd praise people when they note things. "Developer Experience" is a legitimate category of software development work.
