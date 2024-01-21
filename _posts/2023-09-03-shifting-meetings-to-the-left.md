@@ -1,6 +1,11 @@
 ---
 title: Shifting Meetings "To the Left"
 comments: true
+tags:
+  - culture
+  - meetings
+  - communication
+  - facilitation
 date: 2023-09-03 15:02 -0400
 ---
 I've seen a lot of meetings go sideways. And with the surge of remote work the past years, we've seen a dramatic increase in remote work and the communication challenges that can go along with it, especially for organizations that aren't adapting to current circumstances.
@@ -64,6 +69,7 @@ State in your meeting invite that it's OK to opt-out -- but also that the work o
 * Your meetings should start on time. I usually allow two-minute buffer max for technical issues. If someone is late, they should be able to catch up on the notes.
 * Your meetings should end 5 minutes early. Do not be the person who causes someone to be late to their next meeting if you can ever help it. The extra 5 minutes likely don't make a difference to your meeting.
 * Aim to accomplish the purpose of the meeting and end there. Did the meeting run over for some reason or things go off the rails? This is your opportunity to revisit either your planning for the agenda or your facilitation skills.
+* Celebrate when the purpose of a meeting is achieved under the allotted time. 
 
 ## Shift Questions to the Left with Prep
 
@@ -79,10 +85,12 @@ State in your meeting invite that it's OK to opt-out -- but also that the work o
 * If possible, capture the notes on a screen everyone can see. Encourage people to correct the notes if they seem unclear or incorrect.
 * Send the notes out before the end of the meeting. I usually take live notes as a reply-all e-mail to the meeting, so that people who choose to opt out are still informed, which encourages them to not waste time attending if they don't need to.
 
-## How to get there from here?
+## How To Get There From Here
 
-## A great book for reference
+Maybe you're in an organization where this advice sounds like it comes from another world. I was once in such an organization, and used the techniques above to start a shift after reading Al's book. Whenever I got the chance to run a meeting there, I'd send a short write-up of these rules, either to individual meeting attendees or as part of the invite. I framed it as an experiment -- "this is something I'm trying that I think will help all of us. But in order for it to help, I have to stick to it." I spent time prepping for my meetings. I made sure the notes were there. I celebrated when someone didn't have to attend, or when we finished early. I called out people who had clearly done their prep work and thanked them. I asked for feedback on how my facilitation could be more effective.
 
-I read this book years ago, but it stuck with me. While the exact text has faded from my memory, I know there's a good deal of overlap with and inspiration taken from this book.
+I started to notice signals that something was taking hold when others began adopting my rules and I got positive feedback on how attendees felt. People were more energized and engaged around our topics and since the people who weren't interested could opt out, the more engaged people had less noise in making decisions and moving things forward. I also started to use this to opt out of meetings that clearly didn't add value for me, which in some cases led those organizers to ask for feedback which I could use to discuss facilitation techniques. 
 
-TODO: Reference "read this before our next meeting", note that you probably internalized several tips from it.
+## What do you think?
+
+Your mileage may vary, but I hope this helps. Let me know in the comments if this resonates, and tell me some of your techniques for improving meetings!
