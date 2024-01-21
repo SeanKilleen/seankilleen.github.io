@@ -7,6 +7,12 @@ tags:
   - communication
   - facilitation
 date: 2023-09-03 15:02 -0400
+excerpt: "How I committed to making meetings better."
+header:
+ overlay_image: /images/overlays/unsplash/danielle-cerullo-bIZJRVBLfOM-unsplash.jpg
+ overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+ caption: "Photo credit: [**Danielle Cerullo @ Unsplash**](https://unsplash.com/@dncerullo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
+
 ---
 I've seen a lot of meetings go sideways. And with the surge of remote work the past years, we've seen a dramatic increase in remote work and the communication challenges that can go along with it, especially for organizations that aren't adapting to current circumstances.
 
