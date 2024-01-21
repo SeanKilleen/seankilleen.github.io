@@ -118,7 +118,7 @@ So, my overall process went something like this:
 
 ## The Results
 
-This process was pretty effective for us, which is why I'm willing to write it up in the hopes that it benefits others. We had over 60 applicants for the two roles we had open. I was able to make an offer to two fantastic candidates that I think will really move our organization forward. I also had to reject several great candidates would have also been a really good fit (a best-case scenario for us as an org, even though that stinks). 
+This process was pretty effective for us, which is why I'm willing to write it up in the hopes that it benefits others. We had over 60 applicants for the two roles we had open. I was able to make an offer to two fantastic candidates that I think will really move our organization forward. I also had to reject several great candidates would have also been a really good fit (a best-case scenario for us as an org, even though that stinks).
 
 But, more importantly: 100% of our anonymous interview feedback respondents rated their experience a 5 out of 5, and we received a ton of positive comments about the process. And, I felt like most of my time was spent where it mattered: on thinking about and connecting with candidates.
 
