@@ -82,7 +82,7 @@ Zooming out a little bit from an individual codebase, I also think it's importan
 If they don't exist, I try to create paths of least resistance for people to radiate information -- to put things out there in ways that help synapses fire across the group or organization. This takes some experimenting to find what works for your specific context, but successes I've had in the past have been:
 
 * Creating Slack channels when I notice a common topic that can stand on its own and I want others to be able to step into that stream at any moment
-* Group chats -- for certain context, for my team, for inter-team touchpoints.
+* Group chats -- for certain context, for my team, for inter-team touch-points.
 * Wiki pages
 * Kanban boards for radiating work and its status
 * A "things I learned" channel where people can put helpful tips and celebrate learning.
