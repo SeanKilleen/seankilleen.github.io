@@ -8,7 +8,7 @@ tags:
   - Jira
   - kanban
   - interviews
-date: 2024-01-20 17:10 -0500
+date: 2024-01-23 10:00 -0500
 header:
   overlay_image: /images/overlays/unsplash/kier-in-sight-archives-a53bWJk1sz0-unsplash.jpg
   overlay_filter: 0.5
