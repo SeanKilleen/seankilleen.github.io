@@ -9,6 +9,12 @@ tags:
   - kanban
   - interviews
 date: 2024-01-20 17:10 -0500
+header:
+ overlay_image: /images/overlays/unsplash/kier-in-sight-archives-a53bWJk1sz0-unsplash.jpg
+ overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+ caption: "Photo credit: [**Kier in Sight Archives @ Unsplash**](https://unsplash.com/@kierinsightarchives?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
+
+
 ---
 My employer is a small company of around 50 people. I needed to hire 2 developers, and we wanted to do it all in-house. Beyond the economics of saving money on outside recruiting efforts, this was a chance to find two people who would really accelerate the culture I'm working to build.
 
