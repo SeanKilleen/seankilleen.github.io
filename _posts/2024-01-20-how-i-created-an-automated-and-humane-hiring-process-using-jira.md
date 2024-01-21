@@ -1,5 +1,5 @@
 ---
-title: How I Created an Automated -- and Humane -- Hiring Process Using Jira
+title: How I Created an Automated (and Humane!) Hiring Process Using Jira
 comments: true
 tags:
   - hiring
@@ -18,9 +18,9 @@ However, we did have Jira.
 
 What I did:
 
-* Created a project & board for recruiting (I did this via a jira cloud project that was already tailored for the purpose, but you could do it with a board)
+* Created a project & board for recruiting (I did this via a Jira cloud project that was already tailored for the purpose, but you could do it with a board)
 * Used a type of item called "Applicant" created by the project (you could create your own if not using the project)
-* Set up the board with the following columns
+* Set up the board with the following columns:
   * Applicant
   * Acknowledged
   * Screening
@@ -33,14 +33,16 @@ What I did:
   * Candidate e-mail address
   * Link to where they came in (LinkedIn application or link to an e-mail in my inbox).
   * Optional public feedback to respond to the candidate if we rejected them
-* Set up a Calendly link (New outlook has the My bookings feature that can do something similar)
+* Set up a [Calendly](https://calendly.com) link (New Outlook has [Bookings With Me feature](https://support.microsoft.com/en-au/office/bookings-with-me-setup-and-sharing-ad2e28c4-4abd-45c7-9439-27a789d254a2) that can do something similar)
   * This allows candidates to schedule with me while respecting my preferences without back & forth.
   * It lets me set a max amount of meetings per day, notice needed for prep time, gap time between meetings, etc.
 * Made use of Jira labels on the issues -- these evolved organically but went something like:
   * If they had something I was looking for, I labeled it (`has_testautomation`, `has_devops`, `has_industry_experience`)
   * If they had something that set them apart, I labeled it (`standout_resume`, `has_referral`, `via_email` for those who did a nice e-mail intro)
-  * If they were down-selected after interview, I added that as a label too.
-  * When I asked for feedback (more on that below), I added a label too so that I didn't do it more than once.
+  * If they were down-selected after interview, I added that `down-selected` as a label too.
+  * When I asked for feedback (more on that below), I added a `feedback-requested` label so that I didn't ask more than once.
+
+## Adding Automation
 
 Now for some sweet stuff -- I added Jira automation.
 
