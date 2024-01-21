@@ -59,9 +59,9 @@ Now for some sweet stuff -- I added Jira automation.
 > Hello,
 >
 > We're excited that you're interested in our .NET Developer role!
-> 
+>
 > As a next step, please schedule a time for the interview at (Link)
-> 
+>
 > We look forward to speaking with you!
 
 * When rejecting a candidate, we send a friendly thank you e-mail and, if public feedback was provided, we pass that along as well. The template:
@@ -83,9 +83,9 @@ Now for some sweet stuff -- I added Jira automation.
 > We know your time is valuable, and we'd appreciate it if you'd be willing to anonymously share some thoughts on your experience with us. This feedback will be seen directly by the hiring manager who conducted the interview.
 >
 > (Link)
-> 
+>
 > NOTE: If you are still in the interview process, this is not an indicator that the process is finished; we just don't want to wait too long to collect feedback.
-> 
+>
 > Thank you for considering!
 
 So, my overall process went something like this:
