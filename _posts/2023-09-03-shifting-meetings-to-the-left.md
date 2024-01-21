@@ -12,17 +12,17 @@ I've seen a lot of meetings go sideways. And with the surge of remote work the p
 
 Dear reader, I'd love to save you some trouble there.
 
-## What Do We Mean by "Shift to the Left" here? 
+## What Do We Mean by "Shift to the Left" here?
 
-In software development, feedback loops are key. If we can iterate 10 times on something while our competitors are still getting their shoes on, chances are we're going to come out ahead. This ability to adapt and respond to change is one of the driving forces at the heart of Agile software development. 
+In software development, feedback loops are key. If we can iterate 10 times on something while our competitors are still getting their shoes on, chances are we're going to come out ahead. This ability to adapt and respond to change is one of the driving forces at the heart of agile software development.
 
 If we visualize a process as a series of columns from left to right, such as in a kanban system, then "shifting to the left" means mitigating issues earlier in the process. For example, if we have a "QA step" and bugs are often found there, could we shift the process to the left by automating tests earlier on to make QA go more smoothly? If a work item gets to a sign-off phase and there are issues, could we work to understand things better up front to avoid that hiccup and achieve a state of flow? If big security reviews slow us down, can we automate the scanning and make it happen with every code commit so that we catch 80% immediately?
 
 ## Meetings are Another Crucial Form of Feedback Loops
 
-They involve scheduling and logistical acrobatics, they steal focus, they cost a lot of money, and they often lead to more meetings. 
+They involve scheduling and logistical acrobatics, they steal focus, they cost a lot of money, and they often lead to more meetings.
 
-What can we do to get ahead of these expensive feedback loops, or at least make them smaller? 
+What can we do to get ahead of these expensive feedback loops, or at least make them smaller?
 
 ## The Best Meeting is No Meeting at All
 
