@@ -36,7 +36,7 @@ Two aspects of that book really stuck with me, and I think are applicable to sof
 
 ## Batch it up!
 
-A related concept for productivity is **batch work**. I got some great advice on this from [Ali Spittel[(https://twitter.com/aspittel) as well (thanks, Ali!) Do one task across multiple things. You have 50 topics you want to write about. Maybe pick 5, and spend a solid hour doing nothing but coming up with a small bulleted list outline of what you want to say. Then maybe your next batch will be ensuring that the "why this matters" (to your, or to your audience) is clear. Etc. etc. -- however you work, do one task at a time across multiple articles rather than trying to tackle one article at a time. It helps keep you in a similar head-space which helps focus and flow.
+A related concept for productivity is **batch work**. I got some great advice on this from [Ali Spittel](https://twitter.com/aspittel) as well (thanks, Ali!) Do one task across multiple things. You have 50 topics you want to write about. Maybe pick 5, and spend a solid hour doing nothing but coming up with a small bulleted list outline of what you want to say. Then maybe your next batch will be ensuring that the "why this matters" (to your, or to your audience) is clear. Etc. etc. -- however you work, do one task at a time across multiple articles rather than trying to tackle one article at a time. It helps keep you in a similar head-space which helps focus and flow.
 
 ## Don't Duck the Rubber Duck
 
