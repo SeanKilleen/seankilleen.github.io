@@ -36,7 +36,7 @@ Meetings should be a value stream. What is the outcome of a meeting? Surely we c
 
 | If your meeting is to... | ..then try this instead |
 | ---------------------- | ---------------- |
-| Make an announcement | E-mail, Organization Chat e.g. Slack or Teams |
+| Make an announcement | E-mail, Organization Chat e.g. Slack or Teams. A notable exception here is around organizational alignment on crucial topics, where you may need all the people to hear the same thing in the same place at the same time. |
 | Get Feedback/Consensus | Set up a form and send via e-mail, start a discussion thread, take a poll in your chat tool, do one-on-one outreach |
 | Reach people who don't read your e-mails | Accept that those people might be too busy or too disinterested. Maybe they don't need to be involved. If you have a decision to make, make it without them. Also, try more communication channels. Chat tools, phone, one-on-one meetings, etc. Also, ask for feedback on why your emails aren't resonating. |
 | Present awards or praise | Private congratulation and a public e-mail announcement? Make a part of another meeting? (meetings for praise/celebration can be very nice; just do it consciously.) |
