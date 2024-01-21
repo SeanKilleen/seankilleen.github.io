@@ -57,6 +57,7 @@ Because the source code that contains the DLL is in another repository, we use t
       - name: Copy NUnit Asset dir
         run: mkdir ./code-output && cp -r ./NUnit.Framework-${{ env.NUNIT_VERSION_FOR_API_DOCS }}/bin/net6.0/* ./code-output
 ```
+
 We unzip the asset file and copy it to the right spot.
 
 ```yaml
