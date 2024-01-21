@@ -1,12 +1,17 @@
 ---
 title: Creating and Modeling "Sensible Happy Paths" for Dev Team Success
 comments: true
+excerpt: Happy paths compound over time.
 tags:
   - culture
   - communication
   - leadership
-  - ""
 date: 2023-09-03 14:25 -0400
+header:
+ overlay_image: /images/overlays/unsplash/timothy-dykes-yapM31BKJx8-unsplash.jpg
+ overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+ caption: "Photo credit: [**Timothy Dykes @ Unsplash**](https://unsplash.com/@timothycdykes?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
+
 ---
 When Setting teams up for success with modern software delivery, I've found it helps to create "successful paths of least resistance". Here are some things I've tried, learned, and had success with in the hopes they might help someone else. I prioritize understanding the state of these things first if I don't see them in an environment I enter.
 
@@ -26,7 +31,7 @@ With that said, let's look at some techniques that have accelerated the happy pa
 
 A quick introductory note: when I say "modeling behavior", I mean "demonstrating the way you'd like your teams to act". [What you do is who you are](https://www.amazon.com/What-You-Do-Who-Are/dp/0062871331). Your actions will influence the actions of others on your team.
 
-One of the most crucial things for a leader to nail early on is to encourage feedback, _especially_ if it's critical feedback. I had a leader I loved working with (thanks [Jeff](https://itsanicelife.com/) at [Excella](https://excella.com)!) who really believed that "feedback is a gift". His willingness to take blunt feedback allowed me to speak up many times and spark conversations that helped the organization or helped me to grow my understanding -- sometimes both! 
+One of the most crucial things for a leader to nail early on is to encourage feedback, _especially_ if it's critical feedback. I had a leader I loved working with (thanks [Jeff](https://itsanicelife.com/) at [Excella](https://excella.com)!) who really believed that "feedback is a gift". His willingness to take blunt feedback allowed me to speak up many times and spark conversations that helped the organization or helped me to grow my understanding -- sometimes both!
 
 Explicitly ask for feedback. Discuss ways people like to give and receive feedback. Authorize people in one-on-one settings to provide this feedback, especially in front of a group. And _celebrate the heck out of it_ when it happens. You will not always be perfect at this; I'm sure not! But working at it continuously will make you and your teams flourish.
 
