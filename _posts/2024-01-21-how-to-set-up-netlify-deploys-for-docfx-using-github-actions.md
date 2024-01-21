@@ -7,6 +7,7 @@ tags:
   - nunit
   - githubactions
   - ci
+  - devops
 date: 2024-01-21 00:18 -0500
 ---
 ## Background
@@ -139,3 +140,33 @@ I was happy with this one. It uses a great GitHub action to post a sticky commen
 ```yaml
 
 And here we go ahead and mark the deployment to the preview environment as "finished".
+
+## A Quick Side Note: I love GitHub Actions!
+
+Thanks to so many people who've worked to make others' lives better, my experience was largely in googling around to discover that people had already done all the things that I needed to do! I look forward to being able to contribute more of that myself if I can ever find something that needs doing.
+
+## What To Do Once a PR is Merged?
+
+We can't leave those environments hanging around in our GitHub. So we delete them, using the same id format that we used when we created them.
+
+```yaml
+on:
+    pull_request:
+      types: [ closed ]
+jobs:
+    prune:
+      permissions: 
+        deployments: write
+      runs-on: ubuntu-latest
+      steps:
+      - name: delete environment
+        uses: bobheadxi/deployments@v1
+        with:
+            step: delete-env
+            token: ${{ secrets.SEAN_PAT_TO_MANAGE_ENVIRONMENTS }}
+            env: preview_${{github.event.number}}
+```
+
+## And...That's It!
+
+Once I got all the moving parts working together, it was an absolute delight to see it in action and I've used it so many times since. I hope this article helps someone else arrive at this place in slightly less time than it took me. Questions and feedback welcome in the comments!
