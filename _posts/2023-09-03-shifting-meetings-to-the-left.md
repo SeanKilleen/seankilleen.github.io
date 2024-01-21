@@ -18,7 +18,7 @@ I've seen a lot of meetings go sideways. And with the surge of remote work the p
 
 Dear reader, I'd love to save you some trouble there.
 
-## What Do We Mean by "Shift to the Left" here?
+## What Do I Mean by "Shift to the Left"?
 
 In software development, feedback loops are key. If we can iterate 10 times on something while our competitors are still getting their shoes on, chances are we're going to come out ahead. This ability to adapt and respond to change is one of the driving forces at the heart of agile software development.
 
