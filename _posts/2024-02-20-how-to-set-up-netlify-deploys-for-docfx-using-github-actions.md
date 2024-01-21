@@ -50,7 +50,7 @@ Self-explanatory; we need our code if we're going to build it.
           token: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-Because the source code that contains the DLL is in another repository, we use this GitHub action to pull the file via pulling a specific tag (currently hard-coded. I'll get around to fixing that.)
+Because the source code that contains the DLL is in another repository, we use this GitHub action to pull the file via pulling a specific tag (currently hard-coded. I'll get around to fixing that. Probably.)
 
 ```yaml
       - name: Unzip NUnit Asset zip file into its own directory
