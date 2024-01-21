@@ -49,15 +49,15 @@ Now for some sweet stuff -- I added Jira automation.
 * When moving into the "acknowledged" field, it sent an e-mail to the candidate and CC'd me. The e-mail was a friendly intro:
 
 > We're excited that you're interested in our .NET Developer role! We wanted to acknowledge that we've received your application and let you know that we'll be in touch about it as soon as we're able. We ask for your patience as we give each application our attention.
-> 
+
 > If you have any questions about the organization, role, or process, reply all to this e-mail at any time and we'll be happy to answer.
-> 
+>
 > Thank you!
 
 * When moving a candidate into the "interview planning" column, an e-mail is sent with the Calendly link:
 
 > Hello,
-> 
+>
 > We're excited that you're interested in our .NET Developer role!
 > 
 > As a next step, please schedule a time for the interview at (Link)
@@ -74,14 +74,14 @@ Now for some sweet stuff -- I added Jira automation.
 >
 > (if public feedback was provided) The hiring manager provided the following feedback: "(the feedback)"
 >
-> If you have any questions or follow-up, don't hesitate to reply to this e-mail. Again, we thank you for your time. 
+> If you have any questions or follow-up, don't hesitate to reply to this e-mail. Again, we thank you for your time.
 
 * A manually triggered automation, which I send a few days after an interview, that asks for feedback, using a Microsoft Forms form that I created, and adds a label to the issue indicating that feedback was requested. Contents:
 
 > Thank you for going through the SCT interview process and making the time to speak with us.
-> 
+>
 > We know your time is valuable, and we'd appreciate it if you'd be willing to anonymously share some thoughts on your experience with us. This feedback will be seen directly by the hiring manager who conducted the interview.
-> 
+>
 > (Link)
 > 
 > NOTE: If you are still in the interview process, this is not an indicator that the process is finished; we just don't want to wait too long to collect feedback.
