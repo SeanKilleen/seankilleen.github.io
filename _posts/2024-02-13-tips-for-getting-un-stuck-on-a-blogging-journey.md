@@ -15,7 +15,7 @@ header:
 ---
 _Ed. Note: Posting this in honor of once-again breaking the blogging logjam myself. Seemed fitting that it was a post sitting in my backlog forever!_
 
-I had A conversation last year with a developer I respect and admire. They were talking about how they just couldn't seem to blog, though they wanted to.
+I had a conversation last year with a developer I respect and admire. They were talking about how they just couldn't seem to blog, though they wanted to.
 
 Some quotes from them:
 
