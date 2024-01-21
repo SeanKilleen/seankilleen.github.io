@@ -12,9 +12,9 @@ date: 2024-02-20 10:00 -0500
 ---
 ## Background
 
-We currently use Docfx to publish the NUnit docs, because it has a lovely capability of generating docs for our API reference in addition to all our articles.
+We currently use `docfx`` to publish the [NUnit docs](https://docs.nunit.org), because it has a lovely capability of generating docs for our API reference in addition to all our articles.
 
-However, one thing I often yearn for that I get on this Jekyll blog and some others I work with is the ability to have a live preview within a pull request of what the generated site will look like.
+However, one thing I often yearn for -- that I get on this Jekyll blog and some others I work with -- is the ability to have a live preview within a pull request of what the generated site will look like.
 
 Because the source code for the API docs is in the `nunit` repository, and the docs live in the `docs` repo, it'll be a little extra complicated.
 
