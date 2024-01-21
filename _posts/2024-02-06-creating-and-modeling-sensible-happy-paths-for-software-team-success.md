@@ -7,7 +7,7 @@ tags:
   - communication
   - leadership
   - automation
-date: 2023-09-03 14:25 -0400
+date: 2024-02-06 10:00 -0500
 header:
  overlay_image: /images/overlays/unsplash/timothy-dykes-yapM31BKJx8-unsplash.jpg
  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
