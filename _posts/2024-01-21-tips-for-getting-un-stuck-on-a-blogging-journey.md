@@ -5,7 +5,7 @@ tags:
   - blogging
   - writing
   - tips
-date: 2024-01-20 23:46 -0500
+date: 2024-02-13 10:00 -0500
 excerpt: ...if I may be so bold as to offer those.
 header:
   overlay_image: /images/overlays/unsplash/steve-johnson-CIbgRsgwunE-unsplash.jpg
