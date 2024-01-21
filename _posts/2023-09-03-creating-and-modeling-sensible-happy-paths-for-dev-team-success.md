@@ -1,5 +1,5 @@
 ---
-title: Creating and Modeling "Sensible Happy Paths" for Dev Team Success
+title: Creating and Modeling "Sensible Happy Paths" for Software Team Success
 comments: true
 excerpt: Happy paths compound over time.
 tags:
