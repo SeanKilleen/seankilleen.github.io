@@ -6,7 +6,7 @@ tags:
   - meetings
   - communication
   - facilitation
-date: 2023-09-03 15:02 -0400
+date: 2024-01-30 10:00 -0500
 excerpt: "How I committed to making meetings better."
 header:
  overlay_image: /images/overlays/unsplash/danielle-cerullo-bIZJRVBLfOM-unsplash.jpg
