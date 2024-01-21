@@ -13,7 +13,7 @@ header:
  caption: "Photo credit: [**Timothy Dykes @ Unsplash**](https://unsplash.com/@timothycdykes?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
 
 ---
-When Setting teams up for success with modern software delivery, I've found it helps to create "successful paths of least resistance". Here are some things I've tried, learned, and had success with in the hopes they might help someone else. I prioritize understanding the state of these things first if I don't see them in an environment I enter.
+When setting teams up for success with modern software delivery, I've found it helps to create "successful paths of least resistance". Here are some things I've tried, learned, and had success with in the hopes they might help someone else. I prioritize understanding the state of these things first if I don't see them in an environment I enter.
 
 ## Before We Begin: Start With Trust and Understanding
 
@@ -33,7 +33,7 @@ A quick introductory note: when I say "modeling behavior", I mean "demonstrating
 
 One of the most crucial things for a leader to nail early on is to encourage feedback, _especially_ if it's critical feedback. I had a leader I loved working with (thanks [Jeff](https://itsanicelife.com/) at [Excella](https://excella.com)!) who really believed that "feedback is a gift". His willingness to take blunt feedback allowed me to speak up many times and spark conversations that helped the organization or helped me to grow my understanding -- sometimes both!
 
-Explicitly ask for feedback. Discuss ways people like to give and receive feedback. Authorize people in one-on-one settings to provide this feedback, especially in front of a group. And _celebrate the heck out of it_ when it happens. You will not always be perfect at this; I'm sure not! But working at it continuously will make you and your teams flourish.
+Explicitly ask for feedback. Discuss ways people like to give and receive feedback. Authorize people in one-on-one settings to provide this feedback, especially in front of a group. And _celebrate the heck out of it_ when it happens. You will not always be perfect at this; I'm sure not! But working at it continuously will help you and your teams flourish.
 
 ## Modeling Behavior Around Visibility, Issues and "Code Flow"
 
