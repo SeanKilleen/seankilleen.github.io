@@ -42,7 +42,7 @@ Meetings should be a value stream. What is the outcome of a meeting? Surely we c
 | Present awards or praise | Private congratulation and a public e-mail announcement? Make a part of another meeting? (meetings for praise/celebration can be very nice; just do it consciously.) |
 | Brainstorm | A meeting might be helpful for this. But ensure you facilitate, do the prep work, and block off time |
 
-## Shift accountability to the left by making a decision first
+## Shift Accountability By Making a Decision First
 
 I got this one from Al Pittampalli's great book, [Read This Before Our Next Meeting](https://www.amazon.com/Read-This-Before-Next-Meeting/dp/1936719169).
 
@@ -62,13 +62,13 @@ Every meeting invite should contain:
 * An idea of why an invitee is invited to the meeting, down to the most granular level possible.
 * Exactly what discussion points you intend to cover
 
-Beyond just listing those items, you have to ensure that you actually stick to it, so if the discussion deviates, others who have opted out (more on this later) will have a chance to weigh in. If people can't miss a meeting because of an inevitable important side conversation, painful meeting bloat will continue.
+Beyond just listing those items, you have to ensure that you actually stick to it, so if the discussion deviates, others who have opted out (more on this shortly) will have a chance to weigh in. If people can't miss a meeting because of an inevitable important side conversation, painful meeting bloat will continue.
 
 ## Shift Noise to the Left by Encouraging Opt-out
 
 Sometimes when you invite people to a meeting, they feel that they _have_ to attend. This leads to a lot of wasted time.
 
-State in your meeting invite that it's OK to opt-out -- but also that the work of the meeting will go forward without the attendees who aren't present. If someone really does feel they're critical but has a conflict, they can ask for a re-schedule (or better yet -- delegate their proxy to someone else).
+State in your meeting invite if it's OK to opt-out and when -- but also that the work of the meeting will go forward without the attendees who aren't present. If someone really does feel they're critical but has a conflict, they can ask for a re-schedule (or better yet -- delegate their proxy to someone else).
 
 ## Shift Focus to the Left by Respecting Time Boundaries
 
@@ -77,13 +77,17 @@ State in your meeting invite that it's OK to opt-out -- but also that the work o
 * Aim to accomplish the purpose of the meeting and end there. Did the meeting run over for some reason or things go off the rails? This is your opportunity to revisit either your planning for the agenda or your facilitation skills.
 * Celebrate when the purpose of a meeting is achieved under the allotted time.
 
+This will drive a focus and energy for the meeting, because the time constraint ups the ante and because there's a shared sense of being accountable for the outcome.
+
 ## Shift Questions to the Left with Prep
 
-* Add context, background, notes on prior discussions, things that have been tried etc. to the meeting invite. **Don't let the invite just be an empty space.**
-* Indicate that you expect people to actually read this prep if they're going to attend the meeting.
-* Refuse to recap for anyone or go over the points. Assume people read it.
+**Don't let the meeting invite just be an empty space.**
 
-## Shift Ambiguity to the Left by Capturing Notes and Actions
+* Add context, background, notes on prior discussions, things that have been tried etc. to the meeting invite.
+* Indicate that you expect people to actually read this prep if they're going to attend the meeting.
+* Refuse to recap for anyone or go over the points. Assume people read it, because you would read theirs. (also, make sure you read theirs!)
+
+## Shift Clarity to the Left by Capturing Notes and Actions
 
 * Take notes, or ask someone you trust (and who can type quickly) to take notes. Taking notes is also a great way to remain in a facilitator role rather than taking all the air out of the room while leading the meeting. Don't forego this because you can't type fast. If you're taking meetings and you type slow, cut the scope of the meeting.
 * Your notes should start out with a section for "next actions". Names and rough dates should go next to any item entered there.
@@ -95,7 +99,7 @@ State in your meeting invite that it's OK to opt-out -- but also that the work o
 
 Maybe you're in an organization where this advice sounds like it comes from another world. I was once in such an organization, and used the techniques above to start a shift after reading Al's book. Whenever I got the chance to run a meeting there, I'd send a short write-up of these rules, either to individual meeting attendees or as part of the invite. I framed it as an experiment -- "this is something I'm trying that I think will help all of us. But in order for it to help, I have to stick to it." I spent time prepping for my meetings. I made sure the notes were there. I celebrated when someone didn't have to attend, or when we finished early. I called out people who had clearly done their prep work and thanked them. I asked for feedback on how my facilitation could be more effective.
 
-I started to notice signals that something was taking hold when others began adopting my rules and I got positive feedback on how attendees felt. People were more energized and engaged around our topics and since the people who weren't interested could opt out, the more engaged people had less noise in making decisions and moving things forward. I also started to use this to opt out of meetings that clearly didn't add value for me, which in some cases led those organizers to ask for feedback which I could use to discuss facilitation techniques.
+I started to notice signals that something was taking hold when others began adopting my rules and I got positive feedback on how attendees felt. People were more energized and engaged around our topics. And, since the people who weren't interested could opt out, the more engaged people had less noise around moving things forward. I also started to use this to opt out of meetings that clearly didn't add value for me, which in some cases led those organizers to ask for feedback which I could use to discuss facilitation techniques.
 
 ## What do you think?
 
