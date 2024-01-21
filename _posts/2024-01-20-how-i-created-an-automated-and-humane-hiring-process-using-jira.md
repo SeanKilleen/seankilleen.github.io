@@ -10,11 +10,11 @@ tags:
   - interviews
 date: 2024-01-20 17:10 -0500
 header:
- overlay_image: /images/overlays/unsplash/kier-in-sight-archives-a53bWJk1sz0-unsplash.jpg
- overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
- caption: "Photo credit: [**Kier in Sight Archives @ Unsplash**](https://unsplash.com/@kierinsightarchives?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
-
-
+  overlay_image: /images/overlays/unsplash/kier-in-sight-archives-a53bWJk1sz0-unsplash.jpg
+  overlay_filter: 0.5
+  caption: "Photo credit: [**Kier in Sight Archives @
+    Unsplash**](https://unsplash.com/@kierinsightarchives?utm_content=creditCop\
+    yText&utm_medium=referral&utm_source=unsplash)"
 ---
 My employer is a small company of around 50 people. I needed to hire 2 developers, and we wanted to do it all in-house. Beyond the economics of saving money on outside recruiting efforts, this was a chance to find two people who would really accelerate the culture I'm working to build.
 
@@ -22,7 +22,9 @@ I've worked with some great recruiters (shout out to [Excella!](https://excella.
 
 However, we did have Jira.
 
-What I did:
+## Let's Get to Work
+
+So, here's what I did:
 
 * Created a project & board for recruiting (I did this via a Jira cloud project that was already tailored for the purpose, but you could do it with a board)
 * Used a type of item called "Applicant" created by the project (you could create your own if not using the project)
@@ -116,8 +118,10 @@ So, my overall process went something like this:
 
 ## The Results
 
-This process was pretty effective for us, which is why I'm willing to write it up in the hopes that it benefits others. We had over 60 applicants for the two roles we had open. I was able to make an offer to two fantastic candidates that I think will really move our organization forward. I also had to reject several great candidates would have also been a really good fit. But, 100% of our anonymous interview feedback respondents rated their experience a 5 out of 5, and we received a ton of positive comments about the process.
+This process was pretty effective for us, which is why I'm willing to write it up in the hopes that it benefits others. We had over 60 applicants for the two roles we had open. I was able to make an offer to two fantastic candidates that I think will really move our organization forward. I also had to reject several great candidates would have also been a really good fit (a best-case scenario for us as an org, even though that stinks). 
 
-I hope this provides you with a place to start if you're looking to improve your interview process.
+But, more importantly: 100% of our anonymous interview feedback respondents rated their experience a 5 out of 5, and we received a ton of positive comments about the process. And, I felt like most of my time was spent where it mattered: on thinking about and connecting with candidates.
 
-Questions? Thoughts? Add your opinion in the comments!
+I hope this provides you with a place to start if you're looking to improve your interview process!
+
+Questions? Thoughts? I'd love to hear from you in the comments!
