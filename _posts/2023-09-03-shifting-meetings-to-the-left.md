@@ -11,11 +11,13 @@ Dear reader, I'd love to save you some trouble there.
 
 In software development, feedback loops are key. If we can iterate 10 times on something while our competitors are still getting their shoes on, chances are we're going to come out ahead. This ability to adapt and respond to change is one of the driving forces at the heart of Agile software development. 
 
-If we visualize a process as a series of columns from left to right, such as in Kanban, then "shifting to the left" means mitigating issues earlier in the process. For example, if we have a "QA step" and bugs are often found there, could we shift the process to the left by automating tests earlier on to make QA go more smoothly? If a work item gets to a sign-off phase and there are issues, could we work to understand things better up front to avoid that hiccup and achieve a state of flow? If big security reviews slow us down, can we automate the scanning and make it happen with every code commit so that we catch 80% immediately?
+If we visualize a process as a series of columns from left to right, such as in a kanban system, then "shifting to the left" means mitigating issues earlier in the process. For example, if we have a "QA step" and bugs are often found there, could we shift the process to the left by automating tests earlier on to make QA go more smoothly? If a work item gets to a sign-off phase and there are issues, could we work to understand things better up front to avoid that hiccup and achieve a state of flow? If big security reviews slow us down, can we automate the scanning and make it happen with every code commit so that we catch 80% immediately?
 
 ## Meetings are Another Crucial Form of Feedback Loops
 
-They involve scheduling and logistical acrobatics, they steal focus, they cost a lot of money, and they often lead to more meetings. What can we do to get ahead of these expensive feedback loops, or at least make them smaller? 
+They involve scheduling and logistical acrobatics, they steal focus, they cost a lot of money, and they often lead to more meetings. 
+
+What can we do to get ahead of these expensive feedback loops, or at least make them smaller? 
 
 ## The Best Meeting is No Meeting at All
 
@@ -24,33 +26,32 @@ Meetings should be a value stream. What is the outcome of a meeting? Surely we c
 | If your meeting is to... | ..then try this instead | 
 | ---------------------- | ---------------- |
 | Make an announcement | E-mail, Organization Chat e.g. Slack or Teams |
-| Get Feedback | Set up a form and send via e-mail, take a poll in Slack or similar, do one-on-one outreach |
-| Get consensus |  | 
-| Reach people who don't read your e-mails | Accept that those people might be too busy or too disinterested. Maybe they don't need to be involved. If you have a decision to make, make it without them. | 
-| Present awards or praise | Private congratulation and a public e-mail announcement? Make a part of another meeting? (NOTE: awards in meetings can be very nice; just do it consciously.) |
+| Get Feedback/Consensus | Set up a form and send via e-mail, start a discussion thread, take a poll in your chat tool, do one-on-one outreach |
+| Reach people who don't read your e-mails | Accept that those people might be too busy or too disinterested. Maybe they don't need to be involved. If you have a decision to make, make it without them. Also, try more communication channels. Chat tools, phone, one-on-one meetings, etc. Also, ask for feedback on why your emails aren't resonating. | 
+| Present awards or praise | Private congratulation and a public e-mail announcement? Make a part of another meeting? (meetings for praise/celebration can be very nice; just do it consciously.) |
 | Brainstorm | A meeting might be helpful for this. But ensure you facilitate, do the prep work, and block off time |
 
 ## Shift accountability to the left by making a decision first
 
-I got this one from Al Pitampalli's (TODO: Spelling) great book, "Read this before our next meeting." (TODO: Link)
+I got this one from Al Pittampalli's great book, [Read This Before Our Next Meeting](https://www.amazon.com/Read-This-Before-Next-Meeting/dp/1936719169).
 
 How can we make a decision if we're not doing it as a group in meetings? 
 
 * Find who the accountable person is and get them to make a decision instead. 
-* If you're not sure, ask the group to make someone accountable and volunteer for someone to choose you. 
+* If you're not sure, ask the group to make someone accountable and volunteer for someone to choose you.
 * Did nobody volunteer? Congrats, you're it! Make the decision or drop it.
 
 ## Shift Attendance to the Left With an Actual Agenda
 
-Ever been in a meeting where you or others realized you weren't really needed halfway through? Painful, right? 
+Ever been in a meeting where you or others realized you weren't really needed halfway through? Painful, right?
 
 Every meeting invite should contain:
 
 * A clear goal / expected outcome of the meeting
-* An idea of why an invitee is invited to the meeting, down to the individual level if possible.
+* An idea of why an invitee is invited to the meeting, down to the most granular level possible.
 * Exactly what discussion points you intend to cover
 
-Beyond just listing those items, you have to ensure that you actually stick to it, so if the discussion deviates, others who have opted out (more on this later) will have a chance to stay informed. If people can't miss a meeting because of an inevitable important side conversation, painful meeting bloat will continue.
+Beyond just listing those items, you have to ensure that you actually stick to it, so if the discussion deviates, others who have opted out (more on this later) will have a chance to weigh in. If people can't miss a meeting because of an inevitable important side conversation, painful meeting bloat will continue.
 
 ## Shift Noise to the Left by Encouraging Opt-out
 
