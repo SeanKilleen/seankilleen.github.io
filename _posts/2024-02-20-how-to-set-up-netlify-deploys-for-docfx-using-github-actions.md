@@ -31,7 +31,7 @@ Nevertheless: Let's make it happen.
 
 ## The Build Steps
 
-Below are the steps in [our docfx build process](TODO) -- I'll break them down one at a time:
+Below are the steps in [our docfx build process](https://github.com/nunit/docs/tree/master/.github/workflows) -- I'll break them down one at a time:
 
 ```yaml
       - uses: actions/checkout@v4
