@@ -28,11 +28,11 @@ What can we do to get ahead of these expensive feedback loops, or at least make 
 
 Meetings should be a value stream. What is the outcome of a meeting? Surely we can get to that outcome faster.
 
-| If your meeting is to... | ..then try this instead | 
+| If your meeting is to... | ..then try this instead |
 | ---------------------- | ---------------- |
 | Make an announcement | E-mail, Organization Chat e.g. Slack or Teams |
 | Get Feedback/Consensus | Set up a form and send via e-mail, start a discussion thread, take a poll in your chat tool, do one-on-one outreach |
-| Reach people who don't read your e-mails | Accept that those people might be too busy or too disinterested. Maybe they don't need to be involved. If you have a decision to make, make it without them. Also, try more communication channels. Chat tools, phone, one-on-one meetings, etc. Also, ask for feedback on why your emails aren't resonating. | 
+| Reach people who don't read your e-mails | Accept that those people might be too busy or too disinterested. Maybe they don't need to be involved. If you have a decision to make, make it without them. Also, try more communication channels. Chat tools, phone, one-on-one meetings, etc. Also, ask for feedback on why your emails aren't resonating. |
 | Present awards or praise | Private congratulation and a public e-mail announcement? Make a part of another meeting? (meetings for praise/celebration can be very nice; just do it consciously.) |
 | Brainstorm | A meeting might be helpful for this. But ensure you facilitate, do the prep work, and block off time |
 
@@ -40,9 +40,9 @@ Meetings should be a value stream. What is the outcome of a meeting? Surely we c
 
 I got this one from Al Pittampalli's great book, [Read This Before Our Next Meeting](https://www.amazon.com/Read-This-Before-Next-Meeting/dp/1936719169).
 
-How can we make a decision if we're not doing it as a group in meetings? 
+How can we make a decision if we're not doing it as a group in meetings?
 
-* Find who the accountable person is and get them to make a decision instead. 
+* Find who the accountable person is and get them to make a decision instead.
 * If you're not sure, ask the group to make someone accountable and volunteer for someone to choose you.
 * Did nobody volunteer? Congrats, you're it! Make the decision or drop it.
 
@@ -60,7 +60,7 @@ Beyond just listing those items, you have to ensure that you actually stick to i
 
 ## Shift Noise to the Left by Encouraging Opt-out
 
-Sometimes when you invite people to a meeting, they feel that they _have_ to attend. This leads to a lot of wasted time. 
+Sometimes when you invite people to a meeting, they feel that they _have_ to attend. This leads to a lot of wasted time.
 
 State in your meeting invite that it's OK to opt-out -- but also that the work of the meeting will go forward without the attendees who aren't present. If someone really does feel they're critical but has a conflict, they can ask for a re-schedule (or better yet -- delegate their proxy to someone else).
 
@@ -69,7 +69,7 @@ State in your meeting invite that it's OK to opt-out -- but also that the work o
 * Your meetings should start on time. I usually allow two-minute buffer max for technical issues. If someone is late, they should be able to catch up on the notes.
 * Your meetings should end 5 minutes early. Do not be the person who causes someone to be late to their next meeting if you can ever help it. The extra 5 minutes likely don't make a difference to your meeting.
 * Aim to accomplish the purpose of the meeting and end there. Did the meeting run over for some reason or things go off the rails? This is your opportunity to revisit either your planning for the agenda or your facilitation skills.
-* Celebrate when the purpose of a meeting is achieved under the allotted time. 
+* Celebrate when the purpose of a meeting is achieved under the allotted time.
 
 ## Shift Questions to the Left with Prep
 
@@ -89,7 +89,7 @@ State in your meeting invite that it's OK to opt-out -- but also that the work o
 
 Maybe you're in an organization where this advice sounds like it comes from another world. I was once in such an organization, and used the techniques above to start a shift after reading Al's book. Whenever I got the chance to run a meeting there, I'd send a short write-up of these rules, either to individual meeting attendees or as part of the invite. I framed it as an experiment -- "this is something I'm trying that I think will help all of us. But in order for it to help, I have to stick to it." I spent time prepping for my meetings. I made sure the notes were there. I celebrated when someone didn't have to attend, or when we finished early. I called out people who had clearly done their prep work and thanked them. I asked for feedback on how my facilitation could be more effective.
 
-I started to notice signals that something was taking hold when others began adopting my rules and I got positive feedback on how attendees felt. People were more energized and engaged around our topics and since the people who weren't interested could opt out, the more engaged people had less noise in making decisions and moving things forward. I also started to use this to opt out of meetings that clearly didn't add value for me, which in some cases led those organizers to ask for feedback which I could use to discuss facilitation techniques. 
+I started to notice signals that something was taking hold when others began adopting my rules and I got positive feedback on how attendees felt. People were more energized and engaged around our topics and since the people who weren't interested could opt out, the more engaged people had less noise in making decisions and moving things forward. I also started to use this to opt out of meetings that clearly didn't add value for me, which in some cases led those organizers to ask for feedback which I could use to discuss facilitation techniques.
 
 ## What do you think?
 
