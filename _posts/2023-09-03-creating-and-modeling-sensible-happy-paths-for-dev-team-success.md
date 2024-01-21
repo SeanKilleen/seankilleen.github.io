@@ -6,6 +6,7 @@ tags:
   - culture
   - communication
   - leadership
+  - automation
 date: 2023-09-03 14:25 -0400
 header:
  overlay_image: /images/overlays/unsplash/timothy-dykes-yapM31BKJx8-unsplash.jpg
