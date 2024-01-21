@@ -68,7 +68,7 @@ We unzip the asset file and copy it to the right spot.
           args: docs/docfx.json --warningsAsErrors true
 ```
 
-With that in place, we run docfx to mash everything up into one deployable site.
+With that in place, we run `docfx` to mash everything up into one deployable site.
 
 ```yaml
       - name: zip site contents
@@ -80,7 +80,7 @@ With that in place, we run docfx to mash everything up into one deployable site.
           path: _site.zip
 ```
 
-We zip up and archive the site contents. This is just for reference
+We zip up and archive the site contents. This is just for reference.
 
 ```yaml
       - name: Start deployment (PR only)
