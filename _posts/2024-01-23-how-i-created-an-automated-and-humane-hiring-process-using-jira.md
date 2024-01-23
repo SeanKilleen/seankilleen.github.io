@@ -18,7 +18,7 @@ header:
 ---
 [My employer, SCT Software,](https://sctsoftware.com) is a small company of around 50 people. We needed to hire 2 developers, and we wanted to do it all in-house. Beyond the economics of saving money on outside recruiting efforts, this was a chance to find two people who would really accelerate the culture I'm working to build.
 
-I've worked with some great recruiters (shout out to [Excella!](https://excella.com)) but I had no infrastructure in place and we weren't hiring enough people to warrant investing in a separate product.
+I've worked with some great recruiters (shout out to [Excella](https://excella.com)!) but I had no infrastructure in place and we weren't hiring enough people to warrant investing in a separate product.
 
 However, we did have Jira.
 
