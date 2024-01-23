@@ -54,7 +54,7 @@ So, here's what I did:
 
 Now for some sweet stuff -- I added Jira automation.
 
-* When moving into the "acknowledged" field, it sent an e-mail to the candidate and CC'd me. The e-mail was a friendly intro:
+* When moving into the "Acknowledged" column, it sent an e-mail to the candidate and CC'd me. The e-mail was a friendly intro:
 
 > We're excited that you're interested in our .NET Developer role! We wanted to acknowledge that we've received your application and let you know that we'll be in touch about it as soon as we're able. We ask for your patience as we give each application our attention.
 
