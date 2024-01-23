@@ -47,8 +47,8 @@ So, here's what I did:
 * Made use of Jira labels on the issues -- these evolved organically but went something like:
   * If they had something I was looking for, I labeled it (`has_testautomation`, `has_devops`, `has_industry_experience`)
   * If they had something that set them apart, I labeled it (`standout_resume`, `has_referral`, `via_email` for those who did a nice e-mail intro)
-  * If they were down-selected after interview, I added that `down-selected` as a label too.
-  * When I asked for feedback (more on that below), I added a `feedback-requested` label so that I didn't ask more than once.
+  * If they were down-selected after interview, I added that `down_selected` as a label too.
+  * When I asked for feedback (more on that below), I added a `feedback_requested` label so that I didn't ask more than once.
 
 ## Adding Automation
 
