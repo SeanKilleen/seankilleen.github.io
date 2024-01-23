@@ -7,18 +7,30 @@ I recently just powered through a bunch of applications for some jobs I had open
 
 ## First of All: Tech Hiring is Broken.
 
-You're not alone. I think this, too -- as do many hiring managers. We fix it where we can. Some of these tips are silly and I wish many of them weren't necessary.
+You're not alone. I think this, too -- as do many hiring managers. We fix it where we can. Some of these tips are silly -- the result of bad systems and outdated practices, and I wish many of them weren't necessary.
 
-I am rooting for every candidate to succeed. I hope all candidates know that hiring managers want to find a fit.
+I am rooting for every candidate to succeed. I hope all candidates know that hiring managers want to find a fit. These tips are just that -- tips to navigate a difficult system, from my perspective as a hiring manager in my current context. Should you have to do them? No. Will they help? I hope so.
 
-Simple things to set you apart
+## First Impressions
 
-* A resume file with your name in the file name goes a long way (Resume.pdf tells me you're maybe not thinking about my experience)
+* **Resume File Name**: Did you know that when you upload your resume to LinkedIn, that's the name of the file that will download on my machine when I look at it? It's minor, but when looking at 60 Resumes, it was a lot easier to find `[FirstName] [LastName].pdf` than it was to fine `Resume(5).pdf`. Naming this well from the start tells me you're thinking about my experience as an audience. It's a little detail but it stands out because it tells me something.
+* **Seeing an e-mail address and taking the time to drop a note**: This is instant recognition. I put my direct e-mail in the job description and in the LinkedIn post. Only a handful of people took the time to send a note. Those who did absolutely got a special note in the process.
+
+## The Resume
+
+**Choose Whether to use an "SEO" Resume, and have more than one**: Tech hiring is awful in that there are now whole systems designed around surfacing keyword matches, and gamifying these systems has become unfortunately necessary for applicants. I lament this. With that said, if you're a candidate who has a resume like this, it's important to know that it works against you when submitting to companies who don't subscribe to this philosophy. Have a an authentic resume at hand, too, and choose which one to use based on your best information. You will stand out.
+
+**You should have bullet points for your roles**: The organization and title are not enough. Take all the data points you have for your roles, and add them in the order of:
+* Achievements that provided a measurable business impact
+* Achievements directly supporting a business impact
+* Things you're proud of
+* Ways you Grew
+* Activities / Job duties
+
 * Clear, concise information on Resume
 * Talking about what you accomplished vs what your job was or what activities you did
 * Don't pad with typical activities (e.g. "attended daily standups"). If you want point these things out, condense them into one bullet or make them part of a position description above the bullets.
 * Dropping a note about what makes you a good fit or excited about the role -- especially when asked for!
-* Seeing an e-mail address and taking the time to drop a note (instant recognition!) -- so many people did a cold apply via linkedin when my e-mail was right in the job description. 
 * Understand if you're submitting to a human, and don't submit 1,000s of bullets that are clearly SEO.
 * Claiming results is good. Claiming outlandish results backfires. Really? You increased client satisfaction 80% by switching a software library?
 * Avoid using very common templates. They can begin to look like coordinated scamming, and I'm truly not sure if it's me or not.
