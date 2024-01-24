@@ -7,7 +7,7 @@ tags:
   - process
   - writing
   - culture
-date: 2024-01-23 06:14 -0500
+date: 2024-03-05 10:00 -0500
 ---
 I got a surprising amount of positive feedback on a job description I wrote recently, both internally and from candidates. So, I figured I'd write up my process here in case it can help anyone.
 
