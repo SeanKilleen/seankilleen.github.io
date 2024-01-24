@@ -85,6 +85,6 @@ The hiring process is hard enough on everyone without more [enshittification](ht
 
 ## Find Your Communities
 
-Find your local & global communities on Twitter, Mastodon, Slack, LinkedIn, Discord, etc. -- many often times have jobs channels where things will pop up. A candidate coming from a community is seen as a sort of implicit reference in terms of places you may participate. And there's usually little downside as you learn things, participate in discussions, and build relationships there that are nice either way.
+Find your local & global communities on Twitter, Mastodon, Slack, LinkedIn, Discord, etc. -- many have jobs channels where things will pop up. A candidate coming from a community is seen as a sort of implicit reference in terms of places you may participate. And there's usually little downside as you learn things, participate in discussions, and build relationships there that are nice either way.
 
 I wish you the best of luck finding your next opportunity! Let me know your thoughts in the comments.
