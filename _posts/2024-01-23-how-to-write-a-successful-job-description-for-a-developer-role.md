@@ -6,7 +6,7 @@ tags:
   - humancenteredhiring
   - process
   - writing
-  - culure
+  - culture
 date: 2024-01-23 06:14 -0500
 ---
 I got a surprising amount of positive feedback on a job description I wrote recently, both internally and from candidates. So, I figured I'd write up my process here in case it can help anyone.
