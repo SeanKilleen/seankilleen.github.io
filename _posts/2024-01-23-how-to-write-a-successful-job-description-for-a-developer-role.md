@@ -32,8 +32,14 @@ In our case, here are some key phrases I used and the self-selection I hoped to 
 | "We are embarking on the next phase of our product offering" | sense of adventure and also unknown. |
 | "We're also looking toward the future with an eye toward new products" | People looking to learn and build, and who are comfortable in emerging teams. |
 | "We are operating on the cutting edge of our ecosystem. Our platform runs on .NET 8 (on the first day of its launch!)" | Staying current, learning together. |
+| "We embrace and cultivate a culture of humble leadership and support. We thrive on input and collective ownership." | Team members will need to provide input; we want and need to be comfortable driving things forward. We will support each other. |
+| "We take our work seriously, but also care about work/life balance." | It's not a 9-5 job; we need people to care about impact. We also have flexibility because we're more results-oriented than time-oriented. |
+| "If this sounds like you, we encourage you to apply, even if you don't tick every box" | We care about helping people grow. Our goal isn't to just weed people out our "hire elite people". |
+| "You don't mind a little bit of chaos. 😅" | We need people who are comfortable in dynamic environments and are willing to help things grow. People who need well-established systems or lots of process will not do well here. |
+| "You'll talk directly to the hiring manager" | We're a no-BS company. | 
+| "Salary: Depends on experience. We'll make sure nobody's time gets wasted." | I had a decently large range on the salary, and I wanted people to know I was interested in paying what they're worth in our market, and I also didn't want to waste time doing a negotiation dance. |
 
-In this case, several applicants really resonated with the way I described our mindset as "humble".
+Several applicants made reference to the description of "humble leadership" and "thriving on input". People also had great follow-up questions about the "chaos" that helped us further clarify and suss out a fit. Several were excited about the growth opportunities and were attracted to the idea of building new and emerging things.
 
 ## Sections of the Job Post
 
