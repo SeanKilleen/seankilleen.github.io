@@ -9,7 +9,7 @@ tags:
   - culture
 date: 2024-03-05 10:00 -0500
 header:
-  overlay_image: /images/overlays/unsplash/rupert-britton-l37N7a1lL6w-unsplash.jpg
+  overlay_image: /images/overlays/unsplash/afif-ramdhasuma-RjqCk9MqhNg-unsplash.jpg
   overlay_filter: 0.5
   caption: "Photo credit: [**Afif Ramdhasuma @
     Unsplash**](https://unsplash.com/@javaistan?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
