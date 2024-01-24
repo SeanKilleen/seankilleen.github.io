@@ -40,7 +40,7 @@ In our case, here are some key phrases I used and the signals I hoped to send to
 | "You know that we all grow together." | We want someone to be comfortable both learning & teaching. |
 | "a team that wants to level each other up" | Again, growth mindset and expecting that to be a two-way street. |
 | "You want to continually improve your working process and tools to enable you and your team to deliver better and faster." | Continual improvement and the motivation involved to accomplish that. |
-| "You'll talk directly to the hiring manager" | We're a no-BS company. | 
+| "You'll talk directly to the hiring manager" | We're a no-BS company. |
 | "Salary: Depends on experience. We'll make sure nobody's time gets wasted." | I had a decently large range on the salary, and I wanted people to know I was interested in paying what they're worth in our market, and I also didn't want to waste time doing a negotiation dance. |
 
 The goal of all of these phrases: to get motivated people who are tired of being constrained and who want to do their best work on a team that moves quickly to self-select in. And conversely, people who might be looking to hide amongst process or shuffle along in a 9-5 kind of way in a big org would hopefully self-select out.[^1]
@@ -76,7 +76,7 @@ The skills list here contains technical skills but also core skills around attit
 
 ## "About the Role"
 
-I keep this more high level and tend to talk about the ways this role will contribute to team goals, and a little about the day to day. 
+I keep this more high level and tend to talk about the ways this role will contribute to team goals, and a little about the day to day.
 
 I also try to mention an area of focus for the role. This is partly to help set expectations, but also to see if people ask any questions about that specific focus (a strong positive signal in my opinion).
 
@@ -86,7 +86,7 @@ This section exists specifically to send a signal that _we want people to want t
 
 ## Authenticity is Key
 
-This is the hard part. I think Job Posts will perform best when they come from someone who's the hiring manager or close to the hiring manager, and who can speak to the highlights of the organization's culture. That's what allows a job description to be infused with authenticity. 
+This is the hard part. I think Job Posts will perform best when they come from someone who's the hiring manager or close to the hiring manager, and who can speak to the highlights of the organization's culture. That's what allows a job description to be infused with authenticity.
 
 The key phrases you use in the job description and the signals you send are things that have to be based in your organization's current reality instead of wishful thinking. Otherwise candidates -- or, even worse, new hires -- will sense this and feel duped, leading to bad outcomes and wasted time.
 
@@ -94,7 +94,7 @@ If you can't post authentically positive things about your organization / team, 
 
 ## What were the results?
 
-I had a *number* of candidates I really liked for this position, and in the end, i was able to make offers to two phenomenally talented coders.
+I had a _number_ of candidates I really liked for this position, and in the end, i was able to make offers to two phenomenally talented coders.
 
 In many cases, applicants saw this job post through messages from other professionals in communities who sent it to them and said "this sounds like you", and they felt the job description authentically described a place they wanted to be. That feels like a resounding success.
 
