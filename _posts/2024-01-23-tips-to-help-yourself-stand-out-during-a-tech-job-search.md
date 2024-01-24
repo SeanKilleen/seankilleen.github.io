@@ -7,6 +7,12 @@ tags:
   - resume
   - tips
 date: 2024-01-23 06:23 -0500
+header:
+  overlay_image: /images/overlays/unsplash/donald-giannatti-8NYX8bVvPiQ-unsplash.jpg
+  overlay_filter: 0.5
+  caption: "Photo credit: [**Donald Giannatti @
+    Unsplash**](https://unsplash.com/@wizwow?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
+
 ---
 I recently just powered through a bunch of applications for some roles I had open. I want to mention some simple things that can set you apart in your search. All of these are based on patterns I saw; way more than one candidate was doing these things.
 
