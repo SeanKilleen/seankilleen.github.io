@@ -9,21 +9,35 @@ tags:
   - culure
 date: 2024-01-23 06:14 -0500
 ---
-I got a surprising amount of positive feedback on a job description I wrote lately, both internally and from candidates. So, I figured I'd write up my process here in case it can help anyone.
+I got a surprising amount of positive feedback on a job description I wrote recently, both internally and from candidates. So, I figured I'd write up my process here in case it can help anyone.
 
 **Caveat up front**: There are lots of ways to do this well; this is just one way that happened to work without a ton of effort on my part.
 
-## Job Posts Are a Filter -- and That's OK!
+## A Window Into Your Company's Culture
 
-## Job Posts Are A Window Company's Culture
+The job description is a way for you to live your company's culture. Use That to your advantage. Does it reflect the values of your organization? Does it reflect the way you intend to show up as a leader? Think about key words and ideas that reflect your culture/value that you feel strongly about and work them into the post.
 
-* The job description is a way for you to live your company's culture. Does it reflect the values of your organization? Does it reflect the way you intend to show up as a leader?
-* Think about key words and ideas that reflect your culture/value that you feel strongly about and work them into the post. In our case, several applicants really resonated with the way I described our mindset as "humble".
+## The Art of Candidate Self-Selection
 
+Job posts are a filter -- and that's okay!
 
-Use That to your advantage.
+I believe the key to a good job post is candidate self-selection. I want to inspire candidates who would be a great fit to self-select _into_ the role, and I want candidates who wouldn't be a fit to self-select _out_.
+
+That means that a job post in a sense has to be performative -- it has to evoke a response in order to get candidates to do one of those two things.
+
+In our case, here are some key phrases I used and the self-selection I hoped to get:
+
+| Phrase | Impression |
+| ------ | ---------- |
+| "We are embarking on the next phase of our product offering" | sense of adventure and also unknown. |
+| "We're also looking toward the future with an eye toward new products" | People looking to learn and build, and who are comfortable in emerging teams. |
+| "We are operating on the cutting edge of our ecosystem. Our platform runs on .NET 8 (on the first day of its launch!)" | Staying current, learning together. |
+
+In this case, several applicants really resonated with the way I described our mindset as "humble".
 
 ## Sections of the Job Post
+
+The structure of a job post also sends a message and is performative in its own way.
 
 I like to structure a post as:
 
