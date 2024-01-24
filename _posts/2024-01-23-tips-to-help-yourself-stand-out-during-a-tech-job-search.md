@@ -22,7 +22,7 @@ Tech hiring is awful in that there are now whole systems designed around surfaci
 
 ## The Bullet Points
 
-**Your resume should have bullet points for your roles**: The organization and title are not enough, because they don't tell me enough about whether an interview makes sense, and with so many applicants, I can't give the benefit of the doubt except in very rare circumstances. I also use the resume to help formulate interview questions based on claims you make; if there's no content, it makes my job harder there too. 
+**Your resume should have bullet points for your roles**. The organization and title are not enough, because they don't tell me enough about whether an interview makes sense, and with so many applicants, I can't give the benefit of the doubt except in very rare circumstances. I also use the resume to help formulate interview questions based on claims you make; if there's no content, it makes my job harder there too. 
 
 I suggest taking all the data points you have for your roles, and adding them in priority order of:
 
@@ -36,9 +36,11 @@ Once you get to enough bullet points for that role, move on.
 
 ## Don't Pad. We Can Tell.
 
-Don't pad your resume with typical or daily activities (e.g. "attended daily standups" "wrote code"). If you feel the need to point these things out, condense them into one bullet or make them part of a position description above the bullets.
+Don't pad your resume with typical or daily activities (e.g. "attended daily stand-ups" "wrote code"). If you feel the need to point these things out, condense them into one bullet or make them part of a position description above the bullets.
 
-Understand if you're submitting to a human, and don't submit 1,000s of bullets that are clearly SEO.
+Understand if you're submitting to a human, and don't submit 1,000s of bullets that are clearly SEO. If you break one concept into 3 bullet points, it only gives me the impression that you may not understand that concept. 
+
+If those much more basic things are considered accomplishments, how can I expect the impact that I'll need someone to have on the team?
 
 ## By Honest.
 
@@ -46,14 +48,19 @@ Claiming results is good. Claiming outlandish results backfires. Really? You inc
 
 You don't have to claim amazing results; the fact that you care about value and how to measure it when possible is a big point in your favor already.
 
+## Beware of Templates!
 
-___
+Despite this being a relatively small role, I received at least 3 resumes that looked almost exactly the same. Not just the same format, and the same many bullet points but when I looked closer, the content was almost exactly the same. This blew my mind.
 
-* Avoid using very common templates. They can begin to look like coordinated scamming, and I'm truly not sure if it's me or not.
-* Surprised at how few candidates listed a web site, github, or stackoverflow. You don't have to do it, but it does stand out when it exists..
-* Templates are fine. Some templates even contain helpful language. TWEAK THIS LANGUAGE BEFORE SUBMITTING. When I see multiple submissions using the same very specific phrases with the same template designs, they all get rejected because how do I know what else isn't plagiarized?
-* Take 2 seconds to write actual bullet point responses if you want the job. Don't use Chat GPT for this. It sets you up for a bigger letdown from me when I say "ooh, someone took the time to do this!" and end up with "...nevermind, they think I'm too stupid to notice this was written by AI and doesn't actually say anything."
-* Pick things to list that are impactful. Don't drop everything because to an experienced hiring manager it looks suspicious.
+Now, maybe these people were just scammers, but it honestly didn't seem that way. So I'll just say: beware of templates, especially any that contain helpful language. Because if you're submitting it without major modifications, chances are someone else is too. It immediately disqualifies you both; how do I know what else isn't plagiarized? It tells me something about your work ethic and respect for the work.
+
+## List External Links
+
+If you have a GitHub profile or a web site, I strongly suggest listing it. It doesn't have to be brilliant and you don't have to be active. I don't judge the content or the code there, but it sends some signals. It tells me you care about community and sharing/gaining knowledge.
+
+## Don't Use ChatGPT. I'm begging you.
+
+Take 2 minutes to write actual bullet point responses if you want the job. Don't use Chat GPT for this. It sets you up for a bigger letdown from me when I say "ooh, someone took the time to do this!" and end up with "...nevermind, they think I'm too stupid to notice this was written by AI and doesn't actually say anything."
 
 -------------
 
