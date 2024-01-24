@@ -83,7 +83,7 @@ Take 2 minutes to write actual bullet point responses if you want the job. Don't
 
 The hiring process is hard enough on everyone without more [enshittification](https://en.wikipedia.org/wiki/Enshittification).
 
-## Find Your Communities!
+## Find Your Communities
 
 Find your local & global communities on Twitter, Mastodon, Slack, LinkedIn, Discord, etc. -- many often times have jobs channels where things will pop up. A candidate coming from a community is seen as a sort of implicit reference in terms of places you may participate. And there's usually little downside as you learn things, participate in discussions, and build relationships there that are nice either way.
 
