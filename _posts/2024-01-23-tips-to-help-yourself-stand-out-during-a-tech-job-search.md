@@ -18,7 +18,7 @@ I am rooting for every candidate to succeed. I hope all candidates know that hir
 
 ## First Impressions
 
-* **Resume File Name**: Did you know that when you upload your resume to LinkedIn, that's the name of the file that will download on my machine when I look at it? It's minor, but when looking at 60 Resumes, it was a lot easier to find `[FirstName] [LastName].pdf` than it was to fine `Resume (5).pdf`. Naming this well from the start tells me you're thinking about my experience as an audience. It's a little detail but it stands out because it tells me something.
+* **Resume File Name**: Did you know that when you upload your resume to LinkedIn, that's the name of the file that will download on my machine when I look at it? It's minor, but when looking at 60 resumes, it was a lot easier to find `[FirstName] [LastName].pdf` than it was to find `Resume (5).pdf`. Naming this well from the start tells me you're thinking about my experience as an audience. It's a minor detail but it stands out because it tells me something.
 * **Seeing an e-mail address and taking the time to drop a note**: This is instant recognition. I put my direct e-mail in the job description and in the LinkedIn post. Only a handful of people took the time to send a note saying why they think they'd be a fit. Those who did absolutely got extra consideration in the process. I get that this isn't possible to do when you're applying to many jobs, but I'd say if you're taking the time to apply, it's worth it to do it well.
 
 ## To SEO, or Not to SEO?
@@ -28,8 +28,8 @@ Tech hiring is awful in that there are now whole systems designed around surfaci
 ## Resume Basics
 
 * Include the dates of your positions (month & year). 
-* There's another tough choice you face: whether to share unemployment status (i.e. be honest about the date of your last role ending). It's a double-edged sword for candidates. For me, people who state their situation get respect for the authenticity, and those who try to hide it make me suspicious. But I also respect that people are biased against unemployed people even though they shouldn't be, so I would suggest making that a per-application decision.
-
+* There's a tough choice you face: whether to share unemployment status (i.e. be honest about the date of your last role ending). It's a double-edged sword for candidates. For me, people who state their situation get respect for the authenticity, and those who try to hide it make me suspicious. But I also respect that people are biased against unemployed people even though they shouldn't be, so I would suggest making that a per-application decision.
+* Think about your position titles. You aren't required to put what your exact title is. "Software Developer" is pretty generic. I fast-tracked someone for an interview once because they described themselves as a "Systems Integration Developer", and part of the job description was integrating systems. Little tweaks like that might go a long way.
 
 ## The Bullet Points
 
