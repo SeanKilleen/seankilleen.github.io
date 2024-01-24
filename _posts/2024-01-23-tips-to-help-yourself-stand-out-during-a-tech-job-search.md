@@ -23,7 +23,7 @@ I am rooting for every candidate to succeed. I hope all candidates know that hir
 
 ## To SEO, or Not to SEO?
 
-Tech hiring is awful in that there are now whole systems designed around surfacing keyword matches, and gamifying these systems has become unfortunately necessary for applicants. I abhor this. With that said, if you're a candidate who has a resume like this, it's important to know that it works against you when submitting to companies who don't subscribe to this philosophy. Have a an authentic resume at hand, too, and choose which one to use based on your best information. You will stand out.
+Tech hiring is awful in that there are now whole systems designed around surfacing keyword matches, and gaming these systems has become unfortunately necessary for applicants. I abhor this. With that said, if you're a candidate who has a resume like this, it's important to know that it works against you when submitting to companies who don't subscribe to this philosophy. Have a an authentic resume at hand, too, and choose which one to use based on your best information. You will stand out.
 
 ## Resume Basics
 
