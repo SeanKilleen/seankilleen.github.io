@@ -27,13 +27,13 @@ Tech hiring is awful in that there are now whole systems designed around surfaci
 
 ## Resume Basics
 
-* Include the dates of your positions (month & year). 
+* Include the dates of your positions (month & year).
 * There's a tough choice you face: whether to share unemployment status (i.e. be honest about the date of your last role ending). It's a double-edged sword for candidates. For me, people who state their situation get respect for the authenticity, and those who try to hide it make me suspicious. But I also respect that people are biased against unemployed people even though they shouldn't be, so I would suggest making that a per-application decision.
 * Think about your position titles. You aren't required to put what your exact title is. "Software Developer" is pretty generic. I fast-tracked someone for an interview once because they described themselves as a "Systems Integration Developer", and part of the job description was integrating systems. Little tweaks like that might go a long way.
 
 ## The Bullet Points
 
-**Your resume should have bullet points for your roles**. The organization and title are not enough, because they don't tell me enough about whether an interview makes sense, and with so many applicants, I can't give the benefit of the doubt except in very rare circumstances. I also use the resume to help formulate interview questions based on claims you make; if there's no content, it makes my job harder there too. 
+**Your resume should have bullet points for your roles**. The organization and title are not enough, because they don't tell me enough about whether an interview makes sense, and with so many applicants, I can't give the benefit of the doubt except in very rare circumstances. I also use the resume to help formulate interview questions based on claims you make; if there's no content, it makes my job harder there too.
 
 I suggest taking all the data points you have for your roles, and adding them in priority order of:
 
@@ -49,13 +49,13 @@ Once you get to enough bullet points for that role, move on.
 
 Don't pad your resume with typical or daily activities (e.g. "attended daily stand-ups" "wrote code"). If you feel the need to point these things out, condense them into one bullet or make them part of a position description above the bullets.
 
-Understand if you're submitting to a human, and don't submit 1,000s of bullets that are clearly SEO. If you break one concept into 3 bullet points, it only gives me the impression that you may not understand that concept. 
+Understand if you're submitting to a human, and don't submit 1,000s of bullets that are clearly SEO. If you break one concept into 3 bullet points, it only gives me the impression that you may not understand that concept.
 
 If those much more basic things are considered accomplishments, how can I expect the impact that I'll need someone to have on the team?
 
 ## Be Honest.
 
-Claiming results is good; claiming outlandish results backfires. Really? You increased client satisfaction 90% by switching a software library? Be prepared to answer questions about how these things were measured and how you traced your actions to that outcome. 
+Claiming results is good; claiming outlandish results backfires. Really? You increased client satisfaction 90% by switching a software library? Be prepared to answer questions about how these things were measured and how you traced your actions to that outcome.
 
 You don't have to claim amazing results; the fact that you care about value and how to measure it when possible is a big point in your favor already.
 
