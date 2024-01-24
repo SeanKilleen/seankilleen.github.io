@@ -20,7 +20,7 @@ I got a surprising amount of positive feedback on a job description I wrote rece
 
 ## A Window Into Your Company's Culture
 
-The job description is a way for you to live your company's culture. Use That to your advantage. Does it reflect the values of your organization? Does it reflect the way you intend to show up as a leader? Think about key words and ideas that reflect your culture/value that you feel strongly about and work them into the post.
+The job description is a way for you to live your company's culture. Use that to your advantage. Does it reflect the values of your organization? Does it reflect the way you intend to show up as a leader? Think about key words and ideas that reflect your culture/value that you feel strongly about and work them into the post.
 
 ## Candidate Self-Selection and "Signaling Phrases"
 
@@ -28,14 +28,14 @@ Job posts are a filter -- and that's okay!
 
 I believe the art of a good job post is candidate self-selection. I want to inspire candidates who would be a great fit to self-select _into_ the role, and I want candidates who wouldn't be a fit to self-select _out_.
 
-That means that a job post in a sense has to be performative -- it has to evoke a response in order to get candidates to do one of those two things.
+That means that a job post in a sense has to be performative -- it should evoke a response in order to get candidates to do one of those two things.
 
 In our case, here are some key phrases I used and the signals I hoped to send to get candidates to self-select:
 
 | Phrase | Impression |
 | ------ | ---------- |
-| "We are embarking on the next phase of our product offering" | sense of adventure and also unknown. |
-| "We're also looking toward the future with an eye toward new products" | People looking to learn and build, and who are comfortable in emerging teams. |
+| "We are embarking on the next phase of our product offering" | A sense of adventure and also the unknown. |
+| "We're also looking to the future with an eye toward new products" | People looking to learn and build, and who are comfortable in emerging work streams. |
 | "We are operating on the cutting edge of our ecosystem. Our platform runs on .NET 8 (on the first day of its launch!)" | Staying current, learning together, moving quickly. A "no BS" signal and a "low management/process overhead" signal. |
 | "We embrace and cultivate a culture of humble leadership and support. We thrive on input and collective ownership." | Team members will need to provide input; we want and need to be comfortable driving things forward. We will support each other. |
 | "We take our work seriously, but also care about work/life balance." | It's not a 9-5 job; we need people to care about impact. We also have flexibility because we're more results-oriented than time-oriented. |
@@ -46,7 +46,7 @@ In our case, here are some key phrases I used and the signals I hoped to send to
 | "a team that wants to level each other up" | Again, growth mindset and expecting that to be a two-way street. |
 | "You want to continually improve your working process and tools to enable you and your team to deliver better and faster." | Continual improvement and the motivation involved to accomplish that. |
 | "You'll talk directly to the hiring manager" | We're a no-BS company. |
-| "Salary: Depends on experience. We'll make sure nobody's time gets wasted." | I had a decently large range on the salary, and I wanted people to know I was interested in paying what they're worth in our market, and I also didn't want to waste time doing a negotiation dance. |
+| "Salary: Depends on experience. We'll make sure nobody's time gets wasted." | I had a decently large range on the salary, and I wanted people to know I was interested in paying what they're worth in our market, and I also didn't want to waste time doing a negotiation dance if I could help it. |
 
 The goal of all of these phrases: to get motivated people who are tired of being constrained and who want to do their best work on a team that moves quickly to self-select in. And conversely, people who might be looking to hide amongst process or shuffle along in a 9-5 kind of way in a big org would hopefully self-select out.[^1]
 
@@ -65,7 +65,7 @@ I like to structure a post in the form of:
 
 ## "About Us"
 
-Here, I add brief company background in mission and who some of our customers are. I give a brief look into the future of where the org or team is going. Here is also where I put a lot of the signaling phrases above about culture and organization and the tools we want people to be excited to work with.
+Here, I add brief company background in terms of mission and who some of our customers are. I give a brief look into the future of where the org or team is going. Here is also where I put a lot of the signaling phrases above about culture and organization and the tools we want people to be excited to work with.
 
 ## "About You"
 
@@ -91,7 +91,7 @@ This section exists specifically to send a signal that _we want people to want t
 
 ## Authenticity is Key
 
-This is the hard part. I think Job Posts will perform best when they come from someone who's the hiring manager or close to the hiring manager, and who can speak to the highlights of the organization's culture. That's what allows a job description to be infused with authenticity.
+This is the hard part. I think job posts will perform best when they come from someone who's the hiring manager or close to the hiring manager, and who can speak to the highlights of the organization's culture. That's what allows a job description to be infused with authenticity.
 
 The key phrases you use in the job description and the signals you send are things that have to be based in your organization's current reality instead of wishful thinking. Otherwise candidates -- or, even worse, new hires -- will sense this and feel duped, leading to bad outcomes and wasted time.
 
@@ -99,7 +99,7 @@ If you can't post authentically positive things about your organization / team, 
 
 ## What were the results?
 
-I had a _number_ of candidates I really liked for this position, and in the end, i was able to make offers to two phenomenally talented coders.
+I had a _number_ of candidates I really liked for this position, and in the end, I was able to make offers to two phenomenally talented coders.
 
 In many cases, applicants saw this job post through messages from other professionals in communities who sent it to them and said "this sounds like you", and they felt the job description authentically described a place they wanted to be. That feels like a resounding success.
 
