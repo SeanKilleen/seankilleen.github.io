@@ -3,7 +3,7 @@ title: Tips to Help Yourself Stand Out During a Tech Job Search
 comments: true
 date: 2024-01-23 06:23 -0500
 ---
-I recently just powered through a bunch of applications for some jobs I had open. I saw some patterns so I want to mention some simple things that can set you apart in your search. All of these are based on patterns I saw; way more than one candidate was doing these things.
+I recently just powered through a bunch of applications for some roles I had open. I want to mention some simple things that can set you apart in your search. All of these are based on patterns I saw; way more than one candidate was doing these things.
 
 ## First of All: Tech Hiring is Broken.
 
@@ -13,26 +13,42 @@ I am rooting for every candidate to succeed. I hope all candidates know that hir
 
 ## First Impressions
 
-* **Resume File Name**: Did you know that when you upload your resume to LinkedIn, that's the name of the file that will download on my machine when I look at it? It's minor, but when looking at 60 Resumes, it was a lot easier to find `[FirstName] [LastName].pdf` than it was to fine `Resume(5).pdf`. Naming this well from the start tells me you're thinking about my experience as an audience. It's a little detail but it stands out because it tells me something.
-* **Seeing an e-mail address and taking the time to drop a note**: This is instant recognition. I put my direct e-mail in the job description and in the LinkedIn post. Only a handful of people took the time to send a note. Those who did absolutely got a special note in the process.
+* **Resume File Name**: Did you know that when you upload your resume to LinkedIn, that's the name of the file that will download on my machine when I look at it? It's minor, but when looking at 60 Resumes, it was a lot easier to find `[FirstName] [LastName].pdf` than it was to fine `Resume (5).pdf`. Naming this well from the start tells me you're thinking about my experience as an audience. It's a little detail but it stands out because it tells me something.
+* **Seeing an e-mail address and taking the time to drop a note**: This is instant recognition. I put my direct e-mail in the job description and in the LinkedIn post. Only a handful of people took the time to send a note saying why they think they'd be a fit. Those who did absolutely got extra consideration in the process. I get that this isn't possible to do when you're applying to many jobs, but I'd say if you're taking the time to apply, it's worth it to do it well.
 
-## The Resume
+## To SEO, or Not to SEO?
 
-**Choose Whether to use an "SEO" Resume, and have more than one**: Tech hiring is awful in that there are now whole systems designed around surfacing keyword matches, and gamifying these systems has become unfortunately necessary for applicants. I lament this. With that said, if you're a candidate who has a resume like this, it's important to know that it works against you when submitting to companies who don't subscribe to this philosophy. Have a an authentic resume at hand, too, and choose which one to use based on your best information. You will stand out.
+Tech hiring is awful in that there are now whole systems designed around surfacing keyword matches, and gamifying these systems has become unfortunately necessary for applicants. I abhor this. With that said, if you're a candidate who has a resume like this, it's important to know that it works against you when submitting to companies who don't subscribe to this philosophy. Have a an authentic resume at hand, too, and choose which one to use based on your best information. You will stand out.
 
-**You should have bullet points for your roles**: The organization and title are not enough. Take all the data points you have for your roles, and add them in the order of:
+## The Bullet Points
+
+**Your resume should have bullet points for your roles**: The organization and title are not enough, because they don't tell me enough about whether an interview makes sense, and with so many applicants, I can't give the benefit of the doubt except in very rare circumstances. I also use the resume to help formulate interview questions based on claims you make; if there's no content, it makes my job harder there too. 
+
+I suggest taking all the data points you have for your roles, and adding them in priority order of:
+
 * Achievements that provided a measurable business impact
 * Achievements directly supporting a business impact
 * Things you're proud of
 * Ways you Grew
 * Activities / Job duties
 
-* Clear, concise information on Resume
-* Talking about what you accomplished vs what your job was or what activities you did
-* Don't pad with typical activities (e.g. "attended daily standups"). If you want point these things out, condense them into one bullet or make them part of a position description above the bullets.
-* Dropping a note about what makes you a good fit or excited about the role -- especially when asked for!
-* Understand if you're submitting to a human, and don't submit 1,000s of bullets that are clearly SEO.
-* Claiming results is good. Claiming outlandish results backfires. Really? You increased client satisfaction 80% by switching a software library?
+Once you get to enough bullet points for that role, move on.
+
+## Don't Pad. We Can Tell.
+
+Don't pad your resume with typical or daily activities (e.g. "attended daily standups" "wrote code"). If you feel the need to point these things out, condense them into one bullet or make them part of a position description above the bullets.
+
+Understand if you're submitting to a human, and don't submit 1,000s of bullets that are clearly SEO.
+
+## By Honest.
+
+Claiming results is good. Claiming outlandish results backfires. Really? You increased client satisfaction 90% by switching a software library? Be prepared to answer questions about how these things were measured and how you traced your actions to that outcome. 
+
+You don't have to claim amazing results; the fact that you care about value and how to measure it when possible is a big point in your favor already.
+
+
+___
+
 * Avoid using very common templates. They can begin to look like coordinated scamming, and I'm truly not sure if it's me or not.
 * Surprised at how few candidates listed a web site, github, or stackoverflow. You don't have to do it, but it does stand out when it exists..
 * Templates are fine. Some templates even contain helpful language. TWEAK THIS LANGUAGE BEFORE SUBMITTING. When I see multiple submissions using the same very specific phrases with the same template designs, they all get rejected because how do I know what else isn't plagiarized?
