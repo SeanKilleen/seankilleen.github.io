@@ -11,6 +11,15 @@ As of today, I've been in my current role as VP of Innovation & Products at SCT 
 
 ## Infrastructure
 
+* Established CI/CD pipeline
+* Established Deployment in SAP BTP CloudFoundry infrastructure
+* Moved our entire infrastructure to Kubernetes via SAP BTP Kyma.
+* Moved infrastructure to being deployed via Terraform
+
+## Architecture 
+
+* Introduced and implemented the actor model via Akka.NET after understanding & validating the need for reactivity in one of our applications.
+
 ## Process
 
 ## Leadership
