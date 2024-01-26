@@ -22,6 +22,12 @@ As of today, I've been in my current role as VP of Innovation & Products at SCT 
 
 ## Process
 
+* Introduced and on-boarded the team to GitHub Flow
+* Began lean daily stand-ups
+
 ## Leadership
+
+* [Created & automated a hiring process](TODO: Blog link)
+* On-boarded 2 new developers
 
 [^1]: Obviously, nobody does these things alone, but I like to capture where I've had a major hand, and it's easier as a convention to say "I".
