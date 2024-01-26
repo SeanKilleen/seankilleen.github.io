@@ -22,8 +22,11 @@ As of today, I've been in my current role as VP of Innovation & Products at SCT 
 
 ## Process
 
+* Immediately began a weekly progress report to leadership
+* Established product backlogs for 2 different products, infrastructure, and general Innovation & Products work. This made work visible.
 * Introduced and on-boarded the team to GitHub Flow
 * Began lean daily stand-ups
+
 
 ## Leadership
 
