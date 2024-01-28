@@ -14,7 +14,7 @@ As of today, I've been in my current role as VP of Innovation & Products at SCT 
 * Established CI/CD pipeline
 * Established Deployment in SAP BTP CloudFoundry infrastructure
 * Moved our entire infrastructure to Kubernetes via SAP BTP Kyma.
-* Moved infrastructure to being deployed via Terraform
+* Introduced Terraform and iteratively used it to build our infrastructure, including SAP BTP cloud.
 
 ## Architecture 
 
