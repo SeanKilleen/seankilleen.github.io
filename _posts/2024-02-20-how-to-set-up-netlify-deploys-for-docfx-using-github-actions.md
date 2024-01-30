@@ -41,6 +41,7 @@ Below are the steps in [our docfx build process](https://github.com/nunit/docs/t
 Self-explanatory; we need our code if we're going to build it.
 
 ```yaml
+{% raw %}
       - name: Get latest NUnit Asset dir
         uses: dsaltares/fetch-gh-release-asset@master
         with:
@@ -48,15 +49,18 @@ Self-explanatory; we need our code if we're going to build it.
           version: 'tags/v${{ env.NUNIT_VERSION_FOR_API_DOCS }}'
           file: 'NUnit.Framework-${{ env.NUNIT_VERSION_FOR_API_DOCS }}.zip'
           token: ${{ secrets.GITHUB_TOKEN }}
+{% endraw %}
 ```
 
 Because the source code that contains the DLL is in another repository, we use this GitHub action to pull the file via pulling a specific tag (currently hard-coded. I'll get around to fixing that. Probably.)
 
 ```yaml
+{% raw %}
       - name: Unzip NUnit Asset zip file into its own directory
         run: unzip NUnit.Framework-${{ env.NUNIT_VERSION_FOR_API_DOCS }}.zip -d ./NUnit.Framework-${{ env.NUNIT_VERSION_FOR_API_DOCS }}
       - name: Copy NUnit Asset dir
         run: mkdir ./code-output && cp -r ./NUnit.Framework-${{ env.NUNIT_VERSION_FOR_API_DOCS }}/bin/net6.0/* ./code-output
+{% endraw %}
 ```
 
 We unzip the asset file and copy it to the right spot.
@@ -83,6 +87,7 @@ With that in place, we run `docfx` to mash everything up into one deployable sit
 We zip up and archive the site contents. This is just for reference.
 
 ```yaml
+{% raw %}
       - name: Start deployment (PR only)
         if: ${{ github.ref != 'refs/heads/master'}}
         uses: bobheadxi/deployments@v1
@@ -91,6 +96,7 @@ We zip up and archive the site contents. This is just for reference.
           env: preview_${{github.event.number}}
           step: start
           token: ${{ secrets.SEAN_PAT_TO_MANAGE_ENVIRONMENTS }}
+{% endraw %}
 ```
 
 This creates a new deployment environment for the PR number and creates a deployment to it with a status of started.
@@ -98,6 +104,7 @@ This creates a new deployment environment for the PR number and creates a deploy
 Note that it requires a personal access token that has the authority to manage environments.
 
 ```yaml
+{% raw %}
       - name: Deploy to Netlify (PR only)
         if: ${{ github.ref != 'refs/heads/master'}}
         uses: South-Paw/action-netlify-cli@v2
@@ -108,6 +115,7 @@ Note that it requires a personal access token that has the authority to manage e
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}          
+{% endraw %}
 ```
 
 This uses the Netlify CLI to push all the site's files. We can see it in Netlify because it's a separate preview build with its own message.
@@ -115,6 +123,7 @@ This uses the Netlify CLI to push all the site's files. We can see it in Netlify
 Note that it requires a Netlify site to have been created and to produce an Auth token and a site ID, which I store in GitHub secrets for this action.
 
 ```yaml
+{% raw %}  
       - name: Update Preview link comment
         if: ${{ github.ref != 'refs/heads/master'}}
         uses: marocchino/sticky-pull-request-comment@v2
@@ -122,11 +131,13 @@ Note that it requires a Netlify site to have been created and to produce an Auth
           header: previewlink
           message: |
             Preview link: ${{ fromJson(steps.netlify.outputs.NETLIFY_OUTPUT).deploy_url }}          
+{% endraw %}
 ```
 
 I was happy with this one. It uses a great GitHub action to post a sticky comment and uses the JSON output of the Netlify CLI to post the URL.
 
 ```yaml
+{% raw %}  
       - name: Finish deployment
         uses: bobheadxi/deployments@v1
         if: ${{ github.ref != 'refs/heads/master'}}
@@ -137,6 +148,7 @@ I was happy with this one. It uses a great GitHub action to post a sticky commen
           deployment_id: ${{ steps.deployment.outputs.deployment_id }}
           env_url: ${{ fromJson(steps.netlify.outputs.NETLIFY_OUTPUT).deploy_url }}     
           token: ${{ secrets.SEAN_PAT_TO_MANAGE_ENVIRONMENTS }} 
+{% endraw %}          
 ```
 
 And here we go ahead and mark the deployment to the preview environment as "finished".
@@ -150,6 +162,7 @@ Thanks to so many people who've worked to make others' lives better, my experien
 We can't leave those environments hanging around in our GitHub. So we delete them, using the same id format that we used when we created them.
 
 ```yaml
+{% raw %}
 on:
     pull_request:
       types: [ closed ]
@@ -165,6 +178,7 @@ jobs:
             step: delete-env
             token: ${{ secrets.SEAN_PAT_TO_MANAGE_ENVIRONMENTS }}
             env: preview_${{github.event.number}}
+{% endraw %}
 ```
 
 ## And...That's It!
