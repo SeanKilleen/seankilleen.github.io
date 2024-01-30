@@ -14,7 +14,7 @@ header:
  caption: "Photo credit: [**Danielle Cerullo @ Unsplash**](https://unsplash.com/@dncerullo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
 
 ---
-I've seen a lot of meetings go sideways. And with the surge of remote work the past years, we've seen a dramatic increase in remote work and the communication challenges that can go along with it, especially for organizations that aren't adapting to current circumstances.
+I've seen a lot of meetings go sideways. And with the events of the past few years, we've seen a dramatic increase in remote work  -- and communication challenges for organizations that aren't adapting to current circumstances.
 
 Dear reader, I'd love to save you some trouble there.
 
