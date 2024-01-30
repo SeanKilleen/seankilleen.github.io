@@ -1,5 +1,5 @@
 # Our own public container that we've published to assist with this project
-FROM ghcr.io/seankilleen/blog-in-a-box-container:ruby2.7.4-node20
+FROM ghcr.io/seankilleen/blog-in-a-box-container:ruby2.7.4-node21
 
 VOLUME /docs
 WORKDIR /docs
