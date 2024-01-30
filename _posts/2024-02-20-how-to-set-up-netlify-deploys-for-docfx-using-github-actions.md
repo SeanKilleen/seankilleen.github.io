@@ -12,7 +12,7 @@ date: 2024-02-20 09:00 -0500
 ---
 ## Background
 
-We currently use `docfx`` to publish the [NUnit docs](https://docs.nunit.org), because it has a lovely capability of generating docs for our API reference in addition to all our articles.
+We currently use `docfx` to publish the [NUnit docs](https://docs.nunit.org), because it has a lovely capability of generating docs for our API reference in addition to all our articles.
 
 However, one thing I often yearn for -- that I get on this Jekyll blog and some others I work with -- is the ability to have a live preview within a pull request of what the generated site will look like.
 
@@ -137,7 +137,7 @@ I was happy with this one. It uses a great GitHub action to post a sticky commen
           deployment_id: ${{ steps.deployment.outputs.deployment_id }}
           env_url: ${{ fromJson(steps.netlify.outputs.NETLIFY_OUTPUT).deploy_url }}     
           token: ${{ secrets.SEAN_PAT_TO_MANAGE_ENVIRONMENTS }} 
-```yaml
+```
 
 And here we go ahead and mark the deployment to the preview environment as "finished".
 
