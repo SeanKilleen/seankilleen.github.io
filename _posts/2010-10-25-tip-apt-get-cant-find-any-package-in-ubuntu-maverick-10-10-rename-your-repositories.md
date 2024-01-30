@@ -25,7 +25,7 @@ It appears that the shipped version of Ubuntu Maverick 10.10 (at least the serve
 
 * Open nano to edit the file: `sudo nano /etc/apt/sources.list`
 
-* Edit all "http://us.archive.ubuntu.com" to "http://archive.ubuntu.com"
+* Edit all `http://us.archive.ubuntu.com` to `http://archive.ubuntu.com`
 * Uncomment all the lines that start with "deb" or "deb-src" (if you know what you're doing). *NOTE:* Make sure that the text starts the line (i.e. don't leave a space -- bad practice).
 * CTRL + X, Y to allow overwrite, enter to save to the current file name.
 

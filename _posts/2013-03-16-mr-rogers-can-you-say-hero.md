@@ -137,6 +137,6 @@ Fred never stopped looking at her or let go of her hand. "It's not a performance
 [Part6]: http://www.thedqtimes.com/pages/castpages/other/fredrogerscanyousayheropg6.htm
 [Part7]: http://www.thedqtimes.com/pages/castpages/other/fredrogerscanyousayheropg7.htm
 [Part8]: http://www.thedqtimes.com/pages/castpages/other/fredrogerscanyousayheropg8.htm
-[Junod Reponse]: https://twitter.com/TomJunod/status/312989731157835777
 [Junod Twitter]: https://twitter.com/TomJunod
 [Junod Ask]: https://twitter.com/sjkilleen/status/312972788778561538
+[Junod Response]: https://twitter.com/TomJunod/status/312989731157835777

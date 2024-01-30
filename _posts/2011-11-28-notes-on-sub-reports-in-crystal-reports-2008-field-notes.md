@@ -72,6 +72,4 @@ myTotal
 
 > Place this formula in the same section as `@MainFormula`, or in a section further down on the report.
 
-[codeguru main]: http://www.codeguru.com/
-[codeguru article]: http://www.codeguru.com/forum/showthread.php?t=449494
 [This forum post]: http://www.codeguru.com/forum/showpost.php?p=1701455&amp;postcount=2

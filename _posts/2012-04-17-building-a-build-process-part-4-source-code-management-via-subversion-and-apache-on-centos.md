@@ -112,7 +112,7 @@ Enter the following into the text file:
 
 Save the file. This text does the following:
 
-* `<Location /svn>`: Tells apache that off of the main URL, the virtual directory will be “/svn”. (so if apache is hosting a web site at www.myreposite.com, our app will be located at www.myreposite.com/svn)
+* `<Location /svn>`: Tells apache that off of the main URL, the virtual directory will be “/svn”. (so if apache is hosting a web site at `www.myreposite.com`, our app will be located at `www.myreposite.com/svn`)
 * `DAV svn`: Tells apache we’ll be using the `mod_dav_svn` module
 * `SVNListParentPath on`: the location of our repositories on the actual server
 * `AuthType Basic`: Configures basic authentication (which is the type of auth that our basic file setup is using)
