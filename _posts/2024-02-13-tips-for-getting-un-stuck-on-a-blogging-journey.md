@@ -10,8 +10,7 @@ excerpt: ...if I may be so bold as to offer those.
 header:
   overlay_image: /images/overlays/unsplash/steve-johnson-CIbgRsgwunE-unsplash.jpg
   overlay_filter: 0.5
-  caption: "Photo credit: [**Steve Johnson @
-    Unsplash**](https://unsplash.com/@steve_j?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
+  caption: "Photo credit: [**Steve Johnson @ Unsplash**](https://unsplash.com/@steve_j?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
 ---
 _Ed. Note: Posting this in honor of once-again breaking the blogging logjam myself. Seemed fitting that it was a post sitting in my backlog forever!_
 

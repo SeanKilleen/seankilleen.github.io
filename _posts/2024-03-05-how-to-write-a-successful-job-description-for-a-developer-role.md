@@ -11,8 +11,7 @@ date: 2024-03-05 10:00 -0500
 header:
   overlay_image: /images/overlays/unsplash/afif-ramdhasuma-RjqCk9MqhNg-unsplash.jpg
   overlay_filter: 0.5
-  caption: "Photo credit: [**Afif Ramdhasuma @
-    Unsplash**](https://unsplash.com/@javaistan?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
+  caption: "Photo credit: [**Afif Ramdhasuma @ Unsplash**](https://unsplash.com/@javaistan?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
 ---
 I got a surprising amount of positive feedback on a job description I wrote recently, both internally and from candidates. So, I figured I'd write up my process here in case it can help anyone.
 

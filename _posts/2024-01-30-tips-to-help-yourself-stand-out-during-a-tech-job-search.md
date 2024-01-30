@@ -10,11 +10,9 @@ date: 2024-01-30 09:00 -0500
 header:
   overlay_image: /images/overlays/unsplash/rupert-britton-l37N7a1lL6w-unsplash.jpg
   overlay_filter: 0.5
-  caption: "Photo credit: [**Rupert Britton @
-    Unsplash**](https://unsplash.com/@rupert_britton?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
-
+  caption: "Photo credit: [**Rupert Britton @ Unsplash**](https://unsplash.com/@rupert_britton?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
 ---
-I recently just powered through a bunch of applications for some roles I had open. I want to mention some simple things that can set you apart in your search. All of these are based on patterns I saw; way more than one candidate was doing these things.
+I recently just powered through a bunch of applications for some roles I had open. As a hiring manager, I want to mention some simple things that can set you apart in your search. All of these are based on patterns I saw; way more than one candidate was doing these things.
 
 ## First of All: Tech Hiring is Broken.
 

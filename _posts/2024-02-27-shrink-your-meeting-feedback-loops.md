@@ -9,10 +9,9 @@ tags:
 date: 2024-02-27 09:00 -0500
 excerpt: "How I committed to making meetings better."
 header:
- overlay_image: /images/overlays/unsplash/danielle-cerullo-bIZJRVBLfOM-unsplash.jpg
- overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
- caption: "Photo credit: [**Danielle Cerullo @ Unsplash**](https://unsplash.com/@dncerullo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
-
+  overlay_image: /images/overlays/unsplash/danielle-cerullo-bIZJRVBLfOM-unsplash.jpg
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  caption: "Photo credit: [**Danielle Cerullo @ Unsplash**](https://unsplash.com/@dncerullo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
 ---
 I've seen a lot of meetings go sideways. And with the events of the past few years, we've seen a dramatic increase in remote work  -- and communication challenges for organizations that aren't adapting to current circumstances.
 
