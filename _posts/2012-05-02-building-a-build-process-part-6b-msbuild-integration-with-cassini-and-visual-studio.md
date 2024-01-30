@@ -161,6 +161,3 @@ And by all means, if you know how to solve the mystery, sound off in the comment
 {% include _buildseries-footer.md %}
 
 [MSBuild Extension Pack web site]:http://msbuildextensionpack.codeplex.com/
-
-
-

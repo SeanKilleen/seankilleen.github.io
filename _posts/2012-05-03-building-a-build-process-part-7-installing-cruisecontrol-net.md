@@ -115,5 +115,4 @@ If a web site shows up at all, you’re good to go. Don’t worry about any erro
 
 {% include _buildseries-footer.md %}
 
-
 [CruiseControl.NET Releases Page on SourceForge]: http://sourceforge.net/projects/ccnet/files/CruiseControl.NET%20Releases/
