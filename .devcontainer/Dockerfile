@@ -16,9 +16,8 @@ RUN cat /etc/profile.d/alias.sh >> ~/.bashrc
 # We get the first workspace, because there should only be one
 # This is so that when someone updates their devcontainer name, it doesn't get screwed up
 RUN echo 'first_workspace=\"$(cd /workspaces && ls | head -1)\"; alias spellcheck="cspell --config /workspaces/$first_workspace/cSpell.json \"/workspaces/$first_workspace/**/*.md\" --no-progress"' >> ~/.bashrc
-RUN echo 'first_workspace=\"$(cd /workspaces && ls | head -1)\"; alias lint="markdownlint-cli2 --config /workspaces/$first_workspace/.markdownlint.json /workspaces/$first_workspace/**/*.md"' >> ~/.bashrc
-RUN echo 'first_workspace=\"$(cd /workspaces && ls | head -1)\"; alias build="docfx /workspaces/$first_workspace/docs/docfx.json"' >> ~/.bashrc
-RUN echo 'first_workspace=\"$(cd /workspaces && ls | head -1)\"; alias serve="docfx /workspaces/$first_workspace/docs/docfx.json --serve"' >> ~/.bashrc
-RUN echo 'first_workspace=\"$(cd /workspaces && ls | head -1)\"; alias snippets="dotnet test /workspaces/$first_workspace/docs/snippets/Snippets.sln"' >> ~/.bashrc
+RUN echo 'first_workspace=\"$(cd /workspaces && ls | head -1)\"; alias lint="markdownlint-cli2 --config /workspaces/$first_workspace/.markdownlint-cli2.jsonc /workspaces/$first_workspace/**/*.md"' >> ~/.bashrc
+RUN echo 'first_workspace=\"$(cd /workspaces && ls | head -1)\"; alias build="bundle exec jekyll build"' >> ~/.bashrc
+RUN echo 'first_workspace=\"$(cd /workspaces && ls | head -1)\"; alias serve="bundle exec jekyll serve --future"' >> ~/.bashrc
 
 EXPOSE 4000
