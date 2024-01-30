@@ -28,31 +28,20 @@ request the old fashioned way.
 {% for contributor in site.github.contributors %}
 {% unless contributor.login contains "[bot]" %}
   <li>
-    <img src="{{ contributor.avatar_url }}" alt="the profile picture of {{ contributor.login }}" /> <a href="{{ contributor.html_url }}">{{ contributor.login }}</a>
+    <img src="{{ contributor.avatar_url }}" alt="The profile picture of GitHub user {{ contributor.login }}" /> <a href="{{ contributor.html_url }}">{{ contributor.login }}</a>
   </li>
 {% endunless %}
 {% endfor %}
 
 {% else %}
   <li>
-    <img src="{{ site.avatar_url }}" /><a href="#">Nobody Yet</a>
+    <img src="{{ site.avatar_url }}" alt="The site's avatar, a default." /><a href="#">Nobody Yet</a>
   </li>
 {% endif %}
 </ul>
 
 {% include _i-want-you.md %}
 
-[jekyll link]: http://jekyllrb.com/
-[ruby link]: https://www.ruby-lang.org/en/
-[jekyll-sitemap link]: http://rubydoc.info/gems/jekyll-sitemap/0.6.0/frames
-[octopress link]: http://octopress.org/
-[github-pages link]: https://pages.github.com/
-[jekyll-redirect-from link]: https://github.com/jekyll/jekyll-redirect-from
-[minimal mistakes link]: https://mademistakes.com/articles/minimal-mistakes-jekyll-theme/
-[disqus link]: https://disqus.com/
-[phil haack homepage]: http://haacked.com/
-[new issue link]: https://github.com/SeanKilleen/seankilleen.github.io/issues/new
-[fork link]: https://github.com/SeanKilleen/seankilleen.github.io/fork
 [pat 1]: https://github.com/SeanKilleen/seankilleen.github.io/pull/32
 [pat 2]: https://github.com/SeanKilleen/seankilleen.github.io/pull/33
 [pat 3]: https://github.com/SeanKilleen/seankilleen.github.io/pull/34

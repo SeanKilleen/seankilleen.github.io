@@ -115,6 +115,4 @@ If a web site shows up at all, you’re good to go. Don’t worry about any erro
 
 {% include _buildseries-footer.md %}
 
-[Installing and Configuring CruiseControl.NET]: http://www.matthewbussa.com/2011/05/installing-and-configuring-cruise.html
-
 [CruiseControl.NET Releases Page on SourceForge]: http://sourceforge.net/projects/ccnet/files/CruiseControl.NET%20Releases/

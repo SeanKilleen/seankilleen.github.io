@@ -34,5 +34,4 @@ Thanks to all of these things, I can host this small chunk of my brain on the in
 [jekyll-redirect-from link]: https://github.com/jekyll/jekyll-redirect-from
 [minimal mistakes link]: https://github.com/mmistakes/minimal-mistakes
 [giscus link]: https://giscus.app/
-[phil haack homepage]: http://haacked.com/
 [credits page link]: https://seankilleen.com/credits

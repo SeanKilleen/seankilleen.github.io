@@ -9,10 +9,9 @@ tags:
   - automation
 date: 2024-02-06 09:00 -0500
 header:
- overlay_image: /images/overlays/unsplash/timothy-dykes-yapM31BKJx8-unsplash.jpg
- overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
- caption: "Photo credit: [**Timothy Dykes @ Unsplash**](https://unsplash.com/@timothycdykes?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
-
+  overlay_image: /images/overlays/unsplash/timothy-dykes-yapM31BKJx8-unsplash.jpg
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  caption: "Photo credit: [**Timothy Dykes @ Unsplash**](https://unsplash.com/@timothycdykes?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
 ---
 When setting teams up for success with modern software delivery, I've found it helps to create "successful paths of least resistance". Here are some things I've tried, learned, and had success with in the hopes they might help someone else. I prioritize understanding the state of these things first if I don't see them in an environment I enter.
 
