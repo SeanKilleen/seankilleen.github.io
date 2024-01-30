@@ -6,7 +6,7 @@ tags:
   - humancenteredhiring
   - resume
   - tips
-date: 2024-02-27 09:00 -0500
+date: 2024-01-30 09:00 -0500
 header:
   overlay_image: /images/overlays/unsplash/rupert-britton-l37N7a1lL6w-unsplash.jpg
   overlay_filter: 0.5
