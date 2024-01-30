@@ -28,14 +28,14 @@ request the old fashioned way.
 {% for contributor in site.github.contributors %}
 {% unless contributor.login contains "[bot]" %}
   <li>
-    <img src="{{ contributor.avatar_url }}" alt="the profile picture of {{ contributor.login }}" /> <a href="{{ contributor.html_url }}">{{ contributor.login }}</a>
+    <img src="{{ contributor.avatar_url }}" alt="The profile picture of GitHub user {{ contributor.login }}" /> <a href="{{ contributor.html_url }}">{{ contributor.login }}</a>
   </li>
 {% endunless %}
 {% endfor %}
 
 {% else %}
   <li>
-    <img src="{{ site.avatar_url }}" /><a href="#">Nobody Yet</a>
+    <img src="{{ site.avatar_url }}" alt="The site's avatar, a default." /><a href="#">Nobody Yet</a>
   </li>
 {% endif %}
 </ul>
