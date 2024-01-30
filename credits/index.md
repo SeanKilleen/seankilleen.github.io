@@ -42,17 +42,6 @@ request the old fashioned way.
 
 {% include _i-want-you.md %}
 
-[jekyll link]: http://jekyllrb.com/
-[ruby link]: https://www.ruby-lang.org/en/
-[jekyll-sitemap link]: http://rubydoc.info/gems/jekyll-sitemap/0.6.0/frames
-[octopress link]: http://octopress.org/
-[github-pages link]: https://pages.github.com/
-[jekyll-redirect-from link]: https://github.com/jekyll/jekyll-redirect-from
-[minimal mistakes link]: https://mademistakes.com/articles/minimal-mistakes-jekyll-theme/
-[disqus link]: https://disqus.com/
-[phil haack homepage]: http://haacked.com/
-[new issue link]: https://github.com/SeanKilleen/seankilleen.github.io/issues/new
-[fork link]: https://github.com/SeanKilleen/seankilleen.github.io/fork
 [pat 1]: https://github.com/SeanKilleen/seankilleen.github.io/pull/32
 [pat 2]: https://github.com/SeanKilleen/seankilleen.github.io/pull/33
 [pat 3]: https://github.com/SeanKilleen/seankilleen.github.io/pull/34
