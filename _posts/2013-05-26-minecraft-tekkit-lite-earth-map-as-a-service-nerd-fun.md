@@ -84,4 +84,3 @@ If you try this, let me know how it works out for you in the comments. Happy gam
 [Earth Map Link]: http://letslente.weebly.com/the-earth.html
 [YAJSW]: http://sourceforge.net/projects/yajsw/
 [Server wiki]: http://www.minecraftwiki.net/wiki/Server.properties
-[procexp]: http://technet.microsoft.com/en-us/sysinternals/bb896653.aspx

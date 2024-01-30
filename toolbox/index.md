@@ -123,17 +123,14 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 [CheckerPlus for Gmail]: https://chrome.google.com/webstore/detail/checker-plus-for-gmail/oeopbcgkkoapgobdbedcemjljbihmemj?hl=en
 [Feedly]: http://Feedly.com
 [GitHub Selfies]: https://chrome.google.com/webstore/detail/GitHub-selfies/ldnpkdnkgkogfnahcnldaedcoadjbkbl
-[Instapaper]: http://Instapaper.com
 [LastPass]: http://lastpass.com
 [ArtooJS]: https://medialab.GitHub.io/artoo/
 [Visual Studio]: https://www.visualstudio.com/vs/
 [VSCode]: http://code.visualstudio.com/
-[Atom Editor]: https://atom.io/
 [ReSharper]: https://www.jetbrains.com/resharper/
 [NDepend]: http://www.ndepend.com/
 [SpecFlow]: http://specflow.org/
 [NCrunch]: http://www.ncrunch.net/
-[Storyteller]: http://storyteller.GitHub.io/
 [xUnit]: https://xunit.net/
 [FluentAssertions]: http://www.fluentassertions.com/
 [Serilog]: https://serilog.net/

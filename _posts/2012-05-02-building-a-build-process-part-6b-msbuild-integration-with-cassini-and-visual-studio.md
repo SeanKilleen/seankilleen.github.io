@@ -162,8 +162,5 @@ And by all means, if you know how to solve the mystery, sound off in the comment
 
 [MSBuild Extension Pack web site]:http://msbuildextensionpack.codeplex.com/
 
-[MsBuild Extension Pack AsyncExec Reference]: http://www.msbuildextensionpack.com/help/4.0.6.0/html/68cdc023-8926-4ac9-9e7c-0297592fec29.htm
 
-[Pluralsight Continuous Integration Course]: https://www.pluralsight.com/courses/continuous-integration
 
-[PS Signup]: https://help.pluralsight.com/help/sign-in-sign-up
