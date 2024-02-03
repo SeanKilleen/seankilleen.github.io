@@ -33,13 +33,15 @@ Everyone should be able to:
 
 I depend on our collective insight. I have a vision and work to find alignment with our team, but we'll only ever be as good as the issues we surface and resolve.
 
+Questioning me often involves a little back and forth because I've typically put a lot of thought into something and so I need to go deeper. I'm working on "leading with inquiry" so that I don't come off intense or defensive in these moments, because having someone improve our vision/tactics is almost always a favorite moment later.
+
 ## You are Not Your Code
 
 I've written plenty of crap code. I've been lucky enough for people to provide great reviews and level me up. That's what I want for everyone.
 
 It's good to remember that anyone can teach, anyone can learn, and we need ourselves to be critical of each others' code so we can get better. That requires us to he humble about our code, and to understand that our code is not the measure of our worth as developers
 
-## Shitty First Drafts
+## The Value of Shitty First Drafts
 
 Get something out there and iterate on it. Don't try to make it perfect. There is a cost to the delay. Shitty first drafts win every time.
 
@@ -47,9 +49,23 @@ I've re-learned this lesson a lot of times. I'll probably keep reloading it.
 
 ## Feedback is a Gift.
 
+I truly feel this way, and a great leader I worked with felt that way too. His ability to receive feedback in all forms really set him apart for me (and still does).
+
+When someone wants me or my team to succeed enough to offer their critical feedback, I want to honor that. I love for as many people to move toward thid as possible, but that's a personal journey and doesn't happen overnight.
+
 ## The 30 Minute Rule
 
+Try to figure something out for 30 min before asking for help. You'll learn stuff and become more confident in your problem solving ability.
+
+Don't wait more than 30 minutes to ask for help when you're stuck. Sometimes it just takes another person, and that's fine! We will all get to learn something.
+
 ## Work Out Loud
+
+## Failure Leads to Inquiry
+
+Sure, I stole this directly from the concept of Generative Culture (TODO:Link), but it resonates enough that I try to put it directly into my approach.
+
+Things will go wrong. We will learn as a team and as individuals. It should be OK to say you messed something up, and it shouldn't come with consequences. It should be on us to build our systems such that the blast radius for those things is small.
 
 ## Asynchronous Communication
 
