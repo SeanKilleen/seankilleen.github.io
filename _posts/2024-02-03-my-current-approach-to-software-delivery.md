@@ -29,6 +29,12 @@ Everyone should be able to:
 * Suggest a better approach
 * Pair/mob as helpful to produce the results we need.
 
+## Smaller Loops. ...No, Smaller Than That.
+
+There are things we do over and over again as a team/organization. The more of those loops we complete and improve upon, the faster we'll deliver great impact and adapt where needed. Whenever we shrink one of these loops, it's like compound interest thst makes us better over time.
+
+Almost everything below is an extension of this principle.
+
 ## Question Everything. Especially Me.
 
 I depend on our collective insight. I have a vision and work to find alignment with our team, but we'll only ever be as good as the issues we surface and resolve.
@@ -74,8 +80,6 @@ Things will go wrong. We will learn as a team and as individuals. It should be O
 ## Unblock Others First. That's My Job, too.
 
 ## Doing the Best Work of Your Life is Not 9-5
-
-## Smaller Loops. No, Smaller Than That.
 
 ## Automated Testing
 
