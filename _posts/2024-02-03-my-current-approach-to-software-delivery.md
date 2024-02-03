@@ -49,9 +49,11 @@ It's good to remember that anyone can teach, anyone can learn, and we need ourse
 
 ## The Value of Shitty First Drafts
 
-Get something out there and iterate on it. Don't try to make it perfect. There is a cost to the delay. Shitty first drafts win every time.
+Get something out there and iterate on it. Don't try to make it perfect. There is a cost to the delay. Shitty first drafts win over that every time.
 
-I've re-learned this lesson a lot of times. I'll probably keep reloading it.
+Don't get me wrong: great first drafts -- when they happen -- are even better! But too often things go undone or untried because we don't feel they're polished enough.
+
+I've re-learned this lesson a lot of times. I'll probably keep re-learning it.
 
 ## Feedback is a Gift.
 
