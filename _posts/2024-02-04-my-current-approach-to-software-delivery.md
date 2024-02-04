@@ -94,7 +94,7 @@ This one is huge for me. Work "in public". Start pull requests early. Share your
 
 ## Failure Leads to Inquiry
 
-Sure, I stole this directly from the concept of Generative Culture (TODO:Link), but it resonates enough that I try to put it directly into my approach.
+Sure, [I stole this directly from the concept of Generative Culture](https://dora.dev/devops-capabilities/cultural/generative-organizational-culture/), but it resonates enough that I try to put it directly into my approach.
 
 Things will go wrong. We will learn as a team and as individuals. It should be OK to say you messed something up, and it shouldn't come with consequences. It should be on us to build our systems such that the blast radius for those things is small.
 
