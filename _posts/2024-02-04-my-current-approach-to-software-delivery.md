@@ -31,11 +31,14 @@ I think creating delight applies both to our customers and to our fellow colleag
 Everyone should be able to:
 
 * Take over their colleague's work in the case of something like an absence or shift in priorities. We keep each other informed of progress.
+* Troubleshoot operational issues in the system (at least fundamentally)
 * Ask for help or say they're stuck.
 * Push a release confidently.
-* Suggest a better approach
+* Suggest a better approach.
 * Pair/mob as helpful to produce the results we need.
-* Call a meeting/conversation if one is needed
+* Call a meeting/conversation if one is needed.
+
+I want to work on a great team that levels each other up. I want to do great individual work, but also I want to produce the kind of impact that is only possible with the sum of our skillsets.
 
 ## Smaller Loops. ...No, Smaller Than That.
 
