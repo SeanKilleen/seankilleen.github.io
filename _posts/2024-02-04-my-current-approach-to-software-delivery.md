@@ -145,3 +145,7 @@ At least slightly. Improving our approach to the work is compound interest -- it
 Some of these principles are in natural tension with each other. It's bound to happen.
 
 When I hit a conflict between these things, I try to think: What is best for the people on my team who are involved? What's best for the people in our organization? Usually that helps clarify the right choice/action. People make up a company; we have to be people and look out for each other first & foremost.
+
+## That's a Wrap!
+
+I may update this post soon as I inevitably think of something I left off, but: what are some things you expected to see but didn't? Sound off in the comments!
