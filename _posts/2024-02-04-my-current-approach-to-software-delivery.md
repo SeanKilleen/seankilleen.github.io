@@ -88,12 +88,6 @@ In many environments -- high performing teams or small companies where communica
 
 If you're already effective without it, optimize for effectiveness. In my current context, that means Kanban and the continuous pull of work (with enough slack in the system, of course)
 
-## Optionality
-
-Aaron Stannard sums this up nicely. (TODO: link)
-
-Make code easy to delete. Give your future self and future team as many architectural options as possible.
-
 ## Work Out Loud / Radiate Information
 
 This one is huge for me. Work "in public". Start pull requests early. Share your thinking along the way. Always be "journaling" -- posting updates on tickets, adding to wikis, sharing what you learn with colleagues.
