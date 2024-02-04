@@ -1,5 +1,5 @@
 ---
-title: My Current Thinking About Software Delivery
+title: My Current Approach To Software Delivery
 comments: true
 date: 2024-02-05 08:00 -0500
 header:
