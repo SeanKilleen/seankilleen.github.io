@@ -1,7 +1,12 @@
 ---
-title: My Current Approach to Software Delivery
+title: My Current Thinking About Software Delivery
 comments: true
 date: 2024-02-03 16:33 -0500
+header:
+  overlay_image: /images/overlays/unsplash/milad-fakurian-58Z17lnVS4U-unsplash.jpg
+  overlay_filter: 0.5
+  caption: "Photo credit: [**Milad Fakurian @
+    Unsplash**](https://unsplash.com/@fakurian?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
 ---
 As I prepare to onboard two new developers today (exciting!), part of the conversation will inevitably be about orienting them to my current philosophy of delivering software. I figured I'd share that here too.
 
