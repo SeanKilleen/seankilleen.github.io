@@ -9,7 +9,7 @@ As I prepare to onboard two new developers today (exciting!), part of the conver
 
 I believe these sorts of things are context dependent. My current context is as a VP in a smaller organization who's leading multiple SaaS product efforts with a small team while building up our delivery acumen. And it's going well.
 
-Some -- perhaps many -- of these notes may be widely held. I'm not claiming to have invented these things; I stand on the shoulders of giants.
+Some -- probably many -- of these notes may be widely held; you'll certainly see them echoed in thinking about agile, devops, and modern leadership. I'm not claiming to have invented these things; I stand on the shoulders of giants. This is a summary of how I'd explain these things in conversation.
 
 ## What is Innovation?
 
@@ -33,7 +33,7 @@ Everyone should be able to:
 
 There are things we do over and over again as a team/organization. The more of those loops we complete and improve upon, the faster we'll deliver great impact and adapt where needed. Whenever we shrink one of these loops, it's like compound interest thst makes us better over time.
 
-Almost everything below is an extension of this principle.
+Much of what is below is an extension of this principle.
 
 ## Question Everything. Especially Me.
 
@@ -67,7 +67,25 @@ Try to figure something out for 30 min before asking for help. You'll learn stuf
 
 Don't wait more than 30 minutes to ask for help when you're stuck. Sometimes it just takes another person, and that's fine! We will all get to learn something.
 
-## Work Out Loud
+## Effectiveness over Predictability
+
+I'm a big fan of Scrum in many cases and have a background in it, having been a certified trainer for the CSD certification.
+
+However, I believe Scrum is optimized for predictability. This is great, especially in environments where a lack of predictability is harmful. However, predictability can sometimes hamper effectiveness (as we see in the backlash articles against Scrum, which often make good points about its effectiveness).
+
+In many environments -- high performing teams or small companies where communication paths and feedback loops are small -- Scrum is not the right choice.
+
+If you're already effective without it, optimize for effectiveness. In my current context, that means Kanban and the continuous pull of work (with enough slack in the system, of course)
+
+## Optionality
+
+Aaron Stannard sums this up nicely. (TODO: link)
+
+Make code easy to delete. Give your future self and future team as many architectural options as possible.
+
+## Work Out Loud / Radiate Information
+
+This one is huge for me. Work "in public". Start pull requests early. Share your thinking along the way. Always be "journaling" -- posting updates on tickets, adding to wikis, sharing what you learn with colleagues.
 
 ## Failure Leads to Inquiry
 
@@ -77,9 +95,17 @@ Things will go wrong. We will learn as a team and as individuals. It should be O
 
 ## Asynchronous Communication
 
+Less meetings. More chats and wikis and empowering people to make decisions. Leave messages and don't expect immediate responses.
+
 ## Live Artifact Collaboration
 
+Don't share office file copies etc. Make them live collaborative docs and share links. Something magical happens. 
+
+A recent example of this: rather than downloading some analysis in an Excel sheet, we started making it a link. Now I can add questions as comments using the review tool, and even assign those to someone, and we see the whole history right in the document.
+
 ## Unblock Others First. That's My Job, too.
+
+It may seem counter-intuitive because people don't like to context switch.
 
 ## Doing the Best Work of Your Life is Not 9-5
 
@@ -96,3 +122,5 @@ It's an important tool in the toolbox. Where it helps us move faster and with co
 ## Improving the Work is More Important Than Doing the Work
 
 At least slightly.
+
+## Where These Principles Conflict, What's Best for the Humans Wins
