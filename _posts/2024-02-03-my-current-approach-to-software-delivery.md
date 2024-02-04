@@ -19,7 +19,7 @@ There are a lot of definitions that I like, but I've settled on my own language:
 
 > Innovation is the act of continually looking at our opportunities and approach with fresh eyes in the pursuit of delight for our customers and colleagues.
 
-## Software Delivery is a Team Sport 
+## Software Delivery is a Team Sport
 
 Everyone should be able to:
 
@@ -99,7 +99,7 @@ Less meetings. More chats and wikis and empowering people to make decisions. Lea
 
 ## Live Artifact Collaboration
 
-Don't share office file copies etc. Make them live collaborative docs and share links. Something magical happens. 
+Don't share office file copies etc. Make them live collaborative docs and share links. Something magical happens.
 
 A recent example of this: rather than downloading some analysis in an Excel sheet, we started making it a link. Now I can add questions as comments using the review tool, and even assign those to someone, and we see the whole history right in the document.
 
@@ -121,7 +121,7 @@ Balance doesn't mean 50/50. I've been putting in just enough more time to be rea
 
 It's an important tool in the toolbox. Where it helps us move faster and with confidence, we should do it. That is probably more places than we think. I love TDD and the way it forces me to break problems down. But mandating the practice of TDD across all code or automation for its own sake isn't helpful.
 
-## Deliver as close to continuously as possible 
+## Deliver as close to continuously as possible
 
 ## Metrics are for information, not for judgment
 
