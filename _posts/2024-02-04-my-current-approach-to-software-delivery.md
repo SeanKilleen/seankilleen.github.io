@@ -1,18 +1,18 @@
 ---
 title: My Current Thinking About Software Delivery
 comments: true
-date: 2024-02-03 16:33 -0500
+date: 2024-02-05 08:00 -0500
 header:
   overlay_image: /images/overlays/unsplash/milad-fakurian-58Z17lnVS4U-unsplash.jpg
   overlay_filter: 0.5
   caption: "Photo credit: [**Milad Fakurian @
     Unsplash**](https://unsplash.com/@fakurian?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
 ---
-As I prepare to onboard two new developers today (exciting!), part of the conversation will inevitably be about orienting them to my current philosophy of delivering software. I figured I'd share that here too.
+As I prepare to onboard two new developers today (exciting!), part of the conversation will inevitably be around orienting them to my current philosophy of delivering software. I figured I'd share that here too.
 
 ## First, Caveats
 
-I believe these sorts of things are context dependent. My current context is as a VP in a smaller organization who's leading multiple SaaS product efforts with a small team while building up our delivery acumen. And it's going well.
+I believe these sorts of things are context-dependent. My current context is as a VP in a smaller organization who's leading multiple SaaS product efforts with a small team while building up our delivery acumen. And it's going well.
 
 Some -- probably many -- of these notes may be widely held; you'll certainly see them echoed in thinking about agile, devops, and modern leadership. I'm not claiming to have invented these things; I stand on the shoulders of giants. This is a summary of how I'd explain these things in conversation.
 
@@ -22,7 +22,9 @@ As VP of Innovation & Products, Innovation is right there in the title. What doe
 
 There are a lot of definitions that I like, but I've settled on my own language:
 
-> Innovation is the act of continually looking at our opportunities and approach with fresh eyes in the pursuit of delight for our customers and colleagues.
+> Innovation is the act of continually reinventing ourselves and our approach so we can add value and delight.
+
+I think creating delight applies both to our customers and to our fellow colleagues.
 
 ## Software Delivery is a Team Sport
 
