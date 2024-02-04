@@ -115,7 +115,7 @@ Up front: this doesn't mean "always do extra hours", which is how a lot of the i
 
 But, this means if I'm getting close to something that could help someone, I finish it. It means if taking a little extra time makes something much better, I do it. I optimize for being as impactful as possible. That also meams that some days I'm less effective, and I have to accept that and focus on less impactful work those days.
 
-Balance doesn't mean perfect balance.
+Balance doesn't mean 50/50. I've been putting in just enough more time to be really effective, and it feels great. And I know I can take downtime when I need it. If my team trusts in that, I want them to be able to opt into it too. But that trust and opt-in is extremely important so that this one doesn't backfire.
 
 ## Automated Testing
 
