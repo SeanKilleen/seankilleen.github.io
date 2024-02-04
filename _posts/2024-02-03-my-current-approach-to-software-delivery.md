@@ -31,7 +31,7 @@ Everyone should be able to:
 
 ## Smaller Loops. ...No, Smaller Than That.
 
-There are things we do over and over again as a team/organization. The more of those loops we complete and improve upon, the faster we'll deliver great impact and adapt where needed. Whenever we shrink one of these loops, it's like compound interest thst makes us better over time.
+There are things we do over and over again as a team/organization. The more of those loops we complete and improve upon, the faster we'll deliver great impact and adapt where needed. Whenever we shrink one of these loops, it's like compound interest that makes us better over time.
 
 Much of what is below is an extension of this principle.
 
@@ -59,7 +59,7 @@ I've re-learned this lesson a lot of times. I'll probably keep re-learning it.
 
 I truly feel this way, and a great leader I worked with felt that way too. His ability to receive feedback in all forms really set him apart for me (and still does).
 
-When someone wants me or my team to succeed enough to offer their critical feedback, I want to honor that. I love for as many people to move toward thid as possible, but that's a personal journey and doesn't happen overnight.
+When someone wants me or my team to succeed enough to offer their critical feedback, I want to honor that. I love for as many people to move toward this as possible, but that's a personal journey and doesn't happen overnight.
 
 ## The 30 Minute Rule
 
@@ -113,7 +113,7 @@ I try to be clear that this extends to me, too. If I'm doing something, I need p
 
 Up front: this doesn't mean "always do extra hours", which is how a lot of the industry likes to weaponize it. Nor do I expect everyone at a job to be trying to do the best work of their life.
 
-But, this means if I'm getting close to something that could help someone, I finish it. It means if taking a little extra time makes something much better, I do it. I optimize for being as impactful as possible. That also meams that some days I'm less effective, and I have to accept that and focus on less impactful work those days.
+But, this means if I'm getting close to something that could help someone, I finish it. It means if taking a little extra time makes something much better, I do it. I optimize for being as impactful as possible. That also means that some days I'm less effective, and I have to accept that and focus on less impactful work those days.
 
 Balance doesn't mean 50/50. I've been putting in just enough more time to be really effective, and it feels great. And I know I can take downtime when I need it. If my team trusts in that, I want them to be able to opt into it too. But that trust and opt-in is extremely important so that this one doesn't backfire.
 
