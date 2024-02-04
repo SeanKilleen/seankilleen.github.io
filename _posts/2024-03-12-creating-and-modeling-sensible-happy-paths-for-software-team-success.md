@@ -13,6 +13,8 @@ header:
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   caption: "Photo credit: [**Timothy Dykes @ Unsplash**](https://unsplash.com/@timothycdykes?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
 ---
+This is a follow-up to [my post on my current approach to software delivery]({% post_url 2024-02-05-my-current-approach-to-software-delivery.md %}) -- specifically, how I apply it.
+
 When setting teams up for success with modern software delivery, I've found it helps to create "successful paths of least resistance". Here are some things I've tried, learned, and had success with in the hopes they might help someone else. I prioritize understanding the state of these things first if I don't see them in an environment I enter.
 
 ## Before We Begin: Start With Trust and Understanding
