@@ -30,11 +30,12 @@ I think creating delight applies both to our customers and to our fellow colleag
 
 Everyone should be able to:
 
-* Take over their colleague's work in the case of something like an absence or shift in priorities. We keep each other informed of progress
+* Take over their colleague's work in the case of something like an absence or shift in priorities. We keep each other informed of progress.
 * Ask for help or say they're stuck.
 * Push a release confidently.
 * Suggest a better approach
 * Pair/mob as helpful to produce the results we need.
+* Call a meeting/conversation if one is needed
 
 ## Smaller Loops. ...No, Smaller Than That.
 
