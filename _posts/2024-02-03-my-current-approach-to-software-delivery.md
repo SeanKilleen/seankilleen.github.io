@@ -121,14 +121,22 @@ Balance doesn't mean 50/50. I've been putting in just enough more time to be rea
 
 It's an important tool in the toolbox. Where it helps us move faster and with confidence, we should do it. That is probably more places than we think. I love TDD and the way it forces me to break problems down. But mandating the practice of TDD across all code or automation for its own sake isn't helpful.
 
-## Deliver as close to continuously as possible
+## Deliver as Continuously as Possible
 
-## Metrics are for information, not for judgment
+Favor small work that flows more quickly toward production. Try to deliver many small chunks of work. Use things like feature flags to ensure work can go out the door without being activated, so that work doesn't have to be held up.
 
 ## The Prime Directive
 
+[The Prime Directive](https://retrospectivewiki.org/index.php?title=The_Prime_Directive) is important enough that I'll repeat it directly here too:
+
+> "Regardless of what we discover, we understand and truly believe that everyone did the best job they could, given what they knew at the time, their skills and abilities, the resources available, and the situation at hand."
+
 ## Improving the Work is More Important Than Doing the Work
 
-At least slightly.
+At least slightly. Improving our approach to the work is compound interest -- it builds up over time and affects all future work. Thus, we should do it sooner rather than later.
 
 ## Where These Principles Conflict, What's Best for the Humans Wins
+
+Some of these principles are in natural tension with each other. It's bound to happen.
+
+When I hit a conflict between these things, I try to think: What is best for the people on my team who are involved? What's best for the people in our organization? Usually that helps clarify the right choice/action. People make up a company; we have to be people and look out for each other first & foremost.
