@@ -105,9 +105,17 @@ A recent example of this: rather than downloading some analysis in an Excel shee
 
 ## Unblock Others First. That's My Job, too.
 
-It may seem counter-intuitive because people don't like to context switch.
+It may seem counter-intuitive because people (understandably) don't like to context switch. But unblocking each other (and collectively sharing what we learn) is often more valuable.
 
-## Doing the Best Work of Your Life is Not 9-5
+I try to be clear that this extends to me, too. If I'm doing something, I need people to ask for the help they need, and I need to stop what I'm doing to unblock and empower them.
+
+## Doing the Best Work of Your Life is Not a 9-5 Thing
+
+Up front: this doesn't mean "always do extra hours", which is how a lot of the industry likes to weaponize it. Nor do I expect everyone at a job to be trying to do the best work of their life.
+
+But, this means if I'm getting close to something that could help someone, I finish it. It means if taking a little extra time makes something much better, I do it. I optimize for being as impactful as possible. That also meams that some days I'm less effective, and I have to accept that and focus on less impactful work those days.
+
+Balance doesn't mean perfect balance.
 
 ## Automated Testing
 
