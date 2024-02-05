@@ -68,7 +68,7 @@ I've re-learned this lesson a lot of times. I'll probably keep re-learning it.
 
 ## Feedback is a Gift.
 
-I truly feel this way, and a wonderful human/leader I worked with (shout out to [Jeff Gallimore](https://itsanicelife.com/) at [Excella](https://excella.com)!)felt that way too. His ability to receive feedback in all forms really set him apart for me (and still does).
+I truly feel this way, and a wonderful human/leader I worked with (shout out to [Jeff Gallimore](https://itsanicelife.com/) at [Excella](https://excella.com)!) felt that way too, and taught it to me. His ability to receive feedback in all forms really set him apart for me (and still does).
 
 When someone wants me or my team to succeed enough to offer their critical feedback, I want to honor that. I love for as many people to move toward this as possible, but that's a personal journey and doesn't happen overnight.
 
