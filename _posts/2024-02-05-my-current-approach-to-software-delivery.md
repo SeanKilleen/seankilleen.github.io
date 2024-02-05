@@ -74,7 +74,7 @@ When someone wants me or my team to succeed enough to offer their critical feedb
 
 ## I Want a Team of Leaders
 
-I am very much inspired by the "leader/leader" model espoused in [L. David Marquet's book, "Turn the Ship Around"](https://davidmarquet.com/turn-the-ship-around-book/). There's a lot to unpack in a whole book but I'll sum it up by saying I want everyone to feel like they can be a leader at any time, and I want our team to operate as an empowered group of leaders with a common goal.
+I am very much inspired by the "leader/leader" model espoused in [L. David Marquet's book, "Turn the Ship Around"](https://davidmarquet.com/turn-the-ship-around-book/) (again, big credit to Excella there). There's a lot to unpack in a whole book but I'll sum it up by saying I want everyone to feel like they can be a leader at any time, and I want our team to operate as an empowered group of leaders with a common goal.
 
 ## The 30 Minute Rule
 
