@@ -1,7 +1,7 @@
 ---
 title: My Current Approach To Software Delivery
 comments: true
-date: 2024-02-05 08:00 -0500
+date: 2024-02-05 07:00 -0500
 header:
   overlay_image: /images/overlays/unsplash/milad-fakurian-58Z17lnVS4U-unsplash.jpg
   overlay_filter: 0.5
