@@ -72,6 +72,10 @@ I truly feel this way, and a wonderful human/leader I worked with (shout out to 
 
 When someone wants me or my team to succeed enough to offer their critical feedback, I want to honor that. I love for as many people to move toward this as possible, but that's a personal journey and doesn't happen overnight.
 
+## I Want a Team of Leaders
+
+I am very much inspired by the "leader/leader" model espoused in [L. David Marquet's book, "Turn the Ship Around"](https://davidmarquet.com/turn-the-ship-around-book/). There's a lot to unpack in a whole book but I'll sum it up by saying I want everyone to feel like they can be a leader at any time, and I want our team to operate as an empowered group of leaders with a common goal.
+
 ## The 30 Minute Rule
 
 Try to figure something out for 30 min before asking for help. You'll learn stuff and become more confident in your problem solving ability.
