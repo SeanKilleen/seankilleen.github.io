@@ -33,45 +33,50 @@ With that said, let's look at some techniques that have accelerated the happy pa
 
 A quick introductory note: when I say "modeling behavior", I mean "demonstrating the way you'd like your teams to act". [What you do is who you are](https://www.amazon.com/What-You-Do-Who-Are/dp/0062871331). Your actions will influence the actions of others on your team.
 
-One of the most crucial things for a leader to nail early on is to encourage feedback, _especially_ if it's critical feedback. I had a leader I loved working with (thanks [Jeff](https://itsanicelife.com/) at [Excella](https://excella.com)!) who really believed that "feedback is a gift". His willingness to take blunt feedback allowed me to speak up many times and spark conversations that helped the organization or helped me to grow my understanding -- sometimes both!
-
 Explicitly ask for feedback. Discuss ways people like to give and receive feedback. Authorize people in one-on-one settings to provide this feedback, especially in front of a group. And _celebrate the heck out of it_ when it happens. You will not always be perfect at this; I'm sure not! But working at it continuously will help you and your teams flourish.
 
 ## Modeling Behavior Around Visibility, Issues and "Code Flow"
 
 * Demonstrating traceability is important. By creating issues/tickets/cards and asking others to do so, you'll start to drive visibility of the work your teams are doing. Going first here is important if it's not already being done, because it demonstrates the level of effort you expect and shows you're willing to do it even if you're already busy.
-* Whenever an "all hands on deck" style issue pops up, even if its pre-production, try to keep track of things that would have helped while you're going through it. Turn those things into follow up tasks. This helps show the importance of iteration & learning.
+* Whenever an "all hands on deck" style issue pops up, even if it happens in a pre-production, I try to model behavior around tracking it. I create a document or ticket in a known collaborative space, so that there is one place to collaborate on information and subscribe to updates. There, I try to track, in real time:
+  * The symptoms that were reported
+  * Investigative steps taken and things we find out along the way
+  * The eventual causes[^1] we discover
+  * The eventual fixes, for both the symptoms (if we have a workaround) and the causes (if we have applied them or know them)
+  * Any red herrings that threw us off along the way, so we can learn from them for the future
+* Important enough that it deserves its own bullet point from the above: During any kind of incident, I try to keep track of things that would have helped while going through it. These could be related to the code, the operations, or our general process. I turn those things into follow up tasks before I let myself close the issue. This helps show the importance of iteration & learning, and the prevention of future incidents.
+  * Note that I don't try to do full-blown [Google SRE-style Incident Management](https://sre.google/sre-book/managing-incidents/) -- especially not off the bat. It's usually overkill for these scenarios. I make sure we have one source of information, collective learning as part of that information, and actionable, blameless follow-up.
 * Remind people how important the visibility of the work is by ensuring there are places for work to be visible, regularly viewing it as a team, and ensuring that your work isn't somehow exempt from this.
 
-I also have some thoughts on how I model [pull request creation]({% post_url 2023-08-07-my-process-for-submitting-pull-requests %}) and [PR review]({% post_url 2023-08-10-my-process-for-reviewing-pull-requests %}), for those who are operating in that place.
+I also have some thoughts on how I model [pull request creation]({% post_url 2023-08-07-my-process-for-submitting-pull-requests %}) and [PR review]({% post_url 2023-08-10-my-process-for-reviewing-pull-requests %}), for those who are interested in that specific approach.
 
 ## Setting up "GitHub Flow" (Where Applicable)
 
-I've found that [GitHub Flow](https://githubflow.github.io/) tends to hit a sweet spot for teams that didn't previously have a good happy path. One main branch with pull requests off of that main branch is a model that can fit into most developers' heads. This makes it easier to talk about how software is delivered.
+I've found that [GitHub Flow](https://githubflow.github.io/) tends to hit a sweet spot for teams that didn't previously have a good happy path. One main branch with short-lived pull requests off of that main branch is a model that can fit into most developers' heads. This makes it easier to talk about how software is delivered.
 
 **NOTE:** This won't work as well if, say, you're delivering multiple branches of software at a time (e.g. supporting 1.x and 2.x for various customers). It's important to recognize the practical limitations here; if you're in that situation, you've likely already discovered a different happy path.
 
 ## Break the Notion of "One Person to a Work Item"
 
-Software development is a team sport. Teams self-organize. If people want to pair/mob on a problem because that will produce the best output, that's what I want. I try to think of a ticket assignee as an ambassador for the work; I'd like them to provide the update There's no competition for who can complete the most tickets. We succeed together or not at all.
+Software development is a team sport. Teams self-organize. If people want to pair/mob on a problem because that will produce the best output, then that's what I want, too. I try to think of a ticket assignee as an ambassador for the work; I'd like them to provide the update but I trust a pair/mob to operate as a team. There's no competition for who can complete the most tickets; We succeed together or not at all.
 
 ## Implementing Pull Request CI
 
-If this doesn't already exist, automating continuous integration on all pull requests can be a game changer. We can shift a lot of quality control "to the left", helping developers avoid bad merges before they happen. This sensible default provides a happy path that improves quality. You can then add on to it -- think about spell-checking for docs, or automated security review, or image optimization.
+If it doesn't already exist, automating continuous integration on all pull requests can be a game changer. We can shift a lot of quality control "to the left", helping developers avoid bad merges before they happen. This sensible default provides a happy path that improves quality. You can then add on to it -- think about spell-checking for docs, or automated security review, or image optimization, or tests that will help.
 
 ## Adding Automated Tests
 
-If these don't exist, I try to -- at a minimum -- add the foundation and infrastructure so they can begin to exist. Then, I add a few basics. Over time I'll use these or will come across opportunities to help users use them.
+If these don't exist, I try to -- at a minimum -- add the foundation and infrastructure so they can begin to exist. Then, I add a few basics. Over time I'll use these, or will come across opportunities to help the team use them.
 
 ## Defaulting to Squash Merge
 
-GitHub and other tools allow developers a choice of merge styles when PRs are merged. I've found that in most cases, especially if adopting PRs and automating continuous integration on them, the "squash and merge" option is a great default. It squashes many small commits, keeps one commit per PR, still ties things back to the PR for future reference. This also frees developers to feel they can make many small commits (which I'm a fan of) without polluting the main branch when things are merged in.
+GitHub and other tools allow developers a choice of merge styles when PRs are merged. I've found that in most cases, especially if adopting GitHub-flow-style PRs and automating continuous integration on them, the "squash and merge" option is a great default. It squashes many small commits, keeps one commit per PR, and still ties things back to the PR for future reference. This also frees developers to feel they can make many small commits (which I'm a fan of) without polluting the main branch when things are merged in.
 
 So in my teams, if a default hasn't been strongly established, I typically make "squash and merge" the default option. I've yet to hear a complaint.
 
-## Introduce Dependabot
+## Introduce Dependabot or RenovateBot
 
-If you're on GitHub, you have the ability to use Dependabot to track and surface updates. Keeping dependencies up to date is normally forgotten until it's a big chore, so creating a sensible happy path around this will improve both security and the developer experience of your teams. It also will likely lead to a few (likely inexpensive) lessons on the importance of reading release notes before merging (or improving your CI system to better detect issues with some dependencies).
+I strongly recommend introducing [Dependabot](https://github.com/dependabot) or [RenovateBot](https://github.com/renovatebot/renovate)to provide the ability to track and surface updates for your code an infrastructure dependencies in an automated fashion. Keeping dependencies up to date is too often forgotten until it's a big chore. Creating a sensible happy path around this will improve both security and the developer experience of your teams. It also will probably lead to a few (likely inexpensive) lessons on the importance of reading release notes before merging (or improving your CI system to better detect issues with some dependencies).
 
 ## README Files and Developer Onboarding
 
@@ -106,3 +111,5 @@ Similarly, improving things is important. Try to regularly hold retrospectives, 
 ## Wrapping Up
 
 This is by no means a complete list, but I have to stop here lest I spend way too much time trying to wrack my brain for every tip I've seen or lived. Did I miss something important to you? Tell me in the comments!
+
+[^1]: I'm not a believer in "root cause". There's almost never only one cause of these things.
