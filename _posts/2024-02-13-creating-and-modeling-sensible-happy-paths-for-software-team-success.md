@@ -76,7 +76,7 @@ So in my teams, if a default hasn't been strongly established, I typically make 
 
 ## Introduce Dependabot or RenovateBot
 
-I strongly recommend introducing [Dependabot](https://github.com/dependabot) or [RenovateBot](https://github.com/renovatebot/renovate)to provide the ability to track and surface updates for your code an infrastructure dependencies in an automated fashion. Keeping dependencies up to date is too often forgotten until it's a big chore. Creating a sensible happy path around this will improve both security and the developer experience of your teams. It also will probably lead to a few (likely inexpensive) lessons on the importance of reading release notes before merging (or improving your CI system to better detect issues with some dependencies).
+I strongly recommend introducing [Dependabot](https://github.com/dependabot) or [RenovateBot](https://github.com/renovatebot/renovate) to provide the ability to track and surface updates for your code an infrastructure dependencies in an automated fashion. Keeping dependencies up to date is too often forgotten until it's a big chore. Creating a sensible happy path around this will improve both security and the developer experience of your teams. It also will probably lead to a few (likely inexpensive) lessons on the importance of reading release notes before merging (or improving your CI system to better detect issues with some dependencies).
 
 ## README Files and Developer Onboarding
 
