@@ -95,6 +95,7 @@ If they don't exist, I try to create paths of least resistance for people to rad
 * A "things I learned" (`#TIL`) channel or space where people can put helpful tips and celebrate learning.
 * Cultural fun spaces (joy can 1be radiated too!) Great examples I've seen of this include `#dadjokes` channel and a `#twinning` channel (for when people looked to be dressed the same IRL or in a virtual meeting).
 * A `#megaphone` channel or similar, when you want people to re-post something or hype something up.
+* A "round-table" style of meeting, typically weekly or bi-weekly, where small presentations can be given (and asked for!). This encourages us to learn from each other across disciplines and makes a space for larger discussions / decisions.
 
 ## Formatting / Rules Auto-enforcement
 
@@ -104,7 +105,7 @@ One way to do this is to run your formatting tool all the time. For example, the
 
 ## Normalize Asking for Help and Improving Things
 
-One rule I like for this that I learned from somewhere a long time ago is the "30 minute rule". As in: don't ask for help until you've spent 30 minutes on trying to solve an issue yourself, but don't wait longer than 30 minutes to ask for help." I like it because it's an easy thing to remember and it applies to everyone regardless of seniority.
+One rule I like for this that I learned from somewhere a long time ago is the "30 minute rule". As in: don't ask for help until you've spent 30 minutes on trying to solve an issue yourself, but don't wait longer than 30 minutes to ask for help. I like it because it's an easy thing to remember and it applies to everyone regardless of seniority.
 
 Similarly, improving things is important. Try to regularly hold retrospectives, or at least continually ask what can be improved and praise people when they note those opportunities. "Developer Experience" is a legitimate category of software development work, so I try to ensure it always exists somewhere as a formal bucket to capture suggestions.
 
