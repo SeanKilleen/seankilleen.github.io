@@ -13,7 +13,7 @@ header:
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   caption: "Photo credit: [**Timothy Dykes @ Unsplash**](https://unsplash.com/@timothycdykes?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
 ---
-This is a follow-up to [my post on my current approach to software delivery]({% post_url 2024-02-05-my-current-approach-to-software-delivery %}) -- specifically, how I apply it.
+This is a follow-up to [my post on my current approach to software delivery]({% post_url 2024-02-05-my-current-approach-to-software-delivery %}) -- specifically, how I apply it when paths for it don't yet exist.
 
 When setting teams up for success with modern software delivery, I've found it helps to create "successful paths of least resistance". Here are some things I've tried, learned, and had success with in the hopes they might help someone else. I prioritize understanding the state of these things first if I don't see them in an environment I enter.
 
@@ -92,8 +92,8 @@ If they don't exist, I try to create paths of least resistance for people to rad
 * Group chats -- for certain contexts, for my team, for inter-team touch-points.
 * Wiki pages
 * Kanban boards for radiating work and its status
-* A "things I learned" channel where people can put helpful tips and celebrate learning.
-* Cultural fun spaces (joy can be radiated too!) Great examples I've seen of this include `#dadjokes` channel and a `#twinning` channel (for when people looked to be dressed the same IRL or in a virtual meeting).
+* A "things I learned" (`#TIL`) channel or space where people can put helpful tips and celebrate learning.
+* Cultural fun spaces (joy can 1be radiated too!) Great examples I've seen of this include `#dadjokes` channel and a `#twinning` channel (for when people looked to be dressed the same IRL or in a virtual meeting).
 * A `#megaphone` channel or similar, when you want people to re-post something or hype something up.
 
 ## Formatting / Rules Auto-enforcement
