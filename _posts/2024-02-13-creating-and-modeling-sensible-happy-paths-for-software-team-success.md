@@ -107,7 +107,7 @@ One way to do this is to run your formatting tool all the time. For example, the
 
 One rule I like for this that I learned from somewhere a long time ago is the "30 minute rule". As in: don't ask for help until you've spent 30 minutes on trying to solve an issue yourself, but don't wait longer than 30 minutes to ask for help. I like it because it's an easy thing to remember and it applies to everyone regardless of seniority.
 
-Similarly, improving things is important. Try to regularly hold retrospectives, or at least continually ask what can be improved and praise people when they note those opportunities. "Developer Experience" is a legitimate category of software development work, so I try to ensure it always exists somewhere as a formal bucket to capture suggestions.
+Similarly, improving things is important. Try to regularly hold retrospectives, or at least continually ask what can be improved and praise people when they note those opportunities. "Developer Experience" is a legitimate category of software development work, so I try to ensure it always exists somewhere as a formal bucket to capture those suggestions as well.
 
 ## Wrapping Up
 
