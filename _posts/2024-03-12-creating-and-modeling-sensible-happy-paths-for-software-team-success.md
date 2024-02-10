@@ -82,14 +82,14 @@ I strongly recommend introducing [Dependabot](https://github.com/dependabot) or 
 
 I always create or update the `README` file for a repository I'm going to be working in regularly. I add the information I wish I knew that's relevant to the code, and aim to give a new team member a smooth start. This might include conceptual introductions, tooling installation instructions / scripts, historical context, etc.
 
-Zooming out a little bit from an individual codebase, I also think it's important to give new team members a landing page on day 1. I tend to ensure this includes a checklist of the things that need to be done -- both by them, and for them -- as well as helpful links and frequently asked questions. I try to make a new team member's first task be to improve the on-boarding page for anyone who comes after them; this explicitly empowers them to question things, which sets the tone for their tenure in addition to improving the content.
+Zooming out a little bit from an individual codebase, I also think it's important to give new team members a landing page on day 1. I tend to ensure this includes a checklist of the things that need to be done -- both by them, and for them -- as well as helpful links and frequently asked questions. I try to make a new team member's first task be to improve the on-boarding page and `README` for anyone who comes after them; this explicitly empowers them to question things, which sets the tone for their tenure in addition to improving the content.
 
 ## ~~A Place~~ Places to Radiate Information
 
-If they don't exist, I try to create paths of least resistance for people to radiate information -- to put things out there in ways that help synapses fire across the group or organization. This takes some experimenting to find what works for your specific context, but successes I've had in the past have been:
+If they don't exist, I try to create paths of least resistance for people to radiate information -- to put things out there in ways that help synapses fire across the group or organization. This takes some experimenting to find what works for your specific context, but some successes I've had in the past include:
 
 * Creating Slack channels when I notice a common topic that can stand on its own and I want others to be able to step into that stream at any moment
-* Group chats -- for certain context, for my team, for inter-team touch-points.
+* Group chats -- for certain contexts, for my team, for inter-team touch-points.
 * Wiki pages
 * Kanban boards for radiating work and its status
 * A "things I learned" channel where people can put helpful tips and celebrate learning.
@@ -98,7 +98,7 @@ If they don't exist, I try to create paths of least resistance for people to rad
 
 ## Formatting / Rules Auto-enforcement
 
-We can disagree on rules or formatting considerations all we want, and I find it best to be flexible in matters of style. But, there should be some tooling and process to auto -enforce the rules we care about.
+We can disagree on rules or formatting considerations all we want, and I find it best to be flexible in matters of style. But, there should be some tooling and process to auto-enforce the rules we care about.
 
 One way to do this is to run your formatting tool all the time. For example, there's [a great GitHub Action for the `dotnet-format` command](https://github.com/marketplace/actions/dotnet-format). You can use it to run all the time and commit changes back to the branches. Now nobody has to think about the rules unless they disagree with them. And if you disagree, you can meet about it, update your `.editorconfig` file, and auto-format your codebase to be in-line with the new preferences.
 
@@ -110,6 +110,6 @@ Similarly, improving things is important. Try to regularly hold retrospectives, 
 
 ## Wrapping Up
 
-This is by no means a complete list, but I have to stop here lest I spend way too much time trying to wrack my brain for every tip I've seen or lived. Did I miss something important to you? Tell me in the comments!
+This is by no means a complete list, but I have to stop here lest I spend way too much time trying to wrack my brain for every tip I've seen or lived. Tell me about your happy path in the comments!
 
 [^1]: I'm not a believer in "root cause". There's almost never only one cause of these things.
