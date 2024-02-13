@@ -36,14 +36,15 @@ NONE of these things happen without an awesome team and environment, but I'll li
 * Introduced daily stand-ups (Our team of 11 still manages it in under 20 minutes!)
 * Created / shaped the overall process flow of our work
 * Created & automated a high level Kanban board allowing stakeholders to see big picture and drill down as desired
-* Created places to radiate information -- Product FAQs, a company-wide shared glossary
+* Created places to radiate information -- Product FAQs, a company-wide shared glossary, teams channels
 * Created a standard for documenting certain kinds of information and a repository for that information to live, which is now part of the standard of how we operate.
 * Got the team used to working out loud. Pull requests, reviews, pairing/mobbing, and more.
+* Created on-boarding process and checklist. New hires were opening PRs 2 hours after on-boarding.
 
 ## Infrastructure
 
 * Built a CI/CD pipeline for continuous delivery of CloudFoundry-based applications to SAP BTP Cloud
-* Discovered a technical limitation of CloudFoundry and to get ahead of it, re-platformed our applications to Kubernetes (SAP BTP Kyma) in 5 working days. This included
+* Discovered a technical limitation of CloudFoundry and to get ahead of it, re-platformed our applications to Kubernetes (SAP BTP Kyma) in 7 working days. This included
   * Containerizing all of our .NET applications
   * Essentially learning Kubernetes on the fly. I'd poked around the edges a lot, but I had to really get into it.
   * Making BTP cloud services work in a new environment
@@ -54,12 +55,14 @@ NONE of these things happen without an awesome team and environment, but I'll li
 * Introduced caching via Redis and S3-compatible storage via MinIO to allow us to bring these capabilities within our Kubernetes cluster.
 * Added geocoding capabilities to our application -- vendor selection, API implementation, caching for effectiveness.
 * Successfully introduced OAuth 2.0 authentication, integrating with SAP BTP's CIS product.
+* Updated the application to .NET 8 on day 1 of its launch.
 
 ## Observability
 
 * Deployed Seq into our environment to quickly get a handle on some of our logging insights.
 * Deployed OpenTelemetry collector, Prometheus, Grafana, Tempo, and Loki in our environment (fully scripted via Terraform)
 * Added business-level metrics to application code to see which clients & carriers are experiencing issues or utilizing our premium services
+* Added community-based and custom Grafana dashboards, deployed via Terraform.
 * Adding activities and spans to improve traceability across our tooling.
 
 ## Security & Compliance
@@ -77,6 +80,7 @@ NONE of these things happen without an awesome team and environment, but I'll li
 * Introducing automated testing and bringing the team on board to a place where we now have hundreds and hundreds of tests running every build
 * Diagnosed a complex issue that ended up pinpointing a bug in the Envoy proxy (used by Istio). Ended up going to the HTTP/2 spec to figure it out.
 * Facilitated an end-of-year half-day session on continuous improvement.
+
 
 ## What's Next?
 
