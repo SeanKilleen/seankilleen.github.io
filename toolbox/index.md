@@ -44,8 +44,6 @@ The items below are links -- feel free to click and explore!
 * **VS Code Live Share** - this is awesome, allows you to live code with one or more people remotely. Super for remote pairing / mobbing.
 * **Docker Extension** - great extension; lets me easily see in a sidebar what containers are running, lets me quickly open a shell into them, etc.
 * **GitLens** - great UI integration of various pieces of git information
-* **Azure Account** - common sign-in / subscription management
-* **Beautify** - beautify code in place for VS Code
 * **Markdown shortcuts** - I write a lot of markdown for the blog. Markdown shortcuts is really helpful with quick formatting changes (e.g. `CTRL + B` bolds text). Super useful.
 
 ## Nuget Packages Worth Knowing
