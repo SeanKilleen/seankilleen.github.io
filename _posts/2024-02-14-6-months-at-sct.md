@@ -14,13 +14,13 @@ header:
   caption: "Photo credit: [**ali syaaban @ Unsplash**](https://unsplash.com/@zylo25?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
 ---
 
-It's Valentine's Day! I'm grateful for all the love I've got in my life. Today also marks 6 months since I started at [SCT Software](https://sctsoftware.com) as Vice President of Innovation & Products. That represented a big move for me -- becoming responsible for leading an emerging engineering organization.
+It's Valentine's Day! I'm grateful for all the love I've got in my life. And for my parents' love (Happy Anniversary, Mom & Dad!)
 
-I'm a big believer in [keeping a "good stuff" list]({% 2018-12-29-you-should-keep-a-good-stuff-list %}). My experience so far has felt phenomenal, and I figured I should take my own advice and take stock here.
+Today also happens to mark 6 months since I started at [SCT Software](https://sctsoftware.com) as VP of Innovation & Products. That represented a big move for me -- becoming responsible for leading an emerging engineering organization.
 
-Below are some of the highlights of the past 6 months. I'll try to lump things together into some general categories.
+I'm a big believer in [keeping a "good stuff" list]({% post_url 2018-12-29-you-should-keep-a-good-stuff-list %}). My experience so far has felt phenomenal, and I figured I should take my own advice and take stock here. Below are some of the highlights of the past 6 months. I'll try to lump things together into some general categories. NONE of these things happen without an awesome team and environment, but I'll list things I had at least a large part in.
 
-NONE of these things happen without an awesome team and environment, but I'll list things I had at least a large part in.
+This is a personal post and this list is just for me, but I'd still be happy to hear any questions about it in the comments!
 
 ## People
 
