@@ -17,7 +17,6 @@ The items below are links -- feel free to click and explore!
 * **[Pocket](https://getpocket.com)**: Save articles and events for later reading.
 * **[1Password] [1Password]**: My choice of password manager.
 * **[ArtooJS] [ArtooJS]** (Scraping) - A bookmarklet that injects a javascript library into any page on command that will enable many scraping/parsing scenarios more easily.
-* **[Amazon Assistant] [Amazon Assistant]** - Great access to amazon, including wish list management & additions.
 * **[RescueTime] [RescueTime]** - A tool to track where you're spending your time online. Great if my productivity ever starts to slip. :)
 * **[Tweetdeck] [Tweetdeck]** - My favorite twitter client for everyday use.
 
@@ -177,6 +176,5 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 [ImgBurn]: http://www.imgburn.com/
 [Virtual CloneDrive]: https://www.elby.ch/en/products/vcd.html
 [LogParser 2.x Studio]: https://gallery.technet.microsoft.com/office/Log-Parser-Studio-cd458765
-[Amazon Assistant]: https://chrome.google.com/webstore/detail/amazon-assistant-for-chro/pbjikboenpfhbbejgkoklgkhjpfogcam?hl=en-US
 [RescueTime]: https://www.rescuetime.com/
 [Tweetdeck]: https://tweetdeck.twitter.com/
