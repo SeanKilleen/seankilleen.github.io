@@ -35,8 +35,12 @@ The items below are links -- feel free to click and explore!
 
 ## VS Code Extensions
 
-* **[VSCodeCanDoThat](http://vscodecandothat.com)** - a great resource for tips & tricks.
 * **[File watcher extension](https://seankilleen.com/2018/08/vscode-tip-watch-files/)** - Comes in handy often
+* **CodeTour** - Show someone around a repository using config that can be stored in the repository. Great for orienting to new projects!
+* **indent-rainbow** - Nice visual way to show levels of indents.
+* **JSON Escaper** - When you need it, it's a wonderful thing to have.
+* **JSON Tools** - Easily flatten JSON etc.
+* **Markdownlint** - An indispensible part of my writing process, made easier with the extension to show me issues in the editor.
 * **VS Code Live Share** - this is awesome, allows you to live code with one or more people remotely. Super for remote pairing / mobbing.
 * **Docker Extension** - great extension; lets me easily see in a sidebar what containers are running, lets me quickly open a shell into them, etc.
 * **GitLens** - great UI integration of various pieces of git information
