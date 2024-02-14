@@ -82,7 +82,6 @@ This is a personal post and this list is just for me, but I'd still be happy to 
 * Diagnosed a complex issue that ended up pinpointing a bug in the Envoy proxy (used by Istio). Ended up going to the HTTP/2 spec to figure it out.
 * Facilitated an end-of-year half-day session on continuous improvement.
 
-
 ## What's Next?
 
 I feel like I'm doing some of the best work of my career, and I can't wait to see what will happen in the next 6 months. There are plenty of ways for me to grow and learn still, and plenty left to achieve. I'm excited.
