@@ -75,20 +75,9 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 * **[Pingendo] [Pingendo]** - An awesome free app if you plan on building a site with Bootstrap. Pingendo is an app for windows or Mac that allows you to visually layout mockups / sites using re-usable bootstrap components, and will then generate the HTML required to produce those components on a web page. A nice tool that makes getting started really quick & easy for a bootstrap-enabled web site.
 * **[The Pencil Project] [The Pencil Project]** – A free/OSS wire-framing tool for all platforms.
 
-## Infrastructure / Ecosystem Tools
-
-* **[Seq] [Seq]** - A commercial tool for searching and visualizing structure logs such as those produced by Serilog. Makes it insanely easy to search logs to diagnose problems. Great price points for almost any business. I used this with great success on a commercial project a little while back.
-* **[Terraform] [Terraform]** - Sometimes your app needs a lot of infrastructure, or you need to manage that across cloud providers. Terraform is a tool that allows you to write out your infrastructure (e.g. 3 servers, 2 network switches, some firewall rules, etc.) and then spin up a new environment or apply changes to an existing environment. A breakthrough for deploying application infrastructure in a reliable way without huge handoffs between the "dev" and "ops" pieces of DevOps.
-* **[MiniProfiler] [MiniProfiler]** - A great profiler that shows you how long things take right within your web app, profiling database requests and surfacing common issues. Originally built by the folks at StackExchange, so it's battle-tested.
-* **[Opserver] [Opserver]** - A monitoring system used by the folks at StackExchange. Could be very helpful for even a basic .NET shop. New monitoring pieces being added all the time.
-* **[StackExchange's Blackbox] [StackExchange's Blackbox]** - A way to safely store secrets in source control without compromising security or making it super annoying for a team to work with.
-* **[Nagios] [Nagios]** - A free Linux-based monitoring system that can be huge help in keeping systems up and running. Lots of easy ways to get started with it as well.
-* **[OTRS] [OTRS]** - An IT Service Management tool. If you need a ticketing system, helpdesk system, or CMDB that adheres to ITIL principles and is free/reasonably easy to setup, look no further.
-
 ## Helpful Windows apps for Coders
 
 * **[GitHub Desktop for Windows] [GitHub Desktop for Windows]** - Work with GitHub projects on Windows? This makes it dead simple.
-* **[ScriptCS] [ScriptCS]** - A way of writing scripts in C# if you hate powershell.
 * **[Fiddler] [Fiddler]** - Send and profile http requests; very useful when working with API projects.
 * **[Slack] [Slack]** - The chat client that everyone knows and loves
 * **[Camtasia] [Camtasia]** - Doing a screencast or demo video? This is commercial software but probably your best bet.
@@ -97,7 +86,6 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 * **[Chocolatey] [Chocolatey]** - A package management script for windows, so you can install and update software in a similar way to apt-get. I've run one command after a fresh install and ha
 * **[Greenshot] [Greenshot]** - An excellent free tool for capturing screenshots and saving to various destinations.
 * **[ImgBurn] [ImgBurn]** - A tool for creating disc images
-* **[Virtual CloneDrive] [Virtual CloneDrive]** – a good free tool to mount disc images.
 * **[LogParser 2.x Studio] [LogParser 2.x Studio]** - A tool for easily loading and querying log files in classic formats (such as IIS logs)
 
 [ActiveInbox]: http://activeinboxhq.com
@@ -124,23 +112,7 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 [Humanizer]: https://GitHub.com/Humanizr/Humanizer
 [Pingendo]: http://pingendo.com/
 [The Pencil Project]: http://pencil.evolus.vn/
-[NCover]: https://www.ncover.com/
-[dotCover]: https://www.jetbrains.com/dotcover/
-[TeamCity]: https://www.jetbrains.com/teamcity/
-[Jenkins]: https://jenkins.io/
-[OctopusDeploy]: https://octopus.com/
-[RoundhousE]: https://GitHub.com/chucknorris/roundhouse
-[PayPal's AATT]: https://GitHub.com/paypal/AATT
-[PhantomJS]: http://phantomjs.org/
-[Seq]: https://getseq.net/
-[Terraform]: https://www.terraform.io/
-[MiniProfiler]: http://miniprofiler.com/
-[Opserver]: https://GitHub.com/opserver/Opserver
-[StackExchange's Blackbox]: https://GitHub.com/StackExchange/blackbox
-[Nagios]: https://www.nagios.org/
-[OTRS]: https://www.otrs.com/
 [GitHub Desktop for Windows]: https://desktop.GitHub.com/
-[ScriptCS]: http://scriptcs.net/
 [Fiddler]: https://www.telerik.com/fiddler
 [Slack]: https://slack.com/
 [Camtasia]: https://www.techsmith.com/camtasia.html
@@ -149,7 +121,6 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 [Chocolatey]: https://chocolatey.org/
 [Greenshot]: http://getgreenshot.org/
 [ImgBurn]: http://www.imgburn.com/
-[Virtual CloneDrive]: https://www.elby.ch/en/products/vcd.html
 [LogParser 2.x Studio]: https://gallery.technet.microsoft.com/office/Log-Parser-Studio-cd458765
 [Toggl]: https://toggl.com/
 [PersonalBlocklist]: https://addons.mozilla.org/en-US/firefox/addon/personal-blocklist/
