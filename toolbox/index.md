@@ -75,7 +75,7 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 * **[Pingendo] [Pingendo]** - An awesome free app if you plan on building a site with Bootstrap. Pingendo is an app for windows or Mac that allows you to visually layout mockups / sites using re-usable bootstrap components, and will then generate the HTML required to produce those components on a web page. A nice tool that makes getting started really quick & easy for a bootstrap-enabled web site.
 * **[The Pencil Project] [The Pencil Project]** – A free/OSS wire-framing tool for all platforms.
 
-## Build & Deployment Tolls
+## Build & Deployment Tools
 
 * **[NCover] [NCover] / [dotCover] [dotCover]** - A code coverage tool to help determine how many of your code paths are actually covered by unit tests.
 * **[TeamCity] [TeamCity]** - A build pipeline tool popular in many .NET shops, TeamCity is a great choice for continuous integration pipelines and ensuring a rigorous quality standard.
