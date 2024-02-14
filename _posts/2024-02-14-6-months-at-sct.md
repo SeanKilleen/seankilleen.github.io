@@ -89,4 +89,4 @@ This is a personal post and this list is just for me, but I'd still be happy to 
 
 ## "What's Next?"
 
-That's one of my favorite phrases. I feel like I'm doing some of the best work of my career, and I can't wait to see what will happen in the next 6 months. There are plenty of ways for me to grow and learn still, and plenty left to achieve. I feel empowered and supported and like I'm working to be better at extending that feeling to others every day. So when I think about what's next, I'm excited.
+That's one of my favorite phrases. I feel like I'm doing some of the best work of my career, and I can't wait to see what will happen in the next 6 months. There are plenty of ways for me to grow and learn still, and plenty left to achieve. I feel empowered and supported and like I'm working to be better at extending that feeling to others every day. I've got an excellent team and an organization with great bones. So when I think about what's next, I'm excited.
