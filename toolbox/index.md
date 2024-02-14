@@ -49,22 +49,16 @@ The items below are links -- feel free to click and explore!
 ## Nuget Packages Worth Knowing
 
 * **[xUnit] [xUnit]** - a modern unit testing library for .NET. Used by the Microsoft team on the .NET framework itself, and fully compatible with .NET Core. Amazing tooling, fast execution, and a short learning curve. It's my testing framework of choice.
-* **[FluentAssertions] [FluentAssertions]** - Sometimes, assertions are hard to read in tests and cause confusion. FluentAssertions provides an easily readable way. If a variable called "myValue" should be equal to 5, NUnit's assert syntax might be Assert.That(myValue, Is.EqualTo(5)). With FA, that becomes "myValue.Should().Be(5)". It also has great built-in assertions, such as "ShouldBeEquivalentTo", "ShouldContain()", and "ShouldNotBeEmpty()"
+* **[NUnit] [NUnit]** - A great alternative to xUnit. I think everyone should know both, personally.
+* **[FluentAssertions] [FluentAssertions]** - Sometimes, assertions are hard to read in tests and cause confusion. FluentAssertions provides an easily readable unified way forward. If a variable called "myValue" should be equal to 5, NUnit's assert syntax might be `Assert.That(myValue, Is.EqualTo(5))`. With FA, that becomes `myValue.Should().Be(5)`. It also has great built-in assertions, such as `ShouldBeEquivalentTo`, `ShouldContain()`, and `ShouldNotBeEmpty()`
 * **[Serilog] [Serilog]** - A structured logging library for .NET. Structured logging beats the pants off of regular text logging because you can surface more information about the structure of the log message itself.
 * **[NBench] [NBench]** - Used to test highly asynchronous / concurrent systems such as Akka.NET, NBench is a great choice for performance profiling your code. Particularly for systems that will find themselves under heavy load, it's important to profile the code and set a baseline so that performance doesn't degrade over time.
 * **[ElasticSearch & ElasticSearch.NET] [ElasticSearch & ElasticSearch.NET]** - If you need to surface complex queries across massive amounts of data and have the results be lightning-fast, this is a great place to begin.
 * **[Akka.NET] [Akka.NET]** - A framework/library for building actor-based systems in .NET. The Actor model is a paradigm for creating distributed, clustered, massively-scalable, self-healing, and reactive systems. And it makes that all reasonably easy. If that sounds awesome, it's only because it is awesome.
 * **[CsvHelper] [CsvHelper]** - A great tool for pulling in and processing data to/from CSV files.
-* **[Squirrel] [Squirrel]** - "It's like ClickOnce but Works". A free/OSS way to package app installers in a Click-once way and handle things such as auto-updating software when new versions are released.
-* **[MassTransit] [MassTransit]** - A free / OSS message bus platform for .NET that integrates with Azure ServiceBus, RabbitMQ, etc. For more reliable message handling and easier pub/sub.
-* **[Toggler] [Toggler] (feature toggling)** - Feature toggling is important, especially when beta-testing features or in large software environments where enabling a feature may cause unwanted impact (or when a feature isn't yet fully complete). Feature toggling enables shorter branches because code paths can be committed that will not be executed unless the toggle is enabled. Toggler is  great .NET library for doing that.
-* **[GitHub's Scientist.NET] [GitHub's Scientist.NET]** - A library for carefully refactoring critical paths. It basically creates A/B testing for paths through your code so that you can see if  certain paths begin failing after refactoring, or when you try a different approach. A way to know that live code will have an issue before fully flipping the switch on it.
 * **[Moq] [Moq] / [FakeItEasy] [FakeItEasy]** - Unit testing projects need mocking libraries. Moq and FakeItEasy are two good ones.
-* **[Autofac] [Autofac] / [Ninject] [Ninject] / [StructureMap] [StructureMap]** - Dependency injection can be a pain. These tools will enable you to do so much easier. They all have their various quirks but get the job done.
-* **[LiteGuard] [LiteGuard]** - Defensive programming is important. This includes guard clauses – pieces of code that run in the beginning of a method to make sure that the inputs are correct. LiteGuard is a nice, small, fast library that encapsulates a number of these common guard clauses and saves some repetition.
 * **[FluentValidation] [FluentValidation]** - Validating complex data is hard. Like, really hard. And custom validation logic often fails at handling things like different contexts or testability without becoming incredibly bloated. FluentValidation is a great library that assists in validating business objects in different contexts in a friendly to use way.
 * **[Humanizer] [Humanizer]** - A great tool for manipulating and displaying strings, enums, dates, times, numbers, and quantities. If you're wondering how to display pluralization, different cases, truncate text, etc. This library is hugely helpful.
-* **[Selenium] [Selenium]** - A library for driving a web browser, hugely helpful in acceptance test scenarios. The website looks out of date, but the tool is rock solid. The selenium grid can also be used to test multiple browsers on multiple OSes at once.
 
 ## Favorite ReSharper Extensions
 
@@ -74,13 +68,11 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 * **Enhanced Tooltip** - Better visual tooltips when mousing over code.
 * **Cyclomatic Complexity** - Shows when a method is growing too complex and should be refactored.
 * **Heap Allocations viewer** - Helpful to surface when you're accidentally creating an object 1,000 times in a loop. :)
-* **JetBox** -  Pulls the reSharper settings from dropbox. Really nice when my dev environments can sync up like this.
 * **Exceptional**: Analyzes exceptions that might be thrown and is a nice reminder to be handling them.
 
 ## Design
 
 * **[Pingendo] [Pingendo]** - An awesome free app if you plan on building a site with Bootstrap. Pingendo is an app for windows or Mac that allows you to visually layout mockups / sites using re-usable bootstrap components, and will then generate the HTML required to produce those components on a web page. A nice tool that makes getting started really quick & easy for a bootstrap-enabled web site.
-* **[Balsamiq] [Balsamiq]** - A popular commercial tool for mockups & workflows
 * **[The Pencil Project] [The Pencil Project]** – A free/OSS wire-framing tool for all platforms.
 
 ## Build & Deployment Tolls
@@ -136,21 +128,11 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 [ElasticSearch & ElasticSearch.NET]: https://GitHub.com/elastic/elasticsearch-net
 [Akka.NET]: http://getakka.net/
 [CsvHelper]: https://joshclose.GitHub.io/CsvHelper/
-[Squirrel]: https://GitHub.com/Squirrel/Squirrel.Windows
-[MassTransit]: http://masstransit-project.com/
-[Toggler]: https://GitHub.com/manojlds/Toggler
-[GitHub's Scientist.NET]: https://GitHub.com/GitHub/Scientist.net
 [Moq]: https://GitHub.com/moq/moq4
 [FakeItEasy]: https://fakeiteasy.GitHub.io/
-[Autofac]: https://autofac.org/
-[Ninject]: http://www.ninject.org/
-[StructureMap]: http://structuremap.GitHub.io/
-[LiteGuard]: https://GitHub.com/adamralph/liteguard
 [FluentValidation]: https://GitHub.com/JeremySkinner/FluentValidation
 [Humanizer]: https://GitHub.com/Humanizr/Humanizer
-[Selenium]: http://www.seleniumhq.org/
 [Pingendo]: http://pingendo.com/
-[Balsamiq]: https://balsamiq.com/
 [The Pencil Project]: http://pencil.evolus.vn/
 [NCover]: https://www.ncover.com/
 [dotCover]: https://www.jetbrains.com/dotcover/
@@ -182,3 +164,4 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 [Toggl]: https://toggl.com/
 [PersonalBlocklist]: https://addons.mozilla.org/en-US/firefox/addon/personal-blocklist/
 [BlackMagic]: https://BlackMagic.so
+[NUnit]: https://nunit.org
