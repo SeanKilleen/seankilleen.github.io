@@ -121,7 +121,7 @@ ReSharper is such a popular plugin that I have my own favorite extensions for it
 [Chocolatey]: https://chocolatey.org/
 [Greenshot]: http://getgreenshot.org/
 [ImgBurn]: http://www.imgburn.com/
-[LogParser 2.x Studio]: https://gallery.technet.microsoft.com/office/Log-Parser-Studio-cd458765
+[LogParser 2.x Studio]: https://www.microsoft.com/en-us/download/details.aspx?id=24659
 [Toggl]: https://toggl.com/
 [PersonalBlocklist]: https://addons.mozilla.org/en-US/firefox/addon/personal-blocklist/
 [BlackMagic]: https://BlackMagic.so
