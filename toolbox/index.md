@@ -40,7 +40,7 @@ The items below are links -- feel free to click and explore!
 * **indent-rainbow** - Nice visual way to show levels of indents.
 * **JSON Escaper** - When you need it, it's a wonderful thing to have.
 * **JSON Tools** - Easily flatten JSON etc.
-* **Markdownlint** - An indispensible part of my writing process, made easier with the extension to show me issues in the editor.
+* **Markdownlint** - An indispensable part of my writing process, made easier with the extension to show me issues in the editor.
 * **VS Code Live Share** - this is awesome, allows you to live code with one or more people remotely. Super for remote pairing / mobbing.
 * **Docker Extension** - great extension; lets me easily see in a sidebar what containers are running, lets me quickly open a shell into them, etc.
 * **GitLens** - great UI integration of various pieces of git information
