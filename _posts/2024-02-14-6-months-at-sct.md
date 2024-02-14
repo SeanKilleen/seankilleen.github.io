@@ -25,10 +25,11 @@ This is a personal post and this list is just for me, but I'd still be happy to 
 ## People
 
 * Hired two awesome developers. This included:
-  * [Building a new automated hiring system using Jira]({% 2024-01-23-how-i-created-an-automated-and-humane-hiring-process-using-jira %}).
+  * [Building a new automated hiring system using Jira]({% post_url 2024-01-23-how-i-created-an-automated-and-humane-hiring-process-using-jira %}).
   * Introducing an intentionally different format of job description.
   * Sourcing candidates from my network with no recruiting assistance.
   * Owning the interview & hiring process from first contact to offer acceptance.
+* Began to gel with a small team
 
 ## Process & Communication
 
