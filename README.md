@@ -31,3 +31,8 @@ For my own reference because I often forget how. :smile:
 
 * `npm install cspell`
 * `cspell _posts/**/*.md`
+
+## License
+
+* Code licensed under MIT
+* Content licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
