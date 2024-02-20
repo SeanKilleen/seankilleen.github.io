@@ -14,7 +14,6 @@ header:
   overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
   caption: "Photo credit: [**Sigmund @ Unsplash**](https://unsplash.com/@sigmund?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
 ---
-## Background
 
 We currently use `docfx` to publish the [NUnit docs](https://docs.nunit.org), because it has a lovely capability of generating docs for our API reference in addition to all our articles.
 
