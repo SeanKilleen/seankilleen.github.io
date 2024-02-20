@@ -9,6 +9,10 @@ tags:
   - ci
   - devops
 date: 2024-02-20 07:00 -0500
+header:
+  overlay_image: /images/overlays/unsplash/sigmund-f0dJjQMhfXo-unsplash.jpg
+  overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background
+  caption: "Photo credit: [**Sigmund @ Unsplash**](https://unsplash.com/@sigmund?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
 ---
 ## Background
 
