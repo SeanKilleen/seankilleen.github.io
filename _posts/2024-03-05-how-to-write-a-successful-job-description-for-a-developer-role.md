@@ -7,7 +7,7 @@ tags:
   - process
   - writing
   - culture
-date: 2024-03-05 10:00 -0500
+date: 2024-03-05 07:00 -0500
 header:
   overlay_image: /images/overlays/unsplash/afif-ramdhasuma-RjqCk9MqhNg-unsplash.jpg
   overlay_filter: 0.5
