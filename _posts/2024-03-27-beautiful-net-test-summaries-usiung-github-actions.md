@@ -171,25 +171,27 @@ Notes:
 
 ## Let's See the Results!
 
-In a PR where I add a test, I see the results and the coverage report:
+In a PR where I add a test, I see the results and the coverage report in GitHub comments. The coverage report doesn't show a change, because it was already at 100% previously, but I do see 3 additional test cases, the total number of test cases, and
 
-TODO
+![Screenshot of results and coverage]({{site.post-images}}/2024-github-test-summaries/ResultsAndCoverage.png)
 
-When test coverage increases:
+Let's try with a failed test. If I take those same passing tests from above and mess them up and push the changes to the pull request, then I see the indicator in the PR comment:
 
-TODO
+![Screenshot of results and coverage]({{site.post-images}}/2024-github-test-summaries/FailedTestPRComment.png)
 
-When test coverage decreases:
+When  I can click into the link in the comment for more details, I see a great screen that shows me which tests failed, and includes the failed assertion text and the location in the code.
 
-TODO
+![Screenshot of results and coverage]({{site.post-images}}/2024-github-test-summaries/FailedTestSummary.png)
 
-When a test fails, I see a notice:
+## So, Have We Accomplished Our Goals?
 
-TODO
+* :white_check_mark: Work entirely within GitHub Actions
+* :white_check_mark: Show test results within a pull request
+* :white_check_mark: Show difference in number of tests
+* :white_check_mark: When tests fail, be able to quickly see which tests failed, and the failure/trace
+* :white_check_mark: Understand test coverage
 
-And I can click into that notice to see the list of failed tests in the summary:
-
-TODO
+Voila!
 
 ## Roll the Credits
 
