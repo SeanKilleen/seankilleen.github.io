@@ -177,15 +177,15 @@ Notes:
 
 In a PR where I add a test, I see the results and the coverage report in GitHub comments. The coverage report doesn't show a change, because it was already at 100% previously, but I do see 3 additional test cases, the total number of test cases, and what the current coverage is.
 
-![Screenshot of results and coverage]({{site.post-images}}/2024-github-test-summaries/ResultsAndCoverage.png)
+> ![Screenshot of results and coverage]({{site.post-images}}/2024-github-test-summaries/ResultsAndCoverage.png)
 
 Let's try with a failed test. If I take those same passing tests from above and mess them up and push the changes to the pull request, then I see the indicator in the PR comment:
 
-![Screenshot of results and coverage]({{site.post-images}}/2024-github-test-summaries/FailedTestPRComment.png)
+> ![Screenshot of results and coverage]({{site.post-images}}/2024-github-test-summaries/FailedTestPRComment.png)
 
 When  I can click into the link in the comment for more details, I see a great screen that shows me which tests failed, and includes the failed assertion text and the location in the code.
 
-![Screenshot of results and coverage]({{site.post-images}}/2024-github-test-summaries/FailedTestSummary.png)
+> ![Screenshot of results and coverage]({{site.post-images}}/2024-github-test-summaries/FailedTestSummary.png)
 
 ## So, Have We Accomplished Our Goals?
 
