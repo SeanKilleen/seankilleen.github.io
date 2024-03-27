@@ -199,7 +199,7 @@ Voila!
 
 ## Roll the Credits
 
-I am continually amazed at what can be accomplished by GitHub Actions thanks to smart and talented people who have chosen to share with the community. A reminder that I didn't use a single custom piece of code in this example; it was all GitHub Actions provided by others. That blows my mind.
+I am continually amazed at what can be accomplished by GitHub Actions thanks to creative and talented people who have chosen to share with the community. A reminder that I didn't use a single custom piece of code in this example; it was all GitHub Actions provided by others. That blows my mind.
 
 * [ReportGenerator-GitHub-Action](https://github.com/danielpalme/ReportGenerator-GitHub-Action) by [Daniel Palme](https://github.com/sponsors/danielpalme) allows us to combine our coverage reports into a lovely Cobertura report file.
 * [CodeCoverageSummary](https://github.com/irongut/CodeCoverageSummary) by [irongut](https://github.com/sponsors/irongut) generates the great markdown from our coverage files
