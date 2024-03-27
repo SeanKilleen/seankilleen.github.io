@@ -70,8 +70,8 @@ First, I check out the code and set up .NET:
 Next, we run our tests:
 
 ```yaml
-      - name: "Restore/Build/Test"
-        run: dotnet test --configuration Release --verbosity normal --logger trx --collect:"XPlat Code Coverage"
+- name: "Restore/Build/Test"
+  run: dotnet test --configuration Release --verbosity normal --logger trx --collect:"XPlat Code Coverage"
 ```
 
 A few things to note here:
