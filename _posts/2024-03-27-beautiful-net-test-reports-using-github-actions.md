@@ -56,15 +56,15 @@ Some of these steps need to write pull requests comments, etc. so in the job def
 First, I check out the code and set up .NET:
 
 ```yaml
-      - name: Check out the code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0        
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: |
-            8.x
+- name: Check out the code
+  uses: actions/checkout@v4
+  with:
+    fetch-depth: 0        
+- name: Setup .NET
+  uses: actions/setup-dotnet@v4
+  with:
+    dotnet-version: |
+      8.x
 ```
 
 Next, we run our tests:
@@ -85,45 +85,45 @@ A few things to note here:
 First, we combine our coverage reports. This is because each project has its own coverage output, so we need to combine them.
 
 ```yaml
-      - name: Combine Coverage Reports # This is because one report is produced per project, and we want one result for all of them.
-        uses: danielpalme/ReportGenerator-GitHub-Action@5.2.4
-        with:
-          reports: "**/*.cobertura.xml" # REQUIRED # The coverage reports that should be parsed (separated by semicolon). Globbing is supported.
-          targetdir: "${{ github.workspace }}" # REQUIRED # The directory where the generated report should be saved.
-          reporttypes: "Cobertura" # The output formats and scope (separated by semicolon) Values: Badges, Clover, Cobertura, CsvSummary, Html, Html_Dark, Html_Light, Html_BlueRed, HtmlChart, HtmlInline, HtmlInline_AzurePipelines, HtmlInline_AzurePipelines_Dark, HtmlInline_AzurePipelines_Light, HtmlSummary, JsonSummary, Latex, LatexSummary, lcov, MarkdownSummary, MarkdownSummaryGithub, MarkdownDeltaSummary, MHtml, PngChart, SonarQube, TeamCitySummary, TextSummary, TextDeltaSummary, Xml, XmlSummary
-          verbosity: "Info" # The verbosity level of the log messages. Values: Verbose, Info, Warning, Error, Off
-          title: "Code Coverage" # Optional title.
-          tag: "${{ github.run_number }}_${{ github.run_id }}" # Optional tag or build version.
-          customSettings: "" # Optional custom settings (separated by semicolon). See: https://github.com/danielpalme/ReportGenerator/wiki/Settings.
-          toolpath: "reportgeneratortool" # Default directory for installing the dotnet tool.
+- name: Combine Coverage Reports # This is because one report is produced per project, and we want one result for all of them.
+  uses: danielpalme/ReportGenerator-GitHub-Action@5.2.4
+  with:
+    reports: "**/*.cobertura.xml" # REQUIRED # The coverage reports that should be parsed (separated by semicolon). Globbing is supported.
+    targetdir: "${{ github.workspace }}" # REQUIRED # The directory where the generated report should be saved.
+    reporttypes: "Cobertura" # The output formats and scope (separated by semicolon) Values: Badges, Clover, Cobertura, CsvSummary, Html, Html_Dark, Html_Light, Html_BlueRed, HtmlChart, HtmlInline, HtmlInline_AzurePipelines, HtmlInline_AzurePipelines_Dark, HtmlInline_AzurePipelines_Light, HtmlSummary, JsonSummary, Latex, LatexSummary, lcov, MarkdownSummary, MarkdownSummaryGithub, MarkdownDeltaSummary, MHtml, PngChart, SonarQube, TeamCitySummary, TextSummary, TextDeltaSummary, Xml, XmlSummary
+    verbosity: "Info" # The verbosity level of the log messages. Values: Verbose, Info, Warning, Error, Off
+    title: "Code Coverage" # Optional title.
+    tag: "${{ github.run_number }}_${{ github.run_id }}" # Optional tag or build version.
+    customSettings: "" # Optional custom settings (separated by semicolon). See: https://github.com/danielpalme/ReportGenerator/wiki/Settings.
+    toolpath: "reportgeneratortool" # Default directory for installing the dotnet tool.
 ```
 
 I then choose to upload the combined coverage report to our build's artifacts:
 
 ```yaml
-      - name: Upload Combined Coverage XML
-        uses: actions/upload-artifact@v4
-        with:
-          name: coverage
-          path: ${{ github.workspace }}/Cobertura.xml
-          retention-days: 5
+- name: Upload Combined Coverage XML
+  uses: actions/upload-artifact@v4
+  with:
+    name: coverage
+    path: ${{ github.workspace }}/Cobertura.xml
+    retention-days: 5
 ```
 
 Next up, we publish the coverage report -- this takes the `Cobertura.xml` file and turns it into `code-coverage-results.md`, a nice Markdown file.
 
 ```yaml
-      - name: Publish Code Coverage Report
-        uses: irongut/CodeCoverageSummary@v1.3.0
-        with:
-          filename: "Cobertura.xml"
-          badge: true
-          fail_below_min: false # just informative for now
-          format: markdown
-          hide_branch_rate: false
-          hide_complexity: false
-          indicators: true
-          output: both
-          thresholds: "10 30"
+- name: Publish Code Coverage Report
+  uses: irongut/CodeCoverageSummary@v1.3.0
+  with:
+    filename: "Cobertura.xml"
+    badge: true
+    fail_below_min: false # just informative for now
+    format: markdown
+    hide_branch_rate: false
+    hide_complexity: false
+    indicators: true
+    output: both
+    thresholds: "10 30"
 ```
 
 A few things to note here:
@@ -135,12 +135,12 @@ A few things to note here:
 Lastly, I surface the code coverage statistics in a PR comment:
 
 ```yaml
-      - name: Add Coverage PR Comment
-        uses: marocchino/sticky-pull-request-comment@v2
-        if: github.event_name == 'pull_request'
-        with:
-          recreate: true
-          path: code-coverage-results.md
+- name: Add Coverage PR Comment
+  uses: marocchino/sticky-pull-request-comment@v2
+  if: github.event_name == 'pull_request'
+  with:
+    recreate: true
+    path: code-coverage-results.md
 ```
 
 ## Reporting on Test Outcomes
@@ -150,22 +150,22 @@ Coverage is one thing, but knowing whether our tests have passed or failed is th
 I choose to upload the test results to my build's artifacts:
 
 ```yaml
-      - name: Upload Test Result Files
-        uses: actions/upload-artifact@v4
-        with:
-          name: test-results
-          path: ${{ github.workspace }}/**/TestResults/**/*
-          retention-days: 5
+- name: Upload Test Result Files
+  uses: actions/upload-artifact@v4
+  with:
+    name: test-results
+    path: ${{ github.workspace }}/**/TestResults/**/*
+    retention-days: 5
 ```
 
 And then I use another great GitHub Action to publish those results:
 
 ```yaml
-      - name: Publish Test Results
-        uses: EnricoMi/publish-unit-test-result-action@v2.16.1
-        if: always()
-        with:
-          trx_files: "${{ github.workspace }}/**/*.trx"
+- name: Publish Test Results
+  uses: EnricoMi/publish-unit-test-result-action@v2.16.1
+  if: always()
+  with:
+    trx_files: "${{ github.workspace }}/**/*.trx"
 ```
 
 Notes:
