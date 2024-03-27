@@ -168,3 +168,42 @@ Note:
 
 * I specify the TRX files that we previously set our `dotnet test` to produce in our earlier action
 * The `if: always()` ensures that this step will run even if prior steps fail. This is key, because if my tests fail, the build will fail, but I still want to produce this report so that I'll know _what_ failed.
+
+## Let's See the Results!
+
+In a PR where I add a test, I see the results and the coverage report:
+
+TODO
+
+When test coverage increases:
+
+TODO
+
+When test coverage decreases:
+
+TODO
+
+When a test fails, I see a notice:
+
+TODO
+
+And I can click into that notice to see the list of failed tests in the summary:
+
+TODO
+
+## Roll the Credits
+
+I am continually amazed at what can be accomplished by GitHub Actions thanks to smart and talented people who have chosen to share with the community. A reminder that I didn't use a single custom piece of code in this example; it was all GitHub Actions provided by others. That blows my mind.
+
+* [ReportGenerator-GitHub-Action](https://github.com/danielpalme/ReportGenerator-GitHub-Action) by [Daniel Palme](https://github.com/sponsors/danielpalme) allows us to combine our coverage reports into a lovely Cobertura report file.
+* [CodeCoverageSummary](https://github.com/irongut/CodeCoverageSummary) by [irongut](https://github.com/sponsors/irongut) generates the great markdown from our coverage files
+* [sticky-pull-request-comment](https://github.com/marocchino/sticky-pull-request-comment) by [GitHub user `@marocchino`](https://github.com/marocchino) allows us to hand-roll our own comment from Markdown
+* The phenomenal [publish-unit-test-result-action](https://github.com/EnricoMi/publish-unit-test-result-action) by [Enrico Minack](https://github.com/sponsors/EnricoMi) puts our test results into an easily accessible format within GitHub.
+
+All of these authors deserve our respect, appreciation, and sponsorship.
+
+## I'd Love Your Thoughts!
+
+How are you currently accomplishing this within GitHub Actions?
+
+Until next time -- happy coding!
