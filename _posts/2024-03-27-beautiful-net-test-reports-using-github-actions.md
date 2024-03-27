@@ -9,6 +9,8 @@ tags:
   - githubactions
   - azuredevops
   - azdo
+  - dotnet
+  - .net
 date: 2024-03-27 16:01 -0400
 header:
   overlay_image: /images/overlays/unsplash/roman-synkevych-wX2L8L-fGeA-unsplash.jpg
