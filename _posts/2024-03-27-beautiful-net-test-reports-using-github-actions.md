@@ -189,11 +189,11 @@ When  I can click into the link in the comment for more details, I see a great s
 
 ## So, Have We Accomplished Our Goals?
 
-* :white_check_mark: Work entirely within GitHub Actions
-* :white_check_mark: Show test results within a pull request
-* :white_check_mark: Show difference in number of tests
-* :white_check_mark: When tests fail, be able to quickly see which tests failed, and the failure/trace
-* :white_check_mark: Understand test coverage
+:white_check_mark: Work entirely within GitHub Actions
+:white_check_mark: Show test results within a pull request
+:white_check_mark: Show difference in number of tests
+:white_check_mark: When tests fail, be able to quickly see which tests failed, and the failure/trace
+:white_check_mark: Understand test coverage
 
 Voila!
 
