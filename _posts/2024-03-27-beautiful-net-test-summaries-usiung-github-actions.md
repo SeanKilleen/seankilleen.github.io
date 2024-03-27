@@ -164,7 +164,7 @@ And then I use another great GitHub Action to publish those results:
           trx_files: "${{ github.workspace }}/**/*.trx"
 ```
 
-Note: 
+Notes:
 
 * I specify the TRX files that we previously set our `dotnet test` to produce in our earlier action
 * The `if: always()` ensures that this step will run even if prior steps fail. This is key, because if my tests fail, the build will fail, but I still want to produce this report so that I'll know _what_ failed.
