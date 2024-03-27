@@ -212,4 +212,4 @@ All of these authors deserve our respect, appreciation, and sponsorship.
 
 How are you currently accomplishing this within GitHub Actions?
 
-Until next time -- happy coding!
+Until next time -- happy building!
