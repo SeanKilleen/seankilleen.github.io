@@ -175,7 +175,7 @@ Notes:
 
 ## Let's See the Results!
 
-In a PR where I add a test, I see the results and the coverage report in GitHub comments. The coverage report doesn't show a change, because it was already at 100% previously, but I do see 3 additional test cases, the total number of test cases, and
+In a PR where I add a test, I see the results and the coverage report in GitHub comments. The coverage report doesn't show a change, because it was already at 100% previously, but I do see 3 additional test cases, the total number of test cases, and what the current coverage is.
 
 ![Screenshot of results and coverage]({{site.post-images}}/2024-github-test-summaries/ResultsAndCoverage.png)
 
