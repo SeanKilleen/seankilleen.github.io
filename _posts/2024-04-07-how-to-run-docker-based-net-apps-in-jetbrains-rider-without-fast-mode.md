@@ -128,3 +128,7 @@ We now perform a one-time symlink when on-boarding to the project.
 
 
 Rider's `Docker.run.xml` file references `C:\RedactedAppData` so once you make the link, things will work.
+
+## Hope This Helps!
+
+Let me know if you have any questions in the comments.
