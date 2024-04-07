@@ -8,7 +8,7 @@ tags:
   - JetBrains
   - rider
   - IDEs
-date: 2024-04-07 15:28 -0400
+date: 2024-04-09 07:00 -0400
 ---
 In most cases, containerized .NET apps run just fine "out of the box". IDEs such as Visual Studio and JetBrains Rider provide a helpful experience called "Fast mode" that uses some magic to put your files where they need to be inside of the container, rather than rebuilding it each time you start up. This is helpful!
 
