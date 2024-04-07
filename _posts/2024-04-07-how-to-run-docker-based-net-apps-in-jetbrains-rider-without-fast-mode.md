@@ -126,7 +126,6 @@ We now perform a one-time symlink when on-boarding to the project.
 * Open a command prompt as administrator (NOTE: not PowerShell)
 * Run `mklink /D C:\RedactedAppData C:\Users\[Your Username]\AppData\Roaming` (Replacing "Redacted" with your app's name.)
 
-
 Rider's `Docker.run.xml` file references `C:\RedactedAppData` so once you make the link, things will work.
 
 ## Hope This Helps!
