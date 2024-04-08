@@ -44,22 +44,31 @@ public class CachedODataServiceTests
     [OneTimeSetUp]
     public void OneTimeSetup()
     {
+        // This wires up Serilog to write to the InMemorySink variable we see below.
+        var inMemoryLoggingConfig = new LoggerConfiguration().WriteTo.InMemory().CreateLogger()
+
+        // Creating this builder allows us to add Serilog, which allows us to use Microsoft.Extensions.Logging
+        // To get an ILogger<T> and have it use Serilog to write to the in-memory Sink.
         var builder = WebApplication.CreateBuilder([]);
-        builder.Logging.AddSerilog(new LoggerConfiguration().WriteTo.InMemory().CreateLogger());
+        builder.Logging.AddSerilog(inMemoryLoggingConfig);
         _app = builder.Build();
     }
 
     [OneTimeTearDown]
     public void OneTimeTearDown()
     {
+        // At the end of the test, we need to dispose the app.
         _app?.DisposeAsync();
     }
 
     [SetUp]
     public void Setup()
     {
+        // Set up our mocks so that we can make them do what we want during the test
         _mockUncachedService = new Mock<IODataService>();
         _mockDistributedCache = new Mock<IDistributedCache>();
+
+        // Allows us to create the "SUT" or (Situation Under Test) using the ILogger and the Mocks
         var logger = _app!.Services.GetRequiredService<ILogger<CachedODataService>>();
         _sut = new CachedODataService(logger, _mockUncachedService.Object, _mockDistributedCache.Object);
     }
@@ -67,168 +76,25 @@ public class CachedODataServiceTests
     [TearDown]
     public void Teardown()
     {
+        // At the end of each test, we "Dispose" the InMemorySink, which resets its messages
         InMemorySink.Instance.Dispose();
     }
 
     [Test]
-    public void ConfigureODataHttpClient_CallsUnderlyingUncachedDataSource()
+    public async Task GetCarrier_WhenErrorUponGettingCacheValue_LogsError()
     {
-        _sut.ConfigureODataHttpClient("A", "B", "C");
+        // Make the cache throw an error
+        _mockDistributedCache.Setup(x => x.GetAsync(It.IsAny<string>(), default)).Throws(new Exception("SeanError"));
 
-        _mockUncachedService.Verify(x => x.ConfigureODataHttpClient("A", "B", "C"), Times.Once);
-    }
+        // Call the method that uses the cache
+        await _sut.GetCarrier("Customer", "Carrier");\
 
-    [Test]
-    public async Task ABAPPassthroughRequest_CallsUnderlyingUncachedDataSource()
-    {
-        await _sut.ABAPPassthroughRequest(new PassthroughXmlRequest {Request = "BLAH"});
-
-        _mockUncachedService.Verify(x => x.ABAPPassthroughRequest(It.Is<PassthroughXmlRequest>(request=>request.Request == "BLAH")), Times.Once);
-    }
-
-    [Test]
-    public async Task GetCarrier_WhenErrorOnGettingCacheValue_LogsError()
-    {
-        _mockDistributedCache.Setup(x => x.GetAsync(It.IsAny<string>(), default)).Throws(new Exception("Error"));
-
-        await _sut.GetCarrier("Customer", "Carrier");
-
+        // Assert against the log message and its properties
         InMemorySink.Instance.Should()
             .HaveMessage("Error retrieving cached carrier information for Customer '{CustomerCode}' Carrier '{CarrierCode}'. Returning non-cached value. Error: {ErrorMessage}")
                 .WithProperty("CustomerCode").WithValues("Customer").And
                 .WithProperty("CarrierCode").WithValues("Carrier").And
-                .WithProperty("ErrorMessage").WithValues("Error");
-    }
-
-    [Test]
-    public async Task GetCarrier_WhenErrorOnGettingCacheValue_CallsUnderlyingUncachedDataSource()
-    {
-        _mockDistributedCache.Setup(x => x.GetAsync(It.IsAny<string>(), default)).Throws(new Exception("Error"));
-        _mockUncachedService.Setup(x => x.GetCarrier("Customer", "Carrier")).ReturnsAsync(new XPSCarrierConfig(){CustomerCode = "UnderlyingCustomer", CarrierCode = "UnderlyingCarrier"});
-
-        var result = await _sut.GetCarrier("Customer", "Carrier");
-
-        _mockUncachedService.Verify(x => x.GetCarrier("Customer", "Carrier"), Times.Once);
-        result.CustomerCode.Should().Be("UnderlyingCustomer");
-        result.CarrierCode.Should().Be("UnderlyingCarrier");
-    }
-
-    [Test]
-    public async Task GetCarrier_WhenCacheValueIsNull_CallsUnderlyingUncachedDataSource()
-    {
-        _mockDistributedCache.Setup(x => x.GetAsync(It.IsAny<string>(), default)).ReturnsAsync((byte[]?)null);
-        _mockUncachedService.Setup(x => x.GetCarrier("Customer", "Carrier")).ReturnsAsync(new XPSCarrierConfig() { CustomerCode = "UnderlyingCustomer", CarrierCode = "UnderlyingCarrier" });
-
-        var result = await _sut.GetCarrier("Customer", "Carrier");
-
-        _mockUncachedService.Verify(x => x.GetCarrier("Customer", "Carrier"), Times.Once);
-        result.CustomerCode.Should().Be("UnderlyingCustomer");
-        result.CarrierCode.Should().Be("UnderlyingCarrier");
-    }
-
-    [Test]
-    public async Task GetCarrier_WhenCacheValueIsNull_AttemptsToCacheResultItGets()
-    {
-        _mockDistributedCache.Setup(x => x.GetAsync(It.IsAny<string>(), default)).ReturnsAsync((byte[]?)null);
-        _mockUncachedService.Setup(x => x.GetCarrier("Customer", "Carrier")).ReturnsAsync(new XPSCarrierConfig() { CustomerCode = "UnderlyingCustomer", CarrierCode = "UnderlyingCarrier" });
-
-        await _sut.GetCarrier("Customer", "Carrier");
-
-        _mockDistributedCache.Verify(x => x.SetAsync(It.IsAny<string>(), It.IsAny<byte[]>(), It.IsAny<DistributedCacheEntryOptions>(), default), Times.Once);
-    }
-
-    [Test]
-    public async Task GetCarrier_WhenCacheValueIsNull_AndCacheBlowsUpOnSetAction_StillReturnsUncachedValue()
-    {
-        _mockDistributedCache.Setup(x => x.GetAsync(It.IsAny<string>(), default)).ReturnsAsync((byte[]?)null);
-        _mockDistributedCache.Setup(x => x.SetAsync(It.IsAny<string>(), It.IsAny<byte[]>(), It.IsAny<DistributedCacheEntryOptions>(), default)).Throws(new Exception("Error"));
-        _mockUncachedService.Setup(x => x.GetCarrier("Customer", "Carrier")).ReturnsAsync(new XPSCarrierConfig() { CustomerCode = "UnderlyingCustomer", CarrierCode = "UnderlyingCarrier" });
-
-        var result = await _sut.GetCarrier("Customer", "Carrier");
-
-        _mockUncachedService.Verify(x => x.GetCarrier("Customer", "Carrier"), Times.Once);
-        _mockDistributedCache.Verify(x => x.SetAsync(It.IsAny<string>(), It.IsAny<byte[]>(), It.IsAny<DistributedCacheEntryOptions>(), default), Times.Once);
-
-        result.CustomerCode.Should().Be("UnderlyingCustomer");
-        result.CarrierCode.Should().Be("UnderlyingCarrier");
-    }
-
-    [Test]
-    public async Task GetCarrier_WhenExistingValue_AndSerializedFine_ReturnsValue()
-    {
-        var knownGoodValue = new XPSCarrierConfig() { CustomerCode = "SeanCustomer", CarrierCode = "SeanCarrier" };
-        var knownGoodValueString = System.Text.Json.JsonSerializer.Serialize(knownGoodValue);
-        var knownGoodValueBytes = System.Text.Encoding.UTF8.GetBytes(knownGoodValueString);
-
-        _mockDistributedCache.Setup(x => x.GetAsync(It.IsAny<string>(), default)).ReturnsAsync(knownGoodValueBytes);
-
-        var result = await _sut.GetCarrier("Customer", "Carrier");
-
-        result.CustomerCode.Should().Be("SeanCustomer");
-        result.CarrierCode.Should().Be("SeanCarrier");
-    }
-
-    [Test]
-    public async Task GetCarrier_WhenExistingValue_AndIsSerializedToNull_LogsError()
-    {
-        var nullJsonValueAsString = "null";
-        var nullValueBytes = System.Text.Encoding.UTF8.GetBytes(nullJsonValueAsString);
-
-        _mockDistributedCache.Setup(x => x.GetAsync(It.IsAny<string>(), default)).ReturnsAsync(nullValueBytes);
-
-        await _sut.GetCarrier("Customer", "Carrier");
-
-        InMemorySink.Instance.Should()
-            .HaveMessage("Issue deserializing cached carrier information for Customer '{CustomerCode}' Carrier '{CarrierCode}': The deserialized carrier was null. Calling OData directly.")
-            .WithProperty("CustomerCode").WithValues("Customer").And
-            .WithProperty("CarrierCode").WithValues("Carrier");
-    }
-
-    [Test]
-    public async Task GetCarrier_WhenExistingValue_AndIsSerializedToNull_ReturnsUncachedValue()
-    {
-        var nullJsonValueAsString = "null";
-        var nullValueBytes = System.Text.Encoding.UTF8.GetBytes(nullJsonValueAsString);
-
-        _mockUncachedService.Setup(x => x.GetCarrier("Customer", "Carrier")).ReturnsAsync(new XPSCarrierConfig() { CustomerCode = "UnderlyingCustomer", CarrierCode = "UnderlyingCarrier" });
-        _mockDistributedCache.Setup(x => x.GetAsync(It.IsAny<string>(), default)).ReturnsAsync(nullValueBytes);
-
-        var result = await _sut.GetCarrier("Customer", "Carrier");
-
-        result.CustomerCode.Should().Be("UnderlyingCustomer");
-        result.CarrierCode.Should().Be("UnderlyingCarrier");
-    }
-
-    [Test]
-    public async Task GetCarrier_WhenExistingValue_AndErrorSerializingIt_LogsError()
-    {
-        var nullJsonValueAsString = "BOOM";
-        var nullValueBytes = System.Text.Encoding.UTF8.GetBytes(nullJsonValueAsString);
-
-        _mockDistributedCache.Setup(x => x.GetAsync(It.IsAny<string>(), default)).ReturnsAsync(nullValueBytes);
-
-        await _sut.GetCarrier("Customer", "Carrier");
-
-        InMemorySink.Instance.Should()
-            .HaveMessage("Error deserializing cached carrier information for Customer '{CustomerCode}' Carrier '{CarrierCode}'. Returning non-cached value. Error: {ErrorMessage}")
-            .WithProperty("CustomerCode").WithValues("Customer").And
-            .WithProperty("CarrierCode").WithValues("Carrier").And
-            .WithProperty("ErrorMessage").WithValues("'B' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.");
-    }
-
-    [Test]
-    public async Task GetCarrier_WhenExistingValue_AndErrorSerializingIt_ReturnsUncachedValue()
-    {
-        var nullJsonValueAsString = "BOOM";
-        var nullValueBytes = System.Text.Encoding.UTF8.GetBytes(nullJsonValueAsString);
-
-        _mockUncachedService.Setup(x => x.GetCarrier("Customer", "Carrier")).ReturnsAsync(new XPSCarrierConfig() { CustomerCode = "UnderlyingCustomer", CarrierCode = "UnderlyingCarrier" });
-        _mockDistributedCache.Setup(x => x.GetAsync(It.IsAny<string>(), default)).ReturnsAsync(nullValueBytes);
-
-        var result = await _sut.GetCarrier("Customer", "Carrier");
-
-        result.CustomerCode.Should().Be("UnderlyingCustomer");
-        result.CarrierCode.Should().Be("UnderlyingCarrier");
+                .WithProperty("ErrorMessage").WithValues("SeanError");
     }
 }
 ```
