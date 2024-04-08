@@ -8,7 +8,7 @@ tags:
   - JetBrains
   - rider
   - IDEs
-date: 2024-04-09 07:00 -0400
+date: 2024-04-16 07:00 -0400
 header:
   overlay_image: /images/overlays/unsplash/frank-mckenna-tjX_sniNzgQ-unsplash.jpg
   overlay_filter: 0.5
