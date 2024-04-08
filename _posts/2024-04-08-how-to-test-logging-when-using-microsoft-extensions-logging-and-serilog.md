@@ -1,7 +1,13 @@
 ---
 title: "How To: Test Logging when Using Microsoft.Extensions.Logging and Serilog"
 comments: true
-date: 2024-04-08 08:44 -0400
+tags:
+  - dotnet
+  - .NET
+  - tdd
+  - testing
+  - serilog
+date: 2024-04-16 07:00 -0400
 ---
 There are a lot of different ways to test logging, and quite a few opinions about how to do so. I recently found what feels like a very pleasant approach for my situation and I wanted to share it because still finding new ways to do this sort of thing still is lovely.
 
