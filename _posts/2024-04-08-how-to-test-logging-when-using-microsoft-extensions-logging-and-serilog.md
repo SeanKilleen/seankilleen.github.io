@@ -1,7 +1,7 @@
 ---
 title: "How To: Test Logging when Using Microsoft.Extensions.Logging and Serilog"
 comments: true
-date: 2024-04-08 08:28 -0400
+date: 2024-04-08 08:44 -0400
 ---
 There are a lot of different ways to test logging, and quite a few opinions about how to do so. I recently found what feels like a very pleasant approach for my situation and I wanted to share it because still finding new ways to do this sort of thing still is lovely.
 
@@ -231,12 +231,14 @@ This code relies on two Nuget packages installed in my test project:
 
 This approach might seem a little heavy handed. I mean -- do we really need to create a WebApplication builder to get the `ILogger<T>` set up? 
 
-I found that it made the rest of the process painless and didn't seem to add a ton of overhead, and it ensures that the `ILogger<T>` and `Serilog` outputs all play nicely together. And it enabled a very clean assertion, which I really enjoyed. So for me, it was worth it. I'd be interested to hear if there are alternative approaches that get close to this result.
+I found that it made the rest of the process painless and didn't seem to add a ton of overhead, and it ensures that the `ILogger<T>` and `Serilog` outputs all play nicely together. And it enabled a very clean assertion, which I really enjoyed. So for me, it was worth it. I'd be interested to hear if there are alternative approaches that get close to this result without using a builder.
 
 ## Thank You, Once Again, to OSS
 
-Big Thanks to [Sander van Vliet](https://github.com/sponsors/sandermvanvliet) for their work on great library. Please sponsor them!
+Big Thanks to [Sander van Vliet](https://github.com/sponsors/sandermvanvliet) for their work on a great library and contributing it to [the `serilog-contrib` org](https://github.com/serilog-contrib). Please sponsor them! I just did.
 
 ## What Do You Think?
 
 How do you prefer to do this sort of assertion in this situation?
+
+Until next time, happy logging!
