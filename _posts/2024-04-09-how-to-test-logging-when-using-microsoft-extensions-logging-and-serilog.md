@@ -61,7 +61,7 @@ public class CachedODataServiceTests
     [OneTimeTearDown]
     public void OneTimeTearDown()
     {
-        // At the end of the test, we need to dispose the app.
+        // At the end of all tests, we need to dispose the app.
         _app?.DisposeAsync();
     }
 
