@@ -34,7 +34,7 @@ Below is an example test scenario where I need to ensure an error is logged with
 
 This code relies on two Nuget packages installed in my test project:
 
-* `[Serilog.Sinks.InMemory](https://github.com/serilog-contrib/SerilogSinksInMemory)`
+* [`Serilog.Sinks.InMemory`](https://github.com/serilog-contrib/SerilogSinksInMemory)
 * `Serilog.Sinks.InMemory.Assertions` (same repo as above)
 
 ```csharp
