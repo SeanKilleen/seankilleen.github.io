@@ -113,6 +113,77 @@ I found that it made the rest of the process painless and didn't seem to add a t
 
 Big Thanks to [Sander van Vliet](https://github.com/sponsors/sandermvanvliet) for their work on a great library and contributing it to [the `serilog-contrib` org](https://github.com/serilog-contrib). Please sponsor them! I just did.
 
+## Bonus: Alternatives!
+
+### Microsoft.Extensions.Hosting.Testing and a custom log sink
+
+For those who are not using Serilog or who want something a little simpler, you can also use the `Microsoft.Extensions.Hosting.Testing` nuget package and do something along these lines:
+
+```csharp
+public class CachedODataServiceTests
+{
+    private CachedODataService _sut = null!;
+    private IHost? _app;
+    private Mock<IODataService> _mockUncachedService = null!;
+    private Mock<IDistributedCache> _mockDistributedCache = null!;
+    private readonly List<string> messages = new();
+
+    [OneTimeSetUp]
+    public void OneTimeSetup()
+    {
+        #pragma warning disable EXTEXP0016
+        // The compiler warning is because this nuget is still experimental
+        var builder = FakeHost.CreateBuilder();
+        builder.AddFakeLoggingOutputSink(message =>
+        {
+            messages.Add(message);
+        });
+        #pragma warning restore EXTEXP0016
+        _app = builder.Build();
+    }
+
+    [OneTimeTearDown]
+    public void OneTimeTearDown()
+    {
+        // At the end of all tests, we need to dispose the app.
+        _app?.Dispose();
+    }
+
+    [SetUp]
+    public void Setup()
+    {
+        messages.Clear();
+
+        // Set up our mocks so that we can make them do what we want during the test
+        _mockUncachedService = new Mock<IODataService>();
+        _mockDistributedCache = new Mock<IDistributedCache>();
+
+        // Allows us to create the "SUT" or (Situation Under Test) using the ILogger and the Mocks
+        var logger = _app!.Services.GetRequiredService<ILogger<CachedODataService>>();
+        _sut = new CachedODataService(logger, _mockUncachedService.Object, _mockDistributedCache.Object);
+    }
+
+    [TearDown]
+    public void Teardown()
+    {
+        messages.Clear();
+    }
+
+    [Test]
+    public async Task GetCarrier_WhenErrorUponGettingCacheValue_LogsError()
+    {
+        // Make the cache throw an error
+        _mockDistributedCache.Setup(x => x.GetAsync(It.IsAny<string>(), default)).Throws(new Exception("SeanError"));
+
+        // Call the method that uses the cache
+        await _sut.GetCarrier("Customer", "Carrier");
+
+        // An assert against the string collection
+        messages.Should().Contain(x => x.Contains("Error retrieving cached carrier information for Customer 'Customer' Carrier 'Carrier'. Returning non-cached value. Error: Error"));
+    }
+}
+```
+
 ## What Do You Think?
 
 How do you prefer to do this sort of assertion in this situation?
