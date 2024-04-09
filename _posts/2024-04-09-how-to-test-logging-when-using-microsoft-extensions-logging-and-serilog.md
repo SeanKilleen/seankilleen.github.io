@@ -163,12 +163,6 @@ public class CachedODataServiceTests
         _sut = new CachedODataService(logger, _mockUncachedService.Object, _mockDistributedCache.Object);
     }
 
-    [TearDown]
-    public void Teardown()
-    {
-        messages.Clear();
-    }
-
     [Test]
     public async Task GetCarrier_WhenErrorUponGettingCacheValue_LogsError()
     {
