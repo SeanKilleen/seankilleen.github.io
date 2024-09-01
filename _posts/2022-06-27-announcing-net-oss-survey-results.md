@@ -301,7 +301,7 @@ Notable challenges:
 > * Are there any good automated documentation tools? I'm only aware of the older stuff from XML comments and options for static generated sites which don't work well for ASP.NET Core sites.
 > * I prefer to do this on my own, although localization would be great.
 > * Triaging issues isn't easy to delegate, you might have people speaking on your behalf that isn't in line with project ideas or agenda.
-> * Feels very "un-glamourous"; I don't really imagine there would be a lot of people interested in participating.
+> * Feels very "un-glamorous"; I don't really imagine there would be a lot of people interested in participating.
 > * We do receive high quality issue reports sometimes, but these are in the minority.
 > * Good quality documentation contributions are very rare.
 
