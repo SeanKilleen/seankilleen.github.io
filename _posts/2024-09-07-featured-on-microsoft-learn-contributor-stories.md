@@ -7,7 +7,7 @@ tags:
   - docs
 date: 2024-09-07 15:09 -0400
 ---
-Microsoft was kind enough to [feature me in a Microsoft Learn Contributor Story](https://techcommunity.microsoft.com/t5/microsoft-developer-community/contributor-stories-sean-killeen/ba-p/4170139)!
+Microsoft was kind enough to [feature me in a Microsoft Learn Contributor Story](https://aka.ms/contributor-stories/sean-killeen)!
 
 This came about because Microsoft employee Randolph West nominated me. They appreciated the work I had done on finding some typos in the SQL Server documentation.
 
