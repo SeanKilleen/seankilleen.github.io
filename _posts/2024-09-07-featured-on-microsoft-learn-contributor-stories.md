@@ -5,6 +5,7 @@ tags:
   - OSS
   - dotnet
   - docs
+  - recognition
 date: 2024-09-07 15:09 -0400
 ---
 Microsoft was kind enough to [feature me in a Microsoft Learn Contributor Story](https://aka.ms/contributor-stories/sean-killeen)!
