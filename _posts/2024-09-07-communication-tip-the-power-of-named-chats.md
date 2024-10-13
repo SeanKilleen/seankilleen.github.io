@@ -16,7 +16,7 @@ In many organizations, natural communication pathways start to form. Something h
 
 ## Enter the Named Group Chat
 
-The next time you find yourself discussing something that has a distinct box around it, consider creating a named chat (if you're in MS teams) or a private channel (if you're in Slack). 
+The next time you find yourself discussing something that has a distinct "conceptual box" around it, consider creating a named chat (if you're in MS teams) or a private channel (if you're in Slack). 
 
 Now you have:
 
