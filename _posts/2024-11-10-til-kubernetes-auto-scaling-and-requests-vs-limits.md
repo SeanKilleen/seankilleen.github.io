@@ -5,7 +5,7 @@ tags:
   - k8s
   - kubernetes
   - devops
-date: 2024-11-10 09:40 -0500
+date: 2024-11-10 14:20 -0500
 ---
 I recently revised an incorrect mental model I had about Kubernetes as part of a strange experience, and I figured I'd share here in case it helps someone else. 
 
@@ -47,3 +47,7 @@ So if you need guarantees for your auto-scaling, you need to do it based on requ
 * Those pods may or may not ask for and receive additional resources as needed.
 
 For this reason, a lot of people advocate for guaranteed QoS -- which is to say, setting the request and the limit to the same value. This way, you will be forced to ask for what your app needs and know that you won't be getting more. I'm torn on this, because I don't love the idea of asking for more at the outset that might not be used because I want it available for pods that need it.
+
+## I'd Love Your Thoughts!
+
+How do you strategize your pod resource requests and limits? Let us know in the comments!
