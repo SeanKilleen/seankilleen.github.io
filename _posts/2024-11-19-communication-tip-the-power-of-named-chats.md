@@ -4,7 +4,7 @@ comments: true
 tags:
   - Communication
   - messaging
-date: 2024-11-19 11:00 -0500
+date: 2024-11-19 09:00 -0500
 header:
   overlay_image: /images/overlays/unsplash/volodymyr-hryshchenko-V5vqWC9gyEU-unsplash.jpg
   overlay_filter: 0.5
