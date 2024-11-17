@@ -4,7 +4,7 @@ comments: true
 tags:
   - Communication
   - messaging
-date: 2024-09-07 15:41 -0400
+date: 2024-11-19 11:00 -0500
 ---
 In many organizations, natural communication pathways start to form. Something happens or information needs to be sent out or a decision needs to be made, and you fire up a Teams window or Slack group message and invite the usual suspects.
 
@@ -16,19 +16,19 @@ In many organizations, natural communication pathways start to form. Something h
 
 ## Enter the Named Group Chat
 
-The next time you find yourself discussing something that has a distinct "conceptual box" around it, consider creating a named chat (if you're in MS teams) or a private channel (if you're in Slack). 
+The next time you find yourself discussing something that has a distinct "conceptual box" around it, consider creating a named chat (if you're in MS teams) or a private channel (if you're in Slack).
 
 Now you have:
 
 * A space with explicit context
 * A way to keep the chat on topic
 * The ability to archive it when it ends
-* A way to signal status, in the group name 
+* A way to signal status, in the group name
 * A nice package to invite anyone to who needs to jump into the conversation, where you can share the entire history more likely than not.
 
 ## An Example
 
-We recently had a strange week at work where 4 different clients had time sensitive issues come up during the same week. Many of the same people in our side were involved in overlapping conversations across the contexts and it got messy to keep track of, fast. 
+We recently had a strange week at work where 4 different clients had time sensitive issues come up during the same week. Many of the same people in our side were involved in overlapping conversations across the contexts and it got messy to keep track of, fast.
 
 I saw an opportunity. I created a group chat for each client context, added the appropriate people, and titled it "(Client) War Room". I started each channel by recapping what we knew so far and what the next steps were. I then added a status icon (🔴, 🟡, 🟢) to indicate current urgency.
 
