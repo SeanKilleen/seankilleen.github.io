@@ -32,7 +32,7 @@ Now you have:
 
 ## An Example
 
-We recently had a strange week at work where 4 different clients had time sensitive issues come up during the same week. Many of the same people in our side were involved in overlapping conversations across the contexts and it got messy to keep track of, fast.
+We recently had a strange week at work where 4 different clients had time sensitive issues come up during the same week. Many of the same people on our side were involved in overlapping conversations across the contexts and it got messy to keep track of, fast.
 
 I saw an opportunity. I created a group chat for each client context, added the appropriate people, and titled it "(Client) War Room". I started each channel by recapping what we knew so far and what the next steps were. I then added a status icon (🔴, 🟡, 🟢) to indicate current urgency.
 
