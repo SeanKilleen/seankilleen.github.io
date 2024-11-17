@@ -5,6 +5,10 @@ tags:
   - Communication
   - messaging
 date: 2024-11-19 11:00 -0500
+header:
+  overlay_image: /images/overlays/unsplash/volodymyr-hryshchenko-V5vqWC9gyEU-unsplash.jpg
+  overlay_filter: 0.5
+  caption: "Photo credit: [**Volodymyr Hryshchenko @ Unsplash**](https://unsplash.com/@lunarts?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
 ---
 In many organizations, natural communication pathways start to form. Something happens or information needs to be sent out or a decision needs to be made, and you fire up a Teams window or Slack group message and invite the usual suspects.
 
