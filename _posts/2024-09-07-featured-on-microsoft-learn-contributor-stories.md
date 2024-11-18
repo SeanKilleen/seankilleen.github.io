@@ -1,5 +1,5 @@
 ---
-title: Featured on Microsoft Learn Contributor Stories!
+title: "ICMYI: Featured on Microsoft Learn Contributor Stories!"
 comments: true
 tags:
   - OSS
