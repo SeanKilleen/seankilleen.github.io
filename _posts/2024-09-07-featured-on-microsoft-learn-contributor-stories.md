@@ -22,6 +22,6 @@ It went down like this:
 
 This made the impact that Randolph was looking for, and they were happy enough with that impact to nominate me, which came as a very pleasant surprise.
 
-Don't forget that small contributions can still make an impact, and that OSS isn't just code.
+A good reminder that small contributions can still make an impact, and that OSS isn't just code.
 
 [^1]: "There are no small parts; only small actors." -Konstantin Stanislavski
