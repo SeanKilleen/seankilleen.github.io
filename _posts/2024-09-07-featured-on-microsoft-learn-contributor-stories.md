@@ -6,7 +6,7 @@ tags:
   - dotnet
   - docs
   - recognition
-date: 2024-09-07 15:09 -0400
+date: 2024-11-17 19:10 -0500
 ---
 Microsoft was kind enough to [feature me in a Microsoft Learn Contributor Story](https://aka.ms/contributor-stories/sean-killeen)!
 
