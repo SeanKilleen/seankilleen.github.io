@@ -6,7 +6,7 @@ tags:
   - dependencies
   - dependency-management
   - devops
-date: 2024-10-13 09:10 -0400
+date: 2024-12-28 11:00 -0500
 summary: No dependency left behind.
 ---
 ## Background
