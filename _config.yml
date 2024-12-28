@@ -123,7 +123,7 @@ author:
   email: "SeanKilleen@gmail.com"
   links:
     - label: "Bluesky"
-      icon: "fab fa-bluesky"
+      icon: "fab fa-fw fa-bluesky"
       url: "https://bsky.app/profile/seankilleen.com"
     - label: "Mastodon"
       icon: "fab fa-fw fa-mastodon"
