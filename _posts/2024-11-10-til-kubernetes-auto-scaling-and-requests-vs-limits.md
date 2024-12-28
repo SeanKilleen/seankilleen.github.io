@@ -26,21 +26,20 @@ What gives?
 I made the math make sense.
 
 If I request `150mi` for each pod, the total requested across all 3 pods is `450mi`.
- 
 
 I looked up the other values. 145 + 118 + 115 = 378, which is 84% of 445.
 
 ## But...why? (the Part Where I Learn More About Requests vs Limits)
 
-I got a great answer on the Rands Slack -- thanks to [Ryan Belgrave](https://linkedin.com/in/rbelgrave). In retrospect, it makes sense, but I had the wrong mental model.
+I got a great answer on the Rands Slack -- thanks to [Ryan Belgrave](https://linkedin.com/in/rbelgrave). In retrospect, it makes sense -- I had the wrong mental model.
 
 In my mind, I was thinking that a pod would ask for more resources, and then this would change its utilization rate, affecting auto-scaling. To do it based on the resource request alone seemed too inflexible.
 
-But where I was going wrong is that the limit, in a sense, doesn't matter. (Insert Lindsay Lohan gif here). The request is what the pod is guaranteed to have, but if it asks for more memory and none is available, the container will close with an OOM exception.
+But where I was going wrong is that the limit, in a sense, doesn't matter. (Insert Lindsay Lohan gif here). The request defines what the pod is should have to run, but if it asks for more memory and none is available, the container will close with an OOM exception.
 
 There probably could be room here to improve horizontal pod auto-scaling to take into account the utilization based on currently granted resources. But I assume there's a very good reason it's not that way already.
 
-So if you need guarantees for your auto-scaling, you need to do it based on requests. What will happen, generally speaking, is:
+So, if you need guarantees for your auto-scaling, you need to do it based on requests. What will happen, generally speaking, is:
 
 * Memory usage hits the threshold
 * Pods horizontally scale and continue to do so as needed
