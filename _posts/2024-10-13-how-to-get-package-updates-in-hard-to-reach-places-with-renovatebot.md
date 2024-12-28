@@ -8,7 +8,7 @@ tags:
   - devops
 date: 2024-10-13 09:10 -0400
 ---
-## Background 
+## Background
 
 I've adopted RenovateBot in many of my repositories. I've found it easier to work with than GitHub's own Dependabot. Highly recommend checking them and [Mend.io](https://mend.io) (their parent company) out.
 
