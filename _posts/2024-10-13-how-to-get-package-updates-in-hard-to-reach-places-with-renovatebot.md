@@ -63,13 +63,23 @@ Similarly, NUnit makes use of this for updating the version of NUnit used in one
   ]
 ```
 
-And here's it working to keep a container up to date in another project:
+And here's it working to keep a container tag up to date from within C# files:
 
-TODO
-
-## Let's See the Results!
-
-TODO
+```json
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": [
+        ".*\\.cs"
+      ],
+      "matchStrings": [
+        ".WithImage\\(\\\"ironsoftwareofficial\\/ironpdfengine:(?<currentValue>.*?)\\\"\\)"
+      ],
+      "depNameTemplate": "ironsoftwareofficial/ironpdfengine",
+      "datasourceTemplate": "docker"
+    }
+  ]
+```
 
 ## In Summary
 
