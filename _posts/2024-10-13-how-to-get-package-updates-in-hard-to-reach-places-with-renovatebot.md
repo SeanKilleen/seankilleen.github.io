@@ -45,9 +45,23 @@ Let's break it down. This:
 * The dependency name is hard-coded to `docfx` in this case
 * And we say that we're using the nuget package system.
 
-Similarly, NUnit makes use of this for updating a version in C#:
+Similarly, NUnit makes use of this for updating the version of NUnit used in one of our GitHub actions:
 
-TODO
+```json
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "^\\.github\\/workflows\\/build-process\\.yml$"
+      ],
+      "matchStrings": [
+        "NUNIT_VERSION_FOR_API_DOCS: \"(?<currentValue>.*?)\""
+      ],
+      "depNameTemplate": "NUnit",
+      "datasourceTemplate": "nuget"
+    }
+  ]
+```
 
 And here's it working to keep a container up to date in another project:
 
