@@ -7,7 +7,7 @@ tags:
   - dependency-management
   - devops
 date: 2024-12-30 09:00 -0500
-summary: No dependency left behind.
+excerpt: No dependency left behind.
 header:
   overlay_image: /images/overlays/unsplash/luke-heibert-gthSas4oYC0-unsplash.jpg
   overlay_filter: 0.5
