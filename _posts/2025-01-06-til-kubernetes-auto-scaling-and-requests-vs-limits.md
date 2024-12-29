@@ -6,6 +6,10 @@ tags:
   - kubernetes
   - devops
 date: 2025-01-06 09:00 -0500
+header:
+  overlay_image: /images/overlays/unsplash/mar-bocatcat-vi3fXw_6ySs-unsplash.jpg
+  overlay_filter: 0.5
+  caption: "Photo credit: [**Mar Bocatcat @ Unsplash**](https://unsplash.com/@marbocatcat?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
 # cSpell:words Belgrave
 ---
 I recently revised an incorrect mental model I had about Kubernetes as part of a strange experience, and I figured I'd share here in case it helps someone else.
