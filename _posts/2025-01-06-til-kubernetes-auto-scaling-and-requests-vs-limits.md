@@ -5,7 +5,7 @@ tags:
   - k8s
   - kubernetes
   - devops
-date: 2024-11-10 14:20 -0500
+date: 2025-01-06 09:00 -0500
 # cSpell:words Belgrave
 ---
 I recently revised an incorrect mental model I had about Kubernetes as part of a strange experience, and I figured I'd share here in case it helps someone else.
