@@ -8,6 +8,10 @@ tags:
   - devops
 date: 2024-12-28 11:00 -0500
 summary: No dependency left behind.
+header:
+  overlay_image: /images/overlays/unsplash/luke-heibert-gthSas4oYC0-unsplash.jpg
+  overlay_filter: 0.5
+  caption: "Photo credit: [**Luke Heibert @ Unsplash**](https://unsplash.com/@lukeheibert?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
 ---
 ## Background
 
