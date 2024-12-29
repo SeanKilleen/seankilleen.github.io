@@ -32,13 +32,13 @@ I looked up the other values. 145 + 118 + 115 = 378, which is 84% of 445.
 
 ## But...Why? (the Part Where I Learn More about Requests vs Limits)
 
-I got a great answer on the Rands Slack -- thanks to [Ryan Belgrave](https://linkedin.com/in/rbelgrave). In retrospect, it makes sense -- I had the wrong mental model.
+I got a great answer on the [Rands Leadership Slack](https://randsinrepose.com/welcome-to-rands-leadership-slack/) -- thanks to [Ryan Belgrave](https://linkedin.com/in/rbelgrave). In retrospect, it makes sense -- I had the wrong mental model.
 
 In my mind, I was thinking that a pod would ask for more resources, and then this would change its utilization rate, affecting auto-scaling. To do it based on the resource request alone seemed too inflexible.
 
-But where I was going wrong is that the limit, in a sense, doesn't matter. (Insert Lindsay Lohan gif here). The request defines what the pod is should have to run, but if it asks for more memory and none is available, the container will close with an OOM exception.
+But where I was going wrong is that the limit, in a sense, doesn't matter. (Insert Lindsay Lohan gif here). The request defines what the pod should have to run, but if it asks for more memory and none is available, the container will close with an OOM exception.
 
-There probably could be room here to improve horizontal pod auto-scaling to take into account the utilization based on currently granted resources. But I assume there's a very good reason it's not that way already.
+There probably could be room here to improve horizontal pod auto-scaling to take into account the utilization based on currently granted resources. But I assume there's a very good reason it's not that way already, decided by people much better at this than I am.
 
 So, if you need guarantees for your auto-scaling, you need to do it based on requests. What will happen, generally speaking, is:
 
@@ -50,4 +50,4 @@ For this reason, a lot of people advocate for guaranteed QoS -- which is to say,
 
 ## I'd Love Your Thoughts!
 
-How do you strategize your pod resource requests and limits? Let us know in the comments!
+How do you strategize your pod resource requests and limits? Let me know in the comments!
