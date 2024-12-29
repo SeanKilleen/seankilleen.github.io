@@ -30,7 +30,7 @@ If I request `150mi` for each pod, the total requested across all 3 pods is `450
 
 I looked up the other values. 145 + 118 + 115 = 378, which is 84% of 445.
 
-## But...why? (the Part Where I Learn More About Requests vs Limits)
+## But...Why? (the Part Where I Learn More about Requests vs Limits)
 
 I got a great answer on the Rands Slack -- thanks to [Ryan Belgrave](https://linkedin.com/in/rbelgrave). In retrospect, it makes sense -- I had the wrong mental model.
 
