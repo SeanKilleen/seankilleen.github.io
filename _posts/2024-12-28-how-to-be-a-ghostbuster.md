@@ -27,7 +27,7 @@ This means interacting with the people who report to you.
 * It means having hard conversations when an expectation isn't being met
 * It means being visible to team members and asking for feedback for yourself and other teammates that enables the previously mentioned activities.
 
-## Work Shouldn't be Invisible 
+## Work Shouldn't be Invisible
 
 * A pull request system makes it clear who is making contributions to the codebase and what they are
 * As much as I previously didn't love ticketing systems (GitHub issues, Jira, etc.) they are a very effective way to show the progress of work (including non-code work) and can be implemented in ways that aren't painful to use.
@@ -35,7 +35,7 @@ This means interacting with the people who report to you.
 
 If there isn't some kind of an artifact or byproduct of the work that's been done, oftentimes no work has been done at all.[^2]
 
-## It Helps if You're Working on Things That Matter 
+## It Helps if You're Working on Things That Matter
 
 Ghost engineers hide in the places where work doesn't matter enough to be accountable for it.
 
@@ -45,14 +45,14 @@ If people and teams can be working on things that don't have enough impact to ra
 
 I was a little concerned about the way the study seemed to frame the contributions of engineers around specifically commits. So I'd like to push back on those being the primary measure of engineering work / effectiveness. But the other activities can be checked as well:
 
-* If devs are pairing/mobbing and therefore not a part of the commit, observe a mob session and see how folks participate. 
+* If devs are pairing/mobbing and therefore not a part of the commit, observe a mob session and see how folks participate.
 * If folks are doing docs editing or analysis, make that work visible via tickets or similar systems, or look for the modification history of documents / wikis.
 
 My point is -- if you're collecting stats on folks, just remember there's more than one kind of stat to check. But you can still check them
 
 ## Almost all of the above can be made public!
 
-None of these things need to be hidden from teams or your organization. Your team should embrace transparency as an experiment -- if people still actively resist, it's worth digging deeper. 
+None of these things need to be hidden from teams or your organization. Your team should embrace transparency as an experiment -- if people still actively resist, it's worth digging deeper.
 
 Examples of transparency from my current team:
 
