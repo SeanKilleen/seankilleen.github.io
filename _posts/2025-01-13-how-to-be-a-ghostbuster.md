@@ -6,6 +6,10 @@ tags:
   - culture
   - leadership
 date: 2025-01-13 09:00 -0500
+header:
+  overlay_image: /images/overlays/unsplash/winston-chen-N4ZB3rqKcuo-unsplash.jpg
+  overlay_filter: 0.5
+  caption: "Photo credit: [**Winston Chen @ Unsplash**](https://unsplash.com/@winstonchen?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
 ---
 According to some research that was [announced in November](https://x.com/yegordb/status/1859290734257635439), "Ghost developers" are 0.1x[^1] devs who barely do any work, and may have multiple jobs. Apparently it's as high as 9% according to the research. I saw this when [Aaron Stannard](https://twitter.com/Aaronontheweb) pointed it out [in a LinkedIn post](https://www.linkedin.com/posts/aaronstannard_finally-we-have-a-term-for-the-green-commit-activity-7265391640683397121-KRW4).
 
