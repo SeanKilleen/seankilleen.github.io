@@ -6,16 +6,17 @@ tags:
   - kubernetes
   - devops
 date: 2024-11-10 14:20 -0500
+# cSpell:words Belgrave
 ---
-I recently revised an incorrect mental model I had about Kubernetes as part of a strange experience, and I figured I'd share here in case it helps someone else. 
+I recently revised an incorrect mental model I had about Kubernetes as part of a strange experience, and I figured I'd share here in case it helps someone else.
 
 ## Background / Challenge
 
-* I have a Horizontal Pod Autoscaler set to scale at 80% CPU or 80% RAM, with a minimum of 2 pods and a max of 5.
+* I have a Horizontal Pod Auto-scaler set to scale at 80% CPU or 80% RAM, with a minimum of 2 pods and a max of 5.
 * I've given these pods limits of 1GB RAM (throwing some more resources at a problem temporarily :wink: )
 * I recently saw my HPA set the pod count to 3. So I'm curious (maybe these things are just hogging RAM?)
 * I see the RAM threshold as 84/80 on the HPA, even with 3 running
-* However, I check our instance of Goldilocks which is giving us recommendations from a vertical pod autoscaler (in observe-only mode) -- and it's telling me I can set our resources way lower.
+* However, I check our instance of Goldilocks which is giving us recommendations from a vertical pod auto-scaler (in observe-only mode) -- and it's telling me I can set our resources way lower.
 * So I run `kubectl top pods --all-namespaces --sort-by=memory`
  ...and I see the pods are using 145mi, 118mi, 115mi -- far from the 1024mi I specified
 
