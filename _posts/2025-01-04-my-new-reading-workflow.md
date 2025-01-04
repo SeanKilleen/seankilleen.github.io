@@ -1,6 +1,10 @@
 ---
 title: My New Reading Workflow
 comments: true
+tags:
+  - personal
+  - productivity
+  - reading
 date: 2025-01-04 16:58 -0500
 ---
 I absolutely love reading. Lately, a few things have been happening:
@@ -23,4 +27,6 @@ So, here’s what I do now!
 * As the opportunity presents itself, I read the articles on my Kindle. I take notes and highlights, just as I would in a normal Kindle book.
 * I review the notes occasionally and create tasks.
 
-This process has brought me so much joy in the few weeks I’ve been using it. I’m reading more, looking at my phone less, and feeling better about reading things I save. It energized me to go through literal years of saved articles in Pocket. I have several 10-article books’ worth of content to get through at a given time.
+This process has brought me so much joy in the few weeks I’ve been using it. I’m reading more, looking at my phone less, and feeling better about reading things I save. It energized me to go through literal years of saved articles in Pocket. I have several 10-article books’ worth of content to get through at a given time. Forcing myself to read the articles in order like a book has been a great way to get my brain to slow down and stop trying to skim everything. And the random nature of the process means that I get a variety of content from a long time range, which I appreciate.
+
+If you like reading as much as I do, I hope this might delight you as well. How do you set up your reading flow? Let me know in the comments!
