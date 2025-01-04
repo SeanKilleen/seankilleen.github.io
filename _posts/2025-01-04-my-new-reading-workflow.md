@@ -1,0 +1,22 @@
+---
+title: My New Reading Workflow
+comments: true
+date: 2025-01-04 16:58 -0500
+---
+I absolutely love reading. Lately, a few things have been happening:
+
+* I’ve been pretty busy, which has stopped me from feeling like I could really dig into something long-form
+* I’ve been looking at a screen too much, so my eyes have been tired at times when I might otherwise read something on my phone
+* My phone has offered too many distractions and I felt like I wasn’t fully engaging with what I was reading.
+* My unread articles in Pocket had been piling up to the point where it started to feel silly to save them.
+
+Recently, I discovered an app, <https://p2k.co>, and revamped my workflow in a way that is absolutely delightful to me. I’ve read hundreds of articles, I feel better before bed, my eyes have gotten a break, and I’ve felt better about engaging with things.
+
+So, here’s what I do now!
+
+## My Current Short-form Reading Process
+
+* All my incoming RSS Feeds and newsletters come into [Feedly](https://feedly.com), which I happily pay for.
+* Feedly integrates with pocket. When I see an article I want to save, I click a button on the article to save it to Pocket. I tag it with “kindle” if I know I’ll want to read it on my Kindle.
+* I read through articles in Pocket. Where it seems I want to read it in a more relaxed / focused space and it’s possible to do so, I tag the article with “kindle”.
+* I have a process set up in P2K (which stands for Pocket to Kindle). Every day, it bundles up 10 random Pocket saves that are tagged “kindle”, creates a book, and 
