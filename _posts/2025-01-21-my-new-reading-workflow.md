@@ -6,6 +6,7 @@ tags:
   - productivity
   - reading
 date: 2025-01-21 09:00 -0500
+excerpt: More delight in a personal process.
 header:
   overlay_image: /images/overlays/unsplash/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg
   overlay_filter: 0.5
