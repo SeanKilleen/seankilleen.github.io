@@ -6,6 +6,10 @@ tags:
   - productivity
   - reading
 date: 2025-01-21 09:00 -0500
+header:
+  overlay_image: /images/overlays/unsplash/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg
+  overlay_filter: 0.5
+  caption: "Photo credit: [**Patrick Tomasso @ Unsplash**](https://unsplash.com/@impatrickt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
 ---
 I absolutely love reading. Lately, a few things have been happening:
 
