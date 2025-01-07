@@ -15,7 +15,7 @@ header:
 ---
 ## Background
 
-I've adopted RenovateBot in many of my repositories. I've found it easier to work with than GitHub's own Dependabot. Highly recommend checking them and [Mend.io](https://mend.io) (their parent company) out.
+I've adopted [RenovateBot](https://docs.renovatebot.com/) in many of my repositories. I've found it easier to work with than GitHub's own Dependabot. Highly recommend checking them and [Mend.io](https://mend.io) (their parent company) out.
 
 A challenge I've had in a few places has been that package updater tools aren't always able to detect every location for packages. For example:
 
