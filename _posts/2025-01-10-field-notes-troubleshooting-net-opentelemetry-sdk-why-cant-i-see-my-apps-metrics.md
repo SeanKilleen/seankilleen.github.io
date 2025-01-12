@@ -62,7 +62,7 @@ receivers:
       http:
 ```
 
-to: 
+to:
 
 ```yaml
 receivers:
