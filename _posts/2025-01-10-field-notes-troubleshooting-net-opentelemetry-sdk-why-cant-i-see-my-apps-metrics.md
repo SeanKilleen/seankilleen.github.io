@@ -29,7 +29,7 @@ But I still saw nothing.
 
 ## OpenTelemetry .NET SDK Self-Diagnosis to the Rescue
 
-Fortunately, I found this troubleshooting document(https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry/README.md#troubleshooting) that describes how to get some OTel SDK self-diagnostics in place.
+Fortunately, I found [this troubleshooting document](https://github.com/open-telemetry/opentelemetry-dotnet/blob/main/src/OpenTelemetry/README.md#troubleshooting) that describes how to get some OTel SDK self-diagnostics in place.
 
 * Open a terminal session in the container -- this should open in the app's working directory (`/app` in my case)
 * `echo '{"LogDirectory":".","FileSize":32768,"LogLevel":"Verbose"}' >> OTEL_DIAGNOSTICS.json` creates a JSON file that tells the SDK to output diagnostics
@@ -40,7 +40,9 @@ At this point, I saw a file called `dotnet.572.log` appear. I had diagnostics!
 
 Now that I had a diagnostic log, I could easily see the issue:
 
-> 2025-01-10T03:50:19.5070301Z:Exporter failed send data to collector to {0} endpoint. Data will not be sent. Exception: {1}{http://host.docker.internal:4317/}{Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: An HTTP/2 connection could not be established because the server did not complete the HTTP/2 handshake. (InvalidResponse) HttpIOException: An HTTP/2 connection could not be established because the server did not complete the HTTP/2 handshake. (InvalidResponse) HttpIOException: The response ended prematurely while waiting for the next frame from the server. (ResponseEnded)", DebugException="System.Net.Http.HttpRequestException: An HTTP/2 connection could not be established because the server did not complete the HTTP/2 handshake. (InvalidResponse)")
+```console
+2025-01-10T03:50:19.5070301Z:Exporter failed send data to collector to {0} endpoint. Data will not be sent. Exception: {1}{http://host.docker.internal:4317/}{Grpc.Core.RpcException: Status(StatusCode="Unavailable", Detail="Error starting gRPC call. HttpRequestException: An HTTP/2 connection could not be established because the server did not complete the HTTP/2 handshake. (InvalidResponse) HttpIOException: An HTTP/2 connection could not be established because the server did not complete the HTTP/2 handshake. (InvalidResponse) HttpIOException: The response ended prematurely while waiting for the next frame from the server. (ResponseEnded)", DebugException="System.Net.Http.HttpRequestException: An HTTP/2 connection could not be established because the server did not complete the HTTP/2 handshake. (InvalidResponse)")
+```
 
 Well, that's not great! However, a quick search led me to a GitHub issue that could help: <https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/33896>
 
