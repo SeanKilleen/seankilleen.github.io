@@ -1,15 +1,22 @@
 ---
 title: Farewell, SpecFlow. Gáspár Nagy Saves the Day with Reqnroll!
 comments: true
+tags:
+  - OSS
+  - SpecFlow
+  - .net
+  - dotnet
+  - testing
+  - community
 date: 2025-01-12 09:34 -0500
 ---
 This is a quick appreciation post.
 
 I became enamored with the idea of [gherkin-based](https://cucumber.io/docs/gherkin/reference) testing and writing human-readable examples that translated to code a long time ago. I think it was the excellent book on [Specification by Example](https://www.manning.com/books/specification-by-example) that first got me really thinking about it.
 
-One of the biggest successes in my career came from using this technique. We were running a retirement benefit system with a ton of complex calculations where the stakes were high. We had to make some major changes, and even though there were automated tests, those weren't understandable (understandably!) to the actuarials and business professionals who were responsible for the requirements. They wanted 9 months to test the changes, because the stakes were that high. Instead, we were able to work toward a ubiquitous language for describing the actions that this calculation logic took. Once those were in place, we published the specs that we had applied, and invited the business folks to come up with as many exhaustive examples as they could. We were able to easily incorporate new examples. In the end, we made changes with a high degree of shared confidence and saved the entirety of that designated testing time.
+One of the biggest successes in my career came from using this technique. We were running a retirement benefit system with a ton of complex calculations where the stakes were high. We had to make some major changes, and even though there were automated tests, those weren't understandable (understandably!) to the business professionals who were responsible for the requirements. They wanted 9 months to test the changes, because the stakes were that high. Instead, we were able to work toward a ubiquitous language for describing the actions that this calculation logic took. Once those were in place, we published the specs that we had applied, and invited the business folks to come up with as many exhaustive examples as they could. We were able to easily incorporate new examples. In the end, we made changes with a high degree of shared confidence and saved the entirety of that designated testing time. I was hooked.
 
-The de facto tool for accomplishing this in .NET for a long time was SpecFlow.
+The de facto tool for accomplishing this in .NET for a long time was SpecFlow. It was easy to use, had great tooling, great docs, and a really helpful team.
 
 ## SpecFlow: A Tragic OSS tale
 
@@ -23,3 +30,22 @@ Tricentis then basically slapped the community in the face. Contributions and fo
 
 So, in a tale as old as time, an OSS project that seemed to have a great path to commercialization was instead rotted by corporate interests.
 
+## Enter Gáspár Nagy and Reqnroll
+
+Gáspár was one of the prior creators of SpecFlow. He saw the stagnation in the repository and the writing on the wall a year in advance. Rather than writing it off or waiting, he got to work on behalf of the community. He created [Reqnroll](https://reqnroll.net/)
+
+It is _amazing_ how easy it was for me to switch my current org's codebase from SpecFlow to Reqnroll -- a lot of care was taken for users to achieve that. The whole thing took me around 20 minutes.
+
+## With Great OSS comes Great Responsibility
+
+I didn't notice what was happening with SpecFlow because I was in "consumer mode" with it. I'd become complacent and took the tool for granted. I had stopped checking in on the GitHub repo. I wasn't following the creators online as closely as I should have. So I didn't see what was happening and couldn't contribute. This was less than ideal from both and community perspective and even a supply chain perspective for my organization.
+
+I'm trying to fix that this go-round. I'm following the creators, I'm subscribed to the repo, I'm meandering my way through a PR, and I'm trying to pay attention to where help is needed. I'm also looking to create some donation  infrastructure in my current organization.
+
+## In Closing: Gratitude
+
+I am grateful to SpecFlow for the time was here and what it enabled me and others to accomplish for so long.
+
+I am beyond grateful to Gáspár for saving this important functionality for the community and building a bridge while many of us hadn't even realized the last one was burning.
+
+And I am grateful for the reminder, once again, that if we want OSS community, we have to build it and sustain it.
