@@ -32,11 +32,11 @@ So, in a tale as old as time, an OSS project that seemed to have a great path to
 
 ## Enter Gáspár Nagy and Reqnroll
 
-Gáspár was one of the prior creators of SpecFlow. He saw the stagnation in the repository and the writing on the wall a year in advance. Rather than writing it off or waiting, he got to work on behalf of the community. He created [Reqnroll](https://reqnroll.net/)
+[Gáspár Nagy](https://gasparnagy.com/) was one of the prior creators of SpecFlow. He saw the stagnation in the repository and the writing on the wall a year in advance. Rather than writing it off or waiting, he got to work on behalf of the community. He created [Reqnroll](https://reqnroll.net/) to fill the gap, and it does so very well.
 
 It is _amazing_ how easy it was for me to switch my current org's codebase from SpecFlow to Reqnroll -- a lot of care was taken for users to achieve that. The whole thing took me around 20 minutes.
 
-## With Great OSS comes Great Responsibility
+## With Great OSS Comes Great Responsibility
 
 I didn't notice what was happening with SpecFlow because I was in "consumer mode" with it. I'd become complacent and took the tool for granted. I had stopped checking in on the GitHub repo. I wasn't following the creators online as closely as I should have. So I didn't see what was happening and couldn't contribute. This was less than ideal from both and community perspective and even a supply chain perspective for my organization.
 
