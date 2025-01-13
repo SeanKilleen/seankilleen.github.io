@@ -5,7 +5,7 @@ tags:
   - personal
   - productivity
   - reading
-date: 2025-01-21 09:00 -0500
+date: 2025-01-20 09:00 -0500
 excerpt: More delight in a personal process.
 header:
   overlay_image: /images/overlays/unsplash/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg
