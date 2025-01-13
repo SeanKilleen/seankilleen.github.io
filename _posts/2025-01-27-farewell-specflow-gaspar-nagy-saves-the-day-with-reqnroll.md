@@ -9,6 +9,7 @@ tags:
   - testing
   - community
 date: 2025-01-27 09:00 -0500
+# cSpell:words Tricentis,Gáspár,Reqnroll
 ---
 This is a quick appreciation post.
 
