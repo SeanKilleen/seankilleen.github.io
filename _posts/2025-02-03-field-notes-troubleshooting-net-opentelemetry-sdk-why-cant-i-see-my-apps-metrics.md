@@ -9,7 +9,7 @@ tags:
   - otel
   - otel-collector
   - docker
-date: 2025-01-09 23:24 -0500
+date: 2025-02-03 09:00 -0500
 ---
 ## Challenge
 
