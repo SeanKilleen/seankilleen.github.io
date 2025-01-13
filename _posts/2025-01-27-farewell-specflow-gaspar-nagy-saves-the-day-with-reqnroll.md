@@ -8,7 +8,7 @@ tags:
   - dotnet
   - testing
   - community
-date: 2025-01-12 09:34 -0500
+date: 2025-01-27 09:00 -0500
 ---
 This is a quick appreciation post.
 
