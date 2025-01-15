@@ -7,7 +7,7 @@ tags:
   - oss
 date: 2025-01-14 22:12 -0500
 ---
-Recently, [Fluent Assertions changed to a dual-license](https://github.com/fluentassertions/fluentassertions/pull/2943) in its latest v8.0 release, with a paid license for commercial use. Unsurprisingly, people had Lots Of Feelings™️about this. I wanted to walk through some things I'm seeing/hearing and put my perspective on it.
+Recently, [Fluent Assertions changed to a dual-license](https://github.com/fluentassertions/fluentassertions/pull/2943) in its latest v8.0 release, with a paid license for commercial use. Unsurprisingly, people had Lots Of Feelings™️ about this. I wanted to walk through some things I'm seeing/hearing and put my perspective on it.
 
 ## My Thoughts on the Change
 
@@ -33,6 +33,8 @@ With that information, I'll ask:
 * Do I feel like license is such that I can abide it without causing risk for our organization? Custom licenses do make this a little more difficult.
 
 I won't make this decision alone. I'll ask the team their input and make sure I have the whole story.
+
+UPDATE: The team did decide to remove FluentAssertions rather than pay the licensing, which I think is a fine and reasonable outcome. But nobody was mad the licensing was asked for, or that getting rid of it will be work. We got a free thing for a while, the free thing was no longer free, and so we made our choice.
 
 ## Reactions to Other Thoughts I'm Seeing on the Change
 
