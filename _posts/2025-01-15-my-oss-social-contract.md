@@ -17,7 +17,7 @@ As a possible participant in the OSS ecosystem, I feel we have three possible re
 * Time
 * Gratitude/Grace
 
-To be a participant in an OSS project, you must be contributing one of those three bullet points. You might contribute money in the form of donations/sponsorship/licenses (if requested). You might contribute time in the form of pull requests, documentation, thoughtful discussion, or picking up administrative work like triaging issues (if requested). Or, you can be grateful for all the impact you've received from something despite it not being appropriately supported, and understanding if the direction of that changes. And you can extend grace to OSS authors when they do something you disagree with.
+To be a participant in an OSS project, you must be contributing one of those three items. You might contribute money in the form of donations/sponsorship/licenses (if requested). You might contribute time in the form of pull requests, documentation, thoughtful discussion, or picking up administrative work like triaging issues (if requested). Or, you can be grateful for all the impact you've received from something despite it not being appropriately supported, and understanding if the direction of that changes. And you can extend grace to OSS authors when they do something you disagree with.
 
 So often, people and organizations are unwilling to contribute time/money, and somehow still exempt themselves from the last bullet point.
 
