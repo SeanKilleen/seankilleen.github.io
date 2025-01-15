@@ -24,7 +24,7 @@ With a library like this, it seems like a pretty straight-forward evaluation.
 * Total licensing cost: $130 times the number of developers who are in scope
 * That cost in "dev hours": total licensing cost / rough hourly rate of a dev
 * Add 1-2 more hours because dealing with keeping up with licensing is not a value-add use of my time and feels like a paper cut.
-* How long would it take to replace it in dev hours?
+* How long would it take to remove/replace it, in dev hours?
 
 With that information, I'll ask:
 
@@ -34,3 +34,5 @@ With that information, I'll ask:
 I won't make this decision alone. I'll ask the team their input and make sure I have the whole story.
 
 ## Other Thoughts I'm Seeing on the Change
+
+Going to summarize from comments I'm seeing on [the pull request that changes the licensing](https://github.com/fluentassertions/fluentassertions/pull/2943)
