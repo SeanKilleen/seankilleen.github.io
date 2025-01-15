@@ -7,11 +7,11 @@ tags:
   - culture
 date: 2025-01-15 14:08 -0500
 ---
-I've spoken about this in fragments online and eluded to it in other blog posts, so I figured I'd spell it out here.
+I've spoken about this in fragments online and [eluded to it in other blog posts](https://seankilleen.com/2023/08/on-moq-and-our-part-in-the-oss-sustainability-social-contract/), so I figured I'd spell it out here.
 
 ## Resources Within the OSS Ecosystem
 
-As a possible participant in the OSS ecosystem, I feel you have three possible resources:
+As a possible participant in the OSS ecosystem, I feel we have three possible resources:
 
 * Money
 * Time
