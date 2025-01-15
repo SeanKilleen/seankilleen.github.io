@@ -51,3 +51,6 @@ My perspective on the OSS social contract allowed me to do a few things in those
 * Channel my disappointment / inconvenience in a productive way
 * Remain thankful for -- and thus aware of -- all the value and impact I've been lucky to receive, for free, because someone else cared enough to nurture that into being.
 
+## Why Did I Write This?
+
+I don't know, honestly. So many of us have seen these situations play out time and time again. I guess if I can change even one person's perspective on this and bend the arc away from consumption and toward contribution, I'll consider it worthwhile.
