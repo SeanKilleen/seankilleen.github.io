@@ -32,7 +32,7 @@ But so often, as we've seen, it is the sense that an OSS author's purpose is to 
 
 But here's the thing -- if you're not contributing your time or your money to an OSS project, your say in that project is exactly zero. And if you're not responding to a major change with gratitude as you move away from the tool, or grace as you work through the issue, you're not a member of that OSS project community, and aren't acting as an OSS community member at all. You're acting like a leech, which makes you part of the problem -- and anyone invested in a solution would be best served by ignoring you or shutting down your points.
 
-And in terms of the supply chain, I think [Thomas Depierre sums it up well in his blog post "I am not a supplier"](https://www.softwaremaxims.com/blog/not-a-supplier):
+In terms of the supply chain, I think [Thomas Depierre sums it up well in his blog post "I am not a supplier"](https://www.softwaremaxims.com/blog/not-a-supplier):
 
 > Now, I am more than happy to become a supplier. You want me to work a certain way, I am more than happy to do it. But to do that, I am going to have to become a supplier. Which means you are going to have to start to pay me. A fair price, that we can negotiate. Under a different license.
 >
@@ -50,3 +50,4 @@ My perspective on the OSS social contract allowed me to do a few things in those
 * Look to support OSS in more ways, proactively, before these things come up
 * Channel my disappointment / inconvenience in a productive way
 * Remain thankful for -- and thus aware of -- all the value and impact I've been lucky to receive, for free, because someone else cared enough to nurture that into being.
+
