@@ -5,7 +5,11 @@ tags:
   - dotnet
   - oss
   - culture
-date: 2025-01-15 14:08 -0500
+date: 2025-01-16 09:00 -0500
+header:
+  overlay_image: /images/overlays/unsplash/neil-thomas-SIU1Glk6v5k-unsplash.jpg
+  overlay_filter: 0.5
+  caption: "Photo credit: [**Neil Thomas @ Unsplash**](https://unsplash.com/@finleydesign?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)"
 #cSpell:ignore Depierre
 ---
 I've spoken about this in fragments online and [eluded to it in other blog posts](https://seankilleen.com/2023/08/on-moq-and-our-part-in-the-oss-sustainability-social-contract/), so I figured I'd spell it out here.
