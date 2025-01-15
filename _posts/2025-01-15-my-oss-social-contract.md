@@ -40,8 +40,8 @@ And in terms of the supply chain, I think [Thomas Depierre sums it up well in hi
 
 ## How This Plays Out for Me
 
-* I try to contribute where I can, to projects and people I care about or appreciate and want to support. It will never be as much as I want; I too have to balance my priorities in life across my personal/family life, work, and extracurricular activities.
-* When Moq changed its approach to seeking donations using SponsorLink, I [respected what they were trying to accomplish](https://seankilleen.com/2023/08/on-moq-and-our-part-in-the-oss-sustainability-social-contract/). Our team at work evaluated the change, and felt fine with sticking with the project unless something made it untenable. To that point, I hadn't contributed. After that, I made a donation.
+* I try to contribute where I can, to projects and people I care about or appreciate and want to support. It will never be as much as I want; I, too, have to balance my priorities in life across my personal/family life, work, and extracurricular activities.
+* When Moq changed its approach to seeking donations using SponsorLink, I [respected what they were trying to accomplish](https://seankilleen.com/2023/08/on-moq-and-our-part-in-the-oss-sustainability-social-contract/). Our team at work evaluated the change, and felt fine with sticking with the project unless something made it untenable. To that point, I hadn't contributed to the project. After that, I made a donation.
 * When Fluent Assertions changed to a dual license that required a license purchase for commercial use, our team evaluated it as a product. We came to the conclusion that the value we were getting didn't justify the proposed licensing cost, so we are choosing to remove it. But we're not mad at having to make the choice, because we didn't contribute anything to that point, and it's only fair for the author to consider what they need.
 
 My perspective on the OSS social contract allowed me to do a few things in those situations:
