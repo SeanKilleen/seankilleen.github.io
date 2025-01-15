@@ -23,13 +23,13 @@ So often, people and organizations are unwilling to contribute time/money, and s
 
 ## Why Do People Forget About Such an Important Resource?
 
-Perhaps they've built a reputation for themselves within their org as a person who gets done well (in part because of a tool) or who knows tools to help the organization, and you don't want that reputation to be called into question. Perhaps they have used something for so long that they come to see it (incorrectly) as their own. Perhaps they simply don't like the feeling of change and don't know where to place that emotion. Perhaps they do not like to see their own lack of contribution to the project reflected back to them.
+There could be a lot of reasons that people forget about gratitude. Perhaps they've built a reputation for themselves within their org as a person who gets done well (in part because of a tool) or who knows tools to help the organization, and they don't want that reputation to be called into question. Perhaps they have used something for so long that they come to see it (incorrectly) as their own. Perhaps they simply don't like the feeling of change and don't know where to place that emotion. Perhaps they do not like to see their own lack of contribution to the project reflected back to them in the situation they now face.
 
 But so often, as we've seen, it is the sense that an OSS author's purpose is to create a free lunch for everyone else, making sure that nobody else has to think about it too hard, while simultaneously receiving very little help/support.
 
 ## If You're Not in a Community, Your Opinion on its Direction is Irrelevant.
 
-Here's thing -- if you're not contributing your time or your money to an OSS project, your say in that project is exactly zero. And if you're not responding to a major change with gratitude as you move away from the tool, or grace as you work through the issue, you're not a member of that OSS project community, and aren't acting as an OSS community member at all. You're acting like a leech, which makes part of the problem -- and anyone invested in a solution would be best served by ignoring you or shutting down your points.
+But here's the thing -- if you're not contributing your time or your money to an OSS project, your say in that project is exactly zero. And if you're not responding to a major change with gratitude as you move away from the tool, or grace as you work through the issue, you're not a member of that OSS project community, and aren't acting as an OSS community member at all. You're acting like a leech, which makes you part of the problem -- and anyone invested in a solution would be best served by ignoring you or shutting down your points.
 
 ## How This Plays Out for Me
 
