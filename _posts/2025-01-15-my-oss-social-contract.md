@@ -30,7 +30,7 @@ But so often, as we've seen, it is the sense that an OSS author's purpose is to 
 
 ## If You're Not in a Community, Your Opinion on its Direction is Irrelevant.
 
-But here's the thing -- if you're not contributing your time or your money to an OSS project, your say in that project is exactly zero. And if you're not responding to a major change with gratitude as you move away from the tool, or grace as you work through the issue, you're not a member of that OSS project community, and aren't acting as an OSS community member at all. You're acting like a leech, which makes you part of the problem -- and anyone invested in a solution would be best served by ignoring you or shutting down your points.
+But here's the thing -- if you're not contributing your time or your money to an OSS project, your say in that project is exactly zero. And if you're not responding to a major change with gratitude as you move away from the tool, or grace as you work through the issue, you're not a member of that OSS project community, and aren't acting as an OSS community member at all. You're acting like a leech, which makes you part of the problem -- and anyone invested in a solution would be best served by ignoring you entirely.
 
 In terms of the supply chain, I think [Thomas Depierre sums it up well in his blog post "I am not a supplier"](https://www.softwaremaxims.com/blog/not-a-supplier):
 
