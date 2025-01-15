@@ -25,4 +25,17 @@ But so often, as we've seen, it is the sense that an OSS author's purpose is to 
 
 ## If You're Not in a Community, Your Opinion on its Direction is Irrelevant.
 
-Here's thing -- if you're not contributing your time or your money to an OSS project, your say in that project is exactly zero. And if you're not responding to a major change with gratitude as you move away from the tool, or grace as you work through the issue, you're not a member of that OSS project community, and aren't acting as an OSS community member at all. You're acting like a leech, and you are part of the problem.
+Here's thing -- if you're not contributing your time or your money to an OSS project, your say in that project is exactly zero. And if you're not responding to a major change with gratitude as you move away from the tool, or grace as you work through the issue, you're not a member of that OSS project community, and aren't acting as an OSS community member at all. You're acting like a leech, and you are part of the problem, and anyone invested in a solution would be best served by ignoring you.
+
+## How This Plays Out for Me
+
+* I try to contribute where I can, to projects and people I care about or appreciate and want to support. It will never be as much as I want; I too have to balance my priorities in life across my personal/family life, work, and extracurricular activities.
+* When Moq changed its approach to seeking donations using SponsorLink, I [respected what they were trying to accomplish](https://seankilleen.com/2023/08/on-moq-and-our-part-in-the-oss-sustainability-social-contract/). Our team at work evaluated the change, and felt fine with sticking with the project unless something made it untenable. To that point, I hadn't contributed. After that, I made a donation.
+* When Fluent Assertions changed to a dual license that required a license purchase for commercial use, our team evaluated it as a product. We came to the conclusion that the value we were getting didn't justify the proposed licensing cost, so we are choosing to remove it. But we're not mad at having to make the choice, because we didn't contribute anything to that point, and it's only fair for the author to consider what they need.
+
+My perspective on the OSS social contract allowed me to do a few things in those situations:
+
+* Pay more attention to my OSS dependencies
+* Look to support OSS in more ways, proactively, before these things come up
+* Channel my disappointment / inconvenience in a productive way
+* Feel like we're all in this together
