@@ -25,8 +25,9 @@ ____
 * Related to the point above: there are certainly less white dudes like me out there doing any kind of public service than there should be. A good reminder to show up more, and publicly.
 * It bothered me at first to feel like I missed any trash as I went by (oh hey there, perfectionism!) But doing it multiple times has helped me see the long game and allowed me to not get so hung up on every piece. The trash bag gets filled up with trash that's just as real as the piece I missed.
 * I'm so digital in my work and life that I often forget to do tangible things with real-world outcomes. A full bag at the end of a walk feels good.
-* It feels silly to write about this. But when I thought about that, it's because it feels like something that someone would put in a bullshit LinkedIn post to try to up their follower count or something. But this is my space, and my feelings are real, so I get to write about it. And it's nice to remember that my audience is allowed to also be me.
+* It feels silly to write about this. But when I thought about why that is, I realized it's because it feels like something that someone would put in a bullshit LinkedIn post to try to up their follower count or something. Capitalism has screwed up so much about being a person. But this is my space, and my feelings are real, so I get to write about it. And it's nice to remember that my audience is allowed to also be just me.[^2]
 
 I'm not sure if I'll inspire anyone else to do this, but I've become convinced that I and the world are both a little better off for doing it. And I know it's possible to be inspired, because one day last year I saw a guy walking down the street a few times with a grabber and I thought "hey, that's a great idea." And I hope that guy looks around on his walks now sometimes and thinks "hmm, there's less trash than there used to be."
 
 [^1]: Hooboy. No.
+[^2]: While at the same time realizing I'm absolutely going to post this on Bluesky, and probably LinkedIn. Whatever. I contain multitudes.
