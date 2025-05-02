@@ -7,7 +7,7 @@ tags:
   - service
 date: 2025-05-01 21:41 -0400
 ---
-We got a two pack of [those grabbers that pick things up](https://www.amazon.com/dp/B0CSDHMN1Y) (not an affiliate link; just for reference). Recently I've been inspired to go on walks at night with one of the grabbers and a trash bag. 
+We got a two pack of [those grabbers that pick things up](https://www.amazon.com/dp/B0CSDHMN1Y) (not an affiliate link; just for reference). Recently I've been inspired to go on walks at night with one of the grabbers and a trash bag.
 
 This is a collection of unordered thoughts I've had while picking up some trash.
 
@@ -29,5 +29,5 @@ ____
 
 I'm not sure if I'll inspire anyone else to do this, but I've become convinced that I and the world are both a little better off for doing it. And I know it's possible to be inspired, because one day last year I saw a guy walking down the street a few times with a grabber and I thought "hey, that's a great idea." And I hope that guy looks around on his walks now sometimes and thinks "hmm, there's less trash than there used to be."
 
-[^1]: Hooboy. No.
+[^1]: Yeah, NOPE.
 [^2]: While at the same time realizing I'm absolutely going to post this on Bluesky, and probably LinkedIn. Whatever. I contain multitudes.
