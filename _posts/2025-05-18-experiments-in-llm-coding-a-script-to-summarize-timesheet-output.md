@@ -43,6 +43,22 @@ A few adjustments
 
 ```
 
+Prompt #4:
+
+```
+Prior to the call to get the time entries, call https://api.track.toggl.com/api/v9/me/tasks?meta=true?per_page=100&include_not_active=false. You may need to loop through these requests, using the offset provided in each response in order to generate the next request.
+
+Use these responses to generate a list of task names for task IDs, and to lookup and use the task name in the output, rather than outputting task ID.
+```
+
+Prompt #5:
+
+```
+Prior to the call to get the time entries, also call https://api.track.toggl.com/api/v9/me/projects to retrieve a list of projects
+
+Use this response to generate a list of project names for project IDs, and to lookup and use the project name in the output, rather than outputting project ID.
+```
+
 ## The Result
 Within a few minutes and only with these prompts, Claude generated the complete working Powershell script below, which accurately captures my needs and solves my problem. Definitely a "wow" moment.
 
@@ -209,6 +225,7 @@ catch {
     exit 1
 }
 ```
+
 
 ## Reaction: Wow!
 
