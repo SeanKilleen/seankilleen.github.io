@@ -8,8 +8,8 @@ tags:
   - tooling
 date: 2025-05-18 11:46 -0500
 ---
-I have lots of concern about AI and LLMs in general -- from the ecological to the societal. I don't believe we should be using them to manipulate or replace humans. With that said, I've been belatedly trying to explore their practical applications in my work.
-One of those applications has been around generating helper scripts for some of the daily work I do, Below, I'll describe one of those journeys, which I took with .
+I have lots of concern about AI and LLMs in general -- from the ecological to the societal. I don't believe we should be using them to manipulate or replace humans. With that said, I've been belatedly trying to explore their practical applications in my day-to-day work.
+One of those applications has been around generating helper scripts to make daily tasks easier for applications that have APIs. Below, I'll describe one of those journeys, which I took with <https://claude.ai>.
 
 ## The Challenge
 
