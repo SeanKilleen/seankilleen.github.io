@@ -1,0 +1,211 @@
+---
+title: "Experiments in LLM Coding: A Script to Summarize Timesheet Output"
+comments: true
+tags:
+  - ai
+  - vibe-coding
+  - llm
+  - tooling
+date: 2025-05-18 11:46 -0500
+---
+I have lots of concern about AI and LLMs in general -- from the ecological to the societal. I don't believe we should be using them to manipulate or replace humans. With that said, I've been belatedly trying to explore their practical applications in my work.
+One of those applications has been around generating helper scripts for some of the daily work I do, Below, I'll describe one of those journeys, which I took with .
+
+## The Challenge
+
+I use [Toggl](https://toggl.com) to track my time, because it's a phenomenal product that integrates itself into all the places I perform work. However, I currently have to deal with another timesheet system. Toggl is missing the exact reporting scheme which would help me out: the ability to group by date, then project, then task, and output a summary of time and also a list of all the descriptions associated with that time.
+This seemed like a great possible use for an AI boost. It's a concrete task, that would save me time every day, and could be housed in a script (in my case, I chose Powershell).
+
+## The Prompts
+
+The exact prompts I used are below (with minor details redacted for security with `REDACTED`).
+
+Prompt #1:
+
+```
+I'd like to write a powershell script to summaries entries from the Toggl API.
+I'd like the script to take in APIKey as a parameter. This will represent the Toggl API key. I'd also like to take in the start and end date, which will be a date in YYYY-MM-DD format. If the start and end date parameters are not supplied, the script should assume one week ago in YYYY-MM-DD as the start date, and tomorrow's date in YYYY-MM-DD format as the end date.
+I'd like the script to https://api.track.toggl.com/api/v9/me/time_entries?start_date=TheStartDate&end_date=TheEndDate, where TheStartDate and TheEndDate are the previously determined dates in YYYY-MM-DD format.
+The API response will return an array of JSON objects that look similar to:
+\    {         "id": REDACTED,         "workspace_id": REDACTED,         "project_id": null,         "task_id": null,         "billable": false,         "start": "2025-05-16T21:22:12+00:00",         "stop": "2025-05-16T21:29:49+00:00",         "duration": 457,         "description": "REDACTED",         "tags": [],         "tag_ids": [],         "duronly": true,         "at": "2025-05-16T21:29:49.815804Z",         "server_deleted_at": null,         "user_id": REDACTED,         "uid": REDACTED,         "wid": REDACTED     }
+```
+
+Prompt #2
+
+```
+I'd like the script to group the entries by the date they were entered, then the project, then the task. I'd like the script to summarize the amount of time, and concatenate the descriptions into one string, separated by a new-line.
+```
+
+Prompt #3:
+
+```
+A few adjustments
+
+```
+
+## The Result
+Within a few minutes and only with these prompts, Claude generated the complete working Powershell script below, which accurately captures my needs and solves my problem. Definitely a "wow" moment.
+
+```powershell
+param (
+    [Parameter(Mandatory=$true)]
+    [string]$ApiKey,
+    
+    [Parameter(Mandatory=$false)]
+    [string]$StartDate,
+    
+    [Parameter(Mandatory=$false)]
+    [string]$EndDate
+)
+
+# Set default dates if not provided
+if (-not $StartDate) {
+    $StartDate = (Get-Date).AddDays(-7).ToString("yyyy-MM-dd")
+}
+
+if (-not $EndDate) {
+    $EndDate = (Get-Date).AddDays(1).ToString("yyyy-MM-dd")
+}
+
+# Validate date format
+try {
+    [datetime]::ParseExact($StartDate, "yyyy-MM-dd", $null) | Out-Null
+    [datetime]::ParseExact($EndDate, "yyyy-MM-dd", $null) | Out-Null
+}
+catch {
+    Write-Error "Date format must be YYYY-MM-DD"
+    exit 1
+}
+
+Write-Host "Fetching Toggl entries from $StartDate to $EndDate" -ForegroundColor Cyan
+
+# API endpoint
+$url = "https://api.track.toggl.com/api/v9/me/time_entries?start_date=${StartDate}&end_date=${EndDate}"
+
+# Create headers with authentication
+$base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes("$($ApiKey):api_token"))
+$headers = @{
+    Authorization = "Basic $base64AuthInfo"
+}
+
+# Make API request
+try {
+    $response = Invoke-RestMethod -Uri $url -Headers $headers -Method Get
+    
+    if ($response.Count -eq 0) {
+        Write-Host "No time entries found for the specified date range." -ForegroundColor Yellow
+        exit 0
+    }
+    
+    # Process and group data by date, project, task
+    $groupedEntries = @{}
+    
+    foreach ($entry in $response) {
+        # Get the entry date (convert from ISO format to date only)
+        $entryDate = [datetime]::Parse($entry.start).ToString("yyyy-MM-dd")
+        
+        # Get project ID (use "No Project" if null)
+        $projectId = if ($null -eq $entry.project_id) { "No Project" } else { $entry.project_id }
+        
+        # Get task ID (use "No Task" if null)
+        $taskId = if ($null -eq $entry.task_id) { "No Task" } else { $entry.task_id }
+        
+        # Get description (use empty string if null)
+        $description = if ([string]::IsNullOrEmpty($entry.description)) { "(No description)" } else { $entry.description }
+        
+        # Calculate duration in seconds
+        $duration = $entry.duration
+        
+        # Initialize nested structure if needed
+        if (-not $groupedEntries.ContainsKey($entryDate)) {
+            $groupedEntries[$entryDate] = @{}
+        }
+        
+        if (-not $groupedEntries[$entryDate].ContainsKey($projectId)) {
+            $groupedEntries[$entryDate][$projectId] = @{}
+        }
+        
+        if (-not $groupedEntries[$entryDate][$projectId].ContainsKey($taskId)) {
+            $groupedEntries[$entryDate][$projectId][$taskId] = @{
+                TotalDuration = 0
+                Descriptions = @()
+            }
+        }
+        
+        # Update the task entry
+        $groupedEntries[$entryDate][$projectId][$taskId].TotalDuration += $duration
+        $groupedEntries[$entryDate][$projectId][$taskId].Descriptions += $description
+    }
+    
+    # Display summary
+    Write-Host "`nToggl Time Entries Summary" -ForegroundColor Green
+    Write-Host "-------------------------" -ForegroundColor Green
+    Write-Host "Date Range: $StartDate to $EndDate" -ForegroundColor White
+    Write-Host "Total Entries: $($response.Count)" -ForegroundColor White
+    
+    # Calculate total time across all entries
+    $totalDuration = ($response | Measure-Object -Property duration -Sum).Sum
+    $totalTimeSpan = [TimeSpan]::FromSeconds($totalDuration)
+    $totalHoursDecimal = [math]::Round($totalTimeSpan.TotalHours, 2)
+    
+    Write-Host "Total Time: $totalHoursDecimal hours`n" -ForegroundColor White
+    
+    # Sort dates chronologically
+    $sortedDates = $groupedEntries.Keys | Sort-Object
+    
+    # Display grouped summary
+    foreach ($date in $sortedDates) {
+        Write-Host "Date: $date" -ForegroundColor Cyan
+        
+        foreach ($projectId in $groupedEntries[$date].Keys) {
+            Write-Host "  Project: $projectId" -ForegroundColor Yellow
+            
+            # Calculate project total time
+            $projectTotalDuration = 0
+            foreach ($taskId in $groupedEntries[$date][$projectId].Keys) {
+                $projectTotalDuration += $groupedEntries[$date][$projectId][$taskId].TotalDuration
+            }
+            
+            $projectTimeSpan = [TimeSpan]::FromSeconds($projectTotalDuration)
+            $projectHoursDecimal = [math]::Round($projectTimeSpan.TotalHours, 2)
+            
+            Write-Host "    Project Total: $projectHoursDecimal hours" -ForegroundColor White
+            
+            foreach ($taskId in $groupedEntries[$date][$projectId].Keys) {
+                Write-Host "    Task: $taskId" -ForegroundColor Magenta
+                
+                # Calculate task duration
+                $taskDuration = $groupedEntries[$date][$projectId][$taskId].TotalDuration
+                $taskTimeSpan = [TimeSpan]::FromSeconds($taskDuration)
+                $taskHoursDecimal = [math]::Round($taskTimeSpan.TotalHours, 2)
+                
+                Write-Host "      Task Total: $taskHoursDecimal hours" -ForegroundColor White
+                
+                # Get only unique descriptions
+                $uniqueDescriptions = $groupedEntries[$date][$projectId][$taskId].Descriptions | Select-Object -Unique
+                $descriptions = $uniqueDescriptions -join "`n      "
+                Write-Host "      Descriptions:`n      $descriptions" -ForegroundColor Gray
+                Write-Host ""
+            }
+        }
+        
+        # Calculate daily total time
+        $dailyTotalDuration = 0
+        foreach ($projectId in $groupedEntries[$date].Keys) {
+            foreach ($taskId in $groupedEntries[$date][$projectId].Keys) {
+                $dailyTotalDuration += $groupedEntries[$date][$projectId][$taskId].TotalDuration
+            }
+        }
+        
+        $dailyTimeSpan = [TimeSpan]::FromSeconds($dailyTotalDuration)
+        $dailyHoursDecimal = [math]::Round($dailyTimeSpan.TotalHours, 2)
+        
+        Write-Host "  Daily Total: $dailyHoursDecimal hours" -ForegroundColor Green
+        Write-Host "------------------------`n" -ForegroundColor Green
+    }
+}
+catch {
+    Write-Error "Failed to retrieve data from Toggl API: $_"
+    exit 1
+}
+```
