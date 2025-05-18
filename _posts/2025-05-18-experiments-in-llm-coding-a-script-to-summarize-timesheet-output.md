@@ -93,18 +93,75 @@ catch {
     exit 1
 }
 
-Write-Host "Fetching Toggl entries from $StartDate to $EndDate" -ForegroundColor Cyan
-
-# API endpoint
-$url = "https://api.track.toggl.com/api/v9/me/time_entries?start_date=${StartDate}&end_date=${EndDate}"
-
 # Create headers with authentication
 $base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes("$($ApiKey):api_token"))
 $headers = @{
     Authorization = "Basic $base64AuthInfo"
 }
 
-# Make API request
+# First, get all projects to create a mapping of project IDs to names
+Write-Host "Retrieving project information..." -ForegroundColor Cyan
+
+try {
+    $projectUrl = "https://api.track.toggl.com/api/v9/me/projects"
+    $projectResponse = Invoke-RestMethod -Uri $projectUrl -Headers $headers -Method Get
+    
+    # Create project ID to name mapping
+    $projectMapping = @{}
+    foreach ($project in $projectResponse) {
+        $projectMapping[$project.id] = $project.name
+    }
+    
+    Write-Host "Retrieved information for $($projectResponse.Count) projects" -ForegroundColor Cyan
+}
+catch {
+    Write-Error "Failed to retrieve projects from Toggl API: $_"
+    exit 1
+}
+
+# Then, get all tasks to create a mapping of task IDs to names
+Write-Host "Retrieving task information..." -ForegroundColor Cyan
+
+$allTasks = @()
+$offset = 0
+$hasMoreTasks = $true
+
+# Paginate through all tasks
+while ($hasMoreTasks) {
+    $taskUrl = "https://api.track.toggl.com/api/v9/me/tasks?meta=true&per_page=100&include_not_active=false&offset=$offset"
+    
+    try {
+        $taskResponse = Invoke-RestMethod -Uri $taskUrl -Headers $headers -Method Get
+        
+        # Add tasks to our collection
+        $allTasks += $taskResponse
+        
+        # Check if we need to fetch more
+        if ($taskResponse.Count -lt 100) {
+            $hasMoreTasks = $false
+        } else {
+            $offset += 100
+        }
+    }
+    catch {
+        Write-Error "Failed to retrieve tasks from Toggl API: $_"
+        exit 1
+    }
+}
+
+# Create task ID to name mapping
+$taskMapping = @{}
+foreach ($task in $allTasks) {
+    $taskMapping[$task.id] = $task.name
+}
+
+Write-Host "Retrieved information for $($allTasks.Count) tasks" -ForegroundColor Cyan
+Write-Host "Fetching Toggl entries from $StartDate to $EndDate" -ForegroundColor Cyan
+
+# Time entries API endpoint
+$url = "https://api.track.toggl.com/api/v9/me/time_entries?start_date=${StartDate}&end_date=${EndDate}"
+
+# Make API request for time entries
 try {
     $response = Invoke-RestMethod -Uri $url -Headers $headers -Method Get
     
@@ -120,11 +177,25 @@ try {
         # Get the entry date (convert from ISO format to date only)
         $entryDate = [datetime]::Parse($entry.start).ToString("yyyy-MM-dd")
         
-        # Get project ID (use "No Project" if null)
-        $projectId = if ($null -eq $entry.project_id) { "No Project" } else { $entry.project_id }
+        # Get project ID and look up project name
+        $projectId = $entry.project_id
+        $projectName = if ($null -eq $projectId) { 
+            "No Project" 
+        } elseif ($projectMapping.ContainsKey($projectId)) {
+            $projectMapping[$projectId]
+        } else {
+            "Project #$projectId"  # Fallback if project not found in mapping
+        }
         
-        # Get task ID (use "No Task" if null)
-        $taskId = if ($null -eq $entry.task_id) { "No Task" } else { $entry.task_id }
+        # Get task ID and look up task name
+        $taskId = $entry.task_id
+        $taskName = if ($null -eq $taskId) { 
+            "No Task" 
+        } elseif ($taskMapping.ContainsKey($taskId)) {
+            $taskMapping[$taskId]
+        } else {
+            "Task #$taskId"  # Fallback if task not found in mapping
+        }
         
         # Get description (use empty string if null)
         $description = if ([string]::IsNullOrEmpty($entry.description)) { "(No description)" } else { $entry.description }
@@ -137,20 +208,20 @@ try {
             $groupedEntries[$entryDate] = @{}
         }
         
-        if (-not $groupedEntries[$entryDate].ContainsKey($projectId)) {
-            $groupedEntries[$entryDate][$projectId] = @{}
+        if (-not $groupedEntries[$entryDate].ContainsKey($projectName)) {
+            $groupedEntries[$entryDate][$projectName] = @{}
         }
         
-        if (-not $groupedEntries[$entryDate][$projectId].ContainsKey($taskId)) {
-            $groupedEntries[$entryDate][$projectId][$taskId] = @{
+        if (-not $groupedEntries[$entryDate][$projectName].ContainsKey($taskName)) {
+            $groupedEntries[$entryDate][$projectName][$taskName] = @{
                 TotalDuration = 0
                 Descriptions = @()
             }
         }
         
         # Update the task entry
-        $groupedEntries[$entryDate][$projectId][$taskId].TotalDuration += $duration
-        $groupedEntries[$entryDate][$projectId][$taskId].Descriptions += $description
+        $groupedEntries[$entryDate][$projectName][$taskName].TotalDuration += $duration
+        $groupedEntries[$entryDate][$projectName][$taskName].Descriptions += $description
     }
     
     # Display summary
@@ -173,13 +244,13 @@ try {
     foreach ($date in $sortedDates) {
         Write-Host "Date: $date" -ForegroundColor Cyan
         
-        foreach ($projectId in $groupedEntries[$date].Keys) {
-            Write-Host "  Project: $projectId" -ForegroundColor Yellow
+        foreach ($projectName in $groupedEntries[$date].Keys) {
+            Write-Host "  Project: $projectName" -ForegroundColor Yellow
             
             # Calculate project total time
             $projectTotalDuration = 0
-            foreach ($taskId in $groupedEntries[$date][$projectId].Keys) {
-                $projectTotalDuration += $groupedEntries[$date][$projectId][$taskId].TotalDuration
+            foreach ($taskName in $groupedEntries[$date][$projectName].Keys) {
+                $projectTotalDuration += $groupedEntries[$date][$projectName][$taskName].TotalDuration
             }
             
             $projectTimeSpan = [TimeSpan]::FromSeconds($projectTotalDuration)
@@ -187,18 +258,18 @@ try {
             
             Write-Host "    Project Total: $projectHoursDecimal hours" -ForegroundColor White
             
-            foreach ($taskId in $groupedEntries[$date][$projectId].Keys) {
-                Write-Host "    Task: $taskId" -ForegroundColor Magenta
+            foreach ($taskName in $groupedEntries[$date][$projectName].Keys) {
+                Write-Host "    Task: $taskName" -ForegroundColor Magenta
                 
                 # Calculate task duration
-                $taskDuration = $groupedEntries[$date][$projectId][$taskId].TotalDuration
+                $taskDuration = $groupedEntries[$date][$projectName][$taskName].TotalDuration
                 $taskTimeSpan = [TimeSpan]::FromSeconds($taskDuration)
                 $taskHoursDecimal = [math]::Round($taskTimeSpan.TotalHours, 2)
                 
                 Write-Host "      Task Total: $taskHoursDecimal hours" -ForegroundColor White
                 
                 # Get only unique descriptions
-                $uniqueDescriptions = $groupedEntries[$date][$projectId][$taskId].Descriptions | Select-Object -Unique
+                $uniqueDescriptions = $groupedEntries[$date][$projectName][$taskName].Descriptions | Select-Object -Unique
                 $descriptions = $uniqueDescriptions -join "`n      "
                 Write-Host "      Descriptions:`n      $descriptions" -ForegroundColor Gray
                 Write-Host ""
@@ -207,9 +278,9 @@ try {
         
         # Calculate daily total time
         $dailyTotalDuration = 0
-        foreach ($projectId in $groupedEntries[$date].Keys) {
-            foreach ($taskId in $groupedEntries[$date][$projectId].Keys) {
-                $dailyTotalDuration += $groupedEntries[$date][$projectId][$taskId].TotalDuration
+        foreach ($projectName in $groupedEntries[$date].Keys) {
+            foreach ($taskName in $groupedEntries[$date][$projectName].Keys) {
+                $dailyTotalDuration += $groupedEntries[$date][$projectName][$taskName].TotalDuration
             }
         }
         
