@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-node@v4
         name: Setup node
         with:
-          node-version: "20"
+          node-version: "22"
       - run: npm install -g markdownlint-cli2
         name: Install markdownlint-cli2
       - run: markdownlint-cli2 --config ".markdownlint-cli2.jsonc" "**/*.md"
@@ -30,6 +30,6 @@ jobs:
       - uses: actions/setup-node@v4
         name: Run spell check
         with:
-          node-version: "20"
+          node-version: "22"
       - run: npm install -g cspell
       - run: cspell --config ./cSpell.json --no-progress "**/*.md"
