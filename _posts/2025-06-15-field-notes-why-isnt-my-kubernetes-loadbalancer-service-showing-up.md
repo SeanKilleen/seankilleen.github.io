@@ -12,8 +12,8 @@ Recently I hit something that stumped me for a bit, so I wanted to share my note
 
 ## Background
 
-In the Terraform for our SAP BTP Kyma instance, we had a deployment and a service of type LoadBalancer to expose that to the world
- Normally we'd use the default Istio-based mechanism, but in addition to an HTTP-based Web site, this workload exposed a function that Istio doesn't yet support (SFTP in particular).
+In the Terraform for our SAP BTP Kyma instance, we had a deployment and a service of type `LoadBalancer` to expose that to the world
+ Normally we'd use the default Istio-based mechanism, but in addition to a HTTP-based Web site, this workload exposed a function that Istio doesn't yet support (SFTP in particular).
 
 Things were going fine, but when I moved to the official Helm chart for this workload, everything stopped working, I couldn't figure out why.
 
@@ -53,6 +53,8 @@ TODO: Add the snippet
 
 And almost immediately, after days of troubleshooting this, I was up and running again.
 
-## What I Learned
+## Things I Learned
 
 * **Trust the logs more.** I saw logs coming in from the load balancer and yet spent way too much time troubleshooting things that would not have possibly been broken if the load balancer could get to our workload.
+* **Response codes matter to Load Balancers -- a lot.** I was previously aware of this, and this was a painful way to have to remember it.
+* **Get more rest.** Like so many prior times I learned this lesson, I tried to grind through this problem because it was a priority. As soon as I stepped back from it a little and got some more sleep, the solution clicked. If you're looking for permission to take a break from that hard problem to let your brain percolate on it, consider this your sign.
