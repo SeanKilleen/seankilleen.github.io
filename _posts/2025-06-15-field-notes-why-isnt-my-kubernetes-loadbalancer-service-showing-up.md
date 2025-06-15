@@ -43,3 +43,16 @@ So now I had a theory: the load balancer was marking the mode as unhealthy and n
 
 ## The Fix: Pointing the Load Balancer Elsewhere
 
+I added an annotation to point the Azure Load Balancer to the `/healthz` endpoint rather than `/`, which was both a better check and also guaranteed to return an HTTP 200 when things were succeeding.
+
+That looked like:
+
+```yaml
+TODO: Add the snippet
+```
+
+And almost immediately, after days of troubleshooting this, I was up and running again.
+
+## What I Learned
+
+* **Trust the logs more.** I saw logs coming in from the load balancer and yet spent way too much time troubleshooting things that would not have possibly been broken if the load balancer could get to our workload.
