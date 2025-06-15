@@ -9,4 +9,4 @@ I haven't gotten to merge the PR into our codebase yet but that's purely due to 
 
 [Check it out here!](https://www.youtube.com/live/52b-StTWuCY?si=uy4xWmlh5MsFO9O8). I've also embedded it below.
 
-{% include video id="live/52b-StTWuCY" provider="youtube" %}
+{% include video id="52b-StTWuCY" provider="youtube" %}
