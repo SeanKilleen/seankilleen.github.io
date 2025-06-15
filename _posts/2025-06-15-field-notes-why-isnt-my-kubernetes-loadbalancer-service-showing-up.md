@@ -48,7 +48,7 @@ I added an annotation to point the Azure Load Balancer to the `/healthz` endpoin
 That looked like:
 
 ```yaml
-TODO: Add the snippet
+service.beta.kubernetes.io/azure-load-balancer-health-probe-request-path: "/healthz"
 ```
 
 And almost immediately, after days of troubleshooting this, I was up and running again.
@@ -57,4 +57,5 @@ And almost immediately, after days of troubleshooting this, I was up and running
 
 * **Trust the logs more.** I saw logs coming in from the load balancer and yet spent way too much time troubleshooting things that would not have possibly been broken if the load balancer could get to our workload.
 * **Response codes matter to Load Balancers -- a lot.** I was previously aware of this, and this was a painful way to have to remember it.
+* **Your tools won't always be helpful.** I read that load balancers would report these sorts of issues as Kubernetes events but I saw no indication of those. That didn't mean that things were OK there though.
 * **Get more rest.** Like so many prior times I learned this lesson, I tried to grind through this problem because it was a priority. As soon as I stepped back from it a little and got some more sleep, the solution clicked. If you're looking for permission to take a break from that hard problem to let your brain percolate on it, consider this your sign.
