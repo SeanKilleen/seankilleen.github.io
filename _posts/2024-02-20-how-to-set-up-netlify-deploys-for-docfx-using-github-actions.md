@@ -191,4 +191,3 @@ Once I got all the moving parts working together, it was an absolute delight to 
 ## Update (2025-08)
 
 We no longer use this approach. While it worked well for core team members, it had issues around permissions when others contributed, which really took away from its effectiveness. Adding this here so that you're aware in case that will be an issue in your specific context.
-
