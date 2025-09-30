@@ -31,7 +31,7 @@ As far as I can tell, there are a few ways to resolve this issue.
 * You can move off of Verizon 😉
 * You can disable IPv6 on your machine, allowing only IPv4. However, this seems a little drastic
 * You can set your machine's DNS server away from Verizon's DNS to something like CloudFlare's `1.1.1.1` or similar.
-* You can update the Docker Engine settings in Docker for Windows to add `"dns": ["1.1.1.1"]` to the top-level JSON. This 
+* You can update the Docker Engine settings in Docker for Windows to add `"dns": ["1.1.1.1"]` to the top-level JSON. This will change the DNS settings only within docker, so pulling images should work once more without any changes affecting your wider machine.
 
 ## Final Thoughts
 
