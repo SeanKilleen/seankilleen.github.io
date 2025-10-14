@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
         name: Check out the code
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6
         name: Setup node
         with:
           node-version: "22"
@@ -27,7 +27,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
         name: Check out the code
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6
         name: Run spell check
         with:
           node-version: "22"
