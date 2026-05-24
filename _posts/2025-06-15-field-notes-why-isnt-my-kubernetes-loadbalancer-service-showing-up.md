@@ -6,18 +6,19 @@ tags:
   - k8s
   - services
   - loadbalancer
-date: 2025-06-15 08:45 -0400
+date: 2026-05-24 11:24 -0400
 ---
+_Ed. Note: This post is from June 2025, but rather than the perfect being the enemy of the good, I figured I'd finally release it, in case it can be useful to someone._
+
 Recently I hit something that stumped me for a bit, so I wanted to share my notes here.
 
 ## Background
 
-In the Terraform for our SAP BTP Kyma instance, we had a deployment and a service of type `LoadBalancer` to expose that to the world
- Normally we'd use the default Istio-based mechanism, but in addition to a HTTP-based Web site, this workload exposed a function that Istio doesn't yet support (SFTP in particular).
+In the Terraform for our SAP BTP Kyma instance, we had a deployment and a service of type `LoadBalancer` to expose that to the world. Normally we'd use the default Istio-based mechanism, but in addition to a HTTP-based Web site, this workload exposed a function that Istio doesn't yet support (SFTP in particular).
 
 Things were going fine, but when I moved to the official Helm chart for this workload, everything stopped working, I couldn't figure out why.
 
-## Things I tried
+## Things I Tried
 
 * I checked the application logs and could see requests from the load balancer succeeding.
 * I could get to the service _inside_ of the cluster using `kubectl port-forward`, so I knew things were accessible and running within the cluster.
