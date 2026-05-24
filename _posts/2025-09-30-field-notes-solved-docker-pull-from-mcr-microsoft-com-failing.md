@@ -6,7 +6,7 @@ tags:
   - dns
   - docker
   - verizon
-date: 2025-09-30 15:51 -0400
+date: 2026-05-24 11:21 -0400
 ---
 ## Background 
 
