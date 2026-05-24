@@ -8,6 +8,8 @@ tags:
   - verizon
 date: 2026-05-24 11:21 -0400
 ---
+_Ed. Note: I had this in my drafts from September so it may be outdated at this point, but I figued I'd post on the off chance it can help someone.someone._
+
 ## Background 
 
 Recently had an issue where some of our developers couldn't pull Docker images from `mcr.microsoft.com`. This happened over time, and sometimes when they changed locations.
